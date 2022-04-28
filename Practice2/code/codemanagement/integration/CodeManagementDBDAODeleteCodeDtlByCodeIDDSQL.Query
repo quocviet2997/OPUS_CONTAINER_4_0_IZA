@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CodeManagementDBDAODeleteCodeDtlByCodeIDDSQL">
+			<desc><![CDATA[Delete code detail by CodeID]]></desc>
+			<sql><![CDATA[
+DELETE FROM COM_INTG_CD_DTL
+WHERE INTG_CD_ID IN (
+	#foreach($key IN ${codeID_list}) #if($velocityCount < $codeID_list.size()) '$key', #else '$key' #end #end
+)			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>
