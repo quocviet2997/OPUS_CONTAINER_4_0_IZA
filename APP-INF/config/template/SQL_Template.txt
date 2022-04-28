@@ -1,0 +1,107 @@
+/*=========================================================
+*Copyright(c) ${Date} CyberLogitec
+*@FileName : ${CLS_NM}.java
+*@FileTitle : ${FILE_TITLE}
+*Open Issues :
+*Change history :
+*@LastModifyDate : ${Date_dey}
+*@LastModifier : ${USER_NAME}
+*@LastVersion : 1.0
+* ${Date_dey} ${USER_NAME}
+* 1.0 Creation
+=========================================================*/
+${PACKAGE_NM}
+
+import java.util.HashMap;
+import org.apache.log4j.Logger;
+import com.clt.framework.support.db.ISQLTemplate;
+
+/**
+ *
+ * @author ${EN_NAME}
+ * @see DAO 참조
+ * @since J2EE 1.6
+ */
+
+public class ${CLS_NM} implements ISQLTemplate{
+
+	private StringBuffer query = new StringBuffer();
+	
+	Logger log =Logger.getLogger(this.getClass());
+	
+	/** Parameters definition in params/param elements */
+	private HashMap<String,String[]> params = null;
+	
+	/**
+	  * <pre>
+#foreach( $key in ${PRE})
+	  * $key
+#end
+	  * </pre>
+	  */
+	public ${CLS_NM}(){
+#foreach($key IN ${setQuery}) 
+#if($velocityCount == 1)
+		setQuery();
+#else
+		setQuery$velocityCount();
+#end
+#end	
+		params = new HashMap<String,String[]>();
+#if(${PRN})
+		String tmp = null;
+		String[] arrTmp = null;
+#end
+#foreach( $key in $PARAMS.keySet())
+		tmp = $PARAMS.get($key);
+		arrTmp = tmp.split(",");
+		if(arrTmp.length !=2){
+			throw new IllegalArgumentException();
+		}
+		params.put("$key",new String[]{arrTmp[0],arrTmp[1]});
+
+#end
+		query.append("/*").append("\n"); 
+		query.append("Path : ${comment}").append("\n"); 
+		query.append("FileName : ${CLS_NM}").append("\n"); 
+		query.append("*/").append("\n"); 
+	}
+	
+	public String getSQL(){
+		return query.toString();
+	}
+	
+	public HashMap<String,String[]> getParams() {
+		return params;
+	}
+
+#set($number = $setQuery.size())
+#if($number == 1) 
+	/**
+	 * Query 생성
+	 */
+	public void setQuery(){
+#foreach($key IN ${setQuery}) 
+		$key
+#end
+	}
+#else
+#foreach($keye IN ${setQuery}) 
+#if($velocityCount == 1)
+	/**
+	 * Query 생성
+	 */
+	public void setQuery(){
+		$keye
+	}
+#else
+	/**
+	 * Query 생성
+	 */
+	public void setQuery$velocityCount(){
+		$keye
+	}
+#end
+#end
+#end
+}

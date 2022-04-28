@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<files>
+	<file id="ERROR-MESSAGE-PROPERTY" path="/resource/properties/errorMapping_En.properties" type="app" />
+	<file id="SITE-CONFIG-SET-PROPERTIES" path="/resource/properties/site-config.properties" type="app" />
+	<file id="SUBSYSTEM-CONFIG-SET-PROPERTIES" path="/resource/properties/subsystem-config.properties" type="app" />
+	<file id="DATASOURCE-MAPPINGS-FILE" path="/resource/xml/datasource-config.xml" type="app" />
+	<file id="FILE-DESCRIPTION-FILE" path="/resource/xml/file_description.xml" type="app" />
+	<file id="SERVICE-CONTROLLERS-FILE" path="/resource/xml/ServiceControllers.xml" type="app" />
+
+	<!-- 2007.04 add --> 
+<!-- 	<file id="STANDALONE-CONFIG-SET-PROPERTIES" path="/.standalone.db.properties" type="app" />  -->
+	
+	<file id="CONFIG-FILE-XSD" path="/resource/xsd/config-file.xsd" type="app" />
+	<file id="URL-MAPPINGS-XSD" path="/resource/xsd/mappings.xsd" type="app" />
+	<file id="SCREENDEFINITIONS-XSD" path="/resource/xsd/screendefinitions.xsd" type="app" />
+	<file id="DATASOURCE-MAPPINGS-XSD" path="/resource/xsd/datasource-config.xsd" type="app" />
+	<file id="FILE-DESCRIPTION-XSD" path="/resource/xsd/file_discription.xsd" type="app" />
+	<file id="SERVICE-CONTROLLERS-XSD" path="/resource/xsd/ServiceControllers.xsd" type="app" />
+	
+	<file id="CONFIG-FILE" path="/WEB-INF/config-file.xml" type="web" />
+	<file id="DEFAULT-MAPPING" path="/WEB-INF/mappings.xml" type="web" />
+	<file id="SIGNON-CONFIG" path="/WEB-INF/signon-config.xml" type="web" />
+</files>

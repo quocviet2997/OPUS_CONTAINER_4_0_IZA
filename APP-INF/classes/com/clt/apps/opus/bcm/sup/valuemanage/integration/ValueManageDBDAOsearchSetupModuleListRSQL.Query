@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ValueManageDBDAOsearchSetupModuleListRSQL">
+			<desc><![CDATA[searchSetupModuleList]]></desc>
+			<sql><![CDATA[
+SELECT PGM_SUB_SYS_CD 
+      , APLY_FLG
+FROM COM_STUP_MDL_USE_INFO			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

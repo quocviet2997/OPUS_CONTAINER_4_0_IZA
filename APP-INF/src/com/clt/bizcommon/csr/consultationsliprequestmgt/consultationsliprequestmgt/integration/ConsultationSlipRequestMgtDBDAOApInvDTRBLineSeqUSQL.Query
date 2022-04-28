@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOApInvDTRBLineSeqUSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+UPDATE ap_inv_dtrb
+SET    line_seq = rownum
+WHERE  csr_no   = @[csr_no]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

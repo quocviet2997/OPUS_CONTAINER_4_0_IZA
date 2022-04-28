@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<screen name="ADM_SYS_0001">
+		<parameter key="title" value="Program Management" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/programmanagement/jsp/ADM_SYS_0001.jsp" />
+	</screen>
+
+	<screen name="ADM_SYS_0003">
+		<parameter key="title" value="User Management" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/usermanagement/jsp/ADM_SYS_0003.jsp" />
+	</screen>
+
+	<screen name="ADM_SYS_0007">
+		<parameter key="title" value="Error Message Management"
+			direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/errormessagemanagement/jsp/ADM_SYS_0007.jsp" />
+	</screen>
+
+	<!-- KyungBum Kim : 2009-03-04 start -->
+	<screen name="ADM_SYS_0002">
+		<parameter key="title" value="Menu Management" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/menumanagement/jsp/ADM_SYS_0002.jsp" />
+	</screen>
+	<!-- KyungBum Kim : 2009-03-04 end -->
+
+	<!-- Jeong-Hoon Kim : 2009-05-06 start -->
+	<screen name="FileManagement">
+		<parameter key="title" value="File Management" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/file/filemanagement/jsp/UI_COM_fileupload.jsp" />
+	</screen>
+	<!-- Jeong-Hoon Kim : 2009-05-06 end -->
+
+	<!--  역할관리 -->
+	<screen name="ADM_SYS_0004">
+		<parameter key="title" value="Role Management" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/role/jsp/ADM_SYS_0004.jsp" />
+	</screen>
+
+	<!--  부모역할 조회(팝업) -->
+	<screen name="upperRole" template="templatePop">
+		<parameter key="title" value="Upper Role" direct="true" />
+		<parameter key="body" value="syscommon/management/opus/role/jsp/upperrole.jsp" />
+	</screen>
+
+	<!--  사용자, 역할, 프로그램 -->
+	<screen name="ADM_SYS_0005">
+		<parameter key="title" value="User Role Mapping" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/role/jsp/ADM_SYS_0005.jsp" />
+	</screen>
+
+
+	<!--  사용자별 역할 매핑 -->
+	<screen name="roleMapping" template="templatePop">
+		<parameter key="title" value="User Role Mapping" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/role/jsp/userrolemapping.jsp" />
+	</screen>
+	
+	<!--  사용자별 역할 이력 -->
+	<screen name="roleMappingHistory" template="templatePop">
+		<parameter key="title" value="User Role Mapping" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/role/jsp/userrolehistory.jsp" />
+	</screen>
+
+	<!--  프로그램별 역할 매핑 -->
+	<screen name="progRoleMapping" template="templatePop">
+		<parameter key="title" value="Program Role Mapping" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/role/jsp/programrolemapping.jsp" />
+	</screen>
+
+	<!--  역할별 사용자 매핑 -->
+	<screen name="userMapping" template="templatePop">
+		<parameter key="title" value="Role User Mapping" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/role/jsp/roleusermapping.jsp" />
+	</screen>
+
+	<!--  역할별 프로그램 매핑 -->
+	<screen name="programMapping" template="templatePop">
+		<parameter key="title" value="Program Mapping" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/role/jsp/roleprogrammapping.jsp" />
+	</screen>
+
+	<!--  사용자 조직정보 조회 팝업 -->
+	<screen name="viewOrg" template="templatePop">
+		<parameter key="title" value="Office Mapping" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/usermanagement/jsp/officemapping.jsp" />
+	</screen>
+
+	<!--  Schedule Log  -->
+	<screen name="ADM_BAT_0002">
+		<parameter key="title" value="ScheduleLog" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/schedule/jsp/ADM_BAT_0002.jsp" />
+	</screen>
+
+	<screen name="FileView" template="templateEmpty">
+		<parameter key="title" value="FileView" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/schedule/jsp/fileview.jsp" />
+	</screen>
+
+	<!-- 스케줄 화면 -->
+	<screen name="BatchSchedule">
+		<parameter key="title" value="Schedule" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/schedule/jsp/batchSchedule.jsp" />
+	</screen>
+	
+	<!-- 스케줄 프로그램 팝업 화면-->
+ 	 <screen name="ESM_HJS_0101" template="templatePop">
+        <parameter key="title"    value="Schedule " direct="true"/>
+        <parameter key="body"     value="syscommon/management/opus/schedule/jsp/batchSchedulePop.jsp"/>
+    </screen>
+    
+	<!--  main bookmark-->
+	<screen name="mainBookmark" template="templateNoneJS">
+		<parameter key="title" value="Main Bookmark" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/bookmark/jsp/mainBookmark.jsp" />
+	</screen>
+
+	<!--  View bookmark-->
+	<screen name="viewBookmark" template="templateNoneJS">
+		<parameter key="title" value="View Bookmark" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/bookmark/jsp/viewBookmark.jsp" />
+	</screen>
+
+	<!--  Bookmark Management-->
+	<screen name="BOOKMARK" template="templateEmpty">
+		<parameter key="title" value="Bookmark Manage" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/bookmark/jsp/UI_COM_BOOKMARK.jsp" />
+	</screen>
+
+	<!-- Move bookmark-->
+	<screen name="MOVEBOOKMARK" template="templateNoneJS">
+		<parameter key="title" value="Move Bookmark" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/bookmark/jsp/moveBookmark.jsp" />
+	</screen>
+
+	<!-- Create bookmark-->
+	<screen name="CREATEBOOKMARK" template="templateNoneJS">
+		<parameter key="title" value="Create Bookmark" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/bookmark/jsp/bookMarkPop.jsp" />
+	</screen>
+
+	<screen name="CREATEREMOVEBOOKMARK" template="templateNoneJS">
+		<parameter key="body"
+			value="syscommon/management/opus/bookmark/jsp/reloadBookmark.jsp" />
+	</screen>
+
+	<!-- User별 프로그램 매핑 -->
+	<screen name="userProgramMapping" template="templatePop">
+		<parameter key="title" value="User Program Mapping" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/role/jsp/userprogrammapping.jsp" />
+	</screen>
+
+	<!-- Office별 프로그램 매핑 -->
+	<screen name="ADM_SYS_0006">
+		<parameter key="title" value="Office Program Mapping" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/officeprogram/jsp/ADM_SYS_0006.jsp" />
+	</screen>
+
+	<!--  역할별 프로그램 매핑 -->
+	<screen name="ADM_SYS_0006Pop" template="templatePop">
+		<parameter key="title" value="Office Program Mapping" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/officeprogram/jsp/ADM_SYS_0006Pop.jsp" />
+	</screen>
+	
+	<!-- Jung In Sun : 2009-07-02 start -->
+    <screen name="Office_Management" template="templatePop">
+        <parameter key="title"    value="Office" direct="true" />
+        <parameter key="body"     value="syscommon/management/opus/officemanagement/jsp/office_management.jsp"/>
+    </screen>
+	<!-- Jung In Sun : 2009-07-02 end -->
+	
+
+	<!-- BackEndJob management -->
+    <screen name="COM_BACKENDJOB">
+        <parameter key="title"    value="COM_BACKENDJOB" direct="true"/>
+        <parameter key="body"     value="syscommon/management/opus/console/backendjob/jsp/com_backendjob.jsp"/>
+    </screen>
+    
+    <!--  사용자 오피스 체인지 관리 -->
+  <screen name="ADM_SYS_0008">
+    <parameter key="body"  value="syscommon/management/opus/usermanagement/jsp/ADM_SYS_0008.jsp" />
+  </screen>
+
+  <screen name="ADM_SYS_0008Pop" template="templatePop">
+    <parameter key="body"  value="syscommon/management/opus/usermanagement/jsp/ADM_SYS_0008.jsp" />
+  </screen>
+  
+	<screen name="UserInfo" template="templatePop">
+       <parameter key="title"    value="" direct="true"/>
+       <parameter key="body"     value="syscommon/management/opus/usermanagement/jsp/userInfo.jsp"/>
+   	</screen>
+   	
+   	<screen name="Dctionary" template="templatePop">
+       <parameter key="title"    value="" direct="true"/>
+       <parameter key="body"     value="syscommon/management/opus/dctionary/jsp/dctionary.jsp"/>
+   	</screen>
+
+	<!-- kyungbum kim : 2010-02-01 start -->
+    <screen name="ADM_ACS_0001">
+        <parameter key="title"    value="AccessHistory" direct="true"/>
+        <parameter key="body"     value="syscommon/management/opus/accesshistory/jsp/ADM_ACS_0001.jsp"/>
+    </screen>
+	<!-- kyungbum kim : 2010-02-01 end -->
+
+	<!-- kyungbum kim : 2010-02-22 start -->
+    <screen name="ADM_ACS_0002">
+        <parameter key="title"    value="LastLoginDate" direct="true"/>
+        <parameter key="body"     value="syscommon/management/opus/accesshistory/jsp/ADM_ACS_0002.jsp"/>
+    </screen>
+	<!-- kyungbum kim : 2010-02-22 end -->
+
+	<!-- kyungbum kim : 2010-02-22 start -->
+    <screen name="ADM_SYS_0010">
+        <parameter key="title"    value="CopyAuthority" direct="true"/>
+        <parameter key="body"     value="syscommon/management/opus/copyauthority/jsp/ADM_SYS_0010.jsp"/>
+    </screen>
+	<!-- kyungbum kim : 2010-02-22 end -->
+    <screen name="ADM_SYS_0010Pop" template="templatePop">
+        <parameter key="title"    value="CopyAuthority" direct="true"/>
+        <parameter key="body"     value="syscommon/management/opus/copyauthority/jsp/ADM_SYS_0010.jsp"/>
+    </screen>
+
+	<!-- kyungbum kim : 2010-02-28 start -->
+    <screen name="ADM_SYS_0009">
+        <parameter key="title"    value="SuperUserManagement" direct="true"/>
+        <parameter key="body"     value="syscommon/management/opus/superuser/jsp/ADM_SYS_0009.jsp"/>
+    </screen>
+	<!-- kyungbum kim : 2010-02-28 end -->
+
+	<!-- kjy : 2013-06-28 start -->
+	<screen name="ADM_SYS_0011">
+		<parameter key="title" value="Item Control Management" direct="true" />
+		<parameter key="body"
+			value="syscommon/management/opus/itemcontrolmanagement/jsp/ADM_SYS_0011.jsp" />
+	</screen> 
+	<!-- kjy : 2013-06-28 end -->
+	
+	<!-- jLee : 2013-06-28 start --> 
+	<screen name="ADM_SYS_0012">
+		<parameter key="title" value="Code Management" direct="true" />
+		<parameter key="body"  value="syscommon/management/opus/codemanagement/jsp/ADM_SYS_0012.jsp" />
+	</screen> 
+	<!-- jLee : 2013-06-28 end -->
+
+	<!-- SWJean : 2014-12-01 start --> 
+	<screen name="ADM_SYS_0013">
+		<parameter key="title" value="Fax Management" direct="true" />
+		<parameter key="body"  value="syscommon/management/opus/faxmanagement/jsp/ADM_SYS_0013.jsp" />
+	</screen> 
+	<!--SWJean : 2014-12-018 end -->
+
+	<!-- JeongHoon,Kim start --> 
+	<screen name="ADM_SYS_0014">
+		<parameter key="title" value="MQ Inbound Monitoring" direct="true" />
+		<parameter key="body"  value="syscommon/management/opus/mqinboundmonitoring/jsp/ADM_SYS_0014.jsp" />
+	</screen> 
+	<!--JeongHoon,Kim end -->
+
+	<!-- JeongHoon,Kim start --> 
+	<screen name="ADM_SYS_0015">
+		<parameter key="title" value="Notice Mail Sender" direct="true" />
+		<parameter key="body"  value="syscommon/management/opus/mail/jsp/ADM_SYS_0015.jsp" />
+	</screen> 
+	<!--JeongHoon,Kim end -->
+
+	<!-- JeongHoon,Kim start --> 
+	<screen name="ADM_SYS_0016">
+		<parameter key="title" value="Mail Monitoring Sender" direct="true" />
+		<parameter key="body"  value="syscommon/management/opus/mailmonitoring/jsp/ADM_SYS_0016.jsp" />
+	</screen> 
+	<!--JeongHoon,Kim end -->
+
+	<!-- JeongHoon,Kim start --> 
+	<screen name="ADM_SYS_0017">
+		<parameter key="title" value="Mail Monitoring Sender" direct="true" />
+		<parameter key="body"  value="syscommon/management/opus/mailmonitoring/jsp/ADM_SYS_0017.jsp" />
+	</screen> 
+	<!--JeongHoon,Kim end -->
+	
+</screen-definitions>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<!-- message -->
+	<screen name="Message" template="templatePop">
+		<parameter key="title" value="Message" direct="true" />
+		<parameter key="body" value="syscommon/common/message/jsp/message.jsp" />
+	</screen>
+
+	<screen name="MessageCheck" template="templateNoneJS">
+		<parameter key="title" value="Message" direct="true" />
+		<parameter key="body" value="syscommon/common/message/jsp/messageCheck.jsp" />
+	</screen>
+
+	<!-- Mail -->
+	<screen name="Mail" template="templatePop">
+		<parameter key="title" value="Mail Management" direct="true" />
+		<parameter key="body" value="syscommon/common/mail/jsp/UI_email_02.jsp" />
+	</screen>
+
+	<!-- File Upload Popup -->
+	<screen name="FileUpload" template="templatePop">
+		<parameter key="title" value="File Upload Management" direct="true" />
+		<parameter key="body" value="syscommon/common/fileupload/jsp/UI_Fileupload_01.jsp" />
+	</screen>
+
+	<!-- Mail Resend Popup -->
+	<screen name="MailResend" template="templatePop">
+		<parameter key="title" value="Mail Resend Management" direct="true" />
+		<parameter key="body" value="syscommon/common/mail/jsp/UI_email_resend_01.jsp" />
+	</screen>
+
+	<screen name="COM_MAIL_COMMON_POPUP_MODAL" template="templatePop">
+		<parameter key="title" value="COM_MAIL_COMMON_POPUP_MODAL" direct="true" />
+		<parameter key="body" value="syscommon/common/mail/jsp/COM_MAIL_COMMON_POPUP_MODAL.jsp" />
+	</screen>
+	
+	<!-- RD Common Popup -->
+	<screen name="COM_RD_COMMON_POPUP" template="templatePop">
+		<parameter key="title" value="COM_RD_COMMON_POPUP" direct="true" />
+		<parameter key="body" value="syscommon/common/reportdesigner/commonpopup/jsp/COM_RD_COMMON_POPUP.jsp" />
+	</screen>
+	
+	<screen name="COM_RD_COMMON_POPUP_MODAL" template="templatePop">
+		<parameter key="title" value="COM_RD_COMMON_POPUP_MODAL" direct="true" />
+		<parameter key="body" value="syscommon/common/reportdesigner/commonpopup/jsp/COM_RD_COMMON_POPUP_MODAL.jsp" />
+	</screen>
+	
+	<screen name="commonRD" template="templatePop">
+		<parameter key="title" value="commonRD" direct="true" />
+		<parameter key="body" value="rpt/jsp/rdReport.jsp" />
+	</screen>
+	
+	<screen name="comRDFrame01" template="templateNoneJS">
+        <parameter key="title"    value="common RD frame" direct="true"/>
+        <parameter key="body"     value="syscommon/common/reportdesigner/commonframe/jsp/COM_RD_FRAME_01.jsp"/>
+    </screen>
+    
+    <screen name="comRDFrame02" template="templateNoneJS">
+        <parameter key="title"    value="common RD frame" direct="true"/>
+        <parameter key="body"     value="syscommon/common/reportdesigner/commonframe/jsp/COM_RD_FRAME_02.jsp"/>
+    </screen>
+    
+    <screen name="comRDFrame03" template="templateNoneJS">
+        <parameter key="title"    value="common RD frame" direct="true"/>
+        <parameter key="body"     value="syscommon/common/reportdesigner/commonframe/jsp/COM_RD_FRAME_03.jsp"/>
+    </screen>
+    
+    <screen name="comRDFrame04" template="templateNoneJS">
+        <parameter key="title"    value="common RD frame" direct="true"/>
+        <parameter key="body"     value="syscommon/common/reportdesigner/commonframe/jsp/COM_RD_FRAME_04.jsp"/>
+    </screen>
+    
+    <screen name="comRDFrame05" template="templateNoneJS">
+        <parameter key="title"    value="common RD frame" direct="true"/>
+        <parameter key="body"     value="syscommon/common/reportdesigner/commonframe/jsp/COM_RD_FRAME_05.jsp"/>
+    </screen>
+    
+</screen-definitions>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SubContinentDBDAOTotalContinentRSQL">
+			<desc><![CDATA[Continent의 총 카운트를 조회한다.]]></desc>
+			<sql><![CDATA[
+SELECT count(*)
+FROM mdm_subcontinent ms left outer join mdm_continent m  ON ms.conti_cd = m.conti_cd
+WHERE 1 = 1 
+
+#if (${mdm_yn} != '')
+	#if (${delt_flg} == 'Y') 
+		AND ms.DELT_FLG = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+	#else 
+		AND ms.DELT_FLG <> 'Y'
+	#end
+#else	
+	AND ms.DELT_FLG <> 'Y'
+#end
+
+#if(${sconti_cd} != '')
+AND ms.sconti_cd LIKE @[sconti_cd] || '%'
+#end
+
+#if(${sconti_nm} != '')
+AND upper(ms.sconti_nm) LIKE '%' || upper(@[sconti_nm]) || '%'
+#end
+
+ORDER BY ms.sconti_cd			]]></sql>
+			<params>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="sconti_cd" type="12" value="" out="N"/>
+				<param name="sconti_nm" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

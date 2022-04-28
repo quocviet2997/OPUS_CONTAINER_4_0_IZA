@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchArRouteRankListRSQL">
+			<desc><![CDATA[SearchArRouteRankList]]></desc>
+			<sql><![CDATA[
+SELECT  'I' IBFLAG
+       ,RLANE_CD
+       ,RNK_SEQ
+       ,RLANE_CD H_RLANE_CD
+       ,RNK_SEQ H_RNK_SEQ
+       ,RLANE_DESC
+       ,ZN_IOC_CD
+       ,IOC_DESC
+       ,SLAN_CD
+       ,DELT_FLG
+       ,CRE_USR_ID
+       ,UPD_USR_ID
+       ,'' CHANGE_FLG
+  FROM AR_ROUT_RNK
+ WHERE 1 = 1--EXISTS (SELECT 'Y' FROM AR_ROUT_RNK 
+                --WHERE 1 = 1 
+                #if (${slan_cd} != '')
+                  AND SLAN_CD IN (${slan_cd})
+                #end
+                #if (${rlane_cd} != '')
+                  AND RLANE_CD IN (${rlane_cd})
+                #end
+                #if (${delt_flg} != '')
+                  AND DELT_FLG = @[delt_flg]
+                #end--)
+ ORDER BY RNK_SEQ ASC			]]></sql>
+			<params>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

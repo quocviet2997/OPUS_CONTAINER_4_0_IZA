@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SinhVienDBDAOSinhVienVORSQL">
+			<desc><![CDATA[SELECT khoahoc,
+count(sv_id) AS soLuong,
+sum(hocphi) AS tongHocPhi
+FROM SinhVien
+GROUP BY khoahoc 
+ORDER BY khoahoc]]></desc>
+			<sql><![CDATA[
+SELECT 
+	SV_ID
+,	TEN
+,	TUOI
+,	KHOAHOC
+,	HOCPHI
+,	TO_CHAR(NGAYNHAPHOC, 'YYYY-MM-DD') AS NGAYNHAPHOC
+FROM SINHVIEN
+WHERE 1=1
+#if (${ten} != '' ) 
+AND TEN = @[ten]
+#end
+#if (${tuoi} != '' )
+AND	TUOI = @[tuoi]
+#end
+#if (${khoahoc} != '' && ${khoahoc}) 
+AND KHOAHOC IN (
+	#foreach($key IN ${obj_list_no}) #if($velocityCount < $obj_list_no.size()) '$key', #else '$key' #end #end
+)
+#end
+ORDER BY SV_ID			]]></sql>
+			<params>
+				<param name="ten" type="12" value="" out="N"/>
+				<param name="tuoi" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

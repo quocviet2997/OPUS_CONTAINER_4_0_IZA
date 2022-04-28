@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- NAMKOONG Jin Ho : 2009-07-23 start -->
+    <url-mapping url="ESD_SPE_0001.do" screen="ESD_SPE_0001.screen" >
+        <web-action-class>com.clt.apps.opus.esd.spe.mastermanage.evaluationgroupmanage.event.ESD_SPE_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_SPE_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.spe.mastermanage.evaluationgroupmanage.event.ESD_SPE_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.spe.mastermanage.evaluationgroupmanage.event.EsdSpe0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.spe.mastermanage.MasterManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONG Jin Ho : 2009-07-23 end -->
+
+	<!-- NAMKOONG Jin Ho : 2009-07-27 start -->
+    <url-mapping url="ESD_SPE_0002.do" screen="ESD_SPE_0002.screen" >
+        <web-action-class>com.clt.apps.opus.esd.spe.mastermanage.serviceprovidercategorymanage.event.ESD_SPE_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_SPE_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.spe.mastermanage.serviceprovidercategorymanage.event.ESD_SPE_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.spe.mastermanage.serviceprovidercategorymanage.event.EsdSpe0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.spe.mastermanage.MasterManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONG Jin Ho : 2009-07-27 end -->
+
+	<!-- NAMKOONG Jin Ho : 2009-08-03 start -->
+    <url-mapping url="ESD_SPE_0014.do" screen="ESD_SPE_0014.screen" >
+        <web-action-class>com.clt.apps.opus.esd.spe.mastermanage.evaluationgroupserviceprovidermanage.event.ESD_SPE_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_SPE_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.spe.mastermanage.evaluationgroupserviceprovidermanage.event.ESD_SPE_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.spe.mastermanage.evaluationgroupserviceprovidermanage.event.EsdSpe0014Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.spe.mastermanage.MasterManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONG Jin Ho : 2009-08-03 end -->
+
+	
+	<!-- NAMKOONG Jin Ho : 2009-08-05 start -->
+    <url-mapping url="ESD_SPE_0008.do" screen="ESD_SPE_0008.screen" >
+        <web-action-class>com.clt.apps.opus.esd.spe.evaluationgrouptargetmanage.evaluationgroupkpitargetmanage.event.ESD_SPE_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_SPE_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.spe.evaluationgrouptargetmanage.evaluationgroupkpitargetmanage.event.ESD_SPE_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.spe.evaluationgrouptargetmanage.evaluationgroupkpitargetmanage.event.EsdSpe0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.spe.evaluationgrouptargetmanage.EvaluationGroupTargetManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONG Jin Ho : 2009-08-05 end -->
+	
+	<!-- Kown Jeong hwa : 2009-07-22 start -->
+    <url-mapping url="ESD_SPE_0009.do" screen="ESD_SPE_0009.screen" >
+        <web-action-class>com.clt.apps.opus.esd.spe.evaluationgrouptargetmanage.evaluationgroupterminalkpimanage.event.ESD_SPE_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_SPE_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.spe.evaluationgrouptargetmanage.evaluationgroupterminalkpimanage.event.ESD_SPE_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.spe.evaluationgrouptargetmanage.evaluationgroupterminalkpimanage.event.EsdSpe0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.spe.evaluationgrouptargetmanage.EvaluationGroupTargetManageSC</service-action-class>
+    </event-mapping>
+	<!-- Kown Jeong hwa : 2009-07-22 end -->
+
+	<!-- Kown Jeong hwa : 2009-07-27 start -->
+    <url-mapping url="ESD_SPE_0003.do" screen="ESD_SPE_0003.screen" >
+        <web-action-class>com.clt.apps.opus.esd.spe.evaluationgrouptargetmanage.evaluationgroupstrategicimportancemanage.event.ESD_SPE_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_SPE_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.spe.evaluationgrouptargetmanage.evaluationgroupstrategicimportancemanage.event.ESD_SPE_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.spe.evaluationgrouptargetmanage.evaluationgroupstrategicimportancemanage.event.EsdSpe0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.spe.evaluationgrouptargetmanage.EvaluationGroupTargetManageSC</service-action-class>
+    </event-mapping>
+	<!-- Kown Jeong hwa : 2009-07-27 end -->	
+
+	<!-- Kown Jeong hwa : 2009-08-03 start -->
+    <url-mapping url="ESD_SPE_0004.do" screen="ESD_SPE_0004.screen" >
+        <web-action-class>com.clt.apps.opus.esd.spe.serviceproviderresultmanage.serviceproviderrelationshipattractivenessresult.event.ESD_SPE_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_SPE_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.spe.serviceproviderresultmanage.serviceproviderrelationshipattractivenessresult.event.ESD_SPE_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.spe.serviceproviderresultmanage.serviceproviderrelationshipattractivenessresult.event.EsdSpe0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.spe.serviceproviderresultmanage.ServiceProviderResultManageSC</service-action-class>
+    </event-mapping>
+	<!-- Kown Jeong hwa : 2009-08-03 end -->
+
+	<!-- Kown Jeong hwa : 2009-08-06 start -->
+    <url-mapping url="ESD_SPE_0005.do" screen="ESD_SPE_0005.screen" >
+        <web-action-class>com.clt.apps.opus.esd.spe.serviceproviderresultmanage.serviceproviderrelationshipsegmentationresult.event.ESD_SPE_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_SPE_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.spe.serviceproviderresultmanage.serviceproviderrelationshipsegmentationresult.event.ESD_SPE_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.spe.serviceproviderresultmanage.serviceproviderrelationshipsegmentationresult.event.EsdSpe0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.spe.serviceproviderresultmanage.ServiceProviderResultManageSC</service-action-class>
+    </event-mapping>
+	<!-- Kown Jeong hwa : 2009-08-06 end -->
+
+</mappings>

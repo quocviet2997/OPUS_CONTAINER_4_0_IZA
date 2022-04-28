@@ -1,0 +1,786 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	 
+	<!--  Sample page -->
+	<screen name="bizcommon.sample">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/sample/index.html" />
+    </screen> 
+    
+	<!-- Multiple Inquiry -->
+	<screen name="COM_ENS_0906" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="bizcommon/approval/jsp/COM_ENS_0906.jsp" />
+	</screen>
+    
+	<!--  Commodity Popup -->
+    <screen name="COM_ENS_011" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/commodity/jsp/COM_ENS_011.jsp" />
+    </screen>
+
+	<!--  Commodity Popup Grid 1 -->
+    <screen name="COM_ENS_011GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/commodity/jsp/COM_ENS_011GS.jsp" />
+    </screen>
+    
+	<!--  Commodity Popup -->
+    <screen name="COM_ENS_012" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/commodity/jsp/COM_ENS_012.jsp" />
+    </screen>
+
+	<!--  Commodity Popup Grid 1 -->
+    <screen name="COM_ENS_012GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/commodity/jsp/COM_ENS_012GS.jsp" />
+    </screen>
+
+	<!--  Contract No search -->
+    <screen name="COM_ENS_021" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/contractno/jsp/COM_ENS_021.jsp" />
+    </screen>
+
+    <!--  Contract No search Grid 1 -->
+    <screen name="COM_ENS_021GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/contractno/jsp/COM_ENS_021GS.jsp" />
+    </screen>
+
+	<!--  Customer_01 -->
+    <screen name="COM_ENS_041" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/customer/jsp/COM_ENS_041.jsp" />
+    </screen>
+	
+	<!--  Customer_Group -->
+    <screen name="COM_COM_0006" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/custgroup/jsp/COM_COM_0006.jsp" />
+    </screen>
+	
+    <!--  Customer Grid 1 -->
+    <screen name="COM_ENS_0MAINS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/customer/jsp/COM_ENS_041GS.jsp" />
+    </screen>     
+
+    <!--  Customer_02 -->
+    <screen name="COM_ENS_042" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/actualcustomer/jsp/COM_ENS_042.jsp" />
+    </screen>
+
+    <!--  Customer_02 Grid 1 -->
+    <screen name="COM_ENS_042GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/actualcustomer/jsp/COM_ENS_042GS.jsp" />
+    </screen>
+
+    <!--  Customer_02 Grid 2 -->
+    <screen name="COM_ENS_042GS2" template="templateIBSheet">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/actualcustomer/jsp/COM_ENS_042GS2.jsp" />
+    </screen>
+
+	 <!--  Location search( Popup) -->
+    <screen name="COM_ENS_051" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/location/jsp/COM_ENS_051.jsp" />
+    </screen>
+
+    <!--  Location search( Popup) Grid 1 -->
+    <screen name="COM_ENS_051GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/location/jsp/COM_ENS_051GS.jsp" />
+    </screen>
+
+	<!--  Node search( Popup) -->
+    <screen name="COM_ENS_061" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/node/jsp/COM_ENS_061.jsp" />
+    </screen>
+
+    <!--  Node search( Popup) Grid 1 -->
+    <screen name="COM_ENS_061GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/node/jsp/COM_ENS_061GS.jsp" />
+    </screen>
+
+	 <!--  Office search( Popup) -->
+    <screen name="COM_ENS_071" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/office/jsp/COM_ENS_071.jsp" />
+    </screen>
+
+	<!--  Lane search( Popup) -->
+    <screen name="COM_ENS_081" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/lane/jsp/COM_ENS_081.jsp" />
+    </screen>
+
+    <!--  Lane search( Popup) Grid 1 -->
+    <screen name="COM_ENS_081GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/lane/jsp/COM_ENS_081GS.jsp" />
+    </screen>
+
+    <!--  Vesselsearch( Popup) -->
+    <screen name="COM_ENS_0A1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/vessel/jsp/COM_ENS_0A1.jsp" />
+    </screen>
+
+    <!--  Vesselsearch( Popup) Grid 1 -->
+    <screen name="COM_ENS_0A1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/vessel/jsp/COM_ENS_0A1GS.jsp" />
+    </screen>
+
+	<!--  Vessel SKDsearch( Popup) -->
+    <screen name="COM_ENS_0B1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/vessel_skd/jsp/COM_ENS_0B1.jsp" />
+    </screen>
+
+    <!--  Vessel SKD search( Popup) Grid 1 -->
+    <screen name="COM_ENS_0B1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/vessel_skd/jsp/COM_ENS_0B1GS.jsp" />
+    </screen>
+
+     
+    <!--  Vessel SKDsearch( Popup) -->
+    <screen name="COM_ENS_0B2" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/vvd/jsp/COM_ENS_0B2.jsp" />
+    </screen>
+
+    <!--  Vessel SKD search( Popup) Grid 1 -->
+    <screen name="COM_ENS_0B2GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/vvd/jsp/COM_ENS_0B2GS.jsp" />
+    </screen>
+
+    <!--  Service Provider search( Popup) -->
+     <!-- 
+     	   Add-on Author : sungseok, choi
+     	   Add-on Date   : 2006.08.07
+      -->
+    <screen name="COM_ENS_0C1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/serviceprovider/jsp/COM_ENS_0C1.jsp" />
+    </screen>
+
+    <!--  LocaService Providertion search( Popup) Grid 1 -->
+    <screen name="COM_ENS_0C1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/serviceprovider/jsp/COM_ENS_0C1GS.jsp" />
+    </screen>
+
+    <!--  Surcharge search( Popup) -->     
+    <screen name="COM_ENS_0D1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/surcharge/jsp/COM_ENS_0D1.jsp" />
+    </screen>
+
+    <!--  Surcharge search( Popup) Grid 1 -->
+    <screen name="COM_ENS_0D1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/surcharge/jsp/COM_ENS_0D1GS.jsp" />
+    </screen>
+    
+    <!--  EQ Organization Chart( Popup) -->
+    <screen name="COM_ENS_0O1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/eqorgchart/jsp/COM_ENS_0O1.jsp" />
+    </screen>
+
+    <!--  EQ Organization Chart( Popup) Grid 1 -->
+    <screen name="COM_ENS_0O1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/eqorgchart/jsp/COM_ENS_0O1GS.jsp" />
+    </screen>
+ 
+    <!--  Service Scope( Popup) -->
+    <screen name="COM_ENS_0L1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/servicescope/jsp/COM_ENS_0L1.jsp" />
+    </screen>
+
+    <!--  Service Scope( Popup) Grid 1 -->
+    <screen name="COM_ENS_0L1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/servicescope/jsp/COM_ENS_0L1GS.jsp" />
+    </screen>
+  
+    <!--  Country( Popup) -->
+    <screen name="COM_ENS_0M1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/country/jsp/COM_ENS_0M1.jsp" />
+    </screen>
+
+    <!--  Country( Popup) Grid 1 -->
+    <screen name="COM_ENS_0M1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/country/jsp/COM_ENS_0M1GS.jsp" />
+    </screen>
+    
+    <!--  Sales Rep( Popup) -->
+    <screen name="COM_COM_0008" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/salesrep/jsp/COM_COM_0008.jsp" />
+    </screen>
+
+    <!--  Sales Rep( Popup) Grid 1 -->
+    <screen name="COM_COM_0008GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/salesrep/jsp/COM_COM_0008GS.jsp" />
+    </screen>
+
+    <!--  Continent( Popup) -->
+    <screen name="COM_ENS_0H1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/continent/jsp/COM_ENS_0H1.jsp" />
+    </screen>
+
+    <!--  Continent( Popup) Grid 1 -->
+    <screen name="COM_ENS_0H1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/continent/jsp/COM_ENS_0H1GS.jsp" />
+    </screen>
+   
+    <!--  Sub Continent( Popup) -->
+    <screen name="COM_ENS_0I1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/scontinent/jsp/COM_ENS_0I1.jsp" />
+    </screen>
+
+    <!--  Sub Continent( Popup) Grid 1 -->
+    <screen name="COM_ENS_0I1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/scontinent/jsp/COM_ENS_0I1GS.jsp" />
+    </screen>
+    
+    <!--  Trade( Popup) -->
+    <screen name="COM_COM_0012" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/trade/jsp/COM_COM_0012.jsp" />
+    </screen>
+    
+    <!--  Trade( Popup) Grid 1 -->
+    <screen name="COM_COM_0012GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/trade/jsp/COM_COM_0012GS.jsp" />
+    </screen>
+    
+    <!--  Subtrade( Popup) -->
+    <screen name="COM_COM_0013" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/subtrade/jsp/COM_COM_0013.jsp" />
+    </screen>
+    
+    <!--  Subtrade( Popup) Grid 1 -->
+    <screen name="COM_COM_0013GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/subtrade/jsp/COM_COM_0013GS.jsp" />
+    </screen>
+
+    <!--  Region( Popup) -->
+    <screen name="COM_ENS_0J1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/region/jsp/COM_ENS_0J1.jsp" />
+    </screen>
+
+    <!--  Region( Popup) Grid 1 -->
+    <screen name="COM_ENS_0J1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/region/jsp/COM_ENS_0J1GS.jsp" />
+    </screen>
+
+    <!--  Rep Commodity( Popup) -->
+    <screen name="COM_ENS_0K1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/repcommodity/jsp/COM_ENS_0K1.jsp" />
+    </screen>
+
+    <!--  Rep Commodity( Popup) Grid 1 -->
+    <screen name="COM_ENS_0K1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/repcommodity/jsp/COM_ENS_0K1GS.jsp" />
+    </screen>
+
+    <!--  Carrier( Popup) -->
+    <screen name="COM_ENS_0N1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/carrier/jsp/COM_ENS_0N1.jsp" />
+    </screen>
+
+    <!--  Carrier( Popup) Grid 1 -->
+    <screen name="COM_ENS_0N1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/carrier/jsp/COM_ENS_0N1GS.jsp" />
+    </screen>
+
+    <!--  Container Type Size( Popup) -->
+    <screen name="COM_ENS_0G1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/cntrtpsz/jsp/COM_ENS_0G1.jsp" />
+    </screen>
+
+    <!--  Container Type Size( Popup) Grid 1 -->
+    <screen name="COM_ENS_0G1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/cntrtpsz/jsp/COM_ENS_0G1GS.jsp" />
+    </screen>
+
+    <!--  VVD Chart( Popup) -->
+    <screen name="COM_ENS_0P1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/vvdchart/jsp/COM_ENS_0P1.jsp" />
+    </screen>
+
+    <!--  VVD Chart( Popup) Grid 1 -->
+    <screen name="COM_ENS_0P1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/vvdchart/jsp/COM_ENS_0P1GS.jsp" />
+    </screen>
+
+    <!--  Monthly Exchange Rate( Popup) -->
+    <screen name="COM_ENS_0E1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/exrate/monthly/jsp/COM_ENS_0E1.jsp" />
+    </screen>
+
+    <!--  Monthly Exchange Rate( Popup) Grid 1 -->
+    <screen name="COM_ENS_0E1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/exrate/monthly/jsp/COM_ENS_0E1GS.jsp" />
+    </screen>
+
+    <!--  Vvd Exchange Rate( Popup) -->
+    <screen name="COM_ENS_0F1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/exrate/vvd/jsp/COM_ENS_0F1.jsp" />
+    </screen>
+
+    <!--  Vvd Exchange Rate( Popup) Grid 1 -->
+    <screen name="COM_ENS_0F1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/exrate/vvd/jsp/COM_ENS_0F1GS.jsp" />
+    </screen>
+
+    <!--  Staff( Popup) -->
+    <screen name="COM_ENS_091" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/staff/jsp/COM_ENS_091.jsp" />
+    </screen>
+
+    <!--  Staff Popup) Grid 1 -->
+    <screen name="COM_ENS_091GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/staff/jsp/COM_ENS_091GS.jsp" />
+    </screen>
+    
+    <screen name="COM_ENS_092GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/staff/jsp/COM_ENS_092GS.jsp" />
+    </screen>
+   
+    <screen name="COM_ENS_093GS"  template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/staff/jsp/COM_ENS_093GS.jsp" />
+    </screen>
+    
+    <!--  Staff Organization Grid -->
+    <screen name="COM_ENS_091GSDept" template="templateIBSheet">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/staff/jsp/COM_ENS_091GSDept.jsp" />
+    </screen>
+    
+    <screen name="COM_ENS_092GSDept" template="templateIBSheet">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/staff/jsp/COM_ENS_092GSDept.jsp" />
+    </screen>
+    
+    <!--  Local Calendar(Country) -->
+    <screen name="COM_ENS_0S1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/calendar/jsp/COM_ENS_0S1.jsp" />
+    </screen>
+
+    <!--  Local Calendar(Country) Grid 1 -->
+    <screen name="COM_ENS_0S1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/calendar/jsp/COM_ENS_0S1GS.jsp" />
+    </screen>
+    
+    <!--  Local Calendar(State) Grid 1 -->
+    <screen name="COM_ENS_0S2GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/calendar/jsp/COM_ENS_0S2GS.jsp" />
+    </screen>
+    
+    <!--  Local Calendar(Location) Grid 1 -->
+    <screen name="COM_ENS_0S3GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/calendar/jsp/COM_ENS_0S3GS.jsp" />
+    </screen>
+    
+    <!--  Local Calendar(Country/Monthly) Grid 1 -->
+    <screen name="COM_ENS_0S4GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/calendar/jsp/COM_ENS_0S4GS.jsp" />
+    </screen>
+    
+    <!--  State ( Popup) -->
+    <screen name="COM_ENS_0X1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/state/jsp/COM_ENS_0X1.jsp" />
+    </screen>
+
+    <!--  State  Popup) Grid 1 -->
+    <screen name="COM_ENS_0X1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/state/jsp/COM_ENS_0X1GS.jsp" />
+    </screen>
+
+    <!--  Approval Route Manager -->
+    <screen name="COM_ENS_0T1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0T1.jsp?Subscriber=" />
+    </screen>
+    
+    <!--  Approval ( Popup) -->
+    <screen name="COM_ENS_0T1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0T1GS.jsp" />
+    </screen>
+    
+    <!--  Approval Organization Grid -->
+    <screen name="COM_ENS_0T1GSDept" template="templateIBSheet">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0T1GSDept.jsp" />
+    </screen>
+    
+    <!--  Approval Organization Grid -->
+    <screen name="COM_ENS_0T1GSRoute" template="templateIBSheet">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0T1GSRoute.jsp" />
+    </screen>
+   
+        <!--  Approval ( Popup) -->
+    <screen name="COM_ENS_0T2" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0T2.jsp" />
+    </screen>
+    
+    <!--  Approval ( Popup) -->
+    <screen name="COM_ENS_0T2GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0T2GS.jsp" />
+    </screen>
+    
+    <!--  Approval Organization Grid -->
+    <screen name="COM_ENS_0T2GSDept" template="templateIBSheet">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0T2GSDept.jsp" />
+    </screen>
+    
+    <!--  Approval Organization Grid -->
+    <screen name="COM_ENS_0T2GSRoute" template="templateIBSheet">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0T2GSRoute.jsp" />
+    </screen>
+
+    <!--  Approval Route Manager 
+    <screen name="COM_ENS_0V1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0V1.jsp?Subscriber=" />
+    </screen>
+    -->
+    <!--  Approval Route Manager -->
+    <screen name="COM_ENS_0V1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0V1GS.jsp" />
+    </screen>
+    
+    <!--  Approval Route Manager -->
+    <screen name="COM_ENS_0V1GSDept" template="templateIBSheet">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0V1GSDept.jsp" />
+    </screen>
+    
+    <!--  Approval Route Manager -->
+    <screen name="COM_ENS_0V1GSRoute" template="templateIBSheet">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0V1GSRoute.jsp" />
+    </screen>
+    
+    <!--  Approval Inquiry ( Popup) -->
+    <screen name="COM_ENS_0U1">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0U1.jsp" />
+    </screen>
+    
+    <!--  Approval Inquiry ( Popup) -->
+    <screen name="COM_ENS_0U1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0U1GS.jsp" />
+    </screen>
+    
+    <!--  Approval Inquiry Organization Grid -->
+    <screen name="COM_ENS_0U1GSDept" template="templateIBSheet">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0U1GSDept.jsp" />
+    </screen>
+    
+    <!--  Approval Inquiry Organization Grid -->
+    <screen name="COM_ENS_0U1GSRoute" template="templateIBSheet">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0U1GSRoute.jsp" />
+    </screen>
+
+	<!--  Unapproved CSR Inquiry Popup -->
+    <screen name="COM_ENS_0Y1">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0Y1.jsp" />
+    </screen>
+
+    <!--  Approval Step ( Popup) -->
+    <screen name="COM_ENS_0W1" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0W1.jsp" />
+    </screen>
+
+    <!--  Approval Step ( Popup) Grid 1 -->
+    <screen name="COM_ENS_0W1GS" template="templateIBSheet">
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0W1GS.jsp" />
+    </screen>
+
+    <!--  organization chart common pop up -->
+    <screen name="orgchart" template="templatePop">
+        <parameter key="title"    value="Organization Chart" direct="true"/>
+        <parameter key="body"     value="bizcommon/orgchart/jsp/orgchart.jsp?Subscriber=" />
+    </screen>    
+
+	<screen name="COM_ENS_092" template="templatePop">
+        <parameter key="title"    value="Organization Chart" direct="true"/>
+        <parameter key="body"     value="bizcommon/orgchart/jsp/orgchart.jsp?Subscriber=COM_ENS_092" />
+    </screen>
+    
+	
+	<!-- Suk Jun Kim : 2009-04-20 start -->
+    <screen name="COM_ENS_N11" template="templatePop">
+        <parameter key="title"    value="Account Code" direct="true"/>
+        <parameter key="body"     value="bizcommon/account/jsp/COM_ENS_N11.jsp"/>
+    </screen>
+	<!-- Suk Jun Kim : 2009-04-20 end -->
+    
+	<!-- Eui-su Park : 2009-04-20 start -->
+    <screen name="COM_ENS_N13" template="templatePop">
+        <parameter key="title"    value="Currency Code" direct="true"/>
+        <parameter key="body"     value="bizcommon/currency/jsp/COM_ENS_N13.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-04-20 end -->
+    
+	<!-- Ji-Seok Woo : 2009-04-25 start -->
+    <screen name="UI_BKG_0696" template="templatePop">
+        <parameter key="title"    value="PackageType Code" direct="true"/>
+        <parameter key="body"     value="bizcommon/packagetype/jsp/UI_BKG_0696.jsp"/>
+    </screen>
+	<!-- Ji-Seok Woo : 2009-04-25 end -->
+	
+	<!-- SEO CHANG YUL : 2009-04-28 start -->
+    <screen name="UI_COM_ENS_N12" template="templatePop">
+        <parameter key="title"    value="Revenue VVD Inquiry" direct="true"/>
+        <parameter key="body"     value="bizcommon/revenuevvd/jsp/UI_COM_ENS_N12.jsp"/>
+    </screen>
+	<!-- SEO CHANG YUL : 2009-04-28 end -->
+	
+	<!-- PARK KWANG SEOK : 2009-04-28 start -->
+    <screen name="UI_PRI_4002" template="templatePop">
+        <parameter key="title"    value="Rating Unit Inquiry" direct="true"/>
+        <parameter key="body"     value="bizcommon/pertype/jsp/UI_PRI_4002.jsp"/>
+    </screen>
+	<!-- PARK KWANG SEOK : 2009-04-28 end -->
+	
+	<!-- HAN DONG HOON : 2009-06-10 start -->
+	<screen name="FNS_INV_0086" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/arinvoicecustomermgt/jsp/FNS_INV_0086.jsp" />
+    </screen>
+    <!-- HAN DONG HOON : 2009-06-10 end -->
+
+	<!-- KYUNG MIN WOO : 2009-06-10 start -->
+	<screen name="UI_CTM_0435" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/logicsserviceprovider/jsp/UI_CTM_0435.jsp" />
+    </screen>
+    <!-- KYUNG MIN WOO : 2009-06-10 end -->
+    
+    <screen name="locationCodeInquiry" template="templatePop">
+        <parameter key="title"    value="" direct="true"/>
+        <parameter key="body"     value="bizcommon/location/jsp/locationCodeInquiry.jsp" />
+    </screen>
+	
+	<screen name="COM_ENS_COMMON" template="">
+        <parameter key="title"    value="" direct="true"/>
+        <parameter key="body"     value="bizcommon/common/COM_ENS_COMMON.jsp" />
+    </screen>
+    
+    <!--  메인 화면으로 사용할 .screen -->
+    
+    <!--  Continent( Popup) -->
+    <screen name="COM_MAIN_0H1" >
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/continent/jsp/COM_ENS_0H1.jsp" />
+    </screen>
+    
+    <!--  Sub Continent( Popup) -->
+    <screen name="COM_MAIN_0I1" >
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/scontinent/jsp/COM_ENS_0I1.jsp" />
+    </screen>
+    
+    <!--  Country( Popup) -->
+    <screen name="COM_MAIN_0M1" >
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/country/jsp/COM_ENS_0M1.jsp" />
+    </screen>
+    
+    <!--  Sales Rep( Popup) -->
+    <screen name="COM_MAIN_0008" >
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/salesrep/jsp/COM_COM_0008.jsp" />
+    </screen>
+    
+    <!--  Region( Popup) -->
+    <screen name="COM_MAIN_0J1" >
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/region/jsp/COM_ENS_0J1.jsp" />
+    </screen>
+    
+    <!--  Location search( Popup) -->
+    <screen name="COM_MAIN_051" >
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/location/jsp/COM_ENS_051.jsp" />
+    </screen>
+    
+    <!--  Node search( Popup) -->
+    <screen name="COM_MAIN_061" >
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/node/jsp/COM_ENS_061.jsp" />
+    </screen>
+    
+    <screen name="COM_MAIN_N13" >
+        <parameter key="title"    value="Currency Code" direct="true"/>
+        <parameter key="body"     value="bizcommon/currency/jsp/COM_ENS_N13.jsp"/>
+    </screen>
+    
+    <screen name="COM_MAIN_011" >
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/commodity/jsp/COM_ENS_011.jsp" />
+    </screen>
+    
+    <screen name="COM_MAIN_012" >
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/commodity/jsp/COM_ENS_012.jsp" />
+    </screen>
+    
+    <!--  Rep Commodity( Popup) -->
+    <screen name="COM_MAIN_0K1" >
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/repcommodity/jsp/COM_ENS_0K1.jsp" />
+    </screen>
+    
+    <!--  Vesselsearch( Popup) -->
+    <screen name="COM_MAIN_0A1" >
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/vessel/jsp/COM_ENS_0A1.jsp" />
+    </screen>
+    
+     <!--  Office search( Popup) -->
+    <screen name="COM_MAIN_071" >
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/office/jsp/COM_ENS_071.jsp" />
+    </screen>
+    
+    <screen name="COM_MAIN_091" >
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/staff/jsp/COM_ENS_091.jsp" />
+    </screen>
+    
+    <!--  Approval Route Manager -->
+    <screen name="COM_ENS_0V1" >
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0V1.jsp?Subscriber=" />
+    </screen>
+    
+    <screen name="COM_MAIN_0F1">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/exrate/vvd/jsp/COM_ENS_0F1.jsp" />
+    </screen>
+    <!--  메인 화면으로 사용할 .screen -->
+
+	<!-- Kim Jong Ock : 2012-02-17 start -->
+    <screen name="COM_COM_0010" template="templatePop">
+        <parameter key="title"    value="Movement Status Code Pop-up" direct="true"/>
+        <parameter key="body"     value="bizcommon/movement/jsp/COM_COM_0010.jsp"/>
+    </screen>
+	<!-- Kim Jong Ock : 2012-02-17 end -->
+	
+	<!-- JungHo Min : 2012-02-14 start -->
+    <screen name="COM_COM_0002" template="templatePop">
+        <parameter key="title"    value="CNTR Type" direct="true"/>
+        <parameter key="body"     value="bizcommon/cntrtype/jsp/COM_COM_0002.jsp"/>
+    </screen>
+	<!-- JungHo Min : 2012-02-14 end -->
+	
+	<!-- JungHo Min : 2012-02-14 start -->
+    <screen name="COM_COM_0003" template="templatePop">
+        <parameter key="title"    value="CNTR Size" direct="true"/>
+        <parameter key="body"     value="bizcommon/cntrsize/jsp/COM_COM_0003.jsp"/>
+    </screen>
+	<!-- JungHo Min : 2012-02-14 end -->  
+	
+	<!-- Sangbo La : 2012-02-14 start -->
+    <screen name="COM_COM_0009" template="templatePop">
+        <parameter key="title"    value="Activity Code" direct="true"/>
+        <parameter key="body"     value="bizcommon/activity/jsp/COM_COM_0009.jsp"/>
+    </screen>
+	<!-- Sangbo La : 2012-02-14 end --> 		
+	<!-- JungHo Min : 2012-02-14 end -->  	
+
+	<!-- JungHo Min : 2012-02-14 end --> 
+	 		
+	<!-- Kim Min Soo : 2012-02-21 start -->
+    <screen name="COM_COM_0004"  template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/leasingcompanyyard/jsp/COM_COM_0004.jsp" />
+    </screen>
+    <!-- Kim Min Soo : 2012-02-21 end -->
+    	    
+   <!--  SEO SEOK JIN: 2012-02-21 Revenue Lane search( Popup) start -->
+    <screen name="COM_COM_0011" template="templatePop">
+        <parameter key="title"    value="HanJinPI" direct="true"/>
+        <parameter key="body"     value="bizcommon/revenuelane/jsp/COM_COM_0011.jsp" />
+    </screen>
+   <!-- SEO SEOK JIN : 2012-02-21 end --> 
+   
+   	<!-- Jong-Ho Kim : 2012-02-20 start -->
+    <screen name="COM_COM_0007"  template="templatePop">
+        <parameter key="title"    value="Vendor Code Pop-up" direct="true"/>
+        <parameter key="body"     value="bizcommon/vendorcode/jsp/COM_COM_0007.jsp"/>
+    </screen>
+	<!-- Jong-Ho Kim : 2012-02-20 end -->
+
+    <!-- Junbum Lee : 2012-02-22 start -->
+    <!--  Charge( Popup) -->
+    <screen name="COM_COM_0001" template="templatePop">
+        <parameter key="title"    value="Charge Code Pop" direct="true"/>
+        <parameter key="body"     value="bizcommon/charge/jsp/COM_COM_0001.jsp" />
+    </screen>
+	<!-- Junbum Lee : 2012-02-22 end -->
+	
+	<!-- Junbum Lee : 2012-02-24 start -->
+    <!-- Daylight Saving time Pop-up -->
+    <screen name="COM_COM_0005" template="templatePop">
+        <parameter key="title"    value="Daylight Saving Time(DST) Pop-up" direct="true"/>
+        <parameter key="body"     value="bizcommon/daylightsavingtime/jsp/COM_COM_0005.jsp" />
+    </screen>
+	<!-- Junbum Lee : 2012-02-22 end -->
+	
+	<!-- India Tax : 2017-05-31 start -->
+    <!-- India Tax Pop-up -->
+    <screen name="COM_ENS_T01" template="templatePop">
+        <parameter key="title"    value="India TAX Pop-up" direct="true"/>
+        <parameter key="body"     value="bizcommon/tax/jsp/COM_ENS_T01.jsp" />
+    </screen>
+	<!-- India Tax : 2017-05-31 end -->
+		
+	<screen name="COM_FILE_COMMON" template="templatePop">
+        <parameter key="title"    value="Upload Pop-up" direct="true"/>
+        <parameter key="body"     value="bizcommon/common/jsp/COM_FILE_COMMON.jsp" />
+    </screen>
+    
+    <!--  Approval Inquiry -->
+    <screen name="COM_ENS_0U2">
+        <parameter key="title"    value="Approval Inquiry" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0U2.jsp"/>
+    </screen>
+    
+    <!--  CSR amount limitation setup -->
+    <screen name="COM_ENS_0Z1">
+        <parameter key="title"    value="CSR amount limitation setup" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0Z1.jsp"/>
+    </screen>
+    
+    <!--  CSR amount limitation setup(popup) -->
+    <screen name="COM_ENS_0Z2" template="templatePop">
+        <parameter key="title"    value="CSR amount limitation setup Pop-up" direct="true"/>
+        <parameter key="body"     value="bizcommon/approval/jsp/COM_ENS_0Z2.jsp"/>
+    </screen>
+</screen-definitions>

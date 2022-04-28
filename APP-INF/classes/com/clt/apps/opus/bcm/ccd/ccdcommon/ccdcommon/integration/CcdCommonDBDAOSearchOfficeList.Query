@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOSearchOfficeList">
+			<desc><![CDATA[office code 조회한다.]]></desc>
+			<sql><![CDATA[
+SELECT OFC_CD CD , OFC_CD CD_DESC
+ FROM MDM_ORGANIZATION
+ WHERE OFC_KND_CD IN ('1', '2') AND DELT_FLG <> 'Y'
+ ORDER BY OFC_KND_CD DESC			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

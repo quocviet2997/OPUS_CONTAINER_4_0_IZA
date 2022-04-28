@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOSearchRhqOfcCodeByOfcCodeRSQL">
+			<desc><![CDATA[OFC_CD로 RHQ_OFC_CD를 조회한다.]]></desc>
+			<sql><![CDATA[
+SELECT AR_HD_QTR_OFC_CD AS RHQ_OFC_CD
+  FROM MDM_ORGANIZATION
+ WHERE OFC_CD = @[ofc_cd]
+   AND NVL(DELT_FLG, 'N') = 'N'
+			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<default-template>/template.jsp</default-template>
+
+	<template name="templatePop">
+		<url>/templatePop.jsp</url>
+	</template>
+
+	<template name="templateEmpty">
+		<url>/templateEmpty.jsp</url>
+	</template>
+
+	<template name="templateOPUS">
+		<url>/templateOPUS.jsp</url>
+	</template>
+
+	<template name="templateSPPMNR">
+		<url>/templateSPPMNR.jsp</url>
+	</template>
+
+	<template name="templateENIS">
+		<url>/template-enis.jsp</url>
+	</template>
+
+	<template name="templateIBSheet">
+		<url>/templateIBSheet.jsp</url>
+	</template>
+
+	<template name="templateRD">
+		<url>/templateRD.jsp</url>
+	</template>
+
+	<template name="templateNoneJS">
+		<url>/templateNoneJS.jsp</url>
+	</template>
+
+	<template name="templateSPP">
+		<url>/templateSPP.jsp</url>
+	</template>
+	
+	<template name="templateExcel">
+		<url>/templateExcel.jsp</url>
+	</template>
+	<!-- ======================================================================= 
+		공통 부분 시작 -->
+	
+	<screen name="SignOn" template="templateNoneJS">
+		<parameter key="title" value="OPUS Container!" direct="true" />
+		<parameter key="body" value="/loginTobe.jsp" />
+	</screen>
+
+	<screen name="opusSignOnSSO" template="templateNoneJS">
+		<parameter key="title" value="OPUS Container!" direct="true" />
+		<parameter key="body" value="/loginTobe.jsp" />
+	</screen>
+
+	<screen name="opusSignOn" template="templateNoneJS">
+		<parameter key="title" value="OPUS Container!" direct="true" />
+		<parameter key="body" value="/loginTobe.jsp" />
+	</screen>
+
+	<screen name="SignOff" template="templateNoneJS">
+		<parameter key="title" value="한진해운" direct="true" />
+		<parameter key="body" value="/logout.jsp" />
+	</screen>
+
+	<screen name="SignOffSSO">
+		<parameter key="title" value="한진해운" direct="true" />
+		<parameter key="body" value="/logoutSSO.jsp" />
+	</screen>
+
+	<!-- 로그인에러 메세지 -->
+	<screen name="SignOnError">
+		<parameter key="title" value="한진해운" direct="true" />
+		<parameter key="body" value="/SignOnError.jsp" />
+	</screen>
+
+	<!-- 권한 없음 메세지 -->
+	<screen name="NoAuthority">
+		<parameter key="title" value="한진해운" direct="true" />
+		<parameter key="body" value="/NoAuthority.htm" />
+	</screen>
+
+	<!-- 세션 없음 메세지 -->
+	<screen name="NoSession">
+		<parameter key="title" value="한진해운" direct="true" />
+		<parameter key="body" value="/NoSession.htm" />
+	</screen>
+
+	<!-- 404 Not Found 메세지 -->
+	<screen name="NotFound">
+		<parameter key="title" value="한진해운" direct="true" />
+		<parameter key="body" value="/NotFound.html" />
+	</screen>
+
+	<!-- 501 Not Implemented 메세지 -->
+	<screen name="NotService">
+		<parameter key="title" value="한진해운" direct="true" />
+		<parameter key="body" value="/NotService.htm" />
+	</screen>
+
+	<!-- 로그아웃 페이지 -->
+	<screen name="Logout" template="templatePop">
+		<parameter key="title" value="한진해운" direct="true" />
+		<parameter key="body" value="/co/common/jsp/Logout.jsp" />
+	</screen>
+
+
+	<!-- MAIN PAGE -->
+	<screen name="MainPage" template="templateNoneJS">
+		<parameter key="body" value="/loginTobe.jsp" />
+	</screen>
+
+	<!-- Developement PAGE -->
+	<screen name="DevPage" template="templateDev">
+		<parameter key="leftmenu" value="/left_menu.jsp?group=PG20000" />
+		<parameter key="body" value="/loginTobe.jsp" />
+	</screen>
+
+	<!-- 메뉴 프레임 -->
+	<screen name="opusMain" template="templateOPUS">
+		<parameter key="title" value="OPUS Container!" direct="true" />
+		<parameter key="body" value="body.jsp" direct="true" />
+	</screen>
+
+	<screen name="sppMain" template="templateSPPMNR">
+		<parameter key="title" value="MNR" direct="true" />
+		<parameter key="body" value="body.htm" direct="true" />
+	</screen>
+
+	<screen name="opusMainTobe">
+        <parameter key="body"    value="/opusMainTobe.jsp"/>
+    </screen>
+    
+   	
+   		
+	<screen name="PasswordChange"  template="templateRD">
+        <parameter key="body"     value="/passwordChange.jsp" />
+    </screen>
+    
+   	<!-- ======================================================================= 
+	공통 부분 끝 -->
+</screen-definitions>

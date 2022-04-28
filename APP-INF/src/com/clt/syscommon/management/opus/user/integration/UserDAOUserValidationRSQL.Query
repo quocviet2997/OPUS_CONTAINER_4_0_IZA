@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserDAOUserValidationRSQL">
+			<desc><![CDATA[UserDAOUserValidationRSQL]]></desc>
+			<sql><![CDATA[
+SELECT 
+	NVL(MAX(USR_PWD),'') AS USR_PWD
+FROM COM_USER
+WHERE UPPER(USR_ID) = UPPER(@[usr_id])			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

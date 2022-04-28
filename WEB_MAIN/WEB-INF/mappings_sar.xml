@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_0200.do" screen="STM_SAR_0200.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.STM_SAR_0200HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0200GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.STM_SAR_0200HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.StmSar0200Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.AccountReceivableAgentSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_5001.do" screen="STM_SAR_5001.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.STM_SAR_5001HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_5001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.STM_SAR_5001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.StmSar5001Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.AccountReceivableAgentSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- lee yongjun : 2014-06-16 start -->
+    <url-mapping url="STM_SAR_5005.do" screen="STM_SAR_5005.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.STM_SAR_5005HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_5005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.STM_SAR_5005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.StmSar5005Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.AccountReceivableAgentSC</service-action-class>
+    </event-mapping>
+	<!-- lee yongjun : 2014-06-16 end -->
+	
+	
+	<!-- yongjun Lee : 2014-04-07 start -->
+    <url-mapping url="STM_SAR_5901.do" screen="STM_SAR_5901.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.STM_SAR_5901HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_5901GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.STM_SAR_5901HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.StmSar5901Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.AccountReceivableAgentSC</service-action-class>
+    </event-mapping>
+	<!-- yongjun Lee : 2014-04-07 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_5002.do" screen="STM_SAR_5002.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.STM_SAR_5002HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_5002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.STM_SAR_5002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.StmSar5002Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.AccountReceivableAgentSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_5003.do" screen="STM_SAR_5003.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.STM_SAR_5003HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_5003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.STM_SAR_5003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.StmSar5003Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.AccountReceivableAgentSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_5004.do" screen="STM_SAR_5004.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.STM_SAR_5004HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_5004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.STM_SAR_5004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableagent.accountreceivableagent.event.StmSar5004Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableagent.AccountReceivableAgentSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_0241.do" screen="STM_SAR_0241.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.STM_SAR_0241HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0241GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.STM_SAR_0241HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.StmSar0241Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_0242.do" screen="STM_SAR_0242.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.STM_SAR_0242HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0242GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.STM_SAR_0242HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.StmSar0242Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_3001.do" screen="STM_SAR_3001.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.STM_SAR_3001HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_3001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.STM_SAR_3001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.StmSar3001Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_3002.do" screen="STM_SAR_3002.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.STM_SAR_3002HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_3002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.STM_SAR_3002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.StmSar3002Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_3003.do" screen="STM_SAR_3003.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.STM_SAR_3003HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_3003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.STM_SAR_3003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.StmSar3003Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+
+
+    <!-- jinyoonoh : 2014-07-21 Adjust view accounting start -->
+    <url-mapping url="STM_SAR_3004.do" screen="STM_SAR_3004.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.STM_SAR_3004HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_3004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.STM_SAR_3004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.StmSar3004Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+    <!-- / jinyoonoh : 2014-07-21 Adjust view accounting end -->
+
+		
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_0008.do" screen="STM_SAR_0008.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_0008HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.StmSar0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_0011.do" screen="STM_SAR_0011.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_0011HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.StmSar0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_0013.do" screen="STM_SAR_0013.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_0013HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.StmSar0013Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_0014.do" screen="STM_SAR_0014.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_0014HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.StmSar0014Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_2001.do" screen="STM_SAR_2001.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_2001HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_2001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_2001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.StmSar2001Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_2002.do" screen="STM_SAR_2002.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_2002HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_2002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_2002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.StmSar2002Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_2003.do" screen="STM_SAR_2003.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_2003HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_2003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_2003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.StmSar2003Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_2004.do" screen="STM_SAR_2004.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_2004HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_2004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_2004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.StmSar2004Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	
+    <!-- jinyoonoh Receipts view accounting : 2014-07-18 start -->
+    <url-mapping url="STM_SAR_2005.do" screen="STM_SAR_2005.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_2005HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_2005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.STM_SAR_2005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivablereceipt.event.StmSar2005Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+    <!-- / jinyoonoh Receipts view accounting : 2014-07-18 end -->
+	
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_0001.do" screen="STM_SAR_0001.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_0001HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.StmSar0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.AccountReceivableCommonSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_0002.do" screen="STM_SAR_0002.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_0002HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.StmSar0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.AccountReceivableCommonSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- Multi Ofiice Code Popup @edit jinyoonoh : 2014-04-03  -->
+    <url-mapping url="STM_SAR_0003.do" screen="STM_SAR_0003.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_0003HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.StmSar0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.AccountReceivableCommonSC</service-action-class>
+    </event-mapping>
+	<!-- /Multi Ofiice Code Popup -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_0004.do" screen="STM_SAR_0004.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_0004HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.StmSar0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.AccountReceivableCommonSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_0005.do" screen="STM_SAR_0005.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_0005HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.StmSar0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.AccountReceivableCommonSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_4001.do" screen="STM_SAR_4001.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_4001HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_4001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_4001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.StmSar4001Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.AccountReceivableCommonSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_4002.do" screen="STM_SAR_4002.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecreateaccounting.accountreceivablecreateaccounting.event.STM_SAR_4002HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_4002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecreateaccounting.accountreceivablecreateaccounting.event.STM_SAR_4002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecreateaccounting.accountreceivablecreateaccounting.event.StmSar4002Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecreateaccounting.AccountReceivableCreateAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_4003.do" screen="STM_SAR_4003.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecreateaccounting.accountreceivablecreateaccounting.event.STM_SAR_4003HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_4003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecreateaccounting.accountreceivablecreateaccounting.event.STM_SAR_4003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecreateaccounting.accountreceivablecreateaccounting.event.StmSar4003Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecreateaccounting.AccountReceivableCreateAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_0012.do" screen="STM_SAR_0012.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_0012HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.StmSar0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.AccountReceivableOutstandingSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_1001.do" screen="STM_SAR_1001.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1001HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_1001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.StmSar1001Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.AccountReceivableOutstandingSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_1002.do" screen="STM_SAR_1002.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1002HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_1002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.StmSar1002Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.AccountReceivableOutstandingSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_1003.do" screen="STM_SAR_1003.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1003HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_1003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.StmSar1003Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.AccountReceivableOutstandingSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_1004.do" screen="STM_SAR_1004.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1004HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_1004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.StmSar1004Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.AccountReceivableOutstandingSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_1005.do" screen="STM_SAR_1005.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1005HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_1005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.StmSar1005Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.AccountReceivableOutstandingSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_1006.do" screen="STM_SAR_1006.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1006HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_1006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.StmSar1006Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.AccountReceivableOutstandingSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	
+    <!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_1007.do" screen="STM_SAR_1007.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1007HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_1007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.StmSar1007Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.AccountReceivableOutstandingSC</service-action-class>
+    </event-mapping>
+    <!-- sungyong park : 2014-03-05 end -->	
+
+
+    <!-- jinyoonoh outstanding view accounting: 2014-07-15 start -->
+    <url-mapping url="STM_SAR_1008.do" screen="STM_SAR_1008.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1008HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_1008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.StmSar1008Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.AccountReceivableOutstandingSC</service-action-class>
+    </event-mapping>
+    <!-- /jinyoonoh outstanding view accounting: 2014-07-15 end --> 
+
+	 <!-- pms Payment Request Letter History: 2014-11-19 start -->
+    <url-mapping url="STM_SAR_1009.do" screen="STM_SAR_1009.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1009HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_1009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.StmSar1009Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.AccountReceivableOutstandingSC</service-action-class>
+    </event-mapping>
+     <!-- pms Payment Request Letter History: 2014-11-19 end -->
+	
+	
+	<!-- yongjun lee : 2014-03-05 start -->
+    <url-mapping url="STM_SAR_1906.do" screen="STM_SAR_1906.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1006HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_1906GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.STM_SAR_1006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.accountreceivableoutstanding.event.StmSar1006Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivableoutstanding.AccountReceivableOutstandingSC</service-action-class>
+    </event-mapping>
+	<!-- yongjun lee : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-18 start -->
+    <url-mapping url="STM_SAR_0161.do" screen="STM_SAR_0161.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.STM_SAR_0161HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0161GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.STM_SAR_0161HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.accountreceivableadjust.event.StmSar0161Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecollect.AccountReceivableCollectSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-18 end -->
+	
+	<!-- sungyong park : 2014-03-21 start -->
+    <url-mapping url="SARCommonGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_CommonHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.StmSarCommonEvent</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.AccountReceivableCommonSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-21 end -->
+	
+	<url-mapping url="STM_SAR_0141.do" screen="STM_SAR_0141.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_0141HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_0141GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_0141HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.StmSar0141Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.AccountReceivableCommonSC</service-action-class>
+    </event-mapping>
+
+
+    <!-- RD Common jsp add jinyoonoh 2014-06-27 -->
+    <url-mapping url="STM_SAR_9001.do" screen="STM_SAR_9001.screen">
+    </url-mapping>
+	
+	<!-- Han Dong Hoon : 2009-05-19 start -->
+    <url-mapping url="FNS_INV_0013.do" screen="FNS_INV_0013.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FNS_INV_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FNS_INV_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FnsInv0013Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Han Dong Hoon : 2009-05-19 end -->
+	
+	<!-- myoungsin park : 2014-12-23 start -->
+    <url-mapping url="STM_SAR_9002.do" screen="STM_SAR_9002.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_9002HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_9002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_9002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.StmSar9002Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.AccountReceivableCommonSC</service-action-class>
+    </event-mapping>
+	<!-- myoungsin park : 2014-12-23 end -->
+	
+	<!-- myoungsin park : 2014-12-23 start -->
+    <url-mapping url="STM_SAR_9003.do" screen="STM_SAR_9003.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_9003HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_9003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_9003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.StmSar9003Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.AccountReceivableCommonSC</service-action-class>
+    </event-mapping>
+	<!-- myoungsin park : 2014-12-23 end -->
+	
+	<!-- myoungsin park : 2015-01-15 start -->
+    <url-mapping url="STM_SAR_9999.do" screen="STM_SAR_9999.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_9999HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAR_9999GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.STM_SAR_9999HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.accountreceivablecommon.event.StmSar9999Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sar.accountreceivablecommon.AccountReceivableCommonSC</service-action-class>
+    </event-mapping>
+	<!-- myoungsin park : 2015-01-15 end -->
+	
+</mappings>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOCheckDupGlMonthlyExchangeRateRSQL">
+			<desc><![CDATA[CheckDupGlMonthlyExchangeRate]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*) CNT
+FROM GL_MON_XCH_RT
+WHERE 1 = 1
+AND ACCT_XCH_RT_YRMON = @[acct_xch_rt_yrmon]
+AND ACCT_XCH_RT_LVL = @[acct_xch_rt_lvl]
+AND CURR_CD = @[curr_cd]			]]></sql>
+			<params>
+				<param name="acct_xch_rt_yrmon" type="12" value="" out="N"/>
+				<param name="acct_xch_rt_lvl" type="12" value="" out="N"/>
+				<param name="curr_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

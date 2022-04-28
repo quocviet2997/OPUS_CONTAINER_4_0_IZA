@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchEstRvvdCodeRSQL">
+			<desc><![CDATA[GL_ESTM_REV_VVD]]></desc>
+			<sql><![CDATA[
+SELECT EXE_YRMON,
+       REV_YRMON,
+       VSL_CD,
+       SKD_VOY_NO,
+       SKD_DIR_CD,
+       REV_DIR_CD,
+       ESTM_VVD_TP_CD,
+       ESTM_IOC_DIV_CD,
+       ESTM_VVD_HDR_ID,
+       ESTM_BC_DIV_CD,
+       VST_DT,
+       VED_DT,
+       RLANE_CD,
+       LINE_NO,
+       CRE_DT,
+       CRE_USR_ID,
+       UPD_DT,
+       UPD_USR_ID
+       ,NVL(IF_FLG, 'N') AS IF_FLG
+  FROM GL_ESTM_REV_VVD
+	WHERE 
+		1=1
+       AND ESTM_BC_DIV_CD = 'C'
+       AND ESTM_VVD_TP_CD = 'RV'
+#if (${exe_yrmon} != '') 
+		AND   	EXE_YRMON	= @[exe_yrmon]
+#end
+#if (${rev_yrmon} != '') 
+		AND  	REV_YRMON	= @[rev_yrmon]
+#end
+#if (${vsl_cd} != '') 
+		AND   	VSL_CD    	= @[vsl_cd]
+#end
+#if (${vvd} != '')
+		AND		VSL_CD||SKD_VOY_NO||SKD_DIR_CD||REV_DIR_CD LIKE @[vvd] || '%'
+#end			]]></sql>
+			<params>
+				<param name="exe_yrmon" type="12" value="" out="N"/>
+				<param name="rev_yrmon" type="12" value="" out="N"/>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="vvd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

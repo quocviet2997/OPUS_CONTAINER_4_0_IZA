@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SuperUserDAOSubSystemRSQL">
+			<desc><![CDATA[sub system code query]]></desc>
+			<sql><![CDATA[
+select distinct substr(chd_pgm_no,5,3) sub_sys_cd
+from com_mnu_cfg
+where chd_pgm_no not like 'COM%'
+and chd_pgm_no not like '%000%'
+start with prnt_pgm_no = '000_000_M000'
+connect by prior chd_pgm_no = prnt_pgm_no
+and level = 2			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckAcctCodeRSQL">
+			<desc><![CDATA[MDM_ACCOUNT 테이블에 acctCd에 해당하는 정보가 있는지 유무를 리턴한다.]]></desc>
+			<sql><![CDATA[
+SELECT ACCT_CD
+FROM MDM_ACCOUNT 
+WHERE 1=1 
+AND ACCT_CD = @[acct_cd]
+AND DELT_FLG ='N'			]]></sql>
+			<params>
+				<param name="acct_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

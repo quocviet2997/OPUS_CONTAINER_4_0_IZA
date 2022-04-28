@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOcreateApInvDTRBEviTllCSQL">
+			<desc><![CDATA[createApInvDTRBEviTll
+R4J 관련 CSR 프로그램 수정 ( DBDAO에 SQL문을 삭제하기 위함 )]]></desc>
+			<sql><![CDATA[
+INSERT INTO AP_INV_DTRB (												  		
+		CSR_NO, LINE_SEQ, LINE_NO, LINE_TP_LU_CD, INV_AMT,
+		INV_DESC, INV_TAX_CD, DTRB_COA_CO_CD, DTRB_COA_RGN_CD, DTRB_COA_CTR_CD,
+		DTRB_COA_ACCT_CD, DTRB_COA_VVD_CD, DTRB_COA_INTER_CO_CD,
+	DTRB_COA_FTU_N1ST_CD, DTRB_COA_FTU_N2ND_CD,
+		ATTR_CATE_NM, ATTR_CTNT1, ATTR_CTNT2, ATTR_CTNT3, ATTR_CTNT4,
+		ATTR_CTNT5, ATTR_CTNT6, ATTR_CTNT7, ATTR_CTNT8, ATTR_CTNT9,  
+		ATTR_CTNT10, ATTR_CTNT11, ATTR_CTNT12, ATTR_CTNT13, ATTR_CTNT14,
+		ATTR_CTNT15, BKG_NO, CNTR_TPSZ_CD, ACT_VVD_CD,                  
+		PLN_SCTR_DIV_CD, SO_CRR_CD, YD_CD, FTU_USE_CTNT1, FTU_USE_CTNT2,
+		FTU_USE_CTNT3, FTU_USE_CTNT4, FTU_USE_CTNT5, CRE_DT, CRE_USR_ID,
+		EAI_EVNT_DT)			                                              
+SELECT CSR_NO,
+       ( SELECT NVL(MAX(LINE_SEQ),0)+1                              
+         FROM   AP_INV_DTRB                                         
+         WHERE  CSR_NO = @[csr_no] ) LINE_SEQ,                              
+       ROWNUM+                                                      
+       ( SELECT NVL(MAX(LINE_NO),0)                                 
+         FROM   AP_INV_DTRB                                         
+         WHERE  CSR_NO = @[csr_no] ) LINE_NO,                               
+       LINE_TP_LU_CD,                                               
+       CSR_AMT,                                                                                
+       INV_DESC,                                                                               
+       INV_TAX_CD,                                                                             
+       DTRB_COA_CO_CD,                                                                         
+       DTRB_COA_RGN_CD,                                                                        
+       DTRB_COA_CTR_CD,                                                                        
+       DTRB_COA_ACCT_CD,                                                                       
+       DTRB_COA_VVD_CD,                                                                        
+       DTRB_COA_INTER_CO_CD,                                                                   
+       DTRB_COA_FTU_N1ST_CD,                                                                   
+       DTRB_COA_FTU_N2ND_CD,                                                                   
+       ATTR_CATE_NM,                                                                           
+       ATTR_CTNT1,                                                                             
+       ATTR_CTNT2,                                                                             
+       ATTR_CTNT3,                                                                             
+       ATTR_CTNT4,                                                                             
+       ATTR_CTNT5,                                                                             
+       ATTR_CTNT6,                                                                             
+       ATTR_CTNT7,                                                                             
+       ATTR_CTNT8,                                                                             
+       ATTR_CTNT9,                                                                             
+       ATTR_CTNT10,                                                                            
+       ATTR_CTNT11,                                                                            
+       ATTR_CTNT12,                                                                            
+       ATTR_CTNT13,                                                                            
+       ATTR_CTNT14,                                                                            
+       ATTR_CTNT15,                                                                            
+       BKG_NO,                                                                                 
+       CNTR_TPSZ_CD,                                                                           
+       ACT_VVD_CD,                                                                             
+       PLN_SCTR_DIV_CD,                                                                        
+       SO_CRR_CD,                                                                              
+       YD_CD,                                                                                  
+       FTU_USE_CTNT1,                                                                          
+       FTU_USE_CTNT2,                                                                          
+       FTU_USE_CTNT3,                                                                          
+       FTU_USE_CTNT4,                                                                          
+       FTU_USE_CNTR5,                                                                          
+       CRE_DT,                                                                                 
+       CRE_USR_ID,                                                                             
+       EAI_EVNT_DT                                                                             
+FROM   ( SELECT CSR_NO,                                                                        
+              LINE_SEQ,                                                                        
+              LINE_NO,                                                                         
+              LINE_TP_LU_CD,                                                                   
+              DECODE(CURR_CD,												
+                   'KRW',ROUND(SUM(CSR_AMT),0),	
+                   'JPY',ROUND(SUM(CSR_AMT),0),	
+                   ROUND(SUM(CSR_AMT),2))           CSR_AMT, 
+              INV_DESC,                                                                        
+              INV_TAX_CD,                                                                      
+              DTRB_COA_CO_CD,                                                                  
+              DTRB_COA_RGN_CD,                                                                 
+              DTRB_COA_CTR_CD,                                                                 
+              DTRB_COA_ACCT_CD,                                                                
+              DTRB_COA_VVD_CD,                                                                 
+              DTRB_COA_INTER_CO_CD,                                                            
+              DTRB_COA_FTU_N1ST_CD,                                                            
+              DTRB_COA_FTU_N2ND_CD,                                                            
+              ATTR_CATE_NM,                                                                    
+              MAX(ATTR_CTNT1) ATTR_CTNT1,                                                      
+              MAX(ATTR_CTNT2) ATTR_CTNT2,                                                      
+              ATTR_CTNT3,                                                                      
+              ATTR_CTNT4,                                                                      
+              ATTR_CTNT5,                                                                      
+              ATTR_CTNT6,                                                                      
+              ATTR_CTNT7,                                                                      
+              ATTR_CTNT8,                                                                      
+              ATTR_CTNT9,                                                                      
+              ATTR_CTNT10,                                                                     
+              ATTR_CTNT11,                                                                     
+              ATTR_CTNT12,                                                                     
+              ATTR_CTNT13,                                                                     
+              ATTR_CTNT14,                                                                     
+              ATTR_CTNT15,                                                                     
+              BKG_NO,                                                                          
+              CNTR_TPSZ_CD,                                                                    
+              ACT_VVD_CD,                                                                      
+              PLN_SCTR_DIV_CD,                                                                 
+              SO_CRR_CD,                                                                       
+              YD_CD,                                                                           
+              FTU_USE_CTNT1,                                                                   
+              FTU_USE_CTNT2,                                                                   
+              FTU_USE_CTNT3,                                                                   
+              FTU_USE_CTNT4,                                                                   
+              FTU_USE_CNTR5,                                                                   
+              CRE_DT,                                                                          
+              CRE_USR_ID,                                                                      
+              EAI_EVNT_DT                                                                      
+       FROM   ( SELECT DISTINCT                                                                
+                       @[csr_no]                                    CSR_NO,               
+                       ''                                           LINE_SEQ,                  
+                       ''                                           LINE_NO,                   
+                       'MISCELLANEOUS'                              LINE_TP_LU_CD,             
+                       H.INV_CURR_CD                                CURR_CD,         
+                       -NVL(D.INV_AMT,0)                            CSR_AMT,                   
+                       NULL                                         INV_DESC,                  
+                       NULL                                         INV_TAX_CD,                
+                       '01'                                         DTRB_COA_CO_CD,            
+                       ( SELECT FINC_RGN_CD                                                    
+                         FROM   MDM_ORGANIZATION                                               
+                         WHERE  OFC_CD = H.COST_OFC_CD )            DTRB_COA_RGN_CD,           
+                       ( SELECT AP_CTR_CD                                                      
+                         FROM   MDM_ORGANIZATION                                               
+                         WHERE  OFC_CD = H.COST_OFC_CD )            DTRB_COA_CTR_CD,           
+                      (SELECT C.ATTR_CTNT1
+   						 FROM COM_ACCT_HRD_CDG_DESC D, COM_ACCT_HRD_CDG_CTNT C
+ 						WHERE ROWNUM = 1
+    					  AND D.SRC_MDL_CD = C.SRC_MDL_CD
+  						  AND D.HRD_CDG_ID = C.HRD_CDG_ID
+  						  AND D.SRC_MDL_CD = 'CSR'
+  						  AND D.HRD_CDG_ID = 'CLEARING_AR_FA_RTIR') DTRB_COA_ACCT_CD,          
+                       '0000000000' DTRB_COA_VVD_CD,                                           
+                       ( SELECT NVL(SUBS_CO_CD,'00')                                           
+                         FROM   MDM_VENDOR                                                     
+                         WHERE  VNDR_SEQ = H.VNDR_SEQ )              DTRB_COA_INTER_CO_CD,     
+                       '000000'                                      DTRB_COA_FTU_N1ST_CD,     
+                       '000000'                                      DTRB_COA_FTU_N2ND_CD,     
+                      (SELECT C.ATTR_CTNT1
+   						 FROM COM_ACCT_HRD_CDG_DESC D, COM_ACCT_HRD_CDG_CTNT C
+ 						WHERE ROWNUM = 1
+    					  AND D.SRC_MDL_CD = C.SRC_MDL_CD
+  						  AND D.HRD_CDG_ID = C.HRD_CDG_ID
+  						  AND D.SRC_MDL_CD = 'CSR'
+  						  AND D.HRD_CDG_ID = 'CLEARING_AR_FA_RTIR') ATTR_CATE_NM,             
+                       NULL                                          ATTR_CTNT1,               
+                       NULL                                          ATTR_CTNT2,               
+                       NULL                                          ATTR_CTNT3,               
+                       NULL                                          ATTR_CTNT4,               
+                       NULL                                          ATTR_CTNT5,               
+                       NULL                                          ATTR_CTNT6,               
+                       NULL                                          ATTR_CTNT7,               
+                       NULL                                          ATTR_CTNT8,               
+                       NULL                                          ATTR_CTNT9,               
+                       NULL                                          ATTR_CTNT10,              
+                       NULL                                          ATTR_CTNT11,              
+                       NULL                                          ATTR_CTNT12,              
+                       NULL                                          ATTR_CTNT13,              
+                       NULL                                          ATTR_CTNT14,              
+                       TO_CHAR(SYSDATE, 'YYYY/MM/DD')                ATTR_CTNT15,              
+                       NULL                                          BKG_NO,                   
+                       NULL                                          CNTR_TPSZ_CD,             
+                       NULL                                          ACT_VVD_CD,               
+                       'C'                                           PLN_SCTR_DIV_CD,          
+                       NULL                                          SO_CRR_CD,                
+                       NULL                                          YD_CD,                    
+                       NULL                                          FTU_USE_CTNT1,            
+                       NULL                                          FTU_USE_CTNT2,            
+                       NULL                                          FTU_USE_CTNT3,            
+                       NULL                                          FTU_USE_CTNT4,            
+                       NULL                                          FTU_USE_CNTR5,            
+                       GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd])  CRE_DT,       
+                       @[user_id]                  					 CRE_USR_ID,  
+                       ''                                            EAI_EVNT_DT               
+                FROM   AP_PAY_INV H, AP_PAY_INV_DTL D                                          
+               WHERE   H.INV_NO      IN    ( @[inv_no] )                                               
+                AND    H.VNDR_SEQ    = @[vndr_seq]		                                           
+                AND    H.DELT_FLG    = 'N'                                                     
+                AND    H.INV_RGST_NO = D.INV_RGST_NO                                           
+                AND    D.DELT_FLG    = 'N'                                                     
+                AND    NVL(H.INV_SUB_SYS_CD,'N') = 'TLL'                                       
+                AND    NVL(H.TTL_LSS_DIV_CD,'N') IN ('PO','GO') )                              
+       GROUP BY CSR_NO,                                                                        
+                LINE_SEQ,                                                                      
+                LINE_NO,                                                                       
+                LINE_TP_LU_CD,                                                      
+                CURR_CD,                                                            
+                INV_DESC,                                                                      
+                INV_TAX_CD,                                                                    
+                DTRB_COA_CO_CD,                                                                
+                DTRB_COA_RGN_CD,                                                               
+                DTRB_COA_CTR_CD,                                                               
+                DTRB_COA_ACCT_CD,                                                              
+                DTRB_COA_VVD_CD,                                                               
+                DTRB_COA_INTER_CO_CD,                                                          
+                DTRB_COA_FTU_N1ST_CD,                                                          
+                DTRB_COA_FTU_N2ND_CD,                                                          
+                ATTR_CATE_NM,                                                                  
+                ATTR_CTNT3,                                                                    
+                ATTR_CTNT4,                                                                    
+                ATTR_CTNT5,                                                                    
+                ATTR_CTNT6,                                                                    
+                ATTR_CTNT7,                                                                    
+                ATTR_CTNT8,                                                                    
+                ATTR_CTNT9,                                                                    
+                ATTR_CTNT10,                                                                   
+                ATTR_CTNT11,                                                                   
+                ATTR_CTNT12,                                                                   
+                ATTR_CTNT13,                                                                   
+                ATTR_CTNT14,                                                                   
+                ATTR_CTNT15,                                                                   
+                BKG_NO,                                                                        
+                CNTR_TPSZ_CD,                                                                  
+                ACT_VVD_CD,                                                                    
+                PLN_SCTR_DIV_CD,                                                               
+                SO_CRR_CD,                                                                     
+                YD_CD,                                                                         
+                FTU_USE_CTNT1,                                                                 
+                FTU_USE_CTNT2,                                                                 
+                FTU_USE_CTNT3,                                                                 
+                FTU_USE_CTNT4,                                                                 
+                FTU_USE_CNTR5,                                                                 
+                CRE_DT,                                                                        
+                CRE_USR_ID,                                                                    
+                EAI_EVNT_DT )			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="user_id" type="12" value="" out="N"/>
+				<param name="inv_no" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

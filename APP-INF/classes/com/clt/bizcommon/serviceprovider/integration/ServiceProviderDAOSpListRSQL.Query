@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ServiceProviderDAOSpListRSQL">
+			<desc><![CDATA[select service provider list]]></desc>
+			<sql><![CDATA[
+SELECT vndr_seq,
+                  ofc_cd,
+                  vndr_lgl_eng_nm,
+                  vndr_abbr_nm,
+                  prnt_vndr_seq,
+                  vndr_cnt_cd,
+                  org_vndr_seq,
+                  eng_addr,
+				  '' cnt_cd		,
+				  '' vndr_nm_eng	,				  
+				  '' pts_vndr_cd	,
+				  '' vndr_cd    	,
+				  '' p_sp_type   	,
+				  '' lgs_flg    	,
+				  '' i_page,
+				(CASE 
+					WHEN 'Y' = delt_flg THEN 'Delete' 
+					ELSE 'Active' 
+				END) AS delt_flg,
+                MODI_VNDR_CD
+FROM (SELECT ROW_NUMBER() OVER (ORDER BY vndr_seq) no,
+          LPAD(vndr_seq, 6, '0') vndr_seq,
+          ofc_cd,
+          VNDR_LGL_ENG_NM,
+          VNDR_ABBR_NM,
+          LPAD(PRNT_VNDR_SEQ, 6, '0') PRNT_VNDR_SEQ,
+          VNDR_CNT_CD,
+          VNDR_CNT_CD||LPAD(vndr_seq, 6, '0') org_vndr_seq,
+          eng_addr,
+		  delt_flg,
+          MODI_VNDR_CD
+     FROM mdm_vendor
+    WHERE 1 = 1
+#if (${cnt_cd} != '')
+     AND UPPER(VNDR_CNT_CD) like UPPER(@[cnt_cd]) || '%'
+#end    
+#if (${ofc_cd} != '')
+     AND UPPER(OFC_CD) like UPPER(@[ofc_cd]) || '%'
+#end    
+#if (${vndr_nm_eng} != '')
+     AND UPPER(VNDR_LGL_ENG_NM) like '%' || UPPER(@[vndr_nm_eng]) || '%'
+#end    
+#if (${pts_vndr_cd} != '')
+     AND LPAD(PRNT_VNDR_SEQ, 6, '0') = LPAD(@[pts_vndr_cd], 6, '0')
+#end    
+#if (${vndr_cd} != '')
+     AND LPAD(VNDR_SEQ, 6, '0') = LPAD(@[vndr_cd], 6, '0')
+#end
+#if (${lgs_flg} == 'Y')
+	AND LGS_FLG = 'Y'
+#end
+#if (${modi_vndr_cd} != '')
+    AND USA_EDI_CD LIKE '%'||UPPER(@[modi_vndr_cd])||'%'
+#end
+	
+#if (${mdm_yn} != '')
+	#if (${delt_flg} == 'Y') 
+		AND DELT_FLG = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+	#else 
+		AND DELT_FLG <> 'Y'
+	#end
+#else	
+	AND DELT_FLG <> 'Y'
+#end
+
+
+  ) a
+WHERE no BETWEEN @[startpart] AND @[endpart]			]]></sql>
+			<params>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="vndr_nm_eng" type="12" value="" out="N"/>
+				<param name="pts_vndr_cd" type="12" value="" out="N"/>
+				<param name="vndr_cd" type="12" value="" out="N"/>
+				<param name="modi_vndr_cd" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

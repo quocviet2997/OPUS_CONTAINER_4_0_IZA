@@ -1,0 +1,1524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- Dohyoung Lee : 2009-06-02 start -->
+    <url-mapping url="SCG_COM_INTERNALGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.scgcommon.scginternalfinder.event.SCG_COM_INTERNALHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.scgcommon.scginternalfinder.event.ScgComInternalEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.scgcommon.SCGCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-06-02 end -->
+	
+	<!-- Dohyoung Lee : 2009-05-15 start -->
+    <url-mapping url="SCG_COM_EXTERNALGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.scgcommon.scgexternalfinder.event.SCG_COM_EXTERNALHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.scgcommon.scgexternalfinder.event.ScgComExternalEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.scgcommon.SCGCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-15 end -->
+
+	<!-- Dohyoung Lee : 2009-05-14 start -->
+    <url-mapping url="VOP_SCG_0001.do" screen="VOP_SCG_0001.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VopScg0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.DangerousCargoInformationMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-14 end -->
+
+	<!-- Dohyoung Lee : 2009-08-07 start -->
+    <url-mapping url="VOP_SCG_0001Pop.do" screen="VOP_SCG_0001Pop.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_0001HTMLAction</web-action-class>
+    </url-mapping>
+	<!-- Dohyoung Lee : 2009-08-07 end -->
+
+	<!-- Dohyoung Lee : 2009-05-27 start -->
+    <url-mapping url="VOP_SCG_0002.do" screen="VOP_SCG_0002.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VopScg0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.DangerousCargoInformationMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-27 end -->
+	
+	<!-- Kim Hyun Uk : 2009-07-27 start -->
+    <url-mapping url="VOP_SCG_0002Pop.do" screen="VOP_SCG_0002Pop.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_0002HTMLAction</web-action-class>
+    </url-mapping>
+    <!-- Kim Hyun Uk : 2009-07-27 end -->
+
+	<!-- Dohyoung Lee : 2009-05-27 start -->
+    <url-mapping url="VOP_SCG_0003.do" screen="VOP_SCG_0003.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VopScg0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.DangerousCargoInformationMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-27 end -->
+
+	<!-- Dohyoung Lee : 2009-05-28 start -->
+    <url-mapping url="VOP_SCG_0004.do" screen="VOP_SCG_0004.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VopScg0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.DangerousCargoInformationMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-28 end -->
+
+	<!-- Dohyoung Lee : 2009-06-04 start -->
+    <url-mapping url="VOP_SCG_0014.do" screen="VOP_SCG_0014.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg0014Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-06-04 end -->
+
+	<!-- Dohyoung Lee : 2009-04-28 start -->
+    <url-mapping url="VOP_SCG_0031.do" screen="VOP_SCG_0031.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0031GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0031Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-04-28 end -->
+
+	<!-- Dohyoung Lee : 2009-05-04 start -->
+    <url-mapping url="VOP_SCG_0032.do" screen="VOP_SCG_0032.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0032Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-04 end -->
+
+	<!-- Dohyoung Lee : 2009-05-11 start -->
+    <url-mapping url="VOP_SCG_0034.do" screen="VOP_SCG_0034.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0034GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0034Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-11 end -->
+
+	<!-- Dohyoung Lee : 2009-05-06 start -->
+    <url-mapping url="VOP_SCG_0036.do" screen="VOP_SCG_0036.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0036Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-06 end -->
+
+	<!-- Dohyoung Lee : 2009-05-04 start -->
+    <url-mapping url="VOP_SCG_0037.do" screen="VOP_SCG_0037.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0037Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-04 end -->
+
+	<!-- Dohyoung Lee : 2009-04-29 start -->
+    <url-mapping url="VOP_SCG_0039.do" screen="VOP_SCG_0039.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0039HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0039GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0039HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0039Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-04-29 end -->
+
+	<!-- Dohyoung Lee : 2009-05-07 start -->
+    <url-mapping url="VOP_SCG_0040.do" screen="VOP_SCG_0040.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0040Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-07 end -->
+
+	<!-- Dohyoung Lee : 2009-05-07 start -->
+    <url-mapping url="VOP_SCG_0041.do" screen="VOP_SCG_0041.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0041GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0041Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-07 end -->
+
+	<!-- Dohyoung Lee : 2009-05-04 start -->
+    <url-mapping url="VOP_SCG_0043.do" screen="VOP_SCG_0043.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0043HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0043GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0043HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0043Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-04 end -->
+
+	<!-- Dohyoung Lee : 2009-05-04 start -->
+    <url-mapping url="VOP_SCG_0044.do" screen="VOP_SCG_0044.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0044HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0044GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0044HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0044Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-04 end -->
+
+	<!-- Dohyoung Lee : 2009-05-08 start -->
+    <url-mapping url="VOP_SCG_0045.do" screen="VOP_SCG_0045.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0045GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0045Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-08 end -->
+
+	<!-- Dohyoung Lee : 2009-05-08 start -->
+    <url-mapping url="VOP_SCG_0046.do" screen="VOP_SCG_0046.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0046GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0046Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-08 end -->
+
+	<!-- Dohyoung Lee : 2009-05-08 start -->
+    <url-mapping url="VOP_SCG_0047.do" screen="VOP_SCG_0047.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0047HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0047GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0047HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0047Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-08 end -->
+
+	<!-- Dohyoung Lee : 2009-05-08 start -->
+    <url-mapping url="VOP_SCG_0063.do" screen="VOP_SCG_0063.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0063HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0063GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0063HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0063Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-08 end -->
+
+	<!-- Dohyoung Lee : 2009-05-08 start -->
+    <url-mapping url="VOP_SCG_0067.do" screen="VOP_SCG_0067.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0067HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0067GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0067HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0067Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-08 end -->
+	
+	<!-- HyunUk Kim : 2009-05-19 start -->
+    <url-mapping url="VOP_SCG_0070.do" screen="VOP_SCG_0070.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0070HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0070GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0070HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0070Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- HyunUk Kim : 2009-05-19 end -->
+	
+	<!-- HyunUk Kim : 2009-05-19 start -->
+    <url-mapping url="VOP_SCG_0071.do" screen="VOP_SCG_0071.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0070HTMLAction</web-action-class>
+    </url-mapping>
+	<!-- HyunUk Kim : 2009-05-19 end -->
+	
+	<!-- jang kang cheol : 2009-05-19 start -->
+    <url-mapping url="VOP_SCG_0033.do" screen="VOP_SCG_0033.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0033Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-05-19 end -->
+ 
+
+	<!-- jang kang cheol : 2009-05-22 start -->
+    <url-mapping url="VOP_SCG_0051.do" screen="VOP_SCG_0051.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0051Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-05-25 start -->
+    <url-mapping url="VOP_SCG_0035.do" screen="VOP_SCG_0035.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0035GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0035Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+ 
+	<!-- jang kang cheol : 2009-05-22 end -->	
+	
+	<!-- HyunUk Kim : 2009-05-25 start -->
+    <url-mapping url="VOP_SCG_0042.do" screen="VOP_SCG_0042.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0042GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0042Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- HyunUk Kim : 2009-05-25 end -->
+	
+	<!-- HyunUk Kim : 2009-05-28 start -->
+    <url-mapping url="VOP_SCG_0060.do" screen="VOP_SCG_0060.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0042HTMLAction</web-action-class>
+    </url-mapping>
+    <!-- HyunUk Kim : 2009-05-28 end -->
+
+    <!--KIM HYUN HWA : 2013-05-09 start -->  
+    <url-mapping url="VOP_SCG_0060Pop.do" screen="VOP_SCG_0060Pop.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0042HTMLAction</web-action-class>
+    </url-mapping>
+    <!---KIM HYUN HWA : 2013-05-09 end -->
+
+	<!-- Dohyoung Lee : 2009-05-28 start -->
+    <url-mapping url="VOP_SCG_1003_01.do" screen="VOP_SCG_1003_01.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_1003_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_1003_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_1003_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VopScg100301Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.DangerousCargoInformationMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-28 end -->
+
+	<!-- Dohyoung Lee : 2009-05-28 start -->
+    <url-mapping url="VOP_SCG_1003_02.do" screen="VOP_SCG_1003_02.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_1003_02HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_1003_02GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_1003_02HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VopScg100302Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.DangerousCargoInformationMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-05-28 end -->
+
+	<!-- jang kang cheol : 2009-05-26 start -->
+    <url-mapping url="VOP_SCG_0053.do" screen="VOP_SCG_0053.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0053GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0053HTMLAction</web-action-class>
+    </url-mapping>
+    
+     <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0053Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-05-26 end -->
+
+	<!-- jang kang cheol : 2009-05-26 start -->
+    <url-mapping url="VOP_SCG_0005.do" screen="VOP_SCG_0005.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VOP_SCG_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VOP_SCG_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VopScg0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.DangerousCargoRestrictionSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-05-26 end -->
+ 
+ 	<!-- HyunUk Kim : 2009-05-29 start -->
+    <url-mapping url="VOP_SCG_0013.do" screen="VOP_SCG_0013.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.vesseloperationirregularmgt.specialcargoirregularmgt.event.VOP_SCG_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.vesseloperationirregularmgt.specialcargoirregularmgt.event.VOP_SCG_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.vesseloperationirregularmgt.specialcargoirregularmgt.event.VopScg0013Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.vesseloperationirregularmgt.VesselOperationIrregularMgtSC</service-action-class>
+    </event-mapping>
+	<!-- HyunUk Kim : 2009-05-29 end -->
+ 	
+
+
+	<!-- jang kang cheol : 2009-06-03 start -->
+    <url-mapping url="VOP_SCG_1005.do" screen="VOP_SCG_1005.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VOP_SCG_1005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_1005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VOP_SCG_1005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VopScg1005Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.DangerousCargoRestrictionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="VOP_SCG_3005.do" screen="VOP_SCG_3005.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VOP_SCG_3005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_3005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VOP_SCG_3005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VopScg3005Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.DangerousCargoRestrictionSC</service-action-class>
+    </event-mapping>
+    
+	<!-- jang kang cheol : 2009-06-03 end -->
+
+	<!-- jang kang cheol : 2009-06-08 start -->
+    <url-mapping url="VOP_SCG_0006.do" screen="VOP_SCG_0006.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VOP_SCG_0006HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_SCG_0006Pop.do" screen="VOP_SCG_0006Pop.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VOP_SCG_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VOP_SCG_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VopScg0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.DangerousCargoRestrictionSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-08 end -->
+	
+	<!-- HyunUk Kim : 2009-06-08 start -->
+    <url-mapping url="VOP_SCG_2013_01.do" screen="VOP_SCG_2013_01.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.vesseloperationirregularmgt.specialcargoirregularmgt.event.VOP_SCG_2013_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_2013_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.vesseloperationirregularmgt.specialcargoirregularmgt.event.VOP_SCG_2013_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.vesseloperationirregularmgt.specialcargoirregularmgt.event.VopScg201301Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.vesseloperationirregularmgt.VesselOperationIrregularMgtSC</service-action-class>
+    </event-mapping>
+	<!-- HyunUk Kim : 2009-06-08 end -->
+	
+
+	<!-- jang kang cheol : 2009-06-09 start -->
+    <url-mapping url="VOP_SCG_0009.do" screen="VOP_SCG_0009.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.carrierrestriction.event.VOP_SCG_0009HTMLAction</web-action-class>
+    </url-mapping> 
+ 
+
+    <url-mapping url="VOP_SCG_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.carrierrestriction.event.VOP_SCG_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.carrierrestriction.event.VopScg0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.DangerousCargoRestrictionSC</service-action-class>
+    </event-mapping>
+    <url-mapping url="VOP_SCG_0011.do" screen="VOP_SCG_0011.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VOP_SCG_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VOP_SCG_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VopScg0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.DangerousCargoRestrictionSC</service-action-class>
+    </event-mapping>    
+	<!-- jang kang cheol : 2009-06-09 end -->
+
+	<!-- jang kang cheol : 2009-06-15 start -->
+    <url-mapping url="VOP_SCG_0010.do" screen="VOP_SCG_0010.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.carrierrestriction.event.VOP_SCG_0010HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_SCG_0010Pop.do" screen="VOP_SCG_0010Pop.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.carrierrestriction.event.VOP_SCG_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.carrierrestriction.event.VOP_SCG_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.carrierrestriction.event.VopScg0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.DangerousCargoRestrictionSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-15 end -->
+	
+	<!-- HyunUk Kim : 2009-06-16 start -->
+    <url-mapping url="VOP_SCG_0012.do" screen="VOP_SCG_0012.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.vesseloperationirregularmgt.specialcargoirregularmgt.event.VOP_SCG_0012HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_SCG_0012Pop.do" screen="VOP_SCG_0012Pop.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.vesseloperationirregularmgt.specialcargoirregularmgt.event.VOP_SCG_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.vesseloperationirregularmgt.specialcargoirregularmgt.event.VOP_SCG_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.vesseloperationirregularmgt.specialcargoirregularmgt.event.VopScg0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.vesseloperationirregularmgt.VesselOperationIrregularMgtSC</service-action-class>
+    </event-mapping>
+	<!-- HyunUk Kim : 2009-06-16 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <url-mapping url="VOP_SCG_0049.do" screen="VOP_SCG_0049.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0049GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0049Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <url-mapping url="VOP_SCG_0050.do" screen="VOP_SCG_0050.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0050GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0050Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <url-mapping url="VOP_SCG_0052.do" screen="VOP_SCG_0052.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0052GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0052Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <url-mapping url="VOP_SCG_0054.do" screen="VOP_SCG_0054.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0054GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0054Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <url-mapping url="VOP_SCG_0055.do" screen="VOP_SCG_0055.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0055HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0055GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0055HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0055Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <url-mapping url="VOP_SCG_0057.do" screen="VOP_SCG_0057.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0057HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0057GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0057HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0057Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <url-mapping url="VOP_SCG_0058.do" screen="VOP_SCG_0058.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0058HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0058GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0058HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0058Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <url-mapping url="VOP_SCG_0059.do" screen="VOP_SCG_0059.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0059HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0059GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0059HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0059Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- Dohyoung Lee : 2009-08-07 start -->
+    <url-mapping url="VOP_SCG_0059Pop.do" screen="VOP_SCG_0059Pop.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0059HTMLAction</web-action-class>
+    </url-mapping>
+	<!-- Dohyoung Lee : 2009-08-07 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <url-mapping url="VOP_SCG_0061.do" screen="VOP_SCG_0061.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0061HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0061GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0061HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0061Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <url-mapping url="VOP_SCG_0062.do" screen="VOP_SCG_0062.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0062HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0062GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0062HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0062Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <url-mapping url="VOP_SCG_0064.do" screen="VOP_SCG_0064.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0064HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0064GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0064HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0064Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <url-mapping url="VOP_SCG_0065.do" screen="VOP_SCG_0065.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0065HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0065GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0065HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0065Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <url-mapping url="VOP_SCG_0066.do" screen="VOP_SCG_0066.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0066HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0066GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0066HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0066Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <url-mapping url="VOP_SCG_0068.do" screen="VOP_SCG_0068.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0068HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0068GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0068HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0068Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-18 end -->
+	
+	<!-- HyunUk Kim : 2009-06-22 start -->
+    <url-mapping url="VOP_SCG_0075.do" screen="VOP_SCG_0075.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.vesseloperationirregularmgt.specialcargoirregularmgt.event.VOP_SCG_0013HTMLAction</web-action-class>
+    </url-mapping>
+	<!-- HyunUk Kim : 2009-06-22 end -->
+
+	<!-- Dohyoung Lee : 2009-06-26 start -->
+    <url-mapping url="VOP_SCG_1015.do" screen="VOP_SCG_1015.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_1015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_1015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_1015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg1015Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-06-26 end -->
+	
+	<!-- ds ham : 2015-01-16 start -->
+    <url-mapping url="VOP_SCG_1019.do" screen="VOP_SCG_1019.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_1019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_1019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_1019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg1019Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- ds ham : 2015-01-16 end -->
+	
+	<!-- HyunUk Kim : 2009-06-24 start -->
+    <url-mapping url="VOP_SCG_0022.do" screen="VOP_SCG_0022.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VOP_SCG_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VOP_SCG_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VopScg0022Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- HyunUk Kim : 2009-06-24 end -->
+
+	<!-- HyunUk Kim : 2009-06-26 start -->
+    <url-mapping url="VOP_SCG_1022.do" screen="VOP_SCG_1022.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VOP_SCG_1022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_1022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VOP_SCG_1022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VopScg1022Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- HyunUk Kim : 2009-06-26 end -->
+
+	<!-- HyunUk Kim : 2009-06-26 start -->
+    <url-mapping url="VOP_SCG_0023.do" screen="VOP_SCG_0023.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg0023Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- HyunUk Kim : 2009-06-26 end -->
+
+	<!-- Dohyoung Lee : 2009-07-01 start -->
+    <url-mapping url="VOP_SCG_1016.do" screen="VOP_SCG_1016.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_1016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_1016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_1016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg1016Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-07-01 end -->
+
+	<!-- Dohyoung Lee : 2009-07-02 start -->
+    <url-mapping url="VOP_SCG_1017.do" screen="VOP_SCG_1017.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_1017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_1017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_1017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg1017Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-07-02 end -->
+
+	<!-- Dohyoung Lee : 2009-07-02 start -->
+    <url-mapping url="VOP_SCG_1018.do" screen="VOP_SCG_1018.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_1018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_1018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_1018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg1018Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-07-02 end -->
+
+	<!-- Dohyoung Lee : 2009-07-06 start -->
+    <url-mapping url="VOP_SCG_0016.do" screen="VOP_SCG_0016.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg0016Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-07-06 end -->
+	
+	<!-- jang kang cheol : 2009-07-08 start -->
+    <url-mapping url="VOP_SCG_0073.do" screen="VOP_SCG_0073.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0073HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0073GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0073HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0073Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="VOP_SCG_0074.do" screen="VOP_SCG_0074.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0074HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0074GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0074HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0074Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>    
+	<!-- jang kang cheol : 2009-07-08 end -->
+	
+	<!-- Dohyoung Lee : 2009-07-13 start -->
+    <url-mapping url="VOP_SCG_0015.do" screen="VOP_SCG_0015.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg0015Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-07-13 end -->
+	
+	<!-- Dohyoung Lee : 2009-07-13 start -->
+    <url-mapping url="VOP_SCG_0017.do" screen="VOP_SCG_0017.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg0017Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-07-13 end -->
+
+	<!-- Dohyoung Lee : 2009-07-13 start -->
+    <url-mapping url="VOP_SCG_0018.do" screen="VOP_SCG_0018.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg0018Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- Dohyoung Lee : 2009-07-13 end -->
+
+	<!-- Kim Hyun Uk : 2009-07-17 start -->
+    <url-mapping url="VOP_SCG_0021.do" screen="VOP_SCG_0021.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg0021Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Hyun Uk : 2009-07-17 end -->
+
+	<!-- Kim Hyun Uk : 2009-07-23 start -->
+    <url-mapping url="VOP_SCG_0069.do" screen="VOP_SCG_0069.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0069HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0069GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0069HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg0069Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Hyun Uk : 2009-07-23 end -->
+	
+	<!-- Kim Yang Jae : 2017-08-16 start -->
+    <url-mapping url="VOP_SCG_0069_01.do" screen="VOP_SCG_0069_01.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0069HTMLAction</web-action-class>
+    </url-mapping>
+	
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.exis.hazcheckGateway.event.VopScgExisEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.exis.ExisSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Yang Jae : 2017-08-16 end -->
+	
+	<!-- Kim Yang Jae : 2017-08-31 start -->
+    <url-mapping url="VOP_SCG_0069_02.do" screen="VOP_SCG_0069_02.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0069HTMLAction</web-action-class>
+    </url-mapping>
+	
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.exis.hazcheckGateway.event.VopScgExisEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.exis.ExisSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Yang Jae : 2017-08-31 end -->
+	
+	<!-- Kim Yang Jae : 2017-07-13 start -->
+    <url-mapping url="VOP_SCG_EXISGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.exis.hazcheckGateway.event.VOP_SCG_EXISHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.exis.hazcheckGateway.event.VopScgExisEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.exis.ExisSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Yang Jae : 2017-07-13 end -->
+	
+	<!-- Kim Hyung Ju : 2017-09-12 start -->
+    <url-mapping url="VOP_SCG_0079.do" screen="VOP_SCG_0079.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.exis.hazcheckGateway.event.VOP_SCG_EXISHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_SCG_0079GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.exis.hazcheckGateway.event.VOP_SCG_EXISHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.exis.hazcheckGateway.event.VopScgExisEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.exis.ExisSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESD_PRD_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0020HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0020_DETAIL.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0020HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.EsdPrd0080Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.ProductCatalogCreateSC</service-action-class>
+	</event-mapping>
+	<!-- Kim Hyung Ju : 2017-09-12 end -->
+
+	<!-- Kim Hyun Uk : 2009-07-27 start -->
+    <url-mapping url="VOP_SCG_0072.do" screen="VOP_SCG_0072.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_0072HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0072GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VOP_SCG_0072HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.imdgcodemgt.event.VopScg0072Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.DangerousCargoInformationMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Hyun Uk : 2009-07-27 end -->
+
+	<!-- jang kang cheol : 2009-07-30 start -->
+    <url-mapping url="VOP_SCG_0076.do" screen="VOP_SCG_0076.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VOP_SCG_0076HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0076GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VOP_SCG_0076HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.portrestriction.event.VopScg0076Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargorestriction.DangerousCargoRestrictionSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-07-30 end -->
+
+	<!-- Kim Hyun Uk : 2009-08-19 start -->
+    <url-mapping url="VOP_SCG_0019.do" screen="VOP_SCG_0019.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg0019Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Hyun Uk : 2009-08-19 end -->
+
+	<!-- Kim Hyun Uk : 2009-09-25 start -->
+    <url-mapping url="VOP_SCG_0077.do" screen="VOP_SCG_0077.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0077HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0077GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_0077HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VopScg0077Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.SpecialCargoMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Hyun Uk : 2009-09-25 end -->
+    <url-mapping url="VOP_SCG_EXCEL.do" screen="VOP_SCG_EXCEL.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargomasterdatamgt.specialcargomasterdatamgt.event.VOP_SCG_EXCELHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- Kim Hyun Uk : 2009-12-14 start -->
+    <url-mapping url="VOP_SCG_0078.do" screen="VOP_SCG_0078.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0078HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0078GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VOP_SCG_0078HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.owndangerouscargoapproval.event.VopScg0078Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+    <!-- Kim Hyun Uk : 2009-12-14 end -->
+    
+     <!-- dongsoo : 2014-10-15 (EDI Test) start -->
+    <url-mapping url="VOP_SCG_0000.do" screen="VOP_SCG_0000.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.receiveedifrompartnerlines.event.VOP_SCG_0000HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_0000GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.receiveedifrompartnerlines.event.VOP_SCG_0000HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.receiveedifrompartnerlines.event.VopScg0000Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    <!-- dongsoo : 2014-10-15 end -->
+    <!-- dongsoo : 2014-10-24 start -->
+    <url-mapping url="VOP_SCG_5001.do" screen="VOP_SCG_5001.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VOP_SCG_5001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_5001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VOP_SCG_5001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VopScg5001Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+    <!-- dongsoo : 2014-10-24 end -->
+    
+    <!-- dongsoo : 2014-11-17 DG EDI Booking History start -->
+    <url-mapping url="VOP_SCG_5011.do" screen="VOP_SCG_5011.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_5011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VopScg5011Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    <!-- dongsoo : 2014-11-17 end -->
+    <!-- dongsoo : 2014-11-18 DG EDI Booking History start-->  
+    <url-mapping url="VOP_SCG_5911.do" screen="VOP_SCG_5911.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5911HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_5911GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5911HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VopScg5911Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    <!-- dongsoo : 2014-11-18 DG EDI Booking History end -->
+     <!-- 2015-09-09 I/O Bount Flat File start -->
+    <url-mapping url="VOP_SCG_5991.do" screen="VOP_SCG_5991.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5991HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_5991GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5991HTMLAction</web-action-class>
+    </url-mapping>
+     <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VopScg5991Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    <!-- 2015-09-09 I/O Bount Flat File end -->
+    <!-- dongsoo : 2015-01-12 DG EDI Booking History start-->  
+    <url-mapping url="VOP_SCG_5913.do" screen="VOP_SCG_5913.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5913HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_5913GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5913HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VopScg5913Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    <!-- dongsoo : 2015-01-12 DG EDI Booking History end -->
+    
+    <!-- dongsoo : 2014-11-26 DG IMDG Item Booking Summary start-->  
+    <url-mapping url="VOP_SCG_5912.do" screen="VOP_SCG_5912.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5912HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_5912GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5912HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VopScg5912Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    <!-- dongsoo : 2014-11-26 IMDG Item Booking Summary end -->
+    
+    <!-- Un Jeong : 2014-11-17 start -->
+    <url-mapping url="VOP_SCG_5021.do" screen="VOP_SCG_5021.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VOP_SCG_5021HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_SCG_5021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VOP_SCG_5021HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VopScg5021Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="VOP_SCG_5022.do" screen="VOP_SCG_5022.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VOP_SCG_5022HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_SCG_5022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VOP_SCG_5022HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VopScg5022Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="VOP_SCG_5921.do" screen="VOP_SCG_5921.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VOP_SCG_5921HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_SCG_5921GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VOP_SCG_5921HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VopScg5921Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="VOP_SCG_5922.do" screen="VOP_SCG_5922.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VOP_SCG_5922HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_SCG_5922GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VOP_SCG_5922HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VopScg5922Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="VOP_SCG_5923.do" screen="VOP_SCG_5923.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VOP_SCG_5923HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_SCG_5923GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VOP_SCG_5923HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.portlimitmanagement.event.VopScg5923Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    <!-- Un Jeong : 2014-11-17 end -->
+    
+    <url-mapping url="VOP_SCG_5822.do" screen="VOP_SCG_5822.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VOP_SCG_5822HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_SCG_5822GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VOP_SCG_5822HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VopScg5822Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Son Ji Ho : 2018-04-30 start -->
+    <url-mapping url="VOP_SCG_5823.do" screen="VOP_SCG_5823.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VOP_SCG_5823HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_SCG_5823GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VOP_SCG_5823HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.partnerlinesdangerouscargoapproval.event.VopScg5823Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.cargoloadingapproval.CargoLoadingApprovalSC</service-action-class>
+    </event-mapping>
+    
+	<!-- Kim Yang Jae : 2017-09-11 start -->
+    <url-mapping url="VOP_SCG_0080.do" screen="VOP_SCG_0080.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.cfrmgt.event.VOP_SCG_0080HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_SCG_0080Pop.do" screen="VOP_SCG_0080Pop.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.cfrmgt.event.VOP_SCG_0080HTMLAction</web-action-class>
+    </url-mapping>
+
+	
+    <url-mapping url="VOP_SCG_0080GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.cfrmgt.event.VOP_SCG_0080HTMLAction</web-action-class>
+    </url-mapping>
+	
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.cfrmgt.event.VopScg0080Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dangerouscargoinformationmgt.DangerousCargoInformationMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Yang Jae : 2017-09-11 end -->
+	<!-- yona : 2017-09-12 DG Restriction Start -->
+    <url-mapping url="VOP_SCG_5031.do" screen="VOP_SCG_5031.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dgrestrictionmanagement.dgrestrictionmanagement.event.VOP_SCG_5031HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_SCG_5031GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dgrestrictionmanagement.dgrestrictionmanagement.event.VOP_SCG_5031HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dgrestrictionmanagement.dgrestrictionmanagement.event.VopScg5031Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dgrestrictionmanagement.DgRestrictionManagementSC</service-action-class>
+    </event-mapping>
+   <url-mapping url="VOP_SCG_5032.do" screen="VOP_SCG_5032.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dgrestrictionmanagement.dgrestrictionmanagement.event.VOP_SCG_5032HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_SCG_5032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.scg.dgrestrictionmanagement.dgrestrictionmanagement.event.VOP_SCG_5032HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.dgrestrictionmanagement.dgrestrictionmanagement.event.VopScg5032Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.dgrestrictionmanagement.DgRestrictionManagementSC</service-action-class>
+    </event-mapping>
+    <!-- yona : 2017-09-12 DG Restriction End -->
+    <!-- Byungwoo : 2018-08-22 DG EDI Booking History for MSC start -->
+    <url-mapping url="VOP_SCG_5012.do" screen="VOP_SCG_5012.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5012HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_SCG_5012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5012HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VopScg5012Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    <!-- Byungwoo : 2018-08-22 end -->
+    <!-- Byungwoo : 2018-09-05 DG EDI Booking History for MSC(inbound) start-->  
+    <url-mapping url="VOP_SCG_5914.do" screen="VOP_SCG_5914.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5914HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_5914GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5914HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VopScg5914Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    <!-- Byungwoo : 2018-09-05 DG EDI Booking History for MSC(inbound) end -->
+    <!-- Byungwoo : 2018-09-06 IFTMBC Details for MSC(inbound) start-->  
+    <url-mapping url="VOP_SCG_5915.do" screen="VOP_SCG_5915.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5915HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_5915GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5915HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VopScg5915Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    <!-- Byungwoo : 2018-09-05 IFTMBC Details for MSC(inbound) end -->
+    <!-- Byungwoo : 2018-09-06 IFTMBC Details for MSC(outbound) start-->  
+    <url-mapping url="VOP_SCG_5916.do" screen="VOP_SCG_5916.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5916HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_5916GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5916HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VopScg5916Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    <!-- Byungwoo : 2018-09-06 IFTMBC Details for MSC(outbound) end-->
+    <!-- Byungwoo : 2018-09-11 DG EDI Booking History for MSC(outbound) start -->  
+    <url-mapping url="VOP_SCG_5917.do" screen="VOP_SCG_5917.screen">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5917HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_SCG_5917GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VOP_SCG_5917HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.editransmithistory.event.VopScg5917Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.specialcargoutilitymanagement.SpecialCargoUtilityManagementSC</service-action-class>
+    </event-mapping>
+    <!-- Byungwoo : 2018-09-11 DG EDI Booking History for MSC( outbound ) end -->
+</mappings>

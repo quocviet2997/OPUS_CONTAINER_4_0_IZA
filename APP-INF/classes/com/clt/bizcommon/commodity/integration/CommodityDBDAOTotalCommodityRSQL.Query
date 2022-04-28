@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CommodityDBDAOTotalCommodityRSQL">
+			<desc><![CDATA[ RePo Plan의 총 카운트를 조회한다.]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*)
+FROM MDM_COMMODITY
+WHERE 1 = 1
+#if (${cmdt_cd} != '')
+  AND CMDT_CD LIKE @[cmdt_cd]
+#end
+#if (${rep_cmdt_cd} != '')
+  AND REP_CMDT_CD LIKE @[rep_cmdt_cd]
+#end
+#if (${cmdt_nm} != '')
+  AND UPPER(CMDT_NM) LIKE '%' || UPPER(@[cmdt_nm]) || '%'
+#end
+#if (${rep_imdg_lvl_cd} != '')
+  AND REP_IMDG_LVL_CD LIKE @[rep_imdg_lvl_cd]
+#end
+#if (${mdm_yn} != '')
+  #if (${delt_flg} == 'Y')
+  AND DELT_FLG = @[delt_flg]
+  AND DELT_FLG <> 'Y'
+  #end
+#else
+  AND DELT_FLG <> 'N'
+#end
+			]]></sql>
+			<params>
+				<param name="cmdt_cd" type="12" value="" out="N"/>
+				<param name="rep_cmdt_cd" type="12" value="" out="N"/>
+				<param name="cmdt_nm" type="12" value="" out="N"/>
+				<param name="rep_imdg_lvl_cd" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

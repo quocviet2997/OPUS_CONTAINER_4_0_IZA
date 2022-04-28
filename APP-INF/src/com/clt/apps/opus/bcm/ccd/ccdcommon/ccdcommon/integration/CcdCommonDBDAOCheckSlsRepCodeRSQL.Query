@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckSlsRepCodeRSQL">
+			<desc><![CDATA[MDM_SLS_REP 테이블에 slsRepCd 에 
+해당하는 정보가 있는지 유무를 리턴한다.]]></desc>
+			<sql><![CDATA[
+SELECT SREP_CD 
+FROM MDM_SLS_REP 
+WHERE 1=1
+AND SREP_CD = @[srep_cd]
+--AND DELT_FLG ='N'			]]></sql>
+			<params>
+				<param name="srep_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchEstFmcCodeRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT GL_MISC_N1ST_CD,
+       GL_MISC_N2ND_CD,
+       GL_MISC_N3RD_CD,
+       ENT_NM,
+       ENT_ABBR_NM,
+       DELT_FLG,
+       CRE_DT,
+       UPD_USR_ID,
+       UPD_DT,
+       EAI_EVNT_DT
+  FROM GL_FMC_ENT
+	WHERE 1=1
+#if (${gl_misc_n1st_cd} != '') 
+		AND   GL_MISC_N1ST_CD    = @[gl_misc_n1st_cd]
+#end
+#if (${gl_misc_n2nd_cd} != '') 
+		AND   GL_MISC_N2ND_CD    = @[gl_misc_n2nd_cd]
+#end
+#if (${gl_misc_n3rd_cd} != '') 
+		AND   GL_MISC_N3RD_CD    = @[gl_misc_n3rd_cd]
+#end
+			]]></sql>
+			<params>
+				<param name="gl_misc_n1st_cd" type="12" value="" out="N"/>
+				<param name="gl_misc_n2nd_cd" type="12" value="" out="N"/>
+				<param name="gl_misc_n3rd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

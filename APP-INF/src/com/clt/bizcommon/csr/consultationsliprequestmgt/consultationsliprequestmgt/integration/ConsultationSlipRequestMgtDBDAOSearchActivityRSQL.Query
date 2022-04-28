@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOSearchActivityRSQL">
+			<desc><![CDATA[Activity Date / Place 조회]]></desc>
+			<sql><![CDATA[
+SELECT   SACAI.ACT_DT_NM   AS ACTIVITY_DATE
+               , SACAI.ACT_PLC_NM  AS ACTIVITY_PLACE
+FROM     SCO_AP_COST_ACT_INFO SACAI
+WHERE   SACAI.SRC_MDL_CD = @[module] -- Mudule Code
+AND        SACAI.ACT_COST_CD = @[cost_cd] -- Cost Code
+AND        SACAI.CONV_ACCT_CD = @[acct_cd] -- Opus Account Code
+AND        NVL(SACAI.ENBL_FLG, 'N') <> 'Y'			]]></sql>
+			<params>
+				<param name="module" type="12" value="" out="N"/>
+				<param name="cost_cd" type="12" value="" out="N"/>
+				<param name="acct_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

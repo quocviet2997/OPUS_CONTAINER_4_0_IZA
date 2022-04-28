@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserDAOComUsrPgmMtchUSQL">
+			<desc><![CDATA[update com_usr_pgm_mtch]]></desc>
+			<sql><![CDATA[
+update com_usr_pgm_mtch set 
+	add_flg = @[admin],
+	upd_usr_id = @[upd_usr_id],
+	upd_dt = sysdate
+where	usr_id = @[usr_id]
+			]]></sql>
+			<params>
+				<param name="admin" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

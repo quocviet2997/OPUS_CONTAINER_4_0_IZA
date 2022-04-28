@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- ========================================================================@ Transport Manage  -->
+
+	<!--  Common Office Search -->
+	<url-mapping url="ESD_EAS_COM_0001.do" screen="ESD_EAS_COM_0001.screen" >
+		<web-action-class>com.clt.apps.opus.esd.eas.common.popup.event.ESD_EAS_COM_0001HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_EAS_COM_0001GS.do" screen="com.clt.apps.opus.esd.eas.common.popup.event.EsdEasCom0001ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.eas.common.popup.event.ESD_EAS_COM_0001HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.eas.common.popup.event.EsdEasCom0001Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.eas.common.CommonManageSC</service-action-class>
+	</event-mapping>
+
+	<!--  Rehandling of Terminal  -->
+	<url-mapping url="ESD_EAS_0001.do" screen="ESD_EAS_0001.screen" >
+		<web-action-class>com.clt.apps.opus.esd.eas.terminalmanage.event.ESD_EAS_0001HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_EAS_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.eas.terminalmanage.event.ESD_EAS_0001HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.eas.terminalmanage.event.EsdEas0001Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.eas.terminalmanage.TerminalmanageSC</service-action-class>
+	</event-mapping>
+	
+	   <!--  Rehandling Exp. – COD vs. TPB Remark Detail   -->
+    <url-mapping url="ESD_EAS_0901.do" screen="ESD_EAS_0901.screen">
+        <web-action-class>com.clt.apps.opus.esd.eas.terminalmanage.event.ESD_EAS_0901HTMLAction</web-action-class>       
+    </url-mapping>
+    <url-mapping url="ESD_EAS_0901GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.esd.eas.terminalmanage.event.ESD_EAS_0901HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.eas.terminalmanage.event.EsdEas0901Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.eas.terminalmanage.TerminalmanageSC</service-action-class>
+    </event-mapping>
+	
+	<!--  Route Unmatch – B/L vs. S/O -->
+	<url-mapping url="ESD_EAS_0002.do" screen="ESD_EAS_0002.screen" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0002HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_EAS_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0002HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.eas.transportmanage.event.EsdEas0002Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.eas.transportmanage.TransportmanageSC</service-action-class>
+	</event-mapping>	
+	<url-mapping url="ESD_EAS_09002.do" screen="ESD_EAS_0902.screen" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0902HTMLAction</web-action-class>
+	</url-mapping>
+		<url-mapping url="ESD_EAS_0902GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0902HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.eas.transportmanage.event.EsdEas0902Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.eas.transportmanage.TransportmanageSC</service-action-class>
+	
+	<!--  Route Unmatch & C/H Audit Popup -->
+	</event-mapping>
+	<url-mapping url="ESD_EAS_0903.do" screen="ESD_EAS_0903.screen" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0903HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_EAS_0903GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0903HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.eas.transportmanage.event.EsdEas0903Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.eas.transportmanage.TransportmanageSC</service-action-class>
+	</event-mapping>	
+		
+	<!--  Special S/O of Transport  -->
+	<url-mapping url="ESD_EAS_0003.do" screen="ESD_EAS_0003.screen" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0003HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_EAS_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0003HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.eas.transportmanage.event.EsdEas0003Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.eas.transportmanage.TransportmanageSC</service-action-class>
+	</event-mapping>	
+				
+	<!--  C/H Auditing -->
+	<url-mapping url="ESD_EAS_0004.do" screen="ESD_EAS_0004.screen" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0004HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_EAS_0004GS.do" screen="com.clt.apps.opus.esd.eas.transportmanage.event.EsdEas0004ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0004HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.eas.transportmanage.event.EsdEas0004Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.eas.transportmanage.TransportmanageSC</service-action-class>
+	</event-mapping>
+	<url-mapping url="ESD_EAS_0904.do" screen="ESD_EAS_0904.screen" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0004HTMLAction</web-action-class>
+	</url-mapping>
+		<url-mapping url="ESD_EAS_0904GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0004HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!--  Cancelled BKG's Cntr Tracing -->
+	<url-mapping url="ESD_EAS_0005.do" screen="ESD_EAS_0005.screen" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0005HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_EAS_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0005HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.eas.transportmanage.event.EsdEas0005Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.eas.transportmanage.TransportmanageSC</service-action-class>
+	</event-mapping>	
+	
+	<!--  MSC Checking -->
+	<url-mapping url="ESD_EAS_0006.do" screen="ESD_EAS_0006.screen" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0006HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_EAS_0006GS.do" screen="com.clt.apps.opus.esd.eas.transportmanage.event.EsdEas0006ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0006HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.eas.transportmanage.event.EsdEas0006Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.eas.transportmanage.TransportmanageSC</service-action-class>
+	</event-mapping>	
+	
+	<!--  Drop-off Charge Tariff -->
+	<url-mapping url="ESD_EAS_0007.do" screen="ESD_EAS_0007.screen" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0007HTMLAction</web-action-class>
+	</url-mapping>
+		<url-mapping url="ESD_EAS_0007GS.do" screen="com.clt.apps.opus.esd.eas.transportmanage.event.EsdEas0007ViewAdapter" >
+	<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0007HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.eas.transportmanage.event.EsdEas0007Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.eas.transportmanage.TransportmanageSC</service-action-class>
+	</event-mapping>	
+	
+	<!--  Drop-off Charge Collection Inquiry  -->
+	<url-mapping url="ESD_EAS_0008.do" screen="ESD_EAS_0008.screen" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0008HTMLAction</web-action-class>
+	</url-mapping>
+		<url-mapping url="ESD_EAS_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+	<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0008HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.eas.transportmanage.event.EsdEas0008Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.eas.transportmanage.TransportmanageSC</service-action-class>
+	</event-mapping>	
+	
+	<!--  Drop-off Charge Collection Performance  -->
+	<url-mapping url="ESD_EAS_0009.do" screen="ESD_EAS_0009.screen" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0009HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_EAS_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.event.ESD_EAS_0009HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.eas.transportmanage.event.EsdEas0009Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.eas.transportmanage.TransportmanageSC</service-action-class>
+	</event-mapping>
+	
+	<!--  OCP Charge Collection Management  -->
+	<url-mapping url="ESD_EAS_0010.do" screen="ESD_EAS_0010.screen" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.ocpchgcolmanage.event.ESD_EAS_0010HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_EAS_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.eas.transportmanage.ocpchgcolmanage.event.ESD_EAS_0010HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.eas.transportmanage.ocpchgcolmanage.event.EsdEas0010Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.eas.transportmanage.TransportmanageSC</service-action-class>
+	</event-mapping>
+					
+</mappings>

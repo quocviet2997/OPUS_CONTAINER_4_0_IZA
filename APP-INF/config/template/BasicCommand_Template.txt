@@ -1,0 +1,57 @@
+/*=========================================================
+*Copyright(c) ${Date} CyberLogitec
+*@FileName : ${FILE_NAME}BC.java
+*@FileTitle : ${FILE_TITLE}
+*Open Issues :
+*Change history :
+*@LastModifyDate : ${Date_dey}
+*@LastModifier : ${USER_NAME}
+*@LastVersion : 1.0
+* ${Date_dey} ${USER_NAME}
+* 1.0 Creation
+=========================================================*/
+package ${PACKAGE};
+
+import java.util.List;
+import com.clt.framework.core.layer.event.EventException;
+import com.clt.framework.support.view.signon.SignOnUserAccount;
+#foreach( $key in $Import.keySet())
+import $Import.get($key)
+#end
+
+/**
+ * ALPS-${SC} Business Logic Command Interface<br>
+ * - ALPS-${SC}에 대한 비지니스 로직에 대한 인터페이스<br>
+ *
+ * @author ${EN_NAME}
+ * @since J2EE 1.6
+ */
+
+public interface ${FILE_NAME}BC {
+#if(${search})
+#foreach( $key in $Smethod.keySet())
+
+	/**
+	 * [비즈니스대상]을 [행위] 합니다.<br>
+	 * 
+	 * @param $Smethod_m.get($key)	$Smethod_s.get($key)
+	 * @return List<$Smethod_m.get($key)>
+	 * @exception EventException
+	 */
+	public List<$Smethod_m.get($key)> $Smethod.get($key)($Smethod_m.get($key) $Smethod_s.get($key)) throws EventException;
+#end
+#end
+#if(${multi})
+#foreach( $key in $Mmethod.keySet())
+	
+	/**
+	 * [비즈니스대상]을 [행위] 합니다.<br>
+	 * 
+	 * @param $Mmethod_m.get($key)[] $Mmethod_s.get($key)
+	 * @param account SignOnUserAccount
+	 * @exception EventException
+	 */
+	public void $Mmethod.get($key)($Mmethod_m.get($key)[] $Mmethod_s.get($key),SignOnUserAccount account) throws EventException;
+#end
+#end
+}

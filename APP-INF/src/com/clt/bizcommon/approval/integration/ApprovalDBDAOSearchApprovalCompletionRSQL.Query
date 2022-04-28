@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOSearchApprovalCompletionRSQL">
+			<desc><![CDATA[Approval 기완료 여부를 체크합니다]]></desc>
+			<sql><![CDATA[
+SELECT APSTS_CD 
+  FROM COM_APRO_RQST_HDR  
+ WHERE APRO_RQST_NO = @[apro_rqst_no]
+   AND DELT_FLG <> 'Y'  			]]></sql>
+			<params>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

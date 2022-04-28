@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOCheckDupGlEstimateRevenueVvdRSQL">
+			<desc><![CDATA[CheckDupGlEstimateRevenueVvd]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*) CNT
+FROM GL_ESTM_REV_VVD
+WHERE 1 = 1
+AND EXE_YRMON = @[exe_yrmon]
+AND REV_YRMON = @[rev_yrmon]
+AND VSL_CD||SKD_VOY_NO||SKD_DIR_CD||REV_DIR_CD = @[vsl_cd]||@[skd_voy_no]||@[skd_dir_cd]||@[rev_dir_cd]
+AND ESTM_VVD_TP_CD = @[estm_vvd_tp_cd]
+AND ESTM_IOC_DIV_CD = @[estm_ioc_div_cd]			]]></sql>
+			<params>
+				<param name="exe_yrmon" type="12" value="" out="N"/>
+				<param name="rev_yrmon" type="12" value="" out="N"/>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="skd_voy_no" type="12" value="" out="N"/>
+				<param name="skd_dir_cd" type="12" value="" out="N"/>
+				<param name="rev_dir_cd" type="12" value="" out="N"/>
+				<param name="estm_vvd_tp_cd" type="12" value="" out="N"/>
+				<param name="estm_ioc_div_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

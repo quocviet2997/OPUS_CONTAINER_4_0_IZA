@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserMappingDAOComUsrRoleMtchHisCSQL">
+			<desc><![CDATA[DESC Enter..]]></desc>
+			<sql><![CDATA[
+INSERT INTO COM_USR_ROLE_MTCH_HIS
+(   USR_ID,
+    USR_ROLE_CD,
+    USR_ROLE_HIS_SEQ,
+    EFF_DT,
+    EXP_DT,
+    CRE_USR_ID,
+    CRE_DT,
+    UPD_USR_ID,
+    UPD_DT
+)
+VALUES
+(   @[usr_id],
+	@[usr_role_cd],
+    (SELECT NVL(MAX(USR_ROLE_HIS_SEQ), 0)+1
+       FROM COM_USR_ROLE_MTCH_HIS
+      WHERE USR_ID = @[usr_id]
+        AND USR_ROLE_CD = @[usr_role_cd]),
+    SYSDATE,
+    TO_DATE('9999-12-31', 'YYYY-MM-DD'),
+    @[cre_usr_id],
+	SYSDATE,
+	@[cre_usr_id],
+	SYSDATE
+)			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="usr_role_cd" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

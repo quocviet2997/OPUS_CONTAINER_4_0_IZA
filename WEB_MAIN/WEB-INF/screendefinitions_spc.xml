@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+ 
+	<!-- Han Sang Hoon : 2009-07-22 start -->
+    <screen name="ESM_SPC_0100">
+        <parameter key="title"    value="ESM_SPC_0100" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/dailyforecast/basicdata/jsp/ESM_SPC_0100.jsp"/>
+    </screen>
+	<!-- Han Sang Hoon : 2009-07-22 end -->
+	
+	<!-- CHOI Yun Sung : 2009-07-29 start -->
+    <screen name="ESM_SPC_0042">
+        <parameter key="title"    value="Allocation Change by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spaceallocationmanage/spaceallocationmanage/jsp/ESM_SPC_0042.jsp"/>
+    </screen>
+    
+    <screen name="ESM_SPC_XLS">
+        <parameter key="title"    value="PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/common/common/jsp/ESM_SPC_XLS.jsp"/>
+    </screen>
+    <screen name="ESM_SPC_MSG">
+        <parameter key="title"    value="PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/common/common/jsp/ESM_SPC_MSG.jsp"/>
+    </screen>    
+
+    <screen name="ESM_SPC_CODGS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esm/spc/common/common/jsp/ESM_SPC_CODGS.jsp"/>
+    </screen>
+	<!-- CHOI Yun Sung : 2009-07-29 end -->
+
+	<!-- Han Sang Hoon : 2009-08-10 start -->
+    <screen name="ESM_SPC_0021">
+        <parameter key="title"    value="spacecontrolinquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spacecontrolinquiry/spacecontrolinquiry/jsp/ESM_SPC_0021.jsp"/>
+    </screen>
+	<!-- Han Sang Hoon : 2009-08-10 end -->
+
+	<!-- Han Sang Hoon : 2009-08-19 start -->
+    <screen name="ESM_SPC_0024">
+        <parameter key="title"    value="spacecontrolinquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spacecontrolinquiry/spacecontrolinquiry/jsp/ESM_SPC_0024.jsp"/>
+    </screen>
+	<!-- Han Sang Hoon : 2009-08-19 end -->
+
+	<!-- Han Sang Hoon : 2009-08-21 start -->
+    <screen name="ESM_SPC_0103">
+        <parameter key="title"    value="dailyforecastmanage" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/dailyforecast/dailyforecastmanage/jsp/ESM_SPC_0103.jsp"/>
+    </screen>
+	<!-- Han Sang Hoon : 2009-08-21 end -->
+
+    <!-- UI POPUP add -->
+    <screen name="ESM_SPC_0103_POP" template="templatePop">
+        <parameter key="title"    value="Acc. Add/Del" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/dailyforecast/dailyforecastmanage/jsp/ESM_SPC_0103.jsp"/>
+    </screen>
+
+	<!-- Han Sang Hoon : 2009-08-27 start -->
+    <screen name="ESM_SPC_0104">
+        <parameter key="title"    value="dailyforecastmanage" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/dailyforecast/dailyforecastmanage/jsp/ESM_SPC_0104.jsp"/>
+    </screen>
+	<!-- Han Sang Hoon : 2009-08-27 end -->
+	
+	<!-- KHS : 2016-01-21 start  -->
+    <screen name="ESM_SPC_0105" template="templatePop">
+        <parameter key="title"    value="dailyforecastmanage" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/dailyforecast/dailyforecastmanage/jsp/ESM_SPC_0105.jsp"/>
+    </screen>
+	<!-- KHS : 2016-01-21 end -->
+
+	<!-- CHOI Yun Sung : 2009-08-27 start -->
+    <screen name="ESM_SPC_0102">
+        <parameter key="title"    value="Daily Forecast Input" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/dailyforecast/dailyforecastmanage/jsp/ESM_SPC_0102.jsp"/>
+    </screen>
+	<!-- CHOI Yun Sung : 2009-08-27 end -->
+	
+	<!-- PCH : 2014-07-17 start -->
+    <screen name="ESM_SPC_9010"  template="templatePop">
+        <parameter key="title"    value="Daily Forecast Input" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/dailyforecast/dailyforecastmanage/jsp/ESM_SPC_9010.jsp"/>
+    </screen>
+	<!-- PCH : 2014-07-17 end -->
+
+	
+	<!-- Han Sang Hoon : 2009-09-03 start -->
+    <screen name="ESM_SPC_0047">
+        <parameter key="title"    value="spaceallocationmanage" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spaceallocationmanage/spaceallocationmanage/jsp/ESM_SPC_0047.jsp"/>
+    </screen>
+	<!-- Han Sang Hoon : 2009-09-03 end -->
+
+	<!-- Han Sang Hoon : 2009-09-15 start -->
+    <screen name="ESM_SPC_0044">
+        <parameter key="title"    value="spaceallocationmanage" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spaceallocationmanage/spaceallocationmanage/jsp/ESM_SPC_0044.jsp"/>
+    </screen>
+	<!-- Han Sang Hoon : 2009-09-15 end -->
+
+	<!-- Han Sang Hoon : 2009-09-22 start -->
+    <screen name="ESM_SPC_0053">
+        <parameter key="title"    value="spaceallocationmanage" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spaceallocationmanage/spaceallocationmanage/jsp/ESM_SPC_0053.jsp"/>
+    </screen>
+	<!-- Han Sang Hoon : 2009-09-22 end -->
+
+
+    <!-- UI POPUP add  -->
+    <screen name="ESM_SPC_0045_POP" template="templatePop">
+        <parameter key="title"    value="BOTTLENECK" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spaceallocationmanage/spaceallocationmanage/jsp/ESM_SPC_0045.jsp"/>
+    </screen>
+    
+	<!-- Han Sang Hoon : 2009-09-24 start -->
+    <screen name="ESM_SPC_0045">
+        <parameter key="title"    value="spaceallocationmanage" direct="true"/>
+        <parameter key="body"   value="apps/opus/esm/spc/spaceallocationmanage/spaceallocationmanage/jsp/ESM_SPC_0045.jsp"/>
+    </screen>
+	<!-- Han Sang Hoon : 2009-09-24 end -->
+	
+	<!-- CHOI Yun Sung : 2009-09-29 start -->
+    <screen name="ESM_SPC_0071" template="templatePop">
+        <parameter key="title"    value="SKD Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spaceallocationmanage/spaceallocationmanage/jsp/ESM_SPC_0071.jsp"/>
+    </screen>
+	<!-- CHOI Yun Sung : 2009-09-29 end -->
+
+	<!-- Han Sang Hoon : 2009-10-06 start -->
+    <screen name="ESM_SPC_0022">
+        <parameter key="title"    value="spacecontrolinquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spacecontrolinquiry/spacecontrolinquiry/jsp/ESM_SPC_0022.jsp"/>
+    </screen>
+	<!-- Han Sang Hoon : 2009-10-06 end -->
+
+	<!-- Han Sang Hoon : 2009-10-12 start -->
+    <screen name="ESM_SPC_0028">
+        <parameter key="title"    value="spacecontrolinquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spacecontrolinquiry/spacecontrolinquiry/jsp/ESM_SPC_0028.jsp"/>
+    </screen>
+	<!-- Han Sang Hoon : 2009-10-12 end -->
+
+	<!-- Ju Sun Young : 2009-10-29 start -->
+    <screen name="ESM_SPC_0026">
+        <parameter key="title"    value="Allocation History" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spacecontrolinquiry/spacecontrolinquiry/jsp/ESM_SPC_0026.jsp"/>
+    </screen>
+	<!-- Ju Sun Young : 2009-10-29 end -->
+	
+	 <screen name="ESM_SPC_3001">
+        <parameter key="title"    value="SPC Office Level" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/dailyforecast/dailyforecastmanage/jsp/ESM_SPC_3001.jsp"/>
+    </screen>
+
+	<!-- CHOI.Y.S : 2010-08-23 start -->
+    <screen name="ESM_SPC_0080">
+        <parameter key="title"    value="RDR Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spacecontrolinquiry/spacecontrolinquiry/jsp/ESM_SPC_0080.jsp"/>
+    </screen>
+	<!-- CHOI.Y.S : 2010-08-23 end -->
+
+   	<!-- Kim Min Ah : 2010-08-23 start -->
+    <screen name="ESM_SPC_0081">
+        <parameter key="title"    value="RDR Detail Data" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spacecontrolinquiry/spacecontrolinquiry/jsp/ESM_SPC_0081.jsp"/>
+    </screen>
+	<!-- Kim Min Ah : 2010-08-23 end -->
+	
+	<!-- CHOI.Y.S : 2010-10-19 start -->
+    <screen name="ESM_SPC_0082">
+        <parameter key="title"    value="L/F Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spacecontrolinquiry/spacecontrolinquiry/jsp/ESM_SPC_0082.jsp"/>
+    </screen>
+	<!-- CHOI.Y.S : 2010-10-19 end -->
+
+	<!-- Kim Jong Jun : 2010-11-22 start -->
+    <screen name="ESM_SPC_0083">
+        <parameter key="title"    value="RDR Detail Data" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spacecontrolinquiry/spacecontrolinquiry/jsp/ESM_SPC_0083.jsp"/>
+    </screen>
+	<!-- Kim Jong Jun : 2010-11-22 end -->
+
+	<!-- Han Sang Hoon : 2009-10-01 start -->
+    <screen name="ESM_SPC_0070">
+        <parameter key="title"    value="spaceallocationmanage" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spaceallocationmanage/spaceallocationmanage/jsp/ESM_SPC_0070.jsp"/>
+    </screen>
+    
+	<!-- Han Sang Hoon : 2009-10-13 start -->
+    <screen name="ESM_SPC_0056">
+        <parameter key="title"    value="spacecontrolinquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spacecontrolinquiry/spacecontrolinquiry/jsp/ESM_SPC_0056.jsp"/>
+    </screen>
+	<!-- Han Sang Hoon : 2009-10-13 end -->
+
+    <!-- Kim Tae Gyun : 2018-11-29 start -->
+    <screen name="ESM_SPC_0115">
+        <parameter key="title"    value="Standby booking Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/basicdatamange/basicdatamange/jsp/ESM_SPC_0115.jsp"/>
+    </screen>
+    <screen name="ESM_SPC_0115_Q">
+        <parameter key="title"    value="Standby booking Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/basicdatamange/basicdatamange/jsp/ESM_SPC_0115.jsp"/>
+    </screen>
+    
+	<screen name="ESM_SPC_0116" template="templatePop">
+        <parameter key="title"    value="Item Setup" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/basicdatamange/basicdatamange/jsp/ESM_SPC_0116.jsp"/>
+    </screen>
+	<screen name="ESM_SPC_0117">
+        <parameter key="title"    value="Final Guidance Logic" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/basicdatamange/basicdatamange/jsp/ESM_SPC_0117.jsp"/>
+    </screen>
+	<screen name="ESM_SPC_0118" template="templatePop">
+        <parameter key="title"    value="Constraint Type Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/basicdatamange/basicdatamange/jsp/ESM_SPC_0118.jsp"/>
+    </screen>
+	<screen name="ESM_SPC_0119">
+        <parameter key="title"    value="Sbc Priority rule Setting" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/basicdatamange/basicdatamange/jsp/ESM_SPC_0119.jsp"/>
+    </screen>
+	<screen name="ESM_SPC_0120">
+        <parameter key="title"    value="Guidance Matrix Final(Setup guidance)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/basicdatamange/basicdatamange/jsp/ESM_SPC_0120.jsp"/>
+    </screen>
+	<screen name="ESM_SPC_0121">
+        <parameter key="title"    value="Guidance Matrix Final(Final Guidance Management)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/basicdatamange/basicdatamange/jsp/ESM_SPC_0121.jsp"/>
+    </screen>
+	<screen name="ESM_SPC_0122" template="templatePop">
+        <parameter key="title"    value="Multi POL/POD Input" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/basicdatamange/basicdatamange/jsp/ESM_SPC_0122.jsp"/>
+    </screen>
+	<screen name="ESM_SPC_0123" template="templatePop">
+        <parameter key="title"    value="Group Commodity" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/basicdatamange/basicdatamange/jsp/ESM_SPC_0123.jsp"/>
+    </screen>
+    <!-- Kim Tae Gyun : 2018-11-29 end -->
+    <!-- Kim Tae Gyun : 2018-10-27 start -->
+    <screen name="ESM_SPC_0043_POP" template="templatePop">
+        <parameter key="title"    value="searchSpaceAllocationBookingPopUp" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/spc/spaceallocationmanage/spaceallocationmanage/jsp/ESM_SPC_0043.jsp"/>
+    </screen>
+    <!-- Kim Tae Gyun : 2018-10-27 end -->
+
+
+</screen-definitions>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOConfirmApprovalRemarkUSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+UPDATE COM_APRO_RQST_ROUT
+  SET APRO_RMK = 'Retry'
+    , APSTS_CD = ''
+    , APRO_DT  = NULL 
+ WHERE APRO_RQST_NO  = @[apro_rqst_no]
+   AND APRO_RQST_SEQ = @[apro_rqst_seq]			]]></sql>
+			<params>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+				<param name="apro_rqst_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

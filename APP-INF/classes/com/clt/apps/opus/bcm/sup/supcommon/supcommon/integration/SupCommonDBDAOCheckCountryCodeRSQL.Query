@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SupCommonDBDAOCheckCountryCodeRSQL">
+			<desc><![CDATA[2011.02.25 정윤태 MDM_COUNTRY에서 Country Code 정보를 가져온다]]></desc>
+			<sql><![CDATA[
+SELECT LTRIM(MAX(SYS_CONNECT_BY_PATH(CNT_CD, ',')),',') CNT_CD
+   FROM (
+	     SELECT CNT_CD, ROWNUM RNUM
+	       FROM MDM_COUNTRY
+          WHERE CNT_CD IN (#foreach($cnt_desc IN ${lst_cnt_desc})
+						       #if($lst_cnt_desc.hasNext()) '$cnt_desc', #else '$cnt_desc' #end
+						   #end
+						  )
+		    AND DELT_FLG = 'N'
+        )
+  START WITH RNUM=1   
+CONNECT BY PRIOR RNUM = RNUM-1			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

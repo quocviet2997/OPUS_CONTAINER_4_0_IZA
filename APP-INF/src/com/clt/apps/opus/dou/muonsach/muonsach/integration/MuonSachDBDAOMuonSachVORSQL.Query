@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MuonSachDBDAOMuonSachVORSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+SELECT 
+	STT
+,	NGAY
+,	SOTIEN
+,	SINHVIEN_ID
+FROM MUONSACH
+WHERE 1=1
+#if (${sinhvien_id} != '' && ${sinhvien_id}) 
+AND SINHVIEN_ID IN (
+	#foreach($key IN ${obj_list_no}) #if($velocityCount < $obj_list_no.size()) '$key', #else '$key' #end #end
+)
+#end
+ORDER BY SINHVIEN_ID			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+	<head>
+		<title>IBTab7</title>
+
+		<script type="text/javascript" src="ibmditab.js"></script>
+		<script type="text/javascript" src="ibmditabinfo.js"></script>
+		<script type="text/javascript" src="ibmditabscroll.js"></script>
+		<script type="text/javascript">
+
+			var item = new Array(["TAB1", "./tabpage.jsp?pageName=TAB1", "./Main/t_icon_01.gif"]);
+
+			function PageLoad()
+			{
+				myIBTab1.Init(1, true, true);
+				myIBTab1.SetTabItemLayout(0);
+				myIBTab1.SetViewTabCount(5);
+				myIBTab1.SetTabTitleAlign("center");
+				myIBTab1.SetSelectFontColor('#0000FF');
+				document.all._tbVersion.value = myIBTab1.GetVersion();
+
+				myIBTab2.Init(1, true, true);
+				myIBTab2.SetThemeName("Main2");
+				myIBTab2.SetTabPosition(1);
+
+				myIBTab3.Init(1, true, true);
+				myIBTab3.SetTabOffset(-20);
+
+				myIBTab4.Init(1, true, true);
+			    	myIBTab4.SetTabOffset(-20, 1);
+
+				myIBTab5.Init(2, true, true);
+			    	myIBTab5.SetTabTitleAlign("center");
+			    	myIBTab5.SetTabOffset(2);
+
+				myIBTab6.Init(3, false, false);
+
+				myIBTab7.Init(3, false, false);
+			    	myIBTab7.SetTabOffset(2);
+
+				myIBTab1.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab1.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab1.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab1.InsertItem(item[0][0], item[0][1], item[0][2]);
+
+				myIBTab2.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab2.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab2.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab2.InsertItem(item[0][0], item[0][1], item[0][2]);
+
+				myIBTab3.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab3.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab3.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab3.InsertItem(item[0][0], item[0][1], item[0][2]);
+
+				myIBTab4.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab4.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab4.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab4.InsertItem(item[0][0], item[0][1], item[0][2]);
+
+				myIBTab5.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab5.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab5.InsertItem(item[0][0], item[0][1], item[0][2]);
+				myIBTab5.InsertItem(item[0][0], item[0][1], item[0][2]);
+
+				myIBTab6.InsertItem("", item[0][1], item[0][2], false, "01");
+				myIBTab6.InsertItem("", item[0][1], item[0][2], false, "02");
+				myIBTab6.InsertItem("", item[0][1], item[0][2], true, "03");
+
+				myIBTab7.InsertItem("", item[0][1], item[0][2], false, "01");
+				myIBTab7.InsertItem("", item[0][1], item[0][2], false, "02");
+				myIBTab7.InsertItem("", item[0][1], item[0][2], false, "03");
+				myIBTab7.InsertItem("", item[0][1], item[0][2], true, "04");
+			}
+
+			function doAction(sAction)
+			{
+				switch(sAction)
+				{
+					case "InsertItem":      //조회
+						// 탭을 추가한다.
+						var next = myIBTab1.GetCount()+1;
+						var id = myIBTab1.InsertItem("TAB"+next, "./tabpage.jsp?pageName="+next, "");
+						var id = myIBTab2.InsertItem("TAB"+next, "./tabpage.jsp?pageName="+next, "");
+						//alert("tabid="+id);
+						break;
+					case "RemoveAll":      //
+						myIBTab1.RemoveAll(true);
+						myIBTab2.RemoveAll(true);
+						break;
+					case "DeleteItem":      //
+						myIBTab1.DeleteItem(-1, false);
+						myIBTab2.DeleteItem(-1, false);
+						break;
+				}
+			}
+
+			function myIBTab1_OnAfterDelete(index)
+			{
+				//alert("myIBTab1_OnAfterDelete > index = [" + index + "]");
+			}
+			function myIBTab1_OnBeforeDelete(index)
+			{
+				//alert("myIBTab1_OnBeforeDelete > index = [" + index + "]");
+			}
+			function myIBTab1_OnChange(curidx, oldidx)
+			{
+				//alert("myIBTab1_OnChange > curidx = [" + curidx + "], oldidx = [" + oldidx + "]");
+			}
+			function myIBTab1_OnClear()
+			{
+				//alert("myIBTab1_OnClear > ");
+			}
+			function myIBTab1_OnClick(index)
+			{
+				//alert("myIBTab1_OnClick > index = [" + index + "]");
+			}
+		</script>
+	</head>
+
+	<body onload='PageLoad()'>
+		<table id='aaa' width="750px" cellspacing="1" cellpadding="0" border='0'>
+			<tr>
+				<td colspan="2"><font size='2px'>* 버전 : </font>[<input type="text"  name="_tbVersion" style="border:0px solid white; background-color:transparent;width: 200px;"  value="" />]</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="10">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" >
+					<table cellspacing="1" cellpadding="0" width="100%">
+						<tr>
+							<td colspan="2" class="contentsLeft">
+								<input type="button" class="button" value="InsertItem" onClick="doAction('InsertItem');" >
+								<input type="button" class="button" value="RemoveAll" onClick="doAction('RemoveAll');" >
+								<input type="button" class="button" value="DeleteItem" onClick="doAction('DeleteItem');" >
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="10">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" align='center' height="120">
+					<script type="text/javascript"> 
+						createIBMDITab("myIBTab1", "700px", "100px");
+					</script>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="10">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="10">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" align='center' height="120">
+					<script type="text/javascript"> 
+						createIBMDITab("myIBTab2", "700px", "100px");
+					</script>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="10">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" align='center' height="120">
+					<script type="text/javascript"> 
+						createIBMDITab("myIBTab3", "700px", "100px");
+					</script>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="10">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" align='center' height="120">
+					<script type="text/javascript"> 
+						createIBMDITab("myIBTab4", "700px", "100px");
+					</script>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="10">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" align='center' height="120">
+					<script type="text/javascript"> 
+						createIBMDITab("myIBTab5", "700px", "100px", "Theme1");
+					</script>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="10">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" align='center' height="120">
+					<script type="text/javascript"> 
+						createIBMDITab("myIBTab6", "700px", "100px", "Theme2");
+					</script>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="10">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" align='center' height="120">
+					<script type="text/javascript"> 
+						createIBMDITab("myIBTab7", "700px", "100px", "Theme3");
+					</script>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

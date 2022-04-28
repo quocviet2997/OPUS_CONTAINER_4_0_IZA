@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	
+	<!-- cjm : 2009-04-21 start -->
+	
+
+    <!-- Manager ADD 2010-01-07 CYO -->
+    <screen name="CPS_GEM_1001">
+        <parameter key="title"    value="Expense Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemcommon/jsp/CPS_GEM_1001.jsp"/>
+    </screen>
+
+	<!-- [CPS_GEM_0006] Closing Confirmation &amp; Interface Status -->
+    <screen name="CPS_GEM_0006">
+        <parameter key="title"    value="Closing Confirmation &amp; Interface Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemclosingschedulemgt/jsp/CPS_GEM_0006.jsp"/>
+    </screen>
+    
+    <!-- [CPS_GEM_0010] Expense Code Inquiry -->
+    <screen name="CPS_GEM_0010">
+        <parameter key="title"    value="Expense Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemmastercodemgt/jsp/CPS_GEM_0010.jsp"/>
+    </screen>
+    
+    <!-- [CPS_GEM_0011] Expense Office Inquiry -->
+    <screen name="CPS_GEM_0011">
+        <parameter key="title"    value="Expense Office Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemmastercodemgt/jsp/CPS_GEM_0011.jsp"/>
+    </screen>
+    
+    <!-- [CPS_GEM_0012] Foreign Exchange Rate Inquiry -->
+    <screen name="CPS_GEM_0012">
+        <parameter key="title"    value="Foreign Exchange Rate Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemmastercodemgt/jsp/CPS_GEM_0012.jsp"/>
+    </screen>
+    
+    <!-- [CPS_GEM_0013] Expense Matrix per Office -->
+    <screen name="CPS_GEM_0013">
+        <parameter key="title"    value="Expense Matrix per Office" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemmastercodemgt/jsp/CPS_GEM_0013.jsp"/>
+    </screen>
+    
+    <!-- [CPS_GEM_0008] Expense Office Maintenance -->
+    <screen name="CPS_GEM_0008">
+        <parameter key="title"    value="Expense Office Maintenance" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemmastercodemgt/jsp/CPS_GEM_0008.jsp"/>
+    </screen>
+    
+    <!-- [CPS_GEM_0008_01] Expense Office Maintenance - Office Code -->
+    <screen name="CPS_GEM_0008_01" template="templateEmpty">
+        <parameter key="title"    value="Expense Office Maintenance - Office Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemmastercodemgt/jsp/CPS_GEM_0008_01.jsp"/>
+    </screen>
+    
+    <!-- [CPS_GEM_0109] Office code history -->
+    <screen name="CPS_GEM_0109" template="templatePop">
+        <parameter key="title"    value="Office code history" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemmastercodemgt/jsp/CPS_GEM_0109.jsp"/>
+    </screen>
+    
+    <!-- [CPS_GEM_0008_02] Expense Office Maintenance - Expense Matrix per Office -->
+    <screen name="CPS_GEM_0008_02" template="templateEmpty">
+        <parameter key="title"    value="Expense Office Maintenance - Expense Matrix per Office" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemmastercodemgt/jsp/CPS_GEM_0008_02.jsp"/>
+    </screen>
+    
+    <!-- [CPS_GEM_0110] Expense Matrix Copy -->
+    <screen name="CPS_GEM_0110" template="templatePop">
+        <parameter key="title"    value="Expense Matrix Copy" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemmastercodemgt/jsp/CPS_GEM_0110.jsp"/>
+    </screen>
+    
+    <!-- [CPS_GEM_0008_03] Expense Office Maintenance - Office Matrix per Office -->
+    <screen name="CPS_GEM_0008_03" template="templateEmpty">
+        <parameter key="title"    value="Expense Office Maintenance - Office Matrix per Office" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemmastercodemgt/jsp/CPS_GEM_0008_03.jsp"/>
+    </screen>
+    
+    <!-- [CPS_GEM_0019] Detail_Yearly Expense -->
+    <screen name="CPS_GEM_0019">
+        <parameter key="title"    value="Detail_Yearly Expense" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0019.jsp"/>
+    </screen>
+    
+    <!-- [CPS_GEM_9999] Log in Office Change Management -->
+    <screen name="CPS_GEM_9999">
+        <parameter key="title"    value="Log in Office Change Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemmastercodemgt/jsp/CPS_GEM_9999.jsp"/>
+    </screen>
+    
+    <!-- cjm : 2009-05-15 end -->
+
+    <!-- jyo : 2009-04-21 start -->
+    
+    <!-- CPS_GEM_0009 Foreign Exchange Rate Maintenance  -->
+    <screen name="CPS_GEM_0009">
+        <parameter key="title"    value="Foreign Exchange Rate Maintenance" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemmastercodemgt/jsp/CPS_GEM_0009.jsp"/>
+    </screen>
+    
+    <!-- CPS_GEM_0111 Monthly Accounting Rate Interface  -->
+    <screen name="CPS_GEM_0111" template="templatePop">
+        <parameter key="title"    value="Monthly Accounting Rate Interface" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemmastercodemgt/jsp/CPS_GEM_0111.jsp"/>
+    </screen>
+
+    <!-- UI_GEM-0007    Expense Code Maintenance  -->
+    <screen name="CPS_GEM_0007">
+        <parameter key="title"    value="Expense Code Maintenance" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemcommon/gemmastercodemgt/jsp/CPS_GEM_0007.jsp"/>
+    </screen>
+
+
+    <!-- CPS_GEM_0101    Authorized Expense Code  -->
+    <screen name="CPS_GEM_0101" template="templatePop">
+        <parameter key="title"    value="Authorized Expense Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0101.jsp"/>
+    </screen>
+
+    <!-- CPS_GEM_0102 Note  -->
+    <screen name="CPS_GEM_0102" template="templatePop">
+        <parameter key="title"    value="Note" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0102.jsp"/>
+    </screen>
+
+    <!-- [CPS_GEM_0104] Assigned Expense   -->
+    <screen name="CPS_GEM_0104" template="templatePop">
+        <parameter key="title"    value="Assigned Expense" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0104.jsp"/>
+    </screen>
+    
+    <!-- [CPS_GEM_0105] Request No. Reference   -->
+    <screen name="CPS_GEM_0105" template="templatePop">
+        <parameter key="title"    value="Request No. Reference" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0105.jsp"/>
+    </screen>    
+    
+    <!-- [UI_GEM-0001] Expense Request tab screen -->
+    <screen name="CPS_GEM_0001">
+        <parameter key="title"    value="Expense Request" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0001.jsp"/>
+    </screen>    
+
+
+   <!-- [CPS_GEM_0001_01] Expense Request – Initial & Additional  -->
+    <screen name="CPS_GEM_0001_01" template="templateEmpty">
+        <parameter key="title"    value="Expense Request" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0001_01.jsp"/>
+    </screen>    
+
+
+    <!-- [CPS_GEM_0001_02] Expense Request - Transfer  -->
+    <screen name="CPS_GEM_0001_02" template="templateEmpty">
+        <parameter key="title"    value="Expense Request" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0001_02.jsp"/>
+    </screen>    
+
+
+    <!-- [UI_GEM-0001_03T_01] Expense Request – Adjustment _ Transfer  & Expense Request _Adjustment - Initial & Additional -->
+    <screen name="CPS_GEM_0001_03" template="templateEmpty">   
+        <parameter key="title"    value="Expense Request" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0001_03.jsp"/>
+    </screen>    
+        
+   <!-- [CPS_GEM_0003] Approval of Requested expense -->        
+    <screen name="CPS_GEM_0003">  
+        <parameter key="title"    value="Approval of Requested expense" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0003.jsp"/>
+    </screen>    
+        
+   <!-- [CPS_GEM_0002] Processing Status -->        
+    <screen name="CPS_GEM_0002">  
+        <parameter key="title"    value="Processing Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0002.jsp"/>
+    </screen>    
+            
+   <!-- [CPS_GEM_0023] Processing Status -->        
+    <screen name="CPS_GEM_0023" template="templateRD">  
+        <parameter key="title"    value="Request Initial" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0023.jsp"/>
+    </screen>              
+    
+    
+    <!-- [CPS_GEM_0103] report popup   -->
+    <screen name="CPS_GEM_0103" template="templatePop">
+        <parameter key="title"    value="Expense Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0103.jsp"/>
+    </screen>      
+    <!-- jyo : 2009-04-21 end -->
+    
+    <!-- pcj : 2009-05-25 start -->
+    
+    <screen name="CPS_GEM_0004">
+        <parameter key="title"    value="Actual Results for Subsidiaries" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0004.jsp"/>
+    </screen>  
+    
+    <screen name="CPS_GEM_0016">
+        <parameter key="title"    value="Slip Inquiry  by Performance" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0016.jsp"/>
+    </screen> 
+    
+    <screen name="CPS_GEM_0015">
+        <parameter key="title"    value="Expense Vs Performance" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0015.jsp"/>
+    </screen> 
+    
+    <screen name="CPS_GEM_0014_01">
+        <parameter key="title"    value="Requested expense Vs Approved expense" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0014_01.jsp"/>
+    </screen> 
+    
+    <screen name="CPS_GEM_0106" template="templatePop">
+        <parameter key="title"    value="Approval Opinion" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0106.jsp"/>
+    </screen>
+    
+    <screen name="CPS_GEM_0014_02" template="templatePop">
+        <parameter key="title"    value="Request Information" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0014_02.jsp"/>
+    </screen>
+    
+    <screen name="CPS_GEM_0108" template="templatePop">
+        <parameter key="title"    value="Performance Inquiry_Additional" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0108.jsp"/>
+    </screen>
+    
+    <screen name="CPS_GEM_0107" template="templatePop">
+        <parameter key="title"    value="Performance Inquiry_Transfer" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0107.jsp"/>
+    </screen>
+    
+    <screen name="CPS_GEM_0018">
+        <parameter key="title"    value="Summary_After Closing" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/gem/gemplanningperformance/gemplanningperformance/jsp/CPS_GEM_0018.jsp"/>
+    </screen> 
+    
+    <!-- pcj : 2009-05-25 end -->
+    
+</screen-definitions>

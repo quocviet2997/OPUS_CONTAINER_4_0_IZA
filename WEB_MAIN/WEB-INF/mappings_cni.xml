@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+    <!-- [CPS_CNI_0001] Client Default Setup -->
+    <url-mapping url="CPS_CNI_0001.do" screen="CPS_CNI_0001.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0001HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0001_POP.do" screen="CPS_CNI_0001_POP.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CPS_CNI_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0001HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CpsCni0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_9999] Common RD viewer page  -->
+    <url-mapping url="CPS_CNI_9999.do" screen="CPS_CNI_9999.screen">
+    </url-mapping>
+
+    <!-- [CPS_CNI_0022] Prevention -->
+    <url-mapping url="CPS_CNI_0022.do" screen="CPS_CNI_0022.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.prevention.event.CPS_CNI_0022HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.prevention.event.CPS_CNI_0022HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.prevention.event.CpsCni0022Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+
+    
+    <!-- [CPS_CNI_0023] Prevention-Register -->
+    <url-mapping url="CPS_CNI_0023.do" screen="CPS_CNI_0023.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.prevention.event.CPS_CNI_0023HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.prevention.event.CPS_CNI_0023HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.prevention.event.CpsCni0023Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0093] Prevention Print -->    
+    <url-mapping url="CPS_CNI_0093.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.prevention.event.CPS_CNI_0023HTMLAction</web-action-class>
+    </url-mapping>      
+
+    <!-- [CPS_CNI_0024] Prevention-View -->
+    <url-mapping url="CPS_CNI_0024.do" screen="CPS_CNI_0024.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.prevention.event.CPS_CNI_0023HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- [CPS_CNI_0024] Prevention-View popup-->
+    <url-mapping url="CPS_CNI_0024_01.do" screen="CPS_CNI_0024_01.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.prevention.event.CPS_CNI_0023HTMLAction</web-action-class>
+    </url-mapping>       
+    
+
+
+    <!-- [CPS_CNI_0023] Prevention-Register popup-->
+    <url-mapping url="CPS_CNI_0023_01.do" screen="CPS_CNI_0023_01.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.prevention.event.CPS_CNI_0023HTMLAction</web-action-class>
+    </url-mapping>    
+
+    <!-- [CPS_CNI_0043] Impending TB Claim -->
+    <url-mapping url="CPS_CNI_0043.do" screen="CPS_CNI_0043.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0043HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0043GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0043HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CpsCni0043Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0045]  Invoice Creation -->
+    <url-mapping url="CPS_CNI_0045.do" screen="CPS_CNI_0045.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.claiminvoice.paymentinvoice.event.CPS_CNI_0045HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0045GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.claiminvoice.paymentinvoice.event.CPS_CNI_0045HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.claiminvoice.paymentinvoice.event.CpsCni0045Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.claiminvoice.ClaimInvoiceSC</service-action-class>
+    </event-mapping>
+    
+        <!-- [CPS_CNI_0048]  Invoice Creation -->
+    <url-mapping url="CPS_CNI_0048.do" screen="CPS_CNI_0048.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.claiminvoice.paymentinvoice.event.CPS_CNI_0048HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0048GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.claiminvoice.paymentinvoice.event.CPS_CNI_0048HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.claiminvoice.paymentinvoice.event.CpsCni0048Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.claiminvoice.ClaimInvoiceSC</service-action-class>
+    </event-mapping>
+
+    <!-- [CPS_CNI_0016] Insurance Recovery by VVD -->
+    <url-mapping url="CPS_CNI_0016.do" screen="CPS_CNI_0016.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.insurancerecovery.event.CPS_CNI_0016HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.insurancerecovery.event.CPS_CNI_0016HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.insurancerecovery.event.CpsCni0016Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+
+    <!-- [CPS_CNI_0016_01] Insurance Recovery by VVD popup-->
+    <url-mapping url="CPS_CNI_0016_01.do" screen="CPS_CNI_0016_01.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.insurancerecovery.event.CPS_CNI_0016HTMLAction</web-action-class>
+    </url-mapping>    
+    
+    <!-- [CPS_CNI_0094] Insurance Recovery by VVD  PRINT -->
+    <url-mapping url="CPS_CNI_0094.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.insurancerecovery.event.CPS_CNI_0016HTMLAction</web-action-class>
+    </url-mapping>      
+    
+    <!-- [CPS_CNI_0017] Insurance Recovery by Case -->
+    <url-mapping url="CPS_CNI_0017.do" screen="CPS_CNI_0017.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.insurancerecovery.event.CPS_CNI_0017HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.insurancerecovery.event.CPS_CNI_0017HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.insurancerecovery.event.CpsCni0017Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+
+    <!-- [CPS_CNI_0011] File Upload Popup -->
+    <url-mapping url="CPS_CNI_0011.do" screen="CPS_CNI_0011.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.filemgt.event.CPS_CNI_0011HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.filemgt.event.CPS_CNI_0011HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.filemgt.event.CpsCni0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0042] CCC VVD &amp; SKD Inquiry Popup -->
+    <url-mapping url="CPS_CNI_0042.do" screen="CPS_CNI_0042.screen">
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0042HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0042GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0042HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CpsCni0042Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+	
+	<!-- [CPS_CNI_0025] Main Code Creation -->
+    <url-mapping url="CPS_CNI_0025.do" screen="CPS_CNI_0025.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0025HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0025HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CpsCni0025Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0027] Main Code view-->
+    <url-mapping url="CPS_CNI_0027.do" screen="CPS_CNI_0027.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0025HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0025HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- [CPS_CNI_0027_01] Main Code view popup-->
+    <url-mapping url="CPS_CNI_0027_01.do" screen="CPS_CNI_0027_01.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0025HTMLAction</web-action-class>
+    </url-mapping>    
+    
+    <!-- [CPS_CNI_0003] Claim Main -->
+    <url-mapping url="CPS_CNI_0003.do" screen="CPS_CNI_0003.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0003HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0003_01.do" screen="CPS_CNI_0003_01.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0003HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0003HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CpsCni0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0037] Claim Reopen -->
+    <url-mapping url="CPS_CNI_0037.do" screen="CPS_CNI_0037.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0037HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0037HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CpsCni0037Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0033] View Claim Main -->
+    <url-mapping url="CPS_CNI_0033.do" screen="CPS_CNI_0033.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0033HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0033_01.do" screen="CPS_CNI_0033_01.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0033HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0033HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CpsCni0033Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0004] Handler History -->
+    <url-mapping url="CPS_CNI_0004.do" screen="CPS_CNI_0004.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0004HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0004HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CpsCni0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0005] Manager History -->
+    <url-mapping url="CPS_CNI_0005.do" screen="CPS_CNI_0005.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0005HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0005HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CpsCni0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0040] CCC Detail -->
+     <url-mapping url="CPS_CNI_0040.do" screen="CPS_CNI_0040.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.common.event.CPS_COM_HTMLAction</web-action-class>
+    </url-mapping>
+    
+	<!-- [CPS_CNI_0007] Office Code Creation -->
+    <url-mapping url="CPS_CNI_0007.do" screen="CPS_CNI_0007.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0007HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0007HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CpsCni0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0002] Find -->
+    <url-mapping url="CPS_CNI_0002.do" screen="CPS_CNI_0002.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0002HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0002HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CpsCni0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0061] Find Print -->    
+    <url-mapping url="CPS_CNI_0061.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0002HTMLAction</web-action-class>
+    </url-mapping>     
+    
+    <!-- [CPS_CNI_0012] Survey -->
+    <url-mapping url="CPS_CNI_0012.do" screen="CPS_CNI_0012.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CPS_CNI_0012HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CPS_CNI_0012HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CpsCni0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0013] Salvage -->
+    <url-mapping url="CPS_CNI_0013.do" screen="CPS_CNI_0013.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CPS_CNI_0013HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CPS_CNI_0013HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CpsCni0013Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping> 
+    
+    <!-- [CPS_CNI_0030] Incident-Creation -->
+    <url-mapping url="CPS_CNI_0030.do" screen="CPS_CNI_0030.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CPS_CNI_0030HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CPS_CNI_0030HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CpsCni0030Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0088] Incident-Creation Print -->    
+    <url-mapping url="CPS_CNI_0088.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CPS_CNI_0030HTMLAction</web-action-class>
+    </url-mapping>       
+
+    <!-- [CPS_CNI_0031] Incident-Inquiry -->
+    <url-mapping url="CPS_CNI_0031.do" screen="CPS_CNI_0031.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CPS_CNI_0031HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0031GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CPS_CNI_0031HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CpsCni0031Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>  
+    
+    <!-- [CPS_CNI_0086] Incident-Inquiry Print -->    
+    <url-mapping url="CPS_CNI_0086.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CPS_CNI_0031HTMLAction</web-action-class>
+    </url-mapping>   
+    
+    <!-- [CPS_CNI_0032] Incident-Claim Inquiry -->
+    <url-mapping url="CPS_CNI_0032.do" screen="CPS_CNI_0032.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CPS_CNI_0032HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CPS_CNI_0032HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- [CPS_CNI_0032_01] Incident-Claim Inquiry popup-->
+    <url-mapping url="CPS_CNI_0032_01.do" screen="CPS_CNI_0032_01.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CPS_CNI_0032HTMLAction</web-action-class>
+    </url-mapping>     
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CpsCni0032Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping> 
+    
+    <!-- [CPS_CNI_0087] Incident-Claim Inquiry Print -->    
+    <url-mapping url="CPS_CNI_0087.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.incidentsurvey.event.CPS_CNI_0032HTMLAction</web-action-class>
+    </url-mapping>    
+    
+    <!-- [CPS_CNI_0036] Transfer -->
+    <url-mapping url="CPS_CNI_0036.do" screen="CPS_CNI_0036.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0036HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0036HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CpsCni0036Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0089] Transfer Print -->    
+    <url-mapping url="CPS_CNI_0089.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0036HTMLAction</web-action-class>
+    </url-mapping>      
+     
+    <!-- [CPS_CNI_0008] Payment -->
+    <url-mapping url="CPS_CNI_0008.do" screen="CPS_CNI_0008.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0008HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0008HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CpsCni0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0009] Handling Costs -->
+    <url-mapping url="CPS_CNI_0009.do" screen="CPS_CNI_0009.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0009HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0009HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CpsCni0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0009_01] Handling Costs popup-->
+    <url-mapping url="CPS_CNI_0009_01.do" screen="CPS_CNI_0009_01.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0009HTMLAction</web-action-class>
+    </url-mapping>     
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CpsCni0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0020] Report-Settlement Analysis -->
+    <url-mapping url="CPS_CNI_0020.do" screen="CPS_CNI_0020.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0020HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0020HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CpsCni0020Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.ContainerCargoClaimReportSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0076] Report-Settlement Analysis Print -->    
+    <url-mapping url="CPS_CNI_0076.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0020HTMLAction</web-action-class>
+    </url-mapping>     
+    
+    <!-- [CPS_CNI_0026] Main Code-Inquiry -->
+    <url-mapping url="CPS_CNI_0026.do" screen="CPS_CNI_0026.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0026HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0026GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0026HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CpsCni0026Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0041] Main Code-Inquiry popup -->
+    <url-mapping url="CPS_CNI_0041.do" screen="CPS_CNI_0041.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0026HTMLAction</web-action-class>
+    </url-mapping>    
+    <url-mapping url="CPS_CNI_0041GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0026HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- [CPS_CNI_0084] Main Code-Inquiry Print -->    
+    <url-mapping url="CPS_CNI_0084.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0026HTMLAction</web-action-class>
+    </url-mapping>    
+    
+    <!-- [CPS_CNI_0039] Class Code Creation -->
+    <url-mapping url="CPS_CNI_0039.do" screen="CPS_CNI_0039.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0039HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0039GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0039HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CpsCni0039Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+
+    <!-- [CPS_CNI_0301] DW Claim Main -->
+    <url-mapping url="CPS_CNI_0301.do" screen="CPS_CNI_0301.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CPS_CNI_0301HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CPS_CNI_0301GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CPS_CNI_0301HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CpsCni0301Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.drywetclaim.DryWetClaimSC</service-action-class>
+    </event-mapping>
+
+    <!-- [CPS_CNI_0302] Status -->
+    <url-mapping url="CPS_CNI_0302.do" screen="CPS_CNI_0302.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CPS_CNI_0302HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CPS_CNI_0302GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CPS_CNI_0302HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CpsCni0302Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.drywetclaim.DryWetClaimSC</service-action-class>
+    </event-mapping>
+
+    <!-- [CPS_CNI_0303] Handling Costs -->
+    <url-mapping url="CPS_CNI_0303.do" screen="CPS_CNI_0303.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CPS_CNI_0303HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CPS_CNI_0303GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CPS_CNI_0303HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CpsCni0303Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.drywetclaim.DryWetClaimSC</service-action-class>
+    </event-mapping>
+
+    <!-- [CPS_CNI_0305] DW Claim Detail -->
+    <url-mapping url="CPS_CNI_0305.do" screen="CPS_CNI_0305.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.common.event.CPS_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <!-- [CPS_CNI_0306] Vessel Code & Particular Inquiry -->
+    <url-mapping url="CPS_CNI_0306.do" screen="CPS_CNI_0306.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0306HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CPS_CNI_0306GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0306HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CpsCni0306Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+
+    <!-- [CPS_CNI_0307] R.O.E. (Rate of Exchange) Inquiry -->
+    <url-mapping url="CPS_CNI_0307.do" screen="CPS_CNI_0307.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0307HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CPS_CNI_0307GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0307HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CpsCni0307Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+
+    <!-- [CPS_CNI_0308] CCC Vessel Code & Name Inquiry -->
+    <url-mapping url="CPS_CNI_0308.do" screen="CPS_CNI_0308.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0308HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CPS_CNI_0308GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0308HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CpsCni0308Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+
+    <!-- [CPS_CNI_0309] Case Report -->
+    <url-mapping url="CPS_CNI_0309.do" screen="CPS_CNI_0309.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.common.event.CPS_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <!-- [CPS_CNI_0310] DWC Handler History -->
+    <url-mapping url="CPS_CNI_0310.do" screen="CPS_CNI_0310.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0004HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0310GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0310HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CpsCni0310Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0311] DWC Manager History -->
+    <url-mapping url="CPS_CNI_0311.do" screen="CPS_CNI_0311.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CPS_CNI_0311HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0311GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CPS_CNI_0311HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CpsCni0311Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.drywetclaim.DryWetClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- File Attach -->
+    <url-mapping url="CNI_FILE_0000GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.filemgt.event.CNI_FILE_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.filemgt.event.CniFileEvent</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0091] Class Code-Creation Print -->    
+    <url-mapping url="CPS_CNI_0091.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0039HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- [CPS_CNI_0028] Miscellaneous Code Creation -->
+    <url-mapping url="CPS_CNI_0028.do" screen="CPS_CNI_0028.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0028HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0028HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CpsCni0028Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0029] Miscellaneous Code Inquiry -->
+    <url-mapping url="CPS_CNI_0029.do" screen="CPS_CNI_0029.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0029HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0029GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0029HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CpsCni0029Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0085] Class Code-Inquiry Print -->    
+    <url-mapping url="CPS_CNI_0085.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0029HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- [CPS_CNI_0029_01] Miscellaneous Code Inquiry Popup-->
+    <url-mapping url="CPS_CNI_0029_01.do" screen="CPS_CNI_0029_01.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0029HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- [CPS_CNI_0015] Indemnity Claim -->
+    <url-mapping url="CPS_CNI_0015.do" screen="CPS_CNI_0015.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.indemnityclaim.event.CPS_CNI_0015HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.indemnityclaim.event.CPS_CNI_0015HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.indemnityclaim.event.CpsCni0015Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping> 
+    
+    <!-- [CPS_CNI_0035] View-Indemnity Claim -->
+    <url-mapping url="CPS_CNI_0035.do" screen="CPS_CNI_0035.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.indemnityclaim.event.CPS_CNI_0035HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0035GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.indemnityclaim.event.CPS_CNI_0035HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.indemnityclaim.event.CpsCni0035Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0010] Contract of Carriage-Main -->
+    <url-mapping url="CPS_CNI_0010.do" screen="CPS_CNI_0010.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0010HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0010HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CpsCni0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping> 
+    
+    <!-- [CPS_CNI_0034] View-Contract of Carriage-Main -->
+    <url-mapping url="CPS_CNI_0034.do" screen="CPS_CNI_0034.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0034HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0034GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CPS_CNI_0034HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.claimmain.event.CpsCni0034Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping>              
+
+    <!-- [CPS_CNI_0018] Status -->
+    <url-mapping url="CPS_CNI_0018.do" screen="CPS_CNI_0018.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0018HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0018HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CpsCni0018Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.ContainerCargoClaimReportSC</service-action-class>
+    </event-mapping>          
+    
+     <!-- [CPS_CNI_0063] Status Print -->    
+    <url-mapping url="CPS_CNI_0063.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0018HTMLAction</web-action-class>
+    </url-mapping>
+     
+    <!-- [CPS_CNI_0019] Status Inquiry by Class Popup -->
+    <url-mapping url="CPS_CNI_0019.do" screen="CPS_CNI_0019.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0019HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0019HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CpsCni0019Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.ContainerCargoClaimReportSC</service-action-class>
+    </event-mapping>          
+    
+    <!-- [CPS_CNI_0006] Cargo Claim Report -->
+    <url-mapping url="CPS_CNI_0006.do" screen="CPS_CNI_0006.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0006HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0006HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CpsCni0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.ContainerCargoClaimReportSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0006_1] Cargo Claim Report Print -->
+    <url-mapping url="CPS_CNI_0006_01.do" screen="CPS_CNI_0084.screen" >
+       <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0006HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- [CPS_CNI_0401] Insurance Main -->
+    <url-mapping url="CPS_CNI_0401.do" screen="CPS_CNI_0401.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.insurance.insurance.event.CPS_CNI_0401HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CPS_CNI_0401GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.insurance.insurance.event.CPS_CNI_0401HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.insurance.insurance.event.CpsCni0401Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.insurance.InsuranceSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="CPS_CNI_0401_01.do" screen="CPS_CNI_0401_01.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.insurance.insurance.event.CPS_CNI_0401HTMLAction</web-action-class>
+    </url-mapping>
+
+    <!-- [CPS_CNI_0402] Insurance Detail -->
+    <url-mapping url="CPS_CNI_0402.do" screen="CPS_CNI_0402.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.common.event.CPS_COM_HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- [CPS_CNI_0403] Vessel Entry Status -->
+    <url-mapping url="CPS_CNI_0403.do" screen="CPS_CNI_0403.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.insurance.vesselstatus.event.CPS_CNI_0403HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CPS_CNI_0403GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.insurance.vesselstatus.event.CPS_CNI_0403HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.insurance.vesselstatus.event.CpsCni0403Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.insurance.InsuranceSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0404] Vessel Entry Status View -->
+    <url-mapping url="CPS_CNI_0404.do" screen="CPS_CNI_0404.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.insurance.vesselstatus.event.CPS_CNI_0403HTMLAction</web-action-class>
+    </url-mapping>
+
+    <!-- [CPS_CNI_0406] Insurance Detail2 -->
+    <url-mapping url="CPS_CNI_0406.do" screen="CPS_CNI_0406.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.common.event.CPS_COM_HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- [CPS_CNI_0014] Settlement Claim -->
+    <url-mapping url="CPS_CNI_0014.do" screen="CPS_CNI_0014.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.settlementclaim.event.CPS_CNI_0014HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.settlementclaim.event.CPS_CNI_0014HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaim.settlementclaim.event.CpsCni0014Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaim.ContainerCargoClaimSC</service-action-class>
+    </event-mapping> 
+    
+    <!-- [CPS_CNI_0021] Occurrence Analysis -->
+    <url-mapping url="CPS_CNI_0021.do" screen="CPS_CNI_0021.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0021HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0021HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CpsCni0021Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.ContainerCargoClaimReportSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0077] Occurrence Analysis by Area/TOC Print -->    
+    <url-mapping url="CPS_CNI_0077.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0021HTMLAction</web-action-class>
+    </url-mapping>   
+    
+    <!-- [CPS_CNI_0078] Occurrence Analysis by HOFC/TOC Print -->    
+    <url-mapping url="CPS_CNI_0078.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0021HTMLAction</web-action-class>
+    </url-mapping> 
+    
+    <!-- [CPS_CNI_0079] Occurrence Analysis by Cargo Origin/Destination Print -->    
+    <url-mapping url="CPS_CNI_0079.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0021HTMLAction</web-action-class>
+    </url-mapping>   
+    
+    <!-- [CPS_CNI_0080] Total Occurrence by Area Print -->    
+    <url-mapping url="CPS_CNI_0080.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0021HTMLAction</web-action-class>
+    </url-mapping>  
+    
+    <!-- [CPS_CNI_0081] Total Occurrence by HOFC Print -->    
+    <url-mapping url="CPS_CNI_0081.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0021HTMLAction</web-action-class>
+    </url-mapping>   
+    
+    <!-- [CPS_CNI_0082] Total Occurrence by VVD Print -->    
+    <url-mapping url="CPS_CNI_0082.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0021HTMLAction</web-action-class>
+    </url-mapping>   
+    
+    <!-- [CPS_CNI_0083] Total Occurrence by Claimant Print -->    
+    <url-mapping url="CPS_CNI_0083.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.containercargoclaimreport.containercargoclaimreport.event.CPS_CNI_0021HTMLAction</web-action-class>
+    </url-mapping>       
+ 
+     <!-- [CPS_CNI_0312] Transfer -->
+    <url-mapping url="CPS_CNI_0312.do" screen="CPS_CNI_0312.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CPS_CNI_0312HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0312GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CPS_CNI_0312HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.drywetclaim.drywetclaim.event.CpsCni0312Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.drywetclaim.DryWetClaimSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_CNI_0089] Transfer Print -->    
+    <url-mapping url="CPS_CNI_0313.do" screen="CPS_CNI_0084.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0312HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- [CPS_CNI_0095] Main Code-popup -->
+    <url-mapping url="CPS_CNI_0095.do" screen="CPS_CNI_0095.screen" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0095HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_CNI_0095GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CPS_CNI_0095HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.cni.codemgt.codemgt.event.CpsCni0095Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.cni.codemgt.CodeMgtSC</service-action-class>
+    </event-mapping>
+            
+ </mappings>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOSearchComCodeListRSQL">
+			<desc><![CDATA[공통코드를 조회한다.]]></desc>
+			<sql><![CDATA[
+#if (${codeItem} == 'Conti') /* MDM_CONTINENT  (콤보 반환)*/
+    SELECT CONTI_CD CD
+          ,CONTI_NM CD_DESC
+    FROM MDM_CONTINENT 
+    WHERE 1=1
+    AND DELT_FLG = 'N'
+    ORDER BY CONTI_CD
+ 
+#elseif (${codeItem} == 'GrpCmdt') /* MDM_GRP_CMDT   (콤보 반환)*/
+    SELECT GRP_CMDT_CD CD
+          ,GRP_CMDT_ENG_NM CD_DESC
+    FROM MDM_GRP_CMDT 
+    WHERE 1=1
+    AND DELT_FLG = 'N'
+    ORDER BY GRP_CMDT_CD
+
+#elseif (${codeItem} == 'RepCmdt') /* MDM_REP_CMDT   (콤보 반환)*/
+    SELECT REP_CMDT_CD AS CD
+          ,REP_CMDT_NM AS CD_DESC
+    FROM MDM_REP_CMDT 
+    WHERE 1=1
+    AND DELT_FLG <> 'Y'
+    ORDER BY REP_CMDT_CD
+
+#elseif (${codeItem} == 'RepChg') /* MDM_REP_CHG   (콤보 반환)*/
+    SELECT REP_CHG_CD CD
+          ,REP_CHG_NM CD_DESC
+    FROM MDM_REP_CHG 
+    WHERE 1=1
+    AND DELT_FLG <> 'Y'
+    ORDER BY REP_CHG_CD
+
+#elseif (${codeItem} == 'SubTrade') /* MDM_SUB_TRD   (콤보 반환)*/
+	SELECT SUB_TRD_CD CD
+          ,SUB_TRD_NM CD_DESC
+		  ,TRD_CD CD_ETC
+    FROM MDM_SUB_TRD 
+    WHERE 1=1
+    AND DELT_FLG = 'N'
+    ORDER BY SUB_TRD_CD
+
+#elseif (${codeItem} == 'Trade') /* MDM_TRADE   (콤보 반환)*/
+    SELECT TRD_CD CD
+          ,TRD_NM CD_DESC
+    FROM MDM_TRADE 
+    WHERE 1=1
+    AND DELT_FLG = 'N'
+    ORDER BY TRD_CD
+
+#elseif (${codeItem} == 'CntrSize') /* MDM_CNTR_SZ   (콤보 반환)*/    
+    SELECT CNTR_SZ_CD AS CD
+          ,CNTR_SZ_DESC AS CD_DESC
+    FROM MDM_CNTR_SZ 
+    WHERE 1=1
+    AND DELT_FLG <> 'Y'
+    ORDER BY CNTR_SZ_CD
+    
+#elseif (${codeItem} == 'CntrType') /* MDM_CNTR_TP   (콤보 반환)*/    
+    SELECT CNTR_TP_CD AS CD
+          ,CNTR_TP_DESC AS CD_DESC
+    FROM MDM_CNTR_TP 
+    WHERE 1=1
+    AND DELT_FLG <> 'Y'
+    ORDER BY CNTR_TP_CD  
+  
+#elseif (${codeItem} == 'CntrTpSz') /* MDM_CNTR_TP_SZ   (콤보 반환)*/    
+    SELECT CNTR_TPSZ_CD CD
+          ,CNTR_TPSZ_DESC CD_DESC
+    FROM MDM_CNTR_TP_SZ 
+    WHERE 1=1
+    AND DELT_FLG = 'N'
+    ORDER BY CNTR_TPSZ_CD  
+  
+#elseif (${codeItem} == 'Package') /* MDM_PCK_TP   (콤보 반환)*/    
+    SELECT PCK_CD CD
+          ,PCK_NM CD_DESC
+    FROM MDM_PCK_TP 
+    WHERE 1=1
+    AND DELT_FLG = 'N'
+    ORDER BY PCK_CD
+	
+#elseif (${codeItem} == 'TBL') /* MDA History Table반환 */
+SELECT TBL_NM CD
+     , UI_DP_TBL_NM CD_DESC
+  FROM MDM_TBL_INFO
+ WHERE HIS_FLG = 'Y' AND TBL_DIV_CD = 'T'
+ GROUP BY TBL_NM, UI_DP_TBL_NM
+ ORDER BY UI_DP_TBL_NM 
+
+#elseif (${codeItem} == 'COL') /* MDA History COL반환 */
+SELECT COL_NM CD, UI_DP_FLD_NM CD_DESC
+  FROM MDM_COL_INFO
+ WHERE TBL_NM = @[tbl]
+   AND HIS_FLG = 'Y'
+ GROUP BY COL_NM, UI_DP_FLD_NM
+ ORDER BY UI_DP_FLD_NM
+
+#end			]]></sql>
+			<params>
+				<param name="tbl" type="12" value="MDM_YARD" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

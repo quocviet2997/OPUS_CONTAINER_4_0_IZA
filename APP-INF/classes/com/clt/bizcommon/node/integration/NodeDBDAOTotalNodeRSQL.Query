@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="NodeDBDAOTotalNodeRSQL">
+			<desc><![CDATA[Select node's count]]></desc>
+			<sql><![CDATA[
+#if(${mode} == 'yard')
+	SELECT COUNT(A.yd_cd)    
+	FROM mdm_yard A, mdm_location B	 					
+	WHERE 1 = 1 AND A.loc_cd = B.loc_cd 
+	#if(${scc_cd} != '')
+			AND B.scc_cd LIKE '%' || @[scc_cd] || '%' 
+	#end
+	#if(${cnt_cd} != '')
+			AND B.cnt_cd LIKE '%' || @[cnt_cd] || '%' 
+	#end
+	#if(${loc_cd} != '')
+			AND A.loc_cd LIKE '%' || @[loc_cd] || '%' 
+	#end
+	#if(${ofc_cd} != '')
+			AND A.ofc_cd LIKE '%' || @[ofc_cd] || '%' 
+	#end
+	#if(${node_cd} != '')
+			AND A.yd_cd LIKE '%' || @[node_cd] || '%' 
+	#end
+	#if(${node_nm} != '')
+			AND upper(A.yd_nm) LIKE '%' || @[node_nm] || '%' 
+	#end
+	 AND NVL(B.DELT_FLG, 'N') <> 'Y'
+    #if (${mdm_yn} != '')
+		#if (${delt_flg} == 'Y') 
+			AND NVL(A.DELT_FLG, 'N') = @[delt_flg]
+		#elseif (${delt_flg} == 'ALL') 
+		#else 
+			AND NVL(A.DELT_FLG, 'N') <> 'Y'
+		#end
+	#else	
+		AND NVL(A.DELT_FLG, 'N') <> 'Y'
+	#end
+
+#else
+	 SELECT COUNT(A.zn_cd)             	
+	 FROM mdm_zone A, mdm_yard B, mdm_location C	
+	 WHERE 1 = 1 
+		 AND A.REP_YD_CD = B.YD_CD AND A.LOC_CD=C.LOC_CD 
+	#if(${scc_cd} != '')
+			AND c.scc_cd LIKE '%' || @[scc_cd] || '%' 
+	#end
+	#if(${cnt_cd} != '')
+			AND C.cnt_cd LIKE '%' || @[cnt_cd] || '%' 
+	#end
+	#if(${loc_cd} != '')
+			AND A.loc_cd LIKE '%' || @[loc_cd] || '%' 
+	#end
+	#if(${ofc_cd} != '')
+			AND B.ofc_cd LIKE '%' || @[ofc_cd] || '%' 
+	#end
+	#if(${node_cd} != '')
+			AND A.zn_cd LIKE '%' || @[node_cd] || '%' 
+	#end
+	#if(${node_nm} != '')
+			AND upper(A.zn_nm) LIKE '%' || @[node_nm] || '%' 
+	#end
+    		 AND NVL(C.DELT_FLG, 'N') <> 'Y'
+    		 AND NVL(B.DELT_FLG, 'N') <> 'Y'
+    #if (${mdm_yn} != '')
+		#if (${delt_flg} == 'Y') 
+			AND NVL(A.DELT_FLG, 'N') = @[delt_flg]
+		#elseif (${delt_flg} == 'ALL') 
+		#else 
+			AND NVL(A.DELT_FLG, 'N') <> 'Y'
+		#end
+	#else	
+		AND NVL(A.DELT_FLG, 'N') <> 'Y'
+	#end
+#end			]]></sql>
+			<params>
+				<param name="scc_cd" type="12" value="" out="N"/>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="loc_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="node_cd" type="12" value="" out="N"/>
+				<param name="node_nm" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

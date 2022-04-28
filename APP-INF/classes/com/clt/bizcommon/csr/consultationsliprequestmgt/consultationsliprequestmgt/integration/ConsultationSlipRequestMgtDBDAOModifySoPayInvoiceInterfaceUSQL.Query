@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOModifySoPayInvoiceInterfaceUSQL">
+			<desc><![CDATA[ModifySoPayInvoiceInterface]]></desc>
+			<sql><![CDATA[
+UPDATE AP_PAY_INV
+SET AP_IF_DT = SYSDATE
+   ,INV_STS_CD = @[inv_sts_cd]
+WHERE CSR_NO = @[csr_no]			]]></sql>
+			<params>
+				<param name="inv_sts_cd" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

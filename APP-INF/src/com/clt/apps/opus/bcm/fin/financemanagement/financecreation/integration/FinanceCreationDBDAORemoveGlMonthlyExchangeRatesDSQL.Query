@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAORemoveGlMonthlyExchangeRatesDSQL">
+			<desc><![CDATA[RemoveGlMonthlyExchangeRates]]></desc>
+			<sql><![CDATA[
+DELETE
+FROM GL_MON_XCH_RT
+WHERE 1 = 1
+AND ACCT_XCH_RT_YRMON = @[h_acct_xch_rt_yrmon]
+AND ACCT_XCH_RT_LVL = @[h_acct_xch_rt_lvl]
+AND CURR_CD = @[h_curr_cd]			]]></sql>
+			<params>
+				<param name="h_acct_xch_rt_yrmon" type="12" value="" out="N"/>
+				<param name="h_acct_xch_rt_lvl" type="12" value="" out="N"/>
+				<param name="h_curr_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

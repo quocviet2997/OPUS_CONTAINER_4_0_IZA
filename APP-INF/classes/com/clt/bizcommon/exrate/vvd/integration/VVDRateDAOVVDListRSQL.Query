@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="VVDRateDAOVVDListRSQL">
+			<desc><![CDATA[vvd rate list]]></desc>
+			<sql><![CDATA[
+SELECT VVD_CD,
+	PORT_CD,
+	IO_BND_CD,
+	SVC_SCP_CD,
+	AR_OFC_CD,
+	LOCL_CURR_CD,
+	CHG_CURR_CD,
+	INV_XCH_RT,
+	IVS_XCH_RT
+FROM (	SELECT ROWNUM NO,
+			VSL_CD||SKD_VOY_NO||SKD_DIR_CD VVD_CD,
+  			PORT_CD,
+  			DECODE(IO_BND_CD, 'O' , 'O/B', 'I', 'I/B') IO_BND_CD,
+  			SVC_SCP_CD,
+  			AR_OFC_CD,
+  			LOCL_CURR_CD,
+  			CHG_CURR_CD,
+  			INV_XCH_RT,
+  			IVS_XCH_RT
+  		FROM INV_VVD_XCH_RT
+        WHERE 1=1
+		#if(${vsl_cd} != '')
+		AND VSL_CD = SUBSTR(@[vsl_cd],0,4)
+        AND SKD_VOY_NO = SUBSTR(@[vsl_cd],5,4)
+        AND SKD_DIR_CD = SUBSTR(@[vsl_cd],9,1) 
+		#end
+
+		#if(${port_cd} != '')
+			#if(${where} == 'port_cd')
+			AND PORT_CD = @[port_cd] 
+			#else
+			AND PORT_CD = @[port_cd] 
+			#end
+		#end
+
+		#if(${chg_curr_cd} != '')
+		  #if(${chg_curr_cd} == 'ALL')	
+          #else
+           #if(${where} == 'chg_curr_cd')
+			AND CHG_CURR_CD = @[chg_curr_cd]
+			#else
+			AND CHG_CURR_CD = @[chg_curr_cd]
+			#end
+          #end
+		#end
+
+		#if(${locl_curr_cd} != '')
+         #if(${locl_curr_cd} == 'ALL')
+         #else
+			#if(${where} == 'chg_curr_cd')
+			AND LOCL_CURR_CD = @[locl_curr_cd]
+			#else
+			AND LOCL_CURR_CD = @[locl_curr_cd]
+			#end
+         #end
+		#end
+
+		#if(${svc_scp_cd} != '')
+			#if(${where} == 'svc_scp_cd')
+			AND SVC_SCP_CD = @[svc_scp_cd]
+			#else
+			AND SVC_SCP_CD = @[svc_scp_cd]
+			#end
+		#end
+
+		#if(${io_bnd_cd} != '')
+			#if(${where} == 'io_bnd_cd')
+			AND IO_BND_CD = @[io_bnd_cd]
+			#else
+			AND IO_BND_CD = @[io_bnd_cd]
+			#end
+		#end
+  	) A
+WHERE NO BETWEEN @[startpart] AND @[endpart]
+AND ROWNUM <= 50			]]></sql>
+			<params>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="port_cd" type="12" value="" out="N"/>
+				<param name="chg_curr_cd" type="12" value="" out="N"/>
+				<param name="locl_curr_cd" type="12" value="" out="N"/>
+				<param name="svc_scp_cd" type="12" value="" out="N"/>
+				<param name="io_bnd_cd" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

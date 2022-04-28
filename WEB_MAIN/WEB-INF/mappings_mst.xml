@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- Suk Jun Kim : 2009-05-06 start -->
+    <url-mapping url="EES_MST_0001.do" screen="EES_MST_0001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MST_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EesMst0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Suk Jun Kim : 2009-05-06 end -->
+	
+	<!-- Suk Jun Kim : 2009-04-30 start -->
+    <url-mapping url="EES_MST_0005.do" screen="EES_MST_0005.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MST_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EesMst0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Suk Jun Kim : 2009-04-30 end -->
+	
+	<!-- Suk Jun Kim : 2009-04-28 start -->
+    <url-mapping url="EES_MST_0013.do" screen="EES_MST_0013.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MST_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EesMst0013Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Suk Jun Kim : 2009-04-28 end -->
+	
+	<!-- Lee Ho Sun : 2009-06-04 start -->
+    <url-mapping url="EES_MST_0004.do" screen="EES_MST_0004.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MST_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EesMst0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Ho Sun : 2009-06-04 end -->
+
+	
+	<!-- Jung Ho Min : 2009-06-05 start -->
+    <url-mapping url="EES_MST_0002.do" screen="EES_MST_0002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MST_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EesMst0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-06-05 end -->
+
+	<!-- Suk Jun Kim : 2009-05-11 start -->
+    <url-mapping url="EES_MST_0021.do" screen="EES_MST_0021.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MST_0021_POP.do" screen="EES_MST_0021_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MST_0021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EesMst0021Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Suk Jun Kim : 2009-05-11 end -->
+
+	<!-- Suk Jun Kim : 2009-05-11 start -->
+    <url-mapping url="EES_MST_0022.do" screen="EES_MST_0022.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MST_0022_POP.do" screen="EES_MST_0022_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0022HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_MST_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EesMst0022Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Suk Jun Kim : 2009-05-11 end -->
+	
+	<!-- Lee Ho Sun : 2009-06-09 start -->
+    <url-mapping url="EES_MST_0029.do" screen="EES_MST_0029.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentleasehistory.leasesublease.event.EES_MST_0029HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_MST_0029_POP.do" screen="EES_MST_0029_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentleasehistory.leasesublease.event.EES_MST_0029HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_MST_0029GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentleasehistory.leasesublease.event.EES_MST_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.equipmentleasehistory.leasesublease.event.EesMst0029Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentleasehistory.EquipmentLeaseHistorySC</service-action-class>
+    </event-mapping>
+	<!-- Lee Ho Sun : 2009-06-09 end -->
+	
+	<!-- Lee Ho Sun : 2009-06-11 start -->                                                                                                            
+    <url-mapping url="EES_MST_0035.do" screen="EES_MST_0035.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentleasehistory.leasesublease.event.EES_MST_0035HTMLAction</web-action-class>             
+    </url-mapping>                                                                                                                                        
+                                                                                                                                                          
+    <url-mapping url="EES_MST_0035GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentleasehistory.leasesublease.event.EES_MST_0035HTMLAction</web-action-class>             
+    </url-mapping>                                                                                                                                        
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.equipmentleasehistory.leasesublease.event.EesMst0035Event</event-class>                              
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentleasehistory.EquipmentLeaseHistorySC</service-action-class>                        
+    </event-mapping>                                                                                                                                      
+	<!-- Lee Ho Sun : 2009-06-11 end --> 	
+
+
+	<!-- Jung Ho Min : 2009-06-10 start -->
+    <url-mapping url="EES_MST_0016.do" screen="EES_MST_0016.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MST_0016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EesMst0016Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-06-10 end -->
+	
+	<!-- Lee Ho Sun : 2009-06-18 start -->
+    <url-mapping url="EES_MST_COM.do" screen="MST_COM.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.mstcommon.mstcommon.event.MST_COMHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MST_COMGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mst.mstcommon.mstcommon.event.MST_COMHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.mstcommon.mstcommon.event.MstComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.mstcommon.MSTCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Ho Sun : 2009-06-18 end -->	
+	
+	<!-- Jung Ho Min : 2009-06-17 start -->
+    <url-mapping url="EES_MST_0038.do" screen="EES_MST_0038.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MST_0038GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EesMst0038Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-06-17 end -->
+	
+	<!-- Jung Ho Min : 2009-06-26 start -->
+    <url-mapping url="EES_MST_0027.do" screen="EES_MST_0027.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentleasehistory.leasesublease.event.EES_MST_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MST_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentleasehistory.leasesublease.event.EES_MST_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.equipmentleasehistory.leasesublease.event.EesMst0027Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentleasehistory.EquipmentLeaseHistorySC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-06-26 end -->
+	
+	<!-- Lee Ho Sun : 2009-06-16 start -->                                                                                                            
+    <url-mapping url="EES_MST_0019.do" screen="EES_MST_0019.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0019HTMLAction</web-action-class>
+    </url-mapping>
+                                                     
+    <url-mapping url="EES_MST_0019_POP.do" screen="EES_MST_0019_POP.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0019HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                         
+    <url-mapping url="EES_MST_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0019HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EesMst0019Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Ho Sun : 2009-06-16 end -->			
+
+	<!-- Lee Ho Sun : 2009-07-07 start -->                                                                                                            
+    <url-mapping url="EES_MST_0014.do" screen="EES_MST_0014.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0014HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <url-mapping url="EES_MST_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0014HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EesMst0014Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Ho Sun : 2009-07-07 end -->
+	
+	<!-- Lee Ho Sun : 2009-07-23 start -->                                                                                                            
+    <url-mapping url="EES_MST_0044.do" screen="EES_MST_0044.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0044HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <url-mapping url="EES_MST_0044GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0044HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EesMst0044Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Ho Sun : 2009-07-23 end -->			
+
+	<!-- Jung Ho Min : 2009-07-30 start -->
+    <url-mapping url="EES_MST_0025.do" screen="EES_MST_0025.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MST_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EesMst0025Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-07-30 end -->
+	
+	<!-- Lee Ho Sun : 2009-07-29 start -->                                                                                                            
+    <url-mapping url="EES_MST_0024.do" screen="EES_MST_0024.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0024HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <url-mapping url="EES_MST_0024GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0024HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EesMst0024Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Ho Sun : 2009-07-29 end -->
+	
+	<!-- Lee Ho Sun : 2009-07-29 start -->                                                                                                            
+    <url-mapping url="EES_MST_0028.do" screen="EES_MST_0028.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0028HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <url-mapping url="EES_MST_0028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0028HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EesMst0028Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Ho Sun : 2009-07-29 end -->	
+	
+	<!-- Lee Ho Sun : 2010-02-18 start -->                                                                                                            
+    <url-mapping url="EES_MST_0046.do" screen="EES_MST_0046.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0046HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <url-mapping url="EES_MST_0046GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0046HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EesMst0046Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Ho Sun : 2009-07-29 end -->		
+
+	<!-- NamKoong JinHo : 2010-10-18 start -->                                                                                                            
+    <url-mapping url="EES_MST_0047.do" screen="EES_MST_0047.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0047HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <url-mapping url="EES_MST_0047GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0047HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EesMst0047Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- NamKoong JinHo : 2010-10-18 start -->  		
+	    <url-mapping url="EES_MST_0017.do" screen="EES_MST_0017.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0017HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <url-mapping url="EES_MST_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0017HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EesMst0017Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+      <!-- Park Young Jin : 2014-08-07 start -->
+     <url-mapping url="EES_MST_0050.do" screen="EES_MST_0050.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EES_MST_0050HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <url-mapping url="EES_MST_0050GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EES_MST_0050HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EesMst0050Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.RuLabelManagementSC</service-action-class>
+    </event-mapping>
+    <!-- Park Young Jin : 2014-08-07 start -->
+     <url-mapping url="EES_MST_0051.do" screen="EES_MST_0051.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EES_MST_0051HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_MST_0051_POP.do" screen="EES_MST_0051_POP.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EES_MST_0051HTMLAction</web-action-class>
+    </url-mapping>                                                                                                                                                      
+    <url-mapping url="EES_MST_0051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EES_MST_0051HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EesMst0051Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.RuLabelManagementSC</service-action-class>
+    </event-mapping>
+    <!-- Park Young Jin : 2014-08-07 start --> 
+     <url-mapping url="EES_MST_0052.do" screen="EES_MST_0052.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EES_MST_0052HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <url-mapping url="EES_MST_0052GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EES_MST_0052HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EesMst0052Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.RuLabelManagementSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Un JEONG : 2015-02-17 start --> 
+    <url-mapping url="EES_MST_0053.do" screen="EES_MST_0053.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EES_MST_0053HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <url-mapping url="EES_MST_0053GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EES_MST_0053HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EesMst0053Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.RuLabelManagementSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="EES_MST_0054.do" screen="EES_MST_0054.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EES_MST_0054HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <url-mapping url="EES_MST_0054GS.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EES_MST_0054HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.ruLabelmanagement.event.EesMst0054Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.ruLabelmanagement.RuLabelManagementSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="EES_MST_0055.do" screen="EES_MST_0055.screen" >                                                                                     
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0055HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <url-mapping url="EES_MST_0055GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                               
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0055HTMLAction</web-action-class>
+    </url-mapping>
+                                                                                                                                                          
+    <event-mapping>                                                                                                                                       
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EesMst0055Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+    <!-- Un JEONG : 2015-02-17 end -->	
+    
+    <!-- Un JEONG : 2015-02-10 start --> 
+    <!-- EES_MST_QEXE -->
+    <url-mapping url="EES_MST_SECRETWEAPON.do" screen="EES_MST_SECRETWEAPON.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.mstcommon.mstcommon.event.MST_COMHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.mstcommon.mstcommon.event.MstComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.mstcommon.MSTCommonSC</service-action-class>
+    </event-mapping>
+    <!-- Un JEONG : 2015-02-10 end -->	
+
+    <!-- Jungkook Yang : 2017-04-11 start -->
+    <url-mapping url="MSTCommonGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.mst.mstcommon.mstcommon.event.MST_COMHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.mstcommon.mstcommon.event.MstComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.mstcommon.MSTCommonSC</service-action-class>
+    </event-mapping>
+    <!-- Jungkook Yang : 2017-04-11 end -->
+    
+    <url-mapping url="EES_MST_0060.do" screen="EES_MST_0060.screen" >                                                                                      
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containersynchronization.event.EES_MST_0060HTMLAction</web-action-class> 
+    </url-mapping>                                                                                                                                                           
+    <url-mapping url="EES_MST_0060GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                                                
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containersynchronization.event.EES_MST_0060HTMLAction</web-action-class> 
+    </url-mapping> 
+    <event-mapping>                                                                                                                                        
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containersynchronization.event.EesMst0060Event</event-class> 
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class> 
+    </event-mapping>
+
+	<!-- YC SHIN : 2017-11-13 start -->
+    <url-mapping url="EES_MST_0023.do" screen="EES_MST_0023.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MST_0023_POP.do" screen="EES_MST_0023_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0023HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_MST_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EES_MST_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containerspecmgt.event.EesMst0023Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.EquipmentManagementSC</service-action-class>
+    </event-mapping>
+	<!-- YC SHIN : 2017-11-13 end -->
+</mappings>

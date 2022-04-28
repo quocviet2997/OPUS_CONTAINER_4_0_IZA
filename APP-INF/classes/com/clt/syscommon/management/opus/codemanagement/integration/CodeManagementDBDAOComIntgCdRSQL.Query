@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CodeManagementDBDAOComIntgCdRSQL">
+			<desc><![CDATA[CodeManagementDBDAOComIntgCdRSQL]]></desc>
+			<sql><![CDATA[
+SELECT
+A.OWNR_SUB_SYS_CD,
+A.INTG_CD_ID,
+REPLACE(A.INTG_CD_NM,'&','&'||'amp;') INTG_CD_NM,
+REPLACE(A.INTG_CD_DESC,'&','&'||'amp;') INTG_CD_DESC,
+A.INTG_CD_TP_CD,
+A.MNG_TBL_NM,
+A.INTG_CD_LEN,
+NVL(A.INTG_CD_USE_FLG,'Y') INTG_CD_USE_FLG,
+A.CRE_USR_ID,
+TO_CHAR(A.CRE_DT, 'YYYYMMDD') CRE_DT,
+A.UPD_USR_ID,
+TO_CHAR(A.UPD_DT, 'YYYYMMDD') UPD_DT
+FROM COM_INTG_CD A
+WHERE 1=1
+AND INTG_CD_TP_CD IN ('G','T')
+
+#if (${searchCdTp} != '')
+AND INTG_CD_TP_CD = @[searchCdTp]
+#end
+
+#if (${subsystem} != '')
+AND OWNR_SUB_SYS_CD = @[subsystem]
+#end
+  
+#if (${codeVal} != '')
+#if (${searchtype} == '0')
+AND INTG_CD_ID = @[codeVal]
+#else
+AND UPPER(INTG_CD_NM) LIKE '%'||UPPER(@[codeVal])||'%'
+#end
+#end
+
+ORDER BY A.INTG_CD_ID			]]></sql>
+			<params>
+				<param name="searchCdTp" type="12" value="" out="N"/>
+				<param name="subsystem" type="12" value="" out="N"/>
+				<param name="codeVal" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

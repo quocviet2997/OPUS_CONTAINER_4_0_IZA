@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOCheckApprovalDuplicationRSQL">
+			<desc><![CDATA[중복 Approval 체크합니다]]></desc>
+			<sql><![CDATA[
+SELECT NVL((
+	SELECT 
+		CASE 
+        WHEN SUM(DECODE(R.APSTS_CD,NULL,0,'',0,1)) = 0 AND SUM(DECODE(R.APRO_USR_ID,@[login_usr_id],1,0)) > 0
+		THEN 'Y'
+		ELSE 'N'
+		END 
+	FROM COM_APRO_CSR_DTL D, COM_APRO_RQST_ROUT R, COM_APRO_RQST_HDR H
+	WHERE 1=1
+    AND D.CSR_NO = @[csr_no]
+    AND R.APRO_RQST_NO = D.APRO_RQST_NO
+    AND R.APRO_RQST_NO = H.APRO_RQST_NO
+    AND R.APRO_RQST_SEQ = H.CRNT_APRO_SEQ
+    ),'X') CHK_CURR_APRO_USR  
+FROM DUAL			]]></sql>
+			<params>
+				<param name="login_usr_id" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

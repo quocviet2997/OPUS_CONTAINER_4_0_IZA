@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalCsrVORSQL">
+			<desc><![CDATA[Csr의 목록을 가져온다.]]></desc>
+			<sql><![CDATA[
+SELECT DISTINCT
+T.APRO_RQST_NO      	
+, T.CRNT_APRO_SEQ		
+, T.APSTS_CD  		
+, T.SUB_SYS_CD 				
+, T.RQST_ST_DT 		
+, CASE WHEN LENGTH(T.GL_DT) = 8 THEN TO_CHAR(TO_DATE(T.GL_DT,'YYYYMMDD'),'YYYY-MM-DD') ELSE T.GL_DT END  GL_DT
+, T.COST_OFC_CD 		
+, CASE
+WHEN T.SUB_SYS_CD = 'TES' THEN TES.INV_OFC_CD
+WHEN T.SUB_SYS_CD = 'TRS' THEN NVL(TRS.CRE_OFC_CD,TRSW.CRE_OFC_CD)
+WHEN T.SUB_SYS_CD = 'ACM' THEN ''
+ELSE CMM.INV_OFC_CD
+END INV_OFC_CD
+, T.CSR_NO  
+, T.INV_KNT 		
+, T.VNDR_SEQ 	
+, T.VNDR_NM		
+, T.PAY_DUE_DT		
+, T.CURR_CD  				
+, T.APRO_TTL_AMT  	
+, T.USD_APRO_TTL_AMT	
+, T.PAY_MZD_CD
+, T.PAY_MZD_NM
+, T.BANK_ACCT_FLG
+, T.APRO_RMK  		
+, T.APPYN  
+FROM (
+    SELECT
+    X.APRO_RQST_NO, X.CRNT_APRO_SEQ, X.APRO_RQST_SEQ, X.DP_SEQ, X.APRO_USR_ID
+    , CASE 
+      WHEN X.APSTS_CD='P' THEN
+            CASE
+            WHEN X.MAX_APRO_RQST_SEQ = 2 AND X.FST_APPRED_KNT >= 1 THEN '1st Approved'
+            ELSE 'Requested'
+            END 
+      WHEN X.APSTS_CD='R' THEN 'Disapproved'
+      WHEN X.APSTS_CD='C' THEN DECODE(D.IF_FLG,'E','Error','Final Approved')
+      WHEN X.APSTS_CD='D' THEN 'Cancelled'
+      END APSTS_CD
+    , X.SUB_SYS_CD, X.COST_OFC_CD, X.CSR_NO, X.INV_KNT
+    , X.VNDR_SEQ
+    , M.VNDR_LGL_ENG_NM VNDR_NM    
+    , X.RQST_ST_DT
+    , X.PAY_DUE_DT, X.CURR_CD, X.APRO_TTL_AMT, ROUND(X.APRO_TTL_AMT/USD_LOCL_XCH_RT,C.DP_PRCS_KNT) USD_APRO_TTL_AMT
+    , DECODE(X.APSTS_CD,'P',DECODE(SIGN(X.NN_APPRED_KNT),1,'Y','N'),'Y') APPYN
+    , DECODE(D.IF_FLG,'E','I/F Error : '||D.IF_ERR_RSN,X.APRO_RMK) APRO_RMK
+    , L.PAY_MZD_CD, L.PAY_MZD_NM, L.BANK_ACCT_FLG    
+    , D.GL_DT
+    FROM (
+        SELECT C.APRO_RQST_SEQ, C.DP_SEQ, C.APRO_USR_ID
+             , A.APRO_RQST_NO             
+	         , A.CRNT_APRO_SEQ
+             , SUM(DECODE(C.APSTS_CD,NULL,0,'',0,1)) OVER (PARTITION BY B.CSR_NO, C.APRO_RQST_SEQ) NN_APPRED_KNT
+             , SUM(DECODE(C.APRO_RQST_SEQ,1,DECODE(C.APSTS_CD,'C',1,'',0,0)))  OVER (PARTITION BY B.CSR_NO) FST_APPRED_KNT
+             , MAX(C.APRO_RQST_SEQ)  OVER (PARTITION BY B.CSR_NO) MAX_APRO_RQST_SEQ
+             , A.APSTS_CD
+	         , A.SUB_SYS_CD          	 
+	         , TO_CHAR(A.RQST_ST_DT, 'YYYY-MM-DD') RQST_ST_DT          	 
+             , A.RQST_OFC_CD
+	         , B.COST_OFC_CD          	 
+	         , B.CSR_NO          	 
+	         , B.INV_KNT          	 
+	         , TRIM(TO_CHAR(B.VNDR_SEQ, '000000')) VNDR_SEQ
+	         , B.PAY_DUE_DT          	 
+	         , B.CURR_CD          	 
+	         , B.APRO_TTL_AMT          	 
+             , C.APRO_RMK APRO_RMK
+	      FROM COM_APRO_RQST_HDR  A
+	         , COM_APRO_CSR_DTL   B
+	         , COM_APRO_RQST_ROUT C
+	     WHERE 1 = 1  
+	       AND A.SUB_SYS_CD NOT IN ('FLT','JOO')
+	       AND NVL(A.DELT_FLG,'N') <> 'Y'    
+           #if (${sub_sys_cd} != '')
+	       AND A.SUB_SYS_CD = @[sub_sys_cd]
+           #end   
+	       AND A.APRO_RQST_NO = B.APRO_RQST_NO
+	       AND A.APRO_RQST_NO = C.APRO_RQST_NO
+           #if (${sdate} != '')
+	       AND TO_CHAR(A.RQST_ST_DT, 'YYYY-MM-DD') >= @[sdate]
+           #end  
+           #if (${edate} != '')
+	       AND TO_CHAR(A.RQST_ST_DT, 'YYYY-MM-DD') <= @[edate]
+           #end              
+    ) X
+    , AP_INV_HDR D
+    , MDM_VENDOR M
+    , COM_USER U
+    , GL_MON_XCH_RT R
+    , MDM_CURRENCY C
+    , ( SELECT  SLD.LU_CD    AS PAY_MZD_CD
+                , SLD.LU_DESC AS PAY_MZD_NM
+                , CASE 
+                  WHEN SLD.LU_CD IN ('T','A','F','R','S')
+                  THEN NVL(V.BANK_ACCT_FLG, 'N') 
+                  ELSE 'N/A' 
+                  END AS BANK_ACCT_FLG
+                , V.VNDR_SEQ
+        FROM    SCO_LU_HDR SLH
+                , SCO_LU_DTL SLD
+                , MDM_VENDOR V 
+        WHERE SLH.LU_TP_CD = SLD.LU_TP_CD
+        AND   SLH.LU_TP_CD = 'PAYMENT METHOD'
+        AND   NVL(SLD.ENBL_FLG, 'Y') = 'Y'
+        AND   NVL(SLD.LU_ST_DT, TRIM(SYSDATE)) >= TRIM(SYSDATE)
+        AND   NVL(SLD.ATTR_CTNT2, SLD.LU_CD) = V.PAY_MZD_CD ) L
+    WHERE 1=1
+    AND X.CSR_NO = D.CSR_NO
+    AND X.VNDR_SEQ = M.VNDR_SEQ(+)
+    AND X.VNDR_SEQ = L.VNDR_SEQ(+)
+    AND X.VNDR_SEQ LIKE '%'||@[vndr_seq]||'%'
+	#if ($csr_no.size() > 0) 
+	AND	X.CSR_NO IN	(
+		#foreach( ${key} in ${csr_no})
+			#if($velocityCount < $csr_no.size()) 
+				'$key', 
+			#else 
+				'$key' 
+			#end 
+		#end
+	)
+	#end
+    #if (${status} == 'P')
+    AND X.APSTS_CD = 'P'
+    AND DECODE(SIGN(X.NN_APPRED_KNT),1,'Y','N') = 'N'
+    AND X.CRNT_APRO_SEQ = X.APRO_RQST_SEQ
+    AND X.APRO_RQST_SEQ = 1
+    #elseif (${status} == 'F')
+    AND X.APSTS_CD = 'P'
+    AND X.MAX_APRO_RQST_SEQ = 2
+    AND X.FST_APPRED_KNT >= 1
+    #elseif (${status} == 'C')
+    AND NVL(X.APSTS_CD, ' ') = 'C' AND NVL(D.IF_FLG,' ') = 'Y'
+    #elseif (${status} == 'R')
+    AND NVL(X.APSTS_CD, ' ') = 'R'
+    #elseif (${status} == 'E')
+    AND D.IF_FLG = 'E'
+    #else
+    AND X.CRNT_APRO_SEQ >= X.APRO_RQST_SEQ
+    #end
+    #if (${status} != 'P')
+    AND EXISTS (SELECT 'A' FROM TES_TML_SO_HDR TTSH WHERE TTSH.CSR_NO = X.CSR_NO AND NVL(TTSH.DELT_FLG, 'N') <> 'Y'
+                UNION ALL
+                SELECT 'A' FROM TRS_TRSP_INV_WRK TTIW WHERE TTIW.CSR_NO = X.CSR_NO AND NVL(TTIW.DELT_FLG, 'N') <> 'Y'
+                UNION ALL
+                SELECT 'A' FROM TRS_TRSP_RAIL_INV_WRK TTRIW WHERE TTRIW.CSR_NO = X.CSR_NO AND NVL(TTRIW.DELT_FLG, 'N') <> 'Y'
+                UNION ALL
+                SELECT 'A' FROM ACM_AGN_COMM AAC WHERE AAC.CSR_NO = X.CSR_NO
+                UNION ALL
+                SELECT 'A' FROM ACM_AGN_OTR_COMM AAOC WHERE AAOC.CSR_NO = X.CSR_NO
+                UNION ALL
+                SELECT 'A' FROM ACM_FF_CMPN AFC WHERE AFC.CSR_NO = X.CSR_NO
+                UNION ALL
+                SELECT 'A' FROM ACM_SPCL_CMPN ACMS WHERE ACMS.CSR_NO = X.CSR_NO
+                UNION ALL
+                SELECT 'A' FROM AP_PAY_INV API WHERE API.CSR_NO = X.CSR_NO AND NVL(API.DELT_FLG, 'N') <> 'Y')
+    #end
+    AND X.RQST_OFC_CD LIKE '%'||@[ofc_cd_deptsrch]||'%'
+    AND X.APRO_USR_ID = U.USR_ID 
+    AND NVL(U.USE_FLG,'N') = 'Y'
+    AND X.APRO_USR_ID = @[usr_id]
+    AND R.ACCT_XCH_RT_LVL(+) = '1'
+    AND SUBSTR(D.GL_DT,1,6) = R.ACCT_XCH_RT_YRMON(+)
+    AND X.CURR_CD = R.CURR_CD(+)
+    AND X.CURR_CD = C.CURR_CD(+)
+) T
+, AP_PAY_INV CMM
+, TES_TML_SO_HDR TES
+, TRS_TRSP_INV_WRK TRS
+, TRS_TRSP_RAIL_INV_WRK TRSW
+WHERE 1=1
+AND T.CSR_NO = CMM.CSR_NO(+)
+AND T.CSR_NO = TES.CSR_NO(+)
+AND T.CSR_NO = TRS.CSR_NO(+)
+AND T.CSR_NO = TRSW.CSR_NO(+)
+ORDER BY T.APRO_RQST_NO DESC			]]></sql>
+			<params>
+				<param name="sub_sys_cd" type="12" value="" out="N"/>
+				<param name="sdate" type="12" value="" out="N"/>
+				<param name="edate" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+				<param name="ofc_cd_deptsrch" type="12" value="" out="N"/>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

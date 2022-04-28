@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinCommonDBDAOsearchFunctionalCurrencyRSQL">
+			<desc><![CDATA[searchFunctionalCurrency]]></desc>
+			<sql><![CDATA[
+SELECT SLD.LU_CD,SLD.LU_DESC
+  FROM SCO_LU_HDR SLH,
+       SCO_LU_DTL SLD
+ WHERE SLH.LU_TP_CD = 'FUNCTIONAL CURRENCY'
+   AND SLH.LU_TP_CD = SLD.LU_TP_CD
+			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <screen name="ESM_SAM_0001">
+        <parameter key="title"    value="Sales Rep. Adjustment by Office in a Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/generalinfomanage/customerinfomanage/jsp/ESM_SAM_0001.jsp"/>
+    </screen>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <screen name="ESM_SAM_0002">
+        <parameter key="title"    value="Customer Information" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/generalinfomanage/customerinfomanage/jsp/ESM_SAM_0002.jsp"/>
+    </screen>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+	
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <screen name="ESM_SAM_0004">
+        <parameter key="title"    value="Customer PFMC Group Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/generalinfomanage/customerinfomanage/jsp/ESM_SAM_0004.jsp"/>
+    </screen>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+	
+	<!-- SHKIM : 2012-02-09 start -->
+    <screen name="ESM_SAM_0010">
+        <parameter key="title"    value="Customer Code Grouping" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/generalinfomanage/customerinfomanage/jsp/ESM_SAM_0010.jsp"/>
+    </screen>
+	<screen name="ESM_SAM_0902" template="templatePop">
+        <parameter key="title"    value="Customer Group Code Assignment" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/generalinfomanage/customerinfomanage/jsp/ESM_SAM_0902.jsp"/>
+    </screen>
+	<screen name="ESM_SAM_0903">
+        <parameter key="title"    value="Customer Performance Group Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/generalinfomanage/customerinfomanage/jsp/ESM_SAM_0903.jsp"/>
+    </screen>
+	<screen name="ESM_SAM_0903_POP" template="templatePop">
+        <parameter key="title"    value="Customer Performance Group Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/generalinfomanage/customerinfomanage/jsp/ESM_SAM_0903.jsp"/>
+    </screen>
+	<!-- SHKIM : 2012-02-09 end -->
+	
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <screen name="ESM_SAM_0003">
+        <parameter key="title"    value="KeyMan Info Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/generalinfomanage/keymaninfomanage/jsp/ESM_SAM_0003.jsp"/>
+    </screen>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <screen name="ESM_SAM_0005">
+        <parameter key="title"    value="Sales Rep List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/generalinfomanage/salesrepinfomanage/jsp/ESM_SAM_0005.jsp"/>
+    </screen>
+
+    <screen name="ESM_SAM_0005_POP" template="templatePop">
+        <parameter key="title"    value="Sales Rep List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/generalinfomanage/salesrepinfomanage/jsp/ESM_SAM_0005.jsp"/>
+    </screen>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <screen name="ESM_SAM_0006">
+        <parameter key="title"    value="Customer List by Sales Rep" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/generalinfomanage/salesrepinfomanage/jsp/ESM_SAM_0006.jsp"/>
+    </screen>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <screen name="ESM_SAM_0900">
+        <parameter key="title"    value="Change Sales Rep" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/generalinfomanage/salesrepinfomanage/jsp/ESM_SAM_0900.jsp"/>
+    </screen>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <screen name="ESM_SAM_0008">
+        <parameter key="title"    value="Sales Activity Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/salesactivitymanage/salesactivitymanage/jsp/ESM_SAM_0008.jsp"/>
+    </screen>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <screen name="ESM_SAM_0009">
+        <parameter key="title"    value="Performance by Customer" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/salesactivitymanage/salesactivitymanage/jsp/ESM_SAM_0009.jsp"/>
+    </screen>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- LEEKUANSIAN : 2011-05-18 start -->
+    <screen name="ESM_SAM_0901" template="templatePop">
+        <parameter key="title"    value="Sales Activity List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/salesactivitymanage/salesactivitymanage/jsp/ESM_SAM_0901.jsp"/>
+    </screen>
+	<!-- LEEKUANSIAN : 2011-05-18 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <screen name="ESM_SAM_0100">
+        <parameter key="title"    value="Sales Activity Item" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/salesadmincommon/salesadmincommon/jsp/ESM_SAM_0100.jsp"/>
+    </screen>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <screen name="ESM_SAM_0007">
+        <parameter key="title"    value="Sales Activity Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/salesactivitymanage/salesactivitymanage/jsp/ESM_SAM_0007.jsp"/>
+    </screen>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- CHLOE MIJIN SEO : 2012-02-22 start -->	
+	<screen name="ESM_SAM_0011">
+        <parameter key="title"    value="Customer Performance Group Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/generalinfomanage/customerinfomanage/jsp/ESM_SAM_0011.jsp"/>
+    </screen>
+	<!-- CHLOE MIJIN SEO : 2012-02-22 end -->
+	
+	<!-- SUKJOONLEE : 2012-02-10 start -->
+    <screen name="ESM_SAM_0904" template="templatePop">
+        <parameter key="title"    value="Sales Rep.Change" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/sam/generalinfomanage/customerinfomanage/jsp/ESM_SAM_0904.jsp"/>
+    </screen>
+    <!-- SUKJOONLEE : 2012-02-10 end -->
+
+</screen-definitions>

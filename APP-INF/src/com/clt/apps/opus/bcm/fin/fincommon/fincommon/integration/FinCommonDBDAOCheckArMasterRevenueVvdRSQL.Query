@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinCommonDBDAOCheckArMasterRevenueVvdRSQL">
+			<desc><![CDATA[CheckArMasterRevenueVvd]]></desc>
+			<sql><![CDATA[
+SELECT VSL_CD 
+  FROM AR_MST_REV_VVD 
+ WHERE VSL_CD||SKD_VOY_NO||SKD_DIR_CD||RLANE_DIR_CD = @[vvd]			]]></sql>
+			<params>
+				<param name="vvd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

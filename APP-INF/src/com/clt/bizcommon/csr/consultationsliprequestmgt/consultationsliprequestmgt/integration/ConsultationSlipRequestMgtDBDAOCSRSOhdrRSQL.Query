@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCSRSOhdrRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT   TO_CHAR(B.VNDR_NO, '000000') VNDR_NO
+       , (SELECT DECODE(VNDR_CNT_CD
+                      ,'JP',VNDR_LOCL_LANG_NM
+                      ,VNDR_LGL_ENG_NM)
+         FROM    MDM_VENDOR
+         WHERE   VNDR_SEQ =B.VNDR_NO
+         ) INV_DESC
+       , COUNT(B.CSR_NO) NO_OF_INV
+       , B.CSR_CURR_CD
+       , B.CSR_AMT
+       , B.ATTR_CTNT2
+       , TO_CHAR(MAX(B.INV_ISS_DT),'YYYY-MM-DD') ISS_DT
+       , TO_CHAR(MAX(B.INV_RCV_DT),'YYYY-MM-DD') RCV_DT
+       , B.VNDR_TERM_NM
+       , TO_CHAR(B.DUE_DT,'YYYY-MM-DD') DUE_DT
+       , B.CSR_NO
+       , (SELECT SO_IF_CD
+            FROM MDM_ORGANIZATION
+           WHERE OFC_CD = @[ofc_cd]) SO_IF_CD
+	   , '' count
+	   , '' ap_ofc_cd
+	   , '' finc_rgn_cd
+       , '' ap_ctr_cd
+	   , '' attr_ctnt1
+	   , '' dtrb_coa_acct_cd
+	   , '' dtrb_coa_vvd_cd
+	   , '' line_no
+	   , '' inv_sub_sys_cd
+	   , '' ofc_cd
+FROM
+         ( SELECT A.CSR_NO
+               , A.CSR_CURR_CD
+               , A.CSR_AMT
+               , TO_DATE(A.INV_TERM_DT,'YYYY-MM-DD') DUE_DT
+               , A.ATTR_CTNT2
+               , A.IF_ERR_RSN
+               , A.VNDR_NO
+               , A.VNDR_TERM_NM
+               , H.INV_ISS_DT 
+               , H.INV_RCV_DT
+         FROM    AP_PAY_INV H 
+               , AP_INV_HDR A
+         WHERE   1                    =1 
+             AND H.CSR_NO             = A.CSR_NO
+             AND NVL(H.DELT_FLG,'N') <> 'Y'
+             AND A.CSR_NO             = @[csr_no]
+         ) B
+GROUP BY B.CSR_NO
+       , B.CSR_CURR_CD
+       , B.CSR_AMT
+       , B.DUE_DT
+       , B.ATTR_CTNT2
+       , B.IF_ERR_RSN
+       , B.VNDR_NO
+       , B.VNDR_TERM_NM			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

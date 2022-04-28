@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ChargeDBDAORepChargeListRSQL">
+			<desc><![CDATA[Charge의 모든 목록을 가져온다.]]></desc>
+			<sql><![CDATA[
+SELECT REP_CHG_CD
+  FROM MDM_REP_CHG
+ WHERE DELT_FLG <> 'Y'			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

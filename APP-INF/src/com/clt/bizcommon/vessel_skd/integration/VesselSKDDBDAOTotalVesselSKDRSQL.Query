@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="VesselSKDDBDAOTotalVesselSKDRSQL">
+			<desc><![CDATA[Vessel schedule total]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(1)
+FROM VSK_VSL_PORT_SKD
+WHERE 1 = 1
+#if (${vvd_cd} != '')
+AND VSL_CD = substr(@[vvd_cd], 1, 4)
+AND SKD_VOY_NO = substr(@[vvd_cd], 5, 4)
+AND SKD_DIR_CD = substr(@[vvd_cd], 9, 1)
+#end			]]></sql>
+			<params>
+				<param name="vvd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

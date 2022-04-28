@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOModifyDescUSQL">
+			<desc><![CDATA[.
+2010.10.18 김영철 [CHM-201006348-01] CSR 전표 Remark 보완 - INV_DESC 추가
+* 2010.10.18 김영철 [CHM-201006951-01] [VOP-PSO] 전도금 CSR내 detail 항목에 VVD 표기 요청건]]></desc>
+			<sql><![CDATA[
+UPDATE AP_INV_DTRB
+   SET INV_DESC = INV_DESC || ( SELECT DECODE(NVL(B.INV_DESC, ''), '', '', '('||B.INV_DESC||')')
+								  FROM AP_PAY_INV A, AP_PAY_INV_DTL B
+							     WHERE A.INV_RGST_NO = B.INV_RGST_NO
+								   AND (A.VNDR_SEQ, A.INV_NO, B.ACCT_CD, B.INV_AMT, B.LGS_COST_CD, B.ACT_VVD_CD) IN (SELECT A.VNDR_NO, B.ATTR_CTNT1, B.DTRB_COA_ACCT_CD,B.INV_AMT, B.FTU_USE_CTNT1, B.ACT_VVD_CD
+								                                    FROM AP_INV_HDR A, AP_INV_DTRB B 
+								  			                       WHERE A.CSR_NO = B.CSR_NO 
+								  			                         AND A.CSR_NO = @[csr_no]
+								  			                         AND B.LINE_SEQ = @[line_seq]
+								  			                         AND B.LINE_NO = @[line_no] )
+								   AND DECODE(@[dtrb_coa_acct_cd]
+											 ,(SELECT C.ATTR_CTNT1 ACCT_CD 
+												FROM COM_ACCT_HRD_CDG_DESC D, COM_ACCT_HRD_CDG_CTNT C 
+											   WHERE ROWNUM=1 
+								  				 AND D.SRC_MDL_CD = C.SRC_MDL_CD 
+								 				 AND D.HRD_CDG_ID = C.HRD_CDG_ID 
+								 				 AND D.SRC_MDL_CD = 'CSR'
+								 				 AND D.HRD_CDG_ID = 'AGT_ACCT_RCV')
+											, A.PSO_TRNS_SLP_CTNT
+											, 'GO') = 'GO'
+								   AND A.DELT_FLG <> 'Y'
+								   AND B.DELT_FLG <> 'Y'
+							  )
+ WHERE CSR_NO = @[csr_no]
+   AND LINE_SEQ = @[line_seq]
+   AND LINE_NO = @[line_no]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="line_seq" type="12" value="" out="N"/>
+				<param name="line_no" type="12" value="" out="N"/>
+				<param name="dtrb_coa_acct_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

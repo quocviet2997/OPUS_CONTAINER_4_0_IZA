@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalRouteVORSQL">
+			<desc><![CDATA[Route의 모든 목록을 가져온다.]]></desc>
+			<sql><![CDATA[
+SELECT T.APRO_SEQ      	
+     , T.APRO_USR_ID  		
+     , T.APRO_USR_NM  		
+     , T.APRO_OFC_CD 		
+     , T.APRO_USR_JB_TIT_NM  	
+     , T.APRO_ROUT_SEQ 	
+     , '' USR_ID
+  FROM (
+        SELECT ROW_NUMBER() OVER (ORDER BY A.APRO_SEQ DESC) no  	
+             , A.APRO_SEQ        
+             , A.APRO_USR_ID     
+             , A.APRO_USR_NM     
+             , B.OFC_CD APRO_OFC_CD           
+             , A.APRO_USR_JB_TIT_NM 
+             , A.APRO_ROUT_SEQ         	 
+	      FROM COM_APRO_ROUT_DFLT_DTL A
+             , COM_USER B 
+         WHERE B.USE_FLG = 'Y'	 
+           AND NVL(A.DELT_FLG, 'N') <> 'Y' 
+           #if (${apro_rout_seq} != '')
+           AND A.APRO_ROUT_SEQ = @[apro_rout_seq]	
+           #end
+         ORDER BY A.APRO_SEQ DESC                 
+  ) T			]]></sql>
+			<params>
+				<param name="apro_rout_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

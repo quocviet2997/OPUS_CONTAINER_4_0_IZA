@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOAddGlDailyExchangeRatesCSQL">
+			<desc><![CDATA[AddGlDailyExchangeRates]]></desc>
+			<sql><![CDATA[
+INSERT INTO GL_DLY_XCH_RT
+(ACCT_XCH_RT_DT, ACCT_XCH_RT_LVL, FM_CURR_CD, TO_CURR_CD, CONV_XCH_RT, ACCT_RT_USR_LVL, DELT_FLG, CRE_USR_ID, CRE_DT, UPD_USR_ID, UPD_DT)
+VALUES( @[acct_xch_rt_dt],
+      @[acct_xch_rt_lvl],
+      @[fm_curr_cd],
+      @[to_curr_cd],
+      @[conv_xch_rt],
+      @[acct_rt_usr_lvl],
+      @[delt_flg],
+      @[cre_usr_id],
+      SYSDATE,
+      @[upd_usr_id],
+      SYSDATE)			]]></sql>
+			<params>
+				<param name="acct_xch_rt_dt" type="12" value="" out="N"/>
+				<param name="acct_xch_rt_lvl" type="12" value="" out="N"/>
+				<param name="fm_curr_cd" type="12" value="" out="N"/>
+				<param name="to_curr_cd" type="12" value="" out="N"/>
+				<param name="conv_xch_rt" type="12" value="" out="N"/>
+				<param name="acct_rt_usr_lvl" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

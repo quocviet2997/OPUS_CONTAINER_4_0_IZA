@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CSRExternalFinderDBDAOGetMdmCntCdRSQL">
+			<desc><![CDATA[getMdmCntCd]]></desc>
+			<sql><![CDATA[
+SELECT C.CNT_CD CNT_CD
+FROM   MDM_ORGANIZATION B
+     , (SELECT C.*
+       FROM    MDM_LOCATION C
+       WHERE   NVL(C.DELT_FLG,'N') <> 'Y'
+       ) C
+WHERE  1                    =1
+   AND B.OFC_CD             = @[ofc_cd]
+   AND NVL(B.DELT_FLG,'N') <> 'Y'
+   AND B.LOC_CD             = C.LOC_CD(+)			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

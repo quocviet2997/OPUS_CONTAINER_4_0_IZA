@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserOfcCngDBDAOUserDSQL">
+			<desc><![CDATA[User 삭제]]></desc>
+			<sql><![CDATA[
+DELETE FROM COM_USR_OFC_CNG
+WHERE	USR_ID = @[usr_id]
+AND	CNG_OFC_CD = @[cng_ofc_cd]
+			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="cng_ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+    <!-- KIM, Sang-Soo : 2012-03-05 start -->
+    <screen name="ESM_ACM_0007">
+        <parameter key="title"    value="O/B Booking Office Info for China" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmmaster/acmchinaofficeinfo/jsp/ESM_ACM_0007.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-03-05 end -->
+
+    <!-- KIM, Sang-Soo : 2012-03-13 start -->
+    <screen name="ESM_ACM_0005">
+        <parameter key="title"    value="I/B China Agent Information for Lane/Port" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmmaster/acmchinaofficeinfo/jsp/ESM_ACM_0005.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-03-13 end -->
+
+    <!-- KIM, Sang-Soo : 2012-03-14 start -->
+    <screen name="ESM_ACM_0003">
+        <parameter key="title"    value="Charge Deduction User Setting" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmsetup/acmsetup/jsp/ESM_ACM_0003.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-03-14 end -->
+
+    <!-- KIM, Sang-Soo : 2012-03-16 start -->
+    <screen name="ESM_ACM_0002">
+        <parameter key="title"    value="Charge Deduction User Setting" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmsetup/acmsetup/jsp/ESM_ACM_0002.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-03-16 end -->
+
+    <!-- KIM, Sang-Soo : 2012-03-19 start -->
+    <screen name="ESM_ACM_0004">
+        <parameter key="title"    value="Charge Deduction User Setting" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmsetup/acmsetup/jsp/ESM_ACM_0004.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-03-19 end -->
+
+    <!-- KIM, Sang-Soo : 2012-03-20 start -->
+    <screen name="ESM_ACM_0001">
+        <parameter key="title"    value="Commission Agreement Creation_Master" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmagreement/agncommagreement/jsp/ESM_ACM_0001.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-03-20 end -->
+
+    <!-- Lee Jeong Soo : 2012-03-20 start -->
+    <screen name="ESM_ACM_0026">
+        <parameter key="title"    value="Revenue Structure Setting" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmsetup/acmsetup/jsp/ESM_ACM_0026.jsp"/>
+    </screen>
+    <!-- Lee Jeong Soo : 2012-03-20 end -->
+
+    <!-- PARK, Sung-jin : 2012-03-23 start -->
+    <screen name="ESM_ACM_0102"   template="templatePop">
+        <parameter key="title"    value="Charge Deduction User Setting" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmsetup/acmsetup/jsp/ESM_ACM_0102.jsp"/>
+    </screen>
+    <!-- PARK, Sung-jin : 2012-03-23 end -->
+
+    <!-- PARK, Sung-jin : 2012-03-23 start -->
+    <screen name="ESM_ACM_0103"   template="templatePop">
+        <parameter key="title"    value="Charge Deduction User Setting" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmsetup/acmsetup/jsp/ESM_ACM_0103.jsp"/>
+    </screen>
+    <!-- PARK, Sung-jin : 2012-03-23 end -->
+
+    <!-- Lee Jeong Soo : 2012-03-26 start -->
+    <screen name="ESM_ACM_0101"   template="templatePop">
+        <parameter key="title"    value="Agreement Copy From" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmagreement/agncommagreement/jsp/ESM_ACM_0101.jsp"/>
+    </screen>
+    <!-- Lee Jeong Soo : 2012-03-26 end -->
+
+    <!-- KIM, Sang-Soo : 2012-03-26 start -->
+    <screen name="ESM_ACM_0006">
+        <parameter key="title"    value="Charge Deduction User Setting" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmrequest/agncommrequest/jsp/ESM_ACM_0006.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-03-26 end -->
+
+    <!-- KIM, Young-Oh : 2012-04-02 start -->
+    <screen name="ESM_ACM_0014">
+        <parameter key="title"    value="Charge Deduction User Setting" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmrequest/otrcommrequest/jsp/ESM_ACM_0014.jsp"/>
+    </screen>
+    <!-- KIM, Young-Oh : 2012-04-02 end -->
+
+    <!-- KIM, Sang-Soo : 2012-04-02 start -->
+    <screen name="ESM_ACM_0008">
+        <parameter key="title"    value="Agent Commission Audit" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmaudit/agncommaudit/jsp/ESM_ACM_0008.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-04-02 end -->
+
+    <!-- KIM, Young-Oh : 2012-04-04 start -->
+    <screen name="ESM_ACM_0107"   template="templatePop">
+        <parameter key="title"    value="Audit Confirm" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmaudit/agncommaudit/jsp/ESM_ACM_0107.jsp"/>
+    </screen>
+    <!-- KIM, Young-Oh : 2012-04-04 end -->
+
+    <!-- KIM, Sang-Soo : 2012-04-05 start -->
+    <screen name="ESM_ACM_0105"   template="templatePop">
+        <parameter key="title"    value="Calculation Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmrequest/agncommrequest/jsp/ESM_ACM_0105.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-04-05 end -->
+
+    <!-- KIM, Young-Oh : 2012-04-04 start -->
+    <screen name="ESM_ACM_0009">
+        <parameter key="title"    value="Agent Commission CSR Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmapproval/agncommapproval/jsp/ESM_ACM_0009.jsp"/>
+    </screen>
+
+    <screen name="ESM_ACM_0015">
+        <parameter key="title"    value="Other Commission Audit" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmaudit/otrcommaudit/jsp/ESM_ACM_0015.jsp"/>
+    </screen>
+    <!-- KIM, Young-Oh : 2012-04-04 end -->
+
+    <!-- KIM, Sang-Soo : 2012-04-09 start -->
+    <screen name="ESM_ACM_0106"   template="templatePop">
+        <parameter key="title"    value="Calculation Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmsimulation/acmsimulation/jsp/ESM_ACM_0106.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-04-09 end -->
+
+    <!-- KIM, Sang-Soo : 2012-04-10 start -->
+    <screen name="ESM_ACM_0010">
+        <parameter key="title"    value="Agent Commission Simulation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmsimulation/acmsimulation/jsp/ESM_ACM_0010.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-04-10 end -->
+
+    <!-- KIM, Young-Oh : 2012-04-13 start -->
+    <screen name="ESM_ACM_0027">
+        <parameter key="title"    value="FF Compensation Audit" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmaudit/ffcmpnaudit/jsp/ESM_ACM_0027.jsp"/>
+    </screen>
+
+    <screen name="ESM_ACM_0028">
+        <parameter key="title"    value="FAC Audit" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmaudit/facommaudit/jsp/ESM_ACM_0028.jsp"/>
+    </screen>
+
+    <screen name="ESM_ACM_0029">
+        <parameter key="title"    value="Special Compensation Audit" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmaudit/spclcmpnaudit/jsp/ESM_ACM_0029.jsp"/>
+    </screen>
+    <!-- KIM, Young-Oh : 2012-04-13 end -->
+
+    <!-- KIM, Sang-Soo : 2012-04-16 start -->
+    <screen name="ESM_ACM_0012">
+        <parameter key="title"    value="Agent Commission Mass Calculation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmcalculation/agncommcalculation/jsp/ESM_ACM_0012.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-04-16 end -->
+
+    <!-- KIM, Sang-Soo : 2012-04-26 start -->
+    <screen name="ESM_ACM_0013">
+        <parameter key="title"    value="Returned CSR Reprocess" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmapproval/agncommapproval/jsp/ESM_ACM_0013.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-04-26 end -->
+
+    <!-- KIM, Young-Oh : 2012-05-02 start -->
+    <screen name="ESM_ACM_0023">
+        <parameter key="title"    value="FF Compensation Agreement Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmagreement/ffcmpnagreement/jsp/ESM_ACM_0023.jsp"/>
+    </screen>
+
+    <screen name="ESM_ACM_0024">
+        <parameter key="title"    value="FAC Agreement Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmagreement/facommagreement/jsp/ESM_ACM_0024.jsp"/>
+    </screen>
+
+    <screen name="ESM_ACM_0025">
+        <parameter key="title"    value="Compensation Agreement Rate Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmagreement/spclcmpnagreement/jsp/ESM_ACM_0025.jsp"/>
+    </screen>
+    <!-- KIM, Young-Oh : 2012-05-02 end -->
+
+    <!-- KIM, Sang-Soo : 2012-05-03 start -->
+    <screen name="ESM_ACM_0019">
+        <parameter key="title"    value="FF-Vendor Match for FF Compensation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmmaster/acmcustomerinfo/jsp/ESM_ACM_0019.jsp"/>
+    </screen>
+
+    <screen name="ESM_ACM_0020">
+        <parameter key="title"    value="FF vs Shipper Interest Info for Brokerage" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmmaster/acmcustomerinfo/jsp/ESM_ACM_0020.jsp"/>
+    </screen>
+
+    <screen name="ESM_ACM_0021">
+        <parameter key="title"    value="FF vs Shipper Interest Info for FAC" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmmaster/acmcustomerinfo/jsp/ESM_ACM_0021.jsp"/>
+    </screen>
+
+    <screen name="ESM_ACM_0022">
+        <parameter key="title"    value="Customer vs Vendor for Compensation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmmaster/acmcustomerinfo/jsp/ESM_ACM_0022.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-05-03 end -->
+
+    <!-- KIM, Young-Oh : 2012-05-04 start -->
+    <screen name="ESM_ACM_0030">
+        <parameter key="title"    value="FF Compensation CSR Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmapproval/ffcmpnapproval/jsp/ESM_ACM_0030.jsp"/>
+    </screen>
+
+    <screen name="ESM_ACM_0031">
+        <parameter key="title"    value="Special Compensation CSR Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmapproval/spclcmpnapproval/jsp/ESM_ACM_0031.jsp"/>
+    </screen>
+    <!-- KIM, Young-Oh : 2012-05-04 end -->
+
+    <!-- KIM, Bong-Gyoon : 2012-05-14 start -->
+    <screen name="ESM_ACM_0104"   template="templatePop">
+        <parameter key="title"    value="Container Type Selection" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmsetup/acmsetup/jsp/ESM_ACM_0104.jsp"/>
+    </screen>
+    <!-- KIM, Bong-Gyoon : 2012-05-14 end -->
+
+    <!-- KIM, Young-Oh : 2012-05-15 start -->
+    <screen name="ESM_ACM_0017">
+        <parameter key="title"    value="Agent Commission Agreement History (master)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmhistory/agncommagmthistory/jsp/ESM_ACM_0017.jsp"/>
+    </screen>
+    <!-- KIM, Young-Oh : 2012-05-15 end -->
+
+    <!-- KIM, Bong-Gyoon : 2012-05-16 start -->
+    <screen name="ESM_ACM_0034">
+        <parameter key="title"    value="CSR Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmreport/acmreport/jsp/ESM_ACM_0034.jsp"/>
+    </screen>
+
+    <screen name="ESM_ACM_0111"   template="templatePop">
+        <parameter key="title"    value="CSR Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmreport/acmreport/jsp/ESM_ACM_0111.jsp"/>
+    </screen>
+    <!-- KIM, Bong-Gyoon : 2012-05-16 end -->
+
+    <!-- KIM, Bong-Gyoon : 2012-05-23 start -->
+    <screen name="ESM_ACM_0033">
+        <parameter key="title"    value="Agent Commission Mass Simulation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmsimulation/acmsimulation/jsp/ESM_ACM_0033.jsp"/>
+    </screen>
+    <!-- KIM, Bong-Gyoon : 2012-05-23 end -->
+
+    <!-- KIM, Young-Oh : 2012-05-25 start -->
+    <screen name="ESM_ACM_0113"   template="templatePop">
+        <parameter key="title"    value="Location Selection" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmcommon/acmcommon/jsp/ESM_ACM_0113.jsp"/>
+    </screen>
+    <!-- KIM, Young-Oh : 2012-05-25 end -->
+
+    <!-- KIM, Bong-Gyoon : 2012-05-25 start -->
+    <screen name="ESM_ACM_0032">
+        <parameter key="title"    value="Batch Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmrequest/batmanagement/jsp/ESM_ACM_0032.jsp"/>
+    </screen>
+
+    <screen name="ESM_ACM_0032_POP" template="templatePop">
+        <parameter key="title"    value="Batch Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmrequest/batmanagement/jsp/ESM_ACM_0032.jsp"/>
+    </screen>
+    <!-- KIM, Bong-Gyoon : 2012-05-25 end -->
+
+    <!-- KIM, Sang-Soo : 2012-05-24 start -->
+    <screen name="ESM_ACM_0016">
+        <parameter key="title"    value="Agent Commission Calculation History" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmhistory/agncommcalchistory/jsp/ESM_ACM_0016.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-05-24 end -->
+
+    <!-- KIM, Sang-Soo : 2012-06-05 start -->
+    <screen name="ESM_ACM_0011">
+        <parameter key="title"    value="Agent Commission Simulation Agreement Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmsimulation/acmsimulation/jsp/ESM_ACM_0011.jsp"/>
+    </screen>
+
+    <screen name="ESM_ACM_0110"   template="templatePop">
+        <parameter key="title"    value="Simulation No. Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmsimulation/acmsimulation/jsp/ESM_ACM_0110.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-06-05 end -->
+
+    <!-- KIM, Bong-Gyoon : 2012-06-15 start -->
+    <screen name="ESM_ACM_0114"   template="templatePop">
+        <parameter key="title"    value="Agreement Information" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmagreement/agncommagreement/jsp/ESM_ACM_0114.jsp"/>
+    </screen>
+    <!-- KIM, Bong-Gyoon : 2012-06-15 end -->
+
+    <!-- KIM, Sang-Soo : 2012-06-25 start -->
+    <screen name="ESM_ACM_0115"   template="templatePop">
+        <parameter key="title"    value="Simulation Agreement Copy From" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmsimulation/acmsimulation/jsp/ESM_ACM_0115.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-06-25 end -->
+
+    <!-- KIM, Young-Oh : 2012-06-28 start -->
+    <screen name="ESM_ACM_9999">
+        <parameter key="title"    value="Agent Commission Mass Calculation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmcalculation/agncommcalculation/jsp/ESM_ACM_9999.jsp"/>
+    </screen>
+    <!-- KIM, Young-Oh : 2012-06-28 end -->
+
+    <!-- KIM, Sang-Soo : 2012-07-10 start -->
+    <screen name="ESM_ACM_0116"   template="templatePop">
+        <parameter key="title"    value="Calculation Detail from History" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmhistory/agncommcalchistory/jsp/ESM_ACM_0116.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-07-10 end -->
+
+    <!-- KIM, Young-Oh : 2012-04-02 start -->
+    <screen name="ESM_ACM_0035">
+        <parameter key="title"    value="Commission Agreement Creation_Master" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmagreement/agncommagreement/jsp/ESM_ACM_0035.jsp"/>
+    </screen>
+    <!-- KIM, Young-Oh : 2012-04-02 end -->
+
+    <!-- KIM, Sang-Soo : 2012-08-13 start -->
+    <screen name="ESM_ACM_0117"   template="templatePop">
+        <parameter key="title"    value="FF Compensation Details &amp; History for B/L" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmaudit/ffcmpnaudit/jsp/ESM_ACM_0117.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-08-13 end -->
+
+    <!-- KIM, Sang-Soo : 2012-09-04 start -->
+    <screen name="ESM_ACM_0037">
+        <parameter key="title"    value="Commission Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmreport/acmreport/jsp/ESM_ACM_0037.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-09-04 end -->
+
+    <!-- KIM, Young-Oh : 2012-08-24 start -->
+    <screen name="ESM_ACM_0036">
+        <parameter key="title"    value="Agent Commission Calculation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmcalculation/agncommcalculation/jsp/ESM_ACM_0036.jsp"/>
+    </screen>
+    <!-- KIM, Young-Oh : 2012-08-24 end -->
+
+    <!-- KIM, Sang-Soo : 2012-09-17 start -->
+    <screen name="ESM_ACM_0118"   template="templatePop">
+        <parameter key="title"    value="Customized Report Form" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/acm/acmreport/acmreport/jsp/ESM_ACM_0118.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2012-09-17 end -->
+
+</screen-definitions>

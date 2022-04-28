@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CalenderDBDAOSteHolidayIDSQL">
+			<desc><![CDATA[SteHoliday delete -->> PRD_HOL_DELT 테이블에 insert query]]></desc>
+			<sql><![CDATA[
+INSERT INTO PRD_HOL_DELT (
+	hol_id
+	,cnt_cd
+	,ste_cd
+	,loc_cd
+	,delt_usr_id
+	,delt_dt
+)VALUES (
+	@[hol_id]
+	,@[cnt_cd]
+	,@[ste_cd]
+	,''
+	,@[delt_usr_id]
+	,sysdate
+)			]]></sql>
+			<params>
+				<param name="hol_id" type="12" value="" out="N"/>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="ste_cd" type="12" value="" out="N"/>
+				<param name="delt_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

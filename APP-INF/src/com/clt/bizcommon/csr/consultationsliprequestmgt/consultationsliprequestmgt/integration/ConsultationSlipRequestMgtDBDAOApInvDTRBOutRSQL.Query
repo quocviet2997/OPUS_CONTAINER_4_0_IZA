@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOApInvDTRBOutRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT LINE_SEQ,
+       ROWNUM LINE_NO,
+       LINE_TP_LU_CD,
+       CSR_AMT,
+       INV_DESC,
+       INV_TAX_CD,
+       DTRB_COA_CO_CD,
+       DTRB_COA_RGN_CD,
+       DTRB_COA_CTR_CD,
+       DTRB_COA_ACCT_CD,
+       DTRB_COA_VVD_CD,
+       DTRB_COA_INTER_CO_CD,
+       DTRB_COA_FTU_N1ST_CD,
+       DTRB_COA_FTU_N2ND_CD,
+       ATTR_CATE_NM,
+       ATTR_CTNT1,
+       ATTR_CTNT2,
+       ATTR_CTNT3,
+       ATTR_CTNT4,
+       ATTR_CTNT5,
+       SAC_TRUNK_VVD_RLANE_FNC(BKG_NO) ATTR_CTNT6,
+       SAC_TRUNK_VVD_TRD_FNC(BKG_NO) ATTR_CTNT7,
+       ATTR_CTNT8,
+       ATTR_CTNT9,
+       --SAC_TRUNK_VVD_SUB_TRD_FNC(BKG_NO) ATTR_CTNT10,
+        CASE 
+        WHEN BKG_NO IS NOT NULL
+        THEN SAC_TRUNK_VVD_SUB_TRD_FNC(BKG_NO)
+        WHEN ACT_VVD_CD IS NOT NULL
+        THEN SAC_NO_BKG_SUB_TRD_FNC(ATTR_CTNT14,(SELECT AP_OFC_CD FROM MDM_ORGANIZATION WHERE OFC_CD = @[ofc_cd] AND ROWNUM = 1),SUBSTR(ACT_VVD_CD,-1))
+        END ATTR_CTNT10, 
+       ATTR_CTNT11,
+       ATTR_CTNT12,
+       --SAC_TRUNK_VVD_DOMI_FLG_FNC(BKG_NO) ATTR_CTNT13,
+        CASE 
+        WHEN BKG_NO IS NOT NULL
+        THEN SAC_TRUNK_VVD_DOMI_FLG_FNC(BKG_NO)
+        WHEN ACT_VVD_CD IS NOT NULL
+        THEN SAC_NO_BKG_DOMI_FLG_FNC(ATTR_CTNT14,(SELECT AP_OFC_CD FROM MDM_ORGANIZATION WHERE OFC_CD = @[ofc_cd] AND ROWNUM = 1),SUBSTR(ACT_VVD_CD,-1))
+        END ATTR_CTNT13, 
+       ATTR_CTNT14,
+       ATTR_CTNT15,
+       BKG_NO,
+       CNTR_TPSZ_CD,
+       ACT_VVD_CD,
+       PLN_SCTR_DIV_CD,
+       SO_CRR_CD,
+       YD_CD,
+       FTU_USE_CTNT1,
+       FTU_USE_CTNT2,
+       FTU_USE_CTNT3,
+       FTU_USE_CTNT4,
+       FTU_USE_CNTR5,
+       TO_CHAR(CRE_DT, 'YYYY/MM/DD HH24:MI:SS') CRE_DT,
+       CRE_USR_ID,
+       EAI_EVNT_DT
+       , STL_KEY_NO
+       , OWNR_VNDR_SEQ
+FROM   ( SELECT @[line_seq] LINE_SEQ,
+                'ITEM' LINE_TP_LU_CD,
+                DECODE(INV_CURR_CD,
+                       'JPY',ROUND(SUM(INV_AMT)),
+                             ROUND(SUM(INV_AMT),2)) CSR_AMT,
+                INV_DESC,
+                NULL INV_TAX_CD,
+                '01' DTRB_COA_CO_CD,
+                DTRB_COA_RGN_CD,
+                DTRB_COA_CTR_CD,
+                DTRB_COA_ACCT_CD,
+                DTRB_COA_VVD_CD,
+                DTRB_COA_INTER_CO_CD,
+                '000000' DTRB_COA_FTU_N1ST_CD,
+                '000000' DTRB_COA_FTU_N2ND_CD,
+                ATTR_CATE_NM,
+                ATTR_CTNT1,
+                ATTR_CTNT2,
+                ATTR_CTNT3,
+                NULL ATTR_CTNT4,
+                NULL ATTR_CTNT5,
+                NULL ATTR_CTNT6,
+                NULL ATTR_CTNT7,
+                ATTR_CTNT8,
+                ATTR_CTNT9,
+                NULL ATTR_CTNT10,
+                ATTR_CTNT11,
+                ATTR_CTNT12,
+                NULL ATTR_CTNT13,
+                ATTR_CTNT14,
+                TO_CHAR(SYSDATE, 'YYYY/MM/DD') ATTR_CTNT15,
+                NULL BKG_NO,
+                CNTR_TPSZ_CD,
+                ACT_VVD_CD,
+                PLN_SCTR_DIV_CD,
+                SO_CRR_CD,
+                YD_CD,
+                FTU_USE_CTNT1,
+                FTU_USE_CTNT2,
+                NULL FTU_USE_CTNT3,
+                NULL FTU_USE_CTNT4,
+                NULL FTU_USE_CNTR5,
+                GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd]) CRE_DT,
+                @[cre_usr_id] CRE_USR_ID,
+                NULL EAI_EVNT_DT
+                , STL_KEY_NO
+                , OWNR_VNDR_SEQ
+         FROM   ( SELECT DECODE(H.INV_SUB_SYS_CD,'TLL',NVL(D.VSL_CD||D.SKD_VOY_NO||D.SKD_DIR_CD
+                                                           ||D.REV_DIR_CD, '0000000000'),
+                           ( SELECT ACCT_ENG_NM
+                             FROM   MDM_ACCOUNT
+                             WHERE  ACCT_CD = DECODE(D.ACCT_CD
+												   ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','ACCT_RCV_JNT_OPER')
+												   ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','LEGY_SYS_CLEARING')
+												   ,D.ACCT_CD) ) )   INV_DESC,
+                         D.INV_AMT                                                                INV_AMT,
+                         ( SELECT FINC_RGN_CD
+                           FROM   MDM_ORGANIZATION
+                           WHERE  OFC_CD = H.COST_OFC_CD )                                        DTRB_COA_RGN_CD,
+                         ( SELECT AP_CTR_CD
+                           FROM   MDM_ORGANIZATION
+                           WHERE  OFC_CD = H.COST_OFC_CD )                                        DTRB_COA_CTR_CD,
+                         DECODE(D.ACCT_CD
+							  ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','ACCT_RCV_JNT_OPER')
+							  ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','LEGY_SYS_CLEARING')
+							  ,D.ACCT_CD)														  DTRB_COA_ACCT_CD,
+                         DECODE(DECODE(D.ACCT_CD
+									 ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','ACCT_RCV_JNT_OPER')
+									 ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','LEGY_SYS_CLEARING')
+									 ,D.ACCT_CD)
+							  ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','LEGY_SYS_CLEARING'),'0000000000'
+							  ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','BANK_CMMS'),'0000000000'
+							  ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','UNADJT_SUSPS_DBT_EQ'),'0000000000'
+							  ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','UNADJT_SUSPS_DBT_CG'),'0000000000',
+                                NVL(D.VSL_CD
+                                    ||D.SKD_VOY_NO
+                                    ||D.SKD_DIR_CD
+                                    ||D.REV_DIR_CD, '0000000000'))                                DTRB_COA_VVD_CD,
+                         ( SELECT NVL(SUBS_CO_CD,'00')
+                           FROM   MDM_VENDOR
+                           WHERE  VNDR_SEQ = H.VNDR_SEQ )                                         DTRB_COA_INTER_CO_CD,
+                         DECODE(D.ACCT_CD
+							  ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','ACCT_RCV_JNT_OPER')
+							  ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','LEGY_SYS_CLEARING')
+							  ,D.ACCT_CD)                             					          ATTR_CATE_NM,
+                         H.INV_NO                                                                 ATTR_CTNT1,
+                         TO_CHAR(H.INV_ISS_DT,'YYYY/MM/DD HH24:MI:SS')                            ATTR_CTNT2,
+                         NVL(D.PORT_CD, ( SELECT LOC_CD
+												    								FROM MDM_ORGANIZATION
+												   								 WHERE OFC_CD = H.COST_OFC_CD ))         							  ATTR_CTNT3,
+                         DECODE(D.ACCT_CD,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','UNADJT_SUSPS_DBT_EQ'),H.INV_RMK,NULL)                                ATTR_CTNT8,
+                         DECODE(D.ACCT_CD,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','UNADJT_SUSPS_DBT_EQ'),H.INV_NO,NULL)                                 ATTR_CTNT9,
+                         D.ACT_DT                                                                 ATTR_CTNT11,--ACTIVITY DATE
+                         D.ACT_PLC                                                                ATTR_CTNT12,--ACTIVITY PLACE
+                         NVL(D.SLAN_CD, (SELECT SLAN_CD FROM AR_MST_REV_VVD WHERE VSL_CD = D.VSL_CD 
+                                         AND SKD_VOY_NO = D.SKD_VOY_NO AND SKD_DIR_CD = D.SKD_DIR_CD
+                                         AND RLANE_DIR_CD = D.REV_DIR_CD))                        ATTR_CTNT14,--SERVICE LANE
+                         D.CNTR_TPSZ_CD                                                           CNTR_TPSZ_CD,
+                         DECODE(D.ACCT_CD
+							  ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','ACCT_RCV_JNT_OPER'),NULL
+							  ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','LEGY_SYS_CLEARING'),NULL
+							  ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','BANK_CMMS'),NULL
+							  ,D.ACT_VVD_CD) ACT_VVD_CD,
+                         'C'                                                                      PLN_SCTR_DIV_CD,
+                         NULL                                                                     SO_CRR_CD,
+                         D.YD_CD                                                                  YD_CD,
+                         DECODE(D.ACCT_CD
+							  ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','ACCT_RCV_JNT_OPER'),NULL,D.LGS_COST_CD)                            FTU_USE_CTNT1,
+                         DECODE(D.ACCT_CD
+							  ,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','ACCT_RCV_JNT_OPER'),NULL
+							  ,DECODE(H.INV_SUB_SYS_CD,'PSO',NULL
+							  ,TO_CHAR(D.SO_20FT_QTY+D.SO_40FT_QTY+D.SO_TEU_QTY+D.SO_UT_QTY)))   FTU_USE_CTNT2,
+                         H.INV_CURR_CD                                                           INV_CURR_CD
+                         , D.STL_KEY_NO
+                         , D.OWNR_VNDR_SEQ
+                  FROM   AP_PAY_INV H, AP_PAY_INV_DTL D
+                  WHERE  H.INV_NO      = @[inv_no]
+                  AND    H.VNDR_SEQ    = @[vndr_seq]
+                  AND    H.DELT_FLG    = 'N'
+                  AND    H.INV_RGST_NO = D.INV_RGST_NO
+                  AND    D.DELT_FLG = 'N' )
+         GROUP BY @[line_seq],
+                  INV_DESC,
+                  INV_CURR_CD,
+                  DTRB_COA_RGN_CD,
+                  DTRB_COA_CTR_CD,
+                  DTRB_COA_ACCT_CD,
+                  DTRB_COA_VVD_CD,
+                  DTRB_COA_INTER_CO_CD,
+                  ATTR_CATE_NM,
+                  ATTR_CTNT1,
+                  ATTR_CTNT2,
+                  ATTR_CTNT3,
+                  ATTR_CTNT8,
+                  ATTR_CTNT9,
+                  ATTR_CTNT11,
+                  ATTR_CTNT12,
+                  ATTR_CTNT14,
+                  TO_CHAR(SYSDATE, 'YYYY/MM/DD'),
+                  CNTR_TPSZ_CD,
+                  ACT_VVD_CD,
+                  PLN_SCTR_DIV_CD,
+                  SO_CRR_CD,
+                  YD_CD,
+                  FTU_USE_CTNT1,
+                  FTU_USE_CTNT2,
+                  GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd]),
+                  @[cre_usr_id]
+                  , STL_KEY_NO
+                  , OWNR_VNDR_SEQ
+       UNION ALL
+       
+       SELECT DISTINCT
+              @[line_seq]                                 LINE_SEQ,
+              ( SELECT DECODE(FINC_RGN_CD,
+                              '11','TAX',
+                              'ITEM')
+                FROM   MDM_ORGANIZATION
+                WHERE  OFC_CD = H.COST_OFC_CD )             LINE_TP_LU_CD,
+              DECODE(H.INV_CURR_CD,
+                    'JPY',ROUND(NVL(H.INV_VAT_AMT,0)),
+                    ROUND(NVL(INV_VAT_AMT,0),2))            CSR_AMT,
+              H.INV_NO                                      INV_DESC,
+              ( SELECT DECODE(FINC_RGN_CD,
+                              '11',(SELECT SLD.LU_CD
+                                      FROM SCO_LU_DTL SLD
+                                     WHERE SLD.LU_TP_CD = 'AP TAX CODE' AND SLD.ATTR_CTNT2 = 'Y' AND SLD.ENBL_FLG = 'Y' AND ROWNUM = 1 ),
+                              '')
+                FROM   MDM_ORGANIZATION
+                WHERE  OFC_CD = H.COST_OFC_CD )             INV_TAX_CD,
+              '01'                                          DTRB_COA_CO_CD,
+              ( SELECT FINC_RGN_CD
+                FROM   MDM_ORGANIZATION
+                WHERE  OFC_CD = H.COST_OFC_CD )             DTRB_COA_RGN_CD,
+              ( SELECT AP_CTR_CD
+                FROM   MDM_ORGANIZATION
+                WHERE  OFC_CD = H.COST_OFC_CD )             DTRB_COA_CTR_CD,
+              ( SELECT DECODE(FINC_RGN_CD,'11'
+							,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','PREPAID_VAT_HQ')
+							,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','PREPAID_VAT_BRNCH'))
+                FROM   MDM_ORGANIZATION
+                WHERE  OFC_CD = H.COST_OFC_CD )             DTRB_COA_ACCT_CD,
+              '0000000000' DTRB_COA_VVD_CD,
+              ( SELECT NVL(SUBS_CO_CD,'00')
+                FROM    MDM_VENDOR
+                WHERE   VNDR_SEQ = H.VNDR_SEQ )              DTRB_COA_INTER_CO_CD,
+              '000000'                                       DTRB_COA_FTU_N1ST_CD,
+              '000000'                                       DTRB_COA_FTU_N2ND_CD,
+              ( SELECT DECODE(FINC_RGN_CD,'11'
+							,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','PREPAID_VAT_HQ')
+							,COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','PREPAID_VAT_BRNCH'))
+                FROM   MDM_ORGANIZATION
+                WHERE  OFC_CD = H.COST_OFC_CD )              ATTR_CATE_NM,
+              H.INV_NO                                       ATTR_CTNT1,
+              TO_CHAR(H.INV_ISS_DT,'YYYY/MM/DD HH24:MI:SS')  ATTR_CTNT2,
+              NVL(D.PORT_CD, ( SELECT LOC_CD
+						    								 FROM MDM_ORGANIZATION
+						   								  WHERE OFC_CD = H.COST_OFC_CD ))   ATTR_CTNT3,
+              NULL                                           ATTR_CTNT4,
+              NULL                                           ATTR_CTNT5,
+              NULL                                           ATTR_CTNT6,
+              NULL                                           ATTR_CTNT7,
+              NULL                                           ATTR_CTNT8,
+              NULL                                           ATTR_CTNT9,
+              NULL                                           ATTR_CTNT10,
+              D.ACT_DT                                       ATTR_CTNT11,--ACTIVITY DATE
+              D.ACT_PLC                                      ATTR_CTNT12,--ACTIVITY PLACE
+              NULL                                           ATTR_CTNT13,
+              D.SLAN_CD                                      ATTR_CTNT14,--SERVICE LANE
+              TO_CHAR(SYSDATE, 'YYYY/MM/DD')                 ATTR_CTNT15,
+              NULL                                           BKG_NO,
+              NULL                                           CNTR_TPSZ_CD,
+              NULL                                           ACT_VVD_CD,
+              'C'                                            PLN_SCTR_DIV_CD,
+              NULL                                           SO_CRR_CD,
+              (SELECT  C.YD_CD FROM AP_PAY_INV_DTL C 
+              WHERE H.INV_NO =@[inv_no] AND C.INV_RGST_NO = H.INV_RGST_NO AND ROWNUM = 1)  YD_CD,
+              NULL                                           FTU_USE_CTNT1,
+              NULL                                           FTU_USE_CTNT2,
+              NULL                                           FTU_USE_CTNT3,
+              NULL                                           FTU_USE_CTNT4,
+              NULL                                           FTU_USE_CNTR5,
+              GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd]) CRE_DT,
+              @[cre_usr_id]                                  CRE_USR_ID,
+              NULL                                           EAI_EVNT_DT
+              , D.STL_KEY_NO
+              , D.OWNR_VNDR_SEQ
+       FROM   AP_PAY_INV H, AP_PAY_INV_DTL D
+       WHERE  H.INV_NO      = @[inv_no]
+       AND    H.VNDR_SEQ    = @[vndr_seq]
+       AND    H.DELT_FLG    = 'N'
+       AND    H.INV_RGST_NO = D.INV_RGST_NO(+)
+       AND    D.DELT_FLG(+) = 'N'
+       AND    NVL(H.INV_SUB_SYS_CD,'N') <> 'TLL'
+       AND    NVL(H.INV_VAT_AMT,0) <> 0
+       AND    ROWNUM = 1
+
+       UNION ALL
+
+       SELECT DISTINCT
+              @[line_seq]                                  LINE_SEQ,
+              'ITEM'                                         LINE_TP_LU_CD,
+              DECODE(H.INV_CURR_CD,
+                     'JPY',ROUND(-NVL(H.WHLD_TAX_AMT,0)),
+                     ROUND(-NVL(H.WHLD_TAX_AMT,0),2))        CSR_AMT,
+              'WITHHOLDING TAX'                              INV_DESC,
+              NULL                                           INV_TAX_CD,
+              '01'                                           DTRB_COA_CO_CD,
+              ( SELECT FINC_RGN_CD
+                FROM    MDM_ORGANIZATION
+                WHERE   OFC_CD = H.COST_OFC_CD )             DTRB_COA_RGN_CD,
+              ( SELECT AP_CTR_CD
+                FROM    MDM_ORGANIZATION
+                WHERE   OFC_CD = H.COST_OFC_CD )             DTRB_COA_CTR_CD,
+              --COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','OTH_TAX_RCV') DTRB_COA_ACCT_CD,
+              ( SELECT DECODE(FINC_RGN_CD,
+                              '11',(SELECT SLD.LU_CD
+                                     FROM SCO_LU_HDR SLH, SCO_LU_DTL SLD
+                                    WHERE SLH.LU_TP_CD = SLD.LU_TP_CD
+                                        AND SLH.LU_TP_CD = 'AP TAX ACCOUNT'
+                                        AND NVL(SLD.ENBL_FLG, 'Y') = 'Y'
+                                        AND SLD.ATTR_CTNT1 = 'WITHHOLDING HQ'
+                                        AND NVL(SLD.LU_ST_DT, SYSDATE) >= SYSDATE
+                                        AND SLH.LU_APPL_CD = 'SAP'
+                                        AND ROWNUM = 1),
+                                    (SELECT SLD.LU_CD
+                                     FROM SCO_LU_HDR SLH, SCO_LU_DTL SLD
+                                    WHERE SLH.LU_TP_CD = SLD.LU_TP_CD
+                                        AND SLH.LU_TP_CD = 'AP TAX ACCOUNT'
+                                        AND NVL(SLD.ENBL_FLG, 'Y') = 'Y'
+                                        AND SLD.ATTR_CTNT1 = 'WITHHOLDING'
+                                        AND NVL(SLD.LU_ST_DT, SYSDATE) >= SYSDATE
+                                        AND SLH.LU_APPL_CD = 'SAP'
+                                        AND ROWNUM = 1))
+                FROM   MDM_ORGANIZATION
+                WHERE  OFC_CD = H.COST_OFC_CD ) DTRB_COA_ACCT_CD,
+              '0000000000' DTRB_COA_VVD_CD,
+              ( SELECT NVL(SUBS_CO_CD,'00')
+                FROM    MDM_VENDOR
+                WHERE   VNDR_SEQ = H.VNDR_SEQ )              DTRB_COA_INTER_CO_CD,
+              '000000'                                       DTRB_COA_FTU_N1ST_CD,
+              '000000'                                       DTRB_COA_FTU_N2ND_CD,
+              COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','OTH_TAX_RCV') ATTR_CATE_NM,
+              H.INV_NO                                       ATTR_CTNT1,
+              TO_CHAR(H.INV_ISS_DT,'YYYY/MM/DD HH24:MI:SS')  ATTR_CTNT2,
+              NVL(D.PORT_CD, ( SELECT LOC_CD
+						    								 FROM MDM_ORGANIZATION
+						   								  WHERE OFC_CD = H.COST_OFC_CD ))   ATTR_CTNT3,
+              NULL                                           ATTR_CTNT4,
+              NULL                                           ATTR_CTNT5,
+              NULL                                           ATTR_CTNT6,
+              NULL                                           ATTR_CTNT7,
+              NULL                                           ATTR_CTNT8,
+              NULL                                           ATTR_CTNT9,
+              NULL                                           ATTR_CTNT10,
+              D.ACT_DT                                       ATTR_CTNT11,--ACTIVITY DATE
+              D.ACT_PLC                                      ATTR_CTNT12,--ACTIVITY PLACE
+              NULL                                           ATTR_CTNT13,
+              D.SLAN_CD                                      ATTR_CTNT14,--SERVICE LANE
+              TO_CHAR(SYSDATE, 'YYYY/MM/DD')                 ATTR_CTNT15,
+              NULL                                           BKG_NO,
+              NULL                                           CNTR_TPSZ_CD,
+              NULL                                           ACT_VVD_CD,
+              'C'                                            PLN_SCTR_DIV_CD,
+              NULL                                           SO_CRR_CD,
+              (SELECT  C.YD_CD FROM AP_PAY_INV_DTL C 
+              WHERE H.INV_NO =@[inv_no] AND C.INV_RGST_NO = H.INV_RGST_NO AND ROWNUM = 1)  YD_CD,
+              NULL                                           FTU_USE_CTNT1,
+              NULL                                           FTU_USE_CTNT2,
+              NULL                                           FTU_USE_CTNT3,
+              NULL                                           FTU_USE_CTNT4,
+              NULL                                           FTU_USE_CNTR5,
+              GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd]) CRE_DT,
+              @[cre_use_id]                                CRE_USR_ID,
+              NULL                                           EAI_EVNT_DT
+              , D.STL_KEY_NO
+              , D.OWNR_VNDR_SEQ
+       FROM   AP_PAY_INV H, AP_PAY_INV_DTL D
+       WHERE  H.INV_NO      = @[inv_no]  
+       AND    H.VNDR_SEQ    = @[vndr_seq]
+       AND    H.DELT_FLG    = 'N'
+       AND    H.INV_RGST_NO = D.INV_RGST_NO(+)
+       AND    D.DELT_FLG(+) = 'N'
+       AND    NVL(H.INV_SUB_SYS_CD,'N') <> 'TLL'
+       AND    NVL(H.WHLD_TAX_AMT,0) <> 0
+       AND    ROWNUM = 1
+       
+       UNION ALL
+       
+       SELECT DISTINCT 
+              @[line_seq]                                  LINE_SEQ,
+              'MISCELLANEOUS'                                LINE_TP_LU_CD,
+              DECODE(H.INV_CURR_CD,
+                     'JPY',ROUND(-NVL(D.INV_AMT,0)),
+                     ROUND(-NVL(D.INV_AMT,0),2))             CSR_AMT,
+              NULL                                           INV_DESC,
+              NULL                                           INV_TAX_CD,
+              '01'                                           DTRB_COA_CO_CD,
+              ( SELECT FINC_RGN_CD
+                FROM    MDM_ORGANIZATION
+                WHERE   OFC_CD = H.COST_OFC_CD )             DTRB_COA_RGN_CD,
+              ( SELECT AP_CTR_CD
+                FROM    MDM_ORGANIZATION
+                WHERE   OFC_CD = H.COST_OFC_CD )             DTRB_COA_CTR_CD,
+              COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','CLEARING_AR_FA_RTIR') DTRB_COA_ACCT_CD,
+              '0000000000' DTRB_COA_VVD_CD,
+              ( SELECT NVL(SUBS_CO_CD,'00')
+                FROM    MDM_VENDOR
+                WHERE   VNDR_SEQ = H.VNDR_SEQ )              DTRB_COA_INTER_CO_CD,
+              '000000'                                       DTRB_COA_FTU_N1ST_CD,
+              '000000'                                       DTRB_COA_FTU_N2ND_CD,
+              COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','CLEARING_AR_FA_RTIR') ATTR_CATE_NM,
+              NULL                                           ATTR_CTNT1,
+              NULL                                           ATTR_CTNT2,
+              NVL(D.PORT_CD, ( SELECT LOC_CD
+						    							 	 FROM MDM_ORGANIZATION
+						   								  WHERE OFC_CD = H.COST_OFC_CD ))   ATTR_CTNT3,
+              NULL                                           ATTR_CTNT4,
+              NULL                                           ATTR_CTNT5,
+              NULL                                           ATTR_CTNT6,
+              NULL                                           ATTR_CTNT7,
+              NULL                                           ATTR_CTNT8,
+              NULL                                           ATTR_CTNT9,
+              NULL                                           ATTR_CTNT10,
+              D.ACT_DT                                       ATTR_CTNT11,--ACTIVITY DATE
+              D.ACT_PLC                                      ATTR_CTNT12,--ACTIVITY PLACE
+              NULL                                           ATTR_CTNT13,
+              D.SLAN_CD                                      ATTR_CTNT14,--SERVICE LANE
+              TO_CHAR(SYSDATE, 'YYYY/MM/DD')                ATTR_CTNT15,
+              NULL                                           BKG_NO,
+              NULL                                           CNTR_TPSZ_CD,
+              NULL                                           ACT_VVD_CD,
+              'C'                                            PLN_SCTR_DIV_CD,
+              NULL                                           SO_CRR_CD,
+              NULL                                           YD_CD,
+              NULL                                           FTU_USE_CTNT1,
+              NULL                                           FTU_USE_CTNT2,
+              NULL                                           FTU_USE_CTNT3,
+              NULL                                           FTU_USE_CTNT4,
+              NULL                                           FTU_USE_CNTR5,
+              GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd]) CRE_DT,
+              @[cre_use_id]                                CRE_USR_ID,
+              NULL                                           EAI_EVNT_DT
+              , D.STL_KEY_NO
+              , D.OWNR_VNDR_SEQ
+       FROM   AP_PAY_INV H, AP_PAY_INV_DTL D
+       WHERE  H.INV_NO      = @[inv_no]  
+       AND    H.VNDR_SEQ    = @[vndr_seq]
+       AND    H.DELT_FLG    = 'N'
+       AND    H.INV_RGST_NO = D.INV_RGST_NO
+       AND    D.DELT_FLG    = 'N'
+       AND    NVL(H.INV_SUB_SYS_CD,'N') = 'TLL'
+       AND    NVL(H.TTL_LSS_DIV_CD,'N') IN ('PO','GO')
+ )			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="line_seq" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="inv_no" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+				<param name="cre_use_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

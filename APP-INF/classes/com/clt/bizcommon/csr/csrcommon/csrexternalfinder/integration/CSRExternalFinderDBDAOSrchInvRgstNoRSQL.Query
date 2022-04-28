@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CSRExternalFinderDBDAOSrchInvRgstNoRSQL">
+			<desc><![CDATA[inv_rgst_no 조회]]></desc>
+			<sql><![CDATA[
+SELECT  SUBSTR (@[inv_ofc_cd], 1, 3 ) || TO_CHAR(SYSDATE, 'YYMMDD') || LPAD(AP_PAY_INV_SEQ.NEXTVAL, 5, '00000') INV_RGST_NO
+FROM    DUAL			]]></sql>
+			<params>
+				<param name="inv_ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

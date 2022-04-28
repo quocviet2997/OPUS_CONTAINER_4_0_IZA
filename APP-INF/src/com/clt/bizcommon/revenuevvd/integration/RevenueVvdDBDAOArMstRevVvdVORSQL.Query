@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="RevenueVvdDBDAOArMstRevVvdVORSQL">
+			<desc><![CDATA[Revenue VVD Inquiry QUERY   ]]></desc>
+			<sql><![CDATA[
+SELECT VSL_CD || SKD_VOY_NO || SKD_DIR_CD as VSL_CD,
+	   REV_YRMON
+FROM   AR_MST_REV_VVD
+WHERE  1 = 1 
+#if (${vsl_cd} != '') 
+and vsl_cd like upper(@[vsl_cd]) || '%'
+#end			]]></sql>
+			<params>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

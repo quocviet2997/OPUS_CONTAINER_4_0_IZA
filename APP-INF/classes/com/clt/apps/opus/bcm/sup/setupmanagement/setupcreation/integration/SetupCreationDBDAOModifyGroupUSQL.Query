@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOModifyGroupUSQL">
+			<desc><![CDATA[2011.02.17 정윤태 EDI GROUP 정보를 변경한다]]></desc>
+			<sql><![CDATA[
+UPDATE EDI_GROUP
+   SET EDI_GRP_DESC = @[edi_grp_desc],
+       CUST_TRD_PRNR_ID = @[cust_trd_prnr_id],
+       PROV_TRD_PRNR_ID = @[prov_trd_prnr_id],
+       DELT_FLG = @[delt_flg],
+       UPD_USR_ID = @[upd_usr_id],
+       UPD_DT = SYSDATE
+ WHERE EDI_GRP_CD = @[edi_grp_cd]
+   AND CO_DIV_CD = @[co_div_cd]			]]></sql>
+			<params>
+				<param name="edi_grp_desc" type="12" value="" out="N"/>
+				<param name="cust_trd_prnr_id" type="12" value="" out="N"/>
+				<param name="prov_trd_prnr_id" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="edi_grp_cd" type="12" value="" out="N"/>
+				<param name="co_div_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

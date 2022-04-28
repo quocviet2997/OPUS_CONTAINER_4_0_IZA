@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOAddErrVvdCSQL">
+			<desc><![CDATA[Create GL_ERR_VVD]]></desc>
+			<sql><![CDATA[
+INSERT INTO GL_ERR_VVD
+           (ERR_VSL_CD
+           ,ERR_SKD_VOY_NO
+           ,ERR_SKD_DIR_CD
+           ,ERR_REV_DIR_CD
+           ,CORR_VSL_CD
+		   ,CORR_SKD_VOY_NO
+		   ,CORR_SKD_DIR_CD
+		   ,CORR_REV_DIR_CD
+           ,AVAL_FLG
+           ,CRE_DT
+           ,UPD_DT
+           )
+VALUES (SUBSTR(@[err_vvd],1,4)
+	   ,SUBSTR(@[err_vvd],5,4)
+	   ,SUBSTR(@[err_vvd],9,1)
+	   ,SUBSTR(@[err_vvd],10,1)
+	   ,SUBSTR(@[corr_vvd],1,4)
+	   ,SUBSTR(@[corr_vvd],5,4)
+	   ,SUBSTR(@[corr_vvd],9,1)
+	   ,SUBSTR(@[corr_vvd],10,1)
+	   ,@[aval_flg]
+       ,SYSDATE
+       ,SYSDATE
+	)			]]></sql>
+			<params>
+				<param name="err_vvd" type="12" value="" out="N"/>
+				<param name="corr_vvd" type="12" value="" out="N"/>
+				<param name="aval_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

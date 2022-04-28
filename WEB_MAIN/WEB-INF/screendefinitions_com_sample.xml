@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<screen name="RD_MAIL_SAMPLE">
+		<parameter key="title" value="RD_MAIL_SAMPLE" direct="true" />
+		<parameter key="body" value="sample/mail/RDMailSample.jsp" />
+	</screen>
+
+	<screen name="RD_WEB_SAMPLE" template="templateRD">
+		<parameter key="title" value="RD_WEB_SAMPLE" direct="true" />
+		<parameter key="body" value="sample/rd/usingwebjsp/WebSampleRD.jsp" />
+	</screen>
+
+	<!--  : 2009-05-22 start -->
+	<screen name="MAIL_01" template="templatePop">
+		<parameter key="title" value="Mail Sample" direct="true" />
+		<parameter key="body" value="sample/mail/mail/jsp/mail_01.jsp" />
+	</screen>
+
+	<screen name="CODE">
+		<parameter key="title" value="Code Sample" direct="true" />
+		<parameter key="body" value="sample/code/jsp/code.jsp" />
+	</screen>
+	<!--  : 2009-05-22 end -->
+
+	<!-- Jeong-Hoon, Kim : 2009-06-01 start -->
+	<screen name="fax_send" template="templatePop">
+		<parameter key="title" value="fax_send" direct="true" />
+		<parameter key="body" value="sample/fax/faxsend/jsp/fax_send.jsp" />
+	</screen>
+	<!-- Jeong-Hoon, Kim : 2009-06-01 end -->
+
+	<!-- Jeong-Hoon, Kim : 2009-06-01 start -->
+	<screen name="FileSampleTest">
+		<parameter key="title" value="FileSampleTest" direct="true" />
+		<parameter key="body" value="sample/test/FileUploadSample.jsp" />
+	</screen>
+	<!-- Jeong-Hoon, Kim : 2009-06-01 end -->
+
+	<!-- Jeong-Hoon, Kim : 2009-06-04 start -->
+	<screen name="GROUPWARE_POPUP">
+		<parameter key="title" value="GROUPWARE_POPUP" direct="true" />
+		<parameter key="body" value="sample/groupwarepopup/groupwarepopup/jsp/groupware_popup.jsp" />
+	</screen>
+	<!-- Jeong-Hoon, Kim : 2009-06-04 end -->
+	
+	<!-- Jeong-Hoon, Kim : 2009-08-19 start -->
+	<screen name="COM_SAMPLE_RD_WITH_FILE">
+		<parameter key="title" value="COM_SAMPLE_RD_WITH_FILE" direct="true" />
+		<parameter key="body" value="sample/reportdesigner/withfiles/jsp/COM_SAMPLE_RD_WITH_FILE.jsp" />
+	</screen>
+	<!-- Jeong-Hoon, Kim : 2009-08-19 end -->
+	<!-- Jeong-Hoon, Kim : 2009-09-04 start -->
+    <screen name="FTP_SEND">
+        <parameter key="title"    value="FTP_SEND" direct="true"/>
+        <parameter key="body"     value="sample/ftp/send/jsp/FTP_SEND.jsp"/>
+    </screen>
+	<!-- Jeong-Hoon, Kim : 2009-09-04 end -->
+
+	<!-- Hyunsu, Ryu : 2010-04-30 start -->
+	<screen name="BackEndJob" template="templatePop">
+        <parameter key="title"    value="BackEndJob" direct="true"/>
+        <parameter key="body"     value="sample/backendjob/thread/jsp/BackEndJobSearchSample.jsp"/>
+    </screen>
+
+    <screen name="WorkOnLongTxServer" template="templatePop">
+        <parameter key="title"    value="BackEndJob" direct="true"/>
+        <parameter key="body"     value="sample/backendjob/workonremotelongtxserver/jsp/WorkOnRemoteLongTxServerSample.jsp"/>
+    </screen>
+	<!-- Hyunsu, Ryu : 2010-04-30 end -->
+
+	<!-- Jeong-Hoon, Kim : 2009-09-22 start -->
+    <screen name="ExcelDownload">
+        <parameter key="title"    value="ExcelDownload" direct="true"/>
+        <parameter key="body"     value="sample/file/exceldownload/jsp/EXCELDOWNLOAD.jsp"/>
+    </screen>
+	<!-- Jeong-Hoon, Kim : 2009-09-22 end -->
+
+	<!-- Jeong-Hoon, Kim : 2009-10-23 start -->
+    <screen name="ExcelDownloadUsingRowset">
+        <parameter key="title"    value="ExcelDownloadUsingRowset" direct="true"/>
+        <parameter key="body"     value="sample/file/exceldownloadusingrowset/jsp/EXCELDOWNLOADUSINGROWSET.jsp"/>
+    </screen>
+	<!-- Jeong-Hoon, Kim : 2009-10-23 end -->
+	
+	<!-- Jun-Sung, Kim : 2012-01-25 start -->
+    <screen name="MultyLangAccess">
+        <parameter key="title"    value="multy language access test" direct="true"/>
+        <parameter key="body"     value="sample/lang/multylangaccess/jsp/MultyLangAccess.jsp"/>
+    </screen>
+    <screen name="ScriptMultyLangAccess">
+        <parameter key="title"    value="script multy language access test" direct="true"/>
+        <parameter key="body"     value="sample/lang/scriptmultylangaccess/jsp/ScriptMultyLangAccess.jsp"/>
+    </screen>
+    <screen name="ServerMultyLangAccess">
+        <parameter key="title"    value="server multy language access test" direct="true"/>
+        <parameter key="body"     value="sample/lang/servermultylangaccess/jsp/ServerMultyLangAccess.jsp"/>
+    </screen>
+	<!-- Jeong-Hoon, Kim : 2009-10-23 end -->
+	
+	<!-- Kim Byungkook : 2014-12-30 start-->
+	
+	<screen name="sample_list" template="templateEmpty">
+		<parameter key="title" value="sample_list" direct="true" />
+		<parameter key="body" value="sample/list.jsp" />
+	</screen>
+	
+	<screen name="MailNoMrd" template="templatePop">
+		<parameter key="title" value="MailNoMrd" direct="true" />
+		<parameter key="body" value="sample/mail/MailNoMrd.jsp" />
+	</screen>
+	
+	<screen name="fileupload" template="templatePop">
+		<parameter key="title" value="fileupload" direct="true" />
+		<parameter key="body" value="sample/fileupload/jsp/fileupload.jsp" />
+	</screen>
+	
+	<screen name="multiupload" template="templatePop">
+		<parameter key="title" value="multiupload" direct="true" />
+		<parameter key="body" value="sample/fileupload/jsp/multiupload.jsp" />
+	</screen>
+	
+	<screen name="filedownload" template="templatePop">
+		<parameter key="title" value="filedownload" direct="true" />
+		<parameter key="body" value="sample/fileupload/jsp/filedownload.jsp" />
+	</screen>
+
+	<screen name="mail" template="templatePop">
+		<parameter key="title" value="mail" direct="true" />
+		<parameter key="body" value="sample/mail/Mail.jsp" />
+	</screen>
+	
+	<screen name="rdviewer" template="templatePop">
+		<parameter key="title" value="rdviewer" direct="true" />
+		<parameter key="body" value="sample/rd/Popup/RDCommonPopup.jsp" />
+	</screen>
+	
+    <!-- Kim Byungkook : 2014-12-30 end-->
+    
+    <!-- Kim YongHoo : 2015-01-22 start-->
+   	<screen name="divDefault">
+		<parameter key="title" value="divDefault" direct="true" />
+		<parameter key="body" value="sample/div/jsp/div_Default.jsp" />
+	</screen>
+	
+	<screen name="divRD">
+		<parameter key="title" value="divRD" direct="true" />
+		<parameter key="body" value="sample/div/jsp/div_RD.jsp" />
+	</screen>
+	
+	<screen name="divRDPop" template="templatePop">
+		<parameter key="title" value="divRD" direct="true" />
+		<parameter key="body" value="sample/div/jsp/div_RD_Popup.jsp" />
+	</screen>
+	
+	<screen name="divRDPopHtml" template="templatePop">
+		<parameter key="title" value="divRD" direct="true" />
+		<parameter key="body" value="sample/div/jsp/div_RD_PopupWithHtml.jsp" />
+	</screen>
+	
+	<screen name="divTab">
+		<parameter key="title" value="divTab" direct="true" />
+		<parameter key="body" value="sample/div/jsp/div_Tab.jsp" />
+	</screen>
+	
+	<screen name="divVertical">
+		<parameter key="title" value="divVertical" direct="true" />
+		<parameter key="body" value="sample/div/jsp/div_Vertical.jsp" />
+	</screen>
+	
+	<screen name="divPopup" template="templatePop">
+		<parameter key="title" value="divPopup" direct="true" />
+		<parameter key="body" value="sample/div/jsp/div_Popup.jsp" />
+	</screen>
+	
+	<screen name="divFlex">
+		<parameter key="title" value="divFlex" direct="true" />
+		<parameter key="body" value="sample/div/jsp/div_Flex.jsp" />
+	</screen>
+    <!-- Kim YongHoo : 2015-01-22 start-->
+</screen-definitions>

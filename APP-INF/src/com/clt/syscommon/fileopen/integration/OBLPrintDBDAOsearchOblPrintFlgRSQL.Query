@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="OBLPrintDBDAOsearchOblPrintFlgRSQL">
+			<desc><![CDATA[OBLPrintDBDAOsearchOblPrintFlgRSQL]]></desc>
+			<sql><![CDATA[
+SELECT 
+  OBL_INET_PRN_DT
+FROM BKG_INET_BL_PRN_AUTH
+WHERE BKG_NO = @[bkg_no]
+AND INFO_SEQ = @[info_seq]			]]></sql>
+			<params>
+				<param name="bkg_no" type="12" value="" out="N"/>
+				<param name="info_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

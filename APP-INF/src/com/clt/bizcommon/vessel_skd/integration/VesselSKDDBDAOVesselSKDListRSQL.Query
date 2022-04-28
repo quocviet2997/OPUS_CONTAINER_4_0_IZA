@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="VesselSKDDBDAOVesselSKDListRSQL">
+			<desc><![CDATA[Vessel schedule list]]></desc>
+			<sql><![CDATA[
+SELECT 					
+CALLING_SEQ, 				
+VESSEL,					
+VOYAGE_NO,				
+DIR_CD,					
+CALLING_IND, 				
+PORT, 					
+SLAN_CD, 					
+VPS_ETA_DT, 				
+VPS_ETD_DT,				
+TURN_PORT_IND_CD,			
+SKD_CNG_STS_CD,
+CALL_PURP_IND_CD
+FROM (SELECT ROW_NUMBER() OVER (ORDER BY VSL_CD ASC) no, 
+			CLPT_SEQ CALLING_SEQ,		
+			VSL_CD VESSEL, 				
+			SKD_VOY_NO VOYAGE_NO,		
+			SKD_DIR_CD DIR_CD,			
+			CLPT_IND_SEQ CALLING_IND,	
+			VPS_PORT_CD PORT,			
+			SLAN_CD,					
+			TO_CHAR(VPS_ETA_DT, 'YYYYMMDD HH24:mi' ) VPS_ETA_DT, 		
+			TO_CHAR(VPS_ETD_DT, 'YYYYMMDD HH24:mi' ) VPS_ETD_DT, 		
+			TURN_PORT_IND_CD,			
+			CASE WHEN CALL_PURP_IND_CD IS NULL THEN SKD_CNG_STS_CD ELSE 'A' END SKD_CNG_STS_CD,
+			COMMCODE_PKG.GET_COMDTL_NAME_FNC('CD32041', CALL_PURP_IND_CD) CALL_PURP_IND_CD				
+	FROM VSK_VSL_PORT_SKD 									
+	WHERE 1=1
+#if (${vvd_cd} != '')
+	AND VSL_CD = substr(@[vvd_cd], 1, 4)
+	AND SKD_VOY_NO = substr(@[vvd_cd], 5, 4)
+	AND SKD_DIR_CD = substr(@[vvd_cd], 9, 1)
+#end
+	ORDER BY CLPT_SEQ ASC 				
+	) A									
+WHERE no BETWEEN @[startpart] AND @[endpart]			]]></sql>
+			<params>
+				<param name="vvd_cd" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

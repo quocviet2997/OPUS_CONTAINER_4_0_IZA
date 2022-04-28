@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.clt.com/integration/clt/schemas/OPSEQH02" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://www.clt.com/integration/clt/schemas/OPSEQH02">
+<element name="domopseqh02WSRequest">
+<complexType>
+			<sequence>
+				<element name="DataArea">
+					<complexType>
+						<sequence>
+							<element name="RcvBkgHistCollection">
+								<complexType>
+									<sequence>
+										<element maxOccurs="unbounded" minOccurs="1" name="RcvBkgHistRequest">
+											<complexType>
+												<sequence>
+                              						<element name="MSG_ID" type="xsd:string" maxOccurs="1" minOccurs="0" />
+                             						<element name="MSG_TP" type="xsd:string" maxOccurs="1" minOccurs="0" />
+                             						<element name="BKG_NO" type="xsd:string" maxOccurs="1" minOccurs="0" />
+                             						<element name="HIS_BKG_STS" type="xsd:string" maxOccurs="1" minOccurs="0" />
+                             						<element name="HIS_MVMT_TMS" type="xsd:string" maxOccurs="1" minOccurs="0" />
+                             						<element name="HIS_STS_RMK" type="xsd:string" maxOccurs="1" minOccurs="0" />
+                             						<element name="PROC_USR_ID" type="xsd:string" maxOccurs="1" minOccurs="0" />
+                             						<element name="PROC_USR_NM" type="xsd:string" maxOccurs="1" minOccurs="0" />
+												</sequence>
+											</complexType>
+										</element>
+									</sequence>
+								</complexType>
+							</element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+  </element>
+  <element name="domopseqh02WSResponse">
+	<complexType>
+			<sequence>
+				<element maxOccurs="unbounded" minOccurs="1" name="RcvBkgHistResponse">
+					<complexType>
+						<sequence>
+                  			<element maxOccurs="1" minOccurs="0" name="RTN_STS" type="xsd:string" />
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

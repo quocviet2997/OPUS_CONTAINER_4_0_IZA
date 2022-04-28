@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ThemeDBDAOUserDSQL">
+			<desc><![CDATA[Cntr type]]></desc>
+			<sql><![CDATA[
+DELETE COM_USR_THM
+WHERE USR_ID = @[USR_ID]
+			]]></sql>
+			<params>
+				<param name="USR_ID" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

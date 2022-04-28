@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAODelApInvDtrbDSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+DELETE ap_inv_dtrb
+WHERE  csr_no = @[csr_no]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

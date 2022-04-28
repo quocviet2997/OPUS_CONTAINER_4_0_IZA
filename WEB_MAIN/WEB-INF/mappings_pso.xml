@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- Kim Jin Ihl : 2009-04-28 start -->
+    <url-mapping url="VOP_PSO_0205.do" screen="VOP_PSO_0205.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0205HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0205GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0205HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VopPso0205Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+    
+	<!-- Kim Jin Ihl : 2009-04-28 end -->
+	<!-- Kim Jin Ihl : 2009-04-30 start -->
+    <url-mapping url="VOP_PSO_0203.do" screen="VOP_PSO_0203.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.portsomasterdatamgt.event.VOP_PSO_0203HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0203GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.portsomasterdatamgt.event.VOP_PSO_0203HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.portsomasterdatamgt.event.VopPso0203Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-04-30 end -->
+	<!-- Kim Jin Ihl : 2009-04-30 start -->
+    <url-mapping url="VOP_PSO_0208.do" screen="VOP_PSO_0208.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0208HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0208GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0208HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VopPso0208Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-04-30 end -->
+
+	<!-- myoungjong park : 2009-05-20 start -->
+    <url-mapping url="VOP_PSO_0003.do" screen="VOP_PSO_0003.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.portsomasterdatamgt.event.VOP_PSO_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.portsomasterdatamgt.event.VOP_PSO_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.portsomasterdatamgt.event.VopPso0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- myoungjong park : 2009-05-20 end -->
+
+	<!-- myoungjong park : 2009-05-22 start -->
+    <url-mapping url="VOP_PSO_0001.do" screen="VOP_PSO_0001.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.portsomasterdatamgt.event.VOP_PSO_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.portsomasterdatamgt.event.VOP_PSO_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.portsomasterdatamgt.event.VopPso0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- myoungjong park : 2009-05-22 end -->
+
+	<!-- Kim Jin Ihl : 2009-05-20 start -->
+    <url-mapping url="VOP_PSO_0020.do" screen="VOP_PSO_0020.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.canaltransitfeebalance.event.VOP_PSO_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.canaltransitfeebalance.event.VOP_PSO_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.canaltransitfeebalance.event.VopPso0020Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.EstimateInvoiceAuditSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-05-20 end -->
+
+	<!-- Kim Jin Ihl : 2009-05-20 start -->
+    <url-mapping url="PSO_COM.do" screen="PSO_COM.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.psocommon.psocodefinder.event.PSO_COMHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="PSO_COMGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.psocommon.psocodefinder.event.PSO_COMHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.psocommon.psocodefinder.event.PsoComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.psocommon.PSOCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-05-20 end -->
+
+	<!-- Kim Jin Ihl : 2009-05-29 start -->
+    <url-mapping url="VOP_PSO_0017.do" screen="VOP_PSO_0017.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.canaltransitfeeestimate.event.VOP_PSO_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.canaltransitfeeestimate.event.VOP_PSO_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.canaltransitfeeestimate.event.VopPso0017Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.EstimateInvoiceAuditSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-05-29 end -->
+	
+	<!-- myoungjong park : 2009-05-27 start -->
+    <url-mapping url="VOP_PSO_0006.do" screen="VOP_PSO_0006.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.laneexpenseratiomgt.event.VOP_PSO_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.laneexpenseratiomgt.event.VOP_PSO_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portchargebudget.laneexpenseratiomgt.event.VopPso0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portchargebudget.PortChargeBudgetSC</service-action-class>
+    </event-mapping>
+	<!-- myoungjong park : 2009-05-27 end -->
+
+	<!-- myoungjong park : 2009-06-02 start -->
+    <url-mapping url="VOP_PSO_0206.do" screen="VOP_PSO_0206.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0206HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0206GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0206HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VopPso0206Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- myoungjong park : 2009-06-02 end -->
+
+	<!-- myoungjong park : 2009-06-03 start -->
+    <url-mapping url="VOP_PSO_0002.do" screen="VOP_PSO_0002.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VopPso0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- myoungjong park : 2009-06-03 end -->
+	
+	<!-- myoungjong park : 2009-06-08 start -->
+    <url-mapping url="VOP_PSO_0025.do" screen="VOP_PSO_0025.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VopPso0025Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portchargebudget.PortChargeBudgetSC</service-action-class>
+    </event-mapping>
+	<!-- myoungjong park : 2009-06-08 end -->
+
+	<!-- Kim Jin Ihl : 2009-06-15 start -->
+    <url-mapping url="VOP_PSO_0018.do" screen="VOP_PSO_0018.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.canaltransitfeeestimate.event.VOP_PSO_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.canaltransitfeeestimate.event.VOP_PSO_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.canaltransitfeeestimate.event.VopPso0018Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.EstimateInvoiceAuditSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-06-15 end -->
+
+	
+	<!-- myoungjong park : 2009-06-11 start -->
+    <url-mapping url="VOP_PSO_0026.do" screen="VOP_PSO_0026.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0026GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VopPso0026Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portchargebudget.PortChargeBudgetSC</service-action-class>
+    </event-mapping>
+	<!-- myoungjong park : 2009-06-11 end -->
+	
+		<!-- myoungjong park : 2009-07-01 start -->
+    <url-mapping url="VOP_PSO_0211.do" screen="VOP_PSO_0211.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0211HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0211GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0211HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VopPso0211Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- myoungjong park : 2009-07-01 end -->
+	
+	<!-- Kim Jin Ihl : 2009-06-23 start -->
+    <url-mapping url="VOP_PSO_0019.do" screen="VOP_PSO_0019.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.canaltransitfeeinvoice.event.VOP_PSO_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.canaltransitfeeinvoice.event.VOP_PSO_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.canaltransitfeeinvoice.event.VopPso0019Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.EstimateInvoiceAuditSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-06-23 end -->
+
+	<!-- Kim Jin Ihl : 2009-06-29 start -->
+    <url-mapping url="VOP_PSO_0008.do" screen="VOP_PSO_0008.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VopPso0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portchargebudget.PortChargeBudgetSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-06-29 end -->
+
+		<!-- myoungjong park : 2009-07-06 start -->
+    <url-mapping url="VOP_PSO_0209.do" screen="VOP_PSO_0209.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0209HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0209GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0209HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VopPso0209Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- myoungjong park : 2009-07-06 end -->
+
+	<!-- Kim Jin Ihl : 2009-07-06 start -->
+    <url-mapping url="VOP_PSO_0009.do" screen="VOP_PSO_0009.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VopPso0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portchargebudget.PortChargeBudgetSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-07-06 end -->
+
+	<!-- Kim Jin Ihl : 2009-07-06 start -->
+    <url-mapping url="VOP_PSO_0201.do" screen="VOP_PSO_0201.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0201HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0201GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0201HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VopPso0201Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portchargebudget.PortChargeBudgetSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-07-06 end -->
+
+	<!-- Kim Jin Ihl : 2009-07-07 start -->
+    <url-mapping url="VOP_PSO_0010.do" screen="VOP_PSO_0010.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0010GS.do" screen="com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.PsoViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VopPso0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portchargebudget.PortChargeBudgetSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-07-07 end -->
+
+	<!-- Kim Jin Ihl : 2009-07-07 start -->
+    <url-mapping url="VOP_PSO_0013.do" screen="VOP_PSO_0013.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0013DL.do" screen="com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VopPso0013ViewAdapterDL">
+       <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0013HTMLAction</web-action-class>
+	</url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VopPso0013Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portchargebudget.PortChargeBudgetSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-07-07 end -->
+
+	<!-- Kim Jin Ihl : 2009-07-07 start -->
+    <url-mapping url="VOP_PSO_0207.do" screen="VOP_PSO_0207.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0207HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0207GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0207HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VopPso0207Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portchargebudget.PortChargeBudgetSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-07-07 end -->
+
+	<!-- Kim Jin Ihl : 2009-07-08 start -->
+    <url-mapping url="VOP_PSO_0035.do" screen="VOP_PSO_0035.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0035GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VopPso0035Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portchargebudget.PortChargeBudgetSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-07-08 end -->
+
+	<!-- myoungjong park : 2009-07-17 start -->
+    <url-mapping url="VOP_PSO_0004.do" screen="VOP_PSO_0004.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VopPso0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- myoungjong park : 2009-07-17 end -->
+
+	<!-- Jeong Myounghun : 2009-07-20 start -->
+    <url-mapping url="VOP_PSO_0210.do" screen="VOP_PSO_0210.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0210HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0210GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0210HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VopPso0210Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jeong Myounghun : 2009-07-20 end -->
+	
+	<!-- myoungjong park : 2009-07-24 start -->
+    <url-mapping url="VOP_PSO_0212.do" screen="VOP_PSO_0212.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0212HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0212GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0212HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VopPso0212Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- myoungjong park : 2009-07-24 end -->
+
+	<!-- Kim Jin Ihl : 2009-07-28 start -->
+    <url-mapping url="VOP_PSO_0036.do" screen="VOP_PSO_0036.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VopPso0036Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-07-28 end -->
+
+	<!-- Kim Jin Ihl : 2009-08-05 start -->
+    <url-mapping url="VOP_PSO_0007.do" screen="VOP_PSO_0007.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VopPso0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-08-05 end -->
+
+	<!-- Lee Hae Man : 2017-12-15 start --> 
+    <url-mapping url="VOP_PSO_0015.do" screen="VOP_PSO_0015.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.generalinvoiceaudit.event.VOP_PSO_0015HTMLAction</web-action-class>
+    </url-mapping>
+    
+     <url-mapping url="VOP_PSO_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.generalinvoiceaudit.event.VOP_PSO_0015HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_PSO_0215.do" screen="VOP_PSO_0215.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.generalinvoiceaudit.event.VOP_PSO_0215HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0215GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.generalinvoiceaudit.event.VOP_PSO_0215HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.generalinvoiceaudit.event.VopPso0215Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.EstimateInvoiceAuditSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Hae Man : 2017-12-15 end -->
+    
+	<!-- Kim Jin Ihl : 2009-08-28 start -->
+    <url-mapping url="VOP_PSO_0014.do" screen="VOP_PSO_0014.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.generalinvoiceaudit.event.VOP_PSO_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.generalinvoiceaudit.event.VOP_PSO_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.generalinvoiceaudit.event.VopPso0014Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.EstimateInvoiceAuditSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-08-28 end -->
+
+	<!-- Kim Jin Ihl : 2009-09-25 start -->
+    <url-mapping url="VOP_PSO_0213.do" screen="VOP_PSO_0213.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0213HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0213GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0213HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VopPso0213Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portchargebudget.PortChargeBudgetSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jin Ihl : 2009-09-25 end -->
+
+	<!-- Jeong Myounghun : 2009-12-09 start -->
+    <url-mapping url="VOP_PSO_0214.do" screen="VOP_PSO_0214.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0214HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0214GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0214HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VopPso0214Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portchargebudget.PortChargeBudgetSC</service-action-class>
+    </event-mapping>
+	<!-- Jeong Myounghun : 2009-12-09 end -->
+	<!-- Jeong Myounghun : 2009-12-23 start -->
+    <url-mapping url="VOP_PSO_0037.do" screen="VOP_PSO_0037.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VopPso0037Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jeong Myounghun : 2009-12-23 end -->
+
+	<!-- Jeong Myounghun : 2010-01-14 start -->
+    <url-mapping url="VOP_PSO_0038.do" screen="VOP_PSO_0038.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.generalinvoiceaudit.event.VOP_PSO_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0038GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.generalinvoiceaudit.event.VOP_PSO_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.generalinvoiceaudit.event.VopPso0038Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.estimateinvoiceaudit.EstimateInvoiceAuditSC</service-action-class>
+    </event-mapping>
+	<!-- Jeong Myounghun : 2010-01-14 end -->
+
+	<!-- Lee Hyemin : 2012-04-16 start -->
+    <url-mapping url="VOP_PSO_0040.do" screen="VOP_PSO_0040.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VOP_PSO_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.porttariffmgt.event.VopPso0040Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portsomasterdatamgt.PortSOMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Hyemin : 2012-04-16 end -->
+	
+	<!-- Lee Yulkyu : 2019-01-17 start -->
+    <url-mapping url="VOP_PSO_0216.do" screen="VOP_PSO_0216.screen" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0216HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_PSO_0216GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VOP_PSO_0216HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.pso.portchargebudget.budgetportchargemgt.event.VopPso0216Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.pso.portchargebudget.PortChargeBudgetSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Yulkyu : 2019-01-17 end -->
+</mappings>

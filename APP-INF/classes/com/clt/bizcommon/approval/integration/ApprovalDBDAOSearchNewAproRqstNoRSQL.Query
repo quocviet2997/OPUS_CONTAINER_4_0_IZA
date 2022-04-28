@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOSearchNewAproRqstNoRSQL">
+			<desc><![CDATA[New Approval Request Number를 생성한다]]></desc>
+			<sql><![CDATA[
+SELECT TO_CHAR(SYSDATE, 'YYYYMMDD')||LTRIM(TO_CHAR(APRO_RQST_SEQ.NEXTVAL, '00000')) APRO_RQST_NO
+  FROM DUAL
+  			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

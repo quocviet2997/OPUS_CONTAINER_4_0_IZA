@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchEstmVvdCreationFlagRSQL">
+			<desc><![CDATA[월별로 G/L Estimation VVD Creation 가능 여부를 조회한다.]]></desc>
+			<sql><![CDATA[
+SELECT  XX.ACCL_YRMON
+    ,   CASE
+            WHEN XX.ACCL_YRMON > @[exe_yrmon] THEN
+                'Y'
+            ELSE
+                'N'
+        END AS BUTTON_BLOCK_FLAG
+FROM
+(
+   SELECT  DENSE_RANK() OVER(PARTITION BY X.WRK_DT ORDER BY X.WRK_SEQ DESC) LST_SEQ
+             ,   X.*
+   FROM    SAC_ACCL_PRD X
+) XX
+WHERE   1 = 1
+   AND   WRK_DT = TO_CHAR(SYSDATE, 'YYYYMMDD')
+   AND   XX.LST_SEQ = 1
+   AND   ROWNUM < 2			]]></sql>
+			<params>
+				<param name="exe_yrmon" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+    <!-- [STM_COMMON]  -->
+    <url-mapping url="STMCommonGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_CommonHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmScoCommonEvent</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+	
+	<!-- yhha : 2014-05-07 start -->
+    <url-mapping url="STM_SCO_0010.do" screen="STM_SCO_0010.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0010HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SCO_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+	<!-- yhha : 2014-05-07 end -->	
+	
+	<!-- 2017-06-23 start -->
+    <url-mapping url="STM_SCO_0011.do" screen="STM_SCO_0011.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0011HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SCO_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+	<!-- 2017-06-23 end -->	
+		
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SCO_0020.do" screen="STM_SCO_0020.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0020HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SCO_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0020Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SCO_0050.do" screen="STM_SCO_0050.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0050HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SCO_0050GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0050Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- kyungsam jo : 2015-03-17 start -->
+    <url-mapping url="STM_SCO_0090.do" screen="STM_SCO_0090.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0090HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SCO_0090GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0090HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0090Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+	<!-- kyungsam jo : 2015-03-17 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <url-mapping url="STM_SCO_0100.do" screen="STM_SCO_0100.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0100HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SCO_0100GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0100HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0100Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- ORKIM : 2014-10-16 start -->
+    <url-mapping url="STM_SCO_0200.do" screen="STM_SCO_0200.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0200HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SCO_0200GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0200HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0200Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+	<!-- ORKIM : 2014-10-16 end -->
+	
+	<!-- junbum lee : 2014-10-17 start -->
+    <url-mapping url="STM_SCO_0300.do" screen="STM_SCO_0300.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0300HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SCO_0300GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0300HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0300Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+	<!-- junbum lee : 2014-10-17 end -->
+
+	<url-mapping url="STM_SCO_0051.do" screen="STM_SCO_0051.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0051HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SCO_0051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0051HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0051Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping> 
+    
+    <url-mapping url="STM_SCO_0052.do" screen="STM_SCO_0052.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0052HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SCO_0052GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0052HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0052Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping> 
+    
+    <url-mapping url="STM_SCO_0053.do" screen="STM_SCO_0053.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0053HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SCO_0053GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0053HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0053Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping> 
+	
+	<url-mapping url="STM_SCO_0054.do" screen="STM_SCO_0054.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0054HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SCO_0054GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0054HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0054Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping> 
+    
+    <url-mapping url="STM_SCO_0055.do" screen="STM_SCO_0055.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0055HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SCO_0055GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0055HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0055Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping> 
+    
+    <url-mapping url="STM_SCO_0056.do" screen="STM_SCO_0056.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0056HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SCO_0056GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0056HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0056Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="STM_SCO_0060.do" screen="STM_SCO_0060.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0060HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SCO_0060GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0060HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0060Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="STM_SAC_0020.do" screen="STM_SAC_0020.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0400HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAC_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0400HTMLAction</web-action-class>
+    </url-mapping> 
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0400Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="STM_SAC_0430.do" screen="STM_SAC_0430.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0430HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAC_0430GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0430HTMLAction</web-action-class>
+    </url-mapping> 
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0430Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sac.common.StmSacCommonSC</service-action-class>
+    </event-mapping>
+	
+	<!-- EUN-SUP LEE : 2012-04-13 start -->
+    <url-mapping url="STM_SAC_0010.do" screen="STM_SAC_0010.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.COM_COM_1003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="STM_SAC_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.COM_COM_1003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.ComCom1003Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.fin.financemanagement.FinanceManagementSC</service-action-class>
+    </event-mapping>
+	<!-- EUN-SUP LEE : 2012-04-13 end -->
+    
+    <url-mapping url="STM_SCO_9999.do" screen="STM_SCO_9999.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_9999HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="STM_SCO_9999GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_9999HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco9999Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+    
+	<!-- SEUNG-JOON LEE : 2016-04-13 start -->
+    <url-mapping url="STM_SAC_0030.do" screen="STM_SAC_0030.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_9999HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAC_0030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_9999HTMLAction</web-action-class>
+    </url-mapping> 
+
+	<!-- SEUNG-JOON LEE : 2016-04-14 start -->
+	<url-mapping url="STM_SAC_0030DL.do" screen="com.clt.framework.core.controller.DownloadViewAdapter">
+		<web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_9999HTMLAction</web-action-class>
+	</url-mapping>
+	<!-- SEUNG-JOON LEE : 2016-04-14 end -->
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco9999Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+	<!-- SEUNG-JOON LEE : 2016-04-13 start -->
+	
+	<!-- kana wakaumi : 2016-04-26 start -->
+    <url-mapping url="STM_SCO_0500.do" screen="STM_SCO_0500.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0500HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SCO_0500GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0500HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0500Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+	<!-- kana wakaumi : 2016-04-26 end -->	
+	
+	<!-- 2JY : 2016-12-21 start -->
+    <url-mapping url="STM_SAC_0040.do" screen="STM_SAC_0040.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0410HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAC_0040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0410HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0410Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+	<!-- 2JY : 2016-12-21 end -->	
+	
+	<!-- 2JY : 2016-12-21 start -->
+    <url-mapping url="STM_SAC_0050.do" screen="STM_SAC_0050.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0420HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="STM_SAC_0050GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0420HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0420Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sco.statementcommon.StatementCommonSC</service-action-class>
+    </event-mapping>
+	<!-- 2JY : 2016-12-21 end -->
+	<!-- hyn : 2017-07-31 start  -->
+    <url-mapping url="SACCommonGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sac.common.common.event.STM_SAC_CommonHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sac.common.common.event.StmSacCommonEvent</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sac.common.StmSacCommonSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="STM_SAC_0431.do" screen="STM_SAC_0431.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0431HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAC_0431GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.STM_SCO_0431HTMLAction</web-action-class>
+    </url-mapping> 
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sco.statementcommon.statementcommon.event.StmSco0431Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sac.common.StmSacCommonSC</service-action-class>
+    </event-mapping>
+	<!-- hyn : 2014-07-31 end -->
+</mappings>

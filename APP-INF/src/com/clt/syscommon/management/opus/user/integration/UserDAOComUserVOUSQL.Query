@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserDAOComUserVOUSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+UPDATE com_user SET                                                   
+ usr_nm              = @[usr_nm] ,                                            
+ usr_pwd             = @[usr_pwd] ,                                            
+ use_flg             = @[use_flg] ,                                            
+ mphn_no             = @[mphn_no] ,    
+ fax_no					= @[fax_no] ,            
+ usr_eml             = @[usr_eml] ,                                            
+ cnt_cd              = @[cnt_cd] ,                                            
+ lang_tp_cd          = @[lang_tp_cd] ,                                            
+ gmt_tmzn_cd         = @[gmt_tmzn_cd] ,                                            
+ cnt_dt_fmt_cd       = @[cnt_dt_fmt_cd] ,                                            
+ cnt_no_fmt_cd       = @[cnt_no_fmt_cd] ,                                            
+ xtn_phn_no          = @[xtn_phn_no] ,                                               
+ jb_eng_nm           = @[jb_eng_nm] ,                                              
+ psn_eng_nm          = @[psn_eng_nm] ,                                              
+ grd_eng_nm          = @[grd_eng_nm] ,                                           
+ dflt_eml			 = @[dflt_eml],
+ upd_usr_id          = @[upd_usr_id] ,                                            
+ upd_dt              =sysdate,                                      
+ usr_locl_nm         = @[usr_locl_nm] ,                                            
+ usr_auth_tp_cd      = @[usr_auth_tp_cd] ,                                            
+ ofc_cd              = @[ofc_cd],
+ usr_pwd_cre_dt      = to_date( @[usr_pwd_cre_dt] ,'YYYYMMDDHH24MISS'),  
+ usr_lck_dt      	 = to_date( @[usr_lck_dt] ,'YYYYMMDDHH24MISS') ,
+ usr_lgin_fald_knt   = @[usr_lgin_fald_knt]                                              
+WHERE usr_id = @[usr_id]			]]></sql>
+			<params>
+				<param name="usr_nm" type="12" value="" out="N"/>
+				<param name="usr_pwd" type="12" value="" out="N"/>
+				<param name="use_flg" type="12" value="" out="N"/>
+				<param name="mphn_no" type="12" value="" out="N"/>
+				<param name="fax_no" type="12" value="" out="N"/>
+				<param name="usr_eml" type="12" value="" out="N"/>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="lang_tp_cd" type="12" value="" out="N"/>
+				<param name="gmt_tmzn_cd" type="12" value="" out="N"/>
+				<param name="cnt_dt_fmt_cd" type="12" value="" out="N"/>
+				<param name="cnt_no_fmt_cd" type="12" value="" out="N"/>
+				<param name="xtn_phn_no" type="12" value="" out="N"/>
+				<param name="jb_eng_nm" type="12" value="" out="N"/>
+				<param name="psn_eng_nm" type="12" value="" out="N"/>
+				<param name="grd_eng_nm" type="12" value="" out="N"/>
+				<param name="dflt_eml" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="usr_locl_nm" type="12" value="" out="N"/>
+				<param name="usr_auth_tp_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="usr_pwd_cre_dt" type="12" value="" out="N"/>
+				<param name="usr_lck_dt" type="12" value="" out="N"/>
+				<param name="usr_lgin_fald_knt" type="12" value="" out="N"/>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

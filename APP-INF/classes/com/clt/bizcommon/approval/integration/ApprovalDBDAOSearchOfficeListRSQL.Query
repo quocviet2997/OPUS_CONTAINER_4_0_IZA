@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOSearchOfficeListRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT 'ALL' OFC_CD, '' OFC_TP_CD, '' AR_HD_QTR_OFC_CD, '0' ODR
+FROM DUAL
+UNION ALL
+SELECT A.OFC_CD, A.OFC_TP_CD, A.AR_HD_QTR_OFC_CD, A.OFC_CD ODR
+FROM MDM_ORGANIZATION A
+WHERE 1=1
+AND NVL(A.DELT_FLG,'N') = 'N'
+AND A.AR_HD_QTR_OFC_CD = DECODE(@[ar_hd_qtr_ofc_cd],'ALL',A.AR_HD_QTR_OFC_CD,'',A.AR_HD_QTR_OFC_CD,@[ar_hd_qtr_ofc_cd])
+AND A.OFC_TP_CD NOT IN ('HO')
+ORDER BY ODR			]]></sql>
+			<params>
+				<param name="ar_hd_qtr_ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

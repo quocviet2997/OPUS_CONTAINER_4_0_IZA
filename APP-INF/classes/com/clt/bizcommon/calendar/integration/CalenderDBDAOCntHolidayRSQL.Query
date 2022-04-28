@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CalenderDBDAOCntHolidayRSQL">
+			<desc><![CDATA[country의 모든 목록을 가져온다.]]></desc>
+			<sql><![CDATA[
+SELECT cnt_cd,
+cnt_nm,
+hol_fm_dt,
+hol_fm_dt_dy,
+hol_to_dt,
+hol_to_dt_dy,
+hol_nm,
+hol_id
+FROM (SELECT ROW_NUMBER() OVER (ORDER BY A.hol_id ASC) no,
+A.cnt_cd,
+B.cnt_nm,
+A.hol_fm_dt,
+to_char(to_date(A.hol_fm_dt, 'YYYYMMDD'), 'DY', 'NLS_DATE_LANGUAGE=ENGLISH') hol_fm_dt_dy,      
+A.hol_to_dt,
+to_char(to_date(A.hol_to_dt, 'YYYYMMDD'), 'DY', 'NLS_DATE_LANGUAGE=ENGLISH') hol_to_dt_dy,
+A.hol_nm, A.hol_id
+FROM PRD_HOLIDAY A, MDM_COUNTRY B
+WHERE 1 = 1 AND A.CNT_CD=B.CNT_CD AND A.HOL_KND_CD='C'
+AND nvl(A.delt_flg,'N') <> 'Y'
+#if (${cnt_cd} != '')
+AND B.cnt_cd = @[cnt_cd]
+#end
+#if (${frdate_cnt} != '' && ${todate_cnt} != '')
+AND ( A.hol_fm_dt between @[frdate_cnt] AND @[todate_cnt]
+OR  A.hol_to_dt between @[frdate_cnt] AND @[todate_cnt]
+#end
+)) a
+WHERE no BETWEEN @[startpart] AND @[endpart]
+ORDER BY hol_fm_dt ASC			]]></sql>
+			<params>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="frdate_cnt" type="12" value="" out="N"/>
+				<param name="todate_cnt" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

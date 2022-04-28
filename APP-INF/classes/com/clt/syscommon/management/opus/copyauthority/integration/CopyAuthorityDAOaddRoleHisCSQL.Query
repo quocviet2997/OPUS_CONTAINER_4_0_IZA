@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CopyAuthorityDAOaddRoleHisCSQL">
+			<desc><![CDATA[DESC Enter..]]></desc>
+			<sql><![CDATA[
+#if (${opt} == 'add') 
+INSERT INTO COM_USR_ROLE_MTCH_HIS
+( USR_ID,
+  USR_ROLE_CD,
+  USR_ROLE_HIS_SEQ,
+  EFF_DT,
+  EXP_DT,
+  CRE_USR_ID,
+  CRE_DT,
+  UPD_USR_ID,
+  UPD_DT
+)
+SELECT USR_ID, 
+       USR_ROLE_CD, 
+      (SELECT NVL(MAX(A.USR_ROLE_HIS_SEQ), 0) + 1 
+         FROM COM_USR_ROLE_MTCH_HIS A 
+        WHERE A.USR_ID = @[to_usr_id] 
+          AND USR_ROLE_CD = B.USR_ROLE_CD) USR_ROLE_HIS_SEQ, 
+       SYSDATE, TO_DATE('9999-12-31', 'YYYY-MM-DD'), 
+       'authcopy', 
+       SYSDATE, 
+       'authcopy', 
+       SYSDATE
+  FROM ( SELECT @[to_usr_id] USR_ID, USR_ROLE_CD FROM COM_USR_ROLE_MTCH WHERE USR_ID = @[from_usr_id]
+          MINUS
+         SELECT @[to_usr_id] USR_ID, USR_ROLE_CD FROM COM_USR_ROLE_MTCH WHERE USR_ID = @[to_usr_id]) B
+#else
+INSERT INTO COM_USR_ROLE_MTCH_HIS
+( USR_ID,
+  USR_ROLE_CD,
+  USR_ROLE_HIS_SEQ,
+  EFF_DT,
+  EXP_DT,
+  CRE_USR_ID,
+  CRE_DT,
+  UPD_USR_ID,
+  UPD_DT
+)
+SELECT @[to_usr_id], 
+       USR_ROLE_CD, 
+      (SELECT NVL(MAX(A.USR_ROLE_HIS_SEQ), 0) + 1 
+         FROM COM_USR_ROLE_MTCH_HIS A 
+        WHERE A.USR_ID = @[to_usr_id] 
+          AND USR_ROLE_CD = B.USR_ROLE_CD) USR_ROLE_HIS_SEQ, 
+       SYSDATE, TO_DATE('9999-12-31', 'YYYY-MM-DD'), 
+       'authcopy', 
+       SYSDATE, 
+       'authcopy', 
+       SYSDATE
+  FROM COM_USR_ROLE_MTCH B
+ WHERE B.USR_ID = @[from_usr_id]
+#end			]]></sql>
+			<params>
+				<param name="to_usr_id" type="12" value="" out="N"/>
+				<param name="from_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

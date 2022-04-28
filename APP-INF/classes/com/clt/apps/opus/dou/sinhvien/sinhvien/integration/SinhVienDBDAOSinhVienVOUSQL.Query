@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SinhVienDBDAOSinhVienVOUSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+UPDATE SINHVIEN SET 
+	TEN = @[ten]
+,	TUOI = @[tuoi]
+,	KHOAHOC = @[khoahoc]
+,	HOCPHI = @[hocphi]
+,	NGAYNHAPHOC = TO_DATE(@[ngaynhaphoc],'YYYY-MM-DD')
+WHERE	SV_ID = @[sv_id]
+			]]></sql>
+			<params>
+				<param name="ten" type="12" value="" out="N"/>
+				<param name="tuoi" type="2" value="" out="N"/>
+				<param name="khoahoc" type="12" value="" out="N"/>
+				<param name="hocphi" type="2" value="" out="N"/>
+				<param name="ngaynhaphoc" type="12" value="" out="N"/>
+				<param name="sv_id" type="2" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

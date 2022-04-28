@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalStaffVORSQL">
+			<desc><![CDATA[Staff의 모든 목록을 가져온다.]]></desc>
+			<sql><![CDATA[
+SELECT USR_NM              
+     , OFC_CD        	 
+     , PSN_ENG_NM       	 
+     , USR_ID  
+     , '' OFC_CD_DEPTSRCH
+     , '' SUB_SYS_CD
+     , '' MODEE
+     , '' CSR_NO   
+     , '' STATUS
+     , '' SDATE
+     , '' EDATE 
+     , '' APRO_ROUT_SEQ    	 
+  FROM COM_USER    									
+ WHERE USE_FLG = 'Y'	
+#if (${ofc_cd_deptsrch} != '') 
+   AND OFC_CD LIKE	'%'||@[ofc_cd_deptsrch]||'%'
+#end
+ ORDER BY 
+       PSN_ENG_NM
+     , USR_NM			]]></sql>
+			<params>
+				<param name="ofc_cd_deptsrch" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ProgramMappingDAOMENURSQL">
+			<desc><![CDATA[inquiry menu]]></desc>
+			<sql><![CDATA[
+SELECT                                                              
+      level,                                                               
+      chd_pgm_no pgm_no,                                                          
+      pgm_nm                                                               
+FROM (SELECT a.mnu_cfg_cd,a.prnt_pgm_no,a.chd_pgm_no,a.pgm_lvl_val,a.dp_seq
+      ,b.pgm_no,b.pgm_nm,b.pgm_url,b.pgm_lvl_div_cd                        
+      FROM com_mnu_cfg a, com_program b                                    
+      WHERE a.chd_pgm_no = b.pgm_no(+)                                       
+      AND b.pgm_tp_cd(+) = '00'          
+      AND A.MNU_CFG_CD= '002'                                  
+      AND b.use_flg(+) = 'Y')                                              
+CONNECT BY PRIOR chd_pgm_no = prnt_pgm_no                                  
+START WITH PRNT_PGM_NO = @[prnt_pgm_no] AND MNU_CFG_CD= '002'
+ORDER SIBLINGS BY dp_seq			]]></sql>
+			<params>
+				<param name="prnt_pgm_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

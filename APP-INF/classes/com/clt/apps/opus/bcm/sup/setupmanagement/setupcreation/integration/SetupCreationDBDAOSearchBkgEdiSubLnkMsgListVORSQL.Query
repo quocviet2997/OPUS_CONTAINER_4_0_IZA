@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOSearchBkgEdiSubLnkMsgListVORSQL">
+			<desc><![CDATA[2011.03.07 정윤태 BKG EDI SUB LNK MSG 정보를 조회한다]]></desc>
+			<sql><![CDATA[
+SELECT  TRD_PRNR_SUB_LNK_SEQ
+       ,EDI_MSG_TP_ID
+       ,EDI_MSG_IND_CD1
+       ,EDI_MSG_IND_CD2
+       ,EDI_MSG_IND_CD3
+       ,EDI_MSG_IND_CD4
+       ,EDI_MSG_IND_CD5
+       ,EDI_MSG_IND_CD
+       ,MSG_TP_DESC
+       ,'' AS CRE_USR_ID
+	   ,'' AS UPD_USR_ID
+  FROM (
+        SELECT  TRD_PRNR_SUB_LNK_SEQ
+               ,EDI_MSG_TP_ID
+               ,DECODE(EDI_MSG_IND_CD,'51',MSG_TP_DESC,NULL) EDI_MSG_IND_CD1
+               ,DECODE(EDI_MSG_IND_CD,'53',MSG_TP_DESC,NULL) EDI_MSG_IND_CD2
+               --,DECODE(EDI_MSG_IND_CD,'4',MSG_TP_DESC,NULL)  EDI_MSG_IND_CD3
+               ,DECODE(EDI_MSG_TP_ID,'TDC315', MSG_TP_DESC, NULL)  EDI_MSG_IND_CD3
+               --,CASE WHEN EDI_MSG_IND_CD != '4' AND MSG_TP_DESC = '1' THEN
+			   ,EDI_MSG_IND_CD EDI_MSG_IND_CD4
+               ,DECODE(EDI_MSG_IND_CD,'52',MSG_TP_DESC,NULL)  EDI_MSG_IND_CD5
+               ,EDI_MSG_IND_CD
+               ,MSG_TP_DESC
+               ,DECODE(EDI_MSG_IND_CD,'51',1,'53',2,'4',3,4) SORT_KEY
+          FROM BKG_EDI_SUB_LNK_MSG
+         WHERE TRD_PRNR_SUB_LNK_SEQ = @[trd_prnr_sub_lnk_seq]
+       )			]]></sql>
+			<params>
+				<param name="trd_prnr_sub_lnk_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

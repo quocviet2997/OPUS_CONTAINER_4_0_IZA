@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SuperUserDAORhqRSQL">
+			<desc><![CDATA[rhq query]]></desc>
+			<sql><![CDATA[
+SELECT OFC_CD RHQ
+FROM MDM_ORGANIZATION
+WHERE OFC_KND_CD = 2			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

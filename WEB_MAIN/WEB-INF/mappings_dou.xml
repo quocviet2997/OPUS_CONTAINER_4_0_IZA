@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- Vi Nguyen : 2020-03-17 start -->
+    <url-mapping url="DOU_TRN_001.do" screen="DOU_TRN_001.screen" >
+        <web-action-class>com.clt.apps.opus.dou.doutraining.errmsgmgmt.event.DOU_TRN_001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="DOU_TRN_001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.dou.doutraining.errmsgmgmt.event.DOU_TRN_001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.dou.doutraining.errmsgmgmt.event.DouTrn001Event</event-class>
+        <service-action-class>com.clt.apps.opus.dou.doutraining.DouTrainingSC</service-action-class>
+    </event-mapping>
+	<!-- Vi Nguyen : 2020-03-17 end -->
+
+	<!-- Vi Nguyen : 2020-03-18 start -->
+    <url-mapping url="SinhVien.do" screen="SinhVien.screen" >
+        <web-action-class>com.clt.apps.opus.dou.sinhvien.sinhvien.event.SINHVIENHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="SinhVienGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.dou.sinhvien.sinhvien.event.SINHVIENHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.dou.sinhvien.sinhvien.event.SinhvienEvent</event-class>
+        <service-action-class>com.clt.apps.opus.dou.sinhvien.SinhVienSC</service-action-class>
+    </event-mapping>
+	<!-- Vi Nguyen : 2020-03-18 end -->
+
+	<!-- Vi Nguyen : 2020-03-18 start -->
+  
+    <url-mapping url="MuonSachGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.dou.muonsach.muonsach.event.MUONSACHHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.dou.muonsach.muonsach.event.MuonsachEvent</event-class>
+        <service-action-class>com.clt.apps.opus.dou.muonsach.MuonSachSC</service-action-class>
+    </event-mapping>
+	<!-- Vi Nguyen : 2020-03-18 end -->
+	
+	<!-- Vi Nguyen : 2020-03-19 start -->
+   <url-mapping url="KhoaHoc.do" screen="KhoaHoc.screen" >
+        <web-action-class>com.clt.apps.opus.dou.sinhvien.khoahoc.event.KHOAHOCHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="KhoaHocGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.dou.sinhvien.khoahoc.event.KHOAHOCHTMLAction</web-action-class>
+    </url-mapping>
+
+      <event-mapping>
+        <event-class>com.clt.apps.opus.dou.sinhvien.khoahoc.event.KhoaHocEvent</event-class>
+        <service-action-class>com.clt.apps.opus.dou.sinhvien.SinhVienSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="SinhVienPU.do" screen="SinhVienPU.screen" >
+        <web-action-class>com.clt.apps.opus.dou.sinhvien.sinhvien.event.SINHVIENHTMLAction</web-action-class>
+    </url-mapping>
+	<!-- Vi Nguyen : 2020-03-19 end -->
+
+</mappings>

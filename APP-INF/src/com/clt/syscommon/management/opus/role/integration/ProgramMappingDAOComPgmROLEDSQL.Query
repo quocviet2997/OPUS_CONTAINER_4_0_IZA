@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ProgramMappingDAOComPgmROLEDSQL">
+			<desc><![CDATA[delete com_pgm_role]]></desc>
+			<sql><![CDATA[
+delete from com_pgm_role
+where	pgm_no = @[pgm_no]
+and	usr_role_cd = @[usr_role_cd]
+			]]></sql>
+			<params>
+				<param name="pgm_no" type="12" value="" out="n"/>
+				<param name="usr_role_cd" type="12" value="" out="n"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

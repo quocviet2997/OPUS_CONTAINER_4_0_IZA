@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Billing Correction : OPUS Container</title>
+		<link rel="stylesheet" type="text/css" href="style/css/opus_reset.css" />
+		<link rel="stylesheet" type="text/css" href="style/css/theme_default.css" />
+		<script src="style/js/jquery-1.11.0.min.js"></script>
+		<script src="style/js/jquery-migrate-1.1.1.min.js"></script>
+		<script src="style/js/fakeselect.js"></script>
+		<script src="style/js/opus_ui.js"></script>
+	</head>
+	<body>
+	    <!-- HEADER_FIXED (top fixed area) -->
+	    <div class="header_fixed">
+    	    <!-- util_bar : 상단 로고영역(바) -->
+    	    <div class="util_bar">
+    	        <h1 class="logo ir">OPUS Container:TM</h1>
+    	        <!-- user_info_div -->
+    	        <div class="user_info_div">
+        	        <span class="user_info"><span>NAME</span>CYBERLOGITEC OPUS ADMIN</span>
+        	        <span class="user_info user_msg"><span>ID</span>CSCL8888</span>
+        	        <span class="user_info"><span>OFFICE</span>CHIBB</span>
+        	        <button class="btn_logout" type="button">LOGOUT</button>
+    	        </div>
+    	        <!-- //user_info_div -->
+    	        <!-- layout_change -->
+    	        <div class="layout_change">
+                    <button type="button" class="layout_default now_layout"><span></span></button>
+                    <button type="button" class="layout_side"><span></span></button>
+                    <button type="button" class="layout_hide"><span></span></button>
+                </div>
+    	        <!-- //layout_change -->
+    	        <!-- util_btns -->
+    	        <div class="util_btns"> 
+                    <button type="button" class="util_help ir"><span>Help(guide)</span></button><!-- 
+                 --><button type="button" class="util_fav ir"><span>Favorite link</span></button><!-- 
+                 --><button type="button"  class="util_setting ir"><span>Preferences</span></button>
+                </div>
+    	        <!-- //util_btns -->
+    	        
+    	        
+    	        <!-- preferences(S) -->
+    	        <div class="preferences">
+    	            <h2>Preferences</h2>
+    	            <h3>Languages</h3>
+    	            <ul>
+    	                <li>
+    	                    <input type="radio" id="lang_en" />
+    	                    <label for="lang_en">English</label>
+	                    </li>
+    	                <li>
+    	                    <input type="radio" id="lang_ko" />
+    	                    <label for="lang_ko">Korean</label>
+	                    </li>
+    	            </ul>
+    	            <h3>Themes</h3>
+    	            <ul>
+    	                <li>
+    	                    <input type="radio" id="theme_default" name="theme" value="Theme1" />
+    	                    <label for="theme_default">Theme Default</label>
+	                    </li>
+    	                <li>
+    	                    <input type="radio" id="theme_blue" name="theme" value="Theme2" />
+    	                    <label for="theme_blue">Theme Blue</label>
+	                    </li>
+    	            </ul>
+    	            <!-- opus_design_btn(S) -->
+    	            <div class="opus_design_btn align_right">
+    	                <button type="button" class="btn_accent" id="prefer_save">OK</button>
+    	                <button type="button" class="btn_accent">Cancel</button>
+    	            </div>
+    	            <!-- opus_design_btn(E) -->
+    	        </div>
+    	        <!-- preferences(E) -->
+    	        
+    	        
+    	        
+    	        <!-- favorite_links(S) -->
+    	        <div class="favorite_links">
+    	            <ul class="favorite_tab">
+    	                <li class="tab_now first">Favorites</li>
+    	                <li>History</li>
+    	            </ul>
+    	           <!-- favorites(S) -->
+    	            <div class="favorites">
+    	                <button type="button" class="btn_add_favorites">Add to Favorites</button>
+    	                
+    	                <!-- opus_design_btn(S) -->
+    	                <div class="opus_design_btn">
+        	                <button type="button" class="btn_type_01">Edit</button>
+        	                <button type="button" class="btn_type_01">Delete</button>
+    	                </div>
+    	                <!-- opus_design_btn(E) -->
+    	                
+    	                
+    	                <!-- favorites_search(S) -->
+    	                <span class="favorites_search">
+        	                <input /><button type="submit" class="ir">search</button>
+    	                </span>
+    	                <!-- favorites_search(E) -->
+    	                <ul>
+    	                    <li><input type="checkbox" id="fav_01" /><label for="fav_01">Container Type</label></li>
+    	                    <li><input type="checkbox" id="fav_02" /><label for="fav_02">C/Cock Schedule Estimated Creation</label></li>
+    	                    <li><input type="checkbox" id="fav_03" /><label for="fav_03">Agreement Creation</label></li>
+    	                    <li><input type="checkbox" id="fav_04" /><label for="fav_04">Customer Report</label></li>
+    	                    <li><input type="checkbox" id="fav_05" /><label for="fav_05">Booking/Documentation</label></li>
+    	                    <li><input type="checkbox" id="fav_06" /><label for="fav_06">Product Catalog</label></li>
+    	                    <li><input type="checkbox" id="fav_07" /><label for="fav_07">Terminal Invoice</label></li>
+    	                    <li><input type="checkbox" id="fav_08" /><label for="fav_08">A/R Invoice</label></li>
+    	                    <li><input type="checkbox" id="fav_09" /><label for="fav_09">CNTR Movement </label></li>
+    	                    <li><input type="checkbox" id="fav_10" /><label for="fav_10">Demurrage/Detention</label></li>
+    	                    <li><input type="checkbox" id="fav_11" /><label for="fav_11">3rd Party Billing </label></li>
+    	                    <li><input type="checkbox" id="fav_12" /><label for="fav_12">Supply Chain Event</label></li>
+    	                    <li><input type="checkbox" id="fav_13" /><label for="fav_13">Management</label></li>
+    	                    <li><input type="checkbox" id="fav_14" /><label for="fav_14">Supply Chain Event</label></li>
+    	                    <li><input type="checkbox" id="fav_15" /><label for="fav_15">Management</label></li>
+    	                    <li><input type="checkbox" id="fav_16" /><label for="fav_16">Supply Chain Event</label></li>
+    	                    <li><input type="checkbox" id="fav_17" /><label for="fav_17">Management</label></li>
+    	                </ul>
+    	            </div>
+    	           <!-- favorites(E) -->
+    	            
+    	        </div>
+    	        <!-- favorite_links(E) -->
+    	    </div>
+    	    <!-- //util_bar -->
+	    
+    	    
+    	    <!-- page_title_area -->
+            <div class="page_title_area clear">
+               <h2 class="page_title"><button type="button">Billing Correction</button></h2>
+               <!-- opus_design_btn -->
+               <div class="opus_design_btn">
+                   <button type="button" class="btn_accent">Retrieve</button><!--
+                --><button type="button" class="btn_normal">Save</button><!--
+                --><button type="button" name="asd" disabled class="btn_accent">New</button><!--
+                --><button type="button" disabled class="btn_accent">Down Excel</button><!--
+                --><button type="button" disabled class="btn_accent">Confirm</button>
+               </div>
+               <!-- opus_design_btn -->
+                <div class="location">
+                    <span>Service Management</span> &gt;
+                    <span>Trans S/O</span> &gt;
+                    <span>USA Rail</span> &gt;
+                    <span>Billing Correction</span>
+                    <a href="" class="ir">Location Copy</a>
+                </div>
+            </div>
+            <!-- //page_title_area -->
+        </div>
+	    <!-- //HEADER_FIXED (top fixed area) -->
+        
+        
+	    <!-- GNB -->
+        <div class="gnb_wrap">
+            <ul class="gnb">
+                <li>
+                    <a href=""><span>EQ<br />MGMT</span></a>
+                    <div class="gnb_2depth">
+                        <ul>
+                            <li><a href="" target="_blank"><span>CNTR Master</span></a></li>
+                            <li><a href="" target="_blank"><span>CNTR Inventory</span></a></li>
+                            <li><a href="" target="_blank"><span>CNTR Lease</span></a></li>
+                            <li><a href="" target="_blank"><span>M&amp;R</span></a></li>
+                            <li><a href="" target="_blank"><span>EQ Reposition</span></a></li>
+                            <li><a href="" target="_blank"><span>Chassis</span></a></li>
+                            <li><a href="" target="_blank"><span>M.G.set</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><span>Service<br />MGMT</span></a>
+                    <div class="gnb_2depth">
+                        <ul>
+                            <li>
+                                <a href="" target="_blank"><span>Booking/Documentation</span></a>
+                                <ul>
+                                    <li><a href="" target="_blank"><span>Setup</span></a></li>
+                                    <li><a href="" target="_blank"><span>Code</span></a></li>
+                                    <li><a href="" target="_blank"><span>Booking</span></a></li>
+                                    <li><a href="" target="_blank"><span>Outbound Doc</span></a></li>
+                                    <li><a href="" target="_blank"><span>Inbound Doc</span></a></li>
+                                    <li><a href="" target="_blank"><span>Advance Mainfest</span></a></li>
+                                    <li><a href="" target="_blank"><span>Manifest</span></a></li>
+                                    <li><a href="" target="_blank"><span>Operation</span></a></li>
+                                    <li><a href="" target="_blank"><span>Report</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="" target="_blank"><span>Product Catalog</span></a>
+                                <ul>
+                                    <li><a href="" target="_blank"><span>Network Node</span></a></li>
+                                    <li><a href="" target="_blank"><span>Network Link (Inland)</span></a></li>
+                                    <li><a href="" target="_blank"><span>Network Link (Ocean)</span></a></li>
+                                    <li><a href="" target="_blank"><span>Product Catalog Generation</span></a></li>
+                                    <li><a href="" target="_blank"><span>Network Constraint</span></a></li>
+                                    <li><a href="" target="_blank"><span>Block Stowage</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="" target="_blank"><span>Transportation</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="" target="_blank"><span>Agreement</span></a>
+                                        <ul>
+                                            <li><a href="" target="_blank"><span>Agreement Creation</span></a></li>
+                                            <li><a href="" target="_blank"><span>Agreement USA Rail Surcharge</span></a></li>
+                                            <li><a href="" target="_blank"><span>Agreement Correction</span></a>
+                                            <li><a href="" target="_blank"><span>Agreement Inquiry</span></a>
+                                            <li><a href="" target="_blank"><span>Agreement Inquiry by Route</span></a>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank"><span>Service Order</span></a>
+                                        <ul>
+                                            <li>
+                                                <a href="" target="_blank"><span>Creation</span></a>
+                                                <ul>
+                                                    <li><a href="" target="_blank"><span>CY &amp; Door (EUR)</span></a></li>
+                                                    <li><a href="" target="_blank"><span>CY &amp; Door (USA)</span></a></li>
+                                                    <li><a href="" target="_blank"><span>CY &amp; Door (ASIA)</span></a></li>
+                                                    <li><a href="" target="_blank"><span>Empty Repo &amp; EQ On/Off Hire</span></a></li>
+                                                    <li><a href="" target="_blank"><span>Chassis &amp; Genset</span></a>
+                                                    <li><a href="" target="_blank"><span>Supplement</span></a>
+                                                    <li><a href="" target="_blank"><span>Other</span></a>
+                                                </ul>
+                                            </li>
+                                            <li><a href="" target="_blank"><span>Inquiry</span></a></li>
+                                            <li>
+                                                <a href="" target="_blank"><span>Correction</span></a>
+                                                <ul>
+                                                    <li><a href="" target="_blank"><span>CY &amp; Door</span></a>
+                                                    <li><a href="" target="_blank"><span>Empty Repo &amp; EQ On/Off Hire</span></a>
+                                                    <li><a href="" target="_blank"><span>Chassis &amp; Genset</span></a>
+                                                    <li><a href="" target="_blank"><span>Supplement</span></a>
+                                                    <li><a href="" target="_blank"><span>Other</span></a>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="" target="_blank"><span>Invoice</span></a></li>
+                                    <li>
+                                        <a href="" target="_blank"><span>USA Rail</span></a>
+                                        <ul>
+                                            <li><a href="" target="_blank"><span>CY &amp; Billing Correction</span></a>
+                                        </ul>
+                                    </li>
+                                    <li><a href="" target="_blank"><span>CSR</span></a></li>
+                                    <li><a href="" target="_blank"><span>CODE</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" target="_blank"><span>Terminal Invoice</span></a></li>
+                            <li><a href="" target="_blank"><span>A/R Invoice</span></a></li>
+                            <li><a href="" target="_blank"><span>CNTR Movement</span></a></li>
+                            <li><a href="" target="_blank"><span>Demurrage/Detention</span></a></li>
+                            <li><a href="" target="_blank"><span>3rd Party Billing</span></a></li>
+                            <li><a href="" target="_blank"><span>Supply Chain Event Management</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><span>Sales<br />MGMT</span></a>
+                    <div class="gnb_2depth">
+                        <ul>
+                            <li><a href="" target="_blank"><span>Booking/Documentation</span></a></li>
+                            <li><a href="" target="_blank"><span>Product Catalog</span></a></li>
+                            <li><a href="" target="_blank"><span>3rd Party Billing</span></a></li>
+                            <li><a href="" target="_blank"><span>Supply Chain Event</span></a></li>
+                            <li><a href="" target="_blank"><span>Management</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" target="_blank"><span>Agreement</span></a></li>
+                            <li><a href="" target="_blank"><span>Service Order</span></a></li>
+                            <li><a href="" target="_blank"><span>CSR</span></a></li>
+                            <li><a href="" target="_blank"><span>Code</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" target="_blank"><span>Billing Creation</span></a></li>
+                            <li><a href="" target="_blank"><span>Billing Correction</span></a></li>
+                            <li><a href="" target="_blank"><span>USA Rail 404 EDI</span></a></li>
+                            <li><a href="" target="_blank"><span>Invoice</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><span>Vessel<br />OPR</span></a>
+                    <div class="gnb_2depth">
+                        <ul>
+                            <li><a href="" target="_blank"><span>Booking/Documentation</span></a></li>
+                            <li><a href="" target="_blank"><span>Product Catalog</span></a></li>
+                            <li><a href="" target="_blank"><span>3rd Party Billing</span></a></li>
+                            <li><a href="" target="_blank"><span>Supply Chain Event</span></a></li>
+                            <li><a href="" target="_blank"><span>Management</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" target="_blank"><span>Agreement</span></a></li>
+                            <li><a href="" target="_blank"><span>Service Order</span></a></li>
+                            <li><a href="" target="_blank"><span>CSR</span></a></li>
+                            <li><a href="" target="_blank"><span>Code</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" target="_blank"><span>Billing Creation</span></a></li>
+                            <li><a href="" target="_blank"><span>Billing Correction</span></a></li>
+                            <li><a href="" target="_blank"><span>USA Rail 404 EDI</span></a></li>
+                            <li><a href="" target="_blank"><span>Invoice</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><span>BIZ<br />Common</span></a>
+                    <div class="gnb_2depth">
+                        <ul>
+                            <li><a href="" target="_blank"><span>Booking/Documentation</span></a></li>
+                            <li><a href="" target="_blank"><span>Product Catalog</span></a></li>
+                            <li><a href="" target="_blank"><span>3rd Party Billing</span></a></li>
+                            <li><a href="" target="_blank"><span>Supply Chain Event</span></a></li>
+                            <li><a href="" target="_blank"><span>Management</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" target="_blank"><span>Agreement</span></a></li>
+                            <li><a href="" target="_blank"><span>Service Order</span></a></li>
+                            <li><a href="" target="_blank"><span>CSR</span></a></li>
+                            <li><a href="" target="_blank"><span>Code</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" target="_blank"><span>Billing Creation</span></a></li>
+                            <li><a href="" target="_blank"><span>Billing Correction</span></a></li>
+                            <li><a href="" target="_blank"><span>USA Rail 404 EDI</span></a></li>
+                            <li><a href="" target="_blank"><span>Invoice</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><span>Support<br />&amp; Admin</span></a>
+                    <div class="gnb_2depth">
+                        <ul>
+                            <li><a href="" target="_blank"><span>Booking/Documentation</span></a></li>
+                            <li><a href="" target="_blank"><span>Product Catalog</span></a></li>
+                            <li><a href="" target="_blank"><span>3rd Party Billing</span></a></li>
+                            <li><a href="" target="_blank"><span>Supply Chain Event</span></a></li>
+                            <li><a href="" target="_blank"><span>Management</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" target="_blank"><span>Agreement</span></a></li>
+                            <li><a href="" target="_blank"><span>Service Order</span></a></li>
+                            <li><a href="" target="_blank"><span>CSR</span></a></li>
+                            <li><a href="" target="_blank"><span>Code</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" target="_blank"><span>Billing Creation</span></a></li>
+                            <li><a href="" target="_blank"><span>Billing Correction</span></a></li>
+                            <li><a href="" target="_blank"><span>USA Rail 404 EDI</span></a></li>
+                            <li><a href="" target="_blank"><span>Invoice</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><span>Admini-<br />strator</span></a>
+                    <div class="gnb_2depth">
+                        <ul>
+                            <li><a href="" target="_blank"><span>Booking/Documentation</span></a></li>
+                            <li><a href="" target="_blank"><span>Product Catalog</span></a></li>
+                            <li><a href="" target="_blank"><span>3rd Party Billing</span></a></li>
+                            <li><a href="" target="_blank"><span>Supply Chain Event</span></a></li>
+                            <li><a href="" target="_blank"><span>Management</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" target="_blank"><span>Agreement</span></a></li>
+                            <li><a href="" target="_blank"><span>Service Order</span></a></li>
+                            <li><a href="" target="_blank"><span>CSR</span></a></li>
+                            <li><a href="" target="_blank"><span>Code</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" target="_blank"><span>Billing Creation</span></a></li>
+                            <li><a href="" target="_blank"><span>Billing Correction</span></a></li>
+                            <li><a href="" target="_blank"><span>USA Rail 404 EDI</span></a></li>
+                            <li><a href="" target="_blank"><span>Invoice</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <button type="button" class="btn_gnb_hide ir">Global navigation bar show/hide</button>
+        </div>
+        <!-- //GNB -->
+	    
+	    
+	    <!-- WRAP -->
+	    <div class="wrap" style="padding:160px 0 0 40px">
+	        <div class="contents">
+    			<div class="opus_design_inquiry">
+                    <table>
+                        <colgroup>
+                            <col width="120">
+                            <col width="370">
+                            <col width="120">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>title</th>
+                                <td colspan="3">
+                                    <input type="radio" name="rad_dateSep" id="exID01">
+                                    <label for="exID01">Planned Departure</label>
+                                    <input type="radio" name="rad_dateSep" id="exID02">
+                                    <label for="exID02">Door Arrival</label>
+                                    <input type="radio" name="rad_dateSep" id="exID03">
+                                    <label for="exID03">Rail Creation</label>
+                                </td>
+                            </tr><tr>
+                                <th>Date</th>
+                                <td>
+                                    <span class="inquiry_calendar">
+                                        <input name="frm_plandate" type="text" maxlength="8" onfocus="javascript:delHypen(this);" onblur="javascript:getHypen(this); getDateBetween(this);">
+                                        <span class="dash">-</span>
+                                        <input name="to_plandate" type="text" maxlength="8" onfocus="javascript:delHypen(this);" onblur="javascript:getHypen(this);" onkeyup="javascript:doSearchEnter();">
+                                        <a href="" class="calendar ir">calendar</a>
+                                    </span>
+                                </td>
+                                <th>CY/Door</th>
+                                <td>
+                                    <span class="selectbox_title" style="width:34px;vertical-align:middle;display:inline-block;cursor:pointer;"><strong>CY</strong></span><select name="cydoor_div" onchange="getCostModeCombo();" style="position: absolute; left: -100000px; height: auto;"><option value="CY">CY</option><option value="DR">DOOR</option></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Booking No.</th>
+                                <td>
+                                    <input class="input_search"><a href="" class="input_seach_btn"></a>
+                                    <a href="" class="multiple_inq ir">Mutiple inquiry</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <span class="opus_inquiry_border"></span>
+                </div>
+			</div>
+	    </div>
+	    <!-- //WRAP -->
+	</body>
+</html>
+

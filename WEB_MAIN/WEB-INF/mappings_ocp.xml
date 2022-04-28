@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+    <!-- OCPS 컨버틷 (S) -->
+    <!-- 0441 Start-->
+    <url-mapping url="ESM_OCP_0441.do" screen="ESM_OCP_0441.screen" >
+    </url-mapping>
+
+   <url-mapping url="ESM_OCP_0441GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+       <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0441HTMLAction</web-action-class>
+   </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0441Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    <!-- 0441 end-->
+    
+    <!-- 0415 start -->
+    <url-mapping url="ESM_OCP_0415.do" screen="ESM_OCP_0415.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0415HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0415GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0415HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0415Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    <!-- 0415 end -->
+    
+    <!-- 0432 Start-->
+    <url-mapping url="ESM_OCP_0432.do" screen="ESM_OCP_0432.screen" >
+    </url-mapping>
+
+   <url-mapping url="ESM_OCP_0432GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+       <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0432HTMLAction</web-action-class>
+   </url-mapping>
+   <url-mapping url="ESM_OCP_0432_1GS.do" screen="com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0432ViewAdapter">
+       <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0432HTMLAction</web-action-class>
+   </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0432Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    <!-- 0432 end-->    
+    
+    <!-- 0067 Start-->
+    <url-mapping url="ESM_OCP_0067.do" screen="ESM_OCP_0067.screen" >
+    </url-mapping>
+
+   <url-mapping url="ESM_OCP_0067GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+       <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0067HTMLAction</web-action-class>
+   </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0067Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    <!-- 0067 end-->    
+    
+    <!-- 0410 Start-->
+    <url-mapping url="ESM_OCP_0410.do" screen="ESM_OCP_0410.screen" >
+    </url-mapping>
+   <url-mapping url="ESM_OCP_0410GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+       <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0410HTMLAction</web-action-class>
+   </url-mapping>
+   <url-mapping url="ESM_OCP_0410_1GS.do" screen="com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0410ViewAdapter">
+       <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0410HTMLAction</web-action-class>
+   </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0410Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    <!-- 0410 end-->    
+    
+    <!-- 0423 start -->
+    <url-mapping url="ESM_OCP_0423.do" screen="ESM_OCP_0423.screen" >
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0423GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0423HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0423Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    <!-- 0423 end -->    
+    
+    <!-- 0421 Start-->
+    <url-mapping url="ESM_OCP_0421.do" screen="ESM_OCP_0421.screen" >
+    </url-mapping>
+
+   <url-mapping url="ESM_OCP_0421GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+       <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0421HTMLAction</web-action-class>
+   </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0421Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    <!-- 0421 end-->
+    
+    <!-- 0488 Start-->
+    <url-mapping url="ESM_OCP_0488.do" screen="ESM_OCP_0488.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0488HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0488GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0488HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0488Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    <!-- 0488 end -->
+    
+    <!-- 0225 start -->
+    <url-mapping url="ESM_OCP_0225.do" screen="ESM_OCP_0225.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0225HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0225GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0225HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0225Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    <!-- 0225 end -->
+    
+    <!-- 0451 end -->
+    <url-mapping url="ESM_OCP_0451.do" screen="ESM_OCP_0451.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0451HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0451GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0451HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0451Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    <!-- 0451 end -->
+    
+    <url-mapping url="ESM_OCP_0592.do" screen="ESM_OCP_0592.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0592HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0592GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0592HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0592Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    
+    <url-mapping url="ESM_OCP_0425.do" screen="ESM_OCP_0425.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0425HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0425GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0425HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0425Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_0435.do" screen="ESM_OCP_0435.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0435HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0435GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0435HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0435Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    
+    <url-mapping url="ESM_OCP_0463.do" screen="ESM_OCP_0463.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0463HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0463GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0463HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0463Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_0464.do" screen="ESM_OCP_0464.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0464HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0464GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0464HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0464Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    
+    
+    <url-mapping url="ESM_OCP_0421.do" screen="ESM_OCP_0421.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0421HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0421GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0421HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0421Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    
+    <url-mapping url="ESM_OCP_0446.do" screen="ESM_OCP_0446.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0446HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0446GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0446HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0446Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    
+    <url-mapping url="ESM_OCP_1140.do" screen="ESM_OCP_1140.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1140HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_1140GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1140HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1140Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    
+    <url-mapping url="ESM_OCP_0447.do" screen="ESM_OCP_0447.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0447HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0447GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0447HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0447Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    
+    <url-mapping url="ESM_OCP_0422.do" screen="ESM_OCP_0422.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0422HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0422GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0422HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_OCP_0422_1GS.do" screen="com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0422ViewAdapter">
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0422HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0422Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    
+    
+    <url-mapping url="ESM_OCP_0986.do" screen="ESM_OCP_0986.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0986HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0986GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0986HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0986Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_0445.do" screen="ESM_OCP_0445.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0445HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0445GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0445HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0445Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_0449.do" screen="ESM_OCP_0449.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0449HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0449GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0449HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0449Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ESM_OCP_0436.do" screen="ESM_OCP_0436.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0436HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0436GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0436HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0436Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_0489.do" screen="ESM_OCP_0489.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0489HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0489GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0489HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0489Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+
+    <url-mapping url="ESM_OCP_0983.do" screen="ESM_OCP_0983.screen" >
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0984.do" screen="ESM_OCP_0984.screen" >
+    </url-mapping>
+    
+   <url-mapping url="ESM_OCP_0984GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+       <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0984HTMLAction</web-action-class>
+   </url-mapping>
+   
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0984Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>    
+    
+    <url-mapping url="ESM_OCP_0985.do" screen="ESM_OCP_0985.screen" >
+    </url-mapping>
+    
+   <url-mapping url="ESM_OCP_0985GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+       <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0985HTMLAction</web-action-class>
+   </url-mapping>
+   
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0985Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>    
+  
+    <url-mapping url="ESM_OCP_1004.do" screen="ESM_OCP_1004.screen" >
+    </url-mapping>
+    
+   <url-mapping url="ESM_OCP_1004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+       <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1004HTMLAction</web-action-class>
+   </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1004Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_0988.do" screen="ESM_OCP_0988.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0988HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0988GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0988HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0988Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_1201.do" screen="ESM_OCP_1201.screen" >
+    </url-mapping>
+    
+   <url-mapping url="ESM_OCP_1201GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+       <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1201HTMLAction</web-action-class>
+   </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1201Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    <!-- OCPS 컨버틷 (E) -->
+    
+    <url-mapping url="ESM_OCP_1201.do" screen="ESM_OCP_1201.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1201HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_1201GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1201HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1201Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+
+    
+    <url-mapping url="ESM_OCP_1202.do" screen="ESM_OCP_1202.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1202HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_1202GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1202HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1202Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+
+
+    <url-mapping url="ESM_OCP_1203.do" screen="ESM_OCP_1203.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1203HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_1203GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1203HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1203Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    
+    <url-mapping url="ESM_OCP_1204.do" screen="ESM_OCP_1204.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1204HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_1204GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1204HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1204Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_1205.do" screen="ESM_OCP_1205.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1205HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_1205GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1205HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1205Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_2004.do" screen="ESM_OCP_2004.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_2004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_2004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_2004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp2004Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_2005.do" screen="ESM_OCP_2005.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_2005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_2005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_2005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp2005Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_0982.do" screen="ESM_OCP_0982.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0982HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_0982GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_0982HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp0982Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_1206.do" screen="ESM_OCP_1206.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1206HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_1206GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1206HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1206Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_1207.do" screen="ESM_OCP_1207.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1207HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_1207GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1207HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1207Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_1208.do" screen="ESM_OCP_1208.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1208HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_1208GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1208HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1208Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_1209.do" screen="ESM_OCP_1209.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1209HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_1209GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1209HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1209Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_OCP_1210.do" screen="ESM_OCP_1210.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1210HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_1210GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1210HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1210Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>    
+    
+    
+    <url-mapping url="ESM_OCP_1211.do" screen="ESM_OCP_1211.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1211HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_1211GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1211HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1211Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>    
+    
+    <url-mapping url="ESM_OCP_1212.do" screen="ESM_OCP_1212.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1212HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_OCP_1212GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.ESM_OCP_1212HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.blproduction.offshoreperformance.event.EsmOcp1212Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.blproduction.BlProductionSC</service-action-class>
+    </event-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.ocpscommon.ocpsutil.event.EsmOcpsUtilEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.ocpscommon.OcpsCommonSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ESM_Ocps_Util.do" screen="ESM_Ocsp_Util.screen" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.ocpscommon.ocpsutil.event.ESM_Ocps_UtilHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_Ocps_UtilGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.ocp.ocpscommon.ocpsutil.event.ESM_Ocps_UtilHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.ocp.ocpscommon.ocpsgutil.event.EsmOcpsUtilEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esm.ocp.ocpscommon.OcpsCommonSC</service-action-class>
+    </event-mapping>    
+    
+</mappings> 

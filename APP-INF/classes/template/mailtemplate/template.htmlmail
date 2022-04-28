@@ -1,0 +1,10 @@
+ <html>
+ <head><title>TestMail</title></head>
+ <body>
+Dear. <@ name >, <br /><br />
+Hello, this mail is sent for the 
+<font color='red'>TEST</font>.
+<br /><br />
+<@ message >
+<br /><br /> 
+ </body></html>

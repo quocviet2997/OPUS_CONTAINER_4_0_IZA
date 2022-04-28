@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0025.do" screen="BCM_CCD_0025.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BcmCcd0025Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+ 
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0001.do" screen="BCM_CCD_0001.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.account.event.BCM_CCD_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.account.event.BCM_CCD_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.account.event.BcmCcd0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0002.do" screen="BCM_CCD_0002.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.account.event.BCM_CCD_0002HTMLAction</web-action-class>
+    </url-mapping>
+	
+    <url-mapping url="BCM_CCD_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.account.event.BCM_CCD_0002HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0002_POP.do" screen="BCM_CCD_0002_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.account.event.BCM_CCD_0002HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.account.event.BcmCcd0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0003.do" screen="BCM_CCD_0003.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.account.event.BCM_CCD_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.account.event.BCM_CCD_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.account.event.BcmCcd0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0004.do" screen="BCM_CCD_0004.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.account.event.BCM_CCD_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.account.event.BCM_CCD_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.account.event.BcmCcd0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0005.do" screen="BCM_CCD_0005.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.asset.event.BCM_CCD_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.asset.event.BCM_CCD_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.asset.event.BcmCcd0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0006.do" screen="BCM_CCD_0006.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.asset.event.BCM_CCD_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.asset.event.BCM_CCD_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.asset.event.BcmCcd0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0007.do" screen="BCM_CCD_0007.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.asset.event.BCM_CCD_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.asset.event.BCM_CCD_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.asset.event.BcmCcd0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0008.do" screen="BCM_CCD_0008.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.asset.event.BCM_CCD_0008HTMLAction</web-action-class>
+    </url-mapping>
+    
+	<url-mapping url="BCM_CCD_0008_POP.do" screen="BCM_CCD_0008_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.asset.event.BCM_CCD_0008HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="BCM_CCD_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.asset.event.BCM_CCD_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.asset.event.BcmCcd0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0009.do" screen="BCM_CCD_0009.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BCM_CCD_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BCM_CCD_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BcmCcd0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0010.do" screen="BCM_CCD_0010.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BCM_CCD_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BCM_CCD_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BcmCcd0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0011.do" screen="BCM_CCD_0011.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BCM_CCD_0011HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0011_POP.do" screen="BCM_CCD_0011_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BCM_CCD_0011HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="BCM_CCD_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BCM_CCD_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BcmCcd0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0012.do" screen="BCM_CCD_0012.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BCM_CCD_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BCM_CCD_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BcmCcd0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0013.do" screen="BCM_CCD_0013.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BCM_CCD_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BCM_CCD_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.commodity.event.BcmCcd0013Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0014.do" screen="BCM_CCD_0014.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BcmCcd0014Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0015.do" screen="BCM_CCD_0015.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BcmCcd0015Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0016.do" screen="BCM_CCD_0016.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BcmCcd0016Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0017.do" screen="BCM_CCD_0017.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BcmCcd0017Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0018.do" screen="BCM_CCD_0018.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BcmCcd0018Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0019.do" screen="BCM_CCD_0019.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0019HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0019_POP.do" screen="BCM_CCD_0019_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0019HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="BCM_CCD_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BcmCcd0019Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0020.do" screen="BCM_CCD_0020.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0020HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0020_POP.do" screen="BCM_CCD_0020_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0020HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BcmCcd0020Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0021.do" screen="BCM_CCD_0021.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0021HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="BCM_CCD_0021_POP.do" screen="BCM_CCD_0021_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BcmCcd0021Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0022.do" screen="BCM_CCD_0022.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BcmCcd0022Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0023.do" screen="BCM_CCD_0023.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BcmCcd0023Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0024.do" screen="BCM_CCD_0024.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0024GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BCM_CCD_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.location.event.BcmCcd0024Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0026.do" screen="BCM_CCD_0026.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0026GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BcmCcd0026Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0027.do" screen="BCM_CCD_0027.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0027HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0027_POP.do" screen="BCM_CCD_0027_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0027HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="BCM_CCD_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BcmCcd0027Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0028.do" screen="BCM_CCD_0028.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0028HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0028_POP.do" screen="BCM_CCD_0028_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0028HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="BCM_CCD_0028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BcmCcd0028Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0029.do" screen="BCM_CCD_0029.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0029HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0029_POP.do" screen="BCM_CCD_0029_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0029HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="BCM_CCD_0029GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BcmCcd0029Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0030.do" screen="BCM_CCD_0030.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0030HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0030_POP.do" screen="BCM_CCD_0030_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0030HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="BCM_CCD_0030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BcmCcd0030Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0031.do" screen="BCM_CCD_0031.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0031GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BCM_CCD_0031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.service.event.BcmCcd0031Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0032.do" screen="BCM_CCD_0032.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.organization.event.BCM_CCD_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.organization.event.BCM_CCD_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.organization.event.BcmCcd0032Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0033.do" screen="BCM_CCD_0033.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.salesrepresentative.event.BCM_CCD_0033HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0033_POP.do" screen="BCM_CCD_0033_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.salesrepresentative.event.BCM_CCD_0033HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="BCM_CCD_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.salesrepresentative.event.BCM_CCD_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.salesrepresentative.event.BcmCcd0033Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0034.do" screen="BCM_CCD_0034.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0034HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0034_POP.do" screen="BCM_CCD_0034_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0034HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="BCM_CCD_0034GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0034Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0035.do" screen="BCM_CCD_0035.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0035HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0035_POP.do" screen="BCM_CCD_0035_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0035HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="BCM_CCD_0035GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0035Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0036.do" screen="BCM_CCD_0036.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0036Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0037.do" screen="BCM_CCD_0037.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0037Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0038.do" screen="BCM_CCD_0038.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0038HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0038_POP.do" screen="BCM_CCD_0038_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0038HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="BCM_CCD_0038GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0038Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0039.do" screen="BCM_CCD_0039.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0039HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0039GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0039HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0039Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <url-mapping url="BCM_CCD_0040.do" screen="BCM_CCD_0040.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0040HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0040_POP.do" screen="BCM_CCD_0040_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0040HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="BCM_CCD_0040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0040Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!--  : 2011-02-15 end -->
+	
+	<!-- SEO MI JIN : 2011-02-19 start -->
+    <url-mapping url="BCM_CCD_0041.do" screen="BCM_CCD_0041.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.organization.event.BCM_CCD_0041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0041GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.organization.event.BCM_CCD_0041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.organization.event.BcmCcd0041Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!-- SEO MI JIN : 2011-02-19 end -->
+	
+	<!-- SEO MI JIN : 2011-02-19 start -->
+    <url-mapping url="BCM_CCD_0042.do" screen="BCM_CCD_0042.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.organization.event.BCM_CCD_0042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0042GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.organization.event.BCM_CCD_0042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.organization.event.BcmCcd0042Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!-- SEO MI JIN : 2011-02-19 end -->
+
+	<!-- Min Jung Ho: 2012-02-15 start -->
+    <url-mapping url="BCM_CCD_1038.do" screen="BCM_CCD_1038.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_1038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_1038GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_1038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd1038Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!-- Min Jung Ho: 2012-02-15 end -->
+
+	<!-- Jong-Ho Kim : 2012-02-21 start -->
+    <url-mapping url="BCM_CCD_1040.do" screen="BCM_CCD_1040.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_1040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_1040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_1040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd1040Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!-- Jong-Ho Kim : 2012-02-21 end -->
+	
+	<!-- Sangbo La : 2012-02-21 start -->
+	<url-mapping url="BCM_CCD_0043.do" screen="BCM_CCD_0043.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0043HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0043GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0043HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="BCM_CCD_0043DL.do" screen="com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0043ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0043HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0043Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="BCM_CCD_0044.do" screen="BCM_CCD_0044.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0044HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0044GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0044HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="BCM_CCD_0044DL.do" screen="com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0044ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0044HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0044Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+    <!-- Sangbo La : 2012-02-21 end -->
+	
+		<!-- SEO SEOK JIN : 2012-02-21 start -->
+    <url-mapping url="BCM_CCD_0047.do" screen="BCM_CCD_0047.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0047HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0047GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0047HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="BCM_CCD_0047DL.do" screen="com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0047ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0047HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0047Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!-- SEO SEOK JIN : 2012-02-21 end -->
+	
+	<!-- Sung-rak Kim : 2012-04-03 start -->
+    <url-mapping url="BCM_CCD_0048.do" screen="BCM_CCD_0048.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0048GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0048Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>    
+	<!-- Sung-rak Kim : 2012-04-03 end -->
+	
+	<!-- KIM HYUN HWA : 2012-02-16 start -->
+    <url-mapping url="BCM_CCD_1035.do" screen="BCM_CCD_1035.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_1035HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="BCM_CCD_1035GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_1035HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd1035Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!-- KIM HYUN HWA : 2012-02-16 end -->
+
+	<!-- KIM MIN SOO : 2012-02-22 start -->
+    <url-mapping url="BCM_CCD_0046.do" screen="BCM_CCD_0046.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0046GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0046HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="BCM_CCD_0046DL.do" screen="com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0046ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0046Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!-- KIM MIN SOO : 2012-02-22 end -->
+
+	<!-- KIM JONG OCK : 2012-02-22 start -->
+    <url-mapping url="BCM_CCD_0045.do" screen="BCM_CCD_0045.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0045GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0045HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="BCM_CCD_0045DL.do" screen="com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0045ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0045Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!-- KIM JONG OCK : 2012-02-22 end -->
+	
+	<!-- Chae Chang Ho : 2012-04-05 start -->
+	<url-mapping url="BCM_CCD_0051.do" screen="BCM_CCD_0051.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0051Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+    <!-- Chae Chang Ho : 2012-04-05 end -->
+    
+    <!-- HWANG HYO KEUN : 2012-04-06 start -->
+    <url-mapping url="BCM_CCD_2001.do" screen="BCM_CCD_2001.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.mstmgmt.event.BCM_CCD_2001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_2001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.mstmgmt.event.BCM_CCD_2001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.mstmgmt.event.BcmCcd2001Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!-- HWANG HYO KEUN : 2012-04-06 end -->
+	
+	<!-- KIM HYUN HWA : 2012-04-03 start -->
+    <url-mapping url="BCM_CCD_0049.do" screen="BCM_CCD_0049.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0049GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0049HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="BCM_CCD_0049DL.do" screen="com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0049ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0049Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!-- KIM HYUN HWA : 2012-04-03 end -->
+	
+	<!-- KIM HYUN HWA : 2012-04-03 start -->
+    <url-mapping url="BCM_CCD_0050.do" screen="BCM_CCD_0050.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0050GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BCM_CCD_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.report.event.BcmCcd0050Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+	<!-- KIM HYUN HWA : 2012-04-03 end -->
+	
+	<!-- HWANG HYO KEUN : 2012-04-10 start -->
+    <url-mapping url="BCM_CCD_2002.do" screen="BCM_CCD_2002.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.mstmgmt.event.BCM_CCD_2002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_2002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.mstmgmt.event.BCM_CCD_2002HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.mstmgmt.event.BcmCcd2002Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+    
+    <!-- DS.HAM. : 2014-12-02 start -->
+    <url-mapping url="BCM_CCD_2003.do" screen="BCM_CCD_2003.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.mstmgmt.event.BCM_CCD_2003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_2003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.mstmgmt.event.BCM_CCD_2003HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.mstmgmt.event.BcmCcd2003Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+    
+	<!-- HWANG HYO KEUN : 2012-04-10 end -->		
+    <url-mapping url="BCM_CCD_0052.do" screen="BCM_CCD_0052.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0052HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0052_POP.do" screen="BCM_CCD_0052_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0052GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0052Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+    
+    	<!-- CHO CHANG WOO : 2017-12-18 end -->		
+    <url-mapping url="BCM_CCD_0053.do" screen="BCM_CCD_0053.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0053HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0053_POP.do" screen="BCM_CCD_0053_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0053GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0053Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+    
+    <!-- CHO CHANG WOO : 2017-12-18 end -->		
+    <url-mapping url="BCM_CCD_0054.do" screen="BCM_CCD_0054.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0054HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="BCM_CCD_0054_POP.do" screen="BCM_CCD_0054_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0054GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0054Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+    
+     <!-- CHO CHANG WOO : 2017-12-18 end -->		
+    <url-mapping url="BCM_CCD_0055.do" screen="BCM_CCD_0055.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0055HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0055GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0055HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0055Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+    
+     <url-mapping url="BCM_CCD_0056.do" screen="BCM_CCD_0056.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0056HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0056GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0056HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0056Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.CommonCodeSC</service-action-class>
+    </event-mapping>
+
+	<!--  : 2018-12-19 start -->
+    <url-mapping url="BCM_CCD_0060.do" screen="BCM_CCD_0060.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0060HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0060GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0060HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0060Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.PartnerCreditCustSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="BCM_CCD_0061.do" screen="BCM_CCD_0061.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0061HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="BCM_CCD_0061_POP.do" screen="BCM_CCD_0061_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0061HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0061GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0061HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0061Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.PartnerCreditCustSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="BCM_CCD_0063.do" screen="BCM_CCD_0063.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0063HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="BCM_CCD_0063_POP.do" screen="BCM_CCD_0063_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0063HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0063GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0063HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0063Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.PartnerCreditCustSC</service-action-class>
+    </event-mapping>
+	<!--  : 2018-12-19 end -->
+	
+    <url-mapping url="BCM_CCD_0062.do" screen="BCM_CCD_0062.screen" > 
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0062HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0062_POP.do" screen="BCM_CCD_0062_POP.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0062HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_CCD_0062GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BCM_CCD_0062HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.ccd.commoncode.partner.event.BcmCcd0062Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.ccd.commoncode.PartnerCreditCustSC</service-action-class>
+    </event-mapping>
+    	
+</mappings>

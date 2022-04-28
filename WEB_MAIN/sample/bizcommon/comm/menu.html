@@ -1,0 +1,109 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<title>Biz Common</title>
+</head>
+<script>
+	var orgBackColor;
+	var orgColor;
+	var timerID;
+	var menuCnt = 3;
+	
+	function load( selectTab, menuId )
+	{
+		document.all.tab1.style.backgroundColor=orgBackColor
+		document.all.tab1.style.color=orgColor
+		document.all.tab2.style.backgroundColor=orgBackColor
+		document.all.tab2.style.color=orgColor
+		document.all.tab3.style.backgroundColor=orgBackColor
+		document.all.tab3.style.color=orgColor
+		
+		selectTab.style.backgroundColor='blue';		
+		
+		if(menuId) {
+			for(var i=1; i<=menuCnt; i++) {
+				if(menuId == "menu" + i) {
+					document.all["menu" + i].style.display = "inline";
+				} else {
+					document.all["menu" + i].style.display = "none";
+				}
+			}
+		}
+	}
+
+</script>
+
+<body style="margin-left:10">
+<br>
+<font style="color:#4A8ECD; font-size:14pt; line-height:10pt; font-family: '돋움', 'Arial', 'Helvetica'; font-weight:bold; text-valign: middle; font-variant: normal;">Biz Common Sample</font><br><br>
+<table border="1" cellspacing="0" cellpadding="0" width="205">
+	<tr> 
+		<td bgcolor="#D8DFFE" width="100%"> 
+			<table border="0" cellspacing="1" cellpadding="0" width="100%">
+				<tr> 
+					<TH ID=tab1 WIDTH=100% STYLE='CURSOR:HAND' onClick="javascript:load(this, 'menu1');">
+						<a href="../1st/PopupSample.jsp" target="right">1st 개발항목</a>
+					</TH>					
+				</tr>
+				<tr id="menu1" style="display:none; height:0">
+					<td class="title" class="menu" style="display:none">
+					</td>
+				</tr>
+				<tr>
+					<TH ID=tab2 WIDTH=100% STYLE='CURSOR:HAND' onClick="javascript:load(this, 'menu2');">
+						2nd 개발항목
+					</TH>
+				</tr>
+				<tr id="menu2" style="display:inline">
+					<td class="menu" style="padding-left:10; line-height:15px">
+					<!-- 	<a style="" href="../2nd/02.MonthlyExchangeRate/sample_monthlyExRate.jsp" target="right" class="blue">- Monthly Exchange Rate</a> <br> -->
+						<a href="../2nd/03.VVDExchangeRate/sample_vvdExRate.jsp" target="right" class="blue">- VVD Exchange Rate</a> <br>
+					<!-- 	<a href="../2nd/04.ContainerType&Size/sample_cntrTpSz.jsp" target="right" class="blue">- Container Type/Size</a> <br> -->
+						<a href="../2nd/05.Continent/sample_conti.jsp" target="right" class="blue">- Continent</a> <br>
+						<a href="../2nd/06.SubContinent/sample_sconti.jsp" target="right" class="blue">- Sub Continent</a> <br>
+						<a href="../2nd/07.Region/sample_region.jsp" target="right" class="blue">- Region</a> <br>
+						<a href="../2nd/08.RepCommodity/sample_repCommodity.jsp" target="right" class="blue">- Rep Commodity</a> <br>
+						<a href="../2nd/09.ServiceScope/sample_svcScope.jsp" target="right" class="blue">- Service Scope</a> <br>
+						<a href="../2nd/10.Country/sample_country.jsp" target="right" class="blue">- Country</a> <br>
+						<a href="../2nd/11.Carrier/sample_carrier.jsp" target="right" class="blue">- Carrier</a> <br>
+						<a href="../2nd/12.EQORGChart/sample_eqOrgChart.jsp" target="right" class="blue">- EQ Org Chart</a> <br>
+						<a href="../2nd/13.VVDChart/sample_vvdChart.jsp" target="right" class="blue">- Trade/Lane/VVD Chart</a> <br>
+					<!-- 	<a href="/opuscntr/COM_ENS_0S1.do" target="right" class="blue">- Local Calendar</a> <br> -->
+					</td>
+				</tr>
+				<tr>
+					<TH ID=tab3 WIDTH=100% STYLE='CURSOR:HAND' onClick="javascript:load(this, 'menu3');">
+						3rd 개발항목
+					</TH>
+				</tr>
+				<tr id="menu3" style="display:inline">
+					<td class="menu" style="padding-left:10; line-height:15px">
+						<a style="" href="../3rd/01.PackageTable/sample01.jsp" target="right" class="blue">- Package Table</a> <br>
+						<a href="../3rd/02.AccountCode/sample01.jsp" target="right" class="blue">- Account Code</a> <br>
+						<a href="../3rd/03.RevenueVVD/sample01.jsp" target="right" class="blue">- Revenue VVD</a> <br>
+						<a href="../3rd/04.Currency/sample01.jsp" target="right" class="blue">- Currency</a> <br>
+						<a href="../3rd/05.PerType/sample01.jsp" target="right" class="blue">- Per Type</a> <br>
+						<a href="../3rd/06.OrganChart/sample_organChart.jsp" target="right" class="blue">- Organization Chart</a> <br>
+						<a href="../3rd/07.PortCodeHelp/sample_portcodehelp.jsp" target="right" class="blue">- Port Code Help(Pop-Up)</a> <br>
+						<a href="../3rd/08.VVDCodeHelp/sample_vvdcodehelp.jsp" target="right" class="blue">- VVD Code Help(Pop-Up)</a> <br>
+						<a href="../3rd/09.VSLCodeHelp/sample_vslcodehelp.jsp" target="right" class="blue">- VSL Code Help(Pop-Up)</a> <br>
+						<a href="../3rd/10.ServiceProvider/sample_serviceprovider.jsp" target="right" class="blue">- Service Provider Inquiry</a> <br>
+						<a href="../3rd/11.IndiaTax/sample_indiatax.jsp" target="right" class="blue">- India TAX(Pop-Up)</a> <br>
+					</td>
+				</tr>
+			</table>
+		</TD>
+	<tr>
+</table>
+<script>
+	orgBackColor = document.all.tab2.style.backgroundColor;
+	orgColor = document.all.tab2.style.color;
+	orgBackColor = document.all.tab3.style.backgroundColor;
+	orgColor = document.all.tab3.style.color;
+
+	document.all.tab2.style.backgroundColor='blue';
+	document.all.tab3.style.backgroundColor='blue';
+</script>
+</body>
+</html>

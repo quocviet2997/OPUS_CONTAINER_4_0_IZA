@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="TradeDBDAOSearchTradeListRSQL">
+			<desc><![CDATA[MDM Trade 조회]]></desc>
+			<sql><![CDATA[
+SELECT TRD_CD,
+	TRD_NM,
+	FM_CONTI_CD,
+	TO_CONTI_CD,
+	(CASE 
+		WHEN 'Y' = delt_flg THEN 'Delete' 
+		ELSE 'Active' 
+	END) AS STATUS
+FROM MDM_TRADE
+WHERE 1=1
+#if(${code} != '')     
+AND TRD_CD LIKE '%' ||  @[code] || '%'
+#end 
+#if(${desc} != '')     
+AND UPPER(TRD_NM) LIKE '%' ||  UPPER(@[desc]) || '%'
+#end 
+#if (${mdm_yn} != '')
+#if (${delt_flg} == 'Y') 
+AND DELT_FLG = @[delt_flg]
+#elseif (${delt_flg} == 'ALL') 
+#else 
+AND DELT_FLG <> 'Y'
+#end
+#else	
+AND DELT_FLG <> 'Y'
+#end
+ORDER BY TRD_CD			]]></sql>
+			<params>
+				<param name="code" type="12" value="" out="N"/>
+				<param name="desc" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

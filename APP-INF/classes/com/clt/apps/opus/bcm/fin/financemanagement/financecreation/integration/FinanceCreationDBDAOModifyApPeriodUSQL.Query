@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOModifyApPeriodUSQL">
+			<desc><![CDATA[2011.02.18 정윤태 AP PERIOD 정보를 변경한다]]></desc>
+			<sql><![CDATA[
+UPDATE AP_PERIOD
+   SET CLZ_STS_CD = @[clz_sts_cd],
+       SYS_DESC = @[sys_desc],
+       RHQ_CD = @[rhq_cd],
+       UPD_USR_ID = @[upd_usr_id],
+       LST_UPD_DT = SYSDATE
+ WHERE SYS_DIV_CD = @[sys_div_cd]
+   AND EFF_YRMON = @[eff_yrmon]
+   AND OFC_CD = @[ofc_cd]
+   AND AR_AP_DIV_CD = @[ar_ap_div_cd]			]]></sql>
+			<params>
+				<param name="clz_sts_cd" type="12" value="" out="N"/>
+				<param name="sys_desc" type="12" value="" out="N"/>
+				<param name="rhq_cd" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="sys_div_cd" type="12" value="" out="N"/>
+				<param name="eff_yrmon" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="ar_ap_div_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="LaneDBDAOSearchLaneListRSQL">
+			<desc><![CDATA[Select Lane list]]></desc>
+			<sql><![CDATA[
+#if(${mode} == 'rev')
+SELECT Z.COL1,
+	Z.COL2,
+	Z.COL3,
+	Z.COL4,
+	Z.COL5,
+	DECODE(Z.DELT_FLG,'Y','Delete','Active') AS DELT_FLG
+FROM (
+	SELECT ROW_NUMBER() OVER (ORDER BY A.RLANE_CD ASC) no, 
+		A.RLN_TRADE_CD COL1,
+		A.RLN_SUB_TRADE_CD COL2,
+		A.RLANE_CD COL3,
+		A.RLANE_NM COL4,
+		A.VSL_TP_CD COL5,
+		A.DELT_FLG
+	FROM (
+		SELECT DISTINCT --ROW_NUMBER() OVER (ORDER BY A.RLANE_CD ASC) no,
+			A.REP_TRD_CD RLN_TRADE_CD,
+			C.SUB_TRD_CD RLN_SUB_TRADE_CD,
+			A.RLANE_CD,
+			A.RLANE_NM,
+			B.VSL_TP_CD,
+			B.DELT_FLG
+		FROM MDM_REV_LANE A, MDM_VSL_SVC_LANE B, MDM_DTL_REV_LANE C
+		WHERE 1 = 1
+		AND A.VSL_SLAN_CD = B.VSL_SLAN_CD
+		AND A.RLANE_CD = C.RLANE_CD(+)
+		AND A.REP_TRD_CD = C.TRD_CD(+)
+	#if(${lane_cd} != '')
+		 	AND A.RLANE_CD LIKE @[lane_cd] || '%'
+	#end
+	#if(${lane_nm} != '')
+			AND upper(A.RLANE_NM) LIKE '%' || upper(@[lane_nm]) || '%'
+	#end
+	#if(${svc_tp} != '')
+		 	AND B.VSL_SVC_TP_CD LIKE @[svc_tp]|| '%'
+	#end
+	#if(${trade_cd} != '')
+		 	AND A.REP_TRD_CD LIKE @[trade_cd]|| '%'
+	#end
+	#if(${sub_trade_cd} != '')
+		 	AND C.SUB_TRD_CD LIKE @[sub_trade_cd]|| '%'
+	#end
+			 AND NVL(A.DELT_FLG, 'N') <> 'Y' 
+	#if (${mdm_yn} != '')
+		#if (${delt_flg} == 'Y') 
+			AND NVL(B.DELT_FLG, 'N') = @[delt_flg]
+		#elseif (${delt_flg} == 'ALL') 
+		#else 
+			AND NVL(B.DELT_FLG, 'N') <> 'Y'
+		#end
+	#else	
+		AND NVL(B.DELT_FLG, 'N') <> 'Y'
+	#end
+         ) A
+		ORDER BY A.RLANE_CD
+		)Z                    
+	WHERE Z.NO BETWEEN @[startpart] AND @[endpart]
+#else
+	 SELECT VSL_SLAN_CD COL1,      
+	        VSL_SLAN_NM COL2,      
+	        VSL_SVC_TP_CD COL3,      
+	        COMMCODE_PKG.GET_COMDTL_NAME_FNC('CD00652', CO_CD) COL4,      
+			'' COL5,
+			DECODE(DELT_FLG,'Y','Delete','Active') AS DELT_FLG
+	 FROM (SELECT ROW_NUMBER() OVER (ORDER BY VSL_SLAN_CD ASC) no,  	
+		                VSL_SLAN_CD,              						
+		                VSL_SLAN_NM,          							
+		                VSL_SVC_TP_CD,               						
+		                CO_CD,
+						DELT_FLG               						
+		   FROM MDM_VSL_SVC_LANE        								
+		   WHERE 1 = 1 
+	#if(${lane_cd} != '')
+			 AND VSL_SLAN_CD LIKE @[lane_cd] || '%'
+	#end
+	#if(${lane_nm} != '')
+			 AND upper(VSL_SLAN_NM) LIKE '%' || upper(@[lane_nm]) || '%'
+	#end
+	#if(${svc_tp} != '')
+			 AND VSL_SVC_TP_CD LIKE @[svc_tp]|| '%'
+	#end
+	#if(${trade_cd} != '')
+		 	AND A.REP_TRD_CD LIKE @[trade_cd]|| '%'
+	#end
+	#if(${sub_trade_cd} != '')
+		 	AND C.SUB_TRD_CD LIKE @[sub_trade_cd]|| '%'
+	#end
+	#if (${mdm_yn} != '')
+		#if (${delt_flg} == 'Y') 
+			AND NVL(DELT_FLG, 'N') = @[delt_flg]
+		#elseif (${delt_flg} == 'ALL') 
+		#else 
+			AND NVL(DELT_FLG, 'N') <> 'Y'
+		#end
+	#else	
+		AND NVL(DELT_FLG, 'N') <> 'Y'
+	#end
+         ) A
+#end			]]></sql>
+			<params>
+				<param name="lane_cd" type="12" value="" out="N"/>
+				<param name="lane_nm" type="12" value="" out="N"/>
+				<param name="svc_tp" type="12" value="" out="N"/>
+				<param name="trade_cd" type="12" value="" out="N"/>
+				<param name="sub_trade_cd" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

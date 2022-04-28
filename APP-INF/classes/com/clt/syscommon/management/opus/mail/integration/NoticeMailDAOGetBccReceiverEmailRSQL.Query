@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="NoticeMailDAOGetBccReceiverEmailRSQL">
+			<desc><![CDATA[This SQL gets a list of mails of all Bcc Receivers]]></desc>
+			<sql><![CDATA[
+select usr_eml from com_user where use_flg = 'Y'			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

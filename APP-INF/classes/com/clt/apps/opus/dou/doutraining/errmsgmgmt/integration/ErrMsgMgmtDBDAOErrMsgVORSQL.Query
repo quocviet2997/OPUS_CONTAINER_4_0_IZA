@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ErrMsgMgmtDBDAOErrMsgVORSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+SELECT 
+	EDW_UPD_DT
+,	UPD_DT
+,	UPD_USR_ID
+,	CRE_DT
+,	CRE_USR_ID
+,	ERR_DESC
+,	ERR_MSG
+,	ERR_LVL_CD
+,	ERR_TP_CD
+,	LANG_TP_CD
+,	ERR_MSG_CD
+FROM COM_ERR_MSG
+			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

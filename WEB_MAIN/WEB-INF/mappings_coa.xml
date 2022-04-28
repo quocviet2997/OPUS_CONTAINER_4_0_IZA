@@ -1,0 +1,1459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+ 
+<!-- Common ====================================================================================== -->
+     <!--  initPeriod --> 
+    <url-mapping url="initPeriod.do" screen="initPeriod.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!--  initPeriod --> 
+    <url-mapping url="initPeriodGS.do"  screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!--  CommonUtil --> 
+    <url-mapping url="CommonUtilGS.do"  screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.common.event.CommonEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.common.COACommonSC</service-action-class>
+    </event-mapping>
+
+	<url-mapping url="ESM_COA_3001.do" screen="ESM_COA_3001.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!--  Excel Download -->
+    <url-mapping url="ESM_COA_3002.do" screen="ESM_COA_3002.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_COA_3003.do" screen="ESM_COA_3003.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    
+     <!--  BKG 소급 -->
+    <url-mapping url="ESM_COA_9000.do" screen="ESM_COA_9000.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.common.event.ESM_COA_9000HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_COA_9000GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.common.event.ESM_COA_9000HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.common.event.EsmCoa9000Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.common.COACommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  SJH.20141121.ADD -->
+    <url-mapping url="ESM_COA_4004.do" screen="ESM_COA_4004.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.common.event.ESM_COA_4004HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_COA_4004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.common.event.ESM_COA_4004HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.common.event.EsmCoa4004Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.common.COACommonSC</service-action-class>
+    </event-mapping>  
+<!-- ============================================================================================= -->
+
+<!-- EQBalance =================================================================================== -->
+
+	<!--  Set Business-rule Of EQ Repo.contribution -->
+	<url-mapping url="ESM_COA_0016.do" screen="ESM_COA_0016.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.ESM_COA_0016HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0016GS.do" screen="com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.EsmCoa0016GSViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.ESM_COA_0016HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0016GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.ESM_COA_0016HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0016GS3.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.ESM_COA_0016HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.EsmCoa0016Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.eqbalance.EQBalanceSC</service-action-class>
+	</event-mapping>	
+
+	<!--  EQBalance -->
+	<url-mapping url="ESM_COA_0018.do" screen="ESM_COA_0018.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.ESM_COA_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.ESM_COA_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.EsmCoa0018Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.eqbalance.EQBalanceSC</service-action-class>
+	</event-mapping>
+		
+	<!--  POR ECc Setting popup For EQ Repo.Contribution -->
+	<url-mapping url="ESM_COA_0136.do" screen="ESM_COA_0136.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.ESM_COA_0136HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0136GS.do" screen="com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.EsmCoa0136ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.ESM_COA_0136HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.EsmCoa0136Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.eqbalance.EQBalanceSC</service-action-class>
+	</event-mapping>
+	
+	<!--  DEL ECC Setting popup For EQ Repo.Contribution -->
+	<url-mapping url="ESM_COA_0161.do" screen="ESM_COA_0161.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.ESM_COA_0161HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0161GS.do" screen="com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.EsmCoa0161ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.ESM_COA_0161HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.eqbalance.eqbalance.event.EsmCoa0161Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.eqbalance.EQBalanceSC</service-action-class>
+	</event-mapping>
+	    
+<!-- ============================================================================================= -->
+
+<!-- MultiDimension ============================================================================== -->
+    
+	<!--  Inquiry by Source Data -->
+	<url-mapping url="ESM_COA_0035.do" screen="ESM_COA_0035.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0035HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0035GS.do" screen="com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0035ViewAdapterGS" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0035HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0035GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0035HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0035DL.do" screen="com.clt.framework.core.controller.DownloadViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0035HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0035Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>
+	
+    <!--  PopUp : Set Customized RPT Form [060 Open][062 open]-->
+    <url-mapping url="ESM_COA_0059.do" screen="ESM_COA_0059.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0059HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_COA_0059GS.do" screen="com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0059ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0059HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0059GS2.do" screen="com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0059ViewAdapter2">
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0059HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0059Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>
+	
+    <!-- Inquiry by Customized Condition -->
+	<url-mapping url="ESM_COA_0060.do" screen="ESM_COA_0060.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0060HTMLAction</web-action-class>
+	</url-mapping>
+    <url-mapping url="ESM_COA_0060GS.do" screen="com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0060ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0060HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0060GS2.do" screen="com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0060ViewAdapter2" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0060HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0060GS3.do" screen="com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0060ViewAdapter3" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0060HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0060Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>
+	
+	
+     <!--  Inquiry by BKG [060 Open][079 open] -->
+	<url-mapping url="ESM_COA_0061.do" screen="ESM_COA_0061.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0061HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0061GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0061HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0061GS2.do" screen="com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0061ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0061HTMLAction</web-action-class>
+	</url-mapping>
+	
+    <!-- Pop Up -->
+	<url-mapping url="ESM_COA_0061POP.do" screen="ESM_COA_0061POP.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0061HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0061Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESM_COA_0170.do" screen="ESM_COA_0170.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0170HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0170GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0170HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0170Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>
+    
+	<!--  Shipper Pop-up MultiDimensionRPT [060 Open][062 open]-->
+	<url-mapping url="ESM_COA_0144.do" screen="ESM_COA_0144.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0144HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0144GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0144HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0144Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>
+	
+	
+	<!--  Office Report-vs QTA -->
+	<url-mapping url="ESM_COA_0070.do" screen="ESM_COA_0070.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0070HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0070GS.do" screen="com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0070ViewAdapter1" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0070HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0070GS2.do" screen="com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0070ViewAdapter2" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0070HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0070GS3.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.ESM_COA_0070HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.salesrpt.event.EsmCoa0070Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>
+	
+	<!--  PopUp : Report View Management [002 open] -->
+	<url-mapping url="ESM_COA_0130.do" screen="ESM_COA_0130.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.ESM_COA_0130HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0130GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.ESM_COA_0130HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.EsmCoa0130Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>
+  
+  	<!--  Logistics Exp. by Lane(ESM_COA_0080) -->
+	<url-mapping url="ESM_COA_0080.do" screen="ESM_COA_0080.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.ESM_COA_0080HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0080GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.ESM_COA_0080HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0080GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.ESM_COA_0080HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.EsmCoa0080Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>
+	
+	<!--  Logistics Exp. by Office(ESM_COA_0081) -->
+	<url-mapping url="ESM_COA_0081.do" screen="ESM_COA_0081.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.ESM_COA_0081HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0081GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.ESM_COA_0081HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0081GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.ESM_COA_0081HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.EsmCoa0081Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>
+	
+	<!--  MultiDimensionRPT -->
+	<url-mapping url="ESM_COA_0082.do" screen="ESM_COA_0082.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.ESM_COA_0082HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0082GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.ESM_COA_0082HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0082GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.ESM_COA_0082HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.EsmCoa0082Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>
+	
+
+	<!--  MultiDimensionRPT -->
+	<url-mapping url="ESM_COA_0158.do" screen="ESM_COA_0158.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.ESM_COA_0158HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0158GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.ESM_COA_0158HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.logisticsrpt.event.EsmCoa0158Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>
+
+
+		
+	<!--  Inquire Weekly Sales Report By Office 3 -->
+	<url-mapping url="ESM_COA_0072.do" screen="ESM_COA_0072.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.ESM_COA_0072HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0072GS.do" screen="com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.EsmCoa0072ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.ESM_COA_0072HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0072GS2.do" screen="com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.EsmCoa0072ViewAdapter2" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.ESM_COA_0072HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0072GS3.do" screen="com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.EsmCoa0072ViewAdapter3" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.ESM_COA_0072HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0072GS4.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.ESM_COA_0072HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.EsmCoa0072Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>
+
+
+	    
+<!-- ============================================================================================= -->
+
+<!-- STDUnitCost ================================================================================= -->
+
+	<!--  CostStructure -->
+	<!-- start-->
+	<url-mapping url="ESM_COA_0001.do" screen="ESM_COA_0001.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0001HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0001HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa0001Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>
+	<!--  end-->
+	
+	<!--   -->
+	<url-mapping url="ESM_COA_0124.do" screen="ESM_COA_0124.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0124HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0124GS.do"  screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0124HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa0124Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>	
+	<!--   -->
+	
+	<!--   start-->	
+	<url-mapping url="ESM_COA_0002.do" screen="ESM_COA_0002.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0002HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0002GS.do" screen="com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa0002ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0002HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0002_1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0002HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESM_COA_0002GS2.do" screen="com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa0002ViewAdapter2" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0002HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESM_COA_0002GS3.do" screen="com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa0002ViewAdapter3" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0002HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa0002Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>	
+	<!--   end-->
+
+	<!--  start-->
+	<url-mapping url="ESM_COA_0003.do" screen="ESM_COA_0003.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0003HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0003GS.do" screen="com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa0003ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0003HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0003_1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0003HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESM_COA_0003H.do" screen="ESM_COA_0003H.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0003HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESM_COA_0003H2.do" screen="ESM_COA_0003H2.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0003HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa0003Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>
+	<!--   end-->
+
+	<!--   start -->
+	<url-mapping url="ESM_COA_0004.do" screen="ESM_COA_0004.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.ESM_COA_0004HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.ESM_COA_0004HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0004GS2.do" screen="com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.EsmCoa0004GS2ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.ESM_COA_0004HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.EsmCoa0004Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>
+	<!--  end -->
+
+	<!--  Node별 표준단가 조회/수정 start -->
+	<url-mapping url="ESM_COA_0083.do" screen="ESM_COA_0083.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.ESM_COA_0083HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0083GS.do" screen="ESM_COA_0083GS.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.ESM_COA_0083HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0083GS2.do" screen="ESM_COA_0083GS2.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.ESM_COA_0083HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.EsmCoa0083Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>
+	<!--   Node별 표준단가 조회/수정 end -->
+	
+	<!--  Link별 표준단가 조회 start -->
+	<url-mapping url="ESM_COA_0008.do" screen="ESM_COA_0008.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.ESM_COA_0008HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0008GS.do" screen="com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.EsmCoa0008GSViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.ESM_COA_0008HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESM_COA_0008_1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.ESM_COA_0008HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.EsmCoa0008Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>
+	<!--   Link별 표준단가 조회 end -->
+
+	<!--  Link별 표준단가 조회 팝업 start -->
+	<url-mapping url="ESM_COA_0141.do" screen="ESM_COA_0141.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.ESM_COA_0141HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0141GS.do" screen="com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.EsmCoa0141GSViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.ESM_COA_0141HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.fullcost.event.EsmCoa0141Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>
+	<!--   Link별 표준단가 조회 end -->
+
+
+	<!--  MTCost start -->
+	<url-mapping url="ESM_COA_0009.do" screen="ESM_COA_0009.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.mtcost.event.ESM_COA_0009HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.mtcost.event.ESM_COA_0009HTMLAction</web-action-class>
+	</url-mapping>
+				
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.mtcost.event.EsmCoa0009Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESM_COA_0010.do" screen="ESM_COA_0010.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.mtcost.event.ESM_COA_0010HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter"  >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.mtcost.event.ESM_COA_0010HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.mtcost.event.EsmCoa0010Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>
+	<!--  MTCost end -->
+
+	<!--  EQHolding start-->
+	<url-mapping url="ESM_COA_0013.do" screen="ESM_COA_0013.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.eqholding.event.ESM_COA_0013HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.eqholding.event.ESM_COA_0013HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.eqholding.event.EsmCoa0013Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>
+	<!--  EQHolding end -->
+
+	<!--  DemDet3rd start-->
+	<url-mapping url="ESM_COA_0015.do" screen="ESM_COA_0015.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.demdet3rd.event.ESM_COA_0015HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.demdet3rd.event.ESM_COA_0015HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.demdet3rd.event.EsmCoa0015Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>
+	<!--  DemDet3rd end-->
+
+	<!--  SENCost -->
+	<url-mapping url="ESM_COA_0077.do" screen="ESM_COA_0077.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.sencost.event.ESM_COA_0077HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0077GS.do" screen="ESM_COA_0077GS.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.sencost.event.ESM_COA_0077HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.sencost.event.EsmCoa0077Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>
+
+	<!-- 단가조정 Customizer start-->
+    <url-mapping url="ESM_COA_0137.do" screen="ESM_COA_0137.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0137HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_COA_0137GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0137HTMLAction</web-action-class>
+    </url-mapping>
+   
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa0137Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+    </event-mapping>
+    
+	<!-- 단가조정 Customizer 등록 end-->
+	
+	<!-- Feeder Term start-->
+	<url-mapping url="ESM_COA_0139.do" screen="ESM_COA_0139.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0139HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0139GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0139HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa0139Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>	
+	<!-- Feeder Term end-->	
+	
+	<!-- Feeder Term start-->
+	 <url-mapping url="ESM_COA_0140.do" screen="ESM_COA_0140.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0140HTMLAction</web-action-class>
+    </url-mapping>
+	
+	 <url-mapping url="ESM_COA_0140GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_0140HTMLAction</web-action-class>
+    </url-mapping>
+    
+	<event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa0140Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+    </event-mapping>
+	<!-- Feeder Term end-->
+	
+		
+	<!-- MRI Inquiry start -->
+	 <url-mapping url="ESM_COA_0152.do" screen="ESM_COA_0152.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.mriinquiry.event.ESM_COA_0152HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_COA_0152GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter"  >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.mriinquiry.event.ESM_COA_0152HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.stdunitcost.mriinquiry.event.EsmCoa0152Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+    </event-mapping>
+    <!-- MRI Inquiry end-->
+	
+	
+
+	<!-- ========================================================================@ CHILSEO PARK 부분 시작 -->
+	<!--  BatchTest -->
+	<url-mapping url="MnlAsgn.do" screen="MnlAsgn.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.costassign.event.ESM_COA_AssignHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="MnlAsgnGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter"  >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.costassign.event.ESM_COA_AssignHTMLAction</web-action-class>
+	</url-mapping>	
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.costassign.event.EsmCoaAssignEvent</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>
+	<!-- ======================================================================== CHILSEO PARK 부분 끝 #-->
+	
+	<!--  Agency Commission start-->
+	<url-mapping url="ESM_COA_0157.do" screen="ESM_COA_0157.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.agencycommission.event.ESM_COA_0157HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0157GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.agencycommission.event.ESM_COA_0157HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.agencycommission.event.EsmCoa0157Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>
+	<!--  Agency Commission end-->
+	
+<!-- ============================================================================================= -->
+<!-- WeeklyPFMC ================================================================================== -->
+
+	<!--  OPMaster : Create Lane Table -->
+	<url-mapping url="ESM_BSA_036.do" screen="ESM_COA_0036.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0036HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0036.do" screen="ESM_COA_0036.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0036HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0036GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.EsmCoa0036ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0036HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0036GS2.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.EsmCoa0036ViewAdapter2" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0036HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.EsmCoa0036Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+
+
+	<!--  OPMaster : Create Vessel Table -->
+	<url-mapping url="ESM_BSA_037.do" screen="ESM_COA_0037.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0037HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0037.do" screen="ESM_COA_0037.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0037HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0037GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.EsmCoa0037ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0037HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.EsmCoa0037Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+
+
+	<!--  OPMaster : Add/Del Sub Trade  -->
+	<url-mapping url="ESM_COA_0038.do" screen="ESM_COA_0038.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0038HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0038GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.EsmCoa0038ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0038HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.EsmCoa0038Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+
+
+	<!--  NetworkCost : Transit-time by Lane -->
+	<url-mapping url="ESM_COA_0039.do" screen="ESM_COA_0039.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0039HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0039GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0039ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0039HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0039Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+
+
+
+	<!--  Tariff by Port Class -->
+	<url-mapping url="ESM_COA_0040.do" screen="ESM_COA_0040.screen">
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0040HTMLAction</web-action-class>
+	</url-mapping>
+ 	<url-mapping url="ESM_COA_0040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0040HTMLAction</web-action-class>
+	</url-mapping>
+ 	<url-mapping url="ESM_COA_0040GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0040HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0040Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+
+	<!--  Daily-consumption & FO/DO By Lane -->
+	<url-mapping url="ESM_COA_0041.do" screen="ESM_COA_0041.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0041HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0041GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0041ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0041HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0041Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+
+
+
+	<!--  Average-hire By Own Vessel -->
+	<url-mapping url="ESM_COA_0043.do" screen="ESM_COA_0043.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0043HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0043GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0043ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0043HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0043Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+
+
+
+	<!--  WeeklyPFMC 1 -->
+	<url-mapping url="ESM_BSA_0029.do" screen="ESM_COA_0029.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.ESM_COA_0029HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0029.do" screen="ESM_COA_0029.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.ESM_COA_0029HTMLAction</web-action-class>
+	</url-mapping><!--
+
+	<url-mapping url="ESM_COA_0029GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.EsmCoa0029ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.ESM_COA_0029HTMLAction</web-action-class>
+	</url-mapping>
+
+	-->
+	<url-mapping url="ESM_COA_0029GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.ESM_COA_0029HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESM_COA_0113.do" screen="ESM_COA_0113.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.ESM_COA_0029HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.EsmCoa0029Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+	
+<!--  PopUp -->
+	<url-mapping url="ESM_COA_0142.do" screen="ESM_COA_0142.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.ESM_COA_0142HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0142GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.ESM_COA_0142HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.EsmCoa0142Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+	
+
+	<!--  VVD Status -->
+	<url-mapping url="ESM_COA_0112.do" screen="ESM_COA_0112.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.ESM_COA_0112HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0112GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.EsmCoa0112GSViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.ESM_COA_0112HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.EsmCoa0112Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+
+
+
+	<!--  NetworkCost -->
+	<url-mapping url="ESM_COA_0042.do" screen="ESM_COA_0042.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0042HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0042GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0042ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0042HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0042Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+
+	<!--  Inquire/Edit Fixed Cost By VVD -->
+  <url-mapping url="ESM_COA_0044.do" screen="ESM_COA_0044.screen" >
+      <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0044HTMLAction</web-action-class>
+  </url-mapping>
+  <url-mapping url="ESM_COA_0044GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0044ViewAdapter" >
+      <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0044HTMLAction</web-action-class>
+  </url-mapping>
+  <event-mapping>
+      <event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0044Event</event-class>
+      <service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+  </event-mapping>
+
+	<!--  Allocate Slot-cost By HJS VS Slot-release -->
+	<url-mapping url="ESM_COA_0045.do" screen="ESM_COA_0045.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0045HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0045GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.EsmCoa0045ViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0045HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+	    <event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.EsmCoa0045Event</event-class>
+	    <service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+
+	<!--  Re-allocate Slot-cost By Lane -->
+	<url-mapping url="ESM_COA_0047.do" screen="ESM_COA_0047.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0047HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0047GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.EsmCoa0047ViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0047HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+	    <event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.EsmCoa0047Event</event-class>
+	    <service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+	
+
+	<!-- Allocation Results -->
+	<url-mapping url="ESM_COA_0106.do" screen="ESM_COA_0106.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0106HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0106GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.EsmCoa0106ViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0106HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+	    <event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.EsmCoa0106Event</event-class>
+	    <service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESM_COA_0154.do" screen="ESM_COA_0154.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0154HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0154GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.EsmCoa0154ViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0154HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+	    <event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.EsmCoa0154Event</event-class>
+	    <service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+
+ 	<!--  Create Networkcost & Slot Charter In & Out (Network Cost 생성) -->
+	<url-mapping url="ESM_COA_0110.do" screen="ESM_COA_0110.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0110HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0110GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0110ViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0110HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0110GS2.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0110ViewAdapter2" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0110HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+	    <event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0110Event</event-class>
+	    <service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+
+	<!--  Network Cost Missing Status -->
+	<url-mapping url="ESM_COA_0114.do" screen="ESM_COA_0114.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0114HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0114GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0114ViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0114HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+	    <event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0114Event</event-class>
+	    <service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+
+	<!--  Vessel Information -->
+	<url-mapping url="ESM_COA_0123.do" screen="ESM_COA_0123.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0123HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0123GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0123HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+	    <event-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.EsmCoa0123Event</event-class>
+	    <service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+  
+ 	<!--  036 화면에서 링크되는 팝업화면, Lane History관리  -->
+	<url-mapping url="ESM_COA_0145.do" screen="ESM_COA_0145.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0145HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0145GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.EsmCoa0145ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0145HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.EsmCoa0145Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+	
+ 	<!--  037 화면에서 링크되는 팝업화면, Vessel History관리  -->
+	<url-mapping url="ESM_COA_0146.do" screen="ESM_COA_0146.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0146HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_0146GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.EsmCoa0146ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0146HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESM_COA_0146GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0146HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.EsmCoa0146Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+	
+    <url-mapping url="ESM_COA_ComBoUtilGS.do" screen="ESM_COA_ComBoUtil.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>     
+
+	<!-- Lee Il Min : 2010-08-20 start -->
+	<url-mapping url="ESM_COA_0036GS3.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0036HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0037GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0037HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0039GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0039HTMLAction</web-action-class>
+	</url-mapping>
+ 	<url-mapping url="ESM_COA_0040GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0040HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0041GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0041HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0042GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0042HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0043GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0043HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0044GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0044HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0045GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0045HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0047GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0047HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0106GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0106HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0110GS3.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0110HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0114GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0114HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0125GS3.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0125HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0145GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0145HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0146GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0146HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0159GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0159HTMLAction</web-action-class>
+	</url-mapping>	
+	<!-- Lee Il Min : 2010-08-27 end -->
+	
+	<!-- Kim Ki Jong : 2010-09-17 end -->
+	<url-mapping url="ESM_COA_0048.do" screen="ESM_COA_0048.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_COA_0048GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0048ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0048Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+    </event-mapping>    
+    
+    <url-mapping url="ESM_COA_0180.do" screen="ESM_COA_0180.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0180HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_COA_0180GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0180ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0180HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_COA_0180GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_0180HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa0180Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+    </event-mapping>    
+    
+    <url-mapping url="ESM_COA_0107.do" screen="ESM_COA_0107.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_COA_0107GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.EsmCoa0107ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0107HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_COA_0107GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.ESM_COA_0107HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkdistribution.event.EsmCoa0107Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+    </event-mapping>
+	 
+	<!-- CHOI SUGMIN : 2012-02-23 start -->
+    <url-mapping url="ESM_COA_0019.do" screen="ESM_COA_0019.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.genexpense.event.ESM_COA_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_COA_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.genexpense.event.ESM_COA_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.stdunitcost.genexpense.event.EsmCoa0019Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI SUGMIN : 2012-02-23 end -->
+	
+
+	<!-- MOON DONGSUN : 2012-04-04 start -->
+    <url-mapping url="ESM_COA_2001.do" screen="ESM_COA_2001.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_2001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_COA_2001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_2001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa2001Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+    </event-mapping>
+	<!-- MOON DONGSUN : 2012-04-04 end -->
+
+
+	<!-- MOON DONGSUN : 2012-04-04 start -->
+    <url-mapping url="ESM_COA_2002.do" screen="ESM_COA_2002.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_2002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_COA_2002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_2002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa2002Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+    </event-mapping>
+	<!-- MOON DONGSUN : 2012-04-04 end -->
+
+	
+	<!-- MOON DONGSUN : 2012-04-12 start -->
+    <url-mapping url="ESM_COA_2003.do" screen="ESM_COA_2003.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.ESM_COA_2003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_COA_2003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.ESM_COA_2003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.multidimensionrpt.event.EsmCoa2003Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+    </event-mapping>
+	<!-- MOON DONGSUN : 2012-04-12 end -->    
+
+	<!-- Chang Hun Kim : 2012-04-20 start -->
+    <url-mapping url="ESM_COA_2006.do" screen="ESM_COA_2006.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_2006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_COA_2006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_2006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa2006Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+    </event-mapping>
+	<!-- Chang Hun Kim : 2012-04-20 end -->
+
+	<!-- Chang Hun Kim : 2012-04-25 start -->
+    <url-mapping url="ESM_COA_2007.do" screen="ESM_COA_2007.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_2007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_COA_2007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.ESM_COA_2007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.stdunitcost.coststructure.event.EsmCoa2007Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+    </event-mapping>
+	<!-- Chang Hun Kim : 2012-04-25 end -->
+	
+	<!-- ChanMin Park  : 2013-07-17 start -->
+	<url-mapping url="ESM_COA_0183.do" screen="ESM_COA_0183.screen">
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.averagerpb.event.ESM_COA_0183HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0183GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.averagerpb.event.ESM_COA_0183HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.stdunitcost.averagerpb.event.EsmCoa0183Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+    </event-mapping>
+	<!-- ChanMin Park  : 2013-07-17 end -->
+	
+	<!-- ChanMin Park  : 2013-07-17 start -->
+	<url-mapping url="ESM_COA_0184.do" screen="ESM_COA_0184.screen">
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.averagerpb.event.ESM_COA_0184HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_0184GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.averagerpb.event.ESM_COA_0184HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.stdunitcost.averagerpb.event.EsmCoa0184Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+    </event-mapping>
+	<!-- ChanMin Park  : 2013-07-17 end -->
+	
+	<!-- Ju Song  : 2014-09-12 start -->
+	<url-mapping url="ESM_COA_4001.do" screen="ESM_COA_4001.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.sltint.event.ESM_COA_4001HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_4001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.sltint.event.ESM_COA_4001HTMLAction</web-action-class>
+	</url-mapping>		
+    <event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.sltint.event.EsmCoa4001Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>
+	<!-- Ju Song  : 2014-09-12 end -->
+	
+	<!-- Ju Song  : 2014-09-19 start -->
+	<url-mapping url="ESM_COA_4003.do" screen="ESM_COA_4003.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.mtcost.event.ESM_COA_4003HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_4003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.mtcost.event.ESM_COA_4003HTMLAction</web-action-class>
+	</url-mapping>
+				
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.mtcost.event.EsmCoa4003Event</event-class> 
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>	
+	<!-- Ju Song  : 2014-09-19 end -->	
+	
+	<!-- Ju Song  : 2014-10-28 start -->
+    <url-mapping url="ESM_COA_4002.do" screen="ESM_COA_4002.screen" >
+        <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_4002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_COA_4002GS.do" screen="com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa4002ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_4002HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_COA_4002GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_4002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa4002Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+    </event-mapping> 	
+    <!-- Ju Song  : 2014-10-28 end -->	
+    
+        <!-- Ju Song  : 2015-03-19 start -->
+	<url-mapping url="ESM_COA_4006.do" screen="ESM_COA_4006.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.precmsimulation.event.ESM_COA_4006HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_4006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.precmsimulation.event.ESM_COA_4006HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESM_COA_4006GS2.do" screen="com.clt.apps.opus.esm.coa.multidimensionrpt.precmsimulation.event.EsmCoa4006ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.precmsimulation.event.ESM_COA_4006HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESM_COA_4006POP.do" screen="ESM_COA_4006POP.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.precmsimulation.event.ESM_COA_4006HTMLAction</web-action-class>
+	</url-mapping>		
+				
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.precmsimulation.event.EsmCoa4006Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_COA_4007.do" screen="ESM_COA_4007.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.precmsimulation.event.ESM_COA_4007HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_4007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.precmsimulation.event.ESM_COA_4007HTMLAction</web-action-class>
+	</url-mapping>  
+		
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.multidimensionrpt.precmsimulation.event.EsmCoa4007Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.multidimensionrpt.MultiDimensionRPTSC</service-action-class>
+	</event-mapping>	
+	<!-- Ju Song  : 2015-03-19 end -->	
+	
+	<!-- Ju Song  : 2015-05-19 start -->
+	<url-mapping url="ESM_COA_4009.do" screen="ESM_COA_4009.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_4009HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_4009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_4009HTMLAction</web-action-class>
+	</url-mapping>		
+    <event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.EsmCoa4009Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+	<!-- Ju Song  : 2015-05-19 end -->
+	
+	<!-- Ju Song  : 2015-06-19 start -->
+	<url-mapping url="ESM_COA_4010.do" screen="ESM_COA_4010.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_4010HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_4010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_4010HTMLAction</web-action-class>
+	</url-mapping>		
+    <event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.EsmCoa4010Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+	<!-- Ju Song  : 2015-06-19 end -->	
+	
+	<!-- ChanMin Park  : 2015-07-20 start -->
+	<url-mapping url="ESM_COA_4011.do" screen="ESM_COA_4011.screen">
+		<web-action-class>com.clt.apps.opus.esm.coa.common.event.ESM_COA_4011HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_4011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.common.event.ESM_COA_4011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.common.event.EsmCoa4011Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.common.COACommonSC</service-action-class>
+    </event-mapping>
+	<!-- ChanMin Park  : 2015-07-20 end -->
+	
+	<!-- Ju Song  : 2015-09-15 start 2017.01.12 Defect-->
+	<!-- 
+	<url-mapping url="ESM_COA_4012.do" screen="ESM_COA_4012.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_4012HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_4012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.ESM_COA_4012HTMLAction</web-action-class>
+	</url-mapping>
+				
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.weeklypfmc.networkcost.event.EsmCoa4012Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.WeeklyPFMCSC</service-action-class>
+	</event-mapping>
+	 -->	
+	<!-- Ju Song  : 2015-09-15 end -->		
+	
+	<!-- Ju Song  : 2015-10-27 start 2017.01.12 Defect-->
+	<!-- 	
+	<url-mapping url="ESM_COA_4013.do" screen="ESM_COA_4013.screen">
+		<web-action-class>com.clt.apps.opus.esm.coa.common.event.ESM_COA_4013HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_4013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.common.event.ESM_COA_4013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.common.event.EsmCoa4013Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.common.COACommonSC</service-action-class>
+    </event-mapping>
+     -->
+	<!-- Ju Song  : 2015-10-27 end -->	
+	
+	
+	<!-- NYK ADD  : 2017-01-11 start -->	
+	<url-mapping url="ESM_COA_4014.do" screen="ESM_COA_4014.screen">
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.avgagncommission.event.ESM_COA_4014HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_4014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.avgagncommission.event.ESM_COA_4014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.stdunitcost.avgagncommission.event.EsmCoa4014Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+    </event-mapping>
+	<!-- NYK ADD  : 2017-01-11 end -->	
+	
+	<!-- IZA ADD  : 2017-04-10 start -->	
+	<url-mapping url="ESM_COA_4015.do" screen="ESM_COA_4015.screen">
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.reeferconsumption.event.ESM_COA_4015HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_4015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.reeferconsumption.event.ESM_COA_4015HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_COA_4015GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.reeferconsumption.event.ESM_COA_4015HTMLAction</web-action-class>
+	</url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.stdunitcost.reeferconsumption.event.EsmCoa4015Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+    </event-mapping>
+	<!-- IZA ADD  : 2017-04-10 end -->	
+	
+	<!-- IZA ADD  : 2017-05-12 start -->	
+	<url-mapping url="ESM_COA_4016.do" screen="ESM_COA_4016.screen">
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.reeferconsumption.event.ESM_COA_4016HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_4016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.reeferconsumption.event.ESM_COA_4016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.stdunitcost.reeferconsumption.event.EsmCoa4016Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+    </event-mapping>
+	<!-- IZA ADD  : 2017-05-12 end -->	
+	
+	<!-- IZA ADD  : 2018-05-23 start -->	
+	<url-mapping url="ESM_COA_4017.do" screen="ESM_COA_4017.screen">
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.oogcharge.event.ESM_COA_4017HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_4017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.oogcharge.event.ESM_COA_4017HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_COA_4017GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.oogcharge.event.ESM_COA_4017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.coa.stdunitcost.oogcharge.event.EsmCoa4017Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+    </event-mapping>
+	<!-- IZA ADD  : 2018-05-23 end -->	
+	
+	<!-- IZA ADD  : 2018-08-01 start -->	
+	<url-mapping url="ESM_COA_4018.do" screen="ESM_COA_4018.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.oogcharge.event.ESM_COA_4018HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_COA_4018GS.do"  screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.oogcharge.event.ESM_COA_4018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_COA_4018GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.coa.stdunitcost.oogcharge.event.ESM_COA_4018HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.coa.stdunitcost.oogcharge.event.EsmCoa4018Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.coa.stdunitcost.STDUnitCostSC</service-action-class>
+	</event-mapping>	
+	<!-- IZA ADD  : 2018-08-01 end -->
+		
+</mappings>

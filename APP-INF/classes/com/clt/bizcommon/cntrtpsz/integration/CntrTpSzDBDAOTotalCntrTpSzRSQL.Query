@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CntrTpSzDBDAOTotalCntrTpSzRSQL">
+			<desc><![CDATA[Container Type Size의 총 카운트를 조회한다.]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*)
+FROM mdm_cntr_tp_sz        
+WHERE 1 = 1
+#if (${cntr_tpsz_cd} != '') 
+AND cntr_tpsz_cd like @[cntr_tpsz_cd]
+#end
+#if (${cntr_tpsz_desc} != '') 
+AND upper(cntr_tpsz_desc) like '%' || upper(@[cntr_tpsz_desc]) || '%'
+#end
+
+#if (${mdm_yn} != '')
+
+	#if (${delt_flg} == 'Y') 
+		AND delt_flg = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+
+	#else 
+		AND delt_flg <> 'Y'
+	#end
+
+#else	
+	AND NVL(delt_flg, 'N') <> 'Y'
+#end			]]></sql>
+			<params>
+				<param name="cntr_tpsz_cd" type="12" value="" out="N"/>
+				<param name="cntr_tpsz_desc" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

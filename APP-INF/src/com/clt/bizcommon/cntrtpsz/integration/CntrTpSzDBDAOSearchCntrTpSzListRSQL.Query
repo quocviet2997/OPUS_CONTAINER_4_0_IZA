@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CntrTpSzDBDAOSearchCntrTpSzListRSQL">
+			<desc><![CDATA[CntrTpSz의 모든 목록을 가져온다.]]></desc>
+			<sql><![CDATA[
+SELECT cntr_tpsz_cd,
+	cntr_tpsz_desc,
+	(CASE 
+		WHEN 'Y' = delt_flg THEN 'Delete' 
+		ELSE 'Active' 
+	END) AS delt_flg
+FROM (	SELECT ROW_NUMBER() OVER (ORDER BY cntr_tpsz_cd ASC) no,
+			cntr_tpsz_cd,
+			cntr_tpsz_desc,
+			delt_flg
+		FROM mdm_cntr_tp_sz
+		WHERE 1 = 1
+		#if (${cntr_tpsz_cd} != '') 
+		AND cntr_tpsz_cd like @[cntr_tpsz_cd] || '%'
+		#end
+		#if (${cntr_tpsz_desc} != '') 
+		AND upper(cntr_tpsz_desc) like '%' || upper(@[cntr_tpsz_desc]) || '%'
+		#end
+		#if (${mdm_yn} != '')
+
+			#if (${delt_flg} == 'Y') 
+				AND delt_flg = @[delt_flg]
+			#elseif (${delt_flg} == 'ALL') 
+
+			#else 
+				AND delt_flg <> 'Y'
+			#end
+
+		#else	
+			AND NVL(delt_flg, 'N') <> 'Y'
+		#end
+) a
+WHERE no BETWEEN @[startpart] AND @[endpart]
+ORDER BY cntr_tpsz_cd			]]></sql>
+			<params>
+				<param name="cntr_tpsz_cd" type="12" value="" out="N"/>
+				<param name="cntr_tpsz_desc" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MessagesDAOComMgsSndCSQL">
+			<desc><![CDATA[입력]]></desc>
+			<sql><![CDATA[
+insert into com_msg_snd (
+	msg_id,
+	sndr_usr_id,
+	sndr_usr_nm,
+	snd_dt,
+	msg_ctnt,
+	delt_flg,
+	kep_flg,
+	cre_usr_id,
+	cre_dt,
+	upd_usr_id,
+	upd_dt
+) values( 
+	@[msg_id],
+	@[sndr_usr_id],
+	@[sndr_usr_nm],
+	sysdate,
+	@[msg_ctnt],
+	'N',
+	@[kep_flg],
+	@[cre_usr_id],
+	sysdate,
+	@[cre_usr_id],
+	sysdate
+)			]]></sql>
+			<params>
+				<param name="msg_id" type="12" value="" out="N"/>
+				<param name="sndr_usr_id" type="12" value="" out="N"/>
+				<param name="sndr_usr_nm" type="12" value="" out="N"/>
+				<param name="msg_ctnt" type="12" value="" out="N"/>
+				<param name="kep_flg" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

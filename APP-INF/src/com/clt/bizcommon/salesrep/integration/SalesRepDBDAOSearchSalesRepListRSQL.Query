@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SalesRepDBDAOSearchSalesRepListRSQL">
+			<desc><![CDATA[Sales Rep 조회]]></desc>
+			<sql><![CDATA[
+SELECT SREP_CD, SREP_NM, OFC_CD, DECODE(DELT_FLG,'Y','Delete','Active') DELT_FLG
+FROM MDM_SLS_REP
+#if (${delt_flg} == 'Y') 
+	WHERE NVL(DELT_FLG,'N') = 'Y'
+#elseif (${delt_flg} == 'ALL') 
+    WHERE NVL(DELT_FLG,'N') IN ('Y','N')
+#else 
+ 	WHERE NVL(DELT_FLG,'N') <> 'Y'
+#end
+#if (${srep_cd} != '')
+AND SREP_CD LIKE @[srep_cd]||'%'
+#end 
+#if (${srep_nm} != '') 
+AND UPPER(SREP_NM) LIKE UPPER(@[srep_nm])||'%'
+#end 
+ORDER BY SREP_CD			]]></sql>
+			<params>
+				<param name="srep_cd" type="12" value="" out="N"/>
+				<param name="srep_nm" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

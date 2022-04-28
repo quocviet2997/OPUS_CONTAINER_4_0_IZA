@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="VesselDBDAOSearchVesselLIstRSQL">
+			<desc><![CDATA[vessel list select]]></desc>
+			<sql><![CDATA[
+SELECT 	VSL_CD, 
+		VSL_ENG_NM,
+		CRR_CD,
+    	VSL_NRT,
+		RGST_PORT_CD,
+		CALL_SGN_NO,
+		LLOYD_NO,
+		VSL_LNCH_DT,
+		(CASE 
+			WHEN 'Y' = delt_flg THEN 'Delete' 
+			ELSE 'Active' 
+		END) AS delt_flg,
+		FDR_DIV_CD,
+		INTG_CD_VAL_DP_DESC
+FROM (
+	SELECT 	ROW_NUMBER() OVER (ORDER BY VSL_CD ASC) NO,
+			mdmVsl.VSL_CD,
+			mdmVsl.VSL_ENG_NM,
+			mdmVsl.CRR_CD,
+			mdmVsl.NET_RGST_TONG_WGT VSL_NRT,
+			mdmVsl.RGST_PORT_CD,
+			mdmVsl.CALL_SGN_NO,
+			mdmVsl.LLOYD_NO,
+			decode(
+			 ROUND((SYSDATE - mdmVsl.VSL_LNCH_DT)/ 365),'','Unknown',ROUND((SYSDATE - mdmVsl.VSL_LNCH_DT)/ 365)
+			)	VSL_LNCH_DT,
+			mdmVsl.DELT_FLG,
+			mdmVsl.FDR_DIV_CD,
+			comIntg.INTG_CD_VAL_DP_DESC
+FROM MDM_VSL_CNTR mdmVsl LEFT OUTER JOIN ( select INTG_CD_VAL_CTNT, INTG_CD_VAL_DP_DESC from com_intg_cd_dtl where INTG_CD_ID = 'CD00653') comIntg ON mdmVsl.FDR_DIV_CD = comIntg.INTG_CD_VAL_CTNT
+WHERE 1 = 1
+#if (${vsl_cd} != '')
+           	AND mdmVsl.VSL_CD LIKE @[vsl_cd] || '%'
+#end    
+#if (${vsl_eng_nm} != '')
+           	AND upper(mdmVsl.VSL_ENG_NM) LIKE '%'|| upper(@[vsl_eng_nm])||'%'
+#end    
+#if (${crr_cd} != '')
+           	AND mdmVsl.CRR_CD LIKE @[crr_cd] || '%'
+#end	
+#if (${call_sgn_no} != '')
+			AND mdmVsl.call_sgn_no LIKE @[call_sgn_no] || '%'
+#end
+#if (${lloyd_no} != '')
+			AND mdmVsl.lloyd_no LIKE @[lloyd_no] || '%'
+#end
+
+#if (${mdm_yn} != '')
+	#if (${delt_flg} == 'Y') 
+		AND mdmVsl.DELT_FLG = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+	#else 
+		AND mdmVsl.DELT_FLG <> 'Y'
+	#end
+#else	
+	AND mdmVsl.DELT_FLG <> 'Y'
+#end
+
+#if (${fdr_div_cd} != '')
+	AND mdmVsl.FDR_DIV_CD = @[fdr_div_cd]
+#end
+) A
+WHERE NO BETWEEN @[startpart] AND @[endpart]
+ORDER BY VSL_CD			]]></sql>
+			<params>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="vsl_eng_nm" type="12" value="" out="N"/>
+				<param name="crr_cd" type="12" value="" out="N"/>
+				<param name="call_sgn_no" type="12" value="" out="N"/>
+				<param name="lloyd_no" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="fdr_div_cd" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

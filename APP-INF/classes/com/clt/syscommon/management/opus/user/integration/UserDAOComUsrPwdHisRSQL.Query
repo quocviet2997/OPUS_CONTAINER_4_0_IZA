@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserDAOComUsrPwdHisRSQL">
+			<desc><![CDATA[select]]></desc>
+			<sql><![CDATA[
+SELECT  USR_PWD
+FROM ( SELECT ROW_NUMBER() OVER(ORDER BY cre_dt DESC)  AS NUM,  USR_PWD  
+                FROM COM_USR_PWD_HIS
+                WHERE USR_ID =    @[usr_id] 
+      )
+WHERE  NUM <=  @[his_count]			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="his_count" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

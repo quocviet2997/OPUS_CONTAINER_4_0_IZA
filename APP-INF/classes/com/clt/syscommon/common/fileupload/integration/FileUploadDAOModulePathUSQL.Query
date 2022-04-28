@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FileUploadDAOModulePathUSQL">
+			<desc><![CDATA[FileUpload 테이블의 module과 디렉토리 위치를 Update 한다.]]></desc>
+			<sql><![CDATA[
+update com_upld_file set 
+	file_path_url = @[file_path_url],
+	pgm_sub_sys_cd = @[pgm_sub_sys_cd],
+	upd_dt = sysdate
+where	file_sav_id = @[file_sav_id]
+			]]></sql>
+			<params>
+				<param name="file_path_url" type="12" value="" out="N"/>
+				<param name="pgm_sub_sys_cd" type="12" value="" out="N"/>
+				<param name="file_sav_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

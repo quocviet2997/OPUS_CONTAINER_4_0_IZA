@@ -1,0 +1,307 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://irep.clt.com/edi" targetNamespace="http://irep.clt.com/edi">
+	<xsd:complexType name="EAIHeaderType">
+		<xsd:sequence>
+			<xsd:element name="InstanceId" type="xsd:string" />
+			<xsd:element name="Parameters" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Parameter" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:simpleContent>
+									<xsd:extension base="xsd:string">
+										<xsd:anyAttribute />
+									</xsd:extension>
+								</xsd:simpleContent>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="EDI005_0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="E_SUBLINKCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="E_SUBLINK" maxOccurs="unbounded" minOccurs="0">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="TRD_PRNR_SUB_LNK_SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="PRNR_SUB_LNK_DIV_CD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="PRNR_SUB_LNK_CD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SNDR_TRD_PRNR_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="RCVR_TRD_PRNR_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="PRNR_PORT_CD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EDI_SND_FLG" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CRE_USR_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EAI_STS" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EAI_DT" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="EDI006_0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="E_SUBLINK_MSG_INDCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="E_SUBLINK_MSG_IND" maxOccurs="unbounded" minOccurs="0">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="TRD_PRNR_SUB_LNK_SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EDI_MSG_TP_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EDI_MSG_IND_CD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="MSG_TP_DESC" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EDI_STUP_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EAI_STS" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EAI_DT" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="EDI007_0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="E_PORT_LANECollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="E_PORT_LANE" maxOccurs="unbounded" minOccurs="0">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="TRD_PRNR_SUB_LNK_SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SLAN_CD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EAI_STS" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EAI_DT" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="EDI008_0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="RF_GENINFCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="RF_GENINF" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="EAI_STS" type="xsd:string" />
+													<xsd:element name="EAI_DT" type="xsd:string" />
+													<xsd:element name="PROP_NO" type="xsd:string" />
+													<xsd:element name="AMEND_SEQ" type="xsd:string" />
+													<xsd:element name="RFA_NO" type="xsd:string" />
+													<xsd:element name="CTRT_CUST_CNT_CD" type="xsd:string" />
+													<xsd:element name="CTRT_CUST_SEQ" type="xsd:string" />
+													<xsd:element name="PROP_OFC_CD" type="xsd:string" />
+													<xsd:element name="PROP_SREP_CD" type="xsd:string" />
+													<xsd:element name="CTRT_EFF_DT" type="xsd:string" />
+													<xsd:element name="CTRT_EXP_DT" type="xsd:string" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="EDI009_0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="SC_GENINFCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="SC_GENINF" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="EAI_STS" type="xsd:string" />
+													<xsd:element name="EAI_DT" type="xsd:string" />
+													<xsd:element name="PROP_NO" type="xsd:string" />
+													<xsd:element name="AMEND_SEQ" type="xsd:string" />
+													<xsd:element name="SC_NO" type="xsd:string" />
+													<xsd:element name="PROP_OFC_CD" type="xsd:string" />
+													<xsd:element name="PROP_SREP_CD" type="xsd:string" />
+													<xsd:element name="CTRT_EFF_DT" type="xsd:string" />
+													<xsd:element name="CTRT_EXP_DT" type="xsd:string" />
+													<xsd:element name="CUST_CNT_CD" type="xsd:string" />
+													<xsd:element name="CUST_SEQ" type="xsd:string" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="EDI001_0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="IBOOKINGCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="IBOOKINGRequest" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="EAI_STS" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EAI_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="COMPANY" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_BKG_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_CFM_IND" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_BKG_OFC" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_CFM_USR_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_C_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_R_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EAI_IF_TP" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_NU_ERROR" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_MSG_FLAG" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_EDI_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_FF_REF_NO" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="EDI002_0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="IBKGCUSTCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="IBKGCUSTRequest" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="EAI_STS" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EAI_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="COMPANY" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IBCS_TP" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CNT_CD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CUST_CD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IB_EDI_ID" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="EDI011_0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="E_EDI_SETUPCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="E_EDI_SETUP" maxOccurs="unbounded" minOccurs="0">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="EDI_STUP_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CUST_TRD_PRNR_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EDI_SNDR_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EDI_MSG_NM" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EDI_SVC_TP_NM" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="WRK_RSRC_NM" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SND_FM_DYS" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SND_TO_DYS" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="PRE_DMY_SKD_FLG" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="PST_DMY_SKD_FLG" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CRE_USR_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CRE_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="UPD_USR_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="UPD_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EAI_STS" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EAI_DT" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

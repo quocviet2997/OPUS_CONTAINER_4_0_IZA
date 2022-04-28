@@ -1,0 +1,1953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+	<!-- Choi song soo : 2009-04-29 start -->
+
+	<url-mapping url="DOM_Com_.do" screen="DOM_Com_.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.DOM_COM_HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="DOM_Com_GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.DOM_COM_HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.DomComEvent</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.domcommon.DOMCommonSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0076.do" screen="TPL_DOM_0076.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TPL_DOM_0076HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0076GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TPL_DOM_0076HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TplDom0076Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.domcommon.DOMCommonSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0081.do" screen="TPL_DOM_0081.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0081HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0081GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0081HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TplDom0081Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0082.do" screen="TPL_DOM_0082.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0082HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0082GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0082HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TplDom0082Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0083.do" screen="TPL_DOM_0083.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0083HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0083GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0083HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TplDom0083Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0117.do" screen="TPL_DOM_0117.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0117HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0117GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0117HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TplDom0117Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0217.do" screen="TPL_DOM_0217.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0217HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0217GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0217HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TplDom0217Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0077.do" screen="TPL_DOM_0077.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TPL_DOM_0077HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0077GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TPL_DOM_0077HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TplDom0077Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.domcommon.DOMCommonSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0222.do" screen="TPL_DOM_0222.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TPL_DOM_0222HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0222GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TPL_DOM_0222HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TplDom0222Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.domcommon.DOMCommonSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0158.do" screen="TPL_DOM_0158.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0158HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0158GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0158HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TplDom0158Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0209.do" screen="TPL_DOM_0209.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0209HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0209GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0209HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TplDom0209Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0063.do" screen="TPL_DOM_0063.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0063HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0063Pop.do" screen="TPL_DOM_0063Pop.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0063HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0063_01Pop.do" screen="TPL_DOM_0063_01Pop.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0063HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0063GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0063HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TplDom0063Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0064.do" screen="TPL_DOM_0064.screen"></url-mapping>
+
+	<url-mapping url="TPL_DOM_0206.do" screen="TPL_DOM_0206.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0206HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0206GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0206HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TplDom0206Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0207.do" screen="TPL_DOM_0207.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0207HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0207GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0207HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TplDom0207Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0208.do" screen="TPL_DOM_0208.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0208HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0208GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0208HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TplDom0208Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0223.do" screen="TPL_DOM_0223.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TPL_DOM_0223HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0223GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TPL_DOM_0223HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TplDom0223Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.domcommon.DOMCommonSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0116.do" screen="TPL_DOM_0116.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0116HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0116GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0116HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TplDom0116Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0066.do" screen="TPL_DOM_0066.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0116HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0066_POP.do" screen="TPL_DOM_0066_POP.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0116HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0066GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0116HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- <event-mapping> <event-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TplDom0066Event</event-class> <service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class> 
+		</event-mapping> -->
+
+	<url-mapping url="TPL_DOM_0184.do" screen="TPL_DOM_0184.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0184HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0184GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0184HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TplDom0184Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0109.do" screen="TPL_DOM_0109.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railbilling.event.TPL_DOM_0109HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0109GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railbilling.event.TPL_DOM_0109HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.railbilling.event.TplDom0109Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+	<!-- Choi Song Soo : 2009-05-22 end -->
+
+
+
+	<!-- Kim Hye Seon : 2009-05-11 start -->
+
+	<url-mapping url="TPL_DOM_0090.do" screen="TPL_DOM_0090.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0090HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0090GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0090HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TplDom0090Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0091.do" screen="TPL_DOM_0091.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0091HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0091GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0091HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TplDom0091Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0092.do" screen="TPL_DOM_0092.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0092HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0092GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0092HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TplDom0092Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0115.do" screen="TPL_DOM_0115.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0115HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0115GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0115HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0115Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0215.do" screen="TPL_DOM_0215.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0215HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0215GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0215HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0215Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0187.do" screen="TPL_DOM_0187.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0187HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0187GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0187HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TplDom0187Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0189.do" screen="TPL_DOM_0189.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0189HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0189GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0189HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TplDom0189Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0191.do" screen="TPL_DOM_0191.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0191HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0191GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0191HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TplDom0191Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0194.do" screen="TPL_DOM_0194.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0194HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0194GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0194HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TplDom0194Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0198.do" screen="TPL_DOM_0198.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0198HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0198_POP.do" screen="TPL_DOM_0198_POP.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0198HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0198GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0198HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TplDom0198Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0165.do" screen="TPL_DOM_0165.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.pickupnotice.event.TPL_DOM_0165HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0165GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.pickupnotice.event.TPL_DOM_0165HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.pickupnotice.event.TplDom0165Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0162.do" screen="TPL_DOM_0162.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.pickupnotice.event.TPL_DOM_0162HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0162GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.pickupnotice.event.TPL_DOM_0162HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.pickupnotice.event.TplDom0162Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0164.do" screen="TPL_DOM_0164.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.pickupnotice.event.TPL_DOM_0164HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0164GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.pickupnotice.event.TPL_DOM_0164HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.pickupnotice.event.TplDom0164Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0035.do" screen="TPL_DOM_0035.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.pickupnotice.event.TPL_DOM_0035HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0035GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.pickupnotice.event.TPL_DOM_0035HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.pickupnotice.event.TplDom0035Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0043.do" screen="TPL_DOM_0043.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0043HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0043GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0043HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.pickupnotice.event.TplDom0043Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0044.do" screen="TPL_DOM_0044.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0044HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0044GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0044HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.pickupnotice.event.TplDom0044Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0007.do" screen="TPL_DOM_0007.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0007HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0007HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TplDom0007Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0009.do" screen="TPL_DOM_0009.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0009HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0009HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TplDom0009Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0026.do" screen="TPL_DOM_0026.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0026HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0026GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0026HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TplDom0026Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.DetentionMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0027.do" screen="TPL_DOM_0027.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TPL_DOM_0027HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TPL_DOM_0027HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TplDom0027Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0032.do" screen="TPL_DOM_0032.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0032HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0032HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TplDom0032Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.armgt.ARMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0028.do" screen="TPL_DOM_0028.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0028HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0028HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TplDom0028Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.armgt.ARMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0006.do" screen="TPL_DOM_0006.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0006HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0006HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TplDom0006Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0012.do" screen="TPL_DOM_0012.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0012HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0012HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0012Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0015.do" screen="TPL_DOM_0015.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0015HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0015HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0015Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0023.do" screen="TPL_DOM_0023.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0023HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0023HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0023Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0022.do" screen="TPL_DOM_0022.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0022HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0022HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0022Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0011.do" screen="TPL_DOM_0011.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0011HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0011HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0011Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0014.do" screen="TPL_DOM_0014.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0014HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0014HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0014Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0036.do" screen="TPL_DOM_0036.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0036HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0036HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0036Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0037.do" screen="TPL_DOM_0037.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0037HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0037HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0037Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0003.do" screen="TPL_DOM_0003.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0003HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0003HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0003Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0004.do" screen="TPL_DOM_0004.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0004HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0004HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0004Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<!-- Kim Hye Seon : 2009-05-22 end -->
+
+
+
+
+	<!-- Choi Eui Youb : 2009-05-19 start -->
+	<url-mapping url="TPL_DOM_0202.do" screen="TPL_DOM_0202.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0202HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0202GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0202HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0202Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0118.do" screen="TPL_DOM_0118.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0118HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0118GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0118HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0118Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0210.do" screen="TPL_DOM_0210.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0210HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0210GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0210HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0210Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0171.do" screen="TPL_DOM_0171.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TPL_DOM_0171HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0171GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TPL_DOM_0171HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TplDom0171Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.domcommon.DOMCommonSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0172.do" screen="TPL_DOM_0172.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0172HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0172GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0172HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TplDom0172Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0136.do" screen="TPL_DOM_0136.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0136HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0136GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0136HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TplDom0136Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0135.do" screen="TPL_DOM_0135.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0135HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0135GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0135HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TplDom0135Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0138.do" screen="TPL_DOM_0138.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0138HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0138Pop.do" screen="TPL_DOM_0138Pop.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0138HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0138GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0138HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TplDom0138Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0137.do" screen="TPL_DOM_0137.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0137HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0137GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0137HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TplDom0137Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0154.do" screen="TPL_DOM_0154.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.irregularreporting.event.TPL_DOM_0154HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0154GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.irregularreporting.event.TPL_DOM_0154HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.irregularreporting.event.TplDom0154Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0156.do" screen="TPL_DOM_0156.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.irregularreporting.event.TPL_DOM_0156HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0156GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.irregularreporting.event.TPL_DOM_0156HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.irregularreporting.event.TplDom0156Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0047.do" screen="TPL_DOM_0047.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0047HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0047GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0047HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TplDom0047Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0048.do" screen="TPL_DOM_0048.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0048HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0048GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0048HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TplDom0048Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0050.do" screen="TPL_DOM_0050.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0050HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0050GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0050HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TplDom0050Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0051.do" screen="TPL_DOM_0051.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0051HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0051HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TplDom0051Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0095.do" screen="TPL_DOM_0095.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0095HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0095_POP.do" screen="TPL_DOM_0095_POP.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0095HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0095GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0095HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TplDom0095Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.armgt.ARMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0005.do" screen="TPL_DOM_0005.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TPL_DOM_0171HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.domcommon.domcodefinder.event.TplDom0171Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.domcommon.DOMCommonSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0025.do" screen="TPL_DOM_0025.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0025HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0025HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TplDom0025Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0045.do" screen="TPL_DOM_0045.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0045HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0045GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0045HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TplDom0045Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0046.do" screen="TPL_DOM_0046.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0046HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0046GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0046HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TplDom0046Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0097.do" screen="TPL_DOM_0097.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0097HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0097_POP.do" screen="TPL_DOM_0097_POP.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0097HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0097GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0097HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TplDom0097Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.armgt.ARMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0096.do" screen="TPL_DOM_0096.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0096HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0096GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0096HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TplDom0096Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.armgt.ARMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0125.do" screen="TPL_DOM_0125.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0125HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0125GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0125HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TplDom0125Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.armgt.ARMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0019.do" screen="TPL_DOM_0019.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0019HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0019HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TplDom0019Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0033.do" screen="TPL_DOM_0033.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.irregularreporting.event.TPL_DOM_0033HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.irregularreporting.event.TPL_DOM_0033HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.irregularreporting.event.TplDom0033Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0084.do" screen="TPL_DOM_0084.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0084HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0084GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0084HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TplDom0084Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.DetentionMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0101.do" screen="TPL_DOM_0101.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0101HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0101HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TplDom0101Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.DetentionMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0105.do" screen="TPL_DOM_0105.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0105HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0105HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TplDom0105Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.DetentionMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0040.do" screen="TPL_DOM_0040.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0040HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TPL_DOM_0040HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.armgt.artransactionmgt.event.TplDom0040Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.armgt.ARMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0102.do" screen="TPL_DOM_0102.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0102HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0102GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0102HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TplDom0102Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.DetentionMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0103.do" screen="TPL_DOM_0103.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0103HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0103GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0103HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TplDom0103Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.DetentionMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0104.do" screen="TPL_DOM_0104.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0104HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0104GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0104HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TplDom0104Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.DetentionMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0120.do" screen="TPL_DOM_0120.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0120HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0120GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0120HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TplDom0120Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.DetentionMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0224.do" screen="TPL_DOM_0224.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domfileattach.event.TPL_DOM_0224HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0224GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domfileattach.event.TPL_DOM_0224HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.domcommon.domfileattach.event.TplDom0224Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.domcommon.DOMCommonSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0060.do" screen="TPL_DOM_0060.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0060HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0060GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0060HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0060Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0221.do" screen="TPL_DOM_0221.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0221HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0221GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0221HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TplDom0221Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.DetentionMgtSC</service-action-class>
+	</event-mapping>
+
+	<!-- Choi Eui Youb : 2009-06-23 end -->
+
+
+
+
+
+	<!-- Lee Shin Hae : 2009-06-05 start -->
+	<url-mapping url="TPL_DOM_0199.do" screen="TPL_DOM_0199.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0199HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0199GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0199HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0199Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0130.do" screen="TPL_DOM_0130.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0130HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0130GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0130HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0130Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0131.do" screen="TPL_DOM_0131.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0131HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0131GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0131HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0131Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0213.do" screen="TPL_DOM_0213.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0213HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0213GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0213HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0213Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0143.do" screen="TPL_DOM_0143.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0143HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0143GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0143HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0143Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0144.do" screen="TPL_DOM_0144.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0144HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0144GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0144HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0144Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0216.do" screen="TPL_DOM_0216.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0216HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0216GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0216HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0216Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0175.do" screen="TPL_DOM_0175.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0175HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0175GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0175HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0175Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0176.do" screen="TPL_DOM_0176.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0176HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0176GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0176HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0176Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="Special Rate Selecton.do" screen="Special Rate Selecton.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdatab.event.SPECIAL RATE SELECTONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0220.do" screen="TPL_DOM_0220.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0220HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0220GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0220HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0220Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0214.do" screen="TPL_DOM_0214.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0214HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0214GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0214HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0214Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_176.do" screen="TPL_DOM_176.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0176HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_176GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0176HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0176Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0123.do" screen="TPL_DOM_0123.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TPL_DOM_0123HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0123GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TPL_DOM_0123HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TplDom0123Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0124.do" screen="TPL_DOM_0124.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TPL_DOM_0124HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0124GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TPL_DOM_0124HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TplDom0124Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0122.do" screen="TPL_DOM_0122.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TPL_DOM_0122HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0122GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TPL_DOM_0122HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TplDom0122Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0219.do" screen="TPL_DOM_0219.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TPL_DOM_0219HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0219GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TPL_DOM_0219HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TplDom0219Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0227.do" screen="TPL_DOM_0227.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TPL_DOM_0227HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0227GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TPL_DOM_0227HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.arinvoicemgt.event.TplDom0227Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0132.do" screen="TPL_DOM_0132.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0132HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0132GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TPL_DOM_0132HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.guaranteecreation.event.TplDom0132Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0052.do" screen="TPL_DOM_0052.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0052HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0052GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TPL_DOM_0052HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.guaranteemgt.thirdpartyinvoice.event.TplDom0052Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.guaranteemgt.GuaranteeMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0055.do" screen="TPL_DOM_0055.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0055HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0055GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0055HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TplDom0055Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0093.do" screen="TPL_DOM_0093.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0093HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0093GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0093HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0093Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0094.do" screen="TPL_DOM_0094.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0094HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0094GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0094HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0094Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<!-- Jang Chang Su : 2009-09-18 start -->
+	<url-mapping url="TPL_DOM_0129.do" screen="TPL_DOM_0129.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0129HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0129GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0129HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0129Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0161.do" screen="TPL_DOM_0161.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0161HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0161GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TPL_DOM_0161HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.ratemasterdata.event.TplDom0161Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0098.do" screen="TPL_DOM_0098.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0098HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0098GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0098HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0098Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0099.do" screen="TPL_DOM_0099.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0099HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0099GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0099HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0099Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0141.do" screen="TPL_DOM_0141.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0141HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0141GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0141HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0141Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0142.do" screen="TPL_DOM_0142.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0142HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0142GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0142HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0142Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0173.do" screen="TPL_DOM_0173.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0173HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0173GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0173HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0173Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0113.do" screen="TPL_DOM_0113.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0113HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0113GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0113HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0113Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="DOM_FAX_EMAIL.do" screen="DOM_FAX_EMAIL.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domfaxemail.event.DOMFaxEmailAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="DOM_FAX_EMAILGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domfaxemail.event.DOMFaxEmailAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.domcommon.domfaxemail.event.DomFaxEmailEvent</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.domcommon.DOMCommonSC</service-action-class>
+	</event-mapping>
+
+	<!-- Jang Chang Su : 2009-09-22 end -->
+
+	<!-- Lee Shin Hae : 2009-10-14 start -->
+	<url-mapping url="TPL_DOM_0201.do" screen="TPL_DOM_0201.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0201GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0201Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+	<!-- anh.ta ADD -->
+	<url-mapping url="TPL_DOM_0226.do" screen="TPL_DOM_0226.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0226HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0226GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0226HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TplDom0226Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.DetentionMgtSC</service-action-class>
+	</event-mapping>
+	<!-- anh.ta END -->
+	<!-- Lee Shin Hae : 2009-10-14 end -->
+
+	<!-- Hong Seong Pil : 2016-06-21 start -->
+	<url-mapping url="TPL_DOM_0106.do" screen="TPL_DOM_0106.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0106HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0106GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0106HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TplDom0106Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.DetentionMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0107.do" screen="TPL_DOM_0107.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0107HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0107GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0107HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TplDom0107Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.DetentionMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0108.do" screen="TPL_DOM_0108.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0108HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0108GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TPL_DOM_0108HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.detentionmgt.detentioninvoicecreation.event.TplDom0108Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.detentionmgt.DetentionMgtSC</service-action-class>
+	</event-mapping>
+	<!-- Hong Seong Pil : 2016-06-21 end -->
+
+	<url-mapping url="TPL_DOM_0200.do" screen="TPL_DOM_0200.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0200HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0200_POP.do" screen="TPL_DOM_0200_POP.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0200HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0200GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0200HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TplDom0200Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0230.do" screen="TPL_DOM_0230.screen">
+		<!-- <web-action-class>com.clt.apps.opus.esm.bkg.bookingmasterdata.bookingmastermgt.event.ESM_BKG_1114HTMLAction</web-action-class> -->
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0230HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0230_POP.do" screen="TPL_DOM_0230_POP.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0230HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0230GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0230HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TplDom0230Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+	<url-mapping url="TPL_DOM_0230_Q.do" screen="TPL_DOM_0230.screen">
+		<web-action-class>com.clt.apps.opus.esm.bkg.bookingmasterdata.bookingmastermgt.event.ESM_BKG_1114HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0232.do" screen="TPL_DOM_0232.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0232HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0232GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0232HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0232Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+	<!-- USA Rail Invoice 등록 및 Confirm -->
+	<url-mapping url="TPL_DOM_0056_POP.do" screen="TPL_DOM_0056_POP.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TPL_DOM_0056HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0056.do" screen="TPL_DOM_0056.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TPL_DOM_0056HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0056GS.do" screen="com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TplDom0056ViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TPL_DOM_0056HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TplDom0056Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+	<!-- USA Rail Invoice File import and File Upload popup -->
+
+	<url-mapping url="TPL_DOM_0923.do" screen="TPL_DOM_0923.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TPL_DOM_0923HTMLAction</web-action-class>
+	</url-mapping>
+	<!-- <url-mapping url="TPL_DOM_0923GS.do" screen="com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TplDom0923ViewAdapter" > <web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TPL_DOM_0923HTMLAction</web-action-class> 
+		</url-mapping> -->
+	<url-mapping url="TPL_DOM_0923GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TPL_DOM_0923HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TplDom0923Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+	<url-mapping url="TPL_DOM_0969.do" screen="TPL_DOM_0969.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TPL_DOM_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TplDom0018Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+	<!-- USA Rail Invoice File import and File Upload popup -->
+	<!-- USA Rail Container Payment History Popup -->
+	<url-mapping url="TPL_DOM_0929.do" screen="TPL_DOM_0929.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TPL_DOM_0929HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0929GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TPL_DOM_0929HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceaudit.event.TplDom0929Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+	<!-- USA Rail Container Payment History Popup -->
+	<!-- Common -->
+	<url-mapping url="TPL_DOM_0999GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.domcommon.domcommon.event.TPL_DOM_0999HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.domcommon.domcommon.event.TplDom0999Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.domcommon.DOMCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Common -->
+	<!-- Invoice Inquiry -->
+	<url-mapping url="TPL_DOM_0057.do" screen="TPL_DOM_0057.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceinquirycorrection.event.TPL_DOM_0057HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0057GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceinquirycorrection.event.TPL_DOM_0057HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.railinvoiceinquirycorrection.event.TplDom0057Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+	<!-- Invoice Inquiry -->
+	<!-- MultipleInquiry -->
+	<url-mapping url="TPL_DOM_0906.do" screen="TPL_DOM_0906.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.codemanage.multipleinquiry.event.TPL_DOM_0906HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.codemanage.multipleinquiry.event.TplDom0906Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+	<!-- MultipleInquiry -->
+	<!-- Remark -->
+	<url-mapping url="TPL_DOM_0757.do" screen="TPL_DOM_0757.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0200HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0757GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0200HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TplDom0200Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+	<!-- Remark -->
+
+	<url-mapping url="TPL_DOM_0058.do" screen="TPL_DOM_0058.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0058HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0058GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0058HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0058_POP.do" screen="TPL_DOM_0058_POP.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0058HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TplDom0058Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+	<url-mapping url="TPL_DOM_0059.do" screen="TPL_DOM_0059.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0059HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0059GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0059HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TplDom0059Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="TPL_DOM_0188.do" screen="TPL_DOM_0188.screen">
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0188GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TPL_DOM_0188HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.ordermgt.bookingmgt.event.TplDom0188Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.ordermgt.OrderMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0110.do" screen="TPL_DOM_0110.screen">
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0110GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railbilling.event.TPL_DOM_0110HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.railbilling.event.TplDom0110Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0111.do" screen="TPL_DOM_0111.screen">
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0111GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.railbilling.event.TPL_DOM_0111HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.railbilling.event.TplDom0111Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0203.do" screen="TPL_DOM_0203.screen">
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0203GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0203HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TplDom0203Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+	<!-- More Candidates Popup -->
+	<url-mapping url="TPL_DOM_0204.do" screen="TPL_DOM_0204.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0204HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPL_DOM_0204GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0204HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TplDom0204Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0089.do" screen="TPL_DOM_0089.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0089HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0089GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0089HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TplDom0089Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0205.do" screen="TPL_DOM_0205.screen"></url-mapping>
+	<url-mapping url="TPL_DOM_0205GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TPL_DOM_0205HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.transportationmgt.truckworkorder.event.TplDom0205Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.transportationmgt.TransportationMgtSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0240.do" screen="TPL_DOM_0240.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0240HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0240GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TPL_DOM_0240HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.performancereport.performancereport.event.TplDom0240Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.performancereport.PerformanceReportSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="TPL_DOM_0231.do" screen="TPL_DOM_0231.screen">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0231HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TPL_DOM_0231GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TPL_DOM_0231HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.tpl.dom.masterdatamgt.codemasterdata.event.TplDom0231Event</event-class>
+		<service-action-class>com.clt.apps.opus.tpl.dom.masterdatamgt.MasterDataMgtSC</service-action-class>
+	</event-mapping>
+</mappings>

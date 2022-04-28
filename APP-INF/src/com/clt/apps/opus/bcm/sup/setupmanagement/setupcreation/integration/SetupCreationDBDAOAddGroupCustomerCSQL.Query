@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOAddGroupCustomerCSQL">
+			<desc><![CDATA[2011.02.22 정윤태 EDI GROUP CUSTOMER 정보를 신규 입력한다]]></desc>
+			<sql><![CDATA[
+INSERT INTO EDI_GRP_CUST (
+     EDI_GRP_CD
+    ,CO_DIV_CD
+    ,CUST_CNT_CD
+    ,CUST_SEQ
+    ,SC_NO
+    ,SC_EFF_ST_DT
+    ,SC_EFF_END_DT
+    ,IB_SVC_FLG
+    ,CGO_TRC_SVC_FLG
+    ,BKG_CTRT_DIV_CD
+    ,BKG_CUST_TP_DESC
+    ,CRE_USR_ID
+    ,CRE_DT
+    ,UPD_USR_ID
+    ,UPD_DT
+) VALUES (
+     @[edi_grp_cd]
+    ,@[co_div_cd]
+    ,@[cust_cnt_cd]
+    ,@[cust_seq]
+    ,@[sc_no]
+    ,@[sc_eff_st_dt]
+    ,@[sc_eff_end_dt]
+    ,@[ib_svc_flg]
+    ,@[cgo_trc_svc_flg]
+    ,@[bkg_ctrt_div_cd]
+    ,@[cust_role]
+    ,@[cre_usr_id]
+    ,SYSDATE
+    ,@[upd_usr_id]
+    ,SYSDATE
+)			]]></sql>
+			<params>
+				<param name="edi_grp_cd" type="12" value="" out="N"/>
+				<param name="co_div_cd" type="12" value="" out="N"/>
+				<param name="cust_cnt_cd" type="12" value="" out="N"/>
+				<param name="cust_seq" type="12" value="" out="N"/>
+				<param name="sc_no" type="12" value="" out="N"/>
+				<param name="sc_eff_st_dt" type="12" value="" out="N"/>
+				<param name="sc_eff_end_dt" type="12" value="" out="N"/>
+				<param name="ib_svc_flg" type="12" value="" out="N"/>
+				<param name="cgo_trc_svc_flg" type="12" value="" out="N"/>
+				<param name="bkg_ctrt_div_cd" type="12" value="" out="N"/>
+				<param name="cust_role" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

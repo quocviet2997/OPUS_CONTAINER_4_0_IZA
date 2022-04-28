@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CommodityDBDAOSearchCommodityListRSQL">
+			<desc><![CDATA[Commodity 리스트 조회]]></desc>
+			<sql><![CDATA[
+SELECT CMDT_CD,
+  CMDT_NM,
+  REP_CMDT_CD,
+  REP_IMDG_LVL_CD,
+  TO_CHAR(UPD_DT,'YYYY-MM-DD') UPD_DT,
+  (CASE WHEN 'Y' = delt_flg THEN 'Delete'
+        ELSE 'Active'
+   END
+  ) AS DELT_FLG
+FROM (SELECT ROW_NUMBER() OVER (ORDER BY cmdt_cd ASC) NO,
+        CMDT_CD,
+        CMDT_NM,
+        REP_CMDT_CD,
+        REP_IMDG_LVL_CD,
+        UPD_DT,
+        DELT_FLG
+      FROM MDM_COMMODITY
+	  WHERE 1 = 1
+#if (${cmdt_cd} != '')
+        AND CMDT_CD LIKE @[cmdt_cd] || '%'
+#end
+#if (${rep_cmdt_cd} != '')
+        AND REP_CMDT_CD LIKE @[rep_cmdt_cd] || '%'
+#end
+#if (${cmdt_nm} != '')
+        AND UPPER(CMDT_NM) like '%' || UPPER(@[cmdt_nm]) || '%'
+#end
+#if (${mdm_yn} != '')
+  #if (${delt_flg} == 'Y')
+        AND DELT_FLG = @[delt_flg]
+  #else
+        AND delt_flg <> 'Y'
+  #end
+#else
+        AND delt_flg <> 'Y'
+#end
+#if (${rep_imdg_lvl_cd} != '')
+        AND REP_IMDG_LVL_CD = @[rep_imdg_lvl_cd]
+#end
+  ) A
+ORDER BY CMDT_CD			]]></sql>
+			<params>
+				<param name="cmdt_cd" type="12" value="" out="N"/>
+				<param name="rep_cmdt_cd" type="12" value="" out="N"/>
+				<param name="cmdt_nm" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="rep_imdg_lvl_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

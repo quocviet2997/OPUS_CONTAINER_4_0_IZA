@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalStepRSQL">
+			<desc><![CDATA[Approval Step의 목록을 조회합니다]]></desc>
+			<sql><![CDATA[
+SELECT APRO_RQST_SEQ
+     , APRO_USR_NM
+     , APRO_OFC_CD
+     , '' TITLE
+     , APRO_CD
+     , APRO_DT
+     , APRO_RMK  		
+  FROM (
+        SELECT ROW_NUMBER() OVER (ORDER BY APRO_RQST_SEQ DESC) NO
+             , APRO_RQST_SEQ
+             , APRO_USR_NM
+             , B.OFC_CD APRO_OFC_CD
+             , DECODE(NVL(APSTS_CD, ''), 'C', 'Approved', 'R', 'Disapproved', '') APRO_CD
+             , TO_CHAR(APRO_DT, 'yyyy-mm-dd hh24:mi') APRO_DT
+             , APRO_RMK          	 		
+		  FROM COM_APRO_RQST_ROUT A, COM_USER B								
+	     WHERE APRO_RQST_NO = @[apro_rqst_no]	
+         AND A.APRO_USR_ID = B.USR_ID(+)
+         AND NVL(B.USE_FLG(+),'N') = 'Y'
+	     ORDER BY APRO_RQST_SEQ DESC, DP_SEQ DESC
+  ) A			]]></sql>
+			<params>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

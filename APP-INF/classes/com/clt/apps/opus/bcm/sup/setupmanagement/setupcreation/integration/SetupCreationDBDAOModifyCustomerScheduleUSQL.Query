@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOModifyCustomerScheduleUSQL">
+			<desc><![CDATA[2011.03.17 정윤태 CUSTOMER SCHEDULE EDI SETUP 정보를 변경한다]]></desc>
+			<sql><![CDATA[
+UPDATE VSK_CUST_SKD_EDI_SET
+   SET CUST_TRD_PRNR_ID = @[cust_trd_prnr_id],
+       EDI_SNDR_ID = @[edi_sndr_id],
+       EDI_MSG_NM = @[edi_msg_nm],
+       EDI_SVC_TP_NM = @[edi_svc_tp_nm],
+       WRK_RSRC_NM = @[wrk_rsrc_nm],
+       SND_FM_DYS = @[snd_fm_dys],
+       SND_TO_DYS = @[snd_to_dys],
+       PRE_DMY_SKD_FLG = @[pre_dmy_skd_flg],
+       PST_DMY_SKD_FLG = @[pst_dmy_skd_flg],
+       USE_FLG = @[use_flg],
+       UPD_USR_ID = @[upd_usr_id],
+       UPD_DT = SYSDATE
+ WHERE EDI_STUP_ID = @[edi_stup_id]			]]></sql>
+			<params>
+				<param name="cust_trd_prnr_id" type="12" value="" out="N"/>
+				<param name="edi_sndr_id" type="12" value="" out="N"/>
+				<param name="edi_msg_nm" type="12" value="" out="N"/>
+				<param name="edi_svc_tp_nm" type="12" value="" out="N"/>
+				<param name="wrk_rsrc_nm" type="12" value="" out="N"/>
+				<param name="snd_fm_dys" type="12" value="" out="N"/>
+				<param name="snd_to_dys" type="12" value="" out="N"/>
+				<param name="pre_dmy_skd_flg" type="12" value="" out="N"/>
+				<param name="pst_dmy_skd_flg" type="12" value="" out="N"/>
+				<param name="use_flg" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="edi_stup_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

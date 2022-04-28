@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinCommonDBDAOCheckRevenuePortCodeRSQL">
+			<desc><![CDATA[MDM_LOCATION table에 해당 데이터가 있는지 확인]]></desc>
+			<sql><![CDATA[
+SELECT LOC_CD
+FROM MDM_LOCATION
+WHERE 1 = 1
+  AND DELT_FLG = 'N'
+  AND LOC_CD = @[rev_port_cd]			]]></sql>
+			<params>
+				<param name="rev_port_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

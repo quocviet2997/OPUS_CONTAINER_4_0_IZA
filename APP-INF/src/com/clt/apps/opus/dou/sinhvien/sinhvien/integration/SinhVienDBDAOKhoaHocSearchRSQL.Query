@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SinhVienDBDAOKhoaHocSearchRSQL">
+			<desc><![CDATA[test]]></desc>
+			<sql><![CDATA[
+SELECT khoahoc,
+count(sv_id) AS soLuong,
+sum(hocphi) AS tongHocPhi
+FROM SinhVien
+GROUP BY khoahoc 
+ORDER BY khoahoc			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

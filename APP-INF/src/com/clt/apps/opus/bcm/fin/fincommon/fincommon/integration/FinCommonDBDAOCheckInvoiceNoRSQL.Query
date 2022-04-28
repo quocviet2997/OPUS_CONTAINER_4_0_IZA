@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinCommonDBDAOCheckInvoiceNoRSQL">
+			<desc><![CDATA[Invoice No. 입력 및 Invoice Creation시 Invoice No에 대한 Validation을 수행한다.]]></desc>
+			<sql><![CDATA[
+SELECT   MDL_CD
+       , INV_NO
+       , VNDR_SEQ
+       , OFC_CD
+       , CUR_CD
+       , INV_AMT
+       , CSR_NO
+       , REF_PK
+  FROM AP_INV_NO_CHK_V
+ WHERE 1=1
+   AND INV_NO    = @[inv_no]
+   AND VNDR_SEQ  = @[vndr_seq]
+   AND REF_PK   != NVL (@[ref_pk], 'XXX')
+   AND ROWNUM    = 1			]]></sql>
+			<params>
+				<param name="inv_no" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+				<param name="ref_pk" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

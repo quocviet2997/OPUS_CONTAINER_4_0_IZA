@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserMappingDAOComUserRSQL">
+			<desc><![CDATA[select com_user]]></desc>
+			<sql><![CDATA[
+#if(${ofc_cd}!='')     
+	SELECT                                                               
+	   DECODE(B.USR_ID,NULL,'0','1') check_val,                                              
+	   a.usr_id,                                              
+	   usr_nm,                                              
+	   usr_locl_nm                                                       
+	 FROM com_user a, COM_USR_ROLE_MTCH B                                                      
+	 WHERE A.usr_id = B.usr_id(+)
+	 AND B.USR_ROLE_CD(+) = @[usr_role_cd]
+	 AND A.OFC_CD = @[ofc_cd]
+     AND a.use_flg = 'Y'
+	 ORDER BY a.usr_id
+#elseif(${usr_auth_tp_cd}=='A')
+	SELECT                                                               
+	   DECODE(B.USR_ID,NULL,'0','1') check_val,                                              
+	   a.usr_id,                                              
+	   usr_nm,                                              
+	   usr_locl_nm                                                       
+	 FROM com_user a, COM_USR_ROLE_MTCH B                                 
+	 WHERE A.usr_id = B.usr_id(+)
+	 AND B.USR_ROLE_CD(+) = @[usr_role_cd]
+     AND a.use_flg = 'Y'
+	 ORDER BY a.usr_id
+#elseif(${usr_auth_tp_cd}=='S')
+#if(${rhq_ofc_cd}=='SINHO')
+	SELECT                                                               
+	   DECODE(B.USR_ID,NULL,'0','1') check_val,                                              
+	   a.usr_id,                                              
+	   usr_nm,                                              
+	   usr_locl_nm                                                       
+	 FROM com_user a, COM_USR_ROLE_MTCH B                                 
+	 WHERE A.usr_id = B.usr_id(+)
+	 AND B.USR_ROLE_CD(+) = @[usr_role_cd]
+     AND a.use_flg = 'Y'
+	 ORDER BY a.usr_id
+#else
+	SELECT                                                               
+	   DECODE(B.USR_ID,NULL,'0','1') check_val,                                              
+	   a.usr_id,                                              
+	   a.usr_nm,                                              
+	   a.usr_locl_nm                                                       
+	 FROM com_user a, COM_USR_ROLE_MTCH B, mdm_organization c                              
+	 WHERE A.usr_id = B.usr_id(+)
+	 AND B.USR_ROLE_CD(+) = @[usr_role_cd]
+     AND A.OFC_CD = C.OFC_CD
+     AND C.ar_hd_qtr_ofc_cd = @[rhq_ofc_cd]
+     AND a.use_flg = 'Y'
+	 ORDER BY a.usr_id
+#end
+#end			]]></sql>
+			<params>
+				<param name="usr_role_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="rhq_ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

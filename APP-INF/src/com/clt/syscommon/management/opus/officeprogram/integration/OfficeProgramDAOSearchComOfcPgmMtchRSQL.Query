@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="OfficeProgramDAOSearchComOfcPgmMtchRSQL">
+			<desc><![CDATA[select office list]]></desc>
+			<sql><![CDATA[
+SELECT ofc_cd,
+	ofc_eng_nm,
+	DECODE( OFC_KND_CD, 1, 'SHQ', 2, 'RHQ', 3, 'GOF', 4, 'SOF', 5, 'LOF', 6, 'AGT', '' ) ofc_knd_cd,
+	loc_cd,
+	pgm_assign 
+FROM (
+	SELECT
+		aa.ofc_cd,
+		aa.ofc_eng_nm,
+		aa.ofc_knd_cd,
+		aa.loc_cd, 
+		decode(bb.ofc_cd,null,'X','O') pgm_assign 
+	FROM MDM_ORGANIZATION aa, (select ofc_cd, COUNT(*)  from com_ofc_pgm_mtch GROUP BY OFC_CD) bb 
+	WHERE aa.ofc_cd = bb.ofc_cd(+) 
+	#if(${loc_cd}!='')
+		and aa.loc_cd like '%' || @[loc_cd] || '%'
+	#end 
+	#if(${ofc_knd_cd}!='')
+		and aa.ofc_knd_cd like '%' || @[ofc_knd_cd] || '%'
+	#end
+	#if(${prnt_ofc_cd}!='')
+		and aa.prnt_ofc_cd like '%' || @[prnt_ofc_cd] || '%'
+	#end
+	#if(${ofc_cd}!='')
+		and aa.ofc_cd like '%' || @[ofc_cd] || '%'
+	#end
+	#if(${ofc_nm}!='')
+		and aa.ofc_eng_nm like '%' || @[ofc_nm] || '%'
+	#end
+	 and delt_flg = 'N'
+) a			]]></sql>
+			<params>
+				<param name="loc_cd" type="12" value="" out="N"/>
+				<param name="ofc_knd_cd" type="12" value="" out="N"/>
+				<param name="prnt_ofc_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="ofc_nm" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

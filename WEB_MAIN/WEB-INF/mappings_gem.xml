@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	
+	<!-- [GEM_Common] Common -->
+    <url-mapping url="GEM_COMMONGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemcommon.event.GEM_COM_HTMLAction</web-action-class>
+    </url-mapping>
+	
+	<event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemcommon.event.GemCommonEvent</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>
+	<!-- cjm : 2009-04-22 start -->
+
+
+    <!-- Manager ADD 2010-01-07 CYO -->
+    <url-mapping url="CPS_GEM_1001.do" screen="CPS_GEM_1001.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemcommon.event.CPS_GEM_1001HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_1001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemcommon.event.CPS_GEM_1001HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemcommon.event.CpsGem1001Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>
+
+	
+	<!-- [CPS_GEM_0006] Closing Confirmation &amp; Interface Status -->
+    <url-mapping url="CPS_GEM_0006.do" screen="CPS_GEM_0006.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemclosingschedulemgt.event.CPS_GEM_0006HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemclosingschedulemgt.event.CPS_GEM_0006HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemclosingschedulemgt.event.CpsGem0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_GEM_0010] Expense Code Inquiry -->
+    <url-mapping url="CPS_GEM_0010.do" screen="CPS_GEM_0010.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0010HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0010HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CpsGem0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_GEM_0011] Expense Office Inquiry -->
+    <url-mapping url="CPS_GEM_0011.do" screen="CPS_GEM_0011.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0011HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0011HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CpsGem0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_GEM_0012] Foreign Exchange Rate Inquiry -->
+    <url-mapping url="CPS_GEM_0012.do" screen="CPS_GEM_0012.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0012HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0012HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CpsGem0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_GEM_0013] Expense Matrix per Office -->
+    <url-mapping url="CPS_GEM_0013.do" screen="CPS_GEM_0013.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0013HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0013HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CpsGem0013Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_GEM_0008] Expense Office Maintenance -->
+    <url-mapping url="CPS_GEM_0008.do" screen="CPS_GEM_0008.screen" >
+    </url-mapping>
+    
+    <!-- [CPS_GEM_0008_01] Expense Office Maintenance - Office Code -->
+    <url-mapping url="CPS_GEM_0008_01.do" screen="CPS_GEM_0008_01.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0008_01HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0008_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0008_01HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CpsGem000801Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_GEM_0109] Office code history -->
+    <url-mapping url="CPS_GEM_0109.do" screen="CPS_GEM_0109.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0109HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0109GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0109HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CpsGem0109Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>    
+    
+    <!-- [CPS_GEM_0008_02] Expense Office Maintenance - Expense Matrix per Office -->
+    <url-mapping url="CPS_GEM_0008_02.do" screen="CPS_GEM_0008_02.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0008_02HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0008_02GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0008_02HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CpsGem000802Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_GEM_0110] Expense Matrix Copy -->
+    <url-mapping url="CPS_GEM_0110.do" screen="CPS_GEM_0110.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0110HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0110GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0110HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CpsGem0110Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_GEM_0008_03] Expense Office Maintenance - Office Matrix per Office -->
+    <url-mapping url="CPS_GEM_0008_03.do" screen="CPS_GEM_0008_03.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0008_03HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0008_03GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0008_03HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CpsGem000803Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_GEM_0019] Detail_Yearly Expense -->
+    <url-mapping url="CPS_GEM_0019.do" screen="CPS_GEM_0019.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0019HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0019HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0019Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [CPS_GEM_9999] Log in Office Change Management -->
+    <url-mapping url="CPS_GEM_9999.do" screen="CPS_GEM_9999.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_9999HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_9999GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_9999HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CpsGem9999Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- cjm : 2009-05-15 end -->
+    
+
+    <!-- jyo : 2009-04-22 start -->
+    
+    <!-- CPS_GEM_0009 Foreign Exchange Rate Maintenance  -->
+    
+    <url-mapping url="CPS_GEM_0009.do" screen="CPS_GEM_0009.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0009HTMLAction</web-action-class>
+    </url-mapping>    
+    <url-mapping url="CPS_GEM_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0009HTMLAction</web-action-class>
+    </url-mapping>    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CpsGem0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- CPS_GEM-0111 Monthly Accounting Rate Interface  -->
+        
+    <url-mapping url="CPS_GEM_0111.do" screen="CPS_GEM_0111.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0111HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="CPS_GEM_0111GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0111HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CpsGem0111Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>    
+    
+    
+    <!-- CPS_GEM-0007 Expense Code Maintenance  -->
+    <url-mapping url="CPS_GEM_0007.do" screen="CPS_GEM_0007.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0007HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CPS_GEM_0007HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemcommon.gemmastercodemgt.event.CpsGem0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemcommon.GEMCommonSC</service-action-class>
+    </event-mapping>    
+
+
+
+    <!-- [CPS_GEM_0101] Authorized Expense Code  -->
+    <url-mapping url="CPS_GEM_0101.do" screen="CPS_GEM_0101.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0101HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0101HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0101Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>    
+
+    <!-- [CPS_GEM_0102] Note  -->
+    <url-mapping url="CPS_GEM_0102.do" screen="CPS_GEM_0102.screen" >        
+    </url-mapping>
+
+
+    <!-- [CPS_GEM-0104] Assigned Expense  -->
+    <url-mapping url="CPS_GEM_0104.do" screen="CPS_GEM_0104.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0104HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0104GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0104HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0104Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>    
+
+
+    <!-- [CPS_GEM-0105] Request No. Reference  -->
+    <url-mapping url="CPS_GEM_0105.do" screen="CPS_GEM_0105.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0105HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0105HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0105Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>   
+    
+    
+    <!-- [CPS_GEM_0103] Report Popup  -->
+    <url-mapping url="CPS_GEM_0103.do" screen="CPS_GEM_0103.screen">
+    </url-mapping>
+    
+    <!-- [CPS_GEM-0001] Expense Request tab screen -->
+    <url-mapping url="CPS_GEM_0001.do" screen="CPS_GEM_0001.screen" >        
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <!-- [CPS_GEM-0001_01] Expense Request – Initial & Additional  -->
+    <url-mapping url="CPS_GEM_0001_01.do" screen="CPS_GEM_0001_01.screen" >        
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0001_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    
+    <url-mapping url="CPS_GEM_0001_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0001_01HTMLAction</web-action-class>
+    </url-mapping>
+
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>   
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem000101Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>   
+
+
+    <!-- [CPS_GEM_0001_02] Expense Request - Transfer  -->
+    <url-mapping url="CPS_GEM_0001_02.do" screen="CPS_GEM_0001_02.screen" >        
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0001_02HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CPS_GEM_0001_02GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0001_02HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem000102Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>   
+
+
+   <!-- [CPS_GEM_0001_03] Expense Request – Adjustment _ Transfer  & Expense Request _Adjustment - Initial & Additional -->
+    <url-mapping url="CPS_GEM_0001_03.do" screen="CPS_GEM_0001_03.screen" >        
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0001_03HTMLAction</web-action-class>    
+    </url-mapping>
+
+    <url-mapping url="CPS_GEM_0001_03GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0001_03HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem000103Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>   
+
+   <!-- [CPS_GEM_0003] Approval of Requested expense -->
+    <url-mapping url="CPS_GEM_0003.do" screen="CPS_GEM_0003.screen" >        
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0003HTMLAction</web-action-class>    
+    </url-mapping>
+
+    <url-mapping url="CPS_GEM_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0003HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>       
+    
+   <!-- [CPS_GEM_0002] Processing Status -->
+    <url-mapping url="CPS_GEM_0002.do" screen="CPS_GEM_0002.screen" >        
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0002HTMLAction</web-action-class>    
+    </url-mapping>
+
+    <url-mapping url="CPS_GEM_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0002HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>        
+    
+    
+   <!-- [CPS_GEM_0023] Request / Initial _ Print-->
+    <url-mapping url="CPS_GEM_0023.do" screen="CPS_GEM_0023.screen" >        
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0023HTMLAction</web-action-class>    
+    </url-mapping>
+
+   <!-- [CPS_GEM_0024] Request / Transfer _ Print-->
+    <url-mapping url="CPS_GEM_0024.do" screen="CPS_GEM_0023.screen" >        
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0023HTMLAction</web-action-class>    
+    </url-mapping>
+
+   <!-- [CPS_GEM_0025] Adjustment / Initial _ Print-->
+    <url-mapping url="CPS_GEM_0025.do" screen="CPS_GEM_0023.screen" >        
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0023HTMLAction</web-action-class>    
+    </url-mapping>
+
+   <!-- [CPS_GEM_0027] Adjustment / Initial _ Print-->
+    <url-mapping url="CPS_GEM_0027.do" screen="CPS_GEM_0023.screen" >        
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0023HTMLAction</web-action-class>    
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0023Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>         
+    
+        
+    <!-- jyo : 2009-04-22 end -->
+    
+    <!-- pcj : 2009-05-25 start -->
+    
+    <url-mapping url="CPS_GEM_0004.do" screen="CPS_GEM_0004.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0004HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0004HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="CPS_GEM_0016.do" screen="CPS_GEM_0016.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0016HTMLAction</web-action-class>
+    </url-mapping>
+    <!--   
+    <url-mapping url="CPS_GEM_0016GS.do" screen="com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0016ViewAdapter" >
+     -->
+     <url-mapping url="CPS_GEM_0016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0016HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0016_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0016HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0016Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="CPS_GEM_0015.do" screen="CPS_GEM_0015.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0015HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0015HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0015Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="CPS_GEM_0014_01.do" screen="CPS_GEM_0014_01.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0014_01HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0014_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0014_01HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem001401Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="CPS_GEM_0106.do" screen="CPS_GEM_0106.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0106HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0106GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0106HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0106Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="CPS_GEM_0014_02.do" screen="CPS_GEM_0014_02.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0014_02HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0014_02GS.do" screen="com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem001402ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0014_02HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem001402Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="CPS_GEM_0108.do" screen="CPS_GEM_0108.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0108HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0108GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0108HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0108Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="CPS_GEM_0107.do" screen="CPS_GEM_0107.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0107HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0107GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0107HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0018.do" screen="CPS_GEM_0018.screen" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0018HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="CPS_GEM_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CPS_GEM_0018HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.cps.gem.gemplanningperformance.gemplanningperformance.event.CpsGem0018Event</event-class>
+        <service-action-class>com.clt.apps.opus.cps.gem.gemplanningperformance.GEMPlanningPerformanceSC</service-action-class>
+    </event-mapping>
+    
+    <!-- pcj : 2009-05-25 end -->
+    
+
+</mappings>

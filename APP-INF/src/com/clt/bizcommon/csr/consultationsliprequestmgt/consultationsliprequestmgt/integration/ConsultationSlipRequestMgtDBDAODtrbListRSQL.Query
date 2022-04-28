@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAODtrbListRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT Chart_of_Account pre_chart_of_account
+     , Account_Name pre_account_name
+     , GL_Date pre_gl_date
+     , City pre_city
+     , Invoice_NO pre_inv_no
+     , Description pre_desc
+     , Debit pre_debit
+     , Credit pre_credit 
+     , pre_debit2
+     , pre_credit2
+FROM
+       ( SELECT  Chart_of_Account
+              , Account_Name
+              , GL_Date
+              , City
+              , Invoice_NO
+              , Description
+              , Debit
+              , Credit
+     		  , Debit2 pre_debit2
+     		  , Credit2 pre_credit2
+       FROM
+                ( SELECT  D.DTRB_COA_CO_CD
+                                  ||'.'
+                                  ||D.DTRB_COA_RGN_CD
+                                  ||'.'
+                                  ||D.DTRB_COA_CTR_CD
+                                  ||'.'
+                                  ||D.DTRB_COA_ACCT_CD
+                                  ||'.'
+                                  || D.DTRB_COA_INTER_CO_CD
+                                  ||'.'
+                                  ||D.DTRB_COA_VVD_CD Chart_of_Account
+                       , (SELECT ACCT_ENG_NM
+                         FROM    MDM_ACCOUNT
+                         WHERE   ACCT_CD = D.DTRB_COA_ACCT_CD
+                         ) Account_Name
+                       , SUBSTR(H.GL_DT,1,4)
+                                  ||'/'
+                                  ||SUBSTR(H.GL_DT,5,2)
+                                  ||'/'
+                                  ||SUBSTR(H.GL_DT,7,2) GL_Date
+                       , D.ATTR_CTNT3 City
+                       , D.ATTR_CTNT1 Invoice_NO
+                       , D.INV_DESC Description
+                       , TO_CHAR(ROUND(SUM(D.INV_AMT),2)) Debit
+                       , '' Credit
+                       , TO_CHAR(ROUND(SUM(D.INV_AMT),2)) Debit2
+                       , '' Credit2
+                       , D.LINE_NO NO
+					   , D.LINE_SEQ 
+                FROM     AP_INV_HDR H
+                       , AP_INV_DTRB D
+                WHERE    H.CSR_NO = @[csr_no]
+                     AND H.CSR_NO = D.CSR_NO
+                GROUP BY D.DTRB_COA_CO_CD
+                       , D.DTRB_COA_RGN_CD
+                       , D.DTRB_COA_CTR_CD
+                       , D.DTRB_COA_ACCT_CD
+                       , D.DTRB_COA_INTER_CO_CD
+                       , D.DTRB_COA_VVD_CD
+                       , D.INV_DESC
+                       , H.GL_DT
+                       , D.ATTR_CTNT3
+                       , D.ATTR_CTNT1
+                       , D.LINE_NO
+					   , D.LINE_SEQ 
+                )
+       ORDER BY NO ASC
+       ) 
+UNION ALL 
+SELECT COA_CO_CD
+              ||'.'
+              ||COA_RGN_CD
+              ||'.'
+              ||COA_CTR_CD
+              ||'.'
+              ||COA_ACCT_CD
+              ||'.'
+              || COA_INTER_CO_CD
+              ||'.'
+              ||COA_VVD_CD Chart_of_Account
+     , ( SELECT ACCT_ENG_NM
+       FROM    MDM_ACCOUNT
+       WHERE   ACCT_CD = COA_ACCT_CD
+       ) Account_Name
+     , SUBSTR(GL_DT,1,4)
+              ||'/'
+              ||SUBSTR(GL_DT,5,2)
+              ||'/'
+              ||SUBSTR(GL_DT,7,2) GL_Date
+     , '' City
+     , '' Invoice_NO
+     , INV_DESC Description
+     , '' Debit
+     , TO_CHAR(ROUND(H.CSR_AMT,2)) Credit
+     , '' Debit2
+     , TO_CHAR(ROUND(H.CSR_AMT,2)) Credit2
+FROM   AP_INV_HDR H
+WHERE  H.CSR_NO = @[csr_no]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

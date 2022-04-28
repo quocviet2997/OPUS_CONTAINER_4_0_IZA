@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserMappingDAOComUsrRoleMtchCSQL">
+			<desc><![CDATA[insert com_usr_role_mtch]]></desc>
+			<sql><![CDATA[
+#if(${usr_role_adm_mtch}=="Y")
+insert into com_usr_role_adm_mtch (
+#else
+insert into com_usr_role_mtch (
+#end
+	usr_id,
+	usr_role_cd,
+	cre_usr_id,
+	cre_dt,
+	upd_usr_id,
+	upd_dt
+) values( 
+	@[usr_id],
+	@[usr_role_cd],
+	@[cre_usr_id],
+	sysdate,
+	@[cre_usr_id],
+	sysdate
+)			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="n"/>
+				<param name="usr_role_cd" type="12" value="" out="n"/>
+				<param name="cre_usr_id" type="12" value="" out="n"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

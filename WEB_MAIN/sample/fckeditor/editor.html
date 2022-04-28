@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script type="text/javascript" src="/opuscntr/sys/common/fckeditor/fckeditor.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+var oFCKeditor = new FCKeditor('FCKeditor1');
+oFCKeditor.BasePath = "/opuscntr/sys/common/fckeditor/";
+oFCKeditor.Config["CustomConfigurationsPath"] = "/opuscntr/js/Editorconfig.js?" + ( new Date() * 1 ) ;
+oFCKeditor.ToolbarSet='MyDefault';
+oFCKeditor.Create();
+
+function showSource(){
+	var oFCKeditor = FCKeditorAPI.GetInstance('FCKeditor1');
+	document.all.htmldata.innerText =oFCKeditor.GetData(); 
+}
+
+function setHtmlData(){
+	var oFCKeditor = FCKeditorAPI.GetInstance('FCKeditor1');
+	oFCKeditor.SetData(document.all.htmldata.innerText);
+	
+}
+</script>
+<input type='button' value='getData' onclick='javascript:showSource();'>
+
+<input type='button' value='setData' onclick='javascript:setHtmlData();'>
+<br>
+<textarea type='text'  name='htmldata' id='htmldata'>
+</textarea>
+
+</body>
+</html>

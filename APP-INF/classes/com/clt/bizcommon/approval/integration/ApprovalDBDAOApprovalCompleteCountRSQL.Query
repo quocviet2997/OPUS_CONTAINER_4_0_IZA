@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalCompleteCountRSQL">
+			<desc><![CDATA[Approval Completion 정보를 조회합니다]]></desc>
+			<sql><![CDATA[
+SELECT 
+--COUNT(APRO_RQST_NO) CNT		    		
+MAX(APRO_RQST_SEQ) - SUM(DECODE(APSTS_CD,NULL,0,'',0,1)) CNT
+  FROM COM_APRO_RQST_ROUT    			
+ WHERE 1 = 1
+   AND NVL(DELT_FLG, 'N') <> 'Y'
+   AND APRO_RQST_NO = @[apro_rqst_no]
+   --AND APSTS_CD IS NULL			]]></sql>
+			<params>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

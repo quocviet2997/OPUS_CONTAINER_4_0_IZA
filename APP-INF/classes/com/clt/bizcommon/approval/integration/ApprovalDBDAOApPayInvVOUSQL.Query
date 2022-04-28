@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApPayInvVOUSQL">
+			<desc><![CDATA[AP_PAY_INV의 정보를 수정합니다]]></desc>
+			<sql><![CDATA[
+UPDATE AP_PAY_INV A								
+   SET A.INV_STS_CD = @[inv_sts_cd]							
+ WHERE EXISTS ( 
+               SELECT A.INV_STS_CD						
+	             FROM AP_PAY_INV_DTL B					
+	            WHERE A.INV_RGST_NO = B.INV_RGST_NO 	
+	          )											
+   AND A.INV_RGST_NO = @[inv_rgst_no]							
+   AND NVL(A.DELT_FLG, 'N') <> 'Y'			]]></sql>
+			<params>
+				<param name="inv_sts_cd" type="12" value="" out="N"/>
+				<param name="inv_rgst_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

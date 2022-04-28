@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckGrpCmdtRSQL">
+			<desc><![CDATA[MDM_CRP_CMDT 테이블에 grpCmdtCd 에 
+해당하는 정보가 있는지 유무를 리턴한다.]]></desc>
+			<sql><![CDATA[
+SELECT GRP_CMDT_CD 
+FROM MDM_COMMODITY 
+WHERE 1=1 
+AND GRP_CMDT_CD = @[grp_cmdt_cd]
+AND DELT_FLG ='N'			]]></sql>
+			<params>
+				<param name="grp_cmdt_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

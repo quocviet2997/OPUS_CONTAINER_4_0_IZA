@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CntrSizeDBDAOMdmCntrSzListRSQL">
+			<desc><![CDATA[Cntr Size]]></desc>
+			<sql><![CDATA[
+SELECT CNTR_SZ_CD
+       ,CNTR_SZ_DESC
+       ,CNTR_SZ_TEU_CAPA
+       ,MODI_CNTR_SZ_CD
+       ,DECODE(DELT_FLG,'Y','Delete','Active') AS DELT_FLG
+FROM MDM_CNTR_SZ
+WHERE 1=1
+#if(${cntr_sz_cd} != '')
+AND CNTR_SZ_CD LIKE @[cntr_sz_cd] || '%'
+#end
+#if (${cntr_sz_desc} != '')      
+AND CNTR_SZ_DESC LIKE '%' || @[cntr_sz_desc] || '%'
+#end
+#if(${mdm_yn} == '')
+AND DELT_FLG <> 'Y'
+#elseif(${mdm_yn} == 'Y')
+	#if(${delt_flg} != 'All')
+		AND DELT_FLG = @[delt_flg]
+	#end
+#end
+ORDER BY CNTR_SZ_CD ASC			]]></sql>
+			<params>
+				<param name="cntr_sz_cd" type="12" value="" out="N"/>
+				<param name="cntr_sz_desc" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

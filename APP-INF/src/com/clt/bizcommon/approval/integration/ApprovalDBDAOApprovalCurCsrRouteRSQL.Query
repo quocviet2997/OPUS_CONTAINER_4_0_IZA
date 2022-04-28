@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalCurCsrRouteRSQL">
+			<desc><![CDATA[현 결재자 정보를 조회한다]]></desc>
+			<sql><![CDATA[
+SELECT APRO_RQST_NO
+     , APRO_RQST_SEQ
+     , APRO_USR_ID
+     , APRO_USR_NM
+     , APRO_OFC_CD
+     , APRO_OFC_NM
+     , APRO_USR_JB_TIT_NM
+     , APRO_DT
+     , APSTS_CD
+     , APRO_RMK		
+  FROM COM_APRO_RQST_ROUT    			
+ WHERE 1 = 1 			
+   AND APRO_RQST_NO = @[apro_rqst_no]            
+   AND APRO_RQST_SEQ = (  
+                        SELECT CRNT_APRO_SEQ 
+                          FROM COM_APRO_RQST_HDR  
+                         WHERE APRO_RQST_NO = @[apro_rqst_no]  
+)  					]]></sql>
+			<params>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

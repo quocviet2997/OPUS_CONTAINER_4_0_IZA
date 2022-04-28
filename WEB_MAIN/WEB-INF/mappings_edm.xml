@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+	<!-- ========================================================================@ SeongWook Kim 부분 시작 -->
+
+	<!--  codepublish -->
+	<url-mapping url="codepublish.do" screen="codepublish.screen" >
+		<web-action-class>com.clt.edm.codepublish.event.ComEdm001HTMLAction</web-action-class>
+	</url-mapping>
+  <url-mapping url="searchCodepublish.do"  screen="com.clt.framework.core.controller.DefaultViewAdapter">
+    <web-action-class>com.clt.edm.codepublish.event.ComEdm001HTMLAction</web-action-class>
+  </url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.edm.codepublish.event.ComEdm001Event</event-class>
+		<service-action-class>com.clt.edm.codepublish.CodePublishSC</service-action-class>
+	</event-mapping>
+
+	<!-- ======================================================================== SeongWook Kim 부분 끝 #-->
+
+</mappings>

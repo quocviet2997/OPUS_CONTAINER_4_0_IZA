@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ItemControlManagementDBDAOsearchUiSetUpInfoRSQL">
+			<desc><![CDATA[searchUiSetUpInfo]]></desc>
+			<sql><![CDATA[
+SELECT PGM_SUB_SYS_CD, PGM_NO, PGM_ITM_ID, CTRL_TP_CD, ITM_DP_NM, SET_TP_CD
+     , ITM_DESC, CRE_USR_ID, TO_CHAR(CRE_DT, 'YYYY/MM/DD HH24:MI:SS') CRE_DT, UPD_USR_ID, TO_CHAR(UPD_DT, 'YYYY/MM/DD HH24:MI:SS') UPD_DT  
+FROM COM_UI_ITM_CTRL_STUP
+WHERE 1=1
+
+AND CO_ID = COM_CONSTANTMGR_PKG.COM_getCompanyCode_FNC()
+
+#if (${pgm_sub_sys_cd} != '') 
+AND PGM_SUB_SYS_CD = @[pgm_sub_sys_cd]
+#end
+
+#if (${pgm_no} != '') 
+AND PGM_NO = @[pgm_no]
+#end
+
+AND SET_TP_CD IN ('D', 'H', 'Y')
+AND APLY_FLG = 'Y'			]]></sql>
+			<params>
+				<param name="pgm_sub_sys_cd" type="12" value="" out="N"/>
+				<param name="pgm_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalCsrCSQL">
+			<desc><![CDATA[COM_APRO_CSR_DTL 정보를 생성합니다]]></desc>
+			<sql><![CDATA[
+INSERT INTO COM_APRO_CSR_DTL ( 	
+  APRO_RQST_NO                 	
+, CSR_NO              		
+, COST_OFC_CD                 
+, INV_KNT             		
+, VNDR_SEQ             		
+, PAY_DUE_DT             		
+, CURR_CD             		
+, APRO_TTL_AMT             		
+, CRE_USR_ID                  	
+, CRE_DT              		
+, UPD_USR_ID              	
+, DELT_FLG )      			
+ VALUES (
+  @[apro_rqst_no]
+, @[csr_no]
+, @[cost_ofc_cd]
+, @[inv_knt]
+, @[vndr_seq]
+, @[pay_due_dt]
+, @[curr_cd]
+, @[apro_ttl_amt]
+, @[cre_usr_id]
+, sysdate
+, ' '
+, 'N')  			]]></sql>
+			<params>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="cost_ofc_cd" type="12" value="" out="N"/>
+				<param name="inv_knt" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+				<param name="pay_due_dt" type="12" value="" out="N"/>
+				<param name="curr_cd" type="12" value="" out="N"/>
+				<param name="apro_ttl_amt" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

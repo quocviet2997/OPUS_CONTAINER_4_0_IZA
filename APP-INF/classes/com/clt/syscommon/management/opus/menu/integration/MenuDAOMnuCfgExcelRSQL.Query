@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MenuDAOMnuCfgExcelRSQL">
+			<desc><![CDATA[query for Excel download]]></desc>
+			<sql><![CDATA[
+select substr(regexp_substr(scbp, '#[^#]*', 1, 1),2) as lvl1,
+       substr(regexp_substr(scbp, '#[^#]*', 1, 2),2) as lvl2,
+       substr(regexp_substr(scbp, '#[^#]*', 1, 3),2) as lvl3,
+       substr(regexp_substr(scbp, '#[^#]*', 1, 4),2) as lvl4,
+       substr(regexp_substr(scbp, '#[^#]*', 1, 5),2) as lvl5,
+       substr(regexp_substr(scbp, '#[^#]*', 1, 6),2) as lvl6,
+       a.pgm_no, a.pgm_desc, a.pgm_url
+from (
+select sys_connect_by_path(B.PGM_NM, '#') scbp
+    , b.pgm_no, b.pgm_url, b.pgm_desc
+FROM  COM_MNU_CFG A, COM_PROGRAM B
+WHERE A.CHD_PGM_NO = B.PGM_NO
+START WITH A.PRNT_PGM_NO = '000_000_M000'
+CONNECT BY PRIOR A.CHD_PGM_NO = A.PRNT_PGM_NO
+ORDER SIBLINGS BY a.DP_SEQ
+) a			]]></sql>
+			<params>
+				<param name="select substr(regexp_substr(scbp, '#[^#" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

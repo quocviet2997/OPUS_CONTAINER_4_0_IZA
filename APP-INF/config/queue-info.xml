@@ -1,0 +1,15 @@
+<INTEGRATION-INFO xmlns="http://www.jframework.net/integration-info">
+	<QueueInfoHeader>
+		<InstanceId>OPUS-QUEUE-INFO</InstanceId>
+	</QueueInfoHeader>
+	<BODY>
+    <QUEUEINFO>
+      <NAMEOFINFO>WEBLOGICQUEUE</NAMEOFINFO>
+      <TYPE>WLS_ASY_DOC</TYPE>
+      <URLPORT>t3://localhost:7001</URLPORT>
+      <QUEUENAME>jms/CNTRNYKJD_DQRA</QUEUENAME>
+      <THREADCNT>2</THREADCNT>
+      <FACTORY>jms/CNTRNYKJD_CFA</FACTORY>
+    </QUEUEINFO>
+	</BODY>
+</INTEGRATION-INFO>

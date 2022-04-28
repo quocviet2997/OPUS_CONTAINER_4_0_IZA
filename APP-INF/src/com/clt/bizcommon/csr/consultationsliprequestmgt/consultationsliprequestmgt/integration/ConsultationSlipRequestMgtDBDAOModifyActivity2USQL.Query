@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOModifyActivity2USQL">
+			<desc><![CDATA[Activity Date / Place 수정]]></desc>
+			<sql><![CDATA[
+UPDATE AP_INV_DTRB
+SET ATTR_CTNT11 = (SELECT MAX(ATTR_CTNT11) FROM AP_INV_DTRB WHERE CSR_NO = @[csr_no] AND ATTR_CTNT11 IS NOT NULL)
+,   ATTR_CTNT12 = (SELECT MAX(ATTR_CTNT12) FROM AP_INV_DTRB WHERE CSR_NO = @[csr_no] AND ATTR_CTNT12 IS NOT NULL)
+,   ATTR_CTNT14 = (SELECT MAX(ATTR_CTNT14) FROM AP_INV_DTRB WHERE CSR_NO = @[csr_no] AND ATTR_CTNT14 IS NOT NULL)
+WHERE CSR_NO = @[csr_no]
+  AND LINE_SEQ = @[line_seq]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="line_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

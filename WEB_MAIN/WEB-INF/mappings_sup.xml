@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+    <!-- Jung Yoon Tae : 2011-02-16 start -->
+    <url-mapping url="BCM_SUP_0001.do" screen="BCM_SUP_0001.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_SUP_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BcmSup0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.SetupManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2011-02-16 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <url-mapping url="BCM_SUP_0002.do" screen="BCM_SUP_0002.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_SUP_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BcmSup0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.SetupManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <url-mapping url="BCM_SUP_0003.do" screen="BCM_SUP_0003.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_SUP_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BcmSup0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.SetupManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <url-mapping url="BCM_SUP_0004.do" screen="BCM_SUP_0004.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_SUP_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BcmSup0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.SetupManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <url-mapping url="BCM_SUP_0005.do" screen="BCM_SUP_0005.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_SUP_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BcmSup0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.SetupManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <url-mapping url="BCM_SUP_0006.do" screen="BCM_SUP_0006.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_SUP_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BcmSup0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.SetupManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <url-mapping url="BCM_SUP_0007.do" screen="BCM_SUP_0007.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_SUP_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BcmSup0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.SetupManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <url-mapping url="SUPCommonGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.bcm.sup.supcommon.supcommon.event.SUP_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.sup.supcommon.supcommon.event.SupComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.sup.supcommon.SUPCommonSC</service-action-class>
+    </event-mapping>
+    <!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+    <url-mapping url="BCM_SUP_0008.do" screen="BCM_SUP_0008.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_SUP_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BcmSup0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.SetupManagementSC</service-action-class>
+    </event-mapping>
+    <url-mapping url="BCM_SUP_0009.do" screen="BCM_SUP_0009.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_SUP_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BCM_SUP_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.sup.setupmanagement.setupcreation.event.BcmSup0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.sup.setupmanagement.SetupManagementSC</service-action-class>
+    </event-mapping>
+</mappings>

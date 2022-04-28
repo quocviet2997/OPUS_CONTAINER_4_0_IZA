@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckStateCodeRSQL">
+			<desc><![CDATA[MDM_STATE 테이블에 stateCd 에 
+해당하는 정보가 있는지 유무를 리턴한다.]]></desc>
+			<sql><![CDATA[
+SELECT CNT_CD, STE_CD 
+FROM MDM_STATE 
+WHERE 1=1 
+AND STE_CD = @[ste_cd]
+#if(${cnt_cd} != '')
+AND CNT_CD = @[cnt_cd]
+#end
+AND DELT_FLG ='N'			]]></sql>
+			<params>
+				<param name="ste_cd" type="12" value="" out="N"/>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

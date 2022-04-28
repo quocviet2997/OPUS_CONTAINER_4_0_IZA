@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- park myoung sin : 2009-05-12 start -->
+	<!-- GENERAL CODE SEARCH  -->
+	<!-- HAM DAE SUNG : 2009-07-06 start -->
+    <url-mapping url="CSR_COM01.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.csr.csrcommon.csrexternalfinder.event.CSR_COM_EXTERNALHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+      	<event-class>com.clt.bizcommon.csr.csrcommon.csrexternalfinder.event.CsrComExternalEvent</event-class>
+      	<service-action-class>com.clt.bizcommon.csr.csrcommon.CSRCommonSC</service-action-class>
+  	</event-mapping>
+  	<!-- HAM DAE SUNG : 2009-07-06 end -->
+
+	<!-- HAM DAE SUNG : 2009-07-01 start -->
+    <url-mapping url="COM_CSR_0001.do" screen="COM_CSR_0001.screen" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_CSR_0001GS.do" screen="com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.ConsultationSlipRequestMgt0001ViewAdapter" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.ComCsr0001Event</event-class>
+        <service-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.ConsultationSlipRequestMgtSC</service-action-class>
+    </event-mapping>
+	<!-- HAM DAE SUNG : 2009-07-01 end -->
+
+	<!-- HAM DAE SUNG : 2009-07-02 start -->
+    <url-mapping url="COM_CSR_0002.do" screen="COM_CSR_0002.screen" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0002HTMLAction</web-action-class>
+    </url-mapping> 
+    
+ 	<url-mapping url="COM_CSR_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0002HTMLAction</web-action-class>
+	</url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.ComCsr0002Event</event-class>
+        <service-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.ConsultationSlipRequestMgtSC</service-action-class>
+    </event-mapping>
+	<!-- HAM DAE SUNG : 2009-07-02 end -->
+
+	<!-- HAM DAE SUNG : 2009-07-02 start -->
+    <url-mapping url="COM_CSR_0003.do" screen="COM_CSR_0003.screen" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_CSR_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.ComCsr0003Event</event-class>
+        <service-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.ConsultationSlipRequestMgtSC</service-action-class>
+    </event-mapping>
+	<!-- HAM DAE SUNG : 2009-07-02 end -->
+
+	<!-- HAM DAE SUNG : 2009-07-09 start -->
+    <url-mapping url="COM_CSR_0004.do" screen="COM_CSR_0004.screen" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_CSR_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.ComCsr0004Event</event-class>
+        <service-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.ConsultationSlipRequestMgtSC</service-action-class>
+    </event-mapping>
+	<!-- HAM DAE SUNG : 2009-07-09 end -->
+
+	<!-- HAM DAE SUNG : 2009-07-09 start -->
+    <url-mapping url="COM_CSR_0005.do" screen="COM_CSR_0005.screen" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_CSR_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.ComCsr0005Event</event-class>
+        <service-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.ConsultationSlipRequestMgtSC</service-action-class>
+    </event-mapping>
+	<!-- HAM DAE SUNG : 2009-07-09 end --> 
+	
+	<!-- HAM DAE SUNG : 2009-07-14 start -->
+    <url-mapping url="COM_CSR_0006.do" screen="COM_CSR_0006.screen" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_CSR_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.ComCsr080Event</event-class>
+        <service-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.ConsultationSlipRequestMgtSC</service-action-class>
+    </event-mapping>
+	<!-- HAM DAE SUNG : 2009-07-14 end -->
+
+	<!-- HAM DAE SUNG : 2009-07-16 start -->
+    <url-mapping url="COM_CSR_0008.do" screen="COM_CSR_0008.screen" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_CSR_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0008HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_CSR_00081GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.ComCsr0008Event</event-class>
+        <service-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.ConsultationSlipRequestMgtSC</service-action-class>
+    </event-mapping>
+	<!-- HAM DAE SUNG : 2009-07-16 end -->
+
+	<!-- HAM DAE SUNG : 2009-07-20 start -->
+    <url-mapping url="COM_CSR_0011.do" screen="COM_CSR_0011.screen" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_CSR_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.ComCsr0011Event</event-class>
+        <service-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.ConsultationSlipRequestMgtSC</service-action-class>
+    </event-mapping>
+	<!-- HAM DAE SUNG : 2009-07-20 end -->
+
+	<!-- HAM DAE SUNG : 2009-07-22 start -->
+    <url-mapping url="COM_CSR_0014.do" screen="COM_CSR_0014.screen" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_CSR_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.COM_CSR_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.csr.consultationsliprequestmgt.consultationsliprequestmgt.event.ComCsr0014Event</event-class>
+        <service-action-class>com.clt.bizcommon.csr.consultationsliprequestmgt.ConsultationSlipRequestMgtSC</service-action-class>
+    </event-mapping>
+	<!-- HAM DAE SUNG : 2009-07-22 end -->
+
+</mappings>

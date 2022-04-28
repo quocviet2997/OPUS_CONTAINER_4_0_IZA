@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckCustCodeRSQL">
+			<desc><![CDATA[MDM_CUSTOMER 테이블에 custCd 에 해당하는 정보가 있는지 유무를 리턴한다.]]></desc>
+			<sql><![CDATA[
+SELECT CUST_CNT_CD||CUST_SEQ CUST_CD  
+FROM MDM_CUSTOMER  
+WHERE 1=1 
+AND CUST_CNT_CD = SUBSTR(@[cust_cd],1,2)
+AND CUST_SEQ = TO_NUMBER(SUBSTR(@[cust_cd],3,6))
+--AND DELT_FLG ='N'			]]></sql>
+			<params>
+				<param name="cust_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

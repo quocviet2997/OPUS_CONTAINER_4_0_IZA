@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ProgramDAOComProgramVOCSQL">
+			<desc><![CDATA[insert program information   ]]></desc>
+			<sql><![CDATA[
+insert into com_program (
+	pgm_no,
+	pgm_tp_cd,
+	pgm_nm,
+	pgm_desc,
+	pgm_url,
+	pgm_mnu_div_cd,
+	dev_nm,
+	dev_dt,
+	popup_flg,
+	use_flg,
+	cre_usr_id,
+	cre_dt,
+	upd_usr_id,
+	upd_dt
+) values( 
+	@[pgm_no],
+	@[pgm_tp_cd],
+	@[pgm_nm],
+	@[pgm_desc],
+	@[pgm_url],
+	@[pgm_mnu_div_cd],
+	@[dev_nm],
+	TO_DATE(@[dev_dt],'YYYYMMDD'),
+	@[popup_flg],
+	@[use_flg],
+	@[cre_usr_id],
+	sysdate,
+	@[upd_usr_id],
+	sysdate
+)			]]></sql>
+			<params>
+				<param name="pgm_no" type="12" value="" out="N"/>
+				<param name="pgm_tp_cd" type="12" value="" out="N"/>
+				<param name="pgm_nm" type="12" value="" out="N"/>
+				<param name="pgm_desc" type="12" value="" out="N"/>
+				<param name="pgm_url" type="12" value="" out="N"/>
+				<param name="pgm_mnu_div_cd" type="12" value="" out="N"/>
+				<param name="dev_nm" type="12" value="" out="N"/>
+				<param name="dev_dt" type="12" value="" out="N"/>
+				<param name="popup_flg" type="12" value="" out="N"/>
+				<param name="use_flg" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

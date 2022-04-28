@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCheckAsaRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT SO_IF_CD
+	   , AP_OFC_CD
+	   , '' INV_OFC_CD 
+	   , '' ASA_GUBUN
+	   , '' COST_OFC_CD
+FROM   MDM_ORGANIZATION
+WHERE  OFC_CD = @[inv_ofc_cd]
+  AND NVL(DELT_FLG, 'N') = 'N'			]]></sql>
+			<params>
+				<param name="inv_ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

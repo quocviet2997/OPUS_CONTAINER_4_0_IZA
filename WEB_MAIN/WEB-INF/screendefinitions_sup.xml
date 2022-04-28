@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<!-- Jung Yoon Tae : 2011-02-16 start -->
+    <screen name="BCM_SUP_0001">
+        <parameter key="title"    value="EDI CROUP" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/sup/setupmanagement/setupcreation/jsp/BCM_SUP_0001.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2011-02-16 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <screen name="BCM_SUP_0002">
+        <parameter key="title"    value="EDI GROUP CUSTOMER" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/sup/setupmanagement/setupcreation/jsp/BCM_SUP_0002.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <screen name="BCM_SUP_0003">
+        <parameter key="title"    value="EDI CROUP CARGO" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/sup/setupmanagement/setupcreation/jsp/BCM_SUP_0003.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <screen name="BCM_SUP_0004">
+        <parameter key="title"    value="EDI CARGO STANDARD STATUS" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/sup/setupmanagement/setupcreation/jsp/BCM_SUP_0004.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <screen name="BCM_SUP_0005">
+        <parameter key="title"    value="EDI SETUP LOGISTICS" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/sup/setupmanagement/setupcreation/jsp/BCM_SUP_0005.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <screen name="BCM_SUP_0006">
+        <parameter key="title"    value="EDI YARD" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/sup/setupmanagement/setupcreation/jsp/BCM_SUP_0006.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <screen name="BCM_SUP_0007">
+        <parameter key="title"    value="CUSTOMER SCHEDULE EDI SETUP" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/sup/setupmanagement/setupcreation/jsp/BCM_SUP_0007.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+    <screen name="BCM_SUP_0008">
+        <parameter key="title"    value="CUSTOMER SCHEDULE EDI SETUP" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/sup/setupmanagement/setupcreation/jsp/BCM_SUP_0008.jsp"/>
+    </screen> 
+    <screen name="BCM_SUP_0009">
+        <parameter key="title"    value="CUSTOMER SCHEDULE EDI SETUP" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/sup/setupmanagement/setupcreation/jsp/BCM_SUP_0009.jsp"/>
+    </screen> 
+	
+</screen-definitions>

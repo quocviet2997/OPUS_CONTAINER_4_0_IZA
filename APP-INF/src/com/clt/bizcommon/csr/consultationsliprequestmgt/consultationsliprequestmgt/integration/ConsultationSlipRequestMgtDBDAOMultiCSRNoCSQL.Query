@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOMultiCSRNoCSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+INSERT INTO ap_csr_no
+		  (
+		  	csr_no
+		  	,cre_usr_id
+		  	,cre_dt
+		  ) VALUES (
+		  	@[csr_no]
+		  	,@[cre_usr_id]
+		  	,GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd])
+		  )			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

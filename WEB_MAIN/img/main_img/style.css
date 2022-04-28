@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*...........General section..................*/
+
+body{
+	font-family:"arial","Dotum","geneva","helvetica" "sans-serif"; font-size: 12px;
+	scrollbar-3dlight-color:c6d7fe;
+	scrollbar-arrow-color:265fad;
+	scrollbar-base-color:e1ecfd;
+	scrollbar-darkshadow-color:FFFFFF;
+	scrollbar-face-color:e1ecfd;
+	scrollbar-highlight-color:FFFFF;
+	scrollbar-shadow-color:90adef;
+	margin: 0px;}
+
+TD			{font-family:"arial","Dotum","geneva","helvetica" "sans-serif"; font-size: 12px; color: #333333;}
+
+img {border : 0;}
+input, select, textarea {font-family:"arial","Dotum","geneva","helvetica" "sans-serif"; font-size: 12px; }
+.radio {border: 0;}
+
+/*title*/
+.title { font-size:12px; font-weight:bold; color:#333333; vertical-align:top; padding-top:4px; padding-left:3px;}
+.language           { font-size:11px; font-weight:bold; color:#FFF;}
+.language A:link    {font-size:11px; color:#FFF; text-decoration: none; font-weight:bold;}
+.language A:visited {font-size:11px; color:#FFF; text-decoration: none; font-weight:bold;}
+.language A:active  {font-size:11px; color:#FFF; text-decoration: none; font-weight:bold;}
+.language A:hover   {font-size:11px; color:#fcff00; text-decoration: none; font-weight:bold;}
+
+/*btn*/	
+.menu_top_txt           { font-size:12px; color:#01558a; font-weight:bold; }
+.menu_top_txt A:link    {font-size:12px; color:#01558a; text-decoration: none; font-weight:bold;}
+.menu_top_txt A:visited {font-size:12px; color:#01558a; text-decoration: none; font-weight:bold;}
+.menu_top_txt A:active  {font-size:12px; color:#01558a; text-decoration: none; font-weight:bold;}
+.menu_top_txt A:hover   {font-size:12px; color:#0b333c; text-decoration: none; font-weight:bold;}
+
+.menu_top_txt_w { font-size:12px; color:#FFF; font-weight:bold; padding:0 3px;}
+.menu_top_txt_w A:link    {font-size:12px; color:#FFF; text-decoration: none; font-weight:bold;}
+.menu_top_txt_w A:visited {font-size:12px; color:#FFF; text-decoration: none; font-weight:bold;}
+.menu_top_txt_w A:active  {font-size:12px; color:#FFF; text-decoration: none; font-weight:bold;}
+.menu_top_txt_w A:hover   {font-size:12px; color:#FFF; text-decoration: none; font-weight:bold;}
+
+/**List Header**/
+.tb_royalblue           {color:#333333; font-weight:bold; Height:26px; border-bottom:1px solid #9CCFE6; padding-right:3px; padding-left:3px; text-align:center; filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#adcce9', endColorStr='#cfe0f4', gradientType='0'); border-right:1px solid #FFFFFF;}
+.tb_royalblue  a:link	{color:#333333;	text-decoration: none;}
+.tb_royalblue  a:visited{color:#333333;	text-decoration: none;}
+.tb_royalblue  a:hover	{color:#FFE6C5;	text-decoration: none;}
+
+.tb_line1	 {font-size:12px; color:#333333; background-color:#f9f9f9; height:26px; padding:0px 5px 0px 5px; line-height: 120%; border-right:1px solid #FFFFFF;}
+.tb_line1_c	 {font-size:12px; color:#333333; background-color:#f9f9f9; height:26px; text-align:center; padding:0px 5px 0px 5px; line-height: 120%; border-right:1px solid #FFFFFF;}
+.tb_line2	 {font-size:12px; color:#333333; background-color:#ffffff; height:26px; padding:0px 5px 0px 5px; line-height: 120%; border-right:1px solid #FFFFFF;}
+.tb_line2_c	 {font-size:12px; color:#333333; background-color:#ffffff; height:26px; text-align:center; padding:0px 5px 0px 5px; line-height: 120%; border-right:1px solid #FFFFFF;}
+.tb_line3	 {font-size:12px; color:#333333; background-color:#ecf2f8; height:26px; padding:0px 5px 0px 5px; line-height: 120%; border-right:1px solid #FFFFFF;}
+.tb_line3_c	 {font-size:12px; color:#333333; background-color:#f9f9f9; height:26px; text-align:center; padding:0px 5px 0px 5px; line-height: 120%; border-right:1px solid #FFFFFF;}
+
+/**main Header**/
+.m_royalblue            {color:#004c93; font-weight:bold; Height:26px; padding-right:3px; padding-left:7px; text-align:center; filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#b4dfe6', endColorStr='#e4f8fa', gradientType='0'); border-top:3px solid #47c9e1;}
+.m_royalblue  a:link	{color:#004c93;	text-decoration: none;}
+.m_royalblue  a:visited{color:#004c93;	text-decoration: none;}
+.m_royalblue  a:hover	{color:#004c93;	text-decoration: none;}
+
+.m_line	 {font-size:12px; color:#666666; background-color:#ffffff; height:26px; padding:10px; line-height: 150%; border:1px solid #dedede; text-align:justify;}
+
+
+/* button */
+.bt_text           {font-size:11px; color:#0b333c; text-decoration: none; font-weight:bold;}
+.bt_text A:link    {font-size:11px; color:#0b333c; text-decoration: none; font-weight:bold;}
+.bt_text A:visited {font-size:11px; color:#0b333c; text-decoration: none; font-weight:bold;}
+.bt_text A:active  {font-size:11px; color:#0b333c; text-decoration: none; font-weight:bold;}
+.bt_text A:hover   {font-size:11px; color:#0b333c; text-decoration: none; font-weight:bold;}
+
+.more_btn           {font-size:11px; color:#43829c; text-decoration: none; font-weight:bold;}
+.more_btn A:link    {font-size:11px; color:#43829c; text-decoration: none; font-weight:bold;}
+.more_btn A:visited {font-size:11px; color:#43829c; text-decoration: none; font-weight:bold;}
+.more_btn A:active  {font-size:11px; color:#43829c; text-decoration: none; font-weight:bold;}
+.more_btn A:hover   {font-size:11px; color:#165a76; text-decoration: none; font-weight:bold;}
+
+/*TEXT*/
+.gonggi { height:23px; color:#666; background:url(images/tit_dot02.gif) no-repeat; padding-left:10px;}
+.gonggi A:link    {color:#666; text-decoration: none; font-weight:normal;}
+.gonggi A:visited {color:#666; text-decoration: none; font-weight:normal;}
+.gonggi A:active  {color:#666; text-decoration: none; font-weight:normal;}
+.gonggi A:hover   {color:#333; text-decoration: none; font-weight:normal;}
+
+
+.table_header_l		{font-size:12px; color:#333333; font-weight: bold; background-color:#ffffff; padding:0px 5px 1px 20px; height:25px; text-align: left; line-height: 140%;}
+
+.table_contents		{font-size:12px; color:#555555; height:25px; padding:0px 5px 1px 20px; background-color: #FFF; line-height: 140%;}

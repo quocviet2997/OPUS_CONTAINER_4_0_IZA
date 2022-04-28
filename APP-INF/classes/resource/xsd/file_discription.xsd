@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 U (http://www.altova.com) by Joseph (combine) -->
+<xsd:schema xmlns="http://www.cyberlogitec.com/file_descripton" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.cyberlogitec.com/file_descripton" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:element name="files" type="filesType"/>
+	<xsd:complexType name="filesType">
+		<xsd:sequence>
+			<xsd:element name="file" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="file-id" type="xsd:string"/>
+						<xsd:element name="file-desc" type="xsd:string" minOccurs="0"/>
+						<xsd:element name="file-prefix" type="xsd:string" minOccurs="0"/>
+						<xsd:element name="file-down-dir" minOccurs="0">
+							<xsd:complexType>
+								<xsd:simpleContent>
+									<xsd:extension base="xsd:string">
+										<xsd:attribute name="expired-day" type="xsd:int"/>
+									</xsd:extension>
+								</xsd:simpleContent>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="file-message-dir" minOccurs="0">
+							<xsd:complexType>
+								<xsd:simpleContent>
+									<xsd:extension base="xsd:string">
+										<xsd:attribute name="expired-day" type="xsd:int"/>
+									</xsd:extension>
+								</xsd:simpleContent>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="file-work-dir" minOccurs="0">
+							<xsd:complexType>
+								<xsd:simpleContent>
+									<xsd:extension base="xsd:string">
+										<xsd:attribute name="expired-day" type="xsd:int"/>
+									</xsd:extension>
+								</xsd:simpleContent>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="file-backup-dir" minOccurs="0">
+							<xsd:complexType>
+								<xsd:simpleContent>
+									<xsd:extension base="xsd:string">
+										<xsd:attribute name="expired-day" type="xsd:int"/>
+									</xsd:extension>
+								</xsd:simpleContent>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="file-log-dir" minOccurs="0">
+							<xsd:complexType>
+								<xsd:attribute name="expired-day" type="xsd:int"/>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="file-expired-day" type="xsd:int" minOccurs="0"/>
+						<xsd:element name="file-max-size" type="xsd:long" minOccurs="0"/>
+						<xsd:element name="file-delimiter" type="xsd:string" minOccurs="0"/>
+						<xsd:element name="file-delimiter-enable" type="xsd:boolean" minOccurs="0"/>
+						<xsd:element name="file-encoding" minOccurs="0">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="file-from-encoding" type="xsd:string"/>
+									<xsd:element name="file-to-encoding" type="xsd:string"/>
+								</xsd:sequence>
+								<xsd:attribute name="enable" type="xsd:boolean"/>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="file-dirs" minOccurs="0">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="dir" minOccurs="0" maxOccurs="unbounded">
+										<xsd:complexType>
+											<xsd:attribute name="name" type="xsd:string"/>
+											<xsd:attribute name="expired-day" type="xsd:int"/>
+											<xsd:attribute name="desc" type="xsd:string"/>
+										</xsd:complexType>
+									</xsd:element>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="file-columns" minOccurs="0">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="column" minOccurs="0" maxOccurs="unbounded">
+										<xsd:complexType>
+											<xsd:attribute name="name" type="xsd:string"/>
+											<xsd:attribute name="length" type="xsd:int"/>
+											<xsd:attribute name="desc" type="xsd:string"/>
+										</xsd:complexType>
+									</xsd:element>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

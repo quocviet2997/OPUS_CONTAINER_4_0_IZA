@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SupCommonDBDAOCheckCustomerCountryCodeRSQL">
+			<desc><![CDATA[2011.02.22 정윤태 MDM_CUSTOMER에서 Customer Country Code 정보를 가져온다]]></desc>
+			<sql><![CDATA[
+SELECT CUST_CNT_CD 
+  FROM MDM_CUSTOMER
+ WHERE CUST_CNT_CD = @[cust_cnt_cd]
+#if (${cust_seq} != '')
+   AND CUST_SEQ = @[cust_seq]
+#end
+   AND DELT_FLG = 'N'
+   AND ROWNUM = 1			]]></sql>
+			<params>
+				<param name="cust_cnt_cd" type="12" value="" out="N"/>
+				<param name="cust_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

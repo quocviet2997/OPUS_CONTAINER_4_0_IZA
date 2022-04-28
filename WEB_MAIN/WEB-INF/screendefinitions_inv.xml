@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<!-- saeil kim : 2009-04-24 start -->
+    <screen name="FNS_INV_0006">
+        <parameter key="title"    value="Ex. Rate Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/arinvoiceexratemgt/jsp/FNS_INV_0006.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-04-24 end -->
+
+
+	<!-- saeil kim : 2009-04-27 start -->
+    <screen name="FNS_INV_0022">
+        <parameter key="title"    value="Other Revenue Invoice Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicecreation/manualarcreation/jsp/FNS_INV_0022.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-04-27 end -->
+ 
+	<!-- saeil kim : 2009-04-27 start -->
+    <screen name="FNS_INV_0023">
+        <parameter key="title"    value="Other Revenue Invoice Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicecreation/manualarcreation/jsp/FNS_INV_0023.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-04-27 end -->
+
+	<!-- saeil kim : 2009-04-27 start -->
+    <screen name="FNS_INV_0007">
+        <parameter key="title"    value="Ex. Rate Entry by Customer" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/arinvoiceexratemgt/jsp/FNS_INV_0007.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-04-27 end -->
+
+	
+	<!-- saeil kim : 2009-05-04 start -->
+    <screen name="FNS_INV_0008">
+        <parameter key="title"    value="Ex. Rate Entry by Date" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/arinvoiceexratemgt/jsp/FNS_INV_0008.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-05-04 end -->
+
+
+	
+	<!-- saeil kim : 2009-05-04 start -->
+    <screen name="FNS_INV_0089" template="templatePop">
+        <parameter key="title"    value="Ex Rate Entry by Cusomtomer - Multi Cust" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/arinvoiceexratemgt/jsp/FNS_INV_0089.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <screen name="FNS_INV_0003">
+        <parameter key="title"    value="(China) Pantos Inquiry/Re-send" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/accountreceivableedisend/jsp/FNS_INV_0003.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <screen name="FNS_INV_0018">
+        <parameter key="title"    value="Invoice Split Before Invoice Issue" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoicecorrection/jsp/FNS_INV_0018.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <screen name="FNS_INV_0030">
+        <parameter key="title"    value="Invoice Interface Inquiry by Date" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0030.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <screen name="FNS_INV_0031">
+        <parameter key="title"    value="Invoice Inquiry by Good Date" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0031.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <screen name="FNS_INV_0033">
+        <parameter key="title"    value="Invoice Split After Invoice Issue" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoicecorrection/jsp/FNS_INV_0033.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <screen name="FNS_INV_0059">
+        <parameter key="title"    value="e-mail / Auto FAX Invoice Sent Result" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0059.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-05-04 end -->
+	
+	<!-- saeil kim : 2009-05-04 start -->
+    <screen name="FNS_INV_0094_01">
+        <parameter key="title"    value="Invoice Customer Change(Single)" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoicecorrection/jsp/FNS_INV_0094_01.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <screen name="FNS_INV_0094_02">
+        <parameter key="title"    value="Invoice Customer Change(Multi)" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoicecorrection/jsp/FNS_INV_0094_02.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-05-04 end -->
+	<!-- saeil kim : 2009-05-04 start -->
+    <screen name="FNS_INV_0098"   template="templatePop">
+        <parameter key="title"    value="Container No" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoicecorrection/jsp/FNS_INV_0098.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <screen name="FNS_INV_0099"  template="templatePop">
+        <parameter key="title"    value="Invoice Inquiry by IF No (Charge Remark Popup)" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0099.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-05-04 end -->
+
+		<!-- Jung Hwi Taek : 2009-05-11 start -->
+    <screen name="FNS_INV_0076">
+        <parameter key="title"    value="Revenue Account Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/generalarinvoicemasterdatamgt/jsp/FNS_INV_0076.jsp"/>
+    </screen>
+	<!-- Jung Hwi Taek : 2009-05-11 end -->
+
+	<!-- Han Dong Hoon : 2009-05-19 start -->
+    <screen name="FNS_INV_0013" template="templatePop">
+        <parameter key="title"    value="Customer Information" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/arinvoicecustomermgt/jsp/FNS_INV_0013.jsp"/>
+    </screen>
+	<!-- Han Dong Hoon : 2009-05-19 end -->
+	
+	
+	<!-- Jung Hwi Taek : 2009-05-15 start -->
+    <screen name="FNS_INV_0071">
+        <parameter key="title"    value="FNS_INV_0071" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicecreation/manualarcreation/jsp/FNS_INV_0071.jsp"/>
+    </screen>
+	<!-- Jung Hwi Taek : 2009-05-15 end -->
+
+		<!-- Han Dong Hoon : 2009-05-28 start -->
+    <screen name="FNS_INV_0025">
+        <parameter key="title"    value="(Europe) FAC Rate Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/generalarinvoicemasterdatamgt/jsp/FNS_INV_0025.jsp"/>
+    </screen>
+	<!-- Han Dong Hoon : 2009-05-28 end -->
+
+	<!-- Han Dong Hoon : 2009-05-28 start -->
+    <screen name="FNS_INV_0086">
+        <parameter key="title"    value="Quick Customer Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/arinvoicecustomermgt/jsp/FNS_INV_0086.jsp"/>
+    </screen>
+	<!-- Han Dong Hoon : 2009-05-28 end -->
+
+	<!-- Jung Jin Park : 2009-05-27 start -->
+    <screen name="FNS_INV_0053">
+        <parameter key="title"    value="Invoice Issue Inquiry by Invoice No" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0053.jsp"/>
+    </screen>
+	<!-- Jung Jin Park : 2009-05-27 end -->
+
+
+	<!-- saeil kim : 2009-06-04 start -->
+    <screen name="FNS_INV_0016">
+        <parameter key="title"    value="Invoice Item Correction(General)" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoicecorrection/jsp/FNS_INV_0016.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-06-04 end -->
+
+	
+	<!-- saeil kim : 2009-06-05 start -->
+    <screen name="FNS_INV_0090" template="templatePop">
+        <parameter key="title"    value="RFA Customer Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/arinvoicecustomermgt/jsp/FNS_INV_0090.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-06-05 end -->
+
+	<!-- saeil kim : 2009-06-05 start -->
+    <screen name="FNS_INV_0091" template="templatePop">
+        <parameter key="title"    value="SC Customer Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/arinvoicecustomermgt/jsp/FNS_INV_0091.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-06-05 end -->
+
+	<!-- Jung Hwi Taek : 2009-06-05 start -->
+    <screen name="FNS_INV_0087"   template="templatePop">
+        <parameter key="title"    value="Invoice Remark" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/invoiceissue/jsp/FNS_INV_0087.jsp"/>
+    </screen>
+	<!-- Jung Hwi Taek : 2009-06-05 end -->
+
+	<!-- Han Dong Hoon : 2009-06-05 start -->
+    <screen name="FNS_INV_0072">
+        <parameter key="title"    value="Cut-off VVD Entry for New A/R Office" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/generalarinvoicemasterdatamgt/jsp/FNS_INV_0072.jsp"/>
+    </screen>
+	<!-- Han Dong Hoon : 2009-06-05 end -->
+
+	<!-- Jung Jin Park : 2009-06-08 start -->
+    <screen name="FNS_INV_0009">
+        <parameter key="title"    value="Invoice Inquiry by B/L No" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0009.jsp"/>
+    </screen>
+    
+     <screen name="FNS_INV_0009_POP" template="templatePop">
+        <parameter key="title"    value="Invoice Inquiry by B/L No" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0009.jsp"/>
+    </screen>
+	<!-- Jung Jin Park : 2009-06-08 end -->
+	
+	<!-- Jung Hwi Taek : 2009-06-09 start -->
+    <screen name="FNS_INV_0085">
+        <parameter key="title"    value="(India) Freight and Charge List" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0085.jsp"/>
+    </screen>
+	<!-- Jung Hwi Taek : 2009-06-09 end -->
+	
+	<!-- Han Dong Hoon : 2009-06-09 start -->
+    <screen name="FNS_INV_0073">
+        <parameter key="title"    value="A/R Office Code Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/generalarinvoicemasterdatamgt/jsp/FNS_INV_0073.jsp"/>
+    </screen>
+	<!-- Han Dong Hoon : 2009-06-09 end -->
+
+	<!-- Jung Jin Park : 2009-06-11 start -->
+    <screen name="FNS_INV_0010"   template="templatePop">
+        <parameter key="title"    value="Invoice Inquiry by B/L No (History Pop-up)" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0010.jsp"/>
+    </screen>
+	<!-- Jung Jin Park : 2009-06-11 end -->
+
+	<!-- Jung Jin Park : 2009-06-16 start -->
+    <screen name="FNS_INV_0011">
+        <parameter key="title"    value="Invoice Inquiry by I/F No" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0011.jsp"/>
+    </screen>
+	<!-- Jung Jin Park : 2009-06-16 end -->
+	
+	<!-- Jung Hwi Taek : 2009-06-17 start -->
+    <screen name="FNS_INV_0034_01">
+        <parameter key="title"    value="AccountReceivableInvoiceMgt" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/invoiceissue/jsp/FNS_INV_0034_01.jsp"/>
+    </screen>
+     <screen name="FNS_INV_0034_01_POP" template="templatePop">
+        <parameter key="title"    value="AccountReceivableInvoiceMgt" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/invoiceissue/jsp/FNS_INV_0034_01.jsp"/>
+    </screen>
+	<!-- Jung Hwi Taek : 2009-06-17 end -->	
+	
+	<!-- Han Dong Hoon : 2009-06-30 start -->
+    <screen name="FNS_INV_0503">
+        <parameter key="title"    value="Invoice Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/invoiceissue/jsp/FNS_INV_0503.jsp"/>
+    </screen>
+	<!-- Han Dong Hoon : 2009-06-30 end -->	
+
+	<!-- Jung Hwi Taek : 2009-06-30 start -->
+    <screen name="FNS_INV_0035">
+        <parameter key="title"    value="Invoice Re-Issue" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/invoiceissue/jsp/FNS_INV_0035.jsp"/>
+    </screen>
+	<!-- Jung Hwi Taek : 2009-06-30 end -->
+
+	<!-- Jung Hwi Taek : 2009-07-06 start -->
+    <screen name="FNS_INV_0034_02" template="templatePop">
+        <parameter key="title"    value="Invoice Issue (Email)" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/invoiceissue/jsp/FNS_INV_0034_02.jsp"/>
+    </screen>
+	<!-- Jung Hwi Taek : 2009-07-06 end -->
+	
+	<!-- Hyun-Jae Jeong : 2017-06-16 start -->
+    <screen name="FNS_INV_0034_03" template="templatePop">
+        <parameter key="title"    value="Invoice Issue (Email)" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/invoiceissue/jsp/FNS_INV_0034_03.jsp"/>
+    </screen>
+	<!-- Hyun-Jae Jeong : 2017-06-16 end -->
+	
+	<!-- saeil kim : 2009-07-07 start -->
+    <screen name="FNS_INV_0100">
+        <parameter key="title"    value="VVD Ex.Rate Creation by S/A Date" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/arinvoiceexratemgt/jsp/FNS_INV_0100.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-07-07 end -->
+
+	<!-- saeil kim : 2009-07-07 start -->
+    <screen name="FNS_INV_0101">
+        <parameter key="title"    value="VVD Ex.Rate Creation by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/arinvoiceexratemgt/jsp/FNS_INV_0101.jsp"/>
+    </screen>
+	<!-- saeil kim : 2009-07-07 end -->
+
+	<!-- Jung Jin Park : 2009-07-23 start -->
+    <screen name="FNS_INV_0057">
+        <parameter key="title"    value="Invoice Not Issued Inquiry by Customer" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0057.jsp"/>
+    </screen>
+	<!-- Jung Jin Park : 2009-07-23 end -->
+
+	<!-- Jung Hwi Taek : 2009-08-10 start -->
+    <screen name="FNS_INV_0106"   template="templatePop">
+        <parameter key="title"    value="Invoice Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0106.jsp"/>
+    </screen>
+	<!-- Jung Hwi Taek : 2009-08-10 end -->
+	
+	<!-- Do Soon Choi : 2009-08-10 start -->
+    <screen name="FNS_INV_0017">
+        <parameter key="title"    value="Invoice Customer Correction by Date" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoicecorrection/jsp/FNS_INV_0017.jsp"/>
+    </screen>
+	<!-- Do Soon Choi : 2009-08-10 end -->
+	
+	<!-- Jung Jin Park : 2009-08-25 start -->
+    <screen name="FNS_INV_0029">
+        <parameter key="title"    value="Manual System Clear" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoicecorrection/jsp/FNS_INV_0029.jsp"/>
+    </screen>
+	<!-- Jung Jin Park : 2009-08-25 end -->
+	
+	<!-- Choi Do soon : 2009-08-26 start -->
+    <screen name="FNS_INV_0027">
+        <parameter key="title"    value="Ex Rate Update by Date or VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoicecorrection/jsp/FNS_INV_0027.jsp"/>
+    </screen>
+	<!-- Choi Do soon : 2009-08-26 end -->
+	
+	<!-- Jung Jin Park : 2009-08-26 start -->
+    <screen name="FNS_INV_0022_01" template="templatePop">
+        <parameter key="title"    value="Other Revenue Invoice" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicecreation/manualarcreation/jsp/FNS_INV_0022.jsp"/>
+    </screen>
+	<!-- Jung Jin Park : 2009-08-26 end -->
+
+
+	
+	<!-- Choi Do soon : 2009-10-07 start -->
+    <screen name="FNS_INV_0028">
+        <parameter key="title"    value=" Invoice Data Manual Interface" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoicecorrection/jsp/FNS_INV_0028.jsp"/>
+    </screen>
+	<!-- Choi Do soon : 2009-10-07 end -->
+	
+	
+	<!-- Choi Woo-Seok : 2009-10-24 start -->
+    <screen name="FNS_INV_0108">
+        <parameter key="title"    value="Revenue Lane Inquiry by Order" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/generalarinvoicemasterdatamgt/jsp/FNS_INV_0108.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-10-24 end -->
+
+	
+	<!-- Jung Jin Park : 2009-10-27 start -->
+    <screen name="FNS_INV_0109"   template="templatePop">
+        <parameter key="title"    value="Invoice Search (Pop-Up) _Vietnam" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0109.jsp"/>
+    </screen>
+	<!-- Jung Jin Park : 2009-10-27 end -->
+
+	<!-- Jung Hwi Taek : 2009-08-10 start -->
+    <screen name="FNS_INV_0034_02_prev"   template="templatePop">
+        <parameter key="title"    value="Invoice Prev" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/invoiceissue/jsp/FNS_INV_0034_02_prev.jsp"/>
+                                         
+    </screen>
+	<!-- Jung Hwi Taek : 2009-08-10 end -->
+	
+	<!-- Choi Woo-Seok : 2010-02-19 start -->
+    <screen name="FNS_INV_0110"   template="templatePop">
+        <parameter key="title"    value="(DXBBB) INV B/L List" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0110.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2010-02-19 end -->
+	
+	
+	<!-- KIM HYUN HWA : 2010-12-13 start -->
+    <screen name="FNS_INV_0115">
+        <parameter key="title"    value="ERP IF Error Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0115.jsp"/>
+    </screen>
+	<!-- KIM HYUN HWA : 2010-12-13 end -->
+	
+	<!-- Choi Do Soon : 2010-12-27 start -->
+    <screen name="FNS_INV_0116">
+        <parameter key="title"    value="Transaction Data Comparison Report " direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0116.jsp"/>
+    </screen>
+	<!-- Choi Do Soon : 2010-12-27 end -->		
+
+	<!-- Park Sung Yong : 2014-11-11 start -->
+    <screen name="FNS_INV_0050">
+        <parameter key="title"    value="Customer Preferable Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0050.jsp"/>
+    </screen>
+	<!-- Park Sung Yong : 2014-11-11 end -->	
+	
+	<!-- Park Sung Yong : 2014-11-11 start -->
+    <screen name="FNS_INV_0051">
+        <parameter key="title"    value="Customer Preferable Report - Item Select" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0051.jsp"/>
+    </screen>
+	<!-- Park Sung Yong : 2014-11-11 end -->	
+	
+	<!-- Park Sung Yong : 2014-11-11 start -->
+    <screen name="FNS_INV_0102">
+        <parameter key="title"    value="Code Conversion for CPR" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/generalarinvoicemasterdatamgt/jsp/FNS_INV_0102.jsp"/>
+    </screen>
+	<!-- Park Sung Yong : 2014-11-11 end -->
+	
+	<!-- Park Sung Yong : 2014-11-11 start -->
+    <screen name="FNS_INV_0103">
+        <parameter key="title"    value="CPR Download History Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0103.jsp"/>
+    </screen>
+	<!-- Park Sung Yong : 2014-11-11 end -->	
+	
+	<!-- Park Sung Yong : 2014-11-11 start -->
+    <screen name="FNS_INV_0104" template="templatePop">
+        <parameter key="title"    value="CPR Download History Inquiry - Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0104.jsp"/>
+    </screen>
+	<!-- Park Sung Yong : 2014-11-11 end -->
+	
+	<!-- Park Sung Yong : 2014-11-11 start -->
+    <screen name="FNS_INV_0118" template="templatePop">
+        <parameter key="title"    value="Charge Code Set-Up per Customer" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/generalarinvoicemasterdatamgt/jsp/FNS_INV_0118.jsp"/>
+    </screen>
+	<!-- Park Sung Yong : 2014-11-11 end -->
+	
+	<!-- KIM OK RYE : 2014-12-12 start -->
+    <screen name="FNS_INV_0081" template="templatePop">
+        <parameter key="title"    value="Ex Rate History Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/arinvoiceexratemgt/jsp/FNS_INV_0081.jsp"/>
+    </screen>
+	<!-- KIM OK RYE : 2014-12-12 end -->
+		
+	<!-- Park Sung Yong : 2014-11-25 start -->
+    <screen name="FNS_INV_0112">
+        <parameter key="title"    value="EDI 310 Invoicing" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/accountreceivableedisend/jsp/FNS_INV_0112.jsp"/>
+    </screen>
+	<!-- Park Sung Yong : 2014-11-25 end -->
+	
+	<!-- Park Sung Yong : 2014-12-18 start -->
+    <screen name="FNS_INV_0901" template="templatePop">
+        <parameter key="title"    value="Multiple Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/accountreceivableedisend/jsp/FNS_INV_0901.jsp"/>
+    </screen>
+	<!-- Park Sung Yong : 2014-12-18 end -->
+	
+	<!-- IY Cho : 2014-11-20 start --> 
+    <screen name="FNS_INV_0105">
+        <parameter key="title"    value="VVD Ex. Rate Creation by Date" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/arinvoiceexratemgt/jsp/FNS_INV_0105.jsp"/>
+    </screen>
+
+    <screen name="FNS_INV_0107" template="templatePop">
+        <parameter key="title"    value="VVD Ex. Rate Date History Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/arinvoiceexratemgt/jsp/FNS_INV_0107.jsp"/>
+    </screen>
+	<!-- IY Cho : 2014-11-20 end -->
+	
+	<!-- park myoung sin : 2014.12.17 start -->
+    <screen name="FNS_INV_0113">
+        <parameter key="title"    value="APC Invoice" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/accountreceivableedisend/jsp/FNS_INV_0113.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2014.12.17 end -->
+	
+	<!-- Park Sung Yong : 2015-08-13 start -->
+    <screen name="FNS_INV_9999">
+        <parameter key="title"    value="Manual Interface" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoicecorrection/jsp/FNS_INV_9999.jsp"/>
+    </screen>
+	<!-- Park Sung Yong : 2015-08-13 end -->
+	
+	<!-- Park Sung Yong : 2015-11-25 start -->
+    <screen name="FNS_INV_9001">
+        <parameter key="title"    value="Migration Interface" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemigration/accountreceivableinvoicemigration/jsp/FNS_INV_9001.jsp"/>
+    </screen>
+	<!-- Park Sung Yong : 2015-11-25 end -->
+	
+	<!-- Hyun Hwa Kim : 2017-04-19 start --> 
+    <screen name="FNS_INV_0120">
+        <parameter key="title"    value="India GST Rate Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/generalarinvoicemasterdatamgt/jsp/FNS_INV_0120.jsp"/>
+    </screen>
+    <screen name="FNS_INV_0121" template="templatePop">
+        <parameter key="title"    value="Service Account Information For India GST" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/generalarinvoicemasterdatamgt/jsp/FNS_INV_0121.jsp"/>
+    </screen>
+	<!-- Hyun Hwa Kim : 2017-04-19 end -->
+	
+	<!-- Park Kwang Hui : 2017-06-08 start -->
+	<screen name="FNS_INV_0122">
+        <parameter key="title"    value="GSTR Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemgt/arinvoiceinquiry/jsp/FNS_INV_0122.jsp"/>
+    </screen>
+	<!-- Park Kwang Hui : 2017-06-08 end -->
+	
+	<!-- Jeong Wook Yoo : 2017-11-01 start --> 
+    <screen name="FNS_INV_0125">
+        <parameter key="title"    value="TAX Profile Setup" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/inv/accountreceivableinvoicemasterdatamgt/generalarinvoicemasterdatamgt/jsp/FNS_INV_0125.jsp"/>
+    </screen>
+	<!-- Jeong Wook Yoo : 2017-11-01 end -->
+</screen-definitions>

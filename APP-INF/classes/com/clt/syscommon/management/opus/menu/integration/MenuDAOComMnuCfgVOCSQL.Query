@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MenuDAOComMnuCfgVOCSQL">
+			<desc><![CDATA[insert menu   ]]></desc>
+			<sql><![CDATA[
+insert into com_mnu_cfg (                                              
+ mnu_cfg_cd                                           ,                
+ prnt_pgm_no                                          ,                
+ chd_pgm_no                                           ,                
+ pgm_lvl_val                                          ,                
+ dp_seq                                               ,                
+ cre_usr_id                                           ,                
+ cre_dt                                               ,                
+ upd_usr_id                                           ,                
+ upd_dt                                                                
+  ) values (                                                           
+ @[mnu_cfg_cd], @[prnt_pgm_no], @[chd_pgm_no], @[pgm_lvl_val], @[dp_seq], @[cre_usr_id], sysdate, @[upd_usr_id], sysdate                           
+ )			]]></sql>
+			<params>
+				<param name="mnu_cfg_cd" type="12" value="" out="N"/>
+				<param name="prnt_pgm_no" type="12" value="" out="N"/>
+				<param name="chd_pgm_no" type="12" value="" out="N"/>
+				<param name="pgm_lvl_val" type="12" value="" out="N"/>
+				<param name="dp_seq" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

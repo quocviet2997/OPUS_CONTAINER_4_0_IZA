@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FaxManagementDBDAOComUpldFileDSQL">
+			<desc><![CDATA[Delete File Meta]]></desc>
+			<sql><![CDATA[
+DELETE COM_UPLD_FILE WHERE FILE_SAV_ID LIKE @[fax_snd_no]||'%'			]]></sql>
+			<params>
+				<param name="fax_snd_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

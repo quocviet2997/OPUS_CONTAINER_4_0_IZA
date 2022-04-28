@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOAddEstmRevVvdCSQL">
+			<desc><![CDATA[Create Estimated Revenue VVD with AR Master Revenue VVD for last 6 months]]></desc>
+			<sql><![CDATA[
+CALL SAC_ESTM_REV_VVD_PKG.CREATE_ESTM_REV_VVD_PRC
+(
+ @[pi_exe_month]
+,@[pi_user_id]
+,@[po_result]
+,@[po_err_msg]
+)			]]></sql>
+			<params>
+				<param name="pi_exe_month" type="12" value="" out="N"/>
+				<param name="pi_user_id" type="12" value="" out="N"/>
+				<param name="po_result" type="12" value="" out="Y"/>
+				<param name="po_err_msg" type="12" value="" out="Y"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

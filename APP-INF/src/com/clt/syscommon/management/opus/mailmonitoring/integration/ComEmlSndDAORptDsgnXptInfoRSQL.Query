@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ComEmlSndDAORptDsgnXptInfoRSQL">
+			<desc><![CDATA[ComEmlSnd RptDsgnXptInfo]]></desc>
+			<sql><![CDATA[
+select * from COM_RPT_DSGN_XPT_INFO
+where eml_snd_no = @[eml_snd_no]			]]></sql>
+			<params>
+				<param name="eml_snd_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

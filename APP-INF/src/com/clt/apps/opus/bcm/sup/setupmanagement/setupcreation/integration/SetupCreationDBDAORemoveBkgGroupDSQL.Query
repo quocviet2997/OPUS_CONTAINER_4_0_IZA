@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAORemoveBkgGroupDSQL">
+			<desc><![CDATA[2011.02.17 정윤태 BKG EDI GROUP 정보를 삭제한다]]></desc>
+			<sql><![CDATA[
+DELETE FROM BKG_EDI_GRP
+ WHERE ESVC_GRP_CD = @[edi_grp_cd]
+   AND CO_CD = SUBSTR(@[co_div_cd],1,1)			]]></sql>
+			<params>
+				<param name="edi_grp_cd" type="12" value="" out="N"/>
+				<param name="co_div_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCheckMstRevVVD02RSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT NVL(M.DELT_FLG, 'N') CHK,
+  M.VSL_CD||M.SKD_VOY_NO||M.SKD_DIR_CD||M.RLANE_DIR_CD MST_REV_VVD
+FROM AR_MST_REV_VVD M
+WHERE M.VSL_CD = SUBSTR(@[vvd_cd], 1, 4)
+  AND M.SKD_VOY_NO = SUBSTR(@[vvd_cd], 5, 4)
+  AND M.SKD_DIR_CD = SUBSTR(@[vvd_cd], 9, 1)
+  AND M.RLANE_DIR_CD = SUBSTR(@[vvd_cd], 10, 1)
+  AND M.DELT_FLG = 'N'			]]></sql>
+			<params>
+				<param name="vvd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

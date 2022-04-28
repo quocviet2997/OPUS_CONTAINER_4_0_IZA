@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOinsertNewApproversForUnapprovedCsrCSQL">
+			<desc><![CDATA[insertNewApproversForUnapprovedCsr]]></desc>
+			<sql><![CDATA[
+INSERT INTO COM_APRO_RQST_ROUT R (
+APRO_RQST_NO, APRO_RQST_SEQ, APRO_USR_ID, APRO_USR_NM, APRO_OFC_CD, APRO_OFC_NM, APRO_USR_JB_TIT_NM
+, APRO_DT, APSTS_CD, APRO_RMK, DELT_FLG, CRE_USR_ID, CRE_DT, UPD_USR_ID, UPD_DT, EDW_UPD_DT, DP_SEQ
+)
+SELECT 
+(SELECT C.APRO_RQST_NO FROM COM_APRO_CSR_DTL C WHERE C.CSR_NO = @[csr_no] AND C.APRO_RQST_NO = @[apro_rqst_no]) APRO_RQST_NO
+, B.APRO_SEQ APRO_RQST_SEQ
+, B.APRO_USR_ID, U.USR_NM, U.OFC_CD, NULL, U.JB_ENG_NM
+, NULL, NULL, NULL, 'N', @[cre_usr_id], SYSDATE, @[cre_usr_id], SYSDATE, NULL, B.DP_SEQ
+FROM COM_APRO_ROUT_DFLT A, COM_APRO_ROUT_DFLT_DTL B, COM_USER U
+WHERE 1=1
+AND A.SUB_SYS_CD NOT IN ('FLT','JOO')
+AND A.SUB_SYS_CD = @[sub_sys_cd]
+AND A.OFC_CD = @[ofc_cd]
+AND NVL(A.DELT_FLG,'N') <> 'Y'
+AND A.APRO_ROUT_SEQ = B.APRO_ROUT_SEQ
+AND NVL(B.DELT_FLG,'N') <> 'Y'
+AND B.APRO_USR_ID = U.USR_ID(+)
+AND B.APRO_SEQ IN (DECODE(NVL(@[n1st_appred_yn],'N'),'Y',-1,1), DECODE(NVL(@[n2nd_appred_yn],'N'),'Y',-1,2))
+AND DECODE(B.APRO_SEQ, 1, 'Y',
+            CASE
+            WHEN A.CSR_CURR_CD IS NOT NULL AND NVL(A.CSR_AMT,0) <> 0 
+            THEN
+                CASE 
+                WHEN  NVL(A.CSR_AMT, -1) < 
+                        (SELECT NVL(COM_CONV_CURR_FNC(H.CSR_CURR_CD, A.CSR_CURR_CD, H.CSR_AMT, SUBSTR(H.GL_DT,1,6)), 0) CSR_AMT
+                         FROM AP_INV_HDR H
+                         WHERE CSR_NO = @[csr_no])
+                THEN 'Y'
+                ELSE 'N'
+                END
+            ELSE 'Y'
+            END) = 'Y'			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="sub_sys_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="n1st_appred_yn" type="12" value="" out="N"/>
+				<param name="n2nd_appred_yn" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

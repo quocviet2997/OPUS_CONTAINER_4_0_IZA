@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="RoleDAOComUsrRoleRSQL">
+			<desc><![CDATA[select com_usr_role]]></desc>
+			<sql><![CDATA[
+#if(${usr_auth_tp_cd}=='A')     
+   SELECT                     
+     			level, 
+         '' delcheck, 
+         '' status, 
+         '' lvl,     
+    usr_role_cd, 
+    usr_role_nm,     
+    usr_role_desc, 
+    prnt_usr_role_cd, 
+    user_assign, 
+    prog_assign, 
+    cre_dt,
+	ADM_YN
+   FROM (     
+    SELECT A.usr_role_cd, 
+          A.usr_role_nm, 
+          A.USR_ROLE_DESC, 
+       A.PRNT_USR_ROLE_CD, 
+          DECODE(B.USR_ROLE_CD,NULL,'X',0,'X','O') USER_ASSIGN, 
+          DECODE(C.USR_ROLE_CD,NULL,'X',0,'X','O') PROG_ASSIGN, 
+       TO_CHAR(A.CRE_DT,'YYYYMMDD') CRE_DT,
+		'Y' ADM_YN
+   FROM COM_USR_ROLE a,
+			(SELECT DISTINCT B1.USR_ROLE_CD FROM COM_USR_ROLE_MTCH B1) B,
+			(SELECT DISTINCT C1.USR_ROLE_CD FROM COM_PGM_ROLE C1) C     
+     WHERE 1=1     
+      AND A.USR_ROLE_CD = B.USR_ROLE_CD(+)     
+      AND A.USR_ROLE_CD = C.USR_ROLE_CD(+)     
+      AND ('ALL' = @[usr_role_cd] OR a.usr_role_cd LIKE '%' || @[usr_role_cd] || '%' )     
+      AND ('ALL' = @[usr_role_nm] OR a.usr_role_nm LIKE '%' || @[usr_role_nm] || '%' )     
+         )     
+   START WITH PRNT_USR_ROLE_CD IS NULL     
+   CONNECT BY PRIOR USR_ROLE_CD = PRNT_USR_ROLE_CD
+   ORDER SIBLINGS BY usr_role_cd
+#elseif(${usr_auth_tp_cd}=='S')
+   SELECT                     
+     	level, 
+      '' delcheck, 
+      '' status, 
+      '' lvl, 
+    usr_role_cd, 
+    usr_role_nm, 
+    usr_role_desc, 
+    prnt_usr_role_cd, 
+    user_assign, 
+    prog_assign, 
+    cre_dt,
+	adm_yn
+   FROM (     
+   SELECT A.usr_role_cd, 
+         A.usr_role_nm, 
+         A.USR_ROLE_DESC, 
+         A.PRNT_USR_ROLE_CD, 
+         DECODE(B.USR_ROLE_CD,NULL,'X',0,'X','O') USER_ASSIGN, 
+         DECODE(C.USR_ROLE_CD,NULL,'X',0,'X','O') PROG_ASSIGN, 
+          TO_CHAR(A.CRE_DT,'YYYYMMDD') CRE_DT,
+		DECODE(D.USR_ID, NULL, 'N', 'Y') ADM_YN     
+     FROM COM_USR_ROLE a,
+				(SELECT DISTINCT B1.USR_ROLE_CD FROM COM_USR_ROLE_MTCH B1) B, 
+				(SELECT DISTINCT C1.USR_ROLE_CD FROM COM_PGM_ROLE C1) C,
+				COM_USR_ROLE_ADM_MTCH D
+     WHERE 1=1     
+      AND A.USR_ROLE_CD = B.USR_ROLE_CD(+)     
+      AND A.USR_ROLE_CD = C.USR_ROLE_CD(+)
+	  AND A.USR_ROLE_CD = D.USR_ROLE_CD(+) 
+	  AND D.USR_ID(+) = @[usr_id]
+      AND ('ALL' = @[usr_role_cd] OR a.usr_role_cd LIKE '%' || @[usr_role_cd] || '%' )     
+      AND ('ALL' = @[usr_role_nm] OR a.usr_role_nm LIKE '%' || @[usr_role_nm] || '%' )     
+         )     
+   START WITH PRNT_USR_ROLE_CD IS NULL     
+   CONNECT BY PRIOR USR_ROLE_CD = PRNT_USR_ROLE_CD
+   ORDER SIBLINGS BY usr_role_cd
+#end			]]></sql>
+			<params>
+				<param name="usr_role_cd" type="12" value="" out="N"/>
+				<param name="usr_role_nm" type="12" value="" out="N"/>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

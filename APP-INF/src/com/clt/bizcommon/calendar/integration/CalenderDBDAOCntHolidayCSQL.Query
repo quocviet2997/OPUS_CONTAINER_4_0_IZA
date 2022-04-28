@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CalenderDBDAOCntHolidayCSQL">
+			<desc><![CDATA[CntHoliday insert]]></desc>
+			<sql><![CDATA[
+insert into prd_holiday (
+	hol_id,
+	hol_nm,
+	hol_knd_cd,
+	cnt_cd,
+	ste_cd,
+	loc_cd,
+	hol_fm_dt,
+	hol_to_dt,
+	delt_flg,
+	cre_usr_id,
+	cre_dt
+) values( 
+	(@[hol_id]||LPAD(prd_netnode_hol_seq1.nextval, 5, '0'),
+	@[hol_nm],
+	'C',
+	@[cnt_cd],
+	'',
+	'',
+	@[hol_fm_dt],
+	@[hol_to_dt],
+	'N',
+	@[cre_usr_id],
+	SYSDATE
+)			]]></sql>
+			<params>
+				<param name="hol_id" type="12" value="" out="N"/>
+				<param name="hol_nm" type="12" value="" out="N"/>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="hol_fm_dt" type="12" value="" out="N"/>
+				<param name="hol_to_dt" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_0200"   template="templatePop">
+        <parameter key="title"    value="ASA NO Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableagent/accountreceivableagent/jsp/STM_SAR_0200.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_5001">
+        <parameter key="title"    value="Agent Collection Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableagent/accountreceivableagent/jsp/STM_SAR_5001.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- lee yongjun : 2014-06-16 start -->
+    <screen name="STM_SAR_5005">
+        <parameter key="title"    value="Agent Collection Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableagent/accountreceivableagent/jsp/STM_SAR_5005.jsp"/>
+    </screen>
+	<!-- lee yongjun : 2014-06-16 end -->
+	
+	<!-- yongjun Lee : 2014-04-07 start -->
+    <screen name="STM_SAR_5901" template="templatePop">
+        <parameter key="title"    value="Agent Collection Entry Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableagent/accountreceivableagent/jsp/STM_SAR_5901.jsp"/>
+    </screen>
+	<!-- yongjun Lee : 2014-04-07 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_5002">
+        <parameter key="title"    value="Agent Statement of Account Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableagent/accountreceivableagent/jsp/STM_SAR_5002.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_5003">
+        <parameter key="title"    value="Agent Statement of Account Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableagent/accountreceivableagent/jsp/STM_SAR_5003.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_5004">
+        <parameter key="title"    value="Unreported OTS Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableagent/accountreceivableagent/jsp/STM_SAR_5004.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_0241"   template="templatePop">
+        <parameter key="title"    value="Offset AR Search Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivableadjust/jsp/STM_SAR_0241.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_0242"   template="templatePop">
+        <parameter key="title"    value="Offset AP Search Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivableadjust/jsp/STM_SAR_0242.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_3001">
+        <parameter key="title"    value="Outstanding Adjustment" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivableadjust/jsp/STM_SAR_3001.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_3002">
+        <parameter key="title"    value="Offset entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivableadjust/jsp/STM_SAR_3002.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_3003">
+        <parameter key="title"    value="Autosettlement" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivableadjust/jsp/STM_SAR_3003.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+
+    <!-- jinyoonoh : 2014-07-21 start -->
+    <screen name="STM_SAR_3004"   template="templatePop">
+        <parameter key="title"    value="Adjust View Accounting" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivableadjust/jsp/STM_SAR_3004.jsp"/>
+    </screen>
+    <!-- /jinyoonoh : 2014-07-21 end -->
+
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_0008"   template="templatePop">
+        <parameter key="title"    value="Receipt Refund Information Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivablereceipt/jsp/STM_SAR_0008.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_0011"   template="templatePop">
+        <parameter key="title"    value="Receipt Deposit Search Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivablereceipt/jsp/STM_SAR_0011.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_0013"   template="templatePop">
+        <parameter key="title"    value="Receipt Cancel Information Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivablereceipt/jsp/STM_SAR_0013.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_0014"   template="templatePop">
+        <parameter key="title"    value="Receipt User Search Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivablereceipt/jsp/STM_SAR_0014.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_2001">
+        <parameter key="title"    value="Receipts" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivablereceipt/jsp/STM_SAR_2001.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_2002">
+        <parameter key="title"    value="Receipts  Inquiry(Detail)" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivablereceipt/jsp/STM_SAR_2002.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_2003">
+        <parameter key="title"    value="Receipts  Inquiry(Cheque)" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivablereceipt/jsp/STM_SAR_2003.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_2004">
+        <parameter key="title"    value="Receipts  Inquiry(Bank)" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivablereceipt/jsp/STM_SAR_2004.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	
+	<!-- jinyoonoh Receipts view accounting : 2014-07-18 start -->
+    <screen name="STM_SAR_2005"   template="templatePop">
+        <parameter key="title"    value="Receipts View Accounting" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivablereceipt/jsp/STM_SAR_2005.jsp"/>
+    </screen>
+    <!-- / jinyoonoh Receipts view accounting : 2014-07-18 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_0001"   template="templatePop">
+        <parameter key="title"    value="Office Code Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecommon/accountreceivablecommon/jsp/STM_SAR_0001.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_0002"   template="templatePop">
+        <parameter key="title"    value="Customer Code Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecommon/accountreceivablecommon/jsp/STM_SAR_0002.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_0003"   template="templatePop">
+        <parameter key="title"    value="OTS Type Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecommon/accountreceivablecommon/jsp/STM_SAR_0003.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_0004"   template="templatePop">
+        <parameter key="title"    value="OTS Group Code Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecommon/accountreceivablecommon/jsp/STM_SAR_0004.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_0005"   template="templatePop">
+        <parameter key="title"    value="Receipt Bank Account Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecommon/accountreceivablecommon/jsp/STM_SAR_0005.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_4001">
+        <parameter key="title"    value="Account Matrix" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecommon/accountreceivablecommon/jsp/STM_SAR_4001.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_4002">
+        <parameter key="title"    value="Create Accounting" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecreateaccounting/accountreceivablecreateaccounting/jsp/STM_SAR_4002.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_4003">
+        <parameter key="title"    value="Ledger OTS Creation and Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecreateaccounting/accountreceivablecreateaccounting/jsp/STM_SAR_4003.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_0012"   template="templatePop">
+        <parameter key="title"    value="Receipt Outstanding Search Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableoutstanding/accountreceivableoutstanding/jsp/STM_SAR_0012.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_1001">
+        <parameter key="title"    value="Outstanding Inquiry by B/L(Invoice)" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableoutstanding/accountreceivableoutstanding/jsp/STM_SAR_1001.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_1002">
+        <parameter key="title"    value="Outstanding Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableoutstanding/accountreceivableoutstanding/jsp/STM_SAR_1002.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_1003"   template="templatePop">
+        <parameter key="title"    value="Outstanding history Inquiry by date" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableoutstanding/accountreceivableoutstanding/jsp/STM_SAR_1003.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SAR_1004">
+        <parameter key="title"    value="Outstanding Aging Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableoutstanding/accountreceivableoutstanding/jsp/STM_SAR_1004.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- yongjun lee : 2014-03-05 start -->
+    <screen name="STM_SAR_1005">
+        <parameter key="title"    value="Payment Request Letter" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableoutstanding/accountreceivableoutstanding/jsp/STM_SAR_1005.jsp"/>
+    </screen>
+	<!-- yongjun lee : 2014-03-05 end -->
+	
+	<!-- yongjun lee : 2014-03-05 start -->
+    <screen name="STM_SAR_1006"   template="templatePop">
+        <parameter key="title"    value="Payment Request Letter by customer popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableoutstanding/accountreceivableoutstanding/jsp/STM_SAR_1006.jsp"/>
+    </screen>
+	<!-- yongjun lee : 2014-03-05 end -->
+	
+    <!-- yongjun lee : 2014-03-05 start -->
+    <screen name="STM_SAR_1007">
+        <parameter key="title"    value="Outstanding Item Correction" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableoutstanding/accountreceivableoutstanding/jsp/STM_SAR_1007.jsp"/>
+    </screen>
+    <!-- yongjun lee : 2014-03-05 end -->	
+	
+    <!-- jinyoonoh outstanding view accounting: 2014-07-15 start -->
+    <screen name="STM_SAR_1008" template="templatePop">
+        <parameter key="title"    value="Outstanding View Accounting" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableoutstanding/accountreceivableoutstanding/jsp/STM_SAR_1008.jsp"/>
+    </screen>
+   <!-- /jinyoonoh outstanding view accounting: 2014-07-15 start -->	
+   
+    <!-- pms Payment Request Letter History: 2014-11-19 start -->
+    <screen name="STM_SAR_1009" template="templatePop">
+        <parameter key="title"    value="Payment Request Letter History" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableoutstanding/accountreceivableoutstanding/jsp/STM_SAR_1009.jsp"/>
+    </screen>
+   <!-- pms Payment Request Letter History: 2014-11-19 start -->	
+	
+	<!-- yongjun lee : 2014-03-05 start -->
+    <screen name="STM_SAR_1906" template="templatePop">
+        <parameter key="title"    value="Payment Request Letter by customer print popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivableoutstanding/accountreceivableoutstanding/jsp/STM_SAR_1906.jsp"/>
+    </screen>
+	<!-- yongjun lee : 2014-03-05 end -->
+	
+	
+	<!-- sungyong park : 2014-03-18 start -->
+    <screen name="STM_SAR_0161"	  template="templatePop">
+        <parameter key="title"    value="Outstanding Type To Exclude" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecollect/accountreceivableadjust/jsp/STM_SAR_0161.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-18 end -->
+	
+	
+	<screen name="STM_SAR_0141"	  template="templatePop">
+        <parameter key="title"    value="Account Type Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sar/accountreceivablecommon/accountreceivablecommon/jsp/STM_SAR_0141.jsp"/>
+    </screen>
+
+    <!-- RD Common jsp add jinyoonoh 2014-06-27 -->
+    <screen name="STM_SAR_9001" template="templatePop">        
+        <parameter key="body"  value="apps/opus/stm/sar/accountreceivablecommon/accountreceivablecommon/jsp/STM_SAR_9001.jsp"/>
+    </screen>
+    
+    <screen name="STM_SAR_9002" template="templatePop">        
+        <parameter key="body"  value="apps/opus/stm/sar/accountreceivablecommon/accountreceivablecommon/jsp/STM_SAR_9002.jsp"/>
+    </screen>
+
+    <screen name="STM_SAR_9003" template="templatePop">        
+        <parameter key="body"  value="apps/opus/stm/sar/accountreceivablecommon/accountreceivablecommon/jsp/STM_SAR_9003.jsp"/>
+    </screen>
+    
+    <!-- myoungsin park : 2015-01-15 start -->
+    <screen name="STM_SAR_9999">
+        <parameter key="title"    value="Batch And Interface execute" direct="true"/>
+        <parameter key="body"  value="apps/opus/stm/sar/accountreceivablecommon/accountreceivablecommon/jsp/STM_SAR_9999.jsp"/>
+    </screen>
+   <!-- myoungsin park : 2015-01-15 end -->
+   
+</screen-definitions>

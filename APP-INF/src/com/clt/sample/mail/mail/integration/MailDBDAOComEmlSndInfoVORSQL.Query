@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MailDBDAOComEmlSndInfoVORSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+SELECT 
+	EML_SND_NO
+,	RD_SUB_SYS_CD
+,	BAT_FLG
+,	EML_TIT_NM
+,	EML_PROC_STS_CD
+,	SNDR_NM
+,	SNDR_EML
+,	TO_EML_CTNT
+,	SMTP_IP
+,	EML_DT
+,	EML_ERR_MSG
+,	DELT_FLG
+,	THD_ID
+,	CC_EML_CTNT
+,	BCC_EML_CTNT
+,	RPT_MRG_FLG
+,	RPT_MRG_FILE_NM
+,	RPT_SPLIT_CAPA
+,	RPT_SPLIT_QTY
+,	EML_SPLIT_CAPA
+,	CRE_USR_ID
+,	CRE_DT
+,	UPD_USR_ID
+,	UPD_DT
+FROM COM_EML_SND_INFO			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

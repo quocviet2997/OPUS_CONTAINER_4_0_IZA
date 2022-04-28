@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ExchangeRateDAOMonthlyCountRSQL">
+			<desc><![CDATA[select exchange rate monthly count]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*)
+FROM gl_mon_xch_rt
+WHERE nvl(delt_flg,'N') <> 'Y'
+#if (${fr_year_mon} != '' && ${to_year_mon} != '')
+AND acct_xch_rt_yrmon between @[fr_year_mon] and @[to_year_mon]
+#end    
+#if (${curr_cd} != '')
+AND curr_cd like '%'||@[curr_cd]||'%'
+#end			]]></sql>
+			<params>
+				<param name="fr_year_mon" type="12" value="" out="N"/>
+				<param name="to_year_mon" type="12" value="" out="N"/>
+				<param name="curr_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

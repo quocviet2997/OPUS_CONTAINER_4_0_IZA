@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ThemeDBDAOTwoISQL">
+			<desc><![CDATA[Cntr type]]></desc>
+			<sql><![CDATA[
+INSERT INTO COM_USR_THM
+VALUES (@[USR_ID], '2')
+			]]></sql>
+			<params>
+				<param name="USR_ID" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

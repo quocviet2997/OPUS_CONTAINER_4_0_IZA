@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CSRExternalFinderDBDAOModifyApPayInvVOUSQL">
+			<desc><![CDATA[AP_PAY_INV UPDATE]]></desc>
+			<sql><![CDATA[
+UPDATE AP_PAY_INV
+   SET DELT_FLG = 'Y'
+ WHERE INV_RGST_NO    = @[inv_rgst_no]			]]></sql>
+			<params>
+				<param name="inv_rgst_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

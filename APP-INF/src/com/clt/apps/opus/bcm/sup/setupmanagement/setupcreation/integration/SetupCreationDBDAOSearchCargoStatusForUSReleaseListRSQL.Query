@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOSearchCargoStatusForUSReleaseListRSQL">
+			<desc><![CDATA[Cargo Tracking Info.(Non physical event for US cargo release) 정보를 조회한다]]></desc>
+			<sql><![CDATA[
+SELECT   EDI_ORG_STS_CD
+		,EDI_PRE_SNT_STS_CD
+		,EDI_EVNT_STS_CD
+		,EDI_RMK1
+		,EDI_RMK2
+		,CRE_USR_ID
+		,CRE_DT
+		,UPD_USR_ID
+		,UPD_DT
+		,COP_IB_RAIL_CHK_CD
+		,EDW_UPD_DT
+  FROM SCE_EDI_MNG_AMS_STS
+ WHERE 1 = 1
+#if (${edi_org_sts_cd} != '')
+   AND EDI_ORG_STS_CD = @[edi_org_sts_cd]
+#end
+ ORDER BY EDI_ORG_STS_CD, EDI_PRE_SNT_STS_CD, EDI_EVNT_STS_CD			]]></sql>
+			<params>
+				<param name="edi_org_sts_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="RoleMappingDAOSearchProgRoleListRSQL">
+			<desc><![CDATA[select program role mapping]]></desc>
+			<sql><![CDATA[
+#if(${fcmd} == "101")
+SELECT LEVEL, 
+	CHECKBOX CHECK_VAL, 
+	'' LVL,
+	USR_ROLE_CD, 
+	USR_ROLE_NM   
+FROM (   
+	SELECT A.USR_ROLE_CD, 
+				A.USR_ROLE_NM, 
+				A.PRNT_USR_ROLE_CD,   
+		       DECODE(B.usr_role_cd,NULL,'0','1') CHECKBOX  
+	FROM COM_USR_ROLE A, COM_PGM_ROLE B   
+	WHERE A.USR_ROLE_CD = B.USR_ROLE_CD(+)   
+		AND B.PGM_NO(+) = @[pgm_no]   
+     )   
+START WITH PRNT_USR_ROLE_CD IS NULL   
+CONNECT BY PRIOR USR_ROLE_CD = PRNT_USR_ROLE_CD
+order siblings by usr_role_cd
+#else
+SELECT 
+	A.USR_ROLE_CD,
+	A.USR_ROLE_NM 
+FROM COM_USR_ROLE A, COM_PGM_ROLE B 
+WHERE B.PGM_NO = @[pgm_no]
+AND A.USR_ROLE_CD = B.USR_ROLE_CD
+order by a.usr_role_cd
+#end			]]></sql>
+			<params>
+				<param name="pgm_no" type="12" value="COIM" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

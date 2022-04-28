@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ItemControlManagementDBDAOupdateItemControlListUSQL">
+			<desc><![CDATA[updateItemControlList]]></desc>
+			<sql><![CDATA[
+UPDATE COM_UI_ITM_CTRL_STUP
+SET 	PGM_SUB_SYS_CD  = @[pgm_sub_sys_cd]
+	    , PGM_NO        = @[pgm_no]
+	    , PGM_ITM_ID    = @[pgm_itm_id]
+		, CTRL_TP_CD  	= @[ctrl_tp_cd]
+        , ITM_DP_NM 	= @[itm_dp_nm]
+        , SET_TP_CD 	= @[set_tp_cd]
+		, APLY_FLG		= @[aply_flg]
+        , ITM_DESC  	= @[itm_desc]
+        , UPD_USR_ID	= @[upd_usr_id]
+        , UPD_DT    	= SYSDATE
+
+WHERE CO_ID = COM_CONSTANTMGR_PKG.COM_getCompanyCode_FNC()
+AND PGM_SUB_SYS_CD    = @[key_pgm_sub_sys_cd]
+AND PGM_NO              = @[key_pgm_no]
+AND PGM_ITM_ID          = @[key_pgm_itm_id]			]]></sql>
+			<params>
+				<param name="pgm_sub_sys_cd" type="12" value="" out="N"/>
+				<param name="pgm_no" type="12" value="" out="N"/>
+				<param name="pgm_itm_id" type="12" value="" out="N"/>
+				<param name="ctrl_tp_cd" type="12" value="" out="N"/>
+				<param name="itm_dp_nm" type="12" value="" out="N"/>
+				<param name="set_tp_cd" type="12" value="" out="N"/>
+				<param name="aply_flg" type="12" value="" out="N"/>
+				<param name="itm_desc" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="key_pgm_sub_sys_cd" type="12" value="" out="N"/>
+				<param name="key_pgm_no" type="12" value="" out="N"/>
+				<param name="key_pgm_itm_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

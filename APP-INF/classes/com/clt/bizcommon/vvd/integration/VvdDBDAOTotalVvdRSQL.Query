@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="VvdDBDAOTotalVvdRSQL">
+			<desc><![CDATA[토탈]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(1)
+FROM VSK_VSL_PORT_SKD
+WHERE 1=1
+#if(${table} == 'D')
+	#if(${sdate} != '' && ${edate} != '')
+	AND VPS_ETD_DT BETWEEN TO_DATE( NVL( @[sdate], '1900-01-01'), 'YYYY-MM-DD' ) AND TO_DATE( NVL( @[edate], '9999-12-31'), 'YYYY-MM-DD' )
+	#end
+#elseif(${table} == 'A')
+	#if(${sdate} != '' && ${edate} != '')
+	AND VPS_ETA_DT BETWEEN TO_DATE( NVL( @[sdate], '1900-01-01'), 'YYYY-MM-DD' ) AND TO_DATE( NVL( @[edate], '9999-12-31'), 'YYYY-MM-DD' )
+	#end
+#end
+
+#if(${vvd_cd} != '')
+AND VSL_CD || SKD_VOY_NO || SKD_DIR_CD LIKE @[vvd_cd] || '%'
+#end
+
+#if(${loc_cd} != '')
+AND VPS_PORT_CD LIKE @[loc_cd] || '%'
+#end
+
+#if(${lane_cd} != '')
+AND SLAN_CD LIKE @[lane_cd] || '%'
+#end
+
+AND NVL(SKD_CNG_STS_CD, ' ') <> 'S'
+AND CLPT_IND_SEQ = '1'
+ORDER BY SLAN_CD
+, VSL_CD || SKD_VOY_NO || SKD_DIR_CD
+, TO_NUMBER(CLPT_SEQ)			]]></sql>
+			<params>
+				<param name="sdate" type="12" value="" out="N"/>
+				<param name="edate" type="12" value="" out="N"/>
+				<param name="vvd_cd" type="12" value="" out="N"/>
+				<param name="loc_cd" type="12" value="" out="N"/>
+				<param name="lane_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

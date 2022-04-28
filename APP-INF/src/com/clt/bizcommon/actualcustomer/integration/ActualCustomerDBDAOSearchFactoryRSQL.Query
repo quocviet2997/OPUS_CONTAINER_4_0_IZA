@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ActualCustomerDBDAOSearchFactoryRSQL">
+			<desc><![CDATA[Factory 조회]]></desc>
+			<sql><![CDATA[
+SELECT BZET_NM,
+	CNTC_PSON_NM,
+	BZET_ADDR,
+	ZIP_CD,
+	CNTC_EML,
+	BZET_RMK,
+	CUST_CD
+FROM (	SELECT ROW_NUMBER() OVER (ORDER BY cust_cnt_cd||cust_seq ASC) no,
+			cust_cnt_cd||cust_seq CUST_CD,
+			BZET_NM,
+			CNTC_PSON_NM,
+			BZET_ADDR,
+			ZIP_CD,
+			CNTC_EML,
+			BZET_RMK
+		FROM mdm_cust_addr
+		WHERE 1 = 1
+#if (${cust_cd} != '') 
+		AND cust_cnt_cd||cust_seq = @[cust_cd]
+#end
+		AND NVL(DELT_FLG, 'N') <> 'Y'
+	) a
+WHERE no BETWEEN @[startpart] AND @[endpart]			]]></sql>
+			<params>
+				<param name="cust_cd" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

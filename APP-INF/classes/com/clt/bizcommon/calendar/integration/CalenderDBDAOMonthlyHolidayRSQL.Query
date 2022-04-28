@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CalenderDBDAOMonthlyHolidayRSQL">
+			<desc><![CDATA[MonthlyHoliday 조회]]></desc>
+			<sql><![CDATA[
+SELECT cnt_nm,
+	month,
+	frday,
+	today,
+	hol_nm,
+	monthly_seq
+FROM (	SELECT ROW_NUMBER() OVER (ORDER BY monthly_seq ASC) no,
+			cnt_nm,
+			month,
+			frday,
+			today,
+			hol_nm,
+			monthly_seq
+		FROM (
+#foreach( $key in ${counts})
+				SELECT rownum monthly_seq,
+					B.cnt_nm,
+					SUBSTR(A.hol_fm_dt, 5, 2) month,
+					substr(A.hol_fm_dt, 7, 2) frday,
+					substr(A.hol_to_dt, 7, 2) today,
+					A.hol_nm
+				FROM prd_holiday A, mdm_country B
+				WHERE A.cnt_cd = B.cnt_cd
+				AND A.hol_knd_cd = 'C'
+				AND SUBSTR(A.hol_fm_dt, 5, 2) = $key
+				AND NVL(A.delt_flg, 'N') <> 'Y'
+#if(${cnt_cd} != '')
+				AND A.cnt_cd = @[cnt_cd]
+#end
+#if(${year} != '')
+				AND substr(A.hol_fm_dt, 0, 4) = @[year]
+#end
+#if($key != '12') 
+			UNION
+#end
+#end
+			ORDER BY monthly_seq ASC, month ASC
+	) ) a
+WHERE no BETWEEN @[startpart] AND @[endpart]			]]></sql>
+			<params>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="year" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

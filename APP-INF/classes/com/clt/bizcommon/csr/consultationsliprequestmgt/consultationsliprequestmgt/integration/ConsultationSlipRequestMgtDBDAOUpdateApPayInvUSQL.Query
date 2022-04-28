@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOUpdateApPayInvUSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+UPDATE AP_PAY_INV
+   SET GL_DT = (
+                 SELECT GL_DT
+                   FROM AP_INV_HDR
+                  WHERE CSR_NO = @[csr_no]
+               )
+       ,INV_EFF_DT = (
+                 SELECT GL_DT
+                   FROM AP_INV_HDR
+                  WHERE CSR_NO = @[csr_no]
+               )
+ WHERE INV_RGST_NO = @[inv_rgst_no]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="inv_rgst_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

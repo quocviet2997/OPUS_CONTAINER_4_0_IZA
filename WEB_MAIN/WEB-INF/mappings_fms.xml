@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+    <!-- Jung Yoon Tae : 2009-03-24 start -->
+    <url-mapping url="ESM_FMS_0022.do" screen="ESM_FMS_0022.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.ESM_FMS_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.ESM_FMS_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.EsmFms0022Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.fmscommon.FMSCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2009-03-24 end -->
+
+	<!-- Jung Yoon Tae : 2009-03-25 start -->
+    <url-mapping url="ESM_FMS_0023.do" screen="ESM_FMS_0023.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriocontract.event.ESM_FMS_0023HTMLAction</web-action-class>
+    </url-mapping> 
+ 
+    <url-mapping url="ESM_FMS_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriocontract.event.ESM_FMS_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriocontract.event.EsmFms0023Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2009-03-25 end -->
+	
+	<!-- Jung Yoon Tae : 2009-03-25 start -->
+    <url-mapping url="ESM_FMS_0076.do" screen="ESM_FMS_0076.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0076HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0076GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0076HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.EsmFms0076Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2009-03-25 end -->
+
+	<!-- Jung Yoon Tae : 2009-03-26 start -->
+    <url-mapping url="ESM_FMS_0050.do" screen="ESM_FMS_0050.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobunkerregister.event.ESM_FMS_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0050GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobunkerregister.event.ESM_FMS_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobunkerregister.event.EsmFms0050Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2009-03-26 end -->
+	
+	<!-- Jung Yoon Tae : 2009-03-26 start -->
+    <url-mapping url="ESM_FMS_0051.do" screen="ESM_FMS_0051.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobunkerregister.event.ESM_FMS_0051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobunkerregister.event.ESM_FMS_0051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobunkerregister.event.EsmFms0051Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping> 
+	<!-- Jung Yoon Tae : 2009-03-26 end -->
+	
+	<!-- Jung Yoon Tae : 2009-08-25 start -->
+    <url-mapping url="ESM_FMS_0027.do" screen="ESM_FMS_0027.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobunkerregister.event.ESM_FMS_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobunkerregister.event.ESM_FMS_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobunkerregister.event.EsmFms0027Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2009-08-25 end -->
+	
+	<!-- Jung Yoon Tae : 2009-05-20 start -->
+    <url-mapping url="ESM_FMS_0012.do" screen="ESM_FMS_0012.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2009-05-20 end -->
+	
+	<!-- Jung Yoon Tae : 2009-05-20 start -->
+    <url-mapping url="ESM_FMS_0014.do" screen="ESM_FMS_0014.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0014Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2009-05-20 end -->
+	
+	<!-- Jung Yoon Tae : 2009-04-13 start -->
+    <url-mapping url="ESM_FMS_0016.do" screen="ESM_FMS_0016.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0016Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2009-04-13 end -->
+	
+	<!-- Jung Yoon Tae : 2009-04-13 start -->
+	<url-mapping url="ESM_FMS_0001.do" screen="ESM_FMS_0001.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriocontract.event.ESM_FMS_0001HTMLAction</web-action-class> 
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriocontract.event.ESM_FMS_0001HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriocontract.event.EsmFms0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+    <!-- Jung Yoon Tae : 2009-04-13 end -->
+    
+    <!-- Jung Yoon Tae : 2009-04-13 start -->
+	<url-mapping url="ESM_FMS_0002.do" screen="ESM_FMS_0002.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriocontract.event.ESM_FMS_0002HTMLAction</web-action-class> 
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriocontract.event.ESM_FMS_0002HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriocontract.event.EsmFms0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+    <!-- Jung Yoon Tae : 2009-04-13 end -->
+    
+    <!-- Yoon Seyeong : 2009-04-14 start -->
+    <url-mapping url="ESM_FMS_0006.do" screen="ESM_FMS_0006.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0006HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="ESM_FMS_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.EsmFms0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon Seyeong : 2009-04-14 end -->
+	
+	<!-- Choi Woo-Seok : 2009-04-15 start -->
+    <url-mapping url="ESM_FMS_0062.do" screen="ESM_FMS_0062.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.ESM_FMS_0062HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0062GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.ESM_FMS_0062HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.EsmFms0062Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-04-15 end -->
+	
+	<!-- Choi Woo-Seok : 2009-04-16 start -->
+    <url-mapping url="ESM_FMS_0065.do" screen="ESM_FMS_0065.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.ESM_FMS_0065HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0065GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.ESM_FMS_0065HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.EsmFms0065Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-04-16 end -->
+	
+	<!-- Yoon Seyeong : 2009-04-21 start -->
+    <url-mapping url="ESM_FMS_0003.do" screen="ESM_FMS_0003.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.EsmFms0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon Seyeong : 2009-04-21 end -->
+	
+	<!-- Yoon Seyeong : 2009-04-15 start -->
+    <url-mapping url="ESM_FMS_0004.do" screen="ESM_FMS_0004.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.EsmFms0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+ 	<!-- Yoon Seyeong : 2009-04-15 end -->
+
+ 	<!-- Yoon Seyeong : 2009-04-16 start -->
+    <url-mapping url="ESM_FMS_0005.do" screen="ESM_FMS_0005.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.EsmFms0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+ 	<!-- Yoon Seyeong : 2009-04-16 end -->
+ 	
+ 	<!-- Yoon Seyeong : 2009-04-16 start -->
+    <url-mapping url="ESM_FMS_0070.do" screen="ESM_FMS_0070.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0070HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0070GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0070HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.EsmFms0070Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+ 	<!-- Yoon Seyeong : 2009-04-16 end -->
+
+ 	<!-- Yoon Seyeong : 2009-04-16 start -->
+    <url-mapping url="ESM_FMS_0083.do" screen="ESM_FMS_0083.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0083HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0083GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0083HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.EsmFms0083Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+ 	<!-- Yoon Seyeong : 2009-04-16 end -->
+ 	
+ 	<!-- Choi Woo-Seok : 2009-04-20 start -->
+    <url-mapping url="ESM_FMS_0082.do" screen="ESM_FMS_0082.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodeliveryschedule.event.ESM_FMS_0082HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0082GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodeliveryschedule.event.ESM_FMS_0082HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodeliveryschedule.event.EsmFms0082Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-04-20 end -->
+	
+	<!-- Choi Woo-Seok : 2009-04-21 start -->
+    <url-mapping url="ESM_FMS_0019.do" screen="ESM_FMS_0019.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodeliveryschedule.event.ESM_FMS_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodeliveryschedule.event.ESM_FMS_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodeliveryschedule.event.EsmFms0019Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-04-21 end -->
+	
+	<!-- Yoon Seyeong : 2009-04-20 start -->
+    <url-mapping url="ESM_FMS_0069.do" screen="ESM_FMS_0069.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0069HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0069GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0069HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.EsmFms0069Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon Seyeong : 2009-04-20 end -->
+
+	<!-- Yoon Seyeong : 2009-04-20 start -->
+    <url-mapping url="ESM_FMS_0080.do" screen="ESM_FMS_0080.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.ESM_FMS_0080HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0080GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.ESM_FMS_0080HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.EsmFms0080Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.fmscommon.FMSCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon Seyeong : 2009-04-20 end -->
+	
+	<!-- Choi Woo-Seok : 2009-04-23 start -->
+    <url-mapping url="ESM_FMS_0020.do" screen="ESM_FMS_0020.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodeliveryschedule.event.ESM_FMS_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodeliveryschedule.event.ESM_FMS_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodeliveryschedule.event.EsmFms0020Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-04-23 end -->
+	
+	<!-- Choi Woo-Seok : 2009-04-24 start -->
+    <url-mapping url="ESM_FMS_0059.do" screen="ESM_FMS_0059.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodeliveryschedule.event.ESM_FMS_0059HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0059GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodeliveryschedule.event.ESM_FMS_0059HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodeliveryschedule.event.EsmFms0059Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-04-24 end -->
+	
+	<url-mapping url="ESM_FMS_0054_1.do" screen="ESM_FMS_0054_1.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodockschedule.event.ESM_FMS_0054_1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0054_1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodockschedule.event.ESM_FMS_0054_1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodockschedule.event.EsmFms00541Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Jung Yoon Tae : 2009-05-20 start -->
+    <url-mapping url="ESM_FMS_0073.do" screen="ESM_FMS_0073.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0073HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0073GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0073HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0073Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2009-05-20 end -->
+    
+    <!-- Jung Yoon Tae : 2009-05-20 start -->
+    <url-mapping url="ESM_FMS_0078.do" screen="ESM_FMS_0078.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0078HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0078GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0078HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0078Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2009-05-20 end -->
+    
+    <!-- Jung Yoon Tae : 2009-04-29 start -->
+    <url-mapping url="ESM_FMS_0079.do" screen="ESM_FMS_0079.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0079HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0079GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0079HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0079Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2009-04-29 end -->
+	
+	<!-- Yoon Seyeong : 2009-04-29 start -->
+    <url-mapping url="ESM_FMS_0054_2.do" screen="ESM_FMS_0054_2.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodockschedule.event.ESM_FMS_0054_2HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0054_2GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodockschedule.event.ESM_FMS_0054_2HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodockschedule.event.EsmFms00542Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon Seyeong : 2009-04-29 end -->
+	
+	<!-- Choi Woo-Seok : 2009-04-28 start -->
+    <url-mapping url="ESM_FMS_0018.do" screen="ESM_FMS_0018.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0018Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-04-28 end -->
+	
+	<!-- Yoon Seyeong : 2009-04-30 start -->
+    <url-mapping url="ESM_FMS_0055.do" screen="ESM_FMS_0055.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodockschedule.event.ESM_FMS_0055HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0055GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodockschedule.event.ESM_FMS_0055HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodockschedule.event.EsmFms0055Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon Seyeong : 2009-04-30 end -->
+
+	<!-- Yoon Seyeong : 2009-05-07 start -->
+    <url-mapping url="ESM_FMS_0057.do" screen="ESM_FMS_0057.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodockschedule.event.ESM_FMS_0057HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0057GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodockschedule.event.ESM_FMS_0057HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodockschedule.event.EsmFms0057Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon Seyeong : 2009-05-07 end -->
+
+	<!-- Choi Woo-Seok : 2009-05-08 start -->
+    <url-mapping url="ESM_FMS_0007.do" screen="ESM_FMS_0007.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-04-28 end -->
+
+	<!-- Yoon Seyeong : 2009-05-08 start -->
+    <url-mapping url="ESM_FMS_0081.do" screen="ESM_FMS_0081.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0081HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0081GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0081HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0081Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon Seyeong : 2009-05-08 end -->
+	
+	<!-- Choi Woo-Seok : 2009-05-08 start -->
+    <url-mapping url="ESM_FMS_0007.do" screen="ESM_FMS_0007.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-04-28 end -->
+
+	<!-- Choi Woo-Seok : 2009-05-12 start -->
+    <url-mapping url="ESM_FMS_0072.do" screen="ESM_FMS_0072.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0072HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0072GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0072HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0072Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-05-12 end -->
+	
+	<!-- Jung Yoon Tae : 2010-02-18 start -->
+    <url-mapping url="ESM_FMS_0072_1.do" screen="ESM_FMS_0072_1.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0072HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0072_1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0072HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0072Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2010-02-18 end -->
+	
+	<!-- Choi Woo-Seok : 2009-05-13 start -->
+    <url-mapping url="ESM_FMS_0063.do" screen="ESM_FMS_0063.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.ESM_FMS_0063HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0063GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.ESM_FMS_0063HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.EsmFms0063Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-04-16 end -->
+	<!-- Yoon Seyeong : 2009-05-13 start -->
+    <url-mapping url="ESM_FMS_0036.do" screen="ESM_FMS_0036.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.ESM_FMS_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.ESM_FMS_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.EsmFms0036Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.fmscommon.FMSCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon Seyeong : 2009-05-13 end -->
+	<!-- Yoon Seyeong : 2009-05-13 start -->
+    <url-mapping url="ESM_FMS_0077.do" screen="ESM_FMS_0077.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.ESM_FMS_0077HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0077GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.ESM_FMS_0077HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.EsmFms0077Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.fmscommon.FMSCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon Seyeong : 2009-05-13 end -->
+	
+	<!-- Choi Woo-Seok : 2009-05-20 start -->
+    <url-mapping url="ESM_FMS_0066.do" screen="ESM_FMS_0066.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.ESM_FMS_0066HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0066GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.ESM_FMS_0066HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.EsmFms0066Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-05-20 end -->
+	
+	<!-- Choi Woo-Seok : 2009-05-20 start -->
+    <url-mapping url="ESM_FMS_0064.do" screen="ESM_FMS_0064.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.ESM_FMS_0064HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0064GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.ESM_FMS_0064HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterstandardprimecost.event.EsmFms0064Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-05-20 end -->
+
+	<!-- Yoon Seyeong : 2009-05-21 start -->
+    <url-mapping url="ESM_FMS_0056.do" screen="ESM_FMS_0056.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodockschedule.event.ESM_FMS_0056HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0058.do" screen="ESM_FMS_0058.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tchariodockschedule.event.ESM_FMS_0058HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0013.do" screen="ESM_FMS_0013.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0030.do" screen="ESM_FMS_0030.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0030HTMLAction</web-action-class>
+    </url-mapping>
+	<!-- Yoon Seyeong : 2009-05-21 end -->
+	
+    
+    <!-- Choi Woo-Seok : 2009-05-21 start -->
+    <url-mapping url="ESM_FMS_0075.do" screen="ESM_FMS_0075.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0075HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_FMS_0075GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0075HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0075Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+    <!-- Choi Woo-Seok : 2009-05-21 end -->
+	<!-- Yoon, Seyeong : 2009-05-25 start -->
+    <url-mapping url="ESM_FMS_0039.do" screen="ESM_FMS_0039.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriosettlement.event.ESM_FMS_0039HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0039GS.do" screen="com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriosettlement.event.EsmFms0039ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriosettlement.event.ESM_FMS_0039HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriosettlement.event.EsmFms0039Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon, Seyeong : 2009-05-25 end -->
+	
+	<!-- Choi Woo-Seok : 2009-05-26 start -->
+    <url-mapping url="ESM_FMS_0060.do" screen="ESM_FMS_0060.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterioinquiry.event.ESM_FMS_0060HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0060GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterioinquiry.event.ESM_FMS_0060HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterioinquiry.event.EsmFms0060Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-05-26 end -->
+	
+	<!-- Choi Woo-Seok : 2009-05-26 start -->
+    <url-mapping url="ESM_FMS_0008.do" screen="ESM_FMS_0008.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterioinquiry.event.ESM_FMS_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterioinquiry.event.ESM_FMS_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterioinquiry.event.EsmFms0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-05-26 end -->
+	<!-- Yoon, Seyeong : 2009-06-01 start -->
+    <url-mapping url="ESM_FMS_0037.do" screen="ESM_FMS_0037.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.EsmFms0037Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+    <url-mapping url="ESM_FMS_0038.do" screen="ESM_FMS_0038.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0038GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.EsmFms0038Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon, Seyeong : 2009-06-01 end -->
+	
+	<!-- Choi Woo-Seok : 2009-06-11 start -->
+    <url-mapping url="ESM_FMS_0010.do" screen="ESM_FMS_0010.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterioinquiry.event.ESM_FMS_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterioinquiry.event.ESM_FMS_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.tcharterioinquiry.event.EsmFms0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutfleetmanagement.TimeCharterInOutFleetManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-06-11 end -->
+	<!-- Yoon, Seyeong : 2009-06-24 start -->
+    <url-mapping url="ESM_FMS_0046.do" screen="ESM_FMS_0046.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioestimated.event.ESM_FMS_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0046GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioestimated.event.ESM_FMS_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioestimated.event.EsmFms0046Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon, Seyeong : 2009-06-24 end -->
+	
+	<!-- Choi Woo-Seok : 2009-06-24 start -->
+    <url-mapping url="ESM_FMS_0032.do" screen="ESM_FMS_0032.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0032HTMLAction</web-action-class>
+    </url-mapping>
+     
+    <url-mapping url="ESM_FMS_0032GS.do" screen="com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0032ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0032Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+    <!-- Choi Woo-Seok : 2009-05-21 end -->
+    
+    <!-- Choi Woo-Seok : 2009-06-26 start -->
+    <url-mapping url="ESM_FMS_0034.do" screen="ESM_FMS_0034.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0034GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0034Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-06-26 end -->
+	
+	<!-- Yoon, Seyeong : 2009-07-06 start -->
+    <url-mapping url="ESM_FMS_0048.do" screen="ESM_FMS_0048.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioestimated.event.ESM_FMS_0048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0048GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioestimated.event.ESM_FMS_0048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioestimated.event.EsmFms0048Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon, Seyeong : 2009-07-06 end -->
+
+	<!-- Yoon, Seyeong : 2009-07-06 start -->
+    <url-mapping url="ESM_FMS_0049.do" screen="ESM_FMS_0049.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioestimated.event.ESM_FMS_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0049GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioestimated.event.ESM_FMS_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioestimated.event.EsmFms0049Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon, Seyeong : 2009-07-06 end -->
+	
+	<!-- Choi Woo-Seok : 2009-07-15 start -->
+    <url-mapping url="ESM_FMS_0068.do" screen="ESM_FMS_0068.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0068HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0068GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0068HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.EsmFms0068Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-07-15 end -->
+	 
+	<!-- Yoon, Seyeong : 2009-07-20 start -->
+    <url-mapping url="ESM_FMS_0053.do" screen="ESM_FMS_0053.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0053GS.do" screen="com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0053ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0053Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon, Seyeong : 2009-07-20 end -->
+	 
+	<!-- Yoon, Seyeong : 2009-07-22 start -->
+    <url-mapping url="ESM_FMS_0035.do" screen="ESM_FMS_0035.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriosettlement.event.ESM_FMS_0035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0035GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriosettlement.event.ESM_FMS_0035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriosettlement.event.EsmFms0035Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon, Seyeong : 2009-07-22 end -->
+
+	<!-- Yoon, Seyeong : 2009-07-22 start -->
+    <url-mapping url="ESM_FMS_0074.do" screen="ESM_FMS_0074.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriosettlement.event.ESM_FMS_0074HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0074GS.do" screen="com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriosettlement.event.EsmFms0074ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriosettlement.event.ESM_FMS_0074HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriosettlement.event.EsmFms0074Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Yoon, Seyeong : 2009-07-22 end -->
+	
+	<!-- Choi Woo-Seok : 2009-07-23 start -->
+    <url-mapping url="ESM_FMS_0045.do" screen="ESM_FMS_0045.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0045GS.do" screen="com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0045ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0045Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-07-23 end -->
+	
+	<!-- Jung, Yoon-Tae : 2009-08-01 start -->
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR Start -->	
+    <url-mapping url="ESM_FMS_0041.do" screen="ESM_FMS_0041.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0041GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0041Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR Start -->	
+	<!-- Jung, Yoon-Tae : 2009-08-01 end -->
+	
+	<!-- Jung, Yoon-Tae : 2010-02-18 start -->
+    <url-mapping url="ESM_FMS_0041_1.do" screen="ESM_FMS_0041_1.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0041_1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0041Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung, Yoon-Tae : 2010-02-18 end -->
+
+	<!-- Choi Woo-Seok : 2009-08-03 start -->
+    <url-mapping url="ESM_FMS_0033.do" screen="ESM_FMS_0033.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0033GS.do" screen="com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0033ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0033Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-08-03 end -->
+	
+	<!-- Choi Woo-Seok : 2009-08-03 start -->
+    <url-mapping url="ESM_FMS_00331.do" screen="ESM_FMS_00331.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_00331HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_00331GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_00331HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms00331Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-08-03 end -->
+	
+	<!-- Jung, Yoon-Tae : 2009-08-06 start -->
+    <url-mapping url="ESM_FMS_0042.do" screen="ESM_FMS_0042.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0042GS.do" screen="com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0042ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0042Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung, Yoon-Tae : 2009-08-06 end -->
+	
+	<!-- Jung, Yoon-Tae : 2009-08-07 start -->
+    <url-mapping url="ESM_FMS_0043.do" screen="ESM_FMS_0043.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0043HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0043GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0043HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0043Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung, Yoon-Tae : 2009-08-07 end -->
+	
+	<!-- Jung, Yoon-Tae : 2009-08-07 start -->
+    <url-mapping url="ESM_FMS_0044.do" screen="ESM_FMS_0044.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0044HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0044GS.do" screen="com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0044ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0044HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0044Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung, Yoon-Tae : 2009-08-07 end -->
+	
+	<!-- Jung Yoon Tae : 2009-08-08 start -->
+    <url-mapping url="ESM_FMS_0071.do" screen="ESM_FMS_0071.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0071HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0071GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0071HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0071Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2009-08-08 end -->
+	
+	<!-- Jung, Yoon-Tae : 2009-08-11 start -->
+    <url-mapping url="ESM_FMS_0021.do" screen="ESM_FMS_0021.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0021Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung, Yoon-Tae : 2009-08-11 end -->
+
+	<!-- Jung, Yoon-Tae : 2009-08-12 start -->
+    <url-mapping url="ESM_FMS_0024.do" screen="ESM_FMS_0024.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0024GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0024Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung, Yoon-Tae : 2009-08-12 end -->
+	
+	<!-- Jung, Yoon-Tae : 2009-08-14 start -->
+    <url-mapping url="ESM_FMS_0029.do" screen="ESM_FMS_0029.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0029GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0029Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung, Yoon-Tae : 2009-08-14 end -->
+	 
+	<!-- Yoon, Seyeong : 2009-08-17 start -->
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR Start -->	
+    <url-mapping url="ESM_FMS_0052.do" screen="ESM_FMS_0052.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0052GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0052Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR End -->	
+	<!-- Yoon, Seyeong : 2009-08-17 end -->
+
+	<!-- Choi Woo-Seok : 2009-08-17 start -->
+    <url-mapping url="ESM_FMS_0040.do" screen="ESM_FMS_0040.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0040Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-08-17 end -->
+	
+	<!-- Choi Woo-Seok : 2009-08-17 start -->
+    <url-mapping url="ESM_FMS_00401.do" screen="ESM_FMS_00401.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_00401HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_00401GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_00401HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms00401Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-08-17 end -->
+	
+	<!-- Jung, Yoon-Tae : 2009-08-21 start -->
+    <url-mapping url="ESM_FMS_0025.do" screen="ESM_FMS_0025.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0025Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung, Yoon-Tae : 2009-08-21 end -->
+	
+	<!-- Jung, Yoon-Tae : 2009-08-24 start -->
+    <url-mapping url="ESM_FMS_0026.do" screen="ESM_FMS_0026.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0026GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0026Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung, Yoon-Tae : 2009-08-24 end -->
+	
+	<!-- Jung, Yoon-Tae : 2009-08-25 start -->
+    <url-mapping url="ESM_FMS_0028.do" screen="ESM_FMS_0028.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0028Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung, Yoon-Tae : 2009-08-25 end -->
+	
+	<!-- Jung, Yoon-Tae : 2009-09-03 start -->
+    <url-mapping url="ESM_FMS_0086.do" screen="ESM_FMS_0086.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0086HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0086GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0086HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0086Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung, Yoon-Tae : 2009-09-03 end -->
+	
+	<!-- Jung Yoon Tae : 2009-09-11 start -->
+    <url-mapping url="ESM_FMS_0017.do" screen="ESM_FMS_0017.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.ESM_FMS_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioinvoice.event.EsmFms0017Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2009-09-11 end -->
+
+	<!-- Choi Woo-Seok : 2009-09-08 start -->
+    <url-mapping url="ESM_FMS_0084.do" screen="ESM_FMS_0084.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0084HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0084GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0084HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.EsmFms0084Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+ 	<!-- Choi Woo-Seok : 2009-09-08 end -->
+ 	
+ 	<!-- Choi Woo-Seok : 2009-09-08 start -->
+    <url-mapping url="ESM_FMS_0085.do" screen="ESM_FMS_0085.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0085HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0085GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.ESM_FMS_0085HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharteriobasicregister.event.EsmFms0085Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+ 	<!-- Choi Woo-Seok : 2009-09-08 end -->
+	<!-- Lee Hyemin : 2012-04-23 start -->
+    <url-mapping url="ESM_FMS_0100.do" screen="ESM_FMS_0100.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.ESM_FMS_0100HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0100GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.ESM_FMS_0100HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.EsmFms0100Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.fmscommon.FMSCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Hyemin : 2012-04-23 end -->
+	<!-- NYK : 2014-10-14 start -->
+	<url-mapping url="FMS_COMGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.FMS_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.fmscommon.externalfinder.event.FmsComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.fmscommon.FMSCommonSC</service-action-class>
+    </event-mapping>
+    <!-- NYK : 2014-10-14 e n d -->
+    
+	<!-- NYK : 2015-11-27 start-->	
+    <url-mapping url="ESM_FMS_0087.do" screen="ESM_FMS_0087.screen" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0087HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_FMS_0087GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.ESM_FMS_0087HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.tcharterioconsultation.event.EsmFms0087Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.fms.timecharterinoutaccounting.TimeCharterInOutAccountingSC</service-action-class>
+    </event-mapping>
+	<!-- NYK : 2015-11-27 e n d-->	
+</mappings>

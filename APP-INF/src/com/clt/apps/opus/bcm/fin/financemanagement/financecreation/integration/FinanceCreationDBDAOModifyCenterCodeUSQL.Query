@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOModifyCenterCodeUSQL">
+			<desc><![CDATA[UPDATE GL_CTR_ERP]]></desc>
+			<sql><![CDATA[
+UPDATE GL_CTR_ERP
+   SET CTR_ERP_NO        = @[ctr_erp_no],
+       CTR_ERP_CD        = @[ctr_erp_cd],
+       CTR_LOCL_NM       = @[ctr_locl_nm],
+       CTR_ENG_NM        = @[ctr_eng_nm],
+       CURR_CD           = @[curr_cd],
+       CNT_CD            = @[cnt_cd],
+	   RGN_CD		     = @[rgn_cd],
+	   JNL_SMRY_TRNS_FLG = @[jnl_smry_trns_flg],
+	   BIZ_DIV_CD        = @[biz_div_cd],
+       UPD_DT            = SYSDATE,
+       UPD_USR_ID        = @[upd_usr_id]
+ WHERE CTR_ERP_NO 	     = @[ctr_erp_no]			]]></sql>
+			<params>
+				<param name="ctr_erp_no" type="12" value="" out="N"/>
+				<param name="ctr_erp_cd" type="12" value="" out="N"/>
+				<param name="ctr_locl_nm" type="12" value="" out="N"/>
+				<param name="ctr_eng_nm" type="12" value="" out="N"/>
+				<param name="curr_cd" type="12" value="" out="N"/>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="rgn_cd" type="12" value="" out="N"/>
+				<param name="jnl_smry_trns_flg" type="12" value="" out="N"/>
+				<param name="biz_div_cd" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

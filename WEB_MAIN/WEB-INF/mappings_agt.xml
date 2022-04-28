@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+	<url-mapping url="ESM_AGT_0022.do" screen="ESM_AGT_0022.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtofficeinfo.event.ESM_AGT_0022HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtofficeinfo.event.ESM_AGT_0022HTMLAction</web-action-class>
+	</url-mapping>	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtmaster.agtofficeinfo.event.EsmAgt0022Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtmaster.AGTMasterSC</service-action-class>
+	</event-mapping>
+
+	
+	<url-mapping url="ESM_AGT_0023.do" screen="ESM_AGT_0023.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtofficeinfo.event.ESM_AGT_0023HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtofficeinfo.event.ESM_AGT_0023HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtmaster.agtofficeinfo.event.EsmAgt0023Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtmaster.AGTMasterSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESM_AGT_0024.do" screen="ESM_AGT_0024.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtofficeinfo.event.ESM_AGT_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_AGT_0024GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtofficeinfo.event.ESM_AGT_0024HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.agt.agtmaster.agtofficeinfo.event.EsmAgt0024Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.agt.agtmaster.AGTMasterSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_AGT_0025.do" screen="ESM_AGT_0025.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtcustomerinfo.event.ESM_AGT_0025HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_AGT_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtcustomerinfo.event.ESM_AGT_0025HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtmaster.agtcustomerinfo.event.EsmAgt0025Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtmaster.AGTMasterSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_0026.do" screen="ESM_AGT_0026.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtcustomerinfo.event.ESM_AGT_0026HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_AGT_0026GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtcustomerinfo.event.ESM_AGT_0026HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtmaster.agtcustomerinfo.event.EsmAgt0026Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtmaster.AGTMasterSC</service-action-class>
+	</event-mapping>
+   <url-mapping url="ESM_AGT_0030.do" screen="ESM_AGT_0030.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtcustomerinfo.event.ESM_AGT_0030HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtcustomerinfo.event.ESM_AGT_0030HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtmaster.agtcustomerinfo.event.EsmAgt0030Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtmaster.AGTMasterSC</service-action-class>
+	</event-mapping>
+	<!-- Lee Ho Jin : 2009-08-06 start -->
+    <url-mapping url="ESM_AGT_0016.do" screen="ESM_AGT_0016.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_AGT_0016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.EsmAgt0016Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Ho Jin : 2009-08-06 end -->
+	
+	<!-- ============== iFrame Start================================================================ -->
+	<url-mapping url="ESM_AGT_0016FR.do" screen="ESM_AGT_0016FR.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_AGT_0016FR2.do" screen="ESM_AGT_0016FR2.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.agt.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    <!-- ============== iFrame End================================================================= -->
+
+
+	<!-- AGT Common --> 
+	<!--  Customer Name -->
+    <url-mapping url="ESM_AGT_CHKCUST.do" screen="ESM_AGT_CHKCUST.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_AGT_COMBO.do" screen="ESM_AGT_COMBO.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_AGT_Calcul.do" screen="ESM_AGT_Calcul.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.common.event.ESM_AGT_CalculHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- 2008.03.13(sunganj) : container Type Popup -->
+    <url-mapping url="ESM_AGT_0050.do" screen="ESM_AGT_050.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.common.event.ESM_AGT_0050HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0050GS.do" screen="ESM_AGT_050GS.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.common.event.ESM_AGT_0050HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<!-- 2011.09.01 -->
+	<url-mapping url="ESM_AGT_COM.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.common.event.CommonHTMLAction</web-action-class>
+	</url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.agt.common.event.CommonEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esm.agt.common.AGTCommonSC</service-action-class>
+    </event-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.agt.common.event.ESM_AGT_CalculEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esm.agt.agtcalculation.AGTCalculationSC</service-action-class>
+    </event-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.agt.common.event.ESM_AGT_050Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.agt.common.AGTCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Lee Ho Jin : 2009-08-12 start -->
+    <url-mapping url="ESM_AGT_0036.do" screen="ESM_AGT_0036.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_AGT_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.EsmAgt0036Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Ho Jin : 2009-08-12 end -->
+
+	<!-- Kyung-won Chu : 2009-08-14 start -->
+    <url-mapping url="ESM_AGT_0038.do" screen="ESM_AGT_0038.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtsecurity.event.ESM_AGT_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_AGT_0038FR.do" screen="ESM_AGT_0038FR.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_AGT_0038GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtsecurity.event.ESM_AGT_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.agt.agtmaster.agtsecurity.event.EsmAgt0038Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.agt.agtmaster.AGTMasterSC</service-action-class>
+    </event-mapping>
+	<!-- Kyung-won Chu : 2009-08-14 end -->
+	
+	<url-mapping url="ESM_AGT_0046.do" screen="ESM_AGT_0046.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtofficeinfo.event.ESM_AGT_0046HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESM_AGT_0046GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtmaster.agtofficeinfo.event.ESM_AGT_0046HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtmaster.agtofficeinfo.event.EsmAgt0046Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtmaster.AGTMasterSC</service-action-class>
+	</event-mapping>
+	
+		<!-- Lee Ho Jin : 2009-08-17 start -->
+	<url-mapping url="ESM_AGT_0001.do" screen="ESM_AGT_0001.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0001HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0001HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0044.do" screen="ESM_AGT_0044.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0001HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0044GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0001HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.EsmAgt0001Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtagreement.AGTAgreementSC</service-action-class>
+	</event-mapping>
+	
+    <url-mapping url="ESM_AGT_0003.do" screen="ESM_AGT_0003.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_AGT_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0003HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_AGT_0003GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0003HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_AGT_0003GS3.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0003HTMLAction</web-action-class>
+    </url-mapping>
+	
+	<url-mapping url="ESM_AGT_0045.do" screen="ESM_AGT_0045.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0003HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0045GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0003HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0045GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0003HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0045GS3.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0003HTMLAction</web-action-class>
+	</url-mapping>
+	
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.EsmAgt0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.agt.agtagreement.AGTAgreementSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Ho Jin : 2009-08-17 end -->
+	
+	<url-mapping url="ESM_AGT_0004.do" screen="ESM_AGT_0004.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0004HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0004HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.EsmAgt0004Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtagreement.AGTAgreementSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_0005.do" screen="ESM_AGT_0005.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0005HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0005HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.EsmAgt0005Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtagreement.AGTAgreementSC</service-action-class>
+	</event-mapping>
+
+	
+	<url-mapping url="ESM_AGT_0006.do" screen="ESM_AGT_0006.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0006HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0006HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.EsmAgt0006Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtagreement.AGTAgreementSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_0007.do" screen="ESM_AGT_0007.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtcustomeragreementinfo.event.ESM_AGT_0007HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtcustomeragreementinfo.event.ESM_AGT_0007HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtagreement.agtcustomeragreementinfo.event.EsmAgt0007Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtagreement.AGTAgreementSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_0008.do" screen="ESM_AGT_0008.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtcustomeragreementinfo.event.ESM_AGT_0008HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtcustomeragreementinfo.event.ESM_AGT_0008HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0008FR.do" screen="ESM_AGT_0008FR.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtcustomeragreementinfo.event.ESM_AGT_0008HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtagreement.agtcustomeragreementinfo.event.EsmAgt0008Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtagreement.AGTAgreementSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_0035.do" screen="ESM_AGT_0035.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtcustomeragreementinfo.event.ESM_AGT_0035HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0035GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtcustomeragreementinfo.event.ESM_AGT_0035HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtagreement.agtcustomeragreementinfo.event.EsmAgt0035Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtagreement.AGTAgreementSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_0037.do" screen="ESM_AGT_0037.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0037HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0037HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.EsmAgt0037Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtagreement.AGTAgreementSC</service-action-class>
+	</event-mapping>
+	
+	<!-- ============== AGTAudit Start================================================================= -->
+	<url-mapping url="ESM_AGT_0010.do" screen="ESM_AGT_0010.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0010HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0010HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.EsmAgt0010Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+	</event-mapping>
+	<url-mapping url="ESM_AGT_0047.do" screen="ESM_AGT_0047.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0047HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0047GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0047HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.EsmAgt0047Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+	</event-mapping>	
+	
+	<url-mapping url="ESM_AGT_0039.do" screen="ESM_AGT_0039.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0039HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0039GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0039HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.EsmAgt0039Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+	</event-mapping>	
+	
+	<url-mapping url="ESM_AGT_0011.do" screen="ESM_AGT_0011.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0011HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0011HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.EsmAgt0011Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_0012.do" screen="ESM_AGT_0012.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0012HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0012HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.EsmAgt0012Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_0017.do" screen="ESM_AGT_0017.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0017HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0017HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0017GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0017HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0017GS3.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0017HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.EsmAgt0017Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_0043.do" screen="ESM_AGT_0043.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0043HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0043GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0043HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.EsmAgt0043Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_0051.do" screen="ESM_AGT_0051.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0051HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0051HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0051GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0051HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.EsmAgt0051Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+	</event-mapping>
+	
+	<!-- ============== AGTAudit END ============================================================== -->
+	
+	<url-mapping url="ESM_AGT_0042.do" screen="ESM_AGT_0042.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0042HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0042GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.ESM_AGT_0042HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtaudit.agtaudit.event.EsmAgt0042Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_0013.do" screen="ESM_AGT_0013.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.brkgaudit.event.ESM_AGT_0013HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.brkgaudit.event.ESM_AGT_0013HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtaudit.brkgaudit.event.EsmAgt0013Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_0014.do" screen="ESM_AGT_0014.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.brkgaudit.event.ESM_AGT_0014HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.brkgaudit.event.ESM_AGT_0014HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0014GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.brkgaudit.event.ESM_AGT_0014HTMLAction</web-action-class>
+	</url-mapping>	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtaudit.brkgaudit.event.EsmAgt0014Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_0018.do" screen="ESM_AGT_0018.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.brkgaudit.event.ESM_AGT_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.brkgaudit.event.ESM_AGT_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0018GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.brkgaudit.event.ESM_AGT_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0018GS3.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.brkgaudit.event.ESM_AGT_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0018GS4.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.brkgaudit.event.ESM_AGT_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0018GS5.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.brkgaudit.event.ESM_AGT_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtaudit.brkgaudit.event.EsmAgt0018Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_0033.do" screen="ESM_AGT_0033.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.facaudit.event.ESM_AGT_0033HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.facaudit.event.ESM_AGT_0033HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtaudit.facaudit.event.EsmAgt0033Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+	</event-mapping>
+	
+	
+	<url-mapping url="ESM_AGT_0015.do" screen="ESM_AGT_0015.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.facaudit.event.ESM_AGT_0015HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.facaudit.event.ESM_AGT_0015HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0015GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtaudit.facaudit.event.ESM_AGT_0015HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtaudit.facaudit.event.EsmAgt0015Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtaudit.AGTAuditSC</service-action-class>
+	</event-mapping>
+	
+	<!-- ============== iFrame Start ================================================================ -->
+	<url-mapping url="ESM_AGT_0010FR.do" screen="ESM_AGT_0010FR.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_AGT_0039FR.do" screen="ESM_AGT_0039FR.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.agt.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_AGT_0017FR.do" screen="ESM_AGT_0017FR.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+	
+	<url-mapping url="ESM_AGT_0042FR.do" screen="ESM_AGT_0042FR.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_AGT_0042FR2.do" screen="ESM_AGT_0042FR2.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.agt.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_AGT_0051FR.do" screen="ESM_AGT_0051FR.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.agt.common.event.CommonEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esm.agt.common.AGTCommonSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_AGT_0046FR.do" screen="ESM_AGT_0046FR.screen" >
+        <web-action-class>com.clt.apps.opus.esm.agt.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.agt.common.event.CommonEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esm.agt.common.AGTCommonSC</service-action-class>
+    </event-mapping>
+    
+	<url-mapping url="ESM_AGT_0101.do" screen="ESM_AGT_0101.screen" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0101HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_AGT_0101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.ESM_AGT_0101HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.agt.agtagreement.agtofficeagreementinfo.event.EsmAgt0101Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.agt.agtagreement.AGTAgreementSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESM_AGT_RDReport.do" screen="ESM_AGT_RDReport.screen" >
+	</url-mapping>
+    
+    <!-- ============== iFrame End ================================================================ -->
+
+</mappings>

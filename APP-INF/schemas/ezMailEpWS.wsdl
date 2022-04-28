@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetMailEpInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GlobalUserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FormDistinct" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SystemDocumentID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SystemName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmldom" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMailEpInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMailEpInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetMailEpInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMailEpInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetMailEpInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMailEpInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ezMailEpWSSoap">
+    <wsdl:operation name="GetMailEpInfo">
+      <wsdl:input message="tns:GetMailEpInfoSoapIn" />
+      <wsdl:output message="tns:GetMailEpInfoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ezMailEpWSSoap" type="tns:ezMailEpWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMailEpInfo">
+      <soap:operation soapAction="http://tempuri.org/GetMailEpInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ezMailEpWSSoap12" type="tns:ezMailEpWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMailEpInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetMailEpInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ezMailEpWS">
+    <wsdl:port name="ezMailEpWSSoap" binding="tns:ezMailEpWSSoap">
+      <soap:address location="http://gwdev.hanjin.com/ezAprEpWS/ezMailEpWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ezMailEpWSSoap12" binding="tns:ezMailEpWSSoap12">
+      <soap12:address location="http://gwdev.hanjin.com/ezAprEpWS/ezMailEpWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

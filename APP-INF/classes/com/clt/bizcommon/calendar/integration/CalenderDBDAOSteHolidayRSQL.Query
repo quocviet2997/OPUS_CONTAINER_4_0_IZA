@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CalenderDBDAOSteHolidayRSQL">
+			<desc><![CDATA[SteHoliday 조회]]></desc>
+			<sql><![CDATA[
+SELECT cnt_cd,
+	cnt_nm,
+	ste_cd,
+	ste_nm,
+	hol_fm_dt,
+	hol_fm_dt_dy,
+	hol_to_dt,
+	hol_to_dt_dy,
+	hol_nm,
+	hol_id,
+	hol_knd_cd
+FROM (SELECT ROW_NUMBER() OVER (ORDER BY A.hol_id ASC) no,
+	A.cnt_cd,
+	B.cnt_nm,
+	'' ste_cd,
+	'' ste_nm,
+	A.hol_fm_dt,
+	to_char(to_date(A.hol_fm_dt, 'YYYYMMDD'), 'DY', 'NLS_DATE_LANGUAGE = ENGLISH') hol_fm_dt_dy,
+	A.hol_to_dt,
+	to_char(to_date(A.hol_to_dt, 'YYYYMMDD'), 'DY', 'NLS_DATE_LANGUAGE = ENGLISH') hol_to_dt_dy,
+	A.hol_nm, A.hol_id, A.HOL_KND_CD
+	FROM PRD_HOLIDAY A, MDM_COUNTRY B
+	WHERE 1 = 1 AND A.CNT_CD = B.CNT_CD
+	AND A.HOL_KND_CD = 'C'
+	AND nvl(A.delt_flg,'N') <> 'Y'
+	AND not Exists(select hol_id from prd_hol_delt where hol_id = A.hol_id and cnt_cd = A.cnt_cd)
+#if(${cnt_cd} != '')
+	AND A.cnt_cd = @[cnt_cd]
+#end
+#if(${hol_fm_dt} != '' && ${hol_to_dt} != '')
+	AND ( A.hol_fm_dt between @[hol_fm_dt] AND @[hol_to_dt] OR  A.hol_to_dt between @[hol_fm_dt] AND @[hol_to_dt] )
+#end
+
+union
+SELECT ROW_NUMBER() OVER (ORDER BY A.hol_id ASC) no,
+	A.cnt_cd,
+	C.cnt_nm,
+	A.ste_cd,
+	B.ste_nm,
+	A.hol_fm_dt,
+	to_char(to_date(A.hol_fm_dt, 'YYYYMMDD'), 'DY', 'NLS_DATE_LANGUAGE=ENGLISH') hol_fm_dt_dy,
+	A.hol_to_dt,
+	to_char(to_date(A.hol_to_dt, 'YYYYMMDD'), 'DY', 'NLS_DATE_LANGUAGE=ENGLISH') hol_to_dt_dy,
+	A.hol_nm, A.hol_id, A.HOL_KND_CD
+	FROM PRD_HOLIDAY A, MDM_STATE B, MDM_COUNTRY C
+	WHERE 1 = 1 AND A.CNT_CD=B.CNT_CD AND A.STE_CD=B.STE_CD AND A.CNT_CD=C.CNT_CD
+	AND A.HOL_KND_CD='S'
+	AND nvl(A.delt_flg,'N') <> 'Y'
+#if(${cnt_cd} != '')
+	AND A.cnt_cd = @[cnt_cd]
+#end
+#if(${ste_cd} != '')
+	AND A.ste_cd = @[ste_cd]
+#end
+#if(${hol_fm_dt} != '' && ${hol_to_dt} != '')
+	AND ( A.hol_fm_dt between @[hol_fm_dt] AND @[hol_to_dt] OR  A.hol_to_dt between @[hol_fm_dt] AND @[hol_to_dt] )
+#end
+	) a
+WHERE no BETWEEN @[startpart] AND @[endpart]
+ORDER BY hol_fm_dt ASC			]]></sql>
+			<params>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="hol_fm_dt" type="12" value="" out="N"/>
+				<param name="hol_to_dt" type="12" value="" out="N"/>
+				<param name="ste_cd" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

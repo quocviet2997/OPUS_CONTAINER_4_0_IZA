@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOCheckDupSubLinkMsgRSQL">
+			<desc><![CDATA[2011.03.08 정윤태 BKG EDI SUB LNK MSG에 중복데이타가 존재하는지 체크한다]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*) CNT 
+  FROM BKG_EDI_SUB_LNK_MSG
+ WHERE TRD_PRNR_SUB_LNK_SEQ = @[trd_prnr_sub_lnk_seq]
+   AND EDI_MSG_TP_ID = @[edi_msg_tp_id]
+   AND EDI_MSG_IND_CD = @[edi_msg_ind_cd]			]]></sql>
+			<params>
+				<param name="trd_prnr_sub_lnk_seq" type="12" value="" out="N"/>
+				<param name="edi_msg_tp_id" type="12" value="" out="N"/>
+				<param name="edi_msg_ind_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

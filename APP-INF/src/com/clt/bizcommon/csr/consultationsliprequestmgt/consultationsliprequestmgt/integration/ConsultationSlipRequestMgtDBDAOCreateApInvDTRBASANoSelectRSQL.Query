@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCreateApInvDTRBASANoSelectRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+select a.line_seq,
+  b.line_no,
+  c.inv_no,
+  c.iss_dt,
+  c.loc_cd,
+  d.total_amt,
+  '' acct_cd,
+  '' csr_no
+from (
+    select nvl(max(line_seq), 0)+1 line_seq
+    from ap_inv_dtrb
+    where csr_no = @[csr_no]) a,
+  (
+    select nvl(max(line_no), 0)+1 line_no
+    from ap_inv_dtrb
+    where csr_no = @[csr_no]) b,
+  (
+    select a.attr_ctnt1 inv_no,
+      max(b.attr_ctnt2) iss_dt,
+      substr(yd_cd, 1, 5) loc_cd
+    from (
+        select max(attr_ctnt1) attr_ctnt1
+        from ap_inv_dtrb
+        where csr_no = @[csr_no]) a,
+      ap_inv_dtrb b
+    where b.csr_no = @[csr_no]
+      and a.attr_ctnt1 = b.attr_ctnt1
+    group by yd_cd, a.attr_ctnt1) c,
+  (
+    select -sum(inv_amt) total_amt
+    from ap_inv_dtrb
+    where csr_no = @[csr_no]) d			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

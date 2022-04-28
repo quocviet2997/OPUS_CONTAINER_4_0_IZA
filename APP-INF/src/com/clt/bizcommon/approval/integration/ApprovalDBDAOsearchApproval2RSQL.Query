@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOsearchApproval2RSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT APRO_SEQ,
+       APRO_USR_ID,
+       APRO_USR_NM,
+       APRO_OFC_CD,
+       APRO_USR_JB_TIT_NM
+FROM (SELECT ROW_NUMBER() OVER (ORDER BY A.APRO_SEQ DESC) no,
+		A.APRO_SEQ,
+		A.APRO_USR_ID,
+		A.APRO_USR_NM,
+		B.OFC_CD APRO_OFC_CD,
+		A.APRO_USR_JB_TIT_NM
+		FROM COM_APRO_ROUT_DFLT_DTL A, COM_USER B
+		WHERE B.USE_FLG = 'Y'
+		--AND A.APRO_USR_ID = B.USR_ID
+          AND A.APRO_USR_ID IN (B.USR_ID,
+              B.EP_ID)
+		  AND A.APRO_ROUT_SEQ = @[apro_rout_seq]
+		ORDER BY A.APRO_SEQ DESC
+)A			]]></sql>
+			<params>
+				<param name="apro_rout_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

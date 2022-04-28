@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ServiceScopeDBDAOTotalServiceScopeRSQL">
+			<desc><![CDATA[Service Scope의 총 카운트를 조회한다.]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*)
+FROM mdm_svc_scp
+WHERE 1 = 1 
+
+#if (${mdm_yn} != '')
+	#if (${delt_flg} == 'Y') 
+		AND DELT_FLG = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+	#else 
+		AND DELT_FLG <> 'Y'
+	#end
+#else	
+	AND DELT_FLG <> 'Y'
+#end
+
+#if (${svc_scp_cd} != '') 
+AND svc_scp_cd like @[svc_scp_cd] || '%'
+#end
+#if (${svc_scp_nm} != '') 
+AND upper(svc_scp_nm) like '%' || upper(@[svc_scp_nm]) || '%'
+#end			]]></sql>
+			<params>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="svc_scp_cd" type="12" value="" out="N"/>
+				<param name="svc_scp_nm" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

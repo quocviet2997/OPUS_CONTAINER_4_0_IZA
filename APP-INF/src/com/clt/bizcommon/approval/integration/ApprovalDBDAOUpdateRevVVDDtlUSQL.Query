@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOUpdateRevVVDDtlUSQL">
+			<desc><![CDATA[VVD를 갱신합니다]]></desc>
+			<sql><![CDATA[
+UPDATE AP_PAY_INV_DTL                                                                                                          		   
+   SET SKD_VOY_NO = (                                                                                                                    
+                     SELECT SUBSTR(@[new_gl_dt],3,4) NEW_SKD_VOY_NO                                                  												   
+                       FROM AP_PAY_INV     H
+                          , AP_PAY_INV_DTL D
+                          , AP_INV_HDR     A                                                                                    
+                      WHERE H.CSR_NO         = @[csr_no]                                                                                                            
+                        AND H.INV_RGST_NO    = D.INV_RGST_NO                                                                                               
+                        AND H.CSR_NO         = A.CSR_NO                                                                                                     
+                        AND D.VSL_CD         = 'CNTC'                                                                                                       
+                        AND NVL(H.DELT_FLG,'N') <> 'Y'                                                                                                      
+                        AND NVL(D.DELT_FLG,'N') <> 'Y'                                                                                                     
+                        AND NVL(A.IF_FLG,'N')<>'E'                                                                                                          
+                        AND NVL(A.RCV_ERR_FLG,'N')<>'E'                                                                                                     
+                        AND SKD_VOY_NO     <> SUBSTR(@[new_gl_dt],3,4)                                                                                                 
+                        AND ROWNUM = 1                                                                                                					   
+                     )                                                                                                                                     
+ WHERE INV_RGST_NO = (                                                                                                                    
+                      SELECT D.INV_RGST_NO                                                                                                                   
+                        FROM AP_PAY_INV     H
+                           , AP_PAY_INV_DTL D
+                           , AP_INV_HDR     A                                                                                    
+                       WHERE H.CSR_NO         = @[csr_no]                                                                                                            
+                         AND H.INV_RGST_NO    = D.INV_RGST_NO                                                                                                
+                         AND H.CSR_NO         = A.CSR_NO                                                                                                     
+                         AND D.VSL_CD         = 'CNTC'                                                                                                       
+                         AND NVL(H.DELT_FLG,'N') <> 'Y'                                                                                                      
+                         AND NVL(D.DELT_FLG,'N') <> 'Y'                                                                                                      
+                         AND NVL(A.IF_FLG,'N')   <>'E'                                                                                                       
+                         AND NVL(A.RCV_ERR_FLG,'N')<>'E'                                                                                                     
+                         AND SKD_VOY_NO     <> SUBSTR(@[new_gl_dt],3,4)                                                                                                 
+                         AND ROWNUM = 1                                                                                                					   
+                      )  			]]></sql>
+			<params>
+				<param name="new_gl_dt" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

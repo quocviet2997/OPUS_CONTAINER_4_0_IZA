@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOcheckCSRAmtVsInvAmtRSQL">
+			<desc><![CDATA[checkCSRAmtVsInvAmt
+R4J 관련 CSR 프로그램 수정 ( DBDAO에 SQL문을 삭제하기 위함 )]]></desc>
+			<sql><![CDATA[
+SELECT DECODE(SIGN(H.CSR_AMT - SUM(D.INV_AMT)),0,'Y','N') RETVAL
+FROM AP_INV_HDR H, AP_INV_DTRB D
+WHERE H.CSR_NO = @[csr_no]
+AND H.CSR_NO = D.CSR_NO
+GROUP BY H.CSR_AMT			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

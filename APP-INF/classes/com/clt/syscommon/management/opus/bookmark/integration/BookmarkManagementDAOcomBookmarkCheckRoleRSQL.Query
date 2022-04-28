@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="BookmarkManagementDAOcomBookmarkCheckRoleRSQL">
+			<desc><![CDATA[get Rolecodes
+]]></desc>
+			<sql><![CDATA[
+SELECT count(*)
+FROM COM_PGM_ROLE A, COM_USR_ROLE_MTCH B
+WHERE A.USR_ROLE_CD = B.USR_ROLE_CD
+AND A.PGM_NO = @[pgm_no]
+AND B.USR_ID = @[usr_id]			]]></sql>
+			<params>
+				<param name="pgm_no" type="12" value="" out="N"/>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

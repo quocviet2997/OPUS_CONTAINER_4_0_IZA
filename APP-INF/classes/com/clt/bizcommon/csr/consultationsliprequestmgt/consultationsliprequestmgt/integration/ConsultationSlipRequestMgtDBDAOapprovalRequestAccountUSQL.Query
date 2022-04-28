@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOapprovalRequestAccountUSQL">
+			<desc><![CDATA[approvalRequestAccount
+R4J 관련 CSR 프로그램 수정 ( DBDAO에 SQL문을 삭제하기 위함 )]]></desc>
+			<sql><![CDATA[
+UPDATE 		AP_INV_HDR        
+SET			ATTR_CTNT1 			= @[title_name]
+    	,	APRO_FLG			= 'Y'   
+		,	IF_ERR_RSN			= 'Sending...' 
+WHERE       CSR_NO 				= @[csr_no]			]]></sql>
+			<params>
+				<param name="title_name" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

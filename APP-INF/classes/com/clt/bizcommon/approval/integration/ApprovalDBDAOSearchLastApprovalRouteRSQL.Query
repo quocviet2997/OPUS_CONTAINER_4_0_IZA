@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOSearchLastApprovalRouteRSQL">
+			<desc><![CDATA[Last Approval Route 정보를 조회합니다]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(APRO_RQST_NO) CNT 
+  FROM COM_APRO_RQST_HDR  
+ WHERE APRO_RQST_NO = @[apro_rqst_no]
+   AND CRNT_APRO_SEQ = ( 
+                        SELECT MAX(APRO_RQST_SEQ) 
+                          FROM COM_APRO_RQST_ROUT 
+                         WHERE APRO_RQST_NO = @[apro_rqst_no]
+                           AND APSTS_CD = 'C'
+       )			]]></sql>
+			<params>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

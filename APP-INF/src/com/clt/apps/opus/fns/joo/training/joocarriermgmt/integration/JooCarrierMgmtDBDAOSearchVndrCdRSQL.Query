@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="JooCarrierMgmtDBDAOSearchVndrCdRSQL">
+			<desc><![CDATA[search vendor code]]></desc>
+			<sql><![CDATA[
+SELECT VNDR_SEQ
+FROM MDM_VENDOR A
+WHERE 1 = 1
+AND DELT_FLG = 'N'
+AND A.VNDR_SEQ = @[vndr_seq]			]]></sql>
+			<params>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

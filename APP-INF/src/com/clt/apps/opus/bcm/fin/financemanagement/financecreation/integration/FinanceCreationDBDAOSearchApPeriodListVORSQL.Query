@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchApPeriodListVORSQL">
+			<desc><![CDATA[]]></desc>
+			<sql><![CDATA[
+SELECT  APD.SYS_DIV_CD
+       ,APD.EFF_YRMON
+       ,APD.OFC_CD
+       ,APD.AR_AP_DIV_CD
+       ,APD.CLZ_STS_CD
+       ,NVL(APD.SYS_DESC, SLD.LU_DESC) SYS_DESC
+       ,APD.RHQ_CD
+       ,'' CRE_USR_ID
+	   ,'' UPD_USR_ID
+  FROM AP_PERIOD  APD
+      ,SCO_LU_DTL SLD
+ WHERE 1 = 1
+   AND SLD.LU_TP_CD(+) = 'PERIOD SYSTEM MODULE'
+   AND APD.SYS_DIV_CD  = SLD.LU_CD(+)
+#if (${sys_div_cd} != '')
+   AND APD.SYS_DIV_CD = @[sys_div_cd]
+#end
+
+#if (${eff_yrmon} != '')
+   AND APD.EFF_YRMON = @[eff_yrmon]
+#end
+
+#if (${ofc_cd} != '')
+   AND APD.OFC_CD = UPPER(@[ofc_cd])
+#end
+
+#if (${ar_ap_div_cd} != '')
+   AND APD.AR_AP_DIV_CD = @[ar_ap_div_cd]
+#end
+ ORDER BY APD.SYS_DIV_CD			]]></sql>
+			<params>
+				<param name="sys_div_cd" type="12" value="" out="N"/>
+				<param name="eff_yrmon" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="ar_ap_div_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

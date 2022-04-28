@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCancelCSR01USQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+UPDATE AP_PAY_INV T
+ SET    T.INV_STS_CD          = @[inv_sts_cd]
+      , T.UPD_USR_ID          = @[upd_usr_id]
+      , T.UPD_DT              = GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd])
+ WHERE  T.CSR_NO              = @[csr_no]
+    AND NVL(T.DELT_FLG, 'N') <> 'Y'			]]></sql>
+			<params>
+				<param name="inv_sts_cd" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

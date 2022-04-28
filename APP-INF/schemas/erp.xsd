@@ -1,0 +1,1992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://irep.clt.com/erp" targetNamespace="http://irep.clt.com/erp">
+	<xsd:complexType name="EAIHeaderType">
+		<xsd:sequence>
+			<xsd:element name="InstanceId" type="xsd:string" />
+			<xsd:element name="Parameters" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Parameter" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:simpleContent>
+									<xsd:extension base="xsd:string">
+										<xsd:anyAttribute />
+									</xsd:extension>
+								</xsd:simpleContent>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="PRS003-VM01">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ROWSET">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROW">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ODR_NO" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ERP_PO_NO" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ERP_PO_RELEASE_NO" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ERP_PO_LINE" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ERP_PO_SHIPMENT_LINE" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="REQ_NO" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ODR_KIND" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="VSL_CD" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="VNDR_CD" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ODR_VVD" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ODR_PORT" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ODR_DT" type="xsd:dateTime" minOccurs="0" nillable="true" />
+										<xsd:element name="CURR_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="TAMT" type="xsd:integer" minOccurs="0" nillable="true" />
+										<xsd:element name="ZERO_TAX" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="APPROVED" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="APP_DT" type="xsd:dateTime" minOccurs="0" nillable="true" />
+										<xsd:element name="EQ_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="MFG_PART_NO" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="MACH_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="MAKER_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="TYPE_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="COMPO_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ERP_ITEM_NO" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="PUNIT_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ODR_PRICE" type="xsd:integer" minOccurs="0" nillable="true" />
+										<xsd:element name="ODR_QTY" type="xsd:integer" minOccurs="0" nillable="true" />
+										<xsd:element name="ODR_RMK" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ITEM_ODR_DT" type="xsd:dateTime" minOccurs="0" nillable="true" />
+										<xsd:element name="TEAM_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ODR_COUNT" type="xsd:integer" minOccurs="0" nillable="true" />
+										<xsd:element name="ERP_INF_DT" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="VM_INF_FLG" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="VM_INF_DT" type="xsd:dateTime" minOccurs="0" nillable="true" />
+										<xsd:element name="ATTRIBUTE1" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE2" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE3" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE4" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE5" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE6" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE7" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE8" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE9" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE10" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PRS004-VM01">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ROWSET">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROW">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ODR_NO" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ERP_PO_NO" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ERP_PO_RELEASE_NO" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ERP_PO_LINE" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ERP_PO_SHIPMENT_LINE" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="REQ_NO" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ODR_KIND" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="VSL_CD" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="VNDR_CD" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ODR_VVD" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ODR_PORT" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ODR_DT" type="xsd:dateTime" minOccurs="0" nillable="true" />
+										<xsd:element name="CURR_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="TAMT" type="xsd:integer" minOccurs="0" nillable="true" />
+										<xsd:element name="ZERO_TAX" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="APPROVED" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="APP_DT" type="xsd:dateTime" minOccurs="0" nillable="true" />
+										<xsd:element name="EQ_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="MFG_PART_NO" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="MACH_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="MAKER_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="TYPE_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="COMPO_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ERP_ITEM_NO" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="PUNIT_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ODR_PRICE" type="xsd:integer" minOccurs="0" nillable="true" />
+										<xsd:element name="ODR_QTY" type="xsd:integer" minOccurs="0" nillable="true" />
+										<xsd:element name="ODR_RMK" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ITEM_ODR_DT" type="xsd:dateTime" minOccurs="0" nillable="true" />
+										<xsd:element name="TEAM_ID" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ODR_COUNT" type="xsd:integer" minOccurs="0" nillable="true" />
+										<xsd:element name="ERP_INF_DT" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="VM_INF_FLG" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="VM_INF_DT" type="xsd:dateTime" minOccurs="0" nillable="true" />
+										<xsd:element name="ATTRIBUTE1" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE2" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE3" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE4" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE5" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE6" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE7" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE8" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE9" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+										<xsd:element name="ATTRIBUTE10" type="xsd:string" minOccurs="0" nillable="true">
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS002-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="ROWSET">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROW">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="CurrCd" type="xsd:string" minOccurs="0" />
+										<xsd:element name="CurrNm" type="xsd:string" minOccurs="0" />
+										<xsd:element name="CurrDesc" type="xsd:string" minOccurs="0" />
+										<xsd:element name="FmEffDt" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ToEffDt" type="xsd:string" minOccurs="0" />
+										<xsd:element name="DpPrcsKnt" type="xsd:integer" minOccurs="0" />
+										<xsd:element name="XtdPrcsKnt" type="xsd:integer" minOccurs="0" />
+										<xsd:element name="CntCd" type="xsd:string" minOccurs="0" />
+										<xsd:element name="CreUsrId" type="xsd:string" minOccurs="0" />
+										<xsd:element name="CreDt" type="xsd:string" minOccurs="0" />
+										<xsd:element name="UpdUsrId" type="xsd:string" minOccurs="0" />
+										<xsd:element name="UpdDt" type="xsd:string" minOccurs="0" />
+										<xsd:element name="DeltFlg" type="xsd:string" minOccurs="0" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS008-R001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="PGM_ID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="OPCD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="OPIND" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CSR_NUMBER" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INTERFACE_DATE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="STATUS" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ERROR_REASON" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE1" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE2" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE3" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE4" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE5" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS008-R002">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="PGM_ID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="OPCD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="OPIND" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CSR_NUMBER" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INTERFACE_DATE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="STATUS" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ERROR_REASON" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE1" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE2" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE3" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE4" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE5" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS009-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="INVOICE_NUM" type="xsd:string" minOccurs="0" />
+													<xsd:element name="DISTRIBUTION_LINE_NUMBER" type="xsd:string" minOccurs="0" />
+													<xsd:element name="USSGL_TRANSACTION_CODE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SEGMENT3" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SEGMENT2" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INVOICE_CURRENCY_CODE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="AMOUNT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SEGMENT1" type="xsd:string" minOccurs="0" />
+													<xsd:element name="GL_DATE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE15" type="xsd:string" minOccurs="0" />
+													<xsd:element name="DESCRIPTION" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS010-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LINSTID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="INVOICE_NUM" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="AMOUNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ACCOUNTING_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS010-0002">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="INVOICE_NUM" type="xsd:string" minOccurs="0" />
+													<xsd:element name="AMOUNT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ACCOUNTING_DATE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="PAY_CHECK_NUMBER" type="xsd:string" minOccurs="0" />
+													<xsd:element name="PAYMENT_METHOD" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS012-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="FNSINVCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="FNSINV" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SEQ" type="xsd:string" minOccurs="0" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ROW_COUNT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="FLAG" type="xsd:string" minOccurs="0" />
+													<xsd:element name="MAIN_IF_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="MAIN_IF_SER" type="xsd:string" minOccurs="0" />
+													<xsd:element name="BL_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="BL_NO_TP" type="xsd:string" minOccurs="0" />
+													<xsd:element name="BKG_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SOURCE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="TRANS_TYP" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INV_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CA_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CA_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="RHQ" type="xsd:string" minOccurs="0" />
+													<xsd:element name="OFC" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ACT_CNTRY_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ACT_CUST_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INV_CNTRY_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INV_CUST_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VSL" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VOY" type="xsd:string" minOccurs="0" />
+													<xsd:element name="DIR" type="xsd:string" minOccurs="0" />
+													<xsd:element name="T_VVD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_VSL" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_VOY" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_DIR" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SA_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="POR" type="xsd:string" minOccurs="0" />
+													<xsd:element name="POL" type="xsd:string" minOccurs="0" />
+													<xsd:element name="POD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="DEL" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SCP" type="xsd:string" minOccurs="0" />
+													<xsd:element name="LANE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="BND" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CREDIT_MK" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SLSMAN_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="DUE_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="USD_AMT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="LCL_AMT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="WHF_DEC_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CTT_DEC_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ZONE_IOC" type="xsd:string" minOccurs="0" />
+													<xsd:element name="IF_FLAG" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ERP_IF_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INV_COA_COMPANY" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INV_COA_REGION" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INV_COA_CENTER" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INV_COA_ACCOUNT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INV_COA_INTER_COMPANY" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INV_COA_VVD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INV_COA_FUTURE1" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INV_COA_FUTURE2" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_LANE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CONT_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CREDIT_TERM" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SAILING_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="GL_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="EX_RATE_TYPE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="EX_RATE_CUST_DATE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SETOFF_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CUST_REF_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="HJS_REF_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="TAX_EX_RATE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="TAX_IND" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ONBOARD_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="OBL_MK" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CTY_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SALES_OFC" type="xsd:string" minOccurs="0" />
+													<xsd:element name="RMK" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CURR" type="xsd:string" minOccurs="0" />
+													<xsd:element name="USER_ID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="LOG_RGST_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="LOG_UPDT_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ISS_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SLIP_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="JO_IND" type="xsd:string" minOccurs="0" />
+													<xsd:element name="DTL_IF_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="DTL_IF_SER" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CHG_SEQ" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CHG_TYP" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REP_CHG_TYP" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CHG_CUR" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_TYP" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CHG_AMT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="TAX_AMT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_COA_COMPANY" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_COA_REGION" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_COA_CENTER" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_COA_ACCOUNT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_COA_INTER_COMPANY" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_COA_VVD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_COA_FUTURE1" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_COA_FUTURE2" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ORI_CHG_CUR" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ORI_CHG_AMT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_EFF_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="PER_TYP" type="xsd:string" minOccurs="0" />
+													<xsd:element name="RATE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="RATED_AS" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SOB_ID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CHG_FULL_NM" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ACCT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CNTR_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CNTR_TP_SZ" type="xsd:string" minOccurs="0" />
+													<xsd:element name="RFA_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="THIRD_EX_RATE_TYPE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="WHF_DEC_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="WHF_DEC_VVD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="WHF_DEC_OFC" type="xsd:string" minOccurs="0" />
+													<xsd:element name="WHF_MRN_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="WHF_NTC_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="WHF_FLAG" type="xsd:string" minOccurs="0" />
+													<xsd:element name="WHF_CSR_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CTRT_OFC_CD" type="xsd:string" minOccurs="0"/>
+                                                                                                        <xsd:element name="WHF_DECL_CXL_FLG" type="xsd:string" minOccurs="0"/>
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS012-R001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SEQ" type="xsd:string" minOccurs="0" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ROW_COUNT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="FLAG" type="xsd:string" minOccurs="0" />
+													<xsd:element name="IF_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="IF_SER" type="xsd:string" minOccurs="0" />
+													<xsd:element name="IF_RESULT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ERROR_MSG" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS012_R002">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SEQ" type="xsd:string" minOccurs="0" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ROW_COUNT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="FLAG" type="xsd:string" minOccurs="0" />
+													<xsd:element name="IF_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="IF_RESULT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ERROR_MSG" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS013-R001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SEQ" type="xsd:string" minOccurs="0" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ROW_COUNT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="FLAG" type="xsd:string" minOccurs="0" />
+													<xsd:element name="IF_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="IF_RESULT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ERROR_MSG" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS020-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LINSTID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ROWNUM" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TOTAL_CNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="RHQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="OFFICE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="BL_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CHEQUE_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CURRENCY" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="AMOUNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="COL_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REMARK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="COL_YN" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="COL_TYPE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="USER_ID" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS020-0002">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LINSTID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ROW_COUNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="FLAG" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="RHQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="OFFICE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="BL_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CUSTOMER" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="STTL_MARK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="F_INV_TTL_USD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SVR_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="F_BAL_TTL_USD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="USR_ID" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS020-0003">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LINSTID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ROW_COUNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="FLAG" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IF_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IF_SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="BL_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="INV_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CUSTOMER" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CURRENCY" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="AMOUNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="COL_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="COL_TYPE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="COL_DFF" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS035-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ROWCNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="RHQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="OFC" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="AR_SER" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IPKUM_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CNTRY_CD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CUST_CD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="RGT_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="OWN" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="NM" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ADDR" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="B_CAT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="B_TP" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="BRK_CNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SPLY_AMT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TAX_AMT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TOT_AMT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ISS_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="MODIFY_CNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ISS_CNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="RI_DIV" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CB_DIV" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="FP_DIV" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="AM_DIV" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TAX_TP" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="RE_PRT_CNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="PRT_USER_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="PRT_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="MODIFY_USER_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="MODIFY_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="BIG_CST" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SINGO_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DEL_MK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LOG_RGST_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LOG_UPDT_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LOG_USER_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TAX_DIV" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="IF_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SINGO_YM" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="WEB_STATUS" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ISS_DIV" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LANE_DIV" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CUD_FLAG" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DTL_RHQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DTL_OFC" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DTL_AR_SER" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="AR_SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="MOD_NM" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="BL_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CURR_CD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="VSL" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="VOY" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DIR" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LANE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="PORT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EX_RT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SPLY_USD_AMT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SPLY_WON_AMT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DTL_TAX_AMT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DTL_TOT_AMT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="WHF_USD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="WHF_WON" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DTL_DEL_MK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SCP" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="BND" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SA_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REMARK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DTL_LOG_RGST_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DTL_LOG_UPDT_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DTL_LOG_USER_ID" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS035-0002">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ROW_COUNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="OPCD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="FILE_NAME" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="BL_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="BL_SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SR_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="STATUS" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SEND_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SA_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="POL" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="POD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="VSL" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REG_NO_B" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ADDRESS_B" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REG_NO_S" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="COM_NAME_S" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CEO_S" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ADDRESS_S" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="BUS_CON" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="BUS_CAT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="BIZ_TYPE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TAX_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ITM_NAME" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TAX_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="VAT_DIV" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="INV_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="WEIGHT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CBM" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="NUMBER_OF_20S" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="NUMBER_OF_40S" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="NUMBER_OF_40H" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="NUMBER_OF_45S" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="UNIT_PRICE_OF_20S" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="UNIT_PRICE_OF_40S" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="UNIT_PRICE_OF_40H" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="UNIT_PRICE_OF_45S" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="FRT_USD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="EQV_LCL" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CTX_LCL" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="WHF_LCL" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DOC_AMT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="THC_AMT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CFS_AMT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="OTH1_AMT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="OTH2_AMT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TTL_USD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TTL_LCL" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="VVD_EX_RATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="USD_EX_RATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LCL_DIV" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REMARK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DEL_MK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LOG_RGST_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LOG_UPDT_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LOG_USER_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="POL_NAME" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="POD_NAME" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="COM_NAME_B" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CEO_B" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="WEIGHT_UNIT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="FRT_CUR" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="OTH1_REMARK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="OTH2_REMARK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TTL_TAX_LCL" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="BUS_CON_B" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="BUS_CAT_B" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="INV_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CONFIRM_IF_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CNTRY_CD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CUST_CD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CCC_AMT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SEND_DIV" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="AMS_USD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ACS_USD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="PSS_USD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="PCS_USD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="MCF_USD" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<!--
+		<xsd:element name="FNS037-0001"> <xsd:complexType> <xsd:sequence> <xsd:element name="EAIHeader" type="EAIHeaderType"/> <xsd:element name="DataArea"> <xsd:complexType> <xsd:sequence> <xsd:element name="ROWSET"> <xsd:complexType> <xsd:sequence>
+		<xsd:element name="ROW" maxOccurs="unbounded"> <xsd:complexType> <xsd:sequence> <xsd:element name="LIFID" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="SEQ" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element
+		name="TOTAL_COUNT" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="ROW_COUNT" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="FLAG" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="RHQ"
+		type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="OFC" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="COL_DT" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="COL_NO" type="xsd:string"
+		nillable="true" minOccurs="0"/> <xsd:element name="CUSTOMER" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="COL_GBN" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="AMOUNT" type="xsd:string"
+		nillable="true" minOccurs="0"/> <xsd:element name="REG_NO" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="CUST_NAME" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="CUST_ADDR" type="xsd:string"
+		nillable="true" minOccurs="0"/> <xsd:element name="HJS_EMP" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="HJS_EMPTEL" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="HJS_EMPEMAIL" type="xsd:string"
+		nillable="true" minOccurs="0"/> <xsd:element name="HJS_EMPNAME" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="HJS_NAME" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="HJS_REGNO" type="xsd:string"
+		nillable="true" minOccurs="0"/> <xsd:element name="HJS_ADDR" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="HJS_COMNAME" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="HJS_TEL" type="xsd:string"
+		nillable="true" minOccurs="0"/> <xsd:element name="LANE_CODE" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="BL_NO" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="VVD" type="xsd:string" nillable="true"
+		minOccurs="0"/> <xsd:element name="SA_DATE" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="BOUND" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="FRT_USD" type="xsd:string" nillable="true" minOccurs="0"/>
+		<xsd:element name="EX_RATE" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="EQU_LCL" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="CHG_LCL" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element
+		name="WHF_LCL" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="CTT_LCL" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="VAT_LCL" type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="TTL_LCL"
+		type="xsd:string" nillable="true" minOccurs="0"/> <xsd:element name="CUR_TY" type="xsd:string" nillable="true" minOccurs="0"/> </xsd:sequence> </xsd:complexType> </xsd:element> </xsd:sequence> </xsd:complexType> </xsd:element> </xsd:sequence>
+		</xsd:complexType> </xsd:element> </xsd:sequence> </xsd:complexType> </xsd:element>
+	-->
+	<xsd:element name="FNS040-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REVENUE_LANE_CODE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REVENUE_LANE_NAME" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="VESSEL_SERVICE_LANE_CODE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="OCEAN_INTER_FLAG" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="OCEAN_INTER_NAME" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DELETE_FLAG" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CREATION_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LAST_UPDATE_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CREATED_BY" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS041-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="VESSEL_SERVICE_LANE_CODE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DIRECTION_CHANGE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DELETE_FLAG" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SUB_CONTI" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SERVICE_LANE_DIR" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REVENUE_LANE_DIR" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="AP_MARK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ATTRIBUTE2" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS042-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ROWNUM" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TOTAL_CNT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="VESSEL_CODE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="VOYAGE_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DIRECTION_CODE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="VOYAGE_TYPE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="VESSEL_SERVICE_LANE_CODE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SERVICE_LANE_DIRECTION_CODE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REVENUE_LANE_CODE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="PORT_CHECK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LOADABLE_QUANTITY" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="COMMON_VVD_DIVISION" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="COMMON_VVD_CODE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CONTAINER_BULK_DIVISION" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SEL_MK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TC_SEL_MK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SURVEY" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="VESSEL_CHECK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DTL_SEQ" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CALLING_PORT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ESTIMATE_ARRIVAL_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ESTIMATE_SAILING_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ACTUAL_ARRIVAL_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ACTUAL_SAILING_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CLOSING_SCHEDULE_STATUS" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="U_ESTIMATE_ARRIVAL_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="U_ESTIMATE_SAILING_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="U_ACTUAL_ARRIAVAL_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="U_ACTUAL_SAILING_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SCHEDULE_UPDATE_SATAUS" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="POSITION" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REVENUE_MARK" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REV_OO_PORT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REV_OO_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REV_IE_PORT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REV_IE_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REV_IA_PORT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REV_IA_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REV_IM_PORT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REV_IM_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CHANGE_IND" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DEL_MK" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS043-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="OPCD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SOURCE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REV_TYPE_GROUP" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REV_TYPE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ACCOUNT_DIVISION" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CHARGE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ACCOUNT_CODE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ACCT_NAME_KRW" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ACCT_NAME_USD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="PRICING" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DELETE_FLAG" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="REP_CHRG" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CREATION_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CREATED_BY" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LAST_UPDATE_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LAST_UPDATED_BY" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS044-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="SEQ" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ROWNUM" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="OPCD" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="RHQ" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ASA_NO" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="OFC" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="CUR" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="PERIOD_FM" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="PERIOD_TO" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="CLS_DT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="PRPRD_BY" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="APRV_BY" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="APRV_DT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="DEL_MK" type="xsd:string" nillable="true" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS045-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="OPCD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="NAME" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TAX_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TAX_RATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ATTRIBUTE2" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ATTRIBUTE3" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ATTRIBUTE4" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ENABLED_FLAG" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CREATION_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CREATED_BY" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LAST_UPDATE_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LAST_UPDATED_BY" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS046-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="OPCD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LOOKUP_TYPE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LOOKUP_CODE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ENABLED_FLAG" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ATTRIBUTE1" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="DESCRIPTION" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="START_DATE_ACTIVE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="END_DATE_ACTIVE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CREATION_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CREATED_BY" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LAST_UPDATE_DATE" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="LAST_UPDATED_BY" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS047-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="RT_YM" type="xsd:string" minOccurs="0" />
+													<xsd:element name="RT_DIV" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CURR_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="RT1" type="xsd:float" minOccurs="0" />
+													<xsd:element name="RT2" type="xsd:float" minOccurs="0" />
+													<xsd:element name="RT3" type="xsd:float" minOccurs="0" />
+													<xsd:element name="CRT_ID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CRT_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="UPT_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="DEL_MK" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS048-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="OPCD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="PERIOD_DIV" type="xsd:string" minOccurs="0" />
+													<xsd:element name="PERIOD_NAME" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CLOSING_STATUS" type="xsd:string" minOccurs="0" />
+													<xsd:element name="START_DATE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="END_DATE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="PERIOD_YEAR" type="xsd:string" minOccurs="0" />
+													<xsd:element name="PERIOD_NUM" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CREATION_DATE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CREATED_BY" type="xsd:string" minOccurs="0" />
+													<xsd:element name="LAST_UPDATE_DATE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="LAST_UPDATED_BY" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS048-0002">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="SYS_DIV" type="xsd:string" minOccurs="0" />
+													<xsd:element name="EFF_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CLS_STS" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SYS_DESC" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CREATION_DATE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="LAST_UPDATE_DATE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="AR_AP_DIV" type="xsd:string" minOccurs="0" />
+													<xsd:element name="RHQ" type="xsd:string" minOccurs="0" />
+													<xsd:element name="OFC" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS049-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="CTR_CD_NUM" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CTR_CD_ALPHA" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CTR_KOR_NM" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CTR_ENG_NM" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CUR_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CNTRY_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="RGN_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SUM_TRS_DIV" type="xsd:string" minOccurs="0" />
+													<xsd:element name="BIZ_DIV" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CRT_ID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CRT_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="UPT_ID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="UPT_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="DEL_MK" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS052-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="OPCD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="LOCATION_ID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="LOCATION_CODE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="DESCRIPTION" type="xsd:string" minOccurs="0" />
+													<xsd:element name="INACTIVE_DATE" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS053-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="FLEX_VALUE_SET_ID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="FLEX_VALUE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ENABLED_FLAG" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS056-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="TS_TP_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="FUNC_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="TM_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ISS_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SLP_SER" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SLP_SEQ" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VSL_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VOY_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="DIR" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ACCT_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="EFF_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="TC_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CTR_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CURR_CD1" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CURR_CD2" type="xsd:string" minOccurs="0" />
+													<xsd:element name="AMT1" type="xsd:string" minOccurs="0" />
+													<xsd:element name="AMT2" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VNDR_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CURR_RATE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="DESCRIPTION" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SLIP_MK" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SLIP_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CFM_MK" type="xsd:string" minOccurs="0" />
+													<xsd:element name="KEY_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CONVERT_MK" type="xsd:string" minOccurs="0" />
+													<xsd:element name="MH_MK" type="xsd:string" minOccurs="0" />
+													<xsd:element name="STL_MK" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CRE_ID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="UPD_ID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CRE_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="UPD_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CONT_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="DATA_ID" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS003-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="TRANS_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SYS_CATEGORY" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="GL_DT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="ACCT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SLIP_CURR" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="TR_CD" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SLIP_AMT" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SLIP_CTR" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="SLIP_DESC" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="OFC_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CTY" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="CST_CD" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS061_0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ROW" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="SLP_TJ_NO" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="PRPR_USR_ID" type="xsd:string" minOccurs="0" nillable="true" />
+													<xsd:element name="APRO_USR_ID" type="xsd:string" minOccurs="0" nillable="true" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS051-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ROWSET">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="IFID" type="xsd:string" minOccurs="0" nillable="true" />
+										<xsd:element name="INSTID" type="xsd:string" minOccurs="0" nillable="true" />
+										<xsd:element name="CSRNO" type="xsd:string" minOccurs="0" nillable="true" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="ROWSETResponse">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="GEM_RESULT" type="xsd:string" minOccurs="0" nillable="true" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS019-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ExchRateCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ExchRate" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="SEQ" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ROWNUM" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="OPCD" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="CNTRY_CD" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="CUST_CD" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="BND" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="FROM_DT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="TO_DT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="CHG_CURR" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LCL_CURR" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="EX_RATE" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="DEL_MK" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LOG_RGST_DT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LOG_UPDT_DT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LOG_USER_ID" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="NIS_EVENT_DT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="OFC_CD" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="RT_TYPE" type="xsd:string" nillable="true" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS019-0002">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ExchRateCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="ExchRate" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SEQ" type="xsd:string" minOccurs="0" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ROWNUM" type="xsd:string" minOccurs="0" />
+													<xsd:element name="OPCD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VSL_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SKD_VOYAGE_NO" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SKD_DIR_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VER_PORT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VER_CUR_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VER_SVC_SCP" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VER_IO_FLG" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VER_TCUR_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VER_OFC_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VER_USD_LCL" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VER_USD_XEU" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VER_XEU_LCL" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VER_APPL_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="USR_ID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VER_CR_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VER_DEL_MK" type="xsd:string" minOccurs="0" />
+													<xsd:element name="NIS_EVENT_DT" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS027-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="CntrRepResultCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="CntrRepResult" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="SEQ" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ROWNUM" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="BOOK_TYPE_CODE" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="RETIREMENT_TYPE_CODE" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="TAG_NUMBER" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="DATE_RETIRED" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="PROCEEDS_OF_SALE" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="SOLD_TO" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="INVOICE_NO" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE1" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LCL_CURR" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LCL_AMT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="UNITS_RETIRED" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="COST_OF_REMOVAL" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="CREATED_BY" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="CREATION_DATE" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LAST_UPDATED_BY" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LAST_UPDATE_DATE" type="xsd:string" nillable="true" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS026-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="CntrRegResultCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="CntrRegResult" maxOccurs="unbounded" minOccurs="0" nillable="true">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="SEQ" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ROWNUM" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="BOOK_TYPE_CODE" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ASSET_TYPE" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="TAG_NUMBER" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ASSET_DESCRIPTION" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="CATEGORY_SEGMENT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="COST" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="DATE_PLACED_IN_SERVICE" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="MANUFACTURER" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE1" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE2" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ATTRIBUTE3" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ACQ_MTH" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LOCATION_SEGMENT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="FA_IF_SEQ" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="CREATED_BY" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="CREATION_DATE" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LAST_UPDATED_BY" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LAST_UPDATE_DATE" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="MFT_DT" type="xsd:string" nillable="true" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS026_R001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="CntrRegResultReturnCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="CntrRegResultReturn" maxOccurs="unbounded" minOccurs="0" nillable="true">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="SEQ" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="IF_TTL_ROW_KNT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="EAI_IF_NO" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="EQ_NO" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="FA_IF_TP_CD" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="FA_IF_DT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="RET_APRO_NO" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="FA_IF_STS_CD" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="FA_IF_ERR_MSG" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="FA_EQ_NO" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="FA_IF_SEQ" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="CREATED_BY" type="xsd:string" nillable="true" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS029-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="TaxByTonCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="TaxByTon" maxOccurs="unbounded" minOccurs="0" nillable="true">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SEQ" type="xsd:string" minOccurs="0" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ROWNUM" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SET_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="SET_SEQ" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VSL_CD" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CHK" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VSL_ENG_NM" type="xsd:string" minOccurs="0" />
+													<xsd:element name="FLEET_TP" type="xsd:string" minOccurs="0" />
+													<xsd:element name="FLAG" type="xsd:string" minOccurs="0" />
+													<xsd:element name="NRT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="REV_PER_TON" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VOY_DAY" type="xsd:string" minOccurs="0" />
+													<xsd:element name="USAGE" type="xsd:string" minOccurs="0" />
+													<xsd:element name="TAX_AMT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CRT_DUR" type="xsd:string" minOccurs="0" />
+													<xsd:element name="VVD_RMK" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CRT_DT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="CRT_ID" type="xsd:string" minOccurs="0" />
+													<xsd:element name="NRT_AMT" type="xsd:string" minOccurs="0" />
+													<xsd:element name="LOAD_TEU" type="xsd:string" minOccurs="0" />
+													<xsd:element name="ACT_TEU" type="xsd:string" minOccurs="0" />
+													<xsd:element name="IF_DT" type="xsd:string" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FNS017-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="SKDCollection">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="SKD" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LIFID" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="SEQ" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="TOTAL_COUNT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ROWNUM" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="VSL" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="VOY_NO" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="DEP" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="VOY_TP" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LANE" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LOAD_QNT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="SURVEY" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="VESSEL_CHECK" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LINE_CNT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="DTL_VSL" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="DTL_VOY_NO" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="DTL_DEP" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="PORT_SEQ" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="PT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="EST_ARR_DT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="EST_SAIL_DT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ACT_ARR_DT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="ACT_SAIL_DT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="POSITION" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LOG_RGST" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LOG_UPDT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="LOG_USERID" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="CHANGE_IND" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="DEL_MK" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="TURN_IND" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="H_REMARK" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="D_REMARK" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="NEW_SAIL_DT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="NEW_ARR_DT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="SKD_SKD_STAT" type="xsd:string" nillable="true" minOccurs="0" />
+													<xsd:element name="VPS_SKD_STAT" type="xsd:string" nillable="true" minOccurs="0" />
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>  

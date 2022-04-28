@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAORemoveCenterCodeDSQL">
+			<desc><![CDATA[Remove GL_CTR_ERP]]></desc>
+			<sql><![CDATA[
+DELETE FROM GL_CTR_ERP
+ WHERE CTR_ERP_NO 	= @[ctr_erp_no]			]]></sql>
+			<params>
+				<param name="ctr_erp_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

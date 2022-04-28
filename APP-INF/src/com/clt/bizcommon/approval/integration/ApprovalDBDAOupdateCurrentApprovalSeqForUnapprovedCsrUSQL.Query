@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOupdateCurrentApprovalSeqForUnapprovedCsrUSQL">
+			<desc><![CDATA[ApprovalDBDAO  updateCurrentApprovalSeqForUnapprovedCsr USQL]]></desc>
+			<sql><![CDATA[
+UPDATE COM_APRO_RQST_HDR RH
+SET RH.CRNT_APRO_SEQ = 1
+WHERE 1=1
+AND DECODE(@[upd_1st_apro_step_yn],'Y',1,0) = DECODE(@[upd_1st_apro_step_yn],'Y',1,-1)
+AND RH.APRO_RQST_NO IN (
+    SELECT 
+    A.APRO_RQST_NO
+    FROM COM_APRO_CSR_DTL D, COM_APRO_RQST_HDR A
+    WHERE 1=1
+    AND D.CSR_NO = @[csr_no]
+    AND D.APRO_RQST_NO = @[apro_rqst_no]
+    AND D.APRO_RQST_NO = A.APRO_RQST_NO
+    AND A.CRNT_APRO_SEQ > 1
+    AND NVL(A.DELT_FLG,'N') <> 'Y'
+)
+AND NVL(RH.DELT_FLG,'N') <> 'Y'
+AND NOT EXISTS (
+    SELECT '1'
+    FROM COM_APRO_RQST_ROUT RR
+    WHERE 1=1
+    AND RR.APRO_RQST_NO = RH.APRO_RQST_NO
+    AND RR.APSTS_CD IS NOT NULL
+)			]]></sql>
+			<params>
+				<param name="upd_1st_apro_step_yn" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

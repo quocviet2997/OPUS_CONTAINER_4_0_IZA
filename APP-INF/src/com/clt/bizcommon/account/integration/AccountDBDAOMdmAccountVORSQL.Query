@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="AccountDBDAOMdmAccountVORSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+SELECT acct_cd, acct_eng_nm, 
+	(CASE 
+		WHEN 'Y' = delt_flg THEN 'Delete' 
+		ELSE 'Active' 
+	END) AS delt_flg
+FROM mdm_account
+WHERE acct_cd LIKE @[acct_cd]||'%'
+AND upper(acct_eng_nm) LIKE '%'||upper(@[acct_eng_nm])||'%'
+
+
+#if (${mdm_yn} != '')
+
+	#if (${delt_flg} == 'Y') 
+		AND delt_flg = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+
+	#else 
+		AND delt_flg <> 'Y'
+	#end
+
+#else	
+	AND delt_flg <> 'Y'
+#end
+
+ORDER BY acct_cd			]]></sql>
+			<params>
+				<param name="acct_cd" type="12" value="9" out="N"/>
+				<param name="acct_eng_nm" type="12" value="A" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

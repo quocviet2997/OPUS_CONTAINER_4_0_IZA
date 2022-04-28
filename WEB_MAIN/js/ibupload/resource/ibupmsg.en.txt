@@ -1,0 +1,55 @@
+{
+    "UICOMP_LIST_FILE"    : "File name",
+    "UICOMP_LIST_STATUS"  : "File status",
+    "UICOMP_INFO_FILE"    : "Transmission file",
+    "UICOMP_INFO_SIZE"    : "Transmission size",
+    "UICOMP_INFO_PROGRESS": "In progress",
+    "UICOMP_BTTN_ADDITEM" : "File addition",
+    "UICOMP_BTTN_REMOVE"  : "File deletion",
+    "UICOMP_BTTN_DOWNLOAD": "Download",
+    "UICOMP_BTTN_UPLOAD"  : "Save",
+    
+    "FILE_STATUSINFO_TEXTS": [
+        "Waiting", 
+        "Transmitting", 
+        "Transmission discontinued", 
+        "Transmission completed", 
+        "Deletion target", 
+        "Transmission failed", 
+        "Deletion failed"
+    ],
+    
+    "ERR_XHR_NOT_SUPPORT"    : "This browser doesn't support the XMLHttpRequest object.",
+    
+    "ERR_OCCUR_INIT_IBUPLOAD": "IBUploader hasn't been initialized.",
+    "ERR_ID_ADDFILE_BTN"     : "The ID value of the element that requires an additional file is wrong.",
+    
+    "ERR_SET_FILENAME"       : "There is no fileName attribute of the file to be uploaded in the upload list.",
+    "ERR_SET_SAVEDNAME"      : "There is no serverFileName attribute of the {0} file.",
+    
+    "ERR_USER_EVT_FALSE"     : "The function should return the TRUE value as a result of the call.",
+    
+    "ERR_FILE_DUP_NAME"      : "The file is already added.",
+    "ERR_FILE_LIMIT_TYPE"    : "The file has its type as limited.",
+    "ERR_FILE_LIMIT_COUNT"   : "The upload count exceeded its limit.",
+    
+    "ERR_REMOVE_NO_TARGET"   : "There is no target to delete.",
+    "ERR_REMOVE_WRONG_ID"    : "Cannot find the target to delete.",
+    
+    "ERR_NO_CHANGE_STATUS"   : "There is no item being changed.",
+    "ERR_UPDATE_FAILED"      : "Error occurred during file transmission.",
+    
+    "ERR_PROG_NO_VALUE"      : "Error occurred during request for status information.",
+    "ERR_PROG_NO_RESPONSE"   : "There is no response from the server.",
+    
+    "ERR_DOWN_NO_SELECTED"   : "Please select the file to download.",
+    "ERR_DOWN_NOT_EXIST"     : "The requested file doesn't exist in the server.",
+    "ERR_DOWN_FAILED"        : "Download has failed since the [{0}] file is not found from the server.",
+    
+    "ERR_NO_RESULT_TYPE"     : "Cannot find the 'eventName'attribute from the result data.",
+    "ERR_NO_DEFINED_RESULT"  : "This is a type of result data that cannot be processed.",
+    "ERR_XML_INVALID_FORMAT" : "The format of the XML data that is created from the request page is wrong.",
+    "ERR_JSON_INVALID_FORMAT": "The format of the file object(JSON) from the result data is wrong.",
+    
+    "ERR_ADD_PARAM"          : "The format of the parameter is wrong. (KeyName, Value)"
+}

@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<!-- ========================================================================@ Seong-mun Kang 부분 시작 -->
+
+    <!-- NEW  COPMain -->    
+    <screen name="ESD_SCE_0001">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/copmanage/copsearch/jsp/ESD_SCE_0001.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0001_POP" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/copmanage/copsearch/jsp/ESD_SCE_0001.jsp" />
+    </screen>
+ 
+	<!-- Sungil Kim : 2009-08-05 start -->
+    <screen name="ESD_SCE_0012">
+        <parameter key="title"    value="Exception Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/exceptionmanage/exceptionsearch/jsp/ESD_SCE_0012.jsp"/>
+    </screen>
+	<!-- Sungil Kim : 2009-08-05 end -->
+	
+	<!--  COP Main Search -->
+    <screen name="ESD_SCE_0006">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/copmanage/copsearch/jsp/ESD_SCE_0006.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0006_POP" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/copmanage/copsearch/jsp/ESD_SCE_0006.jsp" />
+    </screen>
+
+	<!-- ======================================================================== Seong-mun Kang 부분 끝 # -->
+
+    <!-- ========================================================================@ Se-hoon Park 부분 시작 -->
+
+    <!--  scemsetup 009 List -->
+    <screen name="ESD_SCE_0009" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/copmanage/copsearch/jsp/ESD_SCE_0009.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0053" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/copmanage/copsearch/jsp/ESD_SCE_0053.jsp" />
+    </screen>
+
+    <!--  scemsetup 009 List 그리드 1 -->
+    <screen name="ESD_SCE_0009GS2" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/copmanage/copsearch/jsp/ESD_SCE_0009XGS.jsp" />
+    </screen>
+
+    <!-- ========================================================================@ Se-hoon Park 부분 끝 -->
+
+
+	<!--  COP History -->
+    <screen name="ESD_SCE_0071">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/copreport/cophistory/jsp/ESD_SCE_0071.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0071_POP" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/copreport/cophistory/jsp/ESD_SCE_0071.jsp" />
+    </screen>
+	<screen name="ESD_SCE_0118" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/copmanage/copsearch/jsp/ESD_SCE_0118.jsp" />
+    </screen>
+
+	<!--  Manual Container Mapping &&& -->
+    <screen name="ESD_SCE_0115">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/copreport/manualcntrmapping/jsp/ESD_SCE_0115.jsp" />
+    </screen>
+	 
+	 <!--  Exception Main Search -->
+    <screen name="ESD_SCE_0011">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/exceptionmanage/exceptionsearch/jsp/ESD_SCE_0011.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0011GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/exceptionmanage/exceptionsearch/jsp/ESD_SCE_0011GS.jsp" />
+    </screen>
+
+	<!--  Exception Main II Search -->
+    <screen name="ESD_SCE_0111">
+        
+        <parameter key="body"     value="apps/opus/esd/sce/exceptionmanage/exceptionsearch/jsp/ESD_SCE_0111.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0111GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/exceptionmanage/exceptionsearch/jsp/ESD_SCE_0111GS.jsp" />
+    </screen>
+    
+    <!--  Vessel Schedule Edi Route Management --> 
+    <screen name="ESD_SCE_0120">
+    	<parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/customerscheduleedi/portpairroute/jsp/ESD_SCE_0120.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0120GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/customerscheduleedi/portpairroute/jsp/ESD_SCE_0120GS.jsp" />
+    </screen>
+    
+    <!--  Vessel Schedule EDI Port Pair Management -->
+    <screen name="ESD_SCE_0121">
+    	<parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/customerscheduleedi/portpairroute/jsp/ESD_SCE_0121.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0121GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/customerscheduleedi/portpairroute/jsp/ESD_SCE_0121GS.jsp" />
+    </screen>
+    
+  
+
+    <screen name="ESD_SCE_0012GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/exceptionmanage/exceptionsearch/jsp/ESD_SCE_0012GS.jsp" />
+    </screen>
+
+	<screen name="ESD_SCE_0012GS2"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/exceptionmanage/exceptionsearch/jsp/ESD_SCE_0012GS2.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0012GS3"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/exceptionmanage/exceptionsearch/jsp/ESD_SCE_0012GS3.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0012GS4"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/exceptionmanage/exceptionsearch/jsp/ESD_SCE_0012GS4.jsp" />
+	</screen>
+	
+    <screen name="ESD_SCE_0012GS_TTL"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/exceptionmanage/exceptionsearch/jsp/ESD_SCE_0012GS_TTL.jsp" />
+	</screen>
+
+	<!--  Notification Search Inquiry -->
+    <screen name="ESD_SCE_0076">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/exceptionmanage/notificationsearch/jsp/ESD_SCE_0076.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0076GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/exceptionmanage/notificationsearch/jsp/ESD_SCE_0076GS.jsp" />
+    </screen>
+
+
+    <!--  Exception Main Detail - Popup : Notified Subscriber Inquiry  -->
+    <screen name="ESD_SCE_0908" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0908.jsp" />
+    </screen>
+   
+    <screen name="ESD_SCE_0908GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0908GS.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0908GSDept"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0908GSDept.jsp" />
+    </screen>
+
+    <!--  Exception Main Detail - Popup : Notified Subscriber - Search Inquiry  -->
+    <screen name="ESD_SCE_0909" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0909.jsp" />
+    </screen>
+   
+    <screen name="ESD_SCE_0909GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0909GS.jsp" />
+    </screen>
+
+	<!-- ======================================================================== Seong-mun Kang 부분 끝 # -->
+
+    <!-- ========================================================================@ yongcheon_shin 부분 시작 -->
+    <!--  Exception 식별 기준 등록 화면 팝업 -->
+    <screen name="ESD_SCE_0029Pop" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0029.jsp" />
+     </screen>
+
+     <!--  Internal User가 검색조건 또는 Container No 입력 후 관련 정보를 조회하여 Exception 대상 선택을 통해 Exception 하나 또는 여러 건을 일괄 등록 그리드 1 -->
+    <screen name="BATCH_TESTGS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/batch/jsp/BATCH_TESTGS.jsp" />
+    </screen>
+		<screen name="BATCH_TEST">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/batch/jsp/BATCH_TEST.jsp" />
+    </screen>
+    
+	<screen name="EDI_TESTGS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/batch/jsp/EDI_TESTGS.jsp" />
+    </screen>
+    <screen name="EDI_TEST">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/batch/jsp/EDI_TEST.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0032">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0032.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0032GS"  template="templateIBSheet">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0032GS.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0035">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0035.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0035GS"  template="templateIBSheet">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0035GS.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0037">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0037.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0037GS"  template="templateIBSheet">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0037GS.jsp" />
+    </screen>
+
+    <!-- ======================================================================== yongcheon_shin 부분 끝 # -->
+    
+    <!-- ========================================================================@ Se-hoon Park 부분 시작 -->
+    
+    
+    <!--  scemsetup 915 List -->
+    <screen name="ESD_SCE_0915" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/copmanage/copsearch/jsp/ESD_SCE_0915.jsp" />
+    </screen>
+
+    <!-- ========================================================================@ Se-hoon Park 부분 끝 -->
+
+    <!-- ======================================================================== Common UI 시작 #-->
+    <!--  COP Summary List -->
+    <screen name="ESD_SCE_0101"	  template="templatePop">
+		<parameter key="title"    value="한진해운PI" direct="true"/>
+		<parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0101.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0101GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0101GS.jsp" />
+    </screen>
+    <!--  Send Mail PopUp -->
+    <screen name="ESD_SCE_0102"	  template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0102.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0102GS"  template="templatePop">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0102GS.jsp" />
+    </screen>
+
+    <!--  VVD List -->
+    <screen name="ESD_SCE_0103"   template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0103.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0103GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0103GS.jsp" />
+    </screen>
+    <!--  Occur LOC List -->
+    <screen name="ESD_SCE_0104" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0104.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0104GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0104GS.jsp" />
+    </screen>
+    <!--  S/C No. List -->
+    <screen name="ESD_SCE_0105"	  template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0105.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0105GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0105GS.jsp" />
+    </screen>
+   <screen name="ESD_SCE_0106" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0106.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0106GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0106GS.jsp" />
+    </screen>
+    <!--  Office List -->
+    <screen name="ESD_SCE_0910"	  template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0910.jsp" />
+    </screen>
+    
+    <screen name="ESD_SCE_0910GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0910GS.jsp" />
+    </screen>
+
+    
+    <!--  RailETA History -->
+    <screen name="ESD_SCE_0107" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0107.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0107GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0107GS.jsp" />
+    </screen>    
+    <!-- ======================================================================== Common UI 끝 #-->
+    <!-- Exception_Notification Failure Report 시작  -->
+    <screen name="ESD_SCE_0078">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/copreport/exceptionreport/jsp/ESD_SCE_0078.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0078GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/copreport/exceptionreport/jsp/ESD_SCE_0078GS.jsp" />
+    </screen>
+
+    <!-- Exception_Notification Failure Report 끝 -->
+	<!-- Exception Customized Report Form Search 시작 -->
+    <screen name="ESD_SCE_0077"	  template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/exceptionmanage/exceptionsearch/jsp/ESD_SCE_0077.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0077GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/exceptionmanage/exceptionsearch/jsp/ESD_SCE_0077GS.jsp" />
+    </screen>
+	<!-- Exception Customized Report Form Search 끝 -->
+
+    <screen name="ESD_SCE_0072">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0072.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0072GS"  template="templateIBSheet">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0072GS.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0090">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0090.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0090GS"  template="templateIBSheet">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0090GS.jsp" />
+    </screen>
+    <!--  109 조회 조건 중 Location Mulit 선택 보완 &&& -->
+   <screen name="ESD_SCE_0109" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0109.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0109GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0109GS.jsp" />
+    </screen>   
+    <!--  110 Exception Inquiry RCC,LCC,ECC,SCC 팝업창 추가 &&& -->
+   <screen name="ESD_SCE_0110"     template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0110.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0110GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0110GS.jsp" />
+    </screen>     
+    <!--  108 Exception Reason 추가 및 Insert 방식 변경 &&& -->
+   <screen name="ESD_SCE_0108"    template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0108.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0108GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0108GS.jsp" />
+    </screen>   
+<!--  Exception Inquiry화면 / Mapping Office 팝업창 추가  &&& -->
+   <screen name="ESD_SCE_0114"     template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0114.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0114GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0114GS.jsp" />
+    </screen>     
+    <screen name="ESD_SCE_0153">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0153.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0153GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0153GS.jsp" />
+    </screen>  
+    
+    <!-- From screendefinition_sce_masterdatamanage.xml -->
+    
+    <!--  Activity Attribute Management -->
+    <screen name="ESD_SCE_0022">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/activitydata/jsp/ESD_SCE_0022.jsp" />
+    </screen>
+
+    <!--  COP Scheduling Logic Registration -->
+    <screen name="ESD_SCE_0024">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/activitydata/jsp/ESD_SCE_0024.jsp" />
+    </screen>
+
+
+	<!--  Exception Type Registration -->
+    <screen name="ESD_SCE_0026">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0026.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0026GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0026GS.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0026GS2" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0026GS2.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0026GS3" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0026GS3.jsp" />
+    </screen>
+
+    <!--  Subscriber Registration -->
+    <screen name="ESD_SCE_0028">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0028.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0028GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0028GS.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0028GS2" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0028GS2.jsp" />
+    </screen>
+
+    <!--  Exception Tolerance Registration -->
+    <screen name="ESD_SCE_0029">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0029.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0029GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0029GS.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0029GS2" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0029GS2.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0029GS3" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0029GS3.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0049">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0049.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0049GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0049GS.jsp" />
+    </screen>
+
+	<!--  Visibility Subscriber Information -->
+	<screen name="ESD_SCE_0034">
+		<parameter key="title"     value="한진해운PI" direct="true"/>
+		<parameter key="body"      value="apps/opus/esd/sce/masterdatamanage/visibilitydata/jsp/ESD_SCE_0034.jsp" />
+	</screen>
+	
+	<screen name="ESD_SCE_0034GS"   template="templateIBSheet">
+		<parameter key="body"      value="apps/opus/esd/sce/masterdatamanage/visibilitydata/jsp/ESD_SCE_0034GS.jsp" />
+	</screen>
+
+	<screen name="ESD_SCE_0060" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0060.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0060GS"  template="templateIBSheet">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0060GS.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0061" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0061.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0061GS"  template="templateIBSheet">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0061GS.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0062"   template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0062.jsp" />
+    </screen>
+     
+    <screen name="ESD_SCE_0068" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0068.jsp" />
+    </screen>
+   
+    <screen name="ESD_SCE_0064" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0064.jsp" />
+    </screen>
+   
+    
+    <!--  Vessel SKD조회(공통 Popup) -->
+    <screen name="ESD_SCE_0063" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0063.jsp" />
+    </screen>
+
+    <!--  Vessel SKD 조회(공통 Popup) 그리드 1 -->
+    <screen name="ESD_SCE_0063GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0063GS.jsp" />
+    </screen>
+    
+     <!--  Vessel SKD조회(공통 Popup) -->
+    <screen name="ESD_SCE_0067" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0067.jsp" />
+    </screen>
+
+    <!--  Vessel SKD 조회(공통 Popup) 그리드 1 -->
+    <screen name="ESD_SCE_0067GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0067GS.jsp" />
+    </screen>
+    
+    <screen name="ESD_SCE_0065" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0065.jsp" />
+    </screen>
+    
+    <screen name="ESD_SCE_0066"  template="templatePop" >
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0066.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0062GS"  template="templateIBSheet">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0062GS.jsp" />
+    </screen>
+	
+		<screen name="ESD_SCE_0068GS"  template="templateIBSheet">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0068GS.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0073"	  template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0073.jsp" />
+    </screen>
+
+    <!--  Vessel SKD 조회(공통 Popup) 그리드 1 -->
+    <screen name="ESD_SCE_0073GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0073GS.jsp" />
+    </screen>
+
+    <!--  Vessel SKD조회(공통 Popup) -->
+    <screen name="ESD_SCE_0074">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0074.jsp" />
+    </screen>
+    
+     <screen name="ESD_SCE_0074_POP" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0074.jsp" />
+    </screen>    
+
+    <!--  Vessel SKD 조회(공통 Popup) 그리드 1 -->
+    <screen name="ESD_SCE_0075">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0075.jsp" />
+    </screen>
+
+    <!--  Vessel SKD 조회(공통 Popup) 그리드 1 -->
+    <screen name="ESD_SCE_0075GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0075GS.jsp" />
+    </screen>
+	<!-- ========================================================================@ Seong-mun Kang 부분 끝 -->
+
+
+	<!-- ========================================================================@ Seong-mun Kang 부분 끝 -->
+	<!--  Exception Office Mapping &&& -->
+    <screen name="ESD_SCE_0112">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0112.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0112GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0112GS.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0112GS2" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/exceptiondata/jsp/ESD_SCE_0112GS2.jsp" />
+    </screen>
+    
+	<!--  Exception Office Mapping / Office 팝업창 추가  &&& -->
+   <screen name="ESD_SCE_0113"	  template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0113.jsp" />
+    </screen>
+    <screen name="ESD_SCE_0113GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/common/popup/jsp/ESD_SCE_0113GS.jsp" />
+    </screen>     
+    
+    <screen name="ESD_SCE_0091" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/masterdatamanage/customeredidata/jsp/ESD_SCE_0091.jsp" />
+    </screen>
+    
+    <!--  From screendefinition_sce_visibilitymanage.xml -->
+    
+	<!--  Car Location Message Inquiry -->
+	<screen name="ESD_SCE_0043">
+		<parameter key="title"		value="한진해운PI" direct="true"/>
+		<parameter key="body"		value="apps/opus/esd/sce/visibilitymanage/railtransitreport/jsp/ESD_SCE_0043.jsp" />
+	</screen>
+
+	<screen name="ESD_SCE_0043GS"	template="templateIBSheet">
+		<parameter key="body"		value="apps/opus/esd/sce/visibilitymanage/railtransitreport/jsp/ESD_SCE_0043GS.jsp" />
+	</screen>
+	
+	<!--  Car Location Message(Pop) -->
+	<screen name="ESD_SCE_0044"		template="templatePop">
+		<parameter key="title"		value="한진해운PI" direct="true"/>
+		<parameter key="body"		value="apps/opus/esd/sce/visibilitymanage/railtransitreport/jsp/ESD_SCE_0044.jsp" />
+	</screen>
+
+	<screen name="ESD_SCE_0044GS"	template="templateIBSheet">
+		<parameter key="body"		value="apps/opus/esd/sce/visibilitymanage/railtransitreport/jsp/ESD_SCE_0044GS.jsp" />
+	</screen>
+	
+	
+	
+	<!-- 배치 테스트 -->
+	<screen name="mail_cargo_tracking">
+		<parameter key="title"		value="HANJIN PI" direct="true"/>
+		<parameter key="body"		value="callbatchctm_us.jsp" />
+	</screen>
+
+	<!--  Vessel Report -->
+ 	<screen name="ESD_SCE_0056">
+ 		 <parameter key="title"  value="HANJIN PI" direct="true"/>
+ 		 <parameter key="body"  value="apps/opus/esd/sce/visibilitymanage/vesselreport/jsp/ESD_SCE_0056.jsp" />
+ 	</screen>
+ 
+  	<screen name="ESD_SCE_0056_POP" template="templatePop">
+ 		 <parameter key="title"  value="HANJIN PI" direct="true"/>
+ 		 <parameter key="body"  value="apps/opus/esd/sce/visibilitymanage/vesselreport/jsp/ESD_SCE_0056.jsp" />
+ 	</screen>
+ 
+	<screen name="ESD_SCE_0205" template="templateDownloadExcel">
+		<parameter key="body"	 value="apps/opus/esd/sce/visibilitymanage/vesselreport/jsp/ESD_SCE_0205.jsp" />
+	</screen>
+	
+ 	<screen name="ESD_SCE_0056GS" template="templateIBSheet">
+  		<parameter key="body"  value="apps/opus/esd/sce/visibilitymanage/vesselreport/jsp/ESD_SCE_0056GS.jsp" />
+ 	</screen>
+ 	<screen name="ESD_SCE_0057" template="templatePop">
+ 		 <parameter key="title"  value="HANJIN PI" direct="true"/>
+ 		 <parameter key="body"  value="apps/opus/esd/sce/visibilitymanage/vesselreport/jsp/ESD_SCE_0057.jsp" />
+ 	</screen>
+ 	<screen name="ESD_SCE_0057GS" template="templateIBSheet">
+  		<parameter key="body"  value="apps/opus/esd/sce/visibilitymanage/vesselreport/jsp/ESD_SCE_0057GS.jsp" />
+ 	</screen>
+
+	
+ 	<!-- HAM DAE SUNG : 2010-01-08 start -->
+    <screen name="ESD_SCE_0122">
+        <parameter key="title"    value="Lane Service" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/customerscheduleedi/laneservice/jsp/ESD_SCE_0122.jsp"/>
+    </screen>
+    
+    <screen name="ESD_SCE_0123">
+        <parameter key="title"    value="Schedule Mgm" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/customerscheduleedi/portpairexception/jsp/ESD_SCE_0123.jsp"/>
+    </screen>
+	
+	<screen name="ESD_SCE_0124" template="templatePop">
+        <parameter key="title"    value="Schedule Mgm" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/customerscheduleedi/portpairexception/jsp/ESD_SCE_0124.jsp"/>
+    </screen>
+
+    <screen name="ESD_SCE_0125">
+    	<parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/customerscheduleedi/portpairexception/jsp/ESD_SCE_0125.jsp" />
+    </screen> 
+    
+    <!-- HAM DAE SUNG : 2010-01-08 end -->
+    
+    	<!-- Bkg Cop Manage Admin start -->
+    <screen name="ESD_SCE_9999">
+		<parameter key="title"  value="HANJIN PI" direct="true"/>
+		<parameter key="body"  value="apps/opus/esd/sce/bkgcopmanage/bkgcopmanage/jsp/ESD_SCE_9999.jsp" />
+	</screen>
+	<screen name="ESD_SCE_9999GS" template="templateIBSheet">
+		<parameter key="body"  value="apps/opus/esd/sce/bkgcopmanage/bkgcopmanage/jsp/ESD_SCE_9999GS.jsp" />
+	</screen>
+	
+	 <screen name="ESD_SCE_9998">
+		<parameter key="title"  value="HANJIN PI" direct="true"/>
+		<parameter key="body"  value="apps/opus/esd/sce/bkgcopmanage/bkgcopmanage/jsp/ESD_SCE_9998.jsp" />
+	</screen>
+	<screen name="ESD_SCE_9998GS" template="templateIBSheet">
+		<parameter key="body"  value="apps/opus/esd/sce/bkgcopmanage/bkgcopmanage/jsp/ESD_SCE_9998GS.jsp" />
+	</screen>
+	
+    <!-- Bkg Cop Manage Admin end -->
+    
+    <!--  VSL SKD e-mailing Set-up -->
+    <screen name="ESD_SCE_0119">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/emailjobmanage/vskemailsetup/jsp/ESD_SCE_0119.jsp" />
+    </screen>
+
+    <screen name="ESD_SCE_0119GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/sce/emailjobmanage/vskemailsetup/jsp/ESD_SCE_0119GS.jsp" />
+    </screen>
+    <!--  VSL SKD e-mailing Set-up -->
+    
+   	<!-- Kim In-soo : 2010-12-02 start -->
+    <screen name="ESD_SCE_A927">
+        <parameter key="title"    value="SCE Admin" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/sceadminmanage/sceadminmanage/jsp/ESD_SCE_6000.jsp"/>
+    </screen>
+	<!-- Kim In-soo : 2010-12-02 end -->
+	
+	    <!--  Manual Input ACT_ACT_MAPP -->
+    <screen name="ESD_SCE_3301">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/manualinput/jsp/ESD_SCE_3301.jsp" />
+    </screen>
+    
+        	    <!--  Manual Input ACT_GRP_MAPP -->
+    <screen name="ESD_SCE_3302">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/manualinput/jsp/ESD_SCE_3302.jsp" />
+    </screen>
+    
+    <!--  Manual Input ACT_ACT_MAPP -->
+    
+    	    <!--  Manual Input ACT_GRP_MAPP -->
+    <screen name="ESD_SCE_3303">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/manualinput/jsp/ESD_SCE_3303.jsp" />
+    </screen>
+
+    <!--  Manual Input ACT_ACT_MAPP -->
+
+    <!--  Manual Input ACT_ACT_MAPP -->
+	<!-- Kim KiTaek : 2012-04-24 start -->
+    <screen name="ESD_SCE_3304">
+        <parameter key="title"    value="Manual Input" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/manualinput/jsp/ESD_SCE_3304.jsp" />
+    </screen>
+    <!-- Kim KiTaek : 2012-04-24 end -->
+	
+	<!-- LeeJunKun : 2012-04-24 start -->
+    <screen name="ESD_SCE_3305">
+        <parameter key="title"    value="SCE_COP_CNTR_REPO_RULE Manage" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/manualinput/jsp/ESD_SCE_3305.jsp"/>
+    </screen>
+	<!-- LeeJunKun : 2012-04-24 end -->
+	
+	<!-- LeeJunKun : 2012-04-25 start -->
+    <screen name="ESD_SCE_3306">
+        <parameter key="title"    value="SCE_RAIL_SPLC Manage" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/sce/common/manualinput/jsp/ESD_SCE_3306.jsp"/>
+    </screen>
+	<!-- LeeJunKun : 2012-04-25 end -->
+</screen-definitions>

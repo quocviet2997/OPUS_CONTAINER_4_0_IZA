@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="EQOrganizationDBDAOTotalListRSQL">
+			<desc><![CDATA[EQ Organization의 총 카운트를 조회한다.]]></desc>
+			<sql><![CDATA[
+select COUNT(*)
+from eqr_loc_lvl
+#if (${idepth} != '') 
+#if (${sccFlag} != 'Y')
+where loc_dpth_cd <> 'S'
+#end
+#end			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinCommonDBDAOCheckCurrencyCodeRSQL">
+			<desc><![CDATA[CheckCurrencyCode]]></desc>
+			<sql><![CDATA[
+SELECT CURR_CD
+FROM MDM_CURRENCY
+WHERE 1 = 1
+  AND DELT_FLG = 'N'
+  AND CURR_CD = @[curr_cd]			]]></sql>
+			<params>
+				<param name="curr_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

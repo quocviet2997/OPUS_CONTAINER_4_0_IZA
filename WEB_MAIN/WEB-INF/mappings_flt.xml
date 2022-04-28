@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- Ki-Min Doo : 2017-02-03 start -->
+    <url-mapping url="ESM_FLT_COM.do" screen="FLT_COM.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.common.fltcommon.event.FLT_COMMON_HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_COMGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.common.fltcommon.event.FLT_COMMON_HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.common.fltcommon.event.FltCommonEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.common.FLTCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Ki-Min Doo : 2017-02-03 end -->
+    <!-- Ki-Min Doo : 2017-01-03 start -->
+	<url-mapping url="ESM_FLT_0001.do" screen="ESM_FLT_0001.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0001HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0001HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.EsmFlt0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+    <!-- Ki-Min Doo : 2017-01-03 end -->
+    <!-- Ki-Min Doo : 2017-01-03 start -->
+    <url-mapping url="ESM_FLT_0004.do" screen="ESM_FLT_0004.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0004HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0004HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.EsmFlt0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Ki-Min Doo : 2017-01-03 end -->
+	    <!-- Ki-Min Doo : 2017-01-03 start -->
+    <url-mapping url="ESM_FLT_0064.do" screen="ESM_FLT_0064.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0064HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0064GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0064HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.EsmFlt0064Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Ki-Min Doo : 2017-01-03 end -->
+	<!-- Ki-Min Doo : 2017-01-09 start -->
+    <url-mapping url="ESM_FLT_0005.do" screen="ESM_FLT_0005.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0005HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0005HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.EsmFlt0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Ki-Min Doo : 2017-01-09 end -->
+	<!-- Ki-Min Doo : 2017-01-03 start -->
+    <url-mapping url="ESM_FLT_0065.do" screen="ESM_FLT_0065.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0065HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0065GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0065HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.EsmFlt0065Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Ki-Min Doo : 2017-01-03 end -->
+	<!-- Ki-Min Doo : 2018-06-12 start -->
+    <url-mapping url="ESM_FLT_0066.do" screen="ESM_FLT_0066.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0066HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0066GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0066HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.EsmFlt0066Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Ki-Min Doo : 2018-06-12 end -->
+	<!-- Ki-Min Doo : 2017-01-16 start -->
+    <url-mapping url="ESM_FLT_0037.do" screen="ESM_FLT_0037.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.invoice.outstanding.event.ESM_FLT_0037HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0037_POP.do" screen="ESM_FLT_0037_POP.screen">
+        <web-action-class>com.clt.apps.opus.esm.flt.invoice.outstanding.event.ESM_FLT_0037HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.invoice.outstanding.event.ESM_FLT_0037HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.invoice.outstanding.event.EsmFlt0037Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- Ki-Min Doo : 2017-01-16 end -->
+	<!-- Ki-Min Doo : 2017-01-09 start -->
+    <url-mapping url="ESM_FLT_0038.do" screen="ESM_FLT_0038.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.invoice.outstanding.event.ESM_FLT_0038HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0038GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.invoice.outstanding.event.ESM_FLT_0038HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.invoice.outstanding.event.EsmFlt0038Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- Ki-Min Doo : 2017-01-09 end -->
+    <!-- Ki-Min Doo : 2017-06-05 start -->
+    <url-mapping url="ESM_FLT_0039.do" screen="ESM_FLT_0039.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.slip.slipentry.event.ESM_FLT_0039HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0039GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.slip.slipentry.event.ESM_FLT_0039HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.slip.slipentry.event.EsmFlt0039Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.slip.SlipSC</service-action-class>
+    </event-mapping>
+	<!-- Ki-Min Doo : 2017-06-05 end -->
+	<!-- Ki-Min Doo : 2017-01-09 start -->
+    <url-mapping url="ESM_FLT_0047.do" screen="ESM_FLT_0047.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.ESM_FLT_0047HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0047GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.ESM_FLT_0047HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.EsmFlt0047Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.setup.SetupSC</service-action-class>
+    </event-mapping>
+	<!-- Ki-Min Doo : 2017-01-09 end -->
+	<!-- Ki-Min Doo : 2017-01-05 start -->
+    <url-mapping url="ESM_FLT_0055.do" screen="ESM_FLT_0055.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.common.vendorcustomerinquriy.event.ESM_FLT_0055HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0055GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.common.vendorcustomerinquriy.event.ESM_FLT_0055HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.common.vendorcustomerinquriy.event.EsmFlt0055Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.common.FLTCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Ki-Min Doo : 2017-01-05 end -->
+	<!-- Sang-Hyun Kim : 2017.01.16 Start -->
+	<url-mapping url="ESM_FLT_0030.do" screen="ESM_FLT_0030.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.brokerageinvoice.brokeragepaidlist.event.ESM_FLT_0030HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_FLT_0030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.brokerageinvoice.brokeragepaidlist.event.ESM_FLT_0030HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.invoice.brokerageinvoice.brokeragepaidlist.event.EsmFlt0030Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+	</event-mapping>
+	<url-mapping url="ESM_FLT_0031.do" screen="ESM_FLT_0031.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.brokerageinvoice.brokerageinvoice.event.ESM_FLT_0031HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0031GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.brokerageinvoice.brokerageinvoice.event.ESM_FLT_0031HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.invoice.brokerageinvoice.brokerageinvoice.event.EsmFlt0031Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+	</event-mapping>
+	<!-- Sang-Hyun Kim : 2017.01.16 End -->
+	<!-- Sang-Hyun Kim : 2017.01.06 Start -->
+	<url-mapping url="ESM_FLT_0041.do" screen="ESM_FLT_0041.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.slip.monthlyhireassignbyvvd.event.ESM_FLT_0041HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0041GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.slip.monthlyhireassignbyvvd.event.ESM_FLT_0041HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.slip.monthlyhireassignbyvvd.event.EsmFlt0041Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.slip.SlipSC</service-action-class>
+	</event-mapping>
+	<!-- Sang-Hyun Kim : 2017.01.06 End -->
+	<!-- Lee-Jin Yong : 2017.06.14 Start -->
+	<url-mapping url="ESM_FLT_0042.do" screen="ESM_FLT_0042.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.slip.monthlyhireaccrual.event.ESM_FLT_0042HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0042GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.slip.monthlyhireaccrual.event.ESM_FLT_0042HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.slip.monthlyhireaccrual.event.EsmFlt0042Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.slip.SlipSC</service-action-class>
+    </event-mapping>
+    <!-- Lee-Jin Yong : 2017.06.14 End -->
+	<!-- Ki-Min Doo : 2017.05.11 Start -->
+	<url-mapping url="ESM_FLT_0040.do" screen="ESM_FLT_0040.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.slip.sliplist.event.ESM_FLT_0040HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0040_POP.do" screen="ESM_FLT_0040_POP.screen">
+        <web-action-class>com.clt.apps.opus.esm.flt.slip.sliplist.event.ESM_FLT_0040HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.slip.sliplist.event.ESM_FLT_0040HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.slip.sliplist.event.EsmFlt0040Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.slip.SlipSC</service-action-class>
+	</event-mapping>
+	<!--  Ki-Min Doo : 2017.05.11 End -->
+	<!-- Dea-Heum Yeon : 2017.01.11 Start -->
+	<url-mapping url="ESM_FLT_0057.do" screen="ESM_FLT_0057.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.vesselinquiry.event.ESM_FLT_0057HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0057GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.vesselinquiry.event.ESM_FLT_0057HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.common.vesselinquiry.event.EsmFlt0057Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.common.FLTCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Dea-Heum Yeon : 2017.01.11 End -->
+	<!-- Dea-Heum Yeon : 2017.01.12 Start -->
+	<url-mapping url="ESM_FLT_0060.do" screen="ESM_FLT_0060.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.laneinquiry.event.ESM_FLT_0060HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0060GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.laneinquiry.event.ESM_FLT_0060HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.common.laneinquiry.event.EsmFlt0060Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.common.FLTCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Dea-Heum Yeon : 2017.01.11 End -->
+	<!-- Dea-Heum Yeon : 2017.01.16 Start -->
+	<url-mapping url="ESM_FLT_1051.do" screen="ESM_FLT_1051.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.vendorinquiry.event.ESM_FLT_1051HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_1051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.vendorinquiry.event.ESM_FLT_1051HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.common.vendorinquiry.event.EsmFlt1051Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.common.FLTCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Dea-Heum Yeon : 2017.01.16 End -->
+	<!-- Dea-Heum Yeon : 2017.01.17 Start -->
+	<url-mapping url="ESM_FLT_0046.do" screen="ESM_FLT_0046.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.accountcodeinquiry.event.ESM_FLT_0046HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0046GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.accountcodeinquiry.event.ESM_FLT_0046HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.common.accountcodeinquiry.event.EsmFlt0046Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.common.FLTCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Dea-Heum Yeon : 2017.01.17 End -->
+	<!-- Dea-Heum Yeon : 2017.01.18 Start -->
+	<url-mapping url="ESM_FLT_0051.do" screen="ESM_FLT_0051.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.vendorinquiry.event.ESM_FLT_0051HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.vendorinquiry.event.ESM_FLT_0051HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.common.vendorinquiry.event.EsmFlt0051Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.common.FLTCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Dea-Heum Yeon : 2017.01.18 End -->
+	<!-- Dea-Heum Yeon : 2017.01.19 Start -->
+	<url-mapping url="ESM_FLT_0059.do" screen="ESM_FLT_0059.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.vvdinquiry.event.ESM_FLT_0059HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0059GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.vvdinquiry.event.ESM_FLT_0059HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.common.vvdinquiry.event.EsmFlt0059Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.common.FLTCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Dea-Heum Yeon : 2017.01.19 End -->
+	<!-- Dea-Heum Yeon : 2017.01.23 Start -->
+	<url-mapping url="ESM_FLT_0052.do" screen="ESM_FLT_0052.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.customerinquiry.event.ESM_FLT_0052HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0052GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.customerinquiry.event.ESM_FLT_0052HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.common.customerinquiry.event.EsmFlt0052Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.common.FLTCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Dea-Heum Yeon : 2017.01.18 End -->
+	<!-- Dea-Heum Yeon : 2017.01.24 Start -->
+	<url-mapping url="ESM_FLT_0053.do" screen="ESM_FLT_0053.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.vesselinformation.event.ESM_FLT_0053HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0053GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.vesselinformation.event.ESM_FLT_0053HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.common.vesselinformation.event.EsmFlt0053Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.common.FLTCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Dea-Heum Yeon : 2017.01.18 End -->
+	<!-- Woo-Sam Kim : 2017.01.11 Start -->
+	<!-- ESM_FLT_0018 -->
+	<url-mapping url="ESM_FLT_0018.do" screen="ESM_FLT_0018.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0018HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0018HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.EsmFlt0018Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+	</event-mapping>
+	<!-- ESM_FLT_0019 -->
+	<url-mapping url="ESM_FLT_0019.do" screen="ESM_FLT_0019.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0019HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0019HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.EsmFlt0019Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+	</event-mapping>
+	<!-- Woo-Sam Kim : 2017.01.11 End -->
+	<!-- Yo-Na Ha : 2017-02-07 (S) -->
+    <url-mapping url="ESM_FLT_0056.do" screen="ESM_FLT_0056.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.common.contractvendorinquiry.event.ESM_FLT_0056HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0056GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.common.contractvendorinquiry.event.ESM_FLT_0056HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.common.contractvendorinquiry.event.EsmFlt0056Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.common.FLTCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Yo-Na Ha : 2017-02-07 (E) -->
+	<!-- Eunju Son : 2017.02.07 Start -->
+	<url-mapping url="ESM_FLT_0024.do" screen="ESM_FLT_0024.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0024HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0024GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0024HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.EsmFlt0024Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+	</event-mapping>
+	<!-- Eunju Son : 2017.02.07 End -->
+	<!-- Yo-Na Ha : 2017-02-08 (S) -->
+    <url-mapping url="ESM_FLT_0002.do" screen="ESM_FLT_0002.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0002HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0002HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.EsmFlt0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Yo-Na Ha : 2017-02-08 (E) -->
+	<!-- Eunju Son : 2017.02.10 Start -->
+	<url-mapping url="ESM_FLT_0025.do" screen="ESM_FLT_0025.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0025HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0025HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.EsmFlt0025Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+	</event-mapping>
+	<url-mapping url="ESM_FLT_0026.do" screen="ESM_FLT_0026.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0026HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0026GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0026HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.EsmFlt0026Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+	</event-mapping>
+	<url-mapping url="ESM_FLT_0013.do" screen="ESM_FLT_0013.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0013HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0013HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.EsmFlt0013Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+	</event-mapping>
+	<!-- Eunju Son : 2017.02.10 End -->
+	<!-- Eunju Son : 2017.02.14 Start -->
+	<url-mapping url="ESM_FLT_0027.do" screen="ESM_FLT_0027.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0027HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0027HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.EsmFlt0027Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+	</event-mapping>
+	<!-- Eunju Son : 2017.02.14 End -->
+	<!-- Eunju Son : 2017.02.14 Start -->
+	<url-mapping url="ESM_FLT_0067.do" screen="ESM_FLT_0067.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0067HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0067GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0067HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.EsmFlt0067Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+	</event-mapping>
+	<!-- Eunju Son : 2017.02.14 End -->
+	<!-- Yo-Na Ha : 2017-02-14 (S) -->
+    <url-mapping url="ESM_FLT_0008.do" screen="ESM_FLT_0008.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.deliveryredeliverymanagement.event.ESM_FLT_0008HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.deliveryredeliverymanagement.event.ESM_FLT_0008HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.deliveryredeliverymanagement.event.EsmFlt0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+    <url-mapping url="ESM_FLT_0006.do" screen="ESM_FLT_0006.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0006HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0006HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.EsmFlt0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Yo-Na Ha : 2017-02-14 (E) -->
+	<!-- Yo-Na Ha : 2017-02-16 (S) -->
+	<url-mapping url="ESM_FLT_0003.do" screen="ESM_FLT_0003.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0003HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.ESM_FLT_0003HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.contractmanagement.event.EsmFlt0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Yo-Na Ha : 2017-02-16 (E) -->
+	<!-- Sang-Hyun Kim : 2017.02.16 Start -->
+	<url-mapping url="ESM_FLT_0015.do" screen="ESM_FLT_0015.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.contract.contractstatus.capitalbudgeting.event.ESM_FLT_0015HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.contract.contractstatus.capitalbudgeting.event.ESM_FLT_0015HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.contract.contractstatus.capitalbudgeting.event.EsmFlt0015Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+	</event-mapping>
+	<!-- Sang-Hyun Kim : 2017.02.16 End -->
+	<!-- Yo-Na Ha : 2017-02-17 (S) -->
+	<url-mapping url="ESM_FLT_0009.do" screen="ESM_FLT_0009.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.deliveryredeliverymanagement.event.ESM_FLT_0009HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.deliveryredeliverymanagement.event.ESM_FLT_0009HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.deliveryredeliverymanagement.event.EsmFlt0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Yo-Na Ha : 2017-02-17 (E) -->
+    <!-- Ki-Min Doo : 2018-08-22 (S) -->
+	<url-mapping url="ESM_FLT_0068.do" screen="ESM_FLT_0068.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.deliveryredeliverymanagement.event.ESM_FLT_0068HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0068GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.deliveryredeliverymanagement.event.ESM_FLT_0068HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.deliveryredeliverymanagement.event.EsmFlt0068Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Ki-Min Doo : 2018-08-22 (E) -->
+	<!-- Eunju Son : 2017-02-23 start -->
+    <url-mapping url="ESM_FLT_0044.do" screen="ESM_FLT_0044.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.ESM_FLT_0044HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0044GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.ESM_FLT_0044HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.EsmFlt0044Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.setup.SetupSC</service-action-class>
+    </event-mapping>
+	<!-- Eunju Son : 2017-02-23 end -->
+	<!-- Eunju Son : 2017-02-17 start -->
+    <url-mapping url="ESM_FLT_0045.do" screen="ESM_FLT_0045.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.ESM_FLT_0045HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0045GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.ESM_FLT_0045HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.EsmFlt0045Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.setup.SetupSC</service-action-class>
+    </event-mapping>
+	<!-- Eunju Son : 2017-02-17 end -->
+	<!-- woo-sam Kim : 2017-02-20 (S)-->
+	<url-mapping url="ESM_FLT_0021.do" screen="ESM_FLT_0021.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0021HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0021HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.EsmFlt0021Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+	</event-mapping>
+	<!-- woo-sam Kim : 2017-02-20 (E)-->
+	<!-- woo-sam Kim : 2017-02-21 (S)-->
+	<url-mapping url="ESM_FLT_0020.do" screen="ESM_FLT_0020.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0020HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.ESM_FLT_0020HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.invoice.timecharterinvoice.event.EsmFlt0020Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+	</event-mapping>
+	<!-- woo-sam Kim : 2017-02-21 (E)-->
+    <!-- Ki-Min Doo : 2017-03-24 (S)  -->
+	<url-mapping url="ESM_FLT_0011.do" screen="ESM_FLT_0011.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.schedulemanagement.event.ESM_FLT_0011HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.schedulemanagement.event.ESM_FLT_0011HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.schedulemanagement.event.EsmFlt0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Ki-Min Doo : 2017-03-24 (E) -->
+	<!-- Yo-Na Ha : 2017-02-22 (S) -->
+	<url-mapping url="ESM_FLT_0012.do" screen="ESM_FLT_0012.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.schedulemanagement.event.ESM_FLT_0012HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0012_POP.do" screen="ESM_FLT_0012_POP.screen">
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.schedulemanagement.event.ESM_FLT_0012HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.schedulemanagement.event.ESM_FLT_0012HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.schedulemanagement.event.EsmFlt0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Yo-Na Ha : 2017-02-22 (E) -->
+	<!-- Yo-Na Ha : 2017-03-02 (S) -->
+	<url-mapping url="ESM_FLT_0016.do" screen="ESM_FLT_0016.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractstatus.fleetstatus.event.ESM_FLT_0016HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.contractstatus.fleetstatus.event.ESM_FLT_0016HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.contractstatus.fleetstatus.event.EsmFlt0016Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Yo-Na Ha : 2017-03-02 (E) -->
+	<!-- Yo-Na Ha : 2017-03-07 (S) -->
+	<url-mapping url="ESM_FLT_0035.do" screen="ESM_FLT_0035.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.invoice.outstanding.event.ESM_FLT_0035HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0035_POP.do" screen="ESM_FLT_0035_POP.screen">
+        <web-action-class>com.clt.apps.opus.esm.flt.invoice.outstanding.event.ESM_FLT_0035HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0035GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.invoice.outstanding.event.ESM_FLT_0035HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.invoice.outstanding.event.EsmFlt0035Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- Yo-Na Ha : 2017-03-07 (E) -->
+	<!-- Yo-Na Ha : 2017-03-13 (S) -->
+	<url-mapping url="ESM_FLT_0048.do" screen="ESM_FLT_0048.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.ESM_FLT_0048HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0048GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.ESM_FLT_0048HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.EsmFlt0048Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.setup.SetupSC</service-action-class>
+    </event-mapping>
+	<!-- Yo-Na Ha : 2017-03-13 (E) -->
+	<!-- Yo-Na Ha : 2017-03-14 (S) -->
+	<url-mapping url="ESM_FLT_0033.do" screen="ESM_FLT_0033.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.invoice.miscellaneousinvoice.event.ESM_FLT_0033HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.invoice.miscellaneousinvoice.event.ESM_FLT_0033HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.invoice.miscellaneousinvoice.event.EsmFlt0033Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- Yo-Na Ha : 2017-03-14 (E) -->
+	<!-- Eunju Son : 2017-03-15 start -->
+	<url-mapping url="ESM_FLT_0017.do" screen="ESM_FLT_0017.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.contract.contractstatus.statementofaccount.event.ESM_FLT_0017HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.contract.contractstatus.statementofaccount.event.ESM_FLT_0017HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.contract.contractstatus.statementofaccount.event.EsmFlt0017Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+	</event-mapping>
+    <!-- Eunju Son : 2017-03-15 end -->
+    <!-- Eunju Son : 2017-03-22 start -->
+	<url-mapping url="ESM_FLT_0014.do" screen="ESM_FLT_0014.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.contract.contractstatus.hirescheduling.event.ESM_FLT_0014HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.contract.contractstatus.hirescheduling.event.ESM_FLT_0014HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.contract.contractstatus.hirescheduling.event.EsmFlt0014Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+	</event-mapping>
+    <!-- Eunju Son : 2017-03-22 end -->
+	<!-- Yo-Na Ha : 2017-03-23 (S) -->
+	<url-mapping url="ESM_FLT_0023.do" screen="ESM_FLT_0023.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.invoice.miscellaneousinvoice.event.ESM_FLT_0023HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.invoice.miscellaneousinvoice.event.ESM_FLT_0023HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.invoice.miscellaneousinvoice.event.EsmFlt0023Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- Yo-Na Ha : 2017-03-23 (E) -->
+	<!-- Yo-Na Ha : 2017-03-27 (S) -->
+	<url-mapping url="ESM_FLT_0007.do" screen="ESM_FLT_0007.screen">
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.deliveryredeliverymanagement.event.ESM_FLT_0007HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.deliveryredeliverymanagement.event.ESM_FLT_0007HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.deliveryredeliverymanagement.event.EsmFlt0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Yo-Na Ha : 2017-03-27 (E) -->
+	<!-- Ki-Min Doo : 2017-11-10 (S) -->
+	<url-mapping url="ESM_FLT_0062.do" screen="ESM_FLT_0062.screen">
+        <web-action-class>com.clt.apps.opus.esm.flt.invoice.brokerageinvoice.brokerageinvoice.event.ESM_FLT_0062HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0062GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.invoice.brokerageinvoice.brokerageinvoice.event.ESM_FLT_0062HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.invoice.brokerageinvoice.brokerageinvoice.event.EsmFlt0062Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.invoice.InvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- Ki-Min Doo : 2017-11-10 (E)  -->
+	<!-- Eunju Son : 2017.03.28 Start -->
+	<url-mapping url="ESM_FLT_0063.do" screen="ESM_FLT_0063.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.paymentdatechoice.event.ESM_FLT_0063HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_FLT_0063GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.common.paymentdatechoice.event.ESM_FLT_0063HTMLAction</web-action-class>
+    </url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.common.paymentdatechoice.event.EsmFlt0063Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.common.FLTCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Eunju Son : 2017.03.28 End -->
+	<!-- Eunju Son : 2017.04.03 Start -->
+	<url-mapping url="ESM_FLT_0010.do" screen="ESM_FLT_0010.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.schedulemanagement.event.ESM_FLT_0010HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.contract.schedulemanagement.event.ESM_FLT_0010HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.contract.schedulemanagement.event.EsmFlt0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.contract.ContractSC</service-action-class>
+    </event-mapping>
+	<!-- Eunju Son : 2017.04.03 End -->
+	<!-- Yo-Na Ha : 2017-06-14 (S) -->
+	<url-mapping url="ESM_FLT_0049.do" screen="ESM_FLT_0049.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.ESM_FLT_0049HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0049GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.ESM_FLT_0049HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.EsmFlt0049Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.setup.SetupSC</service-action-class>
+    </event-mapping>
+	<!-- Yo-Na Ha : 2017-06-14 (E) -->
+	<!-- Yo-Na Ha : 2017-06-20 (S) -->
+	<url-mapping url="ESM_FLT_0043.do" screen="ESM_FLT_0043.screen" >
+        <web-action-class>com.clt.apps.opus.esm.flt.slip.approvallist.event.ESM_FLT_0043HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_FLT_0043GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.flt.slip.approvallist.event.ESM_FLT_0043HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.flt.slip.approvallist.event.EsmFlt0043Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.flt.slip.SlipSC</service-action-class>
+    </event-mapping>
+	<!-- Yo-Na Ha : 2017-06-20 (E) -->
+	<!-- Jin-Yong Lee : 2018-12-19 (S) -->
+	<url-mapping url="ESM_FLT_0090.do" screen="ESM_FLT_0090.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.ESM_FLT_0090HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_FLT_0090GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.ESM_FLT_0090HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.setup.fltsetup.event.EsmFlt0090Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.setup.SetupSC</service-action-class>
+	</event-mapping>
+	<!-- Jin-Yong Lee : 2018-12-19 (E) -->
+	<url-mapping url="ESM_FLT_0075.do" screen="ESM_FLT_0075.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.slip.monthlyhirereversal.event.ESM_FLT_0075HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_FLT_0075GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.slip.monthlyhirereversal.event.ESM_FLT_0075HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.slip.monthlyhirereversal.event.EsmFlt0075Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.slip.SlipSC</service-action-class>
+	</event-mapping>
+  <url-mapping url="ESM_FLT_0100.do" screen="ESM_FLT_0100.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.ifrs.migration.event.ESM_FLT_0100HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_FLT_0100GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.ifrs.migration.event.ESM_FLT_0100HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.ifrs.migration.event.EsmFlt0100Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.ifrs.MigrationSC</service-action-class>
+	</event-mapping>
+  <url-mapping url="ESM_FLT_0101.do" screen="ESM_FLT_0101.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.ifrs.setup.event.ESM_FLT_0101HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_FLT_0101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.ifrs.setup.event.ESM_FLT_0101HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.ifrs.setup.event.EsmFlt0101Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.ifrs.SetupSC</service-action-class>
+	</event-mapping>
+  <url-mapping url="ESM_FLT_0102.do" screen="ESM_FLT_0102.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.ifrs.setup.event.ESM_FLT_0102HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_FLT_0102GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.ifrs.setup.event.ESM_FLT_0102HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.ifrs.setup.event.EsmFlt0102Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.ifrs.SetupSC</service-action-class>
+	</event-mapping>
+  <url-mapping url="ESM_FLT_0103.do" screen="ESM_FLT_0103.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.ifrs.interfaceadhoc.event.ESM_FLT_0103HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_FLT_0103GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.ifrs.interfaceadhoc.event.ESM_FLT_0103HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.ifrs.interfaceadhoc.event.EsmFlt0103Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.ifrs.InterfaceAdhocSC</service-action-class>
+	</event-mapping>
+  <url-mapping url="ESM_FLT_0104.do" screen="ESM_FLT_0104.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.ifrs.history.event.ESM_FLT_0104HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_FLT_0104GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.ifrs.history.event.ESM_FLT_0104HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.ifrs.history.event.EsmFlt0104Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.ifrs.HistorySC</service-action-class>
+	</event-mapping>
+	<url-mapping url="ESM_FLT_0105.do" screen="ESM_FLT_0105.screen">
+		<web-action-class>com.clt.apps.opus.esm.flt.ifrs.history.event.ESM_FLT_0105HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_FLT_0105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.flt.ifrs.history.event.ESM_FLT_0105HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.flt.ifrs.history.event.EsmFlt0105Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.flt.ifrs.HistorySC</service-action-class>
+	</event-mapping>
+</mappings>

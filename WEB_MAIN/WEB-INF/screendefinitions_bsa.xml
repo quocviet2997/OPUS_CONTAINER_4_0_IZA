@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+<!-- Common ====================================================================================== -->
+<!-- 
+ESM_BSA_H01.do	ESM_BSA_5101.do	ESM_BSA_5101
+ESM_BSA_H12.do	ESM_BSA_5112.do	ESM_BSA_5112
+ESM_BSA_H21.do	ESM_BSA_5121.do	ESM_BSA_5121
+ESM_BSA_H40.do	ESM_BSA_5140.do	ESM_BSA_5140
+ESM_BSA_H41.do	ESM_BSA_5141.do	ESM_BSA_5141
+ESM_BSA_H42.do	ESM_BSA_3002.do	ESM_BSA_3002  
+ -->
+<!-- BSAManage =================================================================================== -->
+
+	<!--  Inquire/Edit BSA Table -->
+	<screen name="ESM_BSA_0021">
+		<parameter key="title" value="OPUS" direct="true" />
+		<parameter key="body" value="apps/opus/esm/bsa/bsamanage/bsamanage/jsp/ESM_BSA_0021.jsp" />
+	</screen>
+
+	<!--  Add Carriers -->
+	<screen name="ESM_BSA_0023" template="templatePop">
+		<parameter key="title"    value="OPUS" direct="true"/>
+		<parameter key="body"     value="apps/opus/esm/bsa/bsamanage/bsamanage/jsp/ESM_BSA_0023.jsp"/>
+	</screen>
+
+	<!--  Inquire/Edit Slot-info for SPC CNTL_ SC -->
+	<screen name="ESM_BSA_0026">
+		<parameter key="title" value="OPUS" direct="true" />
+		<parameter key="body" value="apps/opus/esm/bsa/bsamanage/bsamanage/jsp/ESM_BSA_0026.jsp" />
+	</screen>
+
+	<!--  Inquire/Edit Slot-Cost -->
+	<screen name="ESM_BSA_0028">
+	    <parameter key="title"    value="OPUS" direct="true"/>
+	    <parameter key="body"     value="apps/opus/esm/bsa/bsamanage/bsamanage/jsp/ESM_BSA_0028.jsp"/>
+	</screen>
+	
+	<!--  Inquire/Edit Over Used Slot-Cost -->
+	<screen name="ESM_BSA_0162">
+	    <parameter key="title"    value="OPUS" direct="true"/>
+	    <parameter key="body"     value="apps/opus/esm/bsa/bsamanage/bsamanage/jsp/ESM_BSA_0162.jsp"/>
+	</screen>
+	
+	
+	<!--  Inquire/Edit Supply & Slot-swap By VVD -->
+	<screen name="ESM_BSA_0030">
+		<parameter key="title" value="OPUS" direct="true" />
+		<parameter key="body" value="apps/opus/esm/bsa/bsamanage/spcmanage/jsp/ESM_BSA_0030.jsp" />
+	</screen>
+
+
+	<!--  Inquire/Edit Step-up/down By VVD -->
+	<screen name="ESM_BSA_0032">
+		<parameter key="title" value="OPUS" direct="true" />
+		<parameter key="body" value="apps/opus/esm/bsa/bsamanage/spcmanage/jsp/ESM_BSA_0032.jsp" />
+	</screen>	
+
+	<!--  Carrier's Register -->
+	<screen name="ESM_BSA_0120" template="templatePop">
+	    <parameter key="title"    value="OPUS" direct="true"/>
+	    <parameter key="body"     value="apps/opus/esm/bsa/bsamanage/bsamanage/jsp/ESM_BSA_0120.jsp"/>
+	</screen>
+	
+	<!--  Carrier's Register -->
+	<screen name="ESM_BSA_0172">
+	    <parameter key="title"    value="OPUS" direct="true"/>
+	    <parameter key="body"     value="apps/opus/esm/bsa/bsamanage/bsamanage/jsp/ESM_BSA_0172.jsp"/>
+	</screen>
+
+
+	<!--  SPC Control J/O Slot  -->
+	<screen name="ESM_BSA_0024">
+		<parameter key="title"	value="OPUS" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/bsa/bsamanage/bsamanage/jsp/ESM_BSA_0024.jsp" />
+	</screen>
+	
+	<screen name="ESM_BSA_IOC">
+		<parameter key="title"	value="OPUS" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/bsa/bsamanage/bsamanage/jsp/ESM_BSA_IOC.jsp" />
+	</screen>
+
+	<!--  Other Carrier's Slot Swap Information[popup] -->
+	<screen name="ESM_BSA_0122" template="templatePop">
+		<parameter key="title"	value="OPUS" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/bsa/bsamanage/bsamanage/jsp/ESM_BSA_0122.jsp" />
+	</screen>
+
+
+	<!--  Slot-info by VVD -->
+	<screen name="ESM_BSA_0104">
+		<parameter key="title"	value="OPUS" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/bsa/bsamanage/spcmanage/jsp/ESM_BSA_0104.jsp" />
+	</screen>
+	
+	    <!-- UI POPUP add -->
+    <screen name="ESM_BSA_0104_POP" template="templatePop">
+        <parameter key="title"    value="OPUS" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/bsa/bsamanage/spcmanage/jsp/ESM_BSA_0104.jsp"/>
+    </screen>
+	
+	<!--  Slot-info by VVD PopUp -->
+	<screen name="ESM_BSA_0121" template="templatePop">
+		<parameter key="title"	value="OPUS" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/bsa/bsamanage/spcmanage/jsp/ESM_BSA_0121.jsp" />
+	 </screen>
+
+	
+	<!--  VESSELB slot-info by VVD PopUp -->
+	<screen name="ESM_BSA_0143" template="templatePop">
+		<parameter key="title"	value="OPUS" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/bsa/bsamanage/spcmanage/jsp/ESM_BSA_0143.jsp" />
+	 </screen>
+
+<!-- COA Link ====================================================================================== -->
+<!--  Target VVD -->
+	<screen name="ESM_COA_0029">
+		<parameter key="title"	value="OPUS" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/weeklycm/jsp/ESM_COA_0029.jsp" />
+	</screen>
+
+	<screen name="ESM_COA_0029GS" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/weeklycm/jsp/ESM_COA_0029GS.jsp" />
+	</screen>
+	
+<!--  OPMaster : Create Lane Table -->
+	<screen name="ESM_COA_0036">
+		<parameter key="title"	value="OPUS" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/opmaster/jsp/ESM_COA_0036.jsp" />
+	</screen>
+
+	<screen name="ESM_COA_0036GS" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/opmaster/jsp/ESM_COA_0036GS.jsp" />
+	</screen>
+
+	<screen name="ESM_COA_0036GS2" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/opmaster/jsp/ESM_COA_0036GS2.jsp" />
+	</screen>
+
+
+	<!--  OPMaster : Create Vessel Table -->
+	<screen name="ESM_COA_0037">
+		<parameter key="title"	value="OPUS" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/opmaster/jsp/ESM_COA_0037.jsp" />
+	</screen>
+
+	<screen name="ESM_COA_0037GS" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/opmaster/jsp/ESM_COA_0037GS.jsp" />
+	</screen>
+
+
+<!-- Common ====================================================================================== -->
+    <screen name="ESM_BSA_3002" template="templatePop">
+		<parameter key="body"	 value="apps/opus/esm/bsa/common/jsp/ESM_BSA_3002.jsp" />
+	</screen>
+	
+<!-- ============================================================================================= -->
+
+</screen-definitions>

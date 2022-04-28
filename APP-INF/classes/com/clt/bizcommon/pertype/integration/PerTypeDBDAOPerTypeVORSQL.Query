@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="PerTypeDBDAOPerTypeVORSQL">
+			<desc><![CDATA[perType 조회]]></desc>
+			<sql><![CDATA[
+SELECT
+	RAT_UT_CD,
+	RAT_UT_DESC,
+	RAT_UT_GRP_CD,
+	CNTR_SZ_CD,
+TO_CHAR(CRE_DT,'YYYY-MM-DD') CR_DT,
+TO_CHAR(UPD_DT,'YYYY-MM-DD') UP_DT,
+	DELT_FLG
+FROM PRI_RAT_UT
+WHERE 1=1
+AND DELT_FLG = 'N'
+
+#if (${rat_ut_cd} != '') 
+and	RAT_UT_CD = @[rat_ut_cd]
+#end
+#if (${rat_ut_grp_cd} != '') 
+and	RAT_UT_GRP_CD = @[rat_ut_grp_cd]
+#end
+
+ORDER BY RAT_UT_CD ASC			]]></sql>
+			<params>
+				<param name="rat_ut_cd" type="12" value="" out="N"/>
+				<param name="rat_ut_grp_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

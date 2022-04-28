@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="EQQrgChartDBDAOEQQrgChartListRSQL">
+			<desc><![CDATA[EQ Org Chart의 모든 목록을 가져온다.]]></desc>
+			<sql><![CDATA[
+select level, loc_cd||decode(loc_dpth_cd, 'R', ' (RCC)', 'L', ' (LCC)', 'E', ' (ECC)', 'S', ' (SCC)', '') unit ,
+loc_cd,
+prnt_loc_id,
+loc_dpth_cd
+from eqr_loc_lvl
+connect by nocycle prior loc_id = prnt_loc_id
+#if (${idepth} != '')
+#if (${sccFlag} != 'Y')  
+and loc_dpth_cd <> 'S'
+#end
+#end
+start with loc_cd = 'All'			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

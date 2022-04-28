@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="BookmarkManagementDAOComBookmarkCSQL">
+			<desc><![CDATA[insert com_Bookmark]]></desc>
+			<sql><![CDATA[
+INSERT INTO COM_BOOKMARK (
+USR_ID, 
+FOL_FLG,
+PGM_NO,
+DP_SEQ,
+DP_NM,
+PRNT_PGM_NO,
+CRE_DT,
+CRE_USR_ID,
+UPD_DT,
+UPD_USR_ID
+)
+SELECT
+	@[usr_id],
+	'N',
+	@[pgm_no],
+	(SELECT NVL(MAX(DP_SEQ) +1,1) FROM COM_BOOKMARK WHERE USR_ID=@[usr_id]),
+	@[dp_nm],
+	@[prnt_pgm_no],
+	sysdate,
+	@[usr_id],
+	sysdate,
+	@[usr_id]
+from dual			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="pgm_no" type="12" value="" out="N"/>
+				<param name="dp_nm" type="12" value="" out="N"/>
+				<param name="prnt_pgm_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

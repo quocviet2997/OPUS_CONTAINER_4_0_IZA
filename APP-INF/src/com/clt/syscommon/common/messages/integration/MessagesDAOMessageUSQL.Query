@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MessagesDAOMessageUSQL">
+			<desc><![CDATA[keep flag / delete flag / recieve time 
+update query]]></desc>
+			<sql><![CDATA[
+#if(${div} == 'SND') 
+update com_msg_snd set 
+#end
+#if(${div} == 'RCV') 
+update com_msg_rcv set
+#end
+#if(${kep_flg} == 'OK') 
+	kep_flg = 'Y',
+#elseif(${rcv_dt} == 'OK') 
+	rcv_dt = sysdate,
+#elseif(${delt_flg} == 'OK') 
+	delt_flg = 'Y',
+#end
+	upd_usr_id = @[usr_id],
+	upd_dt = sysdate
+where	msg_id = @[msg_id]
+#if(${div} == 'RCV' && ${usr_id} != '') 
+and rcvr_usr_id = @[usr_id]
+#end			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="msg_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

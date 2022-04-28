@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOModifyYardUSQL">
+			<desc><![CDATA[2011.03.14 정윤태 EDI YARD 정보를 변경한다]]></desc>
+			<sql><![CDATA[
+UPDATE BKG_EDI_YD
+   SET BKG_YD_TP_CD = @[bkg_yd_tp_cd],     
+       PORT_CD = @[port_cd],
+       EDI_RCV_ID = @[edi_rcv_id],
+       SLAN_CD1 = @[slan_cd1],
+       SLAN_CD2 = @[slan_cd2], 
+       SLAN_CD3 = @[slan_cd3],
+       SLAN_CD4 = @[slan_cd4],
+       SLAN_CD5 = @[slan_cd5],
+       SLAN_CD6 = @[slan_cd6],
+       SLAN_CD7 = @[slan_cd7],
+       SLAN_CD8 = @[slan_cd8],
+       SLAN_CD9 = @[slan_cd9],
+       SLAN_CD10 = @[slan_cd10],
+       BKG_AUTO_EDI_FLG = @[bkg_auto_edi_flg],
+       MTY_RLSE_EDI_FLG = @[mty_rlse_edi_flg],
+       EDI_SND_ID = @[edi_snd_id],
+       FULL_RLSE_EDI_CD = @[full_rlse_edi_cd],
+       BKG_MNL_EDI_FLG = @[bkg_mnl_edi_flg],
+       PRE_TS_FLG = @[pre_ts_flg],
+       PST_TS_FLG = @[pst_ts_flg],
+       PST_TS_ACK_FLG = @[pst_ts_ack_flg],
+       UPD_USR_ID = @[upd_usr_id],
+       UPD_DT = SYSDATE
+ WHERE YD_CD = @[yd_cd]			]]></sql>
+			<params>
+				<param name="bkg_yd_tp_cd" type="12" value="" out="N"/>
+				<param name="port_cd" type="12" value="" out="N"/>
+				<param name="edi_rcv_id" type="12" value="" out="N"/>
+				<param name="slan_cd1" type="12" value="" out="N"/>
+				<param name="slan_cd2" type="12" value="" out="N"/>
+				<param name="slan_cd3" type="12" value="" out="N"/>
+				<param name="slan_cd4" type="12" value="" out="N"/>
+				<param name="slan_cd5" type="12" value="" out="N"/>
+				<param name="slan_cd6" type="12" value="" out="N"/>
+				<param name="slan_cd7" type="12" value="" out="N"/>
+				<param name="slan_cd8" type="12" value="" out="N"/>
+				<param name="slan_cd9" type="12" value="" out="N"/>
+				<param name="slan_cd10" type="12" value="" out="N"/>
+				<param name="bkg_auto_edi_flg" type="12" value="" out="N"/>
+				<param name="mty_rlse_edi_flg" type="12" value="" out="N"/>
+				<param name="edi_snd_id" type="12" value="" out="N"/>
+				<param name="full_rlse_edi_cd" type="12" value="" out="N"/>
+				<param name="bkg_mnl_edi_flg" type="12" value="" out="N"/>
+				<param name="pre_ts_flg" type="12" value="" out="N"/>
+				<param name="pst_ts_flg" type="12" value="" out="N"/>
+				<param name="pst_ts_ack_flg" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="yd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

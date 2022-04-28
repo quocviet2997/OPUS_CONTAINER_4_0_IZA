@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="RoleDAOComUsrRoleDSQL">
+			<desc><![CDATA[de]]></desc>
+			<sql><![CDATA[
+delete from com_usr_role
+where	usr_role_cd = @[usr_role_cd]
+			]]></sql>
+			<params>
+				<param name="usr_role_cd" type="12" value="" out="n"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<!-- ###	TESCommon	START	###=========================================================-->
+	<!--  TES Common 관리 -->
+	<screen name="TESCommon">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/common/tescommon/jsp/TESCommon.jsp" />
+	</screen>
+
+	<!--  TES Common 관리 팝업 -->
+	<screen name="TESCommonPop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/common/tescommon/jsp/TESCommon.jsp" />
+	</screen>
+
+	<!--  Invoice Reject 팝업 -->
+	<screen name="ESD_TES_9020RejectPopup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/common/tescommon/jsp/ESD_TES_9020.jsp" />
+    </screen>
+
+	<!--  Invoice Hold Remarks 팝업 -->
+	<screen name="ESD_TES_9210RemarksPopup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/common/tescommon/jsp/ESD_TES_9210.jsp" />
+	</screen>
+	
+	<screen name="ESD_TES_9001" template="templatePop">
+		<parameter key="title"	value="Agreement Information of Manual Rate" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9001.jsp" />
+	</screen>
+	<!-- ###	TESCommon	END	###=========================================================-->
+
+	<!-- ###	TES Invoice Common	START	###=========================================================-->
+	<screen name="TESInvoiceCommon">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/common/tesinvoicecommon/jsp/TESInvoiceCommon.jsp" />
+	</screen>
+
+	<!-- ###	TES Invoice Common	END	###=========================================================-->
+
+	<!-- ###	TES CodeManage START	###===========================================================-->
+	<screen name="ESD_TES_0027">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/codemanage/codemanage/jsp/ESD_TES_0027.jsp" />
+	</screen>
+				
+	<screen name="ESD_TES_9090" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/codemanage/codemanage/jsp/ESD_TES_9090.jsp" />
+	</screen>
+	
+	<!--  Cost Code Inquiry -->
+	<screen name="ESD_TES_0028">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/codemanage/codemanage/jsp/ESD_TES_0028.jsp" />
+	</screen>
+	
+	<screen name="ESD_TES_0031">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/codemanage/codemanage/jsp/ESD_TES_0031.jsp" />
+	</screen>
+
+	<screen name="ESD_TES_0038">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/codemanage/codemanage/jsp/ESD_TES_0038.jsp" />
+	</screen>
+	
+	<screen name="ESD_TES_0036">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/codemanage/codemanage/jsp/ESD_TES_0036.jsp" />
+	</screen>
+	
+	<screen name="ESD_TES_0037">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/codemanage/codemanage/jsp/ESD_TES_0037.jsp" />
+	</screen>
+			
+	<!-- ###	TES CodeManage END	###===========================================================-->
+
+	<!-- ###	TES AgreementManage START	###===========================================================-->
+	<!-- Terminal Agreement Creation	-->
+	<screen name="ESD_TES_0034">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceprovideragreementmanage/terminalagreementmanage/jsp/ESD_TES_0034.jsp" />
+	</screen>
+
+	<!-- Terminal Agreement Creation 그리드 1 -->
+	<!--
+	<screen name="ESD_TES_0034Detail" template="templateIBSheet">		
+		<parameter key="body"	value="apps/opus/esd/tes/serviceprovideragreementmanage/terminalagreementmanage/jsp/ESD_TES_0034Detail.jsp" />
+	</screen>
+	-->	
+	
+	<screen name="ESD_TES_0034Verify" template="templateIBSheet">		
+		<parameter key="body"	value="apps/opus/esd/tes/serviceprovideragreementmanage/terminalagreementmanage/jsp/ESD_TES_0034Verify.jsp" />
+	</screen>		
+
+	<screen name="ESD_TES_0039">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceprovideragreementmanage/terminalagreementmanage/jsp/ESD_TES_0039.jsp" />
+	</screen>
+
+	<!--  Terminal Agreement Detail Inquiry -->
+	<screen name="ESD_TES_0040">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceprovideragreementmanage/terminalagreementmanage/jsp/ESD_TES_0040.jsp" />
+	</screen>
+	
+
+	<!--  TerminalAgreement 조회화면 -Detail(Terminal Rate) 팝업 -->
+	<screen name="ESD_TES_0040Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceprovideragreementmanage/terminalagreementmanage/jsp/ESD_TES_0040.jsp" />
+	</screen>
+	
+	<!--  Terminal Agreement Creation Terminal Rate List Excel Load -->
+	<screen name="ESD_TES_9160" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceprovideragreementmanage/terminalagreementmanage/jsp/ESD_TES_9160.jsp" />
+	</screen>
+
+	<!--  Terminal Agreement Creation Storage Rate List Excel Load-->
+	<screen name="ESD_TES_9170" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceprovideragreementmanage/terminalagreementmanage/jsp/ESD_TES_9170.jsp" />
+	</screen>			  
+	
+	<screen name="ESD_TES_9175" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceprovideragreementmanage/terminalagreementmanage/jsp/ESD_TES_9175.jsp" />
+	</screen>			  
+	
+	<!--  Terminal Agreement Throughput Cost Code 팝업 -->
+	<screen name="ESD_TES_9180" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceprovideragreementmanage/terminalagreementmanage/jsp/ESD_TES_9180.jsp" />
+	</screen>	
+
+	<screen name="ESD_TES_9070" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceprovideragreementmanage/terminalagreementmanage/jsp/ESD_TES_9070.jsp" />
+	</screen>
+
+
+	<screen name="ESD_TES_9080" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceprovideragreementmanage/terminalagreementmanage/jsp/ESD_TES_9080.jsp" />
+	</screen>	
+	
+	<!--  Volume Accumulate Method Popup -->
+	<screen name="ESD_TES_9200" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceprovideragreementmanage/terminalagreementmanage/jsp/ESD_TES_9200.jsp" />
+	</screen>	
+
+	<!-- ###	TES AgreementManage END	###===========================================================-->
+
+
+
+	<!-- ###	TES Invoice Creation & Inquiry START	###===========================================================-->
+	
+		<!-- @@	CSR CARIssueTransferSlipManage START		-->
+	<!-- @ Terminal invoice CSR Creation Summary START	-->
+	<screen name="ESD_TES_0023">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0023.jsp" />
+	</screen>
+
+	<!--  Terminal invoice CSR Creation - Summary 팝업 -->
+	<screen name="ESD_TES_0023Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0023.jsp" />
+	</screen>
+
+	<!-- @ Terminal invoice CSR Creation Summary END	-->
+	
+	<!-- @ Terminal invoice CSR Creation - Detail START	-->
+	<screen name="ESD_TES_0024">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0024.jsp" />
+	</screen>
+
+	<!--  Terminal invoice CSR Creation - Detail 그리드 1 -->
+	<screen name="ESD_TES_0024PreView" template="templateIBSheet">
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0024PreView.jsp" />
+	</screen>	
+
+	<!--  Terminal invoice CSR Creation - Detail 팝업 -->
+	<screen name="ESD_TES_0024Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0024.jsp" />
+	</screen>
+	
+	<screen name="ESD_TES_0026" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0026.jsp" />
+	</screen>
+
+	<!--  Terminal invoice CSR Creation - Detail 그리드 1 -->
+	<screen name="ESD_TES_0026PreView" template="templateIBSheet">
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0026PreView.jsp" />
+	</screen>
+
+	<!--  Terminal invoice CSR Creation - Detail 팝업 -->
+	<screen name="ESD_TES_0026Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0026.jsp" />
+	</screen>
+
+	<!-- @ Terminal invoice CSR Creation - Detail END	-->
+
+	<!-- @ Transfer Slip Creation 부분	START	-->
+	<!--  Terminal invoice CSR Creation - Detail -->
+	<screen name="ESD_TES_0025" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0025.jsp" />
+	</screen>
+
+	<!--  Terminal invoice CSR Creation - Detail 그리드 1 -->
+	<screen name="ESD_TES_0025PreView" template="templateIBSheet">
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0025PreView.jsp" />
+	</screen>	
+
+	<!--  Terminal invoice CSR Creation - Detail 팝업 -->
+	<screen name="ESD_TES_0025Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0025.jsp" />
+	</screen>
+
+	<!-- @ Transfer Slip Creation 부분	END	-->
+
+	<!-- @ Terminal invoice CSR Creation - Preview START	-->
+	<!--  Terminal invoice CSR Creation - Preview -->
+	<screen name="ESD_TES_0080" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0080.jsp" />
+	</screen>
+
+	<!--  Terminal invoice CSR Creation - Preview 팝업 -->
+	<screen name="ESD_TES_0080Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0080.jsp" />
+	</screen>
+
+	<!-- @ Terminal invoice CSR Creation - Preview END-->
+	
+	
+	<!-- @ Terminal invoice CSR Creation - 세금계산서 부분 START	-->
+	<!--  Terminal invoice CSR Creation - Preview -->
+	<screen name="ESD_TES_0078" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0078.jsp" />
+	</screen>
+
+	<!--  Terminal invoice CSR Creation - Preview 팝업 -->
+	<screen name="ESD_TES_0078Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0078.jsp" />
+	</screen>
+
+	<!-- @ Terminal invoice CSR Creation - 세금계산서 부분 END	-->	
+
+
+	<!-- @ Terminal invoice CSR Creation - 공통 세금 계산서 번호 부분 시작 -->
+	<!-- @ Terminal invoice CSR Creation - 공통 세금 계산서 번호 부분 END	-->							
+
+
+	<!-- @ Terminal invoice CSR Creation - 계산서 부분 START	-->
+	<!--  Terminal invoice CSR Creation - Preview -->
+	<screen name="ESD_TES_0079" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0079.jsp" />
+	</screen>
+
+	<!--  Terminal invoice CSR Creation - Preview 팝업 -->
+	<screen name="ESD_TES_0079Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0079.jsp" />
+	</screen>
+
+	<!-- @ Terminal invoice CSR Creation - 계산서 부분 END	-->
+
+	<!-- Terminal invoice CSR Creation - Preview 부분 시작 -->
+	<!--  Terminal invoice CSR Creation - Preview -->
+	<screen name="ESD_TES_0100">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0100.jsp" />
+	</screen>
+
+	<screen name="ESD_TES_0101" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/carissuetransferslipmanage/jsp/ESD_TES_0101.jsp" />
+	</screen>
+
+	<!-- @@	CSR CARIssueTransferSlipManage END		-->
+	
+	<!-- Invoice Creation & Inquiry	START		-->
+
+	<!-- @@	MarineTerminalInvoiceManage	START	-->
+	<!--  Marine Terminal Invoice 등록 및 Confirm화면-Coincidence -->
+	<screen name="ESD_TES_0001">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_0001.jsp" />
+	</screen>
+
+    <!--  Marine Terminal Invoice 등록 및 Confirm화면에서 Bound 자동 배분 팝업 -->
+    <screen name="ESD_TES_1003">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_1003.jsp" />
+	</screen>
+
+    <screen name="ESD_TES_1003Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_1003.jsp" />
+	</screen>
+	
+	<!--  Get Container List Pop Up -->
+	<screen name="ESD_TES_9010"  template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9010.jsp" />
+	</screen>
+
+	<!--  Get Container List Pop Up 팝업 -->
+	<screen name="ESD_TES_9010Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9010.jsp" />
+	</screen>
+	
+	<!--  TerminalInvoiceSummary -->
+	<screen name="ESD_TES_0013">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_0013.jsp" />
+	</screen>
+
+	<!--  TerminalInvoiceSummary 팝업 -->
+	<screen name="ESD_TES_0013Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_0013.jsp" />
+	</screen>
+
+
+	<screen name="ESD_TES_0014">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_0014.jsp" />
+	</screen>
+
+	<!--  TerminalInvoiceSummary 팝업 -->
+	<screen name="ESD_TES_0014Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_0014.jsp" />
+	</screen>
+
+
+	<!--  Office Hierarchy  -->
+	<screen name="ESD_TES_9300">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9300.jsp" />
+	</screen>
+
+	<screen name="ESD_TES_9300Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9300.jsp" />
+	</screen>
+
+	 
+	<!--  Marine Terminal Container List 조회 -->
+	<screen name="ESD_TES_0017">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_0017.jsp" />
+	</screen>
+
+	<!--  Marine Terminal Container List 조회 팝업 -->
+	<screen name="ESD_TES_0017Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_0017.jsp" />
+	</screen>
+
+	<screen name="ESD_TES_9032" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9032.jsp" />
+	</screen>
+
+	<!--  Volume Adjustment PopUp 화면 팝업 -->
+	<screen name="ESD_TES_9032Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9032.jsp" />
+	</screen>
+
+	<screen name="ESD_TES_9072" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9072.jsp" />
+	</screen>
+
+	<!--  Volume Adjustment PopUp 화면 팝업 -->
+	<screen name="ESD_TES_9072Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9072.jsp" />
+	</screen>
+
+	<!--  Total Amount PopUp 화면 - Marine Terminal  -->
+	<screen name="ESD_TES_9040" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9040.jsp" />
+	</screen>
+
+	<!--  Total Amount PopUp 화면 - Marine Terminal  팝업 -->
+	<screen name="ESD_TES_9040Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9040.jsp" />
+	</screen>
+
+	<!--  Accumulate Vol. Detail Inquiry Pop Up -->
+	<screen name="ESD_TES_9220" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9220.jsp" />
+	</screen>
+
+	<!--  Accumulate Vol. Detail Inquiry Pop Up 팝업 -->
+	<screen name="ESD_TES_9220AcumulatePopup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9220.jsp" />
+	</screen>
+
+	<!--  R/H된 Volume Adjustment PopUp 화면 -->
+	<screen name="ESD_TES_9190" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9190.jsp" />
+	</screen>
+
+	<!--  R/H된 Volume Adjustment PopUp 화면 팝업 -->
+	<screen name="ESD_TES_919Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_919.jsp" />
+	</screen>
+
+
+	<screen name="ESD_TES_9191" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9191.jsp" />
+	</screen>
+
+	<!--  R/H된 Volume Adjustment PopUp 화면 팝업 -->
+	<screen name="ESD_TES_9191Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9191.jsp" />
+	</screen>
+	<!--   TES 3rd Party Billing Input PopUp -->
+
+	<screen name="ESD_TES_9232" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9232.jsp" />
+	</screen>
+
+	<!--   TES 3rd Party Billing Input PopUp 팝업 -->
+	<screen name="ESD_TES_9232Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9232.jsp" />
+	</screen>
+
+
+	 <screen name="ESD_TES_9252" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9252.jsp" />
+	</screen>
+
+	<!--   TES 3rd Party Billing Input PopUp 팝업 -->
+	<screen name="ESD_TES_9252Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_9252.jsp" />
+	</screen>
+	
+	<!-- @@	MarineTerminalInvoiceManage	END	-->
+
+
+	<!-- @@	MarineTerminalStorageInvoiceManage	START	-->
+	<!--  MarineTerminalStorage Invoice 관리 -->
+	<screen name="ESD_TES_0009">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalstorageinvoicemanage/jsp/ESD_TES_0009.jsp" />
+	</screen>
+
+	<screen name="ESD_TES_9142FileImportPopup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalstorageinvoicemanage/jsp/ESD_TES_9142.jsp" />
+	</screen>
+
+	<screen name="ESD_TES_9234Popup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalstorageinvoicemanage/jsp/ESD_TES_9234.jsp" />
+	</screen>
+
+	<screen name="ESD_TES_9254Popup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalstorageinvoicemanage/jsp/ESD_TES_9254.jsp" />
+	</screen>
+
+	<!--  Marine Terminal Storage Container List 조회 - Coincidence -->
+	<screen name="ESD_TES_0019">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalstorageinvoicemanage/jsp/ESD_TES_0019.jsp" />
+	</screen>
+
+	<!--  Marine Terminal Storage Container List 조회 - Coincidence 팝업 -->
+	<screen name="ESD_TES_0019Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalstorageinvoicemanage/jsp/ESD_TES_0019.jsp" />
+	</screen>
+
+	<!--  Storage Invoice 관리 - Total Amount Popup -->
+	<screen name="ESD_TES_9060Popup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_9060.jsp" />
+	</screen>
+	
+	<screen name="ESD_TES_1004Popup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/marineterminalinvoicemanage/jsp/ESD_TES_1004.jsp" />
+	</screen>	
+
+	<!-- @@	MarineTerminalStorageInvoiceManage	END	-->
+
+	
+	<!-- @@	OffdockCYInvoiceManage	START	-->
+	<!-- @ Off-dock CY Invoice Creation	START	-->
+	<!--  Off-dock CY Invoice 관리 -->
+	<screen name="ESD_TES_0004">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/offdockcyinvoicemanage/jsp/ESD_TES_0004.jsp" />
+	</screen>
+
+	<screen name="ESD_TES_0004PrintPopup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/offdockcyinvoicemanage/jsp/ESD_TES_805.jsp" />
+	</screen>
+
+	<!--  Off-dock CY Invoice 관리 FileImport 팝업 -->
+	<screen name="ESD_TES_9140FileImportPopup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/offdockcyinvoicemanage/jsp/ESD_TES_9140.jsp" />
+	</screen>
+
+	<!--  Off-dock CY Invoice 관리 Revise Calc Volume 팝업 -->
+	<screen name="ESD_TES_9030Popup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/offdockcyinvoicemanage/jsp/ESD_TES_9030.jsp" />
+	</screen>
+
+
+	<screen name="ESD_TES_9240Popup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/offdockcyinvoicemanage/jsp/ESD_TES_9240.jsp" />
+	</screen>
+
+	<screen name="ESD_TES_9074Popup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/offdockcyinvoicemanage/jsp/ESD_TES_9074.jsp" />
+	</screen>
+
+	<screen name="ESD_TES_9075Popup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/offdockcyinvoicemanage/jsp/ESD_TES_9075.jsp" />
+	</screen>
+
+
+	<!--  Off-dock CY Invoice 관리 - Total Amount Popup -->
+	<screen name="ESD_TES_9050Popup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/offdockcyinvoicemanage/jsp/ESD_TES_9050.jsp" />
+	</screen>
+
+	<!--  Off-dock CY Invoice 관리 - 3rd. Popup -->
+	<screen name="ESD_TES_9233Popup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/offdockcyinvoicemanage/jsp/ESD_TES_9233.jsp" />
+	</screen>
+
+	<screen name="ESD_TES_9253Popup" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/offdockcyinvoicemanage/jsp/ESD_TES_9253.jsp" />
+	</screen>
+
+	<!-- @ Off-dock CY Invoice Creation	END	-->
+	
+	
+	<!-- @ Off-dock CY Container List 조회 부분 	START	-->
+	<!--  Off-dock CY Container List - Coincidence -->
+	<screen name="ESD_TES_0018">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/offdockcyinvoicemanage/jsp/ESD_TES_0018.jsp" />
+	</screen>
+
+	<!--  Off-dock CY Container List - Coincidence 팝업 -->
+	<screen name="ESD_TES_0018Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/offdockcyinvoicemanage/jsp/ESD_TES_0018.jsp" />
+	</screen>
+
+	<!-- @ Off-dock CY Container List 조회 부분	END	-->	
+
+	<!-- @@	OffdockCYInvoiceManage	END	-->
+
+
+	<!-- @@	OndockRailChargeInvoiceManage	START	-->
+	<!--  Volume Adjustment PopUp 화면 -->
+	<screen name="ESD_TES_9031" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_9031.jsp" />
+	</screen>
+
+	<!--  Volume Adjustment PopUp 화면 팝업 -->
+	<screen name="ESD_TES_9031Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_9031.jsp" />
+	</screen>
+
+	<!--  Volume Adjustment PopUp 화면 팝업 사용하지 않음
+	<screen name="ESD_TES_907_1">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_907_1.jsp" />
+	</screen>
+
+	<screen name="ESD_TES_907_1Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_907_1.jsp" />
+	</screen>
+    -->
+    
+	<screen name="ESD_TES_9231" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_9231.jsp" />
+	</screen>
+
+	<!--   TES 3rd Party Billing Input PopUp 팝업 -->
+	<screen name="ESD_TES_9231Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_9231.jsp" />
+	</screen>
+
+
+	 <screen name="ESD_TES_9251" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_9251.jsp" />
+	</screen>
+
+	<!--   TES 3rd Party Billing Input PopUp 팝업 -->
+	<screen name="ESD_TES_9251Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_9251.jsp" />
+	</screen>
+
+	<!--  On-dock Rail Charge Invoice 등록 및 Confirm화면-Coincidence -->
+	<screen name="ESD_TES_0064">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_0064.jsp" />
+	</screen>
+
+	<!--  On-dock Rail Charge Invoice 등록 및 Confirm화면-Coincidence 팝업 -->
+	<screen name="ESD_TES_0064Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_0064.jsp" />
+	</screen>
+
+	<!--  On-dock Rail Charge Invoice 등록 및 Confirm화면-Coincidence -->
+	<screen name="ESD_TES_9130"  template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_9130.jsp" />
+	</screen>
+
+	<!--  On-dock Rail Charge Invoice 등록 및 Confirm화면-Coincidence 팝업 -->
+	<screen name="ESD_TES_9130Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_9130.jsp" />
+	</screen>
+
+	<!--  On-dock Rail Charge Invoice 등록 및 Confirm화면-Coincidence -->
+	<screen name="ESD_TES_9061" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_9061.jsp" />
+	</screen>
+
+	<!--  On-dock Rail Charge Container List 조회 -->
+	<screen name="ESD_TES_0068">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_0068.jsp" />
+	</screen>
+
+	<!--  On-dock Rail Charge Container List 조회 팝업 -->
+	<screen name="ESD_TES_0068Pop" template="templatePop">
+		<parameter key="title"	value="NYKPI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/serviceproviderinvoicemanage/ondockrailchargeinvoicemanage/jsp/ESD_TES_0068.jsp" />
+	</screen>
+
+
+	<!-- @@	OndockRailChargeInvoiceManage	END	-->
+
+	<!-- ###	TES Invoice Creation & Inquiry END	###===========================================================-->
+
+
+
+	<!-- ###	Guarantee Common START	###===========================================================-->
+
+	<!-- yOng hO lEE : 2009-10-22 start -->
+    <screen name="GuaranteeCommon">
+        <parameter key="title"    value="GuaranteeCommon" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/tes/common/guaranteecommon/jsp/GuaranteeCommon.jsp"/>
+    </screen>
+	<!-- yOng hO lEE : 2009-10-22 end -->
+
+	<!-- ###	Guarantee Common END	###===========================================================-->
+
+
+
+	<!-- ###	Guarantee Creation & Inquiry START	###===========================================================-->
+	<!-- yOng hO lEE : 2009-10-13 start -->
+    <screen name="ESD_TES_2001">
+        <parameter key="title"    value="Guarantee Creation Adjustment" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/tes/guaranteemanage/guaranteemanage/jsp/ESD_TES_2001.jsp"/>
+    </screen>
+	<!-- yOng hO lEE : 2009-10-13 end -->
+
+	<!-- yOng hO lEE : 2009-10-14 start -->
+    <screen name="ESD_TES_2002">
+        <parameter key="title"    value="Guarantee Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/tes/guaranteemanage/guaranteemanage/jsp/ESD_TES_2002.jsp"/>
+    </screen>
+	<!-- yOng hO lEE : 2009-10-14 end -->
+
+	<screen name="ESD_TES_2003" template="templatePop">
+		<parameter key="title"	value="Guarantee Print-out" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tes/guaranteemanage/guaranteemanage/jsp/ESD_TES_2003.jsp"/>
+	</screen>
+	
+	<!-- yOng hO lEE : 2009-10-14 start -->
+    <screen name="ESD_TES_2004" template="templatePop">
+        <parameter key="title"    value="Ref.No. Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/tes/common/guaranteecommon/jsp/ESD_TES_2004.jsp"/>
+    </screen>
+	<!-- yOng hO lEE : 2009-10-14 end -->
+
+	<!-- yOng hO lEE : 2009-10-14 start -->
+	<screen name="ESD_TES_2005">
+		<parameter key="title"    value="Vendor Code Inquiry" direct="true"/>
+		<parameter key="body"     value="apps/opus/esd/tes/guaranteemanage/guaranteemanage/jsp/ESD_TES_2005.jsp"/>
+	</screen>
+	<!-- yOng hO lEE : 2009-10-14 end -->
+
+	<!-- yOng hO lEE : 2009-10-14 start -->
+    <screen name="ESD_TES_2006">
+		<parameter key="title"    value="Irregular Creation Adjustment" direct="true"/>
+		<parameter key="body"     value="apps/opus/esd/tes/guaranteemanage/irregularmanage/jsp/ESD_TES_2006.jsp"/>
+    </screen>
+
+    <screen name="ESD_TES_2006Popup" template="templatePop">
+		<parameter key="title"    value="Irregular Creation Adjustment" direct="true"/>
+		<parameter key="body"     value="apps/opus/esd/tes/guaranteemanage/irregularmanage/jsp/ESD_TES_2006.jsp"/>
+    </screen>
+	<!-- yOng hO lEE : 2009-10-14 end -->
+
+	<!-- yOng hO lEE : 2009-10-14 start -->
+	<screen name="ESD_TES_2007">
+		<parameter key="title"    value="Irregular Inquiry" direct="true"/>
+		<parameter key="body"     value="apps/opus/esd/tes/guaranteemanage/irregularmanage/jsp/ESD_TES_2007.jsp"/>
+	</screen>
+	<!-- yOng hO lEE : 2009-10-14 end -->
+
+	<!-- yOng hO lEE : 2009-10-14 start -->
+    <screen name="ESD_TES_2008" template="templatePop">
+        <parameter key="title"    value="Guarantee TPB I/F" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/tes/guaranteemanage/tpbinterfacemanage/jsp/ESD_TES_2008.jsp"/>
+    </screen>
+	<!-- yOng hO lEE : 2009-10-14 end -->
+	<!-- JEONGMIN CHO : 2012-04-17 start -->
+    <screen name="ESD_TES_0041">
+        <parameter key="title"    value="China Special Feeder" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/tes/serviceprovideragreementmanage/terminalagreementmanage/jsp/ESD_TES_0041.jsp"/>
+    </screen>
+	<!-- JEONGMIN CHO : 2012-04-17 end -->
+	<!-- ###	Guarantee Creation & Inquiry END	###===========================================================-->
+	
+	<!-- ###	Hostory Inquiry START	###===========================================================-->
+	<!-- NYK : 2017-01-18 start -->
+    <screen name="ESD_TES_9400" template="templatePop">
+        <parameter key="title"    value="History Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/tes/common/teshistorycommon/jsp/ESD_TES_9400.jsp"/>
+    </screen>
+	<!-- NYK : 2017-01-18 end -->
+	<!-- ###	Hostory Inquiry E N D	###===========================================================-->
+
+    <!-- ###	TES eBilling START	###===========================================================-->
+	<!--  EDI Get PDF 팝업 -->
+	<screen name="ESD_TES_9110Popup" template="templatePop">
+		<parameter key="title"	value="EDIInvoiceView" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tes/common/tescommon/jsp/ESD_TES_9110.jsp" />
+    </screen>
+    <!-- ###	TES eBilling E N D	###===========================================================-->
+</screen-definitions>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="DaylightSavingTimeDBDAODaylightSavingTimeListRSQL">
+			<desc><![CDATA[Charge의 모든 목록을 가져온다.]]></desc>
+			<sql><![CDATA[
+SELECT DST_ID
+      ,DST_CNT_CD
+      ,DST_YR
+      ,DST_MNTS
+      ,ST_DST_DT
+      ,END_DST_DT
+      ,''     AS MDM_YN
+      ,DECODE(DELT_FLG,'Y','Delete','Active') AS DELT_FLG
+      ,ST_DST_RULE_DESC 
+      ,END_DST_RULE_DESC 
+      ,ST_DST_HRMNT
+      ,END_DST_HRMNT 
+      ,DST_NOT_APLY_STE_CD
+  FROM (
+	    SELECT ROW_NUMBER() OVER (ORDER BY DST_ID ASC) AS NO
+              ,DST_ID
+              ,DST_CNT_CD
+              ,DST_YR
+              ,DST_MNTS
+              ,ST_DST_DT
+              ,END_DST_DT
+              ,DELT_FLG
+              ,ST_DST_RULE_DESC 
+              ,END_DST_RULE_DESC 
+              ,ST_DST_HRMNT
+              ,END_DST_HRMNT
+              ,DST_NOT_APLY_STE_CD 
+	      FROM MDM_DYLGT_SAV_TM
+	     WHERE 1 = 1   
+	     #if (${dst_cnt_cd} != '')
+		   AND DST_CNT_CD like @[dst_cnt_cd] || '%'
+	     #end    
+	     #if (${mdm_yn} != '')
+		    #if (${delt_flg} == 'Y') 
+		       AND DELT_FLG = @[delt_flg]
+		    #elseif (${delt_flg} == 'ALL') 
+		    #else 
+		       AND DELT_FLG <> 'Y'
+		    #end
+	     #else	
+		   AND DELT_FLG <> 'Y'
+	     #end
+         #if (${dst_yr} != '')
+           AND DST_YR = @[dst_yr]
+         #end
+       ) 
+WHERE 1=1
+ORDER BY DST_ID			]]></sql>
+			<params>
+				<param name="dst_cnt_cd" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="dst_yr" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

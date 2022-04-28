@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="TaxDBDAOSearchIndiaTaxVendorSacListRSQL">
+			<desc><![CDATA[Vendor SAC ComboItem Search.]]></desc>
+			<sql><![CDATA[
+SELECT MC.VNDR_SEQ
+     , MC.VNDR_COST_CD
+     , (SELECT INTG_CD_VAL_DP_DESC
+          FROM COM_INTG_CD_DTL
+         WHERE INTG_CD_ID = 'CD00709'
+           AND INTG_CD_VAL_CTNT = MC.VNDR_COST_CD ) AS VNDR_COST_NM
+     , MC.CNTR_VNDR_SVC_CD
+     , (SELECT INTG_CD_VAL_DP_DESC
+          FROM COM_INTG_CD_DTL
+         WHERE INTG_CD_ID = 'CD00708'
+           AND INTG_CD_VAL_CTNT = MC.CNTR_VNDR_SVC_CD ) AS CNTR_VNDR_SVC_NM
+     , MC.SVC_ACCTG_CD
+     , 'Y' AS USE_FLG
+  FROM MDM_CNTR_VNDR_CLSS MC
+ WHERE 1=1
+   AND MC.VNDR_SEQ = @[vndr_seq]
+   AND MC.DELT_FLG = 'N'
+   AND MC.SVC_ACCTG_CD IS NOT NULL			]]></sql>
+			<params>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<!-- yhha : 2014-05-07 start -->
+    <screen name="STM_SCO_0010">
+        <parameter key="title"    value="Period Closing" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0010.jsp"/>
+    </screen>
+	<!-- yhha : 2014-05-07 end -->
+	
+	<!-- 2017-06-23 start -->
+    <screen name="STM_SCO_0011" template="templatePop">
+        <parameter key="title"  value="Not Closed AR/AP Period PopUp" direct="true"/>
+        <parameter key="body"   value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0011.jsp"/>
+    </screen>
+	<!-- 2017-06-23 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SCO_0020">
+        <parameter key="title"    value="Look up" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0020.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SCO_0050">
+        <parameter key="title"    value="Ledger Code Combination" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0050.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- kyungsam jo : 2015-03-17 start -->
+    <screen name="STM_SCO_0090"   template="templatePop">
+        <parameter key="title"    value="Ledger Code Combination" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0090.jsp"/>
+    </screen>
+	<!-- kyungsam jo : 2015-03-17 end -->
+	
+	<!-- sungyong park : 2014-03-05 start -->
+    <screen name="STM_SCO_0100">
+        <parameter key="title"    value="Office Information" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0100.jsp"/>
+    </screen>
+	<!-- sungyong park : 2014-03-05 end -->
+	
+	<!-- ORKIM : 2014-10-16 start -->
+    <screen name="STM_SCO_0200">
+        <parameter key="title"    value="AP Cost Activity Information" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0200.jsp"/>
+    </screen>
+	<!-- ORKIM : 2014-10-16 end -->	
+	
+	<!-- junbum lee : 2014-10-17 start -->
+	<screen name="STM_SCO_0300">
+        <parameter key="title"    value="SAKURA Code Conversion" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0300.jsp"/>
+    </screen>
+	<!-- junbum lee : 2014-10-17 end -->
+	
+    <screen name="STM_SCO_0051" template="templatePop">
+        <parameter key="title"    value="Company Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0051.jsp"/>
+    </screen>
+       
+    <screen name="STM_SCO_0052" template="templatePop">
+        <parameter key="title"    value="Region Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0052.jsp"/>
+    </screen>
+    
+    <screen name="STM_SCO_0053" template="templatePop">
+        <parameter key="title"    value="Center Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0053.jsp"/>
+    </screen>
+
+    <screen name="STM_SCO_0054" template="templatePop">
+        <parameter key="title"    value="Account Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0054.jsp"/>
+    </screen>
+    
+    <screen name="STM_SCO_0055" template="templatePop">
+        <parameter key="title"    value="Inter Company Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0055.jsp"/>
+    </screen>
+
+    <screen name="STM_SCO_0056" template="templatePop">
+        <parameter key="title"    value="VVD Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0056.jsp"/>
+    </screen>
+    
+    <screen name="STM_SCO_0060">
+        <parameter key="title"    value="Create Revenue Port based on Last Loading Port" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0060.jsp"/>
+    </screen>
+    
+    <screen name="STM_SAC_0020">
+        <parameter key="title"    value="TES Manual Cancellation" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0400.jsp"/>
+    </screen>
+	
+	<!-- EUN-SUP LEE : 2012-04-13 start -->
+    <screen name="STM_SAC_0010">
+        <parameter key="title"    value="Estimated Revenue VVD Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/fin/financemanagement/financecreation/jsp/COM_COM_1003.jsp"/>
+    </screen>
+	<!--  EUN-SUP LEE : 2012-04-13 end -->
+    
+    <!-- sjLee : 2016-01-19 start -->
+    <screen name="STM_SCO_9999">
+        <parameter key="title"    value="Closing Accrual Monthly Job Execute" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_9999.jsp"/>
+    </screen>
+   <!-- sjLee : 2015-01-19 end --> 
+    
+    <!-- sjLee : 2016-04-13 start -->
+    <screen name="STM_SAC_0030">
+        <parameter key="title"    value="Closing Accrual Monthly Job Execute" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_9999.jsp"/>
+    </screen>
+    <!-- sjLee : 2016-04-13 end -->
+    
+    <!-- kana wakaumi : 2016-04-26 start -->
+    <screen name="STM_SCO_0500">
+        <parameter key="title"    value="SAKURA Interface Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0500.jsp"/>
+    </screen>
+    <!-- kana wakaumi : 2016-04-26 end -->
+    
+    <!-- 2JY : 2016-12-21 start -->
+    <screen name="STM_SAC_0040">
+        <parameter key="title"    value="Monthly TES/TRS Accrual Veriification" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0410.jsp"/>
+    </screen>
+    <!-- 2JY : 2016-12-21 end -->
+    
+    <!-- 2JY : 2016-12-21 start -->
+    <screen name="STM_SAC_0050">
+        <parameter key="title"    value="Monthly Cost Accrual Veriification" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0420.jsp"/>
+    </screen>
+    <!-- 2JY : 2016-12-21 end -->
+    <!-- HYN : 2017-08-16 start  -->
+    <screen name="STM_SAC_0430">
+        <parameter key="title"    value="TES Manual Accrual Adjustment" direct="true"/>
+        <parameter key="body"     value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0430.jsp"/>
+    </screen>
+    <screen name="STM_SAC_0431" template="templatePop">
+        <parameter key="title"  value="TES Manual Accrual Adjustment Detail" direct="true"/>
+        <parameter key="body"   value="apps/opus/stm/sco/statementcommon/statementcommon/jsp/STM_SCO_0431.jsp"/>
+    </screen>
+    <!-- HYN : 2017-08-16 end -->
+</screen-definitions>

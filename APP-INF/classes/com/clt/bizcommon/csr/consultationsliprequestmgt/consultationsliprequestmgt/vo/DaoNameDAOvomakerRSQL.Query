@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="DaoNameDAOvomakerRSQL">
+			<desc><![CDATA[vo maker]]></desc>
+			<sql><![CDATA[
+--//ApPayInvDtlVO
+select 
+'' vsl_cd          
+, '' delt_flg        
+, '' so_seq          
+, '' cre_dt          
+, '' inv_rgst_seq    
+, '' rev_dir_cd      
+, '' so_20ft_qty     
+, '' acct_cd         
+, '' cntr_tpsz_cd    
+, '' so_40ft_qty     
+, '' inv_amt         
+, '' port_cd         
+, '' upd_usr_id      
+, '' inv_rgst_no     
+, '' upd_dt          
+, '' so_ofc_cty_cd   
+, '' skd_voy_no      
+, '' skd_dir_cd      
+, '' so_teu_qty      
+, '' so_ut_qty       
+, '' cre_usr_id      
+, '' slan_cd         
+, '' yd_cd           
+, '' lgs_cost_cd     
+, '' act_vvd_cd      
+, '' inv_desc        
+, '' act_plc         
+, '' act_dt          
+, '' stl_key_no      
+, '' ownr_vndr_seq
+from dual			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOModifyAPInvoiceByStmSapUSQL">
+			<desc><![CDATA[STM SAP 모듈에서 payment 가 일어날때 호출]]></desc>
+			<sql><![CDATA[
+UPDATE AP_INV_HDR A
+SET (A.PAY_AMT, A.PAY_DT, A.PAY_MZD_LU_CD)
+    = (
+       SELECT SUM(SPD.PAY_AMT) AS PAY_AMT
+             ,TO_CHAR(MAX(SPH.PAY_DT),'YYYYMMDD') PAY_DT
+             ,SIH.PAY_MZD_LU_CD
+       FROM  SAP_INV_HDR SIH
+            ,SAP_PAY_HDR SPH 
+            ,SAP_PAY_DTL SPD
+       WHERE SPH.PAY_SEQ = SPD.PAY_SEQ
+       AND   SIH.INV_SEQ = SPD.INV_SEQ
+       AND   SIH.INV_NO = A.CSR_NO
+       GROUP BY SIH.INV_NO, SIH.PAY_MZD_LU_CD
+      ) 
+   ,EAI_EVNT_DT = SYSDATE
+WHERE   A.CSR_NO = @[csr_no]
+AND EXISTS  (
+              SELECT 'Y'
+              FROM  SAP_INV_HDR SIH
+              WHERE 1=1
+              AND SIH.INV_NO = A.CSR_NO              
+            )			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

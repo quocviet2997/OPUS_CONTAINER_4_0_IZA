@@ -1,0 +1,1379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- Park Hee Dong : 2009-04-24 start -->
+    <url-mapping url="FNS_JOO_0028.do" screen="FNS_JOO_0028.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FnsJoo0028Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.JointOperationMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-04-24 end -->
+
+	<!-- Park Hee Dong : 2009-04-28 start -->
+    <url-mapping url="FNS_JOO_0002.do" screen="FNS_JOO_0002.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FnsJoo0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.JointOperationMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-04-28 end -->
+
+	<!-- Park Hee Dong : 2009-05-07 start -->
+    <url-mapping url="JOOCommon.do" screen="JOOCommon.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.joocommon.joofindcodeandcheck.event.JOO_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="JOOCommonGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.joocommon.joofindcodeandcheck.event.JOO_COM_HTMLAction</web-action-class>
+    </url-mapping>
+	
+    <url-mapping url="JOO_VVD_LIST.do" screen="JOO_VVD_LIST.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.joocommon.joofindcodeandcheck.event.JOO_COM_HTMLAction</web-action-class>
+    </url-mapping>
+	
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.joocommon.joofindcodeandcheck.event.JooComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.joocommon.JOOCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-05-07 end -->
+
+	<!-- Park Hee Dong : 2009-05-11 start -->
+    <url-mapping url="FNS_JOO_0006.do" screen="FNS_JOO_0006.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FnsJoo0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.JointOperationMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-05-11 end -->
+
+	<!-- Park Hee Dong : 2009-05-18 start -->
+    <url-mapping url="FNS_JOO_0003.do" screen="FNS_JOO_0003.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FnsJoo0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.JointOperationMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-05-18 end -->
+
+	<!-- Park Hee Dong : 2009-05-18 start -->
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR Start -->	
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR Start -->	
+    <url-mapping url="FNS_JOO_0044.do" screen="FNS_JOO_0044.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0044HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0044GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0044HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0044Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR End -->	
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR End -->	
+	<!-- Park Hee Dong : 2009-05-18 end -->
+
+	<!-- Park Hee Dong : 2009-05-19 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR Start	-->
+    <url-mapping url="FNS_JOO_0026.do" screen="FNS_JOO_0026.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0026GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0026Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+<!--Heedong Park : 2011-02-21 OPUS CNTR End -->	
+	<!-- Park Hee Dong : 2009-05-19 end -->
+
+	<!-- Park Hee Dong : 2009-05-19 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR Start	-->
+    <url-mapping url="FNS_JOO_0027.do" screen="FNS_JOO_0027.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0027Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+<!--Heedong Park : 2011-02-21 OPUS CNTR End -->	
+	<!-- Park Hee Dong : 2009-05-19 end -->
+
+	<!-- Park Hee Dong : 2009-05-20 start -->
+    <url-mapping url="FNS_JOO_0004.do" screen="FNS_JOO_0004.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FnsJoo0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.JointOperationMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-05-20 end -->
+
+	<!-- Park Hee Dong : 2009-05-21 start -->
+    <url-mapping url="FNS_JOO_0005.do" screen="FNS_JOO_0005.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FnsJoo0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.JointOperationMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-05-21 end -->
+
+	<!-- Park Hee Dong : 2009-05-26 start -->
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR Start -->
+    <url-mapping url="FNS_JOO_0013.do" screen="FNS_JOO_0013.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0013Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!--Heedong Park : 2011-02-21 OPUS CNTR End -->
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR Start-->
+    <url-mapping url="FNS_JOO_0014.do" screen="FNS_JOO_0014.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0014Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- Park Hee Dong : 2009-05-29 end -->
+
+	<!-- Park Hee Dong : 2009-06-02 start -->
+    <url-mapping url="FNS_JOO_0053.do" screen="FNS_JOO_0053.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0053GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0053Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-06-02 end -->
+
+	<!-- Park Hee Dong : 2009-06-02 start -->
+    <url-mapping url="FNS_JOO_0012.do" screen="FNS_JOO_0012.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-06-02 end -->
+
+	<!-- Park Hee Dong : 2009-06-04 start -->
+    <url-mapping url="FNS_JOO_0007.do" screen="FNS_JOO_0007.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-06-04 end -->
+
+	<!-- HAM : 2009-06-04 start -->
+    <url-mapping url="FNS_JOO_0030.do" screen="FNS_JOO_0030.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FNS_JOO_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FNS_JOO_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FnsJoo0030Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- HAM : 2009-06-04 end -->
+	
+	<!-- HAM : 2009-06-08 start -->
+    <url-mapping url="FNS_JOO_0032.do" screen="FNS_JOO_0032.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FNS_JOO_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FNS_JOO_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FnsJoo0032Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- HAM : 2009-06-08 end -->	
+	<!-- Park Hee Dong : 2009-06-09 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <url-mapping url="FNS_JOO_0009.do" screen="FNS_JOO_0009.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End-->	    
+	<!-- Park Hee Dong : 2009-06-09 end -->
+
+	<!-- Ham : 2009-06-09 start -->
+    <url-mapping url="FNS_JOO_0024.do" screen="FNS_JOO_0024.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0024GS.do" screen="com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.JointOperationConsultationViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0024Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Ham : 2009-06-09 end -->
+	<!-- HAM : 2009-06-10 start -->
+    <url-mapping url="FNS_JOO_0069.do" screen="FNS_JOO_0069.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0069HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0069GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0069HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0069Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- HAM : 2009-06-10 end -->	
+	<!-- Park Hee Dong : 2009-06-10 start -->
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start -->
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   Start	-->	
+    <url-mapping url="FNS_JOO_0022.do" screen="FNS_JOO_0022.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0022Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   End	-->	
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- Park Hee Dong : 2009-06-10 end -->
+
+	<!-- Park Hee Dong : 2009-06-11 start -->
+    <url-mapping url="FNS_JOO_0023.do" screen="FNS_JOO_0023.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0023Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-06-11 end -->
+	<!-- Park Hee Dong : 2009-06-15 start -->
+    <url-mapping url="FNS_JOO_0018.do" screen="FNS_JOO_0018.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0018Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-06-15 end -->
+
+	<!-- HAM DAE SUNG : 2009-06-16 start -->
+    <url-mapping url="FNS_JOO_0037.do" screen="FNS_JOO_0037.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0037Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- HAM DAE SUNG : 2009-06-16 end -->
+
+	<!-- HAM DAE SUNG : 2009-06-17 start -->
+    <url-mapping url="FNS_JOO_0033.do" screen="FNS_JOO_0033.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FNS_JOO_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FNS_JOO_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FnsJoo0033Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- HAM DAE SUNG : 2009-06-17 end -->
+
+	<!-- Park Hee Dong : 2009-06-19 start -->
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start -->
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   Start	-->	
+    <url-mapping url="FNS_JOO_0025.do" screen="FNS_JOO_0025.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0025Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   End	-->	
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   End -->
+	<!-- Park Hee Dong : 2009-06-19 end -->
+
+	<!-- HAM DAE SUNG : 2009-06-23 start -->
+    <url-mapping url="FNS_JOO_0036.do" screen="FNS_JOO_0036.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0036Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- HAM DAE SUNG : 2009-06-23 end -->
+
+<!-- jang kang cheol : 2009-06-29 start -->
+    <url-mapping url="FNS_JOO_0039.do" screen="FNS_JOO_0039.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0039HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0039GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0039HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0039Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+<!-- jang kang cheol : 2009-06-29 end -->
+	<!-- jang kang cheol : 2009-06-30 start -->
+    <url-mapping url="FNS_JOO_0029.do" screen="FNS_JOO_0029.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FNS_JOO_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0029GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FNS_JOO_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FnsJoo0029Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-06-30 end -->
+
+	<!-- Park Hee Dong : 2009-07-01 start -->
+    <!-- Heedong Park : 2011-02-21 OPUS CNTR   Start-->		
+    <url-mapping url="FNS_JOO_0010.do" screen="FNS_JOO_0010.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+    <!--Heedong Park : 2011-02-21 OPUS CNTR   End -->    
+	<!-- Park Hee Dong : 2009-07-01 end -->
+
+	<!-- jang kang cheol : 2009-07-03 start -->
+    <url-mapping url="FNS_JOO_0034_01.do" screen="FNS_JOO_0034_01.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FNS_JOO_0034_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0034_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FNS_JOO_0034_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FnsJoo003401Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-07-03 end -->
+
+	<!-- jang kang cheol : 2009-07-06 start -->
+    <url-mapping url="FNS_JOO_0034_02.do" screen="FNS_JOO_0034_02.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FNS_JOO_0034_02HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0034_02GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FNS_JOO_0034_02HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FnsJoo003402Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-07-06 end -->
+
+	<!-- jang kang cheol : 2009-07-10 start -->
+    <url-mapping url="FNS_JOO_0038.do" screen="FNS_JOO_0038.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0038GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0038Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-07-10 end -->
+
+	<!-- jang kang cheol : 2009-07-10 start -->
+    <url-mapping url="FNS_JOO_0042.do" screen="FNS_JOO_0042.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0042GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0042Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-07-10 end -->
+
+	<!-- jang kang cheol : 2009-07-10 start -->
+    <url-mapping url="FNS_JOO_0043.do" screen="FNS_JOO_0043.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0043HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0043GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0043HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0043Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-07-10 end -->
+
+	<!-- jang kang cheol : 2009-07-10 start -->
+    <url-mapping url="FNS_JOO_0049.do" screen="FNS_JOO_0049.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0049GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0049Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-07-10 end -->
+
+	<!-- jang kang cheol : 2009-07-10 start -->
+    <url-mapping url="FNS_JOO_0050.do" screen="FNS_JOO_0050.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0050GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0050Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-07-10 end -->
+
+	<!-- Park Hee Dong : 2009-07-13 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start		-->
+    <url-mapping url="FNS_JOO_0011.do" screen="FNS_JOO_0011.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End-->    
+	<!-- Park Hee Dong : 2009-07-13 end -->
+
+	<!-- Park Hee Dong : 2009-07-20 start -->
+    <url-mapping url="FNS_JOO_0045.do" screen="FNS_JOO_0045.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0045GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0045Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-07-20 end -->
+
+	<!-- Park Hee Dong : 2009-07-23 start -->
+    <url-mapping url="FNS_JOO_0016.do" screen="FNS_JOO_0016.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0016Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-07-23 end -->
+
+	<!-- Park Hee Dong : 2009-08-03 start -->
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start -->
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   Start	-->	
+    <url-mapping url="FNS_JOO_0017.do" screen="FNS_JOO_0017.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0017Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   End	-->	
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- Park Hee Dong : 2009-08-03 end -->
+
+	<!-- Park Hee Dong : 2009-08-06 start -->
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start -->
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   Start	-->	
+    <url-mapping url="FNS_JOO_0020.do" screen="FNS_JOO_0020.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0020Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   End	-->	
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- Park Hee Dong : 2009-08-06 end -->
+
+	<!-- jang kang cheol : 2009-08-11 start -->
+    <url-mapping url="FNS_JOO_0015.do" screen="FNS_JOO_0015.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0015Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-08-11 end -->
+	<!-- Park Hee Dong : 2009-08-12 start -->
+    <url-mapping url="FNS_JOO_0068.do" screen="FNS_JOO_0068.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0068HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0068GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0068HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0068Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-08-12 end -->
+
+	<!-- jang kang cheol : 2009-08-18 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	 -->
+    <url-mapping url="FNS_JOO_0040.do" screen="FNS_JOO_0040.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0040Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- jang kang cheol : 2009-08-18 end -->
+
+	<!-- jang kang cheol : 2009-08-19 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	 -->
+    <url-mapping url="FNS_JOO_0041.do" screen="FNS_JOO_0041.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0041GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0041Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- jang kang cheol : 2009-08-19 end -->
+
+	<!-- jang chang su : 2009-09-04 start -->
+    <url-mapping url="FNS_JOO_0054.do" screen="FNS_JOO_0054.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0054GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0054Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- jang chang su : 2009-09-04 end -->
+	
+	<!-- jang chang su : 2009-09-03 start -->
+    <url-mapping url="FNS_JOO_0055.do" screen="FNS_JOO_0055.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0055HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0055GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0055HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0055Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- jang chang su : 2009-09-03 end -->
+ 
+
+	<!-- jang kang cheol : 2009-09-17 start -->
+    <url-mapping url="FNS_JOO_0056.do" screen="FNS_JOO_0056.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0056HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0056GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0056HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0056Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="VOP_OPF_0045_POP.do" screen="VOP_OPF_0045_POP.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0045HTMLAction</web-action-class>
+    </url-mapping>    
+	<!-- jang kang cheol : 2009-09-17 end -->
+
+	<!-- Park Hee Dong : 2009-09-16 start -->
+    <url-mapping url="FNS_JOO_0074.do" screen="FNS_JOO_0074.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FNS_JOO_0074HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0074GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FNS_JOO_0074HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationaccrualcreation.event.FnsJoo0074Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2009-09-16 end -->
+	
+	<!-- jang kang cheol : 2009-09-24 start -->
+    <url-mapping url="FNS_JOO_0057.do" screen="FNS_JOO_0057.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0057HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0057GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0057HTMLAction</web-action-class>
+    </url-mapping>
+
+	<!-- Park Hee Dong : 2009-10-16 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <url-mapping url="FNS_JOO_0046.do" screen="FNS_JOO_0046.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0046GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0046Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- Park Hee Dong : 2009-10-16 end -->
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0057Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2009-09-24 end -->	
+
+	<!-- Park Hee Dong : 2010-01-15 start -->
+    <url-mapping url="FNS_JOO_0080.do" screen="FNS_JOO_0080.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0080HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0080GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0080HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0080Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2010-01-15 end -->
+
+	<!-- jang kang cheol : 2010-01-15 start -->
+    <url-mapping url="FNS_JOO_0079.do" screen="FNS_JOO_0079.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0079HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0079GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0079HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FnsJoo0079Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.JointOperationMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2010-01-15 end -->
+ 
+
+	<!-- jang kang cheol : 2010-01-25 start -->
+    <url-mapping url="FNS_JOO_0081.do" screen="FNS_JOO_0081.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0081HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0081GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0081HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0081Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2010-01-25 end -->
+	
+    <!-- jang kang cheol : 2010-02-08 start -->	
+ 
+     <url-mapping url="FNS_JOO_0081_EXCELGS.do" screen="com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0081ExcelViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0081HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0081Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+    
+	<!-- jang kang cheol : 2010-02-08 end -->
+	
+	<!-- Lee Jun Bum : 2010-11-08 start -->
+    <url-mapping url="FNS_JOO_0082.do" screen="FNS_JOO_0082.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.joocommon.joofileupload.event.FNS_JOO_0082HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="FNS_JOO_0082GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+    <web-action-class>com.clt.apps.opus.fns.joo.joocommon.joofileupload.event.FNS_JOO_0082HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+    <event-class>com.clt.apps.opus.fns.joo.joocommon.joofileupload.event.FnsJoo0082Event</event-class>
+    <service-action-class>com.clt.apps.opus.fns.joo.joocommon.JOOCommonSC</service-action-class>
+    </event-mapping>
+    <!-- Lee Jun Bum : 2010-11-08 end -->
+    
+	<!-- Jongkyu Weon : 2010-11-16 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <url-mapping url="FNS_JOO_0083.do" screen="FNS_JOO_0083.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0083HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0083GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0083HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FnsJoo0083Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.JointOperationMasterDataMgtSC</service-action-class>
+    </event-mapping>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   Start-->
+	<!-- Jongkyu Weon : 2010-11-16 end -->
+
+	<!-- Park Hee Dong : 2010-12-23 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <url-mapping url="FNS_JOO_0085.do" screen="FNS_JOO_0085.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0085HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0085GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FNS_JOO_0085HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.jointoperationmasterdatamgt.event.FnsJoo0085Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.JointOperationMasterDataMgtSC</service-action-class>
+    </event-mapping>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->
+	<!-- Park Hee Dong : 2010-12-23 end -->
+
+	<!-- NYK Add : 2014-12-05 start -->
+    <url-mapping url="FNS_JOO_0084.do" screen="FNS_JOO_0084.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0084HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="FNS_JOO_0084GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0084HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0084DL.do" screen="com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0084ViewAdapterDL">
+       <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0084HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<!-- NYK Add : 2015-06-08 start -->
+    <url-mapping url="FNS_JOO_0084_01DL.do" screen="com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0084ExcelViewAdapterDL">
+       <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0084HTMLAction</web-action-class>
+	</url-mapping>
+	<!-- NYK Add : 2015-06-08 e n d -->
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0084Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2014-12-05 e n d -->
+
+	<!-- NYK Add : 2015-05-11 start -->
+    <url-mapping url="FNS_JOO_0086.do" screen="FNS_JOO_0086.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0086HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="FNS_JOO_0086GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0086HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0086Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2015-05-11 e n d -->
+
+	<!-- NYK Add : 2015-05-11 start -->
+    <url-mapping url="FNS_JOO_0087.do" screen="FNS_JOO_0087.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0087HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="FNS_JOO_0087GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FNS_JOO_0087HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.carriersettlementprocess.event.FnsJoo0087Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2015-05-11 e n d -->
+
+	<!-- NYK Add : 2016-05-12 start -->
+    <url-mapping url="FNS_JOO_0088.do" screen="FNS_JOO_0088.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.renewalmasterdatamgt.event.FNS_JOO_0088HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0088GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.renewalmasterdatamgt.event.FNS_JOO_0088HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.renewalmasterdatamgt.event.FnsJoo0088Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.RenewalMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2016-05-12 end -->
+
+	<!-- NYK Add : 2016-05-12 start -->
+    <url-mapping url="FNS_JOO_0089.do" screen="FNS_JOO_0089.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.renewalmasterdatamgt.event.FNS_JOO_0089HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0089GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.renewalmasterdatamgt.event.FNS_JOO_0089HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.renewalmasterdatamgt.event.FnsJoo0089Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.RenewalMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2016-05-12 end -->
+
+	<!-- NYK Add : 2016-05-12 start -->
+    <url-mapping url="FNS_JOO_0090.do" screen="FNS_JOO_0090.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.renewalmasterdatamgt.event.FNS_JOO_0090HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0090GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.renewalmasterdatamgt.event.FNS_JOO_0090HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.renewalmasterdatamgt.event.FnsJoo0090Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationmasterdatamgt.RenewalMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2016-05-12 end -->
+
+	<!-- NYK Add : 2016-05-12 start -->
+    <url-mapping url="FNS_JOO_0101.do" screen="FNS_JOO_0101.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0101Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalConsultationSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2016-05-12 end -->
+
+	<!-- NYK Add : 2016-05-12 start -->
+    <url-mapping url="FNS_JOO_0102.do" screen="FNS_JOO_0102.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0102HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0102GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0102HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0102Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalConsultationSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2016-05-12 end -->
+
+	<!-- NYK Add : 2016-05-12 start -->
+    <url-mapping url="FNS_JOO_0103.do" screen="FNS_JOO_0103.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0103GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0103HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="FNS_JOO_0103Pop.do" screen="FNS_JOO_0103Pop.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0103Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalConsultationSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2016-05-12 end -->
+
+	<!-- NYK Add : 2016-05-12 start -->
+    <url-mapping url="FNS_JOO_0104.do" screen="FNS_JOO_0104.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0104GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0104Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalConsultationSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2016-05-12 end -->
+
+	<!-- NYK Add : 2016-05-12 start -->
+    <url-mapping url="FNS_JOO_0105.do" screen="FNS_JOO_0105.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0105Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalConsultationSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2016-05-12 end -->
+
+	<!-- NYK Add : 2016-05-12 start -->
+    <url-mapping url="FNS_JOO_0106.do" screen="FNS_JOO_0106.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0106HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0106GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0106HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0106Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalConsultationSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2016-05-12 end -->
+
+	<!-- NYK Add : 2016-05-12 start -->
+    <url-mapping url="FNS_JOO_0107.do" screen="FNS_JOO_0107.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0107GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0107Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalConsultationSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2016-05-12 end -->
+
+	<!-- NYK Add : 2016-05-12 start -->
+    <url-mapping url="FNS_JOO_0108.do" screen="FNS_JOO_0108.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0108HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0108GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0108HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0108Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalConsultationSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2016-05-12 end -->
+    <url-mapping url="FNS_JOO_0205.do" screen="FNS_JOO_0205.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0205HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0205GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FNS_JOO_0205HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.jointoperationconsultation.event.FnsJoo0205Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.JointOperationAgreementSettlementSC</service-action-class>
+    </event-mapping>	
+
+	<!-- NYK Add : 2017-10-16 start -->
+    <url-mapping url="FNS_JOO_0201.do" screen="FNS_JOO_0201.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0201HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0201GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0201HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0201Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalConsultationSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="FNS_JOO_0202.do" screen="FNS_JOO_0202.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0202HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0202GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0202HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0202Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalConsultationSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2017-10-16 end  -->
+    
+	<!-- NYK Add : 2017-10-31 start  -->
+    <url-mapping url="FNS_JOO_0203.do" screen="FNS_JOO_0203.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0203HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0203GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0203HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0203Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalConsultationSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2017-10-31 end  -->
+    
+	<!-- NYK Add : 2017-11-14 start  -->
+    <url-mapping url="FNS_JOO_0301.do" screen="FNS_JOO_0301.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalaccrual.event.FNS_JOO_0301HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0301GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalaccrual.event.FNS_JOO_0301HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalaccrual.event.FnsJoo0301Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2017-11-14 end  -->
+    
+	<!-- NYK Add : 2017-11-14 start  -->
+    <url-mapping url="FNS_JOO_0302.do" screen="FNS_JOO_0302.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalaccrual.event.FNS_JOO_0302HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0302GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalaccrual.event.FNS_JOO_0302HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalaccrual.event.FnsJoo0302Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2017-11-14 end  -->
+	<url-mapping url="FNS_JOO_0109.do" screen="FNS_JOO_0109.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0109HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="FNS_JOO_0109GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0109HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0109Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalConsultationSC</service-action-class>
+    </event-mapping>    
+    <url-mapping url="FNS_JOO_0110.do" screen="FNS_JOO_0110.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0110HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="FNS_JOO_0110GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0110HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0110Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalConsultationSC</service-action-class>
+    </event-mapping> 
+    
+	<!-- NYK Add : 2017-12-13 start  -->
+    <url-mapping url="FNS_JOO_0204.do" screen="FNS_JOO_0204.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0204HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0204GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0204HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0204Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalConsultationSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2017-12-13 end  -->   
+    
+	<!-- NYK Add : 2018-01-24 start  -->
+    <url-mapping url="FNS_JOO_0304.do" screen="FNS_JOO_0304.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalaccrual.event.FNS_JOO_0304HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0304GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalaccrual.event.FNS_JOO_0304HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalaccrual.event.FnsJoo0304Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- NYK Add : 2018-01-24 end  -->
+	<!-- IZANAGI Add : 2018-06-15 start -->
+    <url-mapping url="FNS_JOO_0206.do" screen="FNS_JOO_0206.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0206HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0206GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0206HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0206Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalTheaConsultationSC</service-action-class>
+    </event-mapping>
+    <!-- IZANAGI Add : 2018-06-15 end -->
+	<!-- IZANAGI Add : 2018-06-15 THEA Invoice Summary And Creation Popup start -->
+    <url-mapping url="FNS_JOO_0207.do" screen="FNS_JOO_0207.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0207HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0207GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0207HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0207Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalTheaConsultationSC</service-action-class>
+    </event-mapping>
+    <!-- IZANAGI Add : 2018-06-15 THEA Invoice Summary And Creation Popup end -->
+    
+    <!-- IZANAGI Add : 2018-06-27 THEA CSR Creation start -->
+        <url-mapping url="FNS_JOO_0209.do" screen="FNS_JOO_0209.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0209HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0209GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0209HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0209Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalTheaConsultationSC</service-action-class>
+    </event-mapping>
+	<!-- IZANAGI Add : 2018-06-27 THEA CSR Creation end -->
+	
+	<!-- IZANAGI Add : 2018-10-17 THEA Invoice Inquiry start -->
+	<url-mapping url="FNS_JOO_0210.do" screen="FNS_JOO_0210.screen" >
+		<web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0210HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="FNS_JOO_0210GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0210HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0210Event</event-class>
+		<service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalTheaConsultationSC</service-action-class>
+	</event-mapping>
+	<url-mapping url="FNS_JOO_0211.do" screen="FNS_JOO_0211.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0211HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="FNS_JOO_0211GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0211HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0211Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalTheaConsultationSC</service-action-class>
+    </event-mapping>
+    <url-mapping url="FNS_JOO_0212.do" screen="FNS_JOO_0212.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0212HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="FNS_JOO_0212GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FNS_JOO_0212HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.renewalconsultation.event.FnsJoo0212Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.jointoperationagreementsettlement.RenewalTheaConsultationSC</service-action-class>
+    </event-mapping>
+	<!-- IZANAGI Add : 2018-10-17 THEA Invoice Inquiry end -->
+
+	<!-- Tu.Nguyen : 2019-03-26 start -->
+    <url-mapping url="FNS_JOO_0901.do" screen="FNS_JOO_0901.screen" >
+        <web-action-class>com.clt.apps.opus.fns.joo.training.joocarriermgmt.event.FNS_JOO_0901HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_JOO_0901GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.joo.training.joocarriermgmt.event.FNS_JOO_0901HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.joo.training.joocarriermgmt.event.FnsJoo0901Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.joo.training.TrainingSC</service-action-class>
+    </event-mapping>
+	<!-- Tu.Nguyen : 2019-03-26 end -->
+
+</mappings>

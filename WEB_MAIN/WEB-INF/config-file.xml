@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config-file xmlns="http://www.cyberlogitec.com/config-file">
+	<mappings>
+
+		<!-- Do not delete this configuration about mappings.xml -->
+		<!-- Default Mapping File It uses Framework -->
+		<file-path>
+			<path>/WEB-INF/mappings.xml</path>
+			<description>Default mapping</description>
+		</file-path>
+		<!-- Default Mapping File It use Framework -->
+
+		<!-- ALPS Mapping File It uses System management -->
+		<file-path>
+			<path>/WEB-INF/mappings_syscommon_common.xml</path>
+			<description>syscommon common mapping File</description>
+		</file-path>
+		<file-path>
+			<path>/WEB-INF/mappings_syscommon_management.xml</path>
+			<description>syscommon management mapping File</description>
+		</file-path>
+		<file-path>
+			<path>/WEB-INF/mappings_edm.xml</path>
+			<description>Code migration</description>
+		</file-path>
+		<file-path>
+			<path>/WEB-INF/mappings_com_sample.xml</path>
+			<description>ALPS Sample</description>
+		</file-path>
+		<!-- ALPS Mapping File It uses System management -->
+
+
+		<!-- ALPS Biz Common Mapping File It uses all of System -->
+		<file-path>
+			<path>/WEB-INF/mappings_bizcommon.xml</path>
+			<description>
+			</description>
+		</file-path>
+		<!-- ALPS Biz Common Mapping File It uses all of System -->
+
+
+
+
+		<!-- ===================== Ccd ===================== -->
+		<!-- IT Arch  : 2011-02-15 modified -->
+		<file-path>
+			<path>/WEB-INF/mappings_ccd.xml</path>
+			<description>ccd mapping File</description>
+		</file-path>
+		<!-- ===================== Ccd ===================== -->
+
+		<!-- ===================== Fms ===================== -->
+		<!-- IT Arch  : 2009-05-15 modified -->
+		<file-path>
+			<path>/WEB-INF/mappings_fms.xml</path>
+			<description>fms mapping File</description>
+		</file-path>
+		<!-- ===================== Fms ===================== -->
+		
+	    <!-- ===================== FLT start ===================== -->
+	    <!-- : 2014-03-03 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_flt.xml</path>
+			<description>>flt mapping File</description>
+		</file-path>
+	    <!-- : 2014-03-03 end -->
+	    <!-- ====================== FLT end ====================== -->
+
+		<!-- ===================== Fin ===================== -->
+		<!-- IT Arch  : 2011-02-16 modified -->
+		<file-path>
+			<path>/WEB-INF/mappings_fin.xml</path>
+			<description>fin mapping File</description>
+		</file-path>
+		<!-- ===================== Fin ===================== -->
+
+		<!-- ===================== Sup ===================== -->
+		<!-- IT Arch  : 2011-02-16 modified -->
+		<file-path>
+			<path>/WEB-INF/mappings_sup.xml</path>
+			<description>sup mapping File</description>
+		</file-path>
+		<!-- ===================== Sup ===================== -->
+
+		<!-- =====================  PRI start  ===================== -->
+		<!-- Park Sungsoo : 2009-04-15 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_pri.xml</path>
+			<description>
+			</description>
+		</file-path>
+		<!-- Park Sungsoo : 2009-04-15 end -->
+		<!-- =====================  PRI end  ===================== -->
+
+
+
+		<!-- =====================  CJM start  ===================== -->
+		<!-- cjm : 2009-04-17 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_gem.xml</path>
+			<description>
+			</description>
+		</file-path>
+		<!-- cjm : 2009-04-17 end -->
+		<!-- =====================  CJM end  ===================== -->
+
+
+		<!-- =====================  BKG start  ===================== -->
+		<!-- KIM SEUNG MIN : 2009-04-21 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_bkg.xml</path>
+			<description>
+			</description>
+		</file-path>
+		<!-- KIM SEUNG MIN : 2009-04-21 end -->
+		<!-- =====================  BKG end  ===================== -->
+
+
+
+		<!-- =====================  INV start  ===================== -->
+		<!-- saeil kim : 2009-04-24 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_inv.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- saeil kim : 2009-04-24 end -->
+		<!-- =====================  INV end  ===================== -->
+
+
+
+		<!-- ===================== JOO start ===================== -->
+		<!-- Park Hee Dong : 2009-04-24 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_joo.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Park Hee Dong : 2009-04-24 end -->
+		<!-- ===================== JOO end ===================== -->
+
+
+
+		<!-- ===================== OPF start ===================== -->
+		<!-- Sunyoung : 2009-04-28 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_opf.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Sunyoung : 2009-04-28 end -->
+		<!-- ===================== OPF end ===================== -->
+
+
+
+		<!-- ===================== CGM start ===================== -->
+		<!-- Eui-su Park : 2009-04-27 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_cgm.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Eui-su Park : 2009-04-27 end -->
+		<!-- ===================== CGM end ===================== -->
+
+
+
+		<!-- ===================== SCG start ===================== -->
+		<!-- Dohyoung Lee : 2009-04-28 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_scg.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Dohyoung Lee : 2009-04-28 end -->
+		<!-- ===================== SCG end ===================== -->
+
+
+
+		<!-- ===================== VSK start ===================== -->
+		<!-- Ryu Hyuk : 2009-04-28 start -->
+			<file-path>
+				<path>/WEB-INF/mappings_vsk.xml</path>
+				<description> </description>
+			</file-path>
+		<!-- Ryu Hyuk : 2009-04-28 end -->
+		<!-- ===================== VSK end ===================== -->
+
+
+
+		<!-- ===================== CTM start ===================== -->
+		<!-- KyungMin Woo : 2009-04-24 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_ctm.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- KyungMin Woo : 2009-04-24 end -->
+		<!-- ===================== CTM end ===================== -->
+
+
+
+		<!-- ===================== LSE start ===================== -->
+		<!-- Nho Jung Yong : 2009-04-27 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_lse.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Nho Jung Yong : 2009-04-27 end -->
+		<!-- ===================== LSE end ===================== -->
+
+
+
+		<!-- ===================== MNR start ===================== -->
+		<!-- IT Arch : 2009-05-15 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_mnr.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- IT Arch : 2009-05-15 end -->
+		<!-- ===================== MNR end ===================== -->
+
+
+		<!-- ===================== MST start ===================== -->
+		<!-- Suk Jun Kim : 2009-04-28 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_mst.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Suk Jun Kim : 2009-04-28 end -->
+		<!-- ===================== MST end ===================== -->
+
+
+
+		<!-- ===================== DMT start ===================== -->
+		<!-- SungHoon Lee : 2009-05-07 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_dmt.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- SungHoon Lee : 2009-05-07 end -->
+		<!-- ===================== DMT end ===================== -->
+
+
+
+		<!-- ===================== PSO start ===================== -->
+		<!-- Kim Jin Ihl : 2009-04-28 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_pso.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Kim Jin Ihl : 2009-04-28 end -->
+		<!-- ===================== PSO end ===================== -->
+
+		<!-- ===================== PRI start ===================== -->
+		<!-- Park Kwang Seok : 2009-05-14 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_cim.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Park Kwang Seok : 2009-05-14 end -->
+		<!-- ===================== PRI end ===================== -->
+
+		<!-- Choi song soo : 2009-04-29 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_dom.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Choi song soo : 2009-04-29 end -->
+
+    <!-- =====================  EQR  ===================== -->
+        <file-path>
+        	<path>/WEB-INF/mappings_eqr.xml</path>
+        	<description>EQR</description>
+        </file-path>
+    <!-- ==================================================== -->
+
+	<!-- =====================  TRS  ===================== -->
+       <file-path>
+        	<path>/WEB-INF/mappings_trs.xml</path>
+        	<description>TRS</description>
+        </file-path>
+	<!-- ==================================================== -->
+
+    <!-- =====================  EAS  ===================== -->
+        <file-path>
+            <path>/WEB-INF/mappings_eas.xml</path>
+            <description>Expense Audit</description>
+        </file-path>
+    <!-- ==================================================== -->
+
+    <!-- =====================  TES  ===================== -->
+        <file-path>
+        	<path>/WEB-INF/mappings_tes.xml</path>
+        	<description>Terminal Service</description>
+        </file-path>
+    <!-- ==================================================== -->
+        <!-- =====================  PRD  ===================== -->
+        <file-path>
+        	<path>/WEB-INF/mappings_prd.xml</path>
+        	<description>PRD </description>
+        </file-path>
+    <!-- =====================  SPED  ===================== -->
+		<file-path>
+			<path>/WEB-INF/mappings_sped.xml</path>
+			<description>SPED </description>
+		</file-path>
+
+        <!-- =====================  SCE  ===================== -->
+        <file-path>
+        	<path>/WEB-INF/mappings_sce.xml</path>
+        	<description>SCE </description>
+        </file-path>
+
+        <!-- =====================  COA  ===================== -->
+        <file-path>
+        	<path>/WEB-INF/mappings_coa.xml</path>
+        	<description>COA </description>
+        </file-path>
+    	<!-- ================================================= -->
+        <!-- =====================  BSA  ===================== -->
+        <file-path>
+        	<path>/WEB-INF/mappings_bsa.xml</path>
+        	<description>BSA</description>
+        </file-path>
+        <!-- =====================  LEA  ===================== -->
+        <file-path>
+        	<path>/WEB-INF/mappings_lea.xml</path>
+        	<description>LEA</description>
+        </file-path>
+        <!-- ================================================= -->
+    	<!-- =====================  CSR  ===================== -->
+		<file-path>
+			<path>/WEB-INF/mappings_csr.xml</path>
+			<description>CSR </description>
+		</file-path>
+
+ 		<!-- =====================  TPB  ===================== -->
+ 		<file-path>
+			<path>/WEB-INF/mappings_tpb.xml</path>
+			<description> </description>
+		</file-path>
+
+			<!-- ===================== SPP start ===================== -->
+		<!-- Kim Seong Kwang : 2009-07-15 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_spp.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Kim Seong Kwang : 2009-07-15 end -->
+		<!-- ===================== SPP end ===================== -->
+
+	<!-- Sung Mi Young : 2009-07-22 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_saq.xml</path>
+			<description>saq</description>
+		</file-path>
+	<!-- Sung Mi Young : 2009-07-22 end -->
+
+	<!-- CHOI Yun Sung : 2009-07-29 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_spc.xml</path>
+			<description>spc</description>
+		</file-path>
+	<!-- CHOI Yun Sung : 2009-07-29 end -->
+
+	<!-- Lee Ho Jin : 2009-08-06 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_agt.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- Lee Ho Jin : 2009-08-06 end -->
+
+
+	<!-- CNI -->
+		<file-path>
+			<path>/WEB-INF/mappings_cni.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- CNI -->
+
+	<!-- ===================== SPP end ===================== -->
+	<!-- Hyunsu, Ryu 2010.01.20 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_bis.xml</path>
+			<description></description>
+		</file-path>
+	<!-- Hyunsu, Ryu 2010.01.20 end -->
+	<!-- ===================== SPP end ===================== -->
+
+
+	<!--  : 2011-02-15 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_.xml</path>
+			<description> </description>
+		</file-path>
+	<!--  : 2011-02-15 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_sam.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+
+	<!-- =====================  ACM start  ===================== -->
+	<!-- KIM, Sang-Soo : 2012-11-02 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_acm.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- KIM, Sang-Soo : 2012-11-02 end -->
+	<!-- ======================  ACM end  ====================== -->
+
+	<!-- =====================  SAP start  ===================== -->
+	<!--  : 2014-03-03 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_sap.xml</path>
+			<description> </description>
+		</file-path>
+	<!--  : 2014-03-03 end -->
+	<!-- ======================  SAP end  ====================== -->
+	
+	<!-- =====================  SAR start  ===================== -->
+	<!--  : 2014-03-03 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_sar.xml</path>
+			<description> </description>
+		</file-path>
+	<!--  : 2014-03-03 end -->
+	<!-- ======================  SAR end  ====================== -->
+	
+	<!-- =====================  SCO start  ===================== -->
+	<!--  : 2014-03-03 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_sco.xml</path>
+			<description> </description>
+		</file-path>
+	<!--  : 2014-03-03 end -->
+	<!-- ======================  SCO end  ====================== -->
+
+	<!-- ===================== FLT start ===================== -->
+	<!-- : 2014-03-03 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_flt.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- : 2014-03-03 end -->
+	<!-- ====================== FLT end ====================== -->
+
+	<!-- ===================== OCP start ===================== -->
+	<!-- : 2017-01-24 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_ocp.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- : 2017-01-24 end -->
+	<!-- ====================== OCP end ====================== -->
+
+
+	<!-- ===================== SCG XTRA start ===================== -->
+	<!-- Dohyoung Lee : 2018-12-28 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_scg_xtra.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- Dohyoung Lee : 2018-12-28 end -->
+	<!-- ===================== SCG XTRA end ===================== -->
+
+
+	<!-- Vi Nguyen : 2020-03-17 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_dou.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- Vi Nguyen : 2020-03-17 end -->
+
+	<!-- Viet Tran : 2022-03-16 start -->
+		<file-path>
+			<path>/WEB-INF/mappings_clv.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- Viet Tran : 2022-03-16 end -->
+
+	</mappings>
+
+	<!-- =====================  screendefinitions file Start ===================== -->
+
+	<screendefinitions>
+
+		<!-- Do not delete this configuratioALPS screen.xml -->
+		<!-- Default Screen Mapping File It uses Framework -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_ko_KR.xml</path>
+			<description>COMMON + Additional work(default Not modify)</description>
+		</file-path>
+
+		<file-path>
+			<path>/WEB-INF/screendefinitions_syscommon_common.xml</path>
+			<description>syscommon common screendefinition File</description>
+		</file-path>
+
+		<file-path>
+			<path>/WEB-INF/screendefinitions_syscommon_management.xml</path>
+			<description>syscommon management screendefinition File</description>
+		</file-path>
+
+		<file-path>
+			<path>/WEB-INF/screendefinitions_edm.xml</path>
+			<description>Code migration</description>
+		</file-path>
+		<file-path>
+			<path>/WEB-INF/screendefinitions_com_sample.xml</path>
+			<description>ALPS Sample</description>
+		</file-path>
+		<!-- ALPS Screen Mapping File It uses System management -->
+
+
+		<!-- ALPS Biz Common Screen Mapping File It uses all of System -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_bizcommon.xml</path>
+			<description>
+			</description>
+		</file-path>
+		<!-- ALPS Biz Common Screen Mapping File It uses all of System -->
+
+
+
+
+
+		<!-- =====================  CCD start  ===================== -->
+		<!-- IT Arch : 2011-02-15 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_ccd.xml</path>
+			<description>ccd screendefinition File</description>
+		</file-path>
+		<!-- IT Arch : 2009-05-15 end -->
+		<!-- =====================  CCD start  ===================== -->
+
+		<!-- =====================  FMS start  ===================== -->
+		<!-- IT Arch : 2009-05-15 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_fms.xml</path>
+			<description>fms screendefinition File</description>
+		</file-path>
+		<!-- IT Arch : 2009-05-15 end -->
+		<!-- =====================  FMS start  ===================== -->
+		
+	    <!-- ===================== FLT start ===================== -->
+	    <!-- : 2017-02-27 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_flt.xml</path>
+			<description>flt screendefinition File </description>
+		</file-path>
+	    <!-- : 2017-02-27 end -->
+	    <!-- ====================== FLT end ====================== -->   
+
+		<!-- =====================  FIN start  ===================== -->
+		<!-- IT Arch : 2011-02-16 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_fin.xml</path>
+			<description>fin screendefinition File</description>
+		</file-path>
+		<!-- IT Arch : 2011-02-16 end -->
+		<!-- =====================  FIN start  ===================== -->
+
+		<!-- =====================  SUP start  ===================== -->
+		<!-- IT Arch : 2011-02-16 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_sup.xml</path>
+			<description>sup screendefinition File</description>
+		</file-path>
+		<!-- IT Arch : 2011-02-16 end -->
+		<!-- =====================  SUP start  ===================== -->
+
+
+
+		<!-- =====================  PRI start  ===================== -->
+		<!-- Park Sungsoo : 2009-04-15 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_pri.xml</path>
+			<description>
+			</description>
+		</file-path>
+		<!-- Park Sungsoo : 2009-04-15 end -->
+		<!-- =====================  PRI end  ===================== -->
+
+
+
+		<!-- =====================  GAE start  ===================== -->
+		<!-- cjm : 2009-04-17 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_gem.xml</path>
+			<description>
+			</description>
+		</file-path>
+		<!-- cjm : 2009-04-17 end -->
+		<!-- =====================  GAE end  ===================== -->
+
+
+
+		<!-- =====================  BKG start  ===================== -->
+		<!-- KIM SEUNG MIN : 2009-04-21 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_bkg.xml</path>
+			<description>
+			</description>
+		</file-path>
+		<!-- KIM SEUNG MIN : 2009-04-21 end -->
+		<!-- =====================  BKG end  ===================== -->
+
+
+
+		<!-- =====================  INV start  ===================== -->
+		<!-- saeil kim : 2009-04-24 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_inv.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- saeil kim : 2009-04-24 end -->
+		<!-- =====================  BKG end  ===================== -->
+
+
+
+		<!-- =====================  JOO start  ===================== -->
+		<!-- Park Hee Dong : 2009-04-24 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_joo.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Park Hee Dong : 2009-04-24 end -->
+		<!-- =====================  JOO end  ===================== -->
+
+
+
+		<!-- =====================  OPF start  ===================== -->
+		<!-- Sunyoung : 2009-04-28 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_opf.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Sunyoung : 2009-04-28 end -->
+		<!-- =====================  OPF end  ===================== -->
+
+
+
+		<!-- =====================  SCG start  ===================== -->
+		<!-- Dohyoung Lee : 2009-04-28 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_scg.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Dohyoung Lee : 2009-04-28 end -->
+		<!-- =====================  SCG end  ===================== -->
+
+
+
+		<!-- =====================  CGM start  ===================== -->
+		<!-- Eui-su Park : 2009-04-27 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_cgm.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Eui-su Park : 2009-04-27 end -->
+		<!-- =====================  CGM end  ===================== -->
+
+
+
+		<!-- =====================  VSK start  ===================== -->
+		<!-- Ryu Hyuk : 2009-04-28 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_vsk.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Ryu Hyuk : 2009-04-28 end -->
+		<!-- =====================  VSK end  ===================== -->
+
+
+
+		<!-- =====================  CTM start  ===================== -->
+		<!-- KyungMin Woo : 2009-04-24 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_ctm.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- KyungMin Woo : 2009-04-24 end -->
+		<!-- =====================  CTM end  ===================== -->
+
+
+
+		<!-- =====================  LSE start  ===================== -->
+		<!-- Nho Jung Yong : 2009-04-27 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_lse.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Nho Jung Yong : 2009-04-27 end -->
+		<!-- =====================  LSE end  ===================== -->
+
+
+
+		<!-- =====================  MNR start  ===================== -->
+		<!-- IT Arch : 2009-05-15 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_mnr.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- IT Arch : 2009-05-15 end -->
+		<!-- =====================  MNR end  ===================== -->
+
+		<!-- =====================  MST start  ===================== -->
+		<!-- Suk Jun Kim : 2009-04-28 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_mst.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Suk Jun Kim : 2009-04-28 end -->
+		<!-- =====================  MST end  ===================== -->
+
+
+
+		<!-- =====================  DMT start  ===================== -->
+		<!-- SungHoon Lee : 2009-05-07 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_dmt.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- SungHoon Lee : 2009-05-07 end -->
+		<!-- =====================  DMT end  ===================== -->
+
+
+
+		<!-- ===================== PSO start ===================== -->
+		<!-- Kim Jin Ihl : 2009-04-28 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_pso.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Kim Jin Ihl : 2009-04-28 end -->
+		<!-- ===================== PSO end ===================== -->
+
+
+		<!-- ===================== CIM start ===================== -->
+		<!-- Park Kwang Seok : 2009-05-14 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_cim.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Park Kwang Seok : 2009-05-14 end -->
+		<!-- ===================== CIM end ===================== -->
+
+		<!-- Jang Chang Soo : 2009-05-21 start -->
+			<file-path>
+				<path>/WEB-INF/screendefinitions_tot.xml</path>
+				<description> </description>
+			</file-path>
+		<!-- Jang Chang Soo : 2009-05-21 end -->
+
+		<!-- Choi song soo : 2009-04-29 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_dom.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Choi song soo : 2009-04-29 end -->
+
+
+	<!--  ===================== EQR ===================== -->
+        <file-path>
+        	<path>/WEB-INF/screendefinitions_eqr.xml</path>
+        	<description>EQR</description>
+        </file-path>
+     <!-- ==================================================== -->
+
+	 <!-- =====================  TRS  ===================== -->
+       <file-path>
+        	<path>/WEB-INF/screendefinitions_trs.xml</path>
+        	<description>TRS</description>
+        </file-path>
+	<!-- ==================================================== -->
+
+     <!--  ===================== EAS ===================== -->
+        <file-path>
+            <path>/WEB-INF/screendefinitions_eas.xml</path>
+            <description>Expense Audit</description>
+        </file-path>
+     <!-- ==================================================== -->
+
+
+	 <!--  ===================== TES ===================== -->
+        <file-path>
+        	<path>/WEB-INF/screendefinitions_tes.xml</path>
+        	<description>Terminal Service</description>
+        </file-path>
+     <!-- ==================================================== -->
+
+	<!-- =======================SPED======================= -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_sped.xml</path>
+			<description>SPED</description>
+		</file-path>
+	<!-- ================================================== -->
+
+        <!-- ===================== PRD ===================== -->
+        <file-path>
+        	<path>/WEB-INF/screendefinitions_prd.xml</path>
+        	<description>PRD</description>
+        </file-path>
+
+        <!-- ===================== SCE ===================== -->
+        <file-path>
+        	<path>/WEB-INF/screendefinitions_sce.xml</path>
+        	<description>SCE</description>
+        </file-path>
+
+        <!-- =====================  COA  ===================== -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_coa.xml</path>
+			<description>COA</description>
+		</file-path>
+    	<!-- ================================================= -->
+        <!-- =====================  BSA  ===================== -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_bsa.xml</path>
+			<description>BSA</description>
+		</file-path>
+    	<!-- ================================================= -->
+        <!-- =====================  LEA  ===================== -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_lea.xml</path>
+			<description>LEA</description>
+		</file-path>
+    	<!-- ================================================= -->
+		<!-- =====================  CSR  ===================== -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_csr.xml</path>
+			<description>CSR </description>
+		</file-path>
+		<!-- HAM DAE SUNG : 2009-07-01 end -->
+
+		<!-- =====================  TPB  ===================== -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_tpb.xml</path>
+			<description> </description>
+		</file-path>
+
+		<!-- ===================== SPP start ===================== -->
+		<!-- Kim Seong Kwang : 2009-07-15 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_spp.xml</path>
+			<description> </description>
+		</file-path>
+		<!-- Kim Seong Kwang : 2009-07-15 end -->
+		<!-- ===================== SPP end ===================== -->
+
+	<!-- Sung Mi Young : 2009-07-22 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_saq.xml</path>
+			<description>saq</description>
+		</file-path>
+	<!-- Sung Mi Young : 2009-07-22 end -->
+
+	<!-- CHOI Yun Sung : 2009-07-29 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_spc.xml</path>
+			<description>spc</description>
+		</file-path>
+	<!-- CHOI Yun Sung : 2009-07-29 end -->
+
+	<!-- Lee Ho Jin : 2009-08-06 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_agt.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- Lee Ho Jin : 2009-08-06 end -->
+
+	<!-- CNI -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_cni.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- CNI -->
+
+	<!-- ===================== BIS start ===================== -->
+	<!-- Hyunsu, Ryu : 2010-01-20 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_bis.xml</path>
+			<description></description>
+		</file-path>
+	<!-- Hyunsu, Ryu : 2010-01-20 end -->
+	<!-- ===================== BIS end ===================== -->
+
+
+	<!--  : 2011-02-15 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_.xml</path>
+			<description> </description>
+		</file-path>
+	<!--  : 2011-02-15 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_sam.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+
+	<!-- =====================  ACM start  ===================== -->
+	<!-- KIM, Sang-Soo : 2012-11-02 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_acm.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- KIM, Sang-Soo : 2012-11-02 end -->
+	<!-- ======================  ACM end  ====================== -->
+	
+	<!-- =====================  SAP start  ===================== -->
+	<!--  : 2014-03-03 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_sap.xml</path>
+			<description> </description>
+		</file-path>
+	<!--  : 2014-03-03 end -->
+	<!-- ======================  SAP end  ====================== -->	
+
+	<!-- =====================  SAR start  ===================== -->
+	<!--  : 2014-03-03 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_sar.xml</path>
+			<description> </description>
+		</file-path>
+	<!--  : 2014-03-03 end -->
+	<!-- ======================  SAR end  ====================== -->
+	
+	<!-- =====================  SCO start  ===================== -->
+	<!--  : 2014-03-03 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_sco.xml</path>
+			<description> </description>
+		</file-path>
+	<!--  : 2014-03-03 end -->
+	<!-- ======================  SCO end  ====================== -->	
+
+	<!-- ===================== FLT start ===================== -->
+	<!-- : 2017-02-27 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_flt.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- : 2017-02-27 end -->
+	<!-- ====================== FLT end ====================== -->
+
+	<!-- ===================== OCP start ===================== -->
+	<!-- : 2017-01-24 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_ocp.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- : 2017-01-24 end -->
+	<!-- ====================== OCP end ====================== -->
+	
+	
+
+	<!-- ===================== OCP start ===================== -->
+	<!-- : 2018-12-28 start -->
+        <file-path>
+        	<path>/WEB-INF/screendefinitions_scg_xtra.xml</path>
+        	<description>SCG</description>
+        </file-path>
+	<!-- : 2018-12-28 end -->
+
+
+	<!-- Vi Nguyen : 2020-03-17 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_dou.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- Vi Nguyen : 2020-03-17 end -->
+
+	<!-- Viet Tran : 2022-03-16 start -->
+		<file-path>
+			<path>/WEB-INF/screendefinitions_clv.xml</path>
+			<description> </description>
+		</file-path>
+	<!-- Viet Tran : 2022-03-16 end -->
+
+</screendefinitions>
+	<!-- =====================  screendefinitions file End   ===================== -->
+
+</config-file>

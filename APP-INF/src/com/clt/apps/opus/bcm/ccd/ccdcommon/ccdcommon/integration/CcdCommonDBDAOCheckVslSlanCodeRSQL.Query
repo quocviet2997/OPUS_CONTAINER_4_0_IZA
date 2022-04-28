@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckVslSlanCodeRSQL">
+			<desc><![CDATA[MDM_VSL_SVC_LANE 테이블에 slanCd 에 
+해당하는 정보가 있는지 유무를 리턴한다.]]></desc>
+			<sql><![CDATA[
+SELECT VSL_SLAN_CD 
+FROM MDM_VSL_SVC_LANE
+WHERE 1=1 
+AND VSL_SLAN_CD = @[vsl_slan_cd]
+AND DELT_FLG ='N'			]]></sql>
+			<params>
+				<param name="vsl_slan_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

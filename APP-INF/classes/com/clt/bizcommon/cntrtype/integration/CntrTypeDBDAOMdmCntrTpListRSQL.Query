@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CntrTypeDBDAOMdmCntrTpListRSQL">
+			<desc><![CDATA[Cntr type]]></desc>
+			<sql><![CDATA[
+SELECT CNTR_TP_CD
+       ,CNTR_TP_DESC
+       ,MODI_CNTR_TP_CD
+	   ,DECODE(DELT_FLG,'Y','Delete','Active') AS DELT_FLG
+FROM MDM_CNTR_TP
+WHERE 1=1 
+#if(${cntr_tp_cd} != '')
+AND CNTR_TP_CD LIKE @[cntr_tp_cd] || '%'
+#end
+#if (${cntr_tp_desc} != '')      
+AND CNTR_TP_DESC LIKE '%' || @[cntr_tp_desc] || '%'
+#end
+#if(${mdm_yn} == '')
+AND DELT_FLG <> 'Y'
+#elseif(${mdm_yn} == 'Y')
+	#if(${delt_flg} != 'All')
+		AND DELT_FLG = @[delt_flg]
+	#end
+#end
+ORDER BY CNTR_TP_CD ASC			]]></sql>
+			<params>
+				<param name="cntr_tp_cd" type="12" value="" out="N"/>
+				<param name="cntr_tp_desc" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

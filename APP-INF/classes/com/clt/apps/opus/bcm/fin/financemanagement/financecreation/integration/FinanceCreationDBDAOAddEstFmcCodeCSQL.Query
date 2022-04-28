@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOAddEstFmcCodeCSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+MERGE INTO GL_FMC_ENT A
+USING DUAL
+ON (
+		A.GL_MISC_N1ST_CD 		= @[gl_misc_n1st_cd] 
+	AND A.GL_MISC_N2ND_CD 		= @[gl_misc_n2nd_cd] 
+	AND A.GL_MISC_N3RD_CD 		= @[gl_misc_n3rd_cd] 	
+)
+WHEN MATCHED THEN
+  UPDATE
+     SET ENT_NM 		= @[ent_nm],
+         ENT_ABBR_NM  	= @[ent_abbr_nm],
+         DELT_FLG       = @[delt_flg],       
+         UPD_DT         = SYSDATE,
+         UPD_USR_ID     = @[upd_usr_id]
+   WHERE GL_MISC_N1ST_CD = @[gl_misc_n1st_cd]
+     AND GL_MISC_N2ND_CD = @[gl_misc_n2nd_cd]
+     AND GL_MISC_N3RD_CD = @[gl_misc_n3rd_cd]
+WHEN NOT MATCHED THEN
+  INSERT
+    (GL_MISC_N1ST_CD,
+     GL_MISC_N2ND_CD,
+     GL_MISC_N3RD_CD,
+     ENT_NM,
+     ENT_ABBR_NM,
+     DELT_FLG,
+     CRE_DT,
+     UPD_DT,
+     UPD_USR_ID)
+  VALUES
+    (@[gl_misc_n1st_cd],
+     @[gl_misc_n2nd_cd],
+     @[gl_misc_n3rd_cd],
+     @[ent_nm],
+     @[ent_abbr_nm],
+     @[delt_flg],
+     SYSDATE,
+     SYSDATE,
+     @[upd_usr_id]
+)			]]></sql>
+			<params>
+				<param name="gl_misc_n1st_cd" type="12" value="" out="N"/>
+				<param name="gl_misc_n2nd_cd" type="12" value="" out="N"/>
+				<param name="gl_misc_n3rd_cd" type="12" value="" out="N"/>
+				<param name="ent_nm" type="12" value="" out="N"/>
+				<param name="ent_abbr_nm" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

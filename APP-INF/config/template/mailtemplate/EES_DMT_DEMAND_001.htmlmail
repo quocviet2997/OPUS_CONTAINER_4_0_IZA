@@ -1,0 +1,18 @@
+<html>
+<head><title>Demurrage / Detention Statement (B/L No.: <@ bl_no >)</title></head>
+<body>
+
+	<br>
+	Attached to this e-mail is a Demurrage / Detention Statement from ONE. <br>
+	If you have any difficulties or questions pertaining to this Statement, <br>
+	please contact our local branch office. <br>
+	<br>
+	B/L No.: <@ bl_no > <br>
+	<br>
+	ONE Co., Ltd <br>
+	<br>
+	www.one-line.com <br>
+	<br>
+
+</body>
+</html>

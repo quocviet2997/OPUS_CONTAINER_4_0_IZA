@@ -1,0 +1,2059 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<!-- Park Sungsoo : 2009-04-15 start -->
+    <screen name="ESM_PRI_0001">
+        <parameter key="title"    value="Guideline Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scguidelinemain/jsp/ESM_PRI_0001.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0002">
+        <parameter key="title"    value="Guideline Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scguidelinemain/jsp/ESM_PRI_0002.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0001_01" template="templateEmpty">
+        <parameter key="title"    value="Sales Guideline Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scsalesguideline/jsp/ESM_PRI_0001_01.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0001_02" template="templateEmpty">
+        <parameter key="title"    value="Location Group Guideline Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scgrouplocationguideline/jsp/ESM_PRI_0001_02.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0001_06" template="templateEmpty">
+        <parameter key="title"    value="Rate Guideline Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scrateguideline/jsp/ESM_PRI_0001_06.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0120" template="templatePop">
+        <parameter key="title"    value="Rate Creation - Excel Import" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scrateguideline/jsp/ESM_PRI_0120.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0002_06" template="templateEmpty">
+        <parameter key="title"    value="Rate Guideline Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scrateguideline/jsp/ESM_PRI_0002_06.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0003_08" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal General/Special Rate - Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0003_08.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0026" template="templatePop">
+        <parameter key="title"    value="S/C Proposal General/Special Rate - Commodity" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0026.jsp"/>
+    </screen>
+     
+    <screen name="ESM_PRI_0114" template="templatePop">
+        <parameter key="title"    value="Amendment History - Rate (Commodity)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0114.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0049" template="templatePop">
+        <parameter key="title"    value="S/C Proposal General/Special Rate - Commodity Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0049.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0027" template="templatePop">
+        <parameter key="title"    value="S/C Proposal Rate - Route Point" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0027.jsp"/>
+    </screen>
+
+    <screen name="ESM_PRI_0115" template="templatePop">
+        <parameter key="title"    value="Amendment History - Rate (Route)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0115.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0050" template="templatePop">
+        <parameter key="title"    value="S/C Proposal General/Special Rate - Origin &amp; Destination Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0050.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0029" template="templatePop">
+        <parameter key="title"    value="Rate Creation - Excel Import(Vertical)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0029.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0099" template="templatePop">
+        <parameter key="title"    value="Rate Creation - Excel Import(Horizontal)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0099.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0066" template="templatePop">
+        <parameter key="title"    value="GRI Calculation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgricalculationproposal/jsp/ESM_PRI_0066.jsp"/>
+    </screen>
+
+    <screen name="ESM_PRI_0112" template="templatePop">
+        <parameter key="title"    value="GRI Calculation Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgricalculationproposal/jsp/ESM_PRI_0112.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0113" template="templatePop">
+        <parameter key="title"    value="GRI Calculation Inquiry - Arbitrary" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgricalculationproposal/jsp/ESM_PRI_0113.jsp"/>
+    </screen>
+
+    <screen name="ESM_PRI_0070" template="templatePop">
+        <parameter key="title"    value="Actual Customer Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0070.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0119" template="templatePop">
+        <parameter key="title"    value="Amendment History - Rate (Actual Customer)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0119.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0103" template="templatePop">
+        <parameter key="title"    value="S/C Proposal General/Special Rate - Actual Customer Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0103.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0081" template="templatePop">
+        <parameter key="title"    value="GRI Calculation - Commodity/Actual Customer Select" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgricalculationproposal/jsp/ESM_PRI_0081.jsp"/>
+    </screen>
+
+    <screen name="ESM_PRI_0091" template="templatePop">
+        <parameter key="title"    value="SC Proposal GeneralSpecial Rate - Commodity Note Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0091.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0090" template="templatePop">
+        <parameter key="title"    value="Amendment History - Rate (Commodity Note)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0090.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0092" template="templatePop">
+        <parameter key="title"    value="S/C Proposal General/Special Rate - Commodity Note Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0092.jsp"/>
+    </screen>
+
+    <screen name="ESM_PRI_0093" template="templatePop">
+        <parameter key="title"    value="Accept All" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0093.jsp"/>
+    </screen>
+
+    <screen name="ESM_PRI_0094" template="templatePop">
+        <parameter key="title"    value="Direct Call Amend Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0094.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0117" template="templatePop">
+        <parameter key="title"    value="Amendment History - Rate (Direct Call)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0117.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0097" template="templatePop">
+        <parameter key="title"    value="Route Note Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0097.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0118" template="templatePop">
+        <parameter key="title"    value="Amendment History - Rate (Route Note)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0118.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0098" template="templatePop">
+        <parameter key="title"    value="S/C Proposal General/Special Rate - Route Note Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0098.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0110" template="templatePop">
+        <parameter key="title"    value="GRI Calculation - Route Point Select" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgricalculationproposal/jsp/ESM_PRI_0110.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2001">
+        <parameter key="title"    value="RFA Guideline Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfaguidelinemain/jsp/ESM_PRI_2001.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2018">
+        <parameter key="title"    value="RFA Guideline Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfaguidelinemain/jsp/ESM_PRI_2018.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2001_04" template="templateEmpty">
+        <parameter key="title"    value="RFA Guideline Creation - Rate" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfarateguideline/jsp/ESM_PRI_2001_04.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2076" template="templatePop">
+        <parameter key="title"    value="RFA Guideline Creation - Rate(Commodity)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfarateguideline/jsp/ESM_PRI_2076.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2077" template="templatePop">
+        <parameter key="title"    value="RFA Guideline Creation - Rate(Route Point)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfarateguideline/jsp/ESM_PRI_2077.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2018_04" template="templateEmpty">
+        <parameter key="title"    value="RFA Guideline Inquiry - Rate" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfarateguideline/jsp/ESM_PRI_2018_04.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2078" template="templatePop">
+        <parameter key="title"    value="RFA Guideline Inquiry - Rate (Commodity)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfarateguideline/jsp/ESM_PRI_2078.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2079" template="templatePop">
+        <parameter key="title"    value="RFA Guideline Inquiry - Rate (Route Point)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfarateguideline/jsp/ESM_PRI_2079.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2003_07" template="templateEmpty">
+        <parameter key="title"    value="RFA Proposal Creation - Rate" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2003_07.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2041_05" template="templateEmpty">
+        <parameter key="title"    value="RFA Search - Amendment History - Rate" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2041_05.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2019_07" template="templateEmpty">
+        <parameter key="title"    value="RFA Proposal Inquiry - Rate" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2019_07.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2023" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation - Rate (Commodity)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2023.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2089" template="templatePop">
+        <parameter key="title"    value="Amendment History - Rate (Commodity)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2089.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2032" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Inquiry - Rate (Commodity)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2032.jsp"/>
+    </screen>
+
+    <screen name="ESM_PRI_2025" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation - Rate (Route Point)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2025.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2088" template="templatePop">
+        <parameter key="title"    value="Amendment History - Rate (Route)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2088.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2027" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Inquiry - Rate (Route Point)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2027.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2060" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation - Rate [Load Excel] (H Type)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2060.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2065" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation - Rate [Load Excel] (V Type)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2065.jsp"/>
+    </screen>
+
+    <screen name="ESM_PRI_2082" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation - Rate (Actual Customer)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2082.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2090" template="templatePop">
+        <parameter key="title"    value="Amendment History - Rate (Actual Customer)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2090.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2083" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Inquiry - Rate (Actual Customer)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2083.jsp"/>
+    </screen>
+
+    <screen name="ESM_PRI_2022" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation - Rate (Customer Note)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2022.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2084" template="templatePop">
+        <parameter key="title"    value="Amendment History - Rate (Commodity Note)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2084.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2072" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Inquiry;- Rate (Commodity Note)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2072.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2034" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation - Rate [Check Duplicate]" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2034.jsp"/>
+    </screen>
+
+    <screen name="ESM_PRI_2036" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation - Rate [Accept All]" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2036.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2024" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation - Rate (Route Note)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2024.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2085" template="templatePop">
+        <parameter key="title"    value="Amendment History - Rate (Route Note)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2085.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2073" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Inquiry;- Rate (Route Note)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2073.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2033" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation - Rate [GRI Calculation]" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfagricalculationproposal/jsp/ESM_PRI_2033.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2087" template="templatePop">
+        <parameter key="title"    value="GRI Calculation Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfagricalculationproposal/jsp/ESM_PRI_2087.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2081" template="templatePop">
+        <parameter key="title"    value="GRI Calculation - Commodity/Actual Customer Select" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfagricalculationproposal/jsp/ESM_PRI_2081.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_2086" template="templatePop">
+        <parameter key="title"    value="GRI Calculation - Route Point Select" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfagricalculationproposal/jsp/ESM_PRI_2086.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0057_06" template="templateEmpty">
+        <parameter key="title"    value="Amendment History Inquiry - General/Special Rate" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0057_06.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0004_09" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal General/Special Rate - Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0004_09.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0057_17"  template="templateEmpty">
+        <parameter key="title"    value="Amendment History Inquiry - Customer Type" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/sccontractpartyproposal/jsp/ESM_PRI_0057_17.jsp"/>
+    </screen>
+
+	<!-- Park Sungsoo : 2009-04-15 end -->
+
+	<!-- Kong Back Jin : 2009-04-16 start -->
+    <screen name="ESM_PRI_0001_05"  template="templateEmpty">
+        <parameter key="title"    value="S/C GOH Guideline Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scgohchargeguideline/jsp/ESM_PRI_0001_05.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-04-16 end -->
+
+	<!-- Kong Back Jin : 2009-04-17 start -->
+    <screen name="ESM_PRI_0001_04"  template="templateEmpty">
+        <parameter key="title"    value="Origin/Destination Arbitrary Charge Guideline Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scarbitrarychargeguideline/jsp/ESM_PRI_0001_04.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-04-17 end -->
+
+	<!-- Kong Back Jin : 2009-04-21 start -->
+    <screen name="ESM_PRI_0001_03"  template="templateEmpty">
+        <parameter key="title"    value="Commondity Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scgroupcommodityguideline/jsp/ESM_PRI_0001_03.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-04-21 end -->
+
+	<!-- Kong Back Jin : 2009-05-07 start -->
+    <screen name="ESM_PRI_0106"  template="templatePop">
+        <parameter key="title"    value="Rate Creation - Commodity" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scrateguideline/jsp/ESM_PRI_0106.jsp"/>
+    </screen>
+    <screen name="ESM_PRI_0021"  template="templatePop">
+        <parameter key="title"    value="Rate Guideline Creation - Route Point" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scrateguideline/jsp/ESM_PRI_0021.jsp"/>
+    </screen>
+    <screen name="ESM_PRI_0107"  template="templatePop">
+        <parameter key="title"    value="Rate Guideline Inquiry - Commodity" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scrateguideline/jsp/ESM_PRI_0107.jsp"/>
+    </screen>
+    <screen name="ESM_PRI_0072"  template="templatePop">
+        <parameter key="title"    value="Rate Guideline Inquiry - Origin &amp; Destination" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scrateguideline/jsp/ESM_PRI_0072.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-05-07 end -->
+	<!-- Kong Back Jin : 2009-05-18 start -->
+    <screen name="ESM_PRI_0019"  template="templatePop">
+        <parameter key="title"    value="S/C Proposal Creation - Duration" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scdurationproposal/jsp/ESM_PRI_0019.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-05-18 end -->	
+	<!-- Kong Back Jin : 2009-05-21 start -->
+    <screen name="ESM_PRI_0017"  template="templatePop">
+        <parameter key="title"    value="Customer Type Amend Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/sccontractpartyproposal/jsp/ESM_PRI_0017.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-05-21 end -->		
+	<!-- Kong Back Jin : 2009-05-28 start -->
+    <screen name="ESM_PRI_0023"  template="templatePop">
+        <parameter key="title"    value="Bolier Plate Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scboilerplateproposal/jsp/ESM_PRI_0023.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-05-28 end -->	
+	
+	<!-- Kong Back Jin : 2009-09-09 start -->
+    <screen name="ESM_PRI_0057_13"  template="templateEmpty">
+        <parameter key="title"    value="Amend History Inquiry - Boiler Plate" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scboilerplateproposal/jsp/ESM_PRI_0057_13.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-09-09 end -->	
+		
+	<!-- Kong Back Jin : 2009-06-04 start -->
+    <screen name="ESM_PRI_0096" template="templatePop">
+        <parameter key="title"    value="S/C Copy Option" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scproposalmain/jsp/ESM_PRI_0096.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-06-04 end -->	
+
+	<!-- Kong Back Jin : 2009-07-10 start -->
+    <screen name="ESM_PRI_0056" template="templatePop">
+        <parameter key="title"    value="S/C No. Assignement" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scproposalmain/jsp/ESM_PRI_0056.jsp"/>
+    </screen>
+    <screen name="ESM_PRI_0058" template="templatePop">
+        <parameter key="title"    value="Filing Date Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scproposalmain/jsp/ESM_PRI_0058.jsp"/>
+    </screen>    
+	<!-- Kong Back Jin : 2009-07-10 end -->		
+
+	<!-- Seung Jun Lee : 2009-04-28 start -->
+    <screen name="ESM_PRI_0001_07" template="templateEmpty">   
+        <parameter key="title"    value="SC Guideline Contract Clause" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/sccontractclauseguideline/jsp/ESM_PRI_0001_07.jsp"/>
+    </screen>
+	<!-- Seung Jun Lee : 2009-04-28 end -->
+
+	<!-- Seung Jun Lee : 2009-04-17 start -->
+    <screen name="ESM_PRI_0005">
+        <parameter key="title"    value="Standard Note Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scbasicstandardnoteguideline/jsp/ESM_PRI_0005.jsp"/>
+    </screen>
+	<!-- Seung Jun Lee : 2009-04-17 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-10-17 start -->
+    <screen name="ESM_PRI_0010">
+        <parameter key="title"    value="Standard Note Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scbasicstandardnoteguideline/jsp/ESM_PRI_0010.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-10-17 end -->
+	
+	<!-- Seung Jun Lee : 2009-04-27 start -->
+    <screen name="ESM_PRI_0007">
+        <parameter key="title"    value="Boiler Plate Guideline" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scboilerplateguideline/jsp/ESM_PRI_0007.jsp"/>
+    </screen>
+	<!-- Seung Jun Lee : 2009-04-27 end -->
+
+	<!-- Seung Jun Lee : 2009-05-11 start -->
+    <screen name="ESM_PRI_4001">
+        <parameter key="title"    value="Rating Unit Information Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/ratingunit/jsp/ESM_PRI_4001.jsp"/>
+    </screen>
+	<!-- Seung Jun Lee : 2009-05-11 end -->
+	
+	<!-- Seung Jun Lee : 2009-05-06 start -->
+    <screen name="ESM_PRI_4004">
+        <parameter key="title"    value="Surcharge Location Group Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/surchargegrouplocation/jsp/ESM_PRI_4004.jsp"/>
+    </screen>
+	<!-- Seung Jun Lee : 2009-05-06 end -->
+
+	<!-- Seung Jun Lee : 2009-05-08 start -->
+    <screen name="ESM_PRI_4008">
+        <parameter key="title"    value="Surcharge Commodity Group Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/surchargegroupcommodity/jsp/ESM_PRI_4008.jsp"/>
+    </screen>
+	<!-- Seung Jun Lee : 2009-05-08 end -->
+
+    <!-- Day-Hoh Kim : 2009-07-31 start -->
+    <screen name="ESM_PRI_4009">
+        <parameter key="title"    value="E-Service Compensation Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/eservicecompensation/jsp/ESM_PRI_4009.jsp"/>
+    </screen>
+    <!-- Day-Hoh Kim : 2009-07-31 end -->	
+	
+    <!-- Day-Hoh Kim : 2009-08-10 start -->
+    <screen name="ESM_PRI_4010">
+        <parameter key="title"    value="E-Service Compensation Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/eservicecompensation/jsp/ESM_PRI_4010.jsp"/>
+    </screen>
+    <!-- Day-Hoh Kim : 2009-08-10 end -->   
+	
+	<!-- Moon Dong Gyu : 2009-04-16 start -->
+    <screen name="ESM_PRI_0014">
+        <parameter key="title"    value="S/C Prefix Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/scprefix/jsp/ESM_PRI_0014.jsp"/>
+    </screen>
+    <screen name="ESM_PRI_0065">
+        <parameter key="title"    value="S/C Prefix &amp; Scope Mapping Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/scprefix/jsp/ESM_PRI_0065.jsp"/>
+    </screen>
+	<!-- Moon Dong Gyu : 2009-04-16 end -->
+	
+	<!-- Moon Dong Gyu : 2009-04-20 start -->
+    <screen name="ESM_PRI_0030" template="templatePop">
+        <parameter key="title"    value="Guideline MQC" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scrateguideline/jsp/ESM_PRI_0030.jsp"/>
+    </screen>
+	<!-- Moon Dong Gyu : 2009-04-20 end -->
+
+	
+
+	<!-- CHOI SUNG MIN : 2009-04-28 start -->
+    <screen name="ESM_PRI_4026" template="templatePop">
+        <parameter key="title"    value="Location Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/location/jsp/ESM_PRI_4026.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-04-28 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-04-28 start -->
+    <screen name="ESM_PRI_4031">
+        <parameter key="title"    value="Location Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/location/jsp/ESM_PRI_4031.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-04-28 end -->
+	
+	<!-- JaeYeon Kim : 2009-04-28 start -->
+    <screen name="ESM_PRI_4027" template="templatePop">
+        <parameter key="title"    value="Commodity Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/commodity/jsp/ESM_PRI_4027.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-04-28 end -->
+
+	<!-- JaeYeon Kim : 2009-04-29 start -->
+    <screen name="ESM_PRI_4014">
+        <parameter key="title"    value="Customer Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/customer/jsp/ESM_PRI_4014.jsp"/>
+    </screen>
+    <screen name="ESM_PRI_4014_POP"  template="templatePop">
+        <parameter key="title"    value="Customer Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/customer/jsp/ESM_PRI_4014.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-04-29 end -->
+	
+	<!-- Byeon Young Joo : 2009-05-06 start -->
+    <screen name="ESM_PRI_0003_02" template="templateEmpty">
+        <parameter key="title"    value="S/C Location Group Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgrouplocationproposal/jsp/ESM_PRI_0003_02.jsp"/>
+    </screen>
+
+    <screen name="ESM_PRI_0003">
+        <parameter key="title"    value="Proposal &amp; Amendment Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scproposalmain/jsp/ESM_PRI_0003.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0036" template="templatePop">
+        <parameter key="title"    value="Amendment Request" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scproposalmain/jsp/ESM_PRI_0036.jsp"/>
+    </screen>    
+	<!-- Byeon Young Joo : 2009-05-08 end -->
+	
+    <!-- Moon Dong Gyu : 2009-05-11 start -->
+    <screen name="ESM_PRI_0064" template="templatePop">
+        <parameter key="title"    value="TPW Group Commodity Select" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scgroupcommodityguideline/jsp/ESM_PRI_0064.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-05-11 end -->
+    
+    <!-- JaeYeon Kim : 2009-05-12 start -->
+    <screen name="ESM_PRI_4003">
+        <parameter key="title"    value="Surcharge Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/surcharge/jsp/ESM_PRI_4003.jsp"/>
+    </screen>
+    <screen name="ESM_PRI_4006">
+        <parameter key="title"    value="Inland Tariff/Surcharge Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/surcharge/jsp/ESM_PRI_4003.jsp"/>
+    </screen>
+    <screen name="ESM_PRI_4005" template="templatePop">
+        <parameter key="title"		value="GRI Calculation" direct="true"/>
+        <parameter key="body"	value="apps/opus/esm/pri/surcharge/surcharge/jsp/ESM_PRI_4005.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-05-12 end -->
+	
+    <!-- Moon Dong Gyu : 2009-05-13 start -->
+    <screen name="ESM_PRI_0085">
+        <parameter key="title"    value="Standard Wording for S/C Notes" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/standardwording/jsp/ESM_PRI_0085.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-05-13 end -->
+	
+	<!-- JaeYeon Kim : 2009-05-18 start -->
+    <screen name="ESM_PRI_0003_04" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal Origin/Destination Arbitrary Charge Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/sctransportationadditionalchargeproposal/jsp/ESM_PRI_0003_04.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-05-18 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-05-18 start -->
+    <screen name="ESM_PRI_0067" template="templatePop">
+        <parameter key="title"    value="Guideline Arbitrary - Excel Import" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scarbitrarychargeguideline/jsp/ESM_PRI_0067.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-05-18 end -->
+
+    <!-- Moon Dong Gyu : 2009-05-18 start -->
+    <screen name="ESM_PRI_0089" template="templatePop">
+        <parameter key="title"    value="Guideline Clause &amp; Standard Wording List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteproposal/jsp/ESM_PRI_0089.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-05-18 end -->
+    
+    <!-- Moon Dong Gyu : 2009-05-20 start -->
+    <screen name="ESM_PRI_0104" template="templatePop">
+        <parameter key="title"    value="Guideline Route Note Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scrateguideline/jsp/ESM_PRI_0104.jsp"/>
+    </screen>
+    <screen name="ESM_PRI_0105" template="templatePop">
+        <parameter key="title"    value="Rate Guideline Inquiry - Route Note" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scrateguideline/jsp/ESM_PRI_0105.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-05-20 end -->
+	<!-- CHOI SUNG MIN : 2009-05-21 start -->
+    <screen name="ESM_PRI_0003_01" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal Org/Dst Location Information - Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scroutepointproposal/jsp/ESM_PRI_0003_01.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-05-21 end -->
+
+	<!-- JaeYeon Kim : 2009-05-22 start -->
+    <screen name="ESM_PRI_0003_05" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal Origin/Destination IHC Charge-Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/sctransportationadditionalchargeproposal/jsp/ESM_PRI_0003_05.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-05-22 end -->
+
+	<!-- CHOI SUNG MIN : 2009-05-25 start -->
+    <screen name="ESM_PRI_0003_03" template="templateEmpty">
+        <parameter key="title"    value="S/C Commodity Group Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgroupcommodityproposal/jsp/ESM_PRI_0003_03.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-05-25 end -->
+
+	<!-- JaeYeon Kim : 2009-05-26 start -->
+    <screen name="ESM_PRI_0003_06" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal GOH Charge Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgohchargeproposal/jsp/ESM_PRI_0003_06.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-05-26 end -->
+
+    <!-- Moon Dong Gyu : 2009-05-22 start -->
+    <screen name="ESM_PRI_0063" template="templatePop">
+        <parameter key="title"    value="TPW Group Commodity Guideline Select" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scproposalmain/jsp/ESM_PRI_0063.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-05-22 end -->
+
+    <!-- Moon Dong Gyu : 2009-05-26 start -->
+    <screen name="ESM_PRI_4012" template="templatePop">
+        <parameter key="title"    value="Lane Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/servicelane/jsp/ESM_PRI_4012.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-05-26 end -->
+
+    <!-- Moon Dong Gyu : 2009-05-27 start -->
+    <screen name="ESM_PRI_4013" template="templatePop">
+        <parameter key="title"    value="Vessel Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/vessel/jsp/ESM_PRI_4013.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-05-27 end -->
+	<!-- CHOI SUNG MIN : 2009-06-01 start -->
+    <screen name="ESM_PRI_0003_07" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal Loading Agent Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scloadingagentproposal/jsp/ESM_PRI_0003_07.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-06-01 end -->
+
+	<!-- Kong Back Jin : 2009-06-02 start -->
+    <screen name="ESM_PRI_0025" template="templatePop">
+        <parameter key="title"    value="Proposal Affiliate Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scaffiliateproposal/jsp/ESM_PRI_0025.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-06-02 end -->
+
+    <!-- Kong Back Jin : 2009-06-02 start -->
+    <screen name="ESM_PRI_0057_09" template="templateEmpty">
+        <parameter key="title"    value="Amendment History Inquiry - Affiliate Company" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scaffiliateproposal/jsp/ESM_PRI_0057_09.jsp"/>
+    </screen>
+    <!-- Kong Back Jin : 2009-06-02 end -->
+
+    <!-- Moon Dong Gyu : 2009-05-28 start -->
+    <screen name="ESM_PRI_0009">
+        <parameter key="title"    value="Authority Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/authorizationassignment/jsp/ESM_PRI_0009.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-05-28 end -->
+
+    <!-- Moon Dong Gyu : 2009-06-04 start -->
+    <screen name="ESM_PRI_4018">
+        <parameter key="title"    value="Surcharge Location Group Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/surchargegrouplocation/jsp/ESM_PRI_4018.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-06-04 end -->
+    
+    <!-- CHOI SUNG MIN : 2009-06-04 start -->
+    <screen name="ESM_PRI_0003_09" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal Standard Note Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteproposal/jsp/ESM_PRI_0003_09.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-06-04 end -->
+
+    <!-- Moon Dong Gyu : 2009-06-05 start -->
+    <screen name="ESM_PRI_4019">
+        <parameter key="title"    value="Surcharge Commodity Group Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/surchargegroupcommodity/jsp/ESM_PRI_4019.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-06-05 end -->
+
+	<!-- CHOI SUNG MIN : 2009-06-09 start -->
+    <screen name="ESM_PRI_0003_10" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal Special Note Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteproposal/jsp/ESM_PRI_0003_10.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-06-09 end -->
+	<!-- JaeYeon Kim : 2009-06-16 start -->
+    <screen name="ESM_PRI_0006" template="templatePop">
+        <parameter key="title"    value="Guideline Copy" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scguidelinemain/jsp/ESM_PRI_0006.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-06-16 end -->
+	<!-- Byeon Young Joo : 2009-05-14 start -->
+    <screen name="ESM_PRI_0022" template="templatePop">
+        <parameter key="title"    value="Contract Parties Information" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/sccontractpartyproposal/jsp/ESM_PRI_0022.jsp"/>
+    </screen>
+	<!-- Byeon Young Joo : 2009-05-14 end -->
+		<!-- Byeon Young Joo : 2009-05-13 start -->
+    <screen name="ESM_PRI_0020" template="templatePop">
+        <parameter key="title"    value="MQC" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scmqcproposal/jsp/ESM_PRI_0020.jsp"/>
+    </screen>
+	<!-- Byeon Young Joo : 2009-05-13 end -->
+	<!-- CHOI SUNG MIN : 2009-06-23 start -->
+    <screen name="ESM_PRI_0008" template="templatePop">
+        <parameter key="title"    value="Standard Note Conversion Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scbasicstandardnoteguideline/jsp/ESM_PRI_0008.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-06-23 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-10-17 start -->
+    <screen name="ESM_PRI_0012" template="templatePop">
+        <parameter key="title"    value="Standard Note Conversion Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scbasicstandardnoteguideline/jsp/ESM_PRI_0012.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-10-17 end -->
+	
+	<!-- Byeon Young Joo : 2009-06-25 start -->
+    <screen name="ESM_PRI_0039">
+        <parameter key="title"    value="Proposal &amp; Amendment Draft Print" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/screport/screport/jsp/ESM_PRI_0039.jsp"/>
+    </screen>
+	<!-- Byeon Young Joo : 2009-06-25 end -->
+
+    <!-- Moon Dong Gyu : 2009-06-19 start -->
+    <screen name="ESM_PRI_0018" template="templatePop">
+        <parameter key="title"    value="S/C Proposal Creation - G/L Copy Option" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scproposalmain/jsp/ESM_PRI_0018.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-06-19 end -->
+    
+    <!-- Byeon Young Joo : 2009-06-30 start -->
+    <screen name="ESM_PRI_0061" template="templatePop">
+        <parameter key="title"    value="S/C Retrieval" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/screport/screport/jsp/ESM_PRI_0061.jsp"/>
+    </screen>
+	<!-- Byeon Young Joo : 2009-06-30 end -->
+	
+    <!-- Day-Hoh Kim : 2009-09-09 start -->
+    <screen name="ESM_PRI_0060">
+        <parameter key="title"    value="Rate Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/screport/screport/jsp/ESM_PRI_0060.jsp"/>
+    </screen>
+    <!-- Day-Hoh Kim : 2009-09-09 end -->
+
+    <!-- Day-Hoh Kim : 2009-08-31 start -->
+    <screen name="ESM_PRI_0062">
+        <parameter key="title"    value="S/C List Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/screport/screport/jsp/ESM_PRI_0062.jsp"/>
+    </screen>
+    <!-- Day-Hoh Kim : 2009-08-31 end -->
+	
+    <!-- Day-Hoh Kim : 2009-09-02 start -->
+    <screen name="ESM_PRI_0108">
+        <parameter key="title"    value="S/C Performance Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/screport/screport/jsp/ESM_PRI_0108.jsp"/>
+    </screen>
+    <screen name="ESM_PRI_0108_01" template="templateEmpty">
+        <parameter key="title"    value="S/C Performance Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/screport/screport/jsp/ESM_PRI_0108_01.jsp"/>
+    </screen>
+    <screen name="ESM_PRI_0108_02" template="templateEmpty">
+        <parameter key="title"    value="S/C Performance Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/screport/screport/jsp/ESM_PRI_0108_02.jsp"/>
+    </screen>
+    <!-- Day-Hoh Kim : 2009-09-02 end -->
+
+    <!-- Day-Hoh Kim : 2009-09-03 start -->
+    <screen name="ESM_PRI_0111" template="templatePop">
+        <parameter key="title"    value="S/C Performance Summary - View B/L" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/screport/screport/jsp/ESM_PRI_0111.jsp"/>
+    </screen>
+    <!-- Day-Hoh Kim : 2009-09-03 end -->
+
+	<!-- CHOI SUNG MIN : 2009-07-03 start -->
+    <screen name="ESM_PRI_0032" template="templatePop">
+        <parameter key="title"    value="Special Note Conversion" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteconversionproposal/jsp/ESM_PRI_0032.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-07-03 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-07-03 start -->
+    <screen name="ESM_PRI_0055" template="templatePop">
+        <parameter key="title"    value="Special Note Conversion - Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteconversionproposal/jsp/ESM_PRI_0055.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-07-03 end -->
+	
+	<!-- JaeYeon Kim : 2009-07-06 start -->
+    <screen name="ESM_PRI_0024" template="templatePop">
+        <parameter key="title"    value="Proposal Origin/Destination Arbitrary - Excel Import" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/sctransportationadditionalchargeproposal/jsp/ESM_PRI_0024.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-07-06 end -->
+	
+	<!-- HoYeolSea : 2009-07-06 start -->
+    <screen name="ESM_PRI_0074" template="templatePop">
+        <parameter key="title"    value="S/C Boiler Plate Creation - Excel Import" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scboilerplateproposal/jsp/ESM_PRI_0074.jsp"/>
+    </screen>
+	<!-- HoYeolSea : 2009-07-06 end -->
+	
+	<!-- JaeYeon Kim : 2009-07-09 start -->
+    <screen name="ESM_PRI_0068" template="templatePop">
+        <parameter key="title"    value="S/C Proposal Origin/Destination IHC ? Excel import" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/sctransportationadditionalchargeproposal/jsp/ESM_PRI_0068.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-07-09 end -->
+
+    <!-- Day-hoh Kim : 2009-08-13 start -->
+    <screen name="ESM_PRI_0069" template="templatePop">
+        <parameter key="title"    value="View All Rates" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0069.jsp"/>
+    </screen>
+    <!-- Day-hoh Kim : 2009-08-13 end -->
+    
+    <!-- Moon Dong Gyu : 2009-07-07 start -->
+    <screen name="ESM_PRI_0015">
+        <parameter key="title"    value="S/C Master Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scproposalmain/jsp/ESM_PRI_0015.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-07-07 end -->
+    
+	<!-- HoYeolSea : 2009-07-10 start -->
+    <screen name="ESM_PRI_0109" template="templatePop">
+        <parameter key="title"    value="GRI Calculation - Arbitrary" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgricalculationproposal/jsp/ESM_PRI_0109.jsp"/>
+    </screen>
+	<!-- HoYeolSea : 2009-07-10 end -->
+
+        	
+	<!-- CHOI SUNG MIN : 2009-07-03 start -->
+    <screen name="ESM_PRI_0031" template="templatePop">
+        <parameter key="title"    value="Commodity Note Conversion" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteconversionproposal/jsp/ESM_PRI_0031.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-07-03 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-07-03 start -->
+    <screen name="ESM_PRI_0033" template="templatePop">
+        <parameter key="title"    value="Route Note Conversion" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteconversionproposal/jsp/ESM_PRI_0033.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-07-03 end -->
+
+	<!-- CHOI SUNG MIN : 2009-07-03 start -->
+    <screen name="ESM_PRI_0054" template="templatePop">
+        <parameter key="title"    value="Commodity Note Conversion - Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteconversionproposal/jsp/ESM_PRI_0054.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-07-03 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-07-03 start -->
+    <screen name="ESM_PRI_0052" template="templatePop">
+        <parameter key="title"    value="Route Note Conversion - Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteconversionproposal/jsp/ESM_PRI_0052.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-07-03 end -->
+		
+	<!-- CHOI SUNG MIN : 2009-09-01 start -->
+    <screen name="ESM_PRI_0100" template="templatePop">
+        <parameter key="title"    value="Note Conversion History - Commodity Note Conversion Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteconversionproposal/jsp/ESM_PRI_0100.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-09-01 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-09-01 start -->
+    <screen name="ESM_PRI_0101" template="templatePop">
+        <parameter key="title"    value="Note Conversion History - Route Note Conversion Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteconversionproposal/jsp/ESM_PRI_0101.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-09-01 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-09-01 start -->
+    <screen name="ESM_PRI_0102" template="templatePop">
+        <parameter key="title"    value="Note Conversion History - Special Note Conversion Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteconversionproposal/jsp/ESM_PRI_0102.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-09-01 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-10-01 start -->
+    <screen name="ESM_PRI_0002_01" template="templateEmpty">
+        <parameter key="title"    value="Location Group Guideline Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scgrouplocationguideline/jsp/ESM_PRI_0002_01.jsp"/>
+    </screen>
+    
+	<screen name="ESM_PRI_0002_02" template="templateEmpty">
+        <parameter key="title"    value="Sales Guideline Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scsalesguideline/jsp/ESM_PRI_0002_02.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0002_03"  template="templateEmpty">
+        <parameter key="title"    value="Commondity Group Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scgroupcommodityguideline/jsp/ESM_PRI_0002_03.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0002_07" template="templateEmpty">   
+        <parameter key="title"    value="SC Guideline - Contract Clause Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/sccontractclauseguideline/jsp/ESM_PRI_0002_07.jsp"/>
+    </screen>
+    <!-- CHOI SUNG MIN : 2009-10-01 end -->
+    
+		
+	<!-- JaeYeon Kim : 2009-07-14 start -->
+    <screen name="ESM_PRI_2001_03" template="templateEmpty">
+        <parameter key="title"    value="Guideline Creation - Arbitrary" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfaarbitrarychargeguideline/jsp/ESM_PRI_2001_03.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-07-14 end -->
+	
+    <!-- Seung Jun Lee : 2009-05-06 start -->
+    <screen name="ESM_PRI_4028" template="templatePop">
+        <parameter key="title"    value="Surcharge Location Group Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/surchargegrouplocation/jsp/ESM_PRI_4004.jsp"/>
+    </screen>
+    <!-- Seung Jun Lee : 2009-05-06 end -->
+	
+	<!-- JaeYeon Kim : 2009-07-20 start -->
+    <screen name="ESM_PRI_4016" template="templatePop">
+        <parameter key="title"    value="Upload Excel" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/surcharge/jsp/ESM_PRI_4016.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-07-20 end -->
+	
+	
+	<!-- Kong Back Jin : 2009-07-22 start -->
+    <screen name="ESM_PRI_2003">
+        <parameter key="title"    value="Proposal &amp; Amendment Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaproposalmain/jsp/ESM_PRI_2003.jsp"/>
+    </screen>	
+    <!-- Kong Back Jin : 2009-07-22 end -->
+    
+    
+	<!-- CHOI SUNG MIN : 2009-07-03 start -->
+    <screen name="ESM_PRI_2001_01" template="templateEmpty">
+        <parameter key="title"    value="RFA Guideline Creation - Location Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfagrouplocationguideline/jsp/ESM_PRI_2001_01.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-07-03 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-07-29 start -->
+    <screen name="ESM_PRI_2001_02" template="templateEmpty">
+        <parameter key="title"    value="RFA Guideline Creation - Commodity Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfagroupcommodityguideline/jsp/ESM_PRI_2001_02.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-07-29 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-07-03 start -->
+    <screen name="ESM_PRI_2018_01" template="templateEmpty">
+        <parameter key="title"    value="RFA Guideline Inquiry - Location Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfagrouplocationguideline/jsp/ESM_PRI_2018_01.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-07-03 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-07-29 start -->
+    <screen name="ESM_PRI_2018_02" template="templateEmpty">
+        <parameter key="title"    value="RFA Guideline Inquiry - Commodity Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfagroupcommodityguideline/jsp/ESM_PRI_2018_02.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-07-29 end -->		
+	
+	<!-- JaeYeon Kim : 2009-07-24 start -->
+    <screen name="ESM_PRI_0016">
+        <parameter key="title"    value="S/C Prefix Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/scprefix/jsp/ESM_PRI_0016.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-07-24 end -->
+	
+	<!-- JaeYeon Kim : 2009-07-24 start -->
+    <screen name="ESM_PRI_0053" template="templatePop">
+        <parameter key="title"    value="Guideline MQC Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scrateguideline/jsp/ESM_PRI_0053.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-07-24 end -->
+
+    <!-- Moon Dong Gyu : 2009-07-24 start -->
+    <screen name="ESM_PRI_2038">
+        <parameter key="title"    value="Authority Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/authorizationassignment/jsp/ESM_PRI_2038.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-07-24 end -->
+	
+	<!-- JaeYeon Kim : 2009-07-24 start -->
+    <screen name="ESM_PRI_4011">
+        <parameter key="title"    value="Surcharge Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/surcharge/jsp/ESM_PRI_4011.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_4011_POP"  template="templatePop">
+        <parameter key="title"    value="Surcharge Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/surcharge/jsp/ESM_PRI_4011.jsp"/>
+    </screen>
+    <screen name="ESM_PRI_4015">
+        <parameter key="title"    value="Inland Tariff/Surcharge Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/surcharge/jsp/ESM_PRI_4011.jsp"/>
+    </screen>
+    
+	<!-- JaeYeon Kim : 2009-07-24 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-07-29 start -->
+    <screen name="ESM_PRI_2048" template="templatePop">
+        <parameter key="title"    value="RFA Guideline Creation - Arbitrary[Load Excel]" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfaarbitrarychargeguideline/jsp/ESM_PRI_2048.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-07-29 end -->
+
+    <!-- Moon Dong Gyu : 2009-07-24 start -->
+    <screen name="ESM_PRI_2057">
+        <parameter key="title"    value="RFA Authority Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/authorizationassignment/jsp/ESM_PRI_2057.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-07-24 end -->
+	<!-- CHOI SUNG MIN : 2009-08-03 start -->
+    <screen name="ESM_PRI_2052" template="templatePop">
+        <parameter key="title"    value="RFA Guideline Creation - Location Group [Load Excel]" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfagrouplocationguideline/jsp/ESM_PRI_2052.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-08-03 end -->
+
+	<!-- CHOI SUNG MIN : 2009-08-05 start -->
+    <screen name="ESM_PRI_2003_01"  template="templateEmpty">
+        <parameter key="title"    value="Proposal &amp; Amendment Creation - Special Note" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfanoteproposal/jsp/ESM_PRI_2003_01.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-08-05 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-08-06 start -->
+    <screen name="ESM_PRI_2003_02"  template="templateEmpty">
+        <parameter key="title"    value="Proposal &amp; Amendment Creation - Location Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfagrouplocationproposal/jsp/ESM_PRI_2003_02.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-08-06 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-08-06 start -->
+    <screen name="ESM_PRI_2003_03"  template="templateEmpty">
+        <parameter key="title"    value="Proposal &amp; Amendment Creation - Commodity Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfagroupcommodityproposal/jsp/ESM_PRI_2003_03.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-08-06 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-09-15 start -->
+    <screen name="ESM_PRI_2041_08"  template="templateEmpty">
+        <parameter key="title"    value="Amendment History - Special Note" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfanoteproposal/jsp/ESM_PRI_2041_08.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-09-15 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-09-15 start -->
+    <screen name="ESM_PRI_2041_04"  template="templateEmpty">
+        <parameter key="title"    value="Amendment History - Location Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfagrouplocationproposal/jsp/ESM_PRI_2041_04.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-09-15 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-09-15 start -->
+    <screen name="ESM_PRI_2041_03"  template="templateEmpty">
+        <parameter key="title"    value="Amendment History - Commodity Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfagroupcommodityproposal/jsp/ESM_PRI_2041_03.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-09-15 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-09-15 start -->
+    <screen name="ESM_PRI_2019_01"  template="templateEmpty">
+        <parameter key="title"    value="RFA Proposal Inquiry - Special Note" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfanoteproposal/jsp/ESM_PRI_2019_01.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-09-15 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-09-15 start -->
+    <screen name="ESM_PRI_2019_02"  template="templateEmpty">
+        <parameter key="title"    value="RFA Proposal Inquiry - Location Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfagrouplocationproposal/jsp/ESM_PRI_2019_02.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-09-15 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-09-15 start -->
+    <screen name="ESM_PRI_2019_03"  template="templateEmpty">
+        <parameter key="title"    value="RFA Proposal Inquiry - Commodity Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfagroupcommodityproposal/jsp/ESM_PRI_2019_03.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-09-15 end -->
+	
+		
+	<!-- JaeYeon Kim : 2009-08-05 start -->
+    <screen name="ESM_PRI_2003_04" template="templateEmpty">
+        <parameter key="title"    value="RFA Proposal Creation - Arbitrary" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfatransportationadditionalchargeproposal/jsp/ESM_PRI_2003_04.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-08-05 end -->
+	
+	<!-- CHOI SUNG MIN : 2009-08-14 start -->
+    <screen name="ESM_PRI_2050"  template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation - Arbitrary[Load Excel]" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfatransportationadditionalchargeproposal/jsp/ESM_PRI_2050.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-08-14 end -->
+
+    <!-- Moon Dong Gyu : 2009-08-07 start -->
+    <screen name="ESM_PRI_5000">
+        <parameter key="title"    value="RFA Sales Lead Contract Info" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaproposalmain/jsp/ESM_PRI_5000.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-08-07 end -->
+    
+	<!-- Byeon Young Joo : 2009-08-10 start -->
+    <screen name="ESM_PRI_0079" template="templatePop">
+        <parameter key="title"    value="S/C Print View" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/screport/screport/jsp/ESM_PRI_0079.jsp"/>
+    </screen>
+	<!-- Byeon Young Joo : 2009-08-10 end -->	
+	<!-- Kong Back Jin : 2009-08-11 start -->
+    <screen name="ESM_PRI_2010"  template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation - Duration" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfadurationproposal/jsp/ESM_PRI_2010.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-08-11 end -->	   
+	
+	<!-- JaeYeon Kim : 2009-08-11 start -->
+    <screen name="ESM_PRI_2003_04" template="templateEmpty">
+        <parameter key="title"    value="RFA Proposal Origin/Destination Arbitrary Charge Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfatransportationadditionalchargeproposal/jsp/ESM_PRI_2003_04.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-08-11 end -->
+	
+	<!-- JaeYeon Kim : 2009-08-12 start -->
+    <screen name="ESM_PRI_4002">
+        <parameter key="title"    value="Rating Unit Information Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/ratingunit/jsp/ESM_PRI_4002.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-08-12 end -->
+	 	<!-- SONG MIN SEOK : 2009-08-11 start -->
+    <screen name="ESM_PRI_T001">
+        <parameter key="title"    value="TEST" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/pritest/pritest/jsp/ESM_PRI_T001.jsp"/>
+    </screen>
+	<!-- SONG MIN SEOK : 2009-08-11 end -->
+	
+	<!-- Kong Back Jin : 2009-08-12 start -->
+    <screen name="ESM_PRI_2040"   template="templatePop">
+        <parameter key="title"    value="Proposal Proposal Creation [Amend]" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaproposalmain/jsp/ESM_PRI_2040.jsp"/>
+    </screen>	
+    <!-- Kong Back Jin : 2009-08-12 end -->	
+
+    <!-- Moon Dong Gyu : 2009-08-12 start 
+    <screen name="ESM_PRI_5002">
+        <parameter key="title"    value="Groupware Mail" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scproposalmain/jsp/ESM_PRI_5002.jsp"/>
+    </screen>
+    	 Moon Dong Gyu : 2009-08-12 end -->
+    
+    <!-- Moon Dong Gyu : 2009-08-12 start -->
+    <screen name="ESM_PRI_4017">
+        <parameter key="title"    value="Service Scope- Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/servicescope/jsp/ESM_PRI_4017.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-08-12 end -->	
+    
+    <!-- JaeYeon Kim : 2009-08-14 start -->
+    <screen name="ESM_PRI_4021">
+        <parameter key="title"    value="Continent-Subcontinent Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/continent/jsp/ESM_PRI_4021.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-08-14 end -->
+
+    <!-- Moon Dong Gyu : 2009-08-14 start -->
+    <screen name="ESM_PRI_0013">
+        <parameter key="title"    value="S/C Authority Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/authorizationassignment/jsp/ESM_PRI_0013.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-08-14 end -->
+	
+	<!-- JaeYeon Kim : 2009-08-17 start -->
+    <screen name="ESM_PRI_2003_06" template="templatePop">
+        <parameter key="title"    value="Proposal Affiliate Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaaffiliateproposal/jsp/ESM_PRI_2003_06.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-08-17 end -->
+	
+	<!-- JaeYeon Kim : 2009-08-18 start -->
+    <screen name="ESM_PRI_4022">
+        <parameter key="title"    value="Sales Rep Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/salesrep/jsp/ESM_PRI_4022.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-08-18 end -->
+	
+	<!-- JaeYeon Kim : 2009-08-18 start -->
+    <screen name="ESM_PRI_2058" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation [Amend] (DEM and DET)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaproposaldemdet/jsp/ESM_PRI_2058.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-08-18 end -->
+
+	<!-- JaeYeon Kim : 2009-08-24 start -->
+    <screen name="ESM_PRI_4023">
+        <parameter key="title"    value="Office Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/organization/jsp/ESM_PRI_4023.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-08-24 end -->
+
+	<!-- JaeYeon Kim : 2009-08-25 start -->
+    <screen name="ESM_PRI_4025">
+        <parameter key="title"    value="Charge Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/charge/jsp/ESM_PRI_4025.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-08-25 end -->
+
+    <!-- Moon Dong Gyu : 2009-08-26 start -->
+    <screen name="ESM_PRI_2059" template="templatePop">
+        <parameter key="title"    value="Rate Creation - Excel Import(Vertical)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfarateguideline/jsp/ESM_PRI_2059.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-08-26 end -->
+    
+    <!-- Moon Dong Gyu : 2009-08-26 start -->
+    <screen name="ESM_PRI_2066" template="templatePop">
+        <parameter key="title"    value="Rate Creation - Excel Import(Horizontal)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfarateguideline/jsp/ESM_PRI_2066.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-08-26 end -->
+    
+	<!-- JaeYeon Kim : 2009-08-27 start -->
+    <screen name="ESM_PRI_2047" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation ? Rate ? Specification" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2047.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-08-27 end -->
+	
+	<!-- Kong Back Jin : 2009-09-01 start -->
+	<screen name="ESM_PRI_0057">
+        <parameter key="title"    value="Amendment History Inquery" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scproposalmain/jsp/ESM_PRI_0057.jsp"/>
+    </screen>
+    <!--Kong Back Jin : 2009-09-01 end -->
+    
+   	<!-- CHOI SUNG MIN : 2009-09-04 start -->
+    <screen name="ESM_PRI_0057_04" template="templateEmpty">
+        <parameter key="title"    value="Amendment History Inquiry - Origin/Destination" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scroutepointproposal/jsp/ESM_PRI_0057_04.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-09-04 end -->
+
+	<!-- CHOI SUNG MIN : 2009-09-07 start -->
+    <screen name="ESM_PRI_0057_05" template="templateEmpty">
+        <parameter key="title"    value="Amendment History Inquiry - Commodity Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgroupcommodityproposal/jsp/ESM_PRI_0057_05.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-09-07 end -->
+
+	<!-- CHOI SUNG MIN : 2009-09-07 start -->
+    <screen name="ESM_PRI_0057_10" template="templateEmpty">
+        <parameter key="title"    value="Amendment History Inquiry - Loding Agent" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scloadingagentproposal/jsp/ESM_PRI_0057_10.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-09-07 end -->
+
+	<!-- CHOI SUNG MIN : 2009-09-07 start -->
+    <screen name="ESM_PRI_0057_12" template="templateEmpty">
+        <parameter key="title"    value="Amendment History Inquiry - Special Note" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteproposal/jsp/ESM_PRI_0057_12.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-09-07 end -->
+
+	<!-- CHOI SUNG MIN : 2009-09-07 start -->
+    <screen name="ESM_PRI_0057_14" template="templateEmpty">
+        <parameter key="title"    value="Amendment History Inquiry - Location Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgrouplocationproposal/jsp/ESM_PRI_0057_14.jsp"/>
+    </screen>
+    <!-- CHOI SUNG MIN : 2009-09-07 end -->
+    
+    <!-- CHOI SUNG MIN : 2009-09-29 start -->
+    <screen name="ESM_PRI_0004_01" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal Org/Dst Location Information - Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scroutepointproposal/jsp/ESM_PRI_0004_01.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0004_02" template="templateEmpty">
+        <parameter key="title"    value="S/C Location Group Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgrouplocationproposal/jsp/ESM_PRI_0004_02.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0004_03" template="templateEmpty">
+        <parameter key="title"    value="S/C Commodity Group Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgroupcommodityproposal/jsp/ESM_PRI_0004_03.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_0004_07" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal Loading Agent Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scloadingagentproposal/jsp/ESM_PRI_0004_07.jsp"/>
+    </screen>
+        
+    <screen name="ESM_PRI_0004_08" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal Standard Note Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteproposal/jsp/ESM_PRI_0004_08.jsp"/>
+    </screen>
+        
+    <screen name="ESM_PRI_0004_10" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal Special Note Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scnoteproposal/jsp/ESM_PRI_0004_10.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-09-29 end -->
+     
+	<!-- Kong Back Jin : 2009-09-08 start -->
+	<screen name="ESM_PRI_0057_01" template="templateEmpty">
+        <parameter key="title"    value="Amendment History Inquiry - Duration" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scdurationproposal/jsp/ESM_PRI_0057_01.jsp"/>
+    </screen>
+    <!--Kong Back Jin : 2009-09-08 end -->	
+    
+    <!-- Kong Back Jin : 2009-09-09 start -->
+	<screen name="ESM_PRI_0057_02"  template="templateEmpty">
+        <parameter key="title"    value="Amendment History Inquiry - MQC" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scmqcproposal/jsp/ESM_PRI_0057_02.jsp"/>
+    </screen>
+    <!--Kong Back Jin : 2009-09-09 end -->			    
+	
+	<!-- JaeYeon Kim : 2009-09-10 start -->
+    <screen name="ESM_PRI_0057_07" template="templateEmpty">
+        <parameter key="title"    value="Amendment History Inquiry - Origin/Destination Arbitrary" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/sctransportationadditionalchargeproposal/jsp/ESM_PRI_0057_07.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-09-10 end -->
+	
+	<!-- JaeYeon Kim : 2009-09-11 start -->
+    <screen name="ESM_PRI_0057_08" template="templateEmpty">
+        <parameter key="title"    value="Amend History Inquiry - GOH" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgohchargeproposal/jsp/ESM_PRI_0057_08.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-09-11 end -->
+	
+	<!-- JaeYeon Kim : 2009-09-15 start -->
+    <screen name="ESM_PRI_0057_15" template="templateEmpty">
+        <parameter key="title"    value="Amend History Inquiry - Origin/Destination IHC" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/sctransportationadditionalchargeproposal/jsp/ESM_PRI_0057_15.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-09-15 end -->
+
+	<!-- Byeon Young Joo : 2009-09-15 start -->
+    <screen name="ESM_PRI_2039" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation - Draft" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfareport/rfareport/jsp/ESM_PRI_2039.jsp"/>
+    </screen>
+	<!-- Byeon Young Joo : 2009-09-15 end -->	
+
+    <!-- Day-Hoh Kim : 2009-09-20 start -->
+    <screen name="ESM_PRI_2043">
+        <parameter key="title"    value="RFA Retrieval" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfareport/rfareport/jsp/ESM_PRI_2043.jsp"/>
+    </screen>
+    <!-- Day-Hoh Kim : 2009-09-20 end -->   
+
+    <!-- Day-Hoh Kim : 2009-09-22 start -->
+    <screen name="ESM_PRI_2042">
+        <parameter key="title"    value="RFA Retrieval" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfareport/rfareport/jsp/ESM_PRI_2042.jsp"/>
+    </screen>
+    <!-- Day-Hoh Kim : 2009-09-22 end -->   
+
+    <!-- Moon Dong Gyu : 2009-09-09 start -->
+    <screen name="ESM_PRI_2002" template="templatePop">
+        <parameter key="title"    value="Guideline Creation [Copy]" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfaguidelinemain/jsp/ESM_PRI_2002.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-09-09 end -->	
+  
+	<!-- Kong Back Jin : 2009-09-21 start -->
+	<screen name="ESM_PRI_2041">
+        <parameter key="title"    value="RFA Amendment History Inquery" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaproposalmain/jsp/ESM_PRI_2041.jsp"/>
+    </screen>
+    <!--Kong Back Jin : 2009-09-21 end -->	
+	<!-- Kong Back Jin : 2009-09-21 start -->
+	<screen name="ESM_PRI_2041_01" template="templateEmpty">
+        <parameter key="title"    value="Amendment History Inquiry - Duration" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfadurationproposal/jsp/ESM_PRI_2041_01.jsp"/>
+    </screen>
+    <!--Kong Back Jin : 2009-09-21 end -->	    
+    <!--Kong Back Jin : 2009-09-21 end -->	 
+           <!-- Kong Back Jin : 2009-09-21 start -->
+    <screen name="ESM_PRI_2041_07" template="templateEmpty">
+        <parameter key="title"    value="Amendment History Inquiry - Affiliate Company" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaaffiliateproposal/jsp/ESM_PRI_2041_07.jsp"/>
+    </screen>
+    <!-- Kong Back Jin : 2009-09-21 end -->    
+	
+    <!-- JaeYeon Kim : 2009-09-21 start -->
+    <screen name="ESM_PRI_0057_18" template="templateEmpty">
+        <parameter key="title"    value="Amendment History Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/sccontractpartyproposal/jsp/ESM_PRI_0057_18.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-09-21 end -->
+	
+	<!-- JaeYeon Kim : 2009-09-23 start -->
+    <screen name="ESM_PRI_4029" template="templatePop">
+        <parameter key="title"    value="Surcharge Location Group Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/surchargegrouplocation/jsp/ESM_PRI_4018.jsp"/>
+    </screen>
+    <!-- JaeYeon Kim : 2009-09-23 end -->
+    
+    <!-- JaeYeon Kim : 2009-09-23 start -->
+    <screen name="ESM_PRI_4030">
+        <parameter key="title"    value="Customer Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/customer/jsp/ESM_PRI_4014.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-09-23 end -->
+	
+	<!-- Kong Back Jin : 2009-09-24 start -->
+    <screen name="ESM_PRI_2041_09" template="templateEmpty">
+        <parameter key="title"    value="Amendment History - DEM/DET" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaproposaldemdet/jsp/ESM_PRI_2041_09.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-09-24 end -->  
+	
+	<!-- JaeYeon Kim : 2009-09-24 start -->
+    <screen name="ESM_PRI_4024">
+        <parameter key="title"    value="Exchange Rate Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/exchangerate/jsp/ESM_PRI_4024.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-09-24 end -->
+	
+	<!-- Kong Back Jin : 2009-09-25 start -->
+    <screen name="ESM_PRI_0004">
+        <parameter key="title"    value="S/C Proposal Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scproposalmain/jsp/ESM_PRI_0004.jsp"/>
+    </screen>	
+    
+    <screen name="ESM_PRI_0004_POP" template="templatePop">
+        <parameter key="title"    value="S/C Proposal Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scproposalmain/jsp/ESM_PRI_0004.jsp"/>
+    </screen>	
+	<!-- Kong Back Jin : 2009-09-25 end -->	
+
+	<!-- JaeYeon Kim : 2009-09-28 start -->
+	<screen name="ESM_PRI_2041_06" template="templateEmpty">
+        <parameter key="title"    value="RFA Search - Amendment History - Arbitrary" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfatransportationadditionalchargeproposal/jsp/ESM_PRI_2041_06.jsp"/>
+    </screen>
+    <!-- JaeYeon Kim : 2009-09-28 end -->
+
+    <!-- Moon Dong Gyu : 2009-09-28 start -->
+    <screen name="ESM_PRI_2044" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation [Copy]" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaproposalmain/jsp/ESM_PRI_2044.jsp"/>
+    </screen>
+    <!-- Kong Back Jin : 2009-09-28 end --> 
+    
+	<!-- Kong Back Jin : 2009-10-01 start -->
+    <screen name="ESM_PRI_0011">
+        <parameter key="title"    value="Boiler Plate Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scboilerplateguideline/jsp/ESM_PRI_0011.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-10-01 end -->    
+	<!-- Kong Back Jin : 2009-10-01 start -->
+    <screen name="ESM_PRI_0047"  template="templatePop">
+        <parameter key="title"    value="S/C Proposal Boiler Plate Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scboilerplateproposal/jsp/ESM_PRI_0047.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-10-01 end -->    	
+	<!-- Kong Back Jin : 2009-10-01 start -->
+    <screen name="ESM_PRI_0048" template="templatePop">
+        <parameter key="title"    value="Proposal  Affiliates - Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scaffiliateproposal/jsp/ESM_PRI_0048.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-10-01 end -->
+	<!-- Kong Back Jin : 2009-10-05 start -->
+    <screen name="ESM_PRI_0078" template="templatePop">
+        <parameter key="title"    value="Contract Parties Information Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/sccontractpartyproposal/jsp/ESM_PRI_0078.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-10-05 end -->	
+	
+	<!-- JaeYeon Kim : 2009-10-05 start -->
+    <screen name="ESM_PRI_0002_04"  template="templateEmpty">
+        <parameter key="title"    value="Origin/Destination Arbitrary Charge Guideline Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scarbitrarychargeguideline/jsp/ESM_PRI_0002_04.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-10-05 end -->
+	
+	<!-- JaeYeon Kim : 2009-10-05 start -->
+    <screen name="ESM_PRI_0002_05"  template="templateEmpty">
+        <parameter key="title"    value="Origin/Destination GOH Charge Guideline Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scguideline/scgohchargeguideline/jsp/ESM_PRI_0002_05.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-10-05 end -->
+
+	<!-- JaeYeon Kim : 2009-10-05 start -->
+    <screen name="ESM_PRI_0004_04" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal Origin/Destination Arbitrary Charge Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/sctransportationadditionalchargeproposal/jsp/ESM_PRI_0004_04.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-10-05 end -->
+	
+	<!-- JaeYeon Kim : 2009-10-05 start -->
+    <screen name="ESM_PRI_0004_05" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal Origin/Destination IHC Charge Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/sctransportationadditionalchargeproposal/jsp/ESM_PRI_0004_05.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-10-05 end -->
+	
+	<!-- JaeYeon Kim : 2009-10-06 start -->
+    <screen name="ESM_PRI_0004_06" template="templateEmpty">
+        <parameter key="title"    value="S/C Proposal GOH Charge Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scgohchargeproposal/jsp/ESM_PRI_0004_06.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-10-06 end -->
+	
+	<!-- JaeYeon Kim : 2009-10-06 start -->
+    <screen name="ESM_PRI_0086">
+        <parameter key="title"    value="Standard Wording for S/C Notes Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/standardwording/jsp/ESM_PRI_0086.jsp"/>
+    </screen>
+    <!-- JaeYeon Kim : 2009-10-06 end -->
+
+    <!-- Moon Dong Gyu : 2009-10-05 start -->
+    <screen name="ESM_PRI_2049">
+        <parameter key="title"    value="RFA Proposal Creation - Request Received and Sent" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaproposalmain/jsp/ESM_PRI_2049.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-10-05 end -->
+
+	<!-- JaeYeon Kim : 2009-10-07 start -->
+    <screen name="ESM_PRI_4017">
+        <parameter key="title"    value="Service Scope Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/servicescope/jsp/ESM_PRI_4017.jsp"/>
+    </screen>
+    <!-- JaeYeon Kim : 2009-10-07 end -->
+
+    <!-- Moon Dong Gyu : 2009-10-01 start -->
+    <screen name="ESM_PRI_2007" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation [Request]" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaproposalmain/jsp/ESM_PRI_2007.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-10-01 end -->
+
+    <!-- JaeYeon Kim : 2009-10-09 start -->
+    <screen name="ESM_PRI_4020">
+        <parameter key="title"    value="Currency Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/currency/jsp/ESM_PRI_4020.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-10-09 end -->
+	
+	<!-- JaeYeon Kim : 2009-10-12 start -->
+    <screen name="ESM_PRI_4032">
+        <parameter key="title"    value="Commodity Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/commodity/jsp/ESM_PRI_4027.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-10-12 end -->
+	<!-- Kong Back Jin : 2009-10-12 start -->
+    <screen name="ESM_PRI_2019_06" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Inquiry - Affiliate" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaaffiliateproposal/jsp/ESM_PRI_2019_06.jsp"/>
+    </screen>
+	<!-- Kong Back Jin : 2009-10-12 end -->	
+	
+	<!-- JaeYeon Kim : 2009-10-12 start -->
+    <screen name="ESM_PRI_2018_03" template="templateEmpty">
+        <parameter key="title"    value="RFA Guideline Inquiry - Arbitrary" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaguideline/rfaarbitrarychargeguideline/jsp/ESM_PRI_2018_03.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-10-12 end -->
+
+	<!-- Kong Back Jin : 2009-10-13 start -->
+    <screen name="ESM_PRI_2019">
+        <parameter key="title"    value="Proposal &amp; Amendment Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaproposalmain/jsp/ESM_PRI_2019.jsp"/>
+    </screen>	
+    
+    <screen name="ESM_PRI_2019_POP" template="templatePop">
+        <parameter key="title"    value="Proposal &amp; Amendment Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaproposalmain/jsp/ESM_PRI_2019.jsp"/>
+    </screen>	
+    <!-- Kong Back Jin : 2009-10-13 end -->	
+
+    <!-- Moon Dong Gyu : 2009-10-12 start -->
+    <screen name="ESM_PRI_2080" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Creation [G/L Copy]" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfaproposalmain/jsp/ESM_PRI_2080.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-10-12 end -->
+   
+	<!-- JaeYeon Kim : 2009-10-19 start -->
+    <screen name="ESM_PRI_2019_04" template="templateEmpty">
+        <parameter key="title"    value="Proposal &amp; Amendment Inquiry - Arbitrary" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfatransportationadditionalchargeproposal/jsp/ESM_PRI_2019_04.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-10-19 end -->
+	
+	<!-- JaeYeon Kim : 2009-10-19 start -->
+    <screen name="ESM_PRI_2075" template="templatePop">
+        <parameter key="title"    value="RFA Proposal Inquiry - Rate [Specification]" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2075.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-10-19 end -->
+	
+	<!-- Park-HyoungKook : 2009-10-26 start -->
+    <screen name="ESM_PRI_5555">
+        <parameter key="title"    value="Note Conversion Group Location Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/noteconversiongrouplocation/jsp/ESM_PRI_5555.jsp"/>
+    </screen>
+	<!-- Park-HyoungKook : 2009-10-26 end -->
+	
+	<!-- Sungsoo Park : 2009-11-13 start -->
+    <screen name="ESM_PRI_3001">
+        <parameter key="title"    value="TRI Creation &amp; Amendment" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/triproposal/jsp/ESM_PRI_3001.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_3016" template="templatePop">
+        <parameter key="title"    value="TRI Creation &amp; Amendment - Route Point" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/triproposal/jsp/ESM_PRI_3016.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_3015" template="templatePop">
+        <parameter key="title"    value="Publication Date Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/triproposal/jsp/ESM_PRI_3015.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_3018" template="templatePop">
+        <parameter key="title"    value="Publication Date Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/triproposal/jsp/ESM_PRI_3018.jsp"/>
+    </screen>
+	<!-- Sungsoo Park : 2009-11-13 end -->
+
+	<!-- CHOI SUNG MIN : 2009-11-17 start -->
+    <screen name="ESM_PRI_3005">
+        <parameter key="title"    value="Tariff Fomula Rule Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/trinoteconversionproposal/jsp/ESM_PRI_3005.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-11-17 end -->
+
+	<!-- CHOI SUNG MIN : 2009-11-17 start -->
+    <screen name="ESM_PRI_3006">
+        <parameter key="title"    value="Tariff Fomula Rule Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/trinoteconversionproposal/jsp/ESM_PRI_3006.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-11-17 end -->
+
+	<!-- CHOI SUNG MIN : 2009-11-17 start -->
+    <screen name="ESM_PRI_3002" template="templatePop">
+        <parameter key="title"    value="TRI Creation &amp; Amendment - Note Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/triproposal/jsp/ESM_PRI_3002.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-11-17 end -->
+
+    <!-- Moon Dong Gyu : 2009-11-18 start -->
+    <screen name="ESM_PRI_3007">
+        <parameter key="title"    value="TAA Creation &amp; Amendment" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/taaproposal/jsp/ESM_PRI_3007.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-11-18 end -->
+
+	<!-- CHOI SUNG MIN : 2009-11-30 start -->
+    <screen name="ESM_PRI_3003" template="templatePop">
+        <parameter key="title"    value="TRI Creation &amp; Amendment - Note Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/triproposal/jsp/ESM_PRI_3003.jsp"/>
+    </screen>
+	<!-- CHOI SUNG MIN : 2009-11-30 end -->
+
+    <!-- Moon Dong Gyu : 2009-12-01 start -->
+    <screen name="ESM_PRI_3017" template="templatePop">
+        <parameter key="title"    value="TAA Creation &amp; Amendment [Amend]" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/taaproposal/jsp/ESM_PRI_3017.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-12-01 end -->
+    
+    <!-- JaeYeon Kim : 2009-12-02 start -->
+    <screen name="ESM_PRI_3004" template="templatePop">
+        <parameter key="title"    value="TAA List Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/taaproposal/jsp/ESM_PRI_3004.jsp"/>
+    </screen>
+    <!-- JaeYeon Kim : 2009-12-02 end -->
+    
+    <!-- JaeYeon Kim : 2009-12-04 start -->
+    <screen name="ESM_PRI_3013">
+        <parameter key="title"    value="TRI Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/triproposal/jsp/ESM_PRI_3013.jsp"/>
+    </screen>
+	<!-- JaeYeon Kim : 2009-12-04 end -->
+
+    <!-- Moon Dong Gyu : 2009-12-03 start -->
+    <screen name="ESM_PRI_3009" template="templatePop">
+        <parameter key="title"    value="TRI Creation &amp; Amendment - TRI Select" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/taaproposal/jsp/ESM_PRI_3009.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-12-03 end -->
+
+    <!-- Moon Dong Gyu : 2009-12-07 start -->
+    <screen name="ESM_PRI_3008" template="templatePop">
+        <parameter key="title"    value="TAA No Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/taaproposal/jsp/ESM_PRI_3008.jsp"/>
+    </screen>
+    <!-- Moon Dong Gyu : 2009-12-07 end -->
+    
+    <screen name="ESM_PRI_3010" template="templatePop">
+        <parameter key="title"    value="TRI GRI Calculation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/trigricalculationproposal/jsp/ESM_PRI_3010.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_3011" template="templatePop">
+        <parameter key="title"    value="TRI GRI Calculation - Commodity Select" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/trigricalculationproposal/jsp/ESM_PRI_3011.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_3012" template="templatePop">
+        <parameter key="title"    value="TRI GRI Calculation - Route Point Select" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/trigricalculationproposal/jsp/ESM_PRI_3012.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_3014" template="templatePop">
+        <parameter key="title"    value="TRI Creation &amp; Amendment - Publication" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/triproposal/triproposal/jsp/ESM_PRI_3014.jsp"/>
+    </screen>
+
+ 
+	<!-- KANG HYO JIN : 2010-04-21 start -->
+    <screen name="ESM_PRI_0121">
+        <parameter key="title"    value="MOT Filing Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/screport/screport/jsp/ESM_PRI_0121.jsp"/>
+    </screen>
+	<!-- KANG HYO JIN : 2010-04-21 end -->
+
+	<!-- CHOI SUNGMIN : 2010-10-06 start -->
+    <screen name="ESM_PRI_3507">
+        <parameter key="title"    value="Tariff Rule Creation &amp; Amendment" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffrule/jsp/ESM_PRI_3507.jsp"/>
+    </screen>
+	<!-- CHOI SUNGMIN : 2010-10-06 end -->
+	
+	<!-- SEO MI JIN : 2010-10-12 start -->
+    <screen name="ESM_PRI_3502">
+        <parameter key="title"    value="Tariff Code Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffcode/jsp/ESM_PRI_3502.jsp"/>
+    </screen>
+    <screen name="ESM_PRI_3502_POP" template="templatePop">
+        <parameter key="title"    	value="Tariff Code Creation" direct="true"/>
+        <parameter key="body"     	value="apps/opus/esm/pri/tariff/tariffcode/jsp/ESM_PRI_3502.jsp"/>
+    </screen>
+	<!-- SEO MI JIN : 2010-10-12 end -->
+
+	<!-- CHOI SUNGMIN : 2010-10-12 start -->
+    <screen name="ESM_PRI_3519" template="templatePop">
+        <parameter key="title"    value="Tariff Rule Amend Request" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffrule/jsp/ESM_PRI_3519.jsp"/>
+    </screen>
+	<!-- CHOI SUNGMIN : 2010-10-12 end -->
+
+	<!-- CHOI SUNGMIN : 2010-10-19 start -->
+    <screen name="ESM_PRI_3510" template="templatePop">
+        <parameter key="title"    value="Tariff Rule Publish" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffrule/jsp/ESM_PRI_3510.jsp"/>
+    </screen>
+	<!-- CHOI SUNGMIN : 2010-10-19 end -->
+
+	<!-- CHOI SUNGMIN : 2010-10-20 start -->
+    <screen name="ESM_PRI_3512">
+        <parameter key="title"    value="Tariff Rule Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffrule/jsp/ESM_PRI_3512.jsp"/>
+    </screen>
+	<!-- CHOI SUNGMIN : 2010-10-20 end -->
+	
+	<!-- KIM MIN AH : 2010-10-12 start -->
+    <screen name="ESM_PRI_3501">
+        <parameter key="title"    value="Tariff General Information Creation &amp; Amendment" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffgeneralinformation/jsp/ESM_PRI_3501.jsp"/>
+    </screen>
+	<!-- KIM MIN AH : 2010-10-12 end -->
+	
+	<!-- KIM MIN AH : 2010-10-21 start -->
+    <screen name="ESM_PRI_3518">
+        <parameter key="title"    value="Tariff General Information Creation &amp; Amendment" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffgeneralinformation/jsp/ESM_PRI_3518.jsp"/>
+    </screen>
+    
+    <screen name="ESM_PRI_3518_POP" template="templatePop">
+        <parameter key="title"    value="Tariff General Information Creation &amp; Amendment" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffgeneralinformation/jsp/ESM_PRI_3518.jsp"/>
+    </screen>
+	<!-- KIM MIN AH : 2010-10-21 end -->
+	
+	<!-- SEO MI JIN : 2010-10-25 start -->
+    <screen name="ESM_PRI_3503">
+        <parameter key="title"    value="Tariff Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffcode/jsp/ESM_PRI_3503.jsp"/>
+    </screen>
+	<!-- SEO MI JIN : 2010-10-25 end -->
+
+	<!-- CHOI SUNGMIN : 2010-10-21 start -->
+    <screen name="ESM_PRI_3508" template="templatePop">
+        <parameter key="title"    value="Tariff Rule Summary Print" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffrule/jsp/ESM_PRI_3508.jsp"/>
+    </screen>
+	<!-- CHOI SUNGMIN : 2010-10-21 end -->
+
+	<!-- CHOI SUNGMIN : 2010-10-21 start -->
+    <screen name="ESM_PRI_3514">
+        <parameter key="title"    value="Inland Rates Creation &amp; Amendment" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/inlandrates/jsp/ESM_PRI_3514.jsp"/>
+    </screen>
+	<!-- CHOI SUNGMIN : 2010-10-21 end -->
+
+	<!-- CHOI SUNGMIN : 2010-10-21 start -->
+    <screen name="ESM_PRI_3521" template="templatePop">
+        <parameter key="title"    value="Inland Rates Amend Request" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/inlandrates/jsp/ESM_PRI_3521.jsp"/>
+    </screen>
+	<!-- CHOI SUNGMIN : 2010-10-21 end -->
+
+	<!-- CHOI SUNGMIN : 2010-10-25 start -->
+    <screen name="ESM_PRI_3509">
+        <parameter key="title"    value="Tariff Rule History" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffrule/jsp/ESM_PRI_3509.jsp"/>
+    </screen>
+	<!-- CHOI SUNGMIN : 2010-10-25 end -->
+	
+	<!-- KIM MIN AH : 2010-10-25 start -->
+    <screen name="ESM_PRI_3505" template="templatePop">
+        <parameter key="title"    value="Tariff General Information Publish" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffgeneralinformation/jsp/ESM_PRI_3505.jsp"/>
+    </screen>
+	<!-- KIM MIN AH : 2010-10-25 end -->
+	
+	<!-- KIM MIN AH : 2010-10-26 start -->
+    <screen name="ESM_PRI_3511">
+        <parameter key="title"    value="Tariff General Information Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffgeneralinformation/jsp/ESM_PRI_3511.jsp"/>
+    </screen>
+	<!-- KIM MIN AH : 2010-10-26 end -->
+	
+	<!-- SEO MI JIN : 2010-11-01 start -->
+    <screen name="ESM_PRI_3504">
+        <parameter key="title"    value="Tariff General Information History" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffgeneralinformation/jsp/ESM_PRI_3504.jsp"/>
+    </screen>
+	<!-- SEO MI JIN : 2010-11-01 end -->
+
+	<!-- CHOI SUNGMIN : 2010-11-02 start -->
+    <screen name="ESM_PRI_3517" template="templatePop">
+        <parameter key="title"    value="Inland Rates Publish" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/inlandrates/jsp/ESM_PRI_3517.jsp"/>
+    </screen>
+	<!-- CHOI SUNGMIN : 2010-11-02 end -->
+
+	<!-- KIM MIN AH : 2010-11-01 start -->
+    <screen name="ESM_PRI_3515">
+        <parameter key="title"    value="Inland Rates Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/inlandrates/jsp/ESM_PRI_3515.jsp"/>
+    </screen>
+	<!-- KIM MIN AH : 2010-11-01 end -->
+
+	<!-- KIM MIN AH : 2010-11-04 start -->
+    <screen name="ESM_PRI_3506" template="templatePop">
+        <parameter key="title"    value="Tariff General Information Summary Print" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffgeneralinformation/jsp/ESM_PRI_3506.jsp"/>
+    </screen>
+	<!-- KIM MIN AH : 2010-11-04 end -->
+	
+	<!-- KIM MIN AH : 2010-11-08 start -->
+    <screen name="ESM_PRI_3516">
+        <parameter key="title"    value="Inland Rates History" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/inlandrates/jsp/ESM_PRI_3516.jsp"/>
+    </screen>
+	<!-- KIM MIN AH : 2010-11-08 end -->
+
+	<!-- Song Min Seok : 2010-11-03 start -->
+    <screen name="ESM_PRI_3599" template="templatePop">
+        <parameter key="title"    value="Tariff Rule Amend Detail Comparison" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/tariffrule/jsp/ESM_PRI_3599.jsp"/>
+    </screen>
+	<!-- Song Min Seok : 2010-11-03 end -->
+
+	<!-- CHOI SUNGMIN : 2010-12-10 start -->
+    <screen name="ESM_PRI_3522" template="templatePop">
+        <parameter key="title"    value="Inland Rates Excel Imports" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/tariff/inlandrates/jsp/ESM_PRI_3522.jsp"/>
+    </screen>
+	<!-- CHOI SUNGMIN : 2010-12-10 end -->
+	
+	<!-- CHO JEONGMIN : 2012-04-13 start -->
+    <screen name="ESM_PRI_4034">
+        <parameter key="title"    value="Route Location Conversion" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/surcharge/applicationdaterule/jsp/ESM_PRI_4034.jsp"/>
+	</screen>
+	<!-- CHO JEONGMIN : 2012-04-13 end -->
+	
+	<!-- SHKIM : 2012-04-12 start -->
+    <screen name="ESM_PRI_5004">
+        <parameter key="title"    value="Service Scope Property Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/pricommondata/pricommondata/jsp/ESM_PRI_5004.jsp"/>
+    </screen>
+	
+	<screen name="ESM_PRI_5005">
+        <parameter key="title"    value="Service Scope Property Mapping Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/pricommondata/pricommondata/jsp/ESM_PRI_5005.jsp"/>
+    </screen>
+	<!-- CHOI SUNGMIN : 2010-12-10 end -->
+	
+	<!-- MOON DONGSUN : 2012-04-23 start -->
+	<screen name="ESM_PRI_5001">
+        <parameter key="title"    value="BKG Term Mapping Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/pricommondata/pricommondata/jsp/ESM_PRI_5001.jsp"/>
+    </screen>
+	<!-- MOON DONGSUN : 2012-04-23 end -->
+	
+	<!-- SEO MIJIN : 2012-04-20 start -->
+    <screen name="ESM_PRI_5002" >
+        <parameter key="title"    value="Percent Base Charge Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/pricommondata/pricommondata/jsp/ESM_PRI_5002.jsp"/>
+    </screen>
+	<!-- SEO MIJIN : 2012-04-20 end -->
+	
+	<!-- SongHoJin : 2014-04-24 start -->
+    <screen name="ESM_PRI_4035">
+        <parameter key="title"    value="MOT Base Port Table Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/primasterdata/motfilinglocationproperty/jsp/ESM_PRI_4035.jsp"/>
+    </screen>
+	<!-- SongHoJin : 2014-04-24 end -->
+	
+	<!-- Lee Jae Won : 2014-11-18 start -->
+    <screen name="ESM_PRI_0122">
+        <parameter key="title"    value="MOT Filing Commission " direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/screport/screport/jsp/ESM_PRI_0122.jsp"/>
+    </screen>
+	<!-- Lee Jae Won : 2014-11-18 end -->
+	
+	<!-- Chin Maria : 2014-11-26 start -->
+    <screen name="ESM_PRI_6001">
+        <parameter key="title"    value="Verify Rate" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/prisimulation/prisimulation/jsp/ESM_PRI_6001.jsp"/>
+    </screen>
+	<!-- LChin Maria : 2014-11-26 end -->
+	
+	<!-- Lee Jae Won : 2014-12-10 start -->
+    <screen name="ESM_PRI_6101"  template="templatePop">
+        <parameter key="title"    value="Find Contract " direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/prisimulation/prisimulation/jsp/ESM_PRI_6101.jsp"/>
+    </screen>
+
+	<!-- Lee Jae Won : 2014-12-10 end -->
+	
+	<!-- Lee Jae Won : 2015-01-05 start -->
+    <screen name="ESM_PRI_0123">
+        <parameter key="title"    value="Filing List Inquiry(ESM_PRI_0123) " direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/screport/screport/jsp/ESM_PRI_0123.jsp"/>
+    </screen>
+	<!-- Lee Jae Won : 2015-01-05 end -->
+	
+	<!-- Chin Maria : 2015-01-12 start -->
+    <screen name="ESM_PRI_6102"  template="templatePop">
+        <parameter key="title"    value="Revenue Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/prisimulation/prisimulation/jsp/ESM_PRI_6102.jsp"/>
+    </screen>
+
+	<!-- Chin Maria : 2015-01-12 end -->
+	
+	<!-- Chin Maria : 2014-11-26 start -->
+    <screen name="ESM_PRI_6002">
+        <parameter key="title"    value="Pricing Simulation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/prisimulation/prisimulation/jsp/ESM_PRI_6002.jsp"/>
+    </screen>
+    <screen name="ESM_PRI_6002_POP" template="templatePop">
+        <parameter key="title"    value="Pricing Simulation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/prisimulation/prisimulation/jsp/ESM_PRI_6002.jsp"/>
+    </screen>
+	<!-- Chin Maria : 2014-11-26 end -->
+	
+	<!-- Lee Jae Won : 2016-06-07 start -->
+    <screen name="ESM_PRI_0034_POP"  template="templatePop">
+        <parameter key="title"    value="Information" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/screport/screport/jsp/ESM_PRI_0034.jsp"/>
+    </screen>
+
+	<!-- Lee Jae Won : 2016-06-07 end -->
+	 
+	<!-- LJS : 2017-04-17 start -->
+    <screen name="ESM_PRI_6003">
+        <parameter key="title"    value="Target Route Setup" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/prisimulation/prisimulation/jsp/ESM_PRI_6003.jsp"/>
+    </screen> 
+    
+     <screen name="ESM_PRI_0124" template="templatePop">
+        <parameter key="title"    value="Commodity Note Creation - Excel Import(Vertical)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0124.jsp"/>
+    </screen>
+     <screen name="ESM_PRI_0125" template="templatePop">
+        <parameter key="title"    value="Route Note Creation - Excel Import(Vertical)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0125.jsp"/>
+    </screen>
+     <screen name="ESM_PRI_0126" template="templatePop">
+        <parameter key="title"    value="Special Note Creation - Excel Import(Vertical)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/scproposal/scrateproposal/jsp/ESM_PRI_0126.jsp"/>
+    </screen>
+    
+     <screen name="ESM_PRI_2124" template="templatePop">
+        <parameter key="title"    value="Commodity Note Creation - Excel Import(Vertical)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2124.jsp"/>
+    </screen>
+     <screen name="ESM_PRI_2125" template="templatePop">
+        <parameter key="title"    value="Route Note Creation - Excel Import(Vertical)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2125.jsp"/>
+    </screen>
+     <screen name="ESM_PRI_2126" template="templatePop">
+        <parameter key="title"    value="Special Note Creation - Excel Import(Vertical)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/rfaproposal/rfarateproposal/jsp/ESM_PRI_2126.jsp"/>
+    </screen>
+    <!-- Kim TaeGyun : 2018-11-09 start -->
+    <screen name="ESM_PRI_6012" template="templatePop">
+        <parameter key="title"    value="OOG SIZE - Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/pri/prisimulation/prisimulation/jsp/ESM_PRI_6012.jsp"/>
+    </screen>
+    <!-- Kim TaeGyun : 2018-11-09 end -->
+</screen-definitions>

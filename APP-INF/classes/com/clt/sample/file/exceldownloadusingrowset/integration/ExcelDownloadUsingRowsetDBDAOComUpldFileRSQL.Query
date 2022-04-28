@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ExcelDownloadUsingRowsetDBDAOComUpldFileRSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+select
+  'aaa' COL1
+ ,'' COL2
+
+from dual
+			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

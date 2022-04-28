@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOAddTradePartnerSubLinkCSQL">
+			<desc><![CDATA[2011.03.07 정윤태 EDI TRADE PARTNER SUB LINK 정보를 신규 입력한다]]></desc>
+			<sql><![CDATA[
+INSERT INTO BKG_EDI_TRD_PRNR_SUB_LNK (
+     TRD_PRNR_SUB_LNK_SEQ
+    ,PRNR_SUB_LNK_DIV_CD
+    ,PRNR_SUB_LNK_CD
+    ,SNDR_TRD_PRNR_ID
+    ,RCVR_TRD_PRNR_ID
+    ,PRNR_PORT_CD
+    ,EDI_SND_FLG
+    ,CRE_USR_ID
+    ,CRE_DT
+    ,UPD_USR_ID
+    ,UPD_DT
+) VALUES (
+     @[trd_prnr_sub_lnk_seq]
+    ,@[prnr_sub_lnk_div_cd]
+    ,@[prnr_sub_lnk_cd]
+    ,@[sndr_trd_prnr_id]
+    ,@[rcvr_trd_prnr_id]
+    ,@[prnr_port_cd]
+    ,@[edi_snd_flg]
+    ,@[cre_usr_id]
+    ,SYSDATE
+    ,@[upd_usr_id]
+    ,SYSDATE
+)			]]></sql>
+			<params>
+				<param name="trd_prnr_sub_lnk_seq" type="12" value="" out="N"/>
+				<param name="prnr_sub_lnk_div_cd" type="12" value="" out="N"/>
+				<param name="prnr_sub_lnk_cd" type="12" value="" out="N"/>
+				<param name="sndr_trd_prnr_id" type="12" value="" out="N"/>
+				<param name="rcvr_trd_prnr_id" type="12" value="" out="N"/>
+				<param name="prnr_port_cd" type="12" value="" out="N"/>
+				<param name="edi_snd_flg" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

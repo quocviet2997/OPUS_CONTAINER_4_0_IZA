@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="RegionDBDAOSearchRegionListRSQL">
+			<desc><![CDATA[DESC Enter..]]></desc>
+			<sql><![CDATA[
+SELECT rgn_cd,
+	rgn_nm,
+	cnt_cd,
+	sconti_cd,
+	(CASE 
+		WHEN 'Y' = delt_flg THEN 'Delete' 
+		ELSE 'Active' 
+	END) AS delt_flg
+FROM (	SELECT ROW_NUMBER() OVER (ORDER BY A.rgn_cd ASC) no,
+			A.rgn_cd,
+			A.rgn_nm,
+			A.cnt_cd,
+			B.sconti_cd,
+			A.delt_flg
+		FROM mdm_region A, mdm_country B, mdm_subcontinent C
+		WHERE 1 = 1 AND A.cnt_cd = B.cnt_cd AND B.sconti_cd = C.sconti_cd
+		
+		#if (${cnt_cd} != '') 
+		AND A.cnt_cd like @[cnt_cd] || '%'
+		#end
+		#if (${rgn_cd} != '') 
+		AND A.rgn_cd like @[rgn_cd] || '%'
+		#end
+		#if (${conti_cd} != '') 
+		AND C.conti_cd = @[conti_cd]
+		#end
+
+		#if (${mdm_yn} != '')
+			#if (${delt_flg} == 'Y') 
+				AND NVL(A.DELT_FLG, 'N') = @[delt_flg]
+			#elseif (${delt_flg} == 'ALL') 
+			#else 
+				AND NVL(A.DELT_FLG, 'N') <> 'Y'
+			#end
+		#else	
+			AND NVL(A.DELT_FLG, 'N') <> 'Y'
+		#end
+		AND NVL(B.DELT_FLG, 'N') <> 'Y'
+	) a	
+ORDER BY rgn_cd			]]></sql>
+			<params>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="rgn_cd" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

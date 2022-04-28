@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckCurrCodeRSQL">
+			<desc><![CDATA[MDM_CURRENCY 테이블에 currCd 에 
+해당하는 정보가 있는지 유무를 리턴한다.]]></desc>
+			<sql><![CDATA[
+SELECT CURR_CD 
+FROM MDM_CURRENCY
+WHERE 1=1 
+AND CURR_CD = @[curr_cd]
+AND DELT_FLG ='N'			]]></sql>
+			<params>
+				<param name="curr_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

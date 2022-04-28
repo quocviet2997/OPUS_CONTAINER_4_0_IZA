@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOAddCustomerScheduleCSQL">
+			<desc><![CDATA[2011.03.17 정윤태 CUSTOMER SCHEDULE EDI SETUP 정보를 신규 입력한다]]></desc>
+			<sql><![CDATA[
+INSERT INTO VSK_CUST_SKD_EDI_SET (
+     EDI_STUP_ID
+    ,CUST_TRD_PRNR_ID
+    ,EDI_SNDR_ID
+    ,EDI_MSG_NM
+    ,EDI_SVC_TP_NM
+    ,WRK_RSRC_NM
+    ,SND_FM_DYS
+    ,SND_TO_DYS
+    ,PRE_DMY_SKD_FLG
+    ,PST_DMY_SKD_FLG
+    ,USE_FLG
+    ,CRE_USR_ID
+    ,CRE_DT
+    ,UPD_USR_ID
+    ,UPD_DT
+) VALUES (
+     @[edi_stup_id]
+    ,@[cust_trd_prnr_id]
+    ,@[edi_sndr_id]
+    ,@[edi_msg_nm]
+    ,@[edi_svc_tp_nm]
+    ,@[wrk_rsrc_nm]
+    ,@[snd_fm_dys]
+    ,@[snd_to_dys]
+    ,@[pre_dmy_skd_flg]
+    ,@[pst_dmy_skd_flg]
+    ,@[use_flg]
+    ,@[cre_usr_id]
+    ,SYSDATE
+    ,@[upd_usr_id]
+    ,SYSDATE
+)			]]></sql>
+			<params>
+				<param name="edi_stup_id" type="12" value="" out="N"/>
+				<param name="cust_trd_prnr_id" type="12" value="" out="N"/>
+				<param name="edi_sndr_id" type="12" value="" out="N"/>
+				<param name="edi_msg_nm" type="12" value="" out="N"/>
+				<param name="edi_svc_tp_nm" type="12" value="" out="N"/>
+				<param name="wrk_rsrc_nm" type="12" value="" out="N"/>
+				<param name="snd_fm_dys" type="12" value="" out="N"/>
+				<param name="snd_to_dys" type="12" value="" out="N"/>
+				<param name="pre_dmy_skd_flg" type="12" value="" out="N"/>
+				<param name="pst_dmy_skd_flg" type="12" value="" out="N"/>
+				<param name="use_flg" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

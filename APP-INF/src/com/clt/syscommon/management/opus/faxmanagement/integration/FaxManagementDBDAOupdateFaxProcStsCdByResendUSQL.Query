@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FaxManagementDBDAOupdateFaxProcStsCdByResendUSQL">
+			<desc><![CDATA[updateFaxProcStsCdByResend]]></desc>
+			<sql><![CDATA[
+UPDATE  COM_FAX_SND_INFO SET
+   FAX_PROC_STS_CD ='1'
+  , XPT_ERR_MSG = null
+  , UPD_USR_ID =  @[upd_usr_id]
+  , UPD_DT = sysdate
+  , XPT_RSLT_CD = NULL
+WHERE FAX_SND_NO = @[fax_snd_no]			]]></sql>
+			<params>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="fax_snd_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

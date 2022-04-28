@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<!-- Jung Yoon Tae : 2011-02-16 start -->
+    <screen name="BCM_FIN_0001">
+        <parameter key="title"    value="AP PERIOD" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/fin/financemanagement/financecreation/jsp/BCM_FIN_0001.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2011-02-16 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <screen name="BCM_FIN_0002">
+        <parameter key="title"    value="AR FINANCE DIRECTION CONVERSION" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/fin/financemanagement/financecreation/jsp/BCM_FIN_0002.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <screen name="BCM_FIN_0003">
+        <parameter key="title"    value="AR MASTER REVENUE VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/fin/financemanagement/financecreation/jsp/BCM_FIN_0003.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <screen name="BCM_FIN_0004">
+        <parameter key="title"    value="AR ROUTE RANK" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/fin/financemanagement/financecreation/jsp/BCM_FIN_0004.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <screen name="BCM_FIN_0005">
+        <parameter key="title"    value="GL ESTIMATE REVENUE VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/fin/financemanagement/financecreation/jsp/BCM_FIN_0005.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <screen name="BCM_FIN_0006">
+        <parameter key="title"    value="GL MONTHLY EXCHANGE RATE" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/fin/financemanagement/financecreation/jsp/BCM_FIN_0006.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+
+	<!-- YEONG-SEOK JANG : 2012-04-19 start -->
+    <screen name="COM_COM_1001">
+        <parameter key="title"    value="CENTER CODE ENTRY" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/fin/financemanagement/financecreation/jsp/COM_COM_1001.jsp"/>
+    </screen>
+	<!-- YEONG-SEOK JANG : 2012-04-19 end -->
+	
+	<!-- YEONG-SEOK JANG : 2012-04-19 start -->
+    <screen name="COM_COM_1002">
+        <parameter key="title"    value="ERROR VVD ENTRY" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/fin/financemanagement/financecreation/jsp/COM_COM_1002.jsp"/>
+    </screen>
+	<!-- YEONG-SEOK JANG : 2012-04-19 end -->	
+	
+	<!-- EUN-SUP LEE : 2012-04-13 start -->
+    <screen name="COM_COM_1004">
+        <parameter key="title"    value="Estimated FMC Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/fin/financemanagement/financecreation/jsp/COM_COM_1004.jsp"/>
+    </screen>
+	<!--  EUN-SUP LEE : 2012-04-13 end -->
+	
+	<!-- 2014-10-27 Yoo start -->
+    <screen name="BCM_FIN_0011"   template="templatePop">
+        <parameter key="title"    value="Set Revenue Month per Common &amp; Charter VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/fin/financemanagement/financecreation/jsp/BCM_FIN_0011.jsp"/>
+    </screen>
+    <!-- 2014-10-27 Yoo end -->		
+</screen-definitions>
+  

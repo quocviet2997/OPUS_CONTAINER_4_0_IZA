@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- Jeon Jae Hong : 2009-07-28 start -->
+    <url-mapping url="ESD_LEA_0010.do" screen="ESD_LEA_0010.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.EsdLea0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-07-28 end -->
+
+	<!-- Jeon Jae Hong : 2009-07-28 start -->
+    <url-mapping url="ESD_LEA_0901.do" screen="ESD_LEA_0901.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0901HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0901GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0901HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.EsdLea0901Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-07-28 end -->
+
+	<!-- Jeon Jae Hong : 2009-07-28 start -->
+    <url-mapping url="ESD_LEA_0902.do" screen="ESD_LEA_0902.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0902HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0902GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0902HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.EsdLea0902Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-07-28 end -->
+
+	<!-- Jeon Jae Hong : 2009-08-12 start -->
+    <url-mapping url="ESD_LEA_0005.do" screen="ESD_LEA_0005.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.EsdLea0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-08-12 end -->
+
+	<!-- Jeon Jae Hong : 2009-08-17 start -->
+    <url-mapping url="ESD_LEA_0008.do" screen="ESD_LEA_0008.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.EsdLea0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-08-17 end -->
+
+	<!-- Jeon Jae Hong : 2009-08-17 start -->
+    <url-mapping url="ESD_LEA_0012.do" screen="ESD_LEA_0012.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.actualcostcsrmanage.event.ESD_LEA_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.actualcostcsrmanage.event.ESD_LEA_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.actualcostcsrmanage.event.EsdLea0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-08-17 end -->
+
+	<!-- Jeon Jae Hong : 2009-08-28 start -->
+    <url-mapping url="ESD_LEA_0004.do" screen="ESD_LEA_0004.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.EsdLea0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-08-28 end -->
+
+	<!-- Jeon Jae Hong : 2009-09-02 start -->
+    <url-mapping url="ESD_LEA_0013.do" screen="ESD_LEA_0013.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.actualcostcsrmanage.event.ESD_LEA_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.actualcostcsrmanage.event.ESD_LEA_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.actualcostcsrmanage.event.EsdLea0013Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-09-02 end -->
+
+	<!-- Jeon Jae Hong : 2009-09-07 start -->
+    <url-mapping url="ESD_LEA_0006.do" screen="ESD_LEA_0006.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.EsdLea0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-09-07 end -->
+
+	<!-- Jeon Jae Hong : 2009-09-08 start -->
+    <url-mapping url="ESD_LEA_0007.do" screen="ESD_LEA_0007.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.EsdLea0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-09-08 end -->
+
+	<!-- Jeon Jae Hong : 2009-09-09 start -->
+    <url-mapping url="ESD_LEA_0002.do" screen="ESD_LEA_0002.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.EsdLea0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-09-09 end -->
+
+	<!-- Jeon Jae Hong : 2009-09-09 start -->
+    <url-mapping url="ESD_LEA_0009.do" screen="ESD_LEA_0009.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualemailsetting.event.ESD_LEA_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualemailsetting.event.ESD_LEA_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualemailsetting.event.EsdLea0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-09-09 end -->
+
+	<!-- Jeon Jae Hong : 2009-09-22 start -->
+    <url-mapping url="ESD_LEA_0014.do" screen="ESD_LEA_0014.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.EsdLea0014Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-09-22 end -->
+
+	<!-- Jeon Jae Hong : 2009-09-22 start -->
+    <url-mapping url="ESD_LEA_0015.do" screen="ESD_LEA_0015.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.ESD_LEA_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchexecuteresult.event.EsdLea0015Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-09-22 end -->
+
+	<!-- Jeon Jae Hong : 2009-10-05 start -->
+    <url-mapping url="ESD_LEA_0001.do" screen="ESD_LEA_0001.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchmanage.event.ESD_LEA_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchmanage.event.ESD_LEA_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.accrualbatchmanage.event.EsdLea0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-10-05 end -->
+
+	<!-- Jeon Jae Hong : 2009-10-28 start -->
+    <url-mapping url="ESD_LEA_0011.do" screen="ESD_LEA_0011.screen" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.actualcostcsrmanage.event.ESD_LEA_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_LEA_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.actualcostcsrmanage.event.ESD_LEA_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.actualcostcsrmanage.event.EsdLea0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.lea.logisticsexpenseaccrual.LogisticsExpenseAccrualSC</service-action-class>
+    </event-mapping>
+	<!-- Jeon Jae Hong : 2009-10-28 end -->
+
+</mappings>

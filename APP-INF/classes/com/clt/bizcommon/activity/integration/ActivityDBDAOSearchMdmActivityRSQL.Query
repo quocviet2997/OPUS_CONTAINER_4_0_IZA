@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ActivityDBDAOSearchMdmActivityRSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+SELECT  ACT_CD, ACT_NM, 
+	(CASE 
+		WHEN 'Y' = delt_flg THEN 'Delete' 
+		ELSE 'Active' 
+	END) AS DELT_FLG
+FROM MDM_ACTIVITY
+WHERE act_cd LIKE @[act_cd]||'%'
+AND UPPER(act_nm) LIKE '%'||@[act_nm]||'%'
+
+
+#if (${mdm_yn} != '')
+
+	#if (${delt_flg} == 'Y') 
+		AND delt_flg = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+
+	#else 
+		AND delt_flg <> 'Y'
+	#end
+
+#else	
+	AND delt_flg <> 'Y'
+#end
+ORDER BY ACT_CD			]]></sql>
+			<params>
+				<param name="act_cd" type="12" value="" out="N"/>
+				<param name="act_nm" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserDAOComUsrPwdHisCSQL">
+			<desc><![CDATA[insert into COM_USR_PWD_HIS]]></desc>
+			<sql><![CDATA[
+insert into COM_USR_PWD_HIS (
+	usr_id,
+	usr_pwd,
+	usr_pwd_cre_dt,
+	cre_usr_id,
+	cre_dt,
+	upd_usr_id,
+	upd_dt
+) values( 
+	@[usr_id],
+	@[usr_pwd],
+	sysdate,
+	@[cre_usr_id],
+	sysdate,
+	@[cre_usr_id],
+	sysdate
+)			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="usr_pwd" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

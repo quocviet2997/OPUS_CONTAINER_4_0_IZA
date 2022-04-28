@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckActiveYardCodeRSQL">
+			<desc><![CDATA[Check whether Location has active yards or not.]]></desc>
+			<sql><![CDATA[
+SELECT SCC_CD
+  FROM MDM_LOCATION A
+ WHERE EXISTS (
+               SELECT 1
+                 FROM MDM_YARD B
+                WHERE A.LOC_CD = B.LOC_CD
+                  AND B.DELT_FLG = 'N'
+                  AND ROWNUM = 1
+              )
+   AND A.LOC_CD = @[loc_cd] 			]]></sql>
+			<params>
+				<param name="loc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

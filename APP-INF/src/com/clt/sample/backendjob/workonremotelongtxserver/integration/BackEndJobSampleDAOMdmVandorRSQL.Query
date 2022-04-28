@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="BackEndJobSampleDAOMdmVandorRSQL">
+			<desc><![CDATA[MDM VANDOR  테이블의 값을 가져온다.]]></desc>
+			<sql><![CDATA[
+select *
+from mdm_vendor			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

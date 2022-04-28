@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckZoneCodeRSQL">
+			<desc><![CDATA[MDM_ZONE 테이블에 znCd 에 
+해당하는 정보가 있는지 유무를 리턴한다.]]></desc>
+			<sql><![CDATA[
+SELECT ZN_CD 
+FROM MDM_ZONE 
+WHERE 1=1 
+AND ZN_CD = @[zn_cd]
+AND DELT_FLG ='N'			]]></sql>
+			<params>
+				<param name="zn_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCSRCancellation4USQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+UPDATE COM_APRO_CSR_DTL
+   SET DELT_FLG = 'Y'
+ WHERE CSR_NO = @[csr_no]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

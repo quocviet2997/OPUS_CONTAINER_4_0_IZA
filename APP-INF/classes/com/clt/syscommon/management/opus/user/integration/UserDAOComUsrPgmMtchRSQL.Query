@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserDAOComUsrPgmMtchRSQL">
+			<desc><![CDATA[Inquiry the program that the user can use.]]></desc>
+			<sql><![CDATA[
+#if(${pgm_no} != '')
+SELECT DECODE(z.pgm_no, NULL, decode(Y.add_flg, null, '0', 'Y', '1'), decode(Y.add_flg, null, '1', 'N', '0')) checkbox,    
+			 X.pgm_no,                                                 
+			 X.pgm_nm,
+			 Y.add_flg,
+			 DECODE(Y.PGM_NO,NULL,'0','1') user_flg,
+			 DECODE(z.PGM_NO,NULL,'0','1') role_flg,
+			 DECODE(super.PGM_NO,NULL,'0','1') super_flg
+FROM 	(SELECT distinct Aa.pgm_no, Aa.pgm_nm                                         
+			  		FROM COM_PROGRAM Aa,                                        
+			  			(SELECT *                                              
+			  			 FROM COM_MNU_CFG     
+						 WHERE MNU_CFG_CD= '002'                                   
+			  			 CONNECT BY PRIOR chd_pgm_no = prnt_pgm_no             
+			  			 START WITH PRNT_PGM_NO = @[pgm_no] ) Bb
+			  			WHERE Aa.PGM_NO = Bb.CHD_PGM_NO 
+						AND Aa.PGM_MNU_DIV_CD='02'                            
+			  		) X,    
+          com_usr_pgm_mtch Y,                                       
+	(select distinct b.pgm_no
+	from com_usr_role_mtch a, com_pgm_role b, com_ofc_pgm_mtch c
+	where a.usr_id = @[usr_id]
+	and c.ofc_cd = @[ofc_cd]
+	and a.usr_role_cd = b.usr_role_cd
+	and b.pgm_no = c.pgm_no) z,
+	(select distinct e.pgm_no
+	from com_usr_role_adm_mtch d, com_pgm_role e
+	where d.usr_id = @[login_usr_id]
+	and d.usr_role_cd = e.usr_role_cd) super 
+WHERE X.PGM_NO = Y.PGM_NO(+)    
+and x.pgm_no = z.pgm_no(+)
+and x.pgm_no = super.pgm_no(+)
+AND Y.usr_id(+) = @[usr_id]
+ORDER BY X.PGM_NO                                          
+#else
+SELECT DECODE(z.pgm_no, NULL, decode(Y.add_flg, null, '0', 'Y', '1'), decode(Y.add_flg, null, '1', 'N', '0')) checkbox,
+			 X.pgm_no,                                                 
+			 X.pgm_nm,
+			 Y.add_flg,
+			 DECODE(Y.PGM_NO,NULL,'0','1') user_flg,
+			 DECODE(z.PGM_NO,NULL,'0','1') role_flg,
+			 DECODE(super.PGM_NO,NULL,'0','1') super_flg
+FROM COM_PROGRAM  X,                                            
+          com_usr_pgm_mtch Y,                                       
+	(select distinct b.pgm_no
+	from com_usr_role_mtch a, com_pgm_role b, com_ofc_pgm_mtch c
+	where a.usr_id = @[usr_id]
+	and c.ofc_cd = @[ofc_cd]
+	and a.usr_role_cd = b.usr_role_cd
+	and b.pgm_no = c.pgm_no) z,
+	(select distinct e.pgm_no
+	from com_usr_role_adm_mtch d, com_pgm_role e
+	where d.usr_id = @[login_usr_id]
+	and d.usr_role_cd = e.usr_role_cd) super 
+WHERE X.PGM_NO = Y.PGM_NO(+)    
+and x.pgm_no = z.pgm_no(+)
+and x.pgm_no = super.pgm_no(+)
+AND Y.usr_id(+) = @[usr_id]
+AND X.PGM_MNU_DIV_CD='02' 
+ORDER BY X.PGM_NO
+#end			]]></sql>
+			<params>
+				<param name="pgm_no" type="12" value="" out="N"/>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="login_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOModifyPartnerPortLaneUSQL">
+			<desc><![CDATA[2011.03.07 정윤태 EDI PARTNER PORT LANE 정보를 변경한다]]></desc>
+			<sql><![CDATA[
+UPDATE BKG_EDI_PRNR_PORT_LANE
+   SET UPD_USR_ID = @[upd_usr_id],
+       UPD_DT = SYSDATE
+ WHERE TRD_PRNR_SUB_LNK_SEQ = @[trd_prnr_sub_lnk_seq]
+   AND SLAN_CD = @[slan_cd]			]]></sql>
+			<params>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="trd_prnr_sub_lnk_seq" type="12" value="" out="N"/>
+				<param name="slan_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOTAXInfoRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT NVL(DECODE(VNDR_CNT_CD,'JP',VNDR_LOCL_LANG_NM, VNDR_LGL_ENG_NM), ' ') VNDR_NM,
+       NVL(BZCT_NM, ' ') BZCT_NM,
+       NVL(BZTP_NM, ' ') BZTP_NM,
+       NVL(DECODE(VNDR_CNT_CD,'JP',LOCL_LANG_ADDR, ENG_ADDR), ' ') VNDR_ADDR,
+       NVL(VNDR_SEQ, '') VNDR_SEQ,
+       NVL(CEO_NM, ' ') CEO_NM,
+	   '' wkplc_nmstring,
+	   '' tax_no3,
+	   '' ofc_cd,
+	   '' cre_usr_id,
+	   '' tax_no1,
+       '' tax_no2,
+	   '' vndr_seq_hdr,
+	   '' comp_no,
+	   '' rgst_no,
+	   '' tax_type,
+	   '' ap_tax_nm,
+	   '' fa_flg,
+	   '' tax_naid_flg,
+	   '' tax_nsl_flg,
+       '' tax_code,
+       '' gs_flg
+FROM   MDM_VENDOR
+WHERE  rgst_no = @[comp_no]
+  AND  DELT_FLG = 'N'			]]></sql>
+			<params>
+				<param name="comp_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

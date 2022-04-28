@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">	
+	
+	<!-- ================================================================================== -->
+	<!-- ============================ TPBMasterDataManage (S) ============================= -->
+	<!-- TPB Code Creation  -->
+	<screen name="ESD_TPB_0101">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/masterdatamanage/codemanage/jsp/ESD_TPB_0101.jsp" />
+	</screen>
+	<!-- TPB Office Management  -->
+	<screen name="ESD_TPB_0102">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/masterdatamanage/officemanage/jsp/ESD_TPB_0102.jsp" />
+	</screen>
+	<!-- TPB Code Inquiry   -->
+	<screen name="ESD_TPB_0131">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/masterdatamanage/codemanage/jsp/ESD_TPB_0131.jsp" />
+	</screen>
+	<!-- TPB Office Inquiry -->
+	<screen name="ESD_TPB_0132">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/masterdatamanage/officemanage/jsp/ESD_TPB_0132.jsp" />
+	</screen>
+	<!-- ============================ TPBMasterDataManage (E) ============================= -->
+	<!-- ================================================================================== -->
+	 
+	
+	<!-- ================================================================================= -->
+	<!-- ============================ TPBCandidateManage (S) ============================= -->
+	<!-- TPB Manual Register  -->
+	<screen name="ESD_TPB_0103">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/candidatemanage/manualregister/jsp/ESD_TPB_0103.jsp" />
+	</screen>
+	<!-- EAC Registration  -->
+	<screen name="ESD_TPB_0104">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/candidatemanage/manualregister/jsp/ESD_TPB_0104.jsp" />
+	</screen>
+	<!-- TPB Candidate Creation   --> 
+	<screen name="ESD_TPB_0105">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/candidatemanage/candidateconfirm/jsp/ESD_TPB_0105.jsp" />
+	</screen>
+	<screen name="ESD_TPB_0133">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esd/tpb/candidatemanage/interfacedcancel/jsp/ESD_TPB_0133.jsp" />
+	</screen>
+	<!-- ============================ TPBCandidateManage (E) ============================= -->
+	<!-- ================================================================================= -->
+	
+	
+	<!-- ================================================================================= -->
+	<!-- ============================ TPBProcessManage (S) =============================== -->
+	<!-- TPB Handling 화면 -->
+	<screen name="ESD_TPB_0106">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/invoicemanage/jsp/ESD_TPB_0106.jsp" />
+	</screen>
+	<!-- TPB Group Remaking 화면 -->
+	<screen name="ESD_TPB_0107">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/outstandinggroupmanage/jsp/ESD_TPB_0107.jsp" />
+	</screen>
+	<!-- TPB Modification 화면 -->
+	<screen name="ESD_TPB_0108">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/outstandinggroupmanage/jsp/ESD_TPB_0108.jsp" />
+	</screen>
+	
+	<screen name="ESD_TPB_0108POP" template="templatePop">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/outstandinggroupmanage/jsp/ESD_TPB_0108.jsp" />
+	</screen>
+	
+	<!-- Invoice Sheet Setting 화면 -->
+	<screen name="ESD_TPB_0109">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/invoicemanage/jsp/ESD_TPB_0109.jsp" />
+	</screen>
+	<!-- Invoice Revision 화면 -->
+	<screen name="ESD_TPB_0111">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/invoicemanage/jsp/ESD_TPB_0111.jsp" />
+	</screen>
+	<!-- Responsible Office Change 화면 -->
+	<screen name="ESD_TPB_0113">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/adjustmentmanage/jsp/ESD_TPB_0113.jsp" />
+	</screen>
+	<!-- Write-Off 화면 -->
+	<screen name="ESD_TPB_0114">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/adjustmentmanage/jsp/ESD_TPB_0114.jsp" />
+	</screen>
+	<!-- ============================ TPBProcessManage (E) =============================== -->
+	<!-- ================================================================================= -->
+	
+	
+<!-- ================================================================================= -->
+	<!-- ============================ TPBStatusInquiry (S) =============================== -->
+	<!-- TPB Inquiry 화면  -->
+	<screen name="ESD_TPB_0115">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/statusinquiry/statusinquiry/jsp/ESD_TPB_0115.jsp" />
+	</screen>
+	<!-- Status By TPB 화면 -->
+	<screen name="ESD_TPB_0116">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/statusinquiry/statusinquiry/jsp/ESD_TPB_0116.jsp" />
+	</screen>
+	<!-- TPB Status by Booking(B/L)화면 -->
+	<screen name="ESD_TPB_0134" template="templatePop">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/statusinquiry/statusinquiry/jsp/ESD_TPB_0134.jsp" />
+	</screen>
+	<!-- Activity - TPB Confirmation -->
+	<screen name="ESD_TPB_0135">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/statusinquiry/statusinquiry/jsp/ESD_TPB_0135.jsp" />
+	</screen>
+	<!-- Activity - TPB Closing -->
+	<screen name="ESD_TPB_0136">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/statusinquiry/statusinquiry/jsp/ESD_TPB_0136.jsp" />
+	</screen>
+	<!-- Status Summary 화면 --> 
+	<screen name="ESD_TPB_0117">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/statusinquiry/statusinquiry/jsp/ESD_TPB_0117.jsp" />
+	</screen>
+	<!-- TPB Invoice inquiry 화면  -->
+	<screen name="ESD_TPB_0118">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/statusinquiry/statusinquiry/jsp/ESD_TPB_0118.jsp" />
+	</screen>
+	<!-- TPB Closing 화면 -->
+	<screen name="ESD_TPB_0119">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/statusinquiry/performanceinquiry/jsp/ESD_TPB_0119.jsp" />
+	</screen>
+	<!-- Non-TPB 화면 -->
+	<screen name="ESD_TPB_0120">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/statusinquiry/performanceinquiry/jsp/ESD_TPB_0120.jsp" />
+	</screen>
+	<!-- EAC Issue 화면 -->
+	<screen name="ESD_TPB_0121">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/statusinquiry/performanceinquiry/jsp/ESD_TPB_0121.jsp" />
+	</screen>
+	<!-- Pending TPB 화면 -->
+	<screen name="ESD_TPB_0808">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/statusinquiry/statusinquiry/jsp/ESD_TPB_0808.jsp" />
+	</screen>
+	<!-- Pending TPB 화면 -->
+	<screen name="ESD_TPB_0137">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/statusinquiry/statusinquiry/jsp/ESD_TPB_0137.jsp" />
+	</screen>
+	<!-- ============================ TPBStatusInquiry (E) =============================== -->
+	<!-- ================================================================================= -->	
+	
+	
+	<!-- ================================================================================= -->
+	<!-- ============================ common (S) ========================================= -->
+	<!-- ===== Common - CommonGenCodeCombo ========================================================== -->
+
+	<!--  TPB 공통 콤보 처리 -->
+	<screen name="TPBCommonCode">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/common/combo/jsp/TPBCommonCode.jsp" />
+	</screen>
+
+	<!-- ===== / Common - CommonGenCodeCombo ======================================================== -->
+
+	<!-- ===== Common - TPBFileUpload ========================================================== -->
+
+	<!--  TPB 파일업로드 -->
+	<screen name="TPBFileUpload" template="templatePop">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/common/fileupload/jsp/TPBFileUpload.jsp" />
+	</screen>
+
+	<!--  TPB 파일업로드/삭제 처리 -->
+	<screen name="TPBFileUploadProc">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/common/fileupload/jsp/TPBFileUploadProc.jsp" />
+	</screen>
+
+	<!--  TPB Blank -->
+	<screen name="TPBFileUploadBlank">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/common/fileupload/jsp/TPBFileUpload.jsp" />
+	</screen>
+
+	<!--  TPB 파일업로드 예제 -->
+	<screen name="TPBFileUploadSample">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/common/fileupload/jsp/TPBFileUploadSample.jsp" />
+	</screen>
+	
+	<!--  TPB 파일다운로드 -->
+	<screen name="TPBFileDownload">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/common/fileupload/jsp/TPBFileDownload.jsp" />
+	</screen>
+		
+	<!-- ===== / Common - TPBFileUpload ======================================================== -->
+
+	<!-- ===== Common - TPBPendigTpbOpener ========================================================== -->
+
+	<!--  Pending TPB 처리 -->
+	<screen name="TPBPendigTpbOpener">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/common/pendingtpb/jsp/TPBPendigTpbOpener.jsp" />
+	</screen>
+
+	<!-- ===== / Common - TPBPendigTpbOpener ======================================================== -->
+
+	<!-- ===== (Temporary) Common - TPBInterfaceTest ========================================================== -->
+
+	<!--  TPB(Receiving) Interface Test -->
+	<!--
+	<screen name="TPBInterfaceTest">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/common/tpbinterface/jsp/InterfaceTest.jsp" />
+	</screen>
+	-->
+	<!-- ===== / (Temporary) Common - TPBInterfaceTest ======================================================== -->
+	<!-- ============================ common (E) ========================================= -->
+	<!-- ================================================================================= -->
+
+
+	<!-- ================================================================================= -->
+	<!-- ============================ JOCaseManage (S) =================================== -->
+	<!-- JO TPB Candidate Confirm 화면 -->
+	<screen name="ESD_TPB_0122">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/jocasemanage/jocandidateconfirm/jsp/ESD_TPB_0122.jsp" />
+	</screen>
+	<!-- JO Invoice Sheet Setting 화면 -->
+	<screen name="ESD_TPB_0123">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/jocasemanage/joinvoicemanage/jsp/ESD_TPB_0123.jsp" />
+	</screen>
+	<!-- JO TPB Handling 화면 -->
+	<screen name="ESD_TPB_0124">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/jocasemanage/joinvoicemanage/jsp/ESD_TPB_0124.jsp" />
+	</screen>
+	<!-- JO TPB Modification 화면 -->
+	<screen name="ESD_TPB_0125">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/jocasemanage/jooutstandinggroupmanage/jsp/ESD_TPB_0125.jsp" />
+	</screen>
+	
+	<screen name="ESD_TPB_0125POP" template="templatePop">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/jocasemanage/jooutstandinggroupmanage/jsp/ESD_TPB_0125.jsp" />
+	</screen>
+	
+	<!-- JO TPB Invoice Revise/Cancel 화면 -->
+	<screen name="ESD_TPB_0127">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/jocasemanage/joinvoicemanage/jsp/ESD_TPB_0127.jsp" />
+	</screen>
+	<!-- JO Invoice Revision Confirm -->
+	<screen name="ESD_TPB_0127Confirm" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esd/tpb/jocasemanage/joinvoicemanage/jsp/ESD_TPB_0127Confirm.jsp" />
+	</screen>		
+	<!-- JO TPB Inquiry 화면 -->
+	<screen name="ESD_TPB_0128">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/jocasemanage/jostatusinquiry/jsp/ESD_TPB_0128.jsp" />
+	</screen>
+	<!-- JO TPB Invoice Inquiry 화면 -->
+	<screen name="ESD_TPB_0129">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/jocasemanage/jostatusinquiry/jsp/ESD_TPB_0129.jsp" />
+	</screen>
+	<!-- JO TPB Process Inquiry 화면 -->
+	<screen name="ESD_TPB_0130">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/jocasemanage/jostatusinquiry/jsp/ESD_TPB_0130.jsp" />
+	</screen>
+	<!-- ============================ JOCaseManage (E) =================================== -->
+	<!-- ================================================================================= -->
+
+
+	<!-- JO Invoice Creation 화면 -->
+	<screen name="ESD_TPB_0126">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/jocasemanage/joinvoicemanage/jsp/ESD_TPB_0126.jsp" />
+	</screen>
+	<!-- JO Invoice Creation Confirm -->
+	<screen name="ESD_TPB_0126Confirm" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esd/tpb/jocasemanage/joinvoicemanage/jsp/ESD_TPB_0126Confirm.jsp" />
+	</screen>
+	<!-- Duplication Check Up 화면  -->
+	<screen name="ESD_TPB_0801" template="templatePop">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/candidatemanage/manualregister/jsp/ESD_TPB_0801.jsp" />
+	</screen>
+	<!-- Container Selection 화면  -->
+	<screen name="ESD_TPB_0811">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/candidatemanage/manualregister/jsp/ESD_TPB_0811.jsp" />
+	</screen>
+	<screen name="ESD_TPB_0811POP" template="templatePop">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/candidatemanage/manualregister/jsp/ESD_TPB_0811.jsp" />
+	</screen>
+	<!-- Select Staff 화면  -->
+	<screen name="ESD_TPB_0813" template="templatePop">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/candidatemanage/manualregister/jsp/ESD_TPB_0813.jsp" />
+	</screen>
+	<!-- ============================ TPBProcessManage (E) =============================== -->
+	<!-- ================================================================================= -->
+	
+	
+	<!-- TPB Modification - 3자구상 대상 선택 팝업 -->
+	<screen name="ESD_TPB_0809" template="templatePop">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/outstandinggroupmanage/jsp/ESD_TPB_0809.jsp" />
+	</screen>
+	<!-- Invoice Creation 화면 -->
+	<screen name="ESD_TPB_0110">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/invoicemanage/jsp/ESD_TPB_0110.jsp" />
+	</screen>
+	<!-- Invoice Revision Confirm -->
+	<screen name="ESD_TPB_0111Confirm" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/invoicemanage/jsp/ESD_TPB_0111Confirm.jsp" />
+	</screen>		
+	<!-- Invoice Preview 화면 -->
+	<screen name="ESD_TPB_0112" template="templatePop">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/invoicemanage/jsp/ESD_TPB_0112.jsp" />
+	</screen>
+	<!-- Collection Activity Remarks 화면 -->
+	<screen name="ESD_TPB_0803" template="templatePop">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/invoicemanage/jsp/ESD_TPB_0803.jsp" />
+	</screen>
+	<!--  ROC To - TPB Office Search Popup -->
+	<screen name="ESD_TPB_0804" template="templatePop">
+		<parameter key="title" value="한진해운PI" direct="true"/>
+		<parameter key="body"  value="apps/opus/esd/tpb/processmanage/adjustmentmanage/jsp/ESD_TPB_0804.jsp" />
+	</screen>
+	<!--  ROC To - TPB Office Search Popup 화면 그리드 1 -->
+	<!--  TPB Adjustment Message Input Popup -->
+	<screen name="ESD_TPB_0805" template="templatePop">
+		<parameter key="title" value="한진해운PI" direct="true"/>
+		<parameter key="body"  value="apps/opus/esd/tpb/processmanage/adjustmentmanage/jsp/ESD_TPB_0805.jsp" />
+	</screen>
+	<screen name="ESD_TPB_0806" template="templatePop">
+		<parameter key="title" value="한진해운PI" direct="true"/>
+		<parameter key="body"  value="apps/opus/esd/tpb/processmanage/adjustmentmanage/jsp/ESD_TPB_0806.jsp" />
+	</screen>
+	<!-- Recovery Activity Inquiry / Input 화면 -->
+	<screen name="ESD_TPB_0807" template="templatePop">
+		<parameter key="title" value="한진해운PI" direct="true"/>
+		<parameter key="body"  value="apps/opus/esd/tpb/processmanage/recoveryactivitymanage/jsp/ESD_TPB_0807.jsp" />
+	</screen>
+	<!-- Invoice Cancel Remarks -->
+	<screen name="ESD_TPB_0810" template="templatePop">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/invoicemanage/jsp/ESD_TPB_0810.jsp" />
+	</screen>
+	<!-- Taxation Control 화면 -->
+	<screen name="ESD_TPB_0812">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/tpb/processmanage/invoicemanage/jsp/ESD_TPB_0812.jsp" />
+	</screen>
+	<!-- ============================ TPBStatusInquiry (E) =============================== -->
+	<!-- ================================================================================= -->
+	
+
+</screen-definitions>

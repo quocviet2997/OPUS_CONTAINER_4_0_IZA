@@ -1,0 +1,37 @@
+ <html>
+ <head><title>FAC Agreement Rate Approval Request</title></head>
+ <body>
+ <@ date >
+ <br><br>
+ To : <@ name >
+ <br><br>
+ <@ ofc_cd > created <@ cnt > <@ str1 > in the FAC agreement Creation table.
+ <br>
+ Pls check and approve <@ str2 >.
+ <br><br>
+<b style="font-family: Arial; font-size: 15px; color:blue;">Summary</b>
+<br><br>
+<DIV style='width:700; height:200; overflow-x:no; overflow:auto; text-align:left; font-size:8pt; scrollbar-shadow-color: #ffffff; scrollbar-highlight-color: #ffffff; scrollbar-face-color: #d9d9d9; scrollbar-3dlight-color: #d9d9d9; scrollbar-track-color: #ffffff; scrollbar-arrow-color: #ffffff;'>
+<nobr>
+<table style="border-collapse: collapse; border: #5898A4 1px solid; background-color: white;  color: #272727; width:1140;">
+	<tr style="background-color: #CBF0A9 ; border: white 1px solid; color: #275F65; text-align : center; font-weight:bold; height:23;">
+		<td style='padding:0px; border: #CAE2E9 1px solid; font-family: Arial; font-size: 10px;' width="70">F.Forwarder</td>
+		<td style='padding:0px; border: #CAE2E9 1px solid; font-family: Arial; font-size: 10px;' width="300">Name</td>
+		<td style='padding:0px; border: #CAE2E9 1px solid; font-family: Arial; font-size: 10px;' width="40">Type</td>
+		<td style='padding:0px; border: #CAE2E9 1px solid; font-family: Arial; font-size: 10px;' width="40">Rate</td>
+		<td style='padding:0px; border: #CAE2E9 1px solid; font-family: Arial; font-size: 10px;' width="60">B/L AMT</td>
+		<td style='padding:0px; border: #CAE2E9 1px solid; font-family: Arial; font-size: 10px;' width="60">BOX AMT</td>
+		<td style='padding:0px; border: #CAE2E9 1px solid; font-family: Arial; font-size: 10px;' width="60">TEU AMT</td>
+		<td style='padding:0px; border: #CAE2E9 1px solid; font-family: Arial; font-size: 10px;' width="60">FEU AMT</td>
+		<td style='padding:0px; border: #CAE2E9 1px solid; font-family: Arial; font-size: 10px;' width="65">RTEU AMT</td>
+		<td style='padding:0px; border: #CAE2E9 1px solid; font-family: Arial; font-size: 10px;' width="65">RFEU AMT</td>
+		<td style='padding:0px; border: #CAE2E9 1px solid; font-family: Arial; font-size: 10px;' width="320">CHG</td>
+	</tr>
+	<@ tr_str >
+</table>
+</nobr>
+</DIV>
+<br>
+ Best Regards,<br>
+ </body>
+ </html>

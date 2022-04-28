@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOCheckDupPartnerPortLaneRSQL">
+			<desc><![CDATA[2011.03.08 정윤태 EDI PARTNER PORT LANE에 중복데이타가 존재하는지 체크한다]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*) CNT 
+  FROM BKG_EDI_PRNR_PORT_LANE
+ WHERE TRD_PRNR_SUB_LNK_SEQ = @[trd_prnr_sub_lnk_seq]
+   AND SLAN_CD = @[slan_cd]			]]></sql>
+			<params>
+				<param name="trd_prnr_sub_lnk_seq" type="12" value="" out="N"/>
+				<param name="slan_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

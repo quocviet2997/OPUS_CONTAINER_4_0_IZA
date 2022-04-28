@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOConfirmApPayInvUSQL">
+			<desc><![CDATA[AP_PAY_INV 승인정보를 수정한다]]></desc>
+			<sql><![CDATA[
+UPDATE AP_PAY_INV
+   SET GL_DT = ''
+ WHERE CSR_NO = @[csr_no]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

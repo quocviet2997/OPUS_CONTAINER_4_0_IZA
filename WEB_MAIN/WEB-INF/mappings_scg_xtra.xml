@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+    <url-mapping url="STAND_ALONE.do" screen="STAND_ALONE.screen" >
+        <web-action-class>com.clt.apps.opus.vop.scg.standalonetester.StandAloneHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STAND_ALONE_GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.vop.scg.standalonetester.StandAloneHTMLAction</web-action-class>
+    </url-mapping>
+        
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.scg.standalonetester.StandAloneEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.scg.standalonetester.StandAloneSC</service-action-class>
+    </event-mapping>
+    
+</mappings>

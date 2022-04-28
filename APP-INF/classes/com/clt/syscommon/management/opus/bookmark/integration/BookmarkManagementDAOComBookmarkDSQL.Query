@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="BookmarkManagementDAOComBookmarkDSQL">
+			<desc><![CDATA[delete bookmark]]></desc>
+			<sql><![CDATA[
+delete from com_bookmark
+where	usr_id = @[usr_id] 
+and	pgm_no = @[pgm_no]			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="pgm_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ServiceScopeDBDAOSearchServiceScopeListRSQL">
+			<desc><![CDATA[ServiceScope의 모든 목록을 가져온다]]></desc>
+			<sql><![CDATA[
+SELECT svc_scp_cd,
+	svc_scp_nm,
+DECODE(DELT_FLG,'Y','Delete','Active') AS DELT_FLG
+FROM (	SELECT ROW_NUMBER() OVER (ORDER BY svc_scp_cd ASC) no,
+			svc_scp_cd,
+			svc_scp_nm,
+			delt_flg
+		FROM mdm_svc_scp
+		WHERE 1 = 1 
+
+	#if (${mdm_yn} != '')
+		#if (${delt_flg} == 'Y') 
+			AND DELT_FLG = @[delt_flg]
+		#elseif (${delt_flg} == 'ALL') 
+		#else 
+			AND DELT_FLG <> 'Y'
+		#end
+	#else	
+		AND DELT_FLG <> 'Y'
+	#end
+
+		#if (${svc_scp_cd} != '') 
+		AND svc_scp_cd like @[svc_scp_cd] || '%'
+		#end
+		#if (${svc_scp_nm} != '') 
+		AND upper(svc_scp_nm) like '%' || upper(@[svc_scp_nm]) || '%'
+		#end
+	) a
+ORDER BY svc_scp_cd			]]></sql>
+			<params>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="svc_scp_cd" type="12" value="" out="N"/>
+				<param name="svc_scp_nm" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+    <url-mapping url="RDMailSample.do" screen="RD_MAIL_SAMPLE.screen" >
+        <web-action-class>com.clt.sample.mail.rdmail.event.RDMailSampleHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.sample.mail.rdmail.event.RDMailSampleEvent</event-class>
+        <service-action-class>com.clt.sample.mail.rdmail.RDMailSampleSC</service-action-class>
+    </event-mapping>
+
+
+    <url-mapping url="RDWebSample.do" screen="RD_WEB_SAMPLE.screen" >
+        <web-action-class>com.clt.sample.rdweb.usingdo.event.RDWEBSAMPLEHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.sample.rdweb.usingdo.event.RdwebsampleEvent</event-class>
+        <service-action-class>com.clt.sample.rdweb.RdWebSC</service-action-class>
+    </event-mapping>
+	
+	<!--  : 2009-05-22 start -->
+    <url-mapping url="MAIL_01.do" screen="MAIL_01.screen" >
+        <web-action-class>com.clt.sample.mail.mail.event.MAIL_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="MAIL_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.sample.mail.mail.event.MAIL_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.sample.mail.mail.event.Mail01Event</event-class>
+        <service-action-class>com.clt.sample.mail.MailSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="CODE.do" screen="CODE.screen" >
+        <web-action-class>com.clt.sample.code.event.CodeHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.sample.code.event.CodeEvent</event-class>
+        <service-action-class>com.clt.sample.code.CodeSC</service-action-class>
+    </event-mapping>
+
+	<!--  : 2009-05-22 end -->
+
+
+	<!-- Jeong-Hoon, Kim : 2009-06-01 start -->
+    <url-mapping url="fax_send.do" screen="fax_send.screen" >
+        <web-action-class>com.clt.sample.fax.faxsend.event.FAX_SENDHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="fax_sendGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.sample.fax.faxsend.event.FAX_SENDHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.sample.fax.faxsend.event.FaxSendEvent</event-class>
+        <service-action-class>com.clt.sample.fax.FaxSC</service-action-class>
+    </event-mapping>
+	<!-- Jeong-Hoon, Kim : 2009-06-01 end -->
+	
+	<!-- Jeong-Hoon, Kim : 2009-06-04 start -->
+    <url-mapping url="GROUPWARE_POPUP.do" screen="GROUPWARE_POPUP.screen" >
+        <web-action-class>com.clt.sample.groupwarepopup.groupwarepopup.event.GROUPWARE_POPUPHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="GROUPWARE_POPUPGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.sample.groupwarepopup.groupwarepopup.event.GROUPWARE_POPUPHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.sample.groupwarepopup.groupwarepopup.event.GroupwarePopupEvent</event-class>
+        <service-action-class>com.clt.sample.groupwarepopup.GroupwarePopupSC</service-action-class>
+    </event-mapping>
+	<!-- Jeong-Hoon, Kim : 2009-06-04 end -->
+	<!-- Jeong-Hoon, Kim : 2009-08-19 start -->
+    <url-mapping url="COM_SAMPLE_RD_WITH_FILE.do" screen="COM_SAMPLE_RD_WITH_FILE.screen" >
+        <web-action-class>com.clt.sample.reportdesigner.withfiles.event.COM_SAMPLE_RD_WITH_FILEHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_SAMPLE_RD_WITH_FILEGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.sample.reportdesigner.withfiles.event.COM_SAMPLE_RD_WITH_FILEHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.sample.reportdesigner.withfiles.event.ComSampleRdWithFileEvent</event-class>
+        <service-action-class>com.clt.sample.reportdesigner.ReportDesignerSC</service-action-class>
+    </event-mapping>
+	<!-- Jeong-Hoon, Kim : 2009-08-19 end -->
+	<!-- Jeong-Hoon, Kim : 2009-09-04 start -->
+    <url-mapping url="FTP_SEND.do" screen="FTP_SEND.screen" >
+        <web-action-class>com.clt.sample.ftp.send.event.FTP_SENDHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FTP_SENDGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.sample.ftp.send.event.FTP_SENDHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.sample.ftp.send.event.FtpSendEvent</event-class>
+        <service-action-class>com.clt.sample.ftp.FtpSC</service-action-class>
+    </event-mapping>
+	<!-- Jeong-Hoon, Kim : 2009-09-04 end -->
+
+
+
+	<!-- Hyunsu Ryu BACK END JOB : 2010-04-30 start -->
+	<url-mapping url="BackEndJob.do" screen="BackEndJob.screen" >
+        <web-action-class>com.clt.sample.backendjob.thread.event.BackEndJobSampleHTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="BackEndJobGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.sample.backendjob.thread.event.BackEndJobSampleHTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.sample.backendjob.thread.event.BackEndJobSampleEvent</event-class>
+        <service-action-class>com.clt.sample.backendjob.BackEndJobSampleSC</service-action-class>
+    </event-mapping>
+
+
+    <url-mapping url="WorkOnLongTxServer.do" screen="WorkOnLongTxServer.screen" >
+        <web-action-class>com.clt.sample.backendjob.workonremotelongtxserver.event.WorkOnRemoteLongTxServerSampleHTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="WorkOnLongTxServerGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.sample.backendjob.workonremotelongtxserver.event.WorkOnRemoteLongTxServerSampleHTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.sample.backendjob.workonremotelongtxserver.event.WorkOnRemoteLongTxServerSampleEvent</event-class>
+        <service-action-class>com.clt.sample.backendjob.BackEndJobSampleSC</service-action-class>
+    </event-mapping>
+	<!-- Hyunsu Ryu BACK END JOB : 2010-04-30 start -->
+
+
+
+	<!-- Jeong-Hoon, Kim : 2009-09-22 start -->
+    <url-mapping url="ExcelDownload.do" screen="ExcelDownload.screen" >
+        <web-action-class>com.clt.sample.file.exceldownload.event.EXCELDOWNLOADHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ExcelDownloadGS.do" screen="com.clt.framework.core.controller.DownloadViewAdapter" >
+        <web-action-class>com.clt.sample.file.exceldownload.event.EXCELDOWNLOADHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.sample.file.exceldownload.event.ExceldownloadEvent</event-class>
+        <service-action-class>com.clt.sample.file.FileSC</service-action-class>
+    </event-mapping>
+	<!-- Jeong-Hoon, Kim : 2009-09-22 end -->
+
+	<!-- Jeong-Hoon, Kim : 2009-10-23 start -->
+    <url-mapping url="ExcelDownloadUsingRowset.do" screen="ExcelDownloadUsingRowset.screen" >
+        <web-action-class>com.clt.sample.file.exceldownloadusingrowset.event.EXCELDOWNLOADUSINGROWSETHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ExcelDownloadUsingRowsetGS.do" screen="com.clt.framework.core.controller.DownloadViewAdapter" >
+        <web-action-class>com.clt.sample.file.exceldownloadusingrowset.event.EXCELDOWNLOADUSINGROWSETHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.sample.file.exceldownloadusingrowset.event.ExceldownloadusingrowsetEvent</event-class>
+        <service-action-class>com.clt.sample.file.FileSC</service-action-class>
+    </event-mapping>
+	<!-- Jeong-Hoon, Kim : 2009-10-23 end -->
+
+	<!-- Jung Sung, KIM : 2012-01-25 start -->
+    <url-mapping url="MultyLangAccess.do" screen="MultyLangAccess.screen" >
+        <web-action-class>com.clt.sample.lang.multylangaccess.event.MULTYLANGACCESSHTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ScriptMultyLangAccess.do" screen="ScriptMultyLangAccess.screen" >
+        <web-action-class>com.clt.sample.lang.scriptmultylangaccess.event.SCRIPTMULTYLANGACCESSHTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ServerMultyLangAccess.do" screen="ServerMultyLangAccess.screen" >
+        <web-action-class>com.clt.sample.lang.servermultylangaccess.event.SERVERMULTYLANGACCESSHTMLAction</web-action-class>
+    </url-mapping>
+	<!-- Jung Sung, KIM : 2012-01-25 end -->
+	
+	<!-- Kim Byungkook : 2014-12-30 start -->
+	
+	<url-mapping url="Sample_list.do" screen="sample_list.screen">
+	</url-mapping>
+	
+	<url-mapping url="Sample_MailNoMrd.do" screen="MailNoMrd.screen">
+	</url-mapping>
+	
+	<url-mapping url="Sample_FileUpload.do" screen="fileupload.screen">
+	</url-mapping>
+	
+	<url-mapping url="Sample_MultiUpload.do" screen="multiupload.screen">
+	</url-mapping>
+	
+	<url-mapping url="Sample_FileDownload.do" screen="filedownload.screen">
+	</url-mapping>
+	
+	<url-mapping url="Sample_Mail.do" screen="mail.screen">
+	</url-mapping>
+	
+	<url-mapping url="Sample_RDViewer.do" screen="rdviewer.screen">
+	</url-mapping>
+	
+	<!-- Kim Byungkook : 2014-12-30 end -->
+	
+	<!-- Kim YongHoo : 2015-01-22 end -->
+	<url-mapping url="divDefault.do" screen="divDefault.screen">
+	</url-mapping>
+	
+	<url-mapping url="divRD.do" screen="divRD.screen">
+	</url-mapping>
+	
+	<url-mapping url="divRDPop.do" screen="divRDPop.screen">
+	</url-mapping>
+	
+	<url-mapping url="divRDPopHtml.do" screen="divRDPopHtml.screen">
+	</url-mapping>
+	
+	<url-mapping url="divTab.do" screen="divTab.screen">
+	</url-mapping>
+	
+	<url-mapping url="divVertical.do" screen="divVertical.screen">
+	</url-mapping>
+	
+	<url-mapping url="divPop.do" screen="divPopup.screen">
+	</url-mapping>
+	
+	<url-mapping url="divFlex.do" screen="divFlex.screen">
+	</url-mapping>
+	<!-- Kim YongHoo : 2015-01-22 end -->
+</mappings>

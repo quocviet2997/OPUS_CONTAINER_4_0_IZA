@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://irep.clt.com/enis-ees"
+            targetNamespace="http://irep.clt.com/enis-ees">
+  <xsd:complexType name="EAIHeaderType">
+    <xsd:sequence>
+      <xsd:element name="InstanceId" type="xsd:string"/>
+      <xsd:element name="Parameters" minOccurs="0">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Parameter" maxOccurs="unbounded">
+              <xsd:complexType>
+                <xsd:simpleContent>
+                  <xsd:extension base="xsd:string">
+                    <xsd:anyAttribute/>
+                  </xsd:extension>
+                </xsd:simpleContent>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="EES010-0001">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="BKGMTNCREATECollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="BKGMTNCREATERequest"
+                                 maxOccurs="unbounded" minOccurs="0">
+                      <xsd:complexType>
+                        <xsd:sequence>
+													<xsd:element name="SRVCNM" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="CNT_CD_R" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="VSL_CD" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="SKD_VOYAGE_NO" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="SKD_DIR_CD" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="OFC_CD" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="POL_LOC" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="POD_LOC" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="YD_CD" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="USRS30" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="USRS10" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="USRS11" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="USRS60" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="USRS61" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="FLAG" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="USER_NAME" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="BKG_NO" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="BKG_NO_SPLIT" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="TMPSTR9" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="UDT_FLAG" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="USRS1" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="USRS2" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="USRS7" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="USRS98" type="xsd:string" minOccurs="0"/>
+													<xsd:element name="USRS99" type="xsd:string" minOccurs="0"/>
+                          <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+														<xsd:element name="USRS3" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="USRL1" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="USRS4" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="USRS5" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="USRS6" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="USRS8" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="USRS9" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="USRS13" type="xsd:string" minOccurs="0"/>
+                          </xsd:sequence>
+                          <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+														<xsd:element name="USRS77" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="USRL50" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="CNTR_NO" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="CNTRTS_CD" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="CNMS_CD" type="xsd:string" minOccurs="0"/>
+														<xsd:element name="ROW_STAT" type="xsd:string" minOccurs="0"/>
+                          </xsd:sequence>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="TuxedoResponse" maxOccurs="unbounded"
+                                 minOccurs="0">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="tpRetCode" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="tpErrno" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="tpErrDetails" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="statlin" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="BKGMTNCREATEResponse"
+                                 maxOccurs="unbounded" minOccurs="0">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="bkg_no" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="bkg_no_split" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="EES011-0001">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="ELSPKSTSRTCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="ELSPKSTSRTRequest" maxOccurs="unbounded"
+                                 minOccurs="0">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="srvcnm" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="svr_id" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="act_flag" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs1" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs14" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs2" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs4" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs5" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs7" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs8" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="act_flag2" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="TuxedoResponse" maxOccurs="unbounded"
+                                 minOccurs="0">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="tpRetCode" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="tpErrno" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="tpErrDetails" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="statlin" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="ELSPKSTSRTResponse" maxOccurs="unbounded"
+                                 minOccurs="0">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:sequence maxOccurs="unbounded" minOccurs="0">
+                            <xsd:element name="ctrt_seq" type="xsd:string"
+                                         minOccurs="0"/>
+                          </xsd:sequence>
+                          <xsd:sequence maxOccurs="unbounded" minOccurs="0">
+                            <xsd:element name="usrl11" type="xsd:string"
+                                         minOccurs="0"/>
+                          </xsd:sequence>
+                          <xsd:sequence maxOccurs="unbounded" minOccurs="0">
+                            <xsd:element name="usrl12" type="xsd:string"
+                                         minOccurs="0"/>
+                          </xsd:sequence>
+                          <xsd:sequence maxOccurs="unbounded" minOccurs="0">
+                            <xsd:element name="ctrt_ofc_city" type="xsd:string"
+                                         minOccurs="0"/>
+                          </xsd:sequence>
+                          <xsd:sequence maxOccurs="unbounded" minOccurs="0">
+                            <xsd:element name="usrs21" type="xsd:string"
+                                         minOccurs="0"/>
+                          </xsd:sequence>
+                          <xsd:sequence maxOccurs="unbounded" minOccurs="0">
+                            <xsd:element name="usrs22" type="xsd:string"
+                                         minOccurs="0"/>
+                          </xsd:sequence>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="EES012-0001">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="LSOENISCALLCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="LSOENISCALLRequest" maxOccurs="unbounded"
+                                 minOccurs="0">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="srvcnm" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="svr_id" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="flag" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs99" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xsd:element name="usrs1" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs2" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs3" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrl4" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs5" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs6" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs7" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs8" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs9" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs10" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs11" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs12" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs13" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs14" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs15" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs16" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs18" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs19" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs20" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrd21" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs22" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs23" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs24" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs26" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs27" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs28" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs29" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs30" type="xsd:string"
+                                         minOccurs="0"/>
+                          </xsd:sequence>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="TuxedoResponse" maxOccurs="unbounded"
+                                 minOccurs="0">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="tpRetCode" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="tpErrno" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="tpErrDetails" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="statlin" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="LSOENISCALLResponse"
+                                 maxOccurs="unbounded" minOccurs="0">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="eai_result" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="EES012-R001">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="SENMTBKGCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="SENMTBKGRequest" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="REPO_PLN_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="PLN_YRWK" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="REF_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="REF_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="WO_EXE_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="WO_EXE_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="REPO_COST_AMT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="UPD_USR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="UPT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="TRSP_SO_STS_CD" type="xsd:string"
+                                       minOccurs="0"/>                                       
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="SENMTBKGResponse" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_RESULT" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="EES013-0001">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="BKGMTNSPLITCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="BKGMTNSPLITRequest" maxOccurs="unbounded"
+                                 minOccurs="0">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="srvcnm" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="cnt_cd_r" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="user_name" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="bkg_no" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="bkg_no_split" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="tmpstr9" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="udt_flag" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="vsl_cd" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="skd_voyage_no" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="skd_dir_cd" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs30" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="pod_loc" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs10" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs11" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs60" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs61" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs1" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs2" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs7" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="usrs45" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xsd:element name="usrs3" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrl1" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs4" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs5" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs6" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs8" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="usrs9" type="xsd:string"
+                                         minOccurs="0"/>
+                          </xsd:sequence>
+                          <!--추가-->
+                          <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xsd:element name="cntr_no" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="cntrts_cd" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="cnms_cd" type="xsd:string"
+                                         minOccurs="0"/>
+                            <xsd:element name="row_stat" type="xsd:string"
+                                         minOccurs="0"/>
+                          </xsd:sequence>
+                          <!--추가-->
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="TuxedoResponse" maxOccurs="unbounded"
+                                 minOccurs="0">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="tpRetCode" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="tpErrno" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="tpErrDetails" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="statlin" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="BKGMTNSPLITResponse"
+                                 maxOccurs="unbounded" minOccurs="0">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="eai_result" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="EES014-0001">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="SENMTBOOKINGCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="SENMTBOOKINGRequest"
+                                 maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="VSL_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_VOY_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_DIR_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SLAN_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="POR_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="POL_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="POD_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DEL_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_CRE_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_STS_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_CGO_TP_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CMB_BKG_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CMB_BKG_NO_SPLIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="NIS_EVNT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="MTY_BKG_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="EAI_EVNT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CRE_USR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CRE_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="UPD_USR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="UPD_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_HAMO_DT" type="xsd:string"
+                                       minOccurs="0"/>                                       
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="SENMTBOOKINGResponse"
+                                 maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_RESULT" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="EES014-0002">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="SENMTBKGCNTRCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="SENMTBKGCNTRRequest"
+                                 maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_TPSZ_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_YR" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_CNTR_STS_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_WGT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="TTL_MEAS_WGT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_WGT_TP_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_MEAS_TP_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_CYC_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SOC_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="ORG_YD_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DEST_YD_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="NIS_EVNT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="EAI_EVNT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CRE_USR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CRE_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="UPD_USR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="UPD_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_HAMO_DT" type="xsd:string"
+                                       minOccurs="0"/>                                       
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="SENMTBKGCNTRResponse"
+                                 maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_RESULT" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="EES014-0003">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="SENMTBKGQTYCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="SENMTBKGQTYRequest" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_TPSZ_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="OP_CNTR_QTY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="ACT_CNTR_QTY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="NIS_EVNT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="EAI_EVNT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CRE_USR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CRE_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="UPD_USR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="UPD_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_HAMO_DT" type="xsd:string"
+                                       minOccurs="0"/>                                       
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="SENMTBKGQTYResponse"
+                                 maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_RESULT" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="EES014-0004">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="SENMTBKGVVDCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="SENMTBKGVVDRequest" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="VSL_PRE_PST_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="VSL_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="VSL_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_VOY_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_DIR_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SLAN_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="VSL_LODG_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="VSL_POL_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="VSL_POD_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_LODG_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="NIS_EVNT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="EAI_EVNT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CRE_USR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CRE_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="UPD_USR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="UPD_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_HAMO_DT" type="xsd:string"
+                                       minOccurs="0"/>                                       
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="SENMTBKGVVDResponse"
+                                 maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_RESULT" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="EES010-R001">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="BKGMTNCREATECollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="BKGMTNCREATERequest" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="REF_ID" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="MTY_BKG_NO" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="MTY_BKG_NO_SPLIT" type="xsd:string" minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="BKGMTNCREATEResponse" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_RESULT" type="xsd:string" minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>  
+</xsd:schema>

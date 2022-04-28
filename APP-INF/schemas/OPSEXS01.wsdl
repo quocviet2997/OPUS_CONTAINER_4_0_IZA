@@ -1,0 +1,3456 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:ns="http://www.clt.com/integration/clt/schemas/OPSEXS01" xmlns:ns0="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ns01="http://tempuri.org/" xmlns:ns012="http://schemas.datacontract.org/2004/07/HCToolkit.Enquiry" xmlns:ns0123="http://schemas.datacontract.org/2004/07/HCToolkit.Validation" xmlns:ns01234="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:ns012345="http://schemas.datacontract.org/2004/07/Hazcheck.WcfService" xmlns:ns0123456="http://schemas.datacontract.org/2004/07/HCToolkit" xmlns:ns01234567="http://schemas.datacontract.org/2004/07/System.Collections.Generic" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="IHazcheckSvc1" targetNamespace="http://www.clt.com/integration/clt/schemas/OPSEXS01">
+  <wsdl:types>
+    <xsd:schema xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <xsd:complexType name="ArrayOfstring">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="string" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfstring" nillable="true" type="ns0:ArrayOfstring"/>
+      <xsd:complexType name="ArrayOfint">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="int" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfint" nillable="true" type="ns0:ArrayOfint"/>
+    </xsd:schema>
+    <xsd:schema xmlns:Q1="http://schemas.datacontract.org/2004/07/Hazcheck.WcfService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Hazcheck.WcfService"/>
+      <xsd:element name="InitSession">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:InitSessionRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="InitSessionResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="InitSessionResult" nillable="true" type="Q1:InitSessionResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetBooking">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetBookingRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetBookingResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetBookingResult" nillable="true" type="Q1:GetBookingResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetServiceInformation">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetServiceInformationRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetServiceInformationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetServiceInformationResult" nillable="true" type="Q1:GetServiceInformationResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ValidateBookings">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:ValidateBookingsRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ValidateBookingsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="ValidateBookingsResult" nillable="true" type="Q1:ValidateBookingsResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ValidateBooking">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:ValidateBookingRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ValidateBookingResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="ValidateBookingResult" nillable="true" type="Q1:ValidateBookingResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ValidateBookingById">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:ValidateBookingByIdRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ValidateBookingByIdResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="ValidateBookingByIdResult" nillable="true" type="Q1:ValidateBookingByIdResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ValidateBookingByRef">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:ValidateBookingByRefRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ValidateBookingByRefResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="ValidateBookingByRefResult" nillable="true" type="Q1:ValidateBookingByRefResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ValidateCTU">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:ValidateCTURequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ValidateCTUResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="ValidateCTUResult" nillable="true" type="Q1:ValidateCTUResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ValidateItems">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:ValidateItemsRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ValidateItemsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="ValidateItemsResult" nillable="true" type="Q1:ValidateItemsResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ValidateUNNos">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:ValidateUNNosRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ValidateUNNosResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="ValidateUNNosResult" nillable="true" type="Q1:ValidateUNNosResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SearchSubstances">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:SearchSubstancesRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SearchSubstancesResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="SearchSubstancesResult" nillable="true" type="Q1:SearchSubstancesResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSubstanceVariants">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetSubstanceVariantsRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSubstanceVariantsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetSubstanceVariantsResult" nillable="true" type="Q1:GetSubstanceVariantsResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSubstancePackagings">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetSubstancePackagingsRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSubstancePackagingsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetSubstancePackagingsResult" nillable="true" type="Q1:GetSubstancePackagingsResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetLocationInformation">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetLocationInformationRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetLocationInformationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetLocationInformationResult" nillable="true" type="Q1:GetLocationInformationResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetOperatorList">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetOperatorListRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetOperatorListResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetOperatorListResult" nillable="true" type="Q1:GetOperatorListResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetVesselList">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetVesselListRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetVesselListResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetVesselListResult" nillable="true" type="Q1:GetVesselListResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetLocationList">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetLocationListRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetLocationListResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetLocationListResult" nillable="true" type="Q1:GetLocationListResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetTerminalList">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetTerminalListRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetTerminalListResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetTerminalListResult" nillable="true" type="Q1:GetTerminalListResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetItineraryInformation">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetItineraryInformationRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetItineraryInformationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetItineraryInformationResult" nillable="true" type="Q1:GetItineraryInformationResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSubstance">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetSubstanceRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSubstanceResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetSubstanceResult" nillable="true" type="Q1:GetSubstanceResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRandomEnquiryItem">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetRandomEnquiryItemRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRandomEnquiryItemResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetRandomEnquiryItemResult" nillable="true" type="Q1:GetRandomEnquiryItemResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRandomEnquiryItems">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetRandomEnquiryItemsRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRandomEnquiryItemsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetRandomEnquiryItemsResult" nillable="true" type="Q1:GetRandomEnquiryItemsResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRandomBookingItem">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetRandomBookingItemRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRandomBookingItemResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetRandomBookingItemResult" nillable="true" type="Q1:GetRandomBookingItemResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRandomBookingItems">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetRandomBookingItemsRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRandomBookingItemsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetRandomBookingItemsResult" nillable="true" type="Q1:GetRandomBookingItemsResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetComment">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetCommentRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetCommentResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetCommentResult" nillable="true" type="Q1:GetCommentResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetPhrase">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetPhraseRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetPhraseResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetPhraseResult" nillable="true" type="Q1:GetPhraseResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSegregationNames">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetSegregationNamesRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSegregationNamesResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetSegregationNamesResult" nillable="true" type="Q1:GetSegregationNamesResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSegregationExtraBySegregationCodeLetter">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetSegregationExtraBySegregationCodeLetterRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSegregationExtraBySegregationCodeLetterResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetSegregationExtraBySegregationCodeLetterResult" nillable="true" type="Q1:GetSegregationExtraBySegregationCodeLetterResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSegregationExtraBySegregationName">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetSegregationExtraBySegregationNameRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSegregationExtraBySegregationNameResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetSegregationExtraBySegregationNameResult" nillable="true" type="Q1:GetSegregationExtraBySegregationNameResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetAmendmentTitle">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetAmendmentTitleRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetAmendmentTitleResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetAmendmentTitleResult" nillable="true" type="Q1:GetAmendmentTitleResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSubstanceTechnicalNames">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:GetSubstanceTechnicalNamesRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSubstanceTechnicalNamesResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="GetSubstanceTechnicalNamesResult" nillable="true" type="Q1:GetSubstanceTechnicalNamesResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="EndSession">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:EndSessionRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="EndSessionResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="EndSessionResult" nillable="true" type="Q1:EndSessionResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateLocation">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:CreateLocationRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateLocationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="CreateLocationResult" nillable="true" type="Q1:CreateLocationResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateLocation">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:UpdateLocationRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateLocationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="UpdateLocationResult" nillable="true" type="Q1:UpdateLocationResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DeleteLocation">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:DeleteLocationRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DeleteLocationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="DeleteLocationResult" nillable="true" type="Q1:DeleteLocationResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateOperator">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:CreateOperatorRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateOperatorResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="CreateOperatorResult" nillable="true" type="Q1:CreateOperatorResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateOperator">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:UpdateOperatorRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateOperatorResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="UpdateOperatorResult" nillable="true" type="Q1:UpdateOperatorResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DeleteOperator">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:DeleteOperatorRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DeleteOperatorResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="DeleteOperatorResult" nillable="true" type="Q1:DeleteOperatorResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateTerminal">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:CreateTerminalRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateTerminalResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="CreateTerminalResult" nillable="true" type="Q1:CreateTerminalResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateTerminal">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:UpdateTerminalRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateTerminalResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="UpdateTerminalResult" nillable="true" type="Q1:UpdateTerminalResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DeleteTerminal">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:DeleteTerminalRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DeleteTerminalResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="DeleteTerminalResult" nillable="true" type="Q1:DeleteTerminalResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateVessel">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:CreateVesselRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateVesselResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="CreateVesselResult" nillable="true" type="Q1:CreateVesselResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateVessel">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:UpdateVesselRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateVesselResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="UpdateVesselResult" nillable="true" type="Q1:UpdateVesselResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DeleteVessel">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="request" nillable="true" type="Q1:DeleteVesselRequest"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DeleteVesselResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="DeleteVesselResult" nillable="true" type="Q1:DeleteVesselResponse"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xsd:schema xmlns:Q1="http://schemas.datacontract.org/2004/07/HCToolkit" xmlns:Q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:Q3="http://schemas.datacontract.org/2004/07/HCToolkit.Validation" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HCToolkit.Enquiry">
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HCToolkit"/>
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HCToolkit.Validation"/>
+      <xsd:complexType name="DGSearch">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Language" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Prefix" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SearchClass" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SearchName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SearchSubRisks" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="SearchUN" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WithVariants" type="xsd:boolean"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGSearch" nillable="true" type="ns012:DGSearch"/>
+      <xsd:complexType name="ArrayOfDGEnquiryItem">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGEnquiryItem" nillable="true" type="ns012:DGEnquiryItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGEnquiryItem" nillable="true" type="ns012:ArrayOfDGEnquiryItem"/>
+      <xsd:complexType name="DGEnquiryItem">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Item49CFR" nillable="true" type="ns012:DGItem49CFR"/>
+          <xsd:element minOccurs="0" name="ItemADR" nillable="true" type="ns012:DGItemADR"/>
+          <xsd:element minOccurs="0" name="ItemIMDG" nillable="true" type="ns012:DGItemIMDG"/>
+          <xsd:element minOccurs="0" name="ItemRID" nillable="true" type="ns012:DGItemRID"/>
+          <xsd:element minOccurs="0" name="ItemTDG" nillable="true" type="ns012:DGItemTDG"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGEnquiryItem" nillable="true" type="ns012:DGEnquiryItem"/>
+      <xsd:complexType name="DGItem49CFR">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="BulkPackingInstructions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BulkPackingProvisions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CargoAircraft" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ERG" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Exceptions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Flags" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="IBCPackingInstructions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IBCPackingProvisions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Labels" nillable="true" type="Q1:ArrayOfPlacardsMarksLabels"/>
+          <xsd:element minOccurs="0" name="MarinePollutant" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="NonBulkPackingInstructions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="NonBulkPackingProvisions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PIH" type="ser:char"/>
+          <xsd:element minOccurs="0" name="PackingGroup" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PassengerAircraftRail" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Prefix" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PrimaryClass" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="QDT" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="RQ" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SecondaryClass" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SegregationFrom" nillable="true" type="Q1:ArrayOfSegregationGroup"/>
+          <xsd:element minOccurs="0" name="SpecialProvision" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="StowageCategory" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="StowageLocation" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="StowageLocationOther" nillable="true" type="Q2:ArrayOfstring"/>
+          <xsd:element minOccurs="0" name="Suffix" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Symbols" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TankInstructions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TankProvisions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TertiaryClass" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="UNNo" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Variation" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGItem49CFR" nillable="true" type="ns012:DGItem49CFR"/>
+      <xsd:complexType name="DGItemADR">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ADRTankSpecialProvisions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BulkSpecialProvisions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CVL" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ClassificationCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ExceptedQuantity" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Flags" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="HazardId" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IBCInstruction" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IBCProvision" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Labels" nillable="true" type="Q1:ArrayOfPlacardsMarksLabels"/>
+          <xsd:element minOccurs="0" name="LimitedQuantity" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="LoadingUnloadingHandling_SpecialProvisions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="MixedPackaging" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="OperationSpecialProvisions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PackagesSpecialProvisions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PackingGroup" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PackingInstruction" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PackingProvision" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PrimaryClass" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="QDT" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SpecialProvision" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Suffix" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="TankCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TankInstructions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TankProvision" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TransportCategory" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TunnelCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="UNNo" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Variation" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="VehicleTankCarriage" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGItemADR" nillable="true" type="ns012:DGItemADR"/>
+      <xsd:complexType name="DGItemIMDG">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Additional" nillable="true" type="Q1:ArrayOfDGResult"/>
+          <xsd:element minOccurs="0" name="CVL" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CargoShipComments" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CargoShipStowageLocation" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EQ" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EmS" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EnglishName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Flags" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="FlashPoint" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="FrenchName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="GermanName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="HighConsequence" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IBCInstruction" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IBCProvision" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="LQ" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Labels" nillable="true" type="Q1:ArrayOfPlacardsMarksLabels"/>
+          <xsd:element minOccurs="0" name="MarinePollutant" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="PackagingsDetails" nillable="true" type="ns012:DGPackaging"/>
+          <xsd:element minOccurs="0" name="PackingGroup" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PackingInstruction" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PackingProvision" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PassengerShipComments" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PassengerShipStowageLocation" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PrimaryClass" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PropertiesObservation" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="QDT" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SecondaryClass" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SegregationClasses" nillable="true" type="Q2:ArrayOfint"/>
+          <xsd:element minOccurs="0" name="SegregationComments" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SegregationFrom" nillable="true" type="Q1:ArrayOfSegregationGroup"/>
+          <xsd:element minOccurs="0" name="SegregationGroups" nillable="true" type="Q1:ArrayOfSegregationGroup"/>
+          <xsd:element minOccurs="0" name="Sequence" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="SpanishName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SpecialProvision" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="State" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="StowageCategory" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="StowageComment" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="StowageHandling" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Suffix" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="TankInstruction" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TankProvision" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TertiaryClass" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TreatAs" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ULineEmS" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="UNNo" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Variation" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGItemIMDG" nillable="true" type="ns012:DGItemIMDG"/>
+      <xsd:complexType name="DGPackaging">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Code" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Comments" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IsFinalList" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="IsFreePack" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="MaximumCapacityL" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="MaximumGrossWeightKG" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="MaximumNECKG" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="MaximumNetWeightKG" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Result" nillable="true" type="Q1:DGResult"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGPackaging" nillable="true" type="ns012:DGPackaging"/>
+      <xsd:complexType name="DGItemRID">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="BulkSpecialProvisions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CVL" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ClassificationCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ColisExpress" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ExceptedQuantity" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Flags" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="HazardId" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IBCInstruction" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IBCProvision" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Labels" nillable="true" type="Q1:ArrayOfPlacardsMarksLabels"/>
+          <xsd:element minOccurs="0" name="LimitedQuantity" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="LoadingUnloadingHandling_SpecialProvisions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="MixedPackaging" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PackagesSpecialProvisions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PackingGroup" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PackingInstruction" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PackingProvision" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PrimaryClass" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="QDT" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="RIDTankSpecialProvisions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SpecialProvision" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Suffix" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="TankCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TankInstructions" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TankProvision" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TransportCategory" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="UNNo" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Variation" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGItemRID" nillable="true" type="ns012:DGItemRID"/>
+      <xsd:complexType name="DGItemTDG">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Amendment" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CVL" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ERAP" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ExceptedQuantity" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ExplosiveLimitedQuantityIndex" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Flags" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Labels" nillable="true" type="Q1:ArrayOfPlacardsMarksLabels"/>
+          <xsd:element minOccurs="0" name="MarinePollutant" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PackingGroup" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PassengerRoadLimit" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PassengerShipLimit" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="QDT" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SpecialProvision" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Suffix" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="TDGClass" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="UNNo" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Variation" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGItemTDG" nillable="true" type="ns012:DGItemTDG"/>
+      <xsd:complexType mixed="false" name="DGUNNoFilter">
+        <xsd:complexContent>
+          <xsd:extension base="Q1:DGUNNo">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Prefix" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="VariantsDataOnly" type="xsd:boolean"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGUNNoFilter" nillable="true" type="ns012:DGUNNoFilter"/>
+      <xsd:complexType name="DGPackagingFilter">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="CVLIMDG" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Concentration" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Mode" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="PackingMethod" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Selected" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Suffix" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="TechnicalName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="UNNo" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="UnitType" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="bApply7_2_1_13_2_2" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="isLQ" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="isSample" type="xsd:boolean"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGPackagingFilter" nillable="true" type="ns012:DGPackagingFilter"/>
+      <xsd:complexType name="ArrayOfDGPackaging">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGPackaging" nillable="true" type="ns012:DGPackaging"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGPackaging" nillable="true" type="ns012:ArrayOfDGPackaging"/>
+      <xsd:complexType name="DGLocationFilter">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Locations" nillable="true" type="Q3:ArrayOfDGLocation"/>
+          <xsd:element minOccurs="0" name="Wanted" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGLocationFilter" nillable="true" type="ns012:DGLocationFilter"/>
+      <xsd:complexType name="ArrayOfDGLocationInformation">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGLocationInformation" nillable="true" type="ns012:DGLocationInformation"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGLocationInformation" nillable="true" type="ns012:ArrayOfDGLocationInformation"/>
+      <xsd:complexType name="DGLocationInformation">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Location" nillable="true" type="Q3:DGLocation"/>
+          <xsd:element minOccurs="0" name="Regs" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGLocationInformation" nillable="true" type="ns012:DGLocationInformation"/>
+      <xsd:complexType name="DGItineraryFilter">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Itinerary" nillable="true" type="Q3:ArrayOfDGItinerary"/>
+          <xsd:element minOccurs="0" name="Wanted" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGItineraryFilter" nillable="true" type="ns012:DGItineraryFilter"/>
+      <xsd:complexType name="ArrayOfDGItineraryInformation">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGItineraryInformation" nillable="true" type="ns012:DGItineraryInformation"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGItineraryInformation" nillable="true" type="ns012:ArrayOfDGItineraryInformation"/>
+      <xsd:complexType name="DGItineraryInformation">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Regs" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGItineraryInformation" nillable="true" type="ns012:DGItineraryInformation"/>
+      <xsd:complexType name="AmendmentTitle">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ADR" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CFR49" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IMDG" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="RID" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TDG" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="AmendmentTitle" nillable="true" type="ns012:AmendmentTitle"/>
+      <xsd:complexType name="DGTechnicalNameFilter">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="CVLIMDG" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Suffix" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="UNNo" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Wanted" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGTechnicalNameFilter" nillable="true" type="ns012:DGTechnicalNameFilter"/>
+      <xsd:complexType name="DGTechnicalName">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Name" nillable="true" type="Q2:ArrayOfstring"/>
+          <xsd:element minOccurs="0" name="NameIBC" nillable="true" type="ns012:ArrayOfDGTechnicalNameSROP"/>
+          <xsd:element minOccurs="0" name="NamePack" nillable="true" type="ns012:ArrayOfDGTechnicalNameSROP"/>
+          <xsd:element minOccurs="0" name="NameTank" nillable="true" type="ns012:ArrayOfDGTechnicalNameSROP"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGTechnicalName" nillable="true" type="ns012:DGTechnicalName"/>
+      <xsd:complexType name="ArrayOfDGTechnicalNameSROP">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGTechnicalNameSROP" nillable="true" type="ns012:DGTechnicalNameSROP"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGTechnicalNameSROP" nillable="true" type="ns012:ArrayOfDGTechnicalNameSROP"/>
+      <xsd:complexType name="DGTechnicalNameSROP">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Concentration" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ControlTemperature" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="DiluentTypeA" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="DiluentTypeB" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EmergencyTemperature" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IBCCodes" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="InertSolid" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PackingMethod" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Remarks" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SubsidiaryRisks" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Suffix" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="UNNo" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Water" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGTechnicalNameSROP" nillable="true" type="ns012:DGTechnicalNameSROP"/>
+    </xsd:schema>
+    <xsd:schema xmlns:Q1="http://schemas.datacontract.org/2004/07/HCToolkit" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HCToolkit.Validation">
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HCToolkit"/>
+      <xsd:complexType name="DGBooking">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="AllowAcidAlkalyl" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="AllowPackagingsValidation" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="AllowSameClass" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="BookingOperatorCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BookingRef" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CTUs" nillable="true" type="ns0123:ArrayOfDGCTU"/>
+          <xsd:element minOccurs="0" name="IMDGAmdt" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Id" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Itinerary" nillable="true" type="ns0123:ArrayOfDGItinerary"/>
+          <xsd:element minOccurs="0" name="Regulations" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="SailingMode" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGBooking" nillable="true" type="ns0123:DGBooking"/>
+      <xsd:complexType name="ArrayOfDGCTU">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGCTU" nillable="true" type="ns0123:DGCTU"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGCTU" nillable="true" type="ns0123:ArrayOfDGCTU"/>
+      <xsd:complexType name="DGCTU">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="CTURef" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="HasAllDocuments" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="HasExplosionProofElectricalFittings" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="ISOCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Id" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="IsOperational" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="Packages" nillable="true" type="ns0123:ArrayOfDGBookingPackage"/>
+          <xsd:element minOccurs="0" name="TransportTemperature" nillable="true" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="UnitType" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGCTU" nillable="true" type="ns0123:DGCTU"/>
+      <xsd:complexType name="ArrayOfDGBookingPackage">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGBookingPackage" nillable="true" type="ns0123:DGBookingPackage"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGBookingPackage" nillable="true" type="ns0123:ArrayOfDGBookingPackage"/>
+      <xsd:complexType name="DGBookingPackage">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="BookingItems" nillable="true" type="ns0123:ArrayOfDGBookingItem"/>
+          <xsd:element minOccurs="0" name="Id" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="NumberOuter" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="OuterPackingCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="OverPackRef" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PackageRef" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGBookingPackage" nillable="true" type="ns0123:DGBookingPackage"/>
+      <xsd:complexType name="ArrayOfDGBookingItem">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGBookingItem" nillable="true" type="ns0123:DGBookingItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGBookingItem" nillable="true" type="ns0123:ArrayOfDGBookingItem"/>
+      <xsd:complexType name="DGBookingItem">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Activity" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="AdditionalInfo" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BookingRef" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CVL49CFR" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CVLADR" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CVLIMDG" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CVLRID" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CVLTDG" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CapacityL" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="Cfr49EXNumber" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Concentration" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ContentType" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="ControlTemperature" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CriticalitySafetyIndex" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="DateTimeFumigation" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="DescriptionMaterial" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="DosageUsed" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EmergencyContactName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EmergencyContactNumber" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EmergencyTemperature" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="FlashPoint" nillable="true" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="GrossWeightKG" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="HasWasteMovementDoc" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="Id" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="InLimitedExceptedQuantity" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="InnerPackingName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IsMarinePollutant" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="IsReportableQuantity" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="ItemRef" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="NetExplosiveContentKG" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="NetWeightKG" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="NumberInner" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="NumberOuter" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="OuterPackingCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="OuterPackingName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PIH" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PackingMethod" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Permits" nillable="true" type="ns0123:ArrayOfDGPermit"/>
+          <xsd:element minOccurs="0" name="RadioactiveCategory" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Radionuclide" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SegregationFrom" nillable="true" type="ns0123:ArrayOfDGSegregationExtra"/>
+          <xsd:element minOccurs="0" name="SegregationGroups" nillable="true" type="ns0123:ArrayOfDGSegregationExtra"/>
+          <xsd:element minOccurs="0" name="StowageSegregation" nillable="true" type="ns0123:ArrayOfDGStowageExtra"/>
+          <xsd:element minOccurs="0" name="Suffix" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="TechnicalName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TransportIndex" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="UNNo" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGBookingItem" nillable="true" type="ns0123:DGBookingItem"/>
+      <xsd:complexType name="ArrayOfDGPermit">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGPermit" nillable="true" type="ns0123:DGPermit"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGPermit" nillable="true" type="ns0123:ArrayOfDGPermit"/>
+      <xsd:complexType name="DGPermit">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Type" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Value" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGPermit" nillable="true" type="ns0123:DGPermit"/>
+      <xsd:complexType name="ArrayOfDGSegregationExtra">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGSegregationExtra" nillable="true" type="ns0123:DGSegregationExtra"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGSegregationExtra" nillable="true" type="ns0123:ArrayOfDGSegregationExtra"/>
+      <xsd:complexType name="DGSegregationExtra">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Group" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Segregation" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGSegregationExtra" nillable="true" type="ns0123:DGSegregationExtra"/>
+      <xsd:complexType name="ArrayOfDGStowageExtra">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGStowageExtra" nillable="true" type="ns0123:DGStowageExtra"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGStowageExtra" nillable="true" type="ns0123:ArrayOfDGStowageExtra"/>
+      <xsd:complexType name="DGStowageExtra">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Stowage" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGStowageExtra" nillable="true" type="ns0123:DGStowageExtra"/>
+      <xsd:complexType name="ArrayOfDGItinerary">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGItinerary" nillable="true" type="ns0123:DGItinerary"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGItinerary" nillable="true" type="ns0123:ArrayOfDGItinerary"/>
+      <xsd:complexType name="DGItinerary">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="IMDGAmdt" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Id" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Locations" nillable="true" type="ns0123:ArrayOfDGItineraryLocation"/>
+          <xsd:element minOccurs="0" name="OperatorCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="OperatorName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Regs" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="SailingMode" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="StageCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="StageDesc" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="StageMode" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="VesselCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="VesselName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="VesselType" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGItinerary" nillable="true" type="ns0123:DGItinerary"/>
+      <xsd:complexType name="ArrayOfDGItineraryLocation">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGItineraryLocation" nillable="true" type="ns0123:DGItineraryLocation"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGItineraryLocation" nillable="true" type="ns0123:ArrayOfDGItineraryLocation"/>
+      <xsd:complexType name="DGItineraryLocation">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Id" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Location" nillable="true" type="ns0123:DGLocation"/>
+          <xsd:element minOccurs="0" name="Type" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGItineraryLocation" nillable="true" type="ns0123:DGItineraryLocation"/>
+      <xsd:complexType mixed="false" name="DGLocation">
+        <xsd:complexContent>
+          <xsd:extension base="Q1:DGOwner">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="LocationCode" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="SubCode" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGLocation" nillable="true" type="ns0123:DGLocation"/>
+      <xsd:complexType name="DGBookings">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Bookings" nillable="true" type="ns0123:ArrayOfDGBooking"/>
+          <xsd:element minOccurs="0" name="BookingsId" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="BookingsRef" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGBookings" nillable="true" type="ns0123:DGBookings"/>
+      <xsd:complexType name="ArrayOfDGBooking">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGBooking" nillable="true" type="ns0123:DGBooking"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGBooking" nillable="true" type="ns0123:ArrayOfDGBooking"/>
+      <xsd:complexType mixed="false" name="DGBookingsStatus">
+        <xsd:complexContent>
+          <xsd:extension base="Q1:DGBaseResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="BookingStatus" nillable="true" type="ns0123:ArrayOfDGBookingStatus"/>
+              <xsd:element minOccurs="0" name="BookingsId" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="BookingsRef" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGBookingsStatus" nillable="true" type="ns0123:DGBookingsStatus"/>
+      <xsd:complexType name="ArrayOfDGBookingStatus">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGBookingStatus" nillable="true" type="ns0123:DGBookingStatus"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGBookingStatus" nillable="true" type="ns0123:ArrayOfDGBookingStatus"/>
+      <xsd:complexType mixed="false" name="DGBookingStatus">
+        <xsd:complexContent>
+          <xsd:extension base="Q1:DGBaseResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="BookingId" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="BookingRef" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="CTUStatus" nillable="true" type="ns0123:ArrayOfDGCTUStatus"/>
+              <xsd:element minOccurs="0" name="ClashBetweenCTUsList" nillable="true" type="ns0123:ArrayOfClashDetails"/>
+              <xsd:element minOccurs="0" name="RestrictionStatus" nillable="true" type="Q1:DGRestrictionBookingStatus"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGBookingStatus" nillable="true" type="ns0123:DGBookingStatus"/>
+      <xsd:complexType name="ArrayOfDGCTUStatus">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGCTUStatus" nillable="true" type="ns0123:DGCTUStatus"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGCTUStatus" nillable="true" type="ns0123:ArrayOfDGCTUStatus"/>
+      <xsd:complexType mixed="false" name="DGCTUStatus">
+        <xsd:complexContent>
+          <xsd:extension base="Q1:DGBaseResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="DGCtuId" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="DGCtuRef" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="ItemsClashList" nillable="true" type="ns0123:ArrayOfClashDetails"/>
+              <xsd:element minOccurs="0" name="ItemsStatus" nillable="true" type="ns0123:ArrayOfDGBookingItemStatus"/>
+              <xsd:element minOccurs="0" name="LoadDetails" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="PackagesClashList" nillable="true" type="ns0123:ArrayOfClashDetails"/>
+              <xsd:element minOccurs="0" name="PackagesStatus" nillable="true" type="ns0123:ArrayOfDGBookingPackageStatus"/>
+              <xsd:element minOccurs="0" name="PlacardsAndMarks" nillable="true" type="Q1:ArrayOfPlacardsMarksLabels"/>
+              <xsd:element minOccurs="0" name="StowageSegregation" nillable="true" type="Q1:ArrayOfStowageSegregationComments"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGCTUStatus" nillable="true" type="ns0123:DGCTUStatus"/>
+      <xsd:complexType name="ArrayOfClashDetails">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ClashDetails" nillable="true" type="ns0123:ClashDetails"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfClashDetails" nillable="true" type="ns0123:ArrayOfClashDetails"/>
+      <xsd:complexType name="ClashDetails">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="CTU1" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CTU2" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Degree" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Note" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PACK1" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PACK2" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Substance1" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Substance2" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ClashDetails" nillable="true" type="ns0123:ClashDetails"/>
+      <xsd:complexType name="ArrayOfDGBookingItemStatus">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGBookingItemStatus" nillable="true" type="ns0123:DGBookingItemStatus"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGBookingItemStatus" nillable="true" type="ns0123:ArrayOfDGBookingItemStatus"/>
+      <xsd:complexType mixed="false" name="DGBookingItemStatus">
+        <xsd:complexContent>
+          <xsd:extension base="Q1:DGBaseResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Id" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="LabelsAndMarks" nillable="true" type="Q1:ArrayOfPlacardsMarksLabels"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGBookingItemStatus" nillable="true" type="ns0123:DGBookingItemStatus"/>
+      <xsd:complexType name="ArrayOfDGBookingPackageStatus">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGBookingPackageStatus" nillable="true" type="ns0123:DGBookingPackageStatus"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGBookingPackageStatus" nillable="true" type="ns0123:ArrayOfDGBookingPackageStatus"/>
+      <xsd:complexType mixed="false" name="DGBookingPackageStatus">
+        <xsd:complexContent>
+          <xsd:extension base="Q1:DGBaseResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="ClashList" nillable="true" type="ns0123:ArrayOfClashDetails"/>
+              <xsd:element minOccurs="0" name="Id" type="xsd:int"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGBookingPackageStatus" nillable="true" type="ns0123:DGBookingPackageStatus"/>
+      <xsd:complexType name="ArrayOfDGLocation">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGLocation" nillable="true" type="ns0123:DGLocation"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGLocation" nillable="true" type="ns0123:ArrayOfDGLocation"/>
+      <xsd:complexType name="ArrayOfDGLocationEntity">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGLocationEntity" nillable="true" type="ns0123:DGLocationEntity"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGLocationEntity" nillable="true" type="ns0123:ArrayOfDGLocationEntity"/>
+      <xsd:complexType mixed="false" name="DGLocationEntity">
+        <xsd:complexContent>
+          <xsd:extension base="ns0123:DGLocation">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="DataKnown" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="LocationName" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="Notes" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGLocationEntity" nillable="true" type="ns0123:DGLocationEntity"/>
+    </xsd:schema>
+    <xsd:schema xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/">
+      <xsd:element name="anyType" nillable="true" type="xsd:anyType"/>
+      <xsd:element name="anyURI" nillable="true" type="xsd:anyURI"/>
+      <xsd:element name="base64Binary" nillable="true" type="xsd:base64Binary"/>
+      <xsd:element name="boolean" nillable="true" type="xsd:boolean"/>
+      <xsd:element name="byte" nillable="true" type="xsd:byte"/>
+      <xsd:element name="dateTime" nillable="true" type="xsd:dateTime"/>
+      <xsd:element name="decimal" nillable="true" type="xsd:decimal"/>
+      <xsd:element name="double" nillable="true" type="xsd:double"/>
+      <xsd:element name="float" nillable="true" type="xsd:float"/>
+      <xsd:element name="int" nillable="true" type="xsd:int"/>
+      <xsd:element name="long" nillable="true" type="xsd:long"/>
+      <xsd:element name="QName" nillable="true" type="xsd:QName"/>
+      <xsd:element name="short" nillable="true" type="xsd:short"/>
+      <xsd:element name="string" nillable="true" type="xsd:string"/>
+      <xsd:element name="unsignedByte" nillable="true" type="xsd:unsignedByte"/>
+      <xsd:element name="unsignedInt" nillable="true" type="xsd:unsignedInt"/>
+      <xsd:element name="unsignedLong" nillable="true" type="xsd:unsignedLong"/>
+      <xsd:element name="unsignedShort" nillable="true" type="xsd:unsignedShort"/>
+      <xsd:element name="char" nillable="true" type="ns01234:char"/>
+      <xsd:simpleType name="char">
+        <xsd:restriction base="xsd:int"/>
+      </xsd:simpleType>
+      <xsd:element name="duration" nillable="true" type="ns01234:duration"/>
+      <xsd:simpleType name="duration">
+        <xsd:restriction base="xsd:duration">
+          <xsd:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+          <xsd:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+          <xsd:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="guid" nillable="true" type="ns01234:guid"/>
+      <xsd:simpleType name="guid">
+        <xsd:restriction base="xsd:string">
+          <xsd:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:attribute name="FactoryType" type="xsd:QName"/>
+      <xsd:attribute name="Id" type="xsd:ID"/>
+      <xsd:attribute name="Ref" type="xsd:IDREF"/>
+    </xsd:schema>
+    <xsd:schema xmlns:Q1="http://schemas.datacontract.org/2004/07/HCToolkit" xmlns:Q2="http://schemas.datacontract.org/2004/07/HCToolkit.Validation" xmlns:Q3="http://schemas.datacontract.org/2004/07/HCToolkit.Enquiry" xmlns:Q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:Q5="http://schemas.datacontract.org/2004/07/System.Collections.Generic" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Hazcheck.WcfService">
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HCToolkit"/>
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HCToolkit.Validation"/>
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HCToolkit.Enquiry"/>
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic"/>
+      <xsd:complexType mixed="false" name="InitSessionRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:BaseRequest">
+            <xsd:sequence/>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="InitSessionRequest" nillable="true" type="ns012345:InitSessionRequest"/>
+      <xsd:complexType name="BaseRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Session" nillable="true" type="ns012345:DGSession"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BaseRequest" nillable="true" type="ns012345:BaseRequest"/>
+      <xsd:complexType name="DGSession">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Language" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Token" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="UserRefCaller" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Username" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGSession" nillable="true" type="ns012345:DGSession"/>
+      <xsd:complexType mixed="false" name="InitSessionResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:BaseResponse">
+            <xsd:sequence/>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="InitSessionResponse" nillable="true" type="ns012345:InitSessionResponse"/>
+      <xsd:complexType name="BaseResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Exception" nillable="true" type="ns012345:DGFault"/>
+          <xsd:element minOccurs="0" name="SessionStatus" nillable="true" type="ns012345:DGSessionStatus"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BaseResponse" nillable="true" type="ns012345:BaseResponse"/>
+      <xsd:complexType name="DGFault">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Operation" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ProblemType" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ProblemTypeCode" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGFault" nillable="true" type="ns012345:DGFault"/>
+      <xsd:complexType name="DGSessionStatus">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="status" nillable="true" type="Q1:ArrayOfDGStatus"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGSessionStatus" nillable="true" type="ns012345:DGSessionStatus"/>
+      <xsd:complexType mixed="false" name="GetBookingRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="AppSourceId" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="BookingId" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="BookingRef" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetBookingRequest" nillable="true" type="ns012345:GetBookingRequest"/>
+      <xsd:complexType mixed="false" name="DGRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:BaseRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Context" nillable="true" type="Q1:DGContext"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGRequest" nillable="true" type="ns012345:DGRequest"/>
+      <xsd:complexType mixed="false" name="GetBookingResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Booking" nillable="true" type="Q2:DGBooking"/>
+              <xsd:element minOccurs="0" name="Context" nillable="true" type="Q1:DGContext"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetBookingResponse" nillable="true" type="ns012345:GetBookingResponse"/>
+      <xsd:complexType mixed="false" name="DGResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:BaseResponse">
+            <xsd:sequence/>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGResponse" nillable="true" type="ns012345:DGResponse"/>
+      <xsd:complexType mixed="false" name="GetServiceInformationRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:BaseRequest">
+            <xsd:sequence/>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetServiceInformationRequest" nillable="true" type="ns012345:GetServiceInformationRequest"/>
+      <xsd:complexType mixed="false" name="GetServiceInformationResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:BaseResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Version" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetServiceInformationResponse" nillable="true" type="ns012345:GetServiceInformationResponse"/>
+      <xsd:complexType mixed="false" name="ValidateBookingsRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Bookings" nillable="true" type="Q2:DGBookings"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ValidateBookingsRequest" nillable="true" type="ns012345:ValidateBookingsRequest"/>
+      <xsd:complexType mixed="false" name="ValidateBookingsResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="BookingsStatus" nillable="true" type="Q2:DGBookingsStatus"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ValidateBookingsResponse" nillable="true" type="ns012345:ValidateBookingsResponse"/>
+      <xsd:complexType mixed="false" name="ValidateBookingRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Booking" nillable="true" type="Q2:DGBooking"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ValidateBookingRequest" nillable="true" type="ns012345:ValidateBookingRequest"/>
+      <xsd:complexType mixed="false" name="ValidateBookingResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="BookingStatus" nillable="true" type="Q2:DGBookingStatus"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ValidateBookingResponse" nillable="true" type="ns012345:ValidateBookingResponse"/>
+      <xsd:complexType mixed="false" name="ValidateBookingByIdRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="BookingId" type="xsd:int"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ValidateBookingByIdRequest" nillable="true" type="ns012345:ValidateBookingByIdRequest"/>
+      <xsd:complexType mixed="false" name="ValidateBookingByIdResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="BookingStatus" nillable="true" type="Q2:DGBookingStatus"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ValidateBookingByIdResponse" nillable="true" type="ns012345:ValidateBookingByIdResponse"/>
+      <xsd:complexType mixed="false" name="ValidateBookingByRefRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="BookingReference" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ValidateBookingByRefRequest" nillable="true" type="ns012345:ValidateBookingByRefRequest"/>
+      <xsd:complexType mixed="false" name="ValidateBookingByRefResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="BookingStatus" nillable="true" type="Q2:DGBookingStatus"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ValidateBookingByRefResponse" nillable="true" type="ns012345:ValidateBookingByRefResponse"/>
+      <xsd:complexType mixed="false" name="ValidateCTURequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="CTU" nillable="true" type="Q2:DGCTU"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ValidateCTURequest" nillable="true" type="ns012345:ValidateCTURequest"/>
+      <xsd:complexType mixed="false" name="ValidateCTUResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="CTUStatus" nillable="true" type="Q2:DGCTUStatus"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ValidateCTUResponse" nillable="true" type="ns012345:ValidateCTUResponse"/>
+      <xsd:complexType mixed="false" name="ValidateItemsRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Items" nillable="true" type="Q2:ArrayOfDGBookingItem"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ValidateItemsRequest" nillable="true" type="ns012345:ValidateItemsRequest"/>
+      <xsd:complexType mixed="false" name="ValidateItemsResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="ItemStatus" nillable="true" type="Q2:DGCTUStatus"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ValidateItemsResponse" nillable="true" type="ns012345:ValidateItemsResponse"/>
+      <xsd:complexType mixed="false" name="ValidateUNNosRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="UNNoList" nillable="true" type="Q1:ArrayOfDGUNNo"/>
+              <xsd:element minOccurs="0" name="UNNoStr" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ValidateUNNosRequest" nillable="true" type="ns012345:ValidateUNNosRequest"/>
+      <xsd:complexType mixed="false" name="ValidateUNNosResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="UNNoStatus" nillable="true" type="Q2:DGCTUStatus"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="ValidateUNNosResponse" nillable="true" type="ns012345:ValidateUNNosResponse"/>
+      <xsd:complexType mixed="false" name="SearchSubstancesRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Search" nillable="true" type="Q3:DGSearch"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="SearchSubstancesRequest" nillable="true" type="ns012345:SearchSubstancesRequest"/>
+      <xsd:complexType mixed="false" name="SearchSubstancesResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Items" nillable="true" type="Q3:ArrayOfDGEnquiryItem"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="SearchSubstancesResponse" nillable="true" type="ns012345:SearchSubstancesResponse"/>
+      <xsd:complexType mixed="false" name="GetSubstanceVariantsRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="UNNoFilter" nillable="true" type="Q3:DGUNNoFilter"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetSubstanceVariantsRequest" nillable="true" type="ns012345:GetSubstanceVariantsRequest"/>
+      <xsd:complexType mixed="false" name="GetSubstanceVariantsResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Items" nillable="true" type="Q3:ArrayOfDGEnquiryItem"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetSubstanceVariantsResponse" nillable="true" type="ns012345:GetSubstanceVariantsResponse"/>
+      <xsd:complexType mixed="false" name="GetSubstancePackagingsRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="PackagingFilter" nillable="true" type="Q3:DGPackagingFilter"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetSubstancePackagingsRequest" nillable="true" type="ns012345:GetSubstancePackagingsRequest"/>
+      <xsd:complexType mixed="false" name="GetSubstancePackagingsResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="PackagingChoices" nillable="true" type="Q3:ArrayOfDGPackaging"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetSubstancePackagingsResponse" nillable="true" type="ns012345:GetSubstancePackagingsResponse"/>
+      <xsd:complexType mixed="false" name="GetLocationInformationRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Locations" nillable="true" type="Q3:DGLocationFilter"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetLocationInformationRequest" nillable="true" type="ns012345:GetLocationInformationRequest"/>
+      <xsd:complexType mixed="false" name="GetLocationInformationResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="LocationInformation" nillable="true" type="Q3:ArrayOfDGLocationInformation"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetLocationInformationResponse" nillable="true" type="ns012345:GetLocationInformationResponse"/>
+      <xsd:complexType mixed="false" name="GetOperatorListRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Archived" nillable="true" type="xsd:boolean"/>
+              <xsd:element minOccurs="0" name="Code" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="DataKnown" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetOperatorListRequest" nillable="true" type="ns012345:GetOperatorListRequest"/>
+      <xsd:complexType mixed="false" name="GetOperatorListResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Operators" nillable="true" type="Q1:ArrayOfDGOperator"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetOperatorListResponse" nillable="true" type="ns012345:GetOperatorListResponse"/>
+      <xsd:complexType mixed="false" name="GetVesselListRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Archived" nillable="true" type="xsd:boolean"/>
+              <xsd:element minOccurs="0" name="Code" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="DataKnown" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetVesselListRequest" nillable="true" type="ns012345:GetVesselListRequest"/>
+      <xsd:complexType mixed="false" name="GetVesselListResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Vessels" nillable="true" type="Q1:ArrayOfDGVessel"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetVesselListResponse" nillable="true" type="ns012345:GetVesselListResponse"/>
+      <xsd:complexType mixed="false" name="GetLocationListRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Archived" nillable="true" type="xsd:boolean"/>
+              <xsd:element minOccurs="0" name="Code" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="DataKnown" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetLocationListRequest" nillable="true" type="ns012345:GetLocationListRequest"/>
+      <xsd:complexType mixed="false" name="GetLocationListResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Locations" nillable="true" type="Q2:ArrayOfDGLocationEntity"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetLocationListResponse" nillable="true" type="ns012345:GetLocationListResponse"/>
+      <xsd:complexType mixed="false" name="GetTerminalListRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Code" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="DataKnown" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="LocationCode" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetTerminalListRequest" nillable="true" type="ns012345:GetTerminalListRequest"/>
+      <xsd:complexType mixed="false" name="GetTerminalListResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Terminals" nillable="true" type="Q1:ArrayOfDGTerminal"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetTerminalListResponse" nillable="true" type="ns012345:GetTerminalListResponse"/>
+      <xsd:complexType mixed="false" name="GetItineraryInformationRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Itinerary" nillable="true" type="Q3:DGItineraryFilter"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetItineraryInformationRequest" nillable="true" type="ns012345:GetItineraryInformationRequest"/>
+      <xsd:complexType mixed="false" name="GetItineraryInformationResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="ItineraryInformation" nillable="true" type="Q3:ArrayOfDGItineraryInformation"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetItineraryInformationResponse" nillable="true" type="ns012345:GetItineraryInformationResponse"/>
+      <xsd:complexType mixed="false" name="GetSubstanceRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="UNNoFilter" nillable="true" type="Q3:DGUNNoFilter"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetSubstanceRequest" nillable="true" type="ns012345:GetSubstanceRequest"/>
+      <xsd:complexType mixed="false" name="GetSubstanceResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Item" nillable="true" type="Q3:DGEnquiryItem"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetSubstanceResponse" nillable="true" type="ns012345:GetSubstanceResponse"/>
+      <xsd:complexType mixed="false" name="GetRandomEnquiryItemRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence/>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetRandomEnquiryItemRequest" nillable="true" type="ns012345:GetRandomEnquiryItemRequest"/>
+      <xsd:complexType mixed="false" name="GetRandomEnquiryItemResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Item" nillable="true" type="Q3:DGEnquiryItem"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetRandomEnquiryItemResponse" nillable="true" type="ns012345:GetRandomEnquiryItemResponse"/>
+      <xsd:complexType mixed="false" name="GetRandomEnquiryItemsRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="HowMany" type="xsd:int"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetRandomEnquiryItemsRequest" nillable="true" type="ns012345:GetRandomEnquiryItemsRequest"/>
+      <xsd:complexType mixed="false" name="GetRandomEnquiryItemsResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Items" nillable="true" type="Q3:ArrayOfDGEnquiryItem"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetRandomEnquiryItemsResponse" nillable="true" type="ns012345:GetRandomEnquiryItemsResponse"/>
+      <xsd:complexType mixed="false" name="GetRandomBookingItemRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence/>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetRandomBookingItemRequest" nillable="true" type="ns012345:GetRandomBookingItemRequest"/>
+      <xsd:complexType mixed="false" name="GetRandomBookingItemResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Item" nillable="true" type="Q2:DGBookingItem"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetRandomBookingItemResponse" nillable="true" type="ns012345:GetRandomBookingItemResponse"/>
+      <xsd:complexType mixed="false" name="GetRandomBookingItemsRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="HowMany" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="RefPrefix" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetRandomBookingItemsRequest" nillable="true" type="ns012345:GetRandomBookingItemsRequest"/>
+      <xsd:complexType mixed="false" name="GetRandomBookingItemsResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Items" nillable="true" type="Q2:ArrayOfDGBookingItem"/>
+              <xsd:element minOccurs="0" name="strHTML" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetRandomBookingItemsResponse" nillable="true" type="ns012345:GetRandomBookingItemsResponse"/>
+      <xsd:complexType mixed="false" name="GetCommentRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="CommentCode" nillable="true" type="Q4:ArrayOfint"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetCommentRequest" nillable="true" type="ns012345:GetCommentRequest"/>
+      <xsd:complexType mixed="false" name="GetCommentResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="CommentText" nillable="true" type="Q5:ArrayOfKeyValuePairOfintstring"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetCommentResponse" nillable="true" type="ns012345:GetCommentResponse"/>
+      <xsd:complexType mixed="false" name="GetPhraseRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="PhraseCode" nillable="true" type="Q4:ArrayOfstring"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetPhraseRequest" nillable="true" type="ns012345:GetPhraseRequest"/>
+      <xsd:complexType mixed="false" name="GetPhraseResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="PhraseText" nillable="true" type="Q5:ArrayOfKeyValuePairOfstringstring"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetPhraseResponse" nillable="true" type="ns012345:GetPhraseResponse"/>
+      <xsd:complexType mixed="false" name="GetSegregationNamesRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="SegregationCode" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetSegregationNamesRequest" nillable="true" type="ns012345:GetSegregationNamesRequest"/>
+      <xsd:complexType mixed="false" name="GetSegregationNamesResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="SegregationText" nillable="true" type="Q1:ArrayOfSegregationGroup"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetSegregationNamesResponse" nillable="true" type="ns012345:GetSegregationNamesResponse"/>
+      <xsd:complexType mixed="false" name="GetSegregationExtraBySegregationCodeLetterRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="SegregationCode" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetSegregationExtraBySegregationCodeLetterRequest" nillable="true" type="ns012345:GetSegregationExtraBySegregationCodeLetterRequest"/>
+      <xsd:complexType mixed="false" name="GetSegregationExtraBySegregationCodeLetterResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="SegregationExtra" nillable="true" type="Q2:ArrayOfDGSegregationExtra"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetSegregationExtraBySegregationCodeLetterResponse" nillable="true" type="ns012345:GetSegregationExtraBySegregationCodeLetterResponse"/>
+      <xsd:complexType mixed="false" name="GetSegregationExtraBySegregationNameRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="SegregationNames" nillable="true" type="Q1:ArrayOfSegregationGroup"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetSegregationExtraBySegregationNameRequest" nillable="true" type="ns012345:GetSegregationExtraBySegregationNameRequest"/>
+      <xsd:complexType mixed="false" name="GetSegregationExtraBySegregationNameResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="SegregationExtra" nillable="true" type="Q2:ArrayOfDGSegregationExtra"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetSegregationExtraBySegregationNameResponse" nillable="true" type="ns012345:GetSegregationExtraBySegregationNameResponse"/>
+      <xsd:complexType mixed="false" name="GetAmendmentTitleRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence/>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetAmendmentTitleRequest" nillable="true" type="ns012345:GetAmendmentTitleRequest"/>
+      <xsd:complexType mixed="false" name="GetAmendmentTitleResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:BaseResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="AmendmentTitle" nillable="true" type="Q3:AmendmentTitle"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetAmendmentTitleResponse" nillable="true" type="ns012345:GetAmendmentTitleResponse"/>
+      <xsd:complexType mixed="false" name="GetSubstanceTechnicalNamesRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="TechnicalNameFilter" nillable="true" type="Q3:DGTechnicalNameFilter"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetSubstanceTechnicalNamesRequest" nillable="true" type="ns012345:GetSubstanceTechnicalNamesRequest"/>
+      <xsd:complexType mixed="false" name="GetSubstanceTechnicalNamesResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="TechnicalNames" nillable="true" type="Q3:DGTechnicalName"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="GetSubstanceTechnicalNamesResponse" nillable="true" type="ns012345:GetSubstanceTechnicalNamesResponse"/>
+      <xsd:complexType mixed="false" name="EndSessionRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:BaseRequest">
+            <xsd:sequence/>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="EndSessionRequest" nillable="true" type="ns012345:EndSessionRequest"/>
+      <xsd:complexType mixed="false" name="EndSessionResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:BaseResponse">
+            <xsd:sequence/>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="EndSessionResponse" nillable="true" type="ns012345:EndSessionResponse"/>
+      <xsd:complexType mixed="false" name="CreateLocationRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Location" nillable="true" type="Q2:DGLocationEntity"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="CreateLocationRequest" nillable="true" type="ns012345:CreateLocationRequest"/>
+      <xsd:complexType mixed="false" name="CreateLocationResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Location" nillable="true" type="Q2:DGLocationEntity"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="CreateLocationResponse" nillable="true" type="ns012345:CreateLocationResponse"/>
+      <xsd:complexType mixed="false" name="UpdateLocationRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Location" nillable="true" type="Q2:DGLocationEntity"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="UpdateLocationRequest" nillable="true" type="ns012345:UpdateLocationRequest"/>
+      <xsd:complexType mixed="false" name="UpdateLocationResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Location" nillable="true" type="Q2:DGLocationEntity"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="UpdateLocationResponse" nillable="true" type="ns012345:UpdateLocationResponse"/>
+      <xsd:complexType mixed="false" name="DeleteLocationRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="LocationCode" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DeleteLocationRequest" nillable="true" type="ns012345:DeleteLocationRequest"/>
+      <xsd:complexType mixed="false" name="DeleteLocationResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence/>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DeleteLocationResponse" nillable="true" type="ns012345:DeleteLocationResponse"/>
+      <xsd:complexType mixed="false" name="CreateOperatorRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Operator" nillable="true" type="Q1:DGOperator"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="CreateOperatorRequest" nillable="true" type="ns012345:CreateOperatorRequest"/>
+      <xsd:complexType mixed="false" name="CreateOperatorResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Operator" nillable="true" type="Q1:DGOperator"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="CreateOperatorResponse" nillable="true" type="ns012345:CreateOperatorResponse"/>
+      <xsd:complexType mixed="false" name="UpdateOperatorRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Operator" nillable="true" type="Q1:DGOperator"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="UpdateOperatorRequest" nillable="true" type="ns012345:UpdateOperatorRequest"/>
+      <xsd:complexType mixed="false" name="UpdateOperatorResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Operator" nillable="true" type="Q1:DGOperator"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="UpdateOperatorResponse" nillable="true" type="ns012345:UpdateOperatorResponse"/>
+      <xsd:complexType mixed="false" name="DeleteOperatorRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="OperatorCode" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DeleteOperatorRequest" nillable="true" type="ns012345:DeleteOperatorRequest"/>
+      <xsd:complexType mixed="false" name="DeleteOperatorResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence/>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DeleteOperatorResponse" nillable="true" type="ns012345:DeleteOperatorResponse"/>
+      <xsd:complexType mixed="false" name="CreateTerminalRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Terminal" nillable="true" type="Q1:DGTerminal"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="CreateTerminalRequest" nillable="true" type="ns012345:CreateTerminalRequest"/>
+      <xsd:complexType mixed="false" name="CreateTerminalResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Terminal" nillable="true" type="Q1:DGTerminal"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="CreateTerminalResponse" nillable="true" type="ns012345:CreateTerminalResponse"/>
+      <xsd:complexType mixed="false" name="UpdateTerminalRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Terminal" nillable="true" type="Q1:DGTerminal"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="UpdateTerminalRequest" nillable="true" type="ns012345:UpdateTerminalRequest"/>
+      <xsd:complexType mixed="false" name="UpdateTerminalResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Terminal" nillable="true" type="Q1:DGTerminal"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="UpdateTerminalResponse" nillable="true" type="ns012345:UpdateTerminalResponse"/>
+      <xsd:complexType mixed="false" name="DeleteTerminalRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="TerminalCode" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DeleteTerminalRequest" nillable="true" type="ns012345:DeleteTerminalRequest"/>
+      <xsd:complexType mixed="false" name="DeleteTerminalResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence/>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DeleteTerminalResponse" nillable="true" type="ns012345:DeleteTerminalResponse"/>
+      <xsd:complexType mixed="false" name="CreateVesselRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Vessel" nillable="true" type="Q1:DGVessel"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="CreateVesselRequest" nillable="true" type="ns012345:CreateVesselRequest"/>
+      <xsd:complexType mixed="false" name="CreateVesselResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Vessel" nillable="true" type="Q1:DGVessel"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="CreateVesselResponse" nillable="true" type="ns012345:CreateVesselResponse"/>
+      <xsd:complexType mixed="false" name="UpdateVesselRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Vessel" nillable="true" type="Q1:DGVessel"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="UpdateVesselRequest" nillable="true" type="ns012345:UpdateVesselRequest"/>
+      <xsd:complexType mixed="false" name="UpdateVesselResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Vessel" nillable="true" type="Q1:DGVessel"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="UpdateVesselResponse" nillable="true" type="ns012345:UpdateVesselResponse"/>
+      <xsd:complexType mixed="false" name="DeleteVesselRequest">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGRequest">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="VesselCode" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DeleteVesselRequest" nillable="true" type="ns012345:DeleteVesselRequest"/>
+      <xsd:complexType mixed="false" name="DeleteVesselResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns012345:DGResponse">
+            <xsd:sequence/>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DeleteVesselResponse" nillable="true" type="ns012345:DeleteVesselResponse"/>
+    </xsd:schema>
+    <xsd:schema xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HCToolkit">
+      <xsd:complexType name="ArrayOfDGStatus">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGStatus" nillable="true" type="ns0123456:DGStatus"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGStatus" nillable="true" type="ns0123456:ArrayOfDGStatus"/>
+      <xsd:complexType name="DGStatus">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="CountError" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="CountInformation" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="CountWarning" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Message" nillable="true" type="ns0123456:ArrayOfDGResult"/>
+          <xsd:element minOccurs="0" name="RefCode" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGStatus" nillable="true" type="ns0123456:DGStatus"/>
+      <xsd:complexType name="ArrayOfDGResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGResult" nillable="true" type="ns0123456:DGResult"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGResult" nillable="true" type="ns0123456:ArrayOfDGResult"/>
+      <xsd:complexType name="DGResult">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Code" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Description" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Level" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="ResultSource" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGResult" nillable="true" type="ns0123456:DGResult"/>
+      <xsd:complexType name="DGContext">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="AppSourceId" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Debug" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="ImdgAmdt" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Regs" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="SailingMode" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="UnitType" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGContext" nillable="true" type="ns0123456:DGContext"/>
+      <xsd:complexType name="DGOwner">
+        <xsd:sequence/>
+      </xsd:complexType>
+      <xsd:element name="DGOwner" nillable="true" type="ns0123456:DGOwner"/>
+      <xsd:complexType mixed="false" name="DGBaseResponse">
+        <xsd:complexContent>
+          <xsd:extension base="ns0123456:DGBase">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="CountRegsError" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountRegsInformation" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountRegsWarning" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountRestrictionsError" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountRestrictionsInformation" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountRestrictionsWarning" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="HasError" type="xsd:boolean"/>
+              <xsd:element minOccurs="0" name="HasErrorSummary" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="HasWarning" type="xsd:boolean"/>
+              <xsd:element minOccurs="0" name="HasWarningSummary" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="RefID" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="Results" nillable="true" type="ns0123456:ArrayOfDGResult"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGBaseResponse" nillable="true" type="ns0123456:DGBaseResponse"/>
+      <xsd:complexType name="DGBase">
+        <xsd:sequence/>
+      </xsd:complexType>
+      <xsd:element name="DGBase" nillable="true" type="ns0123456:DGBase"/>
+      <xsd:complexType name="ArrayOfPlacardsMarksLabels">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="PlacardsMarksLabels" nillable="true" type="ns0123456:PlacardsMarksLabels"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfPlacardsMarksLabels" nillable="true" type="ns0123456:ArrayOfPlacardsMarksLabels"/>
+      <xsd:complexType name="PlacardsMarksLabels">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ImageName" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="PlacardsMarksLabels" nillable="true" type="ns0123456:PlacardsMarksLabels"/>
+      <xsd:complexType name="ArrayOfStowageSegregationComments">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="StowageSegregationComments" nillable="true" type="ns0123456:StowageSegregationComments"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfStowageSegregationComments" nillable="true" type="ns0123456:ArrayOfStowageSegregationComments"/>
+      <xsd:complexType name="StowageSegregationComments">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Code" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Comment" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="StowageSegregationComments" nillable="true" type="ns0123456:StowageSegregationComments"/>
+      <xsd:complexType mixed="false" name="DGRestrictionBookingStatus">
+        <xsd:complexContent>
+          <xsd:extension base="ns0123456:DGStatus">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="CTUs" nillable="true" type="ns0123456:ArrayOfDGRestrictionCTUStatus"/>
+              <xsd:element minOccurs="0" name="CountCTUError" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountCTUInformation" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountCTUWarning" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountItemError" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountItemInformation" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountItemWarning" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountPackageError" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountPackageInformation" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountPackageWarning" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="Reference" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGRestrictionBookingStatus" nillable="true" type="ns0123456:DGRestrictionBookingStatus"/>
+      <xsd:complexType name="ArrayOfDGRestrictionCTUStatus">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGRestrictionCTUStatus" nillable="true" type="ns0123456:DGRestrictionCTUStatus"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGRestrictionCTUStatus" nillable="true" type="ns0123456:ArrayOfDGRestrictionCTUStatus"/>
+      <xsd:complexType mixed="false" name="DGRestrictionCTUStatus">
+        <xsd:complexContent>
+          <xsd:extension base="ns0123456:DGStatus">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="CountItemError" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountItemInformation" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountItemWarning" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountPackageError" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountPackageInformation" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="CountPackageWarning" type="xsd:int"/>
+              <xsd:element minOccurs="0" name="Items" nillable="true" type="ns0123456:ArrayOfDGRestrictionItemStatus"/>
+              <xsd:element minOccurs="0" name="Reference" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGRestrictionCTUStatus" nillable="true" type="ns0123456:DGRestrictionCTUStatus"/>
+      <xsd:complexType name="ArrayOfDGRestrictionItemStatus">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGRestrictionItemStatus" nillable="true" type="ns0123456:DGRestrictionItemStatus"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGRestrictionItemStatus" nillable="true" type="ns0123456:ArrayOfDGRestrictionItemStatus"/>
+      <xsd:complexType mixed="false" name="DGRestrictionItemStatus">
+        <xsd:complexContent>
+          <xsd:extension base="ns0123456:DGStatus">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Reference" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGRestrictionItemStatus" nillable="true" type="ns0123456:DGRestrictionItemStatus"/>
+      <xsd:complexType name="ArrayOfDGUNNo">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGUNNo" nillable="true" type="ns0123456:DGUNNo"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGUNNo" nillable="true" type="ns0123456:ArrayOfDGUNNo"/>
+      <xsd:complexType name="DGUNNo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="CVL49CFR" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CVLADR" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CVLIMDG" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CVLRID" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CVLTDG" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ContentType" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="InLimitedExceptedQuantity" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Suffix" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="UNNo" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DGUNNo" nillable="true" type="ns0123456:DGUNNo"/>
+      <xsd:complexType name="ArrayOfSegregationGroup">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="SegregationGroup" nillable="true" type="ns0123456:SegregationGroup"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfSegregationGroup" nillable="true" type="ns0123456:ArrayOfSegregationGroup"/>
+      <xsd:complexType name="SegregationGroup">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Code" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="SegregationGroup" nillable="true" type="ns0123456:SegregationGroup"/>
+      <xsd:complexType name="ArrayOfDGOperator">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGOperator" nillable="true" type="ns0123456:DGOperator"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGOperator" nillable="true" type="ns0123456:ArrayOfDGOperator"/>
+      <xsd:complexType mixed="false" name="DGOperator">
+        <xsd:complexContent>
+          <xsd:extension base="ns0123456:DGOwner">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="DataKnown" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="Notes" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="OperatorCode" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="OperatorName" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGOperator" nillable="true" type="ns0123456:DGOperator"/>
+      <xsd:complexType name="ArrayOfDGVessel">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGVessel" nillable="true" type="ns0123456:DGVessel"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGVessel" nillable="true" type="ns0123456:ArrayOfDGVessel"/>
+      <xsd:complexType mixed="false" name="DGVessel">
+        <xsd:complexContent>
+          <xsd:extension base="ns0123456:DGOwner">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="CallSign" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="DataKnown" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="ImoNumber" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="Notes" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="OperatorCode" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="Type" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="VesselCode" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="VesselName" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGVessel" nillable="true" type="ns0123456:DGVessel"/>
+      <xsd:complexType name="ArrayOfDGTerminal">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="DGTerminal" nillable="true" type="ns0123456:DGTerminal"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfDGTerminal" nillable="true" type="ns0123456:ArrayOfDGTerminal"/>
+      <xsd:complexType mixed="false" name="DGTerminal">
+        <xsd:complexContent>
+          <xsd:extension base="ns0123456:DGOwner">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="DataKnown" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="LocationCode" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="Notes" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="TerminalCode" nillable="true" type="xsd:string"/>
+              <xsd:element minOccurs="0" name="TerminalName" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="DGTerminal" nillable="true" type="ns0123456:DGTerminal"/>
+    </xsd:schema>
+    <xsd:schema xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:complexType name="ArrayOfKeyValuePairOfintstring">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="KeyValuePairOfintstring" type="ns01234567:KeyValuePairOfintstring"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfKeyValuePairOfintstring" nillable="true" type="ns01234567:ArrayOfKeyValuePairOfintstring"/>
+      <xsd:complexType name="KeyValuePairOfintstring">
+        <xsd:annotation/>
+        <xsd:sequence>
+          <xsd:element name="key" type="xsd:int"/>
+          <xsd:element name="value" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="KeyValuePairOfintstring" nillable="true" type="ns01234567:KeyValuePairOfintstring"/>
+      <xsd:complexType name="ArrayOfKeyValuePairOfstringstring">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="KeyValuePairOfstringstring" type="ns01234567:KeyValuePairOfstringstring"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfKeyValuePairOfstringstring" nillable="true" type="ns01234567:ArrayOfKeyValuePairOfstringstring"/>
+      <xsd:complexType name="KeyValuePairOfstringstring">
+        <xsd:annotation/>
+        <xsd:sequence>
+          <xsd:element name="key" nillable="true" type="xsd:string"/>
+          <xsd:element name="value" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="KeyValuePairOfstringstring" nillable="true" type="ns01234567:KeyValuePairOfstringstring"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IHazcheckSvc_InitSession_InputMessage">
+    <wsdl:part element="ns01:InitSession" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_InitSession_OutputMessage">
+    <wsdl:part element="ns01:InitSessionResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetBooking_InputMessage">
+    <wsdl:part element="ns01:GetBooking" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetBooking_OutputMessage">
+    <wsdl:part element="ns01:GetBookingResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetServiceInformation_InputMessage">
+    <wsdl:part element="ns01:GetServiceInformation" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetServiceInformation_OutputMessage">
+    <wsdl:part element="ns01:GetServiceInformationResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_ValidateBookings_InputMessage">
+    <wsdl:part element="ns01:ValidateBookings" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_ValidateBookings_OutputMessage">
+    <wsdl:part element="ns01:ValidateBookingsResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_ValidateBooking_InputMessage">
+    <wsdl:part element="ns01:ValidateBooking" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_ValidateBooking_OutputMessage">
+    <wsdl:part element="ns01:ValidateBookingResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_ValidateBookingById_InputMessage">
+    <wsdl:part element="ns01:ValidateBookingById" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_ValidateBookingById_OutputMessage">
+    <wsdl:part element="ns01:ValidateBookingByIdResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_ValidateBookingByRef_InputMessage">
+    <wsdl:part element="ns01:ValidateBookingByRef" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_ValidateBookingByRef_OutputMessage">
+    <wsdl:part element="ns01:ValidateBookingByRefResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_ValidateCTU_InputMessage">
+    <wsdl:part element="ns01:ValidateCTU" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_ValidateCTU_OutputMessage">
+    <wsdl:part element="ns01:ValidateCTUResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_ValidateItems_InputMessage">
+    <wsdl:part element="ns01:ValidateItems" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_ValidateItems_OutputMessage">
+    <wsdl:part element="ns01:ValidateItemsResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_ValidateUNNos_InputMessage">
+    <wsdl:part element="ns01:ValidateUNNos" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_ValidateUNNos_OutputMessage">
+    <wsdl:part element="ns01:ValidateUNNosResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_SearchSubstances_InputMessage">
+    <wsdl:part element="ns01:SearchSubstances" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_SearchSubstances_OutputMessage">
+    <wsdl:part element="ns01:SearchSubstancesResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_SearchSubstances_DGFaultFault_FaultMessage">
+    <wsdl:part element="ns012345:DGFault" name="detail"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetSubstanceVariants_InputMessage">
+    <wsdl:part element="ns01:GetSubstanceVariants" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetSubstanceVariants_OutputMessage">
+    <wsdl:part element="ns01:GetSubstanceVariantsResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetSubstancePackagings_InputMessage">
+    <wsdl:part element="ns01:GetSubstancePackagings" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetSubstancePackagings_OutputMessage">
+    <wsdl:part element="ns01:GetSubstancePackagingsResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetLocationInformation_InputMessage">
+    <wsdl:part element="ns01:GetLocationInformation" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetLocationInformation_OutputMessage">
+    <wsdl:part element="ns01:GetLocationInformationResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetOperatorList_InputMessage">
+    <wsdl:part element="ns01:GetOperatorList" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetOperatorList_OutputMessage">
+    <wsdl:part element="ns01:GetOperatorListResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetVesselList_InputMessage">
+    <wsdl:part element="ns01:GetVesselList" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetVesselList_OutputMessage">
+    <wsdl:part element="ns01:GetVesselListResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetLocationList_InputMessage">
+    <wsdl:part element="ns01:GetLocationList" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetLocationList_OutputMessage">
+    <wsdl:part element="ns01:GetLocationListResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetTerminalList_InputMessage">
+    <wsdl:part element="ns01:GetTerminalList" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetTerminalList_OutputMessage">
+    <wsdl:part element="ns01:GetTerminalListResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetItineraryInformation_InputMessage">
+    <wsdl:part element="ns01:GetItineraryInformation" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetItineraryInformation_OutputMessage">
+    <wsdl:part element="ns01:GetItineraryInformationResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetSubstance_InputMessage">
+    <wsdl:part element="ns01:GetSubstance" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetSubstance_OutputMessage">
+    <wsdl:part element="ns01:GetSubstanceResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetRandomEnquiryItem_InputMessage">
+    <wsdl:part element="ns01:GetRandomEnquiryItem" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetRandomEnquiryItem_OutputMessage">
+    <wsdl:part element="ns01:GetRandomEnquiryItemResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetRandomEnquiryItems_InputMessage">
+    <wsdl:part element="ns01:GetRandomEnquiryItems" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetRandomEnquiryItems_OutputMessage">
+    <wsdl:part element="ns01:GetRandomEnquiryItemsResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetRandomBookingItem_InputMessage">
+    <wsdl:part element="ns01:GetRandomBookingItem" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetRandomBookingItem_OutputMessage">
+    <wsdl:part element="ns01:GetRandomBookingItemResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetRandomBookingItems_InputMessage">
+    <wsdl:part element="ns01:GetRandomBookingItems" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetRandomBookingItems_OutputMessage">
+    <wsdl:part element="ns01:GetRandomBookingItemsResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetComment_InputMessage">
+    <wsdl:part element="ns01:GetComment" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetComment_OutputMessage">
+    <wsdl:part element="ns01:GetCommentResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetPhrase_InputMessage">
+    <wsdl:part element="ns01:GetPhrase" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetPhrase_OutputMessage">
+    <wsdl:part element="ns01:GetPhraseResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetSegregationNames_InputMessage">
+    <wsdl:part element="ns01:GetSegregationNames" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetSegregationNames_OutputMessage">
+    <wsdl:part element="ns01:GetSegregationNamesResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetSegregationExtraBySegregationCodeLetter_InputMessage">
+    <wsdl:part element="ns01:GetSegregationExtraBySegregationCodeLetter" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetSegregationExtraBySegregationCodeLetter_OutputMessage">
+    <wsdl:part element="ns01:GetSegregationExtraBySegregationCodeLetterResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetSegregationExtraBySegregationName_InputMessage">
+    <wsdl:part element="ns01:GetSegregationExtraBySegregationName" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetSegregationExtraBySegregationName_OutputMessage">
+    <wsdl:part element="ns01:GetSegregationExtraBySegregationNameResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetAmendmentTitle_InputMessage">
+    <wsdl:part element="ns01:GetAmendmentTitle" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetAmendmentTitle_OutputMessage">
+    <wsdl:part element="ns01:GetAmendmentTitleResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetSubstanceTechnicalNames_InputMessage">
+    <wsdl:part element="ns01:GetSubstanceTechnicalNames" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_GetSubstanceTechnicalNames_OutputMessage">
+    <wsdl:part element="ns01:GetSubstanceTechnicalNamesResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_EndSession_InputMessage">
+    <wsdl:part element="ns01:EndSession" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_EndSession_OutputMessage">
+    <wsdl:part element="ns01:EndSessionResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_CreateLocation_InputMessage">
+    <wsdl:part element="ns01:CreateLocation" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_CreateLocation_OutputMessage">
+    <wsdl:part element="ns01:CreateLocationResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_UpdateLocation_InputMessage">
+    <wsdl:part element="ns01:UpdateLocation" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_UpdateLocation_OutputMessage">
+    <wsdl:part element="ns01:UpdateLocationResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_DeleteLocation_InputMessage">
+    <wsdl:part element="ns01:DeleteLocation" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_DeleteLocation_OutputMessage">
+    <wsdl:part element="ns01:DeleteLocationResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_CreateOperator_InputMessage">
+    <wsdl:part element="ns01:CreateOperator" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_CreateOperator_OutputMessage">
+    <wsdl:part element="ns01:CreateOperatorResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_UpdateOperator_InputMessage">
+    <wsdl:part element="ns01:UpdateOperator" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_UpdateOperator_OutputMessage">
+    <wsdl:part element="ns01:UpdateOperatorResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_DeleteOperator_InputMessage">
+    <wsdl:part element="ns01:DeleteOperator" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_DeleteOperator_OutputMessage">
+    <wsdl:part element="ns01:DeleteOperatorResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_CreateTerminal_InputMessage">
+    <wsdl:part element="ns01:CreateTerminal" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_CreateTerminal_OutputMessage">
+    <wsdl:part element="ns01:CreateTerminalResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_UpdateTerminal_InputMessage">
+    <wsdl:part element="ns01:UpdateTerminal" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_UpdateTerminal_OutputMessage">
+    <wsdl:part element="ns01:UpdateTerminalResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_DeleteTerminal_InputMessage">
+    <wsdl:part element="ns01:DeleteTerminal" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_DeleteTerminal_OutputMessage">
+    <wsdl:part element="ns01:DeleteTerminalResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_CreateVessel_InputMessage">
+    <wsdl:part element="ns01:CreateVessel" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_CreateVessel_OutputMessage">
+    <wsdl:part element="ns01:CreateVesselResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_UpdateVessel_InputMessage">
+    <wsdl:part element="ns01:UpdateVessel" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_UpdateVessel_OutputMessage">
+    <wsdl:part element="ns01:UpdateVesselResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_DeleteVessel_InputMessage">
+    <wsdl:part element="ns01:DeleteVessel" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="IHazcheckSvc_DeleteVessel_OutputMessage">
+    <wsdl:part element="ns01:DeleteVesselResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="IHazcheckSvc">
+    <wsdl:operation name="InitSession">
+      <wsdl:input message="ns:IHazcheckSvc_InitSession_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_InitSession_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBooking">
+      <wsdl:input message="ns:IHazcheckSvc_GetBooking_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetBooking_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceInformation">
+      <wsdl:input message="ns:IHazcheckSvc_GetServiceInformation_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetServiceInformation_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateBookings">
+      <wsdl:input message="ns:IHazcheckSvc_ValidateBookings_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_ValidateBookings_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateBooking">
+      <wsdl:input message="ns:IHazcheckSvc_ValidateBooking_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_ValidateBooking_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateBookingById">
+      <wsdl:input message="ns:IHazcheckSvc_ValidateBookingById_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_ValidateBookingById_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateBookingByRef">
+      <wsdl:input message="ns:IHazcheckSvc_ValidateBookingByRef_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_ValidateBookingByRef_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCTU">
+      <wsdl:input message="ns:IHazcheckSvc_ValidateCTU_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_ValidateCTU_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateItems">
+      <wsdl:input message="ns:IHazcheckSvc_ValidateItems_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_ValidateItems_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUNNos">
+      <wsdl:input message="ns:IHazcheckSvc_ValidateUNNos_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_ValidateUNNos_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="SearchSubstances">
+      <wsdl:input message="ns:IHazcheckSvc_SearchSubstances_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_SearchSubstances_OutputMessage"/>
+      <wsdl:fault message="ns:IHazcheckSvc_SearchSubstances_DGFaultFault_FaultMessage" name="DGFaultFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubstanceVariants">
+      <wsdl:input message="ns:IHazcheckSvc_GetSubstanceVariants_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetSubstanceVariants_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubstancePackagings">
+      <wsdl:input message="ns:IHazcheckSvc_GetSubstancePackagings_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetSubstancePackagings_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationInformation">
+      <wsdl:input message="ns:IHazcheckSvc_GetLocationInformation_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetLocationInformation_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperatorList">
+      <wsdl:input message="ns:IHazcheckSvc_GetOperatorList_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetOperatorList_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetVesselList">
+      <wsdl:input message="ns:IHazcheckSvc_GetVesselList_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetVesselList_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationList">
+      <wsdl:input message="ns:IHazcheckSvc_GetLocationList_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetLocationList_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetTerminalList">
+      <wsdl:input message="ns:IHazcheckSvc_GetTerminalList_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetTerminalList_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetItineraryInformation">
+      <wsdl:input message="ns:IHazcheckSvc_GetItineraryInformation_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetItineraryInformation_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubstance">
+      <wsdl:input message="ns:IHazcheckSvc_GetSubstance_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetSubstance_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomEnquiryItem">
+      <wsdl:input message="ns:IHazcheckSvc_GetRandomEnquiryItem_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetRandomEnquiryItem_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomEnquiryItems">
+      <wsdl:input message="ns:IHazcheckSvc_GetRandomEnquiryItems_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetRandomEnquiryItems_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomBookingItem">
+      <wsdl:input message="ns:IHazcheckSvc_GetRandomBookingItem_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetRandomBookingItem_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomBookingItems">
+      <wsdl:input message="ns:IHazcheckSvc_GetRandomBookingItems_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetRandomBookingItems_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetComment">
+      <wsdl:input message="ns:IHazcheckSvc_GetComment_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetComment_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhrase">
+      <wsdl:input message="ns:IHazcheckSvc_GetPhrase_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetPhrase_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSegregationNames">
+      <wsdl:input message="ns:IHazcheckSvc_GetSegregationNames_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetSegregationNames_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSegregationExtraBySegregationCodeLetter">
+      <wsdl:input message="ns:IHazcheckSvc_GetSegregationExtraBySegregationCodeLetter_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetSegregationExtraBySegregationCodeLetter_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSegregationExtraBySegregationName">
+      <wsdl:input message="ns:IHazcheckSvc_GetSegregationExtraBySegregationName_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetSegregationExtraBySegregationName_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAmendmentTitle">
+      <wsdl:input message="ns:IHazcheckSvc_GetAmendmentTitle_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetAmendmentTitle_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubstanceTechnicalNames">
+      <wsdl:input message="ns:IHazcheckSvc_GetSubstanceTechnicalNames_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_GetSubstanceTechnicalNames_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="EndSession">
+      <wsdl:input message="ns:IHazcheckSvc_EndSession_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_EndSession_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="CreateLocation">
+      <wsdl:input message="ns:IHazcheckSvc_CreateLocation_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_CreateLocation_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLocation">
+      <wsdl:input message="ns:IHazcheckSvc_UpdateLocation_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_UpdateLocation_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLocation">
+      <wsdl:input message="ns:IHazcheckSvc_DeleteLocation_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_DeleteLocation_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOperator">
+      <wsdl:input message="ns:IHazcheckSvc_CreateOperator_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_CreateOperator_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOperator">
+      <wsdl:input message="ns:IHazcheckSvc_UpdateOperator_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_UpdateOperator_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOperator">
+      <wsdl:input message="ns:IHazcheckSvc_DeleteOperator_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_DeleteOperator_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTerminal">
+      <wsdl:input message="ns:IHazcheckSvc_CreateTerminal_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_CreateTerminal_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTerminal">
+      <wsdl:input message="ns:IHazcheckSvc_UpdateTerminal_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_UpdateTerminal_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTerminal">
+      <wsdl:input message="ns:IHazcheckSvc_DeleteTerminal_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_DeleteTerminal_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="CreateVessel">
+      <wsdl:input message="ns:IHazcheckSvc_CreateVessel_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_CreateVessel_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVessel">
+      <wsdl:input message="ns:IHazcheckSvc_UpdateVessel_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_UpdateVessel_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVessel">
+      <wsdl:input message="ns:IHazcheckSvc_DeleteVessel_InputMessage"/>
+      <wsdl:output message="ns:IHazcheckSvc_DeleteVessel_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SOAPServiceBinding_OPSEXS01" type="ns:IHazcheckSvc">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="InitSession">
+      <soap:operation soapAction="InitSession" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBooking">
+      <soap:operation soapAction="GetBooking" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceInformation">
+      <soap:operation soapAction="GetServiceInformation" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateBookings">
+      <soap:operation soapAction="ValidateBookings" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateBooking">
+      <soap:operation soapAction="ValidateBooking" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateBookingById">
+      <soap:operation soapAction="ValidateBookingById" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateBookingByRef">
+      <soap:operation soapAction="ValidateBookingByRef" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCTU">
+      <soap:operation soapAction="ValidateCTU" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateItems">
+      <soap:operation soapAction="ValidateItems" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUNNos">
+      <soap:operation soapAction="ValidateUNNos" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchSubstances">
+      <soap:operation soapAction="SearchSubstances" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DGFaultFault">
+        <soap:fault name="DGFaultFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubstanceVariants">
+      <soap:operation soapAction="GetSubstanceVariants" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubstancePackagings">
+      <soap:operation soapAction="GetSubstancePackagings" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationInformation">
+      <soap:operation soapAction="GetLocationInformation" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperatorList">
+      <soap:operation soapAction="GetOperatorList" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVesselList">
+      <soap:operation soapAction="GetVesselList" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationList">
+      <soap:operation soapAction="GetLocationList" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTerminalList">
+      <soap:operation soapAction="GetTerminalList" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItineraryInformation">
+      <soap:operation soapAction="GetItineraryInformation" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubstance">
+      <soap:operation soapAction="GetSubstance" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomEnquiryItem">
+      <soap:operation soapAction="GetRandomEnquiryItem" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomEnquiryItems">
+      <soap:operation soapAction="GetRandomEnquiryItems" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomBookingItem">
+      <soap:operation soapAction="GetRandomBookingItem" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomBookingItems">
+      <soap:operation soapAction="GetRandomBookingItems" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComment">
+      <soap:operation soapAction="GetComment" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhrase">
+      <soap:operation soapAction="GetPhrase" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSegregationNames">
+      <soap:operation soapAction="GetSegregationNames" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSegregationExtraBySegregationCodeLetter">
+      <soap:operation soapAction="GetSegregationExtraBySegregationCodeLetter" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSegregationExtraBySegregationName">
+      <soap:operation soapAction="GetSegregationExtraBySegregationName" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAmendmentTitle">
+      <soap:operation soapAction="GetAmendmentTitle" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubstanceTechnicalNames">
+      <soap:operation soapAction="GetSubstanceTechnicalNames" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EndSession">
+      <soap:operation soapAction="EndSession" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateLocation">
+      <soap:operation soapAction="CreateLocation" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLocation">
+      <soap:operation soapAction="UpdateLocation" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLocation">
+      <soap:operation soapAction="DeleteLocation" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOperator">
+      <soap:operation soapAction="CreateOperator" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOperator">
+      <soap:operation soapAction="UpdateOperator" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOperator">
+      <soap:operation soapAction="DeleteOperator" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTerminal">
+      <soap:operation soapAction="CreateTerminal" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTerminal">
+      <soap:operation soapAction="UpdateTerminal" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTerminal">
+      <soap:operation soapAction="DeleteTerminal" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateVessel">
+      <soap:operation soapAction="CreateVessel" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVessel">
+      <soap:operation soapAction="UpdateVessel" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVessel">
+      <soap:operation soapAction="DeleteVessel" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IHazcheckSvc1">
+    <wsdl:port binding="ns:SOAPServiceBinding_OPSEXS01" name="IHazcheckSvc1SOAP">
+      <soap:address location="http://10.65.225.56:9100/eai/webservices/BKGOpsexs01WSProxy"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

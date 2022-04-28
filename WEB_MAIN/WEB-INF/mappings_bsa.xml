@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+<!-- Common ====================================================================================== -->
+<!-- 
+51**=	`�
+52**=IBSheet`�
+30**=(`�
+
+ESM_BSA_H01.do	ESM_BSA_5101.do	ESM_BSA_5101
+ESM_BSA_H12.do	ESM_BSA_5112.do	ESM_BSA_5112
+ESM_BSA_H21.do	ESM_BSA_5121.do	ESM_BSA_5121
+ESM_BSA_H40.do	ESM_BSA_5140.do	ESM_BSA_5140
+ESM_BSA_H41.do	ESM_BSA_5141.do	ESM_BSA_5141
+ESM_BSA_H42.do	ESM_BSA_3002.do	ESM_BSA_3002  
+-->
+<!-- BSAManager ====================================================================================== -->
+
+	<!-- Inquire /Edit BSA Table -->
+	<url-mapping url="ESM_BSA_0021.do" screen="ESM_BSA_0021.screen" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0021HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0021GS.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0021ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0021HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0021GS2.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0021ViewAdapter2" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0021HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0021GS3.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0021HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0021Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Add Carriers -->
+	<url-mapping url="ESM_BSA_0023.do" screen="ESM_BSA_0023.screen" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0023HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0023GS.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0023ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0023HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0023Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Inquire/Edit Slot-info for SPC CNTL_ SC -->
+	<url-mapping url="ESM_BSA_0026.do" screen="ESM_BSA_0026.screen">
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0026HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0026GS.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0026ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0026HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0026GS2.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0026ViewAdapter2">
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0026HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0026GS3.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0026ViewAdapter3">
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0026HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0026GS4.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0026ViewAdapter4">
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0026HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0026Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Inquire/Edit Slot-Cost -->
+	<url-mapping url="ESM_BSA_0028.do" screen="ESM_BSA_0028.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0028HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0028GS.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0028ViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0028HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0028GS2.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0028ViewAdapter2"  >
+	    <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0028HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0028GS3.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0028ViewAdapter3"  >
+	    <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0028HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0028GS4.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0028ViewAdapter4" >
+	    <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0028HTMLAction</web-action-class>
+	</url-mapping>	
+	<event-mapping>
+	    <event-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0028Event</event-class>
+	    <service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- Inquire/Edit Over Used Slot-Cost -->
+	<url-mapping url="ESM_BSA_0162.do" screen="ESM_BSA_0162.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0162HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0162GS.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0162ViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0162HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+	    <event-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0162Event</event-class>
+	    <service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Inquire/Edit Supply & Slot-swap By VVD -->
+    <url-mapping url="ESM_BSA_0030.do" screen="ESM_BSA_0030.screen" >
+        <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_BSA_0030GS.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.EsmBsa0030ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_0030HTMLAction</web-action-class>
+    </url-mapping>
+     <url-mapping url="ESM_BSA_0030GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.EsmBsa0030Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+    </event-mapping>
+		
+	<!-- Inquire/Edit Step-up/down By VVD -->
+	<url-mapping url="ESM_BSA_0032.do" screen="ESM_BSA_0032.screen" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_0032HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_0032HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0032GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_0032HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+        <event-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.EsmBsa0032Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+    </event-mapping>
+
+	<!-- Carrier's Register -->
+	<url-mapping url="ESM_BSA_0120.do" screen="ESM_BSA_0120.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0120HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0120GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0120HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+	    <event-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0120Event</event-class>
+	    <service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- Inquire/Edit Slot-Cost -->
+	<url-mapping url="ESM_BSA_0172.do" screen="ESM_BSA_0172.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0172HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_0172GS.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0172ViewAdapter" >
+	    <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0172HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+	    <event-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0172Event</event-class>
+	    <service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+	</event-mapping>
+
+	<!--  Slot-info for SPC Control J/O -->
+	<url-mapping url="ESM_BSA_0024.do" screen="ESM_BSA_0024.screen" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0024HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_BSA_0024GS.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0024ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0024HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_BSA_0024GS2.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0024ViewAdapter2" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0024HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0024Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+	</event-mapping>	
+
+	<!--  Other Carrier's Slot Swap Information[popup] -->
+	<url-mapping url="ESM_BSA_0122.do" screen="ESM_BSA_0122.screen" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0024HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_BSA_0122GS.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0122ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0024HTMLAction</web-action-class>
+	</url-mapping>
+
+
+	<!--  BSAManage -->
+	
+	
+	<!-- UI POPUP 추가 -->  
+    <url-mapping url="ESM_BSA_0104_POP.do" screen="ESM_BSA_0104_POP.screen" >
+        <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_0104HTMLAction</web-action-class>
+    </url-mapping>
+     
+	<url-mapping url="ESM_BSA_0104.do" screen="ESM_BSA_0104.screen" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_0104HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_BSA_0104GS.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.EsmBsa0104ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_0104HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.EsmBsa0104Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+	</event-mapping>
+		
+	<!--  BSAManage ESM_BSA_104opUp-->
+	<url-mapping url="ESM_BSA_0121.do" screen="ESM_BSA_0121.screen" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_0104HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_BSA_0121GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_0104HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!--  BSAManage ESM_BSA_0104 opUp (VESSEL Slot-info by VVD)-->
+	<url-mapping url="ESM_BSA_0143.do" screen="ESM_BSA_0143.screen" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_0143HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_BSA_0143GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_0143HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.EsmBsa0143Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Carrier's View Management -->
+	<url-mapping url="ESM_BSA_126.do" screen="ESM_BSA_126.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_126HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_126GS.do" screen="ESM_BSA_126GS.screen" >
+	    <web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_126HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+	    <event-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_126Event</event-class>
+	    <service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+	</event-mapping>
+
+
+
+	<!-- Inquire/Edit Supply & Slot-swap By VVD -->
+	<url-mapping url="ESM_BSA_030_1.do" screen="ESM_BSA_030_1.screen" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_030HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESM_BSA_030GS_1.do" screen="ESM_BSA_030GS_1.screen" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_030HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.bsa.bsamanage.spcmanage.event.ESM_BSA_030Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- IOC -->
+	<url-mapping url="ESM_BSA_IOC.do" screen="ESM_BSA_IOC.screen" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0024HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESM_BSA_IOCGS.do" screen="com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0024ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.ESM_BSA_0024HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esm.bsa.bsamanage.bsamanage.event.EsmBsa0024Event</event-class>
+		<service-action-class>com.clt.apps.opus.esm.bsa.bsamanage.BSAManageSC</service-action-class>
+	</event-mapping>
+	
+<!-- COA Link ====================================================================================== -->
+	<!--  Target VVD -->
+	<url-mapping url="ESM_BSA_9029.do" screen="ESM_COA_0029.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.weeklycm.event.ESM_COA_0029HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!--  OPMaster : Create Lane Table -->
+	<url-mapping url="ESM_BSA_9036.do" screen="ESM_COA_0036.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0036HTMLAction</web-action-class>
+	</url-mapping>
+
+
+	<!--  OPMaster : Create Vessel Table -->
+	<url-mapping url="ESM_BSA_9037.do" screen="ESM_COA_0037.screen" >
+		<web-action-class>com.clt.apps.opus.esm.coa.weeklypfmc.opmaster.event.ESM_COA_0037HTMLAction</web-action-class>
+	</url-mapping>
+
+<!-- Common ====================================================================================== -->
+
+    <!--  Excel Download -->
+    <url-mapping url="ESM_BSA_3002.do" screen="ESM_BSA_3002.screen" >
+        <web-action-class>com.clt.apps.opus.esm.bsa.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!--  IB Combo -->
+    <url-mapping url="ESM_BSA_CODE.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.bsa.common.event.CommonHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.bsa.common.event.CommonEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esm.bsa.common.BSACommonSC</service-action-class>
+    </event-mapping>
+
+<!-- ============================================================================================= -->
+	
+	</mappings>

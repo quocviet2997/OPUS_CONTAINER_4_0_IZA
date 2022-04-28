@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="TaxDBDAOSearchCountryInfoForOfficeRSQL">
+			<desc><![CDATA[OFC_CD의 Country Code 조회]]></desc>
+			<sql><![CDATA[
+SELECT B.OFC_CD
+     , C.CNT_CD
+     , DECODE(C.CNT_CD, 'IN', 'Y', 'N') AS IN_CNT_FLG
+  FROM MDM_ORGANIZATION B
+     , MDM_LOCATION C
+ WHERE 1=1
+   AND B.OFC_CD     = @[ofc_cd] --'DLCBB' 
+   AND B.DELT_FLG   = 'N'
+   AND B.LOC_CD  (+)= C.LOC_CD
+   AND C.DELT_FLG(+)= 'N'			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

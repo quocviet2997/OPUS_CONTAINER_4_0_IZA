@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOCheckSCOPeriodIsOpenedRSQL">
+			<desc><![CDATA[check SCO Period is opened]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*) AS CNT
+FROM SCO_PERIOD
+WHERE PRD_APPL_CD = 'AR'
+	AND EFF_YRMON = @[rev_yrmon]
+	AND PRD_STS_CD = 'O'			]]></sql>
+			<params>
+				<param name="rev_yrmon" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

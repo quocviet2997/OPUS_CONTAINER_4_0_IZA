@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="DaoNameDAOVOVOVOVOVORSQL">
+			<desc><![CDATA[VOMAKER]]></desc>
+			<sql><![CDATA[
+--// CsrListInputVO
+SELECT
+'' ppay_aply_flg
+, '' inv_ttl_amt      
+, '' vndr_term_nm     
+, '' inv_vat_amt      
+, '' cost_ofc_cd      
+, '' pso_trns_slp_ctnt
+, '' inv_cfm_dt       
+, '' inv_net_amt      
+, '' inv_curr_cd      
+, '' whld_tax_amt     
+, '' inv_no           
+, '' iss_dt           
+, '' inv_rjct_sts_cd  
+, '' inv_sts_cd       
+, '' ttl_lss_div_cd   
+, '' pay_due_dt       
+, '' rcv_dt           
+, '' vndr_seq         
+, '' inv_sub_sys_cd   
+, '' inv_ofc_cd       
+, '' inv_rgst_no      
+FROM DUAL			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

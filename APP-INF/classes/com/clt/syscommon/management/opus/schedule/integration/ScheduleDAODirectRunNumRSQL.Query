@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ScheduleDAODirectRunNumRSQL">
+			<desc><![CDATA[autosys force start job run number query]]></desc>
+			<sql><![CDATA[
+select max(run_num) run_num
+from ujo_proc_event
+where job_name=@[job_name]
+and event = 101
+and status = 3			]]></sql>
+			<params>
+				<param name="job_name" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

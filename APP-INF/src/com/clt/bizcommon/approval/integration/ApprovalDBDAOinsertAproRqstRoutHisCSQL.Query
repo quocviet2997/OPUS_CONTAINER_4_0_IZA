@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOinsertAproRqstRoutHisCSQL">
+			<desc><![CDATA[ApprovalDBDAO insertAproRqstRoutHis CSQL]]></desc>
+			<sql><![CDATA[
+INSERT INTO COM_APRO_RQST_ROUT_HIS (
+APRO_ROUT_HIS_SEQ, CSR_NO
+, SUB_SYS_CD, DFLT_APRO_OFC_CD
+, APRO_RQST_NO, APRO_RQST_SEQ, DP_SEQ, APRO_USR_ID, APSTS_CD, APRO_DT
+, APRO_EVNT_DESC, APRO_RMK
+, DELT_FLG, CRE_USR_ID, CRE_DT, UPD_USR_ID, UPD_DT
+)
+SELECT 
+COM_APRO_RQST_ROUT_HIS_SEQ.NEXTVAL APRO_ROUT_HIS_SEQ, CD.CSR_NO
+, RH.SUB_SYS_CD, RH.DFLT_APRO_OFC_CD
+, RH.APRO_RQST_NO, RR.APRO_RQST_SEQ, RR.DP_SEQ, RR.APRO_USR_ID, RR.APSTS_CD, RR.APRO_DT
+, @[apro_evnt_desc] APRO_EVNT_DESC, (SELECT '[DFLT_CURR_AMT:'||D.CSR_CURR_CD||'-'||D.CSR_AMT||']' FROM COM_APRO_ROUT_DFLT D WHERE D.SUB_SYS_CD = @[sub_sys_cd] AND D.OFC_CD = @[ofc_cd] AND ROWNUM = 1) APRO_RMK
+, RR.DELT_FLG, RR.CRE_USR_ID, RR.CRE_DT, @[cre_usr_id], RR.UPD_DT
+FROM COM_APRO_CSR_DTL CD, COM_APRO_RQST_HDR RH, COM_APRO_RQST_ROUT RR
+WHERE 1=1
+AND CD.CSR_NO = @[csr_no]
+AND CD.APRO_RQST_NO = @[apro_rqst_no]
+AND CD.APRO_RQST_NO = RH.APRO_RQST_NO
+AND RH.APRO_RQST_NO = RR.APRO_RQST_NO			]]></sql>
+			<params>
+				<param name="apro_evnt_desc" type="12" value="" out="N"/>
+				<param name="sub_sys_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

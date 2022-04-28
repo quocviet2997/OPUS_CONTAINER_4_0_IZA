@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchDummyRSQL">
+			<desc><![CDATA[ddd]]></desc>
+			<sql><![CDATA[
+select sysdate sysd from dual			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserDAOComUsrPgmMtchDSQL">
+			<desc><![CDATA[delete com_usr_pgm_mtch]]></desc>
+			<sql><![CDATA[
+delete from com_usr_pgm_mtch
+where	usr_id = @[usr_id]
+and	pgm_no = @[pgm_no]
+			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="n"/>
+				<param name="pgm_no" type="12" value="" out="n"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

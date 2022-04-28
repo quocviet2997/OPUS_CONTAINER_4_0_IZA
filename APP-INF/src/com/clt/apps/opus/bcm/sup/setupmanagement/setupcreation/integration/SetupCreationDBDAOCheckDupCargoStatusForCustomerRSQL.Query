@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOCheckDupCargoStatusForCustomerRSQL">
+			<desc><![CDATA[Cargo Tracking Info.(Non physical event for customer)에 중복데이타가 존재하는지 체크한다]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*) CNT 
+  FROM SCE_EDI_MNG_STS
+ WHERE ORG_EDI_STS_CD = @[org_edi_sts_cd]			]]></sql>
+			<params>
+				<param name="org_edi_sts_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

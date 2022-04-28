@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CalenderDBDAOLocHolidayUDSQL">
+			<desc><![CDATA[LocHoliday delete ---> Updata]]></desc>
+			<sql><![CDATA[
+update prd_holiday set 
+	delt_flg = 'Y',
+	upd_usr_id = @[upd_usr_id],
+	upd_dt = sysdate
+where	hol_id = @[hol_id]			]]></sql>
+			<params>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="hol_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

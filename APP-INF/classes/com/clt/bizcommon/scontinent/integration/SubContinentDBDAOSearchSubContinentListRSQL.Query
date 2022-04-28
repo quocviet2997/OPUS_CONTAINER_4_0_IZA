@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SubContinentDBDAOSearchSubContinentListRSQL">
+			<desc><![CDATA[SubContinent의 모든 목록을 가져온다.]]></desc>
+			<sql><![CDATA[
+SELECT ms.sconti_cd,
+	ms.sconti_nm,
+	m.conti_cd,
+	m.conti_nm,
+	(CASE 
+		WHEN 'Y' = ms.delt_flg THEN 'Delete' 
+		ELSE 'Active' 
+	END) AS delt_flg
+FROM mdm_subcontinent ms left outer join mdm_continent m ON ms.conti_cd = m.conti_cd
+WHERE 1 = 1 
+
+#if (${mdm_yn} != '')
+	#if (${delt_flg} == 'Y') 
+		AND ms.DELT_FLG = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+	#else 
+		AND ms.DELT_FLG <> 'Y'
+	#end
+#else	
+	AND ms.DELT_FLG <> 'Y'
+#end
+
+#if(${sconti_cd} != '')
+AND ms.sconti_cd LIKE @[sconti_cd] || '%'
+#end
+
+#if(${sconti_nm} != '')
+AND upper(ms.sconti_nm) LIKE '%' || upper(@[sconti_nm]) || '%'
+#end
+
+ORDER BY ms.sconti_cd			]]></sql>
+			<params>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="sconti_cd" type="12" value="" out="N"/>
+				<param name="sconti_nm" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

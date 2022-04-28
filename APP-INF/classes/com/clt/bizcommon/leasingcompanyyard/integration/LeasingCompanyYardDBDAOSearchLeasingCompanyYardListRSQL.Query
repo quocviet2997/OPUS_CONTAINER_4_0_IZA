@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="LeasingCompanyYardDBDAOSearchLeasingCompanyYardListRSQL">
+			<desc><![CDATA[DESC Enter..]]></desc>
+			<sql><![CDATA[
+SELECT LSE_CO_YD_CD, LSE_CO_YD_NM, DECODE(DELT_FLG,'Y','Delete','Active') DELT_FLG  
+FROM MDM_LSE_CO_YD
+WHERE  1 = 1 
+#if (${lse_co_yd_cd} != '')
+AND lse_co_yd_cd like '%'||@[lse_co_yd_cd]||'%'
+#end
+#if (${lse_co_yd_nm} != '')
+AND lse_co_yd_NM like '%'||@[lse_co_yd_nm]||'%'
+#end
+#if (${delt_flg} != '')
+AND DECODE(DELT_FLG,'Y','D','A') =  @[delt_flg]
+#end
+ORDER BY LSE_CO_YD_CD			]]></sql>
+			<params>
+				<param name="lse_co_yd_cd" type="12" value="" out="N"/>
+				<param name="lse_co_yd_nm" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

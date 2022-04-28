@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOModifySoPayInvoiceInterfaceBatchByStmSapUSQL">
+			<desc><![CDATA[modifySoPayInvoiceInterfaceBatchByStmSap]]></desc>
+			<sql><![CDATA[
+UPDATE AP_PAY_INV
+SET AP_IF_DT = SYSDATE
+   ,INV_STS_CD = @[inv_sts_cd]
+WHERE CSR_NO IN  (    SELECT SSI.INV_NO
+                      FROM    SAP_SEL_INV SSI
+                            , SAP_INV_SEL_CRTE SISC
+                      WHERE   SSI.PAY_BAT_SEQ = SISC.PAY_BAT_SEQ
+                      AND     SSI.PAY_BAT_NM = SISC.PAY_BAT_NM 
+                      AND     SSI.PAY_BAT_SEQ = @[pay_bat_seq]
+                      AND     SSI.PAY_BAT_NM = @[pay_bat_nm]
+                      AND     SSI.VNDR_NO = @[vndr_no]   
+                 )         			]]></sql>
+			<params>
+				<param name="inv_sts_cd" type="12" value="" out="N"/>
+				<param name="pay_bat_seq" type="12" value="" out="N"/>
+				<param name="pay_bat_nm" type="12" value="" out="N"/>
+				<param name="vndr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

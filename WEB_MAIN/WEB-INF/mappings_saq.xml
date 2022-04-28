@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- Seok Myoung Ran : 2009-07-28 start -->
+	<url-mapping url="ESM_SAQ_XLS.do" screen="ESM_SAQ_XLS.screen" >
+    </url-mapping>
+    
+	<url-mapping url="ESM_SAQ_MSG.do" screen="ESM_SAQ_MSG.screen" >
+    </url-mapping>
+    
+    <url-mapping url="ESM_SAQ_CODGS.do" screen="ESM_SAQ_CODGS.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.common.common.event.ESM_SAQ_CODHTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.common.common.event.EsmSaqCodEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.common.CommonSC</service-action-class>
+    </event-mapping>
+    <!-- Seok Myoung Ran : 2009-07-28 end -->
+
+	<!-- Seok Myoung Ran : 2009-07-27 start -->
+    <url-mapping url="ESM_SAQ_0040.do" screen="ESM_SAQ_0040.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.monthlytargetvvd.event.ESM_SAQ_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0040GS.do" screen="com.clt.apps.opus.esm.saq.basicdatamanage.monthlytargetvvd.event.EsmSaq0040ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.monthlytargetvvd.event.ESM_SAQ_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0040GS2.do" screen="com.clt.apps.opus.esm.saq.basicdatamanage.monthlytargetvvd.event.EsmSaq0040ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.monthlytargetvvd.event.ESM_SAQ_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0040GS3.do" screen="com.clt.apps.opus.esm.saq.basicdatamanage.monthlytargetvvd.event.EsmSaq0040ViewAdapter3" >
+        <web-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.monthlytargetvvd.event.ESM_SAQ_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.basicdatamanage.monthlytargetvvd.event.EsmSaq0040Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.BasicDataManageSC</service-action-class>
+    </event-mapping>
+	<!-- Seok Myoung Ran : 2009-07-27 end -->
+	
+	
+	<!-- Jong-Ho Kim : 2009-07-28 start -->
+    <url-mapping url="ESM_SAQ_0014.do" screen="ESM_SAQ_0014.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.targetgroup.event.ESM_SAQ_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.targetgroup.event.ESM_SAQ_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.basicdatamanage.targetgroup.event.EsmSaq0014Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.BasicDataManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jong-Ho Kim : 2009-07-28 end -->
+
+	<!-- Jong-Ho Kim : 2009-07-30 start -->
+	<url-mapping url="ESM_SAQ_0013.do" screen="ESM_SAQ_0013.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.targetgroup.event.ESM_SAQ_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.targetgroup.event.ESM_SAQ_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.basicdatamanage.targetgroup.event.EsmSaq0013Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.BasicDataManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jong-Ho Kim : 2009-07-30 end -->	
+
+    <!-- Choi.M.C : 2009-08-17 start -->
+    <url-mapping url="ESM_SAQ_0048.do" screen="ESM_SAQ_0048.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttrade.event.ESM_SAQ_0048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0048GS1.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttrade.event.EsmSaq0048ViewAdapter1" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttrade.event.ESM_SAQ_0048HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SAQ_0048GS2.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttrade.event.EsmSaq0048ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttrade.event.ESM_SAQ_0048HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttrade.event.EsmSaq0048Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Choi.M.C : 2009-08-17 end -->
+
+    <!-- Choi.M.C : 2009-08-31 start -->
+    <url-mapping url="ESM_SAQ_0147.do" screen="ESM_SAQ_0147.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttrade.event.ESM_SAQ_0147HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0147GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttrade.event.EsmSaq0147ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttrade.event.ESM_SAQ_0147HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttrade.event.EsmSaq0147Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+    <!-- Choi.M.C : 2009-08-31 end -->
+    
+	<!-- ChoiI.M.C : 2009-09-07 start -->
+    <url-mapping url="ESM_SAQ_0085.do" screen="ESM_SAQ_0085.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttraderhq.event.ESM_SAQ_0085HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0085GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttraderhq.event.EsmSaq0085ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttraderhq.event.ESM_SAQ_0085HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttraderhq.event.EsmSaq0085Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- ChoiI.M.C : 2009-09-07 end -->
+
+    <!-- Choi.M.C : 2009-09-07 start -->
+    <url-mapping url="ESM_SAQ_0148.do" screen="ESM_SAQ_0148.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttraderhq.event.ESM_SAQ_0148HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0148GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttraderhq.event.EsmSaq0148ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttraderhq.event.ESM_SAQ_0148HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttraderhq.event.EsmSaq0148Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+    <!-- Choi.M.C : 2009-09-07 end -->
+    
+    <!-- Choi.M.C : 2009-09-28 start -->
+    <url-mapping url="ESM_SAQ_0149.do" screen="ESM_SAQ_0149.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.ESM_SAQ_0149HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0149GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.EsmSaq0149ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.ESM_SAQ_0149HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.EsmSaq0149Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+    <!-- Choi.M.C : 2009-09-28 end -->
+    
+    <!-- Choi.M.C : 2009-09-07 start -->
+    <url-mapping url="ESM_SAQ_0161.do" screen="ESM_SAQ_0161.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.ESM_SAQ_0161HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0161GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.EsmSaq0161ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.ESM_SAQ_0161HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.EsmSaq0161Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+    <!-- Choi.M.C : 2009-09-07 end -->
+
+    <!-- Choi.M.C : 2009-09-25 start -->
+    <url-mapping url="ESM_SAQ_0162.do" screen="ESM_SAQ_0162.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.ESM_SAQ_0162HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0162GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.EsmSaq0162ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.ESM_SAQ_0162HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.EsmSaq0162Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+    <!-- Choi.M.C : 2009-09-25 end -->
+    
+	<!-- ChoiI.M.C : 2009-09-21 start -->
+    <url-mapping url="ESM_SAQ_0156.do" screen="ESM_SAQ_0156.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentslsrhq.event.ESM_SAQ_0156HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0156GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentslsrhq.event.EsmSaq0156ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentslsrhq.event.ESM_SAQ_0156HTMLAction</web-action-class>
+    </url-mapping> 
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentslsrhq.event.EsmSaq0156Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- ChoiI.M.C : 2009-09-21 end -->
+	
+	<!-- ChoiI.M.C : 2009-10-07 start -->
+    <url-mapping url="ESM_SAQ_0158.do" screen="ESM_SAQ_0158.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentslsrhq.event.ESM_SAQ_0158HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0158GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentslsrhq.event.EsmSaq0158ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentslsrhq.event.ESM_SAQ_0158HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentslsrhq.event.EsmSaq0158Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- ChoiI.M.C : 2009-10-07 end -->
+
+	<!-- ChoiI.M.C : 2009-10-07 start -->
+    <url-mapping url="ESM_SAQ_0112.do" screen="ESM_SAQ_0112.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.common.common.event.ESM_SAQ_0112HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0112GS.do" screen="com.clt.apps.opus.esm.saq.common.common.event.EsmSaq0112ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.common.common.event.ESM_SAQ_0112HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.common.common.event.EsmSaq0112Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.common.CommonSC</service-action-class>
+    </event-mapping>
+	<!-- ChoiI.M.C : 2009-10-07 end -->
+    
+    <!-- ChoiI.M.C : 2009-10-20 start -->
+    <url-mapping url="ESM_SAQ_0088.do" screen="ESM_SAQ_0088.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.ESM_SAQ_0088HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0088GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.EsmSaq0088ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.ESM_SAQ_0088HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.EsmSaq0088Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.MonthlySalesQuotaAdjustmentInquirySC</service-action-class>
+    </event-mapping>
+	<!-- ChoiI.M.C : 2009-10-20 end -->
+	
+	<!-- ChoiI.M.C : 2009-10-20 start -->
+    <url-mapping url="ESM_SAQ_0089.do" screen="ESM_SAQ_0089.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.ESM_SAQ_0089HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0089GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.EsmSaq0089ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.ESM_SAQ_0089HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.EsmSaq0089Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.MonthlySalesQuotaAdjustmentInquirySC</service-action-class>
+    </event-mapping>
+	<!-- ChoiI.M.C : 2009-10-20 end -->
+	
+	<!-- ChoiI.M.C : 2009-10-20 start -->
+    <url-mapping url="ESM_SAQ_0164.do" screen="ESM_SAQ_0164.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.ESM_SAQ_0164HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0164GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.EsmSaq0164ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.ESM_SAQ_0164HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.EsmSaq0164Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- ChoiI.M.C : 2009-10-20 end -->
+	
+	<!-- ChoiI.M.C : 2009-10-20 start -->
+    <url-mapping url="ESM_SAQ_0165.do" screen="ESM_SAQ_0165.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.ESM_SAQ_0165HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0165GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.EsmSaq0165ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.ESM_SAQ_0165HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.EsmSaq0165Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- ChoiI.M.C : 2009-10-20 end -->
+	
+	<!-- ChoiI.M.C : 2009-10-20 start -->
+    <url-mapping url="ESM_SAQ_0166.do" screen="ESM_SAQ_0166.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.ESM_SAQ_0166HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0166GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.EsmSaq0166ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.ESM_SAQ_0166HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.EsmSaq0166Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- ChoiI.M.C : 2009-10-20 end -->
+	
+	<!-- ChoiI.M.C : 2009-10-20 start -->
+    <url-mapping url="ESM_SAQ_0167.do" screen="ESM_SAQ_0167.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.ESM_SAQ_0167HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0167GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.EsmSaq0167ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.ESM_SAQ_0167HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacfmadjustment.event.EsmSaq0167Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- ChoiI.M.C : 2009-10-20 end -->
+	
+	<!-- Jong-Ho Kim : 2009-08-05 start -->
+    <url-mapping url="ESM_SAQ_0170.do" screen="ESM_SAQ_0170.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.targetgroup.event.ESM_SAQ_0170HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0170GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.targetgroup.event.ESM_SAQ_0170HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.basicdatamanage.targetgroup.event.EsmSaq0170Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.BasicDataManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jong-Ho Kim : 2009-08-05 end -->
+
+	<!-- Kim Min Ah : 2009-08-03 start -->
+    <url-mapping url="ESM_SAQ_0076.do" screen="ESM_SAQ_0076.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaguideline.event.ESM_SAQ_0076HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0076GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaguideline.event.EsmSaq0076ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaguideline.event.ESM_SAQ_0076HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaguideline.event.EsmSaq0076Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Min Ah : 2009-08-03 end -->
+	
+	<!-- Jong-Ho Kim : 2009-08-07 start -->
+    <url-mapping url="ESM_SAQ_0047.do" screen="ESM_SAQ_0047.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0047HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0047GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0047HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.EsmSaq0047Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jong-Ho Kim : 2009-08-07 end -->
+	
+	<!-- Jong-Ho Kim : 2009-08-31 start -->
+    <url-mapping url="ESM_SAQ_0077.do" screen="ESM_SAQ_0077.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0077HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0077GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.EsmSaq0077ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0077HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.EsmSaq0077Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jong-Ho Kim : 2009-08-31 end -->
+
+	<!-- Jong-Ho Kim : 2009-09-08 start -->
+    <url-mapping url="ESM_SAQ_0139.do" screen="ESM_SAQ_0139.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0139HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0139GS1.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0139ViewAdapter1" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0139HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SAQ_0139GS2.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0139ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0139HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0139GS3.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0139ViewAdapter3" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0139HTMLAction</web-action-class>
+    </url-mapping>
+        
+    <url-mapping url="ESM_SAQ_0139GS13.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0139ViewAdapter13" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0139HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0139Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.MonthlySalesQuotaInquirySC</service-action-class>
+    </event-mapping>
+	<!-- Jong-Ho Kim : 2009-09-08 end -->
+
+	<!-- Ju Sun Young : 2009-09-24 start -->
+    <url-mapping url="ESM_SAQ_0153.do" screen="ESM_SAQ_0153.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotastatusinquiry.event.ESM_SAQ_0153HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0153GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotastatusinquiry.event.EsmSaq0153ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotastatusinquiry.event.ESM_SAQ_0153HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotastatusinquiry.event.EsmSaq0153Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- Ju Sun Young : 2009-09-24 end -->	
+	
+	<!-- taeho, Kim : 2009-08-04 start -->
+    <url-mapping url="ESM_SAQ_0154.do" screen="ESM_SAQ_0154.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.monthlytargetvvd.event.ESM_SAQ_0154HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0154GS.do" screen="com.clt.apps.opus.esm.saq.basicdatamanage.monthlytargetvvd.event.EsmSaq0154ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.monthlytargetvvd.event.ESM_SAQ_0154HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.basicdatamanage.monthlytargetvvd.event.EsmSaq0154Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.BasicDataManageSC</service-action-class>
+    </event-mapping>
+	<!-- taeho, Kim : 2009-08-04 end -->
+
+	<!-- taeho, Kim : 2009-08-11 start -->
+    <url-mapping url="ESM_SAQ_0163.do" screen="ESM_SAQ_0163.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.monthlycustomizedcondition.event.ESM_SAQ_0163HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0163GS.do" screen="com.clt.apps.opus.esm.saq.basicdatamanage.monthlycustomizedcondition.event.EsmSaq0163ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.monthlycustomizedcondition.event.ESM_SAQ_0163HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.basicdatamanage.monthlycustomizedcondition.event.EsmSaq0163Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.basicdatamanage.BasicDataManageSC</service-action-class>
+    </event-mapping>
+	<!-- taeho, Kim : 2009-08-11 end -->
+	
+	<!-- taeho, Kim : 2009-09-04 start -->
+    <url-mapping url="ESM_SAQ_0075.do" screen="ESM_SAQ_0075.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.ESM_SAQ_0075HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0075GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.EsmSaq0075ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.ESM_SAQ_0075HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmentrhq.event.EsmSaq0075Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- taeho, Kim : 2009-09-04 end -->
+
+	<!-- Jong-Ho Kim : 2009-09-21 start -->
+    <url-mapping url="ESM_SAQ_0126.do" screen="ESM_SAQ_0126.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0126HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0126GS01.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0126ViewAdapter01" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0126HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0126GS02.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0126ViewAdapter02" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0126HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="ESM_SAQ_0126GS03.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0126ViewAdapter03HR" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0126HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SAQ_0126GS13.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0126ViewAdapter13HR" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0126HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0126GS04.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0126ViewAdapter04" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0126HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0126GS05.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0126ViewAdapter05" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0126HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0126Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.MonthlySalesQuotaInquirySC</service-action-class>
+    </event-mapping>
+	<!-- Jong-Ho Kim : 2009-09-21 end -->
+
+	<!-- Jong-Ho Kim : 2009-09-28 start -->
+    <url-mapping url="ESM_SAQ_0127.do" screen="ESM_SAQ_0127.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0127HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0127GS01.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0127ViewAdapter01" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0127HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SAQ_0127GS02.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0127ViewAdapter02" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0127HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SAQ_0127GS03.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0127ViewAdapter03" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0127HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SAQ_0127GS13.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0127ViewAdapter13" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0127HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SAQ_0127GS04.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0127ViewAdapter04" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0127HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SAQ_0127GS05.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0127ViewAdapter05" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0127HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SAQ_0127GS10.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0127ViewAdapter10" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0127HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0127Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.MonthlySalesQuotaInquirySC</service-action-class>
+    </event-mapping>
+	<!-- Jong-Ho Kim : 2009-09-28 end -->
+	
+	<!-- Ju Sun Young : 2009-09-28 start -->
+    <url-mapping url="ESM_SAQ_0052.do" screen="ESM_SAQ_0052.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotarelease.event.ESM_SAQ_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0052GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotarelease.event.EsmSaq0052ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotarelease.event.ESM_SAQ_0052HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_SAQ_0052GS1.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotarelease.event.EsmSaq0052ViewAdapter1" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotarelease.event.ESM_SAQ_0052HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_SAQ_0052GS2.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotarelease.event.EsmSaq0052ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotarelease.event.ESM_SAQ_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotarelease.event.EsmSaq0052Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- Ju Sun Young : 2009-09-28 end -->
+	
+	<!-- Jong-Ho Kim : 2009-10-01 start -->
+    <url-mapping url="ESM_SAQ_0128.do" screen="ESM_SAQ_0128.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0128HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0128GS10.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0128ViewAdapter10" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0128HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SAQ_0128GS01.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0128ViewAdapter01" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0128HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SAQ_0128GS02.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0128ViewAdapter02" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0128HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SAQ_0128GS03.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0128ViewAdapter03" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.ESM_SAQ_0128HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.monthlyquotainquiry.event.EsmSaq0128Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotainquiry.MonthlySalesQuotaInquirySC</service-action-class>
+    </event-mapping>
+	<!-- Jong-Ho Kim : 2009-10-01 end -->
+	
+	<!-- Ju Sun Young : 2009-10-19 start -->
+    <url-mapping url="ESM_SAQ_0049.do" screen="ESM_SAQ_0049.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.ESM_SAQ_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0049GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.EsmSaq0049ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.ESM_SAQ_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0049GS2.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.EsmSaq0049ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.ESM_SAQ_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0049GS3.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.EsmSaq0049ViewAdapter3" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.ESM_SAQ_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0049GS4.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.EsmSaq0049ViewAdapter4" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.ESM_SAQ_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0049GS5.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.EsmSaq0049ViewAdapter5" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.ESM_SAQ_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.monthlyquotaadjustmentinquiry.event.EsmSaq0049Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotaadjustmentinquiry.MonthlySalesQuotaAdjustmentInquirySC</service-action-class>
+    </event-mapping>
+	<!-- Ju Sun Young : 2009-10-19 end -->
+	
+	
+	<!-- Ju sun Young : 2009-10-26 start -->
+   <url-mapping url="ESM_SAQ_0116.do" screen="ESM_SAQ_0116.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.common.common.event.ESM_SAQ_0116HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SAQ_0116GS.do" screen="com.clt.apps.opus.esm.saq.common.common.event.EsmSaq0116ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.common.common.event.ESM_SAQ_0116HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.common.common.event.EsmSaq0116Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.common.CommonSC</service-action-class>
+    </event-mapping>
+	<!-- Ju sun Young : 2009-10-26 end -->
+
+	<!-- Lee.S.Y : 2010-04-30 start -->
+    <url-mapping url="ESM_SAQ_0176.do" screen="ESM_SAQ_0176.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttrade.event.ESM_SAQ_0176HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0176GS.do" screen="com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttrade.event.EsmSaq0176ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttrade.event.ESM_SAQ_0176HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotaadjustmenttrade.event.EsmSaq0176Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+    <!-- Lee.S.Y : 2010-04-30 end -->
+    
+	<!-- CHOI.Y.S : 2010-11-05 start -->
+    <url-mapping url="ESM_SAQ_0187.do" screen="ESM_SAQ_0187.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.yearlysalesquotamanage.yearlyquotaadjustmentkamer.event.ESM_SAQ_0187HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0187GS.do" screen="com.clt.apps.opus.esm.saq.yearlysalesquotamanage.yearlyquotaadjustmentkamer.event.EsmSaq0187ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.yearlysalesquotamanage.yearlyquotaadjustmentkamer.event.ESM_SAQ_0187HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.yearlysalesquotamanage.yearlyquotaadjustmentkamer.event.EsmSaq0187Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.yearlysalesquotamanage.YearlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI.Y.S : 2010-11-05 end -->
+		
+	<!-- LEE.S.J : 2010-11-02 Start -->
+	    <url-mapping url="ESM_SAQ_0188.do" screen="ESM_SAQ_0188.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.yearlysalesquotamanage.yearlyquotaadjustmentkamer.event.ESM_SAQ_0188HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0188GS.do" screen="com.clt.apps.opus.esm.saq.yearlysalesquotamanage.yearlyquotaadjustmentkamer.event.EsmSaq0188ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.yearlysalesquotamanage.yearlyquotaadjustmentkamer.event.ESM_SAQ_0188HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.yearlysalesquotamanage.yearlyquotaadjustmentkamer.event.EsmSaq0188Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.yearlysalesquotamanage.YearlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- LEE.S.J : 2010-11-02 end -->
+	
+		<!-- Da-eun, Park : 2014-09-29 start -->
+    <url-mapping url="ESM_SAQ_0078.do" screen="ESM_SAQ_0078.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0078HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0078GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0078HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.EsmSaq0078Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- Da-eun, Park : 2014-09-29 end -->
+	
+	<!-- Da-eun, Park : 2014-09-29 start -->
+    <url-mapping url="ESM_SAQ_0178.do" screen="ESM_SAQ_0178.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0178HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0178GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0178HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.EsmSaq0178Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- Da-eun, Park : 2014-09-29 end -->
+	
+	<!-- Han-su, Kim : 2014-11-04 start -->
+    <url-mapping url="ESM_SAQ_0179.do" screen="ESM_SAQ_0179.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0179HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0179GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0179HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.EsmSaq0179Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- Han-su, Kim : 2014-11-04 end -->
+	
+	<!-- Han-su, Kim : 2014-11-04 start -->
+    <url-mapping url="ESM_SAQ_0180.do" screen="ESM_SAQ_0180.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0180HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0180GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0180HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.EsmSaq0180Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- Han-su, Kim : 2014-11-04 end -->
+	
+	<!-- Han-su, Kim : 2014-11-04 start -->
+    <url-mapping url="ESM_SAQ_0181.do" screen="ESM_SAQ_0181.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0181HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0181GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0181HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.EsmSaq0181Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- Han-su, Kim : 2014-11-04 end -->
+	
+	<!-- Han-su, Kim : 2014-11-04 start -->
+    <url-mapping url="ESM_SAQ_0182.do" screen="ESM_SAQ_0182.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0182HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0182GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0182HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.EsmSaq0182Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- Han-su, Kim : 2014-11-04 end -->
+	
+	<!-- Han-su, Kim : 2014-11-04 start -->
+    <url-mapping url="ESM_SAQ_0183.do" screen="ESM_SAQ_0183.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0183HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0183GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0183HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.EsmSaq0183Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- Han-su, Kim : 2014-11-04 end -->
+	
+	<!-- Han-su, Kim : 2014-11-04 start -->
+    <url-mapping url="ESM_SAQ_0184.do" screen="ESM_SAQ_0184.screen" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0184HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAQ_0184GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.ESM_SAQ_0184HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.monthlyquotacreation.event.EsmSaq0184Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.saq.monthlysalesquotamanage.MonthlySalesQuotaManageSC</service-action-class>
+    </event-mapping>
+	<!-- Han-su, Kim : 2014-11-04 end -->
+	
+</mappings>

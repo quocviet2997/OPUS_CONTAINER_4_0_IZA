@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<!-- Park Hee Dong : 2009-04-24 start -->
+    <screen name="FNS_JOO_0028">
+        <parameter key="title"    value="Settlement Item Account Code List" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationmasterdatamgt/jointoperationmasterdatamgt/jsp/FNS_JOO_0028.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-04-24 end -->
+
+	<!-- Park Hee Dong : 2009-04-28 start -->
+    <screen name="FNS_JOO_0002">
+        <parameter key="title"    value="Entry and Inquiry of Financial Affairs" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationmasterdatamgt/jointoperationmasterdatamgt/jsp/FNS_JOO_0002.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-04-28 end -->
+
+	<!-- Park Hee Dong : 2009-05-07 start -->
+    <screen name="JOOCommon">
+        <parameter key="title"    value="" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/joocommon/joofindcodeandcheck/jsp/joocommon.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-05-07 end -->
+
+	<!-- Park Hee Dong : 2009-05-11 start -->
+    <screen name="FNS_JOO_0006">
+        <parameter key="title"    value="Carrier Merger" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationmasterdatamgt/jointoperationmasterdatamgt/jsp/FNS_JOO_0006.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-05-11 end -->
+
+	<!-- Park Hee Dong : 2009-05-18 start -->
+    <screen name="FNS_JOO_0003">
+        <parameter key="title"    value="Inquiry of Vendor / Customer Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationmasterdatamgt/jointoperationmasterdatamgt/jsp/FNS_JOO_0003.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-05-18 end -->
+
+	<!-- Park Hee Dong : 2009-05-18 start -->
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start -->
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   Start	-->	
+    <screen name="FNS_JOO_0044">
+        <parameter key="title"    value="Tax Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0044.jsp"/>
+    </screen>
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   End	-->	
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- Park Hee Dong : 2009-05-18 end -->
+
+	<!-- Park Hee Dong : 2009-05-19 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <screen name="FNS_JOO_0026">
+        <parameter key="title"    value="AR Data ERP Interface Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0026.jsp"/>
+    </screen>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- Park Hee Dong : 2009-05-19 end -->
+
+	<!-- Park Hee Dong : 2009-05-19 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <screen name="FNS_JOO_0027">
+        <parameter key="title"    value="AP Data ERP Interface Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0027.jsp"/>
+    </screen>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- Park Hee Dong : 2009-05-19 end -->
+
+	<!-- Park Hee Dong : 2009-05-20 start -->
+    <screen name="FNS_JOO_0004">
+        <parameter key="title"    value="Entry and Inquiry of Basic Port Choose by Settlement Item" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationmasterdatamgt/jointoperationmasterdatamgt/jsp/FNS_JOO_0004.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-05-20 end -->
+
+	<!-- Park Hee Dong : 2009-05-21 start -->
+    <screen name="FNS_JOO_0005">
+        <parameter key="title"    value="Entry and Inquiry of Target Voyage Choose by Settlement Item" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationmasterdatamgt/jointoperationmasterdatamgt/jsp/FNS_JOO_0005.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-05-21 end -->
+
+	<!-- Park Hee Dong : 2009-05-26 start -->
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start -->
+	
+    <screen name="FNS_JOO_0013">
+        <parameter key="title"    value="War Risk Surcharge Settlement" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0013.jsp"/>
+    </screen>
+	<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- Park Hee Dong : 2009-05-26 end -->
+
+	<!-- Park Hee Dong : 2009-05-29 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <screen name="FNS_JOO_0014">
+        <parameter key="title"    value="Port Skip Settlement" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0014.jsp"/>
+    </screen>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- Park Hee Dong : 2009-05-29 end -->
+
+	<!-- Park Hee Dong : 2009-06-02 start -->
+    <screen name="FNS_JOO_0053" template="templatePop">
+        <parameter key="title"    value="VVD Check pop-up" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0053.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-06-02 end -->
+
+	<!-- Park Hee Dong : 2009-06-02 start -->
+    <screen name="FNS_JOO_0012">
+        <parameter key="title"    value="Other" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0012.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-06-02 end -->
+
+	<!-- Park Hee Dong : 2009-06-04 start -->
+    <screen name="FNS_JOO_0007">
+        <parameter key="title"    value="Slot Hire" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0007.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-06-04 end -->
+
+	<!-- Ham : 2009-06-05 start -->
+    <screen name="FNS_JOO_0030">
+        <parameter key="title"    value="Inquiry of Vendor / Customer Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationaccrualcreation/jsp/FNS_JOO_0030.jsp"/>
+    </screen>
+	<!-- Ham : 2009-06-05 end -->
+
+	<!-- Ham : 2009-06-08 start -->
+    <screen name="FNS_JOO_0032">
+        <parameter key="title"    value="Inquiry of Vendor / Customer Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationaccrualcreation/jsp/FNS_JOO_0032.jsp"/>
+    </screen>
+	<!-- Ham : 2009-06-08 end -->
+	<!-- Park Hee Dong : 2009-06-09 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <screen name="FNS_JOO_0009">
+        <parameter key="title"    value="Over Used Slot Hire for RDR" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0009.jsp"/>
+    </screen>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	    
+	<!-- Park Hee Dong : 2009-06-09 end -->
+	<!-- Ham : 2009-06-09 start -->
+    <screen name="FNS_JOO_0024" template="templatePop">
+        <parameter key="title"    value="Inquiry of Vendor / Customer Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0024.jsp"/>
+    </screen>
+	<!-- Ham : 2009-06-09 end -->
+	<!-- Ham : 2009-06-10 start -->
+    <screen name="FNS_JOO_0069">
+        <parameter key="title"    value="Inquiry of Vendor / Customer Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0069.jsp"/>
+    </screen>
+	<!-- Ham : 2009-06-10 end -->		
+	<!-- Park Hee Dong : 2009-06-10 start -->
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start -->
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   Start	-->	
+    <screen name="FNS_JOO_0022">
+        <parameter key="title"    value="CSR Approval" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0022.jsp"/>
+    </screen>
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   End	-->	
+	<!--Heedong Park : 2011-02-21 OPUS CNTR   End-->	
+	<!-- Park Hee Dong : 2009-06-10 end -->
+
+	<!-- Park Hee Dong : 2009-06-11 start -->
+    <screen name="FNS_JOO_0023" template="templatePop">
+        <parameter key="title"    value="CSR Approval" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0023.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-06-11 end -->
+	<!-- Park Hee Dong : 2009-06-15 start -->
+    <screen name="FNS_JOO_0018" template="templatePop">
+        <parameter key="title"    value="AP CSR Creation Evidence PopUp" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0018.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-06-15 end -->
+
+	<!-- HAM DAE SUNG : 2009-06-16 start -->
+    <screen name="FNS_JOO_0037">
+        <parameter key="title"    value="Summary of Monthly Clearance Status by Trade" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0037.jsp"/>
+    </screen>
+	<!-- HAM DAE SUNG : 2009-06-16 end -->
+
+		<!-- HAM DAE SUNG : 2009-06-17 start -->
+    <screen name="FNS_JOO_0033">
+        <parameter key="title"    value="Estimate Report - MAS" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationaccrualcreation/jsp/FNS_JOO_0033.jsp"/>
+    </screen>
+	<!-- HAM DAE SUNG : 2009-06-17 end -->
+
+	<!-- Park Hee Dong : 2009-06-19 start -->
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start -->
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   Start	-->	
+    <screen name="FNS_JOO_0025">
+        <parameter key="title"    value="CSR Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0025.jsp"/>
+    </screen>
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   End	-->	
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   End -->
+	<!-- Park Hee Dong : 2009-06-19 end -->
+
+	<!-- HAM DAE SUNG : 2009-06-23 start -->
+    <screen name="FNS_JOO_0036">
+        <parameter key="title"    value="Summary of Monthly Clearance Status by Carrier" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0036.jsp"/>
+    </screen>
+	<!-- HAM DAE SUNG : 2009-06-23 end -->
+
+	<!-- jang kang cheol : 2009-06-29 start -->
+	    <screen name="FNS_JOO_0039">
+	        <parameter key="title"    value="Monthly Clearance Status by Carrier &amp; Lane" direct="true"/>
+	        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0039.jsp"/>
+	    </screen>
+	<!-- jang kang cheol : 2009-06-29 end -->
+	<!-- jang kang cheol : 2009-06-30 start -->
+    <screen name="FNS_JOO_0029">
+        <parameter key="title"    value="Estimate Performance Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationaccrualcreation/jsp/FNS_JOO_0029.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-30 end -->
+
+	<!-- Park Hee Dong : 2009-07-01 start -->
+    <!-- Heedong Park : 2011-02-21 OPUS CNTR   Start -->	
+    <screen name="FNS_JOO_0010">
+        <parameter key="title"    value="Over Used Slot Hire for TDR" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0010.jsp"/>
+    </screen>
+    <!-- Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- Park Hee Dong : 2009-07-01 end -->
+ 
+
+	<!-- jang kang cheol : 2009-07-03 start -->
+    <screen name="FNS_JOO_0034_01">
+        <parameter key="title"    value="Estimate Code Check - Carrier" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationaccrualcreation/jsp/FNS_JOO_0034_01.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-07-03 end -->
+
+	<!-- jang kang cheol : 2009-07-06 start -->
+    <screen name="FNS_JOO_0034_02">
+        <parameter key="title"    value="Estimate Code Check - VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationaccrualcreation/jsp/FNS_JOO_0034_02.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-07-06 end -->
+
+	<!-- jang kang cheol : 2009-07-10 start -->
+    <screen name="FNS_JOO_0038">
+        <parameter key="title"    value="Summary of Monthly Clearance Status by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0038.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-07-10 end -->
+
+	<!-- jang kang cheol : 2009-07-10 start -->
+    <screen name="FNS_JOO_0042">
+        <parameter key="title"    value="Slot Exchange Status by Lane &amp; Partner->Finance &amp; Lane" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0042.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-07-10 end -->
+
+	<!-- jang kang cheol : 2009-07-10 start -->
+    <screen name="FNS_JOO_0043">
+        <parameter key="title"    value="Slot Exchange Status by Lane  &amp; Partner->Finance &amp; Partner" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0043.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-07-10 end -->
+
+	<!-- jang kang cheol : 2009-07-10 start -->
+    <screen name="FNS_JOO_0049">
+        <parameter key="title"    value="Settlement Status for Basic Allocation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0049.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-07-10 end -->
+
+	<!-- jang kang cheol : 2009-07-10 start -->
+    <screen name="FNS_JOO_0050">
+        <parameter key="title"    value="Target Voyage vs Unsettled Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0050.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-07-10 end -->
+
+	<!-- Park Hee Dong : 2009-07-13 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <screen name="FNS_JOO_0011">
+        <parameter key="title"    value="Reefer Surcharge Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0011.jsp"/>
+    </screen>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- Park Hee Dong : 2009-07-13 end -->
+
+	<!-- Park Hee Dong : 2009-07-20 start -->
+    <screen name="FNS_JOO_0045">
+        <parameter key="title"    value="Adjustment Slot Hire" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0045.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-07-20 end -->
+
+	<!-- Park Hee Dong : 2009-07-23 start -->
+    <screen name="FNS_JOO_0016">
+        <parameter key="title"    value="Combined Monthly Clearance Creation Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0016.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-07-23 end -->
+
+	<!-- Park Hee Dong : 2009-08-03 start -->
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start -->	
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   Start	-->	
+    <screen name="FNS_JOO_0017">
+        <parameter key="title"    value="AP CSR Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0017.jsp"/>
+    </screen>
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   End -->	
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   End-->	
+	<!-- Park Hee Dong : 2009-08-03 end -->
+	<!-- Park Hee Dong : 2009-08-06 start -->
+	<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start -->	
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   Start	-->	
+    <screen name="FNS_JOO_0020">
+        <parameter key="title"    value="AR CSR Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0020.jsp"/>
+    </screen>
+	<!--Heedong Park : 2011-02-21 OPUS CNTR   End-->	
+	<!-- Jo Byeang Yean : 2012-02-06 OPUS CNTR   End	-->	
+	<!-- Park Hee Dong : 2009-08-06 end -->
+
+	<!-- jang kang cheol : 2009-08-11 start -->
+    <screen name="FNS_JOO_0015">
+        <parameter key="title"    value="Monthly Clearance Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0015.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-08-11 end -->
+
+	<!-- Park Hee Dong : 2009-08-12 start -->
+    <screen name="FNS_JOO_0068" template="templatePop">
+        <parameter key="title"    value="CSR Inquiry Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0068.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-08-12 end -->
+
+	<!-- jang kang cheol : 2009-08-18 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <screen name="FNS_JOO_0040">
+        <parameter key="title"    value="Slot Exchange Status by Lane &amp; Partner->Space On Lane" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0040.jsp"/>
+    </screen>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- jang kang cheol : 2009-08-18 end -->
+
+	<!-- jang kang cheol : 2009-08-19 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <screen name="FNS_JOO_0041">
+        <parameter key="title"    value="Slot Exchange Status by Lane &amp; Partner->Space On Partner" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0041.jsp"/>
+    </screen>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- jang kang cheol : 2009-08-19 end -->
+
+	<!-- jang chang su : 2009-09-04 start -->
+    <screen name="FNS_JOO_0054">
+        <parameter key="title" value="JOO" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0054.jsp"/>
+    </screen>
+	<!-- jang chang su : 2009-09-04 end -->
+	
+	<!-- jang chang su : 2009-09-03 start -->
+    <screen name="FNS_JOO_0055">
+        <parameter key="title" value="JOO" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0055.jsp"/>
+    </screen>
+	<!-- jang chang su : 2009-09-03 end -->
+
+
+
+	<!-- Park Hee Dong : 2009-09-16 start -->
+    <screen name="FNS_JOO_0074">
+        <parameter key="title"    value="Estimate Performance Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationaccrualcreation/jsp/FNS_JOO_0074.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2009-09-16 end -->
+	
+	<!-- jang kang cheol : 2009-09-17 start -->
+    <screen name="FNS_JOO_0056">
+        <parameter key="title"    value="RDR Download by Lane" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0056.jsp"/>
+    </screen>
+    <screen name="VOP_OPF_0045_POP" template="templatePop">
+        <parameter key="title"    value="RDR Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/opf/cargoloadingresultmgt/regiondeparturereport/jsp/VOP_OPF_0045.jsp"/>
+    </screen>    
+	<!-- jang kang cheol : 2009-09-17 end -->
+
+	<!-- Park Hee Dong : 2009-10-16 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <screen name="FNS_JOO_0046">
+        <parameter key="title"    value="Adjustment Over Used Slot Hire for RDR" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0046.jsp"/>
+    </screen>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End-->	
+	<!-- Park Hee Dong : 2009-10-16 end -->
+
+	<!-- jang kang cheol : 2009-09-17 start -->
+    <screen name="FNS_JOO_0057">
+        <parameter key="title"    value="RDR Download by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0057.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-09-17 end -->
+
+	<!-- jang kang cheol : 2009-09-29 start -->
+    <screen name="FNS_JOO_EXCEL" template="templateRD">
+        <parameter key="title"    value="Excel Title" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/joocommon/jooexcel/jsp/JOO_EXCEL.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-09-29 end -->
+	<!-- jang kang cheol : 2009-10-22 start -->
+    <screen name="FNS_JOO_FILEVIEW"  >
+        <parameter key="title"    value="Fns Joo FIle View" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/joocommon/joofileview/jsp/FNS_JOO_FILEVIEW.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-10-22 end -->	
+	<!-- jang kang cheol : 2009-12-04 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <screen name="FNS_JOO_0076">
+        <parameter key="title"    value="Inquiry Disabled VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0076.jsp"/>
+    </screen>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- jang kang cheol : 2009-12-04 end -->
+ 
+
+	<!-- jang kang cheol : 2009-12-08 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <screen name="FNS_JOO_0077">
+        <parameter key="title"    value="AR Data Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0077.jsp"/>
+    </screen>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- jang kang cheol : 2009-12-08 end -->
+
+	<!-- Park Hee Dong : 2009-12-17 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	 -->
+    <screen name="FNS_JOO_0078">
+        <parameter key="title"    value="CSR Invoice Interface Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0078.jsp"/>
+    </screen>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- Park Hee Dong : 2009-12-17 end -->
+
+	<!-- Park Hee Dong : 2010-01-15 start -->
+    <screen name="FNS_JOO_0080">
+        <parameter key="title"    value="Combined Data Inquery" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/jointoperationconsultation/jsp/FNS_JOO_0080.jsp"/>
+    </screen>
+	<!-- Park Hee Dong : 2010-01-15 end -->
+	
+	<!-- jang kang cheol : 2010-01-15 start -->
+    <screen name="FNS_JOO_0079">
+        <parameter key="title"    value="Authority Office Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationmasterdatamgt/jointoperationmasterdatamgt/jsp/FNS_JOO_0079.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2010-01-15 end -->
+ 
+
+	<!-- jang kang cheol : 2010-01-25 start -->
+    <screen name="FNS_JOO_0081">
+        <parameter key="title"    value="Booking Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0081.jsp"/>
+    </screen>
+    <!-- jang kang cheol : 2010-01-25 end -->
+    
+	<!-- Lee Jun Bum : 2010-11-08 start -->
+    <screen name="FNS_JOO_0082" template="templatePop">
+        <parameter key="title"    value="File Upload pop-up" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/joocommon/joofileupload/jsp/FNS_JOO_0082.jsp"/>
+    </screen>
+	<!-- Lee Jun Bum : 2010-11-08 start -->    
+	
+	<!-- Jongkyu Weon : 2010-11-16 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <screen name="FNS_JOO_0083">
+        <parameter key="title"    value="Office Mapping Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationmasterdatamgt/jointoperationmasterdatamgt/jsp/FNS_JOO_0083.jsp"/>
+    </screen>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->    
+	<!-- Jongkyu Weon : 2010-11-16 end -->
+
+	<!-- Park Hee Dong : 2010-12-23 start -->
+<!-- Heedong Park : 2011-02-21 OPUS CNTR   Start	-->
+    <screen name="FNS_JOO_0085">
+        <parameter key="title"    value="Basic Information for Loading Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationmasterdatamgt/jointoperationmasterdatamgt/jsp/FNS_JOO_0085.jsp"/>
+    </screen>
+<!--Heedong Park : 2011-02-21 OPUS CNTR   End -->	
+	<!-- Park Hee Dong : 2010-12-23 end -->
+ 
+
+	<!-- NYK Add : 2014-12-05 start -->
+    <screen name="FNS_JOO_0084">
+        <parameter key="title"    value="Container List for settlement backup" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0084.jsp"/>
+    </screen>
+    <!-- NYK Add : 2014-12-05 end --> 
+
+	<!-- NYK Add : 2015-05-11 start -->
+    <screen name="FNS_JOO_0086" template="templatePop">
+        <parameter key="title"    value="Conversion Table" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0086.jsp"/>
+    </screen>
+    <!-- NYK Add : 2015-05-11 end --> 
+
+	<!-- NYK Add : 2015-05-11 start -->
+    <screen name="FNS_JOO_0087" template="templatePop">
+        <parameter key="title"    value="Option" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/carriersettlementprocess/jsp/FNS_JOO_0087.jsp"/>
+    </screen>
+    <!-- NYK Add : 2015-05-11 end -->
+	
+	<!-- NYK Add : 2016-05-12 start -->
+    <screen name="FNS_JOO_0088">
+        <parameter key="title"    value="Setup Carrier" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationmasterdatamgt/renewalmasterdatamgt/jsp/FNS_JOO_0088.jsp"/>
+    </screen>
+	<!-- NYK Add : 2016-05-12 end -->
+
+	<!-- NYK Add : 2015-05-12 start -->
+    <screen name="FNS_JOO_0089" template="templatePop">
+        <parameter key="title"    value="Financial Affairs" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationmasterdatamgt/renewalmasterdatamgt/jsp/FNS_JOO_0089.jsp"/>
+    </screen>
+    <!-- NYK Add : 2015-05-12 end -->
+
+	<!-- NYK Add : 2015-05-12 start -->
+    <screen name="FNS_JOO_0090" template="templatePop">
+        <parameter key="title"    value="Authority Office" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationmasterdatamgt/renewalmasterdatamgt/jsp/FNS_JOO_0090.jsp"/>
+    </screen>
+    <!-- NYK Add : 2015-05-12 end -->
+	
+	<!-- NYK Add : 2016-05-12 start -->
+    <screen name="FNS_JOO_0101">
+        <parameter key="title"    value="Select Target VVD For Settlement Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0101.jsp"/>
+    </screen>
+	<!-- NYK Add : 2016-05-12 end -->
+
+	<!-- NYK Add : 2015-05-12 start -->
+    <screen name="FNS_JOO_0104" template="templatePop">
+        <parameter key="title"    value="Select actual payer or receiver for slip" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0104.jsp"/>
+    </screen>
+    <!-- NYK Add : 2015-05-12 end -->
+
+	<!-- NYK Add : 2015-05-12 start -->
+    <screen name="FNS_JOO_0105" template="templatePop">
+        <parameter key="title"    value="Actual Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0105.jsp"/>
+    </screen>
+    <!-- NYK Add : 2015-05-12 end -->
+	
+	<!-- NYK Add : 2016-05-12 start -->
+    <screen name="FNS_JOO_0102">
+        <parameter key="title"    value="Invoice And Slip Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0102.jsp"/>
+    </screen>
+	<!-- NYK Add : 2016-05-12 end -->
+
+	<!-- NYK Add : 2015-05-12 start -->
+    <screen name="FNS_JOO_0103">
+        <parameter key="title"    value="CSR Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0103.jsp"/>
+    </screen>
+    <!-- NYK Add : 2015-05-12 end -->
+
+	<!-- NYK Add : 2015-05-12 start -->
+    <screen name="FNS_JOO_0103Pop" template="templatePop">
+        <parameter key="title"    value="CSR Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0103.jsp"/>
+    </screen>
+    <!-- NYK Add : 2015-05-12 end -->
+
+	<!-- NYK Add : 2015-05-12 start -->
+    <screen name="FNS_JOO_0106" template="templatePop">
+        <parameter key="title"    value="Invoice Delete" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0106.jsp"/>
+    </screen>
+    <!-- NYK Add : 2015-05-12 end -->
+	
+	<!-- NYK Add : 2016-05-12 start -->
+    <screen name="FNS_JOO_0107">
+        <parameter key="title"    value="Invoice Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0107.jsp"/>
+    </screen>
+	<!-- NYK Add : 2016-05-12 end -->
+
+	<!-- NYK Add : 2015-05-12 start -->
+    <screen name="FNS_JOO_0108" template="templatePop">
+        <parameter key="title"    value="Settlement Target Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0108.jsp"/>
+    </screen>
+    <!-- NYK Add : 2015-05-12 end -->
+    <screen name="FNS_JOO_0205">
+        <parameter key="title"    value="CSR 2nd Approval" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0205.jsp"/>
+    </screen>    
+	
+	<!-- NYK Add : 2017-10-16 start -->
+    <screen name="FNS_JOO_0201">
+        <parameter key="title"    value="Settlement data inquiry by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0201.jsp"/>
+    </screen>
+	<!-- NYK Add : 2017-10-16 end -->
+
+	<!-- NYK Add : 2017-10-16 start -->
+    <screen name="FNS_JOO_0202" template="templatePop">
+        <parameter key="title"    value="Settlement data upload" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0202.jsp"/>
+    </screen>
+    <!-- NYK Add : 2017-10-16 end  -->
+	
+	<!-- NYK Add : 2017-10-31 start -->
+    <screen name="FNS_JOO_0203">
+        <parameter key="title"    value="Invoice Creation for local office" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0203.jsp"/>
+    </screen>
+	<!-- NYK Add : 2017-10-31 end -->
+	
+	<!-- NYK Add : 2017-11-14 start -->
+    <screen name="FNS_JOO_0301">
+        <parameter key="title"    value="Estimation data inquiry creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalaccrual/jsp/FNS_JOO_0301.jsp"/>
+    </screen>
+	<!-- NYK Add : 2017-11-14 end -->
+
+	<!-- NYK Add : 2017-11-14 start -->
+    <screen name="FNS_JOO_0302" template="templatePop">
+        <parameter key="title"    value="Estimation data upload" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalaccrual/jsp/FNS_JOO_0302.jsp"/>
+    </screen>
+    <!-- NYK Add : 2017-11-14 end  -->
+  	<!-- NYK Add : 2017-11-25 start -->    
+    <screen name="FNS_JOO_0109" template="templatePop">
+        <parameter key="title"    value="Issuing a Invoice Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0109.jsp"/>
+    </screen>
+    <screen name="FNS_JOO_0110" template="templatePop">
+        <parameter key="title"    value="Issuing a Invoice" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0110.jsp"/>
+    </screen>
+    <!-- NYK Add : 2017-11-25 end  -->
+  	<!-- NYK Add : 2017-12-13 start --> 
+    <screen name="FNS_JOO_0204" template="templatePop">
+        <parameter key="title"    value="Reverse CSR Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0204.jsp"/>
+    </screen>
+    <!-- NYK Add : 2017-12-13 end  -->
+
+	<!-- NYK Add : 2018-01-24 start -->
+    <screen name="FNS_JOO_0304" template="templatePop">
+        <parameter key="title"    value="Inquiry By VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalaccrual/jsp/FNS_JOO_0304.jsp"/>
+    </screen>
+    <!-- NYK Add : 2018-01-24 end  -->
+	<!-- IZANAGI Add : 2018-06-15 start -->
+    <screen name="FNS_JOO_0206">
+        <parameter key="title"    value="Create Settlement Data for THEA" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0206.jsp"/>
+    </screen>
+	<!-- IZANAGI Add : 2018-06-15 end -->
+
+	<!-- IZANAGI Add : 2018-06-15 THEA Invoice Summary And Creation Popup start -->
+    <screen name="FNS_JOO_0207" template="templatePop">
+        <parameter key="title"    value="THEA Invoice Summary &amp; Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0207.jsp"/>
+    </screen>
+    <!-- IZANAGI Add : 2018-06-15 THEA Invoice Summary And Creation Popup end  -->
+    
+	<!-- IZANAGI Add : 2018-06-27 THEA CSR Creation start -->
+    <screen name="FNS_JOO_0209"> 
+        <parameter key="title"    value="THEA CSR Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0209.jsp"/>
+    </screen>
+    <!-- IZANAGI Add : 2018-06-27 THEA CSR Creation end  -->
+    
+	<!-- IZANAGI Add : 2018-10-17 THEA Invoice Inquiry start -->
+	<screen name="FNS_JOO_0210">
+		<parameter key="title"    value="THEA CSR Creation" direct="true"/>
+		<parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0210.jsp"/>
+	</screen>
+    <screen name="FNS_JOO_0211" template="templatePop">
+        <parameter key="title"    value="Issuing a THEA Invoice Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0211.jsp"/>
+    </screen>
+    <screen name="FNS_JOO_0212" template="templatePop">
+        <parameter key="title"    value="Issuing a Invoice" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/jointoperationagreementsettlement/renewalconsultation/jsp/FNS_JOO_0212.jsp"/>
+    </screen>
+	<!-- IZANAGI Add : 2018-10-17 THEA Invoice Inquiry end -->
+	
+	<!-- IZANAGI Add : 2018-12-03 JOO VVD LIST start -->
+	<screen name="JOO_VVD_LIST" template="templatePop">
+		<parameter key="title"    value="JOO_VVD_LIST" direct="true"/>
+		<parameter key="body"     value="apps/opus/fns/joo/joocommon/joofindvvd/jsp/JOO_VVD_LIST.jsp"/>
+	</screen>
+	<!-- IZANAGI Add : 2018-12-03 JOO VVD LIST end -->
+	<!-- Tu.Nguyen : 2019-03-26 start -->
+    <screen name="DOU_TRN_0001">
+        <parameter key="title"    value="Joo Carrier Management" direct="true"/>
+        <parameter key="body"     value="apps/fns/joo/training/joocarriermgmt/jsp/DOU_TRN_0001.jsp"/>
+    </screen>
+	<!-- Tu.Nguyen : 2019-03-26 end -->
+
+	<!-- Tu.Nguyen : 2019-03-26 start -->
+    <screen name="FNS_JOO_0901">
+        <parameter key="title"    value="Joo Carrier Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/fns/joo/training/joocarriermgmt/jsp/FNS_JOO_0901.jsp"/>
+    </screen>
+	<!-- Tu.Nguyen : 2019-03-26 end -->
+
+</screen-definitions>

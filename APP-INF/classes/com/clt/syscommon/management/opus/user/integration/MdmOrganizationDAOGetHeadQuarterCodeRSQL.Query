@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MdmOrganizationDAOGetHeadQuarterCodeRSQL">
+			<desc><![CDATA[select ar_hd_qtr_ofc_cd from mdm_organization]]></desc>
+			<sql><![CDATA[
+SELECT B.OFC_CD, NVL(B.AR_HD_QTR_OFC_CD, B.OFC_CD) RHQ
+FROM COM_USER A, MDM_ORGANIZATION B
+WHERE A.OFC_CD = B.OFC_CD
+AND A.USR_ID = @[usr_id]			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

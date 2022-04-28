@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOAddApEviNoRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+INSERT
+INTO   AP_EVID_NO
+       (
+              evid_no
+            , cre_usr_id
+            , cre_dt
+            , eai_evnt_dt
+       )
+       VALUES
+       (
+              @[tax_no3]
+            , @[cre_usr_id]
+            , GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd])
+            , GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd])
+       )			]]></sql>
+			<params>
+				<param name="tax_no3" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

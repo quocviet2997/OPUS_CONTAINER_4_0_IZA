@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ValueManageDBDAOGroupOfficeListRSQL">
+			<desc><![CDATA[mdm_ofc_grp, mdm_ofc_grp_mapg 테이블 조회]]></desc>
+			<sql><![CDATA[
+SELECT ofc_grp_id, sub_sys_cd, ofc_cd
+from mdm_ofc_grp_mapg
+where ofc_grp_id = @[ofc_grp_id]
+and sub_sys_cd = @[sub_sys_cd]
+			]]></sql>
+			<params>
+				<param name="ofc_grp_id" type="12" value="" out="N"/>
+				<param name="sub_sys_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

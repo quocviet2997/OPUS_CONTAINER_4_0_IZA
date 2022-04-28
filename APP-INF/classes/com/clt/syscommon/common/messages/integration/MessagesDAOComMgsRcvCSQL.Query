@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MessagesDAOComMgsRcvCSQL">
+			<desc><![CDATA[받은사람 추가]]></desc>
+			<sql><![CDATA[
+insert into com_msg_rcv (
+	msg_id,
+	rcvr_usr_id,
+	rcvr_usr_nm,
+	rcv_dt,
+	delt_flg,
+	kep_flg,
+	cre_usr_id,
+	cre_dt,
+	upd_usr_id,
+	upd_dt
+) values( 
+	@[msg_id],
+	@[rcvr_usr_id],
+	@[rcvr_usr_nm],
+	'',
+	'N',
+	'N',
+	@[cre_usr_id],
+	sysdate,
+	@[cre_usr_id],
+	sysdate
+)			]]></sql>
+			<params>
+				<param name="msg_id" type="12" value="" out="N"/>
+				<param name="rcvr_usr_id" type="12" value="" out="N"/>
+				<param name="rcvr_usr_nm" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

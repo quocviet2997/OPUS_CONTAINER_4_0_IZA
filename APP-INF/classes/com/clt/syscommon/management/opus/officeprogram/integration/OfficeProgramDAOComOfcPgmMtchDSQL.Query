@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="OfficeProgramDAOComOfcPgmMtchDSQL">
+			<desc><![CDATA[delete com_pgm_ofc_mtch]]></desc>
+			<sql><![CDATA[
+delete from com_ofc_pgm_mtch
+where	ofc_cd = @[ofc_cd]
+and	pgm_no = @[pgm_no]
+			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="n"/>
+				<param name="pgm_no" type="12" value="" out="n"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

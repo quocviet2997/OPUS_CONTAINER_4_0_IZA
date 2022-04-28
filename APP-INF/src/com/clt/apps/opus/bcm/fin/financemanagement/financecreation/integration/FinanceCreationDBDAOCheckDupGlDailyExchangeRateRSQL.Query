@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOCheckDupGlDailyExchangeRateRSQL">
+			<desc><![CDATA[CheckDupGlDailyExchangeRate]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*) CNT
+FROM GL_DLY_XCH_RT
+WHERE ACCT_XCH_RT_DT = @[acct_xch_rt_dt]
+AND ACCT_XCH_RT_LVL = @[acct_xch_rt_lvl]
+AND FM_CURR_CD = @[fm_curr_cd]
+AND TO_CURR_CD = @[to_curr_cd]			]]></sql>
+			<params>
+				<param name="acct_xch_rt_dt" type="12" value="" out="N"/>
+				<param name="acct_xch_rt_lvl" type="12" value="" out="N"/>
+				<param name="fm_curr_cd" type="12" value="" out="N"/>
+				<param name="to_curr_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

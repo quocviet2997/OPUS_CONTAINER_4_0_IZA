@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAORemoveArRouteRanksDSQL">
+			<desc><![CDATA[RemoveArRouteRanks]]></desc>
+			<sql><![CDATA[
+DELETE FROM AR_ROUT_RNK
+WHERE RLANE_CD = @[h_rlane_cd]
+AND RNK_SEQ = @[h_rnk_seq]			]]></sql>
+			<params>
+				<param name="h_rlane_cd" type="12" value="" out="N"/>
+				<param name="h_rnk_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

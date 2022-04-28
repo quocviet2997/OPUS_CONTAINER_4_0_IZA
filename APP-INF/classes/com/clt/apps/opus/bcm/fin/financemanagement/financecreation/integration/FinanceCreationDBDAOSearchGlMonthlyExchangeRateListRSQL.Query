@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchGlMonthlyExchangeRateListRSQL">
+			<desc><![CDATA[SearchGlMonthlyExchangeRateList]]></desc>
+			<sql><![CDATA[
+SELECT
+ACCT_XCH_RT_YRMON
+, ACCT_XCH_RT_LVL
+, CURR_CD
+, ACCT_XCH_RT_YRMON H_ACCT_XCH_RT_YRMON
+, ACCT_XCH_RT_LVL H_ACCT_XCH_RT_LVL
+, CURR_CD H_CURR_CD
+, USD_LOCL_XCH_RT
+, LOCL_CNY_XCH_RT
+, USD_CNY_XCH_RT
+, ACCT_RT_USR_LVL
+, LOG_UPD_DT
+, DELT_FLG
+, UPD_USR_ID
+, CRE_USR_ID
+FROM GL_MON_XCH_RT
+WHERE 1 = 1 
+#if (${acct_xch_rt_yrmon} != '')
+AND ACCT_XCH_RT_YRMON = @[acct_xch_rt_yrmon]
+#end
+#if (${acct_xch_rt_lvl} != '')
+AND ACCT_XCH_RT_LVL = @[acct_xch_rt_lvl]
+#end
+#if (${curr_cd} != '')
+AND CURR_CD = @[curr_cd]
+#end			]]></sql>
+			<params>
+				<param name="acct_xch_rt_yrmon" type="12" value="" out="N"/>
+				<param name="acct_xch_rt_lvl" type="12" value="" out="N"/>
+				<param name="curr_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

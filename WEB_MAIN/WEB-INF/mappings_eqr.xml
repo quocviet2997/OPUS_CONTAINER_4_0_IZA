@@ -1,0 +1,2268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!--========== < Common > ==========-->
+	<url-mapping url="EES_COMMON.do" screen="EES_COMMON.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_COMMON_GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_REPO_COMMON.do" screen="EES_REPO_COMMON.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_ECCCDCHECK.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesEccCdCheckViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_LOCCDCHECK.do" screen="EES_LOCCDCHECK.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_LOCYARD_COMMON.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesLocYardCommonViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+	<!--  ommit. because not used. by ChungEunHo
+	<url-mapping url="EES_LOCYARDCOMPANY_COMMON.do" screen="EES_LOCYARDCOMPANY_COMMON.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_LOCYARDCOMPANY_COMMON.do" screen="EES_LOCYARDCOMPANY_COMMON.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+	 -->
+	<url-mapping url="EES_LOCYARDINITIAL_COMMON.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesLocYardInitialCommonViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_LOCYARDEXIST_COMMON.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesLocYardExistCommonViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_LOCYARDEXISTCOMPANY_COMMON.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesLocYardExistCompanyCommonViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>	
+	
+	<url-mapping url="EES_LOCYARDLCC_COMMON.do"  screen="com.clt.framework.core.controller.DefaultViewAdapter"  >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_LOCYARDECC_COMMON.do" screen="EES_LOCYARDECC_COMMON.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_VENDOR_COMMON.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesVendorCommonViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_VENDORBYSEQ_COMMON.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesVendorBySeqCommonViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_WEEKDAILY_COMMON.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesWeekDailyCommonViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_VVD_COMMON.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesVvdCommonViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>	
+
+	<url-mapping url="EES_VVDINLAND_COMMON.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesVvdInlandCommonViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_VVDEXIST_IFRAME.do" screen="EES_VVDEXIST_IFRAME.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>	
+			
+	<url-mapping url="EES_COUNTRY.do" screen="EES_COUNTRY.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>	
+	
+    <url-mapping url="EES_CHECK_EQR_ACCESS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+    </url-mapping>
+		
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesCommonEvent</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.common.EQRCommonSC</service-action-class>
+	</event-mapping> 
+
+	<url-mapping url="EES_WEEK_COMMON.do" screen="EES_WEEK_COMMON.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_CHECK_WEEK.do" screen="EES_CHECK_WEEK.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_WEEKDATEPERIOD.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesWeekDatePeriodViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_SEARCH_ETA.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesSearchETAViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_DUPLICATECHECKPOD.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesDuplicateCheckPODViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_VESSEL_SKD_CHECK.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesVesselSKDCheckViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_WEEK_COMMON.do" screen="EES_WEEK_COMMON.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>    
+		<url-mapping url="EES_CURR_WEEK.do" screen="EES_CURR_WEEK.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>    
+		<url-mapping url="EES_CHECK_WEEK.do" screen="EES_CHECK_WEEK.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_CHECK_PERIOD.do" screen="EES_CHECK_PERIOD.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping> 
+	
+	<url-mapping url="EES_BAYPORT.do" screen="EES_BAYPORT.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_VVD_LANE.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesVvdLaneViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<!--  EQRAdjust -->
+	<url-mapping url="EES_EQR_0105.do" screen="EES_EQR_0105.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_EQR_0105HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<!--  EQRAdjust -->
+	<url-mapping url="EES_EQR_0105_IFRAME.do" screen="EES_EQR_0105_IFRAME.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_EQR_0105HTMLAction</web-action-class>
+	</url-mapping>	
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesEqr0105Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.common.EQRCommonSC</service-action-class>
+	</event-mapping>
+	
+	<!-- Manage EQR Week(Add By Sung Rak Kim in 2011.04.06) start-->
+	<url-mapping url="EES_EQR_0008.do" screen="EES_EQR_0008.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_EQR_0008HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_EQR_0008_POP.do" screen="EES_EQR_0008_POP.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_EQR_0008HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_EQR_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_EQR_0008HTMLAction</web-action-class>
+    </url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesEqr0008Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.common.EQRCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Manage EQR Week(Add By Sung Rak Kim in 2011.04.06) end-->
+	
+	<!--========== < DefaultManage > ==========-->
+	<!-- Create-ECC Info [ EES_EQR_0115 ]-->
+	<url-mapping url="EES_EQR_0115.do" screen="EES_EQR_0115.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0115HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_0115GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0115HTMLAction</web-action-class>
+	</url-mapping>    
+    <url-mapping url="EES_EQR_0115GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0115HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0115Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Create-Link Info [ EES_EQR_0116 ]-->
+    <url-mapping url="EES_EQR_0116.do" screen="EES_EQR_0116.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0116HTMLAction</web-action-class>
+    </url-mapping>    
+    <url-mapping url="EES_EQR_0116GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0116HTMLAction</web-action-class>
+    </url-mapping>  
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0116Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Demand Forecast Parameter Management [ EES_EQR_0034 ]-->
+      <url-mapping url="EES_EQR_0034.do" screen="EES_EQR_0034.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0034HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0034GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0034HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0034Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Turn Time [ EES_EQR_0043 ]-->
+    <url-mapping url="EES_EQR_0043.do" screen="EES_EQR_0043.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0043HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0043GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0043HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0043Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Holiday Effect Management [ EES_EQR_0042 ]-->
+    <url-mapping url="EES_EQR_0042.do" screen="EES_EQR_0042.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0042HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0042GS.do" screen="com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0042ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0042HTMLAction</web-action-class>
+    </url-mapping>  
+    <url-mapping url="EES_EQR_0042GS1.do" screen="com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0042ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0042HTMLAction</web-action-class>
+    </url-mapping>      
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0042Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Safety Stock Management [ EES_EQR_0117 ] -->
+	<url-mapping url="EES_EQR_0117.do" screen="EES_EQR_0117.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0117HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0117GS.do" screen="com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0117ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0117HTMLAction</web-action-class>
+    </url-mapping>
+     <url-mapping url="EES_EQR_0117GS1.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0117HTMLAction</web-action-class>
+    </url-mapping> 
+      <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0117Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+       
+    <!-- S/T On Hire Management [ EES_EQR_0118 ] -->
+    <url-mapping url="EES_EQR_0118.do" screen="EES_EQR_0118.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0118HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0118GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0118HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0118Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- S/T Off Hire Management [ EES_EQR_0119 ] -->  
+    <url-mapping url="EES_EQR_0119.do" screen="EES_EQR_0119.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0119HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0119GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0119HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0119Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    <!-- L/T Off Hire Management [ EES_EQR_0120 ] -->
+    <url-mapping url="EES_EQR_0120.do" screen="EES_EQR_0120.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0120HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0120GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0120HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0120Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- New Van / LT [ EES_EQR_0121 ] -->
+    <url-mapping url="EES_EQR_0121.do" screen="EES_EQR_0121.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0121HTMLAction</web-action-class>
+    </url-mapping>  
+    <url-mapping url="EES_EQR_0121GS.do" screen="com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0121ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0121HTMLAction</web-action-class>
+    </url-mapping>      
+    <url-mapping url="EES_EQR_0121GS2.do" screen="com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0121ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0121HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0121Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    <!-- HJL Domestic Management [ EES_EQR_0122 ] -->
+	 <url-mapping url="EES_EQR_0122.do" screen="EES_EQR_0122.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0122HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0122GS.do" screen="com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0122ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0122HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0122Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping> 
+       
+    <!-- Sublease Out Management [ EES_EQR_0123 ] -->
+    <url-mapping url="EES_EQR_0123.do" screen="EES_EQR_0123.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0123HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0123GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0123HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0123Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Cabotage AND HJS Rule [ EES_EQR_0124 ] -->
+    <url-mapping url="EES_EQR_0124.do" screen="EES_EQR_0124.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0124HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0124GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0124HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0124Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    <!-- Constraint by Lane/POD [ EES_EQR_0137 ] -->
+    <url-mapping url="EES_EQR_0137.do" screen="EES_EQR_0137.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0137HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0137GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0137HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0137Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    <!-- Inquiry - ECC Info [ EES_EQR_0134 ] -->
+    <url-mapping url="EES_EQR_0134.do" screen="EES_EQR_0134.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0115HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0134GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0115HTMLAction</web-action-class>
+    </url-mapping>    
+    <url-mapping url="EES_EQR_0134GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0115HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0115Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Inquiry - Link Info [ EES_EQR_0133 ] -->   
+    <url-mapping url="EES_EQR_0133.do" screen="EES_EQR_0133.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0116HTMLAction</web-action-class>
+    </url-mapping>  
+    <url-mapping url="EES_EQR_0133GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EES_EQR_0116HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0116Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>    
+    
+    <!-- EQ O/B Forecast Red Light Alert [ EES_EQR_0035 ] -->    
+    <url-mapping url="EES_EQR_0035.do" screen="EES_EQR_0035.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EES_EQR_0035HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0035GS.do" screen="com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EesEqr0035ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EES_EQR_0035HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EesEqr0035Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- EInput Data Red Light Alert [ EES_EQR_0001 ] -->    
+    <url-mapping url="EES_EQR_0001.do" screen="EES_EQR_0001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EES_EQR_0001HTMLAction</web-action-class>
+    </url-mapping>    
+    <url-mapping url="EES_EQR_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EES_EQR_0001HTMLAction</web-action-class>
+    </url-mapping>    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EesEqr0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Repo Plan Red Light Alert [ EES_EQR_0044 ] -->
+    <url-mapping url="EES_EQR_0044.do" screen="EES_EQR_0044.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EES_EQR_0044HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0044GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EES_EQR_0044HTMLAction</web-action-class>
+    </url-mapping>    
+    <url-mapping url="EES_EQR_0044GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EES_EQR_0044HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EesEqr0044Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Execution Feedback [ EES_EQR_0058 ] -->
+    <url-mapping url="EES_EQR_0058.do" screen="EES_EQR_0058.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EES_EQR_0058HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0058GS.do" screen="com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EesEqr0058ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EES_EQR_0058HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.defaultmanage.repothresholdmanage.event.EesEqr0058Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.defaultmanage.DefaultManageSC</service-action-class>
+    </event-mapping>
+    
+    
+    <!--========== < Scenario > ==========-->
+    <!-- Inquire Scenario ID List [ EES_EQR_0002 ] -->    
+    <url-mapping url="EES_EQR_0002.do" screen="EES_EQR_0002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EES_EQR_0002HTMLAction</web-action-class>
+    </url-mapping>    
+    <url-mapping url="EES_EQR_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EES_EQR_0002HTMLAction</web-action-class>
+    </url-mapping>      
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EesEqr0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- RLA List [ EES_EQR_0003 ] -->
+    <url-mapping url="EES_EQR_0003.do" screen="EES_EQR_0003.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.inputdatarlaexamine.event.EES_EQR_0003HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0003GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.inputdatarlaexamine.event.EesEqr0003ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.inputdatarlaexamine.event.EES_EQR_0003HTMLAction</web-action-class>
+    </url-mapping>    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.inputdatarlaexamine.event.EesEqr0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- O/B Forecast [ EES_EQR_0025 ] -->
+    <url-mapping url="EES_EQR_0025.do" screen="EES_EQR_0025.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EES_EQR_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0025GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EesEqr0025ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EES_EQR_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EesEqr0025Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- I/B Forecast [ EES_EQR_0079 ] -->
+    <url-mapping url="EES_EQR_0079.do" screen="EES_EQR_0079.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EES_EQR_0079HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0079GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EesEqr0079ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EES_EQR_0079HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EesEqr0079Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- ECC Info [ EES_EQR_0007 ] -->
+    <url-mapping url="EES_EQR_0007.do" screen="EES_EQR_0007.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.eccinfomanage.event.EES_EQR_0007HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0007GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.eccinfomanage.event.EesEqr0007ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.eccinfomanage.event.EES_EQR_0007HTMLAction</web-action-class>
+    </url-mapping>    
+    <url-mapping url="EES_EQR_0007GS2.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.eccinfomanage.event.EesEqr0007ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.eccinfomanage.event.EES_EQR_0007HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.eccinfomanage.event.EesEqr0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Link Info [ EES_EQR_0009 ] -->
+    <url-mapping url="EES_EQR_0009.do" screen="EES_EQR_0009.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ecclinkinfomanage.event.EES_EQR_0009HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0009GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.ecclinkinfomanage.event.EesEqr0009ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ecclinkinfomanage.event.EES_EQR_0009HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.ecclinkinfomanage.event.EesEqr0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Vessel SKD [ EES_EQR_0111 ] -->
+    <!--  ScenarioManage -->
+	<url-mapping url="EES_EQR_0111.do" screen="EES_EQR_0111.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EES_EQR_0111HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0111GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EES_EQR_0111HTMLAction</web-action-class>
+    </url-mapping>  
+    <url-mapping url="EES_EQR_0111GS2.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EesEqr0111ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EES_EQR_0111HTMLAction</web-action-class>
+    </url-mapping>        
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EesEqr0111Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+
+    <!-- BSA [ EES_EQR_0014 ] -->
+    <url-mapping url="EES_EQR_0014.do" screen="EES_EQR_0014.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.vslresidualspacemanage.event.EES_EQR_0014HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_0014GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.vslresidualspacemanage.event.EesEqr0014ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.vslresidualspacemanage.event.EES_EQR_0014HTMLAction</web-action-class>
+	</url-mapping>
+ 	<url-mapping url="EES_EQR_0014GS1.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.vslresidualspacemanage.event.EesEqr0014ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.vslresidualspacemanage.event.EES_EQR_0014HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.scenariomanage.vslresidualspacemanage.event.EesEqr0014Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+	</event-mapping>
+    <!-- Vessel R.Capa. [ EES_EQR_0060 ] -->
+    <url-mapping url="EES_EQR_0060.do" screen="EES_EQR_0060.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.vslresidualspacemanage.event.EES_EQR_0060HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0060GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.vslresidualspacemanage.event.EES_EQR_0060HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0060GS1.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.vslresidualspacemanage.event.EesEqr0060ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.vslresidualspacemanage.event.EES_EQR_0060HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.vslresidualspacemanage.event.EesEqr0060Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Safety Stock [ EES_EQR_0026 ] -->
+    <url-mapping url="EES_EQR_0026.do" screen="EES_EQR_0026.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrsafetystockmanage.event.EES_EQR_0026HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0026GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrsafetystockmanage.event.EES_EQR_0026HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0026GS1.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.cntrsafetystockmanage.event.EesEqr0026ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrsafetystockmanage.event.EES_EQR_0026HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrsafetystockmanage.event.EesEqr0026Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- ST On-Hire [ EES_EQR_0017 ] -->
+    <url-mapping url="EES_EQR_0017.do" screen="EES_EQR_0017.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.leaseinfomanage.event.EES_EQR_0017HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.leaseinfomanage.event.EES_EQR_0017HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.leaseinfomanage.event.EesEqr0017Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- ST Off-Hire [ EES_EQR_0085 ] -->
+    <url-mapping url="EES_EQR_0085.do" screen="EES_EQR_0085.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.leaseinfomanage.event.EES_EQR_0085HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0085GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.leaseinfomanage.event.EesEqr0085ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.leaseinfomanage.event.EES_EQR_0085HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.leaseinfomanage.event.EesEqr0085Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    <!-- LT Off-Hire [ EES_EQR_0086 ] -->
+      <url-mapping url="EES_EQR_0086.do" screen="EES_EQR_0086.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.leaseinfomanage.event.EES_EQR_0086HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0086GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.leaseinfomanage.event.EesEqr0086ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.leaseinfomanage.event.EES_EQR_0086HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.leaseinfomanage.event.EesEqr0086Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- New VAN/LT [ EES_EQR_0020 ] -->
+    <url-mapping url="EES_EQR_0020.do" screen="EES_EQR_0020.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EES_EQR_0020HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0020GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EesEqr0020ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EES_EQR_0020HTMLAction</web-action-class>
+    </url-mapping>    
+    <url-mapping url="EES_EQR_0020GS1.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EesEqr0020ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EES_EQR_0020HTMLAction</web-action-class>
+    </url-mapping>    
+    <url-mapping url="EES_EQR_0020GS3.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EesEqr0020ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EES_EQR_0020HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EesEqr0020Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- US Domestic [ EES_EQR_0021 ] -->
+    <url-mapping url="EES_EQR_0021.do" screen="EES_EQR_0021.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EES_EQR_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0021GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EesEqr0021ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EES_EQR_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EesEqr0021Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Sublease Out [ EES_EQR_0090 ] -->
+    <url-mapping url="EES_EQR_0090.do" screen="EES_EQR_0090.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EES_EQR_0090HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_EQR_0090GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EesEqr0090ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EES_EQR_0090HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.onhiredomesticnewvanscheduleinput.event.EesEqr0090Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping> 
+    <!-- Constraint 1 [ EES_EQR_0022 ] -->
+    <url-mapping url="EES_EQR_0022.do" screen="EES_EQR_0022.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.repoconstraint.event.EES_EQR_0022HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_EQR_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.repoconstraint.event.EES_EQR_0022HTMLAction</web-action-class>
+	</url-mapping>		
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.scenariomanage.repoconstraint.event.EesEqr0022Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+	</event-mapping>
+    <!-- Constraint 2 [ EES_EQR_0138 ] -->
+    <url-mapping url="EES_EQR_0138.do" screen="EES_EQR_0138.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.repoconstraint.event.EES_EQR_0138HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0138GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.repoconstraint.event.EesEqr0138ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.repoconstraint.event.EES_EQR_0138HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.repoconstraint.event.EesEqr0138Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Run Empty Repo Optimization [ EES_EQR_0049 ] -->
+    <url-mapping url="EES_EQR_0049.do" screen="EES_EQR_0049.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrrepoplanoptiexecute.event.EES_EQR_0049HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0049_SAVE.do" screen="EES_EQR_0049.screen">
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrrepoplanoptiexecute.event.EES_EQR_0049HTMLAction</web-action-class>
+    </url-mapping> 
+     <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrrepoplanoptiexecute.event.EesEqr0049Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+
+   	<!-- engine monitoring  [EES_EQR_0050] -->
+    <url-mapping url="EES_EQR_0050.do" screen="EES_EQR_0050.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrrepoplanoptiexecute.event.EES_EQR_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0050GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.cntrrepoplanoptiexecute.event.EesEqr0050ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrrepoplanoptiexecute.event.EES_EQR_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrrepoplanoptiexecute.event.EesEqr0050Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+	
+    
+    
+    <!--========== < Repo Plan > ==========-->
+    <!-- Inquire Repo Plan ID List [ EES_EQR_0045 ] -->
+    <url-mapping url="EES_EQR_0045.do" screen="EES_EQR_0045.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0045GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0045Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- F.Casted Land Inv. [ EES_EQR_0051 ] -->
+    <url-mapping url="EES_EQR_0051.do" screen="EES_EQR_0051.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0051HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0051GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0051ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0051HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0051GS1.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0051HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0051Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Repo InOut [ EES_EQR_0052 ] -->
+    <url-mapping url="EES_EQR_0052GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0052ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0052HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0052GS1.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0052ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0052HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0052GS2.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0052ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0052HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0052GS3.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0052ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0052HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0052Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- On Hire [ EES_EQR_0053 ] -->
+    <url-mapping url="EES_EQR_0053GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0053ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0053HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_EQR_0053GS2.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0053ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0053Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Off Hire [ EES_EQR_0054 ] -->
+    <url-mapping url="EES_EQR_0054GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0054ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0054Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- RLA List [ EES_EQR_0048 ] -->
+    <url-mapping url="EES_EQR_0048GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0048ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0048Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- KPI Summary Of Container Repo Plan [ EES_EQR_0071 ] -->
+    <url-mapping url="EES_EQR_0071.do" screen="EES_EQR_0071.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplankpianalysis.event.EES_EQR_0071HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0071GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplankpianalysis.event.EES_EQR_0071HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplankpianalysis.event.EesEqr0071Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Forecasted M/B [ EES_EQR_0136 ] -->
+    <url-mapping url="EES_EQR_0136.do" screen="EES_EQR_0136.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplankpianalysis.event.EES_EQR_0136HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0136GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplankpianalysis.event.EES_EQR_0136HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplankpianalysis.event.EesEqr0136Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Forecasted Sea Inventory [ EES_EQR_0091 ] -->
+    
+    
+    
+    
+    <!--========== < Execution Plan > ==========-->
+    <!-- Execution Plan Create/Update - Tab1: T.VVD, D.VVD [ EES_EQR_0059 ] -->
+    <url-mapping url="EES_EQR_0059.do" screen="EES_EQR_0059.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0059HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_EQR_0059_POP.do" screen="EES_EQR_0059_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0059HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_EQR_0059GS5.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0059HTMLAction</web-action-class>
+    </url-mapping>
+    
+
+	<url-mapping url="EES_EQR_0059GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0059ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0059HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0059GS1.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0059ViewAdapter1" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0059HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0059GS2.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0059ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0059HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0059GS3.do" screen="com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EesLocYardCommonViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0059HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0059GS4.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0059HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0059Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Execution Plan Create/Update - Tab2: Truck, Rail, Water [ EES_EQR_0080 ] -->
+    <url-mapping url="EES_EQR_0080GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0080ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0080HTMLAction</web-action-class>
+	</url-mapping>	
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0080Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+	</event-mapping>
+    <!-- Execution Plan Create/Update - Tab3: On-Hire, Off-Hire [ EES_EQR_0081 ] -->
+    <url-mapping url="EES_EQR_0081GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0081ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0081HTMLAction</web-action-class>
+	</url-mapping>	
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0081Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+	</event-mapping>
+    <!-- Execution Plan Create/Update - Tab4: Ecc Internal [ EES_EQR_0083 ] -->
+    <url-mapping url="EES_EQR_0083GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0083ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0083HTMLAction</web-action-class>
+	</url-mapping>	
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0083Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+	</event-mapping>
+    <!-- Execution Plan Create/Update - Tab5: Total [ EES_EQR_0092 ] -->
+	<url-mapping url="EES_EQR_0092.do" screen="EES_EQR_0092.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0092HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0092GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0092ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0092HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0092Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- PopUP -->
+    <!-- Forecasted Vessel Residual Capacity Search [ EES_EQR_0113 ] -->
+    <url-mapping url="EES_EQR_0113.do" screen="EES_EQR_0113.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0113HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_EQR_0113GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0113HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0113Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+	</event-mapping>
+	
+	<!--  Inventory Container List [ EES_EQR_0094 ] -->
+	<url-mapping url="EES_EQR_0094.do" screen="EES_EQR_0094.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0094HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_EQR_0094GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0094HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_EQR_0094GS1.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0094ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0094HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_EQR_0094GS2.do" screen="EES_EQR_0094GS2" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0094HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0094Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+	</event-mapping>
+	
+	<!--  BKG Split Create [ EES_EQR_0130 ] -->
+    <url-mapping url="EES_EQR_0130.do" screen="EES_EQR_0130.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0130HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0130GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0130HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0130GS1.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0130ViewAdapter1" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0130HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0130Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="EES_EQR_0108.do" screen="EES_EQR_0108.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0108HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_EQR_0108GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0108HTMLAction</web-action-class>
+	</url-mapping>	
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0108Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+	</event-mapping>
+	
+    <!--  EQR Organization Chart [ EES_EQR_0139 ] -->
+    <url-mapping url="EES_EQR_0139.do" screen="EES_EQR_0139.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0139HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0139GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0139HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0139Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Send Email or FAX.  [ EES_EQR_0131 ] -->
+	<url-mapping url="EES_EQR_0131.do" screen="EES_EQR_0131.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0131HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="EES_EQR_0131GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0131HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0131Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Search Send History email / FAX.  [ EES_EQR_0132 ] -->
+    <url-mapping url="EES_EQR_0132.do" screen="EES_EQR_0132.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0132HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_EQR_0132GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0132HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0132Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+	</event-mapping>
+	
+	
+	<!-- Forecasted Land Inventory  [ EES_EQR_0112 ] -->
+	<url-mapping url="EES_EQR_0112.do" screen="EES_EQR_0112.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0112HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0112GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0112ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0112HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0112Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- EQR All-Weeks' Plan Access Grant [ EES_EQR_0143] -->
+    <url-mapping url="EES_EQR_0143.do" screen="EES_EQR_0143.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0143HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0143GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0143HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_EQR_0143GS1.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0143ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EES_EQR_0143HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionplanestablish.event.EesEqr0143Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+	
+	
+    <!--========== < Change Plan > ==========-->
+    <!-- Change POD Simulation [ EES_EQR_0012 ] -->
+       <url-mapping url="EES_EQR_0012.do" screen="EES_EQR_0012.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EES_EQR_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EES_EQR_0012HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_EQR_0012GS3.do" screen="com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EesEqr0012ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EES_EQR_0012HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_EQR_0012GS4.do" screen="com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EesEqr0012ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EES_EQR_0012HTMLAction</web-action-class>
+    </url-mapping>
+    
+     <url-mapping url="EES_EQR_0012GS5.do" screen="com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EesEqr0012ViewAdapter1" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EES_EQR_0012HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_EQR_0012GS6.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EES_EQR_0012HTMLAction</web-action-class>
+	</url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EesEqr0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.SimulationManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- POL Simulation Analysis [ EES_EQR_0098 ] -->
+    <url-mapping url="EES_EQR_0098.do" screen="EES_EQR_0098.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EES_EQR_0098HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0098GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EES_EQR_0098HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EesEqr0098Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.SimulationManageSC</service-action-class>
+    </event-mapping>
+	
+    <!-- POD Simulation Analysis [ EES_EQR_0099 ] -->
+    <url-mapping url="EES_EQR_0099.do" screen="EES_EQR_0099.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EES_EQR_0099HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0099GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EES_EQR_0099HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EesEqr0099Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.SimulationManageSC</service-action-class>
+    </event-mapping>
+     
+    <!-- Oneway Offer Simulation [ EES_EQR_0010 ] -->
+    <url-mapping url="EES_EQR_0010.do" screen="EES_EQR_0010.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.onewaysimulate.event.EES_EQR_0010HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_0010GS.do" screen="com.clt.apps.opus.ees.eqr.simulationmanage.onewaysimulate.event.EesEqr0010ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.onewaysimulate.event.EES_EQR_0010HTMLAction</web-action-class>
+    </url-mapping>     
+    
+    <url-mapping url="EES_EQR_0010GS1.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.onewaysimulate.event.EES_EQR_0010HTMLAction</web-action-class>
+    </url-mapping>          
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.simulationmanage.onewaysimulate.event.EesEqr0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.SimulationManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Change Vessel Schedule Simulation [ EES_EQR_0011 ] -->
+    <url-mapping url="EES_EQR_0011.do" screen="EES_EQR_0011.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.vesselschedulechangesimulate.event.EES_EQR_0011HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_EQR_0011GS3.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.vesselschedulechangesimulate.event.EES_EQR_0011HTMLAction</web-action-class>
+	</url-mapping>	
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.simulationmanage.vesselschedulechangesimulate.event.EesEqr0011Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.SimulationManageSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="EES_EQR_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EES_EQR_0111HTMLAction</web-action-class>
+    </url-mapping>     
+    
+    <url-mapping url="EES_EQR_0011GS2.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EesEqr0111ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EES_EQR_0111HTMLAction</web-action-class>
+    </url-mapping>          
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EesEqr0111Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+     <!-- Change Vessel Schedule Simulation Analysis [ EES_EQR_0097 ] -->
+    <url-mapping url="EES_EQR_0097.do" screen="EES_EQR_0097.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.vesselschedulechangesimulate.event.EES_EQR_0097HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0097GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.vesselschedulechangesimulate.event.EES_EQR_0097HTMLAction</web-action-class>
+	</url-mapping>	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.simulationmanage.vesselschedulechangesimulate.event.EesEqr0097Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.SimulationManageSC</service-action-class>
+	</event-mapping>
+    <!-- Inquire/Create Sensitivity [ EES_EQR_0065 ] -->
+      <url-mapping url="EES_EQR_0065.do" screen="EES_EQR_0065.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.cntrrepoplansensitivityanalysis.event.EES_EQR_0065HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0065GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.cntrrepoplansensitivityanalysis.event.EES_EQR_0065HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.simulationmanage.cntrrepoplansensitivityanalysis.event.EesEqr0065Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.SimulationManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Analyze Cost /Capa Sensitivity [ EES_EQR_0088 ] -->
+     <url-mapping url="EES_EQR_0088.do" screen="EES_EQR_0088.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.cntrrepoplansensitivityanalysis.event.EES_EQR_0088HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0088GS.do" screen="com.clt.apps.opus.ees.eqr.simulationmanage.cntrrepoplansensitivityanalysis.event.EesEqr0088ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.cntrrepoplansensitivityanalysis.event.EES_EQR_0088HTMLAction</web-action-class>
+    </url-mapping>    
+    <url-mapping url="EES_EQR_0088GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.cntrrepoplansensitivityanalysis.event.EES_EQR_0088HTMLAction</web-action-class>
+    </url-mapping>    
+    <url-mapping url="EES_EQR_0088GS3.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.cntrrepoplansensitivityanalysis.event.EES_EQR_0088HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.simulationmanage.cntrrepoplansensitivityanalysis.event.EesEqr0088Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.SimulationManageSC</service-action-class>
+    </event-mapping>
+    
+    
+    <!--========== < Analysis > ==========-->
+    
+        <!-- Empty Repo. Result [ EES_EQR_0144 ] -->
+    <url-mapping url="EES_EQR_0144.do" screen="EES_EQR_0144.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrreporesult.event.EES_EQR_0144HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0144GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrreporesult.event.EES_EQR_0144HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrreporesult.event.EesEqr0144Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Forecast Perform AND Match Ratio [ EES_EQR_0037 ] -->
+    <url-mapping url="EES_EQR_0037.do" screen="EES_EQR_0037.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrforecastprecisionmanage.event.EES_EQR_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrforecastprecisionmanage.event.EES_EQR_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrforecastprecisionmanage.event.EesEqr0037Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Execution Perform AND Feedback[ EES_EQR_0063 ] -->
+    <url-mapping url="EES_EQR_0063.do" screen="EES_EQR_0063.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionfeedbackexamine.event.EES_EQR_0063HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0063GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionfeedbackexamine.event.EesEqr0063ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionfeedbackexamine.event.EES_EQR_0063HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_EQR_0063GS1.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionfeedbackexamine.event.EesEqr0063ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionfeedbackexamine.event.EES_EQR_0063HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoexecutionfeedbackexamine.event.EesEqr0063Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Match Back Performance Inquiry [ EES_EQR_0072 ] -->
+    <url-mapping url="EES_EQR_0072.do" screen="EES_EQR_0072.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplankpianalysis.event.EES_EQR_0072HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0072GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplankpianalysis.event.EesEqr0072ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplankpianalysis.event.EES_EQR_0072HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplankpianalysis.event.EesEqr0072Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    <!-- Load Factor Performance Inquiry [ EES_EQR_0074 ] -->
+     <url-mapping url="EES_EQR_0074.do" screen="EES_EQR_0074.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplankpianalysis.event.EES_EQR_0074HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0074GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplankpianalysis.event.EesEqr0074ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplankpianalysis.event.EES_EQR_0074HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplankpianalysis.event.EesEqr0074Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- ORG/DST Repo Plan AND Cost Inquiry [ EES_EQR_0070 ] -->
+      <url-mapping url="EES_EQR_0070.do" screen="EES_EQR_0070.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplancompare.event.EES_EQR_0070HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0070GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplancompare.event.EesEqr0070ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplancompare.event.EES_EQR_0070HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplancompare.event.EesEqr0070Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Repo Plan Cost Estimation AND Performance Inquiry [ EES_EQR_0135 ] -->
+    <url-mapping url="EES_EQR_0135.do" screen="EES_EQR_0135.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplancompare.event.EES_EQR_0135HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0135GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplancompare.event.EesEqr0135ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplancompare.event.EES_EQR_0135HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplancompare.event.EesEqr0135Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    <!-- Bay Plan I/F Search [ EES_EQR_0140] -->
+    <url-mapping url="EES_EQR_0140.do" screen="EES_EQR_0140.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EES_EQR_0140HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0140GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EES_EQR_0140HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.simulationmanage.codsimulate.event.EesEqr0140Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.simulationmanage.SimulationManageSC</service-action-class>
+    </event-mapping>
+
+    
+    
+    <!--========== < MTY Rail Trans. > ==========-->
+    <!-- MTY Rail Available Inquiry [ EES_EQR_0141 ] -->
+    <url-mapping url="EES_EQR_0141.do" screen="EES_EQR_0141.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrforecastprecisionmanage.event.EES_EQR_0141HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0141GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrforecastprecisionmanage.event.EesEqr0141ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrforecastprecisionmanage.event.EES_EQR_0141HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrforecastprecisionmanage.event.EesEqr0141Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    <!-- MTY Rail Trans Result [ EES_EQR_0142 ] -->
+    <url-mapping url="EES_EQR_0142.do" screen="EES_EQR_0142.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrforecastprecisionmanage.event.EES_EQR_0142HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0142GS.do" screen="com.clt.apps.opus.ees.eqr.repoplanmanage.cntrforecastprecisionmanage.event.EesEqr0142ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrforecastprecisionmanage.event.EES_EQR_0142HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrforecastprecisionmanage.event.EesEqr0142Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+
+    <!--========== < PopUp > ==========-->
+    <!-- Senario Remark Save PopUp [ EES_EQR_0005 ]-->
+    <url-mapping url="EES_EQR_0005.do" screen="EES_EQR_0005.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EES_EQR_0002HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EesEqr0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+
+	<!-- Holiday Effect PopUp [ EES_EQR_0114 ] -->
+    <url-mapping url="EES_EQR_0114.do" screen="EES_EQR_0114.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EES_EQR_0114HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0114GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EES_EQR_0114HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0114GS1.do" screen="com.clt.apps.opus.ees.eqr.defaultmanage.scenariodefaultmanage.event.EesEqr0042ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EES_EQR_0114HTMLAction</web-action-class>
+    </url-mapping>  
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EesEqr0114Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Senario id List search PopUp [ EES_EQR_0106 ]-->
+     <url-mapping url="EES_EQR_0106.do" screen="EES_EQR_0106.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EES_EQR_0002HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0106GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EES_EQR_0002HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.scenariomanage.event.EesEqr0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+            
+    <!--  CNTR Turn-Time Search / Modify PopUp [ EES_EQR_0126 ] -->
+    <url-mapping url="EES_EQR_0126.do" screen="EES_EQR_0126.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EES_EQR_0126HTMLAction</web-action-class>
+	</url-mapping>
+  	<url-mapping url="EES_EQR_0126GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EesEqr0126ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EES_EQR_0126HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrforecastmanage.event.EesEqr0126Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+	</event-mapping>
+	
+    <!-- Repo Plan Remark Save PopUp [ EES_EQR_0046 ] -->
+    <url-mapping url="EES_EQR_0046.do" screen="EES_EQR_0046.screen" >
+    </url-mapping>
+    
+    <!-- Scenario Copy Monitoring PopUp [ EES_EQR_0127 ]-->
+    <url-mapping url="EES_EQR_0127.do" screen="EES_EQR_0127.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrrepoplanoptiexecute.event.EES_EQR_0127HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0127GS.do" screen="com.clt.apps.opus.ees.eqr.scenariomanage.cntrrepoplanoptiexecute.event.EesEqr0127ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrrepoplanoptiexecute.event.EES_EQR_0127HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.scenariomanage.cntrrepoplanoptiexecute.event.EesEqr0127Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.scenariomanage.ScenarioManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- TS Guideline Popup [ EES_EQR_0129 ]-->
+    <url-mapping url="EES_EQR_0129.do" screen="EES_EQR_0129.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0129HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_0129GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0129HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0129Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+    <!-- RepoPlan List search PopUp [ EES_EQR_0107 ]-->
+    <url-mapping url="EES_EQR_0107.do" screen="EES_EQR_0107.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0045HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_0107GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EES_EQR_0045HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.repoplanmanage.cntrrepoplanmanage.event.EesEqr0045Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.repoplanmanage.RepoPlanManageSC</service-action-class>
+    </event-mapping>
+    
+
+	<!-- MTY Balance Report -->
+	<!-- MTY Balance Report [ EES_EQR_5001 ] kim jong jun 2009-07-23 -->
+	<url-mapping url="EES_EQR_5001.do" screen="EES_EQR_5001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EES_EQR_5001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_5001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EES_EQR_5001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EesEqr5001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.MTYEquipmentForecastSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="EES_EQR_5002.do" screen="EES_EQR_5002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EES_EQR_5002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_5002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EES_EQR_5002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EesEqr5002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.MTYEquipmentForecastSC</service-action-class>
+    </event-mapping>
+    <url-mapping url="EES_EQR_5003.do" screen="EES_EQR_5003.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EES_EQR_5003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_5003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EES_EQR_5003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EesEqr5003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.MTYEquipmentForecastSC</service-action-class>
+    </event-mapping>
+    <url-mapping url="EES_EQR_5004.do" screen="EES_EQR_5004.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EES_EQR_5004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_5004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EES_EQR_5004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EesEqr5004Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.MTYEquipmentForecastSC</service-action-class>
+    </event-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EesEqr5003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.MTYEquipmentForecastSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="EES_EQR_5005.do" screen="EES_EQR_5005.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EES_EQR_5005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_5005GS.do" screen="com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EesEqr5005ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EES_EQR_5005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.mtyequipmentforecast.event.EesEqr5005Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.mtyequipmentforecast.MTYEquipmentForecastSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="EES_EQR_5007.do" screen="EES_EQR_5007.screen" >
+    </url-mapping>
+    
+
+
+	<!-- MTY COD Confirmation -->
+	<!-- MTY COD Simulation [ EES_EQR_6001 ]- Prak Kwang Seok : 2009-07-31-->
+    <url-mapping url="EES_EQR_6001.do" screen="EES_EQR_6001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_6001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_6001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_6001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EesEqr6001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.EQTransportPlanNPerformSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="EES_EQR_6001_01.do" screen="EES_EQR_6001_01.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_6001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_6001_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_6001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EesEqr6001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.EQTransportPlanNPerformSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="EES_EQR_6002.do" screen="EES_EQR_6002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_6002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_6002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_6002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EesEqr6002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.EQTransportPlanNPerformSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="EES_EQR_6003.do" screen="EES_EQR_6003.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_6003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_6003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_6003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EesEqr6003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.EQTransportPlanNPerformSC</service-action-class>
+    </event-mapping>
+
+
+	<!-- MTY COD Confirmation [ EES_EQR_7001 ] Mun Jung Cheol : 2009-08-06 -->
+	<url-mapping url="EES_EQR_7001.do" screen="EES_EQR_7001.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_7001HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_7001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_7001HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EesEqr7001Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.EQTransportPlanNPerformSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="EES_EQR_7002.do" screen="EES_EQR_7002.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_7002HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_7002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_7002HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EesEqr7002Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.EQTransportPlanNPerformSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="EES_EQR_7003.do" screen="EES_EQR_7003.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_7003HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_7003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_7003HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EesEqr7003Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.EQTransportPlanNPerformSC</service-action-class>
+	</event-mapping>
+	
+	<!-- MTY Repo Inquiry by VVD [ EES_EQR_8001 ] Mun Jung Cheol : 2009-08-06-->
+	<url-mapping url="EES_EQR_8001.do" screen="EES_EQR_8001.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_8001HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_8001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_8001HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EesEqr8001Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.EQTransportPlanNPerformSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="EES_EQR_8002.do" screen="EES_EQR_8002.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_8002HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_8002GS.do" screen="com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EesEqr8002ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_8002HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EesEqr8002Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.EQTransportPlanNPerformSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="EES_EQR_8902.do" screen="EES_EQR_8902.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_8002HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_8902GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EES_EQR_8002HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EesEqr8002Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.EQTransportPlanNPerformSC</service-action-class>
+	</event-mapping>
+	<!-- MTY Repo Inquiry by Priod [ EES_EQR_9001 ] -->
+	
+	
+	<!-- ====================================================================================  -->
+	<!-- ==============================  TMO PROJECT EQR Start ==============================  -->
+	<!-- ====================================================================================  -->
+	<!-- Trade, sub Trade, Lane combo common -->
+	<url-mapping url="EES_EQR_COD.do" screen="EES_EQR_COD.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrcommon.eqrcommon.event.EES_EQR_CODHTMLAction</web-action-class>
+	</url-mapping>
+    <url-mapping url="EES_EQR_CODGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrcommon.eqrcommon.event.EES_EQR_CODHTMLAction</web-action-class>
+    </url-mapping>
+	
+	<event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrcommon.eqrcommon.event.EesEqrCodEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrcommon.CntrCommonSC</service-action-class>
+    </event-mapping>
+	
+	<!-- MTY Container Plan Start -->
+	<!-- MTY Repo Guideline Creation [ EES_EQR_1008 ]- SHIN DONG IL : 2013-05-27-->
+    <url-mapping url="EES_EQR_1008.do" screen="EES_EQR_1008.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanguidelinemanage.event.EES_EQR_1008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1008GS.do" screen="com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanguidelinemanage.event.EesEqr1008ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanguidelinemanage.event.EES_EQR_1008HTMLAction</web-action-class>
+    </url-mapping>
+	
+	<event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanguidelinemanage.event.EesEqr1008Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.CntrPlanGuideSC</service-action-class>
+    </event-mapping>
+	
+	<!-- MTY Repo Guideline Add/Amend [ EES_EQR_1009 ]- SHIN DONG IL : 2013-05-27-->
+    <url-mapping url="EES_EQR_1009.do" screen="EES_EQR_1009.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanguidelinemanage.event.EES_EQR_1009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanguidelinemanage.event.EES_EQR_1009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanguidelinemanage.event.EesEqr1009Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.CntrPlanGuideSC</service-action-class>
+    </event-mapping>
+	<!-- MTY Container Plan End -->
+	
+	<!-- Guideline Recipient Set-up [ EES_EQR_1030 ] -->
+    <url-mapping url="EES_EQR_1030.do" screen="EES_EQR_1030.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanguidelineemail.event.EES_EQR_1030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanguidelineemail.event.EES_EQR_1030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanguidelineemail.event.EesEqr1030Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.CntrPlanGuideSC</service-action-class>
+    </event-mapping>
+	<!-- Guideline Recipient Set-up -->	
+	
+	<!-- Guideline Mailing [ EES_EQR_1031 ] -->
+    <url-mapping url="EES_EQR_1031.do" screen="EES_EQR_1031.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanguidelineemail.event.EES_EQR_1031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1031GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanguidelineemail.event.EES_EQR_1031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanguidelineemail.event.EesEqr1031Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.CntrPlanGuideSC</service-action-class>
+    </event-mapping>
+	<!-- Guideline Mailing -->	
+	
+		
+	<!-- MT Repo Plan [ EES_EQR_1013 ]- SHIN DONG IL : 2013-07-01-->
+    <url-mapping url="EES_EQR_1013.do" screen="EES_EQR_1013.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanmtrepoplan.event.EES_EQR_1013HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_EQR_1013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanmtrepoplan.event.EES_EQR_1013HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_EQR_1013GS2.do" screen="com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanmtrepoplan.event.EesEqr1013ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanmtrepoplan.event.EES_EQR_1013HTMLAction</web-action-class>
+    </url-mapping>
+	
+	<event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrplanguide.cntrplanmtrepoplan.event.EesEqr1013Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrplanguide.CntrPlanGuideSC</service-action-class>
+    </event-mapping>
+	<!-- MT Repo Plan  -->
+	
+	
+	<!-- MTY COD Confirmation -->
+	<!-- MTY COD Simulation [ EES_EQR_6001 ]- Prak Kwang Seok : 2009-07-31-->
+    <url-mapping url="EES_EQR_1021.do" screen="EES_EQR_1021.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EesEqr1021Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.CntrCodConfirmSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="EES_EQR_1021_01.do" screen="EES_EQR_1021_01.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1021_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EesEqr1021Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.CntrCodConfirmSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="EES_EQR_1054.do" screen="EES_EQR_1054.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1054GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EesEqr1054Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.CntrCodConfirmSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="EES_EQR_1055.do" screen="EES_EQR_1055.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1055HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1055GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1055HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EesEqr1055Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.CntrCodConfirmSC</service-action-class>
+    </event-mapping>
+
+
+	<!-- MTY COD Confirmation [ EES_EQR_1024 ] Mun Jung Cheol : 2009-08-06 -->
+	<url-mapping url="EES_EQR_1024.do" screen="EES_EQR_1024.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1024HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_1024GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1024HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EesEqr1024Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.CntrCodConfirmSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="EES_EQR_1056.do" screen="EES_EQR_1056.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1056HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_1056GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1056HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EesEqr1056Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.CntrCodConfirmSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="EES_EQR_1057.do" screen="EES_EQR_1057.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1057HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_1057GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1057HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EesEqr1057Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.CntrCodConfirmSC</service-action-class>
+	</event-mapping>
+	
+	<!-- MTY Repo Inquiry by VVD [ EES_EQR_1022 ] Mun Jung Cheol : 2009-08-06-->
+	<url-mapping url="EES_EQR_1022.do" screen="EES_EQR_1022.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1022HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_1022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1022HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EesEqr1022Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.CntrCodConfirmSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="EES_EQR_1023.do" screen="EES_EQR_1023.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1023HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_1023GS.do" screen="com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EesEqr1023ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1023HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EesEqr1023Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.CntrCodConfirmSC</service-action-class>
+	</event-mapping>
+	
+	<!-- Loading Trend By Lane [ EES_EQR_1025 ] SHIN DONG IL : 2013-07-11-->
+	<url-mapping url="EES_EQR_1025.do" screen="EES_EQR_1025.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntraccuracy.cntraccuracytrend.event.EES_EQR_1025HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_1025GS.do" screen="com.clt.apps.opus.ees.eqr.cntraccuracy.cntraccuracytrend.event.EesEqr1025ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntraccuracy.cntraccuracytrend.event.EES_EQR_1025HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.cntraccuracy.cntraccuracytrend.event.EesEqr1025Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.cntraccuracy.CntrAccuracySC</service-action-class>
+	</event-mapping>
+
+	<!-- Discharging Result [ EES_EQR_1026 ] SHIN DONG IL : 2013-07-11-->
+	<url-mapping url="EES_EQR_1026.do" screen="EES_EQR_1026.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntraccuracy.cntraccuracytrend.event.EES_EQR_1026HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_1026GS.do" screen="com.clt.apps.opus.ees.eqr.cntraccuracy.cntraccuracytrend.event.EesEqr1026ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntraccuracy.cntraccuracytrend.event.EES_EQR_1026HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.cntraccuracy.cntraccuracytrend.event.EesEqr1026Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.cntraccuracy.CntrAccuracySC</service-action-class>
+	</event-mapping>	
+	
+	<!-- Loading Trend By Port [ EES_EQR_1066 ] SHIN DONG IL : 2013-07-11-->
+	<url-mapping url="EES_EQR_1066.do" screen="EES_EQR_1066.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntraccuracy.cntraccuracytrend.event.EES_EQR_1066HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_1066GS.do" screen="com.clt.apps.opus.ees.eqr.cntraccuracy.cntraccuracytrend.event.EesEqr1066ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntraccuracy.cntraccuracytrend.event.EES_EQR_1066HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.cntraccuracy.cntraccuracytrend.event.EesEqr1066Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.cntraccuracy.CntrAccuracySC</service-action-class>
+	</event-mapping>	
+	
+
+	<url-mapping url="EES_EQR_1064.do" screen="EES_EQR_1064.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1064HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="EES_EQR_1064GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrcodconfirm.emptycodadjustment.event.EES_EQR_1064HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.emptycodadjustment.event.EesEqr1064Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.eqtransportplannperform.CntrCodConfirmSC</service-action-class>
+	</event-mapping>
+	
+	
+	<!-- =====================================  -->
+    <!-- ======== Moon Dong-sun (Start) ======  -->
+    <!-- =====================================  -->
+	
+	<!--========== < MTY Rail Trans. > ==========-->
+    <!-- MTY Rail Available Inquiry [ EES_EQR_1058 ] -->
+    <url-mapping url="EES_EQR_1058.do" screen="EES_EQR_1058.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrusarail.cntrforecastprecisionmanage.event.EES_EQR_1058HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_1058GS.do" screen="com.clt.apps.opus.ees.eqr.cntrusarail.cntrforecastprecisionmanage.event.EesEqr1058ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrusarail.cntrforecastprecisionmanage.event.EES_EQR_1058HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrusarail.cntrforecastprecisionmanage.event.EesEqr1058Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrusarail.CntrUsaRailSC</service-action-class>
+    </event-mapping>
+    <!-- MTY Rail Trans Result [ EES_EQR_1059 ] -->
+    <url-mapping url="EES_EQR_1059.do" screen="EES_EQR_1059.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrusarail.cntrforecastprecisionmanage.event.EES_EQR_1059HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_1059GS.do" screen="com.clt.apps.opus.ees.eqr.cntrusarail.cntrforecastprecisionmanage.event.EesEqr1059ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrusarail.cntrforecastprecisionmanage.event.EES_EQR_1059HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrusarail.cntrforecastprecisionmanage.event.EesEqr1059Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrusarail.CntrUsaRailSC</service-action-class>
+    </event-mapping>
+
+    <!-- MTY Rail Arrival Detail [ EES_EQR_1060 ] -->
+    <url-mapping url="EES_EQR_1060.do" screen="EES_EQR_1060.screen" >
+    </url-mapping>
+
+    <!--========== < Analysis > ==========-->
+    <!-- Empty Repo. Result [ EES_EQR_1061 ] -->
+    <url-mapping url="EES_EQR_1061.do" screen="EES_EQR_1061.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntranalysis.cntrreporesult.event.EES_EQR_1061HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1061GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntranalysis.cntrreporesult.event.EES_EQR_1061HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntranalysis.cntrreporesult.event.EesEqr1061Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntranalysis.CntrAnalysisSC</service-action-class>
+    </event-mapping>
+    
+    
+	<!-- MTY Balance Report -->
+    <!-- MTY Balance Report [ EES_EQR_1001 ] -->
+    <url-mapping url="EES_EQR_1001.do" screen="EES_EQR_1001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EES_EQR_1001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EES_EQR_1001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EesEqr1001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="EES_EQR_1044.do" screen="EES_EQR_1044.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EES_EQR_1044HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_1044GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EES_EQR_1044HTMLAction</web-action-class>
+    </url-mapping>    
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EesEqr1044Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="EES_EQR_1046.do" screen="EES_EQR_1046.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EES_EQR_1046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1046GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EES_EQR_1046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EesEqr1046Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>
+    <url-mapping url="EES_EQR_1045.do" screen="EES_EQR_1045.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EES_EQR_1045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1045GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EES_EQR_1045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EesEqr1045Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="EES_EQR_1062.do" screen="EES_EQR_1062.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EES_EQR_1062HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1062GS.do" screen="com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EesEqr1062ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EES_EQR_1062HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EesEqr1062Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="EES_EQR_1047.do" screen="EES_EQR_1047.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EES_EQR_1047HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1047GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EES_EQR_1047HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EesEqr1047Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="EES_EQR_1043.do" screen="EES_EQR_1043.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EES_EQR_1043HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1043GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EES_EQR_1043HTMLAction</web-action-class>
+    </url-mapping>        
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.mtyequipmentforecast.event.EesEqr1043Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>
+    
+    <!-- EQC Organization Chart [ EES_EQR_1007 ] -->
+    <url-mapping url="EES_EQR_1007.do" screen="EES_EQR_1007.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.eqcorgchart.event.EES_EQR_1007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1007GS.do" screen="com.clt.apps.opus.ees.eqr.cntrfcstsimul.eqcorgchart.event.EesEqr1007ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.eqcorgchart.event.EES_EQR_1007HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.eqcorgchart.event.EesEqr1007Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>
+	
+	<!-- Forecast Report [ EES_EQR_1003 ] -->
+    <url-mapping url="EES_EQR_1003.do" screen="EES_EQR_1003.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.forecastreport.event.EES_EQR_1003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.forecastreport.event.EES_EQR_1003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.forecastreport.event.EesEqr1003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>
+	
+	<!-- History Report [ EES_EQR_1002 ] -->
+	<url-mapping url="EES_EQR_1002.do" screen="EES_EQR_1002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.forecastreport.event.EES_EQR_1002HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_EQR_1002GS.do" screen="com.clt.apps.opus.ees.eqr.cntrfcstsimul.forecastreport.event.EesEqr1002ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.forecastreport.event.EES_EQR_1002HTMLAction</web-action-class>
+    </url-mapping> 
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.forecastreport.event.EesEqr1002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>
+	
+	<!-- Discharging List (Forecast Report) [ EES_EQR_1048 ] -->
+	<url-mapping url="EES_EQR_1048.do" screen="EES_EQR_1048.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.forecastreport.event.EES_EQR_1048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1048GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.forecastreport.event.EES_EQR_1048HTMLAction</web-action-class>
+    </url-mapping>    
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.forecastreport.event.EesEqr1048Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>   
+	
+	<!-- Planned Repo In [ EES_EQR_1040 ] -->
+    <url-mapping url="EES_EQR_1040.do" screen="EES_EQR_1040.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.forecastreport.event.EES_EQR_1040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.forecastreport.event.EES_EQR_1040HTMLAction</web-action-class>
+    </url-mapping>    
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.forecastreport.event.EesEqr1040Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>   
+	
+	<!-- LT ST OW Plan and Approval [ EES_EQR_1041 ] -->
+    <url-mapping url="EES_EQR_1041.do" screen="EES_EQR_1041.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.onhirebalance.event.EES_EQR_1041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1041_POP.do" screen="EES_EQR_1041_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.onhirebalance.event.EES_EQR_1041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1041GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.onhirebalance.event.EES_EQR_1041HTMLAction</web-action-class>
+    </url-mapping>    
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.onhirebalance.event.EesEqr1041Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>   
+	
+	<!-- On-Hire Status [ EES_EQR_1006 ] -->
+    <url-mapping url="EES_EQR_1006.do" screen="EES_EQR_1006.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.onhirebalance.event.EES_EQR_1006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.onhirebalance.event.EES_EQR_1006HTMLAction</web-action-class>
+    </url-mapping>    
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.onhirebalance.event.EesEqr1006Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>  
+	
+    <!-- History Report - Surplus Area [ EES_EQR_1070 ] -->
+    <url-mapping url="EES_EQR_1070.do" screen="EES_EQR_1070.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.surplusarea.event.EES_EQR_1070HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1070GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.surplusarea.event.EES_EQR_1070HTMLAction</web-action-class>
+    </url-mapping>    
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.surplusarea.event.EesEqr1070Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>  	
+	
+    <!-- Port Inventory Balance Simulation - Inland [ EES_EQR_1073 ] -->
+    <url-mapping url="EES_EQR_1073.do" screen="EES_EQR_1073.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.surplusarea.event.EES_EQR_1073HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1073GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.surplusarea.event.EES_EQR_1073HTMLAction</web-action-class>
+    </url-mapping>    
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.surplusarea.event.EesEqr1073Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>  
+	
+    <!-- Port Inventory Balance Simulation - Inland(BKG) Popup [ EES_EQR_1074 ] -->
+    <url-mapping url="EES_EQR_1074.do" screen="EES_EQR_1074.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.surplusarea.event.EES_EQR_1074HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1074GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.surplusarea.event.EES_EQR_1074HTMLAction</web-action-class>
+    </url-mapping>    
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.surplusarea.event.EesEqr1074Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>  
+	
+    <!-- Port Inventory Balance Simulation [ EES_EQR_1012 ] -->
+    <url-mapping url="EES_EQR_1012.do" screen="EES_EQR_1012.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.surplusarea.event.EES_EQR_1012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_EQR_1012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.surplusarea.event.EES_EQR_1012HTMLAction</web-action-class>
+    </url-mapping>    
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.surplusarea.event.EesEqr1012Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrfcstsimul.CntrFcstSimulSC</service-action-class>
+    </event-mapping>  			
+	
+	<!-- =====================================  -->
+	<!-- ======== Moon Dong-sun (End) ========  -->
+	<!-- =====================================  -->
+	
+	<!-- =====================================  -->
+	<!-- ===== Yong Chan-Shin (Start) ========  -->
+	<!-- =====================================  -->
+		
+    <!--========== < MTY BKG Creation > ==========-->
+    <!-- MTY BKG Creation  [ EES_EQR_1018 ] -->
+    <url-mapping url="EES_EQR_1018.do" screen="EES_EQR_1018.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EES_EQR_1018HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_EQR_1018GS.do" screen="com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EesEqr1018ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EES_EQR_1018HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_1018GS1.do" screen="com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EesEqr1018ViewAdapter1" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EES_EQR_1018HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_1018GS2.do" screen="com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EesEqr1018ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EES_EQR_1018HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="EES_EQR_1018GS4.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EES_EQR_1018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EesEqr1018Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.CntrMtyBkgManageSC</service-action-class>
+    </event-mapping>	
+    
+	<!--  BKG Split Create [ EES_EQR_1050 ] -->
+    <url-mapping url="EES_EQR_1050.do" screen="EES_EQR_1050.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EES_EQR_1050HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="EES_EQR_1050GS.do" screen="com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EesEqr1050ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EES_EQR_1050HTMLAction</web-action-class>
+    </url-mapping>	
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EesEqr1050Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.CntrMtyBkgManageSC</service-action-class>
+    </event-mapping>    
+        
+	<!--  Container List [ EES_EQR_1051 ] -->
+	<url-mapping url="EES_EQR_1051.do" screen="EES_EQR_1051.screen" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EES_EQR_1051HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="EES_EQR_1051GS.do" screen="com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EesEqr1051ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EES_EQR_1051HTMLAction</web-action-class>
+	</url-mapping>	
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EesEqr1051Event</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.CntrMtyBkgManageSC</service-action-class>
+	</event-mapping>   
+
+	<!--  BKG Split Create [ EES_EQR_1052 ] -->
+    <url-mapping url="EES_EQR_1052.do" screen="EES_EQR_1052.screen" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EES_EQR_1052HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_EQR_1052GS.do" screen="com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EesEqr1052ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EES_EQR_1052HTMLAction</web-action-class>
+    </url-mapping>	
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.cntrmtybkgcreate.event.EesEqr1052Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.eqr.cntrmtybkgmanage.CntrMtyBkgManageSC</service-action-class>
+    </event-mapping>    
+    	
+    	
+	 <url-mapping url="EES_LOCYARDINITIAL.do" screen="com.clt.apps.opus.ees.eqr.cntrcommon.eqrcommon.event.EesLocYardInitialVesselViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.cntrcommon.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>	
+	
+	 <url-mapping url="EES_REPO_COMMONGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.ees.eqr.common.eqrcommon.event.EES_COMMONHTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.ees.eqr.cntrcommon.eqrcommon.event.EesCommonEvent</event-class>
+		<service-action-class>com.clt.apps.opus.ees.eqr.cntrcommon.CntrCommonSC</service-action-class>
+	</event-mapping> 
+	
+	
+	
+	
+	<!-- =====================================  -->
+	<!-- ===== Yong Chan-Shin (End) ==========  -->
+	<!-- =====================================  -->
+		
+	<!-- ====================================================================================  -->
+	<!-- ==============================  TMO PROJECT EQR End ================================  -->
+	<!-- ====================================================================================  -->
+
+</mappings>

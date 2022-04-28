@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOSearchCustomerScheduleListVORSQL">
+			<desc><![CDATA[2011.03.16 정윤태 CUSTOMER SCHEDULE EDI SETUP 정보를 조회한다]]></desc>
+			<sql><![CDATA[
+SELECT  EDI_STUP_ID
+       ,CUST_TRD_PRNR_ID
+       ,EDI_SNDR_ID
+       ,EDI_MSG_NM
+       ,EDI_SVC_TP_NM
+       ,WRK_RSRC_NM
+       ,SND_FM_DYS
+       ,SND_TO_DYS
+       ,PRE_DMY_SKD_FLG
+       ,PST_DMY_SKD_FLG
+       ,USE_FLG
+       ,'' CRE_USR_ID
+       ,'' UPD_USR_ID 
+  FROM VSK_CUST_SKD_EDI_SET
+ WHERE 1 = 1
+#if (${edi_stup_id} != '')
+   AND EDI_STUP_ID = @[edi_stup_id]
+#end
+
+#if (${edi_msg_nm} != '')
+   AND EDI_MSG_NM = @[edi_msg_nm]
+#end
+
+#if (${edi_svc_tp_nm} != '')
+   AND EDI_SVC_TP_NM = @[edi_svc_tp_nm]
+#end			]]></sql>
+			<params>
+				<param name="edi_stup_id" type="12" value="" out="N"/>
+				<param name="edi_msg_nm" type="12" value="" out="N"/>
+				<param name="edi_svc_tp_nm" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

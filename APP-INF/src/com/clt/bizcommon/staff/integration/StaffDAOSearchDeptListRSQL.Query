@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="StaffDAOSearchDeptListRSQL">
+			<desc><![CDATA[SearchDeptList]]></desc>
+			<sql><![CDATA[
+SELECT LEVEL, OFC_CD
+FROM MDM_ORGANIZATION
+WHERE NVL(DELT_FLG, 'N') <> 'Y' 
+CONNECT BY NOCYCLE PRIOR OFC_CD = PRNT_OFC_CD
+
+#if (${ofc_cd} != '') 
+START WITH OFC_CD=COM_ConstantMgr_PKG.COM_getHeadOfficeCode_FNC()
+#else 
+START WITH OFC_CD=COM_ConstantMgr_PKG.COM_getHeadOfficeCode_FNC()
+#end
+
+ORDER SIBLINGS BY OFC_CD			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

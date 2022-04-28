@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	 
+	<!-- ================================================================================== -->
+	<!-- ============================ TPBMasterDataManage (S) ============================= -->
+	<!-- TPB Code Creation  -->
+	<url-mapping url="ESD_TPB_0101.do" screen="ESD_TPB_0101.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.masterdatamanage.codemanage.event.ESD_TPB_0101HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.masterdatamanage.codemanage.event.ESD_TPB_0101HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.masterdatamanage.codemanage.event.EsdTpb0101Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.masterdatamanage.MasterDataManageSC</service-action-class>
+	</event-mapping>
+	 
+	<!-- TPB Office Management  -->
+	<url-mapping url="ESD_TPB_0102.do" screen="ESD_TPB_0102.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.masterdatamanage.officemanage.event.ESD_TPB_0102HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0102GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.masterdatamanage.officemanage.event.ESD_TPB_0102HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.masterdatamanage.officemanage.event.EsdTpb0102Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.masterdatamanage.MasterDataManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- TPB Code Inquiry   -->
+	<url-mapping url="ESD_TPB_0131.do" screen="ESD_TPB_0131.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.masterdatamanage.codemanage.event.ESD_TPB_0131HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0131GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.masterdatamanage.codemanage.event.ESD_TPB_0131HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.masterdatamanage.codemanage.event.EsdTpb0131Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.masterdatamanage.MasterDataManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- TPB Office Inquiry -->
+	<url-mapping url="ESD_TPB_0132.do" screen="ESD_TPB_0132.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.masterdatamanage.officemanage.event.ESD_TPB_0132HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0132GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.masterdatamanage.officemanage.event.ESD_TPB_0132HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.masterdatamanage.officemanage.event.EsdTpb0132Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.masterdatamanage.MasterDataManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- Taxation Control -->
+	<url-mapping url="ESD_TPB_0812.do" screen="ESD_TPB_0812.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0812HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0812GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0812HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.EsdTpb0812Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.processmanage.ProcessManageSC</service-action-class>
+	</event-mapping>
+	<!-- ============================ TPBMasterDataManage (E) ============================= -->
+	<!-- ================================================================================== -->
+	
+	
+	<!-- ================================================================================== -->
+	<!-- ============================= TPBCandidateManage (S) ============================= -->
+	<!-- TPB Manual Register -->
+	<url-mapping url="ESD_TPB_0103.do" screen="ESD_TPB_0103.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.ESD_TPB_0103HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0103GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.ESD_TPB_0103HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.EsdTpb0103Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.CandidateManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- EAC Registration -->
+	<url-mapping url="ESD_TPB_0104.do" screen="ESD_TPB_0104.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.ESD_TPB_0104HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0104GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.ESD_TPB_0104HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.EsdTpb0104Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.CandidateManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- TPB Candidate Confirmation -->
+	<url-mapping url="ESD_TPB_0105.do" screen="ESD_TPB_0105.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.candidateconfirm.event.ESD_TPB_0105HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.candidateconfirm.event.ESD_TPB_0105HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.candidatemanage.candidateconfirm.event.EsdTpb0105Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.CandidateManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- Interfaced TPB Cancel(l)ation -->
+	<url-mapping url="ESD_TPB_0133.do" screen="ESD_TPB_0133.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.interfacedcancel.event.ESD_TPB_0133HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0133GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.interfacedcancel.event.ESD_TPB_0133HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.candidatemanage.interfacedcancel.event.EsdTpb0133Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.CandidateManageSC</service-action-class>
+	</event-mapping>
+	<!-- ============================= TPBCandidateManage (E) ============================= -->
+	<!-- ================================================================================== -->
+	
+	
+	<!-- ================================================================================== -->
+	<!-- ============================== TPBProcessManage (S) ============================== -->
+	<!-- TPB Handling -->
+	<url-mapping url="ESD_TPB_0106.do" screen="ESD_TPB_0106.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0106HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0106GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0106HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.EsdTpb0106Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.processmanage.ProcessManageSC</service-action-class>
+	</event-mapping>
+	<!-- TPB Handling -->
+
+	<!-- TPB Group Remaking -->
+	<url-mapping url="ESD_TPB_0107.do" screen="ESD_TPB_0107.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.outstandinggroupmanage.event.ESD_TPB_0107HTMLAction</web-action-class>
+	</url-mapping>
+<!--
+	<url-mapping url="ESD_TPB_0107GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.outstandinggroupmanage.event.ESD_TPB_0107HTMLAction</web-action-class>
+	</url-mapping>
+-->
+	<url-mapping url="ESD_TPB_0107GS.do" screen="com.clt.apps.opus.esd.tpb.processmanage.outstandinggroupmanage.event.EsdTpb0107ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.outstandinggroupmanage.event.ESD_TPB_0107HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.processmanage.outstandinggroupmanage.event.EsdTpb0107Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.processmanage.ProcessManageSC</service-action-class>
+	</event-mapping>
+	<!-- TPB Group Remaking -->
+	
+	<!-- TPB Modification -->
+	<url-mapping url="ESD_TPB_0108.do" screen="ESD_TPB_0108.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.outstandinggroupmanage.event.ESD_TPB_0108HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0108GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.outstandinggroupmanage.event.ESD_TPB_0108HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0108POP.do" screen="ESD_TPB_0108POP.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.outstandinggroupmanage.event.ESD_TPB_0108HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.processmanage.outstandinggroupmanage.event.EsdTpb0108Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.processmanage.ProcessManageSC</service-action-class>
+	</event-mapping>
+	<!-- TPB Modification -->
+	
+	<!-- Invoice Sheet Setting -->
+	<url-mapping url="ESD_TPB_0109.do" screen="ESD_TPB_0109.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0109HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0109GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0109HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.EsdTpb0109Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.processmanage.ProcessManageSC</service-action-class>
+	</event-mapping>
+	<!-- Invoice Sheet Setting -->
+	
+	<!-- Invoice Revision -->
+	<url-mapping url="ESD_TPB_0111.do" screen="ESD_TPB_0111.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0111HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0111GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0111HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0111Confirm.do" screen="ESD_TPB_0111Confirm.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0111HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.EsdTpb0111Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.processmanage.ProcessManageSC</service-action-class>
+	</event-mapping>
+	<!-- Invoice Revision -->
+	
+	<!-- Reponse Office Change -->
+	<url-mapping url="ESD_TPB_0113.do" screen="ESD_TPB_0113.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.adjustmentmanage.event.ESD_TPB_0113HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0113GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.adjustmentmanage.event.ESD_TPB_0113HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.processmanage.adjustmentmanage.event.EsdTpb0113Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.processmanage.ProcessManageSC</service-action-class>
+	</event-mapping>
+	<!-- Reponse Office Change -->
+	
+	<!-- Write-Off -->
+	<url-mapping url="ESD_TPB_0114.do" screen="ESD_TPB_0114.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.adjustmentmanage.event.ESD_TPB_0114HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0114GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.adjustmentmanage.event.ESD_TPB_0114HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.processmanage.adjustmentmanage.event.EsdTpb0114Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.processmanage.ProcessManageSC</service-action-class>
+	</event-mapping>
+	<!-- Write-Off -->
+	<!-- ============================== TPBProcessManage (E) ============================== -->
+	<!-- ================================================================================== -->
+	
+	
+	<!-- ================================================================================== -->
+	<!-- ============================== TPBStatusInquiry (S) ============================== -->
+	<!-- TPB Inquiry -->
+	<url-mapping url="ESD_TPB_0115.do" screen="ESD_TPB_0115.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0115HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0115GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0115HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.EsdTpb0115Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.StatusInquirySC</service-action-class>
+	</event-mapping>
+	<!-- TPB Inquiry -->
+	
+	<!-- Status By TPB -->
+	<url-mapping url="ESD_TPB_0116.do" screen="ESD_TPB_0116.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0116HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0116GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0116HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.EsdTpb0116Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.StatusInquirySC</service-action-class>
+	</event-mapping>
+	<!-- Status By TPB -->	
+	
+	<!-- TPB Status by Booking(B/L)-->
+	<url-mapping url="ESD_TPB_0134.do" screen="ESD_TPB_0134.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0134HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0134GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0134HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.EsdTpb0134Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.StatusInquirySC</service-action-class>
+	</event-mapping>
+	<!-- TPB Status by Booking(B/L)-->	
+
+	<!-- Activity - TPB Confirmation -->
+	<url-mapping url="ESD_TPB_0135.do" screen="ESD_TPB_0135.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0135HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0135GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0135HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.EsdTpb0135Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.StatusInquirySC</service-action-class>
+	</event-mapping>
+	<!-- Activity - TPB Confirmation -->	
+
+	<!-- Activity - TPB Closing -->
+	<url-mapping url="ESD_TPB_0136.do" screen="ESD_TPB_0136.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0136HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0136GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0136HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.EsdTpb0136Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.StatusInquirySC</service-action-class>
+	</event-mapping>
+	<!-- Activity - TPB Closing -->	
+		
+	<!-- Status Summary -->	
+	<url-mapping url="ESD_TPB_0117.do" screen="ESD_TPB_0117.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0117HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0117GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0117HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.EsdTpb0117Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.StatusInquirySC</service-action-class>
+	</event-mapping>
+	<!-- Status Summary -->	
+	
+	<!-- TPB Invoice Inquiry -->	
+	<url-mapping url="ESD_TPB_0118.do" screen="ESD_TPB_0118.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0118HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0118GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0118HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.EsdTpb0118Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.StatusInquirySC</service-action-class>
+	</event-mapping>
+	<!-- TPB Invoice Inquiry -->		
+	
+	<!-- TPB Closing -->
+	<url-mapping url="ESD_TPB_0119.do" screen="ESD_TPB_0119.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.performanceinquiry.event.ESD_TPB_0119HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0119GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.performanceinquiry.event.ESD_TPB_0119HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.statusinquiry.performanceinquiry.event.EsdTpb0119Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.StatusInquirySC</service-action-class>
+	</event-mapping>
+	<!-- TPB Closing -->
+	
+	<!-- None TPB -->
+	<url-mapping url="ESD_TPB_0120.do" screen="ESD_TPB_0120.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.performanceinquiry.event.ESD_TPB_0120HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0120GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.performanceinquiry.event.ESD_TPB_0120HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.statusinquiry.performanceinquiry.event.EsdTpb0120Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.StatusInquirySC</service-action-class>
+	</event-mapping>
+	<!-- None TPB -->
+	
+	<!-- EAC Issue -->	
+	<url-mapping url="ESD_TPB_0121.do" screen="ESD_TPB_0121.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.performanceinquiry.event.ESD_TPB_0121HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0121GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.performanceinquiry.event.ESD_TPB_0121HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.statusinquiry.performanceinquiry.event.EsdTpb0121Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.StatusInquirySC</service-action-class>
+	</event-mapping>
+	<!-- EAC Issue -->
+	
+	<!-- Pending TPB -->	
+	<url-mapping url="ESD_TPB_0808.do" screen="ESD_TPB_0808.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0808HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0808GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0808HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.EsdTpb0808Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.StatusInquirySC</service-action-class>
+	</event-mapping>
+	<!-- Pending TPB -->
+	
+	<!-- Pending TPB 2011.02.23 황효근 -->	
+	<url-mapping url="ESD_TPB_0137.do" screen="ESD_TPB_0137.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0137HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0137GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.ESD_TPB_0137HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.statusinquiry.statusinquiry.event.EsdTpb0137Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.statusinquiry.StatusInquirySC</service-action-class>
+	</event-mapping>
+	<!-- Pending TPB -->
+	<!-- ============================== TPBStatusInquiry (E) ============================== -->
+	<!-- ================================================================================== -->
+	
+	
+	<!-- ================================================================================== -->
+	<!-- ================================ JoCaseManage (S) ================================ -->
+	<!-- JO TPB Candidate Confirm -->
+	<url-mapping url="ESD_TPB_0122.do" screen="ESD_TPB_0122.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.jocandidateconfirm.event.ESD_TPB_0122HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0122GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.jocandidateconfirm.event.ESD_TPB_0122HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.jocasemanage.jocandidateconfirm.event.EsdTpb0122Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.JOCaseManageSC</service-action-class>
+	</event-mapping>
+	<!-- JO TPB Candidate Confirm -->
+	
+	<!-- JO Invoice Sheet Setting -->
+	<url-mapping url="ESD_TPB_0123.do" screen="ESD_TPB_0123.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.joinvoicemanage.event.ESD_TPB_0123HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0123GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.joinvoicemanage.event.ESD_TPB_0123HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.jocasemanage.joinvoicemanage.event.EsdTpb0123Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.JOCaseManageSC</service-action-class>
+	</event-mapping>
+	<!-- JO Invoice Sheet Setting -->
+	
+	<!-- JO TPB Handling -->
+	<url-mapping url="ESD_TPB_0124.do" screen="ESD_TPB_0124.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.joinvoicemanage.event.ESD_TPB_0124HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0124GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.joinvoicemanage.event.ESD_TPB_0124HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.jocasemanage.joinvoicemanage.event.EsdTpb0124Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.JOCaseManageSC</service-action-class>
+	</event-mapping>
+	<!-- JO TPB Handling -->
+	
+	<!-- JO TPB Modification -->
+	<url-mapping url="ESD_TPB_0125.do" screen="ESD_TPB_0125.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.jooutstandinggroupmanage.event.ESD_TPB_0125HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0125GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.jooutstandinggroupmanage.event.ESD_TPB_0125HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0125POP.do" screen="ESD_TPB_0125POP.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.jooutstandinggroupmanage.event.ESD_TPB_0125HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.jocasemanage.jooutstandinggroupmanage.event.EsdTpb0125Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.JOCaseManageSC</service-action-class>
+	</event-mapping>
+	<!-- JO TPB Modification -->
+	
+	<!-- JO TPB Invoice Revise/Cancel -->
+	<url-mapping url="ESD_TPB_0127.do" screen="ESD_TPB_0127.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.joinvoicemanage.event.ESD_TPB_0127HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0127GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.joinvoicemanage.event.ESD_TPB_0127HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0127Confirm.do" screen="ESD_TPB_0127Confirm.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.joinvoicemanage.event.ESD_TPB_0127HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.jocasemanage.joinvoicemanage.event.EsdTpb0127Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.JOCaseManageSC</service-action-class>
+	</event-mapping>
+	<!-- JO TPB Invoice Revise/Cancel -->
+
+	<!-- JO TPB Inquiry -->
+	<url-mapping url="ESD_TPB_0128.do" screen="ESD_TPB_0128.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.jostatusinquiry.event.ESD_TPB_0128HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0128GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.jostatusinquiry.event.ESD_TPB_0128HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.jocasemanage.jostatusinquiry.event.EsdTpb0128Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.JOCaseManageSC</service-action-class>
+	</event-mapping>
+	<!-- JO TPB Inquiry -->
+
+	<!-- JO TPB Invoice Inquiry -->
+	<url-mapping url="ESD_TPB_0129.do" screen="ESD_TPB_0129.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.jostatusinquiry.event.ESD_TPB_0129HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0129GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.jostatusinquiry.event.ESD_TPB_0129HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.jocasemanage.jostatusinquiry.event.EsdTpb0129Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.JOCaseManageSC</service-action-class>
+	</event-mapping>
+	<!-- JO TPB Invoice Inquiry -->
+
+	<!-- JO TPB Process Inquiry -->
+	<url-mapping url="ESD_TPB_0130.do" screen="ESD_TPB_0130.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.jostatusinquiry.event.ESD_TPB_0130HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0130GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.jostatusinquiry.event.ESD_TPB_0130HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.jocasemanage.jostatusinquiry.event.EsdTpb0130Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.JOCaseManageSC</service-action-class>
+	</event-mapping>
+	<!-- JO TPB Process Inquiry -->
+	<!-- ================================ JoCaseManage (E) ================================ -->
+	<!-- ================================================================================== -->
+
+	<url-mapping url="ESD_TPB_0809.do" screen="ESD_TPB_0809.screen" />
+	
+	<!-- Invoice Creation -->
+	<url-mapping url="ESD_TPB_0110.do" screen="ESD_TPB_0110.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0110HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0110GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0110HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.EsdTpb0110Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.processmanage.ProcessManageSC</service-action-class>
+	</event-mapping>
+	<!-- Invoice Creation -->
+	
+	<!-- Invoice Preview -->
+	<url-mapping url="ESD_TPB_0112.do" screen="ESD_TPB_0112.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0112HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0112GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0112HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.EsdTpb0112Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.processmanage.ProcessManageSC</service-action-class>
+	</event-mapping>
+	<!-- Invoice Preview -->
+	
+	<!-- Collection Activity Remarks -->
+	<url-mapping url="ESD_TPB_0803.do" screen="ESD_TPB_0803.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0803HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0803GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0803HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.EsdTpb0803Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.processmanage.ProcessManageSC</service-action-class>
+	</event-mapping>
+	<!-- Collection Activity Remarks -->
+	
+	<!--  ROC To - TPB Office Search Popup -->
+ 	<url-mapping url="ESD_TPB_0804.do" screen="ESD_TPB_0804.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.adjustmentmanage.event.ESD_TPB_0804HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0804GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+  		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.adjustmentmanage.event.ESD_TPB_0804HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.processmanage.adjustmentmanage.event.EsdTpb0804Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.processmanage.ProcessManageSC</service-action-class>
+	</event-mapping>
+	<!--  ROC To - TPB Office Search Popup -->
+	
+	<!--  TPB Adjustment Message Input Popup -->
+ 	<url-mapping url="ESD_TPB_0805.do" screen="ESD_TPB_0805.screen" />
+ 	<url-mapping url="ESD_TPB_0806.do" screen="ESD_TPB_0806.screen" />
+	<!--  TPB Adjustment Message Input Popup -->
+	
+	
+	<!--  Recovery Activity Inquiry / Input -->
+ 	<url-mapping url="ESD_TPB_0807.do" screen="ESD_TPB_0807.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.recoveryactivitymanage.event.ESD_TPB_0807HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0807GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+  		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.recoveryactivitymanage.event.ESD_TPB_0807HTMLAction</web-action-class>
+	</url-mapping>
+ 
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.processmanage.recoveryactivitymanage.event.EsdTpb0807Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.processmanage.ProcessManageSC</service-action-class>
+	</event-mapping>
+	<!--  Recovery Activity Inquiry / Input -->
+
+	<!--  Invoice Cancel Remarks -->
+ 	<url-mapping url="ESD_TPB_0810.do" screen="ESD_TPB_0810.screen" />
+	<!--  / Invoice Cancel Remarks -->
+	
+
+	<url-mapping url="ESD_TPB_0812GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0812HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.processmanage.invoicemanage.event.ESD_TPB_0812Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.processmanage.ProcessManageSC</service-action-class>
+	</event-mapping>
+	<!-- Taxation Control -->
+	<!-- ============================== TPBProcessManage (S) ============================== -->
+	<!-- ================================================================================== -->
+	
+	<!-- ================================================================================== -->
+	<!-- ==================================== common (S) ================================== -->
+	<!-- ===== Common - CommonGenCodeCombo ========================================================== -->
+	<url-mapping url="TPBCommonCode.do" screen="TPBCommonCode.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.common.combo.event.CommonCodeHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="TPBCommonCodeGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.common.combo.event.CommonCodeHTMLAction</web-action-class>
+	</url-mapping>	
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.common.combo.event.CommonCodeEvent</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.common.combo.CommonCodeSC</service-action-class>
+	</event-mapping>
+	
+	<!-- ===== / Common - TPBFileUpload ======================================================== -->
+	<url-mapping url="TPBFileUpload.do" screen="TPBFileUpload.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.common.fileupload.event.TPBFileUploadHTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="TPBFileUploadGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.common.fileupload.event.TPBFileUploadHTMLAction</web-action-class>
+	</url-mapping>	
+    <url-mapping url="TPBFileUploadProc.do" screen="TPBFileUploadProc.screen">
+        <web-action-class>com.clt.apps.opus.esd.tpb.common.fileupload.event.TPBFileUploadProcHTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="TPBFileUploadBlank.do" screen="TPBFileUploadBlank.screen">
+        <web-action-class>com.clt.apps.opus.esd.tpb.common.fileupload.event.TPBFileUploadHTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="TPBFileUploadSample.do" screen="TPBFileUploadSample.screen">
+        <web-action-class>com.clt.apps.opus.esd.tpb.common.fileupload.event.TPBFileUploadHTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="TPBFileDownload.do" screen="TPBFileDownload.screen">
+        <web-action-class>com.clt.apps.opus.esd.tpb.common.fileupload.event.TPBFileUploadHTMLAction</web-action-class>
+    </url-mapping>    
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.common.fileupload.event.TPBFileUploadEvent</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.common.fileupload.TPBFileUploadSC</service-action-class>
+	</event-mapping>
+	<!-- ===== / Common - TPBFileUpload ======================================================== -->
+
+	<!-- ===== Common - TPBPendigTpbOpener ========================================================== -->
+	<!--  Pending TPB 처리 -->
+	<url-mapping url="TPBPendigTpbOpener.do" screen="TPBPendigTpbOpener.screen" />
+	<!-- ===== / Common - TPBPendigTpbOpener ======================================================== -->
+
+	<!-- ===== (Temporary) Common - TPBInterfaceTest ========================================================== -->
+	<!--
+	<url-mapping url="TPBInterfaceTest.do" screen="TPBInterfaceTest.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.common.tpbinterface.event.TPBInterfaceHTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.common.tpbinterface.event.TPBInterfaceEvent</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.common.tpbinterface.TPBInterfaceSC</service-action-class>
+	</event-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.common.tpbinterface.event.TPBInterfaceRQEvent</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.common.tpbinterface.TPBInterfaceRSC</service-action-class>
+	</event-mapping>
+	-->
+	
+	<!-- JO Invoice Creation -->
+	<url-mapping url="ESD_TPB_0126.do" screen="ESD_TPB_0126.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.joinvoicemanage.event.ESD_TPB_0126HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0126GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.joinvoicemanage.event.ESD_TPB_0126HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0126Confirm.do" screen="ESD_TPB_0126Confirm.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.joinvoicemanage.event.ESD_TPB_0126HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.jocasemanage.joinvoicemanage.event.EsdTpb0126Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.jocasemanage.JOCaseManageSC</service-action-class>
+	</event-mapping>
+	<!-- JO Invoice Creation -->
+	
+	<!-- TPB Candidate Confirmation -->
+	
+	<!-- Duplication Check Up -->
+	<url-mapping url="ESD_TPB_0801.do" screen="ESD_TPB_0801.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.ESD_TPB_0801HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0801GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.ESD_TPB_0801HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.EsdTpb0801Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.CandidateManageSC</service-action-class>
+	</event-mapping>
+	<!-- Duplication Check Up -->
+	
+	<!-- Container Selection -->
+	<url-mapping url="ESD_TPB_0811.do" screen="ESD_TPB_0811.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.ESD_TPB_0811HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0811POP.do" screen="ESD_TPB_0811POP.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.ESD_TPB_0811HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0811GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.ESD_TPB_0811HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.EsdTpb0811Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.CandidateManageSC</service-action-class>
+	</event-mapping>
+	<!-- Container Selection -->
+	
+	<!-- Select Staff -->
+	<url-mapping url="ESD_TPB_0813.do" screen="ESD_TPB_0813.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.ESD_TPB_0813HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TPB_0813GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.ESD_TPB_0813HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tpb.candidatemanage.manualregister.event.EsdTpb0813Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tpb.candidatemanage.CandidateManageSC</service-action-class>
+	</event-mapping>
+	<!-- Select Staff -->
+	
+</mappings>

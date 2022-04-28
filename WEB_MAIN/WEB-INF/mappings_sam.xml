@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <url-mapping url="ESM_SAM_0001.do" screen="ESM_SAM_0001.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.EsmSam0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.GeneralInfoManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <url-mapping url="ESM_SAM_0002.do" screen="ESM_SAM_0002.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.EsmSam0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.GeneralInfoManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <url-mapping url="ESM_SAM_0003.do" screen="ESM_SAM_0003.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.keymaninfomanage.event.ESM_SAM_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.keymaninfomanage.event.ESM_SAM_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.generalinfomanage.keymaninfomanage.event.EsmSam0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.GeneralInfoManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <url-mapping url="ESM_SAM_0004.do" screen="ESM_SAM_0004.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.EsmSam0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.GeneralInfoManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+	
+	<!-- SHKIM : 2012-02-09 start -->
+    <url-mapping url="ESM_SAM_0010.do" screen="ESM_SAM_0010.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.EsmSam0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.GeneralInfoManageSC</service-action-class>
+    </event-mapping>
+	<url-mapping url="ESM_SAM_0902.do" screen="ESM_SAM_0902.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0902HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0902GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0902HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.EsmSam0902Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.GeneralInfoManageSC</service-action-class>
+    </event-mapping>
+	<url-mapping url="ESM_SAM_0903.do" screen="ESM_SAM_0903.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0903HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="ESM_SAM_0903_POP.do" screen="ESM_SAM_0903_POP.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0903HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0903GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0903HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.EsmSam0903Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.GeneralInfoManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONGJINHO : 2012-02-09 end -->
+	
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <url-mapping url="ESM_SAM_0005.do" screen="ESM_SAM_0005.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.salesrepinfomanage.event.ESM_SAM_0005HTMLAction</web-action-class>
+    </url-mapping>
+   
+    <url-mapping url="ESM_SAM_0005_POP.do" screen="ESM_SAM_0005_POP.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.salesrepinfomanage.event.ESM_SAM_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.salesrepinfomanage.event.ESM_SAM_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.generalinfomanage.salesrepinfomanage.event.EsmSam0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.GeneralInfoManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <url-mapping url="ESM_SAM_0006.do" screen="ESM_SAM_0006.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.salesrepinfomanage.event.ESM_SAM_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.salesrepinfomanage.event.ESM_SAM_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.generalinfomanage.salesrepinfomanage.event.EsmSam0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.GeneralInfoManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <url-mapping url="ESM_SAM_0900.do" screen="ESM_SAM_0900.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.salesrepinfomanage.event.ESM_SAM_0900HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0900GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.salesrepinfomanage.event.ESM_SAM_0900HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.generalinfomanage.salesrepinfomanage.event.EsmSam0900Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.GeneralInfoManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+	
+		<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <url-mapping url="ESM_SAM_0007.do" screen="ESM_SAM_0007.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.salesactivitymanage.salesactivitymanage.event.ESM_SAM_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.salesactivitymanage.salesactivitymanage.event.ESM_SAM_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.salesactivitymanage.salesactivitymanage.event.EsmSam0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.salesactivitymanage.SalesActivityManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+	
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <url-mapping url="ESM_SAM_0008.do" screen="ESM_SAM_0008.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.salesactivitymanage.salesactivitymanage.event.ESM_SAM_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.salesactivitymanage.salesactivitymanage.event.ESM_SAM_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.salesactivitymanage.salesactivitymanage.event.EsmSam0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.salesactivitymanage.SalesActivityManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <url-mapping url="ESM_SAM_0009.do" screen="ESM_SAM_0009.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.salesactivitymanage.salesactivitymanage.event.ESM_SAM_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.salesactivitymanage.salesactivitymanage.event.ESM_SAM_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.salesactivitymanage.salesactivitymanage.event.EsmSam0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.salesactivitymanage.SalesActivityManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <url-mapping url="ESM_SAM_0901.do" screen="ESM_SAM_0901.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.salesactivitymanage.salesactivitymanage.event.ESM_SAM_0901HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0901GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.salesactivitymanage.salesactivitymanage.event.ESM_SAM_0901HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.salesactivitymanage.salesactivitymanage.event.EsmSam0901Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.salesactivitymanage.SalesActivityManageSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+    <url-mapping url="ESM_SAM_0100.do" screen="ESM_SAM_0100.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.salesadmincommon.salesadmincommon.event.ESM_SAM_0100HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0100GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.salesadmincommon.salesadmincommon.event.ESM_SAM_0100HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.salesadmincommon.salesadmincommon.event.EsmSam0100Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.salesadmincommon.SalesAdminCommonSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+	
+	<!-- NAMKOONGJINHO : 2011-05-09 start -->
+     <url-mapping url="ESM_SAM_COMGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.salesadmincommon.salesadmincommon.event.ESM_SAM_COMHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.salesadmincommon.salesadmincommon.event.EsmSamComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.salesadmincommon.SalesAdminCommonSC</service-action-class>
+    </event-mapping>
+	<!-- NAMKOONGJINHO : 2011-05-09 end -->
+	    
+	<!-- CHLOE MIJIN SEO : 2012-02-22 start -->
+	<url-mapping url="ESM_SAM_0011.do" screen="ESM_SAM_0011.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0011HTMLAction</web-action-class>
+    </url-mapping>
+	
+    <url-mapping url="ESM_SAM_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.EsmSam0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.GeneralInfoManageSC</service-action-class>
+    </event-mapping>
+	<!-- CHLOE MIJIN SEO : 2012-02-22 end -->
+	<!-- SUKJOONLEE : 2011-05-09 start -->
+    <url-mapping url="ESM_SAM_0904.do" screen="ESM_SAM_0904.screen" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0904HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SAM_0904GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.ESM_SAM_0904HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.sam.generalinfomanage.customerinfomanage.event.EsmSam0904Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.sam.generalinfomanage.GeneralInfoManageSC</service-action-class>
+    </event-mapping>
+	<!-- SUKJOONLEE : 2011-05-09 end -->
+</mappings>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="PackageTypeDBDAOPackageTypeVORSQL">
+			<desc><![CDATA[PackageTypeDAOPackageTypeVORSQL   ]]></desc>
+			<sql><![CDATA[
+select
+	pck_cd,
+	pck_nm,
+	usa_cstms_pck_cd,
+	(CASE 
+		WHEN 'Y' = delt_flg THEN 'Delete' 
+		ELSE 'Active' 
+	END) AS delt_flg
+from mdm_pck_tp
+where 1=1
+
+#if (${mdm_yn} != '')
+	#if (${delt_flg} == 'Y') 
+		AND DELT_FLG = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+	#else 
+		AND DELT_FLG <> 'Y'
+	#end
+#else	
+	AND DELT_FLG <> 'Y'
+#end
+
+#if (${pck_cd} != '') 
+and   pck_cd like @[pck_cd] || '%'
+#end
+#if (${pck_nm} != '') 
+and   upper(pck_nm) like '%' || upper(@[pck_nm]) || '%'
+#end
+ORDER BY pck_cd			]]></sql>
+			<params>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="pck_cd" type="12" value="T" out="N"/>
+				<param name="pck_nm" type="12" value="TRUSS" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

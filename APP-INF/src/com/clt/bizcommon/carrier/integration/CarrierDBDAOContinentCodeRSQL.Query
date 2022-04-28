@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CarrierDBDAOContinentCodeRSQL">
+			<desc><![CDATA[DESC Enter..]]></desc>
+			<sql><![CDATA[
+SELECT (100000 + (ROWNUM * 10) ) AS SORTKEY,
+CONTI_CD AS CODE,
+CONTI_NM AS NAME
+FROM MDM_CONTINENT
+WHERE NVL(DELT_FLG, 'N') <> 'Y'
+AND CONTI_CD NOT IN ('X', 'Y')  ORDER BY 1			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

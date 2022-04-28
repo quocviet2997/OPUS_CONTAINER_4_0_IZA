@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="VesselDBDAOTotalVesselRSQL">
+			<desc><![CDATA[vessel list count]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*)
+FROM MDM_VSL_CNTR mdmVsl LEFT OUTER JOIN ( select INTG_CD_VAL_CTNT, INTG_CD_VAL_DP_DESC from com_intg_cd_dtl where INTG_CD_ID = 'CD00653') comIntg ON mdmVsl.FDR_DIV_CD = comIntg.INTG_CD_VAL_CTNT
+WHERE 1 = 1
+#if (${vsl_cd} != '')
+AND mdmVsl.vsl_cd LIKE @[vsl_cd]||'%'
+#end    
+#if (${vsl_eng_nm} != '')
+AND upper(mdmVsl.vsl_eng_nm) LIKE '%'|| upper(@[vsl_eng_nm])||'%'
+#end    
+#if (${crr_cd} != '')
+AND mdmVsl.crr_cd LIKE @[crr_cd]||'%'
+#end
+#if (${call_sgn_no} != '')
+AND mdmVsl.call_sgn_no LIKE @[call_sgn_no] || '%'
+#end
+#if (${lloyd_no} != '')
+AND mdmVsl.lloyd_no LIKE @[lloyd_no] || '%'
+#end
+
+#if (${mdm_yn} != '')
+	#if (${delt_flg} == 'Y') 
+		AND mdmVsl.DELT_FLG = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+	#else 
+		AND mdmVsl.DELT_FLG <> 'Y'
+	#end
+#else	
+	AND mdmVsl.DELT_FLG <> 'Y'
+#end			]]></sql>
+			<params>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="vsl_eng_nm" type="12" value="" out="N"/>
+				<param name="crr_cd" type="12" value="" out="N"/>
+				<param name="call_sgn_no" type="12" value="" out="N"/>
+				<param name="lloyd_no" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

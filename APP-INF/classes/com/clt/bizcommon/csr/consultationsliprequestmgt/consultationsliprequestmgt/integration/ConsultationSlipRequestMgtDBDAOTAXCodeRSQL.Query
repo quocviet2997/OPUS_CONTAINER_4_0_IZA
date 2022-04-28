@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOTAXCodeRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT ap_tax_nm
+FROM   ap_tax
+WHERE  tax_rt       = @[tax_type]
+   AND tax_naid_flg = @[tax_naid_flg]
+   AND fa_flg       = @[fa_flg]
+   AND tax_nsl_flg  = @[tax_nsl_flg]
+   AND aval_flg     = 'Y'
+   AND tax_no      <> '10008'			]]></sql>
+			<params>
+				<param name="tax_type" type="12" value="" out="N"/>
+				<param name="tax_naid_flg" type="12" value="" out="N"/>
+				<param name="fa_flg" type="12" value="" out="N"/>
+				<param name="tax_nsl_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

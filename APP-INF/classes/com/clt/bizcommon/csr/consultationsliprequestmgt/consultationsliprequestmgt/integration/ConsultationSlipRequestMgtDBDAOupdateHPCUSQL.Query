@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOupdateHPCUSQL">
+			<desc><![CDATA[updateHPC
+R4J 관련 CSR 프로그램 수정 ( DBDAO에 SQL문을 삭제하기 위함 )]]></desc>
+			<sql><![CDATA[
+UPDATE AP_PAY_INV
+	#if ( ${mode} == '1') 
+		SET AP_IF_DT = SYSDATE, INV_STS_CD = 'P'
+	#else if ( ${mode} == '2') 
+		SET AP_CXL_DT = SYSDATE, INV_STS_CD = 'J'
+	#else if ( ${mode} == '3') 
+		SET AP_PAY_DT = SYSDATE, INV_STS_CD = 'D' 
+	#end
+ WHERE CSR_NO = @[csr_no]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

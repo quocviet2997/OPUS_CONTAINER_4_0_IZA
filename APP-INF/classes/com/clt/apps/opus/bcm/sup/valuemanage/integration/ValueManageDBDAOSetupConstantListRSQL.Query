@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ValueManageDBDAOSetupConstantListRSQL">
+			<desc><![CDATA[com_sup_cons 테이블 조회]]></desc>
+			<sql><![CDATA[
+select CONS_CD , CONS_VAL_CTNT
+from COM_STUP_CONS			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

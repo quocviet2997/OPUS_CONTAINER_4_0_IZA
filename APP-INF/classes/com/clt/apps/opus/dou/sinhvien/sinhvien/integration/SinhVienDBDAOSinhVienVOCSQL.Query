@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SinhVienDBDAOSinhVienVOCSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+INSERT INTO SINHVIEN (
+	NGAYNHAPHOC
+,	HOCPHI
+,	KHOAHOC
+,	TUOI
+,	TEN
+,	SV_ID
+) VALUES( 
+,	TO_DATE(@[ngaynhaphoc],'YYYY-MM-DD')
+,	@[hocphi]
+,	@[khoahoc]
+,	@[tuoi]
+,	@[ten]
+,	@[sv_id]
+)			]]></sql>
+			<params>
+				<param name="ngaynhaphoc" type="12" value="" out="N"/>
+				<param name="hocphi" type="2" value="" out="N"/>
+				<param name="khoahoc" type="12" value="" out="N"/>
+				<param name="tuoi" type="2" value="" out="N"/>
+				<param name="ten" type="12" value="" out="N"/>
+				<param name="sv_id" type="2" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

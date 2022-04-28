@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOMultiCSRNoCNIRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT '05' 
+       ||DECODE(
+				(SELECT D.ACCT_CD
+				FROM   AP_PAY_INV H
+     				 , AP_PAY_INV_DTL D
+				WHERE  H.INV_NO          = @[inv_no]   --:inv_no
+   				AND H.VNDR_SEQ        = @[vndr_seq] --:vndr_seq
+   				AND H.DELT_FLG        = 'N'
+   				AND H.INV_SUB_SYS_CD  = 'CNI'
+   				AND H.INV_RGST_NO     = D.INV_RGST_NO
+   				AND D.DELT_FLG        = 'N')
+				, '113321', 'P', @[csr_tp_cd])
+       ||
+       (SELECT AP_OFC_CD
+       FROM    MDM_ORGANIZATION
+       WHERE   OFC_CD = @[ofc_cd]
+       )
+      ||
+       (SELECT TO_CHAR(GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd]),'YYMMDD')
+          FROM DUAL
+       )
+      ||
+       (SELECT LPAD(NVL(MAX(SUBSTR(csr_no,16,20)),0)+1,5, '0')
+   FROM ap_csr_no
+  WHERE SUBSTR(csr_no,1,LENGTH(csr_no)-5) = 
+                       '05'
+       					||DECODE(
+								(SELECT D.ACCT_CD
+								 FROM   AP_PAY_INV H
+     				 				  , AP_PAY_INV_DTL D
+								 WHERE  H.INV_NO          = @[inv_no]   --:inv_no
+   								 	AND H.VNDR_SEQ        = @[vndr_seq] --:vndr_seq
+   									AND H.DELT_FLG        = 'N'
+   									AND H.INV_SUB_SYS_CD  = 'CNI'
+   									AND H.INV_RGST_NO     = D.INV_RGST_NO
+   									AND D.DELT_FLG        = 'N')
+									, '113321', 'P', @[csr_tp_cd])
+                       ||
+       					(SELECT AP_OFC_CD
+       					   FROM    MDM_ORGANIZATION
+       					  WHERE   OFC_CD = @[ofc_cd]
+       					)
+                       ||
+               			(SELECT TO_CHAR(GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd]),'YYMMDD')
+              		       FROM    DUAL
+               			)
+       ) csr_no
+FROM   DUAL			]]></sql>
+			<params>
+				<param name="inv_no" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+				<param name="csr_tp_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

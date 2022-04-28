@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalRouteUtil02RSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT A.APRO_SEQ,
+	       A.APRO_USR_ID,
+	       A.APRO_USR_NM,
+	       B.OFC_CD APRO_OFC_CD,
+	       A.APRO_USR_JB_TIT_NM
+	  FROM COM_APRO_ROUT_DFLT_DTL A, COM_USER B
+	 WHERE B.USE_FLG = 'Y'
+	   AND NVL(A.DELT_FLG, 'N') <> 'Y'
+	   AND A.APRO_USR_ID IN (B.USR_ID, B.EP_ID)
+	   AND A.APRO_ROUT_SEQ = @[apro_rout_seq] --// 1 -- Aapro_rout_seq를 받아야 하나 조직도 문제로 OPUS에서는 Approval Step창을 사용 할 수 없는 관계로 전창현 수석님으로 고정 (실제 사용시에는 반드시 변경 필요)
+	 ORDER BY A.APRO_SEQ DESC			]]></sql>
+			<params>
+				<param name="apro_rout_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

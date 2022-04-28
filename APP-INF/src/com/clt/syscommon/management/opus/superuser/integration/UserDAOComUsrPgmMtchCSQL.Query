@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserDAOComUsrPgmMtchCSQL">
+			<desc><![CDATA[Insert com_usr_pgm_mtch]]></desc>
+			<sql><![CDATA[
+insert into com_usr_pgm_mtch (
+	usr_id,
+	pgm_no,
+	add_flg,
+	cre_usr_id,
+	cre_dt,
+	upd_usr_id,
+	upd_dt
+) values( 
+	@[usr_id],
+	@[module],
+	@[admin],
+	@[cre_usr_id],
+	sysdate,
+	@[cre_usr_id],
+	sysdate
+)			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="module" type="12" value="" out="N"/>
+				<param name="admin" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

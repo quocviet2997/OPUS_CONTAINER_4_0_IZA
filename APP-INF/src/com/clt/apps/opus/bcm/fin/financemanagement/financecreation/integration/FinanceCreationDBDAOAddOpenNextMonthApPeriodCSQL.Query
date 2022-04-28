@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOAddOpenNextMonthApPeriodCSQL">
+			<desc><![CDATA[AP Period 데이터가 기 존재하는 가장 늦은 월을 기준으로 다음 월 전체 데이터를 Open 상태로 COPY]]></desc>
+			<sql><![CDATA[
+INSERT INTO AP_PERIOD
+(  
+    SYS_DIV_CD
+    , EFF_YRMON
+    , OFC_CD
+    , AR_AP_DIV_CD
+    , CLZ_STS_CD
+    , SYS_DESC
+    , RHQ_CD
+    , EAI_EVNT_DT
+    , LST_UPD_DT
+    , CRE_USR_ID
+    , CRE_DT
+    , UPD_USR_ID
+)
+SELECT  SYS_DIV_CD 
+   ,TO_CHAR(ADD_MONTHS(TO_DATE(EFF_YRMON, 'YYYYMM'), 1), 'YYYYMM') EFF_YRMON
+   ,OFC_CD 
+   ,AR_AP_DIV_CD 
+   ,'O' AS CLZ_STS_CD 
+   ,SYS_DESC 
+   ,RHQ_CD 
+   ,'' AS EAI_EVNT_DT 
+   ,SYSDATE LST_UPD_DT
+   ,@[usr_id] CRE_USR_ID 
+   ,SYSDATE CRE_DT
+   ,@[usr_id] UPD_USR_ID 
+FROM AP_PERIOD 
+WHERE EFF_YRMON = (SELECT MAX(EFF_YRMON) FROM AP_PERIOD)			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

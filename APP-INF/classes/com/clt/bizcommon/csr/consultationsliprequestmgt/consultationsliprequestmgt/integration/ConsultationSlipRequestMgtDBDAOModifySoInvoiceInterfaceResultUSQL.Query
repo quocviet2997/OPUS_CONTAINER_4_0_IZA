@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOModifySoInvoiceInterfaceResultUSQL">
+			<desc><![CDATA[ConsultationSlipRequestMgtDBDAOModifySoInvoiceInterfaceResultUSQL]]></desc>
+			<sql><![CDATA[
+UPDATE  AP_INV_HDR AIH 
+SET     AIH.IF_FLG = 'E'
+      , AIH.IF_DT = SYSDATE
+      , AIH.IF_ERR_RSN = @[if_err_rsn]
+      , AIH.APRO_FLG = 'Y'
+WHERE   AIH.CSR_NO = @[csr_no]			]]></sql>
+			<params>
+				<param name="if_err_rsn" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOModifyApInvDTRBLineNoUpdate02USQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+UPDATE	AP_INV_DTRB 
+SET		LINE_NO						= @[line_no]
+WHERE	CSR_NO						= @[csr_no]
+AND		NVL(ATTR_CTNT1, 'N')		= @[attr_ctnt1]
+AND		NVL(DTRB_COA_ACCT_CD, 'N')	= @[dtrb_coa_acct_cd]
+AND		NVL(DTRB_COA_VVD_CD, 'N')	= @[dtrb_coa_vvd_cd]
+AND		SUBSTR(NVL(ATTR_CTNT11, TO_CHAR(TO_DATE(ATTR_CTNT2, 'YYYY/MM/DD HH24:MI:SS'), 'YYYYMMDD')), 1, 6)	= @[act_ym]
+AND		NVL(ACT_VVD_CD, 'N')	= NVL(@[act_vvd_cd],'N')
+AND		NVL(ATTR_CTNT7, 'N')	= NVL(@[attr_ctnt7],'N')
+AND		NVL(ATTR_CTNT10, 'N')	= NVL(@[attr_ctnt10],'N')
+AND		NVL(ATTR_CTNT13, 'N')	= NVL(@[attr_ctnt13],'N')			]]></sql>
+			<params>
+				<param name="line_no" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="attr_ctnt1" type="12" value="" out="N"/>
+				<param name="dtrb_coa_acct_cd" type="12" value="" out="N"/>
+				<param name="dtrb_coa_vvd_cd" type="12" value="" out="N"/>
+				<param name="act_ym" type="12" value="" out="N"/>
+				<param name="act_vvd_cd" type="12" value="" out="N"/>
+				<param name="attr_ctnt7" type="12" value="" out="N"/>
+				<param name="attr_ctnt10" type="12" value="" out="N"/>
+				<param name="attr_ctnt13" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

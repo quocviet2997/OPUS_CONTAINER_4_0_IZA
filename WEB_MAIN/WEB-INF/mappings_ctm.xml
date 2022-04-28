@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+    <!-- KyungMin Woo : 2009-04-24 start -->
+    <url-mapping url="EES_CTM_0435.do" screen="EES_CTM_0435.screen">
+        <web-action-class>com.clt.apps.eco.ctm.ctm.logicsserviceprovider.logicsserviceprovider.event.EES_CTM_0435HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0435GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.eco.ctm.ctm.logicsserviceprovider.logicsserviceprovider.event.EES_CTM_0435HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0400.do" screen="EES_CTM_0400.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EES_CTM_0400HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0400GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EES_CTM_0400HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EesCtm0400Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KyungMin Woo : 2009-04-24 end -->
+
+    <!-- KyungMin Woo : 2009-04-27 start -->
+    <url-mapping url="EES_CTM_0423.do" screen="EES_CTM_0423.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.restuffingmgt.restuffingcontainerregistration.event.EES_CTM_0423HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0423GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.restuffingmgt.restuffingcontainerregistration.event.EES_CTM_0423HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.restuffingmgt.restuffingcontainerregistration.event.EesCtm0423Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.restuffingmgt.RestuffingMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KyungMin Woo : 2009-04-27 end -->
+
+    <!-- KyungMin Woo : 2009-04-29 start -->
+    <url-mapping url="EES_CTM_0412.do" screen="EES_CTM_0412.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0412HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0412GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0412HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0412Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KyungMin Woo : 2009-04-29 end -->
+
+    <!-- KyungMin Woo : 2009-05-04 start -->
+    <url-mapping url="CTMCommonGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.ctmcommon.containermovementvalidation.event.CTM_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.ctmcommon.containermovementvalidation.event.CtmComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.ctmcommon.CTMCommonSC</service-action-class>
+    </event-mapping>
+    <!-- KyungMin Woo : 2009-05-04 end -->
+
+    <!-- KIM, Sang-Soo : 2009-04-30 start -->
+    <url-mapping url="EES_CTM_0421.do" screen="EES_CTM_0421.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EES_CTM_0421HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0421GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EES_CTM_0421HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EesCtm0421Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2009-04-30 end -->
+
+    <!-- KIM, Sang-Soo : 2009-05-04 start -->
+    <url-mapping url="EES_CTM_0428.do" screen="EES_CTM_0428.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EES_CTM_0428HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0428GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EES_CTM_0428HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EesCtm0428Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.EmptyReleaseRedeliveryOrderMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2009-05-04 end -->
+
+    <!-- KIM, Sang-Soo : 2009-05-11 start -->
+    <url-mapping url="EES_CTM_0419.do" screen="EES_CTM_0419.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0419HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0419GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0419HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0419Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2009-05-11 end -->
+
+    <!-- KIM, Sang-Soo : 2009-05-11 start -->
+    <url-mapping url="EES_CTM_0415.do" screen="EES_CTM_0415.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0415HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0415_POP.do" screen="EES_CTM_0415_POP.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0415HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0415GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0415HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0415Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2009-05-11 end -->
+
+    <!-- Woo, Kyung-Min : 2009-05-12 start -->
+    <url-mapping url="EES_CTM_0430.do" screen="EES_CTM_0430.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0430HTMLAction</web-action-class>
+    </url-mapping>
+
+   <url-mapping url="EES_CTM_0430_POP.do" screen="EES_CTM_0430_POP.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0430HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CTM_0430GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0430HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EesCtm0430Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2009-05-11 end -->
+
+    <!-- KIM, Sang-Soo : 2009-05-14 start -->
+    <url-mapping url="EES_CTM_0405.do" screen="EES_CTM_0405.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0405HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0405GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0405HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0405Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2009-05-14 end -->
+
+    <!-- KIM, Sang-Soo : 2009-05-19 start -->
+    <url-mapping url="EES_CTM_0408.do" screen="EES_CTM_0408.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0408HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0408_POP.do" screen="EES_CTM_0408_POP.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0408HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CTM_0408GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0408HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0408Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2009-05-19 end -->
+    
+    <!-- Park chae heung : 2015-07-31 start -->
+    <url-mapping url="EES_CTM_0470.do" screen="EES_CTM_0470.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0470HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0470_POP.do" screen="EES_CTM_0470_POP.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0470HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CTM_0470GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0470HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0470Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2009-05-19 end -->    
+    
+    <!-- Hwang Mi-Yun : 2015-08-20 start -->
+    <url-mapping url="EES_CTM_0471.do" screen="EES_CTM_0471.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0471HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0471_POP.do" screen="EES_CTM_0471_POP.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0471HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CTM_0471GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0471HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0471Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Hwang Mi-Yun : 2015-08-20 end -->
+    
+    <!-- Hwang Mi-Yun : 2016-01-15 start -->
+    <url-mapping url="EES_CTM_0472.do" screen="EES_CTM_0472.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0472HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0472_POP.do" screen="EES_CTM_0472_POP.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0472HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CTM_0472GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0472HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0472Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Hwang Mi-Yun : 2016-01-15 end -->
+    
+    <!-- Hwang Mi-Yun : 2016-01-15 start -->
+    <url-mapping url="EES_CTM_0473.do" screen="EES_CTM_0473.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0473HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0473_POP.do" screen="EES_CTM_0473_POP.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0473HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CTM_0473GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0473HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0473Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Hwang Mi-Yun : 2016-01-15 end -->
+
+    <!-- KIM, Sang-Soo : 2009-05-25 start -->
+    <url-mapping url="EES_CTM_0409.do" screen="EES_CTM_0409.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0409HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0409_POP.do" screen="EES_CTM_0409_POP.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0409HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0409GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0409HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0409Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2009-05-25 end -->
+
+    <!-- Woo, Kyung-Min : 2009-06-02 start -->
+    <url-mapping url="EES_CTM_0440.do" screen="EES_CTM_0440.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0440HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0440GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0440HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EesCtm0440Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Woo, Kyung-Min : 2009-06-02 end -->
+
+    <!-- KIM, Sang-Soo : 2009-06-08 start -->
+    <url-mapping url="EES_CTM_0404.do" screen="EES_CTM_0404.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0404HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0404_POP.do" screen="EES_CTM_0404_POP.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0404HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0404GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0404HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EesCtm0404Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2009-06-08 end -->
+
+    <!-- Woo, Kyung-Min : 2009-06-08 start -->
+    <url-mapping url="EES_CTM_0406.do" screen="EES_CTM_0406.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0406HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0406GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0406HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EesCtm0406Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Woo, Kyung-Min : 2009-06-08 end -->
+
+    <!-- KIM, Sang-Soo : 2009-06-20 start -->
+    <url-mapping url="EES_CTM_0442.do" screen="EES_CTM_0442.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0442HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0442GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0442HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EesCtm0442Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2009-06-20 end -->
+
+    <!-- KIM, Sang-Soo : 2009-06-26 start -->
+    <url-mapping url="EES_CTM_0432.do" screen="EES_CTM_0432.screen">
+    </url-mapping>
+    <!-- KIM, Sang-Soo : 2009-06-26 end -->
+
+    <!-- Kyung Min Woo : 2009-07-12 start -->
+    <url-mapping url="EES_CTM_0458.do" screen="EES_CTM_0458.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0458HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0458GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0458HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EesCtm0458Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kyung Min Woo : 2009-07-12 end -->
+
+    <!-- Kyung Min Woo : 2009-07-12 start -->
+    <url-mapping url="EES_CTM_0433.do" screen="EES_CTM_0433.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0433HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0433GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0433HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EesCtm0433Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kyung Min Woo : 2009-07-12 end -->
+
+    <!-- KIM, Sang-Soo : 2009-07-20 (GATENEW Test) start -->
+    <url-mapping url="EES_CTM_0000.do" screen="EES_CTM_0000.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0000HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0000GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0000HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EesCtm0000Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2009-07-20 (GATENEW Test) end -->
+
+    <!-- KIM, Sang Soo : 2009-07-27 start -->
+    <url-mapping url="EES_CTM_0426.do" screen="EES_CTM_0426.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EES_CTM_0426HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0426GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EES_CTM_0426HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EesCtm0426Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.EmptyReleaseRedeliveryOrderMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang Soo : 2009-07-27 end -->
+
+    <!-- Kyung Min Woo : 2009-08-04 start -->
+    <url-mapping url="EES_CTM_0422.do" screen="EES_CTM_0422.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.restuffingmgt.restuffingcontainerregistration.event.EES_CTM_0422HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0422GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.restuffingmgt.restuffingcontainerregistration.event.EES_CTM_0422HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.restuffingmgt.restuffingcontainerregistration.event.EesCtm0422Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.restuffingmgt.RestuffingMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kyung Min Woo : 2009-08-04 end -->
+
+    <!-- Kyung Min Woo : 2009-08-04 start -->
+    <url-mapping url="EES_CTM_0445.do" screen="EES_CTM_0445.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.restuffingmgt.restuffingcontainerregistration.event.EES_CTM_0445HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0445GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.restuffingmgt.restuffingcontainerregistration.event.EES_CTM_0445HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.restuffingmgt.restuffingcontainerregistration.event.EesCtm0445Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.restuffingmgt.RestuffingMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kyung Min Woo : 2009-08-04 end -->
+
+    <!-- KIM, Sang Soo : 2009-08-16 start -->
+    <url-mapping url="EES_CTM_0451.do" screen="EES_CTM_0451.screen">
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0451_RD.do" screen="EES_CTM_0451_RD.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EES_CTM_0451RDHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EesCtm0451RdEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.EmptyReleaseRedeliveryOrderMgtRDSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang Soo : 2009-08-16 end -->
+
+    <!-- KIM, Sang Soo : 2010-04-22 start -->
+    <url-mapping url="EES_CTM_0451_PRV.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EES_CTM_0451HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EesCtm0451Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.EmptyReleaseRedeliveryOrderMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang Soo : 2010-04-22 end -->
+
+	<!-- KIM, Sang Soo : 2009-08-18 start -->
+    <url-mapping url="EES_CTM_0429.do" screen="EES_CTM_0429.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EES_CTM_0429HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0429GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EES_CTM_0429HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EesCtm0429Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.EmptyReleaseRedeliveryOrderMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang Soo : 2009-08-18 end -->
+
+    <!-- Kyung Min Woo : 2009-08-17 start -->
+    <url-mapping url="EES_CTM_0411.do" screen="EES_CTM_0411.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0411HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CTM_0411_POP.do" screen="EES_CTM_0411_POP.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0411HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0411GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0411HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0411Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kyung Min Woo : 2009-08-17 end -->
+
+    <!-- Kyung Min Woo : 2009-08-18 start -->
+    <url-mapping url="EES_CTM_0443.do" screen="EES_CTM_0443.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0443HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0443GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0443HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0443Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kyung Min Woo : 2009-08-18 end -->
+
+    <!-- Kyung Min Woo : 2009-08-18 start -->
+    <url-mapping url="EES_CTM_0413.do" screen="EES_CTM_0413.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0413HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0413GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0413HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0413_POP.do" screen="EES_CTM_0413_POP.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0413HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0413Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kyung Min Woo : 2009-08-18 end -->
+
+    <!-- Kyung Min Woo : 2009-08-27 start -->
+    <url-mapping url="EES_CTM_0418.do" screen="EES_CTM_0418.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0418HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0418GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0418HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0418Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kyung Min Woo : 2009-08-27 end -->
+
+    <!-- KIM, Sang Soo : 2009-08-28 start -->
+    <url-mapping url="EES_CTM_0417.do" screen="EES_CTM_0417.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0417HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0417GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0417HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0417Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang Soo : 2009-08-28 end -->
+
+    <!-- KIM, Sang Soo : 2009-09-03 start -->
+    <url-mapping url="EES_CTM_0420.do" screen="EES_CTM_0420.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0420HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0420GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0420HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0420Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang Soo : 2009-09-03 end -->
+
+    <!-- KIM, Sang Soo : 2009-09-09 start -->
+    <url-mapping url="EES_CTM_0456.do" screen="EES_CTM_0456.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0456HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0456GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0456HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EesCtm0456Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang Soo : 2009-09-09 end -->
+
+    <!-- Woo. Kyung Min : 2009-09-09 start -->
+    <url-mapping url="EES_CTM_0459.do" screen="EES_CTM_0459.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0459HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_CTM_0459_POP.do" screen="EES_CTM_0459_POP.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0459HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0459GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0459HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0459Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Woo. Kyung Min : 2009-09-09 end -->
+
+    <!-- KIM, Sang-Soo : 2009-09-15 start -->
+    <url-mapping url="EES_CTM_0414.do" screen="EES_CTM_0414.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0414HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0414GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0414HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EesCtm0414Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2009-09-15 end -->
+
+    <!-- Kyung Min Woo : 2009-09-25 start -->
+    <url-mapping url="EES_CTM_0460.do" screen="EES_CTM_0460.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0460HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0460GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EES_CTM_0460HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementfinder.event.EesCtm0460Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kyung Min Woo : 2009-09-25 end -->
+
+    <!-- Kyung Min Woo : 2009-09-25 start -->
+    <url-mapping url="EES_CTM_0461.do" screen="EES_CTM_0461.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EES_CTM_0461HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0461GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EES_CTM_0461HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EesCtm0461Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kyung Min Woo : 2009-09-25 end -->
+
+    <!-- Kyung Min Woo : 2009-09-25 start -->
+    <url-mapping url="EES_CTM_0462.do" screen="EES_CTM_0462.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0462HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0462GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0462HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EesCtm0462Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kyung Min Woo : 2009-09-25 end -->
+
+	<!-- Kyoung Wan Cho : 2012-04-18 start -->
+    <url-mapping url="EES_CTM_1001.do" screen="EES_CTM_1001.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EES_CTM_1001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_1001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EES_CTM_1001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EesCtm1001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kyoung Wan Cho : 2012-04-18 end -->
+
+	<!-- Kyoung Wan Cho : 2012-04-19 start -->
+    <url-mapping url="EES_CTM_1002.do" screen="EES_CTM_1002.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EES_CTM_1002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_1002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EES_CTM_1002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmasterdatamgt.event.EesCtm1002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kyoung Wan Cho : 2012-04-19 end -->
+           <!-- Kyung Min Woo : 2009-07-20 start -->
+    <url-mapping url="EES_CTM_0407.do" screen="EES_CTM_0407.screen">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0407HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CTM_0407GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EES_CTM_0407HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.containermovementmgt.event.EesCtm0407Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.equipmentmovementmgt.EquipmentMovementMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kyung Min Woo : 2009-07-20 end -->
+
+
+	<url-mapping url="EES_CTM_0452.do" screen="EES_CTM_0452.screen" >
+        <web-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EES_CTM_0452HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_CTM_0452GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EES_CTM_0452HTMLAction</web-action-class>
+    </url-mapping>   
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.emptyreleaseredeliveryordermgt.event.EesCtm0452Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.ctm.emptyreleaseredeliveryordermgt.EmptyReleaseRedeliveryOrderMgtSC</service-action-class>
+    </event-mapping>
+    
+</mappings>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="StaffDAOsearchStaffListRSQL">
+			<desc><![CDATA[Select Staff list]]></desc>
+			<sql><![CDATA[
+SELECT OFC_CD,
+       USR_ID,
+       USR_NM,
+       USR_EML,
+       JB_ENG_NM
+  FROM (SELECT ROW_NUMBER() OVER (
+                 ORDER BY USR_ID ASC) NO,
+               OFC_CD,
+               USR_ID,
+               USR_NM,
+               USR_EML,
+               JB_ENG_NM
+          FROM COM_USER
+         WHERE 1 = 1
+		AND NVL(USE_FLG, 'Y') <> 'N'
+#if(${ofc_cd} != '')
+		AND OFC_CD like @[ofc_cd] || '%' 
+#end
+#if(${usr_id} != '')        
+		AND USR_ID like @[usr_id] || '%' 
+#end
+#if(${usr_nm} != '')   
+		AND (upper(USR_NM) like '%' || upper(@[usr_nm]) || '%' or USR_LOCL_NM like '%' || @[usr_nm] || '%')     
+#end
+        ) A			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="usr_nm" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalReqRouteCSQL">
+			<desc><![CDATA[Approval Route 정보를 생성한다]]></desc>
+			<sql><![CDATA[
+INSERT INTO COM_APRO_RQST_ROUT ( 	
+  APRO_RQST_NO                 	
+, APRO_RQST_SEQ              		
+, APRO_USR_ID                 
+, APRO_USR_NM             		
+, APRO_OFC_CD             		
+, APRO_OFC_NM             		
+, APRO_USR_JB_TIT_NM             		
+, CRE_USR_ID                  	
+, CRE_DT              		
+, UPD_USR_ID              	
+, DELT_FLG )      			
+  VALUES (
+  @[apro_rqst_no]
+, @[apro_rqst_seq]
+, @[apro_usr_id]
+, @[apro_usr_nm]
+, @[apro_ofc_cd]
+, @[apro_ofc_nm]
+, @[apro_usr_jb_tit_nm]
+, @[cre_usr_id]
+, sysdate
+, @[upd_usr_id]
+, 'N')  			]]></sql>
+			<params>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+				<param name="apro_rqst_seq" type="12" value="" out="N"/>
+				<param name="apro_usr_id" type="12" value="" out="N"/>
+				<param name="apro_usr_nm" type="12" value="" out="N"/>
+				<param name="apro_ofc_cd" type="12" value="" out="N"/>
+				<param name="apro_ofc_nm" type="12" value="" out="N"/>
+				<param name="apro_usr_jb_tit_nm" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

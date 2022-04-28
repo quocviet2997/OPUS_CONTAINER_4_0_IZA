@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="RoleDAOComUsrRoleCSQL">
+			<desc><![CDATA[insert com_usr_role]]></desc>
+			<sql><![CDATA[
+insert into com_usr_role (
+	usr_role_cd,
+	pgm_appl_cd,
+	pgm_sub_sys_cd,
+	usr_role_nm,
+	usr_role_desc,
+	prnt_usr_role_cd,
+	cre_usr_id,
+	cre_dt,
+	upd_usr_id,
+	upd_dt
+) values( 
+	@[usr_role_cd],
+	@[pgm_appl_cd],
+	@[pgm_sub_sys_cd],
+	@[usr_role_nm],
+	@[usr_role_desc],
+	@[prnt_usr_role_cd],
+	@[cre_usr_id],
+	sysdate,
+	@[cre_usr_id],
+	sysdate
+)			]]></sql>
+			<params>
+				<param name="usr_role_cd" type="12" value="" out="n"/>
+				<param name="pgm_appl_cd" type="12" value="" out="n"/>
+				<param name="pgm_sub_sys_cd" type="12" value="" out="n"/>
+				<param name="usr_role_nm" type="12" value="" out="n"/>
+				<param name="usr_role_desc" type="12" value="" out="n"/>
+				<param name="prnt_usr_role_cd" type="12" value="" out="n"/>
+				<param name="cre_usr_id" type="12" value="" out="n"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<!-- Choi Song Soo : 2009-06-03 start -->
+	<screen name="TPL_DOM_0063">
+		<parameter key="title" value="Booking Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0063.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0063Pop" template="templatePop">
+		<parameter key="title" value="Booking Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0063.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0063_01Pop" template="templatePop">
+		<parameter key="title" value="Booking Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0063_01Pop.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0064" template="templatePop">
+		<parameter key="title" value="Booking Correction Popup" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0064.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0066">
+		<parameter key="title" value="Booking Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0066.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0066_POP" template="templatePop">
+		<parameter key="title" value="Booking Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0066.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0076" template="templatePop">
+		<parameter key="title" value="Calendar" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/domcommon/domcodefinder/jsp/TPL_DOM_0076.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0077" template="templatePop">
+		<parameter key="title" value="Carrier Code Help Pop up" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/domcommon/domcodefinder/jsp/TPL_DOM_0077.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0081">
+		<parameter key="title" value="Commodity Code Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0081.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0082">
+		<parameter key="title" value="Commodity Code Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0082.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0083" template="templatePop">
+		<parameter key="title" value="Commodity Code Help Pop up" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0083.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0116">
+		<parameter key="title" value="Booking Cancellation" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0116.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0117" template="templatePop">
+		<parameter key="title" value="E-mail/Fax Send Pop up" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0117.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0158">
+		<parameter key="title" value="Irregular Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0158.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0184">
+		<parameter key="title" value="Booking File Import" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0184.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0206">
+		<parameter key="title" value="Link Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0206.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0207">
+		<parameter key="title" value="IRG Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0207.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0208">
+		<parameter key="title" value="IRG Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0208.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0209" template="templatePop">
+		<parameter key="title" value="Booking History (Pop up)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0209.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0227">
+		<parameter key="title" value="Fax/Email Sending History" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/arinvoicemgt/jsp/TPL_DOM_0227.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0217" template="templatePop">
+		<parameter key="title" value="Commodity Code History (Pop up)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0217.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0222" template="templatePop">
+		<parameter key="title" value="Multiple Inquiry(Pop up)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/domcommon/domcodefinder/jsp/TPL_DOM_0222.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0223" template="templatePop">
+		<parameter key="title" value="Container Movement Inquiry(Pop up)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/domcommon/domcodefinder/jsp/TPL_DOM_0223.jsp" />
+	</screen>
+
+
+
+	<screen name="TPL_DOM_0109">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/railbilling/jsp/TPL_DOM_0109.jsp" />
+	</screen>
+
+	<!-- Choi Song Soo : 2009-05-22 end -->
+
+
+
+
+	<!-- Kim Hye Seon : 2009-05-11 start -->
+	<screen name="TPL_DOM_0090">
+		<parameter key="title" value="Counter Party Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0090.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0091">
+		<parameter key="title" value="Counter Party Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0091.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0092" template="templatePop">
+		<parameter key="title" value="Counter Party Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0092.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0115">
+		<parameter key="title" value="Truck Guideline Rate Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0115.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0215" template="templatePop">
+		<parameter key="title" value="Truck Guideline Rate History (Pop up)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0215.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0187">
+		<parameter key="title" value="Truck Work Order Candidates Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0187.jsp" />
+	</screen>
+
+
+	<screen name="TPL_DOM_0189" template="templatePop">
+		<parameter key="title" value="Truck Work Order Maintenance (Door) (Pop up)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0189.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0191" template="templatePop">
+		<parameter key="title" value="Truck Work Order Maintenance (X-Town) (Pop up)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0191.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0194" template="templatePop">
+		<parameter key="title" value="Truck Work Order Preview (Pop up)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0194.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0198">
+		<parameter key="title" value="Truck Work Order Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0198.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0198_POP" template="templatePop">
+		<parameter key="title" value="Truck Work Order Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0198.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0165">
+		<parameter key="title" value="Pick up No Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/pickupnotice/jsp/TPL_DOM_0165.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0162">
+		<parameter key="title" value="Pick up No Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/pickupnotice/jsp/TPL_DOM_0162.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0164" template="templatePop">
+		<parameter key="title" value="Pick up Notice Preview (Pop up)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/pickupnotice/jsp/TPL_DOM_0164.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0035" template="templatePop">
+		<parameter key="title" value="PU Notice Preiview" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/pickupnotice/jsp/TPL_DOM_0035.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0007" template="templatePop">
+		<parameter key="title" value="Booking Notice Preview(HRP)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0007.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0009" template="templatePop">
+		<parameter key="title" value="Booking Notice Preview(TRP)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0009.jsp" />
+	</screen>
+
+
+	<screen name="TPL_DOM_0043" template="templatePop">
+		<parameter key="title" value="Work Order_XTowm(W/O Print)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0043.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0044" template="templatePop">
+		<parameter key="title" value="Work Order_Door(W/O Print)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0044.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0026" template="templatePop">
+		<parameter key="title" value="Detention Invoice Print" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/detentionmgt/detentioninvoicecreation/jsp/TPL_DOM_0026.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0027" template="templatePop">
+		<parameter key="title" value="Invoice(Print)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/arinvoicemgt/jsp/TPL_DOM_0027.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0032" template="templatePop">
+		<parameter key="title" value="Invoice Summary" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/armgt/artransactionmgt/jsp/TPL_DOM_0032.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0028" template="templatePop">
+		<parameter key="title" value="A/R Invoice Inquiry(Freight)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/armgt/artransactionmgt/jsp/TPL_DOM_0028.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0006" template="templatePop">
+		<parameter key="title" value="Booking Inquiry(Print)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0006.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0012" template="templatePop">
+		<parameter key="title" value="Customer Performance Report(Summary)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0012.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0015" template="templatePop">
+		<parameter key="title" value="Customer Performance Report(Detail)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0015.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0023" template="templatePop">
+		<parameter key="title" value="HJS Billing Report(Summary)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0023.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0022" template="templatePop">
+		<parameter key="title" value="HJS Billing Report(Detail)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0022.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0011" template="templatePop">
+		<parameter key="title" value="Booking Report(Summary)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0011.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0014">
+		<parameter key="title" value="Booking Report(Detail)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0014.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0036" template="templatePop">
+		<parameter key="title" value="Rail Operation Report(by Location)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0036.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0037" template="templatePop">
+		<parameter key="title" value="Rail Operation Report(by Rail Road)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0037.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0003">
+		<parameter key="title" value="Aging Inquiry(Summary)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0003.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0004">
+		<parameter key="title" value="Aging Inquiry(Detail)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0004.jsp" />
+	</screen>
+	<!-- Kim Hye Seon : 2009-05-11 end -->
+
+
+
+
+
+	<!-- Choi Eui Youb : 2009-05-19 start -->
+	<screen name="TPL_DOM_0202">
+		<parameter key="title" value="Detention Rate Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0202.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0118">
+		<parameter key="title" value="DetentionRateCreate" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0118.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0210" template="templatePop">
+		<parameter key="title" value="Detention Rate History" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0210.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0171" template="templatePop">
+		<parameter key="title" value="Rail Movement(CLM) Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/domcommon/domcodefinder/jsp/TPL_DOM_0171.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0172" template="templatePop">
+		<parameter key="title" value="Refrence No Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/guaranteecreation/jsp/TPL_DOM_0172.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0136">
+		<parameter key="title" value="Guarantee Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/guaranteecreation/jsp/TPL_DOM_0136.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0135" template="templatePop">
+		<parameter key="title" value="Guarantee Correction" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/guaranteecreation/jsp/TPL_DOM_0135.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0138">
+		<parameter key="title" value="Guarantee Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/guaranteecreation/jsp/TPL_DOM_0138.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0138Pop" template="templatePop">
+		<parameter key="title" value="Guarantee Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/guaranteecreation/jsp/TPL_DOM_0138.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0137" template="templatePop">
+		<parameter key="title" value="Guarantee Information" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/guaranteecreation/jsp/TPL_DOM_0137.jsp" />
+	</screen>
+
+
+	<screen name="TPL_DOM_0154" template="templatePop">
+		<parameter key="title" value="Irregular Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/irregularreporting/jsp/TPL_DOM_0154.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0156">
+		<parameter key="title" value="Irregular Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/irregularreporting/jsp/TPL_DOM_0156.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0047" template="templatePop">
+		<parameter key="title" value="3rd party Invoice Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/thirdpartyinvoice/jsp/TPL_DOM_0047.jsp" />
+	</screen>
+
+
+	<screen name="TPL_DOM_0048" template="templatePop">
+		<parameter key="title" value="3rd Party Invoice History" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/thirdpartyinvoice/jsp/TPL_DOM_0048.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0050" template="templatePop">
+		<parameter key="title" value="3rd Party Invoice Information" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/thirdpartyinvoice/jsp/TPL_DOM_0050.jsp" />
+	</screen>
+
+
+	<screen name="TPL_DOM_0051">
+		<parameter key="title" value="3rd Party Invoice Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/thirdpartyinvoice/jsp/TPL_DOM_0051.jsp" />
+	</screen>
+
+
+	<screen name="TPL_DOM_0095">
+		<parameter key="title" value="A/R Transaction Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/armgt/artransactionmgt/jsp/TPL_DOM_0095.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0095_POP" template="templatePop">
+		<parameter key="title" value="A/R Transaction Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/armgt/artransactionmgt/jsp/TPL_DOM_0095.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0005">
+		<parameter key="title" value="A/R Transaction Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/domcommon/domcodefinder/jsp/TPL_DOM_0005.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0025" template="templatePop">
+		<parameter key="title" value="Invoice-3rd Party(storage)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/thirdpartyinvoice/jsp/TPL_DOM_0025.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0045" template="templatePop">
+		<parameter key="title" value="Invoice-3rd Party(flip)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/thirdpartyinvoice/jsp/TPL_DOM_0045.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0046" template="templatePop">
+		<parameter key="title" value="Invoice-3rd Party(Other)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/thirdpartyinvoice/jsp/TPL_DOM_0046.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0097">
+		<parameter key="title" value="A/R Transaction Inpuiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/armgt/artransactionmgt/jsp/TPL_DOM_0097.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0097_POP" template="templatePop">
+		<parameter key="title" value="A/R Transaction Inpuiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/armgt/artransactionmgt/jsp/TPL_DOM_0097.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0096" template="templatePop">
+		<parameter key="title" value="A/R Transaction Information" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/armgt/artransactionmgt/jsp/TPL_DOM_0096.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0125">
+		<parameter key="title" value="A/R Invoice Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/armgt/artransactionmgt/jsp/TPL_DOM_0125.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0019" template="templatePop">
+		<parameter key="title" value="Guarantee Letter" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/guaranteecreation/jsp/TPL_DOM_0019.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0033" template="templatePop">
+		<parameter key="title" value="Irregular Report" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/irregularreporting/jsp/TPL_DOM_0033.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0084">
+		<parameter key="title" value="Container List Inquiry for Detention Invoice Creation" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/detentionmgt/detentioninvoicecreation/jsp/TPL_DOM_0084.jsp" />
+	</screen>
+
+
+	<screen name="TPL_DOM_0101" template="templatePop">
+		<parameter key="title" value="Detention Invoice Matntenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/detentionmgt/detentioninvoicecreation/jsp/TPL_DOM_0101.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0105" template="templatePop">
+		<parameter key="title" value="Detention Invoice Preview" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/detentionmgt/detentioninvoicecreation/jsp/TPL_DOM_0105.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0040" template="templatePop">
+		<parameter key="title" value="Transaction Entry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/armgt/artransactionmgt/jsp/TPL_DOM_0040.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0102" template="templatePop">
+		<parameter key="title" value="Detention Invoice Information" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/detentionmgt/detentioninvoicecreation/jsp/TPL_DOM_0102.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0103">
+		<parameter key="title" value="Detention Invoice Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/detentionmgt/detentioninvoicecreation/jsp/TPL_DOM_0103.jsp" />
+	</screen>
+
+
+	<screen name="TPL_DOM_0104" template="templatePop">
+		<parameter key="title" value="Detention Invoice History" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/detentionmgt/detentioninvoicecreation/jsp/TPL_DOM_0104.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0120" template="templatePop">
+		<parameter key="title" value="F/T and Gate In/Out Date Adjust History" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/detentionmgt/detentioninvoicecreation/jsp/TPL_DOM_0120.jsp" />
+	</screen>
+
+
+	<screen name="TPL_DOM_0224" template="templatePop">
+		<parameter key="title" value="File Attach" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/domcommon/domfileattach/jsp/TPL_DOM_0224.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0060">
+		<parameter key="title" value="Aging Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0060.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0221">
+		<parameter key="title" value="Detention Invoice Interface(HJS)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/detentionmgt/detentioninvoicecreation/jsp/TPL_DOM_0221.jsp" />
+	</screen>
+
+	<!-- Choi Eui Youb : 2009-06-03 end -->
+
+
+
+
+	<!-- Lee Shin Hae : 2009-06-05 start -->
+	<screen name="TPL_DOM_0199">
+		<parameter key="title" value="Truck Guideline Rate Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0199.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0130">
+		<parameter key="title" value="General Rate Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0130.jsp" />
+	</screen>
+
+
+	<screen name="TPL_DOM_0131">
+		<parameter key="title" value="Grneral Rate Maintenancd" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0131.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0213" template="templatePop">
+		<parameter key="title" value="General Rate History (Pop up)" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0213.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0143">
+		<parameter key="title" value="HJS Railage Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0143.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0144">
+		<parameter key="title" value="HJS Railage Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0144.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0216" template="templatePop">
+		<parameter key="title" value="HJS Railage History" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0216.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0175">
+		<parameter key="title" value="Special Rate Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0175.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0176">
+		<parameter key="title" value="Special Rate Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0176.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0220" template="templatePop">
+		<parameter key="title" value="Special Rate Selection" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0220.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0214" template="templatePop">
+		<parameter key="title" value="Special Rate History" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0214.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_176">
+		<parameter key="title" value="Special Rate Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0176.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0124" template="templatePop">
+		<parameter key="title" value="Rate Detail Popup" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/arinvoicemgt/jsp/TPL_DOM_0124.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0122" template="templatePop">
+		<parameter key="title" value="Invoice History" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/arinvoicemgt/jsp/TPL_DOM_0122.jsp" />
+	</screen>
+	<!-- Lee Shin Hae : 2009-06-24 end -->
+
+	<!-- Lee Shin Hae : 2009-07-29 start -->
+	<screen name="TPL_DOM_0123">
+		<parameter key="title" value="Invoice maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/arinvoicemgt/jsp/TPL_DOM_0123.jsp" />
+	</screen>
+	<!-- Lee Shin Hae : 2009-07-29 end -->
+
+	<!-- Lee Shin Hae : 2009-07-31 start <screen name="TPL_DOM_0124" template="templatePop"> <parameter key="title" value="Rate Detail Popup" direct="true"/> <parameter key="body" value="apps/opus/tpl/dom/ordermgt/arinvoicemgt/jsp/TPL_DOM_0124.jsp"/> 
+		</screen> Lee Shin Hae : 2009-07-31 end -->
+
+	<!-- Lee Shin Hae : 2009-08-10 start <screen name="TPL_DOM_0122"> <parameter key="title" value="Invoice History" direct="true"/> <parameter key="body" value="apps/opus/tpl/dom/ordermgt/arinvoicemgt/jsp/TPL_DOM_0122.jsp"/> 
+		</screen> Lee Shin Hae : 2009-08-10 end -->
+
+	<!-- Lee Shin Hae : 2009-08-18 start -->
+	<screen name="TPL_DOM_0219">
+		<parameter key="title" value="(Freight) Invoice Interface" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/arinvoicemgt/jsp/TPL_DOM_0219.jsp" />
+	</screen>
+	<!-- Lee Shin Hae : 2009-08-18 end -->
+
+	<!-- Lee Shin Hae : 2009-08-18 start -->
+	<screen name="TPL_DOM_0132">
+		<parameter key="title" value="Guarantee Interface" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/guaranteecreation/jsp/TPL_DOM_0132.jsp" />
+	</screen>
+	<!-- Lee Shin Hae : 2009-08-18 end -->
+
+	<!-- Lee Shin Hae : 2009-08-19 start -->
+	<screen name="TPL_DOM_0052">
+		<parameter key="title" value="3 Party Invoice Interface" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/guaranteemgt/thirdpartyinvoice/jsp/TPL_DOM_0052.jsp" />
+	</screen>
+	<!-- Lee Shin Hae : 2009-08-19 end -->
+
+	<!-- Lee Shin Hae : 2009-08-19 start -->
+	<screen name="TPL_DOM_0055">
+		<parameter key="title" value="Truck W/O Interface" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0055.jsp" />
+	</screen>
+	<!-- Lee Shin Hae : 2009-08-19 end -->
+
+	<!-- Lee Shin Hae : 2009-08-26 start -->
+	<screen name="TPL_DOM_0093">
+		<parameter key="title" value="Booking Report" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0093.jsp" />
+	</screen>
+	<!-- Lee Shin Hae : 2009-08-26 end -->
+
+	<!-- Lee Shin Hae : 2009-08-27 start -->
+	<screen name="TPL_DOM_0094" template="templatePop">
+		<parameter key="title" value="Booking Report Datail" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0094.jsp" />
+	</screen>
+	<!-- Lee Shin Hae : 2009-08-27 end -->
+
+
+	<!-- Jang Chang Su : 2009-09-14 start -->
+	<screen name="TPL_DOM_0129">
+		<parameter key="title" value="Calendar" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0129.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0161">
+		<parameter key="title" value="Other Charge Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/ratemasterdata/jsp/TPL_DOM_0161.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0098">
+		<parameter key="title" value="Customer Performance Report" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0098.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0099" template="templatePop">
+		<parameter key="title" value="Customer Performance Report Detail" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0099.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0141">
+		<parameter key="title" value="HJS Billing Report" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0141.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0142" template="templatePop">
+		<parameter key="title" value="HJS Billing Report Detail" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0142.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0173" template="templatePop">
+		<parameter key="title" value="Report Format Save" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0173.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0113">
+		<parameter key="title" value="Rail Operation Report" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0113.jsp" />
+	</screen>
+
+
+	<!-- Jang Chang Su : 2009-09-22 end -->
+	<!-- Lee Shin Hae : 2009-10-14 start -->
+	<screen name="TPL_DOM_0201">
+		<parameter key="title" value="Dwell Report" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0201.jsp" />
+	</screen>
+	<!-- Lee Shin Hae : 2009-10-14 end -->
+	<!-- anh.ta ADD -->
+	<screen name="TPL_DOM_0226" template="templatePop">
+		<parameter key="title" value="HanJinPI" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/detentionmgt/detentioninvoicecreation/jsp/TPL_DOM_0226.jsp" />
+	</screen>
+	<!-- anh.ta END -->
+	<!-- Hong Seong Pil : 2016-06-21 start -->
+	<screen name="TPL_DOM_0106">
+		<parameter key="title" value="Detention Invoice OTS Inquiry - Summary" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/detentionmgt/detentioninvoicecreation/jsp/TPL_DOM_0106.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0107" template="templatePop">
+		<parameter key="title" value="Detention Invoice OTS Inquiry - Detail" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/detentionmgt/detentioninvoicecreation/jsp/TPL_DOM_0107.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0108" template="templatePop">
+		<parameter key="title" value="Detention Invoice OTS Inquiry - Report" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/detentionmgt/detentioninvoicecreation/jsp/TPL_DOM_0108.jsp" />
+	</screen>
+
+	<!-- Hong Seong Pil : 2016-06-21 end -->
+
+	<screen name="TPL_DOM_0200">
+		<parameter key="title" value="Dangerous Cargo Application" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0200.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0200_POP" template="templatePop">
+		<parameter key="title" value="Dangerous Cargo Application" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0200.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0230">
+		<parameter key="title" value="Zip Code Creation" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0230.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0230_POP" template="templatePop">
+		<parameter key="title" value="Zip Code Creation" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0230.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0232" template="templatePop">
+		<parameter key="title" value="Invoice Remark Creation" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0232.jsp" />
+	</screen>
+	<!-- USA Rail Invoice Registration And Confirm -->
+	<screen name="TPL_DOM_0056_POP" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/railinvoiceaudit/jsp/TPL_DOM_0056.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0056">
+		<parameter key="title" value="Rail Billing Audit &amp; Confirm" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/railinvoiceaudit/jsp/TPL_DOM_0056.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0056GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/railinvoiceaudit/jsp/TPL_DOM_0056GS.jsp" />
+	</screen>
+	<!-- USA Rail Invoice Registration And Confirm -->
+	<!-- Truck Audit ==> 0056 -->
+	<screen name="TPL_DOM_0058">
+		<parameter key="title" value="Truck W/O Audit &amp; Confirm" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0058.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0058_POP" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0058.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0059">
+		<parameter key="title" value="Truck W/O Invoice Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0059.jsp" />
+	</screen>
+	<!-- Truck Audit ==> 0056 -->
+	<!-- Other SO Creation GRID 1 -->
+	<screen name="TPL_DOM_0969" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/railinvoiceaudit/jsp/TPL_DOM_0969.jsp" />
+	</screen>
+	<!-- Other SO Creation GRID 1 -->
+	<!-- USA Rail Invoice File import and File Upload popup -->
+	<screen name="TPL_DOM_0923" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/railinvoiceaudit/jsp/TPL_DOM_0923.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0923GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/railinvoiceaudit/jsp/TPL_DOM_0923GS.jsp" />
+	</screen>
+	<!-- USA Rail Invoice File import and File Upload popup -->
+	<!-- USA Rail Container Payment History Popup -->
+	<screen name="TPL_DOM_0929" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/railinvoiceaudit/jsp/TPL_DOM_0929.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0929GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/railinvoiceaudit/jsp/TPL_DOM_0929GS.jsp" />
+	</screen>
+	<!-- USA Rail Container Payment History Popup -->
+	<!-- Invoice Inquiry -->
+	<screen name="TPL_DOM_0057">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/railinvoiceinquirycorrection/jsp/TPL_DOM_0057.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0057GS" template="templateIBSheet">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/railinvoiceinquirycorrection/jsp/TPL_DOM_0057GS.jsp" />
+	</screen>
+	<!-- Invoice Inquiry -->
+	<!-- Multiple Inquiry -->
+	<screen name="TPL_DOM_0906" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/codemanage/multipleinquiry/jsp/TPL_DOM_0906.jsp" />
+	</screen>
+	<!-- Multiple Inquiry GRID 1 -->
+	<screen name="TPL_DOM_0906GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/tpl/dom/codemanage/multipleinquiry/jsp/TPL_DOM_0906GS.jsp" />
+	</screen>
+	<!-- Multiple Inquiry POPUP -->
+	<screen name="TPL_DOM_0906Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/codemanage/multipleinquiry/jsp/TPL_DOM_0906.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0757" template="templatePop">
+		<parameter key="title" value="Special Cargo Remark" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0757.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0188" template="templatePop">
+		<parameter key="title" value="Booking Maintenance" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/ordermgt/bookingmgt/jsp/TPL_DOM_0188.jsp" />
+	</screen>
+
+	<screen name="TPL_DOM_0110" template="templatePop">
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/railbilling/jsp/TPL_DOM_0110.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0111" template="templatePop">
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/railbilling/jsp/TPL_DOM_0111.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0203" template="templatePop">
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0203.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0204" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0204.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0089" template="templatePop">
+		<parameter key="title" value="Counter Party Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0089.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0205" template="templatePop">
+		<parameter key="body" value="apps/opus/tpl/dom/transportationmgt/truckworkorder/jsp/TPL_DOM_0205.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0240">
+		<parameter key="title" value="Inbound EDI Monitoring" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/performancereport/performancereport/jsp/TPL_DOM_0240.jsp" />
+	</screen>
+	<screen name="TPL_DOM_0231">
+		<parameter key="title" value="Maximum Weight Setup" direct="true" />
+		<parameter key="body" value="apps/opus/tpl/dom/masterdatamgt/codemasterdata/jsp/TPL_DOM_0231.jsp" />
+	</screen>
+</screen-definitions>

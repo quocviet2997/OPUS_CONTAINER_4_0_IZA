@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserMappingDAOSearchComUsrRoleMtchHisRSQL">
+			<desc><![CDATA[DESC Enter..]]></desc>
+			<sql><![CDATA[
+SELECT A.USR_ROLE_CD,
+       TO_CHAR(A.EFF_DT, 'YYYY-MM-DD HH24:MI:SS') EFF_DT,
+       DECODE(A.EXP_DT, TO_DATE('9999-12-31', 'YYYY-MM-DD'), NULL, TO_CHAR(A.EXP_DT, 'YYYY-MM-DD HH24:MI:SS')) EXP_DT,
+       A.UPD_USR_ID,
+       (SELECT B.USR_ROLE_NM
+          FROM COM_USR_ROLE B
+         WHERE B.USR_ROLE_CD = A.USR_ROLE_CD) USR_ROLE_NM
+  FROM COM_USR_ROLE_MTCH_HIS A
+ WHERE A.USR_ID = @[usr_id]
+ORDER BY A.USR_ROLE_CD, A.USR_ROLE_HIS_SEQ			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

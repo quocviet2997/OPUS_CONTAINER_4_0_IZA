@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCancelCSR02USQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+   UPDATE AP_INV_HDR A
+  SET A.AFT_ACT_FLG = @[aft_act_flg]
+  WHERE A.CSR_NO = @[csr_no]			]]></sql>
+			<params>
+				<param name="aft_act_flg" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

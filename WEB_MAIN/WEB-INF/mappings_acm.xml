@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+    <!-- KIM, Sang-Soo : 2012-03-05 start -->
+    <url-mapping url="ACMCommonGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.esm.acm.acmcommon.acmcommon.event.ACM_COMMON_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmcommon.acmcommon.event.AcmCommonEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmcommon.ACMCommonSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ESM_ACM_0007.do" screen="ESM_ACM_0007.screen">
+        <web-action-class>com.clt.apps.opus.esm.acm.acmmaster.acmchinaofficeinfo.event.ESM_ACM_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.esm.acm.acmmaster.acmchinaofficeinfo.event.ESM_ACM_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmmaster.acmchinaofficeinfo.event.EsmAcm0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmmaster.ACMMasterSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-03-05 end -->
+
+    <!-- KIM, Sang-Soo : 2012-03-13 start -->
+    <url-mapping url="ESM_ACM_0005.do" screen="ESM_ACM_0005.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmmaster.acmchinaofficeinfo.event.ESM_ACM_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmmaster.acmchinaofficeinfo.event.ESM_ACM_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmmaster.acmchinaofficeinfo.event.EsmAcm0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmmaster.ACMMasterSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-03-13 end -->
+
+    <!-- KIM, Sang-Soo : 2012-03-14 start -->
+    <url-mapping url="ESM_ACM_0003.do" screen="ESM_ACM_0003.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.ESM_ACM_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.ESM_ACM_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.EsmAcm0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmsetup.ACMSetupSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-03-14 end -->
+
+    <!-- KIM, Sang-Soo : 2012-03-16 start -->
+    <url-mapping url="ESM_ACM_0002.do" screen="ESM_ACM_0002.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.ESM_ACM_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.ESM_ACM_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.EsmAcm0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmsetup.ACMSetupSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-03-16 end -->
+
+    <!-- KIM, Sang-Soo : 2012-03-19 start -->
+    <url-mapping url="ESM_ACM_0004.do" screen="ESM_ACM_0004.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.ESM_ACM_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.ESM_ACM_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.EsmAcm0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmsetup.ACMSetupSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-03-19 end -->
+
+    <!-- KIM, Sang-Soo : 2012-03-20 start -->
+    <url-mapping url="ESM_ACM_0001.do" screen="ESM_ACM_0001.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmagreement.agncommagreement.event.ESM_ACM_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmagreement.agncommagreement.event.ESM_ACM_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmagreement.agncommagreement.event.EsmAcm0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmagreement.ACMAgreementSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-03-20 end -->
+
+    <!-- Lee Jeong Soo : 2012-03-20 start -->
+    <url-mapping url="ESM_ACM_0026.do" screen="ESM_ACM_0026.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.ESM_ACM_0026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0026GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.ESM_ACM_0026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.EsmAcm0026Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmsetup.ACMSetupSC</service-action-class>
+    </event-mapping>
+    <!-- Lee Jeong Soo : 2012-03-20 end -->
+
+    <!-- PARK, Sung-Jin : 2012-03-23 start -->
+    <url-mapping url="ESM_ACM_0102.do" screen="ESM_ACM_0102.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.ESM_ACM_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0102GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.ESM_ACM_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.EsmAcm0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmsetup.ACMSetupSC</service-action-class>
+    </event-mapping>
+    <!-- PARK, Sung-Jin : 2012-03-23 end -->
+
+    <!-- PARK, Sung-Jin : 2012-03-23 start -->
+    <url-mapping url="ESM_ACM_0103.do" screen="ESM_ACM_0103.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.ESM_ACM_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0103GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.ESM_ACM_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.EsmAcm0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmsetup.ACMSetupSC</service-action-class>
+    </event-mapping>
+    <!-- PARK, Sung-Jin : 2012-03-23 end -->
+
+    <!-- KIM, Sang-Soo : 2012-03-26 start -->
+    <url-mapping url="ESM_ACM_0006.do" screen="ESM_ACM_0006.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmrequest.agncommrequest.event.ESM_ACM_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmrequest.agncommrequest.event.ESM_ACM_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmrequest.agncommrequest.event.EsmAcm0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmrequest.ACMRequestSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-03-26 end -->
+
+    <!-- Lee, Jeong-Soo : 2012-03-26 start -->
+    <url-mapping url="ESM_ACM_0101.do" screen="ESM_ACM_0101.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmagreement.agncommagreement.event.ESM_ACM_0101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmagreement.agncommagreement.event.ESM_ACM_0101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmagreement.agncommagreement.event.EsmAcm0101Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmagreement.ACMAgreementSC</service-action-class>
+    </event-mapping>
+    <!-- Lee, Jeong-Soo : 2012-03-26 end -->
+
+    <!-- KIM, Young-Oh : 2012-04-02 start -->
+    <url-mapping url="ESM_ACM_0014.do" screen="ESM_ACM_0014.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmrequest.otrcommrequest.event.ESM_ACM_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmrequest.otrcommrequest.event.ESM_ACM_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmrequest.otrcommrequest.event.EsmAcm0014Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmrequest.ACMRequestSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Young-Oh : 2012-04-02 end -->
+
+    <!-- KIM, Sang-Soo : 2012-04-02 start -->
+    <url-mapping url="ESM_ACM_0008.do" screen="ESM_ACM_0008.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmaudit.agncommaudit.event.ESM_ACM_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmaudit.agncommaudit.event.ESM_ACM_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmaudit.agncommaudit.event.EsmAcm0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmaudit.ACMAuditSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-04-02 end -->
+
+    <!-- KIM, Young-Oh : 2012-04-04 start -->
+    <url-mapping url="ESM_ACM_0107.do" screen="ESM_ACM_0107.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmaudit.agncommaudit.event.ESM_ACM_0107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0107GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmaudit.agncommaudit.event.ESM_ACM_0107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmaudit.agncommaudit.event.EsmAcm0107Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmaudit.ACMAuditSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Young-Oh : 2012-04-04 end -->
+
+    <!-- KIM, Sang-Soo : 2012-04-05 start -->
+    <url-mapping url="ESM_ACM_0105.do" screen="ESM_ACM_0105.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmrequest.agncommrequest.event.ESM_ACM_0105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmrequest.agncommrequest.event.ESM_ACM_0105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmrequest.agncommrequest.event.EsmAcm0105Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmrequest.ACMRequestSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-04-05 end -->
+
+    <!-- KIM, Young-Oh : 2012-04-06 start -->
+    <url-mapping url="ESM_ACM_0009.do" screen="ESM_ACM_0009.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmapproval.agncommapproval.event.ESM_ACM_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmapproval.agncommapproval.event.ESM_ACM_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmapproval.agncommapproval.event.EsmAcm0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmapproval.ACMApprovalSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ESM_ACM_0015.do" screen="ESM_ACM_0015.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmaudit.otrcommaudit.event.ESM_ACM_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmaudit.otrcommaudit.event.ESM_ACM_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmaudit.otrcommaudit.event.EsmAcm0015Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmaudit.ACMAuditSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Young-Oh : 2012-04-06 end -->
+
+    <!-- KIM, Sang-Soo : 2012-04-09 start -->
+    <url-mapping url="ESM_ACM_0106.do" screen="ESM_ACM_0106.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.ESM_ACM_0106HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0106GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.ESM_ACM_0106HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.EsmAcm0106Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmsimulation.ACMSimulationSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-04-09 end -->
+
+    <!-- KIM, Sang-Soo : 2012-04-10 start -->
+    <url-mapping url="ESM_ACM_0010.do" screen="ESM_ACM_0010.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.ESM_ACM_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.ESM_ACM_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.EsmAcm0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmsimulation.ACMSimulationSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-04-10 end -->
+
+    <!-- KIM, Young-Oh : 2012-04-13 start -->
+    <url-mapping url="ESM_ACM_0027.do" screen="ESM_ACM_0027.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmaudit.ffcmpnaudit.event.ESM_ACM_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmaudit.ffcmpnaudit.event.ESM_ACM_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmaudit.ffcmpnaudit.event.EsmAcm0027Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmaudit.ACMAuditSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ESM_ACM_0028.do" screen="ESM_ACM_0028.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmaudit.facommaudit.event.ESM_ACM_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmaudit.facommaudit.event.ESM_ACM_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmaudit.facommaudit.event.EsmAcm0028Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmaudit.ACMAuditSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ESM_ACM_0029.do" screen="ESM_ACM_0029.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmaudit.spclcmpnaudit.event.ESM_ACM_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0029GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmaudit.spclcmpnaudit.event.ESM_ACM_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmaudit.spclcmpnaudit.event.EsmAcm0029Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmaudit.ACMAuditSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Young-Oh : 2012-04-13 end -->
+
+    <!-- KIM, Sang-Soo : 2012-04-16 start -->
+    <url-mapping url="ESM_ACM_0012.do" screen="ESM_ACM_0012.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmcalculation.agncommcalculation.event.ESM_ACM_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmcalculation.agncommcalculation.event.ESM_ACM_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0012DL.do" screen="com.clt.apps.opus.esm.acm.acmcalculation.agncommcalculation.event.EsmAcm0012ViewAdapterDL" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmcalculation.agncommcalculation.event.ESM_ACM_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmcalculation.agncommcalculation.event.EsmAcm0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmcalculation.ACMCalculationSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-04-16 end -->
+
+    <!-- KIM, Sang-Soo : 2012-04-26 start -->
+    <url-mapping url="ESM_ACM_0013.do" screen="ESM_ACM_0013.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmapproval.agncommapproval.event.ESM_ACM_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmapproval.agncommapproval.event.ESM_ACM_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmapproval.agncommapproval.event.EsmAcm0013Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmapproval.ACMApprovalSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-04-26 end -->
+
+    <!-- KIM, Young-Oh : 2012-05-02 start -->
+    <url-mapping url="ESM_ACM_0023.do" screen="ESM_ACM_0023.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmagreement.ffcmpnagreement.event.ESM_ACM_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmagreement.ffcmpnagreement.event.ESM_ACM_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmagreement.ffcmpnagreement.event.EsmAcm0023Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmagreement.ACMAgreementSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ESM_ACM_0024.do" screen="ESM_ACM_0024.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmagreement.facommagreement.event.ESM_ACM_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0024GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmagreement.facommagreement.event.ESM_ACM_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmagreement.facommagreement.event.EsmAcm0024Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmagreement.ACMAgreementSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ESM_ACM_0025.do" screen="ESM_ACM_0025.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmagreement.spclcmpnagreement.event.ESM_ACM_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmagreement.spclcmpnagreement.event.ESM_ACM_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmagreement.spclcmpnagreement.event.EsmAcm0025Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmagreement.ACMAgreementSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Young-Oh : 2012-05-02 end -->
+
+    <!-- KIM, Sang-Soo : 2012-05-03 start -->
+    <url-mapping url="ESM_ACM_0019.do" screen="ESM_ACM_0019.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmmaster.acmcustomerinfo.event.ESM_ACM_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmmaster.acmcustomerinfo.event.ESM_ACM_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmmaster.acmcustomerinfo.event.EsmAcm0019Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmmaster.ACMMasterSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ESM_ACM_0020.do" screen="ESM_ACM_0020.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmmaster.acmcustomerinfo.event.ESM_ACM_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmmaster.acmcustomerinfo.event.ESM_ACM_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmmaster.acmcustomerinfo.event.EsmAcm0020Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmmaster.ACMMasterSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ESM_ACM_0021.do" screen="ESM_ACM_0021.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmmaster.acmcustomerinfo.event.ESM_ACM_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmmaster.acmcustomerinfo.event.ESM_ACM_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmmaster.acmcustomerinfo.event.EsmAcm0021Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmmaster.ACMMasterSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ESM_ACM_0022.do" screen="ESM_ACM_0022.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmmaster.acmcustomerinfo.event.ESM_ACM_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmmaster.acmcustomerinfo.event.ESM_ACM_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmmaster.acmcustomerinfo.event.EsmAcm0022Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmmaster.ACMMasterSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-05-03 end -->
+
+    <!-- KIM, Young-Oh : 2012-05-04 start -->
+    <url-mapping url="ESM_ACM_0030.do" screen="ESM_ACM_0030.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmapproval.ffcmpnapproval.event.ESM_ACM_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmapproval.ffcmpnapproval.event.ESM_ACM_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmapproval.ffcmpnapproval.event.EsmAcm0030Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmapproval.ACMApprovalSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ESM_ACM_0031.do" screen="ESM_ACM_0031.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmapproval.spclcmpnapproval.event.ESM_ACM_0031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0031GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmapproval.spclcmpnapproval.event.ESM_ACM_0031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmapproval.spclcmpnapproval.event.EsmAcm0031Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmapproval.ACMApprovalSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Young-Oh : 2012-05-04 end -->
+
+    <!-- KIM, Bong-Gyoon : 2012-05-14 start -->
+    <url-mapping url="ESM_ACM_0104.do" screen="ESM_ACM_0104.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.ESM_ACM_0104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0104GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.ESM_ACM_0104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmsetup.acmsetup.event.EsmAcm0104Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmsetup.ACMSetupSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Bong-Gyoon : 2012-05-14 end -->
+
+    <!-- KIM, Young-Oh : 2012-05-15 start -->
+    <url-mapping url="ESM_ACM_0017.do" screen="ESM_ACM_0017.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmhistory.agncommagmthistory.event.ESM_ACM_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmhistory.agncommagmthistory.event.ESM_ACM_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmhistory.agncommagmthistory.event.EsmAcm0017Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmhistory.ACMHistorySC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Young-Oh : 2012-05-15 end -->
+
+    <!-- KIM, Bong-Gyoon : 2012-05-16 start -->
+    <url-mapping url="ESM_ACM_0034.do" screen="ESM_ACM_0034.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmreport.acmreport.event.ESM_ACM_0034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0034GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmreport.acmreport.event.ESM_ACM_0034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmreport.acmreport.event.EsmAcm0034Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmreport.ACMReportSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ESM_ACM_0111.do" screen="ESM_ACM_0111.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmreport.acmreport.event.ESM_ACM_0111HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0111GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmreport.acmreport.event.ESM_ACM_0111HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmreport.acmreport.event.EsmAcm0111Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmreport.ACMReportSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Bong-Gyoon : 2012-05-16 end -->
+
+    <!-- KIM, Bong-Gyoon : 2012-05-23 start -->
+    <url-mapping url="ESM_ACM_0033.do" screen="ESM_ACM_0033.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.ESM_ACM_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.ESM_ACM_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0033DL.do" screen="com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.EsmAcm0033ViewAdapterDL" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.ESM_ACM_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.EsmAcm0033Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmsimulation.ACMSimulationSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Bong-Gyoon : 2012-05-23 end -->
+
+    <!-- KIM, Young-Oh : 2012-05-25 start -->
+    <url-mapping url="ESM_ACM_0113.do" screen="ESM_ACM_0113.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmcommon.acmcommon.event.ESM_ACM_0113HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0113GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmcommon.acmcommon.event.ESM_ACM_0113HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmcommon.acmcommon.event.EsmAcm0113Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmcommon.ACMCommonSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Young-Oh : 2012-05-25 end -->
+
+    <!-- KIM, Sang-Soo : 2012-05-24 start -->
+    <url-mapping url="ESM_ACM_0016.do" screen="ESM_ACM_0016.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmhistory.agncommcalchistory.event.ESM_ACM_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmhistory.agncommcalchistory.event.ESM_ACM_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmhistory.agncommcalchistory.event.EsmAcm0016Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmhistory.ACMHistorySC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-05-24 end -->
+
+    <!-- KIM, Bong-Gyoon : 2012-05-25 start -->
+    <url-mapping url="ESM_ACM_0032.do" screen="ESM_ACM_0032.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmrequest.batmanagement.event.ESM_ACM_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0032_POP.do" screen="ESM_ACM_0032_POP.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmrequest.batmanagement.event.ESM_ACM_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmrequest.batmanagement.event.ESM_ACM_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmrequest.batmanagement.event.EsmAcm0032Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmrequest.ACMRequestSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Bong-Gyoon : 2012-05-25 end -->
+
+    <!-- KIM, Sang-Soo : 2012-06-05 start -->
+    <url-mapping url="ESM_ACM_0011.do" screen="ESM_ACM_0011.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.ESM_ACM_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.ESM_ACM_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.EsmAcm0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmsimulation.ACMSimulationSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ESM_ACM_0110.do" screen="ESM_ACM_0110.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.ESM_ACM_0110HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0110GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.ESM_ACM_0110HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.EsmAcm0110Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmsimulation.ACMSimulationSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-06-05 end -->
+
+    <!-- KIM, Bong-Gyoon : 2012-06-15 start -->
+    <url-mapping url="ESM_ACM_0114.do" screen="ESM_ACM_0114.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmagreement.agncommagreement.event.ESM_ACM_0114HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0114GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmagreement.agncommagreement.event.ESM_ACM_0114HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmagreement.agncommagreement.event.EsmAcm0114Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmagreement.ACMAgreementSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Bong-Gyoon : 2012-06-15 end -->
+
+    <!-- KIM, Sang-Soo : 2012-06-25 start -->
+    <url-mapping url="ESM_ACM_0115.do" screen="ESM_ACM_0115.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.ESM_ACM_0115HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0115GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.ESM_ACM_0115HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmsimulation.acmsimulation.event.EsmAcm0115Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmsimulation.ACMSimulationSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-06-25 end -->
+
+    <!-- KIM, Young-Oh : 2012-06-28 start -->
+    <url-mapping url="ESM_ACM_9999.do" screen="ESM_ACM_9999.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmcalculation.agncommcalculation.event.ESM_ACM_9999HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_9999GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmcalculation.agncommcalculation.event.ESM_ACM_9999HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmcalculation.agncommcalculation.event.EsmAcm9999Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmcalculation.ACMCalculationSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Young-Oh : 2012-06-28 end -->
+
+    <!-- KIM, Sang-Soo : 2012-07-10 start -->
+    <url-mapping url="ESM_ACM_0116.do" screen="ESM_ACM_0116.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmhistory.agncommcalchistory.event.ESM_ACM_0116HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0116GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmhistory.agncommcalchistory.event.ESM_ACM_0116HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmhistory.agncommcalchistory.event.EsmAcm0116Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmhistory.ACMHistorySC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-07-10 end -->
+
+    <!-- KIM, Young-Oh : 2012-07-13 start -->
+    <url-mapping url="ESM_ACM_0035.do" screen="ESM_ACM_0035.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmagreement.agncommagreement.event.ESM_ACM_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmagreement.agncommagreement.event.ESM_ACM_0001HTMLAction</web-action-class>
+    </url-mapping>
+    <!-- KIM, Young-Oh : 2012-07-13 end -->
+
+    <!-- KIM, Sang-Soo : 2012-08-13 start -->
+    <url-mapping url="ESM_ACM_0117.do" screen="ESM_ACM_0117.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmaudit.ffcmpnaudit.event.ESM_ACM_0117HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0117GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmaudit.ffcmpnaudit.event.ESM_ACM_0117HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmaudit.ffcmpnaudit.event.EsmAcm0117Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmaudit.ACMAuditSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-08-13 end -->
+
+    <!-- KIM, Sang-Soo : 2012-09-04 start -->
+    <url-mapping url="ESM_ACM_0037.do" screen="ESM_ACM_0037.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmreport.acmreport.event.ESM_ACM_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmreport.acmreport.event.ESM_ACM_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmreport.acmreport.event.EsmAcm0037Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmreport.ACMReportSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-09-04 end -->
+
+    <!-- KIM, Young-Oh : 2012-08-23 start -->
+    <url-mapping url="ESM_ACM_0036.do" screen="ESM_ACM_0036.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmcalculation.agncommcalculation.event.ESM_ACM_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmcalculation.agncommcalculation.event.ESM_ACM_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmcalculation.agncommcalculation.event.EsmAcm0036Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmcalculation.ACMCalculationSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Young-Oh : 2012-08-23 end -->
+
+    <!-- KIM, Sang-Soo : 2012-09-17 start -->
+    <url-mapping url="ESM_ACM_0118.do" screen="ESM_ACM_0118.screen" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmreport.acmreport.event.ESM_ACM_0118HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_ACM_0118GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.acm.acmreport.acmreport.event.ESM_ACM_0118HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.acm.acmreport.acmreport.event.EsmAcm0118Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.acm.acmreport.ACMReportSC</service-action-class>
+    </event-mapping>
+    <!-- KIM, Sang-Soo : 2012-09-17 end -->
+
+</mappings>

@@ -1,0 +1,1482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- SungHoon, Lee : 2009-04-27 start -->
+    <url-mapping url="DMTCommonFinderGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtcommon.commonfinder.event.DMT_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtcommon.commonfinder.event.DmtComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtcommon.DMTCommonSC</service-action-class>
+    </event-mapping>
+	<!-- SungHoon, Lee : 2009-04-27 end -->
+
+	<!--  : 2009-06-04 start -->
+    <url-mapping url="EES_DMT_1001.do" screen="EES_DMT_1001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_1001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_1001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_1001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EesDmt1001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.DMTMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!--  : 2009-06-04 end -->
+	
+	<!--  : 2009-06-19 start -->
+    <url-mapping url="EES_DMT_1002.do" screen="EES_DMT_1002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_1002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_1002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_1002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EesDmt1002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.DMTMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!--  : 2009-06-19 end -->
+	
+	<!--  : 2009-05-21 start -->
+    <url-mapping url="EES_DMT_1003.do" screen="EES_DMT_1003.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_1003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_1003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_1003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EesDmt1003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.DMTMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!--  : 2009-05-21 end -->
+
+	<!--  : 2009-05-21 start -->
+    <url-mapping url="EES_DMT_1004.do" screen="EES_DMT_1004.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_1004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_1004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_1004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EesDmt1004Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.DMTMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!--  : 2009-05-21 end -->
+	
+	<!-- Kim Tae Kyun : 2009-07-28 start -->                                                                                           
+    <url-mapping url="EES_DMT_1005.do" screen="EES_DMT_1005.screen" >                                                                  
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_1005HTMLAction</web-action-class>
+    </url-mapping>                                                                                                                     
+                                                                                                                                       
+    <url-mapping url="EES_DMT_1005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                            
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_1005HTMLAction</web-action-class>
+    </url-mapping>                                                                                                                     
+                                                                                                                                       
+    <event-mapping>                                                                                                                    
+        <event-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EesDmt1005Event</event-class>                 
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.DMTMasterDataMgtSC</service-action-class>                  
+    </event-mapping>                                                                                                                   
+	<!--Kim Tae Kyun : 2009-07-28 end -->
+		
+	<!-- Kim Tae Kyun : 2009-08-03 start -->                                                                                           
+    <url-mapping url="EES_DMT_1006.do" screen="EES_DMT_1006.screen" >                                                                  
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_1006HTMLAction</web-action-class>
+    </url-mapping>                                                                                                                     
+                                                                                                                                       
+    <url-mapping url="EES_DMT_1006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >                            
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_1006HTMLAction</web-action-class>
+    </url-mapping>                                                                                                                     
+                                                                                                                                       
+    <event-mapping>                                                                                                                    
+        <event-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EesDmt1006Event</event-class>                 
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.DMTMasterDataMgtSC</service-action-class>                  
+    </event-mapping>                                                                                                                   
+	<!-- Kim Tae Kyun : 2009-08-03 start -->  
+			
+	<!-- SungHoon, Lee : 2009-04-27 start -->
+    <url-mapping url="EES_DMT_1007.do" screen="EES_DMT_1007.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.holidaymgt.event.EES_DMT_1007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_1007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.holidaymgt.event.EES_DMT_1007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.holidaymgt.event.EesDmt1007Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.DMTMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- SungHoon, Lee : 2009-04-27 end -->
+
+	<!-- SungHoon, Lee : 2009-04-27 start -->
+    <url-mapping url="EES_DMT_1008.do" screen="EES_DMT_1008.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.holidaymgt.event.EES_DMT_1008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_1008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.holidaymgt.event.EES_DMT_1008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.holidaymgt.event.EesDmt1008Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.DMTMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- SungHoon, Lee : 2009-04-27 end -->
+
+	<!-- Kim Tae Kyun : 2009-07-01 start -->
+    <url-mapping url="EES_DMT_1101.do" screen="EES_DMT_1101.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_1101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_1101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_1101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EesDmt1101Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.DMTMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!--Kim Tae Kyun : 2009-07-01 end -->
+	
+	<!-- SungHoon, Lee : 2009-05-20 start -->
+    <url-mapping url="EES_DMT_2001.do" screen="EES_DMT_2001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.scexceptiontariffmgt.event.EES_DMT_2001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2001GS.do" screen="com.clt.apps.opus.ees.dmt.dmtexceptionmgt.scexceptiontariffmgt.event.DMTViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.scexceptiontariffmgt.event.EES_DMT_2001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.scexceptiontariffmgt.event.EesDmt2001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+	<!-- SungHoon, Lee : 2009-05-20 end -->
+
+	<!-- SungHoon, Lee : 2009-06-11 start -->
+    <url-mapping url="EES_DMT_2003.do" screen="EES_DMT_2003.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EES_DMT_2003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2003GS.do" screen="com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.DMTViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EES_DMT_2003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EesDmt2003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+	<!-- SungHoon, Lee : 2009-06-11 end -->
+
+	<!-- SungHoon, Lee : 2009-06-30 start -->
+    <url-mapping url="EES_DMT_2005.do" screen="EES_DMT_2005.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EES_DMT_2005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2005P.do" screen="EES_DMT_2005P.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EES_DMT_2005HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_2005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EES_DMT_2005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EesDmt2005Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+	<!-- SungHoon, Lee : 2009-06-30 end -->
+	
+	<!-- SungHoon, Lee : 2009-08-04 start -->
+    <url-mapping url="EES_DMT_2006.do" screen="EES_DMT_2006.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EES_DMT_2006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EES_DMT_2006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EesDmt2006Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+	<!-- SungHoon, Lee : 2009-08-04 end -->
+		
+	<!-- SungHoon, Lee : 2009-07-03 start -->
+    <url-mapping url="EES_DMT_2007_1.do" screen="EES_DMT_2007.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.scexceptiontariffmgt.event.EES_DMT_2007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2007_1_POP.do" screen="EES_DMT_2007_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.scexceptiontariffmgt.event.EES_DMT_2007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.scexceptiontariffmgt.event.EES_DMT_2007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.scexceptiontariffmgt.event.EesDmt2007Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+	<!-- SungHoon, Lee : 2009-07-03 end -->
+			
+	<!-- SungHoon, Lee : 2009-07-21 start -->
+    <url-mapping url="EES_DMT_2008.do" screen="EES_DMT_2008.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeamountdiscountmgt.event.EES_DMT_2008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2008GS.do" screen="com.clt.apps.opus.ees.dmt.dmtclosing.chargeamountdiscountmgt.event.DMTViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeamountdiscountmgt.event.EES_DMT_2008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeamountdiscountmgt.event.EesDmt2008Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- SungHoon, Lee : 2009-07-21 end -->
+				
+	<!-- SungHoon, Lee : 2009-09-21 start -->
+    <url-mapping url="EES_DMT_2009.do" screen="EES_DMT_2009.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeamountdiscountmgt.event.EES_DMT_2009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2009P.do" screen="EES_DMT_2009P.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeamountdiscountmgt.event.EES_DMT_2009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2009GS.do" screen="com.clt.apps.opus.ees.dmt.dmtclosing.chargeamountdiscountmgt.event.DMTViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeamountdiscountmgt.event.EES_DMT_2009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeamountdiscountmgt.event.EesDmt2009Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- SungHoon, Lee : 2009-09-21 end -->
+					
+	<!-- Choi Sung Hwan : 2009-04-30 start -->
+    <url-mapping url="EES_DMT_2010.do" screen="EES_DMT_2010.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.timeclockstopmgt.event.EES_DMT_2010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.timeclockstopmgt.event.EES_DMT_2010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.timeclockstopmgt.event.EesDmt2010Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Sung Hwan : 2009-04-30 end -->
+
+	<!-- Choi Sung Hwan : 2009-05-11 start -->
+    <url-mapping url="EES_DMT_2011.do" screen="EES_DMT_2011.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.timeclockstopmgt.event.EES_DMT_2010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.timeclockstopmgt.event.EES_DMT_2010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.timeclockstopmgt.event.EesDmt2010Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Sung Hwan : 2009-05-11 end -->
+
+    <!-- Kim Jae Jin : 2009-08-25 start -->
+    <url-mapping url="EES_DMT_2012.do" screen="EES_DMT_2012.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.vlvddateupdatemgt.event.EES_DMT_2012HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_2012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.vlvddateupdatemgt.event.EES_DMT_2012HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.vlvddateupdatemgt.event.EesDmt2012Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kim Jae Jin : 2009-08-25 end -->
+    
+	<!-- SungHoon, Lee : 2009-05-07 start -->
+    <url-mapping url="EES_DMT_2014.do" screen="EES_DMT_2014.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.dualtypeexceptionmgt.event.EES_DMT_2014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2014GS.do" screen="com.clt.apps.opus.ees.dmt.dmtexceptionmgt.dualtypeexceptionmgt.event.DMTViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.dualtypeexceptionmgt.event.EES_DMT_2014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.dualtypeexceptionmgt.event.EesDmt2014Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+	<!-- SungHoon, Lee : 2009-05-07 end -->
+
+	<!-- SungHoon, Lee : 2009-05-14 start -->
+    <url-mapping url="EES_DMT_2015.do" screen="EES_DMT_2015.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.dualtypeexceptionmgt.event.EES_DMT_2015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2015GS.do" screen="com.clt.apps.opus.ees.dmt.dmtexceptionmgt.dualtypeexceptionmgt.event.DMTViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.dualtypeexceptionmgt.event.EES_DMT_2015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.dualtypeexceptionmgt.event.EesDmt2015Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+	<!-- SungHoon, Lee : 2009-05-07 end -->
+	
+	<!-- SungHoon, Lee : 2009-09-23 start -->
+    <url-mapping url="EES_DMT_2103.do" screen="EES_DMT_2103.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.scexceptiontariffmgt.event.EES_DMT_2103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2103GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.scexceptiontariffmgt.event.EES_DMT_2103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.scexceptiontariffmgt.event.EesDmt2103Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+	<!-- SungHoon, Lee : 2009-09-23 end -->
+		
+	<!-- SungHoon, Lee : 2009-09-24 start -->
+    <url-mapping url="EES_DMT_2105.do" screen="EES_DMT_2105.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EES_DMT_2105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EES_DMT_2105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EesDmt2105Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+	<!-- SungHoon, Lee : 2009-09-24 end -->
+			
+	<!-- Hwang Hyo Keun : 2009-05-21 start -->
+    <url-mapping url="EES_DMT_3001.do" screen="EES_DMT_3001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3001HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_3001P.do" screen="EES_DMT_3001P.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EesDmt3001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang Hyo Keun : 2009-05-21 end -->
+
+	<!-- Hwang Hyo Keun : 2009-06-13 start -->
+    <url-mapping url="EES_DMT_3002.do" screen="EES_DMT_3002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3002HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_3002P.do" screen="EES_DMT_3002P.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EesDmt3002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang Hyo Keun : 2009-06-13 end -->
+
+	<!-- Hwang Hyo Keun : 2009-06-25 start -->
+    <url-mapping url="EES_DMT_3003.do" screen="EES_DMT_3003.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3003HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_3003P.do" screen="EES_DMT_3003P.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EesDmt3003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!--Hwang Hyo Keun : 2009-06-25 end -->
+
+	<!-- Hwang HyoKeun : 2009-07-02 start -->
+    <url-mapping url="EES_DMT_3004.do" screen="EES_DMT_3004.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EesDmt3004Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-07-02 end -->
+	
+	<!-- Hwang HyoKeun : 2009-07-07 start -->
+    <url-mapping url="EES_DMT_3005.do" screen="EES_DMT_3005.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3005HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_3005P.do" screen="EES_DMT_3005P.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EesDmt3005Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-07-07 end -->
+
+	<!-- Hwang HyoKeun : 2009-07-14 start -->
+    <url-mapping url="EES_DMT_3006.do" screen="EES_DMT_3006.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3006HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_3006P.do" screen="EES_DMT_3006P.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EesDmt3006Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-07-14 end -->
+	
+	<!-- Choi Sung Hwan : 2009-10-07 start -->
+    <url-mapping url="EES_DMT_3007.do" screen="EES_DMT_3007.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.demandnotesend.event.EES_DMT_3007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.demandnotesend.event.EES_DMT_3007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>  
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.demandnotesend.event.EesDmt3007Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Sung Hwan : 2009-10-07 end -->
+	
+	<!-- Hwang HyoKeun : 2009-07-14 start -->
+    <url-mapping url="EES_DMT_3009.do" screen="EES_DMT_3009.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeofficetransfermgt.event.EES_DMT_3009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeofficetransfermgt.event.EES_DMT_3009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeofficetransfermgt.event.EesDmt3009Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-07-14 end -->
+	
+	<!-- Hwang HyoKeun : 2009-07-21 start -->
+    <url-mapping url="EES_DMT_3101.do" screen="EES_DMT_3101.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeofficetransfermgt.event.EES_DMT_3101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeofficetransfermgt.event.EES_DMT_3101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeofficetransfermgt.event.EesDmt3101Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-07-21 end -->
+	
+	<!-- Hwang HyoKeun : 2009-07-27 start -->
+    <url-mapping url="EES_DMT_3105.do" screen="EES_DMT_3105.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeofficetransfermgt.event.EES_DMT_3105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeofficetransfermgt.event.EES_DMT_3105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargeofficetransfermgt.event.EesDmt3105Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-07-27 end -->
+	
+	<!-- Hwang HyoKeun : 2009-07-29 start -->
+    <url-mapping url="EES_DMT_3103.do" screen="EES_DMT_3103.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3103GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EesDmt3103Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-07-29 end -->
+
+	<!-- Hwang HyoKeun : 2009-08-03 start -->
+    <url-mapping url="EES_DMT_3102.do" screen="EES_DMT_3102.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3102HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3102GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3102HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EesDmt3102Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-08-03 end -->
+	
+	<!-- Hwang HyoKeun : 2009-08-16 start -->
+    <url-mapping url="EES_DMT_3104.do" screen="EES_DMT_3104.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3104GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EesDmt3104Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-08-16 end -->
+		
+    <!-- Hwang HyoKeun : 2009-09-03 start -->
+    <url-mapping url="EES_DMT_3106.do" screen="EES_DMT_3106.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3106HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3106GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3106HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EesDmt3106Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-09-03 end -->
+
+    <!-- Hwang HyoKeun : 2009-09-15 start -->
+    <url-mapping url="EES_DMT_3010.do" screen="EES_DMT_3010.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecalculationreport.event.EES_DMT_3010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecalculationreport.event.EES_DMT_3010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecalculationreport.event.EesDmt3010Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-09-15 end -->
+    
+	<!-- Hwang HyoKeun : 2009-09-17 start -->
+    <url-mapping url="EES_DMT_3011.do" screen="EES_DMT_3011.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecalculationreport.event.EES_DMT_3011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecalculationreport.event.EES_DMT_3011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecalculationreport.event.EesDmt3011Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-09-17 end -->
+	
+	<!-- Choi Sung Hwan : 2009-09-23 start -->
+    <url-mapping url="EES_DMT_3013.do" screen="EES_DMT_3013.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.demandnotesend.event.EES_DMT_3013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.demandnotesend.event.EES_DMT_3013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>  
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.demandnotesend.event.EesDmt3013Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Sung Hwan : 2009-09-23 end -->
+	
+	<!-- Hwang HyoKeun : 2009-09-10 start -->
+    <url-mapping url="EES_DMT_3107.do" screen="EES_DMT_3107.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3107GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EesDmt3107Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-09-10 end -->	
+	
+	<!-- Choi Sung Hwan : 2009-10-05 start -->
+    <url-mapping url="EES_DMT_3108.do" screen="EES_DMT_3108.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.demandnotesend.event.EES_DMT_3108HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3108GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.demandnotesend.event.EES_DMT_3108HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>  
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.demandnotesend.event.EesDmt3108Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Sung Hwan : 2009-10-05 end -->
+	
+	<!-- Choi Sung Hwan : 2009-09-25 start -->
+    <url-mapping url="EES_DMT_3109.do" screen="EES_DMT_3109.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.demandnotesend.event.EES_DMT_3109HTMLAction</web-action-class>
+    </url-mapping>
+   
+    <url-mapping url="EES_DMT_3109GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.demandnotesend.event.EES_DMT_3109HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>  
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.demandnotesend.event.EesDmt3109Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Choi Sung Hwan : 2009-09-25 end -->
+    
+    <!-- Choi Sung Hwan : 2009-12-18 start -->
+    <url-mapping url="EES_DMT_3007_RD.do" screen="EES_DMT_3007_RD.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.demandnotesend.event.EES_DMT_3007AHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>  
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.demandnotesend.event.EesDmt3007AEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtRDSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Sung Hwan : 2009-12-18 end -->
+	    
+	<!-- Kim Tae Kyun : 2009-08-05 start -->
+    <url-mapping url="EES_DMT_4001.do" screen="EES_DMT_4001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Tae Kyun : 2009-08-05 end -->
+
+	<!--  Kim Tae Kyun  : 2009-08-25 start -->
+    <url-mapping url="EES_DMT_4002.do" screen="EES_DMT_4002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!--  Kim Tae Kyun  : 2009-08-25 end -->
+		
+    <!-- Kim TaeKyn : 2009-09-12 start -->
+    <url-mapping url="EES_DMT_4003.do" screen="EES_DMT_4003.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kim TaeKyn : 2009-09-12 end -->
+    <!-- Kim Tae Kyun : 2009-12-30 start -->
+    <url-mapping url="EES_DMT_4003_RD.do" screen="EES_DMT_4003_RD.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4003AHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>  
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4003AEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtRDSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Tae Kyun : 2009-12-30 end -->
+    
+	<!-- Lee Sung Hoon : 2009-09-30 start -->
+    <url-mapping url="EES_DMT_4004.do" screen="EES_DMT_4004.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4004P.do" screen="EES_DMT_4004P.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4004HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_4004GS.do" screen="com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.DMTViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4004Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Sung Hoon : 2009-09-30 end -->
+	
+	<!-- Choi Sung Hwan : 2009-08-25 start -->
+    <url-mapping url="EES_DMT_4005.do" screen="EES_DMT_4005.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.usdemurrageaudit.event.EES_DMT_4005HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_4005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.usdemurrageaudit.event.EES_DMT_4005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.usdemurrageaudit.event.EesDmt4005Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Choi Sung Hwan : 2009-08-25 start -->
+
+	<!-- Kim Tae Kyun : 2009-10-08 start -->
+    <url-mapping url="EES_DMT_4008.do" screen="EES_DMT_4008.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4008HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_4008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4008Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kim Tae Kyun : 2009-10-08 end -->
+
+    <!-- SungHoon, Lee : 2009-08-28 start -->
+    <url-mapping url="EES_DMT_4009.do" screen="EES_DMT_4009.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4009Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- SungHoon, Lee : 2009-08-28 end -->    
+    
+    <!-- Mun Jung Cheol : 2009-09-02 start -->
+    <url-mapping url="EES_DMT_4011.do" screen="EES_DMT_4011.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4011Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-09-02 end -->
+    
+    <!-- Mun Jung Cheol : 2009-09-09 start -->
+    <url-mapping url="EES_DMT_4012.do" screen="EES_DMT_4012.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4011Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-09-09 end -->
+	
+	<!-- kim Tae Kyun : 2009-09-25 start -->
+    <url-mapping url="EES_DMT_4013.do" screen="EES_DMT_4013.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4013Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- kim Tae Kyun : 2009-09-25 end -->	
+		
+	<!-- Kim Tae Kyun : 2009-07-09 start -->
+    <url-mapping url="EES_DMT_4014.do" screen="EES_DMT_4014.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_4014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_4014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EesDmt4014Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.DMTMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!--Kim Tae Kyun : 2009-07-09 end -->
+
+	<!-- Kim Tae Kyun : 2009-07-10 start -->
+    <url-mapping url="EES_DMT_4015.do" screen="EES_DMT_4015.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_4015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EES_DMT_4015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.demdettariffmgt.event.EesDmt4015Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.DMTMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!--Kim Tae Kyun : 2009-07-10 end -->
+	
+	<!-- Hwang HyoKeun : 2009-10-13 start -->
+    <url-mapping url="EES_DMT_4016-1.do" screen="EES_DMT_4016.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_4016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_4016HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_4016-2GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EesDmt4016Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4016Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-10-13 end -->
+
+    <!-- Kim Tae Kyun : 2009-10-19 start -->
+    <url-mapping url="EES_DMT_4104.do" screen="EES_DMT_4104.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4104GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4104Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kim Tae Kyun : 2009-10-19 end -->	
+    			
+    <!-- Mun Jung Cheol : 2009-09-24 start -->
+    <url-mapping url="EES_DMT_4105.do" screen="EES_DMT_4105.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4105Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-09-24 end -->	
+
+    <!-- Kim Tae Kyun : 2009-10-12 start -->
+    <url-mapping url="EES_DMT_4106.do" screen="EES_DMT_4106.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4106HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4106GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4106HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4106Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kim Tae Kyun : 2009-10-12 end -->	
+
+    <!-- Kim Tae Kyun : 2010-06-22 start -->
+    <url-mapping url="EES_DMT_4107.do" screen="EES_DMT_4107.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4107GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4104Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <url-mapping url="EES_DMT_4108.do" screen="EES_DMT_4108.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4108GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4104Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Kim Tae Kyun : 2010-06-22 end -->	
+    
+	<!-- Choi Sung Hwan : 2009-09-07 start -->
+    <url-mapping url="EES_DMT_5001-1.do" screen="EES_DMT_5001-1.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_5001HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_5001-1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_5001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt5001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Choi Sung Hwan : 2009-09-07 end --> 
+
+	<!-- Choi Sung Hwan : 2009-10-09 start -->
+    <url-mapping url="EES_DMT_5002.do" screen="EES_DMT_5002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_5002HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_5002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_5002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt5002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Choi Sung Hwan : 2009-10-09 end -->
+    
+	<!-- Choi Sung Hwan : 2009-10-13 start -->
+    <url-mapping url="EES_DMT_5003.do" screen="EES_DMT_5003.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_5003HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_5003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_5003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt5003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Choi Sung Hwan : 2009-10-13 end -->           
+
+	<!-- Hwang HyoKeun : 2009-09-18 start -->
+    <url-mapping url="EES_DMT_6001.do" screen="EES_DMT_6001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecollectionreport.event.EES_DMT_6001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_6001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecollectionreport.event.EES_DMT_6001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecollectionreport.event.EesDmt6001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-09-18 end -->
+	
+	<!-- Hwang HyoKeun : 2009-09-22 start -->
+    <url-mapping url="EES_DMT_6002.do" screen="EES_DMT_6002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecollectionreport.event.EES_DMT_6002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_6002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecollectionreport.event.EES_DMT_6002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecollectionreport.event.EesDmt6002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-09-22 end -->
+	
+	<!-- Hwang HyoKeun : 2009-09-25 start -->
+    <url-mapping url="EES_DMT_6003.do" screen="EES_DMT_6003.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecollectionreport.event.EES_DMT_6003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_6003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecollectionreport.event.EES_DMT_6003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecollectionreport.event.EesDmt6003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-09-25 end -->
+
+	<!-- Hwang HyoKeun : 2009-09-29 start -->
+    <url-mapping url="EES_DMT_6005.do" screen="EES_DMT_6005.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecalculationreport.event.EES_DMT_6005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_6005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecalculationreport.event.EES_DMT_6005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecalculationreport.event.EesDmt6005Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-09-29 end -->
+	
+	<!-- Hwang HyoKeun : 2009-10-01 start -->
+    <url-mapping url="EES_DMT_6006.do" screen="EES_DMT_6006.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecalculationreport.event.EES_DMT_6006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_6006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecalculationreport.event.EES_DMT_6006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.chargecalculationreport.event.EesDmt6006Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang HyoKeun : 2009-10-01 end -->
+	
+	<!-- Hwang Hyo Keun : 2009-05-13 start -->
+    <url-mapping url="EES_DMT_7001.do" screen="EES_DMT_7001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_7001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EesDmt7001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang Hyo Keun : 2009-05-13 end -->
+
+	<!-- Hwang Hyo Keun : 2009-05-13 start -->
+    <url-mapping url="EES_DMT_7003.do" screen="EES_DMT_7003.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_7003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EesDmt7003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang Hyo Keun : 2009-05-13 end -->
+
+	<!-- Hwang Hyo Keun : 2009-05-19 start -->
+    <url-mapping url="EES_DMT_7005.do" screen="EES_DMT_7005.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_7005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EesDmt7005Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!--  : 2009-05-19 end -->
+	
+	<!-- Choi Sung Hwan : 2009-05-12 start -->
+    <url-mapping url="EES_DMT_7007.do" screen="EES_DMT_7007.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.batchhistoryreport.event.EES_DMT_7007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_7007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.batchhistoryreport.event.EES_DMT_7007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.batchhistoryreport.event.EesDmt7007Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Sung Hwan : 2009-05-12 end -->
+	
+	<!-- Yun Tae Seung : 2012-04-17 start -->
+    <url-mapping url="EES_DMT_7010.do" screen="EES_DMT_7010.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_7010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EesDmt7010Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Yun Tae Seung : 2012-04-17 end -->
+	
+    <!-- Mun Jung Cheol : 2009-09-28 start -->
+    <url-mapping url="EES_DMT_4103.do" screen="EES_DMT_4103.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4103GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4103Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-09-28 end -->
+    
+    <!-- Mun Jung Cheol : 2009-10-01 start -->
+    <url-mapping url="EES_DMT_4101.do" screen="EES_DMT_4101.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4101Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-10-01 end -->
+    
+    <!-- Mun Jung Cheol : 2009-10-05 start -->
+    <url-mapping url="EES_DMT_4006.do" screen="EES_DMT_4006.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4006Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-10-05 end -->
+    
+    <!-- Mun Jung Cheol : 2009-10-06 start -->
+    <url-mapping url="EES_DMT_4007.do" screen="EES_DMT_4007.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_4007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_4007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt4007Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-10-06 end -->
+    
+    <!-- Mun Jung Cheol : 2009-10-12 start -->
+    <url-mapping url="EES_DMT_5101.do" screen="EES_DMT_5101.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_5101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_5101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_5101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt5101Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-10-12 end -->
+    
+    <!-- Mun Jung Cheol : 2009-10-13 start -->
+    <url-mapping url="EES_DMT_7002.do" screen="EES_DMT_7002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcollectionofficemgt.event.EES_DMT_7002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_7002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcollectionofficemgt.event.EES_DMT_7002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcollectionofficemgt.event.EesDmt7002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-10-13 end -->  
+    
+	<!-- Choi Sung Hwan : 2009-10-14 start -->
+    <url-mapping url="EES_DMT_7008-1.do" screen="EES_DMT_7008-1.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EES_DMT_7008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_7008-1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EES_DMT_7008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EesDmt7008Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Sung Hwan : 2009-10-14 end -->
+
+    <!-- Mun Jung Cheol : 2009-10-15 start -->
+    <url-mapping url="EES_DMT_7006.do" screen="EES_DMT_7006.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_7006HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_DMT_7006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EES_DMT_7006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_7006_P.do" screen="EES_DMT_7006_P.screen" />
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.invoiceissuecollectionmgt.event.EesDmt7006Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtinvoicemgt.DMTInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-10-15 end -->
+    
+    <!-- Mun Jung Cheol : 2009-10-19 start -->
+    <url-mapping url="EES_DMT_6009.do" screen="EES_DMT_6009.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.waivereport.event.EES_DMT_6009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_6009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.waivereport.event.EES_DMT_6009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.waivereport.event.EesDmt6009Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-10-19 end -->
+    
+    <!-- Mun Jung Cheol : 2009-10-21 start -->
+    <url-mapping url="EES_DMT_6010.do" screen="EES_DMT_6010.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.waivereport.event.EES_DMT_6010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_6010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.waivereport.event.EES_DMT_6010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.waivereport.event.EesDmt6010Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-10-21 end -->
+    
+    <!-- Mun Jung Cheol : 2009-11-04 start -->
+    <url-mapping url="DMTCommonFaxEmailGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtcommon.commonfaxemail.event.DMT_COM_FAXEMAIL_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtcommon.commonfaxemail.event.DmtComFaxEmailEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtcommon.DMTCommonSC</service-action-class>
+    </event-mapping>
+    <!-- SungHoon, Lee : 2009-11-04 end -->
+    
+    <!-- Hwang Hyo Keun : 2010-03-11 start -->
+    <url-mapping url="EES_DMT_MULTI.do" screen="EES_DMT_MULTI.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtcommon.commonfinder.event.DMT_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtcommon.commonfinder.event.DmtComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtcommon.DMTCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang Hyo Keun : 2010-03-11 end -->
+	
+    <!-- Kim Bong Gyoon : 2012-04-12 start -->
+    <url-mapping url="EES_DMT_7011.do" screen="EES_DMT_7011.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_7011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EesDmt7011Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Bong Gyoon : 2012-04-12 end -->
+    
+    <!-- Kim Bong Gyoon : 2012-04-16 start -->
+    <url-mapping url="EES_DMT_7012.do" screen="EES_DMT_7012.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_7012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EesDmt7012Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Bong Gyoon : 2012-04-16 end -->
+    
+    <!-- Kim Bong Gyoon : 2012-04-18 start -->
+    <url-mapping url="EES_DMT_7013.do" screen="EES_DMT_7013.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_7013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EesDmt7013Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Bong Gyoon : 2012-04-18 end -->
+	
+    <!-- Oh Yohan : 2012-04-16 start -->
+    <url-mapping url="EES_DMT_7014.do" screen="EES_DMT_7014.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_7014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EES_DMT_7014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.dmtcalculationtypemgt.event.EesDmt7014Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtperformanceanalysis.DMTPerformanceAnalysisSC</service-action-class>
+    </event-mapping>
+    <!-- Oh Yohan : 2012-04-16 end -->
+	
+	<!-- SB45 Ruling Exceptions : 2016-01-25 start -->
+    <url-mapping url="EES_DMT_1009.do" screen="EES_DMT_1009.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.holidaymgt.event.EES_DMT_1009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_1009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.holidaymgt.event.EES_DMT_1009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.holidaymgt.event.EesDmt1009Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtmasterdatamgt.DMTMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- SB45 Ruling Exceptions : 2016-01-25 end -->
+    
+	<!-- YC Kim : 2017-05-15 start -->
+    <url-mapping url="EES_DMT_3015.do" screen="EES_DMT_3015.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_3015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EES_DMT_3015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtclosing.chargecalculation.event.EesDmt3015Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtclosing.DMTClosingSC</service-action-class>
+    </event-mapping>
+	<!-- YC Kim : 2017-05-15 end -->
+	
+	
+	<!-- YC Kim : 2018-04-05 start -->
+    <url-mapping url="EES_DMT_2106.do" screen="EES_DMT_2106.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EES_DMT_2106HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2106GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EES_DMT_2106HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.rfaexceptiontariffmgt.event.EesDmt2106Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+	<!-- YC Kim : 2018-04-05 end -->
+	
+	<!-- YC Kim : 2018-04-17 start -->
+    <url-mapping url="EES_DMT_2107.do" screen="EES_DMT_2107.screen" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.scexceptiontariffmgt.event.EES_DMT_2107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_DMT_2107GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.scexceptiontariffmgt.event.EES_DMT_2107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.scexceptiontariffmgt.event.EesDmt2107Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.dmt.dmtexceptionmgt.DMTExceptionMgtSC</service-action-class>
+    </event-mapping>
+	<!-- YC Kim : 2018-04-17 end -->
+	
+</mappings>

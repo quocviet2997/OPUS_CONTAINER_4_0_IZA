@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAORemoveAllArRouteRanksDSQL">
+			<desc><![CDATA[2011.03.14 정윤태 AR ROUTE RANK 정보 전체를 삭제한다]]></desc>
+			<sql><![CDATA[
+DELETE FROM AR_ROUT_RNK			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

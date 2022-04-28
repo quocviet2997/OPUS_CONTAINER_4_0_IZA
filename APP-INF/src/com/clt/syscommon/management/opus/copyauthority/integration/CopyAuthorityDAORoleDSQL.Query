@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CopyAuthorityDAORoleDSQL">
+			<desc><![CDATA[user vs role mapping delete]]></desc>
+			<sql><![CDATA[
+delete from com_usr_role_mtch
+where usr_id = @[to_usr_id]			]]></sql>
+			<params>
+				<param name="to_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

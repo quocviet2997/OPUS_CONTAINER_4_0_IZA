@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApInvHdrUSQL">
+			<desc><![CDATA[AP_INV_HDR 결제정보를 수정한다]]></desc>
+			<sql><![CDATA[
+UPDATE AP_INV_HDR 		
+   SET ATTR_CTNT1 = @[apro_seq_key] 	
+ WHERE CSR_NO     = @[csr_no]				]]></sql>
+			<params>
+				<param name="apro_seq_key" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

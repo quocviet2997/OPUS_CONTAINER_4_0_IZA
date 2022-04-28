@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchArMasterRevenueVvdListRSQL">
+			<desc><![CDATA[AR_MST_REV_VVD table에서 
+vsl_cd, vvd, rev-yrmon의 조건으로 검색을 실행]]></desc>
+			<sql><![CDATA[
+SELECT
+VSL_CD
+, SKD_VOY_NO
+, SKD_DIR_CD
+, RLANE_DIR_CD
+, VSL_CD H_VSL_CD
+, SKD_VOY_NO H_SKD_VOY_NO
+, SKD_DIR_CD H_SKD_DIR_CD
+, RLANE_DIR_CD H_RLANE_DIR_CD
+, VOY_TP_CD
+, SLAN_CD
+, PORT_CHK_FLG
+, REV_PORT_CD
+, LOD_QTY
+, REV_YRMON
+, COM_VVD_FLG
+, VVD_COM_LVL
+, RLANE_CD
+, DELT_FLG
+, UPD_USR_ID
+, CRE_USR_ID
+FROM AR_MST_REV_VVD
+WHERE 1 = 1
+#if (${vsl_cd} != '')
+AND VSL_CD = @[vsl_cd]
+#end
+#if (${vvd} != '')
+AND VSL_CD||SKD_VOY_NO||SKD_DIR_CD||RLANE_DIR_CD LIKE @[vvd] || '%'
+#end
+#if (${rev_yrmon} != '')
+AND REV_YRMON = @[rev_yrmon]
+#end			]]></sql>
+			<params>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="vvd" type="12" value="" out="N"/>
+				<param name="rev_yrmon" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

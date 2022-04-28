@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="LocationDBDAOSearchRccLccCdRSQL">
+			<desc><![CDATA[RCC SEARCH]]></desc>
+			<sql><![CDATA[
+#if(${loc_grp_cd} == 'L')   -- LCC_CD 
+SELECT DISTINCT LCC_CD CODE 
+     , LCC_CD NAME 
+#else                       -- RCC_CD 
+SELECT DISTINCT RCC_CD CODE 
+     , RCC_CD NAME 
+#end
+FROM   MDM_EQ_ORZ_CHT
+WHERE  DELT_FLG = 'N'
+#if(${loc_grp_cd} == 'L')   -- LCC_CD 
+  #if(${loc_cd} != '')      
+AND    RCC_CD = @[loc_cd]   
+  #end
+#else                       -- RCC_CD 
+  #if(${loc_cd} != '')      
+AND    LCC_CD = @[loc_cd]
+  #end
+#end
+ORDER BY NAME			]]></sql>
+			<params>
+				<param name="loc_cd" type="12" value="1" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

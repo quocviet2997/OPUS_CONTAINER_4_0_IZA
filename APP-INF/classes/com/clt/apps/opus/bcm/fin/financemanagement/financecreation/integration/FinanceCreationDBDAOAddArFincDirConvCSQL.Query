@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOAddArFincDirConvCSQL">
+			<desc><![CDATA[AR_FINC_DIR_CONV table에 데이터 입력]]></desc>
+			<sql><![CDATA[
+INSERT INTO AR_FINC_DIR_CONV (
+    SLAN_CD, 
+    SCONTI_CD, 
+    SLAN_DIR_CD, 
+    RLANE_DIR_CD, 
+    DIR_CNG_CD, 
+    AP_MK_FLG, 
+    RLANE_CD, 
+    DELT_FLG, 
+    CRE_USR_ID,
+    CRE_DT, 
+    UPD_USR_ID, 
+    UPD_DT
+)VALUES(
+    @[slan_cd],
+    @[sconti_cd],
+    @[slan_dir_cd],
+    @[rlane_dir_cd],
+    @[dir_cng_cd],
+    @[ap_mk_flg],
+    @[rlane_cd],
+    @[delt_flg],
+    @[cre_usr_id],
+    SYSDATE,
+    @[upd_usr_id],
+    SYSDATE
+)			]]></sql>
+			<params>
+				<param name="slan_cd" type="12" value="" out="N"/>
+				<param name="sconti_cd" type="12" value="" out="N"/>
+				<param name="slan_dir_cd" type="12" value="" out="N"/>
+				<param name="rlane_dir_cd" type="12" value="" out="N"/>
+				<param name="dir_cng_cd" type="12" value="" out="N"/>
+				<param name="ap_mk_flg" type="12" value="" out="N"/>
+				<param name="rlane_cd" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

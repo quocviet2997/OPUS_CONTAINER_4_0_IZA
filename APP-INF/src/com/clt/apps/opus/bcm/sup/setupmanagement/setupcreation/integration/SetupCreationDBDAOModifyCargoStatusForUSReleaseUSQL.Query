@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOModifyCargoStatusForUSReleaseUSQL">
+			<desc><![CDATA[Cargo Tracking Info.(Non physical event for US cargo release) 정보를 변경한다]]></desc>
+			<sql><![CDATA[
+UPDATE SCE_EDI_MNG_AMS_STS
+   SET 	 COP_IB_RAIL_CHK_CD  = @[cop_ib_rail_chk_cd]
+		,EDI_RMK1            = @[edi_rmk1]
+		,EDI_RMK2            = @[edi_rmk2]
+		,UPD_USR_ID          = @[upd_usr_id]
+		,UPD_DT              = SYSDATE
+ WHERE EDI_ORG_STS_CD = @[edi_org_sts_cd]
+   AND EDI_PRE_SNT_STS_CD = @[edi_pre_snt_sts_cd]
+   AND EDI_EVNT_STS_CD = @[edi_evnt_sts_cd]			]]></sql>
+			<params>
+				<param name="cop_ib_rail_chk_cd" type="12" value="" out="N"/>
+				<param name="edi_rmk1" type="12" value="" out="N"/>
+				<param name="edi_rmk2" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="edi_org_sts_cd" type="12" value="" out="N"/>
+				<param name="edi_pre_snt_sts_cd" type="12" value="" out="N"/>
+				<param name="edi_evnt_sts_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOAddArRouteRanksCSQL">
+			<desc><![CDATA[AddArRouteRanks]]></desc>
+			<sql><![CDATA[
+INSERT INTO AR_ROUT_RNK(
+RLANE_CD
+, RNK_SEQ
+, RLANE_DESC
+, ZN_IOC_CD
+, IOC_DESC
+, SLAN_CD
+, DELT_FLG
+, CRE_USR_ID
+, CRE_DT
+, UPD_DT
+, UPD_USR_ID
+)VALUES(
+@[rlane_cd]
+, @[rnk_seq]
+, @[rlane_desc]
+, @[zn_ioc_cd]
+, @[ioc_desc]
+, @[slan_cd]
+, @[delt_flg]
+, @[cre_usr_id]
+, SYSDATE
+, SYSDATE
+, @[upd_usr_id]
+)			]]></sql>
+			<params>
+				<param name="rlane_cd" type="12" value="" out="N"/>
+				<param name="rnk_seq" type="12" value="" out="N"/>
+				<param name="rlane_desc" type="12" value="" out="N"/>
+				<param name="zn_ioc_cd" type="12" value="" out="N"/>
+				<param name="ioc_desc" type="12" value="" out="N"/>
+				<param name="slan_cd" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

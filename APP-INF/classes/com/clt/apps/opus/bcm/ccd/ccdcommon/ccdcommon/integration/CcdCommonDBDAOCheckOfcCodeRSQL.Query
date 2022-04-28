@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckOfcCodeRSQL">
+			<desc><![CDATA[MDM_ORGANIZATION 테이블에 ofcCd 에 
+해당하는 정보가 있는지 유무를 리턴한다.]]></desc>
+			<sql><![CDATA[
+SELECT OFC_CD,
+       SUBSTR(LOC_CD, 0, 2) LOC_CD 
+FROM MDM_ORGANIZATION 
+WHERE 1=1 
+AND OFC_CD = @[ofc_cd]
+AND DELT_FLG ='N' 			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

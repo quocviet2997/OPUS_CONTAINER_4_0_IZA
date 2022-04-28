@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOCheckEdiGroupCodeRSQL">
+			<desc><![CDATA[EDI GROUP에 Edi Group Code가 존재하는지 체크한다]]></desc>
+			<sql><![CDATA[
+SELECT EDI_GRP_CD
+  FROM EDI_GROUP
+ WHERE EDI_GRP_CD = @[edi_grp_cd]
+#if(${co_div_cd} != '')
+   AND CO_DIV_CD = @[co_div_cd]
+#end
+   AND DELT_FLG = 'N'
+   AND ROWNUM = 1			]]></sql>
+			<params>
+				<param name="edi_grp_cd" type="12" value="" out="N"/>
+				<param name="co_div_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

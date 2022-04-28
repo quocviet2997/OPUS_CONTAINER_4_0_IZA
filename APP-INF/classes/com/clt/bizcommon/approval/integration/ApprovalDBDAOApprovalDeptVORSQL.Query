@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalDeptVORSQL">
+			<desc><![CDATA[Approval Dept VO Dummy Query]]></desc>
+			<sql><![CDATA[
+SELECT LEVEL
+     , OFC_CD
+  FROM MDM_ORGANIZATION
+ WHERE NVL(DELT_FLG, 'N') <> 'Y' 
+ CONNECT BY NOCYCLE PRIOR OFC_CD = PRNT_OFC_CD
+
+#if (${ofc_cd} != '') 
+ START WITH OFC_CD='SELHO'
+#else 
+ START WITH OFC_CD='SELHO'
+#end
+
+ ORDER SIBLINGS BY OFC_CD			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

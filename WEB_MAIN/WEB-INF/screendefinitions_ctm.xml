@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+    <!-- KyungMin Woo : 2009-04-24 start -->
+    <screen name="EES_CTM_0435">
+        <parameter key="title"    value="Logics Service Provider" direct="true"/>
+        <parameter key="body"     value="apps/eco/ctm/ctm/logicsserviceprovider/logicsserviceprovider/jsp/EES_CTM_0435.jsp"/>
+    </screen>
+
+    <screen name="EES_CTM_0400">
+        <parameter key="title"    value="Container Movement Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmasterdatamgt/jsp/EES_CTM_0400.jsp"/>
+    </screen>
+    <!-- KyungMin Woo : 2009-04-24 end -->
+
+    <!-- KyungMin Woo : 2009-04-27 start -->
+    <screen name="EES_CTM_0423">
+        <parameter key="title"    value="Restuffing Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/restuffingmgt/restuffingcontainerregistration/jsp/EES_CTM_0423.jsp"/>
+    </screen>
+    <!-- KyungMin Woo : 2009-04-27 end -->
+
+    <!-- KyungMin Woo : 2009-04-29 start -->
+    <screen name="EES_CTM_0412">
+        <parameter key="title"    value="BKG container update Irr." direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0412.jsp"/>
+    </screen>
+    <!-- KyungMin Woo : 2009-04-29 end -->
+
+    <!-- KIM, Sang-Soo : 2009-04-30 start -->
+    <screen name="EES_CTM_0421">
+        <parameter key="title"    value="Restuffing Reason" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmasterdatamgt/jsp/EES_CTM_0421.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2009-04-30 end -->
+
+    <!-- KIM, Sang-Soo : 2009-05-04 start -->
+    <screen name="EES_CTM_0428">
+        <parameter key="title"    value="Territories Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/emptyreleaseredeliveryordermgt/emptyreleaseredeliveryordermgt/jsp/EES_CTM_0428.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2009-05-04 end -->
+
+    <!-- KIM, Sang-Soo : 2009-05-11 start -->
+    <screen name="EES_CTM_0419">
+        <parameter key="title"    value="VL/VD EDI Test Result" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0419.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2009-05-11 end -->
+
+    <!-- KIM, Sang-Soo : 2009-05-11 start -->
+    <screen name="EES_CTM_0415">
+        <parameter key="title"    value="Deleted CNTR MVMT History" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0415.jsp"/>
+    </screen>
+
+    <screen name="EES_CTM_0415_POP" template="templatePop">
+        <parameter key="title"    value="Deleted CNTR MVMT History" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0415.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2009-05-11 end -->
+
+    <!-- KyungMin Woo : 2009-05-04 start -->
+    <screen name="EES_CTM_0430">
+        <parameter key="title"    value="CNTR History Update" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0430.jsp"/>
+    </screen>
+      <screen name="EES_CTM_0430_POP" template="templatePop">
+        <parameter key="title"    value="CNTR History Update" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0430.jsp"/>
+    </screen>
+ 
+    <!-- KyungMin Woo : 2009-05-04 end -->
+
+    <!-- KIM, Sang-Soo : 2009-05-14 start -->
+    <screen name="EES_CTM_0405">
+        <parameter key="title"    value="Empty VL List without BKG" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0405.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2009-05-14 end -->
+
+    <!-- KIM, Sang-Soo : 2009-05-19 start -->
+    <screen name="EES_CTM_0408">
+        <parameter key="title"    value="Each Container" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0408.jsp"/>
+    </screen>
+    
+    <screen name="EES_CTM_0408_POP" template="templatePop">
+        <parameter key="title"    value="Each Container" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0408.jsp"/>
+    </screen>
+    
+    <!-- KIM, Sang-Soo : 2009-05-19 end -->
+
+    <screen name="EES_CTM_0470">
+        <parameter key="title"    value="Each Container" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0470.jsp"/>
+    </screen>
+    
+    <screen name="EES_CTM_0470_POP" template="templatePop">
+        <parameter key="title"    value="Each Container" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0470.jsp"/>
+    </screen>
+    
+    <!-- Hwang, Mi-Yun : 2015-08-20 start -->
+    <screen name="EES_CTM_0471">
+        <parameter key="title"    value="Each Booking" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0471.jsp"/>
+    </screen>
+
+    <screen name="EES_CTM_0471_POP" template="templatePop">
+        <parameter key="title"    value="Each Container" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0471.jsp"/>
+    </screen>
+    <!-- Hwang, Mi-Yun : 2015-08-20 end -->
+    
+    <!-- Hwang, Mi-Yun : 2016-01-15 start -->
+    <screen name="EES_CTM_0472">
+        <parameter key="title"    value="Booking Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0472.jsp"/>
+    </screen>
+
+    <screen name="EES_CTM_0472_POP" template="templatePop">
+        <parameter key="title"    value="Booking Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0472.jsp"/>
+    </screen>
+    <!-- Hwang, Mi-Yun : 2016-01-15 end -->
+    
+    <!-- Hwang, Mi-Yun : 2016-01-15 start -->
+    <screen name="EES_CTM_0473">
+        <parameter key="title"    value="EQR Ref Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0473.jsp"/>
+    </screen>
+
+    <screen name="EES_CTM_0473_POP" template="templatePop">
+        <parameter key="title"    value="EQR Ref Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0473.jsp"/>
+    </screen>
+    <!-- Hwang, Mi-Yun : 2016-01-15 end -->
+    
+    <!-- KIM, Sang-Soo : 2009-05-25 start -->
+    <screen name="EES_CTM_0409">
+        <parameter key="title"    value="Each Booking" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0409.jsp"/>
+    </screen>
+
+    <screen name="EES_CTM_0409_POP" template="templatePop">
+        <parameter key="title"    value="Each Container" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0409.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2009-05-25 end -->
+
+    <!--  KyungMin Woo : 2009-06-02 start -->
+    <screen name="EES_CTM_0440">
+        <parameter key="title"    value="VL/VD correction by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0440.jsp"/>
+    </screen>
+    <!-- KyungMin Woo : 2009-06-02 end -->
+
+    <!-- KIM, Sang-Soo : 2009-06-08 start -->
+    <screen name="EES_CTM_0404">
+        <parameter key="title"    value="Update of EDI Message (All MSG)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0404.jsp"/>
+    </screen>
+
+    <screen name="EES_CTM_0404_POP" template="templatePop">
+        <parameter key="title"    value="Update of EDI Message (All MSG)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0404.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2009-06-08 end -->
+
+    <!--  KyungMin Woo : 2009-06-18 start -->
+    <screen name="EES_CTM_0406">
+        <parameter key="title"    value="VL/VD correction by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0406.jsp"/>
+    </screen>
+    <!-- KyungMin Woo : 2009-06-18 end -->
+
+    <!-- KIM, Sang-Soo : 2009-06-20 start -->
+    <screen name="EES_CTM_0442" template="templatePop">
+        <parameter key="title"    value="Detail Information" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0442.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2009-06-20 end -->
+
+    <!-- KIM, Sang-Soo : 2009-06-26 start -->
+    <screen name="EES_CTM_0432" template="templatePop">
+        <parameter key="title"    value="Message" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0432.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2009-06-26 end -->
+
+    <!-- Kyung Min Woo : 2009-07-12 start -->
+    <screen name="EES_CTM_0458" template="templatePop">
+        <parameter key="title"    value="MVMT" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0458.jsp"/>
+    </screen>
+    <!-- Kyung Min Woo : 2009-07-12 end -->
+
+    <!-- Kyung Min Woo : 2009-07-12 start -->
+    <screen name="EES_CTM_0433" template="templatePop">
+        <parameter key="title"    value="MVMT" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0433.jsp"/>
+    </screen>
+    <!-- Kyung Min Woo : 2009-07-12 end -->
+
+    <!-- KIM, Sang-Soo : 2009-07-20 (GATENEW Test) start -->
+    <screen name="EES_CTM_0000">
+        <parameter key="title"    value="GATENEW Test" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0000.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2009-07-20 (GATENEW Test) end -->
+
+    <!-- KIM, Sang Soo : 2009-07-27 start -->
+    <screen name="EES_CTM_0426">
+        <parameter key="title"    value="Release/Re-delivery Order" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/emptyreleaseredeliveryordermgt/emptyreleaseredeliveryordermgt/jsp/EES_CTM_0426.jsp"/>
+    </screen>
+    <!-- KIM, Sang Soo : 2009-07-27 end -->
+
+    <!-- Kyung Min Woo : 2009-08-04 start -->
+    <screen name="EES_CTM_0422">
+        <parameter key="title"    value="Restuffing Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/restuffingmgt/restuffingcontainerregistration/jsp/EES_CTM_0422.jsp"/>
+    </screen>
+    <!-- Kyung Min Woo : 2009-08-04 end -->
+
+    <!-- Kyung Min Woo : 2009-08-04 start -->
+    <screen name="EES_CTM_0445" template="templatePop">
+        <parameter key="title"    value="Booking Info" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/restuffingmgt/restuffingcontainerregistration/jsp/EES_CTM_0445.jsp"/>
+    </screen>
+    <!-- Kyung Min Woo : 2009-08-04 end -->
+
+    <!-- KIM, Sang Soo : 2009-08-16 start -->
+    <screen name="EES_CTM_0451" template="templatePop">
+        <parameter key="title"    value="Release/Re-delivery Order" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/emptyreleaseredeliveryordermgt/emptyreleaseredeliveryordermgt/jsp/EES_CTM_0451.jsp"/>
+    </screen>
+
+    <screen name="EES_CTM_0451_RD"  template="templateRD">
+        <parameter key="body"     value="apps/opus/ees/ctm/emptyreleaseredeliveryordermgt/emptyreleaseredeliveryordermgt/jsp/EES_CTM_0451RD.jsp"/>
+    </screen>
+    <!-- KIM, Sang Soo : 2009-08-16 end -->
+
+    <!-- KIM, Sang Soo : 2009-08-18 start -->
+    <screen name="EES_CTM_0429">
+        <parameter key="title"    value="Release/Redelivery Order" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/emptyreleaseredeliveryordermgt/emptyreleaseredeliveryordermgt/jsp/EES_CTM_0429.jsp"/>
+    </screen>
+    <!-- KIM, Sang Soo : 2009-08-18 end -->
+
+    <!-- Kyung Min Woo : 2009-08-17 start -->
+    <screen name="EES_CTM_0411">
+        <parameter key="title"    value="Detail Form" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0411.jsp"/>
+    </screen>
+    
+    <screen name="EES_CTM_0411_POP" template="templatePop">
+        <parameter key="title"    value="Detail Form" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0411.jsp"/>
+    </screen>
+    
+    <!-- Kyung Min Woo : 2009-08-17 end -->
+
+    <!-- Kyung Min Woo : 2009-08-18 start -->
+    <screen name="EES_CTM_0443" template="templatePop">
+        <parameter key="title"    value="Cargo Location message" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0443.jsp"/>
+    </screen>
+    <!-- Kyung Min Woo : 2009-08-18 end -->
+
+    <!-- Kyung Min Woo : 2009-08-18 start -->
+    <screen name="EES_CTM_0413">
+        <parameter key="title"    value="BKG/MVMT VL/VD Unmatch" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0413.jsp"/>
+    </screen>
+
+    <screen name="EES_CTM_0413_POP" template="templatePop">
+        <parameter key="title"    value="BKG/MVMT VL/VD Unmatch Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0413.jsp"/>
+    </screen>
+    
+    <!-- Kyung Min Woo : 2009-08-18 end -->
+
+    <!-- Kyung Min Woo : 2009-08-27 start -->
+    <screen name="EES_CTM_0418">
+        <parameter key="title"    value="MVMT Timely Update Ratio" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0418.jsp"/>
+    </screen>
+    <!-- Kyung Min Woo : 2009-08-27 end -->
+
+    <!-- KIM, Sang Soo : 2009-08-28 start -->
+    <screen name="EES_CTM_0417">
+        <parameter key="title"    value="EDI Error Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0417.jsp"/>
+    </screen>
+    <!-- KIM, Sang Soo : 2009-08-28 end -->
+
+    <!-- KIM, Sang Soo : 2009-09-03 start -->
+    <screen name="EES_CTM_0420">
+        <parameter key="title"    value="EDI Error Monitoring" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0420.jsp"/>
+    </screen>
+    <!-- KIM, Sang Soo : 2009-09-03 end -->
+
+    <!-- KIM, Sang Soo : 2009-09-09 start -->
+    <screen name="EES_CTM_0456">
+        <parameter key="title"    value="Pre-booked VL/VD Correction" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0456.jsp"/>
+    </screen>
+    <!-- KIM, Sang Soo : 2009-09-09 end -->
+
+    <!-- Kyung Min Woo : 2009-09-09 start -->
+    <screen name="EES_CTM_0459">
+        <parameter key="title"    value="Movement History by Detail Form" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0459.jsp"/>
+    </screen>
+    <!-- Kyung Min Woo : 2009-09-09 end -->
+    <screen name="EES_CTM_0459_POP" template="templatePop">
+        <parameter key="title"    value="Movement History by Detail Form" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0459.jsp"/>
+    </screen>
+
+    <!-- KIM, Sang-Soo : 2009-09-15 start -->
+    <screen name="EES_CTM_0414">
+        <parameter key="title"    value="Update of EDI Message (Error)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0414.jsp"/>
+    </screen>
+    <!-- KIM, Sang-Soo : 2009-09-15 end -->
+
+    <!-- Kyung Min Woo : 2009-09-25 start -->
+    <screen name="EES_CTM_0460">
+        <parameter key="title"    value="VL/VD update status" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementfinder/jsp/EES_CTM_0460.jsp"/>
+    </screen>
+    <!-- Kyung Min Woo : 2009-09-25 end -->
+
+    <!-- Kyung Min Woo : 2009-09-25 start -->
+    <screen name="EES_CTM_0461">
+        <parameter key="title"    value="US AMS Locaton" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmasterdatamgt/jsp/EES_CTM_0461.jsp"/>
+    </screen>
+    <!-- Kyung Min Woo : 2009-09-25 end -->
+    <!-- Kyung Min Woo : 2009-09-25 start -->
+    <screen name="EES_CTM_0462">
+        <parameter key="title"    value="US AMS Locaton" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0462.jsp"/>
+    </screen>
+    <!-- Kyung Min Woo : 2009-09-25 end -->
+	<!-- Kyoung Wan Cho : 2012-04-18 start -->
+    <screen name="EES_CTM_1001">
+        <parameter key="title"    value="CNTR MVMT Sequence" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmasterdatamgt/jsp/EES_CTM_1001.jsp"/>
+    </screen>
+    <!-- Kyoung Wan Cho : 2012-04-18 end -->
+	<!-- Kyoung Wan Cho : 2012-04-19 start -->
+    <screen name="EES_CTM_1002">
+        <parameter key="title"    value="CNTR MVMT Status Decision" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmasterdatamgt/jsp/EES_CTM_1002.jsp"/>
+    </screen>
+    <!-- Kyoung Wan Cho : 2012-04-19 end -->
+          <screen name="EES_CTM_0407">
+        <parameter key="title"    value="Domestic MVMT" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/equipmentmovementmgt/containermovementmgt/jsp/EES_CTM_0407.jsp"/>
+    </screen>
+     <screen name="EES_CTM_0452">
+        <parameter key="title"    value="Import Permission Draft" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/ctm/emptyreleaseredeliveryordermgt/emptyreleaseredeliveryordermgt/jsp/EES_CTM_0452.jsp"/>
+    </screen>
+    
+</screen-definitions>

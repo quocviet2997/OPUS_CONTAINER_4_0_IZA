@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ProgramDAOProgramRSQL">
+			<desc><![CDATA[select program list information]]></desc>
+			<sql><![CDATA[
+SELECT 
+A.pgm_no, 
+A.pgm_nm, 
+A.pgm_desc, 
+A.pgm_url,
+DECODE(B.PGM_NO,NULL,'X',0,'X','O') ROLES, 
+DECODE(C.PGM_NO,NULL,'X',0,'X','O') OFCS, 
+A.pgm_mnu_div_cd, 
+A.pgm_tp_cd, 
+A.pgm_sts_cd, 
+A.dev_nm,
+to_char(dev_dt, 'yyyymmdd') dev_dt, 
+A.popup_flg, 
+A.use_flg
+FROM com_program A, (SELECT DISTINCT C1.PGM_NO PGM_NO FROM COM_PGM_ROLE C1) B,
+(SELECT DISTINCT C1.PGM_NO PGM_NO FROM COM_OFC_PGM_MTCH C1) C
+WHERE A.PGM_NO = B.PGM_NO(+)
+AND A.PGM_NO = C.PGM_NO(+)
+#if (${pgm_tp_cd} != '') 
+and	A.pgm_tp_cd = @[pgm_tp_cd]
+#end
+#if (${pgm_mnu_div_cd} != '') 
+and	A.pgm_mnu_div_cd = @[pgm_mnu_div_cd]
+#end
+#if (${pgm_no} != '') 
+and	A.pgm_no like '%'|| @[pgm_no] || '%'
+#end
+#if (${pgm_nm} != '') 
+and	UPPER(A.pgm_nm) like '%'|| UPPER(@[pgm_nm]) || '%'
+#end			]]></sql>
+			<params>
+				<param name="pgm_tp_cd" type="12" value="" out="N"/>
+				<param name="pgm_mnu_div_cd" type="12" value="" out="N"/>
+				<param name="pgm_no" type="12" value="" out="N"/>
+				<param name="pgm_nm" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

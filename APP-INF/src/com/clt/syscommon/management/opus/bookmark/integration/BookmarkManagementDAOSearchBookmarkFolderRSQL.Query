@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="BookmarkManagementDAOSearchBookmarkFolderRSQL">
+			<desc><![CDATA[select user's bookmark folder list]]></desc>
+			<sql><![CDATA[
+SELECT 
+	pgm_no, 
+ dp_nm
+from com_bookmark
+where usr_id=@[usr_id]
+and fol_flg = 'Y'
+and (prnt_pgm_no is null or prnt_pgm_no='')
+ORDER BY dp_seq			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="9008631" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

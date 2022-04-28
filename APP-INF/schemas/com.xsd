@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://irep.clt.com/com" targetNamespace="http://irep.clt.com/com">
+	<xsd:complexType name="EAIHeaderType">
+		<xsd:sequence>
+			<xsd:element name="InstanceId" type="xsd:string" />
+			<xsd:element name="Parameters" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Parameter" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:simpleContent>
+									<xsd:extension base="xsd:string">
+										<xsd:anyAttribute />
+									</xsd:extension>
+								</xsd:simpleContent>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="COM001_0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="GetMailEpInfo" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="UserID" type="xsd:string" minOccurs="0" />
+										<xsd:element name="GlobalUserId" type="xsd:string" minOccurs="0" />
+										<xsd:element name="FormDistinct" type="xsd:string" minOccurs="0" />
+										<xsd:element name="SystemDocumentID" type="xsd:string" minOccurs="0" />
+										<xsd:element name="SystemName" type="xsd:string" minOccurs="0" />
+										<xsd:element name="xmldom" type="xsd:string" minOccurs="0" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="GetMailEpInfoResponse" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="GetMailEpInfoResult" type="xsd:string" minOccurs="0" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COM005_0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="CargoClaimInfo" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="USERID" type="xsd:string" minOccurs="0" />
+										<xsd:element name="DOCID" type="xsd:string" minOccurs="0" />
+										<xsd:element name="REQID" type="xsd:string" minOccurs="0" />
+										<xsd:element name="XMLDATA" type="xsd:string" minOccurs="0" />
+										<xsd:element name="USERTP" type="xsd:string" minOccurs="0" />
+										<xsd:element name="SYSTP" type="xsd:string" minOccurs="0" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="CargoClaimInfoResponse" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="CargoClaimInfoResult" type="xsd:string" minOccurs="0" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COM005_R001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="CargoClaimInfoReturn" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="SYSDOCID" type="xsd:string" minOccurs="0" />
+										<xsd:element name="REQUESTID" type="xsd:string" minOccurs="0" />
+										<xsd:element name="RESULT" type="xsd:string" minOccurs="0" />
+										<xsd:element name="RESULTMSG" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE1" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE2" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE3" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE4" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE5" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE6" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE7" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE8" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE9" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE10" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE11" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE12" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE13" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE14" type="xsd:string" minOccurs="0" />
+										<xsd:element name="ATTRIBUTE15" type="xsd:string" minOccurs="0" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

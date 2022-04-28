@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CurrencyDBDAOMdmCurrencyVORSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+WITH PARAM
+AS(SELECT @[curr_cd] CURR_CD, 
+          @[cnt_cd] CNT_CD,
+          @[curr_desc] CURR_DESC FROM DUAL)
+
+SELECT A.CURR_CD,
+       A.CNT_CD,
+       A.CURR_DESC,
+		(CASE 
+			WHEN 'Y' = delt_flg THEN 'Delete' 
+			ELSE 'Active' 
+		END) AS delt_flg
+FROM MDM_CURRENCY A, PARAM P
+WHERE A.CURR_CD LIKE '%'||P.CURR_CD||'%'
+AND   A.CNT_CD LIKE P.CNT_CD||'%'
+AND UPPER(A.CURR_DESC) LIKE '%'||UPPER(P.CURR_DESC)||'%'
+
+#if (${mdm_yn} != '')
+	#if (${delt_flg} == 'Y') 
+		AND NVL(A.DELT_FLG, 'N') = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+	#else 
+		AND NVL(A.DELT_FLG, 'N') <> 'Y'
+	#end
+#else	
+	AND NVL(A.DELT_FLG, 'N') <> 'Y'
+#end
+			]]></sql>
+			<params>
+				<param name="curr_cd" type="12" value="AED" out="N"/>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="curr_desc" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CodeManagementDBDAOsearchSubSystemCdRSQL">
+			<desc><![CDATA[CodeManagementDBDAOsearchSubSystemCdRSQL]]></desc>
+			<sql><![CDATA[
+SELECT INTG_CD_VAL_CTNT SUB_SYS_CD
+FROM COM_INTG_CD_DTL
+WHERE INTG_CD_ID = 'CD20013' 
+ORDER BY INTG_CD_VAL_DP_DESC
+			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

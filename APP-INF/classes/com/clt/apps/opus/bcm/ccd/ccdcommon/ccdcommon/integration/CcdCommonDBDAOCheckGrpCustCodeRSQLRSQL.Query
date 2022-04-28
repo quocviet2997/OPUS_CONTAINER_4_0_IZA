@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckGrpCustCodeRSQLRSQL">
+			<desc><![CDATA[Group Customer Code 확인]]></desc>
+			<sql><![CDATA[
+SELECT CUST_GRP_ID
+FROM MDM_CUST_PERF_GRP
+WHERE 1=1 
+AND CUST_GRP_ID = @[cust_grp_id]
+AND DELT_FLG ='N'			]]></sql>
+			<params>
+				<param name="cust_grp_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FileManagementDBDAOComUpldFileVORSQL">
+			<desc><![CDATA[  WAS에 올라간 File에 대한 정보를 가져온다.]]></desc>
+			<sql><![CDATA[
+SELECT 
+	file_sav_id
+,	file_upld_nm
+,	file_sz_capa
+,	file_path_url
+,	pgm_sub_sys_cd
+,	delt_flg
+,	cre_usr_id
+FROM com_upld_file
+			]]></sql>
+			<params>
+				<param name="file_sav_id" type="12" value="" out="n"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOSearchARRHQOfficeListRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT AR_OFC_CD
+  FROM
+      (
+        SELECT DISTINCT(A.AR_OFC_CD) AR_OFC_CD
+        FROM MDM_ORGANIZATION A
+        WHERE A.AR_OFC_CD IN (
+            SELECT AR_HD_QTR_OFC_CD
+            FROM MDM_ORGANIZATION
+            WHERE DELT_FLG = 'N' 
+            
+            )
+          AND A.DELT_FLG = 'N' 
+        
+        UNION ALL
+        
+        SELECT 'ALL' AR_OFC_CD
+          FROM DUAL
+       )
+ORDER BY AR_OFC_CD			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

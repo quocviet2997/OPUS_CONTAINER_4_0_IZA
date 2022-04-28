@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOModifyRevenueMonthVvdUSQL">
+			<desc><![CDATA[update Revenue Month VVD]]></desc>
+			<sql><![CDATA[
+UPDATE AR_MST_REV_VVD
+SET
+	RLANE_CD = @[rlane_cd]
+	, VOY_TP_CD = @[voy_tp_cd]
+	, VVD_COM_LVL = @[vvd_com_lvl]
+	, DELT_FLG = @[delt_flg]
+	, UPD_USR_ID = @[upd_usr_id]
+	, UPD_DT = SYSDATE
+WHERE VSL_CD = @[vsl_cd]
+	AND SKD_VOY_NO = @[skd_voy_no]
+	AND SKD_DIR_CD = @[skd_dir_cd]
+	AND RLANE_DIR_CD = @[rlane_dir_cd]			]]></sql>
+			<params>
+				<param name="rlane_cd" type="12" value="" out="N"/>
+				<param name="voy_tp_cd" type="12" value="" out="N"/>
+				<param name="vvd_com_lvl" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="skd_voy_no" type="12" value="" out="N"/>
+				<param name="skd_dir_cd" type="12" value="" out="N"/>
+				<param name="rlane_dir_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

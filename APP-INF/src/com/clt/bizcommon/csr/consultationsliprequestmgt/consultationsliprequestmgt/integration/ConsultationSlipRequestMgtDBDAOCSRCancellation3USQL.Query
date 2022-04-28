@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCSRCancellation3USQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+UPDATE COM_APRO_RQST_HDR A
+   SET DELT_FLG = 'Y'
+ WHERE EXISTS (
+    SELECT APRO_RQST_NO
+      FROM COM_APRO_CSR_DTL B
+     WHERE CSR_NO = @[csr_no]
+       AND A.APRO_RQST_NO = B.APRO_RQST_NO
+ )			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

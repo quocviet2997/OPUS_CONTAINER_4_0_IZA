@@ -1,0 +1,1832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- SO Candidate Restore -->
+	<url-mapping url="ESD_TRS_9999.do" screen="ESD_TRS_9999.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.ESD_TRS_9999HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_9999GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.ESD_TRS_9999HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.EsdTrs9999Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.CYDoorSOManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- SingleTransportationSOManage Creation EUR -->
+	<url-mapping url="ESD_TRS_0002.do" screen="ESD_TRS_0002.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.ESD_TRS_0002HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- SingleTransportationSOManage Creation USA -->
+	<url-mapping url="ESD_TRS_0004.do" screen="ESD_TRS_0004.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.ESD_TRS_0002HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- SingleTransportationSOManage Creation ASIA -->
+	<url-mapping url="ESD_TRS_0005.do" screen="ESD_TRS_0005.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.ESD_TRS_0002HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- CY & Door S/O Creation GRID 1 -->
+	<url-mapping url="ESD_TRS_0002GS.do" screen="com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.EsdTrs0002ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.ESD_TRS_0002HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- SingleTransportationSOManage Correction -->
+	<url-mapping url="ESD_TRS_0051.do" screen="ESD_TRS_0051.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.ESD_TRS_0002HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- CY & Door S/O Correction GRID 1 -->
+	<url-mapping url="ESD_TRS_0051GS.do" screen="com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.EsdTrs0051ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.ESD_TRS_0002HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- SingleTransportationSOManage -->
+	<url-mapping url="ESD_TRS_0003.do" screen="ESD_TRS_0003Pop.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.ESD_TRS_0002HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.EsdTrs0002Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.CYDoorSOManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- CombinedTransportationCaseTwoSOManage Popup -->
+	<url-mapping url="ESD_TRS_0920.do" screen="ESD_TRS_0920.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.combinedtransportationcasetwosomanage.event.ESD_TRS_0920HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- CY & Door S/O Creation Popup GRID 2 -->
+	<url-mapping url="ESD_TRS_0920GS.do" screen="com.clt.apps.opus.esd.trs.cydoorsomanage.combinedtransportationcasetwosomanage.event.EsdTrs0920ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.combinedtransportationcasetwosomanage.event.ESD_TRS_0920HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- CombinedTransportationCaseTwoSOManage Correction Popup -->
+	<url-mapping url="ESD_TRS_0952.do" screen="ESD_TRS_0952.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.combinedtransportationcasetwosomanage.event.ESD_TRS_0920HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- CY & Door S/O Correction Popup GRID 2 -->
+	<url-mapping url="ESD_TRS_0952GS.do" screen="com.clt.apps.opus.esd.trs.cydoorsomanage.combinedtransportationcasetwosomanage.event.EsdTrs0952ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.combinedtransportationcasetwosomanage.event.ESD_TRS_0920HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- S/O Office code Popup -->
+	<url-mapping url="ESD_TRS_0964.do" screen="ESD_TRS_0964.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.combinedtransportationcasetwosomanage.event.ESD_TRS_0920HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- S/O Office code Popup Grid 1 -->
+	<url-mapping url="ESD_TRS_0964GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.combinedtransportationcasetwosomanage.event.ESD_TRS_0920HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.cydoorsomanage.combinedtransportationcasetwosomanage.event.EsdTrs0920Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.CYDoorSOManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Office Transfer Popup -->
+	<url-mapping url="ESD_TRS_0930.do" screen="ESD_TRS_0930Pop.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.ESD_TRS_0930HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- Office Transfer Popup GRID -->
+	<url-mapping url="ESD_TRS_0930GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.ESD_TRS_0930HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.cydoorsomanage.singletransportationsomanage.event.EsdTrs0930Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.cydoorsomanage.CYDoorSOManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Empty Repo & S/T On/Off Hire S/O Creation -->
+	<url-mapping url="ESD_TRS_0012.do" screen="ESD_TRS_0012.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.emptyreposomanage.singletransportationsomanage.event.ESD_TRS_0012HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- Empty Repo & S/T On/Off Hire S/O Creation GRID1 -->
+	<url-mapping url="ESD_TRS_0012GS.do" screen="com.clt.apps.opus.esd.trs.emptyreposomanage.singletransportationsomanage.event.EsdTrs0012ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.emptyreposomanage.singletransportationsomanage.event.ESD_TRS_0012HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- Empty Repo & S/T On/Off Hire S/O Creation GRIDt1 -->
+	<url-mapping url="ESD_TRS_0013GS.do" screen="com.clt.apps.opus.esd.trs.emptyreposomanage.singletransportationsomanage.event.EsdTrs0013ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.emptyreposomanage.singletransportationsomanage.event.ESD_TRS_0012HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- Empty Repo & S/T On/Off Hire S/O Creation Correction -->
+	<url-mapping url="ESD_TRS_0052.do" screen="ESD_TRS_0052.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.emptyreposomanage.singletransportationsomanage.event.ESD_TRS_0012HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- Empty Repo & S/T On/Off Hire S/O Creation GRID 1 -->
+	<url-mapping url="ESD_TRS_0052GS.do" screen="com.clt.apps.opus.esd.trs.emptyreposomanage.singletransportationsomanage.event.EsdTrs0052ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.emptyreposomanage.singletransportationsomanage.event.ESD_TRS_0012HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- Container File Import Popup -->
+	<url-mapping url="ESD_TRS_0951.do" screen="ESD_TRS_0951.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.emptyreposomanage.singletransportationsomanage.event.ESD_TRS_0012HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- Container File Import Popup -->
+	<url-mapping url="ESD_TRS_0951GS.do" screen="com.clt.apps.opus.esd.trs.emptyreposomanage.singletransportationsomanage.event.EsdTrs0012ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.emptyreposomanage.singletransportationsomanage.event.ESD_TRS_0012HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.emptyreposomanage.singletransportationsomanage.event.EsdTrs0012Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.emptyreposomanage.EmptyRepoSOManageSC</service-action-class>
+	</event-mapping>
+
+
+	<!-- ContainerSelectPopup -->
+	<url-mapping url="ESD_TRS_0908.do" screen="ESD_TRS_0908.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.containerselectpopup.event.ESD_TRS_0908HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- ContainerSelectPopup GRID 2 -->
+	<url-mapping url="ESD_TRS_0908GS.do" screen="com.clt.apps.opus.esd.trs.common.containerselectpopup.event.EsdTrs0908ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.containerselectpopup.event.ESD_TRS_0908HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- ContainerSelectPopup GRID 2 -->
+	<url-mapping url="ESD_TRS_0968.do" screen="ESD_TRS_0968.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.containerselectpopup.event.ESD_TRS_0908HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.common.containerselectpopup.event.EsdTrs0908Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.common.CommonSC</service-action-class>
+	</event-mapping>
+
+	<!-- ========================================================================@ 엠티리포 팝업 Part Start -->
+	<!-- EmptyRepoSelectPopup -->
+	<url-mapping url="ESD_TRS_0909.do" screen="ESD_TRS_0909.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.mtyreposelectpopup.event.ESD_TRS_0909HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- EmptyRepoSelectPopup GRID 2 -->
+	<url-mapping url="ESD_TRS_0909GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.mtyreposelectpopup.event.ESD_TRS_0909HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.common.mtyreposelectpopup.event.EsdTrs0909Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.common.CommonSC</service-action-class>
+	</event-mapping>
+
+	<!-- ======================================================================== 엠티리포 팝업 부분 끝 # -->
+
+
+
+	<!-- RailSoManage I/B -->
+	<url-mapping url="ESD_TRS_0201.do" screen="ESD_TRS_0201.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0201GS.do" screen="com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.EsdTrs0201ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- RailSoManage O/B -->
+	<url-mapping url="ESD_TRS_0202.do" screen="ESD_TRS_0202.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0202GS.do" screen="com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.EsdTrs0202ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- RailSoManage Empty Container -->
+	<url-mapping url="ESD_TRS_0203.do" screen="ESD_TRS_0203.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0203GS.do" screen="com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.EsdTrs0203ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_02031GS.do" screen="com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.EsdTrs0203ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- USA Rail Billing Correction -->
+	<url-mapping url="ESD_TRS_0204.do" screen="ESD_TRS_0204.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0204GS.do" screen="com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.EsdTrs0204ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- CJO -->
+	<!-- IRG Adjust Pop up -->
+	<url-mapping url="ESD_TRS_0928.do" screen="ESD_TRS_0928Pop.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0928GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!--url-mapping url="ESD_TRS_0928GS_1.do" screen="ESD_TRS_0928GS_1.screen" -->
+	<url-mapping url="ESD_TRS_0928GS_1.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+	<!-- CJO -->
+
+	<!-- USA Rail Billing Detail Inquiry Popup -->
+	<url-mapping url="ESD_TRS_0955.do" screen="ESD_TRS_0955Pop.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0955GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- Request Service Provider Inquiry Popup -->
+	<url-mapping url="ESD_TRS_0956.do" screen="ESD_TRS_0956Pop.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0956GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- Cancel REQ Reject Popup -->
+	<url-mapping url="ESD_TRS_0959.do" screen="ESD_TRS_0959Pop.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0959GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- Reason for Soft Stop -->
+	<url-mapping url="ESD_TRS_0985.do" screen="ESD_TRS_0985Pop.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0985GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.ESD_TRS_0201HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.railsomanage.railsomanage.event.EsdTrs0201Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.railsomanage.RailSoManageSC</service-action-class>
+	</event-mapping>
+
+
+	<!-- USA404EDIStatusInquiry -->
+	<url-mapping url="ESD_TRS_0028.do" screen="ESD_TRS_0028.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.ESD_TRS_0028HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0028GS.do" screen="com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.EsdTrs0028ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.ESD_TRS_0028HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- USA404EDIStatusInquiry -->
+	<url-mapping url="ESD_TRS_0927.do" screen="ESD_TRS_0927Pop.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.ESD_TRS_0028HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0927GS.do" screen="com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.EsdTrs0927ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.ESD_TRS_0028HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0927_ASYNC_GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.ESD_TRS_0028HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.EsdTrs0028Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- PreDispatchStatus -->
+	<url-mapping url="ESD_TRS_0020.do" screen="ESD_TRS_0020.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.predispatchstatus.event.ESD_TRS_0020HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0020GS.do" screen="com.clt.apps.opus.esd.trs.workordermanage.predispatchstatus.event.EsdTrs0020ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.predispatchstatus.event.ESD_TRS_0020HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.predispatchstatus.event.EsdTrs0020Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- PreDispatchSentHistory -->
+	<url-mapping url="ESD_TRS_0021.do" screen="ESD_TRS_0021.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.predispatchsenthistory.event.ESD_TRS_0021HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.predispatchsenthistory.event.ESD_TRS_0021HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.predispatchsenthistory.event.EsdTrs0021Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- US D/O Input (TRO/I) -->
+	<url-mapping url="ESD_TRS_0083.do" screen="ESD_TRS_0083.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.usadeliveryordermanage.event.ESD_TRS_0083HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0083_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.usadeliveryordermanage.event.ESD_TRS_0083HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.usadeliveryordermanage.event.EsdTrs0083Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Expense Summary by S/P -->
+	<url-mapping url="ESD_TRS_0105.do" screen="ESD_TRS_0105.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.report.expensesummary.event.ESD_TRS_0105HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0105GS.do" screen="com.clt.apps.opus.esd.trs.report.expensesummary.event.EsdTrs0105ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.report.expensesummary.event.ESD_TRS_0105HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0210.do" screen="ESD_TRS_0210.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.report.expensesummary.event.ESD_TRS_0105HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.report.expensesummary.event.EsdTrs0105Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.report.TRSReportSC</service-action-class>
+	</event-mapping>
+
+	<!-- Expense Summary by S/P -->
+	<url-mapping url="ESD_TRS_0107.do" screen="ESD_TRS_0107.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.report.expensesummary.event.ESD_TRS_0107HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0107GS.do" screen="com.clt.apps.opus.esd.trs.report.expensesummary.event.EsdTrs0107ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.report.expensesummary.event.ESD_TRS_0107HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0211.do" screen="ESD_TRS_0211.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.report.expensesummary.event.ESD_TRS_0105HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.report.expensesummary.event.EsdTrs0107Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.report.TRSReportSC</service-action-class>
+	</event-mapping>
+
+	<!-- ======================================================================== z_kim_sanggeun 부분 끝 # -->
+
+
+	<!-- USA Rail Invoice 등록 및 Confirm -->
+
+	<url-mapping url="ESD_TRS_0038_POP.do" screen="ESD_TRS_0038_POP.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.ESD_TRS_0038HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0038.do" screen="ESD_TRS_0038.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.ESD_TRS_0038HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0038GS.do" screen="com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.EsdTrs0038ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.ESD_TRS_0038HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.EsdTrs0038Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- USA Rail Invoice 등록 및 Confirm -->
+
+	<!-- USA Rail Invoice File import and File Upload popup -->
+	<url-mapping url="ESD_TRS_0923.do" screen="ESD_TRS_0923.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.ESD_TRS_0923HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0923GS.do" screen="com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.EsdTrs0923ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.ESD_TRS_0923HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.EsdTrs0923Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- USA Rail Invoice File import and File Upload popup -->
+
+	<!-- USA Rail Contrainer History Popup -->
+	<url-mapping url="ESD_TRS_0924.do" screen="ESD_TRS_0924.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.ESD_TRS_0924HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0924GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.ESD_TRS_0924HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.EsdTrs0924Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+	<!-- USA Rail Contrainer History Popup -->
+
+
+	<!-- USA Rail Invoice Re-Audit Popup -->
+	<url-mapping url="ESD_TRS_0925.do" screen="ESD_TRS_0925.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.ESD_TRS_0925HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0925GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.ESD_TRS_0925HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.EsdTrs0925Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+	<!-- USA Rail Invoice Re-Audit Popup -->
+
+
+	<!-- USA Rail Container Payment History Popup -->
+	<url-mapping url="ESD_TRS_0929.do" screen="ESD_TRS_0929.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.ESD_TRS_0929HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0929GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.ESD_TRS_0929HTMLAction</web-action-class>
+	</url-mapping>
+	<!-- USA Rail Container Payment History Popup -->
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceaudit.event.EsdTrs0929Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- USA Rail Container Payment History Popup -->
+	<url-mapping url="ESD_TRS_0921.do" screen="ESD_TRS_0921.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.ESD_TRS_0921HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0921GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.ESD_TRS_0921HTMLAction</web-action-class>
+	</url-mapping>
+	<!-- USA Rail Container Payment History Popup -->
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.EsdTrs0921Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Supplement S/O More Candidate Popup -->
+	<url-mapping url="ESD_TRS_0984.do" screen="ESD_TRS_0984.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.ESD_TRS_0921HTMLAction</web-action-class>
+	</url-mapping>
+	<!-- Supplement S/O More Candidate Popup -->
+
+	<!-- ========================================================================@ Terminal invoice CSR Creation Summary Part Start -->
+
+	<!-- csrissuetranferslip -->
+	<url-mapping url="ESD_TRS_0031.do" screen="ESD_TRS_0031.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0031HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0031GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0031HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.EsdTrs0031Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+	<!-- ======================================================================== Terminal invoice CSR Creation Summary 부분 끝 # -->
+
+
+	<!-- ========================================================================@ Terminal invoice CSR Creation - Detail Part Start -->
+
+	<!-- csrissuetranferslip -->
+	<url-mapping url="ESD_TRS_0032.do" screen="ESD_TRS_0032.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0032HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.EsdTrs0032Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_TRS_0032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0032HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0032PreView.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0032HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- ======================================================================== Terminal invoice CSR Creation - Detail 부분 끝 # -->
+
+	<!-- ========================================================================@ Terminal invoice CSR Creation - Preview Part Start -->
+
+	<!-- csrissuetranferslip -->
+	<url-mapping url="ESD_TRS_0036.do" screen="ESD_TRS_0036.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0036HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.EsdTrs0036Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_TRS_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0036HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- ======================================================================== Terminal invoice CSR Creation - Preview 부분 끝 # -->
+
+	<!-- ========================================================================@ Terminal invoice CSR Creation - 세금계산서 Part Start -->
+
+	<!-- csrissuetranferslip -->
+	<url-mapping url="ESD_TRS_0034.do" screen="ESD_TRS_0034.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0034HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.EsdTrs0034Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_TRS_0034GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0034HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- ======================================================================== Terminal invoice CSR Creation - 세금계산서 부분 끝 # -->
+
+	<!-- ========================================================================@ Terminal invoice CSR Creation - 계산서 Part Start -->
+
+	<!-- csrissuetranferslip -->
+	<url-mapping url="ESD_TRS_0037.do" screen="ESD_TRS_0037.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0037HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.EsdTrs0037Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_TRS_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0037HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- ======================================================================== Terminal invoice CSR Creation - 계산서 부분 끝 # -->
+
+	<!-- ========================================================================@ Terminal invoice CSR Creation - 공통 세금 계산서 번호 Part Start -->
+
+	<url-mapping url="ESD_TRS_0034_037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0034HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- ======================================================================== Terminal invoice CSR Creation - 공통 세금 계산서 번호 부분 끝 # -->
+
+	<!-- ========================================================================@ Terminal invoice CSR Creation - 계산서 Part Start -->
+
+	<!-- csrissuetranferslip -->
+	<url-mapping url="ESD_TRS_0960.do" screen="ESD_TRS_0960.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0960HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.EsdTrs0960Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_TRS_0960GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0960HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0047.do" screen="ESD_TRS_0047.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0047HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.EsdTrs0047Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_TRS_0047PreView.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0047HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0047GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0047HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0048.do" screen="ESD_TRS_0048.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0048HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.EsdTrs0048Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_TRS_0048GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.csrissuetranferslip.event.ESD_TRS_0048HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- ======================================================================== Terminal invoice CSR Creation - 계산서 부분 끝 # -->
+
+
+	<!-- Refund Invoice Creation -->
+	<url-mapping url="ESD_TRS_0040.do" screen="ESD_TRS_0040.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceaudit.event.ESD_TRS_0040HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceaudit.event.ESD_TRS_0040HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- Refund Invoice Creation popup -->
+	<url-mapping url="ESD_TRS_0045.do" screen="ESD_TRS_0045.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceaudit.event.ESD_TRS_0040HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceaudit.event.EsdTrs0040Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- W/O 발행내역을 History조회하는 화면 -->
+	<url-mapping url="ESD_TRS_0958.do" screen="ESD_TRS_0958.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderinquiry.event.ESD_TRS_0025HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- CJO WORK START FROM 20090822 -->
+	<!-- Invoice Inquiry -->
+	<url-mapping url="ESD_TRS_0046.do" screen="ESD_TRS_0046.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceinquirycorrection.event.ESD_TRS_0046HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0046GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceinquirycorrection.event.ESD_TRS_0046HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.railinvoiceinquirycorrection.event.EsdTrs0046Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+	<!-- CJO WORK END FROM 20090828 -->
+
+
+	<!-- usaactualcustomercodemanage -->
+	<url-mapping url="ESD_TRS_0082.do" screen="ESD_TRS_0082.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.usaactualcustomercodemanage.event.ESD_TRS_0082HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0082GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.usaactualcustomercodemanage.event.ESD_TRS_0082HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.usaactualcustomercodemanage.event.EsdTrs0082Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- UsaRailYardManage -->
+	<url-mapping url="ESD_TRS_0084GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.usarailyardmanage.event.ESD_TRS_0084HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.usarailyardmanage.event.EsdTrs0084Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- USA Rail Performance Report -->
+	<url-mapping url="ESD_TRS_0102.do" screen="ESD_TRS_0102.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.report.usarailperformance.event.ESD_TRS_0102HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0102GS.do" screen="com.clt.apps.opus.esd.trs.report.usarailperformance.event.EsdTrs0102ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.report.usarailperformance.event.ESD_TRS_0102HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.report.usarailperformance.event.EsdTrs0102Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.report.TRSReportSC</service-action-class>
+	</event-mapping>
+
+	<!-- USA Rail Performance Report by S/O -->
+	<url-mapping url="ESD_TRS_0103.do" screen="ESD_TRS_0103.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.report.usarailperformance.event.ESD_TRS_0103HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0103GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.report.usarailperformance.event.ESD_TRS_0103HTMLAction</web-action-class>
+	</url-mapping>
+	<!-- <url-mapping url="ESD_TRS_0103GS.do" screen="com.clt.apps.opus.esd.trs.report.usarailperformance.event.EsdTrs0103ViewAdapter" > <web-action-class>com.clt.apps.opus.esd.trs.report.usarailperformance.event.ESD_TRS_0103HTMLAction</web-action-class> 
+		</url-mapping> -->
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.report.usarailperformance.event.EsdTrs0103Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.report.TRSReportSC</service-action-class>
+	</event-mapping>
+	<!-- ========================================================================@ Control Office Exception Case Creation Part Start -->
+
+	<!-- CodeManage -->
+	<url-mapping url="ESD_TRS_0079.do" screen="ESD_TRS_0079.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.controlofficeexceptioncasemanage.event.ESD_TRS_0079HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0079GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.controlofficeexceptioncasemanage.event.ESD_TRS_0079HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.controlofficeexceptioncasemanage.event.EsdTrs0079Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+
+
+	<!-- ========================================================================@ Service Order 생성화면 - Chassis or Genset Part Start -->
+
+	<!-- ChassisGensetSOManage -->
+	<url-mapping url="ESD_TRS_0014.do" screen="ESD_TRS_0014.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.chassisgensetsomanage.chassisgensetsomanage.event.ESD_TRS_0014HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0014GS.do" screen="com.clt.apps.opus.esd.trs.chassisgensetsomanage.chassisgensetsomanage.event.EsdTrs0014ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.chassisgensetsomanage.chassisgensetsomanage.event.ESD_TRS_0014HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0015.do" screen="ESD_TRS_0015.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.chassisgensetsomanage.chassisgensetsomanage.event.ESD_TRS_0014HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0911.do" screen="ESD_TRS_0911.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.chassisgensetsomanage.chassisgensetsomanage.event.ESD_TRS_0014HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0053.do" screen="ESD_TRS_0053.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.chassisgensetsomanage.chassisgensetsomanage.event.ESD_TRS_0014HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.chassisgensetsomanage.chassisgensetsomanage.event.EsdTrs0014Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.chassisgensetsomanage.ChassisGensetSOManageSC</service-action-class>
+	</event-mapping>
+
+
+	<!-- othersomanage -->
+	<url-mapping url="ESD_TRS_0018.do" screen="ESD_TRS_0018.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.othersomanage.othersomanage.event.ESD_TRS_0018HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0018GS.do" screen="com.clt.apps.opus.esd.trs.othersomanage.othersomanage.event.EsdTrs0018ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.othersomanage.othersomanage.event.ESD_TRS_0018HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0969.do" screen="ESD_TRS_0969.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.othersomanage.othersomanage.event.ESD_TRS_0018HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0950.do" screen="ESD_TRS_0950.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.othersomanage.othersomanage.event.ESD_TRS_0018HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- ACTUAL CUSTOMER POPUP -->
+	<url-mapping url="ESD_TRS_0914GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.actualcustomerpopup.event.ESD_TRS_0914HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.common.actualcustomerpopup.event.EsdTrs0914Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.common.CommonSC</service-action-class>
+	</event-mapping>
+
+	<!-- othersomanage -->
+	<url-mapping url="ESD_TRS_0055.do" screen="ESD_TRS_0055.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.othersomanage.othersomanage.event.ESD_TRS_0018HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.othersomanage.othersomanage.event.EsdTrs0018Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.othersomanage.OtherSOManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- ======================================================================== Service Order 생성화면 - Other 부분 끝 # -->
+
+	<!-- ========================================================================@ Work Order Part Start -->
+
+	<!-- WorkOrderCCManage -->
+	<url-mapping url="ESD_TRS_0072.do" screen="ESD_TRS_0072.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderccmanage.event.ESD_TRS_0072HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0072GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderccmanage.event.ESD_TRS_0072HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.workorderccmanage.event.EsdTrs0072Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- CJO WORK START FROM 20090817 -->
+	<!-- WorkOrderRemark -->
+	<url-mapping url="ESD_TRS_0078.do" screen="ESD_TRS_0078.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderremark.event.ESD_TRS_0078HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0078GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderremark.event.ESD_TRS_0078HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.workorderremark.event.EsdTrs0078Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+	<!-- CJO WORK END TO 20090821 -->
+	<!-- ======================================================================== Work Order 부분 끝 # -->
+
+	<!-- ========================================================================@ InvoiceManage Part Start -->
+
+	<!-- SurchargeInputInquiry -->
+	<url-mapping url="ESD_TRS_0918.do" screen="ESD_TRS_0918.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.surchargeinputinquiry.event.ESD_TRS_0918HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0918GS.do" screen="com.clt.apps.opus.esd.trs.invoicemanage.surchargeinputinquiry.event.EsdTrs0918ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.surchargeinputinquiry.event.ESD_TRS_0918HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0970.do" screen="ESD_TRS_0970.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.surchargeinputinquiry.event.ESD_TRS_0918HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.surchargeinputinquiry.event.EsdTrs0918Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- ======================================================================== InvoiceManage 부분 끝 # -->
+
+	<!-- ========================================================================@ WorkOrderIssue Part Start -->
+
+	<!-- WorkOrderIssue -->
+	<url-mapping url="ESD_TRS_0023.do" screen="ESD_TRS_0023.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.ESD_TRS_0023HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0023GS.do" screen="com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.EsdTrs0023ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.ESD_TRS_0023HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0954.do" screen="ESD_TRS_0954.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.ESD_TRS_0023HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0971.do" screen="ESD_TRS_0971.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.ESD_TRS_0023HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0961.do" screen="ESD_TRS_0961.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.ESD_TRS_0023HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0978.do" screen="ESD_TRS_0978.screen">
+
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.EsdTrs0023Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_TRS_0977.do" screen="ESD_TRS_0977.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.ESD_TRS_0977HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0977GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.ESD_TRS_0977HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.EsdTrs0977Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- ======================================================================== WorkOrderIssue 부분 끝 # -->
+
+
+	<!-- ======================================================================== WorkOrderPreview Part Start # -->
+	<!-- WorkOrderPreview -->
+	<url-mapping url="ESD_TRS_0024.do" screen="ESD_TRS_0024.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderpreview.event.ESD_TRS_0024HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0024GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderpreview.event.ESD_TRS_0024HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0962.do" screen="ESD_TRS_0962.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderpreview.event.ESD_TRS_0024HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.workorderpreview.event.EsdTrs0024Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+	<!-- ======================================================================== WorkOrderPreview 부분 끝 # -->
+
+	<!-- ======================================================================== WorkOrderInquiry Part Start # -->
+	<!-- WorkOrderInquiry -->
+	<url-mapping url="ESD_TRS_0025.do" screen="ESD_TRS_0025.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderinquiry.event.ESD_TRS_0025HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderinquiry.event.ESD_TRS_0025HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.workorderinquiry.event.EsdTrs0025Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+	<!-- ======================================================================== WorkOrderInquiry 부분 끝 # -->
+
+	<!-- ========================================================================@ invoiceaudit Part Start -->
+
+	<!-- InvoiceAudit -->
+	<url-mapping url="ESD_TRS_0033_POP.do" screen="ESD_TRS_0033_POP.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceaudit.event.ESD_TRS_0033HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0033.do" screen="ESD_TRS_0033.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceaudit.event.ESD_TRS_0033HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceaudit.event.ESD_TRS_0033HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0033_01GS.do" screen="com.clt.apps.opus.esd.trs.invoicemanage.invoiceaudit.event.EsdTrs0033ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceaudit.event.ESD_TRS_0033HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0922.do" screen="ESD_TRS_0922.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceaudit.event.ESD_TRS_0922HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0957.do" screen="ESD_TRS_0957.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceaudit.event.ESD_TRS_0033HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceaudit.event.EsdTrs0033Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- ======================================================================== invoiceaudit 부분 끝 # -->
+
+	<!-- ========================================================================@ invoice inquiry correction Part Start -->
+
+	<!-- InvoiceInquiryCorrection -->
+	<url-mapping url="ESD_TRS_0030.do" screen="ESD_TRS_0030.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceinquirycorrection.event.ESD_TRS_0030HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceinquirycorrection.event.ESD_TRS_0030HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0208.do" screen="ESD_TRS_0208.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceinquirycorrection.event.ESD_TRS_0030HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceinquirycorrection.event.EsdTrs0030Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- ======================================================================== invoice inquiry correction 부분 끝 # -->
+	<!-- ========================================================================@ Invoice - Pool Chassis Part Start -->
+
+	<url-mapping url="ESD_TRS_0041.do" screen="ESD_TRS_0041.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.poolchassis.event.ESD_TRS_0041HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0041GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.poolchassis.event.ESD_TRS_0041HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.invoicemanage.poolchassis.event.EsdTrs0041Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.invoicemanage.InvoiceManageSC</service-action-class>
+	</event-mapping>
+	<!-- ======================================================================== Invoice - Pool Chassis 부분 끝 # -->
+
+
+
+
+	<!-- ========================================================================@ juhyun Part Start -->
+
+	<!-- UsaLastCityManagement -->
+	<url-mapping url="ESD_TRS_0076.do" screen="ESD_TRS_0076.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.usalastcitymanage.event.ESD_TRS_0076HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0076GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.usalastcitymanage.event.ESD_TRS_0076HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0076_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.usalastcitymanage.event.ESD_TRS_0076HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.usalastcitymanage.event.EsdTrs0076Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- MultipleInquiry -->
+	<url-mapping url="ESD_TRS_0906.do" screen="ESD_TRS_0906.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.multipleinquiry.event.ESD_TRS_0906HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.multipleinquiry.event.EsdTrs0906Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- PendingList -->
+	<url-mapping url="ESD_TRS_0001.do" screen="ESD_TRS_0001.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.soinquiry.pendinglist.event.ESD_TRS_0001HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.soinquiry.pendinglist.event.ESD_TRS_0001HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0001_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.soinquiry.pendinglist.event.ESD_TRS_0001HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.soinquiry.pendinglist.event.EsdTrs0001Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.soinquiry.SOInquirySC</service-action-class>
+	</event-mapping>
+
+	<!-- CommodityGroupCodeManage -->
+	<url-mapping url="ESD_TRS_0075.do" screen="ESD_TRS_0075.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.commoditygroupcodemanage.event.ESD_TRS_0075HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0075GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.commoditygroupcodemanage.event.ESD_TRS_0075HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0075_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.commoditygroupcodemanage.event.ESD_TRS_0075HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0075_02GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.commoditygroupcodemanage.event.ESD_TRS_0075HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.commoditygroupcodemanage.event.EsdTrs0075Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+	<!-- Invoice Office Authority Management -->
+	<url-mapping url="ESD_TRS_0976.do" screen="ESD_TRS_0976.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.invoiceofficeauthoritymanagement.event.ESD_TRS_0976HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0976GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.invoiceofficeauthoritymanagement.event.ESD_TRS_0976HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.invoiceofficeauthoritymanagement.event.EsdTrs0976Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- BreakBulkCargoDetailInquiry -->
+	<url-mapping url="ESD_TRS_0937.do" screen="ESD_TRS_0937.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.breakbulkcargodetailinquiry.event.ESD_TRS_0937HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- BreakBulkCargoDetailInquiry -->
+	<url-mapping url="ESD_TRS_0937GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.breakbulkcargodetailinquiry.event.ESD_TRS_0937HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- BreakBulkCargoDetailInquiry -->
+	<url-mapping url="ESD_TRS_0937Pop.do" screen="ESD_TRS_0937Pop.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.breakbulkcargodetailinquiry.event.ESD_TRS_0937HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.common.breakbulkcargodetailinquiry.event.EsdTrs0937Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.common.CommonSC</service-action-class>
+	</event-mapping>
+
+	<!-- common -->
+	<!-- TRS Common -->
+	<url-mapping url="ESD_TRS_0999GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.trscommon.event.ESD_TRS_0999HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.common.trscommon.event.EsdTrs0999Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.common.CommonSC</service-action-class>
+	</event-mapping>
+
+
+	<!-- ReferCargoDetailInquiry -->
+	<url-mapping url="ESD_TRS_0935.do" screen="ESD_TRS_0935.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.refercargodetailinquiry.event.ESD_TRS_0935HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0935GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.refercargodetailinquiry.event.ESD_TRS_0935HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0935Pop.do" screen="ESD_TRS_0935Pop.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.refercargodetailinquiry.event.ESD_TRS_0935HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.common.refercargodetailinquiry.event.EsdTrs0935Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.common.CommonSC</service-action-class>
+	</event-mapping>
+
+	<!-- AwkWardCargoDetailInquiry -->
+	<url-mapping url="ESD_TRS_0936.do" screen="ESD_TRS_0936.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.awkwardcargodetailinquiry.event.ESD_TRS_0936HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0936GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.awkwardcargodetailinquiry.event.ESD_TRS_0936HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0936Pop.do" screen="ESD_TRS_0936Pop.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.awkwardcargodetailinquiry.event.ESD_TRS_0936HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.common.awkwardcargodetailinquiry.event.EsdTrs0936Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.common.CommonSC</service-action-class>
+	</event-mapping>
+
+	<!-- DangerCargoDetailInquiry -->
+	<url-mapping url="ESD_TRS_0938.do" screen="ESD_TRS_0938.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.dangercargodetailinquiry.event.ESD_TRS_0938HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0938GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.dangercargodetailinquiry.event.ESD_TRS_0938HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0938Pop.do" screen="ESD_TRS_0938Pop.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.dangercargodetailinquiry.event.ESD_TRS_0938HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.common.dangercargodetailinquiry.event.EsdTrs0938Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.common.CommonSC</service-action-class>
+	</event-mapping>
+
+	<!-- SupplementSOManage creation -->
+	<url-mapping url="ESD_TRS_0016.do" screen="ESD_TRS_0016.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.supplementsomanage.supplementsomanage.event.ESD_TRS_0016HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0016GS.do" screen="com.clt.apps.opus.esd.trs.supplementsomanage.supplementsomanage.event.EsdTrs0016ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.supplementsomanage.supplementsomanage.event.ESD_TRS_0016HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- supplementsomanage correction -->
+	<url-mapping url="ESD_TRS_0054.do" screen="ESD_TRS_0054.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.supplementsomanage.supplementsomanage.event.ESD_TRS_0016HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0054GS.do" screen="com.clt.apps.opus.esd.trs.supplementsomanage.supplementsomanage.event.EsdTrs0016ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.supplementsomanage.supplementsomanage.event.ESD_TRS_0016HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.supplementsomanage.supplementsomanage.event.EsdTrs0016Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.supplementsomanage.SupplementSOManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- MultistopLocationInquiry -->
+	<url-mapping url="ESD_TRS_0933.do" screen="ESD_TRS_0933.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.multistoplocationinquiry.event.ESD_TRS_0933HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- MultistopLocationInquiry -->
+	<url-mapping url="ESD_TRS_0933GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.multistoplocationinquiry.event.ESD_TRS_0933HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.common.multistoplocationinquiry.event.EsdTrs0933Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.common.CommonSC</service-action-class>
+	</event-mapping>
+
+	<!-- SOInquiry -->
+	<url-mapping url="ESD_TRS_0019.do" screen="ESD_TRS_0019.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.soinquiry.soinquiry.event.ESD_TRS_0019HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0019_POP.do" screen="ESD_TRS_0019_POP.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.soinquiry.soinquiry.event.ESD_TRS_0019HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.soinquiry.soinquiry.event.ESD_TRS_0019HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0205.do" screen="com.clt.apps.opus.esd.trs.soinquiry.soinquiry.event.EsdTrs0205ViewAdapterDL">
+		<web-action-class>com.clt.apps.opus.esd.trs.soinquiry.soinquiry.event.ESD_TRS_0019HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.soinquiry.soinquiry.event.EsdTrs0019Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.soinquiry.SOInquirySC</service-action-class>
+	</event-mapping>
+
+	<!-- ======================================================================== juhyun 부분 끝 # -->
+
+	<!-- ========================================================================@ Lee_SangWoo Part Start -->
+
+	<!-- invoiceaudit -->
+	<url-mapping url="ESD_TRS_0910.do" screen="ESD_TRS_0910.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceaudit.event.ESD_TRS_0910HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- ======================================================================== Lee_SangWoo 부분 끝 # -->
+
+
+	<!-- ========================================================================@ agreement redevelopment Start -->
+
+	<url-mapping url="ESD_TRS_0220.do" screen="ESD_TRS_0220.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0220HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0220GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0220HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0221.do" screen="ESD_TRS_0221.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0221HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0221GS.do" screen="com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0221ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0221HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0222.do" screen="ESD_TRS_0222.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0222HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0222GS.do" screen="com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0222ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0222HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0223.do" screen="ESD_TRS_0223.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0223HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0223GS.do" screen="com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0223ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0223HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0224.do" screen="ESD_TRS_0224.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0224HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0224GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0224HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0225.do" screen="ESD_TRS_0225.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0226HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0225_POP.do" screen="ESD_TRS_0225_POP.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0226HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0226.do" screen="ESD_TRS_0226.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0226HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0226GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0226HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0226DL.do" screen="com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0226ViewAdapterDL">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0226HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0227.do" screen="ESD_TRS_0227.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0227HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0227GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0227HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0228.do" screen="ESD_TRS_0228.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0229HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0228_POP.do" screen="ESD_TRS_0228_POP.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0229HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0229.do" screen="ESD_TRS_0229.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0229HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0229GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0229HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0229DL.do" screen="com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0229ViewAdapterDL">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0229HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0230.do" screen="ESD_TRS_0230.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0230HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0230GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0230HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0231.do" screen="ESD_TRS_0231.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0231HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0231GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0231HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0232.do" screen="ESD_TRS_0232.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0224HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0233.do" screen="ESD_TRS_0233.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0233HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0233GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0233HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0234.do" screen="ESD_TRS_0234.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0234HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0234GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0234HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0235.do" screen="ESD_TRS_0235.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0235HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0235GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0235HTMLAction</web-action-class>
+	</url-mapping>
+
+
+	<!-- Common Surcharge Management -->
+	<url-mapping url="ESD_TRS_0237.do" screen="ESD_TRS_0237.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0237HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0237GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0237HTMLAction</web-action-class>
+	</url-mapping>
+	<!-- Agreement Attach File Popup -->
+	<url-mapping url="ESD_TRS_0238.do" screen="ESD_TRS_0238.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0238HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0238GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0238HTMLAction</web-action-class>
+	</url-mapping>
+
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0220Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0221Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0222Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0223Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0224Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0226Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0227Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0229Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0230Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0231Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0233Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0234Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0235Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+
+
+	<!-- Common Surcharge Management -->
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0237Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<!-- Agreement Attach File Popup -->
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0238Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- ========================================================================@ agreement redevelopment End -->
+
+
+	<!-- LeeJunKun : 2012-04-25 start -->
+	<url-mapping url="ESD_TRS_0801.do" screen="ESD_TRS_0801.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0801HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0801GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0801HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0801Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<!-- LeeJunKun : 2012-04-25 end -->
+
+	<!-- LeeJunKun : 2012-04-25 start -->
+	<url-mapping url="ESD_TRS_0802.do" screen="ESD_TRS_0802.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.ESD_TRS_0802HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0802GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.ESD_TRS_0802HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.EsdTrs0802Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+	<!-- LeeJunKun : 2012-04-25 end -->
+
+	<!-- P.K.S : 2014-11-17 start -->
+	<url-mapping url="ESD_TRS_0029.do" screen="ESD_TRS_0029.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workordermanagement.event.ESD_TRS_0029HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0979.do" screen="ESD_TRS_0979.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workordermanagement.event.ESD_TRS_0979HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0029GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workordermanagement.event.ESD_TRS_0029HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0029DL.do" screen="com.clt.apps.opus.esd.trs.workordermanage.workordermanagement.event.EsdTrs0029ViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workordermanagement.event.ESD_TRS_0029HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.workordermanagement.event.EsdTrs0029Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+	<!-- P.K.S : 2014-11-17 end -->
+
+
+	<!-- Hyungwook Choi : 2015-02-24 start -->
+	<url-mapping url="ESD_TRS_0980.do" screen="ESD_TRS_0980.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0980HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0980GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.ESD_TRS_0980HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.agreementmanage.agreementmanage.event.EsdTrs0980Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.agreementmanage.AgreementManageSC</service-action-class>
+	</event-mapping>
+	<!-- Hyungwook Choi : 2015-02-24 end -->
+
+	<!-- empty_releaseredeliveryordermgt 2015-03-18 start -->
+	<url-mapping url="ESD_TRS_0429.do" screen="ESD_TRS_0429.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.emptyreleaseredeliveryordermgt.event.ESD_TRS_0429HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0429GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.emptyreleaseredeliveryordermgt.event.ESD_TRS_0429HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.emptyreleaseredeliveryordermgt.event.EsdTrs0429Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+	<url-mapping url="ESD_TRS_0451.do" screen="ESD_TRS_0451.screen"></url-mapping>
+	<url-mapping url="ESD_TRS_0451_PRV.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.emptyreleaseredeliveryordermgt.event.ESD_TRS_0451HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.emptyreleaseredeliveryordermgt.event.EsdTrs0451Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+	<url-mapping url="ESD_TRS_0451_RD.do" screen="ESD_TRS_0451_RD.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.emptyreleaseredeliveryordermgt.event.ESD_TRS_0451RDHTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.emptyreleaseredeliveryordermgt.event.EsdTrs0451RdEvent</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.EmptyReleaseRedeliveryOrderMgtRDSC</service-action-class>
+	</event-mapping>
+	<!-- empty_releaseredeliveryordermgt 2015-03-18 End -->
+
+	<!-- Seongwook Kim : 2015-04-13 start -->
+	<url-mapping url="ESD_TRS_0981.do" screen="ESD_TRS_0981.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.portselectpopup.event.ESD_TRS_0981HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0981GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.portselectpopup.event.ESD_TRS_0981HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.common.portselectpopup.event.EsdTrs0981Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.common.CommonSC</service-action-class>
+	</event-mapping>
+	<!-- Seongwook Kim : 2015-04-13 end -->
+
+	<url-mapping url="ESD_TRS_0939.do" screen="ESD_TRS_0939.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.stcccoderestrictionpopup.event.ESD_TRS_0939HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0939GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.stcccoderestrictionpopup.event.ESD_TRS_0939HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.common.stcccoderestrictionpopup.event.EsdTrs0939Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.common.CommonSC</service-action-class>
+	</event-mapping>
+
+	<!-- CHAN WOO PARK : 2015.04.28 Start -->
+	<url-mapping url="ESD_TRS_0982.do" screen="ESD_TRS_0982.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.internalremarkpopup.event.ESD_TRS_0982HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0982GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.internalremarkpopup.event.ESD_TRS_0982HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0982Pop.do" screen="ESD_TRS_0982Pop.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.common.internalremarkpopup.event.ESD_TRS_0982HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.common.internalremarkpopup.event.EsdTrs0982Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.common.CommonSC</service-action-class>
+	</event-mapping>
+	<!-- CHAN WOO PARK : 2015.04.28 End -->
+
+	<url-mapping url="ESD_TRS_0972.do" screen="ESD_TRS_0972.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.vendorcm.event.ESD_TRS_0972HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0972GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.vendorcm.event.ESD_TRS_0972HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.vendorcm.event.EsdTrs0972Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_TRS_0973.do" screen="ESD_TRS_0973.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.vendorcm.event.ESD_TRS_0973HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0973GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.vendorcm.event.ESD_TRS_0973HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.vendorcm.event.EsdTrs0973Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Add Additional Cost for USA/CA Rail Popup -->
+	<url-mapping url="ESD_TRS_0026_POP.do" screen="ESD_TRS_0026.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.ESD_TRS_0026HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0026GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.ESD_TRS_0026HTMLAction</web-action-class>
+	</url-mapping>
+	<!-- Add Additional Cost for USA/CA Rail Popup -->
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.EsdTrs0026Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Basic for USA/CA Rail Popup -->
+	<url-mapping url="ESD_TRS_0027_POP.do" screen="ESD_TRS_0027.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.ESD_TRS_0027HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.ESD_TRS_0027HTMLAction</web-action-class>
+	</url-mapping>
+	<!-- Basic for USA/CA Rail Popup -->
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.usa404edistatusinquiry.event.EsdTrs0027Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_TRS_0983.do" screen="ESD_TRS_0983.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workordermanagement.event.ESD_TRS_0983HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0983GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workordermanagement.event.ESD_TRS_0983HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.workordermanagement.event.EsdTrs0983Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Exception Ack Rail Road -->
+	<url-mapping url="ESD_TRS_0077.do" screen="ESD_TRS_0077.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.exceptionackrailroad.event.ESD_TRS_0077HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0077GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.exceptionackrailroad.event.ESD_TRS_0077HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.exceptionackrailroad.event.EsdTrs0077Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_TRS_0040_POP.do" screen="ESD_TRS_0040_POP.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.invoiceaudit.event.ESD_TRS_0040HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0041_POP.do" screen="ESD_TRS_0041_POP.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.invoicemanage.poolchassis.event.ESD_TRS_0041HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- Rail 404 EDI Configuration -->
+	<url-mapping url="ESD_TRS_0080.do" screen="ESD_TRS_0080.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.rail404ediconfiguration.event.ESD_TRS_0080HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0080GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.rail404ediconfiguration.event.ESD_TRS_0080HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.rail404ediconfiguration.event.EsdTrs0080Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- TRS SCC MATCH FOR STREET TURN -->
+	<url-mapping url="ESD_TRS_0803.do" screen="ESD_TRS_0803.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.sccmatchforstreetturn.event.ESD_TRS_0803HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0803GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.sccmatchforstreetturn.event.ESD_TRS_0803HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.sccmatchforstreetturn.event.EsdTrs0803Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+	<!-- TRS SCC MATCH FOR STREET TURN -->
+
+	<!-- PreRailBilling Validate Hard/Soft Stop Setup -->
+	<url-mapping url="ESD_TRS_0807.do" screen="ESD_TRS_0807.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.prbvalidationsetupmanage.event.ESD_TRS_0807HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0807GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.prbvalidationsetupmanage.event.ESD_TRS_0807HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.prbvalidationsetupmanage.event.EsdTrs0807Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+	<!-- PreRailBilling Validate Hard/Soft Stop Setup -->
+
+	<!-- Validate Maximum Weight allowed for dray to port for off dock cargo -->
+	<url-mapping url="ESD_TRS_0804.do" screen="ESD_TRS_0804.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.prbmaxweightsetupmanage.event.ESD_TRS_0804HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0804GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.prbmaxweightsetupmanage.event.ESD_TRS_0804HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.prbmaxweightsetupmanage.event.EsdTrs0804Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+	<!-- Validate Maximum Weight allowed for dray to port for off dock cargo -->
+
+	<!-- Validate Export Rail early receiving date for Pre- Rail Billing Submission -->
+	<url-mapping url="ESD_TRS_0805.do" screen="ESD_TRS_0805.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.prbexporterdsetupmanage.event.ESD_TRS_0805HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0805GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.prbexporterdsetupmanage.event.ESD_TRS_0805HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.prbexporterdsetupmanage.event.EsdTrs0805Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+	<!-- Validate Export Rail early receiving date for Pre- Rail Billing Submission -->
+
+	<!-- Validate for Auto IRG Adjust -->
+	<url-mapping url="ESD_TRS_0806.do" screen="ESD_TRS_0806.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.autoirgadjustmanage.event.ESD_TRS_0806TMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0806GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.autoirgadjustmanage.event.ESD_TRS_0806HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.autoirgadjustmanage.event.EsdTrs0806Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+	<!-- Validate for Auto IRG Adjust -->
+
+	<!-- Validate Minimum Weight setup -->
+	<url-mapping url="ESD_TRS_0808.do" screen="ESD_TRS_0808.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.prbminweightsetupmanage.event.ESD_TRS_0808HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0808GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.prbminweightsetupmanage.event.ESD_TRS_0808HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.prbminweightsetupmanage.event.EsdTrs0808Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+	<!-- Validate Minimum Weight setup -->
+
+	<!-- Confirmmation Message Setup -->
+	<url-mapping url="ESD_TRS_0809.do" screen="ESD_TRS_0809.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.confirmmsgsetupmanage.event.ESD_TRS_0809HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_0809GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.codemanage.confirmmsgsetupmanage.event.ESD_TRS_0809HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.codemanage.confirmmsgsetupmanage.event.EsdTrs0809Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+	<!-- Confirmmation Message Setup -->
+
+	<!--I/F(824,997) TEST start -->
+	<url-mapping url="ESD_TRS_TEST.do" screen="ESD_TRS_TEST.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.servicesio.usarailwoack.event.ESD_TRS_TESTHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TRS_TESTGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.servicesio.usarailwoack.event.ESD_TRS_TESTHTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.servicesio.usarailwoack.event.EdiEns001Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.servicesio.TRSInterfaceRSC</service-action-class>
+	</event-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.servicesio.usarailwoack.event.EdiEns002Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.servicesio.TRSInterfaceRSC</service-action-class>
+	</event-mapping>
+	<!--I/F FileUpload end -->
+
+	<url-mapping url="ESD_TRS_0986.do" screen="ESD_TRS_0986.screen">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.ESD_TRS_0986HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TRS_0986GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.ESD_TRS_0986HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.trs.workordermanage.workorderissue.event.EsdTrs0986Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.trs.workordermanage.WorkOrderManageSC</service-action-class>
+	</event-mapping>
+</mappings>

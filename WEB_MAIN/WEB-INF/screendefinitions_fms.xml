@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+    <!-- Jung Yoon Tae : 2009-03-24 start -->
+    <screen name="ESM_FMS_0022" template="templatePop">
+        <parameter key="title"    value="Vessel Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/fmscommon/externalfinder/jsp/ESM_FMS_0022.jsp"/>
+    </screen>
+	<!-- Jung Yoon Tae : 2009-03-24 end -->
+ 
+	<!-- Jung Yoon Tae : 2009-03-25 start --> 
+    <screen name="ESM_FMS_0023" template="templatePop">
+        <parameter key="title"    value="SearchContracNoList" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriocontract/jsp/ESM_FMS_0023.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2009-03-25 end --> 
+	 
+	<!-- Jung Yoon Tae : 2009-03-25 start -->
+    <screen name="ESM_FMS_0076" template="templatePop">
+        <parameter key="title"    value="ItemListSelection" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobasicregister/jsp/ESM_FMS_0076.jsp"/>
+    </screen>
+	<!-- Jung Yoon Tae : 2009-03-25 end -->
+
+	<!-- Jung Yoon Tae : 2009-03-26 start -->
+    <screen name="ESM_FMS_0050">
+        <parameter key="title"    value="BunkerDataManagement" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobunkerregister/jsp/ESM_FMS_0050.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2009-03-26 end -->
+	
+	<!-- Jung Yoon Tae : 2009-03-26 start -->
+    <screen name="ESM_FMS_0051">
+        <parameter key="title"    value="BOD, BOR Monthly Interface" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobunkerregister/jsp/ESM_FMS_0051.jsp"/>
+    </screen>
+	<!-- Jung Yoon Tae : 2009-03-26 end -->
+	
+	<!-- Jung Yoon Tae : 2009-08-25 start -->
+    <screen name="ESM_FMS_0027" template="templatePop">
+        <parameter key="title"    value="BOD, BOR Settlement - Window" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobunkerregister/jsp/ESM_FMS_0027.jsp"/>
+    </screen> 
+	<!-- Jung Yoon Tae : 2009-08-25 end -->
+	
+	<!-- Jung Yoon Tae : 2009-05-20 start -->
+    <screen name="ESM_FMS_0012">
+        <parameter key="title"    value="Prepayments" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0012.jsp"/>
+    </screen>
+	<!-- Jung Yoon Tae : 2009-05-20 end -->
+	
+	<!-- Jung Yoon Tae : 2009-05-20 start -->
+    <screen name="ESM_FMS_0014">
+        <parameter key="title"    value="Off-Hire Expenses" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0014.jsp"/>
+    </screen>
+	<!-- Jung Yoon Tae : 2009-05-20 end -->
+	
+	<!-- Jung Yoon Tae : 2009-04-13 start -->
+    <screen name="ESM_FMS_0016">
+        <parameter key="title"    value="Charterer's Expenses" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0016.jsp"/>
+    </screen>
+	<!-- Jung Yoon Tae : 2009-04-13 end -->
+	
+	<!-- Jung Yoon Tae : 2009-04-13 start -->
+    <screen name="ESM_FMS_0001">
+        <parameter key="title"    value="AgreementCreation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriocontract/jsp/ESM_FMS_0001.jsp"/>
+    </screen>
+    <!-- Jung Yoon Tae : 2009-04-13 end -->
+    
+    <!-- Jung Yoon Tae : 2009-04-13 start -->
+    <screen name="ESM_FMS_0002">
+        <parameter key="title"    value="Agreement Inqesmry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriocontract/jsp/ESM_FMS_0002.jsp"/>
+    </screen>
+    <!-- Jung Yoon Tae : 2009-04-13 end -->
+    
+    <!-- Yoon Seyeong : 2009-04-14 start -->
+    <screen name="ESM_FMS_0006">
+        <parameter key="title"    value="Owner list" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobasicregister/jsp/ESM_FMS_0006.jsp"/>
+    </screen>
+	<!-- Yoon Seyeong : 2009-04-14 end -->
+	
+	<!-- Choi Woo-Seok : 2009-04-15 start -->
+    <screen name="ESM_FMS_0062">
+        <parameter key="title"    value="TEU Range Target" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tcharterstandardprimecost/jsp/ESM_FMS_0062.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-04-15 end -->
+	
+	<!-- Choi Woo-Seok : 2009-04-16 start -->
+    <screen name="ESM_FMS_0065">
+        <parameter key="title"    value="Hire Base Input" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tcharterstandardprimecost/jsp/ESM_FMS_0065.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-04-15 end -->
+	
+	<!-- Yoon Seyeong : 2009-04-21 start -->
+    <screen name="ESM_FMS_0003">
+        <parameter key="title"    value="Account Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobasicregister/jsp/ESM_FMS_0003.jsp"/>
+    </screen>
+	<!-- Yoon Seyeong : 2009-04-21 end -->
+	
+	<!-- Yoon Seyeong : 2009-04-15 start -->
+    <screen name="ESM_FMS_0004">
+        <parameter key="title"    value="Vendor Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobasicregister/jsp/ESM_FMS_0004.jsp"/>
+    </screen>
+ 	<!-- Yoon Seyeong : 2009-04-15 end -->
+
+ 	<!-- Yoon Seyeong : 2009-04-16 start -->
+    <screen name="ESM_FMS_0005">
+        <parameter key="title"    value="Customer Code Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobasicregister/jsp/ESM_FMS_0005.jsp"/>
+    </screen>
+ 	<!-- Yoon Seyeong : 2009-04-16 end -->
+
+ 	<!-- Yoon Seyeong : 2009-04-16 start -->
+    <screen name="ESM_FMS_0070" template="templatePop">
+        <parameter key="title"    value="Vendor Customer Inqesmry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobasicregister/jsp/ESM_FMS_0070.jsp"/>
+    </screen>
+ 	<!-- Yoon Seyeong : 2009-04-16 end -->
+
+ 	<!-- Yoon Seyeong : 2009-04-16 start -->
+    <screen name="ESM_FMS_0083" template="templatePop">
+        <parameter key="title"    value="Owner List Pop up" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobasicregister/jsp/ESM_FMS_0083.jsp"/>
+    </screen>
+ 	<!-- Yoon Seyeong : 2009-04-16 end -->
+ 	
+ 	<!-- Choi Woo-Seok : 2009-04-20 start -->
+    <screen name="ESM_FMS_0082" template="templatePop">
+        <parameter key="title"    value="Ship Yard Select - Pop up" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tchariodeliveryschedule/jsp/ESM_FMS_0082.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-04-20 end -->
+	
+	<!-- Choi Woo-Seok : 2009-04-21 start -->
+    <screen name="ESM_FMS_0019">
+        <parameter key="title"    value="NB Delivery Schedule Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tchariodeliveryschedule/jsp/ESM_FMS_0019.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-04-20 end -->
+	
+	<!-- Yoon Seyeong : 2009-04-20 start -->
+    <screen name="ESM_FMS_0069">
+        <parameter key="title"    value="Item Detail Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobasicregister/jsp/ESM_FMS_0069.jsp"/>
+    </screen>
+	<!-- Yoon Seyeong : 2009-04-20 end -->
+
+	<!-- Yoon Seyeong : 2009-04-20 start -->
+    <screen name="ESM_FMS_0080" template="templatePop">
+        <parameter key="title"    value="Item Detail Management - Window" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/fmscommon/externalfinder/jsp/ESM_FMS_0080.jsp"/>
+    </screen>
+	<!-- Yoon Seyeong : 2009-04-20 end -->
+	
+	<!-- Choi Woo-Seok : 2009-04-23 start -->
+    <screen name="ESM_FMS_0020">
+        <parameter key="title"    value="NB Delivery Schedule Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tchariodeliveryschedule/jsp/ESM_FMS_0020.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-04-23 end -->
+	
+	<!-- Choi Woo-Seok : 2009-04-24 start -->
+    <screen name="ESM_FMS_0059">
+        <parameter key="title"    value="Ship Yard Registration / Window" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tchariodeliveryschedule/jsp/ESM_FMS_0059.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-04-24 end -->
+	
+	<screen name="ESM_FMS_0054_1">
+        <parameter key="title"    value="Ship Yard Registration / Window" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tchariodockschedule/jsp/ESM_FMS_0054_1.jsp"/>
+    </screen>
+    
+    <!-- Jung Yoon Tae : 2009-05-20 start -->
+    <screen name="ESM_FMS_0073" template="templatePop">
+        <parameter key="title"    value="Offhire Expenses from VMS" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0073.jsp"/>
+    </screen>
+	<!-- Jung Yoon Tae : 2009-05-20 end -->
+    
+    <!-- Jung Yoon Tae : 2009-05-20 start -->
+    <screen name="ESM_FMS_0078" template="templatePop">
+        <parameter key="title"    value="Offhire Selection" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0078.jsp"/>
+    </screen>
+	<!-- Jung Yoon Tae : 2009-05-20 end -->
+    
+    <!-- Jung Yoon Tae : 2009-04-29 start -->
+    <screen name="ESM_FMS_0079" template="templatePop">
+        <parameter key="title"    value="SEND E-mail" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0079.jsp"/>
+    </screen>
+	<!-- Jung Yoon Tae : 2009-04-13 end -->
+	
+	<!-- Yoon Seyeong : 2009-04-29 start -->
+    <screen name="ESM_FMS_0054_2">
+        <parameter key="title"    value="D/dock Schedule Input" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tchariodockschedule/jsp/ESM_FMS_0054_2.jsp"/>
+    </screen>
+	<!-- Yoon Seyeong : 2009-04-29 end -->
+	
+	<!-- Choi Woo-Seok : 2009-04-28 start -->
+    <screen name="ESM_FMS_0018">
+        <parameter key="title"    value="Owner�r Account" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0018.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-04-28 end -->
+	
+	<!-- Yoon Seyeong : 2009-04-30 start -->
+    <screen name="ESM_FMS_0055">
+        <parameter key="title"    value="D/Dock Schedule Review - Graph" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tchariodockschedule/jsp/ESM_FMS_0055.jsp"/>
+    </screen>
+	<!-- Yoon Seyeong : 2009-04-30 end -->
+
+	<!-- Yoon Seyeong : 2009-05-07 start -->
+    <screen name="ESM_FMS_0057">
+        <parameter key="title"    value="D/dock Schedule Review" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tchariodockschedule/jsp/ESM_FMS_0057.jsp"/>
+    </screen>
+	<!-- Yoon Seyeong : 2009-05-07 end -->
+	
+	<!-- Choi Woo-Seok : 2009-05-08 start -->
+    <screen name="ESM_FMS_0007" template="templatePop">
+        <parameter key="title"    value="Manhour List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0007.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-04-28 end -->
+
+	<!-- Yoon Seyeong : 2009-05-08 start -->
+    <screen name="ESM_FMS_0081" template="templatePop">
+        <parameter key="title"    value="Manhour Item Select" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0081.jsp"/>
+    </screen>
+	<!-- Yoon Seyeong : 2009-05-08 end -->
+	
+	<!-- Choi Woo-Seok : 2009-05-08 start -->
+    <screen name="ESM_FMS_0007">
+        <parameter key="title"    value="Charterer's Expenses" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0007.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-04-28 end -->
+	
+	<!-- Choi Woo-Seok : 2009-05-12 start -->
+    <screen name="ESM_FMS_0072" template="templatePop">
+        <parameter key="title"    value="Manhour Item Registration" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0072.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-05-12 end -->
+	
+	<!-- Jung, Yoon-Tae : 2010-02-18 start -->
+    <screen name="ESM_FMS_0072_1" template="templatePop">
+        <parameter key="title"    value="Manhour Item Registration" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0072.jsp"/>
+    </screen>
+	<!-- Jung, Yoon-Tae : 2010-02-18 end -->
+	
+	<!-- Choi Woo-Seok : 2009-05-13 start -->
+    <screen name="ESM_FMS_0063">
+        <parameter key="title"    value="Hire Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tcharterstandardprimecost/jsp/ESM_FMS_0063.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-05-13 end -->
+	
+	<!-- Yoon Seyeong : 2009-05-13 start -->
+    <screen name="ESM_FMS_0036" template="templatePop">
+        <parameter key="title"    value="Lane Code Search - Window" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/fmscommon/externalfinder/jsp/ESM_FMS_0036.jsp"/>
+    </screen>
+	<!-- Yoon Seyeong : 2009-05-13 end -->
+
+	<!-- Yoon Seyeong : 2009-05-13 start -->
+    <screen name="ESM_FMS_0077" template="templatePop">
+        <parameter key="title"    value="Carrier Code Selection - Window" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/fmscommon/externalfinder/jsp/ESM_FMS_0077.jsp"/>
+    </screen>
+	<!-- Yoon Seyeong : 2009-05-13 end -->
+	
+	<!-- Choi Woo-Seok : 2009-05-20 start -->
+    <screen name="ESM_FMS_0066">
+        <parameter key="title"    value="Hire Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tcharterstandardprimecost/jsp/ESM_FMS_0066.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-05-20 end -->
+	
+	<!-- Choi Woo-Seok : 2009-05-20 start -->
+    <screen name="ESM_FMS_0064">
+        <parameter key="title"    value="Hire Interface" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tcharterstandardprimecost/jsp/ESM_FMS_0064.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-05-20 end -->
+
+    <screen name="ESM_FMS_0056">   
+        <parameter key="title"    value="D/dock Schedule Review Graph/Print" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tchariodockschedule/jsp/ESM_FMS_0056.jsp"/>
+    </screen>
+
+    <screen name="ESM_FMS_0058">
+        <parameter key="title"    value="D/dock Schedule Review /Print" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tchariodockschedule/jsp/ESM_FMS_0058.jsp"/>
+    </screen>
+
+    <screen name="ESM_FMS_0013">
+        <parameter key="title"    value="Prepayments / Hire Invoice" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0013.jsp"/>
+    </screen>
+
+    <screen name="ESM_FMS_0030">
+        <parameter key="title"    value="Hire Statement / Print" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0030.jsp"/>
+    </screen>
+    
+    <!-- Choi Woo-Seok : 2009-05-21 start -->
+    <screen name="ESM_FMS_0075" template="templatePop">
+        <parameter key="title"    value="E-mail / Print - window" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0075.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-05-21 end -->
+	<!-- Yoon, Seyeong : 2009-05-25 start -->
+    <screen name="ESM_FMS_0039">
+        <parameter key="title"    value="Owner's Account to Expenses" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriosettlement/jsp/ESM_FMS_0039.jsp"/>
+    </screen>
+	<!-- Yoon, Seyeong : 2009-05-25 end -->
+	
+	<!-- Choi Woo-Seok : 2009-05-26 start -->
+    <screen name="ESM_FMS_0060">
+        <parameter key="title"    value="Fleet Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tcharterioinquiry/jsp/ESM_FMS_0060.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-05-26 end -->
+	
+	<!-- Choi Woo-Seok : 2009-05-26 start -->
+    <screen name="ESM_FMS_0008">
+        <parameter key="title"    value="Capital Budgeting" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tcharterioinquiry/jsp/ESM_FMS_0008.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-05-26 end -->
+
+	<!-- Yoon, Seyeong : 2009-06-01 start -->
+    <screen name="ESM_FMS_0037">
+        <parameter key="title"    value="Revenue VVD Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobasicregister/jsp/ESM_FMS_0037.jsp"/>
+    </screen>
+    <screen name="ESM_FMS_0038">
+        <parameter key="title"    value="Revenue VVD Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobasicregister/jsp/ESM_FMS_0038.jsp"/>
+    </screen>
+	<!-- Yoon, Seyeong : 2009-06-01 end -->
+
+	<!-- Choi Woo-Seok : 2009-06-11 start -->
+    <screen name="ESM_FMS_0010">
+        <parameter key="title"    value="Statement of Account" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutfleetmanagement/tcharterioinquiry/jsp/ESM_FMS_0010.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-06-11 end -->
+ 
+	<!-- Yoon, Seyeong : 2009-06-24 start -->
+    <screen name="ESM_FMS_0046">
+        <parameter key="title"    value="Estimated I/F To ERP(RV)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioestimated/jsp/ESM_FMS_0046.jsp"/>
+    </screen>
+	<!-- Yoon, Seyeong : 2009-06-24 end -->
+	
+	<!-- Choi Woo-Seok : 2009-06-24 start -->
+    <screen name="ESM_FMS_0032">
+        <parameter key="title"    value="Sublet Revenue" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0032.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-06-24 end -->
+
+ 	<!-- Choi Woo-Seok : 2009-06-26 start -->
+    <screen name="ESM_FMS_0034"  template="templatePop">
+        <parameter key="title"    value="Hire Revenue Retrieve / Window" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0034.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-06-26 end -->
+ 
+	<!-- Yoon, Seyeong : 2009-07-06 start -->
+    <screen name="ESM_FMS_0048">
+        <parameter key="title"    value="Estimated I/F To ERP(PV)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioestimated/jsp/ESM_FMS_0048.jsp"/>
+    </screen>
+	<!-- Yoon, Seyeong : 2009-07-06 end -->
+
+	<!-- Yoon, Seyeong : 2009-07-06 start -->
+    <screen name="ESM_FMS_0049">
+        <parameter key="title"    value="Estimated Hire Results" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioestimated/jsp/ESM_FMS_0049.jsp"/>
+    </screen>
+	<!-- Yoon, Seyeong : 2009-07-06 end -->
+ 	
+ 	<!-- Choi Woo-Seok : 2009-07-15 start -->
+    <screen name="ESM_FMS_0068">
+        <parameter key="title"    value="Revenue Port Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobasicregister/jsp/ESM_FMS_0068.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-07-15 end -->
+ 	
+	<!-- Yoon, Seyeong : 2009-07-20 start -->
+    <screen name="ESM_FMS_0053">
+        <parameter key="title"    value="Invoice Interface Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0053.jsp"/>
+    </screen>
+	<!-- Yoon, Seyeong : 2009-07-20 end -->
+ 	
+	<!-- Yoon, Seyeong : 2009-07-22 start -->
+    <screen name="ESM_FMS_0035">
+        <parameter key="title"    value="Prepayments Settlement" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriosettlement/jsp/ESM_FMS_0035.jsp"/>
+    </screen>
+	<!-- Yoon, Seyeong : 2009-07-22 end -->
+
+	<!-- Yoon, Seyeong : 2009-07-22 start  -->
+    <screen name="ESM_FMS_0074" template="templatePop">
+        <parameter key="title"    value="Prepayments Settlement / Retrieve" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriosettlement/jsp/ESM_FMS_0074.jsp"/>
+    </screen>
+	<!-- Yoon, Seyeong : 2009-07-22 end -->
+	
+	<!-- Choi Woo-Seok : 2009-07-23 start -->
+    <screen name="ESM_FMS_0045">
+        <parameter key="title"    value="Revenue Port Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0045.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-07-23 end -->
+	
+	<!-- Jung, Yoon-Tae : 2009-08-01 start -->
+    <screen name="ESM_FMS_0041">
+        <parameter key="title"    value="Slip Inquiry - Master" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0041.jsp"/>
+    </screen>
+	<!-- Jung, Yoon-Tae : 2009-08-01 end -->
+	
+	<!-- Jung, Yoon-Tae : 2010-02-18 start -->
+    <screen name="ESM_FMS_0041_1" template="templatePop">
+        <parameter key="title"    value="Slip Inquiry - Master" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0041.jsp"/>
+    </screen>
+	<!-- Jung, Yoon-Tae : 2010-02-18 end -->
+	
+	<!-- Choi Woo-Seok : 2009-08-03 start -->
+    <screen name="ESM_FMS_0033">
+        <parameter key="title"    value="Reverse CSR for Sublet" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0033.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-08-03 end -->
+ 	
+ 	<!-- Choi Woo-Seok : 2009-08-03 start  -->
+    <screen name="ESM_FMS_00331" template="templatePop">
+        <parameter key="title"    value="RCS / Invoice No Inquiry - Window" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_00331.jsp"/>
+    </screen> 
+	<!-- Choi Woo-Seok : 2009-08-03 end -->
+	 
+	<!-- Jung Yoon-Tae : 2009-08-06 start -->
+    <screen name="ESM_FMS_0042" template="templatePop">
+        <parameter key="title"    value="Slip Inquiry - Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0042.jsp"/>
+    </screen>
+	<!-- Jung Yoon-Tae : 2009-08-06 end -->
+	
+	<!-- Jung, Yoon-Tae : 2009-08-07 start -->
+    <screen name="ESM_FMS_0043">
+        <parameter key="title"    value="Slip Correction - Master" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0043.jsp"/>
+    </screen>
+	<!-- Jung, Yoon-Tae : 2009-08-07 end -->
+	
+	<!-- Jung Yoon-Tae : 2009-08-07 start -->
+    <screen name="ESM_FMS_0044" template="templatePop">
+        <parameter key="title"    value="Slip Correction - Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0044.jsp"/>
+    </screen>
+	<!-- Jung Yoon-Tae : 2009-08-07 end -->
+	
+	<!-- Jung Yoon Tae : 2009-08-08 start -->
+    <screen name="ESM_FMS_0071" template="templatePop">
+        <parameter key="title"    value="Bunker Price Selection" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0071.jsp"/>
+    </screen>
+	<!-- Jung Yoon Tae : 2009-08-08 end -->
+	
+	<!-- Jung, Yoon-Tae : 2009-08-11 start -->
+    <screen name="ESM_FMS_0021">
+        <parameter key="title"    value="Payments Slip" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0021.jsp"/>
+    </screen>
+	<!-- Jung, Yoon-Tae : 2009-08-11 end -->
+	
+	<!-- Jung Yoon-Tae : 2009-08-12 start -->
+    <screen name="ESM_FMS_0024" template="templatePop">
+        <parameter key="title"    value="Prepayments - Window" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0024.jsp"/>
+    </screen>
+	<!-- Jung Yoon-Tae : 2009-08-12 end -->
+	
+	<!-- Jung Yoon-Tae : 2009-08-14 start -->
+    <screen name="ESM_FMS_0029" template="templatePop">
+        <parameter key="title"    value="Tax Evidence" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0029.jsp"/>
+    </screen>
+	<!-- Jung Yoon-Tae : 2009-08-14 end -->
+	
+	<!-- Yoon, Seyeong : 2009-08-17 start -->
+    <screen name="ESM_FMS_0052">
+        <parameter key="title"    value="Slip Approval" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0052.jsp"/>
+    </screen>
+	<!-- Yoon, Seyeong : 2009-08-17 end -->
+	
+	<!-- Choi Woo-Seok : 2009-08-17 start -->
+    <screen name="ESM_FMS_0040"> 
+        <parameter key="title"    value="Reverse CSR for Sublet" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0040.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-08-17 end -->
+ 	
+ 	<!-- Choi Woo-Seok : 2009-08-17 start  -->
+    <screen name="ESM_FMS_00401" template="templatePop">
+        <parameter key="title"    value="RCS / Invoice No Inquiry - Window" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_00401.jsp"/>
+    </screen> 
+	<!-- Choi Woo-Seok : 2009-08-17 end -->
+	
+	<!-- Jung Yoon-Tae : 2009-08-21 start -->
+    <screen name="ESM_FMS_0025" template="templatePop">
+        <parameter key="title"    value="Charterer's Account - Window" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0025.jsp"/>
+    </screen>
+	<!-- Jung Yoon-Tae : 2009-08-21 end -->
+	
+	<!-- Jung Yoon-Tae : 2009-08-24 start -->
+    <screen name="ESM_FMS_0026" template="templatePop">
+        <parameter key="title"    value="Offhire Expenses - Window" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0026.jsp"/>
+    </screen>
+	<!-- Jung Yoon-Tae : 2009-08-24 end -->
+	
+	<!-- Jung Yoon-Tae : 2009-08-25 start -->
+    <screen name="ESM_FMS_0028" template="templatePop">
+        <parameter key="title" value="Owner’s Account - Window" direct="true"/>
+        <parameter key="body" value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0028.jsp"/>
+    </screen>
+	<!-- Jung Yoon-Tae : 2009-08-25 end -->
+	
+	<!-- Jung Yoon-Tae : 2009-09-03 start -->
+    <screen name="ESM_FMS_0086" template="templatePop">
+        <parameter key="title"    value="Tax Evidence" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0086.jsp"/>
+    </screen>
+	<!-- Jung Yoon-Tae : 2009-09-03 end -->
+
+	<!-- Jung Yoon Tae : 2009-09-11 start -->
+    <screen name="ESM_FMS_0017" template="templatePop">
+        <parameter key="title"    value="SDMS - Window" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioinvoice/jsp/ESM_FMS_0017.jsp"/>
+    </screen>
+	<!-- Jung Yoon Tae : 2009-09-11 end -->
+
+	<!-- Choi Woo-Seok : 2009-09-08 start -->
+    <screen name="ESM_FMS_0084" template="templatePop">
+        <parameter key="title"    value="E-mail List Select" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobasicregister/jsp/ESM_FMS_0084.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-09-08 end -->
+
+	<!-- Choi Woo-Seok : 2009-09-08 start -->
+    <screen name="ESM_FMS_0085">
+        <parameter key="title"    value="E-mail List Registration" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharteriobasicregister/jsp/ESM_FMS_0085.jsp"/>
+    </screen>
+	<!-- Choi Woo-Seok : 2009-09-08 end -->
+
+	<!-- Lee Hyemin : 2012-04-23 start -->
+    <screen name="ESM_FMS_0100">
+        <parameter key="title"    value="Other Code List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/fmscommon/externalfinder/jsp/ESM_FMS_0100.jsp"/>
+    </screen>
+	<!-- Lee Hyemin : 2012-04-23 end -->
+	
+	<!-- NYK : 2015-11-27 start -->
+    <screen name="ESM_FMS_0087" template="templatePop">
+        <parameter key="title"    value="Slip Inquiry - Master" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/fms/timecharterinoutaccounting/tcharterioconsultation/jsp/ESM_FMS_0087.jsp"/>
+    </screen>
+	<!-- NYK : 2015-11-27 e n d -->
+</screen-definitions>
+  

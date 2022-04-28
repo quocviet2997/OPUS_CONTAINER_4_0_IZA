@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOModifyHdrDescUSQL">
+			<desc><![CDATA[ModifyHdrDesc
+2010.10.18 김영철 [CHM-201006348-01] CSR 전표 Remark 보완 - INV_DESC 추가]]></desc>
+			<sql><![CDATA[
+UPDATE AP_INV_HDR
+   SET INV_DESC = INV_DESC || ( SELECT DECODE(NVL(B.INV_DESC,''),'','','('||B.INV_DESC||')') INV_DESC
+                                  FROM AP_PAY_INV A, AP_PAY_INV_DTL B
+                                 WHERE A.INV_RGST_NO = B.INV_RGST_NO
+                                   AND A.CSR_NO = @[csr_no]
+                                   AND A.DELT_FLG <> 'Y'
+                                   AND B.DELT_FLG <> 'Y'
+                                   AND B.ACCT_CD = (SELECT C.ATTR_CTNT1 ACCT_CD FROM COM_ACCT_HRD_CDG_DESC D, COM_ACCT_HRD_CDG_CTNT C 
+												     WHERE ROWNUM=1
+								  					   AND D.SRC_MDL_CD = C.SRC_MDL_CD 
+								  					   AND D.HRD_CDG_ID = C.HRD_CDG_ID 
+								  					   AND D.SRC_MDL_CD = 'CSR'
+								  					   AND D.HRD_CDG_ID = 'AGT_ACCT_RCV')
+                                   AND A.PSO_TRNS_SLP_CTNT = 'GO'
+                                   AND ROWNUM = 1  )
+ WHERE CSR_NO = @[csr_no]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

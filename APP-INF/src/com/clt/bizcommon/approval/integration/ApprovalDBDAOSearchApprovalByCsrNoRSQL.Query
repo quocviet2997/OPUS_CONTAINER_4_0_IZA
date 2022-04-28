@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOSearchApprovalByCsrNoRSQL">
+			<desc><![CDATA[Approval 목록을 가져온다]]></desc>
+			<sql><![CDATA[
+SELECT ROUT.APRO_RQST_SEQ AS APRO_SEQ,
+  ROUT.APRO_USR_ID ,
+  ROUT.APRO_USR_NM ,
+  ROUT.APRO_OFC_CD ,
+  ROUT.APRO_USR_JB_TIT_NM 
+  --(CASE WHEN ROUT.APSTS_CD = 'C' THEN 'Approved' END) AS APSTS_CD
+FROM COM_APRO_RQST_ROUT ROUT ,
+  COM_APRO_CSR_DTL CSR ,
+  COM_APRO_RQST_HDR HDR
+WHERE HDR.APRO_RQST_NO = ROUT.APRO_RQST_NO
+  AND HDR.APRO_RQST_NO = CSR.APRO_RQST_NO
+  AND CSR.CSR_NO = @[csr_no]
+  AND (ROUT.APSTS_CD <> 'D'
+      OR ROUT.APSTS_CD IS NULL)
+ORDER BY ROUT.APRO_RQST_SEQ DESC			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

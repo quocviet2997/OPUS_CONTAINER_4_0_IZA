@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOSearchPsaCodeListRSQL">
+			<desc><![CDATA[PSA Code List 를 조회한다.]]></desc>
+			<sql><![CDATA[
+SELECT ISO_CNTR_TPSZ_CD AS CD
+     , ISO_CNTR_TPSZ_NM AS CD_DESC
+  FROM MST_ISO_CNTR_TP_SZ			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

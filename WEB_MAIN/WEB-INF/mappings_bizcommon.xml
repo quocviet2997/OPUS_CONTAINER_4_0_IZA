@@ -1,0 +1,1033 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	
+	<!-- Sample page -->
+	<url-mapping url="bizcommon.sample.do" screen="bizcommon.sample.screen" >
+    </url-mapping>
+    
+    <!--  Commodity -->
+    <url-mapping url="COM_ENS_011.do" screen="COM_ENS_011.screen" >
+        <web-action-class>com.clt.bizcommon.commodity.event.COM_ENS_011HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="COM_ENS_011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.commodity.event.COM_ENS_011HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+        <event-class>com.clt.bizcommon.commodity.event.ComEns011Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="COM_ENS_012.do" screen="COM_ENS_012.screen" >
+        <web-action-class>com.clt.bizcommon.commodity.event.COM_ENS_012HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="COM_ENS_012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.commodity.event.COM_ENS_012HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+        <event-class>com.clt.bizcommon.commodity.event.ComEns012Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+	<!--  ContractNo -->
+    <url-mapping url="COM_ENS_021.do" screen="COM_ENS_021.screen" >
+        <web-action-class>com.clt.bizcommon.contractno.event.COM_ENS_021HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.contractno.event.COM_ENS_021HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_021DL.do" screen="com.clt.bizcommon.contractno.event.ComEns021ViewAdapter" >
+        <web-action-class>com.clt.bizcommon.contractno.event.COM_ENS_021HTMLAction</web-action-class>
+    </url-mapping>    
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.contractno.event.ComEns021Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+
+	<!--  Customer_01  -->
+    <url-mapping url="COM_ENS_041.do" screen="COM_ENS_041.screen" >
+        <web-action-class>com.clt.bizcommon.customer.event.COM_ENS_041HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_041GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.customer.event.COM_ENS_041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.customer.event.ComEns041Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>    
+    
+    <!--  Customer_Group  -->
+    <url-mapping url="COM_COM_0006.do" screen="COM_COM_0006.screen" >
+        <web-action-class>com.clt.bizcommon.custgroup.event.COM_COM_0006HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_COM_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.custgroup.event.COM_COM_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.custgroup.event.ComCom0006Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Customer_02 
+    <url-mapping url="COM_ENS_042.do" screen="COM_ENS_042.screen" >
+        <web-action-class>com.clt.bizcommon.actualcustomer.event.COM_ENS_042HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_042GS.do" screen="COM_ENS_042.screen" >
+        <web-action-class>com.clt.bizcommon.actualcustomer.event.COM_ENS_042HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_042GS2.do" screen="COM_ENS_042.screen" >
+        <web-action-class>com.clt.bizcommon.actualcustomer.event.COM_ENS_042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.actualcustomer.event.ComEns042Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+-->
+
+	<!--  LOCATION -->
+	 <url-mapping url="locationCodeInquiry.do" screen="locationCodeInquiry.screen" >
+        <web-action-class>com.clt.bizcommon.location.event.COM_ENS_051HTMLAction</web-action-class>
+    </url-mapping>
+	
+    <url-mapping url="COM_ENS_051.do" screen="COM_ENS_051.screen" >
+        <web-action-class>com.clt.bizcommon.location.event.COM_ENS_051HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.location.event.COM_ENS_051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.location.event.ComEns051Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+
+	<!--  Node -->
+    <url-mapping url="COM_ENS_061.do" screen="COM_ENS_061.screen" >
+        <web-action-class>com.clt.bizcommon.node.event.COM_ENS_061HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_061GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.node.event.COM_ENS_061HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.node.event.ComEns061Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+
+	<!--  Office -->
+    <url-mapping url="COM_ENS_071.do" screen="COM_ENS_071.screen" >
+        <web-action-class>com.clt.bizcommon.office.event.COM_ENS_071HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_071GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.office.event.COM_ENS_071HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.office.event.ComEns071Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Lane -->
+    <url-mapping url="COM_ENS_081.do" screen="COM_ENS_081.screen" >
+        <web-action-class>com.clt.bizcommon.lane.event.COM_ENS_081HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_081GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.lane.event.COM_ENS_081HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.lane.event.ComEns081Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+
+    <!--  Vessel -->
+    <url-mapping url="COM_ENS_0A1.do" screen="COM_ENS_0A1.screen" >
+        <web-action-class>com.clt.bizcommon.vessel.event.ComEns0A1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0A1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.vessel.event.ComEns0A1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.vessel.event.ComEns0A1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+	
+	<!--  Vessel_SKD_01 -->
+    <url-mapping url="COM_ENS_0B1.do" screen="COM_ENS_0B1.screen" >
+        <web-action-class>com.clt.bizcommon.vessel_skd.event.ComEns0B1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0B1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.vessel_skd.event.ComEns0B1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.vessel_skd.event.ComEns0B1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+
+    <!--  Vessel_SKD_02 -->
+    <url-mapping url="COM_ENS_0B2.do" screen="COM_ENS_0B2.screen" >
+        <web-action-class>com.clt.bizcommon.vvd.event.COM_ENS_0B2HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0B2GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.vvd.event.COM_ENS_0B2HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.vvd.event.ComEns0B2Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+
+    <!--  SERVICE PROVIDER -->
+    <url-mapping url="COM_ENS_0C1.do" screen="COM_ENS_0C1.screen" >
+        <web-action-class>com.clt.bizcommon.serviceprovider.event.COM_ENS_0C1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0C1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.serviceprovider.event.COM_ENS_0C1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.serviceprovider.event.ComEns0C1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  SURCHARGE 
+    <url-mapping url="COM_ENS_0D1.do" screen="COM_ENS_0D1.screen" >
+        <web-action-class>com.clt.bizcommon.surcharge.event.COM_ENS_0D1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0D1GS.do" screen="COM_ENS_0D1GS.screen" >
+        <web-action-class>com.clt.bizcommon.surcharge.event.COM_ENS_0D1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.surcharge.event.ComEns0D1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    -->
+    
+    <!--  EQ Organization Chart -->
+    <url-mapping url="COM_ENS_0O1.do" screen="COM_ENS_0O1.screen" >
+        <web-action-class>com.clt.bizcommon.eqorgchart.event.COM_ENS_0O1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0O1GS.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+        <web-action-class>com.clt.bizcommon.eqorgchart.event.COM_ENS_0O1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.eqorgchart.event.ComEns0O1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+
+	<!--  Service Scope -->
+    <url-mapping url="COM_ENS_0L1.do" screen="COM_ENS_0L1.screen" >
+        <web-action-class>com.clt.bizcommon.servicescope.event.COM_ENS_0L1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0L1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.servicescope.event.COM_ENS_0L1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.servicescope.event.ComEns0L1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Trade -->
+    <url-mapping url="COM_COM_0012.do" screen="COM_COM_0012.screen" >
+        <web-action-class>com.clt.bizcommon.trade.event.COM_COM_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.trade.event.COM_COM_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.trade.event.ComCom0012Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Subtrade -->
+    <url-mapping url="COM_COM_0013.do" screen="COM_COM_0013.screen" >
+        <web-action-class>com.clt.bizcommon.subtrade.event.COM_COM_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.subtrade.event.COM_COM_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.subtrade.event.ComCom0013Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Country -->
+    <url-mapping url="COM_ENS_0M1.do" screen="COM_ENS_0M1.screen" >
+        <web-action-class>com.clt.bizcommon.country.event.COM_ENS_0M1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0M1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.country.event.COM_ENS_0M1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.country.event.ComEns0M1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Sales Rep -->
+    <url-mapping url="COM_COM_0008.do" screen="COM_COM_0008.screen" >
+        <web-action-class>com.clt.bizcommon.salesrep.event.COM_COM_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.salesrep.event.COM_COM_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.salesrep.event.ComCom0008Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Continent -->
+    <url-mapping url="COM_ENS_0H1.do" screen="COM_ENS_0H1.screen" >
+        <web-action-class>com.clt.bizcommon.continent.event.COM_ENS_0H1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0H1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.continent.event.COM_ENS_0H1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.continent.event.ComEns0H1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Sub Continent -->
+    <url-mapping url="COM_ENS_0I1.do" screen="COM_ENS_0I1.screen" >
+        <web-action-class>com.clt.bizcommon.scontinent.event.COM_ENS_0I1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0I1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.scontinent.event.COM_ENS_0I1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.scontinent.event.ComEns0I1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Region -->
+    <url-mapping url="COM_ENS_0J1.do" screen="COM_ENS_0J1.screen" >
+        <web-action-class>com.clt.bizcommon.region.event.COM_ENS_0J1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0J1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.region.event.COM_ENS_0J1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.region.event.ComEns0J1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Rep Commodity -->
+    <url-mapping url="COM_ENS_0K1.do" screen="COM_ENS_0K1.screen" >
+        <web-action-class>com.clt.bizcommon.repcommodity.event.COM_ENS_0K1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0K1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.repcommodity.event.COM_ENS_0K1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.repcommodity.event.ComEns0K1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Carrier -->
+    <url-mapping url="COM_ENS_0N1.do" screen="COM_ENS_0N1.screen" >
+        <web-action-class>com.clt.bizcommon.carrier.event.COM_ENS_0N1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0N1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.carrier.event.COM_ENS_0N1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.carrier.event.ComEns0N1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Container Type Size -->
+    <url-mapping url="COM_ENS_0G1.do" screen="COM_ENS_0G1.screen" >
+        <web-action-class>com.clt.bizcommon.cntrtpsz.event.COM_ENS_0G1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0G1GS.do" screen="COM_ENS_0G1GS.screen" >
+        <web-action-class>com.clt.bizcommon.cntrtpsz.event.COM_ENS_0G1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.cntrtpsz.event.ComEns0G1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  VVD Chart -->
+    <url-mapping url="COM_ENS_0P1.do" screen="COM_ENS_0P1.screen" >
+        <web-action-class>com.clt.bizcommon.vvdchart.event.COM_ENS_0P1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0P1GS.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+        <web-action-class>com.clt.bizcommon.vvdchart.event.COM_ENS_0P1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.vvdchart.event.ComEns0P1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Monthly Exchange Rate 
+    <url-mapping url="COM_ENS_0E1.do" screen="COM_ENS_0E1.screen" >
+        <web-action-class>com.clt.bizcommon.exrate.monthly.event.ComEns0E1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0E1GS.do" screen="COM_ENS_0E1GS.screen" >
+        <web-action-class>com.clt.bizcommon.exrate.monthly.event.ComEns0E1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.exrate.monthly.event.ComEns0E1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    -->
+    
+    <!--  Vvd Exchange Rate -->
+    <url-mapping url="COM_ENS_0F1.do" screen="COM_ENS_0F1.screen" >
+        <web-action-class>com.clt.bizcommon.exrate.vvd.event.COM_ENS_0F1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0F1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.exrate.vvd.event.COM_ENS_0F1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.exrate.vvd.event.ComEns0F1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Staff -->
+    <url-mapping url="COM_ENS_091.do" screen="COM_ENS_091.screen" >
+        <web-action-class>com.clt.bizcommon.staff.event.COM_ENS_091HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_091GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.staff.event.COM_ENS_091HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.bizcommon.staff.event.ComEns091Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="COM_ENS_091GSDept.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+        <web-action-class>com.clt.bizcommon.staff.event.COM_ENS_091HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_092.do" screen="COM_ENS_092.screen" >
+    </url-mapping>
+
+     <event-mapping>
+        <event-class>com.clt.bizcommon.staff.event.ComEns092Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Exception Main Detail - Popup : Notified Subscriber - Search Inquiry  
+    <url-mapping url="COM_ENS_093.do" screen="COM_ENS_093.screen" >
+        <web-action-class>com.clt.bizcommon.staff.event.COM_ENS_092HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_093GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.staff.event.COM_ENS_092HTMLAction</web-action-class>
+    </url-mapping>
+
+    -->
+    
+    <!--  Local Calendar(Country) 
+    <url-mapping url="COM_ENS_0S1.do" screen="COM_ENS_0S1.screen" >
+        <web-action-class>com.clt.bizcommon.calendar.event.COM_ENS_0S1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0S1GS.do" screen="COM_ENS_0S1GS.screen" >
+        <web-action-class>com.clt.bizcommon.calendar.event.COM_ENS_0S1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0S2GS.do" screen="COM_ENS_0S2GS.screen" >
+        <web-action-class>com.clt.bizcommon.calendar.event.COM_ENS_0S2HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0S3GS.do" screen="COM_ENS_0S3GS.screen" >
+        <web-action-class>com.clt.bizcommon.calendar.event.COM_ENS_0S3HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0S4GS.do" screen="COM_ENS_0S4GS.screen" >
+        <web-action-class>com.clt.bizcommon.calendar.event.COM_ENS_0S4HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.calendar.event.ComEns0S1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.bizcommon.calendar.event.ComEns0S2Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.bizcommon.calendar.event.ComEns0S3Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.bizcommon.calendar.event.ComEns0S4Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    -->
+    
+    <!-- Approval Route Popup -->
+    <!-- 
+    <url-mapping url="COM_ENS_0T1.do" screen="COM_ENS_0T1.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0T1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0T1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0T1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0T1GSDept.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0T1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0T1GSRoute.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0T1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0T2.do" screen="COM_ENS_0T2.screen" >
+        <web-action-class>com.clt.bizcommon.approute.event.ApprouteHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0T2GS.do" screen="COM_ENS_0T2GS.screen" >
+        <web-action-class>com.clt.bizcommon.approute.event.ApprouteHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0T2GSDept.do" screen="COM_ENS_0T2GSDept.screen" >
+        <web-action-class>com.clt.bizcommon.approute.event.ApprouteHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0T2GSRoute.do" screen="COM_ENS_0T2GSRoute.screen" >
+        <web-action-class>com.clt.bizcommon.approute.event.ApprouteHTMLAction</web-action-class>
+    </url-mapping>
+    -->
+    
+    <!-- !!CSR Start -->
+	<url-mapping url="COM_ENS_0T1.do" screen="COM_ENS_0T1.screen" >
+        
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0T1GS.do" screen="COM_ENS_0T1GS.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0T1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0T1GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0T1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0T1GSDept.do" screen="COM_ENS_0T1GSDept.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0T1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0T1GSRoute.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0T1HTMLAction</web-action-class>
+    </url-mapping>
+    <!-- !!CSR End -->
+    
+    <url-mapping url="COM_ENS_0V1.do" screen="COM_ENS_0V1.screen" >
+        
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0V1GS.do" screen="COM_ENS_0V1GS.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0T1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0V1GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0T1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0V1GSDept.do" screen="COM_ENS_0V1GSDept.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0T1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0V1GSRoute.do" screen="COM_ENS_0V1GSRoute.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0T1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.approval.event.ComEns0T1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.bizcommon.approute.event.ApprouteEvent</event-class>
+        <service-action-class>com.clt.bizcommon.approute.ApprouteSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Approval Inquiry Popup -->
+    <url-mapping url="COM_ENS_0U1.do" screen="COM_ENS_0U1.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0U1HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="COM_ENS_0U1ViewGS.do" screen="com.clt.bizcommon.approval.event.ApprovalViewAdapter" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0U1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0U1GS.do" screen="COM_ENS_0U1GS.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0U1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0U1GSDept.do" screen="COM_ENS_0U1GSDept.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0U1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0U1GSRoute.do" screen="COM_ENS_0U1GSRoute.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0U1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.approval.event.ComEns0U1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Unapproved CSR Inquiry Popup -->
+    <url-mapping url="COM_ENS_0Y1.do" screen="COM_ENS_0Y1.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0Y1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0Y1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0Y1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.bizcommon.approval.event.ComEns0Y1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  Approval Step -->
+    <url-mapping url="COM_ENS_0W1.do" screen="COM_ENS_0W1.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0W1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0W1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0W1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0W1GSDept.do" screen="COM_ENS_0W1GSDept.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0W1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.approval.event.ComEns0W1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!--  State -->
+    <url-mapping url="COM_ENS_0X1.do" screen="COM_ENS_0X1.screen" >
+        <web-action-class>com.clt.bizcommon.state.event.COM_ENS_0X1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_0X1GS.do" screen="COM_ENS_0X1GS.screen" >
+        <web-action-class>com.clt.bizcommon.state.event.COM_ENS_0X1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_0X1GSDept.do" screen="COM_ENS_0X1GSDept.screen" >
+        <web-action-class>com.clt.bizcommon.state.event.COM_ENS_0X1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.state.event.ComEns0X1Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+	<!-- Suk Jun Kim : 2009-04-20 start -->
+    <url-mapping url="COM_ENS_N11.do" screen="COM_ENS_N11.screen" >
+        <web-action-class>com.clt.bizcommon.account.event.COM_ENS_N11HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_N11GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.account.event.COM_ENS_N11HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.account.event.ComEnsN11Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Suk Jun Kim : 2009-04-20 end -->
+    
+	<!-- Eui-su Park : 2009-04-20 start -->
+    <url-mapping url="COM_ENS_N13.do" screen="COM_ENS_N13.screen" >
+        <web-action-class>com.clt.bizcommon.currency.event.COM_ENS_N13HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_ENS_N13GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.currency.event.COM_ENS_N13HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.currency.event.ComEnsN13Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-04-20 end -->
+
+	<!-- Ji Seok Woo : 2009-04-24 start -->
+    <url-mapping url="UI_BKG_0696.do" screen="UI_BKG_0696.screen" >
+        <web-action-class>com.clt.bizcommon.packagetype.event.UI_BKG_0696HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="UI_BKG_0696GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.packagetype.event.UI_BKG_0696HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.packagetype.event.UiBkg0696Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Ji Seok Woo : 2009-04-20 end -->
+
+	<!-- Kyung Min Woo : 2009-04-24 start -->
+    <url-mapping url="UI_CTM_0435.do" screen="UI_CTM_0435.screen" >
+        <web-action-class>com.clt.bizcommon.logicsserviceprovider.event.UI_CTM_0435HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="UI_CTM_0435GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.logicsserviceprovider.event.UI_CTM_0435HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.logicsserviceprovider.event.UiCtm0435Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Kyung Min Woo : 2009-04-20 end -->
+	
+	<!-- SEO CHANG YUL : 2009-04-28 start -->
+    <url-mapping url="UI_COM_ENS_N12.do" screen="UI_COM_ENS_N12.screen" >
+        <web-action-class>com.clt.bizcommon.revenuevvd.event.UI_COM_ENS_N12HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="UI_COM_ENS_N12GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.revenuevvd.event.UI_COM_ENS_N12HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.revenuevvd.event.UiComEnsN12Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+	<!-- SEO CHANG YUL : 2009-04-28 end -->
+	
+	<!-- PARK KWANG SEOK  : 2009-04-28 start -->
+    <url-mapping url="UI_PRI_4002.do" screen="UI_PRI_4002.screen" >
+        <web-action-class>com.clt.bizcommon.pertype.event.UI_PRI_4002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="UI_PRI_4002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.pertype.event.UI_PRI_4002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.pertype.event.UiPri4002Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+	<!-- PARK KWANG SEOK : 2009-04-28 end -->	
+
+
+	<!--  Continent -->
+    <url-mapping url="COM_MAIN_0H1.do" screen="COM_MAIN_0H1.screen" >
+        <web-action-class>com.clt.bizcommon.continent.event.COM_ENS_0H1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!--  Sub Continent -->
+    <url-mapping url="COM_MAIN_0I1.do" screen="COM_MAIN_0I1.screen" >
+        <web-action-class>com.clt.bizcommon.scontinent.event.COM_ENS_0I1HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!--  Country -->
+    <url-mapping url="COM_MAIN_0M1.do" screen="COM_MAIN_0M1.screen" >
+        <web-action-class>com.clt.bizcommon.country.event.COM_ENS_0M1HTMLAction</web-action-class>
+    </url-mapping>
+
+	<!--  Sales Rep -->
+    <url-mapping url="COM_MAIN_0008.do" screen="COM_MAIN_0008.screen" >
+        <web-action-class>com.clt.bizcommon.salesrep.event.COM_COM_0008HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!--  Region -->
+    <url-mapping url="COM_MAIN_0J1.do" screen="COM_MAIN_0J1.screen" >
+        <web-action-class>com.clt.bizcommon.region.event.COM_ENS_0J1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_MAIN_051.do" screen="COM_MAIN_051.screen" >
+        <web-action-class>com.clt.bizcommon.location.event.COM_ENS_051HTMLAction</web-action-class>
+    </url-mapping>
+  
+    <!--  Node -->
+    <url-mapping url="COM_MAIN_061.do" screen="COM_MAIN_061.screen" >
+        <web-action-class>com.clt.bizcommon.node.event.COM_ENS_061HTMLAction</web-action-class>
+    </url-mapping>
+
+     <url-mapping url="COM_MAIN_N13.do" screen="COM_MAIN_N13.screen" >
+        <web-action-class>com.clt.bizcommon.currency.event.COM_ENS_N13HTMLAction</web-action-class>
+    </url-mapping>
+
+    <!--  Commodity -->
+    <url-mapping url="COM_MAIN_011.do" screen="COM_MAIN_011.screen" >
+        <web-action-class>com.clt.bizcommon.commodity.event.COM_ENS_011HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <!--  Rep Commodity -->
+    <url-mapping url="COM_MAIN_0K1.do" screen="COM_MAIN_0K1.screen" >
+        <web-action-class>com.clt.bizcommon.repcommodity.event.COM_ENS_0K1HTMLAction</web-action-class>
+    </url-mapping>
+
+    <!--  Vessel -->
+    <url-mapping url="COM_MAIN_0A1.do" screen="COM_MAIN_0A1.screen" >
+        <web-action-class>com.clt.bizcommon.vessel.event.ComEns0A1HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <!--  Office -->
+    <url-mapping url="COM_MAIN_071.do" screen="COM_MAIN_071.screen" >
+        <web-action-class>com.clt.bizcommon.office.event.COM_ENS_071HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_MAIN_091.do" screen="COM_MAIN_091.screen" >
+        <web-action-class>com.clt.bizcommon.staff.event.COM_ENS_091HTMLAction</web-action-class>
+    </url-mapping>
+
+ 	<url-mapping url="COM_MAIN_0F1.do" screen="COM_MAIN_0F1.screen" >
+        <web-action-class>com.clt.bizcommon.staff.event.COM_ENS_0F1HTMLAction</web-action-class>
+    </url-mapping>
+
+	<!-- Kim Jong Ock : 2012-02-17 start -->
+    <url-mapping url="COM_COM_0010.do" screen="COM_COM_0010.screen" >
+        <web-action-class>com.clt.bizcommon.movement.event.COM_COM_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.movement.event.COM_COM_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.movement.event.ComCom0010Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2012-02-17 end -->	
+		
+	<!-- JungHo Min : 2012-02-14 start -->
+    <url-mapping url="COM_COM_0002.do" screen="COM_COM_0002.screen" >
+        <web-action-class>com.clt.bizcommon.cntrtype.event.COM_COM_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.cntrtype.event.COM_COM_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.cntrtype.event.ComCom0002Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+	<!-- JungHo Min : 2012-02_14 end -->
+	
+	<!-- JungHo Min : 2012-02-14 start -->
+    <url-mapping url="COM_COM_0003.do" screen="COM_COM_0003.screen" >
+        <web-action-class>com.clt.bizcommon.cntrsize.event.COM_COM_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.cntrsize.event.COM_COM_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.cntrsize.event.ComCom0003Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+	<!-- JungHo Min : 2012-02_14 end -->  	
+	
+	<!-- Kim Min Soo : 2012-02_21 start -->
+
+ 	<url-mapping url="COM_COM_0004.do" screen="COM_COM_0004.screen" >
+        <web-action-class>com.clt.bizcommon.leasingcompanyyard.event.COM_COM_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.leasingcompanyyard.event.COM_COM_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.leasingcompanyyard.event.ComCom0004Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>	    
+	<!-- Kim Min Soo : 2012-02_21 end -->    	
+		
+	 <!--  SEO SEOK JIN :2012-02-21 RevenueLane start -->
+    <url-mapping url="COM_COM_0011.do" screen="COM_COM_0011.screen" >
+        <web-action-class>com.clt.bizcommon.revenuelane.event.COM_COM_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.revenuelane.event.COM_COM_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.revenuelane.event.ComCom0011Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    <!-- SEO SEOK JIN : 2012-02_21 end -->  
+    
+	<!-- Sangbo La : 2012-02-14 start -->
+    <url-mapping url="COM_COM_0009.do" screen="COM_COM_0009.screen" >
+        <web-action-class>com.clt.bizcommon.activity.event.COM_COM_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.activity.event.COM_COM_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.activity.event.ComCom0009Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Sangbo La : 2012-02_14 end --> 
+    <!-- SEO SEOK JIN : 2012-02_21 end -->  
+    
+    <!-- Jong-Ho Kim : 2012-02-20 start -->
+    <url-mapping url="COM_COM_0007.do" screen="COM_COM_0007.screen" >
+        <web-action-class>com.clt.bizcommon.vendorcode.event.COM_COM_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.vendorcode.event.COM_COM_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.vendorcode.event.ComCom0007Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Jong-Ho Kim : 2012-02-20 end -->
+	
+	<!-- Junbum Lee : 2012-02-22 start -->
+    <!--  Charge -->
+    <url-mapping url="COM_COM_0001.do" screen="COM_COM_0001.screen" >
+        <web-action-class>com.clt.bizcommon.charge.event.COM_COM_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.charge.event.COM_COM_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.charge.event.ComCom0001Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Junbum Lee : 2012-02-22 end -->
+    
+        <!-- Junbum Lee : 2012-02-24 start -->
+    <!-- Daylight Saving time Pop-up -->
+    <url-mapping url="COM_COM_0005.do" screen="COM_COM_0005.screen" >
+        <web-action-class>com.clt.bizcommon.daylightsavingtime.event.COM_COM_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.daylightsavingtime.event.COM_COM_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.bizcommon.daylightsavingtime.event.ComCom0005Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Junbum Lee : 2012-02-22 end -->
+    
+    <!-- India Tax : 2017-05-31 start -->
+    <!-- India Tax Pop-up -->
+    <url-mapping url="COM_ENS_T01.do" screen="COM_ENS_T01.screen" >
+        <web-action-class>com.clt.bizcommon.tax.event.COM_ENS_T01HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="COM_ENS_T01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.tax.event.COM_ENS_T01HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.bizcommon.tax.event.ComEnsT01Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>    
+    <!-- India Tax : 2017-05-31 end -->
+    
+	<url-mapping url="COM_FILE_COMMON.do" screen="COM_FILE_COMMON.screen" >
+    </url-mapping>
+    
+    <!-- Approval Inquiry -->
+	<url-mapping url="COM_ENS_0U2.do" screen="COM_ENS_0U2.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0U2HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="COM_ENS_0U2GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0U2HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.bizcommon.approval.event.ComEns0U2Event</event-class>
+        <service-action-class>com.clt.bizcommon.BizCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- CSR amount limitation setup  -->
+	<url-mapping url="COM_ENS_0Z1.do" screen="COM_ENS_0Z1.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0Z1HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="COM_ENS_0Z1GS.do" screen="com.clt.bizcommon.approval.event.CsrAmountLimitViewAdapter" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0Z1HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.bizcommon.approval.event.ComEns0Z1Event</event-class>
+        <service-action-class>com.clt.bizcommon.approval.ApprovalSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="COM_ENS_0Z2.do" screen="COM_ENS_0Z2.screen" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0Z2HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="COM_ENS_0Z2GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.bizcommon.approval.event.COM_ENS_0Z2HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.bizcommon.approval.event.ComEns0Z2Event</event-class>
+        <service-action-class>com.clt.bizcommon.approval.ApprovalSC</service-action-class>
+    </event-mapping>
+</mappings>

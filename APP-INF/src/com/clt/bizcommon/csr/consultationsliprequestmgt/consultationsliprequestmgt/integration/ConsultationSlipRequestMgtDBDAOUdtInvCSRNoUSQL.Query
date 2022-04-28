@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOUdtInvCSRNoUSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+UPDATE AP_PAY_INV A
+   SET A.CSR_NO = @[csr_no]
+#if (${batch_flag} != 'N')
+	  ,A.GL_DT = (
+                 SELECT GL_DT
+                   FROM AP_INV_HDR
+                  WHERE CSR_NO = @[csr_no]
+                 )
+      ,A.INV_EFF_DT = TO_DATE((
+                 SELECT GL_DT
+                   FROM AP_INV_HDR
+                  WHERE CSR_NO = @[csr_no]
+               ), 'YYYYMMDD')
+#end
+WHERE A.INV_RGST_NO = @[inv_rgst_no]
+AND   NVL(A.DELT_FLG, 'N') <> 'Y'			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="inv_rgst_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

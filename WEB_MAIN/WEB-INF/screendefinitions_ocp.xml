@@ -1,0 +1,237 @@
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+  
+	<!-- OCPS 컨버틷 (S)--> 
+    <screen name="ESM_OCP_0441">
+        <parameter key="title"    value="Doc Center Office Hour" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0441.jsp"/>
+    </screen>
+    
+    <screen name="ESM_OCP_0415">
+        <parameter key="title"    value="bookringreport" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0415.jsp"/>
+    </screen>
+    
+    <screen name="ESM_OCP_0432">
+        <parameter key="title"    value="B/L Performance By Volumn(Region View)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0432.jsp"/>
+    </screen>
+    
+    <screen name="ESM_OCP_0067">
+        <parameter key="title"    value="B/L Turn Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0067.jsp"/>
+    </screen>
+    
+    <screen name="ESM_OCP_0410">
+        <parameter key="title"    value="Performance Report by Volume" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0410.jsp"/>
+    </screen>
+    
+    <screen name="ESM_OCP_0423">
+        <parameter key="title"    value="Queue Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0423.jsp"/>
+    </screen> 
+    
+    <screen name="ESM_OCP_0421">
+        <parameter key="title"    value="Queue List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0421.jsp"/>
+    </screen>
+    
+    <screen name="ESM_OCP_0488">
+        <parameter key="title"    value="bookringreport" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0488.jsp"/>
+    </screen>
+    
+    <screen name="ESM_OCP_0225">
+        <parameter key="title"    value="bookringreport" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0225.jsp"/>
+    </screen>
+    
+    <screen name="ESM_OCP_0451" template="templatePop">
+        <parameter key="title"    value="bookringreport" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0451.jsp"/>
+    </screen>
+
+
+    <screen name="ESM_OCP_0592">
+        <parameter key="title"    value="User Group Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0592.jsp"/>
+    </screen>
+    
+  	<screen name="ESM_OCP_0421">
+        <parameter key="title"    value="Queue List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0421.jsp"/>
+  	</screen>
+  	
+    <screen name="ESM_OCP_0425">
+        <parameter key="title"    value="Email Account Set-up for Front Office" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0425.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_0435">
+        <parameter key="title"    value="SI Turn Time Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0435.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_0463">
+        <parameter key="title"    value="Queue Status Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0463.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_0464">
+        <parameter key="title"    value="Production Ratio Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0464.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_0446" template="templatePop">
+        <parameter key="title"    value="Queue List Set Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0446.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_1140" template="templatePop">
+        <parameter key="title"    value="Super User Authority Change" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_1140.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_0447" template="templatePop">
+        <parameter key="title"    value="SR FAX  Recving List - EMLContents" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0447.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_0422" template="templatePop">
+        <parameter key="title"    value="Queue List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0422.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_0986" template="templatePop">
+        <parameter key="title"    value="Queue List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0986.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_0445" template="templatePop">
+        <parameter key="title"    value="Queue List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0445.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_0449" template="templatePop">
+        <parameter key="title"    value="Comparison Result between Split Candidates." direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0449.jsp"/>
+  	</screen>  
+  	<screen name="ESM_OCP_0436" template="templatePop">
+        <parameter key="title"    value="Search Doc. User" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0436.jsp"/>
+  	</screen>  
+  	
+  	<screen name="ESM_OCP_0489" template="templatePop">
+        <parameter key="title"    value="booking report" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0489.jsp"/>
+    </screen>
+
+	
+	<screen name="ESM_OCP_0983" template="templatePop">
+        <parameter key="title"    value="Queue Queue List Message" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0983.jsp"/>
+    </screen>
+    
+    <screen name="ESM_OCP_0984" template="templatePop">
+        <parameter key="title"    value="Queue Queue Return to Return Message" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0984.jsp"/>
+    </screen>    
+    
+    <screen name="ESM_OCP_0985">
+        <parameter key="title"    value="Queue Queue Return Message" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0985.jsp"/>
+    </screen>
+    
+    <screen name="ESM_OCP_1004" template="templatePop">
+        <parameter key="title"    value="Super User Authority Change" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_1004.jsp"/>
+    </screen>
+    
+    <screen name="ESM_OCP_0988" template="templatePop">
+        <parameter key="title"    value="booking report" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0988.jsp"/>
+    </screen>
+    
+    <!-- OCPS 컨버틷 (E)--> 
+    
+  	<screen name="ESM_OCP_1201">
+        <parameter key="title"    value="Time Left Setup" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_1201.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_1202">
+        <parameter key="title"    value="Auto Deligation Setup" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_1202.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_1203">
+        <parameter key="title"    value="OCPS Holiday" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_1203.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_1204" template="templatePop">
+        <parameter key="title"    value="Team Code Setup" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_1204.jsp"/>
+  	</screen>
+
+  	<screen name="ESM_OCP_1205">
+        <parameter key="title"    value="Offshore Team Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_1205.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_2004">
+        <parameter key="title"    value="Hard Coding Setup" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_2004.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_2005" template="templatePop">
+        <parameter key="title"    value="Hard Coding Contents" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_2005.jsp"/>
+  	</screen>
+    
+    <screen name="ESM_OCP_0982" template="templatePop">
+        <parameter key="title"    value="OCPS : BKG validation Message" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_0982.jsp"/>
+    </screen>
+  	
+  	<screen name="ESM_OCP_1206" template="templatePop">
+        <parameter key="title"    value="Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_1206.jsp"/>
+  	</screen>
+
+  	<screen name="ESM_OCP_1207">
+        <parameter key="title"    value="Time Matrix Setup" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_1207.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_1208" template="templatePop">
+        <parameter key="title"    value="Inquiry Follow-up" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_1208.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_1209" template="templatePop">
+        <parameter key="title"    value="Original Email Contents" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_1209.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_1210" template="templatePop">
+        <parameter key="title"    value="Go to BKG" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_1210.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_1211" template="templatePop">
+        <parameter key="title"    value="Email Attachment" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_1211.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_OCP_1212" template="templatePop">
+        <parameter key="title"    value="Inquiry Follow-up" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/blproduction/offshoreperformance/jsp/ESM_OCP_1212.jsp"/>
+  	</screen>
+  	
+  	<screen name="ESM_Ocps_Util">
+        <parameter key="title"    value="Ocps Page" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/ocp/ocpscommon/ocpsutil/jsp/ESM_OCPS_UTIL.jsp"/>
+    </screen>
+  	
+</screen-definitions>

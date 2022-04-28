@@ -1,0 +1,1925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- ===================== park myoung sin Start   ===================== -->
+	<!-- park myoung sin : 2009.10.14  start -->
+    <url-mapping url="EES_MNR_0225.do" screen="EES_MNR_0225.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EES_MNR_0225HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_MNR_0225GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EES_MNR_0225HTMLAction</web-action-class>
+    </url-mapping>
+	
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EesMnr0225Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+    <!-- park myoung sin : 2009.10.14 end -->
+	<!-- park myoung sin : 2009.09.28  start -->
+    <url-mapping url="EES_MNR_0098.do" screen="EES_MNR_0098.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EES_MNR_0098HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_MNR_0098GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EES_MNR_0098HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EesMnr0098Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.TotalLossManageSC</service-action-class>
+    </event-mapping>
+    <!-- park myoung sin : 2009.09.28 end -->
+	
+	<!-- park myoung sin : 2009.09.16  start -->
+    <url-mapping url="EES_MNR_0157.do" screen="EES_MNR_0157.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0157HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_MNR_0157GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0157HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EesMnr0157Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+    <!-- park myoung sin : 2009.09.16 end -->
+	<!-- park myoung sin : 2009.09.08  start -->
+    <url-mapping url="EES_MNR_0156.do" screen="EES_MNR_0156.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0156HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_MNR_0156GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0156HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EesMnr0156Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+    <!-- park myoung sin : 2009.09.08 end -->
+	<!-- park myoung sin : 2009.09.04  start -->
+	<!-- EES_MNR_CONFIRM     -->
+    <url-mapping url="EES_MNR_CONFIRM.do" screen="EES_MNR_CONFIRM.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MNR_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MnrComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.MNRCommonSC</service-action-class>
+    </event-mapping>
+    <!-- park myoung sin : 2009.09.04 end -->
+
+	<!-- park myoung sin : 2009-08-26 start -->
+    <url-mapping url="EES_MNR_0028.do" screen="EES_MNR_0028.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0028HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_MNR_0028_POP.do" screen="EES_MNR_0028_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0028Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2009-08-26 end -->
+	<!-- park myoung sin : 2009-08-20 start -->
+    <url-mapping url="EES_MNR_0027.do" screen="EES_MNR_0027.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0027Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2009-08-20 end -->
+	<!-- park myoung sin : 2009-08-19 start -->
+    <url-mapping url="EES_MNR_0022.do" screen="EES_MNR_0022.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0022Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2009-08-19 end -->
+
+	<!-- park myoung sin : 2009-08-05 start -->
+    <url-mapping url="EES_MNR_0023.do" screen="EES_MNR_0023.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0023Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2009-08-05 end -->
+
+	<!-- park myoung sin : 2010-04-20 start -->
+    <url-mapping url="EES_MNR_0240.do" screen="EES_MNR_0240.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0240HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0240GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0240HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0240Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2010-04-20 end -->
+
+	<!-- park myoung sin : 2009-08-03 start -->
+    <url-mapping url="EES_MNR_0192.do" screen="EES_MNR_0192.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0192HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0192GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0192HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0192Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2009-08-03 end -->
+
+	<!-- park myoung sin : 2009-07-01 start -->
+    <url-mapping url="EES_MNR_0019.do" screen="EES_MNR_0019.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0019Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2009-06-09 end -->
+
+	<!-- park myoung sin : 2009-06-09 start -->
+    <url-mapping url="EES_MNR_0015.do" screen="EES_MNR_0015.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.ratemgt.event.EES_MNR_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.ratemgt.event.EES_MNR_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.ratemgt.event.EesMnr0015Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2009-06-09 end -->
+
+	<!-- park myoung sin : 2009-06-05 start -->
+    <url-mapping url="EES_MNR_0170.do" screen="EES_MNR_0170.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.warrantymgt.event.EES_MNR_0170HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0170GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.warrantymgt.event.EES_MNR_0170HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.warrantymgt.event.EesMnr0170Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2009-06-05 end -->
+
+	<!-- park myoung sin : 2009-06-03 start -->
+    <url-mapping url="EES_MNR_0191.do" screen="EES_MNR_0191.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0191HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0191GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0191HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0191Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2009-06-03 end -->
+
+	<!-- park myoung sin : 2009-06-03 start -->
+    <url-mapping url="EES_MNR_0213.do" screen="EES_MNR_0213.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.warrantymgt.event.EES_MNR_0213HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0213GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.warrantymgt.event.EES_MNR_0213HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.warrantymgt.event.EesMnr0213Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2009-06-03 end -->
+
+	<!-- park myoung sin : 2009-06-02 start -->
+    <url-mapping url="EES_MNR_0125.do" screen="EES_MNR_0125.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_0125HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0125GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_0125HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EesMnr0125Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2009-06-02 end -->
+
+	<!-- park myoung sin : 2009-05-27 start -->
+	<!-- EES_MNR_PRESETMULTY     -->
+    <url-mapping url="EES_MNR_PRESETMULTI.do" screen="EES_MNR_PRESETMULTI.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MNR_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MnrComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.MNRCommonSC</service-action-class>
+    </event-mapping>
+    <!-- park myoung sin : 2009-05-27 end -->
+
+	<!-- park myoung sin : 2009-05-27 start -->
+	<!-- EES_MNR_MULTI     -->
+    <url-mapping url="EES_MNR_MULTI.do" screen="EES_MNR_MULTI.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MNR_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MnrComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.MNRCommonSC</service-action-class>
+    </event-mapping>
+    <!-- park myoung sin : 2009-05-27 end -->
+    
+	<!-- park myoung sin : 2010-12-20 start -->
+	<!-- EES_MNR_OFCINFOMULTI     -->
+    <url-mapping url="EES_MNR_OFCINFOMULTI.do" screen="EES_MNR_OFCINFOMULTI.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MNR_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MnrComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.MNRCommonSC</service-action-class>
+    </event-mapping>
+    <!-- park myoung sin : 2010-12-20 end -->
+
+	<!-- park myoung sin : 2009-05-25 start -->
+    <url-mapping url="EES_MNR_0122.do" screen="EES_MNR_0122.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_0122HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0122GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_0122HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EesMnr0122Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2009-05-25 end -->
+
+    <!-- park myoung sin : 2009-05-19 start -->
+    <url-mapping url="EES_MNR_0139.do" screen="EES_MNR_0139.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_0139HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0139GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_0139HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EesMnr0139Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2009-05-19 end -->
+
+	<!-- GENERAL CODE SEARCH START -->
+    <url-mapping url="MNR_COMGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MNR_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MnrComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.MNRCommonSC</service-action-class>
+    </event-mapping>
+	<!-- USER CUSTOM1-MnrComEqGenInfoSearch-MNR_COMGS(SEARCH02)-->
+    <url-mapping url="MNR_COM_CUSTOM1GS.do" screen="com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MnrComCustom1ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MNR_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MnrComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.MNRCommonSC</service-action-class>
+    </event-mapping>
+	<!-- USER CUSTOM2-MnrAGMTHdrCombo-EES_MNR_0015GS(SEARCH02)-->
+    <url-mapping url="MNR_COM_CUSTOM2GS.do" screen="com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MnrComCustom2ViewAdapter" >
+      	<web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.ratemgt.event.EES_MNR_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.ratemgt.event.EesMnr0015Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>
+	<!-- GENERAL CODE SEARCH END -->
+
+	<!-- park myoung sin : 2009-05-11 start -->
+    <url-mapping url="EES_MNR_0004.do" screen="EES_MNR_0004.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EES_MNR_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EES_MNR_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EesMnr0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2009-05-11 end -->
+
+	<!-- park myoung sin : 2009-05-07 start -->
+    <url-mapping url="EES_MNR_0193.do" screen="EES_MNR_0193.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EES_MNR_0193HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0193GS.do" screen="com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.HiddenViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EES_MNR_0193HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EesMnr0193Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+    <!-- park myoung sin : 2009-05-07 end -->
+
+ 	<!-- park myoung sin : 2009-04-24 start -->
+    <url-mapping url="EES_MNR_0003.do" screen="EES_MNR_0003.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EES_MNR_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0003GS.do" screen="com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.HiddenViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EES_MNR_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EesMnr0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+    <!-- park myoung sin : 2009-04-24 end -->
+
+    <!-- park myoung sin : 2009-02-01 start -->
+     <url-mapping url="EES_MNR_0237.do" screen="EES_MNR_0237.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0237HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0237GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0237HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0237Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+    <!-- park myoung sin : 2010-02-01 end -->
+	<!-- ===================== park myoung sin END   ===================== -->
+
+
+	<!-- ===================== WanGyu Kim Start   ===================== -->
+	<!-- WanGyu Kim  : 2009-04-27 start -->
+    <url-mapping url="EES_MNR_0002.do" screen="EES_MNR_0002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EES_MNR_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0002GS.do" screen="com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.HiddenViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EES_MNR_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EesMnr0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="EES_MNR_0145.do" screen="EES_MNR_0145.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EES_MNR_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0145GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EES_MNR_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EesMnr0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-04-27 end -->
+
+	<!-- WanGyu Kim  : 2009-05-14 start -->
+    <url-mapping url="EES_MNR_0009.do" screen="EES_MNR_0009.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.generalcodemgt.event.EES_MNR_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.generalcodemgt.event.EES_MNR_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.generalcodemgt.event.EesMnr0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-05-14 end -->
+
+	<!-- WanGyu Kim  : 2009-05-20 start -->
+    <url-mapping url="EES_MNR_0107.do" screen="EES_MNR_0107.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.dvfactormgt.event.EES_MNR_0107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0107GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.dvfactormgt.event.EES_MNR_0107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.dvfactormgt.event.EesMnr0107Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-05-20 end -->
+
+	<!-- WanGyu Kim  : 2009-05-28 start -->
+    <url-mapping url="EES_MNR_0138.do" screen="EES_MNR_0138.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MNR_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MnrComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.MNRCommonSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-05-28 end -->
+
+	<!-- WanGyu Kim  : 2009-06-02 start -->
+    <url-mapping url="EES_MNR_0188.do" screen="EES_MNR_0188.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0188HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0188GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0188HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EesMnr0188Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-06-02 end -->
+
+	<!-- WanGyu Kim  : 2009-06-05 start -->
+    <url-mapping url="EES_MNR_0014.do" screen="EES_MNR_0014.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EesMnr0014Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-06-05 end -->
+
+	<!-- WanGyu Kim  : 2009-06-22 start -->
+    <url-mapping url="EES_MNR_0190.do" screen="EES_MNR_0190.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0190HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0190GS.do" screen="com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EesMnr0190ViewAdapter">
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0190HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EesMnr0190Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-06-22 end -->
+
+	<!-- WanGyu Kim  : 2009-07-02 start -->
+    <url-mapping url="EES_MNR_0011.do" screen="EES_MNR_0011.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EesMnr0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-07-02 end -->
+
+	<!-- WanGyu Kim  : 2009-07-14 start -->
+    <url-mapping url="EES_MNR_0215.do" screen="EES_MNR_0215.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0215HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0215GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0215HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EesMnr0215Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-07-14 end -->
+
+	<!-- WanGyu Kim  : 2009-07-20 start -->
+    <url-mapping url="EES_MNR_0136.do" screen="EES_MNR_0136.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0136HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0136GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0136HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EesMnr0136Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-07-20 end -->
+
+	<!-- WanGyu Kim  : 2009-07-23 start -->
+    <url-mapping url="EES_MNR_0171.do" screen="EES_MNR_0171.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0171HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0171GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0171HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EesMnr0171Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-07-23 end -->
+
+	<!-- WanGyu Kim  : 2009-08-03 start -->
+    <url-mapping url="EES_MNR_0030.do" screen="EES_MNR_0030.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0030Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-08-03 end -->
+		
+    <!-- WanGyu Kim  : 2009-09-07 start -->
+    <url-mapping url="EES_MNR_0093.do" screen="EES_MNR_0093.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.extradisposalmgt.event.EES_MNR_0093HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0093GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.extradisposalmgt.event.EES_MNR_0093HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.extradisposalmgt.event.EesMnr0093Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+
+    <!-- WanGyu Kim  : 2009-09-10 start -->
+    <url-mapping url="EES_MNR_0094.do" screen="EES_MNR_0094.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.extradisposalmgt.event.EES_MNR_0094HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0094GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.extradisposalmgt.event.EES_MNR_0094HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.extradisposalmgt.event.EesMnr0094Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-09-10 end -->
+
+    <!-- WanGyu Kim  : 2009-09-15 start -->
+    <url-mapping url="EES_MNR_0195.do" screen="EES_MNR_0195.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EES_MNR_0195HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0195GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EES_MNR_0195HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EesMnr0195Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-09-15 end -->
+
+    <!-- WanGyu Kim  : 2009-09-16 start -->
+    <url-mapping url="EES_MNR_0095.do" screen="EES_MNR_0095.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EES_MNR_0095HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0095GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EES_MNR_0095HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EesMnr0095Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.TotalLossManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-09-16 end -->
+
+    <!-- WanGyu Kim  : 2009-09-28 start -->
+    <url-mapping url="EES_MNR_0096.do" screen="EES_MNR_0096.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EES_MNR_0096HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0096GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EES_MNR_0096HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EesMnr0096Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.TotalLossManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-09-28 end -->
+
+    <!-- WanGyu Kim  : 2009-09-28 start -->
+    <url-mapping url="EES_MNR_0160.do" screen="EES_MNR_0160.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0160HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0160GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0160HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EesMnr0160Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-09-28 end -->
+
+    <!-- WanGyu Kim  : 2009-10-06 start -->
+    <url-mapping url="EES_MNR_0221.do" screen="EES_MNR_0221.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0221HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0221GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0221HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EesMnr0221Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-10-06 end -->
+
+    <!-- WanGyu Kim  : 2009-10-22 start -->
+    <url-mapping url="EES_MNR_0230.do" screen="EES_MNR_0230.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0230HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0230GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0230HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0230Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2009-10-22 end -->
+
+    <!-- WanGyu Kim  : 2010-01-14 start -->
+    <url-mapping url="EES_MNR_0235.do" screen="EES_MNR_0235.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0235HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0235GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0235HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EesMnr0235Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2010-01-14 end -->
+
+    <!-- WanGyu Kim  : 2010-01-28 start -->
+    <url-mapping url="EES_MNR_0236.do" screen="EES_MNR_0236.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0236HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0236GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0236HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0236Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2010-01-28 end -->
+
+    <!-- WanGyu Kim  : 2010-02-10 start -->
+    <url-mapping url="EES_MNR_0239.do" screen="EES_MNR_0239.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.officegeneralinfomgt.event.EES_MNR_0239HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0239GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.officegeneralinfomgt.event.EES_MNR_0239HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.officegeneralinfomgt.event.EesMnr0239Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+	<!-- WanGyu Kim  : 2010-02-10 end -->
+	<!-- ===================== WanGyu Kim END   ===================== -->
+
+
+	<!-- ===================== SEONG DUK KYUNG Start   ===================== -->
+	<!-- SEONG DUK KYUNG  : 2009-05-20 start -->
+    <url-mapping url="EES_MNR_0029.do" screen="EES_MNR_0029.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.fqaresultmgt.event.EES_MNR_0029HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_MNR_0029GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.fqaresultmgt.event.EES_MNR_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.fqaresultmgt.event.EesMnr0029Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+    <!-- SEONG DUK KYUNG  : 2009-05-20 end -->
+    <!-- SEONG DUK KYUNG end -->
+<!-- ===================== chung young hun  start ===================== -->
+<!--  chung young hun 2009-05-20 -->
+    <url-mapping url="EES_MNR_0212.do" screen="EES_MNR_0212.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.planmanage.planmgt.event.EES_MNR_0212HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0212GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.planmanage.planmgt.event.EES_MNR_0212HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.planmanage.planmgt.event.EesMnr0212Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.planmanage.PlanManageSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="EES_MNR_0217.do" screen="EES_MNR_0217.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.officegeneralinfomgt.event.EES_MNR_0217HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0217GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.officegeneralinfomgt.event.EES_MNR_0217HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.officegeneralinfomgt.event.EesMnr0217Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="EES_MNR_0142.do" screen="EES_MNR_0142.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EES_MNR_0142HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0142GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EES_MNR_0142HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.cedexcodemgt.event.EesMnr0142Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+
+    <!--  chung young hun start 2009-06-16 -->
+    <url-mapping url="EES_MNR_0189.do" screen="EES_MNR_0189.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.EES_MNR_0189HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0189GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.EES_MNR_0189HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.EesMnr0189Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.MNRCommonSC</service-action-class>
+    </event-mapping>
+    <!--  chung young hun end 2009-06-16 -->
+
+    <!--  chung young hun start 2009-06-17 -->
+    <url-mapping url="EES_MNR_0010.do" screen="EES_MNR_0010.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.officegeneralinfomgt.event.EES_MNR_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.officegeneralinfomgt.event.EES_MNR_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.officegeneralinfomgt.event.EesMnr0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+    <!--  chung young hun end 2009-06-17 -->
+    <!--  chung young hun start 2009-06-22 -->
+    <url-mapping url="EES_MNR_0135.do" screen="EES_MNR_0135.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.officegeneralinfomgt.event.EES_MNR_0135HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0135GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.officegeneralinfomgt.event.EES_MNR_0135HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.officegeneralinfomgt.event.EesMnr0135Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+    <!--  chung young hun end 2009-06-22 -->
+    <!--  chung young hun start 2009-07-02 -->
+    <url-mapping url="EES_MNR_0058.do" screen="EES_MNR_0058.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0058HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0058GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0058HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0058Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+    <!--  chung young hun end 2009-07-02 -->
+
+    <!--  kwon young bueb start 2009-08-05 -->
+    <url-mapping url="EES_MNR_0052.do" screen="EES_MNR_0052.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0052GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0052Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+    <!--  kwon young bueb end 2009-08-05 -->
+
+    <!--  kwon young bueb start 2009-09-07 -->
+    <url-mapping url="EES_MNR_0054.do" screen="EES_MNR_0054.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0054GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0054Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+    <!--  kwon young bueb end 2009-09-07 -->
+
+    <!--  kwon young bueb start 2009-08-24 -->
+    <url-mapping url="EES_MNR_0032.do" screen="EES_MNR_0032.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0032Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+    <!--  kwon young bueb end 2009-08-24 -->
+
+    <!--  chung young hun start 2009-07-02  -->
+    <url-mapping url="EES_MNR_0211.do" screen="EES_MNR_0211.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0211HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0211GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0211HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0211Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+    <!-- chung young hun end 2009-07-02 -->
+
+    <!--  kwon young bueb start 2009-08-18  -->
+    <url-mapping url="EES_MNR_0219.do" screen="EES_MNR_0219.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0219HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0219GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0219HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0219Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+    <!-- kwon young bueb end 2009-08-18 -->
+
+    <!--  kwon young bueb start 2009-09-01  -->
+    <url-mapping url="EES_MNR_0137.do" screen="EES_MNR_0137.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.reefersparepartmgt.event.EES_MNR_0137HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0137GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.reefersparepartmgt.event.EES_MNR_0137HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.reefersparepartmgt.event.EesMnr0137Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+    <!-- kwon young bueb end 2009-09-01 -->
+
+    <!--  kwon young bueb start 2009-09-07  -->
+    <url-mapping url="EES_MNR_0055.do" screen="EES_MNR_0055.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0055HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0055GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0055HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0055Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+    <!-- kwon young bueb end 2009-09-07 -->
+
+    <!--  kwon young bueb start 2009-09-07  -->
+    <url-mapping url="EES_MNR_0056.do" screen="EES_MNR_0056.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.reefersparepartmgt.event.EES_MNR_0056HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0056GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.reefersparepartmgt.event.EES_MNR_0056HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.reefersparepartmgt.event.EesMnr0056Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+    <!-- kwon young bueb end 2009-09-07 -->
+
+    <!--  kwon young bueb start 2009-09-01  -->
+    <url-mapping url="EES_MNR_0214.do" screen="EES_MNR_0214.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.reefersparepartmgt.event.EES_MNR_0214HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0214GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.reefersparepartmgt.event.EES_MNR_0214HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.reefersparepartmgt.event.EesMnr0214Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+    <!-- kwon young bueb end 2009-09-01 -->
+
+    <!--  kwon young bueb start 2009-09-01  -->
+    <url-mapping url="EES_MNR_0198.do" screen="EES_MNR_0198.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.reefersparepartmgt.event.EES_MNR_0198HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0198GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.reefersparepartmgt.event.EES_MNR_0198HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.reefersparepartmgt.event.EesMnr0198Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+    <!-- kwon young bueb end 2009-09-01 -->
+
+
+	<!-- kwon young bueb : 2009-09-07 start -->
+    <url-mapping url="EES_MNR_0194.do" screen="EES_MNR_0194.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0194HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0194GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0194HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0194Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- kwon young bueb :  2009-09-07 end -->
+
+   	<!-- kwon young bueb : 2009-09-07 start -->
+    <url-mapping url="EES_MNR_0151.do" screen="EES_MNR_0151.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_0151HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0151GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_0151HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EesMnr0151Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- kwon young bueb :  2009-09-07 end -->
+
+	   	<!-- kwon young bueb : 2009-09-21 start -->
+    <url-mapping url="EES_MNR_0158.do" screen="EES_MNR_0158.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_0158HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0158GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_0158HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EesMnr0158Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- kwon young bueb :  2009-09-21 end -->
+
+	<!-- kwon young bueb : 2009-09-23 start -->
+    <url-mapping url="EES_MNR_0154.do" screen="EES_MNR_0154.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0154HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0154GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0154HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EesMnr0154Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>
+	<!-- kwon young bueb :  2009-09-23 end -->
+
+	<!-- kwon young bueb : 2009-12-30 start -->
+    <url-mapping url="EES_MNR_0232.do" screen="EES_MNR_0232.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0232HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0232GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_0232HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EesMnr0232Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>
+	<!-- kwon young bueb :  2009-12-30 end -->
+
+	<!-- kwon young bueb : 2009-09-23 start -->
+    <url-mapping url="EES_MNR_0220.do" screen="EES_MNR_0220.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0220HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0220GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0220HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EesMnr0220Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- kwon young bueb :  2009-09-23 end -->
+
+	<!-- kwon young bueb : 2009-10-05 start -->
+    <url-mapping url="EES_MNR_0155.do" screen="EES_MNR_0155.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.partnermgt.event.EES_MNR_0155HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0155GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.partnermgt.event.EES_MNR_0155HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.partnermgt.event.EesMnr0155Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+	<!-- kwon young bueb :  2009-10-05 end -->
+
+    <!--  kwon young bueb start 2009-10-13 -->
+    <url-mapping url="EES_MNR_0226.do" screen="EES_MNR_0226.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0226HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0226GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0226HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0226Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+    <!--  kwon young bueb end 2009-10-13 -->
+
+        <!--  kwon young bueb start 2009-10-13 -->
+    <url-mapping url="EES_MNR_0227.do" screen="EES_MNR_0227.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0227HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0227GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0227HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0227Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+    <!--  kwon young bueb end 2009-10-13 -->
+
+    <!--  kwon young bueb start 2009-10-13 -->
+    <url-mapping url="EES_MNR_0228.do" screen="EES_MNR_0228.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0228HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0228GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0228HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0228Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+    <!--  kwon young bueb end 2009-10-13 -->
+
+    <!--  kwon young bueb start 2009-12-02 -->
+    <url-mapping url="EES_MNR_0097.do" screen="EES_MNR_0097.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EES_MNR_0097HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0097GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EES_MNR_0097HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EesMnr0097Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+    <!--  kwon young bueb end 2009-12-02 -->
+
+	<!-- kwon young bueb : 2010-01-28 start -->
+    <url-mapping url="EES_MNR_0238.do" screen="EES_MNR_0238.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0238HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0238GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0238HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0238Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+    <!-- kwon young bueb : 2009-01-28 end -->
+	<!-- ===================== chung young hun  end ===================== -->
+
+	<!-- LEE JU HYUN : 2009-06-08 start -->
+    <url-mapping url="EES_MNR_0216.do" screen="EES_MNR_0216.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.planmanage.planmgt.event.EES_MNR_0216HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_MNR_0216GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.planmanage.planmgt.event.EES_MNR_0216HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.planmanage.planmgt.event.EesMnr0216Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.planmanage.PlanManageSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="MNR_INTGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.interfacemgt.event.MNR_INTERFACE_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.mnrcommon.interfacemgt.event.MnrInterfaceEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.MNRCommonSC</service-action-class>
+    </event-mapping>
+
+    <!-- LEE JU HYUN : 2009-06-08 end  -->
+
+	<!-- Ham HyungSeok : 2009-06-29 start -->
+    <url-mapping url="EES_MNR_0016.do" screen="EES_MNR_0016.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.ratemgt.event.EES_MNR_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.ratemgt.event.EES_MNR_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.ratemgt.event.EesMnr0016Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>
+	<!-- Ham HyungSeok : 2009-06-29 end -->
+
+	<!-- Ham HyungSeok : 2009-07-01 start -->
+    <url-mapping url="EES_MNR_0018.do" screen="EES_MNR_0018.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.ratemgt.event.EES_MNR_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.ratemgt.event.EES_MNR_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.ratemgt.event.EesMnr0018Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>
+	<!-- Ham HyungSeok : 2009-07-01 end -->
+
+	<!-- Ham HyungSeok : 2009-07-01 start -->
+    <url-mapping url="EES_MNR_0218.do" screen="EES_MNR_0218.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.ratemgt.event.EES_MNR_0218HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0218GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.ratemgt.event.EES_MNR_0218HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.ratemgt.event.EesMnr0028Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>
+	<!-- Ham HyungSeok : 2009-07-01 end -->
+
+	<!-- Ham HyungSeok : 2009-07-15 start -->
+    <url-mapping url="EES_MNR_0110.do" screen="EES_MNR_0110.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.hangerinventorymgt.event.EES_MNR_0110HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0110GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.hangerinventorymgt.event.EES_MNR_0110HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.hangerinventorymgt.event.EesMnr0110Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+	<!-- Ham HyungSeok : 2009-07-15 end -->
+
+	<!-- Ham HyungSeok : 2009-07-20 start -->
+    <url-mapping url="EES_MNR_0109.do" screen="EES_MNR_0109.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_0109HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0109GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_0109HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EesMnr0109Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- Ham HyungSeok : 2009-07-20 end -->
+
+	<!-- Ham HyungSeok : 2009-07-23 start -->
+    <url-mapping url="EES_MNR_0111.do" screen="EES_MNR_0111.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_0111HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0111GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_0111HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EesMnr0111Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- Ham HyungSeok : 2009-07-23 end -->
+
+	<!-- Ham HyungSeok : 2009-08-03 start -->
+    <url-mapping url="EES_MNR_0036.do" screen="EES_MNR_0036.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0036Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- Ham HyungSeok : 2009-08-03 end -->
+
+	<!-- Ham HyungSeok : 2009-08-17 start -->
+    <url-mapping url="EES_MNR_0041.do" screen="EES_MNR_0041.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EES_MNR_0041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0041GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EES_MNR_0041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EesMnr0041Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.accountmanage.AccountManageSC</service-action-class>
+    </event-mapping>
+
+
+	<!-- Ham HyungSeok : 2009-08-17 end -->
+
+	<!-- Ham HyungSeok : 2009-09-02 start -->
+    <url-mapping url="EES_MNR_0143.do" screen="EES_MNR_0143.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EES_MNR_0143HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0143GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EES_MNR_0143HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EesMnr0143Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.accountmanage.AccountManageSC</service-action-class>
+    </event-mapping>
+	<!-- Ham HyungSeok : 2009-09-02 end -->
+
+	<!-- Ham HyungSeok : 2009-09-16 start -->
+    <url-mapping url="EES_MNR_0042.do" screen="EES_MNR_0042.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EES_MNR_0042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0042GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EES_MNR_0042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EesMnr0042Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.accountmanage.AccountManageSC</service-action-class>
+    </event-mapping>
+	<!-- Ham HyungSeok : 2009-09-16 end -->
+
+	<!-- Ham HyungSeok : 2009-09-21 start -->
+    <url-mapping url="EES_MNR_0161.do" screen="EES_MNR_0161.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.accountmanage.incomemgt.event.EES_MNR_0161HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0161GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.accountmanage.incomemgt.event.EES_MNR_0161HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.accountmanage.incomemgt.event.EesMnr0161Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.accountmanage.AccountManageSC</service-action-class>
+    </event-mapping>
+	<!-- Ham HyungSeok : 2009-09-21 end -->
+
+	<!-- HyungSeok Ham : 2009-09-28 start -->
+
+    <url-mapping url="EES_MNR_0164.do" screen="EES_MNR_0164.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0164HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_MNR_0164GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0164HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EesMnr0164Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="EES_MNR_0200.do" screen="EES_MNR_0200.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0200HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_MNR_0200GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0200HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EesMnr0200Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- HyungSeok Ham : 2009-09-28 end -->
+
+	<!-- HyungSeok Ham : 2009-09-30 start -->
+    <url-mapping url="EES_MNR_0163.do" screen="EES_MNR_0163.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0163HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_MNR_0163GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EES_MNR_0163HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.disposalmgt.event.EesMnr0163Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- HyungSeok Ham : 2009-09-30 end -->
+
+	<!-- HyungSeok Ham : 2009-10-09 start -->
+    <url-mapping url="EES_MNR_0222.do" screen="EES_MNR_0222.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.fqaresultmgt.event.EES_MNR_0222HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_MNR_0222GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.fqaresultmgt.event.EES_MNR_0222HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.fqaresultmgt.event.EesMnr0222Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="EES_MNR_0223.do" screen="EES_MNR_0223.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.fqaresultmgt.event.EES_MNR_0223HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_MNR_0223GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.fqaresultmgt.event.EES_MNR_0223HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.fqaresultmgt.event.EesMnr0223Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="EES_MNR_0224.do" screen="EES_MNR_0224.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.hangerinventorymgt.event.EES_MNR_0224HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0224GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.generalmanage.hangerinventorymgt.event.EES_MNR_0224HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.generalmanage.hangerinventorymgt.event.EesMnr0224Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.generalmanage.GeneralManageSC</service-action-class>
+    </event-mapping>
+	<!-- HyungSeok Ham : 2009-10-30 end -->
+	
+	<!-- Jung Ho Min : 2009-09-30 start -->
+    <url-mapping url="EES_MNR_0166.do" screen="EES_MNR_0166.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0166HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0166GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0166HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0166Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-09-30 end -->
+
+	<!-- Jung Ho Min : 2009-10-01 start -->
+    <url-mapping url="EES_MNR_0204.do" screen="EES_MNR_0204.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0204HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0204GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0204HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0204Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-10-01 end -->
+
+	<!-- Jung Ho Min : 2009-10-01 start -->
+    <url-mapping url="EES_MNR_0205.do" screen="EES_MNR_0205.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0205HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0205GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0205HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0205Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-10-01 end -->
+
+	<!-- Jung Ho Min : 2009-10-01 start -->
+    <url-mapping url="EES_MNR_0202.do" screen="EES_MNR_0202.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0202HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0202GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0202HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0202Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-10-01 end -->
+	<!-- Jung Ho Min : 2009-10-05 start -->
+    <url-mapping url="EES_MNR_0203.do" screen="EES_MNR_0203.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0203HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0203GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0203HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0203Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-10-05 end -->
+	<!-- Jung Ho Min : 2009-10-06 start -->
+    <url-mapping url="EES_MNR_0105.do" screen="EES_MNR_0105.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EES_MNR_0105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EES_MNR_0105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EesMnr0105Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.TotalLossManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-10-06 end -->
+
+	<!-- Jung Ho Min : 2009-10-06 start -->
+    <url-mapping url="EES_MNR_0102.do" screen="EES_MNR_0102.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0102HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0102GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0102HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0102Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-10-06 end -->
+	
+	<!-- Jung Ho Min : 2009-10-08 start -->
+    <url-mapping url="EES_MNR_0121.do" screen="EES_MNR_0121.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0121HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0121GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0121HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0121Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-10-08 end -->
+	<!-- Jung Ho Min : 2009-10-12 start -->
+    <url-mapping url="EES_MNR_0118.do" screen="EES_MNR_0118.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0118HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0118GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0118HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0118Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-10-12 end -->
+
+	<!-- Jung Ho Min : 2009-10-12 start -->
+    <url-mapping url="EES_MNR_0120.do" screen="EES_MNR_0120.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0120HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0120GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0120HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0120Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-10-12 end -->
+
+	<!-- Jung Ho Min : 2009-10-13 start -->
+    <url-mapping url="EES_MNR_0119.do" screen="EES_MNR_0119.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0119HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0119GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0119HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0119Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-10-13 end -->
+	<!-- Jung Ho Min : 2009-10-16 start -->
+    <url-mapping url="EES_MNR_0229.do" screen="EES_MNR_0229.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EES_MNR_0229HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0229GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EES_MNR_0229HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EesMnr0229Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.accountmanage.AccountManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Ho Min : 2009-10-16 end -->
+
+	<!-- Service Provider Portal  Embed Start -->
+	<!-- ===================== SPP-MNR TEST LOGIN PAGE   ===================== -->
+	<url-mapping url="EES_MNR_LOGIN.do" screen="EES_MNR_LOGIN.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MNR_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MnrComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.MNRCommonSC</service-action-class>
+    </event-mapping>
+	<!-- ===================== SPP-MNR TEST LOGIN PAGE  ===================== -->
+
+	<!-- ===================== kim wan gyu Start   	====================== -->
+	<!-- kwon young bueb : 2010.01.11  start -->
+    <url-mapping url="EES_MNR_0234.do" screen="EES_MNR_0234.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EES_MNR_0234HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_MNR_0234GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EES_MNR_0234HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.totallossmgt.event.EesMnr0234Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.TotalLossManageSC</service-action-class>
+    </event-mapping>
+    <!-- kwon young bueb : 2010.01.11 end -->
+	<!-- ===================== kwon young bueb End   	====================== -->
+
+	<!-- ===================== QUERY-EXE PAGE   ===================== -->
+	<!-- park myoung sin : 2010-01-05 start -->
+    <!-- EES_MNR_QEXE     -->
+    <url-mapping url="EES_MNR_WORESTORE.do" screen="EES_MNR_WORESTORE.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MNR_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.mnrcommon.generalcodesearchmgt.event.MnrComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.mnrcommon.MNRCommonSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2010-01-05 end -->
+	<!-- ===================== QUERY-EXE PAGE  ===================== -->
+
+	<!-- Jang Jun-Woo  : 2010-08-23 start -->
+    <url-mapping url="EES_MNR_0243.do" screen="EES_MNR_0243.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0243HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_MNR_0243GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0243HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0243Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo  : 2010-08-23 end -->
+
+	<!-- Jang Jun-Woo : 2010-10-06 start -->
+    <url-mapping url="EES_MNR_0244.do" screen="EES_MNR_0244.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0244HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0244GS.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0244HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0244Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2010-10-06 end -->
+
+	<!-- Jang Jun-Woo : 2010-10-12 start -->
+    <url-mapping url="EES_MNR_0245.do" screen="EES_MNR_0245.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0245HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0245GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0245HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0245Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2010-10-12 end -->
+
+	<!-- Jang Jun-Woo : 2010-11-02 start -->
+    <url-mapping url="EES_MNR_0246.do" screen="EES_MNR_0246.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0246HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_0246GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EES_MNR_0246HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.reportmanage.performancereport.event.EesMnr0246Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.reportmanage.ReportManageSC</service-action-class>
+    </event-mapping>	
+	<!-- Jang Jun-Woo : 2010-11-02 end -->
+	
+	<!-- ========================== SPP APPEND START ================================== -->
+	<!-- YongChan Shin : 2014-09-30 start -->
+    <url-mapping url="EES_MNR_S011.do" screen="EES_MNR_S011.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_S011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_S011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_S011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EesMnrS011Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>	
+    
+    
+    <url-mapping url="EES_MNR_S171.do" screen="EES_MNR_S171.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_S171HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_S171GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EES_MNR_S171HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.agreementmanage.tariffmgt.event.EesMnrS171Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.agreementmanage.AgreementManageSC</service-action-class>
+    </event-mapping>    
+    
+    
+    <url-mapping url="EES_MNR_S122.do" screen="EES_MNR_S122.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_S122HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_S122GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EES_MNR_S122HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.eqflagmgt.event.EesMnrS122Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+        
+        
+    <url-mapping url="EES_MNR_S019.do" screen="EES_MNR_S019.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_S019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_S019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_S019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnrS019Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>     
+    
+    
+    <url-mapping url="EES_MNR_S027.do" screen="EES_MNR_S027.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_S027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_S027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_S027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnrS027Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+    
+    
+    <url-mapping url="EES_MNR_S032.do" screen="EES_MNR_S032.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_S032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_S032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_S032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnrS032Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>  
+    
+    
+    <url-mapping url="EES_MNR_S041.do" screen="EES_MNR_S041.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EES_MNR_S041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_S041GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EES_MNR_S041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EesMnrS041Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.accountmanage.AccountManageSC</service-action-class>
+    </event-mapping>
+    
+    
+    <url-mapping url="EES_MNR_S042.do" screen="EES_MNR_S042.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EES_MNR_S042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_S042GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EES_MNR_S042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.accountmanage.expensemgt.event.EesMnrS042Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.accountmanage.AccountManageSC</service-action-class>
+    </event-mapping>    
+    
+    
+    <url-mapping url="EES_MNR_S028.do" screen="EES_MNR_S028.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_S028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_MNR_S028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_S028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnrS028Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>    
+    
+	<!-- YongChan Shin : 2014-09-30 end   -->
+	<!-- ========================== SPP APPEND END===================================== -->
+	   
+    <!-- Jun Kato : 2014-12-02 start   -->
+    <url-mapping url="EES_MNR_0247.do" screen="EES_MNR_0247.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0247HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_MNR_0247GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0247HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0247Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jun Kato : 2014-12-02 end   -->
+	
+	<!-- Jun Kato : 2015-02-25 start   -->
+    <url-mapping url="EES_MNR_0248.do" screen="EES_MNR_0248.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0248HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_MNR_0248GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EES_MNR_0248HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.operationmanage.repairmgt.event.EesMnr0248Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.mnr.operationmanage.OperationManageSC</service-action-class>
+    </event-mapping>
+	<!-- Jun Kato : 2015-02-25 end   -->
+<!-- Service Provider Portal  Embed End   -->
+</mappings>

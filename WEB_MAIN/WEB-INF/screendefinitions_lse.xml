@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<!-- Nho Jung Yong : 2009-04-27 start -->
+    <screen name="EES_LSE_0048">
+        <parameter key="title"    value="Long Term Lease CNTR Delivery Plan" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leaseplan/jsp/EES_LSE_0048.jsp"/>
+    </screen>
+    <!-- Nho Jung Yong : 2009-04-27 end -->
+
+	<!-- Nho Jung Yong : 2009-04-27 start -->
+    <screen name="EES_LSE_0049">
+        <parameter key="title"    value="Long Term Lease CNTR Delivery Plan &amp; Performance" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leaseplan/jsp/EES_LSE_0049.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-04-27 end -->
+
+	<!-- Nho Jung Yong : 2009-04-27 start -->
+    <screen name="EES_LSE_0091" template="templatePop">
+        <parameter key="title"    value="Agreement No. Selection" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleaseagreementregistration/agreementregistration/jsp/EES_LSE_0091.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-04-27 end -->
+
+	<!-- Nho Jung Yong : 2009-05-26 start -->
+    <screen name="EES_LSE_0001">
+        <parameter key="title"    value="Lease Agreement Creation &amp; Update" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleaseagreementregistration/agreementregistration/jsp/EES_LSE_0001.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-05-26 end -->
+
+	<!-- Nho Jung Yong : 2009-06-02 start -->
+    <screen name="EES_LSE_0096" template="templatePop">
+        <parameter key="title"    value="Lease Agreement Version Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleaseagreementregistration/agreementregistration/jsp/EES_LSE_0096.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-06-02 end -->
+
+	<!-- Nho Jung Yong : 2009-06-02 start -->
+    <screen name="EES_LSE_0002" template="templatePop">
+        <parameter key="title"    value="Lease Agreement Version" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleaseagreementregistration/agreementregistration/jsp/EES_LSE_0002.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-06-02 end -->
+
+	<!-- Jin Jun Sung : 2009-06-04 start -->
+    <screen name="EES_LSE_0031">
+        <parameter key="title"    value="On Hire Approval inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/onhireapproval/jsp/EES_LSE_0031.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-06-04 end -->
+
+	<!-- Jin Jun Sung : 2009-06-09 start -->
+    <screen name="EES_LSE_0029">
+        <parameter key="title"    value="On Hire Approval creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/onhireapproval/jsp/EES_LSE_0029.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-06-09 end -->
+
+	<!-- OH BONG HYUN : 2009-05-25 start -->
+    <screen name="EES_LSE_0024">
+        <parameter key="title"    value="Off Hire Plan Input &amp; Update by H/Q" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leaseplan/jsp/EES_LSE_0024.jsp"/>
+    </screen>
+	<!-- OH BONG HYUN : 2009-05-25 end -->
+
+	<!-- Jin Jun Sung : 2009-06-15 start -->
+    <screen name="EES_LSE_0030">
+        <parameter key="title"    value="On Hire Approval creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/onhireapproval/jsp/EES_LSE_0030.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-06-15 end -->
+
+	<!-- Jang Jun-Woo : 2009-06-17 start -->
+    <screen name="EES_LSE_0034">
+        <parameter key="title"    value="New Van CNTR Delivery Plan" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leaseplan/jsp/EES_LSE_0034.jsp"/>
+    </screen>
+    <!-- Jang Jun-Woo : 2009-06-17 end -->
+
+    <!-- Jang Jun-Woo : 2009-06-22 start -->
+    <screen name="EES_LSE_0037">
+        <parameter key="title"    value="New Van Delivery Plan &amp; Performance" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leaseplan/jsp/EES_LSE_0037.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-06-22 end -->
+
+	<!-- Jang Jun-Woo : 2009-06-24 start -->
+    <screen name="EES_LSE_0033">
+        <parameter key="title"    value="Lease Expense-CNTR/CHSS" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containercostanalysis/expenseplan/jsp/EES_LSE_0033.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-06-24 end -->
+
+	<!-- Jang Jun-Woo : 2009-06-30 start -->
+    <screen name="EES_LSE_0038">
+        <parameter key="title"    value="Lease Expense Plan and Performance" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containercostanalysis/expenseplan/jsp/EES_LSE_0038.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-06-30 end -->
+
+	<!-- Nho Jung Yong : 2009-05-26 start -->
+    <screen name="EES_LSE_0004">
+        <parameter key="title"    value="Agreement List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleaseagreementregistration/agreementregistration/jsp/EES_LSE_0004.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-05-26 end -->
+
+	<!-- Nho Jung Yong : 2009-07-03 start -->
+    <screen name="EES_LSE_0046">
+        <parameter key="title"    value="Off Hire Plan Input &amp; Update by RCC" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leaseplan/jsp/EES_LSE_0046.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-07-03 end -->
+
+	<!-- Jin Jun Sung : 2009-06-18 start -->
+    <screen name="EES_LSE_0032">
+        <parameter key="title"    value="OW/LP/OL Auth creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/onhireapproval/jsp/EES_LSE_0032.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-06-18 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-03 start -->
+    <screen name="EES_LSE_0005">
+        <parameter key="title"    value="Term Change Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/termchange/jsp/EES_LSE_0005.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-07-03 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-07 start -->
+    <screen name="EES_LSE_0006">
+        <parameter key="title"    value="Term Change Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/termchange/jsp/EES_LSE_0006.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-07-07 end -->
+
+	<!-- Jin Jun Sung : 2009-06-30 start -->
+    <screen name="EES_LSE_0047">
+        <parameter key="title"    value="Pick-up Status by Auth No" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/onhireapproval/jsp/EES_LSE_0047.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-06-30 end -->
+		<!-- Jin Jun Sung : 2009-06-19 start -->
+    <screen name="EES_LSE_0055">
+        <parameter key="title"    value="On off Hire Audit" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containercostanalysis/onoffhireaudit/jsp/EES_LSE_0055.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-06-19 end -->
+
+	<!-- Jin Jun Sung : 2009-06-22 start -->
+    <screen name="EES_LSE_0056" template="templatePop">
+        <parameter key="title"    value="On off Hire Audit" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containercostanalysis/onoffhireaudit/jsp/EES_LSE_0056.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-06-22 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-10 start -->
+    <screen name="EES_LSE_0025">
+        <parameter key="title"    value="Immediate Exit Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/immediateexit/jsp/EES_LSE_0025.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-07-10 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-14 start -->
+    <screen name="EES_LSE_0027">
+        <parameter key="title"    value="Mis Use In and Out Request" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/misuseapproval/jsp/EES_LSE_0027.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-07-14 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-16 start -->
+    <screen name="EES_LSE_0028">
+        <parameter key="title"    value="Mis Use In and Out Approval" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/misuseapproval/jsp/EES_LSE_0028.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-07-16 end -->
+
+	<!-- Jin Jun Sung : 2009-06-22 start -->
+    <screen name="EES_LSE_0036">
+        <parameter key="title"    value="On off Hire Audit" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leasereport/jsp/EES_LSE_0036.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-06-22 end -->
+
+	<!-- Nho Jung Yong : 2009-07-17 start -->
+    <screen name="EES_LSE_0051">
+        <parameter key="title"    value="Off Hire Plan Performance" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leaseplan/jsp/EES_LSE_0051.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-07-17 end -->
+
+	<!-- Jin Jun Sung : 2009-07-15 start -->
+    <screen name="EES_LSE_0039">
+        <parameter key="title"    value="Off Hire Result by Location / AGMT No(Contract No.)-Option" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leasereport/jsp/EES_LSE_0039.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-07-15 end -->
+
+    <!-- Nho Jung Yong : 2010-01-05 start -->
+    <screen name="EES_LSE_0039Pop" template="templatePop">
+        <parameter key="title"    value="Off Hire Result by Location / AGMT No(Contract No.)-Option" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leasereport/jsp/EES_LSE_0039.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-01-05 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-20 start -->
+    <screen name="EES_LSE_0093">
+        <parameter key="title"    value="Mis Use In and Out Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/misuseapproval/jsp/EES_LSE_0093.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-07-20 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-24 start -->
+    <screen name="EES_LSE_0026">
+        <parameter key="title"    value="Immediate Exit Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/immediateexit/jsp/EES_LSE_0026.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-07-24 end -->
+
+	<!-- Nho Jung Yong : 2009-07-27 start -->
+    <screen name="EES_LSE_0095">
+        <parameter key="title"    value="Lease Agreement Inquery" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleaseagreementregistration/agreementregistration/jsp/EES_LSE_0095.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-07-27 end -->
+
+	<!-- Nho Jung Yong : 2009-09-15 start -->
+    <screen name="EES_LSE_0095Pop" template="templatePop">
+        <parameter key="title"    value="Lease Agreement Inquery" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleaseagreementregistration/agreementregistration/jsp/EES_LSE_0095.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-09-15 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-28 start -->
+    <screen name="EES_LSE_0040">
+        <parameter key="title"    value="Off Hire Result-Average using Day" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leasereport/jsp/EES_LSE_0040.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-07-28 end -->
+
+	<!-- Jin Jun Sung : 2009-08-03 start -->
+    <screen name="EES_LSE_0052">
+        <parameter key="title"    value="On-Hire Result by Lease Term/Lessor-Option" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leasereport/jsp/EES_LSE_0052.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-03 end -->
+
+	<!-- Jin Jun Sung : 2009-08-03 start -->
+    <screen name="EES_LSE_0053">
+        <parameter key="title"    value="On-Hire Result by Lease Term/Lessor-Option" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leasereport/jsp/EES_LSE_0053.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-03 end -->
+
+	<!-- Jin Jun Sung : 2009-08-05 start -->
+    <screen name="EES_LSE_0054">
+        <parameter key="title"    value="Off Hire Result Vs DOL" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leasereport/jsp/EES_LSE_0054.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-05 end -->
+
+	<!-- Jang Jun-Woo : 2009-08-10 start -->
+    <screen name="EES_LSE_0057">
+        <parameter key="title"    value="Total Container Inventory by Lease Term &amp; TP/SZ" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leasereport/jsp/EES_LSE_0057.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-08-10 end -->
+
+	<!-- Jin Jun Sung : 2009-08-12 start -->
+    <screen name="EES_LSE_0058">
+        <parameter key="title"    value="New container Receiving Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leasereport/jsp/EES_LSE_0058.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-12 end -->
+
+	<!-- Jang Jun-Woo : 2009-08-13 start -->
+    <screen name="EES_LSE_0094">
+        <parameter key="title"    value="Sub Lease Out Container Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leasereport/jsp/EES_LSE_0094.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-08-13 end -->
+
+	<!-- Jin Jun Sung : 2009-08-17 start -->
+    <screen name="EES_LSE_0074">
+        <parameter key="title"    value="EQ Receivable Charge Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/receivablerentalcost/jsp/EES_LSE_0074.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-17 end -->
+		<!-- Jin Jun Sung : 2009-08-24 start -->
+    <screen name="EES_LSE_0080" template="templatePop">
+        <parameter key="title"    value="EQ Receivable Charge Summary RD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/receivablerentalcost/jsp/EES_LSE_0080.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-24 end -->
+
+    <!-- Jin Jun Sung : 2009-08-24 start -->
+    <screen name="EES_LSE_0081" template="templatePop">
+        <parameter key="title"    value="EQ Receivable Charge Summary RD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/receivablerentalcost/jsp/EES_LSE_0081.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-24 end -->
+
+    <!-- Jin Jun Sung : 2009-08-24 start -->
+    <screen name="EES_LSE_0082" template="templatePop">
+        <parameter key="title"    value="EQ Receivable Charge Summary RD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/receivablerentalcost/jsp/EES_LSE_0082.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-24 end -->
+
+    <!-- Jin Jun Sung : 2009-08-24 start -->
+    <screen name="EES_LSE_0083" template="templatePop">
+        <parameter key="title"    value="EQ Receivable Charge Summary RD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/receivablerentalcost/jsp/EES_LSE_0083.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-24 end -->
+
+    <!-- Jin Jun Sung : 2009-08-24 start -->
+    <screen name="EES_LSE_0084" template="templatePop">
+        <parameter key="title"    value="EQ Receivable Charge Summary RD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/receivablerentalcost/jsp/EES_LSE_0084.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-24 end -->
+
+	<!-- Jang Jun-Woo : 2009-08-24 start -->
+    <screen name="EES_LSE_0019">
+        <parameter key="title"    value="Receivable Charge &amp; Invoice Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/receivablerentalcost/jsp/EES_LSE_0019.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-08-24 end -->
+
+	<!-- Jang Jun-Woo : 2009-09-09 start -->
+    <screen name="EES_LSE_0044" template="templatePop">
+        <parameter key="title"    value="Receivable Invoice - Container List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/receivablerentalcost/jsp/EES_LSE_0044.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-09-09 end -->
+
+	<!-- Jin Jun Sung : 2009-08-25 start -->
+    <screen name="EES_LSE_0060">
+        <parameter key="title"    value="EQ Payable Charge Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0060.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-25 end -->
+
+	<!-- Jin Jun Sung : 2009-08-25 start -->
+    <screen name="EES_LSE_0066">
+        <parameter key="title"    value="EQ Payable Charge Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0066.jsp"/>
+    </screen>
+    
+    <screen name="EES_LSE_0066_POP" template="templatePop">
+        <parameter key="title"    value="EQ Payable Charge Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0066.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-25 end -->
+
+	<!-- Jin Jun Sung : 2009-08-25 start -->
+    <screen name="EES_LSE_0067">
+        <parameter key="title"    value="EQ Payable Charge Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0067.jsp"/>
+    </screen>
+    
+    <screen name="EES_LSE_0067_POP" template="templatePop">
+        <parameter key="title"    value="EQ Payable Charge Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0067.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-25 end -->
+
+	<!-- Jin Jun Sung : 2009-08-25 start -->
+    <screen name="EES_LSE_0068">
+        <parameter key="title"    value="EQ Payable Charge Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0068.jsp"/>
+    </screen>
+    
+    <screen name="EES_LSE_0068_POP" template="templatePop">
+        <parameter key="title"    value="EQ Payable Charge Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0068.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-25 end -->
+
+	<!-- Jin Jun Sung : 2009-08-25 start -->
+    <screen name="EES_LSE_0069">
+        <parameter key="title"    value="EQ Payable Charge Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0069.jsp"/>
+    </screen>
+    
+    <screen name="EES_LSE_0069_POP" template="templatePop">
+        <parameter key="title"    value="EQ Payable Charge Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0069.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-25 end -->
+
+	<!-- Jin Jun Sung : 2009-08-25 start -->
+    <screen name="EES_LSE_0070">
+        <parameter key="title"    value="EQ Payable Charge Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0070.jsp"/>
+    </screen>
+    
+    <screen name="EES_LSE_0070_POP" template="templatePop">
+        <parameter key="title"    value="EQ Payable Charge Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0070.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-08-25 end -->
+	
+	<!-- Jin Jun Sung : 2009-09-03 start -->
+    <screen name="EES_LSE_0087">
+        <parameter key="title"    value="On off Hire Audit" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leasereport/jsp/EES_LSE_0087.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-09-03 end -->
+
+	<!-- Jin Jun Sung : 2009-09-04 start -->
+    <screen name="EES_LSE_0088">
+        <parameter key="title"    value="On-Hire Report Summary By Month" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leasereport/jsp/EES_LSE_0088.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-09-04 end -->
+
+	<!-- Jin Jun Sung : 2009-09-04 start -->
+    <screen name="EES_LSE_0089">
+        <parameter key="title"    value="Off Hire Report Summary by RCC" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leasereport/jsp/EES_LSE_0089.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-09-04 end -->
+
+	<!-- Jin Jun Sung : 2009-09-04 start -->
+    <screen name="EES_LSE_0090">
+        <parameter key="title"    value="Off Hire Report Summary By Month" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leasereport/jsp/EES_LSE_0090.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-09-04 end -->
+
+	<!-- Nho Jung Yong : 2009-09-10 start -->
+    <screen name="EES_LSE_0007">
+        <parameter key="title"    value="Container Rental Charge Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0007.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-09-10 end -->
+
+	<!-- Nho Jung Yong : 2009-09-10 start -->
+    <screen name="EES_LSE_0008" template="templatePop">
+        <parameter key="title"    value="Invoice File Import" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0008.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-09-10 end -->
+	<!-- Jin Jun Sung : 2009-09-14 start -->
+    <screen name="EES_LSE_0079">
+        <parameter key="title"    value="Receivable Summary By Total Charge Type" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/receivablerentalcost/jsp/EES_LSE_0079.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-09-14 end -->
+	<!-- Jin Jun Sung : 2009-09-18 start -->
+    <screen name="EES_LSE_0085" template="templatePop">
+        <parameter key="title"    value="Receivable Summary By Total Charge Type" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/receivablerentalcost/jsp/EES_LSE_0085.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-09-18 end -->
+
+	<!-- Jang Jun-Woo : 2009-09-15 start -->
+    <screen name="EES_LSE_0045">
+        <parameter key="title"    value="Receivable Invoice Inquiry and Cancel" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/receivablerentalcost/jsp/EES_LSE_0045.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-09-15 end -->
+	<!-- Jin Jun Sung : 2009-09-23 start -->
+    <screen name="EES_LSE_0065">
+        <parameter key="title"    value="Summary By Total Charge Type" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0065.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-09-23 end -->
+
+	<!-- Jin Jun Sung : 2009-09-23 start -->
+    <screen name="EES_LSE_0071">
+        <parameter key="title"    value="Summary By Total Charge Type" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0071.jsp"/>
+    </screen>
+    
+    <screen name="EES_LSE_0071_POP" template="templatePop">
+        <parameter key="title"    value="Summary By Total Charge Type" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0071.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-09-23 end -->
+
+	<!-- Nho Jung Yong : 2009-09-23 start -->
+    <screen name="EES_LSE_0098" template="templatePop">
+        <parameter key="title"    value="Invoice File Inquery" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0098.jsp"/>
+    </screen>
+    <!-- Nho Jung Yong : 2009-09-23 end -->
+
+    <!-- Jang Jun-Woo : 2009-09-22 start -->
+    <screen name="EES_LSE_0020">
+        <parameter key="title"    value="Available Off Hire Q'ty List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/availableoffhire/jsp/EES_LSE_0020.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-09-22 end -->
+
+    <!-- Nho Jung Yong : 2010-01-05 start -->
+    <screen name="EES_LSE_0020Pop" template="templatePop">
+        <parameter key="title"    value="Available Off Hire Q'ty List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/availableoffhire/jsp/EES_LSE_0020.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-01-05 end -->
+
+	<!-- Nho Jung Yong : 2009-09-30 start -->
+    <screen name="EES_LSE_0007_01" template="templatePop">
+        <parameter key="title"    value="Container Rental Charge Creation Audit And Result" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0007_01.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-09-30 end -->
+
+	<!-- Jang Jun-Woo : 2009-10-05 start -->
+    <screen name="EES_LSE_0021" template="templatePop">
+        <parameter key="title"    value="Off-Hire CNTR List - Send to Lessor" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/availableoffhire/jsp/EES_LSE_0021.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-10-05 end -->
+
+	<!-- Jin Jun Sung : 2009-10-06 start -->
+    <screen name="EES_LSE_0018">
+        <parameter key="title"    value="Estimate expense" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containercostanalysis/payableestimateaudit/jsp/EES_LSE_0018.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-10-06 end -->
+
+	<!-- Jang Jun-Woo : 2009-10-07 start -->
+    <screen name="EES_LSE_0021_01" template="templatePop">
+        <parameter key="title"    value="Off-Hire CNTR List - Send to E-mail" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/availableoffhire/jsp/EES_LSE_0021_01.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-10-07 end -->
+
+	<!-- Nho Jung Yong : 2009-10-08 start -->
+    <screen name="EES_LSE_0046_01" template="templatePop">
+        <parameter key="title"    value="Off Hire Plan Input &amp; Update by RCC DOL Inquery" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/leaseplan/jsp/EES_LSE_0046_01.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-10-08 end -->
+
+	<!-- Jin Jun Sung : 2009-10-08 start -->
+    <screen name="EES_LSE_0012">
+        <parameter key="title"    value="Rental payable invoice inquiry and Cancel" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0012.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-10-08 end -->
+
+	<!-- Jang Jun-Woo : 2009-10-08 start -->
+    <screen name="EES_LSE_0022">
+        <parameter key="title"    value="Off-Hire Confirm from Lessor" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/availableoffhire/jsp/EES_LSE_0022.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-10-08 end -->
+	
+	<!-- Ji-yeon Jeon : 2016-05-10 start -->
+    <screen name="EES_LSE_0023">
+        <parameter key="title"    value="Target Off-Hire Location Registration" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/availableoffhire/jsp/EES_LSE_0023.jsp"/>
+    </screen>
+    
+    <screen name="EES_LSE_0023_POP" template="templatePop">
+        <parameter key="title"    value="Place Selection" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/availableoffhire/jsp/EES_LSE_0023_POP.jsp"/>
+    </screen>
+    
+    <screen name="EES_LSE_0023_01_POP" template="templatePop">
+        <parameter key="title"    value="Place Selection" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/availableoffhire/jsp/EES_LSE_0023_01_POP.jsp"/>
+    </screen>
+    <!-- Ji-yeon Jeon : 2016-05-10 end -->
+
+	<!-- Nho Jung Yong : 2009-10-09 start -->
+    <screen name="EES_LSE_0011">
+        <parameter key="title"    value="Operational Lease Payable Invoice Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0011.jsp"/>
+    </screen>
+	<!-- Nho Jung Yong : 2009-10-09 end -->
+
+	<!-- Jang Jun-Woo : 2009-10-16 start -->
+    <screen name="EES_LSE_0097">
+        <parameter key="title"    value="Mis Use In and Out Inquiry and Cancel" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/misuseapproval/jsp/EES_LSE_0097.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2009-10-16 end -->
+
+	<!-- Jang Jun-Woo : 2010-04-13 start -->
+    <screen name="EES_LSE_0101" template="templatePop">
+        <parameter key="title"    value="Available Yard Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleasemgt/availableoffhire/jsp/EES_LSE_0101.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2010-04-13 end -->
+	
+	 <screen name="EES_LSE_1001">
+        <parameter key="title"    value="Lease Rental Charge &amp; Account Mapping" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/lsecommon/lsecommon/jsp/EES_LSE_1001.jsp"/>
+    </screen>
+    
+    <!--  Un Jeong : 2014-08-01 start -->
+    <screen name="EES_LSE_1002" template="templatePop">
+        <parameter key="title"    value="EES_LSE_1002" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/lsecommon/lsecommon/jsp/EES_LSE_1002.jsp"/>
+    </screen>
+	<!--  Un Jeong : 2013-08-01 end --> 
+	
+	
+	<!--  Un Jeong : 2015-03-15 start -->
+    <screen name="EES_LSE_0001_POP" template="templatePop">
+        <parameter key="title"    value="EES_LSE_0001_POP" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerleaseagreementregistration/agreementregistration/jsp/EES_LSE_0001_POP.jsp"/>
+    </screen>
+	<!--  Un Jeong : 2013-08-01 end --> 
+    
+    <!-- Eui-su Park : 2016-03-07 start -->
+    <screen name="EES_LSE_1003" template="templatePop">
+        <parameter key="title"    value="Tax Input" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_1003.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-04-20 end -->
+	
+	<!-- Hwang-Jae AHN : 2017-10-13 start -->
+    <screen name="EES_LSE_0017">
+        <parameter key="title"    value="Container Rental Charge Creation (Parent)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0017.jsp"/>
+    </screen>
+	<!-- Hwang-Jae AHN : 2017-10-13 end -->
+	
+	<!-- Hwang-Jae AHN : 2017-10-13 start -->
+    <screen name="EES_LSE_0017_01" template="templatePop">
+        <parameter key="title"    value="Container Rental Charge Creation Audit And Result (Parent)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0017_01.jsp"/>
+    </screen>
+	<!-- Hwang-Jae AHN : 2017-10-13 end -->
+	
+	<!-- Hwang-Jae AHN : 2017-10-17 start -->
+	<screen name="EES_LSE_0008_01" template="templatePop">
+        <parameter key="title"    value="Invoice File Import (Parent)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containerrentalcost/payablerentalcost/jsp/EES_LSE_0008_01.jsp"/>
+    </screen>
+    <!-- Hwang-Jae AHN : 2017-10-17 end -->
+    
+	<screen name="EES_LSE_1004">
+		<parameter key="title"    value="Lease Interest Rate" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/lsecommon/lsecommon/jsp/EES_LSE_1004.jsp"/>
+    </screen>
+	<screen name="EES_LSE_1005">
+		<parameter key="title"    value="JOL Payment Schedule" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containercostanalysis/jolpaymentschedule/jsp/EES_LSE_1005.jsp"/>
+    </screen>    
+        
+    <screen name="EES_LSE_2001">
+		<parameter key="title"    value="ROU Contract I/F" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containercostanalysis/contractinterface/jsp/EES_LSE_2001.jsp"/>
+    </screen>
+    <screen name="EES_LSE_1006">
+		<parameter key="title"    value="LSE History Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containercostanalysis/lsehistorymanagement/jsp/EES_LSE_1006.jsp"/>
+    </screen>
+    
+    <screen name="EES_LSE_1006_POP" template="templatePop">
+		<parameter key="title"    value="LSE History Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containercostanalysis/lsehistorymanagement/jsp/EES_LSE_1006.jsp"/>
+    </screen>
+    
+    <screen name="EES_LSE_1007" template="templatePop">
+		<parameter key="title"    value="LSE History Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containercostanalysis/lsehistorymanagement/jsp/EES_LSE_1007.jsp"/>
+    </screen>
+    
+    <!-- Jin Jun Sung : 2009-10-06 start -->
+    <screen name="EES_LSE_1008">
+        <parameter key="title"    value="Reverce Amount Expense I/F" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/lse/containercostanalysis/payableestimateaudit/jsp/EES_LSE_1008.jsp"/>
+    </screen>
+	<!-- Jin Jun Sung : 2009-10-06 end -->
+</screen-definitions>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOConfirmRqstHdrCUSQL">
+			<desc><![CDATA[COM_APRO_RQST_HDR 승인정보를 수정한다]]></desc>
+			<sql><![CDATA[
+UPDATE COM_APRO_RQST_HDR
+   SET APSTS_CD      = 'C'
+     , CRNT_APRO_SEQ = CRNT_APRO_SEQ
+     , RQST_END_DT   = GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(RQST_OFC_CD)
+ WHERE APRO_RQST_NO = @[apro_rqst_no]			]]></sql>
+			<params>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,8 @@
+com.clt.bizcommon.edi.generator.IReferenceNumberGenerator=com.clt.bizcommon.edi.generator.ReferenceNumberGeneratorDEV
+com.clt.net.ftp.sender.IFtpSender=com.clt.net.ftp.sender.FtpSyncSender
+com.clt.net.ftp.FtpManager=com.clt.net.ftp.FtpManager
+com.clt.utilitybox.initialization.IDatabaseInitializer=com.clt.utilitybox.initialization.DatabaseInitializerAutomaticSelectBatchGeneralSynapse
+com.clt.utilitybox.utility.DatabaseUtility=com.clt.utilitybox.utility.DatabaseUtility
+com.clt.utilitybox.initialization.QueryInitializer=com.clt.utilitybox.initialization.QueryInitializer
+com.clt.utilitybox.keygenerator.IKeyGenerator=com.clt.utilitybox.keygenerator.KeyGeneratorUUID
+com.jf.transfer.state.StateManager=com.jf.transfer.state.StateManager

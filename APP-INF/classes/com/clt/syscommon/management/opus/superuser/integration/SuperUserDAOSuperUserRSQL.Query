@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SuperUserDAOSuperUserRSQL">
+			<desc><![CDATA[Super user list query]]></desc>
+			<sql><![CDATA[
+select a.usr_id, a.usr_locl_nm, a.usr_nm,
+b.ar_hd_qtr_ofc_cd rhq, b.ofc_cd,
+a.xtn_phn_no, a.usr_eml,
+#if (${opt} == 'D') 
+c.pgm_no, c.pgm_nm,
+#else
+'' pgm_no, '' pgm_nm,
+#end
+d.pgm_no module, d.add_flg admin, d.cre_dt
+from com_user a, mdm_organization b,
+#if (${opt} == 'D') 
+com_program c,
+#end
+com_usr_pgm_mtch d
+where a.ofc_cd = b.ofc_cd
+and a.usr_id = d.usr_id
+and length(d.pgm_no) = 3
+#if (${opt} == 'D') 
+and d.pgm_no = substr(c.pgm_no,5,3)
+#end
+#if (${usr_id} != '') 
+and a.usr_id like '%'||@[usr_id]||'%'
+#end
+#if(${usr_nm} != '')
+ AND (UPPER(A.USR_LOCL_NM) LIKE '%'||UPPER(@[usr_nm])||'%' OR UPPER(A.USR_NM) LIKE '%'||UPPER(@[usr_nm])||'%' )
+#end
+#if (${ofc_cd} != '') 
+and b.ofc_cd like @[ofc_cd]
+#end
+#if (${rhq} != '') 
+and b.AR_HD_QTR_OFC_CD = @[rhq]
+#end
+#if (${opt} == 'D') 
+#if (${pgm_no} != '') 
+and c.pgm_no like '%'||@[pgm_no]||'%'
+#end
+#if (${pgm_nm} != '') 
+and UPPER(c.pgm_nm) like '%'||UPPER(@[pgm_nm])||'%'
+#end
+#end
+#if (${module} != '') 
+and d.pgm_no in ('${module}')
+#end
+#if (${admin} != '') 
+and d.add_flg = @[admin]
+#end			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="usr_nm" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="rhq" type="12" value="" out="N"/>
+				<param name="pgm_no" type="12" value="" out="N"/>
+				<param name="pgm_nm" type="12" value="" out="N"/>
+				<param name="admin" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

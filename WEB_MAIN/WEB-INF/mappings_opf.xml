@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	
+    <url-mapping url="VOP_OPF_0001.do" screen="VOP_OPF_0001.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.bayplanmgt.bayplanmgt.event.VOP_OPF_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.bayplanmgt.bayplanmgt.event.VOP_OPF_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.bayplanmgt.bayplanmgt.event.VopOpf0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.bayplanmgt.BayPlanMgtSC</service-action-class>
+    </event-mapping>
+    <url-mapping url="VOP_OPF_0002.do" screen="VOP_OPF_0002.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.bayplanmgt.bayplanmgt.event.VOP_OPF_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.bayplanmgt.bayplanmgt.event.VOP_OPF_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.bayplanmgt.bayplanmgt.event.VopOpf0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.bayplanmgt.BayPlanMgtSC</service-action-class>
+    </event-mapping>
+
+
+	<!-- Sunyoung : 2009-05-11 start -->
+    <url-mapping url="VOP_OPF_3019.do" screen="VOP_OPF_3019.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_3019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_3019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_3019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VopOpf3019Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.CargoLoadingPlanMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Sunyoung : 2009-05-11 end -->
+
+	<!-- Sunyoung : 2009-05-11 start -->
+    <url-mapping url="VOP_OPF_0075.do" screen="VOP_OPF_0075.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0075HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0075GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0075HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VopOpf0075Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.OperationNPerformMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Sunyoung : 2009-05-11 end -->
+
+	<!-- Sunyoung : 2009-05-11 start -->
+    <url-mapping url="VOP_OPF_0034.do" screen="VOP_OPF_0034.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0034GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VopOpf0034Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.OperationNPerformMasterDataMgtSC</service-action-class>
+    </event-mapping>
+
+	<url-mapping url="VOP_OPF_0035.do" screen="VOP_OPF_0035.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0035GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VopOpf0035Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.OperationNPerformMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Sunyoung : 2009-05-11 end -->
+	
+	
+	<!-- Ji Seok Woo : 2009-05-12 start -->
+    <url-mapping url="VOP_OPF_0048.do" screen="VOP_OPF_0048.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0048GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VopOpf0048Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.OperationNPerformMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Ji Seok Woo : 2009-05-12 end -->
+
+	<!-- Ji Seok Woo : 2009-05-13 start -->
+    <url-mapping url="VOP_OPF_0049.do" screen="VOP_OPF_0049.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0049GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VopOpf0049Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.OperationNPerformMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Ji Seok Woo : 2009-05-13 end -->
+
+	<!-- Ji Seok Woo : 2009-05-14 start -->
+    <url-mapping url="VOP_OPF_0087.do" screen="VOP_OPF_0087.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0087HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0087GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0087HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VopOpf0087Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.OperationNPerformMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Ji Seok Woo : 2009-05-14 end -->
+
+	<!-- Kim Jong Ock : 2009-05-19 start -->
+    <url-mapping url="VOP_OPF_0067.do" screen="VOP_OPF_0067.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0067HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0067GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0067HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VopOpf0067Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.OperationNPerformMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-05-19 end -->
+
+	<!-- Kim Jong Ock : 2009-05-19 start -->
+    <url-mapping url="VOP_OPF_0068.do" screen="VOP_OPF_0068.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0068HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0068GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0068HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VopOpf0068Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.OperationNPerformMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-05-19 end -->
+
+	<!-- Ji Seok Woo : 2009-06-09 start -->
+    <url-mapping url="VOP_OPF_0020.do" screen="VOP_OPF_0020.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VopOpf0020Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.CargoLoadingPlanMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Ji Seok Woo : 2009-06-09 end -->
+
+	<!-- Ji Seok Woo : 2009-05-27 start -->
+    <url-mapping url="VOP_OPF_0019.do" screen="VOP_OPF_0019.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VopOpf0019Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.CargoLoadingPlanMgtSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="VOP_OPF_2019.do" screen="VOP_OPF_2019.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_2019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_2019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_2019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VopOpf2019Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.CargoLoadingPlanMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Ji Seok Woo : 2009-05-27 end -->
+	
+	<!-- Sunyoung : 2009-05-18 start -->
+    <url-mapping url="VOP_OPF_0052.do" screen="VOP_OPF_0052.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VOP_OPF_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0052GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VOP_OPF_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VopOpf0052Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.StevedoreDamageMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Sunyoung : 2009-05-18 end -->
+
+	<!-- Sunyoung : 2009-06-02 start -->
+    <url-mapping url="VOP_OPF_0053.do" screen="VOP_OPF_0053.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VOP_OPF_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0053GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VOP_OPF_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VopOpf0053Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.StevedoreDamageMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Sunyoung : 2009-06-02 end -->
+
+	<!-- Sunyoung : 2009-06-08 start -->
+    <url-mapping url="VOP_OPF_1053.do" screen="VOP_OPF_1053.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VOP_OPF_1053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_1053GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VOP_OPF_1053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VopOpf1053Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.StevedoreDamageMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Sunyoung : 2009-06-08 end -->
+
+	<!-- Sunyoung : 2009-06-22 start -->
+    <url-mapping url="VOP_OPF_0054.do" screen="VOP_OPF_0054.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VOP_OPF_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0054GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VOP_OPF_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VopOpf0054Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.StevedoreDamageMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Sunyoung : 2009-06-22 end -->
+	<!-- jang suk hyun : 2009-06-22 Start -->
+    <url-mapping url="VOP_OPF_0050.do" screen="VOP_OPF_0050.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0050GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VopOpf0050Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.OperationNPerformMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang suk hyun : 2009-06-22 End -->
+
+	<!-- jang suk hyun : 2009-06-22 Start -->
+    <url-mapping url="VOP_OPF_0051.do" screen="VOP_OPF_0051.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VopOpf0051Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.OperationNPerformMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang suk hyun : 2009-06-22 End -->
+
+	<!-- jang suk hyun : 2009-06-22 Start -->
+    <url-mapping url="VOP_OPF_0083.do" screen="VOP_OPF_0083.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0083HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0083GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0083HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VopOpf0083Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.OperationNPerformMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang suk hyun : 2009-06-22 End -->
+
+	<!-- jang suk hyun : 2009-06-22 Start -->
+    <url-mapping url="VOP_OPF_0088.do" screen="VOP_OPF_0088.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0088HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0088GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_0088HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VopOpf0088Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.OperationNPerformMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang suk hyun : 2009-06-22 End -->
+	<!-- Jang Suk Hyun : 2009-06-15 start -->
+    <url-mapping url="VOP_OPF_UTIL.do" screen="VOP_OPF_UTIL.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.opfcommon.opfutil.event.OPFUTILHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_UTILGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.opfcommon.opfutil.event.OPFUTILHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.opfcommon.opfutil.event.OpfutilEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.opfcommon.OpfCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Suk Hyun : 2009-06-15 end -->
+	
+	<!-- Sunyoung : 2009-06-25 start -->
+    <url-mapping url="VOP_OPF_1052.do" screen="VOP_OPF_1052.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VOP_OPF_1052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_1052GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VOP_OPF_1052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VopOpf1052Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.StevedoreDamageMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Sunyoung : 2009-06-25 end -->
+	
+	<!-- Sunyoung : 2009-06-29 start -->
+    <url-mapping url="VOP_OPF_2052.do" screen="VOP_OPF_2052.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VOP_OPF_2052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_2052GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VOP_OPF_2052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VopOpf2052Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.StevedoreDamageMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Sunyoung : 2009-06-29 end -->
+
+	<!-- Sunyoung : 2009-07-01 start -->
+    <url-mapping url="VOP_OPF_0056.do" screen="VOP_OPF_0056.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VOP_OPF_0056HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0056GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VOP_OPF_0056HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.stevedoredamagemgt.event.VopOpf0056Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.stevedoredamagemgt.StevedoreDamageMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Sunyoung : 2009-07-01 end -->
+
+	<!-- Ji Seok Woo : 2009-07-07 start -->
+    <url-mapping url="VOP_OPF_0021.do" screen="VOP_OPF_0021.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VopOpf0021Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.CargoLoadingPlanMgtSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="VOP_OPF_1021.do" screen="VOP_OPF_1021.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_1021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_1021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_1021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VopOpf1021Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.CargoLoadingPlanMgtSC</service-action-class>
+    </event-mapping>
+
+	<!-- Ji Seok Woo : 2009-07-07 end -->
+
+	<!-- Jang Suk Hyun : 2009-07-06 start -->
+    <url-mapping url="VOP_OPF_0036.do" screen="VOP_OPF_0036.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0036HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_OPF_0036_3.do" screen="VOP_OPF_0036_3.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0036HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_OPF_0036_4.do" screen="VOP_OPF_0036_4.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0036HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_OPF_0036_5.do" screen="VOP_OPF_0036_5.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0036HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_OPF_0036_6.do" screen="VOP_OPF_0036_6.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0036HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_OPF_0036_7.do" screen="VOP_OPF_0036_7.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0036HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_OPF_0036_8.do" screen="VOP_OPF_0036_8.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0036HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_OPF_0036_9.do" screen="VOP_OPF_0036_9.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VopOpf0036Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+
+	<url-mapping url="VOP_OPF_0040.do" screen="VOP_OPF_0040.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0040HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_OPF_0040POP.do" screen="VOP_OPF_0040POP.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="VOP_OPF_0037.do" screen="VOP_OPF_0037.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0037HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VopOpf0037Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="VOP_OPF_0042.do" screen="VOP_OPF_0042.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0042HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_OPF_0042GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0042HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VopOpf0042Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+    
+	<!-- Jang Suk Hyun : 2009-07-06 end -->
+	<!-- Kim Jong Ock : 2009-07-20 start -->
+    <url-mapping url="VOP_OPF_0033.do" screen="VOP_OPF_0033.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.changeofdestinationmgt.event.VOP_OPF_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.changeofdestinationmgt.event.VOP_OPF_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.changeofdestinationmgt.event.VopOpf0033Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.ChangeOfDestinationMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-07-20 end -->	
+	
+	<!-- SunyoungLee : 2009-07-20 start -->
+    <url-mapping url="VOP_OPF_0045.do" screen="VOP_OPF_0045.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0045HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_OPF_0045_Dtl.do"  screen="VOP_OPF_0045_Dtl.screen" >
+    	<web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0045HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_OPF_0045_07.do"  screen="VOP_OPF_0045_07.screen" >
+    	<web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+
+    <url-mapping url="VOP_OPF_0045GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VopOpf0045Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- SunyoungLee : 2009-07-20 end -->
+	
+	<!-- Kim Jong Ock : 2009-07-22 start -->
+    <url-mapping url="VOP_OPF_0206.do" screen="VOP_OPF_0206.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.changeofdestinationmgt.event.VOP_OPF_0206HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0206GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.changeofdestinationmgt.event.VOP_OPF_0206HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.changeofdestinationmgt.event.VopOpf0206Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.ChangeOfDestinationMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-07-22 end -->	
+	<!-- Kim Jong Ock : 2009-07-22 start -->
+    <url-mapping url="VOP_OPF_1206.do" screen="VOP_OPF_1206.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.changeofdestinationmgt.event.VOP_OPF_1206HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_1206GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.changeofdestinationmgt.event.VOP_OPF_1206HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.changeofdestinationmgt.event.VopOpf1206Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.ChangeOfDestinationMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-07-22 end -->		
+	<!-- Kim Jong Ock : 2009-07-29 start -->
+    <url-mapping url="VOP_OPF_0207.do" screen="VOP_OPF_0207.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.changeofdestinationmgt.event.VOP_OPF_0207HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0207GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.changeofdestinationmgt.event.VOP_OPF_0207HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.changeofdestinationmgt.event.VopOpf0207Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.changeofdestinationmgt.ChangeOfDestinationMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-07-29 end -->
+
+	<!-- Kim Jong Ock : 2009-08-05 start -->
+    <url-mapping url="VOP_OPF_0057.do" screen="VOP_OPF_0057.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0057HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0057GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0057HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_OPF_0057DL.do" screen="com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VopOpf0057ViewAdapterDL" >
+		<web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0057HTMLAction</web-action-class>
+	</url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VopOpf0057Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-08-05 end -->
+
+	<!-- Kim Jong Ock : 2009-08-07 start -->
+    <url-mapping url="VOP_OPF_0061.do" screen="VOP_OPF_0061.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0061HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0061GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0061HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_OPF_0061DL.do" screen="com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VopOpf0061ViewAdapterDL" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0061HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VopOpf0061Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-08-07 end -->
+
+	<!-- Kim Jong Ock : 2009-08-21 start -->
+    <url-mapping url="VOP_OPF_0063.do" screen="VOP_OPF_0063.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0063HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0063GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0063HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_OPF_0063DL.do" screen="com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VopOpf0063ViewAdapterDL" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0063HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VopOpf0063Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-08-21 end -->
+
+	<!-- Kim Jong Ock : 2009-08-24 start -->
+    <url-mapping url="VOP_OPF_0064.do" screen="VOP_OPF_0064.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0064HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0064GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0064HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_OPF_0064DL.do" screen="com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VopOpf0064ViewAdapterDL" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0064HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VopOpf0064Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-08-24 end -->
+
+	<!-- Kim Jong Ock : 2009-09-03 start -->
+    <url-mapping url="VOP_OPF_0069.do" screen="VOP_OPF_0069.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0069HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0069GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0069HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VopOpf0069Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-09-03 end -->
+
+	<!-- Kim Jong Ock : 2009-09-03 start -->
+    <url-mapping url="VOP_OPF_2069.do" screen="VOP_OPF_2069.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_2069HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_2069GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_2069HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VopOpf2069Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-09-03 end -->
+
+	<!-- Ji Seok Woo : 2009-09-04 start -->	
+	<url-mapping url="VOP_OPF_2021.do" screen="VOP_OPF_2021.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_2021HTMLAction</web-action-class>
+    </url-mapping>
+	<url-mapping url="VOP_OPF_2021_POP.do" screen="VOP_OPF_2021_POP.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_2021HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="VOP_OPF_2021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VOP_OPF_2021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.owncontainerbookingforecastmgt.event.VopOpf2021Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingplanmgt.CargoLoadingPlanMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Ji Seok Woo : 2009-09-04 end -->
+	
+
+	<!-- jang kang cheol : 2010-03-03 start -->
+    <url-mapping url="VOP_OPF_0046_01.do" screen="VOP_OPF_0046_01.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0046_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0046_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0046_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VopOpf004601Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2010-03-03 end -->
+
+	<!-- jang kang cheol : 2010-03-03 start -->
+    <url-mapping url="VOP_OPF_0046_02.do" screen="VOP_OPF_0046_02.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0046_02HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0046_02GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0046_02HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VopOpf004602Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2010-03-03 end -->
+
+	<!-- jang kang cheol : 2010-03-03 start -->
+    <url-mapping url="VOP_OPF_0046_03.do" screen="VOP_OPF_0046_03.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0046_03HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0046_03GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0046_03HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VopOpf004603Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2010-03-03 end -->
+
+	<!-- jang kang cheol : 2010-03-03 start -->
+    <url-mapping url="VOP_OPF_0046_04.do" screen="VOP_OPF_0046_04.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0046_04HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0046_04GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0046_04HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VopOpf004604Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2010-03-03 end -->
+
+	<!-- jang kang cheol : 2010-03-03 start -->
+    <url-mapping url="VOP_OPF_0046_05.do" screen="VOP_OPF_0046_05.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0046_05HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0046_05GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0046_05HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VopOpf004605Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2010-03-03 end -->
+
+	<!-- jang kang cheol : 2010-03-03 start -->
+    <url-mapping url="VOP_OPF_0046_06.do" screen="VOP_OPF_0046_06.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0046_06HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0046_06GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0046_06HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VopOpf004606Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2010-03-03 end -->
+
+	<!-- jang kang cheol : 2010-03-03 start -->
+    <url-mapping url="VOP_OPF_0046.do" screen="VOP_OPF_0046.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0046GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VopOpf0046Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- jang kang cheol : 2010-03-03 end -->
+
+    <url-mapping url="VOP_OPF_EXCEL.do" screen="VOP_OPF_EXCEL.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.opfcommon.opfutil.event.VOP_OPF_EXCELHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_OPF_0045_P.do" screen="VOP_OPF_0045.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.regiondeparturereport.event.VOP_OPF_0045HTMLAction</web-action-class>
+    </url-mapping>
+ 
+	<!-- Park Hee Dong : 2010-11-26 start -->
+    <url-mapping url="VOP_OPF_0095.do" screen="VOP_OPF_0095.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0095HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_0095GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VOP_OPF_0095HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.terminaldeparturereport.event.VopOpf0095Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.cargoloadingresultmgt.CargoLoadingResultMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Park Hee Dong : 2010-11-26 end -->
+
+	<!-- Baek Seungil : 2012-04-12 start -->
+    <url-mapping url="VOP_OPF_9003.do" screen="VOP_OPF_9003.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_9003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_9003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_9003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VopOpf9003Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.OperationNPerformMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Baek Seungil : 2012-04-12 end -->
+
+    <url-mapping url="VOP_OPF_9008.do" screen="VOP_OPF_9008.screen" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_9008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_OPF_9008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VOP_OPF_9008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.operationnperformmasterdatamgt.event.VopOpf9008Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.opf.operationnperformmasterdatamgt.OperationNPerformCodeVopOpf9008SC</service-action-class>
+    </event-mapping>
+
+</mappings>

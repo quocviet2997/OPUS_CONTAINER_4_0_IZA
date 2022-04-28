@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOUnApprovalCsrRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT  	  APRO_RQST_NO
+			, CRNT_APRO_SEQ
+			, APSTS_CD
+			, SUB_SYS_CD
+			, GL_DT
+			, RQST_ST_DT
+			, CSR_NO
+			, INV_DT
+			, INV_KNT
+			, VNDR_SEQ
+			, PAY_DUE_DT
+			, CURR_CD
+			, APRO_TTL_AMT
+			, COST_OFC_CD
+			, APRO_OFC_CD
+			, APRO_USR_ID
+			, APRO_USR_NM
+			, APPYN
+			, APRO_RMK
+			, CRE_DT
+			, CRE_USR_ID
+			, USR_NM
+			, AR_HD_QTR_OFC_CD
+			, OFC_CD
+			, INV_EFF_DT
+			, OFC_NM
+
+FROM
+(
+
+SELECT  	T.APRO_RQST_NO
+			, T.CRNT_APRO_SEQ
+			, T.APSTS_CD
+			, T.SUB_SYS_CD
+			, T.GL_DT
+			, T.RQST_ST_DT
+			, T.CSR_NO
+			, T.INV_DT
+			, T.INV_KNT
+			, T.VNDR_SEQ
+			, T.PAY_DUE_DT
+			, T.CURR_CD
+			, T.APRO_TTL_AMT
+			, T.COST_OFC_CD
+			, T.APRO_OFC_CD
+			, T.APRO_USR_ID
+			, T.APRO_USR_NM
+			, T.APPYN
+			, T.APRO_RMK
+			, T.CRE_DT
+			, T.CRE_USR_ID
+			, T.USR_NM
+			, T.AR_HD_QTR_OFC_CD
+			, T.OFC_CD
+			, '' INV_EFF_DT
+			, '' OFC_NM
+  FROM (
+        SELECT ROW_NUMBER() OVER (ORDER BY RQST_ST_DT DESC) no
+             , A.APRO_RQST_NO
+	         , A.CRNT_APRO_SEQ
+  	         , A.APSTS_CD
+	         , A.SUB_SYS_CD
+      		 , D.GL_DT
+             , TO_CHAR(A.RQST_ST_DT, 'YYYY-MM-DD') RQST_ST_DT
+      		 , B.CSR_NO
+      		 , D.INV_DT
+	         , B.INV_KNT
+	         , TO_CHAR(B.VNDR_SEQ, '000000') VNDR_SEQ
+	         , B.PAY_DUE_DT
+	         , B.CURR_CD
+	         , B.APRO_TTL_AMT
+	         , B.COST_OFC_CD
+			 , C.APRO_OFC_CD
+			 , C.APRO_USR_ID
+			 , C.APRO_USR_NM
+	         , DECODE(NVL(C.APSTS_CD, ''), '', 'N', 'Y') APPYN
+	         , C.APRO_RMK
+			 , TO_CHAR(D.CRE_DT, 'YYYY-MM-DD') CRE_DT
+			 , D.CRE_USR_ID
+			 , (SELECT USR_NM FROM COM_USER WHERE USR_ID = D.CRE_USR_ID) AS USR_NM
+			 , NVL((
+	            SELECT DISTINCT AR_HD_QTR_OFC_CD
+	            FROM MDM_ORGANIZATION
+	            WHERE OFC_CD IN (
+	                SELECT DISTINCT INV_OFC_CD
+	                FROM AP_PAY_INV
+	                WHERE CSR_NO = D.CSR_NO)), (SELECT DISTINCT AR_HD_QTR_OFC_CD FROM MDM_ORGANIZATION WHERE OFC_CD = A.RQST_OFC_CD) ) AS AR_HD_QTR_OFC_CD
+	         , NVL((
+	            SELECT DISTINCT INV_OFC_CD
+	            FROM AP_PAY_INV
+	            WHERE CSR_NO = D.CSR_NO), A.RQST_OFC_CD) AS OFC_CD 
+			 
+	      FROM COM_APRO_RQST_HDR  A
+	         , COM_APRO_CSR_DTL   B
+	         , COM_APRO_RQST_ROUT C
+			 , AP_INV_HDR D
+	     WHERE 1 = 1
+	       AND NVL(A.DELT_FLG, 'N') <> 'Y'
+           AND NVL(D.AFT_ACT_FLG,' ') NOT IN ('X','N')
+
+           #if (${sub_sys_cd} != '')
+           AND A.SUB_SYS_CD = @[sub_sys_cd]
+           #end
+
+		   AND A.APRO_RQST_NO = B.APRO_RQST_NO
+    	   AND A.APRO_RQST_NO = C.APRO_RQST_NO(+)
+
+           AND A.APSTS_CD = 'P'
+           AND A.CRNT_APRO_SEQ = C.APRO_RQST_SEQ(+)
+
+		   AND B.CSR_NO = D.CSR_NO
+		   #if (${csr_no} != '')
+		   AND B.CSR_NO = @[csr_no]
+		   #end
+
+           #if (${inv_eff_dt} != '')
+           AND D.GL_DT <=  replace(@[inv_eff_dt], '-', '')
+           #end
+       ) T
+ WHERE 1 = 1
+#if ( (${ar_hd_qtr_ofc_cd} != '' && ${ar_hd_qtr_ofc_cd} != 'ALL') && (${ofc_cd} == '' || ${ofc_cd} == 'ALL'))
+  AND T.OFC_CD IN (
+        select ofc_cd
+        from mdm_organization
+        where ar_hd_qtr_ofc_cd = @[ar_hd_qtr_ofc_cd]
+          and delt_flg = 'N'
+        )
+#end
+
+/* condition - ofc_cd */
+ #if (${ofc_cd} != '' && ${ofc_cd} != 'ALL') 
+	#foreach($key1 IN ${ofc_cd})
+ 	AND T.OFC_CD IN ('$key1')
+	#end
+ #end 
+
+#if (${sub_sys_cd} == 'JOO' || ${sub_sys_cd} == '')
+UNION ALL
+/*JOO*/
+
+SELECT '' APRO_RQST_NO ,
+  0 CRNT_APRO_SEQ ,
+  '' APSTS_CD ,
+  'JOO' SUB_SYS_CD,
+   TO_CHAR(J.EFF_DT, 'YYYY-MM-DD') GL_DT,
+  TO_CHAR(J.RQST_DT, 'YYYY-MM-DD') RQST_ST_DT,
+  J.SLP_TP_CD||J.SLP_FUNC_CD||J.SLP_OFC_CD||TO_CHAR(TO_DATE(J.SLP_ISS_DT,'YYYYMMDD'),'RRMMDD')||J.SLP_SER_NO CSR_NO,
+  '' INV_DT ,
+  0 INV_KNT ,
+  '' VNDR_SEQ ,
+  '' PAY_DUE_DT ,
+  J.CSR_LOCL_CURR_CD CURR_CD,
+  J.CSR_LOCL_AMT APRO_TTL_AMT,
+  '' COST_OFC_CD ,
+  '' APRO_OFC_CD ,
+  C.APRO_USR_ID,
+  C.APRO_USR_NM,
+  '' APPYN ,
+  '' APRO_RMK,
+  TO_CHAR(J.CRE_DT, 'YYYY-MM-DD') CRE_DT,
+  J.CRE_USR_ID,
+  U.USR_NM,
+  O.AR_HD_QTR_OFC_CD,
+  J.SLP_OFC_CD AS OFC_CD,
+  '' INV_EFF_DT ,
+  '' OFC_NM
+FROM	JOO_CSR J,
+		COM_USER U,
+		MDM_ORGANIZATION O,
+		(
+	       SELECT
+	              B.CSR_NO,
+	              C.APRO_USR_ID,
+                  ( SELECT USR_NM FROM COM_USER WHERE USR_ID = C.APRO_USR_ID ) AS APRO_USR_NM
+	         FROM COM_APRO_RQST_HDR  A,
+	              COM_APRO_CSR_DTL   B,
+	              COM_APRO_RQST_ROUT C
+	        WHERE NVL(A.DELT_FLG, 'N') = 'N'
+	          AND NVL(B.DELT_FLG, 'N') = 'N'
+	          AND NVL(C.DELT_FLG, 'N') = 'N'
+	          AND A.SUB_SYS_CD         = 'JOO'
+	          AND NVL(A.APSTS_CD,'P')  = 'P'
+	          AND NVL(C.APSTS_CD,'P')  = 'P'
+	          AND A.APRO_RQST_NO  = B.APRO_RQST_NO
+	          AND A.APRO_RQST_NO  = C.APRO_RQST_NO(+)
+	          AND A.CRNT_APRO_SEQ = C.APRO_RQST_SEQ(+)
+		) C
+WHERE J.APRO_FLG = 'N'
+  AND J.CXL_FLG = 'N'
+  AND J.CRE_USR_ID = U.USR_ID
+  AND J.SLP_OFC_CD = O.OFC_CD 
+  
+  AND J.SLP_TP_CD||J.SLP_FUNC_CD||J.SLP_OFC_CD||TO_CHAR(TO_DATE(J.SLP_ISS_DT,'YYYYMMDD'),'RRMMDD')||J.SLP_SER_NO = C.CSR_NO
+  
+#if (${csr_no} != '')
+  AND C.CSR_NO = @[csr_no]
+#end
+
+#if ( (${ar_hd_qtr_ofc_cd} != '' && ${ar_hd_qtr_ofc_cd} != 'ALL') && (${ofc_cd} == '' || ${ofc_cd} == 'ALL'))
+  AND J.SLP_OFC_CD IN (
+        select ofc_cd
+        from mdm_organization
+        where ar_hd_qtr_ofc_cd = @[ar_hd_qtr_ofc_cd]
+          and delt_flg = 'N'
+        )
+#end
+
+/* condition - ofc_cd */
+ #if (${ofc_cd} != '' && ${ofc_cd} != 'ALL') 
+	#foreach($key1 IN ${ofc_cd})
+ 	AND J.SLP_OFC_CD IN ('$key1')
+	#end
+ #end 
+
+#if (${inv_eff_dt} != '')
+   AND J.EFF_DT <=  TO_DATE(replace(@[inv_eff_dt], '-', ''),'YYYYMMDD')
+#end
+
+#end
+
+#if (${sub_sys_cd} == 'FMS' || ${sub_sys_cd} == '')
+UNION ALL
+/*FMS*/
+SELECT '' APRO_RQST_NO ,
+  0 CRNT_APRO_SEQ ,
+  '' APSTS_CD ,
+  'FMS' SUB_SYS_CD,
+  C.EFF_DT GL_DT,
+  C.RQST_DT RQST_ST_DT,
+  C.SLP_TP_CD||C.SLP_FUNC_CD||C.SLP_OFC_CD||C.SLP_ISS_DT||C.SLP_SER_NO CSR_NO,
+  '' INV_DT ,
+  0 INV_KNT ,
+  '' VNDR_SEQ ,
+  '' PAY_DUE_DT ,
+  C.CSR_CURR_CD CURR_CD,
+  C.RQST_AMT APRO_TTL_AMT,
+  '' COST_OFC_CD ,
+  '' APRO_OFC_CD ,
+  '8600591' APRO_USR_ID,
+  'Yong-Un Kim' APRO_USR_NM,
+  '' APPYN ,
+  '' APRO_RMK,
+  TO_CHAR(C.CRE_DT, 'YYYY-MM-DD') CRE_DT,
+  C.CRE_USR_ID,
+  U.USR_NM,
+  O.AR_HD_QTR_OFC_CD,
+  C.SLP_OFC_CD AS OFC_CD,
+  '' INV_EFF_DT ,
+  '' OFC_NM
+FROM	FMS_CONSULTATION C,
+		COM_USER U,
+		MDM_ORGANIZATION O
+WHERE C.APRO_FLG = 'N'
+  AND C.CXL_FLG = 'N'
+  AND C.CRE_USR_ID = U.USR_ID
+  AND C.SLP_OFC_CD = O.OFC_CD 
+#if (${csr_no} != '')
+  AND C.SLP_TP_CD||C.SLP_FUNC_CD||C.SLP_OFC_CD||C.SLP_ISS_DT||C.SLP_SER_NO = @[csr_no]
+#end
+#if ( (${ar_hd_qtr_ofc_cd} != '' && ${ar_hd_qtr_ofc_cd} != 'ALL') && (${ofc_cd} == '' || ${ofc_cd} == 'ALL'))
+  AND C.SLP_OFC_CD IN (
+        select ofc_cd
+        from mdm_organization
+        where ar_hd_qtr_ofc_cd = @[ar_hd_qtr_ofc_cd]
+          and delt_flg = 'N'
+        )
+#end
+
+/* condition - ofc_cd */
+ #if (${ofc_cd} != '' && ${ofc_cd} != 'ALL') 
+	#foreach($key1 IN ${ofc_cd})
+ 	AND C.SLP_OFC_CD IN ('$key1')
+	#end
+ #end
+
+#if (${inv_eff_dt} != '')
+   AND C.EFF_DT <=  replace(@[inv_eff_dt], '-', '')
+#end
+
+#end
+
+)
+ORDER BY AR_HD_QTR_OFC_CD, SUB_SYS_CD, OFC_CD DESC			]]></sql>
+			<params>
+				<param name="sub_sys_cd" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="inv_eff_dt" type="12" value="" out="N"/>
+				<param name="ar_hd_qtr_ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

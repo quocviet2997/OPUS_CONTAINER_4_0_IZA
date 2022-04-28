@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CustomerDBDAOTotalCustomerRSQL">
+			<desc><![CDATA[총 카운트 조회]]></desc>
+			<sql><![CDATA[
+#if(${credit_flg} == 'on')
+	SELECT COUNT(*) FROM(
+   SELECT  (SELECT LGCY_CO_CD 
+            FROM MDM_MAPG_RULE
+           WHERE COL_NM = 'CUST_SEQ' 
+             AND OPUS_CD = C.LGCY_CD
+             AND LGCY_CO_CD IN ('N', 'M', 'K') ) CTRT_SRC_CD
+		FROM MDM_CUSTOMER A, MDM_CR_CUST B , MDM_MAPG_RULE C
+		WHERE 1=1
+    #if ( (${mdm_yn} == '' || ${mdm_yn} != 'Y') && (${nmd_cust_flg} == '' || ${nmd_cust_flg} != 'Y') )
+		AND NVL(A.NMD_CUST_FLG, 'N') = 'N' 
+    #end
+		AND A.CUST_CNT_CD = B.CUST_CNT_CD
+		AND A.CUST_SEQ = B.CUST_SEQ
+		AND C.OPUS_CD(+) = A.CUST_CNT_CD||A.CUST_SEQ
+		AND C.TBL_NM(+)= 'MDM_CUSTOMER'
+        AND C.COL_NM(+) = 'CUST_SEQ'
+        AND B.CR_FLG = 'Y'
+        AND C.LGCY_CO_CD(+) = 'O'
+        AND A.CUST_CNT_CD NOT IN ('TB','XX')
+    
+	#if(${cust_cnt_cd} != '')
+          AND A.CUST_CNT_CD = @[cust_cnt_cd]
+    #end
+    #if(${cust_seq} != '')
+          AND A.CUST_SEQ  = @[cust_seq]
+    #end
+	#if(${loc_cd} != '')
+		AND A.LOC_CD = @[loc_cd]
+    #end
+	#if(${cust_lgl_eng_nm} != '')
+		#if(${include} == 'on')
+            AND UPPER(REPLACE(TRIM(A.CUST_LGL_ENG_NM),' ','')) LIKE '%' || UPPER(REPLACE(TRIM(@[cust_lgl_eng_nm]),' ','')) || '%'
+		#else
+            AND UPPER(REPLACE(TRIM(A.CUST_LGL_ENG_NM),' ','')) LIKE UPPER(REPLACE(TRIM(@[cust_lgl_eng_nm]),' ','')) || '%'
+		#end
+	#end
+
+	#if(${lgcy_cd} != '')
+			AND (C.COL_NM, C.LGCY_CD) IN (SELECT COL_NM, OPUS_CD 
+                                        FROM MDM_MAPG_RULE
+                                       WHERE COL_NM = 'CUST_SEQ'
+                                         AND LGCY_CD LIKE @[lgcy_cd] || '%'
+                                         AND LGCY_CO_CD IN ('N', 'M', 'K') )   
+	#end
+
+	#if(${lgcy_nm} != '')
+		#if(${include} == 'on')
+			AND upper(C.LGCY_NM) LIKE '%' || upper(@[lgcy_nm]) || '%'
+		#else
+			AND upper(C.LGCY_NM) LIKE upper(@[lgcy_nm]) || '%'
+		#end
+	#end
+
+	#if(${ofc_cd} != '')
+	AND A.OFC_CD LIKE @[ofc_cd] || '%'
+	#end
+
+	#if(${nmd_cust_flg} != '')
+			AND A.NMD_CUST_FLG = @[nmd_cust_flg]
+	#end
+
+	#if (${mdm_yn} != '')
+
+		#if (${delt_flg} == 'Y') 
+			AND A.DELT_FLG = @[delt_flg]
+		#elseif (${delt_flg} == 'ALL') 
+
+		#else 
+			AND A.DELT_FLG <> 'Y'
+		#end
+
+	#else	
+		AND A.DELT_FLG <> 'Y'
+	#end
+    ) WHERE 1=1
+    #if(${ctrt_src_cd} != 'A')
+	    AND CTRT_SRC_CD = @[ctrt_src_cd]
+    #end
+#else
+SELECT COUNT(*) FROM (
+	SELECT (SELECT LGCY_CO_CD 
+            FROM MDM_MAPG_RULE
+           WHERE COL_NM = 'CUST_SEQ' 
+             AND OPUS_CD = B.LGCY_CD
+             AND LGCY_CO_CD IN ('N', 'M', 'K') ) CTRT_SRC_CD
+		FROM MDM_CUSTOMER A, MDM_MAPG_RULE B
+		WHERE 1=1
+		AND B.OPUS_CD(+) = A.CUST_CNT_CD||A.CUST_SEQ
+        AND B.TBL_NM(+)= 'MDM_CUSTOMER'
+        AND B.COL_NM(+) = 'CUST_SEQ'
+ 		AND B.LGCY_CO_CD(+) = 'O'
+        AND A.CUST_CNT_CD NOT IN ('TB','XX')
+    #if ( (${mdm_yn} == '' || ${mdm_yn} != 'Y') && (${nmd_cust_flg} == '' || ${nmd_cust_flg} != 'Y') )  
+        AND NVL(NMD_CUST_FLG, 'N') = 'N' 
+    #end
+	#if(${cust_cnt_cd} != '')
+          AND A.CUST_CNT_CD = @[cust_cnt_cd]
+    #end
+    #if(${cust_seq} != '')
+          AND A.CUST_SEQ  = @[cust_seq]
+    #end
+	#if(${loc_cd} != '')
+		AND A.LOC_CD = @[loc_cd]
+    #end
+	#if(${cust_lgl_eng_nm} != '')
+		#if(${include} == 'on')
+            AND UPPER(REPLACE(TRIM(A.CUST_LGL_ENG_NM),' ','')) LIKE '%' || UPPER(REPLACE(TRIM(@[cust_lgl_eng_nm]),' ','')) || '%'
+		#else			
+            AND UPPER(REPLACE(TRIM(A.CUST_LGL_ENG_NM),' ','')) LIKE UPPER(REPLACE(TRIM(@[cust_lgl_eng_nm]),' ','')) || '%'
+		#end
+	#end
+
+	#if(${lgcy_cd} != '')
+			AND (B.COL_NM, B.LGCY_CD) IN (SELECT COL_NM, OPUS_CD 
+                                        FROM MDM_MAPG_RULE
+                                       WHERE COL_NM = 'CUST_SEQ'
+                                         AND LGCY_CD LIKE @[lgcy_cd] || '%'
+                                         AND LGCY_CO_CD IN ('N', 'M', 'K') )    
+	#end
+
+	#if(${lgcy_nm} != '')
+			#if(${include} == 'on')
+			AND upper(B.LGCY_NM) LIKE '%' || upper(@[lgcy_nm]) || '%'
+		#else
+			AND upper(B.LGCY_NM) LIKE upper(@[lgcy_nm]) || '%'
+		#end
+	#end
+
+	#if(${ofc_cd} != '')
+	AND A.OFC_CD LIKE @[ofc_cd] || '%'
+	#end
+
+	#if(${nmd_cust_flg} != '')
+			AND A.NMD_CUST_FLG = @[nmd_cust_flg]
+	#end
+
+	#if (${mdm_yn} != '')
+
+		#if (${delt_flg} == 'Y') 
+			AND A.DELT_FLG = @[delt_flg]
+		#elseif (${delt_flg} == 'ALL') 
+
+		#else 
+			AND A.DELT_FLG <> 'Y'
+		#end
+
+	#else	
+		AND A.DELT_FLG <> 'Y'
+	#end
+    ) WHERE 1=1
+    #if(${ctrt_src_cd} != 'A')
+	    AND CTRT_SRC_CD = @[ctrt_src_cd]
+    #end
+#end			]]></sql>
+			<params>
+				<param name="cust_cnt_cd" type="12" value="" out="N"/>
+				<param name="cust_seq" type="12" value="" out="N"/>
+				<param name="loc_cd" type="12" value="" out="N"/>
+				<param name="cust_lgl_eng_nm" type="12" value="" out="N"/>
+				<param name="lgcy_cd" type="12" value="" out="N"/>
+				<param name="lgcy_nm" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="nmd_cust_flg" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="ctrt_src_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

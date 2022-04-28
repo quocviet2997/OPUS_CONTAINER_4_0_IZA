@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+	<!-- ###	TESCommon	START	###=========================================================-->
+	<url-mapping url="TESCommon.do" screen="TESCommon.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.common.tescommon.event.TESCommonHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TESCommonGS.do" screen="com.clt.apps.opus.esd.tes.common.tescommon.event.TESCommonViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.tes.common.tescommon.event.TESCommonHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TESCommon2GS.do" screen="com.clt.apps.opus.esd.tes.common.tescommon.event.TESCommonViewAdapter2">
+		<web-action-class>com.clt.apps.opus.esd.tes.common.tescommon.event.TESCommonHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.common.tescommon.event.TESCommonEvent</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.common.TESCommonSC</service-action-class>
+	</event-mapping>
+	      
+	<url-mapping url="ESD_TES_9001.do" screen="ESD_TES_9001.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9001HTMLAction</web-action-class>
+    </url-mapping>
+    
+   	<url-mapping url="ESD_TES_9001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9001HTMLAction</web-action-class>
+   	</url-mapping>
+   
+   	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes9001Event</event-class>
+       <service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+   	</event-mapping>
+
+	<!-- ###	TESCommon	END	###=========================================================-->
+	
+	<!-- ### New TESCommon START	###=========================================================-->
+	<url-mapping url="TESCommonNewGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.tes.tescommon.event.TESCommonHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.tescommon.event.TESCommonEvent</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.tescommon.TESCommonSC</service-action-class>
+	</event-mapping>
+	<!-- ### New TESCommon END	###=========================================================-->
+
+
+
+	<!-- ###	TES Invoice Common START	###=========================================================-->
+	<url-mapping url="TESInvoiceCommon.do" screen="TESInvoiceCommon.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.common.tesinvoicecommon.event.TESInvoiceCommonHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="TESInvoiceCommonGS.do" screen="com.clt.apps.opus.esd.tes.common.tesinvoicecommon.event.TESInvoiceCommonViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.tes.common.tesinvoicecommon.event.TESInvoiceCommonHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.common.tesinvoicecommon.event.TESInvoiceCommonEvent</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.common.TESCommonSC</service-action-class>
+	</event-mapping>
+
+	<!-- ###	TES Invoice Common END	###===========================================================-->
+
+
+
+	<!-- ###	TES CodeManage START	###===========================================================-->
+	<!--  Cost Code  -->
+	<url-mapping url="ESD_TES_0027.do" screen="ESD_TES_0027.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.ESD_TES_0027HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.ESD_TES_0027HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.EsdTes0027Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_9090.do" screen="ESD_TES_9090.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.ESD_TES_9090HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.EsdTes9090Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+	
+	
+	<url-mapping url="ESD_TES_0028.do" screen="ESD_TES_0028.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.ESD_TES_0028HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_0028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.ESD_TES_0028HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_0028Combo.do" screen="com.clt.apps.opus.esd.tes.codemanage.codemanage.event.EsdTes0028ComboViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.ESD_TES_0028HTMLAction</web-action-class>
+	</url-mapping>				
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.EsdTes0028Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+
+	
+	<url-mapping url="ESD_TES_0031.do" screen="ESD_TES_0031.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.ESD_TES_0031HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_0031GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.ESD_TES_0031HTMLAction</web-action-class>
+	</url-mapping>	
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.EsdTes0031Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>			
+
+	<url-mapping url="ESD_TES_0038.do" screen="ESD_TES_0038.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.ESD_TES_0038HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_0038GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.ESD_TES_0038HTMLAction</web-action-class>
+	</url-mapping>	
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.EsdTes0038Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+	
+		<url-mapping url="ESD_TES_0036.do" screen="ESD_TES_0036.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.ESD_TES_0036HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.ESD_TES_0036HTMLAction</web-action-class>
+	</url-mapping>	
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.EsdTes0036Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+	
+		<url-mapping url="ESD_TES_0037.do" screen="ESD_TES_0037.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.ESD_TES_0037HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.ESD_TES_0037HTMLAction</web-action-class>
+	</url-mapping>	
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.codemanage.codemanage.event.EsdTes0037Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.codemanage.CodeManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- ###	TES CodeManage END	###===========================================================-->
+
+	<!-- ###	TES AgreementManage START	###===========================================================-->
+	<!--  TerminalAgreementManage -->
+	<url-mapping url="ESD_TES_0034.do" screen="ESD_TES_0034.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_0034HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0034GS.do" screen="com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes0034ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_0034HTMLAction</web-action-class>
+	</url-mapping>	
+	
+	<url-mapping url="ESD_TES_0034Detail.do" screen="com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes0034DetailViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_0034HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_0034Verify.do" screen="com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes0034VerifyFlgViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_0034HTMLAction</web-action-class>
+	</url-mapping>		
+	
+	<url-mapping url="ESD_TES_0034VerifyGS.do" screen="com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes0034VerifyLgsFlgViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_0034HTMLAction</web-action-class>
+	</url-mapping>					
+	
+	<url-mapping url="ESD_TES_0035GS.do" screen="com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes0035ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_0034HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_ThrpccGS.do" screen="com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes0034ThrpccViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_0034HTMLAction</web-action-class>
+	</url-mapping>	
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes0034Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.ServiceProviderAgreementManageSC</service-action-class>
+	</event-mapping>	
+
+
+	<url-mapping url="ESD_TES_0039.do" screen="ESD_TES_0039.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_0039HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0039GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_0039HTMLAction</web-action-class>
+	</url-mapping>	
+		
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes0039Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.ServiceProviderAgreementManageSC</service-action-class>
+	</event-mapping>	
+	
+	
+	<!--  TerminalAgreementManage Detail Inquiry -->
+	<url-mapping url="ESD_TES_0040.do" screen="ESD_TES_0040.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_0040HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_0040HTMLAction</web-action-class>
+	</url-mapping>	
+	
+	<url-mapping url="ESD_TES_0040_02GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_0040HTMLAction</web-action-class>
+	</url-mapping>				
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes0040Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.ServiceProviderAgreementManageSC</service-action-class>
+	</event-mapping>	
+
+
+	<!--  TerminalAgreementManage Throughput Cost code -->
+	<url-mapping url="ESD_TES_9180.do" screen="ESD_TES_9180.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_9180HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_9180GS.do" screen="com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes9180ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_9180HTMLAction</web-action-class>
+	</url-mapping>	
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes9180Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.ServiceProviderAgreementManageSC</service-action-class>
+	</event-mapping>	
+	
+	<!-- Agreement Remark -->
+	<url-mapping url="ESD_TES_9070.do" screen="ESD_TES_9070.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_9070HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_9070GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_9070HTMLAction</web-action-class>
+	</url-mapping>	
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes9070Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.ServiceProviderAgreementManageSC</service-action-class>
+	</event-mapping>
+	
+	
+	<!-- Agreement Terminal Rate List Excel Load -->
+	<url-mapping url="ESD_TES_9160.do" screen="ESD_TES_9160.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_9160HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_9160GS.do" screen="com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes9160ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_9160HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes9160Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.ServiceProviderAgreementManageSC</service-action-class>
+	</event-mapping>	
+
+	<!-- Agreement Storage Rate List Excel Load -->
+	<url-mapping url="ESD_TES_9170.do" screen="ESD_TES_9170.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_9170HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_9170GS.do" screen="com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes9170ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_9170HTMLAction</web-action-class>
+	</url-mapping>
+						
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes9170Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.ServiceProviderAgreementManageSC</service-action-class>
+	</event-mapping>	
+
+	<url-mapping url="ESD_TES_9175.do" screen="ESD_TES_9175.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_9175HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_9175GS.do" screen="com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes9175ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_9175HTMLAction</web-action-class>
+	</url-mapping>
+						
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes9175Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.ServiceProviderAgreementManageSC</service-action-class>
+	</event-mapping>	
+	
+	<!-- Volume Accumulate Method -->
+	<url-mapping url="ESD_TES_9200.do" screen="ESD_TES_9200.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_9200HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_9200GS.do" screen="com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes9200ViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_9200HTMLAction</web-action-class>
+	</url-mapping>		
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes9200Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.ServiceProviderAgreementManageSC</service-action-class>
+	</event-mapping>	
+
+	<!-- ###	TES AgreementManage END	###===========================================================-->
+
+
+
+	<!-- ###	TES Invoice Creation & Inquiry START	###===========================================================-->
+	
+		<!-- @@	CSR CARIssueTransferSlipManage START		-->
+	<!-- @ Terminal invoice CSR Creation Summary START	-->
+	<url-mapping url="ESD_TES_0023.do" screen="ESD_TES_0023.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0023HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0023HTMLAction</web-action-class>
+	</url-mapping>			
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.EsdTes0023Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- @ Terminal invoice CSR Creation Summary END	-->
+	
+	<!-- @ Terminal invoice CSR Creation - Detail START	-->
+	<url-mapping url="ESD_TES_0024.do" screen="ESD_TES_0024.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0024HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0024GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0024HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_0024PreView.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0024HTMLAction</web-action-class>
+	</url-mapping>					
+
+	<url-mapping url="ESD_TES_0026.do" screen="ESD_TES_0026.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0024HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0026GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0024HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0026PreView.do" screen="ESD_TES_0026PreView.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0024HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.EsdTes0024Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_0025.do" screen="ESD_TES_0025.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0025HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0025HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_0025PreView.do" screen="ESD_TES_0025PreView.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0025HTMLAction</web-action-class>
+	</url-mapping>					
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.EsdTes0025Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- @ Terminal invoice CSR Creation - Detail END	-->
+
+
+	<!-- @ Terminal invoice CSR Creation - Preview START	-->
+	<url-mapping url="ESD_TES_0080.do" screen="ESD_TES_0080.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0080HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0080GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0080HTMLAction</web-action-class>
+	</url-mapping>			
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.EsdTes0080Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- @ Terminal invoice CSR Creation - Preview END-->
+	
+	
+	<!-- @ Terminal invoice CSR Creation - 세금계산서 부분 START	-->
+	<url-mapping url="ESD_TES_0078.do" screen="ESD_TES_0078.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0078HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0078GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0078HTMLAction</web-action-class>
+	</url-mapping>			
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.EsdTes0078Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- @ Terminal invoice CSR Creation - 세금계산서 부분 END	-->	
+
+
+	<!-- @ Terminal invoice CSR Creation - 공통 세금 계산서 번호 부분 시작 -->
+	<!-- <url-mapping url="ESD_TES_078_079GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0078HTMLAction</web-action-class>
+	</url-mapping>	 -->	
+
+	<!-- @ Terminal invoice CSR Creation - 공통 세금 계산서 번호 부분 END	-->							
+
+
+	<!-- @ Terminal invoice CSR Creation - 계산서 부분 START	-->
+	<url-mapping url="ESD_TES_0079.do" screen="ESD_TES_0079.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0079HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_0079GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0079HTMLAction</web-action-class>
+	</url-mapping>			
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.EsdTes0079Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- @ Terminal invoice CSR Creation - 계산서 부분 END	-->
+
+
+	<url-mapping url="ESD_TES_0100.do" screen="ESD_TES_0100.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0100HTMLAction</web-action-class>
+	</url-mapping>
+
+    <url-mapping url="ESD_TES_0100GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0100HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.EsdTes0100Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_0101.do" screen="ESD_TES_0101.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0101HTMLAction</web-action-class>
+	</url-mapping>
+
+    <url-mapping url="ESD_TES_0101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.ESD_TES_0101HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.carissuetransferslipmanage.event.EsdTes0101Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- @@	CSR CARIssueTransferSlipManage END		-->
+	
+	<!-- Invoice Creation & Inquiry	START		-->
+
+	<!-- @@	MarineTerminalInvoiceManage	START	-->
+	<url-mapping url="ESD_TES_0001.do" screen="ESD_TES_0001.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_0001HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_0001HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes0001Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+	
+	
+	<url-mapping url="ESD_TES_1003.do" screen="ESD_TES_1003.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_1003HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TES_1003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_1003HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes1003Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<!--	Invoice Inquiry	-->
+	<url-mapping url="ESD_TES_0013.do" screen="ESD_TES_0013.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_0013HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_0013HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes0013Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_0014.do" screen="ESD_TES_0014.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_0014HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_0014HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes0014Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_9300.do" screen="ESD_TES_9300.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9300HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_9300Pop.do" screen="ESD_TES_9300Pop.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9300HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_9300GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9300HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes9300Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_0017.do" screen="ESD_TES_0017.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_0017HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_0017HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes0017Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<!--  Get Container List Pop Up -->
+	<url-mapping url="ESD_TES_9010.do" screen="ESD_TES_9010.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9010HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_9010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9010HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes9010Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<!-- Volume Adjustment Pop Up -->
+	<url-mapping url="ESD_TES_9032.do" screen="ESD_TES_9032.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9032HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_9032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9032HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes9032Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_9031.do" screen="ESD_TES_9031.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_9031HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_9031GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_9031HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.EsdTes9031Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_9072.do" screen="ESD_TES_9072.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9072HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_9072GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9072HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes9072Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<!--  Total Amount - Marine Terminal  -->
+	<url-mapping url="ESD_TES_9040.do" screen="ESD_TES_9040.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9040HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes9040Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<!--  Accumulate Vol. Detail Inquiry Pop Up -->
+	<url-mapping url="ESD_TES_9220.do" screen="ESD_TES_9220.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9220HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TES_9220GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9220HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes9220Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<!--  R/H Volume Adjustment Pop Up -->
+	<url-mapping url="ESD_TES_9190.do" screen="ESD_TES_9190.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9190HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TES_9190GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9190HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes9190Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_9191.do" screen="ESD_TES_9191.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9191HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_TES_9191GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9191HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes9191Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<!--  TES 3rd Party Billing Input PopUp -->
+	<url-mapping url="ESD_TES_9232.do" screen="ESD_TES_9232.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9232HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_9232GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9232HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes9232Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_9252.do" screen="ESD_TES_9252.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9252HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_9252GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_9252HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes9252Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- @@	MarineTerminalInvoiceManage	END	-->
+
+
+	<!-- @@	MarineTerminalStorageInvoiceManage	START	-->
+	<url-mapping url="ESD_TES_0009.do" screen="ESD_TES_0009.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalstorageinvoicemanage.event.ESD_TES_0009HTMLAction</web-action-class>
+	</url-mapping>
+
+    <url-mapping url="ESD_TES_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalstorageinvoicemanage.event.ESD_TES_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <!-- >url-mapping url="ESD_TES_0009_02_GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalstorageinvoicemanage.event.ESD_TES_0009HTMLAction</web-action-class>
+    </url-mapping -->
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalstorageinvoicemanage.event.EsdTes0009Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_9142Popup.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalstorageinvoicemanage.event.ESD_TES_9142HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalstorageinvoicemanage.event.EsdTes9142Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_TES_9234Popup.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalstorageinvoicemanage.event.ESD_TES_9234HTMLAction</web-action-class>
+    </url-mapping>
+    
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalstorageinvoicemanage.event.EsdTes9234Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+	
+	
+	<url-mapping url="ESD_TES_9254Popup.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalstorageinvoicemanage.event.ESD_TES_9254HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalstorageinvoicemanage.event.EsdTes9254Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_0019.do" screen="ESD_TES_0019.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalstorageinvoicemanage.event.ESD_TES_0019HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalstorageinvoicemanage.event.ESD_TES_0019HTMLAction</web-action-class>
+	</url-mapping>
+
+	<!-- >url-mapping url="ESD_TES_0019_02GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalstorageinvoicemanage.event.ESD_TES_0019HTMLAction</web-action-class>
+	</url-mapping -->
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalstorageinvoicemanage.event.EsdTes0019Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_9060Popup.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_9060HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.EsdTes9060Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- MGSet -->
+    <url-mapping url="ESD_TES_1004Popup.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.ESD_TES_1004HTMLAction</web-action-class>
+    </url-mapping>
+    
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.marineterminalinvoicemanage.event.EsdTes1004Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>		
+	
+	<!-- @@	MarineTerminalStorageInvoiceManage	END	-->
+
+	
+	<!-- @@	OffdockCYInvoiceManage	START	-->
+	<!-- @ Off-dock CY Invoice Creation	START	-->
+	<url-mapping url="ESD_TES_0004.do" screen="ESD_TES_0004.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_0004HTMLAction</web-action-class>
+	</url-mapping>
+
+    <url-mapping url="ESD_TES_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <!-- url-mapping url="ESD_TES_0004_02_GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_0004HTMLAction</web-action-class>
+    </url-mapping -->
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.EsdTes0004Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+	<!-- @ Off-dock CY Invoice Creation	END	-->
+	
+	
+	<!-- @ Off-dock CY Container List 조회 부분 	START	-->
+	<url-mapping url="ESD_TES_0018.do" screen="ESD_TES_0018.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_0018HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_0018HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<!-- >url-mapping url="ESD_TES_0018_02_GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_0018HTMLAction</web-action-class>
+	</url-mapping -->		
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.EsdTes0018Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_9050Popup.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_9050HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.EsdTes9050Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>		
+	
+	<!-- @ Off-dock CY Container List 조회 부분	END	-->	
+
+
+    <url-mapping url="ESD_TES_9030Popup.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_9030HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.EsdTes9030Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+    <url-mapping url="ESD_TES_9050Popup.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_9050HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.EsdTes9050Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+    <url-mapping url="ESD_TES_9240Popup.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_9240HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.EsdTes9240Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+    <url-mapping url="ESD_TES_9074Popup.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_9074HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.EsdTes9074Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+    <url-mapping url="ESD_TES_9075Popup.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_9075HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.EsdTes9075Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+    <url-mapping url="ESD_TES_9140Popup.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_9140HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.EsdTes9140Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+	
+    <url-mapping url="ESD_TES_9233Popup.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_9233HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.EsdTes9233Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+    <url-mapping url="ESD_TES_9253Popup.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.ESD_TES_9253HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.offdockcyinvoicemanage.event.EsdTes9253Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- @@	OffdockCYInvoiceManage	END	-->
+
+
+	<!-- @@	OndockRailChargeInvoiceManage	START	-->
+	<url-mapping url="ESD_TES_0064.do" screen="ESD_TES_0064.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_0064HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0064GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_0064HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.EsdTes0064Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+	
+	
+	<url-mapping url="ESD_TES_0068.do" screen="ESD_TES_0068.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_0068HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0068GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_0068HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.EsdTes0068Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+<!-- 사용하지 않음
+	<url-mapping url="ESD_TES_907_1.do" screen="ESD_TES_907_1.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_907_1HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_907_1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_907_1HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.EsdTes907_1Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+ -->
+
+	<url-mapping url="ESD_TES_9231.do" screen="ESD_TES_9231.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_9231HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_9231GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_9231HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.EsdTes9231Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_9251.do" screen="ESD_TES_9251.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_9251HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="ESD_TES_9251GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_9251HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.EsdTes9251Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_9130.do" screen="ESD_TES_9130.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_9130HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_9130GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_9130HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.EsdTes9130Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_TES_9060.do" screen="ESD_TES_9060.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_9060HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_9060GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.ESD_TES_9060HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ondockrailchargeinvoicemanage.event.EsdTes9060Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceproviderinvoicemanage.ServiceProviderInvoiceManageSC</service-action-class>
+	</event-mapping>
+	
+	<!-- @@	OndockRailChargeInvoiceManage	END	-->
+
+	<!-- ###	TES Invoice Creation & Inquiry END	###===========================================================-->
+
+
+
+	<!-- ###	Guarantee Common START	###===========================================================-->
+	<!-- yOng hO lEE : 2009-10-22 start -->
+    <url-mapping url="GuaranteeCommon.do" screen="GuaranteeCommon.screen" >
+        <web-action-class>com.clt.apps.opus.esd.tes.common.guaranteecommon.event.GuaranteeCommonHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="GuaranteeCommonGS.do" screen="com.clt.apps.opus.esd.tes.common.guaranteecommon.event.GuaranteeCommonViewAdapter">
+        <web-action-class>com.clt.apps.opus.esd.tes.common.guaranteecommon.event.GuaranteeCommonHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="GuaranteeComGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.common.guaranteecommon.event.GuaranteeCommonHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.tes.common.guaranteecommon.event.GuaranteeCommonEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esd.tes.common.guaranteecommon.GuaranteeCommonSC</service-action-class>
+    </event-mapping>
+	<!-- yOng hO lEE : 2009-10-22 end -->
+
+
+	<!-- ###	Guarantee Common END	###===========================================================-->
+
+
+
+	<!-- ###	Guarantee Creation & Inquiry START	###===========================================================-->
+	
+	<!-- yOng hO lEE : 2009-10-13 start -->
+    <url-mapping url="ESD_TES_2001.do" screen="ESD_TES_2001.screen" >
+        <web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.guaranteemanage.event.ESD_TES_2001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_TES_2001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.guaranteemanage.event.ESD_TES_2001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.tes.guaranteemanage.guaranteemanage.event.EsdTes2001Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.GuaranteeManageSC</service-action-class>
+    </event-mapping>
+	<!-- yOng hO lEE : 2009-10-13 end -->
+
+	<!-- yOng hO lEE : 2009-10-14 start -->
+    <url-mapping url="ESD_TES_2002.do" screen="ESD_TES_2002.screen" >
+        <web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.guaranteemanage.event.ESD_TES_2002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_TES_2002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.guaranteemanage.event.ESD_TES_2002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.tes.guaranteemanage.guaranteemanage.event.EsdTes2002Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.GuaranteeManageSC</service-action-class>
+    </event-mapping>
+	<!-- yOng hO lEE : 2009-10-14 end -->
+	
+    <url-mapping url="ESD_TES_2003.do" screen="ESD_TES_2003.screen" >
+        <web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.guaranteemanage.event.ESD_TES_2003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_TES_2003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.guaranteemanage.event.ESD_TES_2003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.tes.guaranteemanage.guaranteemanage.event.EsdTes2003Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.GuaranteeManageSC</service-action-class>
+    </event-mapping>
+
+	<!-- yOng hO lEE : 2009-10-14 start -->
+    <url-mapping url="ESD_TES_2004.do" screen="ESD_TES_2004.screen" >
+        <web-action-class>com.clt.apps.opus.esd.tes.common.guaranteecommon.event.ESD_TES_2004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_TES_2004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.common.guaranteecommon.event.ESD_TES_2004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.tes.common.guaranteecommon.event.EsdTes2004Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.tes.common.guaranteecommon.GuaranteeCommonSC</service-action-class>
+    </event-mapping>
+	<!-- yOng hO lEE : 2009-10-14 end -->
+
+	<!-- yOng hO lEE : 2009-10-14 start -->
+    <url-mapping url="ESD_TES_2005.do" screen="ESD_TES_2005.screen" >
+        <web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.guaranteemanage.event.ESD_TES_2005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_TES_2005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.guaranteemanage.event.ESD_TES_2005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.tes.guaranteemanage.guaranteemanage.event.EsdTes2005Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.GuaranteeManageSC</service-action-class>
+    </event-mapping>
+	<!-- yOng hO lEE : 2009-10-14 end -->
+
+	<!-- yOng hO lEE : 2009-10-14 start -->
+	<url-mapping url="ESD_TES_2006.do" screen="ESD_TES_2006.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.irregularmanage.event.ESD_TES_2006HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_2006Popup.do" screen="ESD_TES_2006Popup.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.irregularmanage.event.ESD_TES_2006HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_2006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.irregularmanage.event.ESD_TES_2006HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.guaranteemanage.irregularmanage.event.EsdTes2006Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.GuaranteeManageSC</service-action-class>
+	</event-mapping>
+	<!-- yOng hO lEE : 2009-10-14 end -->
+
+	<!-- yOng hO lEE : 2009-10-14 start -->
+	<url-mapping url="ESD_TES_2007.do" screen="ESD_TES_2007.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.irregularmanage.event.ESD_TES_2007HTMLAction</web-action-class>
+	</url-mapping>
+
+    <url-mapping url="ESD_TES_2007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.irregularmanage.event.ESD_TES_2007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.tes.guaranteemanage.irregularmanage.event.EsdTes2007Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.GuaranteeManageSC</service-action-class>
+    </event-mapping>
+	<!-- yOng hO lEE : 2009-10-14 end -->
+
+	<!-- yOng hO lEE : 2009-10-14 start -->
+    <url-mapping url="ESD_TES_2008.do" screen="ESD_TES_2008.screen" >
+        <web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.tpbinterfacemanage.event.ESD_TES_2008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESD_TES_2008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.tpbinterfacemanage.event.ESD_TES_2008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esd.tes.guaranteemanage.tpbinterfacemanage.event.EsdTes2008Event</event-class>
+        <service-action-class>com.clt.apps.opus.esd.tes.guaranteemanage.GuaranteeManageSC</service-action-class>
+    </event-mapping>
+	<!-- yOng hO lEE : 2009-10-14 end -->
+
+
+	<!-- ###	Guarantee Creation & Inquiry END	###===========================================================-->
+	<!-- JEONGMIN CHO : 2012-04-17 start -->
+	<url-mapping url="ESD_TES_0041.do" screen="ESD_TES_0041.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_0041HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_0041GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.ESD_TES_0041HTMLAction</web-action-class>
+	</url-mapping>		
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.terminalagreementmanage.event.EsdTes0041Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.serviceprovideragreementmanage.ServiceProviderAgreementManageSC</service-action-class>
+	</event-mapping>	
+	<!-- JEONGMIN CHO : 2012-04-17 end -->
+
+
+	<!-- ###	History Inquiry START	###===========================================================-->
+	<!-- NYK : 2017-01-18 start -->
+	<url-mapping url="ESD_TES_9400.do" screen="ESD_TES_9400.screen" >
+		<web-action-class>com.clt.apps.opus.esd.tes.common.teshistorycommon.event.ESD_TES_9400HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_TES_9400GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.esd.tes.common.teshistorycommon.event.ESD_TES_9400HTMLAction</web-action-class>
+	</url-mapping>		
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.common.teshistorycommon.event.EsdTes9400Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.common.TESCommonSC</service-action-class>
+	</event-mapping>	
+	<!-- NYK : 2017-01-18 end -->
+	<!-- ###	History Inquiry E N D	###===========================================================-->
+	<!-- ###	TES eBilling START	###===========================================================-->
+	<url-mapping url="TESInterfaceCommonGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.tes.edi.common.event.TESInterfaceCommonHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.tes.edi.common.event.TESInterfaceCommonEvent</event-class>
+		<service-action-class>com.clt.apps.opus.esd.tes.edi.common.TESInterfaceCommonSC</service-action-class>
+	</event-mapping>
+	<!-- ###	TES eBilling E N D	###===========================================================-->
+</mappings>

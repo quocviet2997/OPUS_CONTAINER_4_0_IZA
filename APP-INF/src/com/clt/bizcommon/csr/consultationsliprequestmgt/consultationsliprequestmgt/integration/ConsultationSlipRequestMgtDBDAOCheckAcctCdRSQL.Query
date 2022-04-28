@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCheckAcctCdRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT DTRB_COA_ACCT_CD,
+	   LINE_SEQ,
+	   LINE_NO,
+       INV_AMT,
+       FTU_USE_CTNT1,
+       ATTR_CTNT11,
+       ATTR_CTNT12,
+       ATTR_CTNT14,
+       DECODE(DTRB_COA_ACCT_CD
+			 ,(SELECT C.ATTR_CTNT1 FROM COM_ACCT_HRD_CDG_DESC D, COM_ACCT_HRD_CDG_CTNT C 
+				WHERE D.SRC_MDL_CD = C.SRC_MDL_CD AND D.HRD_CDG_ID = C.HRD_CDG_ID 
+				  AND D.SRC_MDL_CD = 'CSR' AND D.HRD_CDG_ID = 'AGT_ACCT_RCV')
+             ,'Y'
+			 ,(SELECT C.ATTR_CTNT1 FROM COM_ACCT_HRD_CDG_DESC D, COM_ACCT_HRD_CDG_CTNT C 
+				WHERE D.SRC_MDL_CD = C.SRC_MDL_CD AND D.HRD_CDG_ID = C.HRD_CDG_ID 
+				  AND D.SRC_MDL_CD = 'CSR' AND D.HRD_CDG_ID = 'OA_INTER_OFC_ACCT')
+             ,'Y'
+             ,'N') MOD_FLG
+FROM AP_INV_DTRB
+WHERE CSR_NO = @[csr_no]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

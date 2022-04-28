@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOsaveApprovalRouteCSQL">
+			<desc><![CDATA[saveApprovalRoute]]></desc>
+			<sql><![CDATA[
+INSERT INTO COM_APRO_ROUT_DFLT (
+	APRO_ROUT_SEQ
+,	SUB_SYS_CD
+,	OFC_CD
+,	SUB_SYS_USR_ID
+,	DELT_FLG
+,	CRE_USR_ID
+,	CRE_DT
+,	UPD_USR_ID
+,	UPD_DT
+) VALUES(
+	@[apro_rout_seq]
+,	@[sub_sys_cd]
+,	@[ofc_cd]
+,	@[sub_sys_usr_id]
+,	'N'
+,	@[usr_id]
+,	SYSDATE --TO_DATE(SYSDATE,'YYYY-MM-DD')
+,	@[usr_id]
+,	SYSDATE --TO_DATE(SYSDATE,'YYYY-MM-DD')
+)			]]></sql>
+			<params>
+				<param name="apro_rout_seq" type="2" value="" out="N"/>
+				<param name="sub_sys_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="sub_sys_usr_id" type="12" value="" out="N"/>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

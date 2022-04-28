@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchRevenueMonthVvdRSQL">
+			<desc><![CDATA[search Revenue Month Vvd]]></desc>
+			<sql><![CDATA[
+SELECT  VSL_CD||SKD_VOY_NO||SKD_DIR_CD||RLANE_DIR_CD	AS VVD
+	,	VSL_CD
+	,	SKD_VOY_NO
+	,	SKD_DIR_CD
+	,	RLANE_DIR_CD
+	,	VOY_TP_CD
+	,	SLAN_CD
+	,	PORT_CHK_FLG
+	,	REV_PORT_CD
+	,	LOD_QTY
+    ,   TO_CHAR(LAST_DAY(TO_DATE(REV_YRMON,'YYYYMM')), 'YYYY-MM-DD') AS REV_YRMON
+	,	COM_VVD_FLG
+	,	VVD_COM_LVL
+	,   RLANE_CD
+	, 	DELT_FLG
+	,  	CRE_USR_ID
+	,  	UPD_USR_ID
+FROM AR_MST_REV_VVD
+WHERE DELT_FLG <> 'Y'
+AND (COM_VVD_FLG = 'Y' OR RLANE_CD = 'CMDCO')
+#if (${month_flag} == 'pre')
+AND REV_YRMON = TO_CHAR(ADD_MONTHS(TO_DATE(@[tar_yrmon],'YYYYMM'), -1), 'YYYYMM')
+#else
+AND REV_YRMON = @[tar_yrmon]
+#end			]]></sql>
+			<params>
+				<param name="tar_yrmon" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

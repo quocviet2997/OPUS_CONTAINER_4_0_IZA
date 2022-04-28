@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOUdtApInvHdr2USQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+UPDATE AP_INV_HDR
+   SET INV_DESC = ( SELECT '투자비 보전 관련 항비 대체 ( ' + TO_CHAR(@[max_iss_dt],'YYYY.MM') +' )' 
+					  FROM DUAL )
+ WHERE CSR_NO = @[csr_no]			]]></sql>
+			<params>
+				<param name="max_iss_dt" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

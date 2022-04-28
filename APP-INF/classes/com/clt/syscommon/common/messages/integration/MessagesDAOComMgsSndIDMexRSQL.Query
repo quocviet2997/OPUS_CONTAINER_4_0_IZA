@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MessagesDAOComMgsSndIDMexRSQL">
+			<desc><![CDATA[mgs_id mex 값을 가져온다]]></desc>
+			<sql><![CDATA[
+SELECT COM_MSG_SEQ.NEXTVAL FROM DUAL			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

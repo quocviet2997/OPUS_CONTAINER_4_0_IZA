@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAORemoveGlEstimateRevenueVvdsDSQL">
+			<desc><![CDATA[RemoveGlEstimateRevenueVvds]]></desc>
+			<sql><![CDATA[
+DELETE 
+FROM GL_ESTM_REV_VVD
+WHERE 1 = 1
+AND EXE_YRMON = @[h_exe_yrmon]
+AND REV_YRMON = @[h_rev_yrmon]
+AND VSL_CD = @[h_vsl_cd]
+AND SKD_VOY_NO = @[h_skd_voy_no]
+AND SKD_DIR_CD = @[h_skd_dir_cd]
+AND REV_DIR_CD = @[h_rev_dir_cd]
+AND ESTM_VVD_TP_CD = @[h_estm_vvd_tp_cd]
+AND ESTM_IOC_DIV_CD = @[h_estm_ioc_div_cd]			]]></sql>
+			<params>
+				<param name="h_exe_yrmon" type="12" value="" out="N"/>
+				<param name="h_rev_yrmon" type="12" value="" out="N"/>
+				<param name="h_vsl_cd" type="12" value="" out="N"/>
+				<param name="h_skd_voy_no" type="12" value="" out="N"/>
+				<param name="h_skd_dir_cd" type="12" value="" out="N"/>
+				<param name="h_rev_dir_cd" type="12" value="" out="N"/>
+				<param name="h_estm_vvd_tp_cd" type="12" value="" out="N"/>
+				<param name="h_estm_ioc_div_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

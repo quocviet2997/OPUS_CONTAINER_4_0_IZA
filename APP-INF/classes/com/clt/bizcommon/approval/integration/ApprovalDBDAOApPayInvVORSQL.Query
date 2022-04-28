@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApPayInvVORSQL">
+			<desc><![CDATA[AP_PAY_INV의 목록을 조회합니다]]></desc>
+			<sql><![CDATA[
+SELECT INV_RGST_NO
+     , INV_NO
+     , VNDR_SEQ
+     , INV_OFC_CD
+     , INV_CURR_CD
+     , CRE_USR_ID  
+     , 'P' INV_STS_CD 	
+     , '' RETVAL
+     , '' CLZ_STS_CD
+     , '' GL_DT
+     , '' NEW_GL_DT
+  FROM AP_PAY_INV
+ WHERE CSR_NO = @[csr_no] 
+   AND NVL(DELT_FLG,'N') <> 'Y'			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

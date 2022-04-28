@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+	<!-- SEO CHANG YUL : 2009-04-30 start -->
+    <url-mapping url="VOP_VSK_0241.do" screen="VOP_VSK_0241.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0241HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0241GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0241HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VopVsk0241Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- SEO CHANG YUL : 2009-04-30 end -->
+
+	<!-- SEO CHANG YUL : 2009-05-04 start -->
+    <url-mapping url="VOP_VSK_0018.do" screen="VOP_VSK_0018.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0018Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- SEO CHANG YUL : 2009-05-04 end -->
+	
+	<!-- Ryu Hyuk : 2009-05-12 start -->
+	<url-mapping url="VOP_VSK_0221.do" screen="VOP_VSK_0221.screen" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VOP_VSK_0221HTMLAction</web-action-class>
+	</url-mapping>
+		
+	<url-mapping url="VOP_VSK_0221GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VOP_VSK_0221HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VopVsk0221Event</event-class>
+		<service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Ryu Hyuk : 2009-05-12 end -->
+	
+	<!-- Ryu Hyuk : 2009-05-14 start -->
+	<url-mapping url="VOP_VSK_0043.do" screen="VOP_VSK_0043.screen" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+	</url-mapping>
+		
+	<url-mapping url="VOP_VSK_0043GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VskGloEvent</event-class>
+		<service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Ryu Hyuk : 2009-05-14 end -->
+	
+	<!-- Ryu Hyuk : 2009-05-18 start -->
+	<url-mapping url="VOP_VSK_0219.do" screen="VOP_VSK_0219.screen" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+	</url-mapping>
+		
+	<url-mapping url="VOP_VSK_0219GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VskGloEvent</event-class>
+		<service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Ryu Hyuk : 2009-05-18 end -->
+	
+	<!-- Ryu Hyuk : 2009-05-19 start -->
+	<url-mapping url="VOP_VSK_0044.do" screen="VOP_VSK_0044.screen" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VOP_VSK_0044HTMLAction</web-action-class>
+	</url-mapping>
+		
+	<url-mapping url="VOP_VSK_0044GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VOP_VSK_0044HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VopVsk0044Event</event-class>
+		<service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Ryu Hyuk : 2009-05-19 end -->
+	
+	<!-- Ryu Hyuk : 2009-05-21 start -->
+    <url-mapping url="VOP_VSK_0202.do" screen="VOP_VSK_0202.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0202GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VskGloEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-05-21 end -->
+	
+	<!-- Ryu Hyuk : 2009-05-21 start -->
+    <url-mapping url="VSK_COM.do" screen="VSK_COM.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VSK_COMGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VskComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+    </event-mapping>
+
+	<!--  -->
+	<url-mapping url="VOP_VSK_VOSIGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VOP_VSK_VOSI_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VopVskVosiEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+    </event-mapping>
+
+	<!-- Ryu Hyuk : 2009-05-21 end -->
+	
+	<!-- Ryu Hyuk : 2009-05-25 start -->
+	<url-mapping url="VOP_VSK_0010.do" screen="VOP_VSK_0010.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0010HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_VSK_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0010HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_VSK_0010_1.do" screen="VOP_VSK_0010.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0010HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_VSK_0010_1GS.do" screen="com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.LongRangeViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0010HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_VSK_0010_2GS.do" screen="com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.LongRangeMultipleViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0010HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_VSK_0010_3GS.do" screen="com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.LongRangeMultipleView2Adapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0010HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+    <!-- Ryu Hyuk : 2009-05-25 end -->
+	
+	<!-- SEO CHANG YUL : 2009-05-25 start -->
+	<url-mapping url="VOP_VSK_0212.do" screen="VOP_VSK_0212.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="VOP_VSK_0212_POP.do" screen="VOP_VSK_0212_POP.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0212GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VskGloEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+    </event-mapping>
+    <!-- SEO CHANG YUL : 2009-05-25 end -->
+    
+	<!-- Ryu Hyuk : 2009-05-27 start -->
+    <url-mapping url="VOP_VSK_0210.do" screen="VOP_VSK_0210.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0210GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VskGloEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-05-27 end -->
+	
+	<!-- ===================================== Jung Jinwoo START ===================================== -->
+	
+	<!-- Jung Jinwoo : 2009-05-21 start -->
+	<url-mapping url="VOP_VSK_0220.do" screen="VOP_VSK_0220.screen" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0220HTMLAction</web-action-class>
+	</url-mapping>
+		
+	<url-mapping url="VOP_VSK_0220GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0220HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VopVsk0220Event</event-class>
+		<service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+	</event-mapping>
+	<!-- Jung Jinwoo : 2009-05-21 end -->
+	
+	<!-- Jung Jinwoo : 2009-05-21 start -->
+	<url-mapping url="VOP_VSK_0230.do" screen="VOP_VSK_0230.screen" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+	</url-mapping>
+		
+	<url-mapping url="VOP_VSK_0230GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VskGloEvent</event-class>
+		<service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Jung Jinwoo : 2009-05-21 end -->
+	
+	<!-- Jung Jinwoo : 2009-05-26 start -->
+	<url-mapping url="VOP_VSK_0245.do" screen="VOP_VSK_0245.screen" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0245HTMLAction</web-action-class>
+	</url-mapping>
+		
+	<url-mapping url="VOP_VSK_0245GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0245HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0245Event</event-class>
+		<service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+	</event-mapping>
+	<!-- Jung Jinwoo : 2009-05-26 end -->
+	
+	<!-- Jung Jinwoo : 2009-05-28 start -->
+	<url-mapping url="VOP_VSK_0019.do" screen="VOP_VSK_0019.screen" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0019HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="VOP_VSK_0019_POP.do" screen="VOP_VSK_0019_POP.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0019HTMLAction</web-action-class>
+    </url-mapping>
+		
+	<url-mapping url="VOP_VSK_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0019HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0019Event</event-class>
+		<service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+	</event-mapping>
+	<!-- Jung Jinwoo : 2009-05-28 end -->
+	
+	<!-- Jung Jinwoo : 2009-06-01 start -->
+	<url-mapping url="VOP_VSK_0014.do" screen="VOP_VSK_0014.screen" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0014HTMLAction</web-action-class>
+	</url-mapping>
+		
+	<url-mapping url="VOP_VSK_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0014HTMLAction</web-action-class>
+	</url-mapping>
+	
+	<event-mapping>
+		<event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0014Event</event-class>
+		<service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+	</event-mapping>
+	<!-- Jung Jinwoo : 2009-06-01 end -->
+	
+	<!-- Jung Jinwoo : 2009-06-11 start -->
+    <url-mapping url="VOP_VSK_0015.do" screen="VOP_VSK_0015.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0015Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jinwoo : 2009-06-11 end -->
+	
+	<!-- Jung Jinwoo : 2009-06-23 start -->
+    <url-mapping url="VOP_VSK_0020.do" screen="VOP_VSK_0020.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0020Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jinwoo : 2009-06-23 end -->
+	
+	<!-- Jung Jinwoo : 2009-06-25 start -->
+    <url-mapping url="VOP_VSK_0021.do" screen="VOP_VSK_0021.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0021Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jinwoo : 2009-06-25 end -->
+	
+	<!-- Jung Jinwoo : 2009-06-29 start -->
+    <url-mapping url="VOP_VSK_0065.do" screen="VOP_VSK_0065.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0065HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0065GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0065HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0065Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jinwoo : 2009-06-29 end -->
+	
+	<!-- Jung Jinwoo : 2009-07-01 start -->
+    <url-mapping url="VOP_VSK_0247.do" screen="VOP_VSK_0247.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0247HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0247GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0247HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0247Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jinwoo : 2009-07-01 end -->
+	
+	<!-- Jung Jinwoo : 2009-07-10 start -->
+    <url-mapping url="VOP_VSK_0025.do" screen="VOP_VSK_0025.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.actualschedulemgt.event.VOP_VSK_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.actualschedulemgt.event.VOP_VSK_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.actualschedulemgt.event.VopVsk0025Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ActualScheduleManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jinwoo : 2009-07-10 end -->
+	
+	<!-- Jung Jinwoo : 2009-07-28 start -->
+    <url-mapping url="VOP_VSK_0026.do" screen="VOP_VSK_0026.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.actualschedulemgt.event.VOP_VSK_0026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0026GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.actualschedulemgt.event.VOP_VSK_0026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.actualschedulemgt.event.VopVsk0026Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ActualScheduleManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jinwoo : 2009-07-28 end -->
+	
+	<!-- Jung Jinwoo : 2009-08-03 start -->
+    <url-mapping url="VOP_VSK_0027.do" screen="VOP_VSK_0027.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.actualschedulemgt.event.VOP_VSK_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.actualschedulemgt.event.VOP_VSK_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.actualschedulemgt.event.VopVsk0027Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ActualScheduleManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jinwoo : 2009-08-03 end -->
+	
+	<!-- Jung Jinwoo : 2009-08-19 start -->
+    <url-mapping url="VOP_VSK_0057.do" screen="VOP_VSK_0057.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0057HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0057GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0057HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0057Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jinwoo : 2009-08-19 end -->
+	
+	<!-- Jung Jinwoo : 2009-08-26 start -->
+    <url-mapping url="VOP_VSK_0058.do" screen="VOP_VSK_0058.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0058HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0058GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0058HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0058Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jinwoo : 2009-08-26 end -->
+	
+	<!-- Jung Jinwoo : 2009-08-26 start -->
+    <url-mapping url="VOP_VSK_0232.do" screen="VOP_VSK_0232.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VOP_VSK_0232HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0232GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VOP_VSK_0232HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VopVsk0232Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ActualScheduleManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jinwoo : 2009-08-26 end -->
+	
+	<!-- ===================================== Jung Jinwoo END ===================================== -->
+	
+	<!-- Ryu Hyuk : 2009-06-01 start -->
+    <url-mapping url="VOP_VSK_0211.do" screen="VOP_VSK_0211.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0211HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_VSK_0211_POP.do" screen="VOP_VSK_0211_POP.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0211HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0211GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0211HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0211Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-06-01 end -->
+	
+	<!-- Ryu Hyuk : 2009-06-02 start -->
+    <url-mapping url="VOP_VSK_0205.do" screen="VOP_VSK_0205.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0205GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+		<event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VskGloEvent</event-class>
+		<service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+	</event-mapping>
+	<!-- Ryu Hyuk : 2009-06-02 end -->
+	
+	<!-- Ryu Hyuk : 2009-06-04 start -->
+    <url-mapping url="VOP_VSK_0046.do" screen="VOP_VSK_0046.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VOP_VSK_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0046GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VOP_VSK_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VopVsk0046Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-06-04 end -->
+	
+	<!-- Ryu Hyuk : 2009-06-05 start -->
+    <url-mapping url="VOP_VSK_0215.do" screen="VOP_VSK_0215.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0215HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0215GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0215HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0215Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-06-05 end -->
+	
+	<!-- SEO CHANG YUL : 2009-05-27 start -->
+    <url-mapping url="VOP_VSK_0248.do" screen="VOP_VSK_0248.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0248HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0248GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0248HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VopVsk0248Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- SEO CHANG YUL : 2009-05-27 end -->
+
+
+	<!-- SEO CHANG YUL : 2009-06-04 start -->
+    <url-mapping url="VOP_VSK_0033.do" screen="VOP_VSK_0033.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesselschedulemasterdata.vesselschedulemasterdata.event.VOP_VSK_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesselschedulemasterdata.vesselschedulemasterdata.event.VOP_VSK_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesselschedulemasterdata.vesselschedulemasterdata.event.VopVsk0033Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesselschedulemasterdata.VesselScheduleMasterDataSC</service-action-class>
+    </event-mapping>
+	<!-- SEO CHANG YUL : 2009-06-04 end -->
+	
+	<!-- Ryu Hyuk : 2009-06-10 start -->
+    <url-mapping url="VOP_VSK_0218.do" screen="VOP_VSK_0218.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VskGloEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-06-10 end -->
+
+	<!-- Ryu Hyuk : 2009-06-15 start -->
+    <url-mapping url="VOP_VSK_0249.do" screen="VOP_VSK_0249.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0249HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0249GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0249HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+	    <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0249Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-06-15 end -->
+	
+	<!-- Ryu Hyuk : 2009-06-17 start -->
+    <url-mapping url="VOP_VSK_0250.do" screen="VOP_VSK_0250.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0250HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0250GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0250HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+	    <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0250Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-06-17 end -->
+	
+	<!-- Ryu Hyuk : 2009-06-19 start -->
+    <url-mapping url="VOP_VSK_0017.do" screen="VOP_VSK_0017.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+	    <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0017Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-06-19 end -->
+	
+	<url-mapping url="VSK_GLOGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- SEO CHANG YUL : 2009-06-22 start -->
+    <url-mapping url="VOP_VSK_0003.do" screen="VOP_VSK_0003.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VopVsk0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- SEO CHANG YUL : 2009-06-22 end -->
+	
+	<!-- SEO CHANG YUL : 2009-07-01 start -->
+    <url-mapping url="VOP_VSK_0053.do" screen="VOP_VSK_0053.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0053GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VopVsk0053Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- SEO CHANG YUL : 2009-07-01 end -->
+	<!-- SEO CHANG YUL : 2009-07-06 start -->
+    <url-mapping url="VOP_VSK_0004.do" screen="VOP_VSK_0004.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VopVsk0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- SEO CHANG YUL : 2009-07-06 end -->
+
+	<!-- SEO CHANG YUL : 2009-07-06 start -->
+    <url-mapping url="VOP_VSK_0201.do" screen="VOP_VSK_0201.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0201GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VSK_GLO_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VskGloEvent</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+    </event-mapping>
+	<!-- SEO CHANG YUL : 2009-07-06 end -->
+	
+	<!-- Ryu Hyuk : 2009-07-01 start -->
+    <url-mapping url="VOP_VSK_0012.do" screen="VOP_VSK_0012.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0012_POP.do" screen="VOP_VSK_0012_POP.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0012GS.do" screen="com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.LongRangeInqViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+	    <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-07-01 end -->
+	
+	<!-- Ryu Hyuk : 2009-07-01 start -->
+    <url-mapping url="VOP_VSK_0012_01.do" screen="VOP_VSK_0012_01.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0012HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+	    <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-07-01 end -->
+	
+	<!-- Ryu Hyuk : 2009-07-08 start -->
+    <url-mapping url="VOP_VSK_0054.do" screen="VOP_VSK_0054.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0054GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="VOP_VSK_0054_1GS.do" screen="com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.LongRangeViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0054HTMLAction</web-action-class>
+    </url-mapping>
+    
+
+    <event-mapping>
+	    <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0054Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-07-08 end -->
+	
+	<!-- Jeong Myounghun : 2009-07-13 start -->
+    <url-mapping url="VOP_VSK_0231.do" screen="VOP_VSK_0231.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VOP_VSK_0231HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0231GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VOP_VSK_0231HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VopVsk0231Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ActualScheduleManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jeong Myounghun : 2009-07-13 end -->	
+	
+	<!-- Jeong Myounghun : 2009-07-15 start -->
+    <url-mapping url="VOP_VSK_0064.do" screen="VOP_VSK_0064.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VOP_VSK_0064HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0064GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VOP_VSK_0064HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VopVsk0064Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Jeong Myounghun : 2009-07-15 end -->
+	
+	<!-- Ryu Hyuk : 2009-07-22 start -->
+	<url-mapping url="VOP_VSK_0229.do" screen="VOP_VSK_0229.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0229HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0229GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0229HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+	    <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0229Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-07-22 end -->	
+
+	<!-- Jeong Myounghun : 2009-07-23 start -->
+    <url-mapping url="VOP_VSK_0252.do" screen="VOP_VSK_0252.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VOP_VSK_0252HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0252GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VOP_VSK_0252HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vskcommon.vskcodefinder.event.VopVsk0252Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vskcommon.VSKCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Jeong Myounghun : 2009-07-23 end -->
+	
+	<!-- Ryu Hyuk : 2009-08-07 start -->
+    <url-mapping url="VOP_VSK_0059.do" screen="VOP_VSK_0059.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0059HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0059GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0059HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0059Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-08-07 end -->
+	
+	<!-- SEO CHANG YUL : 2009-08-05 start -->
+    <url-mapping url="VOP_VSK_0243.do" screen="VOP_VSK_0243.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0243HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0243GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0243HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VopVsk0243Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- SEO CHANG YUL : 2009-08-05 end -->
+	
+	
+	<!-- SEO CHANG YUL : 2009-08-10 start -->
+    <url-mapping url="VOP_VSK_0029.do" screen="VOP_VSK_0029.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VOP_VSK_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0029GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VOP_VSK_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VopVsk0029Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ActualScheduleManagementSC</service-action-class>
+    </event-mapping>
+	<!-- SEO CHANG YUL : 2009-08-10 end -->
+
+	<!-- SEO CHANG YUL : 2009-08-24 start -->
+    <url-mapping url="VOP_VSK_0240.do" screen="VOP_VSK_0240.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesselschedulemasterdata.vesselschedulemasterdata.event.VOP_VSK_0240HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0240GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesselschedulemasterdata.vesselschedulemasterdata.event.VOP_VSK_0240HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesselschedulemasterdata.vesselschedulemasterdata.event.VopVsk0240Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesselschedulemasterdata.VesselScheduleMasterDataSC</service-action-class>
+    </event-mapping>
+	<!-- SEO CHANG YUL : 2009-08-24 end -->
+	
+    <!-- Ryu Hyuk : 2009-09-03 start -->
+	<url-mapping url="VOP_VSK_0228.do" screen="VOP_VSK_0228.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesselschedulemasterdata.vesselschedulemasterdata.event.VOP_VSK_0228HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_VSK_0228GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesselschedulemasterdata.vesselschedulemasterdata.event.VOP_VSK_0228HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesselschedulemasterdata.vesselschedulemasterdata.event.VopVsk0228Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesselschedulemasterdata.VesselScheduleMasterDataSC</service-action-class>
+    </event-mapping>
+    <!-- Ryu Hyuk : 2009-09-03 end -->
+    
+    <!-- Ryu Hyuk : 2009-09-04 start -->
+	<url-mapping url="VOP_VSK_0032.do" screen="VOP_VSK_0032.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VOP_VSK_0032HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_VSK_0032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VOP_VSK_0032HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VopVsk0032Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ActualScheduleManagementSC</service-action-class>
+    </event-mapping>
+    <!-- Ryu Hyuk : 2009-09-04 end -->
+    
+    <!-- Ryu Hyuk : 2009-09-09 start -->
+	<url-mapping url="VOP_VSK_0024.do" screen="VOP_VSK_0024.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0024HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_VSK_0024GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0024HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0024Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+    <!-- Ryu Hyuk : 2009-09-09 end -->
+    
+    <!-- Ryu Hyuk : 2009-09-09 start -->
+	<url-mapping url="VOP_VSK_0246.do" screen="VOP_VSK_0246.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0246HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="VOP_VSK_0246GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_0246HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk0246Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+    <!-- Ryu Hyuk : 2009-09-09 end -->
+    
+    <!-- Ryu Hyuk : 2009-10-08 start -->
+    <url-mapping url="VOP_VSK_0028.do" screen="VOP_VSK_0028.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VOP_VSK_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VOP_VSK_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ontimeresultanalysis.event.VopVsk0028Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.actualschedulemanagement.ActualScheduleManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Ryu Hyuk : 2009-10-08 end -->
+
+	<!-- Start -->
+	<!-- Kim Jong Ock : 2009-06-22 start -->
+    <url-mapping url="VOP_VSK_0503.do" screen="VOP_VSK_0503.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.vesselinformationmgt.event.VOP_VSK_0503HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0503GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.vesselinformationmgt.event.VOP_VSK_0503HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.vesselinformationmgt.event.VopVsk0503Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.VesselOperationSupportMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-06-22 end -->
+	
+	<!-- Kim Jong Ock : 2009-05-26 start -->
+    <url-mapping url="VOP_VSK_0504.do" screen="VOP_VSK_0504.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.portinformationmgt.event.VOP_VSK_0504HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0504GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.portinformationmgt.event.VOP_VSK_0504HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.portinformationmgt.event.VopVsk0504Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.VesselOperationSupportMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-05-26 end -->
+
+	<!-- Kim Jong Ock : 2009-06-18 start -->
+    <url-mapping url="VOP_VSK_0506.do" screen="VOP_VSK_0506.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.portinformationmgt.event.VOP_VSK_0506HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0506GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.portinformationmgt.event.VOP_VSK_0506HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.portinformationmgt.event.VopVsk0506Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.VesselOperationSupportMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-06-18 end -->
+
+	<!-- Jang Suk Hyun : 2009-05-25 start -->
+    <url-mapping url="VOP_VSK_0507.do" screen="VOP_VSK_0507.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.terminalinformationmgt.event.VOP_VSK_0507HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0507GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.terminalinformationmgt.event.VOP_VSK_0507HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.terminalinformationmgt.event.VopVsk0507Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.VesselOperationSupportMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Suk Hyun : 2009-05-25 end -->
+	<!-- Jang Suk Hyun : 2009-06-01 start -->
+    <url-mapping url="VOP_VSK_0703.do" screen="VOP_VSK_0703.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.terminalinformationmgt.event.VOP_VSK_0703HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0703GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.terminalinformationmgt.event.VOP_VSK_0703HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.terminalinformationmgt.event.VopVsk0703Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.VesselOperationSupportMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Suk Hyun : 2009-06-01 end -->
+	<!-- Jang Suk Hyun : 2009-06-12 start -->
+    <url-mapping url="VOP_VSK_0509.do" screen="VOP_VSK_0509.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.terminalinformationmgt.event.VOP_VSK_0509HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0509GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.terminalinformationmgt.event.VOP_VSK_0509HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.terminalinformationmgt.event.VopVsk0509Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.VesselOperationSupportMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Sunyoung : 2009-06-02 end -->
+
+	<!-- Dohyoung Lee : 2009-08-19 start -->
+    <url-mapping url="VOP_VSK_0509Pop.do" screen="VOP_VSK_0509Pop.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.terminalinformationmgt.event.VOP_VSK_0509HTMLAction</web-action-class>
+    </url-mapping>
+	<!-- Dohyoung Lee : 2009-08-19 end -->
+
+	<!-- Jang Suk Hyun : 2009-06-16 start -->
+    <url-mapping url="VOP_VSK_0510.do" screen="VOP_VSK_0510.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.laneinformationmgt.event.VOP_VSK_0510HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0510GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.laneinformationmgt.event.VOP_VSK_0510HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.laneinformationmgt.event.VopVsk0510Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.VesselOperationSupportMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Suk Hyun : 2009-06-16 end -->
+	<!-- Jang Suk Hyun : 2009-06-16 Start -->
+    <url-mapping url="VOP_VSK_0702.do" screen="VOP_VSK_0702.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.laneinformationmgt.event.VOP_VSK_0702HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0702GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.laneinformationmgt.event.VOP_VSK_0702HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.laneinformationmgt.event.VopVsk0702Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.VesselOperationSupportMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Suk Hyun : 2009-06-16 End -->
+	<!-- Jang Suk Hyun : 2009-06-16 start -->
+    <url-mapping url="VOP_VSK_0512.do" screen="VOP_VSK_0512.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.laneinformationmgt.event.VOP_VSK_0512HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0512GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.laneinformationmgt.event.VOP_VSK_0512HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.laneinformationmgt.event.VopVsk0512Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.VesselOperationSupportMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Suk Hyun : 2009-06-16 end -->
+
+	<!-- Kim Jong Ock : 2009-07-06 start -->
+    <url-mapping url="VOP_VSK_0513.do" screen="VOP_VSK_0513.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.shatideinformationmgt.event.VOP_VSK_0513HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0513GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.shatideinformationmgt.event.VOP_VSK_0513HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.shatideinformationmgt.event.VopVsk0513Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.VesselOperationSupportMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-07-06 end -->
+
+	<!-- Kim Jong Ock : 2009-07-06 start -->
+    <url-mapping url="VOP_VSK_0514.do" screen="VOP_VSK_0514.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.shatideinformationmgt.event.VOP_VSK_0514HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0514GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.shatideinformationmgt.event.VOP_VSK_0514HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.shatideinformationmgt.event.VopVsk0514Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.VesselOperationSupportMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-07-06 end -->
+
+	<!-- Kim Jong Ock : 2009-07-10 start -->
+    <url-mapping url="VOP_VSK_0517.do" screen="VOP_VSK_0517.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.vesseloperationsupportmonitoring.event.VOP_VSK_0517HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0517GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.vesseloperationsupportmonitoring.event.VOP_VSK_0517HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.vesseloperationsupportmonitoring.event.VopVsk0517Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.VesselOperationSupportMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Jong Ock : 2009-07-10 end -->
+
+	<!-- Lee Hye Min : 2012-04-04 start -->
+    <url-mapping url="VOP_VSK_0518.do" screen="VOP_VSK_0518.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.vesselinformationmgt.event.VOP_VSK_0518HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0518GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.vesselinformationmgt.event.VOP_VSK_0518HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.vesselinformationmgt.event.VopVsk0518Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.VesselOperationSupportMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Hye Min : 2012-04-04 end -->
+
+	<!-- Lee Hye Min : 2012-04-12 start -->
+    <url-mapping url="VOP_VSK_0704.do" screen="VOP_VSK_0704.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.portinformationmgt.event.VOP_VSK_0704HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0704GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.portinformationmgt.event.VOP_VSK_0704HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.portinformationmgt.event.VopVsk0704Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.vesseloperationsupportmgt.VesselOperationSupportMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Hye Min : 2012-04-12 end -->
+	
+	<!-- Tae jin Hwang : 2013-09-24 start -->
+    <url-mapping url="VOP_VSK_0001.do" screen="VOP_VSK_0001.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VopVsk0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Tae jin Hwang : 2013-09-24 end -->
+	
+	<!-- Tae jin Hwang : 2013-09-24 start -->
+    <url-mapping url="VOP_VSK_0101.do" screen="VOP_VSK_0101.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VOP_VSK_0101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VOP_VSK_0101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VopVsk0101Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.budget.BudgetSchedulePlanningSC</service-action-class>
+    </event-mapping>
+	<!-- Tae jin Hwang : 2013-09-24 end -->
+
+	<!-- Tae jin Hwang : 2013-09-24 start -->
+    <url-mapping url="VOP_VSK_0102.do" screen="VOP_VSK_0102.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VOP_VSK_0102HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0102GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VOP_VSK_0102HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VopVsk0102Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.budget.BudgetSchedulePlanningSC</service-action-class>
+    </event-mapping>
+	<!-- Tae jin Hwang : 2013-09-24 end -->
+
+	<!-- Tae jin Hwang : 2013-09-24 start -->
+    <url-mapping url="VOP_VSK_0103.do" screen="VOP_VSK_0103.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0103GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0103_1.do" screen="VOP_VSK_0103.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0103_1GS.do" screen="com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.LongRangeViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VopVsk0103Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.budget.BudgetSchedulePlanningSC</service-action-class>
+    </event-mapping>
+	<!-- Tae jin Hwang : 2013-09-24 end -->
+
+	<!-- Tae jin Hwang : 2013-09-24 start -->
+    <url-mapping url="VOP_VSK_0104.do" screen="VOP_VSK_0104.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0104GS.do" screen="com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.LongRangeInqViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VopVsk0104Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.budget.BudgetSchedulePlanningSC</service-action-class>
+    </event-mapping>
+	<!-- Tae jin Hwang : 2013-09-24 end -->
+
+	<!-- Tae jin Hwang : 2013-09-24 start -->
+    <url-mapping url="VOP_VSK_0104_01.do" screen="VOP_VSK_0104_01.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+	    <event-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VopVsk0104Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.budget.BudgetSchedulePlanningSC</service-action-class>
+    </event-mapping>
+	<!-- Tae jin Hwang : 2013-09-24 end -->
+
+	<!-- Tae jin Hwang : 2013-09-24 start -->
+    <url-mapping url="VOP_VSK_0105.do" screen="VOP_VSK_0105.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VopVsk0105Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.budget.BudgetSchedulePlanningSC</service-action-class>
+    </event-mapping>
+	<!-- Tae jin Hwang : 2013-09-24 end -->
+
+	<!-- Tae jin Hwang : 2013-09-24 start -->
+    <url-mapping url="VOP_VSK_0106.do" screen="VOP_VSK_0106.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0106HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0106GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0106HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VopVsk0106Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.budget.BudgetSchedulePlanningSC</service-action-class>
+    </event-mapping>
+	<!-- Tae jin Hwang : 2013-09-24 end -->
+
+	<!-- Tae jin Hwang : 2013-09-24 start -->
+    <url-mapping url="VOP_VSK_0107.do" screen="VOP_VSK_0107.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0107GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VopVsk0107Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.budget.BudgetSchedulePlanningSC</service-action-class>
+    </event-mapping>
+	<!-- Tae jin Hwang : 2013-09-24 end -->
+	
+	<!-- Tae jin Hwang : 2013-09-25 start -->
+    <url-mapping url="VOP_VSK_0108.do" screen="VOP_VSK_0108.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VOP_VSK_0108HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0108_POP.do" screen="VOP_VSK_0108_POP.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VOP_VSK_0108HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0108GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VOP_VSK_0108HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VopVsk0108Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.budget.BudgetSchedulePlanningSC</service-action-class>
+    </event-mapping>
+	<!-- Tae jin Hwang : 2013-09-25 end -->
+	
+	<!--Tae jin Hwang : 2013-09-25 start -->
+	<url-mapping url="VOP_VSK_0109.do" screen="VOP_VSK_0109.screen" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VOP_VSK_0109HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="VOP_VSK_0109GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VOP_VSK_0109HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VopVsk0109Event</event-class>
+		<service-action-class>com.clt.apps.opus.vop.vsk.budget.BudgetSchedulePlanningSC</service-action-class>
+	</event-mapping>
+	<!--Tae jin Hwang : 2013-09-25 end -->
+
+	<!--Tae jin Hwang : 2013-09-25 start -->
+	<url-mapping url="VOP_VSK_0110.do" screen="VOP_VSK_0110.screen" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VOP_VSK_0110HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="VOP_VSK_0110GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VOP_VSK_0110HTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VopVsk0110Event</event-class>
+		<service-action-class>com.clt.apps.opus.vop.vsk.budget.BudgetSchedulePlanningSC</service-action-class>
+	</event-mapping>
+	<!--Tae jin Hwang : 2013-09-25 end -->
+
+	<!-- Tae jin Hwang : 2013-09-25 start -->
+	<url-mapping url="VOP_VSK_0111.do" screen="VOP_VSK_0111.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VOP_VSK_0111HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0111GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VOP_VSK_0111HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.budget.proformaschedulemgt.event.VopVsk0111Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.budget.BudgetSchedulePlanningSC</service-action-class>
+    </event-mapping>
+    <!-- Tae jin Hwang : 2013-09-25 end -->
+
+	<!-- Tae jin Hwang : 2013-09-25 start -->
+	<url-mapping url="VOP_VSK_0112.do" screen="VOP_VSK_0112.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0112HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0112GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VOP_VSK_0112HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.budget.vesselschedulemgt.event.VopVsk0112Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.budget.BudgetSchedulePlanningSC</service-action-class>
+    </event-mapping>
+    <!-- Tae jin Hwang : 2013-09-25 end -->
+
+    <!-- Tae jin Hwang : 2013-10-01 start -->
+    <url-mapping url="VOP_VSK_0238.do" screen="VOP_VSK_0238.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0238HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_0238GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VOP_VSK_0238HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.proformaschedulemgt.event.VopVsk0238Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+	<!-- Tae jin Hwang : 2013-10-01 end -->
+	
+	<!-- dongsoo : 2014-09-25 start -->
+    <url-mapping url="VOP_VSK_5001.do" screen="VOP_VSK_5001.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleutilitymanagement.consortiumvoyagemgt.event.VOP_VSK_5001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_5001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleutilitymanagement.consortiumvoyagemgt.event.VOP_VSK_5001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleutilitymanagement.consortiumvoyagemgt.event.VopVsk5001Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleutilitymanagement.ScheduleUtilityManagementSC</service-action-class>
+    </event-mapping>
+	<!-- dongsoo : 2014-09-25 end -->
+
+
+	<!-- hs ham : 2015-11-24 start -->
+    <url-mapping url="VOP_VSK_9016.do" screen="VOP_VSK_9016.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_9016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_9016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_9016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk9016Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="VOP_VSK_9017.do" screen="VOP_VSK_9017.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_9017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_9017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VOP_VSK_9017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.vesselschedulemgt.event.VopVsk9017Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.scheduleplanningoperation.SchedulePlanningOperationSC</service-action-class>
+    </event-mapping>    
+	<!-- hs ham : 2015-11-24 end -->
+	
+	<!-- Eunju Son : 2017-12-14 start -->
+    <url-mapping url="VOP_VSK_6001.do" screen="VOP_VSK_6001.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.schedulemonitoringmanagement.event.VOP_VSK_6001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_6001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.schedulemonitoringmanagement.event.VOP_VSK_6001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.schedulemonitoringmanagement.event.VopVsk6001Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.schedulemonitoringmanagement.ScheduleMonitoringManagementSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="VOP_VSK_6903.do" screen="VOP_VSK_6903.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.schedulemonitoringmanagement.event.VOP_VSK_6903HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_6903GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.schedulemonitoringmanagement.event.VOP_VSK_6903HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.schedulemonitoringmanagement.event.VopVsk6903Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.schedulemonitoringmanagement.ScheduleMonitoringManagementSC</service-action-class>
+    </event-mapping>   
+    
+    <url-mapping url="VOP_VSK_6901.do" screen="VOP_VSK_6901.screen" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.schedulemonitoringmanagement.event.VOP_VSK_6901HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="VOP_VSK_6901GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.vop.vsk.schedulemonitoringmanagement.event.VOP_VSK_6901HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.vop.vsk.schedulemonitoringmanagement.event.VopVsk6901Event</event-class>
+        <service-action-class>com.clt.apps.opus.vop.vsk.schedulemonitoringmanagement.ScheduleMonitoringManagementSC</service-action-class>
+    </event-mapping>     
+	<!-- Eunju Son : 2017-12-14 end -->
+		
+
+</mappings>

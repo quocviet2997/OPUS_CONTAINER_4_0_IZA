@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="VendorCodeDBDAOSearchVendorCodeRSQL">
+			<desc><![CDATA[VENDOR Code POPUP (COM_COM_0007) - 조건에 따른 Vendor 목록 조회]]></desc>
+			<sql><![CDATA[
+SELECT 
+  CODE,
+  NAME,
+  COUNTRY,
+  LOCATION,
+  OFFICE,
+  STATUS,
+  SCAC
+  FROM (
+
+SELECT ROW_NUMBER() OVER (ORDER BY VNDR_SEQ ASC) AS NO,
+  VNDR_SEQ CODE,
+  VNDR_LGL_ENG_NM NAME,
+  VNDR_CNT_CD COUNTRY,
+  LOC_CD LOCATION,
+  OFC_CD OFFICE,
+  DECODE(DELT_FLG,'Y','Delete','Active') AS STATUS,
+  USA_EDI_CD SCAC
+FROM MDM_VENDOR
+WHERE 1=1
+#if(${code} != '')
+AND VNDR_SEQ LIKE '%' || @[code] || '%'
+#end
+#if(${name} != '')
+  AND UPPER(VNDR_LGL_ENG_NM) LIKE '%' || UPPER(@[name]) || '%' 
+#end
+#if(${country} != '')
+  AND VNDR_CNT_CD LIKE '%' || @[country] || '%'
+#end
+#if(${location} != '')
+  AND LOC_CD LIKE '%' || @[location] || '%'
+#end
+#if(${office} != '')
+  AND OFC_CD LIKE '%' || @[office] || '%'
+#end
+#if(${scac} != '')
+  AND USA_EDI_CD LIKE '%' || @[scac] || '%'
+#end
+#if (${status} != 'ALL')
+	#if (${status} == 'Y')
+  AND DELT_FLG = @[status]
+	#else
+  AND DELT_FLG = 'N'
+	#end
+#else
+#end
+--ORDER BY VNDR_SEQ
+
+       )
+WHERE NO BETWEEN @[startpart] AND @[endpart]			]]></sql>
+			<params>
+				<param name="code" type="12" value="" out="N"/>
+				<param name="name" type="12" value="" out="N"/>
+				<param name="country" type="12" value="" out="N"/>
+				<param name="location" type="12" value="" out="N"/>
+				<param name="office" type="12" value="" out="N"/>
+				<param name="scac" type="12" value="" out="N"/>
+				<param name="status" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

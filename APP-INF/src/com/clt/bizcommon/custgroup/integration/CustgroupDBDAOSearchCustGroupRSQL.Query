@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CustgroupDBDAOSearchCustGroupRSQL">
+			<desc><![CDATA[조회]]></desc>
+			<sql><![CDATA[
+SELECT *
+FROM ( 
+SELECT  
+    ROWNUM NO, 
+    CUST_GRP_ID
+   ,CUST_GRP_NM
+   ,CUST_GRP_ABBR_NM
+   ,OFC_CD
+   ,DECODE( DELT_FLG, 'N', 'Active', 'Y', 'Delete', '' ) DELT_FLG
+FROM MDM_CUST_PERF_GRP
+WHERE 1=1
+#if (${mdm_yn} == '')
+AND DELT_FLG <> 'Y'
+#end
+#if (${cust_grp_id} != '')
+AND UPPER(CUST_GRP_ID) like UPPER(@[cust_grp_id])||'%'
+#end    
+#if (${cust_grp_nm} != '')
+AND UPPER(CUST_GRP_NM) like '%'||UPPER(@[cust_grp_nm])||'%'
+#end
+#if (${delt_flg} != '' && ${delt_flg} != 'ALL')
+and DELT_FLG  = @[delt_flg]
+#end
+#if (${cust_grp_abbr_nm} != '')
+and UPPER(CUST_GRP_ABBR_NM) like '%'||UPPER(@[cust_grp_abbr_nm])||'%'
+#end
+ORDER BY CUST_GRP_ID
+
+)
+WHERE NO BETWEEN @[startpart] AND @[endpart]			]]></sql>
+			<params>
+				<param name="cust_grp_id" type="12" value="" out="N"/>
+				<param name="cust_grp_nm" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="cust_grp_abbr_nm" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

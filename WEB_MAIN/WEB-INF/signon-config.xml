@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<signon-config>
+
+	<!-- 인증처리 페이지-->
+	<signon-form-login-page>
+		SignOn.do
+ </signon-form-login-page>
+
+	<!-- 인증 실패 -->
+	<signon-form-error-page>
+		SignOn.do
+ </signon-form-error-page>
+
+	<!-- 첫번째 로그인시 인증 실패 -->
+	<signon-form-message-page>
+		SignOn.do
+ </signon-form-message-page>
+
+
+	<!-- Admin 페이지 -->
+	<admin-main-page>
+		syscommMgtMain.do
+ </admin-main-page>
+
+	<!-- 사용중 세션이 존재하지 않을시 인증 후 처음 메인 페이지, 상단에 top 페이지가 없음 -->
+	<signon-form-main-page>
+		MainPage.do
+ </signon-form-main-page>
+
+	<!-- 권한 없음 페이지 -->
+	<signon-form-no-authority-page>
+		NoAuthority.screen
+	</signon-form-no-authority-page>
+
+	<!-- SSO 자동 로그인 실패 페이지 -->
+	<auto-signon-form-error-page>
+		SSONoAuthority.html
+	</auto-signon-form-error-page>
+
+	<!-- 첫 로그인후 보내지는 URL 자원 -->
+	<main-page-redirect-constraint
+		target-url="MainPage.do">
+		<url-resource url-name="login.jsp" />
+		<url-resource url-name="SignOff.do" />
+		<url-resource url-name="SignOn.screen" />
+		<url-resource url-name="j_signon_check.do" />
+		<url-resource url-name="j_signon_check_sso.do" />
+	</main-page-redirect-constraint>
+
+	<!-- 로그인은 되어있는 상태의 비보호 자원 -->
+	<non-security-constraint>
+		<url-resource url-name="login" />
+		<url-resource url-name="SignOnError" />
+		<url-resource url-name="NoAuthority" />
+		<url-resource url-name="SignOff" />
+		<url-resource url-name="SignOn" />
+		<url-resource url-name="MainPage" />
+		<url-resource url-name="NotService" />
+		<url-resource url-name="NotFound" />
+		<url-resource url-name="NoSession" />
+		<url-resource url-name="BOOKMARK" />
+		<url-resource url-name="MessageCheck" />
+		<url-resource url-name="UserManagementOfcCngPop" />
+		
+		<url-resource url-name="PasswordChange" />
+	</non-security-constraint>
+
+	<!-- 로그인이 필요없는 자원 -->
+	<non-login-constraint>
+		<url-resource url-name="FileDownload" />
+		<url-resource url-name="SignOff" />
+		<url-resource url-name="SignOffSSO" />
+		<url-resource url-name="SignOn" />
+		<url-resource url-name="SignOnLocal" />
+		<url-resource url-name="alpsSignOn" />
+		<url-resource url-name="alpsSignOnSSO" />
+		<url-resource url-name="NotFound" />		
+		<url-resource url-name="EES_CTM_0451_RD" />
+		<url-resource url-name="EES_DMT_3007_RD" />
+		<url-resource url-name="EES_DMT_4003_RD" />
+		<url-resource url-name="ESD_TRS_0451_RD" />
+        <url-resource url-name="CPS_CNI_0006_01" />
+        <url-resource url-name="CPS_CNI_0084" />
+        <url-resource url-name="CPS_CNI_0085" />
+        <url-resource url-name="CPS_CNI_0091" />
+        <url-resource url-name="CPS_CNI_0061" />
+        <url-resource url-name="CPS_CNI_0089" />
+        <url-resource url-name="CPS_CNI_0088" />
+        <url-resource url-name="CPS_CNI_0086" />
+        <url-resource url-name="CPS_CNI_0087" />
+        <url-resource url-name="CPS_CNI_0094" />
+        <url-resource url-name="CPS_CNI_0093" />
+        <url-resource url-name="CPS_CNI_0063" />
+        <url-resource url-name="CPS_CNI_0076" />
+        <url-resource url-name="CPS_CNI_0077" />
+        <url-resource url-name="CPS_CNI_0078" />
+        <url-resource url-name="CPS_CNI_0079" />
+        <url-resource url-name="CPS_CNI_0080" />
+        <url-resource url-name="CPS_CNI_0081" />
+        <url-resource url-name="CPS_CNI_0082" />
+        <url-resource url-name="CPS_CNI_0083" />
+        <url-resource url-name="ESM_BKG_0772_1" />
+        <url-resource url-name="ESM_BKG_0775_1" />
+        <url-resource url-name="ESM_BKG_0814_1" />
+		
+		<url-resource url-name="FileView" />
+		<url-resource url-name="FileOpen" />
+		
+		<url-resource url-name="PasswordChange" />
+		
+	</non-login-constraint>
+
+	<!-- SSO 로그인등 PWD를 비교하지 않고 자동 로그인을 진행하는 자원 -->
+	<auto-login-constraint>
+		<url-resource url-name="SSOMainPage" />
+		<url-resource url-name="SSOFirstMainPage" />
+		<url-resource url-name="SSOSurveyUserPage" />
+		<url-resource url-name="SSOSurveyInfoPage" />
+	</auto-login-constraint>
+
+</signon-config>

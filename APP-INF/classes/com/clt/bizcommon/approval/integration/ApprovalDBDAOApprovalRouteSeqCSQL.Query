@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalRouteSeqCSQL">
+			<desc><![CDATA[Aproval Route Sequence 를 생성합니다]]></desc>
+			<sql><![CDATA[
+SELECT nvl(max(apro_rout_seq),0) + 1 newseq FROM COM_APRO_ROUT_DFLT			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

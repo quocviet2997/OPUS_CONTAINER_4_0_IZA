@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalHeaderCSQL">
+			<desc><![CDATA[Approval Header 정보를 생성합니다]]></desc>
+			<sql><![CDATA[
+INSERT INTO COM_APRO_RQST_HDR ( 	
+  APRO_RQST_NO                 	
+, SUB_SYS_CD              		
+, APRO_KND_CD              		
+, APSTS_CD                 
+, CRNT_APRO_SEQ             		
+, RQST_USR_ID             		
+, RQST_USR_NM             		
+, RQST_OFC_CD             		
+, RQST_OFC_NM             		
+, RQST_USR_JB_TIT_NM             		
+, RQST_ST_DT             		
+, RQST_TIT_NM             		
+, RQST_RMK          
+, DFLT_APRO_OFC_CD
+, APRO_ROUT_SEQ
+, CRE_USR_ID                  	
+, CRE_DT              		
+, UPD_USR_ID              	
+, DELT_FLG )      			
+ VALUES (
+  @[apro_rqst_no]
+, @[sub_sys_cd]
+, @[apro_knd_cd]
+, 'P'
+, '1'
+, @[rqst_usr_id]
+, @[rqst_usr_nm]
+, @[rqst_ofc_cd]
+, @[rqst_ofc_nm]
+, @[rqst_tit_nm]
+, GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[rqst_ofc_cd])
+, ''
+, ''
+, @[dflt_apro_ofc_cd]
+, @[apro_rout_seq]
+, @[rqst_usr_id]
+, sysdate
+, ' '
+, 'N')			]]></sql>
+			<params>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+				<param name="sub_sys_cd" type="12" value="" out="N"/>
+				<param name="apro_knd_cd" type="12" value="" out="N"/>
+				<param name="rqst_usr_id" type="12" value="" out="N"/>
+				<param name="rqst_usr_nm" type="12" value="" out="N"/>
+				<param name="rqst_ofc_cd" type="12" value="" out="N"/>
+				<param name="rqst_ofc_nm" type="12" value="" out="N"/>
+				<param name="rqst_tit_nm" type="12" value="" out="N"/>
+				<param name="dflt_apro_ofc_cd" type="12" value="" out="N"/>
+				<param name="apro_rout_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

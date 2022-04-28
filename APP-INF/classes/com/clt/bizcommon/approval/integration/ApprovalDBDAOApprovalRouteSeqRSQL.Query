@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalRouteSeqRSQL">
+			<desc><![CDATA[Aproval Route Sequence 를 구합니다]]></desc>
+			<sql><![CDATA[
+SELECT APRO_ROUT_SEQ
+  FROM COM_APRO_ROUT_DFLT
+ WHERE SUB_SYS_CD = DECODE(@[sub_sys_cd],'TLL','MNR',@[sub_sys_cd])
+   AND OFC_CD     = @[ofc_cd]			]]></sql>
+			<params>
+				<param name="sub_sys_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

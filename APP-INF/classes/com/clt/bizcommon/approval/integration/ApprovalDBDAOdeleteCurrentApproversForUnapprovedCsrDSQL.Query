@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOdeleteCurrentApproversForUnapprovedCsrDSQL">
+			<desc><![CDATA[deleteCurrentApproversForUnapprovedCsr]]></desc>
+			<sql><![CDATA[
+DELETE
+FROM COM_APRO_RQST_ROUT R
+WHERE R.APRO_RQST_NO = (SELECT C.APRO_RQST_NO FROM COM_APRO_CSR_DTL C WHERE C.CSR_NO = @[csr_no] AND C.APRO_RQST_NO = @[apro_rqst_no])
+AND R.APRO_RQST_SEQ IN (DECODE(NVL(@[n1st_appred_yn],'N'),'Y',-1,'1'), DECODE(NVL(@[n2nd_appred_yn],'N'),'Y',-1,'2'))			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+				<param name="n1st_appred_yn" type="12" value="" out="N"/>
+				<param name="n2nd_appred_yn" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

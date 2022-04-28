@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CopyAuthorityDAOaddRoleCSQL">
+			<desc><![CDATA[insert role from other user]]></desc>
+			<sql><![CDATA[
+#if (${opt} == 'add') 
+insert into com_usr_role_mtch (USR_ID, USR_ROLE_CD, CRE_USR_ID, CRE_DT, UPD_USR_ID, UPD_DT)
+select usr_id, usr_role_cd, 'authcopy', sysdate, 'authcopy', sysdate
+from (
+select @[to_usr_id] usr_id, usr_role_cd from com_usr_role_mtch where usr_id = @[from_usr_id]
+minus
+select @[to_usr_id] usr_id, usr_role_cd from com_usr_role_mtch where usr_id = @[to_usr_id]
+)
+#else
+insert into com_usr_role_mtch (USR_ID, USR_ROLE_CD, CRE_USR_ID, CRE_DT, UPD_USR_ID, UPD_DT)
+select @[to_usr_id], usr_role_cd, 'authcopy', sysdate, 'authcopy', sysdate
+from com_usr_role_mtch
+where usr_id = @[from_usr_id]
+#end			]]></sql>
+			<params>
+				<param name="to_usr_id" type="12" value="" out="N"/>
+				<param name="from_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	 <!-- ======================================================================= 공통 부분 시작 -->
+ 	<url-mapping url="MainPage.do" useFlowHandler="true" >
+		<web-action-class>com.clt.framework.support.controller.html.MainHTMLAction</web-action-class>
+		<flow-handler class="com.clt.framework.support.controller.html.handlers.SignOnFlowHandler">
+			<handler-result result="DEFAULT" screen="MainPage.screen"/>
+      <handler-result result="OPUS" screen="MainPage.screen"/>
+      <handler-result result="OPUS_SSO" screen="MainPage.screen"/>
+		</flow-handler>
+	</url-mapping>
+
+	<url-mapping url="SignOn.do" useFlowHandler="true" >
+		<web-action-class>com.clt.framework.support.controller.html.MainHTMLAction</web-action-class>
+		<flow-handler class="com.clt.framework.support.controller.html.handlers.SignOnFlowHandler">
+				 <handler-result result="DEFAULT" screen="opusSignOn.screen"/>
+       <handler-result result="OPUS_SSO" screen="opusSignOnSSO.screen"/> 
+       <handler-result result="OPUS" screen="opusSignOn.screen"/> 
+		</flow-handler>
+	</url-mapping>
+
+  <url-mapping url="SignOnLocal.do" useFlowHandler="true" >
+    <web-action-class>com.clt.framework.support.controller.html.MainHTMLAction</web-action-class>
+    <flow-handler class="com.clt.framework.support.controller.html.handlers.SignOnFlowHandler">
+         <handler-result result="DEFAULT" screen="SignOn.screen"/>
+         <handler-result result="OPUS" screen="opusSignOn.screen"/> 
+    </flow-handler>
+  </url-mapping>
+
+	<url-mapping url="SignOff.do" useFlowHandler="true" >
+		<web-action-class>com.clt.framework.support.view.signon.SignOffHTMLAction</web-action-class>
+    <flow-handler class="com.clt.framework.support.controller.html.handlers.SignOffFlowHandler">
+         <handler-result result="DEFAULT" screen="SignOffSSO.screen"/>
+         <handler-result result="LOCAL" screen="SignOff.screen"/>
+         <handler-result result="SSO" screen="SignOffSSO.screen"/> 
+    </flow-handler>
+	</url-mapping>
+
+	<url-mapping url="Initial.do" screen="Initial.screen">
+	</url-mapping>
+	
+	<url-mapping url="opusMainTobe.do" screen="opusMainTobe.screen">
+		<web-action-class>com.clt.syscommon.common.main.event.MainHTMLAction</web-action-class>
+	</url-mapping>
+
+
+	 <url-mapping url="PasswordChange.do" screen="PasswordChange.screen">
+	     <web-action-class>com.clt.syscommon.management.opus.user.event.UserHTMLAction</web-action-class>
+    </url-mapping>
+    
+    
+	<event-mapping>
+		<event-class>com.clt.syscommon.common.main.event.MainEvent</event-class>
+		<service-action-class>com.clt.syscommon.common.main.MainSC</service-action-class>
+	</event-mapping>	
+</mappings>

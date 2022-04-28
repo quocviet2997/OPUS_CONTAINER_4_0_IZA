@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CSRExternalFinderDBDAOSpCsrVORSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT
+         CASE
+                  WHEN COUNT(VNDR_SEQ)>0
+                  THEN 'Y'
+                  ELSE 'N'
+         END VNDR_SEQ_EXISTING,
+         VNDR_LGL_ENG_NM,
+		 '' VNDR_SEQ,
+		 '' OFC_CD,
+		 '' CURR_DATE,
+         '' CNT_CD
+FROM     MDM_VENDOR
+WHERE    VNDR_SEQ = @[vndr_seq]
+  AND    NVL(DELT_FLG, 'N') = 'N'
+GROUP BY VNDR_LGL_ENG_NM			]]></sql>
+			<params>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

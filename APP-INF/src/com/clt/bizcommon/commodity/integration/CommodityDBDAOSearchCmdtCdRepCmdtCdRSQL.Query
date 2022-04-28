@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CommodityDBDAOSearchCmdtCdRepCmdtCdRSQL">
+			<desc><![CDATA[Commodity Code를 입력하기 위해 Code를 검색하는 화면]]></desc>
+			<sql><![CDATA[
+SELECT B.rep_cmdt_cd
+,      B.rep_cmdt_nm
+,      A.cmdt_cd
+,      A.cmdt_nm
+,	   A.REP_IMDG_LVL_CD	
+,	   '' rdo_search_type
+  FROM mdm_commodity A, mdm_rep_cmdt B
+ WHERE 1 = 1
+AND   A.rep_cmdt_cd = B.rep_cmdt_cd 
+#if (${cmdt_cd} != '' && ${rdo_search_type} == 'A') 
+ AND   A.cmdt_cd like @[cmdt_cd] || '%' 
+#end 
+
+#if (${rep_cmdt_cd} != '' && ${rdo_search_type} == 'B') 
+AND   B.rep_cmdt_cd like @[rep_cmdt_cd] || '%' 
+#end
+
+#if (${cmdt_nm} != '' && ${rdo_search_type} == 'C') 
+ AND   (upper(a.cmdt_nm) like '%' || upper(@[cmdt_nm]) || '%' )
+#end			]]></sql>
+			<params>
+				<param name="cmdt_cd" type="12" value="" out="N"/>
+				<param name="rep_cmdt_cd" type="12" value="" out="N"/>
+				<param name="cmdt_nm" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

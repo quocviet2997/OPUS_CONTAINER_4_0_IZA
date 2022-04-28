@@ -1,0 +1,24 @@
+<html>
+ 	<head></head>
+ 	<body>
+ 		<@ subject >
+		<br><br>	
+		Bidding Status : <@ bid_status >		
+		<br>
+		Sale Type      : <@ sale_type >		
+		<br>
+		Currency      : <@ curr >  	
+		<br>
+	    Start/End Date : <@ start_dt > ~ <@ end_dt >
+		 			
+	    <br><br><br>	
+		Bidding Detail info<br>	
+	    <table style='font-family:arial;font-size:10pt;' border=1>
+	    	<tr bgcolor='#ccffcc' align='center'>
+	    		<td><@ eqNoOrQty ></td><td>TP/SZ</td><td>Bidding Starting Price</td><td><@ yardOrLoc ></td>
+	    	</tr>		
+	    	<@ detail_list >	
+	    </table>
+    	<br>
+ 	</body>
+</html>

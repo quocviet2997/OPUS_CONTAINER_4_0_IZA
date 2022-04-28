@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOCheckDupCargoStatusForUSReleaseRSQL">
+			<desc><![CDATA[Cargo Tracking Info.(Non physical event for US cargo release)에 중복데이타가 존재하는지 체크한다]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*) CNT 
+  FROM SCE_EDI_MNG_AMS_STS
+ WHERE EDI_ORG_STS_CD = @[edi_org_sts_cd]
+   AND EDI_PRE_SNT_STS_CD = @[edi_pre_snt_sts_cd]
+   AND EDI_EVNT_STS_CD = @[edi_evnt_sts_cd]			]]></sql>
+			<params>
+				<param name="edi_org_sts_cd" type="12" value="" out="N"/>
+				<param name="edi_pre_snt_sts_cd" type="12" value="" out="N"/>
+				<param name="edi_evnt_sts_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ProgramDAOComProgramVOUSQL">
+			<desc><![CDATA[update program information   ]]></desc>
+			<sql><![CDATA[
+update com_program set 
+	pgm_tp_cd = @[pgm_tp_cd],
+	pgm_nm = @[pgm_nm],
+	pgm_desc = @[pgm_desc],
+	pgm_url = @[pgm_url],
+	pgm_mnu_div_cd = @[pgm_mnu_div_cd],
+	dev_nm = @[dev_nm],
+	dev_dt = to_date(@[dev_dt], 'yyyy-mm-dd'),
+	popup_flg = @[popup_flg],
+	use_flg = @[use_flg],
+	upd_usr_id = @[upd_usr_id],
+	upd_dt = sysdate
+where	pgm_no = @[pgm_no]			]]></sql>
+			<params>
+				<param name="pgm_tp_cd" type="12" value="" out="N"/>
+				<param name="pgm_nm" type="12" value="" out="N"/>
+				<param name="pgm_desc" type="12" value="" out="N"/>
+				<param name="pgm_url" type="12" value="" out="N"/>
+				<param name="pgm_mnu_div_cd" type="12" value="" out="N"/>
+				<param name="dev_nm" type="12" value="" out="N"/>
+				<param name="dev_dt" type="12" value="" out="N"/>
+				<param name="popup_flg" type="12" value="" out="N"/>
+				<param name="use_flg" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="pgm_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

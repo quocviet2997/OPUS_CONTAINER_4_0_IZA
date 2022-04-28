@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.clt.com/integration/clt/schemas/OPSEQH03" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://www.clt.com/integration/clt/schemas/OPSEQH03">
+<element name="domopseqh03WSRequest">
+	<complexType>
+		<sequence>
+			<element name="DataArea">
+				<complexType>
+					<sequence>
+						<element name="RcvBkgDtlCollection">
+							<complexType>
+								<sequence>
+									<element maxOccurs="unbounded" minOccurs="1" name="RcvBkgHistRequest">
+										<complexType>
+											<sequence>
+                              					<element name="MSG_ID" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="MSG_TP" maxOccurs="1" minOccurs="0" type="string"/>
+                               		 			<element name="BKG_NO" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="BKG_TP_CD" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="BKG_STS" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="IMC_CUST_CD" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="EQ_OWN_CUST_CD" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="RAIL_BIL_DT" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="FRM_LOC_CD" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="FRM_LOC_NM" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="TO_LOC_CD" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="TO_LOC_NM" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="ALOC_YARD_LOC_CD" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="ALOC_YARD_LOC_NM" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="ALOC_RMK" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="RELS_NO" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="CMDT_CD" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="CMDT_RMK" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="PICK_UP_TMS" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="BKG_RMK" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="EQP_RMK" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="EXP_DT_TMS" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="OUT_GT_EXP_DT" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="CNTR_TPSZ_CD" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="CNTR_NO" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="TRK_NM" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="TRK_SCAC_NO" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="CUR_ADDR" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="CITY_NM" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="STE_CD" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="PROC_TMS" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="PROC_USR_EML" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="PROC_USR_NM" maxOccurs="1" minOccurs="0" type="string"/>
+                                				<element name="DCGO_FLG" maxOccurs="1" minOccurs="0" type="string"/>
+											</sequence>
+										</complexType>
+									</element>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+  </element>
+  <element name="domopseqh03WSResponse">
+	<complexType>
+			<sequence>
+				<element maxOccurs="unbounded" minOccurs="1" name="RcvBkgDtlResponse">
+					<complexType>
+						<sequence>
+                  			<element maxOccurs="1" minOccurs="0"  type="string" name="RTN_STS" />
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

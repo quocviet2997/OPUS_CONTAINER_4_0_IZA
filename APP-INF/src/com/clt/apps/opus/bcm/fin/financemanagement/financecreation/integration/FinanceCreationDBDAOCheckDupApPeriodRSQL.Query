@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOCheckDupApPeriodRSQL">
+			<desc><![CDATA[2011.02.17 정윤태 EDI GROUP에 중복데이타가 존재하는지 체크한다]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*) CNT 
+  FROM AP_PERIOD
+ WHERE SYS_DIV_CD = @[sys_div_cd]
+   AND EFF_YRMON = @[eff_yrmon]
+   AND OFC_CD = @[ofc_cd]
+   AND AR_AP_DIV_CD = @[ar_ap_div_cd]			]]></sql>
+			<params>
+				<param name="sys_div_cd" type="12" value="" out="N"/>
+				<param name="eff_yrmon" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="ar_ap_div_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CSRExternalFinderDBDAOAddApPayInvDtlVOCSQL">
+			<desc><![CDATA[AP_PAY_INV_DTL 목록 일괄저장
+2010.10.18 김영철 [CHM-201006348-01] CSR 전표 Remark 보완 - INV_DESC 추가]]></desc>
+			<sql><![CDATA[
+INSERT INTO AP_PAY_INV_DTL
+(
+	 INV_RGST_NO
+	,INV_RGST_SEQ 
+	,LGS_COST_CD
+	,ACCT_CD
+	,VSL_CD
+	,SKD_VOY_NO
+	,SKD_DIR_CD
+	,REV_DIR_CD
+	,SLAN_CD
+	,ACT_VVD_CD
+	,PORT_CD
+	,YD_CD  
+	,CNTR_TPSZ_CD
+	,INV_AMT
+	,SO_20FT_QTY
+	,SO_40FT_QTY
+	,SO_TEU_QTY
+	,SO_UT_QTY 
+	,SO_OFC_CTY_CD
+	,SO_SEQ
+	,DELT_FLG
+	,CRE_USR_ID
+	,CRE_DT
+	,UPD_USR_ID
+	,UPD_DT
+	,INV_DESC
+    ,ACT_PLC
+    ,ACT_DT
+    ,STL_KEY_NO
+    ,OWNR_VNDR_SEQ
+)
+VALUES
+(
+	 @[inv_rgst_no]
+	,(
+      SELECT NVL(MAX(INV_RGST_SEQ), 0)+1
+        FROM AP_PAY_INV_DTL
+       WHERE inv_rgst_no = @[inv_rgst_no]
+     ) 
+	,@[lgs_cost_cd]
+	,@[acct_cd] 
+	,@[vsl_cd]
+	,@[skd_voy_no]
+	,@[skd_dir_cd]
+	,@[rev_dir_cd]
+	,@[slan_cd]
+	,NVL(@[act_vvd_cd], @[vsl_cd] || @[skd_voy_no] || @[skd_dir_cd] || @[rev_dir_cd] )
+	,@[port_cd]
+	,@[yd_cd]
+	,@[cntr_tpsz_cd]
+	,ROUND(NVL(@[inv_amt],0), NVL((SELECT  MC.DP_PRCS_KNT FROM AP_PAY_INV API, MDM_CURRENCY MC 
+                                 WHERE   API.INV_RGST_NO = @[inv_rgst_no] AND API.INV_CURR_CD = MC.CURR_CD AND ROWNUM = 1),0))
+	,@[so_20ft_qty]
+	,@[so_40ft_qty]
+	,@[so_teu_qty]
+	,@[so_ut_qty]
+	,@[so_ofc_cty_cd]
+	,@[so_seq]
+	,NVL(@[delt_flg], 'N')
+	,@[cre_usr_id]
+	,NVL(GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[cre_dt]), SYSDATE)	/*inv_ofc_cd*/
+	,@[upd_usr_id]
+	,NVL(GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[cre_dt]), SYSDATE)	/*inv_ofc_cd*/
+	,@[inv_desc]
+    ,@[act_plc]
+    ,@[act_dt]
+    ,@[stl_key_no]
+    ,@[ownr_vndr_seq]
+)			]]></sql>
+			<params>
+				<param name="inv_rgst_no" type="12" value="" out="N"/>
+				<param name="lgs_cost_cd" type="12" value="" out="N"/>
+				<param name="acct_cd" type="12" value="" out="N"/>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="skd_voy_no" type="12" value="" out="N"/>
+				<param name="skd_dir_cd" type="12" value="" out="N"/>
+				<param name="rev_dir_cd" type="12" value="" out="N"/>
+				<param name="slan_cd" type="12" value="" out="N"/>
+				<param name="act_vvd_cd" type="12" value="" out="N"/>
+				<param name="port_cd" type="12" value="" out="N"/>
+				<param name="yd_cd" type="12" value="" out="N"/>
+				<param name="cntr_tpsz_cd" type="12" value="" out="N"/>
+				<param name="inv_amt" type="12" value="" out="N"/>
+				<param name="so_20ft_qty" type="12" value="" out="N"/>
+				<param name="so_40ft_qty" type="12" value="" out="N"/>
+				<param name="so_teu_qty" type="12" value="" out="N"/>
+				<param name="so_ut_qty" type="12" value="" out="N"/>
+				<param name="so_ofc_cty_cd" type="12" value="" out="N"/>
+				<param name="so_seq" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="cre_dt" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="inv_desc" type="12" value="" out="N"/>
+				<param name="act_plc" type="12" value="" out="N"/>
+				<param name="act_dt" type="12" value="" out="N"/>
+				<param name="stl_key_no" type="12" value="" out="N"/>
+				<param name="ownr_vndr_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

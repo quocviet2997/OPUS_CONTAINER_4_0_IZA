@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ProgramDAOOfficeMappingCSQL">
+			<desc><![CDATA[program office mapping insert all
+]]></desc>
+			<sql><![CDATA[
+INSERT INTO COM_OFC_PGM_MTCH (
+OFC_CD, PGM_NO, CRE_USR_ID, CRE_DT, UPD_USR_ID, UPD_DT 
+) 
+SELECT OFC_CD, @[pgm_no] PGM_NO, 'SYSTEM' CRE_USR_ID, SYSDATE CRE_DT, 'SYSTEM' UPD_USR_ID, SYSDATE UPD_DT
+FROM MDM_ORGANIZATION                                                 
+WHERE DELT_FLG = 'N'                                                  
+CONNECT BY PRIOR OFC_CD = PRNT_OFC_CD                                 
+START WITH PRNT_OFC_CD IS NULL			]]></sql>
+			<params>
+				<param name="pgm_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

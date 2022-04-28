@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckLseCoYdCodeRSQL">
+			<desc><![CDATA[Lease Company Yard Code 를 조회합니다.]]></desc>
+			<sql><![CDATA[
+SELECT  LSE_CO_YD_CD
+  FROM  MDM_LSE_CO_YD
+ WHERE  1 = 1
+   AND  LSE_CO_YD_CD = @[yd_cd]
+   AND  DELT_FLG = 'N'			]]></sql>
+			<params>
+				<param name="yd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

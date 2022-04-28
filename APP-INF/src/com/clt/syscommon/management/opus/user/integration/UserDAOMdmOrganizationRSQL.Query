@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserDAOMdmOrganizationRSQL">
+			<desc><![CDATA[select organization]]></desc>
+			<sql><![CDATA[
+#if(${ar_ofc_cd} == '')
+SELECT                                                               
+#foreach($usercol in ${allcols})
+	$usercol,
+#end
+	'' dummycol
+FROM mdm_organization                                                
+WHERE DELT_FLG = 'N'
+#if(${rhq} != '')
+and AR_HD_QTR_OFC_CD = @[rhq]
+#end
+CONNECT BY PRIOR ofc_cd = prnt_ofc_cd                                
+START WITH prnt_ofc_cd IS NULL
+#else
+select level, ofc_cd , ofc_eng_nm, OFC_LOCL_NM  AS ofc_krn_nm, '' prnt_ofc_cd
+from (
+select ar_ofc_cd
+from mdm_organization
+group by ar_ofc_cd
+) a, mdm_organization b
+where a.ar_ofc_cd = b.ofc_cd
+and b.DELT_FLG = 'N'
+#if(${rhq} != '')
+and b.AR_HD_QTR_OFC_CD = @[rhq]
+#end
+connect by b.ofc_cd = null
+#end			]]></sql>
+			<params>
+				<param name="rhq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAORemoveErrVvdDSQL">
+			<desc><![CDATA[Remove GL_CTR_ERP]]></desc>
+			<sql><![CDATA[
+DELETE FROM GL_ERR_VVD
+ WHERE ERR_VSL_CD     = SUBSTR(@[err_vvd],1,4)
+   AND ERR_SKD_VOY_NO = SUBSTR(@[err_vvd],5,4)
+   AND ERR_SKD_DIR_CD = SUBSTR(@[err_vvd],9,1)
+   AND ERR_REV_DIR_CD = SUBSTR(@[err_vvd],10,1)			]]></sql>
+			<params>
+				<param name="err_vvd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

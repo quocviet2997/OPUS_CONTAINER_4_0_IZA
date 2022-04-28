@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+	<!-- ===================================================================================== =================================== ocean start ===================================== ===================================================================================== -->
+	<url-mapping url="ESD_PRD_0001.do" screen="ESD_PRD_0001.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.geohierarchymanage.event.ESD_PRD_0001HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.geohierarchymanage.event.ESD_PRD_0001HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networknodemanage.geohierarchymanage.event.EsdPrd0001Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networknodemanage.NetworkNodeManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0002.do" screen="ESD_PRD_0002.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.yardmanage.event.ESD_PRD_0002HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.yardmanage.event.ESD_PRD_0002HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networknodemanage.yardmanage.event.EsdPrd0002Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networknodemanage.NetworkNodeManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0003.do" screen="ESD_PRD_0003.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.yardmanage.event.ESD_PRD_0003HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.yardmanage.event.ESD_PRD_0003HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networknodemanage.yardmanage.event.EsdPrd0003Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networknodemanage.NetworkNodeManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0070.do" screen="ESD_PRD_0070.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.pickupreturncy.event.ESD_PRD_0070HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0070GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.pickupreturncy.event.ESD_PRD_0070HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networknodemanage.pickupreturncy.event.EsdPrd0070Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networknodemanage.NetworkNodeManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0071.do" screen="ESD_PRD_0071.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.blockstowage.event.ESD_PRD_0071HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0071GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.blockstowage.event.ESD_PRD_0071HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networknodemanage.blockstowage.event.EsdPrd0071Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networknodemanage.NetworkNodeManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0072.do" screen="ESD_PRD_0072.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.blockstowage.event.ESD_PRD_0072HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0072GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.blockstowage.event.ESD_PRD_0072HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networknodemanage.blockstowage.event.EsdPrd0072Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networknodemanage.NetworkNodeManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0012.do" screen="ESD_PRD_0012.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanlinkmanage.event.EsdPrd0012HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0012GS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.oceanlinkmanage.event.EsdPrd0012DefaultView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanlinkmanage.event.EsdPrd0012HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanlinkmanage.event.EsdPrd0012Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0013.do" screen="ESD_PRD_0013.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanlinkmanage.event.EsdPrd0013HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0013GS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.oceanlinkmanage.event.EsdPrd0013DefaultView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanlinkmanage.event.EsdPrd0013HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanlinkmanage.event.EsdPrd0013Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0014.do" screen="ESD_PRD_0014.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.ESD_PRD_0014HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0014GS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.EsdPrd0014DefaultView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.ESD_PRD_0014HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.EsdPrd0014Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0060.do" screen="ESD_PRD_0060.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.ESD_PRD_0060HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0060GS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.EsdPrd0060DefaultView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.ESD_PRD_0060HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.EsdPrd0060Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+	<url-mapping url="ESD_PRD_0022.do" screen="ESD_PRD_0022.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.ESD_PRD_0022HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.ESD_PRD_0022HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0022CATEGORY_GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.ESD_PRD_0022HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.EsdPrd0022Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0023.do" screen="ESD_PRD_0023.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.ESD_PRD_0023HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.ESD_PRD_0023HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.EsdPrd0023Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Route Constraint Manage -->
+	<url-mapping url="ESD_PRD_0024.do" screen="ESD_PRD_0024.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.ESD_PRD_0024HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0024_POP.do" screen="ESD_PRD_0024_POP.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.ESD_PRD_0024HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0024GS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.EsdPrd0024DefaultView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.ESD_PRD_0024HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.EsdPrd0024Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+	<url-mapping url="ESD_PRD_0025.do" screen="ESD_PRD_0025.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.ESD_PRD_0025HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.ESD_PRD_0025HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.constraintmanage.event.EsdPrd0025Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="ESD_PRD_0035.do" screen="ESD_PRD_0035.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.ESD_PRD_0035HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0035GS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.EsdPrd0035DefaultView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.ESD_PRD_0035HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.EsdPrd0035Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0040.do" screen="ESD_PRD_0040.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.ESD_PRD_0040HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0040GS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.EsdPrd0040DefaultView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.ESD_PRD_0040HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.EsdPrd0040Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0032.do" screen="ESD_PRD_0032.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.ESD_PRD_0032HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0032GS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.EsPrd0032DefaultView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.ESD_PRD_0032HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0032_ROW_GS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.EsdPrd0032RowView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.ESD_PRD_0032HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanroutemanage.event.EsdPrd0032Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- Ocean Route Manage : Auto Creation -->
+	<!-- ProductCatalogCreate -->
+	<url-mapping url="ESD_PRD_0018.do" useFlowHandler="true">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0018HTMLAction</web-action-class>
+		<flow-handler class="com.clt.framework.support.controller.html.handlers.WorkflowFlowHandler">
+			<handler-result result="DEFAULT" screen="ESD_PRD_0018.screen" />
+			<handler-result result="PRD_018_1" screen="ESD_PRD_0018_1.screen" />
+			<handler-result result="PRD_018_2" screen="ESD_PRD_0018_2.screen" />
+		</flow-handler>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0018_1.do" screen="ESD_PRD_0018_1.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0018_2.do" screen="ESD_PRD_0018_2.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0018_1_GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0018_2_GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0018_TEST.do" screen="ESD_PRD_0018_TEST.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0018_PRICING.do" screen="ESD_PRD_0018_PRICING.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0018_3.do" screen="ESD_PRD_0018_3.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0018_3_GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0018HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.EsdPrd0018Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.ProductCatalogCreateSC</service-action-class>
+	</event-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.productcatalogcreate.autoprd.event.EsdPrd0019Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.ProductCatalogCreateSC</service-action-class>
+	</event-mapping>
+
+	<!-- ProductCatalogCreate -->
+	<url-mapping url="ESD_PRD_0020.do" screen="ESD_PRD_0020.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0020HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0020HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0020_DETAIL.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0020HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.EsdPrd0080Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.ProductCatalogCreateSC</service-action-class>
+	</event-mapping>
+
+	<!-- ===================================================================================== =================================== ocean end ====================================== ===================================================================================== -->
+
+	<!-- ===================================================================================== =================================== inland start ==================================== ===================================================================================== -->
+
+
+	<!-- HubLocationMatchingManage -->
+	<url-mapping url="ESD_PRD_0004.do" screen="ESD_PRD_0004.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.hublocationmatchingmanage.event.ESD_PRD_0004HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.hublocationmatchingmanage.event.ESD_PRD_0004HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.hublocationmatchingmanage.event.EsdPrd0004Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+
+	<!-- InlandRouteManage -->
+	<url-mapping url="ESD_PRD_0005.do" screen="ESD_PRD_0005.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0005HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_PRD_0005GS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.EsdPrd0005DefaultView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0005HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_PRD_0005ROWSEARCH.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.EsdPrd0005RowSearchView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0005HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0005MST_ROWSEARCH.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.EsdPrd0005MstRowView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0005HTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="ESD_PRD_0005_AGMT_NO_GS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.EsdPrd0005AgmtNoGsView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0005HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0055.do" screen="ESD_PRD_0055.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0005HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0055_POP.do" screen="ESD_PRD_0055_POP.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0005HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0055GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0005HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0059.do" screen="ESD_PRD_0059.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0005HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0059GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0005HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.EsdPrd0005Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0056.do" screen="ESD_PRD_0056.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0056HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0056GS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.EsdPrd0056DefaultView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0056HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0056DETAIL_GS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.EsdPrd0056DefaultView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0056HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0056MST_ROWSEARCH.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.EsdPrd0056MstRowView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0056HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.EsdPrd0056Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0057.do" screen="ESD_PRD_0057.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0057HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0057GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0057HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0057MST_ROWSEARCH.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.EsdPrd0057MstRowView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0057HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.EsdPrd0057Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageUsaSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0058.do" screen="ESD_PRD_0058.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0058HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0058GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.ESD_PRD_0058HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandroutemanage.event.EsdPrd0058Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageUsaSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0009.do" screen="ESD_PRD_0009.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandlinkmanage.event.ESD_PRD_0009HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0009GS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.inlandlinkmanage.event.EsdPrd0009DefaultView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandlinkmanage.event.ESD_PRD_0009HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0009UPGS.do" screen="com.clt.apps.opus.esd.prd.networklinkmanage.inlandlinkmanage.event.EsdPrd0009UpdateView">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandlinkmanage.event.ESD_PRD_0009HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandlinkmanage.event.EsdPrd0009Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0007.do" screen="ESD_PRD_0007.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandlinkmanage.event.ESD_PRD_0007HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandlinkmanage.event.ESD_PRD_0007HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.inlandlinkmanage.event.EsdPrd0007Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0011.do" screen="ESD_PRD_0011.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanrouteconditionmanage.event.ESD_PRD_0011HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanrouteconditionmanage.event.ESD_PRD_0011HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanrouteconditionmanage.event.EsdPrd0011Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0041.do" screen="ESD_PRD_0041.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanrouteconditionmanage.event.ESD_PRD_0041HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0041GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanrouteconditionmanage.event.ESD_PRD_0041HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanrouteconditionmanage.event.EsdPrd0041Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0010.do" screen="ESD_PRD_0010.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanrouteconditionmanage.event.ESD_PRD_0010HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanrouteconditionmanage.event.ESD_PRD_0010HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.oceanrouteconditionmanage.event.EsdPrd0010Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- validation -->
+	<url-mapping url="PRD_VALIDATE.do" screen="com.clt.apps.opus.esd.prd.common.prdcommon.event.PrdCommonDefaultView">
+		<web-action-class>com.clt.apps.opus.esd.prd.common.prdcommon.event.PrdCommonHTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.common.prdcommon.event.PrdCommonEvent</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.common.PrdCommonManageSC</service-action-class>
+		<!-- service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class -->
+	</event-mapping>
+
+	<!-- PrdCommon -->
+	<!-- searchContinent -->
+	<url-mapping url="ESD_PRD_COM_0001.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.common.prdcommon.event.PrdCommonHTMLAction</web-action-class>
+	</url-mapping>
+	<!-- searchSubContinent -->
+	<url-mapping url="ESD_PRD_COM_0002.do" screen="ESD_PRD_COM_0002.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.common.prdcommon.event.PrdCommonHTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.common.prdcommon.event.PrdCommonEvent</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.common.PrdCommonManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0036.do" screen="ESD_PRD_0036.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.cctmanage.event.ESD_PRD_0036HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0036_POP.do" screen="ESD_PRD_0036_POP.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.cctmanage.event.ESD_PRD_0036HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.cctmanage.event.ESD_PRD_0036HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networknodemanage.cctmanage.event.EsdPrd0036Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networknodemanage.NetworkNodeManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0026.do" screen="ESD_PRD_0026.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.common.prdcommon.event.ESD_PRD_0026HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0026GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.common.prdcommon.event.ESD_PRD_0026HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.common.prdcommon.event.EsdPrd0026Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.common.PrdCommonManageSC</service-action-class>
+	</event-mapping>
+	<!-- ======================================================================== jungsunyoung end # -->
+	<!-- S/P -->
+	<url-mapping url="ESD_PRD_0TEST.do" screen="ESD_PRD_0TEST.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.test.event.ESD_PRD_0TESTHTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0TESTGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.test.event.ESD_PRD_0TESTHTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.test.event.ESD_PRD_0TESTEvent</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.test.PrdTestManageSC</service-action-class>
+	</event-mapping>
+
+	<!-- ===================================================================================== =================================== inland end ====================================== ===================================================================================== -->
+	<url-mapping url="ESD_PRD_0080.do" screen="ESD_PRD_0080.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0080HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0080GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0080HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0080_POP.do" screen="ESD_PRD_0080_POP.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0080HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.EsdPrd0080Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.ProductCatalogCreateSC</service-action-class>
+	</event-mapping>
+	<!-- ===================================================================================== =================================== pc create end ====================================== ===================================================================================== -->
+	<!-- ===================================================================================== =================================== pc detail view ====================================== ===================================================================================== -->
+	<url-mapping url="ESD_PRD_0081.do" screen="ESD_PRD_0081.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0081HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0081GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0081HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.EsdPrd0081Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.ProductCatalogCreateSC</service-action-class>
+	</event-mapping>
+	<!-- ===================================================================================== =================================== pc constraint ====================================== ===================================================================================== -->
+	<url-mapping url="ESD_PRD_0082.do" screen="ESD_PRD_0082.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0082HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0082GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0082HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.EsdPrd0082Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.ProductCatalogCreateSC</service-action-class>
+	</event-mapping>
+	<!-- ===================================================================================== ============================ route validation check ================================ ===================================================================================== -->
+	<url-mapping url="ESD_PRD_0083.do" screen="ESD_PRD_0083.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0083HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0083GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.ESD_PRD_0083HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.productcatalogcreate.productcatalogcreate.event.EsdPrd0083Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.productcatalogcreate.ProductCatalogCreateSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0037.do" screen="ESD_PRD_0037.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.vslconnbuffertime.event.ESD_PRD_0037HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.vslconnbuffertime.event.ESD_PRD_0037HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networklinkmanage.vslconnbuffertime.event.EsdPrd0037Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networklinkmanage.NetworkLinkManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_PRD_0038.do" screen="ESD_PRD_0038.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.inlandcutoff.event.ESD_PRD_0038HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0038GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.inlandcutoff.event.ESD_PRD_0038HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networknodemanage.inlandcutoff.event.EsdPrd0038Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networknodemanage.NetworkNodeManageSC</service-action-class>
+	</event-mapping>
+
+	<url-mapping url="ESD_PRD_0027.do" screen="ESD_PRD_0027.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.common.prdcommon.event.ESD_PRD_0027HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.common.prdcommon.event.ESD_PRD_0027HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.common.prdcommon.event.EsdPrd0027Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.common.PrdCommonManageSC</service-action-class>
+	</event-mapping>
+
+
+	<url-mapping url="ESD_PRD_0039_POP.do" screen="ESD_PRD_0039_POP.screen">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.cctmanage.event.ESD_PRD_0039HTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ESD_PRD_0039GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.apps.opus.esd.prd.networknodemanage.cctmanage.event.ESD_PRD_0039HTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.apps.opus.esd.prd.networknodemanage.cctmanage.event.EsdPrd0039Event</event-class>
+		<service-action-class>com.clt.apps.opus.esd.prd.networknodemanage.NetworkNodeManageSC</service-action-class>
+	</event-mapping>
+</mappings>

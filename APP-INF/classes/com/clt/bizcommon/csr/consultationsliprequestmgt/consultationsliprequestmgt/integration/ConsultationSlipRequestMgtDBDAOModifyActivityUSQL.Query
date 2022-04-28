@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOModifyActivityUSQL">
+			<desc><![CDATA[Activity Date / Place 수정]]></desc>
+			<sql><![CDATA[
+UPDATE AP_INV_DTRB
+#if (${act_dt} == 'ISSUE DATE') 
+SET ATTR_CTNT11 = TO_CHAR(TO_DATE(ATTR_CTNT2,'YYYY/MM/DD HH24:MI:SS'),'YYYYMMDD')
+#elseif (${act_dt} == 'INVOICE DATE') 
+SET ATTR_CTNT11 = TO_CHAR(TO_DATE(ATTR_CTNT2,'YYYY/MM/DD HH24:MI:SS'),'YYYYMMDD')
+#elseif (${act_dt} == 'REPAIR DATE')
+SET ATTR_CTNT11 = DECODE(ATTR_CTNT11,NULL,(SELECT GL_DT FROM AP_INV_HDR A WHERE A.CSR_NO = @[csr_no]),ATTR_CTNT11)
+#elseif (${act_dt} == 'GL DATE')
+SET ATTR_CTNT11 = (SELECT GL_DT FROM AP_INV_HDR A WHERE A.CSR_NO = @[csr_no])
+#else
+SET ATTR_CTNT11 = (SELECT GL_DT FROM AP_INV_HDR A WHERE A.CSR_NO = @[csr_no])
+#end
+#if (${act_plc} == 'COST OFFICE')
+   ,ATTR_CTNT12 = (SELECT DISTINCT COST_OFC_CD FROM AP_PAY_INV A WHERE A.CSR_NO = @[csr_no])
+#elseif (${act_plc} == 'REPAIR YARD')
+   ,ATTR_CTNT12 = DECODE(ATTR_CTNT12,NULL,(SELECT DISTINCT INV_OFC_CD FROM AP_PAY_INV A WHERE A.CSR_NO = @[csr_no]),ATTR_CTNT12)
+#elseif (${act_plc} == 'OFFICE')
+   ,ATTR_CTNT12 = (SELECT DISTINCT INV_OFC_CD FROM AP_PAY_INV A WHERE A.CSR_NO = @[csr_no])
+#end
+WHERE CSR_NO = @[csr_no]
+  AND LINE_SEQ = @[line_seq]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="line_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

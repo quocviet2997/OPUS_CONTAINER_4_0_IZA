@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOAddGlEstimateRevenueVvdsCSQL">
+			<desc><![CDATA[AddGlEstimateRevenueVvds]]></desc>
+			<sql><![CDATA[
+INSERT INTO GL_ESTM_REV_VVD(
+EXE_YRMON, REV_YRMON, VSL_CD, SKD_VOY_NO, SKD_DIR_CD, REV_DIR_CD, ESTM_VVD_TP_CD, ESTM_IOC_DIV_CD, ESTM_VVD_HDR_ID, ESTM_BC_DIV_CD , VST_DT, VED_DT, RLANE_CD, LINE_NO, UPD_USR_ID, UPD_DT, CRE_DT, CRE_USR_ID
+)VALUES(
+  @[exe_yrmon]
+, @[rev_yrmon]
+, @[vsl_cd]
+, @[skd_voy_no]
+, @[skd_dir_cd]
+, @[rev_dir_cd]
+, @[estm_vvd_tp_cd]
+, @[estm_ioc_div_cd]
+, @[estm_vvd_hdr_id]
+, @[estm_bc_div_cd]
+, @[vst_dt]
+, @[ved_dt]
+, @[rlane_cd]
+, DECODE(@[vst_dt],NULL,NULL,FIN_GL_REV_LNIE_NO_FNC(@[exe_yrmon], @[rev_yrmon], @[vsl_cd], @[skd_voy_no], @[skd_dir_cd], @[rev_dir_cd])) 
+, @[upd_usr_id]
+, SYSDATE
+, SYSDATE
+, @[cre_usr_id])			]]></sql>
+			<params>
+				<param name="exe_yrmon" type="12" value="" out="N"/>
+				<param name="rev_yrmon" type="12" value="" out="N"/>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="skd_voy_no" type="12" value="" out="N"/>
+				<param name="skd_dir_cd" type="12" value="" out="N"/>
+				<param name="rev_dir_cd" type="12" value="" out="N"/>
+				<param name="estm_vvd_tp_cd" type="12" value="" out="N"/>
+				<param name="estm_ioc_div_cd" type="12" value="" out="N"/>
+				<param name="estm_vvd_hdr_id" type="12" value="" out="N"/>
+				<param name="estm_bc_div_cd" type="12" value="" out="N"/>
+				<param name="vst_dt" type="12" value="" out="N"/>
+				<param name="ved_dt" type="12" value="" out="N"/>
+				<param name="rlane_cd" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

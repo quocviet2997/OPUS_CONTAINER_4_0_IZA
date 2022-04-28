@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FaxManagementDBDAOsearchFaxDataListRSQL">
+			<desc><![CDATA[searchFaxDataList]]></desc>
+			<sql><![CDATA[
+select 
+  FAX_SND_NO 
+
+--, REGEXP_SUBSTR(RCVR_INFO_CTNT , '[^;]+', 1, 1) as  RCVR_INFO_CTNT1
+--, REGEXP_SUBSTR(RCVR_INFO_CTNT , '[^;]+', 1, 2) as  RCVR_INFO_CTNT2
+
+, case when length(REGEXP_SUBSTR(RCVR_INFO_CTNT , '[^;]+', 1, 1)) > 3
+         and substr( REGEXP_SUBSTR(RCVR_INFO_CTNT , '[^;]+', 1, 1), 0, 3) = '011'
+     then  substr( REGEXP_SUBSTR(RCVR_INFO_CTNT , '[^;]+', 1, 1),  4) 
+     else  REGEXP_SUBSTR(RCVR_INFO_CTNT , '[^;]+', 1, 1)  end as  RCVR_INFO_CTNT1
+
+, case when length(REGEXP_SUBSTR(RCVR_INFO_CTNT , '[^;]+', 1, 2)) > 3
+         and substr( REGEXP_SUBSTR(RCVR_INFO_CTNT , '[^;]+', 1, 2), 0, 3) = '011'
+     then  substr( REGEXP_SUBSTR(RCVR_INFO_CTNT , '[^;]+', 1, 2),  4) 
+     else  REGEXP_SUBSTR(RCVR_INFO_CTNT , '[^;]+', 1, 2)  end as  RCVR_INFO_CTNT2
+
+, RD_SUB_SYS_CD  
+, CRE_USR_ID   
+, OFC_CD  
+, substr(FAX_SND_NO,0,8 )  as FAX_SND_DATE
+, FAX_TIT_NM  
+, Decode(FAX_PROC_STS_CD, 
+		'0', 'Sending', 
+		'1', 'Sending',
+		'2', 'Sending',
+		'3', 'Sending',
+		'4', 'Failed', 
+		'5', 'Success',
+		'6', 'Failed',
+		 'Sending' ) as FAX_PROC_STS_CD   
+ , Decode(FAX_PROC_STS_CD, '4', XPT_ERR_MSG, '6', FAX_ERR_MSG, '') as  XPT_ERR_MSG
+
+from COM_FAX_SND_INFO
+where 1=1
+   	#if (${fax_snd_no} != '')
+    AND FAX_SND_NO = @[fax_snd_no]
+    #end 
+   	#if (${rd_appl_cd} != '')
+    AND RD_APPL_CD  = @[rd_appl_cd]
+    #end 
+   	#if (${rcvr_info_ctnt} != '')
+    AND RCVR_INFO_CTNT = @[rcvr_info_ctnt]
+    #end 
+   	#if (${rd_sub_sys_cd} != '')
+    AND RD_SUB_SYS_CD = @[rd_sub_sys_cd]
+    #end 
+   	#if (${cre_usr_id} != '')
+    AND CRE_USR_ID = @[cre_usr_id]
+    #end 
+   	#if (${ofc_cd} != '')
+    AND OFC_CD = @[ofc_cd]
+    #end 
+   	#if (${fax_snd_date} != '')
+    AND  FAX_SND_NO  like  REPLACE( @[fax_snd_date] , '-', '')||'%'
+    #end 
+   	#if (${fax_tit_nm} != '')
+    AND UPPER(FAX_TIT_NM) like '%'||UPPER(@[fax_tit_nm])||'%'
+    #end 
+
+  	#if (${fax_proc_sts_cd} == 'Sending')
+			AND FAX_PROC_STS_CD IN ('0','1','2','3') 
+ 	#end 
+	#if (${fax_proc_sts_cd} == 'Failed')
+			AND FAX_PROC_STS_CD IN ('4','6') 
+ 	#end 
+	#if (${fax_proc_sts_cd} == 'Success')
+			AND FAX_PROC_STS_CD = '5' 
+ 	#end 
+
+   	#if (${xpt_err_msg} != '')
+    AND XPT_ERR_MSG = @[xpt_err_msg]
+    #end
+
+ORDER BY  FAX_SND_NO  desc			]]></sql>
+			<params>
+				<param name="fax_snd_no" type="12" value="" out="N"/>
+				<param name="rd_appl_cd" type="12" value="" out="N"/>
+				<param name="rcvr_info_ctnt" type="12" value="" out="N"/>
+				<param name="rd_sub_sys_cd" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="fax_snd_date" type="12" value="" out="N"/>
+				<param name="fax_tit_nm" type="12" value="" out="N"/>
+				<param name="xpt_err_msg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOCheckDupCustomerScheduleRSQL">
+			<desc><![CDATA[2011.03.17 정윤태 CUSTOMER SCHEDULE EDI SETUP에 중복데이타가 존재하는지 체크한다]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*) CNT 
+  FROM VSK_CUST_SKD_EDI_SET
+ WHERE EDI_STUP_ID = @[edi_stup_id]			]]></sql>
+			<params>
+				<param name="edi_stup_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAORemoveEstFmcCodeDSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+DELETE FROM GL_FMC_ENT
+   WHERE GL_MISC_N1ST_CD 	= @[gl_misc_n1st_cd]
+     AND GL_MISC_N2ND_CD 		= @[gl_misc_n2nd_cd]
+     AND GL_MISC_N3RD_CD 		= @[gl_misc_n3rd_cd]			]]></sql>
+			<params>
+				<param name="gl_misc_n1st_cd" type="12" value="" out="N"/>
+				<param name="gl_misc_n2nd_cd" type="12" value="" out="N"/>
+				<param name="gl_misc_n3rd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

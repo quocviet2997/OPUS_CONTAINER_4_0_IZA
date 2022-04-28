@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MessagesDAOComMgsRcvRSQL">
+			<desc><![CDATA[받은사람 조회]]></desc>
+			<sql><![CDATA[
+select 
+a.msg_id, 
+a.sndr_usr_id, 
+a.sndr_usr_nm, 
+to_char(globaldate_pkg.TIME_CONV_OFC_FNC(COM_ConstantMgr_PKG.COM_getHeadOfficeCode_FNC(),a.snd_dt,@[ofc_cd]),'yyyymmdd hh24mi') snd_dt, 
+a.msg_ctnt, 
+b.rcvr_usr_id, 
+b.rcvr_usr_nm, 
+to_char(globaldate_pkg.TIME_CONV_OFC_FNC(COM_ConstantMgr_PKG.COM_getHeadOfficeCode_FNC(),b.rcv_dt,@[ofc_cd]),'yyyymmdd hh24mi') rcv_dt, 
+b.kep_flg, 
+b.delt_flg 
+from com_msg_snd a, com_msg_rcv b 
+where a.msg_id = b.msg_id 
+and b.rcvr_usr_id = @[usr_id]
+and b.delt_flg = 'N' 
+and b.kep_flg = 'N' 
+order by a.snd_dt desc			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

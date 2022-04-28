@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<!-- Eui-su Park : 2009-04-27 start -->
+    <screen name="EES_CGM_1002">
+        <parameter key="title"    value="Chassis Specification Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1002.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-04-27 end -->
+	
+	<!-- Eui-su Park : 2009-04-27 start -->
+    <screen name="EES_CGM_1002_POP" template="templatePop">
+        <parameter key="title"    value="Chassis Specification Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1002.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-04-27 end -->
+
+	<!-- KIM CHANG SIK : 2009-05-19 start -->
+    <screen name="EES_CGM_1021">
+        <parameter key="title"    value="Lease Agreement List Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetagreement/jsp/EES_CGM_1021.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-05-19 end -->
+
+	<!-- KIM CHANG SIK : 2009-05-19 start -->
+    <screen name="EES_CGM_2023">
+        <parameter key="title"    value="Lease Agreement List Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetagreement/jsp/EES_CGM_2023.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-05-19 end -->
+
+	<!-- KIM CHANG SIK : 2009-05-22 start -->
+    <screen name="EES_CGM_1117" template="templatePop">
+        <parameter key="title"    value="Agreement No. Selection" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetagreement/jsp/EES_CGM_1117.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-05-22 end -->
+
+	<!-- Eui-su Park : 2009-05-19 start -->
+    <screen name="EES_CGM_1001">
+        <parameter key="title"    value="Chassis Type/Size Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1001.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-05-19 end -->
+
+	<!-- Eui-su Park : 2009-05-20 start -->
+    <screen name="EES_CGM_2083">
+        <parameter key="title"    value="M.G set Type Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_2083.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-05-20 end -->
+
+		<!-- CHOI MIN HOI : 2009-05-20 start -->
+    <screen name="EES_CGM_1009">
+        <parameter key="title"    value="Chassis Off-Hire Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1009.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-05-20 end -->
+
+	<!-- KIM CHANG SIK : 2009-05-26 start -->
+    <screen name="EES_CGM_2022" template="templatePop">
+        <parameter key="title"    value="Agreement No. Selection" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetagreement/jsp/EES_CGM_2022.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-05-26 end -->
+
+	<!-- KIM CHANG SIK : 2009-05-26 start -->
+    <screen name="EES_CGM_1020">
+        <parameter key="title"    value="Lease Agreement Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetagreement/jsp/EES_CGM_1020.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-05-26 end -->
+
+	<!-- CHOI MIN HOI : 2009-05-26 start -->
+    <screen name="EES_CGM_2011">
+        <parameter key="title"    value="M.G Set Off-Hire Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_2011.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-05-26 end -->
+
+	<!-- Eui-su Park : 2009-05-26 start -->
+    <screen name="EES_CGM_2001">
+        <parameter key="title"    value="M.G Set Model Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_2001.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-05-26 end -->
+	
+	<!-- Eui-su Park : 2009-05-26 start -->
+    <screen name="EES_CGM_2001_POP" template="templatePop">
+        <parameter key="title"    value="M.G Set Model Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_2001.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-05-26 end -->
+
+
+	<!-- CHOI MIN HOI : 2009-05-29 start -->
+    <screen name="EES_CGM_1010">
+        <parameter key="title"    value="On  Off-Hire Status Summary Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1010.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-05-29 end -->
+
+
+	<!-- Eui-su Park : 2009-05-29 start -->
+    <screen name="EES_CGM_1006">
+        <parameter key="title"    value="Chassis Registration Inquiry/Update" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1006.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-05-29 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-02 start -->
+    <screen name="EES_CGM_2012">
+        <parameter key="title"    value="On  Off-Hire Status Summary Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_2012.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-06-02 end -->
+
+	<!-- Eui-su Park : 2009-06-02 start -->
+    <screen name="EES_CGM_1007">
+        <parameter key="title"    value="Chassis Pool Inquiry/Update" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1007.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-06-02 end -->
+
+
+	<!-- CHOI MIN HOI : 2009-06-04 start -->
+    <screen name="EES_CGM_1017">
+        <parameter key="title"    value="  Chassis Status| Creation  " direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1017.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-06-04 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-08 start -->
+    <screen name="EES_CGM_2019">
+        <parameter key="title"    value="M.G Set Sstus Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_2019.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-06-08 end -->
+
+	<!-- Eui-su Park : 2009-06-08 start -->
+    <screen name="EES_CGM_1003">
+        <parameter key="title"    value="Chassis Master Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1003.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-06-08 end -->
+	
+	<!-- Eui-su Park : 2009-06-08 start -->
+    <screen name="EES_CGM_1003_POP" template="templatePop">
+        <parameter key="title"    value="Chassis Master Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1003.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-06-08 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-09 start -->
+    <screen name="EES_CGM_1019">
+        <parameter key="title"    value="Lost Chassis Summary Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1019.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-06-09 end -->
+
+	<!-- Eui-su Park : 2009-06-09 start -->
+    <screen name="EES_CGM_2006">
+        <parameter key="title"    value="M.G Set Master Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_2006.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-06-09 end -->
+
+	<!-- KIM CHANG SIK : 2009-06-10 start -->
+    <screen name="EES_CGM_2021">
+        <parameter key="title"    value="Lease Agreement Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetagreement/jsp/EES_CGM_2021.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-06-10 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-10 start -->
+    <screen name="EES_CGM_2020">
+        <parameter key="title"    value="Lost M.G Set Summary Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_2020.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-06-10 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-11 start -->
+    <screen name="EES_CGM_1016">
+        <parameter key="title"    value="Chassis Status " direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1016.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-06-11 end -->
+
+	<!-- Eui-su Park : 2009-06-14 start -->
+    <screen name="EES_CGM_1005">
+        <parameter key="title"    value="Own Chassis Master Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1005.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-06-14 end -->
+
+
+
+	<!-- CHOI MIN HOI : 2009-06-16 start -->
+    <screen name="EES_CGM_2018">
+        <parameter key="title"    value="M.G Set Status History" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_2018.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-06-16 end -->
+
+	<!-- KIM CHANG SIK : 2009-06-17 start -->
+    <screen name="EES_CGM_1022" template="templatePop">
+        <parameter key="title"    value="Lease Agreement Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetagreement/jsp/EES_CGM_1022.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-06-17 end -->
+
+	<!-- KIM CHANG SIK : 2009-06-18 start -->
+    <screen name="EES_CGM_2103" template="templatePop">
+        <parameter key="title"    value="Lease Agreement Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetagreement/jsp/EES_CGM_2103.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-06-18 end -->
+
+	<!-- KIM CHANG SIK : 2009-06-22 start -->
+    <screen name="EES_CGM_1026">
+        <parameter key="title"    value="Lease Term Change" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetagreement/jsp/EES_CGM_1026.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-06-22 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-22 start -->
+    <screen name="EES_CGM_1018">
+        <parameter key="title"    value="Lost Chassis Movement EDI Found " direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1018.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-06-22 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-23 start -->
+    <screen name="EES_CGM_1104">
+        <parameter key="title"    value="Chassis Movement" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/chassismovementhistory/jsp/EES_CGM_1104.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-06-23 end -->
+
+	<!-- Eui-su Park : 2009-06-23 start -->
+    <screen name="EES_CGM_2004">
+        <parameter key="title"    value="Own M.G Set Master Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_2004.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-06-23 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-26 start -->
+    <screen name="EES_CGM_1105">
+        <parameter key="title"    value="Chassis Movement" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/chassismovementhistory/jsp/EES_CGM_1105.jsp"/>
+    </screen>
+    
+    <screen name="EES_CGM_1105_POP" template="templatePop">
+        <parameter key="title"    value="Chassis Movement" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/chassismovementhistory/jsp/EES_CGM_1105.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-06-26 end -->
+
+	<!-- KIM CHANG SIK : 2009-06-29 start -->
+    <screen name="EES_CGM_2026">
+        <parameter key="title"    value="Lease Term Change" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetagreement/jsp/EES_CGM_2026.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-06-29 end -->
+
+	<!-- Eui-su Park : 2009-06-26 start -->
+    <screen name="EES_CGM_1008">
+        <parameter key="title"    value="Chassis On-Hire Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1008.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-06-26 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-29 start -->
+    <screen name="EES_CGM_1108">
+        <parameter key="title"    value="Bare Chassis Movement Manual Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/chassismovementhistory/jsp/EES_CGM_1108.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-06-29 end -->
+
+	<!-- KIM CHANG SIK : 2009-06-30 start -->
+    <screen name="EES_CGM_1118">
+        <parameter key="title"    value="Lease Term Change Summary Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetagreement/jsp/EES_CGM_1118.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-06-30 end -->
+
+	<!-- KIM CHANG SIK : 2009-07-03 start -->
+    <screen name="EES_CGM_2028">
+        <parameter key="title"    value="Lease Term Change Summary Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetagreement/jsp/EES_CGM_2028.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-07-03 end -->
+
+	<!-- KIM CHANG SIK : 2009-07-06 start -->
+    <screen name="EES_CGM_2086">
+        <parameter key="title"    value="Agreement Matching" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_2086.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-07-06 end -->
+	
+	<!-- KIM CHANG SIK : 2009-07-06 start -->
+    <screen name="EES_CGM_2086_POP" template="templatePop">
+        <parameter key="title"    value="Agreement Matching" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_2086.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-07-06 end -->
+
+	<!-- CHOI MIN HOI : 2009-07-07 start -->
+    <screen name="EES_CGM_1015">
+        <parameter key="title"    value="OW,LP,OL Chassis Chassis Master Creation " direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/chassismgsetattachdetachhistory/jsp/EES_CGM_1015.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-07 end -->
+
+	<!-- Eui-su Park : 2009-07-08 start -->
+    <screen name="EES_CGM_TPSZ">
+        <parameter key="title"    value="TpszDupChk" direct="true"/>
+        <parameter key="body"     value="NIS2010/WEB_MAIN/apps/opus/ees/cgm/cgmcommon/cgmvalidation/jsp/EES_CGM_tpsz.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-07-08 end -->
+	<!-- CHOI MIN HOI : 2009-07-09 start -->
+    <screen name="EES_CGM_1146">
+        <parameter key="title"    value=" Creation  ERP FA  Interface " direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1146.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-09 end -->	
+
+	<!-- KIM CHANG SIK : 2009-07-09 start -->
+    <screen name="EES_CGM_1091" template="templatePop">
+        <parameter key="title"    value="Chassis Inventory List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_1091.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-07-09 end -->
+
+	<!-- KIM CHANG SIK : 2009-07-13 start -->
+    <screen name="EES_CGM_2084" template="templatePop">
+        <parameter key="title"    value="M.G Set Inventory List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_2084.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-07-13 end -->
+
+	<!-- KIM CHANG SIK : 2009-07-14 start -->
+    <screen name="EES_CGM_1089">
+        <parameter key="title"    value="General Inventory" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_1089.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-07-14 end -->
+
+	<!-- ChaeShung Cho : 2009-07-17 start -->
+    <screen name="EES_CGM_1092">
+        <parameter key="title"    value=" Chassis inventory " direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_1092.jsp"/>
+    </screen>
+	<!-- ChaeShung Cho : 2009-07-17 end -->
+
+	<!-- Eui-su Park : 2009-06-26 start -->
+    <screen name="EES_CGM_2007">
+        <parameter key="title"    value="Chassis On-Hire Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_2007.jsp"/>
+    </screen>
+	<!-- Eui-su Park : 2009-06-26 end -->
+
+	<!-- KIM CHANG SIK : 2009-07-20 start -->
+    <screen name="EES_CGM_1029">
+        <parameter key="title"    value="Leased Chassis Charge Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_1029.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-07-20 end -->
+
+	<!-- KIM CHANG SIK : 2009-07-20 start -->
+    <screen name="EES_CGM_2032">
+        <parameter key="title"    value="Leased M.G Set Charge Creation " direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_2032.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-07-20 end -->
+
+	<!-- CHOI MIN HOI : 2009-07-20 start -->
+    <screen name="EES_CGM_2016">
+        <parameter key="title"    value="M.G Set Attach Detach Manual Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/chassismgsetattachdetachhistory/jsp/EES_CGM_2016.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-20 end -->
+
+
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <screen name="EES_CGM_1109">
+        <parameter key="title"    value="Chassis Movement Update by Container" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/chassismovementhistory/jsp/EES_CGM_1109.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <screen name="EES_CGM_1109_POP" template="templatePop">
+        <parameter key="title"    value="Chassis Movement Update by Container" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/chassismovementhistory/jsp/EES_CGM_1109.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+
+	<!-- ChaeShung Cho : 2009-07-22 start -->
+    <screen name="EES_CGM_1094">
+        <parameter key="title"    value="Chassis Long Staying Environment" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_1094.jsp"/>
+    </screen>
+	<!-- ChaeShung Cho : 2009-07-22 end -->
+
+	<!-- ChaeShung Cho : 2009-07-29 start -->
+    <screen name="EES_CGM_1098">
+        <parameter key="title"    value="Inventory by Agreement" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_1098.jsp"/>
+    </screen>
+	<!-- ChaeShung Cho : 2009-07-29 end -->
+
+	<!-- ChaeShung Cho : 2009-07-30 start -->
+    <screen name="EES_CGM_1100">
+        <parameter key="title"    value="Inventory by On-Hire Year" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_1100.jsp"/>
+    </screen>
+	<!-- ChaeShung Cho : 2009-07-30 end -->
+
+	<!-- ChaeShung Cho : 2009-07-31 start -->
+    <screen name="EES_CGM_1102">
+        <parameter key="title"    value="Chassis Variation Status Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_1102.jsp"/>
+    </screen>
+	<!-- ChaeShung Cho : 2009-07-31 end -->
+
+	<!-- CHOI MIN HOI : 2009-08-04 start -->
+    <screen name="EES_CGM_1141">
+        <parameter key="title"    value="Pool Chassis Comparison Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/poolchassishistory/jsp/EES_CGM_1141.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-08-04 end -->
+
+	<!-- CHOI MIN HOI : 2009-08-05 start -->
+    <screen name="EES_CGM_1142" template="templatePop">
+        <parameter key="title"    value="Pool Chassis Comparison Detailed" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/poolchassishistory/jsp/EES_CGM_1142.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-08-05 end -->
+
+	<!-- ChaeShung Cho : 2009-08-10 start -->
+    <screen name="EES_CGM_1103">
+        <parameter key="title"    value="Chassis Variation Status Detail Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_1103.jsp"/>
+    </screen>
+	<!-- ChaeShung Cho : 2009-08-10 end -->
+
+	<!-- CHOI MIN HOI : 2009-08-12 start -->
+    <screen name="EES_CGM_1143">
+        <parameter key="title"    value="Pool Chassis Expense Trend" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/poolchassishistory/jsp/EES_CGM_1143.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-08-12 end -->
+
+	<!-- CHOI MIN HOI : 2009-08-13 start -->
+    <screen name="EES_CGM_1144">
+        <parameter key="title"    value="Pool Chassis M R Performance" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/poolchassishistory/jsp/EES_CGM_1144.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-08-13 end -->
+
+	<!-- CHOI MIN HOI : 2009-08-17 start -->
+    <screen name="EES_CGM_1125">
+        <parameter key="title"    value="Estimated Pool Chassis Expense(Co-Pool N/P)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_1125.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-08-17 end -->
+
+	<!-- CHOI MIN HOI : 2009-08-19 start -->
+    <screen name="EES_CGM_1126"  template="templatePop">
+        <parameter key="title"    value="Estimated Pool Chassis Expense Report (Pop-up)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_1126.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-08-19 end -->
+
+	<!-- KIM CHANG SIK : 2009-08-21 start -->
+    <screen name="EES_CGM_1030"    template="templatePop">
+        <parameter key="title"    value="Invoice Import and Audit" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_1030.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-08-21 end -->
+
+	<!-- KIM CHANG SIK : 2009-08-21 start -->
+    <screen name="EES_CGM_2085" template="templatePop">
+        <parameter key="title"    value="Invoice Import and Audit" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_2085.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-08-21 end -->
+
+	<!-- KIM CHANG SIK : 2009-08-21 start -->
+    <screen name="EES_CGM_1031" template="templatePop">
+        <parameter key="title"    value="Payable Charge Audit Result and Payable Amount Confirm" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_1031.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-08-21 end -->
+
+	<!-- KIM CHANG SIK : 2009-08-21 start -->
+    <screen name="EES_CGM_2098" template="templatePop">
+        <parameter key="title"    value="Payable Charge Audit Result and Payable Amount Confirm" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_2098.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-08-21 end -->
+
+	<!-- KIM CHANG SIK : 2009-08-21 start -->
+    <screen name="EES_CGM_1034">
+        <parameter key="title"    value="Payable Invoice Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_1034.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-08-21 end -->
+
+	<!-- KIM CHANG SIK : 2009-08-21 start -->
+    <screen name="EES_CGM_1123">
+        <parameter key="title"    value="Co-Op Pool Payable Charge Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_1123.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-08-21 end -->
+
+	<!-- KIM CHANG SIK : 2009-08-21 start -->
+    <screen name="EES_CGM_1124">
+        <parameter key="title"    value="Neutral Pool Payable Charge Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_1124.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-08-21 end -->
+
+	<!-- Chae Shung Cho : 2009-09-09 start -->
+    <screen name="EES_CGM_2076">
+        <parameter key="title"    value="General Inventory" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_2076.jsp"/>
+    </screen>
+	<!-- Chae Shung Cho : 2009-09-09 end -->
+
+	<!-- Chae Shung Cho : 2009-09-10 start -->
+    <screen name="EES_CGM_2077">
+        <parameter key="title"    value="Inventory by Lessor amp; Agreement" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_2077.jsp"/>
+    </screen>
+	<!-- Chae Shung Cho : 2009-09-10 end -->
+
+	<!-- Chae Shung Cho : 2009-09-11 start -->
+    <screen name="EES_CGM_2078">
+        <parameter key="title"    value="Inventory by Lessor &amp; Lease Term" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_2078.jsp"/>
+    </screen>
+	<!-- Chae Shung Cho : 2009-09-11 end -->
+
+	<!-- Chae Shung Cho : 2009-09-11 start -->
+    <screen name="EES_CGM_2079">
+        <parameter key="title"    value="Inventory by Creation Office" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_2079.jsp"/>
+    </screen>
+	<!-- Chae Shung Cho : 2009-09-11 end -->
+
+	<!-- Chae Shung Cho : 2009-09-15 start -->
+    <screen name="EES_CGM_2080">
+        <parameter key="title"    value="Inventory by Location &amp; Lessor " direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_2080.jsp"/>
+    </screen>
+	<!-- Chae Shung Cho : 2009-09-15 end -->
+
+    <!-- Chae Shung Cho : 2009-09-16 start -->
+    <screen name="EES_CGM_1106" template="templatePop">
+        <parameter key="title"    value="Movement Inquiry by Chassis" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/chassismovementhistory/jsp/EES_CGM_1106.jsp"/>
+    </screen>
+    <!-- Chae Shung Cho : 2009-09-16 end -->
+
+    <!-- Chae Shung Cho : 2009-09-17 start -->
+    <screen name="EES_CGM_1004" template="templatePop">
+        <parameter key="title"    value="Chassis Master Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1004.jsp"/>
+    </screen>
+    <!-- Chae Shung Cho : 2009-09-17 end -->
+
+    <!-- Chae Shung Cho : 2009-09-18 start -->
+    <screen name="EES_CGM_1011" template="templatePop">
+        <parameter key="title"    value="On &amp; Off-Hire Status Summary Inquiry(Print)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1011.jsp"/>
+    </screen>
+    <!-- Chae Shung Cho : 2009-09-18 end -->
+
+    <!-- Chae Shung Cho : 2009-09-18 start -->
+    <screen name="EES_CGM_1013" template="templatePop">
+        <parameter key="title"    value="On &amp; Off-Hire Status Detailed Inquiry(Print)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_1013.jsp"/>
+    </screen>
+    <!-- Chae Shung Cho : 2009-09-18 end -->
+
+    <!-- Chae Shung Cho : 2009-09-18 start -->
+    <screen name="EES_CGM_2202" template="templatePop">
+        <parameter key="title"    value="On &amp; Off-Hire Status Summary Inquiry(Print)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_2202.jsp"/>
+    </screen>
+    <!-- Chae Shung Cho : 2009-09-18 end -->
+
+    <!-- Chae Shung Cho : 2009-09-18 start -->
+    <screen name="EES_CGM_2203" template="templatePop">
+        <parameter key="title"    value="On &amp; Off-Hire Status Detailed Inquiry(Print)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetonoffhire/jsp/EES_CGM_2203.jsp"/>
+    </screen>
+    <!-- Chae Shung Cho : 2009-09-18 end -->
+
+    <!-- Chae Shung Cho : 2009-09-21 start -->
+    <screen name="EES_CGM_1090" template="templatePop">
+        <parameter key="title"    value="General Inventory(Print)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_1090.jsp"/>
+    </screen>
+    <!-- Chae Shung Cho : 2009-09-21 end -->
+
+    <!-- Chae Shung Cho : 2009-09-21 start -->
+    <screen name="EES_CGM_2205"   template="templatePop">
+        <parameter key="title"    value="General Inventory(Print)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetmgt/chassismgsetinventory/jsp/EES_CGM_2205.jsp"/>
+    </screen>
+    <!-- Chae Shung Cho : 2009-09-21 end -->
+
+    <!-- Chae Shung Cho : 2009-09-22 start -->
+    <screen name="EES_CGM_1023"	  template="templatePop">
+        <parameter key="title"    value="Lease AgreementList Inquiry(Print)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetagreement/jsp/EES_CGM_1023.jsp"/>
+    </screen>
+    <!-- Chae Shung Cho : 2009-09-22 end -->
+
+    <!-- Chae Shung Cho : 2009-09-22 start -->
+    <screen name="EES_CGM_2204" template="templatePop">
+        <parameter key="title"    value="Lease AgreementList Inquiry(Print)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetagreement/jsp/EES_CGM_2204.jsp"/>
+    </screen>
+    <!-- Chae Shung Cho : 2009-09-22 end -->
+
+    <!-- KIM CHANG SIK : 2009-09-30 start -->
+    <screen name="EES_CGM_2035">
+        <parameter key="title"    value="Payable Invoice Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_2035.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-09-30 end -->
+	<!-- ChaeShung Cho : 2009-10-08 start -->
+    <screen name="EES_CGM_1107">
+        <parameter key="title"    value="Chassis Estimate Expense" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_1107.jsp"/>
+    </screen>
+	<!-- ChaeShung Cho : 2009-10-08 end -->
+
+	<!-- ChaeShung Cho : 2009-10-12 start -->
+    <screen name="EES_CGM_2206">
+        <parameter key="title"    value="M.G. Set Estimate Expense" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_2206.jsp"/>
+    </screen>
+	<!-- ChaeShung Cho : 2009-10-12 end -->
+
+	<!-- ChaeShung Cho : 2009-12-21 start -->
+    <screen name="EES_CGM_1035">
+        <parameter key="title"    value="Invoice Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_1035.jsp"/>
+    </screen>
+	<!-- ChaeShung Cho : 2009-12-21 end -->
+
+	<!-- ChaeShung Cho : 2009-12-28 start -->
+    <screen name="EES_CGM_2036">
+        <parameter key="title"    value="Invoice Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_2036.jsp"/>
+    </screen>
+	<!-- ChaeShung Cho : 2009-12-28 end -->
+
+	<!-- CHOI MIN HOI : 2010-01-15 start -->
+    <screen name="EES_CGM_1145" template="templatePop">
+        <parameter key="title"    value="Invoice File Import(Pop-Up)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/poolchassishistory/jsp/EES_CGM_1145.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2010-01-15 end -->
+
+	<!-- CHOI MIN HOI : 2010-01-21 start -->
+    <screen name="EES_CGM_1149" template="templatePop">
+        <parameter key="title"    value="Import Error Report (Pop-Up)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/poolchassishistory/jsp/EES_CGM_1149.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2010-01-21 end -->
+
+	<!-- Jang Jun-Woo  : 2010-08-30 start -->
+    <screen name="EES_CGM_1150">
+        <parameter key="title"    value="Shipper's Chassis Movement Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/chassismovementhistory/jsp/EES_CGM_1150.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo  : 2010-08-30 end -->
+
+	<!-- KIM CHANG SIK : 2009-04-29 start -->
+    <screen name="EES_CGM_1028">
+        <parameter key="title"    value="Agreement Matching" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_1028.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-04-29 end -->
+	
+	<!-- KIM CHANG SIK : 2009-04-29 start -->
+    <screen name="EES_CGM_1028_POP" template="templatePop">
+        <parameter key="title"    value="Agreement Matching" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/chassismgsetagreementinvoice/chassismgsetinvoice/jsp/EES_CGM_1028.jsp"/>
+    </screen>
+	<!-- KIM CHANG SIK : 2009-04-29 end -->
+
+	<!-- EUN-SUP LEE : 2011-04-09 start -->
+    <screen name="EES_CGM_3001">
+        <parameter key="title"    value="Chassiss Pool Company Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/cgmcommon/cgmcodemgt/jsp/EES_CGM_3001.jsp"/>
+    </screen>
+	<!-- EUN-SUP LEE : 2011-04-09 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-23 start -->
+    <screen name="EES_CGM_2104">
+        <parameter key="title"    value="General Mgset Movement Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/mgsetmovementhistory/jsp/EES_CGM_2104.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-06-23 end -->
+	
+	<!-- CHOI MIN HOI : 2009-06-26 start -->
+    <screen name="EES_CGM_2105">
+        <parameter key="title"    value="Movement Inquiry by Mgset" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/mgsetmovementhistory/jsp/EES_CGM_2105.jsp"/>
+    </screen>
+    
+    <screen name="EES_CGM_2105_POP" template="templatePop">
+        <parameter key="title"    value="Movement Inquiry by Mgset" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/mgsetmovementhistory/jsp/EES_CGM_2105.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-06-26 end -->
+	
+	<!-- Chae Shung Cho : 2009-09-16 start -->
+    <screen name="EES_CGM_2106" template="templatePop">
+        <parameter key="title"    value="Movement Inquiry by Mgset" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/mgsetmovementhistory/jsp/EES_CGM_2106.jsp"/>
+    </screen>
+    <!-- Chae Shung Cho : 2009-09-16 end -->
+   
+	<!-- CHOI MIN HOI : 2009-06-29 start -->
+    <screen name="EES_CGM_2108">
+        <parameter key="title"    value="Bare Mgset Movement Manual Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/mgsetmovementhistory/jsp/EES_CGM_2108.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-06-29 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <screen name="EES_CGM_2109">
+        <parameter key="title"    value="Mgset Movement Update by Container" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/mgsetmovementhistory/jsp/EES_CGM_2109.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <screen name="EES_CGM_1050">
+        <parameter key="title"    value="RU Label Maintenance" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/rulabelmanagement/rulabelmanagement/jsp/EES_CGM_1050.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <screen name="EES_CGM_1051">
+        <parameter key="title"    value="RU Label Attachment Detachment" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/rulabelmanagement/rulabelmanagement/jsp/EES_CGM_1051.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <screen name="EES_CGM_1051_POP" template="templatePop">
+        <parameter key="title"    value="RU Label Value" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/rulabelmanagement/rulabelmanagement/jsp/EES_CGM_1051_POP.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <screen name="EES_CGM_1052" template="templatePop">
+        <parameter key="title"    value="RU Label History" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/rulabelmanagement/rulabelmanagement/jsp/EES_CGM_1052.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <screen name="EES_CGM_1053" template="templatePop">
+        <parameter key="title"    value="RU Label Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/rulabelmanagement/rulabelmanagement/jsp/EES_CGM_1053.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <screen name="EES_CGM_1054" template="templatePop">
+        <parameter key="title"    value="RU Label - Search Condition" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/rulabelmanagement/rulabelmanagement/jsp/EES_CGM_1054.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <screen name="EES_CGM_2050">
+        <parameter key="title"    value="RU Label Maintenance" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/rulabelmanagement/rulabelmanagement/jsp/EES_CGM_2050.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <screen name="EES_CGM_2051">
+        <parameter key="title"    value="RU Label Attachment Detachment" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/rulabelmanagement/rulabelmanagement/jsp/EES_CGM_2051.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <screen name="EES_CGM_2051_POP" template="templatePop">
+        <parameter key="title"    value="RU Label Value" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/rulabelmanagement/rulabelmanagement/jsp/EES_CGM_2051_POP.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <screen name="EES_CGM_2110">
+        <parameter key="title"    value="Mgset Movement Update by Chassis" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cgm/movementmnrhistory/mgsetmovementhistory/jsp/EES_CGM_2110.jsp"/>
+    </screen>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+</screen-definitions>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOApPayInvListRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT COST_OFC_CD,
+       TO_CHAR(VNDR_NO, '000000') VNDR_NO,
+       VNDR_SEQ_NAME,
+       COUNT(VNDR_NO) CNT_INV,
+       INV_CURR_CD,
+       SUM(INV_TTL_AMT) TOTAL_AMT,
+       TO_CHAR(MAX(INV_ISS_DT),'YYYY-MM-DD') INV_ISS_DT,
+       TO_CHAR(MAX(INV_RCV_DT),'YYYY-MM-DD') INV_RCV_DT, 
+       MDM_GET_PAY_TERM_CD_FNC(MIN(INV_ISS_DT), GEN_PAY_TERM_CD) GEN_PAY_TERM_CD, --GEN_PAY_TERM_CD,
+       MDM_GET_PAY_TERM_CD_FNC(MIN(INV_ISS_DT), GEN_PAY_TERM_CD) GEN_PAY_TERM_DESC, --GEN_PAY_TERM_DESC
+       TO_CHAR(MDM_GET_PAY_DUE_DT_FNC(MIN(INV_ISS_DT), GEN_PAY_TERM_CD), 'YYYY-MM-DD') PAYMENT_DUE_DT,
+--       DECODE(GEN_PAY_TERM_CD,'IN',  TO_CHAR(MAX(INV_ISS_DT) + 5, 'YYYY-MM-DD')
+--                             ,'OUT', TO_CHAR(MAX(INV_ISS_DT) + 60, 'YYYY-MM-DD')
+--                             ,'O60', TO_CHAR(MAX(INV_ISS_DT) , 'YYYY-MM-DD')
+--                             ,'O45', TO_CHAR(MAX(INV_ISS_DT) , 'YYYY-MM-DD')
+--                             ,TO_CHAR(MAX(INV_ISS_DT) + TO_NUMBER(GEN_PAY_TERM_CD), 'YYYY-MM-DD')) PAYMENT_DUE_DT,
+       PAY_TERM_TP_CD,
+	   INV_SUB_SYS_CD,
+	   PSO_TRNS_SLP_CTNT,
+       '' INV_CFM_DT,
+       '' VNDR_SEQ,
+       '' INV_OFC_CD 
+FROM ( 
+	SELECT DISTINCT
+              A.COST_OFC_CD     COST_OFC_CD,
+              A.VNDR_SEQ        VNDR_NO,
+              B.VNDR_LGL_ENG_NM VNDR_SEQ_NAME,
+              A.INV_CURR_CD     INV_CURR_CD,
+			  DECODE(A.INV_CURR_CD, 'KRW', ROUND(NVL(A.INV_TTL_AMT,0),0)
+			      				  , 'JPY', ROUND(NVL(A.INV_TTL_AMT,0),0)
+								  , ROUND(NVL(A.INV_TTL_AMT,0),2)) INV_TTL_AMT,
+              A.INV_VAT_AMT,
+              A.INV_ISS_DT,
+              A.INV_RCV_DT,
+              B.GEN_PAY_TERM_CD,
+              DECODE(B.GEN_PAY_TERM_CD, 'O60', 'KR H/O Payment_60', B.GEN_PAY_TERM_CD) GEN_PAY_TERM_DESC,
+              B.PAY_TERM_TP_CD,
+              A.INV_SUB_SYS_CD,
+			  A.INV_NO,
+			  A.PSO_TRNS_SLP_CTNT
+       FROM   AP_PAY_INV A, 
+			  MDM_VENDOR B
+       WHERE  A.INV_OFC_CD      = @[inv_ofc_cd]
+#if (${inv_sub_sys_cd} == 'MNR')
+  		 AND A.INV_SUB_SYS_CD IN (@[inv_sub_sys_cd], 'TLL')
+#else
+  	     AND A.INV_SUB_SYS_CD = @[inv_sub_sys_cd]
+#end
+  		 AND A.INV_STS_CD IN ('C', 'X')
+  	     AND A.VNDR_SEQ   = B.VNDR_SEQ 
+#if (${inv_cfm_dt} != '')
+	     AND TO_CHAR(a.INV_CFM_DT,'YYYY-MM-DD') = @[inv_cfm_dt] 
+#end 
+#if (${vndr_seq} != '')
+         AND A.VNDR_SEQ                         = @[vndr_seq]
+#end
+         AND NVL(A.DELT_FLG,'N')               <> 'Y' 
+         AND NOT EXISTS (
+        				SELECT 'X'
+          				  FROM AP_INV_HDR C
+         				 WHERE A.CSR_NO = C.CSR_NO
+          				   AND C.IF_ERR_RSN = 'Sending...'
+      					)
+       )
+GROUP BY COST_OFC_CD,
+         VNDR_NO,
+         VNDR_SEQ_NAME,
+         INV_CURR_CD,
+         GEN_PAY_TERM_CD,
+         GEN_PAY_TERM_DESC,
+         PAY_TERM_TP_CD,
+		 INV_SUB_SYS_CD,
+		 PSO_TRNS_SLP_CTNT			]]></sql>
+			<params>
+				<param name="inv_ofc_cd" type="12" value="" out="N"/>
+				<param name="inv_sub_sys_cd" type="12" value="" out="N"/>
+				<param name="inv_cfm_dt" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

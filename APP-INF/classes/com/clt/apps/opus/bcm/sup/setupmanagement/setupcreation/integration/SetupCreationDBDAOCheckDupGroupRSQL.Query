@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOCheckDupGroupRSQL">
+			<desc><![CDATA[2011.02.17 정윤태 EDI GROUP에 중복데이타가 존재하는지 체크한다]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*) CNT 
+  FROM EDI_GROUP
+ WHERE EDI_GRP_CD = @[grp_cd]
+   AND CO_DIV_CD = @[co_div_cd]			]]></sql>
+			<params>
+				<param name="grp_cd" type="12" value="" out="N"/>
+				<param name="co_div_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

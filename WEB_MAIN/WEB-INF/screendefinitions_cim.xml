@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<!-- kim jong jun : 2009-04-30 start -->
+    <screen name="EES_CIM_0001">
+        <parameter key="title"    value="EQ Operation Trend (Inventory Trend)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/cntrinventoryreport/jsp/EES_CIM_0001.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-04-30 end -->
+	
+	<!-- kim jong jun : 2009-05-14 start -->
+    <screen name="EES_CIM_0002">
+        <parameter key="title"    value="Total Inventory by Lease Term" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/cntrinventoryreport/jsp/EES_CIM_0002.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-05-20 end  -->
+
+	<!-- kim jong jun : 2009-05-20 start -->
+    <screen name="EES_CIM_0008">
+        <parameter key="title"    value="Land Inventory (By Location)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/cntrinventoryreport/jsp/EES_CIM_0008.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-05-14 end -->
+
+	<!-- kim jong jun : 2009-05-28 start -->
+    <screen name="EES_CIM_0902" template="templatePop">
+        <parameter key="title"    value="Total Inventory by Lease Term Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/cntrinventoryreport/jsp/EES_CIM_0902.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-05-28 end -->
+
+	<!-- kim jong jun : 2009-06-02 start -->
+    <screen name="EES_CIM_0908" template="templatePop">
+        <parameter key="title"    value="Land Inventory (By Location) Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/cntrinventoryreport/jsp/EES_CIM_0908.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-06-02 end -->
+
+	<!-- kim jong jun : 2009-06-03 start -->
+    <screen name="EES_CIM_0017">
+        <parameter key="title"    value="Sea Inventory (by VVD)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/cntrinventoryreport/jsp/EES_CIM_0017.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-06-03 end -->
+
+	<!-- kim jong jun : 2009-06-08 start -->
+    <screen name="EES_CIM_0018">
+        <parameter key="title"    value="Container List by Location" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/cntrinventoryreport/jsp/EES_CIM_0018.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-06-08 end -->
+	
+    <screen name="EES_MST_0019_POP" template="templatePop">
+        <parameter key="title"    value="CA Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containeronoffhire/jsp/EES_MST_0019.jsp"/>
+    </screen>  
+	
+    <screen name="EES_CIM_0902_POP" template="templatePop">
+        <parameter key="title"    value="Total Inventory by Lease Term Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/cntrinventoryreport/jsp/EES_CIM_0902.jsp"/>
+    </screen>  
+	
+    <screen name="EES_CIM_0908_POP" template="templatePop">
+        <parameter key="title"    value="Land Inventory (By Location) Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/cntrinventoryreport/jsp/EES_CIM_0908.jsp"/>
+    </screen>  
+	
+    <screen name="EES_CIM_1918_POP" template="templatePop">
+        <parameter key="title"    value="Location M/B by Logistics-Wise" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1918.jsp"/>
+    </screen>  
+	
+    <screen name="EES_CIM_1923_POP" template="templatePop">
+        <parameter key="title"    value="TMNL M/B by Logistics-Wise" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1923.jsp"/>
+    </screen>  
+	
+    <screen name="EES_CIM_1927_POP" template="templatePop">
+        <parameter key="title"    value="Location M/B by BKG-Wise" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1927.jsp"/>
+    </screen>  
+	
+    <screen name="EES_CIM_0022_POP" template="templatePop">
+        <parameter key="title"    value="L/S  U/C Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/longstayingunclaimeqmgt/longstayingunclaimeqflagging/jsp/EES_CIM_0022.jsp"/>
+    </screen>  
+	
+	<!-- kim jong jun : 2009-06-24 start -->
+    <screen name="EES_CIM_0034">
+        <parameter key="title"    value="EQ Availability" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/eqavailabilityfinder/jsp/EES_CIM_0034.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-06-08 end -->	
+	<!-- kim jong jun : 2009-06-30 start -->
+    <screen name="EES_CIM_0039"   template="templatePop">
+        <parameter key="title"    value="MTY Reposition for EQ Availability" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/eqavailabilityfinder/jsp/EES_CIM_0039.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-06-30 end -->	
+
+	<!-- kim jong jun : 2010-02-18 start -->
+    <screen name="EES_CIM_0052"   template="templatePop">
+        <parameter key="title"    value="Past BR" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/eqavailabilityfinder/jsp/EES_CIM_0052.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2010-02-18 end -->	
+
+	<!-- kim jong jun : 2010-02-19 start -->
+    <screen name="EES_CIM_0046" template="templatePop">
+        <parameter key="title"    value="BR" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/eqavailabilityfinder/jsp/EES_CIM_0046.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2010-02-19 end -->	
+	
+	<!-- kim jong jun : 2010-02-19 start -->
+    <screen name="EES_CIM_0047" template="templatePop">
+        <parameter key="title"    value="PUP Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/eqavailabilityfinder/jsp/EES_CIM_0047.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2010-02-19 end -->	
+
+	<!-- kim jong jun : 2010-02-19 start -->
+    <screen name="EES_CIM_0049" template="templatePop">
+        <parameter key="title"    value="IG Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/eqavailabilityfinder/jsp/EES_CIM_0049.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2010-02-19 end -->	
+
+	<!-- kim jong jun : 2010-02-19 start -->
+    <screen name="EES_CIM_0050" template="templatePop">
+        <parameter key="title"    value="IG Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/eqavailabilityfinder/jsp/EES_CIM_0050.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2010-02-19 end -->	
+
+	<!-- kim jong jun : 2010-02-23 start -->
+    <screen name="EES_CIM_0048" template="templatePop">
+        <parameter key="title"    value="OFF Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/eqavailabilityfinder/jsp/EES_CIM_0048.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2010-02-23 end -->	
+
+	<!-- kim jong jun : 2010-02-23 start -->
+    <screen name="EES_CIM_0051"   template="templatePop">
+        <parameter key="title"    value="ON Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/eqavailabilityfinder/jsp/EES_CIM_0051.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2010-02-23 end -->	
+	
+	<!-- kim jong jun : 2009-07-09 start -->
+    <screen name="EES_CIM_0021">
+        <parameter key="title"    value="Container Staying Days (Summary)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/longstayingunclaimeqmgt/longstayingunclaimeqflagging/jsp/EES_CIM_0021.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-07-09 end -->	
+	<!-- kim jong jun : 2009-07-17 start -->
+    <screen name="EES_CIM_0044" template="templatePop">
+        <parameter key="title"    value="Container Staying Days (Detail)" direct="true"/> 
+        <parameter key="body"     value="apps/opus/ees/cim/longstayingunclaimeqmgt/longstayingunclaimeqflagging/jsp/EES_CIM_0044.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-07-17 end -->	
+
+	<!-- kim jong jun : 2009-07-20 start -->
+    <screen name="EES_CIM_0041"   template="templatePop">
+        <parameter key="title"    value="Total S/Days (by MVMT Status)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/longstayingunclaimeqmgt/longstayingunclaimeqflagging/jsp/EES_CIM_0041.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-07-20 end -->	
+
+	<!-- kim jong jun : 2009-07-20 start -->
+    <screen name="EES_CIM_0042" template="templatePop">
+        <parameter key="title"    value="Total S/Days (Detail)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/longstayingunclaimeqmgt/longstayingunclaimeqflagging/jsp/EES_CIM_0042.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-07-20 end -->
+		
+	<!-- kim jong jun : 2009-07-23 start -->
+    <screen name="EES_CIM_0032">
+        <parameter key="title"    value="MTY Balance Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/mtyequipmentforecast/mtyequipmentforecast/jsp/EES_CIM_0032.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-07-20 end -->		
+	
+	<!-- kim jong jun : 2009-07-31 start -->
+    <screen name="EES_CIM_0038" template="templateEmpty"> 
+        <parameter key="title"    value="OW/ On-hire Receiving Plan" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/mtyequipmentforecast/mtyequipmentforecast/jsp/EES_CIM_0038.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-07-31 end -->		
+	
+	<!-- kim jong jun : 2009-08-10 start -->
+    <screen name="EES_CIM_0037" template="templateEmpty"> 
+        <parameter key="title"    value="+/- Others Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/mtyequipmentforecast/mtyequipmentforecast/jsp/EES_CIM_0037.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-08-10 end -->		
+
+	<!-- kim jong jun : 2009-08-11 start -->
+    <screen name="EES_CIM_0043" template="templateEmpty"> 
+        <parameter key="title"    value="MTY Repo In/ Out Plan" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/mtyequipmentforecast/mtyequipmentforecast/jsp/EES_CIM_0043.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-08-11 end -->		
+
+	<!-- kim jong jun : 2009-08-12 start -->
+    <screen name="EES_CIM_0028">
+        <parameter key="title"    value="Stock Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/cntrinventoryreport/jsp/EES_CIM_0028.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-08-12 end -->
+
+	<!-- kim jong jun : 2009-08-13 start -->
+    <screen name="EES_CIM_0029" template="templatePop"> 
+        <parameter key="title"    value="Stock Report (CNTR Data)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/cntrinventoryreport/jsp/EES_CIM_0029.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-08-13 end -->
+
+	<!-- kim jong jun : 2009-08-13 start -->
+    <screen name="EES_CIM_0030" template="templatePop"> 
+        <parameter key="title"    value="Stock Report (Due Data)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/cntrinventoryreport/jsp/EES_CIM_0030.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-08-13 end -->
+	
+	<!-- kim jong jun : 2009-08-14 start -->
+    <screen name="EES_CIM_0031" template="templatePop"> 
+        <parameter key="title"    value="Stock Report (Detail)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/containersupplydemandforecast/cntrinventoryreport/jsp/EES_CIM_0031.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-08-13 end -->	
+
+	<!-- kim jong jun : 2009-09-01 start -->
+    <screen name="EES_CIM_0022">
+        <parameter key="title"    value="L/S  U/C Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/longstayingunclaimeqmgt/longstayingunclaimeqflagging/jsp/EES_CIM_0022.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-09-01 end -->		
+	
+	<!-- kim jong jun : 2009-09-07 start -->
+    <screen name="EES_CIM_0024">
+        <parameter key="title"    value="L/S Flag Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/longstayingunclaimeqmgt/longstayingunclaimeqflagging/jsp/EES_CIM_0024.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-09-07 end -->		
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<!-- Prak Kwang Seok : 2009-04-24 start -->
+    <screen name="EES_CIM_1001">
+        <parameter key="title"    value="Turn Time by Port" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/turntimeperformancemgt/jsp/EES_CIM_1001.jsp"/>
+    </screen>
+
+	<!-- Prak Kwang Seok : 2009-04-24 end --> 
+
+	<!-- Prak Kwang Seok : 2009-05-04 start -->
+    <screen name="EES_CIM_1007">
+        <parameter key="title"    value="Turn Time by Lane  VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/turntimeperformancemgt/jsp/EES_CIM_1007.jsp"/>
+    </screen>
+	<!-- Prak Kwang Seok : 2009-05-04 end -->
+
+	<!-- Prak Kwang Seok : 2009-05-12 start -->
+    <screen name="EES_CIM_1016">
+        <parameter key="title"    value="Turn Time by Location" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/turntimeperformancemgt/jsp/EES_CIM_1016.jsp"/>
+    </screen>
+	<!-- Prak Kwang Seok : 2009-05-12 end -->
+
+	<!-- Sang young Cha : 2009-05-12 start -->
+    <screen name="EES_CIM_1016_POP" template="templatePop">
+        <parameter key="title"    value="Turn Time by Location" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/turntimeperformancemgt/jsp/EES_CIM_1016.jsp"/>
+    </screen>
+	<!-- Sang young Cha : 2009-05-12 end -->
+
+	<!-- Prak Kwang Seok : 2009-05-19 start -->
+    <screen name="EES_CIM_1014">
+        <parameter key="title"    value="Turn Around Time" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/turntimeperformancemgt/jsp/EES_CIM_1014.jsp"/>
+    </screen>
+	<!-- Prak Kwang Seok : 2009-05-19 end -->
+
+	<!-- Prak Kwang Seok : 2009-05-20 start -->
+    <screen name="EES_CIM_1023">
+        <parameter key="title"    value="TMNL M/B by Logistics-Wise" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1023.jsp"/>
+    </screen>
+	<!-- Prak Kwang Seok : 2009-05-20 end -->
+
+    <!-- Prak Kwang Seok : 2009-05-20 start -->
+    <screen name="EES_CIM_1923">
+        <parameter key="title"    value="TMNL M/B by Logistics-Wise" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1923.jsp"/>
+    </screen>
+    <!-- Prak Kwang Seok : 2009-05-20 end -->
+
+	<!-- Prak Kwang Seok : 2009-05-21 start -->
+    <screen name="EES_CIM_1020">
+        <parameter key="title"    value="Lane M/B by Logistics-Wise" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1020.jsp"/>
+    </screen>
+	<!-- Prak Kwang Seok : 2009-05-21 end -->
+
+	<!-- Prak Kwang Seok : 2009-05-26 start -->
+    <screen name="EES_CIM_1033">
+        <parameter key="title"    value="Repo Result by Port" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/mtyrepositionperformanceanalysis/jsp/EES_CIM_1033.jsp"/>
+    </screen>
+	<!-- Prak Kwang Seok : 2009-05-26 end -->
+
+	<!-- Prak Kwang Seok : 2009-05-27 start -->
+    <screen name="EES_CIM_1034">
+        <parameter key="title"    value="Repo Result by Location" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/mtyrepositionperformanceanalysis/jsp/EES_CIM_1034.jsp"/>
+    </screen>
+	<!-- Prak Kwang Seok : 2009-05-27 end -->
+
+	<!-- Prak Kwang Seok : 2009-06-02 start -->
+    <screen name="EES_CIM_1051">
+        <parameter key="title"    value="MTY CNTR PFMC by Movement" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/mtyrepositionperformanceanalysis/jsp/EES_CIM_1051.jsp"/>
+    </screen>
+	<!-- Prak Kwang Seok : 2009-06-02 end -->
+
+	<!-- Prak Kwang Seok : 2009-06-11 start -->
+    <screen name="EES_CIM_1049">
+        <parameter key="title"    value="Load Factor by Trade" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1049.jsp"/>
+    </screen>
+	<!-- Prak Kwang Seok : 2009-06-11 end -->
+
+	<!-- Prak Kwang Seok : 2009-06-11 start -->
+    <screen name="EES_CIM_1949">
+        <parameter key="title"    value="Load Factor by Trade" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1949.jsp"/>
+    </screen>
+	<!-- Prak Kwang Seok : 2009-06-11 end -->
+
+	<!-- Mun Jung Cheol : 2009-06-05 start -->
+    <screen name="EES_CIM_1018">
+        <parameter key="title"    value="Location M/B by Logistics-Wise" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1018.jsp"/>
+    </screen>
+	<!-- Mun Jung Cheol : 2009-06-05 end -->
+
+	<!-- Sang Young Cha : 2014-11-25 start -->
+    <screen name="EES_CIM_1018_POP" template="templatePop">
+        <parameter key="title"    value="Location M/B by Logistics-Wise" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1018.jsp"/>
+    </screen>
+	<!-- Sang Young Cha : 2014-11-25 end -->
+
+    <!-- Mun Jung Cheol : 2009-07-16 start -->
+    <screen name="EES_CIM_1918">
+        <parameter key="title"    value="Location M/B by Logistics-Wise" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1918.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-07-16 end -->
+
+	<!-- Mun Jung Cheol : 2009-06-18 start -->
+    <screen name="EES_CIM_1032">
+        <parameter key="title"    value="Match-Back by Service Mode" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1032.jsp"/>
+    </screen>
+	<!-- Mun Jung Cheol : 2009-06-18 end -->
+
+	<!-- Mun Jung Cheol : 2009-06-23 start -->
+    <screen name="EES_CIM_1027">
+        <parameter key="title"    value="Location M/B by BKG-Wise" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1027.jsp"/>
+    </screen>
+	<!-- Mun Jung Cheol : 2009-06-23 end -->
+
+    <!-- Mun Jung Cheol : 2009-06-23 start -->
+    <screen name="EES_CIM_1927">
+        <parameter key="title"    value="Location M/B by BKG-Wise" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1927.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-06-23 end -->
+
+	<!-- Mun Jung Cheol : 2009-06-24 start -->
+    <screen name="EES_CIM_1029">
+        <parameter key="title"    value="Cargo Flow Map" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1029.jsp"/>
+    </screen>
+	<!-- Mun Jung Cheol : 2009-06-24 end -->
+
+    <!-- Mun Jung Cheol : 2009-06-29 start -->
+    <screen name="EES_CIM_1053">
+        <parameter key="title"    value="CIM Batch Job Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1053.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-06-29 end -->
+
+    <!-- Mun Jung Cheol : 2009-07-01 start -->
+    <screen name="EES_CIM_1050">
+        <parameter key="title"    value="Match-back by Vessel" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1050.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-07-01 end -->
+    
+    <!-- Mun Jung Cheol : 2009-07-16 start -->
+    <screen name="EES_CIM_1950">
+        <parameter key="title"    value="Match-back by Vessel" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/eqmatchbacknloadfactormgt/jsp/EES_CIM_1950.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-07-16 end -->
+
+
+
+	<!-- Prak Kwang Seok : 2009-08-31 start -->
+    <screen name="EES_CIM_1011">
+        <parameter key="title"    value="Turn Time by Movement" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cntroperationperformancemgt/turntimeperformancemgt/jsp/EES_CIM_1011.jsp"/>
+    </screen>
+	<!-- Prak Kwang Seok : 2009-08-31 end -->
+
+
+	<!-- kim jong jun : 2009-06-08 start -->
+    <screen name="EES_CIM_0025">
+        <parameter key="title"    value="Container Free Day Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/longstayingunclaimeqmgt/longstayingunclaimeqflagging/jsp/EES_CIM_0025.jsp"/>
+    </screen>
+	<!-- kim jong jun : 2009-06-08 end -->
+
+
+	<!-- Chang Hun Kim : 2012-04-16 start -->
+    <screen name="EES_CIM_2100">
+        <parameter key="title"    value="Container Type Size Division" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cimcommon/cimcommon/jsp/EES_CIM_2100.jsp"/>
+    </screen>
+	<!-- Chang Hun Kim : 2012-04-16 end -->
+	
+	<!-- Lee Young Du : 2013-07-01 start -->
+    <screen name="EES_CIM_1951">
+        <parameter key="title"    value="OP Inventory for Pseudo Booking" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/longstayingunclaimeqmgt/longstayingunclaimeqflagging/jsp/EES_CIM_1951.jsp"/>
+    </screen>
+	<!-- Lee Young Du : 2013-07-01 end -->
+	
+	<!-- Chang Hun Kim : 2015-07-09 start -->
+    <screen name="EES_CIM_2001">
+        <parameter key="title"    value="Oscar Booking Information Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cimcommon/cimcommon/jsp/EES_CIM_2001.jsp"/>
+    </screen>
+	<!-- Chang Hun Kim : 2015-07-09 end -->
+	
+	<screen name="EES_CIM_2002" template="templatePop"> 
+        <parameter key="title"    value="Search EDI Error Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/cim/cimcommon/cimcommon/jsp/EES_CIM_2002.jsp"/>
+    </screen>
+</screen-definitions>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserMappingDAOMdmOrganizationRSQL">
+			<desc><![CDATA[SELECT MDM_ORGANIZATION]]></desc>
+			<sql><![CDATA[
+#if(${usr_auth_tp_cd}=='A')     
+	SELECT                                                                
+	    level,                                                              
+	    ofc_cd,                                                             
+	    ofc_eng_nm,                                                         
+	    OFC_LOCL_NM  AS ofc_krn_nm                                                          
+	  FROM mdm_organization                                                 
+	  WHERE DELT_FLG = 'N'                                                  
+	  CONNECT BY PRIOR ofc_cd = prnt_ofc_cd                                 
+	  START WITH prnt_ofc_cd IS NULL                                       
+#elseif(${usr_auth_tp_cd}=='S')
+ SELECT                                                                
+    level,                                                              
+    ofc_cd,                                                             
+    ofc_eng_nm,                                                         
+    OFC_LOCL_NM  AS ofc_krn_nm                                                          
+  FROM mdm_organization                                                 
+  WHERE DELT_FLG = 'N'
+#if(${rhq_ofc_cd}!='SINHO') 
+  AND ar_hd_qtr_ofc_cd = @[rhq_ofc_cd]
+#end
+  CONNECT BY PRIOR ofc_cd = prnt_ofc_cd
+  START WITH prnt_ofc_cd IS NULL
+#end			]]></sql>
+			<params>
+				<param name="rhq_ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

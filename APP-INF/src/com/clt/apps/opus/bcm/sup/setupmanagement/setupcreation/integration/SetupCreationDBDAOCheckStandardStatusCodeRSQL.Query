@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOCheckStandardStatusCodeRSQL">
+			<desc><![CDATA[2011.02.24 정윤태 EDI CARGO STANDARD STATUS에 Standard Status Code가 존재하는지 체크한다]]></desc>
+			<sql><![CDATA[
+SELECT EDI_STND_STS_CD
+  FROM EDI_CGO_STND_STS
+ WHERE EDI_STND_STS_CD = @[edi_stnd_std_cd]
+#if(${co_div_cd} != '')
+   AND CO_DIV_CD = @[co_div_cd]
+#end
+   AND ROWNUM = 1			]]></sql>
+			<params>
+				<param name="edi_stnd_std_cd" type="12" value="" out="N"/>
+				<param name="co_div_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

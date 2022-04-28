@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCheckMstRevVVD01RSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT D.ATTR_CTNT1,
+  D.DTRB_COA_VVD_CD,
+  D.DTRB_COA_ACCT_CD
+FROM AP_INV_HDR H,
+  AP_INV_DTRB D
+WHERE H.CSR_NO = D.CSR_NO
+  AND D.CSR_NO = @[csr_no]
+GROUP BY D.ATTR_CTNT1, D.DTRB_COA_VVD_CD, D.DTRB_COA_ACCT_CD
+ORDER BY D.ATTR_CTNT1, D.DTRB_COA_VVD_CD, D.DTRB_COA_ACCT_CD			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<project name="NIS2010"  default="JavaScriptUpload"  basedir="." >   
+	 <target name="init">
+		<property file="build.properties"/>  
+		<property name="SERVICE"						value="116.127.223.157" />
+		<property name="SERVICE.id"						value="opusdev" />
+		<property name="SERVICE.pwd"					value="qwer1234" />
+		<property name="WebInf.ftp.dir"					value="/sitectx/OPUS_CNTR/WEB-INF/" />
+		<property name="js.ftp.dir"						value="/sitedoc/OPUSCNTR/opuscntr/" />
+		<property name="img.ftp.dir"					value="/sitedoc/OPUSCNTR/opuscntr/img/" />
+		<property name="etc.ftp.dir"					value="/sitedoc/OPUSCNTR/opuscntr/" />
+		<property name="localdir.for.WebInf"			value="C:/hanjin/OPUS_CNTR" />
+		<property name="localdir.for.JavaScriptUpload"	value="C:/hanjin/OPUS_CNTR/WEB_MAIN/" />
+		<property name="localdir.for.IMGUpload"			value="C:/hanjin/OPUS_CNTR/WEB_MAIN/" />
+		<property name="localdir.for.ETCUpload"			value="C:/hanjin/OPUS_CNTR/WEB_MAIN/" />
+	 </target>
+
+  <target name="JavaScriptUpload" depends="init">
+          <echo message="|-------------------------------------------------------------| " />
+          <echo message="|                                                             | " />
+          <echo message="|                  JavaScriptUpload......                    | " />
+          <echo message="|                                                             | " />
+          <echo message="|-------------------------------------------------------------| " />
+          <ftp server="${SERVICE}"
+               remotedir="${js.ftp.dir}"
+               userid="${SERVICE.id}"
+               password="${SERVICE.pwd}"
+               binary="true"
+               verbose="yes"
+          >
+                  <fileset dir="${localdir.for.JavaScriptUpload}">
+                        <include name="apps/opus/bcm/fin/financemanagement/financecreation/script/BCM_FIN_*.js"/>            	
+                        <include name="apps/opus/bcm/fin/financemanagement/financecreation/CoFin.js"/>            	
+                  </fileset>
+          </ftp>          
+          <echo message="|                                                             | " />
+          <echo message="|                      Upload OK!                             | " />
+          <echo message="|                                                             | " />
+          <echo message="|-------------------------------------------------------------| " /> 
+  </target>
+
+  <target name="IMGUpload" depends="init">
+          <echo message="|-------------------------------------------------------------| " />
+          <echo message="|                                                             | " />
+          <echo message="|                      IMGUpload......                    | " />
+          <echo message="|                                                             | " />
+          <echo message="|-------------------------------------------------------------| " />
+          <ftp server="${SERVICE}"
+               remotedir="${jsp.ftp.dir}"
+               userid="${SERVICE.id}"
+               password="${SERVICE.pwd}"
+               binary="false"
+               verbose="yes"
+          >
+                  <fileset dir="${localdir.for.IMGUpload}">
+                  </fileset>
+          </ftp>         
+          <echo message="|                                                             | " />
+          <echo message="|                                                             | " />
+          <echo message="|                                                             | " />
+          <echo message="|                      Upload OK!                             | " />
+          <echo message="|                                                             | " />
+          <echo message="|-------------------------------------------------------------| " /> 
+  </target>
+
+  <target name="ETCUpload" depends="init">
+          <echo message="|-------------------------------------------------------------| " />
+          <echo message="|                                                             | " />
+          <echo message="|                      ETCUpload......                    | " />
+          <echo message="|                                                             | " />
+          <echo message="|-------------------------------------------------------------| " />
+          <ftp server="${SERVICE}"
+               remotedir="${xml.ftp.dir}"
+               userid="${SERVICE.id}"
+               password="${SERVICE.pwd}"
+               binary="false"
+               verbose="yes"
+          >
+                  <fileset dir="${localdir.for.ETCUpload}">
+                  </fileset>
+          </ftp>         
+          <echo message="|                                                             | " />
+          <echo message="|                                                             | " />
+          <echo message="|                                                             | " />
+          <echo message="|                      Upload OK!                             | " />
+          <echo message="|                                                             | " />
+          <echo message="|-------------------------------------------------------------| " /> 
+  </target>
+</project>

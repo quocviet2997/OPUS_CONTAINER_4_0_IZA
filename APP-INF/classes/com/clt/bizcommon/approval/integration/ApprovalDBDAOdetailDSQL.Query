@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOdetailDSQL">
+			<desc><![CDATA[Approval Route 상세정보를 삭제합니다]]></desc>
+			<sql><![CDATA[
+DELETE 
+  FROM COM_APRO_ROUT_DFLT_DTL
+ WHERE APRO_ROUT_SEQ = @[apro_rout_seq]			]]></sql>
+			<params>
+				<param name="apro_rout_seq" type="2" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

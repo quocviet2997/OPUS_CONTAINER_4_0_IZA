@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchArRouteRankSeqRSQL">
+			<desc><![CDATA[SearchArRouteRankSeq]]></desc>
+			<sql><![CDATA[
+SELECT NVL(MAX(RNK_SEQ),0) + 1 RNK_SEQ
+  FROM AR_ROUT_RNK
+WHERE RLANE_CD = @[rlane_cd]			]]></sql>
+			<params>
+				<param name="rlane_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

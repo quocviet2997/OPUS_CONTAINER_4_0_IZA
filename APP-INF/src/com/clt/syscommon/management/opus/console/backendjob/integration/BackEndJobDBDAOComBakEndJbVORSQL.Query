@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="BackEndJobDBDAOComBakEndJbVORSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+SELECT 
+	JB_ID
+,	THD_ID
+,	JB_MSG
+,	JB_STS_FLG
+,	CRE_USR_ID
+,	CRE_DT
+,	UPD_USR_ID
+,	UPD_DT
+FROM COM_BAK_END_JB
+WHERE	JB_STS_FLG = @[jb_sts_flg]			]]></sql>
+			<params>
+				<param name="jb_sts_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOAsaNoRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT ASA_NO CODE ,
+      ASA_NO || ' ' || CURR_CD || ' (' || ASA_PRD_FM_DT || '~' || ASA_PRD_TO_DT || ')' NAME
+    FROM (
+        SELECT ASA_NO ,
+          CURR_CD,
+          TO_CHAR(TO_DATE(ASA_PRD_FM_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD') ASA_PRD_FM_DT,
+          TO_CHAR(TO_DATE(ASA_PRD_TO_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD') ASA_PRD_TO_DT
+        FROM SAR_ASA_MST
+        WHERE 1=1
+--          AND EXPN_EFF_DT IS NULL
+--          AND AC_EFF_DT IS NULL
+          AND ASA_FSH_DT IS NULL
+          AND ASA_APRO_DT IS NULL
+--          AND NVL(DELT_FLG, 'N') = 'N'
+          AND OFC_CD IN (
+            SELECT AR_OFC_CD
+            FROM MDM_ORGANIZATION
+            WHERE OFC_CD = @[inv_ofc_cd]) )			]]></sql>
+			<params>
+				<param name="inv_ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

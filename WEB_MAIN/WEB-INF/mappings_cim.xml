@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- kim jong jun : 2009-04-30 start -->
+    <url-mapping url="EES_CIM_COM.do" screen="CIM_COM.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cimcommon.cimcommon.event.CIM_COMHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_COMGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cimcommon.cimcommon.event.CIM_COMHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cimcommon.cimcommon.event.CimComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cimcommon.CIMCommonSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-04-30 end -->	
+	
+	<!-- kim jong jun : 2009-04-30 start -->
+    <url-mapping url="EES_CIM_0001.do" screen="EES_CIM_0001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EesCim0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-04-30 end -->
+
+	<!-- kim jong jun : 2009-05-14 start -->
+    <url-mapping url="EES_CIM_0002.do" screen="EES_CIM_0002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0002HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="EES_CIM_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EesCim0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-05-14 end -->
+	
+	<!-- kim jong jun : 2009-05-20 start -->
+    <url-mapping url="EES_CIM_0008.do" screen="EES_CIM_0008.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0008GS.do" screen="com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EesCim0008ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+	<!-- kim jong jun : 2009-06-02 start -->
+    <url-mapping url="EES_CIM_0908.do" screen="EES_CIM_0908.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0908GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0008HTMLAction</web-action-class>
+    </url-mapping>
+	<!-- kim jong jun : 2009-06-02 end -->
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EesCim0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-05-20 end -->
+	<!-- kim jong jun : 2009-05-28 start -->
+    <url-mapping url="EES_CIM_0902.do" screen="EES_CIM_0902.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0902GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EesCim0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-05-14 end -->	
+	
+	<!-- kim jong jun : 2009-06-03 start -->
+    <url-mapping url="EES_CIM_0017.do" screen="EES_CIM_0017.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EesCim0017Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-06-03 end -->
+	
+	
+		<!-- kim jong jun : 2009-06-08 start -->
+    <url-mapping url="EES_CIM_0018.do" screen="EES_CIM_0018.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0018HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CIM_0018DL.do" screen="com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EesCim0018ViewAdapterDL" >
+		<web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0018HTMLAction</web-action-class>
+	</url-mapping>
+
+    <url-mapping url="EES_MST_0019_POP.do" screen="EES_MST_0019_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.mst.equipmentmanagement.containeronoffhire.event.EES_MST_0019HTMLAction</web-action-class>
+    </url-mapping> 
+
+    <url-mapping url="EES_CIM_0902_POP.do" screen="EES_CIM_0902_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0002HTMLAction</web-action-class>
+    </url-mapping> 
+
+    <url-mapping url="EES_CIM_0908_POP.do" screen="EES_CIM_0908_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0008HTMLAction</web-action-class>
+    </url-mapping> 
+
+    <url-mapping url="EES_CIM_1918_POP.do" screen="EES_CIM_1918_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1018HTMLAction</web-action-class>
+    </url-mapping> 
+
+    <url-mapping url="EES_CIM_1923_POP.do" screen="EES_CIM_1923_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1023HTMLAction</web-action-class>
+    </url-mapping> 
+
+    <url-mapping url="EES_CIM_1927_POP.do" screen="EES_CIM_1927_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1027HTMLAction</web-action-class>
+    </url-mapping> 
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EesCim0018Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-06-08 end -->
+	
+	<!-- kim jong jun : 2009-06-24 start -->
+    <url-mapping url="EES_CIM_0034.do" screen="EES_CIM_0034.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0034GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EesCim0034Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-06-24 end -->
+
+	<!-- kim jong jun : 2009-06-30 start -->
+    <url-mapping url="EES_CIM_0039.do" screen="EES_CIM_0039.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0039HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0039GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0039HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EesCim0039Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-06-30 end -->		
+
+	<!-- kim jong jun : 2010-02-18 start -->
+    <url-mapping url="EES_CIM_0052.do" screen="EES_CIM_0052.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0052GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EesCim0052Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2010-02-18 end -->		
+
+	<!-- kim jong jun : 2010-02-19 start -->
+    <url-mapping url="EES_CIM_0046.do" screen="EES_CIM_0046.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0046GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EesCim0046Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2010-02-19 end -->	
+	
+	<!-- kim jong jun : 2010-02-19 start -->
+    <url-mapping url="EES_CIM_0047.do" screen="EES_CIM_0047.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0047HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0047GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0047HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EesCim0047Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2010-02-19 end -->	
+
+	<!-- kim jong jun : 2010-02-22 start -->
+    <url-mapping url="EES_CIM_0049.do" screen="EES_CIM_0049.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0049GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EesCim0049Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2010-02-22 end -->	
+
+	<!-- kim jong jun : 2010-02-22 start -->
+    <url-mapping url="EES_CIM_0050.do" screen="EES_CIM_0050.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0050GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EesCim0050Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2010-02-22 end -->	
+
+	<!-- kim jong jun : 2010-02-23 start -->
+    <url-mapping url="EES_CIM_0048.do" screen="EES_CIM_0048.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0048GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EesCim0048Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2010-02-23 end -->	
+
+	<!-- kim jong jun : 2010-02-23 start -->
+    <url-mapping url="EES_CIM_0051.do" screen="EES_CIM_0051.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EES_CIM_0051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.eqavailabilityfinder.event.EesCim0051Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2010-02-23 end -->
+
+	<!-- kim jong jun : 2009-07-09 start -->
+    <url-mapping url="EES_CIM_0021.do" screen="EES_CIM_0021.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EesCim0021Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.LongstayingUnclaimEQMgtSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-07-09 end -->			
+	<!-- kim jong jun : 2009-07-17 start -->
+    <url-mapping url="EES_CIM_0044.do" screen="EES_CIM_0044.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0044HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0044GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0044HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EesCim0044Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.LongstayingUnclaimEQMgtSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-07-17 end -->			
+
+	<!-- kim jong jun : 2009-07-20 start -->
+    <url-mapping url="EES_CIM_0041.do" screen="EES_CIM_0041.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0041GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0041HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EesCim0041Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.LongstayingUnclaimEQMgtSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-07-20 end -->				
+
+	<!-- kim jong jun : 2009-07-20 start -->
+    <url-mapping url="EES_CIM_0042.do" screen="EES_CIM_0042.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0042GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EesCim0042Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.LongstayingUnclaimEQMgtSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-07-20 end -->		
+	<!-- kim jong jun : 2009-07-23 start -->
+    <url-mapping url="EES_CIM_0032.do" screen="EES_CIM_0032.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.mtyequipmentforecast.event.EES_CIM_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.mtyequipmentforecast.event.EES_CIM_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.mtyequipmentforecast.event.EesCim0032Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.MTYEquipmentForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-07-23 end -->		
+
+	<!-- kim jong jun : 2009-07-31 start -->
+    <url-mapping url="EES_CIM_0038.do" screen="EES_CIM_0038.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.mtyequipmentforecast.event.EES_CIM_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0038GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.mtyequipmentforecast.event.EES_CIM_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.mtyequipmentforecast.event.EesCim0038Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.MTYEquipmentForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-07-31 end -->	
+	
+	<!-- kim jong jun : 2009-08-10 start -->
+    <url-mapping url="EES_CIM_0037.do" screen="EES_CIM_0037.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.mtyequipmentforecast.event.EES_CIM_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.mtyequipmentforecast.event.EES_CIM_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.mtyequipmentforecast.event.EesCim0037Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.MTYEquipmentForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-08-10 end -->		
+
+	<!-- kim jong jun : 2009-08-11 start -->
+    <url-mapping url="EES_CIM_0043.do" screen="EES_CIM_0043.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.mtyequipmentforecast.event.EES_CIM_0043HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0043GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.mtyequipmentforecast.event.EES_CIM_0043HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.mtyequipmentforecast.event.EesCim0043Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.mtyequipmentforecast.MTYEquipmentForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-08-11 end -->		
+	
+	<!-- kim jong jun : 2009-08-12 start -->
+    <url-mapping url="EES_CIM_0028.do" screen="EES_CIM_0028.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0028GS.do" screen="com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EesCim0028ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EesCim0028Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-08-11 end -->		
+	
+	<!-- kim jong jun : 2009-08-13 start -->
+    <url-mapping url="EES_CIM_0029.do" screen="EES_CIM_0029.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0029GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EesCim0029Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-08-13 end -->			
+	
+	<!-- kim jong jun : 2009-08-13 start -->
+    <url-mapping url="EES_CIM_0030.do" screen="EES_CIM_0030.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EesCim0030Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-08-13 end -->		
+	
+	<!-- kim jong jun : 2009-08-14 start -->
+    <url-mapping url="EES_CIM_0031.do" screen="EES_CIM_0031.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0031GS.do" screen="com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EesCim0031ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EES_CIM_0031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.cntrinventoryreport.event.EesCim0031Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.containersupplydemandforecast.ContainerSupplyDemandForecastSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-08-13 end -->	
+
+	<!-- kim jong jun : 2009-09-01 start -->
+    <url-mapping url="EES_CIM_0022.do" screen="EES_CIM_0022.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EesCim0022Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.LongstayingUnclaimEQMgtSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-09-01 end -->	
+    <url-mapping url="EES_CIM_0022_POP.do" screen="EES_CIM_0022_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0022HTMLAction</web-action-class>
+    </url-mapping>
+    
+
+	<!-- kim jong jun : 2009-09-07 start -->
+    <url-mapping url="EES_CIM_0024.do" screen="EES_CIM_0024.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0024GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EesCim0024Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.LongstayingUnclaimEQMgtSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-09-07 end -->	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Prak Kwang Seok : 2009-04-24 start -->
+    <url-mapping url="EES_CIM_1001.do" screen="EES_CIM_1001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1001GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EesCim1001ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1001HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_CIM_10012GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EesCim10012ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EesCim1001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Prak Kwang Seok : 2009-04-24 end -->
+
+	<!-- Prak Kwang Seok : 2009-05-04 start -->
+    <url-mapping url="EES_CIM_1007.do" screen="EES_CIM_1007.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1007GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EesCim1007ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1007HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_CIM_10072GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EesCim10072ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EesCim1007Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Prak Kwang Seok : 2009-05-04 end -->
+
+	<!-- Prak Kwang Seok : 2009-05-12 start -->
+    <url-mapping url="EES_CIM_1016.do" screen="EES_CIM_1016.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1016_POP.do" screen="EES_CIM_1016_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1016GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EesCim1016ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1016HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_CIM_10162GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EesCim10162ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EesCim1016Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Prak Kwang Seok : 2009-05-12 end -->
+
+	<!-- Prak Kwang Seok : 2009-05-19 start -->
+    <url-mapping url="EES_CIM_1014.do" screen="EES_CIM_1014.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1014GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EesCim1014ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1014HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EesCim1014Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Prak Kwang Seok : 2009-05-19 end -->
+
+	<!-- Prak Kwang Seok : 2009-05-20 start -->
+    <url-mapping url="EES_CIM_1023.do" screen="EES_CIM_1023.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1023GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1023ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_10232GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim10232ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1023Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Prak Kwang Seok : 2009-05-20 end -->
+
+    <!-- Mun Jung Cheol : 2009-07-16 start -->
+    <url-mapping url="EES_CIM_1923.do" screen="EES_CIM_1923.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1923GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1023Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-07-16 end -->
+
+	<!-- Prak Kwang Seok : 2009-05-21 start -->
+    <url-mapping url="EES_CIM_1020.do" screen="EES_CIM_1020.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1020GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1020ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1020Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Prak Kwang Seok : 2009-05-21 end -->
+
+	<!-- Prak Kwang Seok : 2009-05-26 start -->
+    <url-mapping url="EES_CIM_1033.do" screen="EES_CIM_1033.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.mtyrepositionperformanceanalysis.event.EES_CIM_1033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1033GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.mtyrepositionperformanceanalysis.event.EesCim1033ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.mtyrepositionperformanceanalysis.event.EES_CIM_1033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.mtyrepositionperformanceanalysis.event.EesCim1033Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Prak Kwang Seok : 2009-05-26 end -->
+
+	<!-- Prak Kwang Seok : 2009-05-27 start -->
+    <url-mapping url="EES_CIM_1034.do" screen="EES_CIM_1034.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.mtyrepositionperformanceanalysis.event.EES_CIM_1034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1034GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.mtyrepositionperformanceanalysis.event.EesCim1034ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.mtyrepositionperformanceanalysis.event.EES_CIM_1034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.mtyrepositionperformanceanalysis.event.EesCim1034Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Prak Kwang Seok : 2009-05-27 end -->
+
+	<!-- Prak Kwang Seok : 2009-06-02 start -->
+    <url-mapping url="EES_CIM_1051.do" screen="EES_CIM_1051.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.mtyrepositionperformanceanalysis.event.EES_CIM_1051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.mtyrepositionperformanceanalysis.event.EES_CIM_1051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_10512GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.mtyrepositionperformanceanalysis.event.EesCim1051ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.mtyrepositionperformanceanalysis.event.EES_CIM_1051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.mtyrepositionperformanceanalysis.event.EesCim1051Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Prak Kwang Seok : 2009-06-02 end -->
+
+	
+	<!-- Prak Kwang Seok : 2009-06-11 start -->
+    <url-mapping url="EES_CIM_1049.do" screen="EES_CIM_1049.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1049GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1049ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1049Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Prak Kwang Seok : 2009-06-11 end -->
+
+	<!-- Prak Kwang Seok : 2009-06-11 start -->
+    <url-mapping url="EES_CIM_1949.do" screen="EES_CIM_1949.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1949GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1049Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Prak Kwang Seok : 2009-06-11 end -->
+
+	<!-- Mun Jung Cheol : 2009-06-15 start -->
+    <url-mapping url="EES_CIM_1018.do" screen="EES_CIM_1018.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1018_POP.do" screen="EES_CIM_1018_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1018HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CIM_1018GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1018ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_10182GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim10182ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_10183GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim10183ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1018Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Mun Jung Cheol : 2009-06-15 end -->
+
+    <!-- Mun Jung Cheol : 2009-07-16 start -->
+    <url-mapping url="EES_CIM_1918.do" screen="EES_CIM_1918.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1918GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1018Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-07-16 end -->
+
+	<!-- Mun Jung Cheol : 2009-06-18 start -->
+    <url-mapping url="EES_CIM_1032.do" screen="EES_CIM_1032.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1032GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1032ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1032Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Mun Jung Cheol : 2009-06-18 end -->
+
+	<!-- Mun Jung Cheol : 2009-06-23 start -->
+    <url-mapping url="EES_CIM_1027.do" screen="EES_CIM_1027.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1027GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1027ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_10272GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim10272ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_10273GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim10273ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1027Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Mun Jung Cheol : 2009-06-23 end -->
+
+    <!-- Mun Jung Cheol : 2009-07-16 start -->
+    <url-mapping url="EES_CIM_1927.do" screen="EES_CIM_1927.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1927GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1027Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-07-16 end -->
+
+	<!-- Mun Jung Cheol : 2009-06-24 start -->
+    <url-mapping url="EES_CIM_1029.do" screen="EES_CIM_1029.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1029GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1029ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1029Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Mun Jung Cheol : 2009-06-24 end -->
+	
+    <!-- Mun Jung Cheol : 2009-06-29 start -->
+    <url-mapping url="EES_CIM_1053.do" screen="EES_CIM_1053.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1053GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1053Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-06-29 end -->
+    
+    <!-- Mun Jung Cheol : 2009-07-01 start -->
+    <url-mapping url="EES_CIM_1050.do" screen="EES_CIM_1050.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1050GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1050ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1050Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-07-01 end -->
+    
+    <!-- Mun Jung Cheol : 2009-07-16 start -->
+    <url-mapping url="EES_CIM_1950.do" screen="EES_CIM_1950.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1950GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EES_CIM_1050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.eqmatchbacknloadfactormgt.event.EesCim1050Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Mun Jung Cheol : 2009-07-16 end -->
+
+    
+    
+	<!-- Prak Kwang Seok : 2009-08-31 start -->
+    <url-mapping url="EES_CIM_1011.do" screen="EES_CIM_1011.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1011GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EesCim1011ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_10112GS.do" screen="com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EesCim10112ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EES_CIM_1011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.turntimeperformancemgt.event.EesCim1011Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cntroperationperformancemgt.CNTROperatioNPerformanceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Prak Kwang Seok : 2009-08-31 end -->
+
+
+	<!-- kim jong jun : 2009-06-08 start -->
+    <url-mapping url="EES_CIM_0025.do" screen="EES_CIM_0025.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EesCim0025Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.LongstayingUnclaimEQMgtSC</service-action-class>
+    </event-mapping>
+	<!-- kim jong jun : 2009-06-08 end -->
+
+
+	<!-- Chang Hun Kim : 2012-04-16 start -->
+    <url-mapping url="EES_CIM_2100.do" screen="EES_CIM_2100.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cimcommon.cimcommon.event.EES_CIM_2100HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_2100GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cimcommon.cimcommon.event.EES_CIM_2100HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cimcommon.cimcommon.event.EesCim2100Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cimcommon.CIMCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Chang Hun Kim : 2012-04-16 end -->
+	
+			<!-- Lee Young Du : 2013-07-01 start -->    
+    <url-mapping url="EES_CIM_1951.do" screen="EES_CIM_1951.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_1951HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_1951GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EES_CIM_1951HTMLAction</web-action-class>
+    </url-mapping> 
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.longstayingunclaimeqflagging.event.EesCim1951Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.longstayingunclaimeqmgt.LongstayingUnclaimEQMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Lee Young Du : 2013-07-01 end  -->
+    
+    <!-- park young jin : 2015-07-09 start -->
+    <url-mapping url="NEW_MVMT_FNC.do" screen="EES_CIM_2001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cimcommon.cimcommon.event.EES_CIM_2001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_2001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cimcommon.cimcommon.event.EES_CIM_2001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cimcommon.cimcommon.event.EesCim2001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cimcommon.CIMCommonSC</service-action-class>
+    </event-mapping>
+	<!-- park young jin : 2015-07-09 end -->
+	
+	
+	<url-mapping url="EES_CIM_2002.do" screen="EES_CIM_2002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cimcommon.cimcommon.event.EES_CIM_2002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CIM_2002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cim.cimcommon.cimcommon.event.EES_CIM_2002HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cim.cimcommon.cimcommon.event.EesCim2002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cim.cimcommon.CIMCommonSC</service-action-class>
+    </event-mapping>
+</mappings>

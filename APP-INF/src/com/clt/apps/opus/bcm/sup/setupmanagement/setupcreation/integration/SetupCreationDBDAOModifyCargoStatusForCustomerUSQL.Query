@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOModifyCargoStatusForCustomerUSQL">
+			<desc><![CDATA[Cargo Tracking Info.(Non physical event for customer) 정보를 변경한다]]></desc>
+			<sql><![CDATA[
+UPDATE SCE_EDI_MNG_STS
+   SET 	 EDI_PRE_STS_CD  = @[edi_pre_sts_cd]
+		,EDI_PRE_SAV_FLG = @[edi_pre_sav_flg]
+		,PRE_EDI_GRP_CD  = @[pre_edi_grp_cd]
+		,EDI_PST_STS_CD  = @[edi_pst_sts_cd]
+		,EDI_PST_SAV_FLG = @[edi_pst_sav_flg]
+		,PST_EDI_GRP_CD  = @[pst_edi_grp_cd]
+		,EDI_RMK1        = @[edi_rmk1]
+		,EDI_RMK2        = @[edi_rmk2]
+		,UPD_USR_ID      = @[upd_usr_id]
+		,UPD_DT          = SYSDATE
+ WHERE ORG_EDI_STS_CD = @[org_edi_sts_cd]
+   AND EDI_STS_SEQ = @[edi_sts_seq]			]]></sql>
+			<params>
+				<param name="edi_pre_sts_cd" type="12" value="" out="N"/>
+				<param name="edi_pre_sav_flg" type="12" value="" out="N"/>
+				<param name="pre_edi_grp_cd" type="12" value="" out="N"/>
+				<param name="edi_pst_sts_cd" type="12" value="" out="N"/>
+				<param name="edi_pst_sav_flg" type="12" value="" out="N"/>
+				<param name="pst_edi_grp_cd" type="12" value="" out="N"/>
+				<param name="edi_rmk1" type="12" value="" out="N"/>
+				<param name="edi_rmk2" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="org_edi_sts_cd" type="12" value="" out="N"/>
+				<param name="edi_sts_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

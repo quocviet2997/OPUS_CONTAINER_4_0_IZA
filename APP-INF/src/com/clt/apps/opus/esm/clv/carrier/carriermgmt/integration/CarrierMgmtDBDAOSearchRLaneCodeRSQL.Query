@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CarrierMgmtDBDAOSearchRLaneCodeRSQL">
+			<desc><![CDATA[List RLand Code]]></desc>
+			<sql><![CDATA[
+SELECT DISTINCT VSL_SLAN_CD as rlane_cd
+FROM MDM_REV_LANE
+ORDER BY rlane_cd			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

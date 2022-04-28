@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CalenderDBDAOCntHolidayUSQL">
+			<desc><![CDATA[CntHoliday updata]]></desc>
+			<sql><![CDATA[
+update prd_holiday set 
+	hol_nm = @[hol_nm],
+	cnt_cd = @[cnt_cd],
+	hol_fm_dt = @[hol_fm_dt],
+	hol_to_dt = @[hol_to_dt],
+	upd_usr_id = @[upd_usr_id],
+	upd_dt = sysdate
+where	hol_id = @[hol_id]			]]></sql>
+			<params>
+				<param name="hol_nm" type="12" value="" out="N"/>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="hol_fm_dt" type="12" value="" out="N"/>
+				<param name="hol_to_dt" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="hol_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

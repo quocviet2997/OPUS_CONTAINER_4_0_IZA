@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAORemoveArFincDirConvDSQL">
+			<desc><![CDATA[AR_FINC_DIR_CONV table에 정보 삭제]]></desc>
+			<sql><![CDATA[
+DELETE
+FROM AR_FINC_DIR_CONV
+WHERE 1 = 1
+   AND SLAN_CD = @[h_slan_cd]
+   AND SCONTI_CD = @[h_sconti_cd]
+   AND SLAN_DIR_CD = @[h_slan_dir_cd]
+   AND RLANE_DIR_CD = @[h_rlane_dir_cd]			]]></sql>
+			<params>
+				<param name="h_slan_cd" type="12" value="" out="N"/>
+				<param name="h_sconti_cd" type="12" value="" out="N"/>
+				<param name="h_slan_dir_cd" type="12" value="" out="N"/>
+				<param name="h_rlane_dir_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

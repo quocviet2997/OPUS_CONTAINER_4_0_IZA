@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCSRSOlistRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT A.AFT_ACT_FLG
+     , CASE
+              WHEN T.INV_STS_CD  ='C'
+              THEN 0
+              WHEN T.INV_STS_CD  ='R' OR T.INV_STS_CD  ='J' OR T.INV_STS_CD  ='B' OR T.INV_STS_CD  ='G'
+              THEN 1
+			  ELSE 0
+       END CHK
+     , CASE 
+              WHEN T.INV_STS_CD  ='B' OR T.INV_STS_CD  ='G'
+              THEN 'Y'
+			  ELSE 'N'
+	   END TML_INV_RJCT_STS_CD
+     , T.INV_NO
+     , NVL(T.INV_NET_AMT ,0) TTL_INV_AMT
+     , NVL(T.INV_VAT_AMT ,0) VAT_AMT
+     , NVL(T.WHLD_TAX_AMT,0) WHLD_TAX_AMT
+     , NVL(T.INV_NET_AMT , 0) + NVL(T.INV_VAT_AMT , 0) - NVL(T.WHLD_TAX_AMT, 0) TOTAL_AMT
+     , TO_CHAR(T.INV_ISS_DT,'YYYY-MM-DD') ISS_DT
+     , TO_CHAR(T.INV_RCV_DT,'YYYY-MM-DD') RCV_DT
+     , TO_CHAR(T.INV_CFM_DT,'YYYY-MM-DD') INV_CFM_DT
+     , T.CSR_NO AS CSR_NO
+	 , T.INV_RGST_NO AS INV_RGST_NO
+     , TO_CHAR(TO_DATE(A.GL_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD') GL_DT
+	 , T.INV_STS_CD
+FROM   AP_PAY_INV T
+     , AP_INV_HDR A 
+WHERE  T.CSR_NO     = A.CSR_NO 
+  AND T.CSR_NO      = @[csr_no]
+  AND NVL(T.DELT_FLG,'N') <> 'Y'			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

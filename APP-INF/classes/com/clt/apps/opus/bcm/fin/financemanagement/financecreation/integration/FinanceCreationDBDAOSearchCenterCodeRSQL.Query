@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchCenterCodeRSQL">
+			<desc><![CDATA[Center Code 조회]]></desc>
+			<sql><![CDATA[
+SELECT CTR_ERP_NO
+      ,CTR_ERP_CD
+      ,CTR_LOCL_NM
+      ,CTR_ENG_NM
+      ,CURR_CD
+      ,CNT_CD
+      ,RGN_CD
+      ,JNL_SMRY_TRNS_FLG
+      ,BIZ_DIV_CD
+	  ,CRE_DT
+ 	  ,CRE_USR_ID
+	  ,UPD_DT
+      ,UPD_USR_ID
+  FROM GL_CTR_ERP
+ WHERE 
+	1=1
+#if (${ctr_erp_no} != '')
+   AND CTR_ERP_NO = @[ctr_erp_no]
+#end
+#if (${ctr_erp_cd} != '')
+   AND CTR_ERP_CD = @[ctr_erp_cd]
+#end			]]></sql>
+			<params>
+				<param name="ctr_erp_no" type="12" value="" out="N"/>
+				<param name="ctr_erp_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

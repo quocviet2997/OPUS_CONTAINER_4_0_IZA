@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="NodeDBDAOSearchNodeListRSQL">
+			<desc><![CDATA[Select Node List]]></desc>
+			<sql><![CDATA[
+#if(${mode} == 'yard')
+	SELECT 
+		yd_cd,      		
+   		yd_nm,  					 	
+		ofc_cd,       					
+		decode(yd_fcty_tp_mrn_tml_flg, 'Y', '●', '') yd_fcty_tp_mrn_tml_flg,       
+		decode(yd_fcty_tp_cy_flg, 'Y', '●', '') yd_fcty_tp_cy_flg,        	
+		decode(yd_fcty_tp_cfs_flg, 'Y', '●', '') yd_fcty_tp_cfs_flg,        	
+		decode(yd_fcty_tp_rail_rmp_flg, 'Y', '●', '') yd_fcty_tp_rail_rmp_flg,     	
+		decode(yd_fcty_tp_psdo_yd_flg, 'Y', '●', '') yd_fcty_tp_psdo_yd_flg,      	
+		yd_tp_cd,				       	
+		cnt_cd,			       	
+		loc_cd, 
+		yd_cstms_no,
+		(CASE 
+			WHEN 'Y' = delt_flg THEN 'Delete' 
+			ELSE 'Active' 
+		END) AS delt_flg
+	FROM (
+		SELECT ROW_NUMBER() OVER (ORDER BY A.yd_cd ASC) no,  
+				A.yd_cd,              				
+		        A.yd_nm,          					
+		        A.ofc_cd,          					
+		        A.yd_fcty_tp_mrn_tml_flg,             
+		        A.yd_fcty_tp_cy_flg,               	
+		        A.yd_fcty_tp_cfs_flg,              	
+		        A.yd_fcty_tp_rail_rmp_flg,            
+		        A.yd_fcty_tp_psdo_yd_flg,             
+		        '' yd_tp_cd,            				
+		        B.cnt_cd cnt_cd,       
+		        A.loc_cd, 
+				A.yd_cstms_no,
+				A.delt_flg
+		FROM mdm_yard A, mdm_location B		    
+		WHERE 1 = 1 
+			AND A.loc_cd = B.loc_cd 
+		#if(${scc_cd} != '')
+			AND B.scc_cd LIKE '%' || @[scc_cd] || '%' 
+		#end
+		#if(${cnt_cd} != '')
+			AND B.cnt_cd LIKE '%' ||@[cnt_cd] || '%' 
+		#end
+		#if(${loc_cd} != '')
+			AND A.loc_cd LIKE '%' ||@[loc_cd] || '%' 
+		#end
+		#if(${ofc_cd} != '')
+			AND A.ofc_cd LIKE '%' || @[ofc_cd] || '%' 
+		#end
+		#if(${node_cd} != '')
+			AND A.yd_cd LIKE '%' ||@[node_cd] || '%'
+		#end
+		#if(${node_nm} != '')
+			AND upper(A.yd_nm) LIKE '%' || upper(@[node_nm]) || '%' 
+		#end
+			AND NVL(B.DELT_FLG, 'N') <> 'Y'
+    	#if (${mdm_yn} != '')
+			#if (${delt_flg} == 'Y') 
+			AND NVL(A.DELT_FLG, 'N') = @[delt_flg]
+			#elseif (${delt_flg} == 'ALL') 
+			#else 
+			AND NVL(A.DELT_FLG, 'N') <> 'Y'
+			#end
+		#else	
+			AND NVL(A.DELT_FLG, 'N') <> 'Y'
+		#end
+	         )        
+	ORDER BY yd_cd             					
+#else
+	 SELECT zn_cd,    	
+		zn_nm,  				
+		ofc_cd,       			
+		zip_cd,       			
+		dstr_nm,             	
+		strt_nm,             	
+		address,             	
+		cnt_cd,           
+		loc_cd,
+		(CASE 
+			WHEN 'Y' = delt_flg THEN 'Delete' 
+			ELSE 'Active' 
+		END) AS delt_flg
+	   FROM (SELECT ROW_NUMBER() OVER (ORDER BY A.zn_cd ASC) no,  
+				A.zn_cd,              		
+				A.zn_nm,          			
+				B.ofc_cd,          			
+				'' zip_cd,               	
+				'' dstr_nm,              	
+				'' strt_nm,              	
+				'' address,              	
+				C.cnt_cd cnt_cd,   
+				A.loc_cd,
+				A.delt_flg
+			   FROM mdm_zone A, mdm_yard B, mdm_location C    	
+			  WHERE 1 = 1
+    		 AND A.REP_YD_CD = B.YD_CD AND A.loc_cd=C.loc_cd 
+	#if(${scc_cd} != '')
+			AND c.scc_cd LIKE '%' || @[scc_cd] || '%' 
+	#end
+	#if(${cnt_cd} != '')
+			AND C.cnt_cd LIKE '%' ||@[cnt_cd] || '%' 
+	#end
+	#if(${loc_cd} != '')
+			AND A.loc_cd LIKE '%' ||@[loc_cd] || '%' 
+	#end
+	#if(${ofc_cd} != '')
+			AND B.ofc_cd LIKE '%' || @[ofc_cd] || '%' 
+	#end
+	#if(${node_cd} != '')
+			AND A.zn_cd LIKE '%' || @[node_cd] || '%' 
+	#end
+	#if(${node_nm} != '')
+			AND upper(A.zn_nm) LIKE '%' || upper(@[node_nm]) || '%' 
+	#end
+--    		 AND NVL(C.DELT_FLG, 'N') <> 'Y'
+--    		 AND NVL(B.DELT_FLG, 'N') <> 'Y'
+    #if (${mdm_yn} != '')
+		#if (${delt_flg} == 'Y') 
+			AND NVL(A.DELT_FLG, 'N') = @[delt_flg]
+		#elseif (${delt_flg} == 'ALL') 
+		#else 
+			AND NVL(A.DELT_FLG, 'N') <> 'Y'
+		#end
+	#else	
+		AND NVL(A.DELT_FLG, 'N') <> 'Y'
+	#end
+         )A
+         WHERE no BETWEEN @[startpart] AND @[endpart]
+		ORDER BY zn_cd
+#end			]]></sql>
+			<params>
+				<param name="scc_cd" type="12" value="" out="N"/>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="loc_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="node_cd" type="12" value="" out="N"/>
+				<param name="node_nm" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

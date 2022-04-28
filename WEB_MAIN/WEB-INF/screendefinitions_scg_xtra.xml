@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<screen name="STAND_ALONE">
+        <parameter key="title"    value="EDI Test" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/standalonetester/jsp/STAND_ALONE.jsp"/>
+    </screen>
+
+</screen-definitions>

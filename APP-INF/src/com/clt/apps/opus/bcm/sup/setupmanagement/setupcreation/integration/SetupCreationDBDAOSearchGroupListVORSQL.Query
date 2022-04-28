@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOSearchGroupListVORSQL">
+			<desc><![CDATA[2011.02.17 정윤태 EDI GROUP 정보를 조회한다]]></desc>
+			<sql><![CDATA[
+SELECT  EDI_GRP_CD
+       ,CO_DIV_CD
+       ,EDI_GRP_DESC
+       ,CUST_TRD_PRNR_ID
+       ,PROV_TRD_PRNR_ID
+       ,DELT_FLG
+       ,'' AS CRE_USR_ID
+	   ,'' AS UPD_USR_ID
+  FROM EDI_GROUP
+ WHERE 1 = 1
+#if (${grp_cd} != '')
+   AND EDI_GRP_CD = @[grp_cd]
+#end
+#if (${co_div_cd} != '')
+   AND CO_DIV_CD = @[co_div_cd]
+#end
+#if (${edi_grp_desc} != '')
+   AND UPPER(EDI_GRP_DESC) LIKE UPPER(@[edi_grp_desc]) || '%'
+#end
+#if (${cust_trd_prnr_id} != '')
+   AND UPPER(CUST_TRD_PRNR_ID) LIKE UPPER(@[cust_trd_prnr_id]) || '%'
+#end			]]></sql>
+			<params>
+				<param name="grp_cd" type="12" value="" out="N"/>
+				<param name="co_div_cd" type="12" value="" out="N"/>
+				<param name="edi_grp_desc" type="12" value="" out="N"/>
+				<param name="cust_trd_prnr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

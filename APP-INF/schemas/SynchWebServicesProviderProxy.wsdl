@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<s0:definitions name="SynchWebServicesProviderProxyDefinitions" targetNamespace="http://www.clt.com/integration/alps" xmlns="" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s1="http://www.clt.com/integration/alps" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <s0:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.clt.com/integration/alps" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s1="http://www.clt.com/integration/alps" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="java:com.clt.sample.eai.webservices.synch.provider.servicesio"/>
+      <xs:element name="SynchWebServicesSample">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="cmdt_cd" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SynchWebServicesSampleResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="java:SampleVO" xmlns:java="java:com.clt.sample.eai.webservices.synch.provider.servicesio"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="java:com.clt.sample.eai.webservices.synch.provider.servicesio" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s1="http://www.clt.com/integration/alps" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="SampleVO">
+        <xs:annotation>
+          <xs:documentation>It's SampleVO.java</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element minOccurs="1" name="CmdtCd" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="1" name="CmdtNm" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="1" name="RepCmdtCd" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="1" name="RepImdgLvlCd" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </s0:types>
+  <s0:message name="SynchWebServicesSample">
+    <s0:part element="s1:SynchWebServicesSample" name="parameters"/>
+  </s0:message>
+  <s0:message name="SynchWebServicesSampleResponse">
+    <s0:part element="s1:SynchWebServicesSampleResponse" name="parameters"/>
+  </s0:message>
+  <s0:portType name="SynchWebServicesProviderProxyPortType">
+    <s0:operation name="SynchWebServicesSample" parameterOrder="parameters">
+      <s0:input message="s1:SynchWebServicesSample"/>
+      <s0:output message="s1:SynchWebServicesSampleResponse"/>
+    </s0:operation>
+  </s0:portType>
+  <s0:binding name="SynchWebServicesProviderProxySoapBinding" type="s1:SynchWebServicesProviderProxyPortType">
+    <s2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <s0:operation name="SynchWebServicesSample">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="parameters" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="parameters" use="literal"/>
+      </s0:output>
+    </s0:operation>
+  </s0:binding>
+  <s0:service name="SynchWebServicesProviderProxy">
+    <s0:port binding="s1:SynchWebServicesProviderProxySoapBinding" name="SynchWebServicesProviderProxyPort">
+      <s2:address location="http://203.246.142.110:9001/opuscntr/webservices/SynchWebServicesProviderProxy"/>
+    </s0:port>
+  </s0:service>
+</s0:definitions>

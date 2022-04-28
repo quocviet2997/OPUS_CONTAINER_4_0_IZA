@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="GroupwareMailPopupExecuteDAOGroupwareIdRSQL">
+			<desc><![CDATA[GroupwareId 를 가져온다.]]></desc>
+			<sql><![CDATA[
+SELECT 
+	EP_ID
+FROM COM_USER
+WHERE	USR_ID = @[usr_id]
+and rownum < 2			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

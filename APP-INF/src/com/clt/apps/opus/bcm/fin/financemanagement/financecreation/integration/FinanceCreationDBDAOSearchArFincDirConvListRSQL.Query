@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchArFincDirConvListRSQL">
+			<desc><![CDATA[2011-02-22
+AR Finance Direction Conversion 정보를 검색하는 SQL]]></desc>
+			<sql><![CDATA[
+SELECT
+    SLAN_CD
+    , SCONTI_CD
+    , SLAN_DIR_CD
+    , RLANE_DIR_CD
+	, SLAN_CD H_SLAN_CD
+    , SCONTI_CD H_SCONTI_CD
+    , SLAN_DIR_CD H_SLAN_DIR_CD
+    , RLANE_DIR_CD H_RLANE_DIR_CD
+    , DIR_CNG_CD
+    , AP_MK_FLG
+    , RLANE_CD
+    , DELT_FLG
+    , UPD_USR_ID
+    , CRE_USR_ID
+FROM AR_FINC_DIR_CONV
+WHERE 1 = 1
+#if (${slan_cd} != '')
+   AND SLAN_CD = @[slan_cd]
+#end
+#if (${rlane_cd} != '')
+   AND RLANE_CD = @[rlane_cd]
+#end			]]></sql>
+			<params>
+				<param name="slan_cd" type="12" value="" out="N"/>
+				<param name="rlane_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserRoleDAOComUsrRoleUtilRSQL">
+			<desc><![CDATA[User Role Util select query]]></desc>
+			<sql><![CDATA[
+select a.usr_role_cd, a.usr_role_nm, a.usr_role_desc
+from com_usr_role a, COM_USR_ROLE_MTCH b
+where a.usr_role_cd = b.usr_role_cd
+and b.usr_id = @[usr_id]			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

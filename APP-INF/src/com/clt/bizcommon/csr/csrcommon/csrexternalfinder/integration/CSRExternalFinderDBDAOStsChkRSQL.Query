@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CSRExternalFinderDBDAOStsChkRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT INV_STS_CD, INV_NO
+  FROM AP_PAY_INV
+ WHERE INV_RGST_NO = @[inv_rgst_no]
+   AND INV_SUB_SYS_CD = NVL(@[inv_sub_sys_cd], INV_SUB_SYS_CD)
+   AND INV_OFC_CD = @[inv_ofc_cd]
+   AND DELT_FLG = 'N'			]]></sql>
+			<params>
+				<param name="inv_rgst_no" type="12" value="" out="N"/>
+				<param name="inv_sub_sys_cd" type="12" value="" out="N"/>
+				<param name="inv_ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

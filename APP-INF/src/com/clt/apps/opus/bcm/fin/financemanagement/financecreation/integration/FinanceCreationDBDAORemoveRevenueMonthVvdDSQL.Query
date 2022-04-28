@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAORemoveRevenueMonthVvdDSQL">
+			<desc><![CDATA[Remove Revenue Month VVD]]></desc>
+			<sql><![CDATA[
+UPDATE AR_MST_REV_VVD
+SET	
+	DELT_FLG = @[delt_flg]
+	, UPD_USR_ID = @[upd_usr_id]
+	, UPD_DT = SYSDATE
+WHERE VSL_CD = @[vsl_cd]
+	AND SKD_VOY_NO = @[skd_voy_no]
+	AND SKD_DIR_CD = @[skd_dir_cd]
+	AND RLANE_DIR_CD = @[rlane_dir_cd]			]]></sql>
+			<params>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="skd_voy_no" type="12" value="" out="N"/>
+				<param name="skd_dir_cd" type="12" value="" out="N"/>
+				<param name="rlane_dir_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

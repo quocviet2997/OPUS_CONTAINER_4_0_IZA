@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ScheduleDAOJobStatusRSQL">
+			<desc><![CDATA[autosys job status query]]></desc>
+			<sql><![CDATA[
+select status 
+from ujo_job_status a, ujo_job b 
+where a.joid = b.joid 
+and b.job_name=@[job_name]			]]></sql>
+			<params>
+				<param name="job_name" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

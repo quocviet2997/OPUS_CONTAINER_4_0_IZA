@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="JooCarrierMgmtDBDAOSearchTrdCdRSQL">
+			<desc><![CDATA[Search Trade Code]]></desc>
+			<sql><![CDATA[
+SELECT A.TRD_CD
+FROM MDM_TRADE A
+WHERE 1 = 1
+AND DELT_FLG = 'N'
+AND A.TRD_CD = @[trd_cd]			]]></sql>
+			<params>
+				<param name="trd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

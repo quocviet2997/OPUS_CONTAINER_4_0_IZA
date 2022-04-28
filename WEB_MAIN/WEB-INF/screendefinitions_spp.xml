@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<!-- Kim Sung Kwang : 2009-07-15 start -->
+    <screen name="EXP_SPP_0001"  template="templateSPP">
+        <parameter key="title"    value="Canal Invoice" direct="true"/>
+        <parameter key="body"     value="apps/opus/exp/spp/ppsoagentcanaltransitfee/agentcanaltransitfee/jsp/EXP_SPP_0001.jsp"/>
+    </screen>
+	<!-- Kim Sung Kwang : 2009-07-15 end -->
+	
+	<!-- Kim Sung Kwang : 2009-07-22 start -->	
+    <screen name="EXP_SPP_0002"  template="templateSPP">
+        <parameter key="title"    value="Request Advance Payment" direct="true"/>
+        <parameter key="body"     value="apps/opus/exp/spp/ppsoagentcanaltransitfee/agentcanaltransitfee/jsp/EXP_SPP_0002.jsp"/>
+    </screen>
+    <!-- Kim Sung Kwang : 2009-07-22 end -->
+    
+	<!-- Kim Sung Kwang : 2009-07-27 start -->	
+    <screen name="EXP_SPP_0003"  template="templateSPP">
+        <parameter key="title"    value="Request Actual Invoice" direct="true"/>
+        <parameter key="body"     value="apps/opus/exp/spp/ppsoagentcanaltransitfee/agentcanaltransitfee/jsp/EXP_SPP_0003.jsp"/>
+    </screen>
+    <!-- Kim Sung Kwang : 2009-07-27 end -->    
+    
+	<!-- Kim Sung Kwang : 2009-07-30 start -->	
+    <screen name="EXP_SPP_0004"  template="templateSPP">
+        <parameter key="title"    value="Request MSA" direct="true"/>
+        <parameter key="body"     value="apps/opus/exp/spp/ppsoagentcanaltransitfee/agentcanaltransitfee/jsp/EXP_SPP_0004.jsp"/>
+    </screen>
+    <!-- Kim Sung Kwang : 2009-07-30 end -->  
+    
+    <!-- Kim Sung Kwang : 2009-08-12 start -->	
+    <screen name="EXP_SPP_0005"  template="templateSPP">
+        <parameter key="title"    value="Canal booking status" direct="true"/>
+        <parameter key="body"     value="apps/opus/exp/spp/ppsoagentcanaltransitfee/agentcanaltransitfee/jsp/EXP_SPP_0005.jsp"/>
+    </screen>
+    <!-- Kim Sung Kwang : 2009-08-12 end -->  
+    
+    <!-- Kim Sung Kwang : 2009-08-18 start -->	
+    <screen name="EXP_SPP_0302"  template="templateSPP">
+        <parameter key="title"    value="Rental payable invoice inquiry by Lessee via SPP" direct="true"/>
+        <parameter key="body"     value="apps/opus/exp/spp/plseinvoiceinquiry/invoiceinquiry/jsp/EXP_SPP_0302.jsp"/>
+    </screen>
+    <!-- Kim Sung Kwang : 2009-08-18 end -->
+    
+</screen-definitions>

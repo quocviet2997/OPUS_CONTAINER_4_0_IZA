@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOsearchApprovalSEQRSQL">
+			<desc><![CDATA[해당 시컨스를 구합니다]]></desc>
+			<sql><![CDATA[
+SELECT APRO_ROUT_SEQ
+	FROM COM_APRO_ROUT_DFLT
+WHERE SUB_SYS_CD = @[sub_sys_cd]
+AND OFC_CD = @[ofc_cd]
+			]]></sql>
+			<params>
+				<param name="sub_sys_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- Viet Tran : 2022-03-16 start -->
+    <url-mapping url="DOU_TRAINING_0001.do" screen="DOU_TRAINING_0001.screen" >
+        <web-action-class>com.clt.apps.opus.esm.clv.doutraining.errmsgmgmt.event.DOU_TRAINING_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="DOU_TRAINING_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.clv.doutraining.errmsgmgmt.event.DOU_TRAINING_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.clv.doutraining.errmsgmgmt.event.DouTraining0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.clv.doutraining.DouTrainingSC</service-action-class>
+    </event-mapping>
+	<!-- Viet Tran : 2022-03-16 end -->
+	<!-- Viet Tran : 2022-03-22 start -->
+    <url-mapping url="DOU_TRAINING_0002.do" screen="DOU_TRAINING_0002.screen" >
+        <web-action-class>com.clt.apps.opus.esm.clv.training02.codemanagement.event.DOU_TRAINING_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="DOU_TRAINING_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.clv.training02.codemanagement.event.DOU_TRAINING_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.clv.training02.codemanagement.event.DouTraining0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.clv.training02.Training02SC</service-action-class>
+    </event-mapping>
+	<!-- Viet Tran : 2022-03-22 end -->
+
+	<!-- Viet Tran : 2022-03-23 start -->
+    <url-mapping url="DOU_TRAINING_0004.do" screen="DOU_TRAINING_0004.screen" >
+        <web-action-class>com.clt.apps.opus.esm.clv.carrier.carriermgmt.event.DOU_TRAINING_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="DOU_TRAINING_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.clv.carrier.carriermgmt.event.DOU_TRAINING_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.clv.carrier.carriermgmt.event.DouTraining0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.clv.carrier.CarrierSC</service-action-class>
+    </event-mapping>
+	<!-- Viet Tran : 2022-03-23 end -->
+
+	<!-- Viet Tran : 2022-03-25 start -->
+    <url-mapping url="DOU_TRAINING_0003.do" screen="DOU_TRAINING_0003.screen" >
+        <web-action-class>com.clt.apps.opus.esm.clv.invoice.invoicemgmt.event.DOU_TRAINING_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="DOU_TRAINING_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.clv.invoice.invoicemgmt.event.DOU_TRAINING_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.clv.invoice.invoicemgmt.event.DouTraining0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.clv.invoice.InvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- Viet Tran : 2022-03-25 end -->
+
+	<!-- Viet Tran : 2022-04-06 start -->
+    <url-mapping url="PRACTICE_01.do" screen="PRACTICE_01.screen" >
+        <web-action-class>com.clt.apps.opus.esm.clv_demo.demopractice1.errormessagemanagement.event.PRACTICE_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="PRACTICE_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.clv_demo.demopractice1.errormessagemanagement.event.PRACTICE_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.clv_demo.demopractice1.errormessagemanagement.event.Practice01Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.clv_demo.demopractice1.DemoPractice1SC</service-action-class>
+    </event-mapping>
+	<!-- Viet Tran : 2022-04-06 end -->
+
+</mappings>

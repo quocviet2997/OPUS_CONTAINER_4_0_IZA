@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="OfficeManagementDBDAOOfficListVORSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+SELECT
+	(select count(ofc_cd) from  com_ofc_pgm_mtch where ofc_cd = a.ofc_cd and pgm_no = @[pgm_no]) check_val,                                                       
+	level,
+	ofc_cd,
+	ofc_eng_nm,
+	OFC_LOCL_NM  AS ofc_krn_nm,
+	prnt_ofc_cd,
+	ofc_knd_cd,
+    rep_cust_cnt_cd,
+    ar_ofc_cd,
+	'' dummycol
+FROM mdm_organization a                                            
+WHERE DELT_FLG = 'N'                                                 
+CONNECT BY PRIOR ofc_cd = prnt_ofc_cd                                
+START WITH prnt_ofc_cd IS NULL			]]></sql>
+			<params>
+				<param name="pgm_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

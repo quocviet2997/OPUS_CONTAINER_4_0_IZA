@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchErrVvdRSQL">
+			<desc><![CDATA[Error Vvd조회]]></desc>
+			<sql><![CDATA[
+SELECT ERR_VSL_CD
+     , ERR_SKD_VOY_NO
+     , ERR_SKD_DIR_CD
+     , ERR_REV_DIR_CD
+     , CORR_VSL_CD
+     , CORR_SKD_VOY_NO
+     , CORR_SKD_DIR_CD
+     , CORR_REV_DIR_CD
+     , AVAL_FLG
+     , CRE_DT
+     , UPD_DT     
+	 , ERR_VSL_CD||LPAD(ERR_SKD_VOY_NO,4,0)||ERR_SKD_DIR_CD||ERR_REV_DIR_CD AS ERR_VVD
+	 , CORR_VSL_CD||LPAD(CORR_SKD_VOY_NO,4,0)||CORR_SKD_DIR_CD||CORR_REV_DIR_CD AS CORR_VVD
+  FROM GL_ERR_VVD
+ WHERE
+	1=1
+#if (${err_vsl_cd} != '')
+   AND ERR_VSL_CD = @[err_vsl_cd]
+#end			]]></sql>
+			<params>
+				<param name="err_vsl_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

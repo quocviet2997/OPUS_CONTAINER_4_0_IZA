@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckRepCmdtRSQL">
+			<desc><![CDATA[MDM_REP_CMDT 테이블에 repCmdtCd 에 
+해당하는 정보가 있는지 유무를 리턴한다.]]></desc>
+			<sql><![CDATA[
+SELECT REP_CMDT_CD 
+FROM MDM_REP_CMDT
+WHERE 1=1 
+AND REP_CMDT_CD = @[rep_cmdt_cd]
+AND DELT_FLG ='N'			]]></sql>
+			<params>
+				<param name="rep_cmdt_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

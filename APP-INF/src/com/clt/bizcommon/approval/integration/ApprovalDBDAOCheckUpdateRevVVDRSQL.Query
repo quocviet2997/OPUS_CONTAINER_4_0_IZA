@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOCheckUpdateRevVVDRSQL">
+			<desc><![CDATA[Rev VVD 업데이트 여부를 확인한다]]></desc>
+			<sql><![CDATA[
+SELECT NVL(MAX(DECODE(GUBUN, 'CURRENT', GL_DATE, '')), NVL(MAX(DECODE(GUBUN, 'NEXT', GL_DATE, '')), '')) AS NEW_GL_DT
+FROM   (
+       SELECT 'CURRENT' AS GUBUN, 
+              (SELECT  MAX(AIH.GL_DT)
+               FROM    AP_PERIOD AP
+               WHERE   AP.SYS_DIV_CD = DECODE(AIH.SRC_CTNT, 'COMMISSION', '23', 'FMS', '17', 'JO', '19', '15')
+               AND     AP.EFF_YRMON = SUBSTR(AIH.GL_DT, 1, 6)
+               AND     AP.OFC_CD IN (AIH.TJ_OFC_CD, (SELECT MO.AR_HD_QTR_OFC_CD FROM MDM_ORGANIZATION MO WHERE MO.OFC_CD = AIH.TJ_OFC_CD AND ROWNUM = 1))
+               AND     AP.AR_AP_DIV_CD = 'P'
+               AND     AP.CLZ_STS_CD = 'O') AS GL_DATE
+       FROM   AP_INV_HDR AIH
+       WHERE  AIH.CSR_NO = @[csr_no]
+       UNION  ALL
+       SELECT 'NEXT' AS GUBUN, 
+              (SELECT  MIN (EFF_YRMON) || '01'
+               FROM    AP_PERIOD AP
+               WHERE   AP.SYS_DIV_CD = DECODE(AIH.SRC_CTNT, 'COMMISSION', '23', 'FMS', '17', 'JO', '19', '15')
+               AND     AP.EFF_YRMON > SUBSTR(AIH.GL_DT, 1, 6)
+               AND     AP.OFC_CD IN (AIH.TJ_OFC_CD, (SELECT MO.AR_HD_QTR_OFC_CD FROM MDM_ORGANIZATION MO WHERE MO.OFC_CD = AIH.TJ_OFC_CD AND ROWNUM = 1))
+               AND     AP.AR_AP_DIV_CD = 'P'
+               AND     AP.CLZ_STS_CD = 'O') AS GL_DATE
+       FROM   AP_INV_HDR AIH
+       WHERE  AIH.CSR_NO = @[csr_no]
+       )			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

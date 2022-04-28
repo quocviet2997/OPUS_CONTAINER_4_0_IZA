@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<!-- ===================== park myoung sin Start   ===================== -->
+	<!-- park myoung sin : 2009-10-14 start -->
+	<screen name="EES_MNR_0225">
+        <parameter key="title"    value="Division Code Creation" direct="true"></parameter>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/cedexcodemgt/jsp/EES_MNR_0225.jsp"/>
+    </screen>
+    <!-- park myoung sin : 2009-10-14 end -->
+	<!-- park myoung sin : 2009-09-28 start -->
+	<screen name="EES_MNR_0098">
+        <parameter key="title"    value="Total Loss Collection AND Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/totallossmgt/jsp/EES_MNR_0098.jsp"/>
+    </screen>
+    <!-- park myoung sin : 2009-09-28 end -->	 
+		
+	<!-- park myoung sin : 2009-09-16 start -->
+    <screen name="EES_MNR_0157">
+        <parameter key="title"    value="Disposal Approval" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/disposalmgt/jsp/EES_MNR_0157.jsp"/>
+    </screen>	
+	<!-- park myoung sin : 2009-09-16 end -->
+	<!-- park myoung sin : 2009-09-08 start -->
+    <screen name="EES_MNR_0156">
+        <parameter key="title"    value="Disposal Request" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/disposalmgt/jsp/EES_MNR_0156.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-09-08 end -->
+	<!-- park myoung sin : 2009-05-27 start -->
+    <screen name="EES_MNR_CONFIRM" template="templatePop">
+        <parameter key="title"    value="EES_MNR_CONFIRM" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/mnrcommon/generalcodesearchmgt/jsp/EES_MNR_CONFIRM.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-05-27 end -->
+	<!-- park myoung sin : 2009-08-26 start -->
+    <screen name="EES_MNR_0028">
+        <parameter key="title"    value="MNR Repair Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0028.jsp"/>
+    </screen>
+    <screen name="EES_MNR_0028_POP" template="templatePop">
+        <parameter key="title"    value="MNR Repair Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0028.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-08-26 end -->
+	<!-- park myoung sin : 2009-08-20 start -->
+    <screen name="EES_MNR_0027">
+        <parameter key="title"    value="Repair Cancellation and Deletion" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0027.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-08-20 end -->
+	<!-- park myoung sin : 2009-08-19 start -->
+    <screen name="EES_MNR_0022">	
+        <parameter key="title"    value="Repair Estimate GROUP Auditing" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0022.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-08-19 end -->
+	<!-- park myoung sin : 2009-08-05 start -->
+    <screen name="EES_MNR_0023">
+        <parameter key="title"    value="Repair Estimate Auditing" direct="true"></parameter>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0023.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-08-05 end -->
+	<!-- park myoung sin : 2010-04-20 start -->
+    <screen name="EES_MNR_0240">
+        <parameter key="title"    value="Repair Estimate EDI Auditing" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0240.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2010-04-20 end -->
+	<!-- park myoung sin : 2009-08-03 start -->
+    <screen name="EES_MNR_0192" template="templatePop">
+        <parameter key="title"    value="Estimate Detail_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0192.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-06-04 end -->
+	<!-- park myoung sin : 2009-06-09 start -->
+    <screen name="EES_MNR_0019">
+        <parameter key="title"    value="Repair Estimate Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0019.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-06-04 end -->
+	<!-- park myoung sin : 2009-06-09 start -->
+    <screen name="EES_MNR_0015">
+        <parameter key="title"    value="MNR Agreement" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/ratemgt/jsp/EES_MNR_0015.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-06-04 end -->
+	<!-- park myoung sin : 2009-06-05 start -->
+    <screen name="EES_MNR_0170">
+        <parameter key="title"    value="Reefer Unit Warranty Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/warrantymgt/jsp/EES_MNR_0170.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-06-04 end -->
+	<!-- park myoung sin : 2009-06-04 start -->
+    <screen name="EES_MNR_0191" template="templatePop">
+        <parameter key="title"    value="Repair History_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0191.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-06-04 end -->
+	<!-- park myoung sin : 2009-06-03 start -->
+    <screen name="EES_MNR_0213" template="templatePop">
+        <parameter key="title"    value="Warranty Alert_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/warrantymgt/jsp/EES_MNR_0213.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-06-03 end -->
+	<!-- park myoung sin : 2009-05-27 start -->
+    <screen name="EES_MNR_PRESETMULTI" template="templatePop">
+        <parameter key="title"    value="EES_MNR_PRESETMULTI" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/mnrcommon/generalcodesearchmgt/jsp/EES_MNR_PRESETMULTI.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-05-27 end -->
+	<!-- park myoung sin : 2009-05-27 start -->
+    <screen name="EES_MNR_MULTI" template="templatePop">
+        <parameter key="title"    value="EES_MNR_MULTI" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/mnrcommon/generalcodesearchmgt/jsp/EES_MNR_MULTI.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-05-27 end -->
+	<!-- park myoung sin : 2010-12-20 start -->
+    <screen name="EES_MNR_OFCINFOMULTI" template="templatePop">
+        <parameter key="title"    value="EES_MNR_OFCINFOMULTI" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/mnrcommon/generalcodesearchmgt/jsp/EES_MNR_OFCINFOMULTI.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2010-12-20 end -->
+	<!-- park myoung sin : 2009-05-25 start -->
+    <screen name="EES_MNR_0122">
+        <parameter key="title"    value="Damage Flagging/Unflagging" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/eqflagmgt/jsp/EES_MNR_0122.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-05-25 end -->
+	<!-- park myoung sin : 2009-05-25 start -->
+    <screen name="EES_MNR_0125">
+        <parameter key="title"    value="Container Damage Histroy" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/eqflagmgt/jsp/EES_MNR_0125.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-05-25 end -->
+    <!-- park myoung sin : 2009-05-19 start -->
+    <screen name="EES_MNR_0139" template="templatePop">
+        <parameter key="title"    value="Damage Flagging/Unflagging Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/eqflagmgt/jsp/EES_MNR_0139.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-05-19 end -->
+	<!-- park myoung sin : 2009-05-11 start -->
+    <screen name="EES_MNR_0004">
+        <parameter key="title"    value="Damage Type" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/cedexcodemgt/jsp/EES_MNR_0004.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-04-24 end -->
+
+	<!-- park myoung sin : 2009-04-24 start -->
+    <screen name="EES_MNR_0003">
+        <parameter key="title"    value="Damage Location" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/cedexcodemgt/jsp/EES_MNR_0003.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-04-24 end -->
+
+	<!-- park myoung sin : 2009-05-07 start -->
+    <screen name="EES_MNR_0193" template="templatePop">
+        <parameter key="title"    value="Location Code Inquiry_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/cedexcodemgt/jsp/EES_MNR_0193.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2009-05-07 end -->
+
+	<!-- park myoung sin : 2010-02-01 start -->
+	<screen name="EES_MNR_0237">
+        <parameter key="title"    value="MNR PFMC by Account/Cost Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0237.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2010-02-01 end -->
+	<!-- ===================== park myoung sin End   ===================== -->
+
+	<!-- ===================== WanGyu Kim Start   ===================== -->
+	<!-- WanGyu Kim  : 2009-04-27 start -->
+    <screen name="EES_MNR_0002">
+        <parameter key="title"    value="EQ Component" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/cedexcodemgt/jsp/EES_MNR_0002.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-04-27 end -->
+
+	<!-- WanGyu Kim  : 2009-05-08 start -->
+    <screen name="EES_MNR_0145">
+        <parameter key="title"    value="EQ Component" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/cedexcodemgt/jsp/EES_MNR_0145.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-05-08 end -->
+
+	<!-- WanGyu Kim  : 2009-05-14 start -->
+    <screen name="EES_MNR_0009">
+        <parameter key="title"    value="MNR Other Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/generalcodemgt/jsp/EES_MNR_0009.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-05-14 end -->
+
+	<!-- WanGyu Kim  : 2009-05-20 start -->
+    <screen name="EES_MNR_0107">
+        <parameter key="title"    value="DV Factor" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/dvfactormgt/jsp/EES_MNR_0107.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-05-20 end -->
+
+	<!-- WanGyu Kim  : 2009-05-28 start -->
+    <screen name="EES_MNR_0138">
+        <parameter key="title"    value="Depreciated Value Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/mnrcommon/generalcodesearchmgt/jsp/EES_MNR_0138.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-05-28 end -->
+
+	<!-- WanGyu Kim  : 2009-06-02 start -->
+    <screen name="EES_MNR_0188" template="templatePop">
+        <parameter key="title"    value="MNR Tariff No Inquiry_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/tariffmgt/jsp/EES_MNR_0188.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-06-02 end -->
+
+	<!-- WanGyu Kim  : 2009-06-05 start -->
+    <screen name="EES_MNR_0014">
+        <parameter key="title"    value="MNR Standard Tariff Creation and Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/tariffmgt/jsp/EES_MNR_0014.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-06-05 end -->
+
+	<!-- WanGyu Kim  : 2009-06-22 start -->
+    <screen name="EES_MNR_0190" template="templatePop">
+        <parameter key="title"    value="Local Tariff File Import_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/tariffmgt/jsp/EES_MNR_0190.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-06-22 end -->
+
+	<!-- WanGyu Kim  : 2009-07-02 start -->
+    <screen name="EES_MNR_0011">
+        <parameter key="title"    value="MNR Local Tariff Creation and Verify" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/tariffmgt/jsp/EES_MNR_0011.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-07-02 end -->
+
+	<!-- WanGyu Kim  : 2009-07-14 start -->
+    <screen name="EES_MNR_0215" template="templatePop">
+        <parameter key="title"    value="Tariff Detail Information_Pop_Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/tariffmgt/jsp/EES_MNR_0215.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-07-14 end -->
+
+	<!-- WanGyu Kim  : 2009-07-20 start -->
+    <screen name="EES_MNR_0136">
+        <parameter key="title"    value="MNR Regional Tariff Approval" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/tariffmgt/jsp/EES_MNR_0136.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-07-20 end -->
+
+	<!-- WanGyu Kim  : 2009-07-23 start -->
+    <screen name="EES_MNR_0171">
+        <parameter key="title"    value="MNR Tariff Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/tariffmgt/jsp/EES_MNR_0171.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-07-23 end -->
+
+	<!-- WanGyu Kim  : 2009-08-03 start -->
+    <screen name="EES_MNR_0030">
+        <parameter key="title"    value="W/O Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0030.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-08-03 end -->
+	
+	<!-- WanGyu Kim  : 2009-09-07 start -->
+    <screen name="EES_MNR_0093">
+        <parameter key="title"    value="Scrapping/Donation Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/extradisposalmgt/jsp/EES_MNR_0093.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-09-07 end -->
+
+	<!-- WanGyu Kim  : 2009-09-10 start -->
+    <screen name="EES_MNR_0094">
+        <parameter key="title"    value="Scrapping/Donation Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/extradisposalmgt/jsp/EES_MNR_0094.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-09-10 end -->
+
+	<!-- WanGyu Kim  : 2009-09-15 start -->
+    <screen name="EES_MNR_0195" template="templatePop">
+        <parameter key="title"    value="Total Loss No Inquiry_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/totallossmgt/jsp/EES_MNR_0195.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-09-15 end -->
+
+	<!-- WanGyu Kim  : 2009-09-16 start -->
+    <screen name="EES_MNR_0095">
+        <parameter key="title"    value="Total Loss Request" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/totallossmgt/jsp/EES_MNR_0095.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-09-16 end -->
+
+	<!-- WanGyu Kim  : 2009-09-28 start -->
+    <screen name="EES_MNR_0096">
+        <parameter key="title"    value="Total Loss Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/totallossmgt/jsp/EES_MNR_0096.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-09-28 end -->
+
+	<!-- WanGyu Kim  : 2009-09-28 start -->
+    <screen name="EES_MNR_0160">
+        <parameter key="title"    value="Disposal Sold Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/disposalmgt/jsp/EES_MNR_0160.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-09-28 end -->
+
+	<!-- WanGyu Kim  : 2009-10-06 start -->
+    <screen name="EES_MNR_0221" template="templatePop">
+        <parameter key="title"    value="Sold Creation File Import_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/disposalmgt/jsp/EES_MNR_0221.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-10-06 end -->
+
+	<!-- WanGyu Kim  : 2009-10-22 start -->
+    <screen name="EES_MNR_0230">
+        <parameter key="title"    value="ACEP Candidate Cntr List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0230.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-10-22 end -->
+
+	<!-- WanGyu Kim  : 2010-01-14 start -->
+    <screen name="EES_MNR_0235" template="templatePop">
+        <parameter key="title"    value="MNR Release Order Transmission" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/disposalmgt/jsp/EES_MNR_0235.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2010-01-14 end -->
+
+	<!-- WanGyu Kim  : 2010-01-28 start -->
+    <screen name="EES_MNR_0236">
+        <parameter key="title"    value="MNR PFMC by Agreement/Tariff" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0236.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2010-01-28 end -->
+
+	<!-- WanGyu Kim  : 2010-02-10 start -->
+    <screen name="EES_MNR_0239">
+        <parameter key="title"    value="Office Control Info" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/officegeneralinfomgt/jsp/EES_MNR_0239.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2010-02-10 end -->
+	<!-- ===================== WanGyu Kim End   ===================== -->
+
+
+	<!-- ===================== HyungSeok Ham Start   ===================== -->
+	<!-- HyungSeok Ham : 2009-05-20 start -->
+    <screen name="EES_MNR_0029">
+        <parameter key="title"    value="FQA Result Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/fqaresultmgt/jsp/EES_MNR_0029.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-05-20 end -->
+	<!-- HyungSeok Ham : 2009-06-29 start -->
+    <screen name="EES_MNR_0016"  template="templatePop">
+        <parameter key="title"    value="M &amp; R Agreement Inquiry_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/ratemgt/jsp/EES_MNR_0016.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-06-29 end -->
+	<!-- HyungSeok Ham : 2009-07-01 start -->
+    <screen name="EES_MNR_0018">
+        <parameter key="title"    value="M &amp; R Agreement List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/ratemgt/jsp/EES_MNR_0018.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-07-01 end -->
+	<!-- HyungSeok Ham : 2009-07-06 start -->
+    <screen name="EES_MNR_0218" template="templatePop">
+        <parameter key="title"    value="M &amp; R AGREEMENT DETAIL Pop_Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/ratemgt/jsp/EES_MNR_0218.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-07-06 end -->
+	<!-- HyungSeok Ham : 2009-07-15 start -->
+    <screen name="EES_MNR_0110">
+        <parameter key="title"    value="Hanger Bar Inventory List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/hangerinventorymgt/jsp/EES_MNR_0110.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-07-15 end -->
+	<!-- HyungSeok Ham : 2009-07-20 start -->
+    <screen name="EES_MNR_0109">
+        <parameter key="title"    value="Hanger Bar Attatch/Detach Qty by CNTR" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/eqflagmgt/jsp/EES_MNR_0109.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-07-20 end -->
+	<!-- HyungSeok Ham : 2009-07-23 start -->
+    <screen name="EES_MNR_0111">
+        <parameter key="title"    value="Hanger Rack/Bar History" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/eqflagmgt/jsp/EES_MNR_0111.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-07-23 end -->
+
+	<!-- HyungSeok Ham : 2009-08-03 start -->
+    <screen name="EES_MNR_0036" template="templatePop">
+        <parameter key="title"    value="Document Transmission" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0036.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-08-03 end -->
+
+	<!-- HyungSeok Ham : 2009-08-17 start -->
+    <screen name="EES_MNR_0041">
+        <parameter key="title"    value="Invoice Creation &amp; Correction" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/accountmanage/expensemgt/jsp/EES_MNR_0041.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-08-17 end -->
+
+	<!-- HyungSeok Ham : 2009-09-02 start -->
+    <screen name="EES_MNR_0143" template="templatePop">
+        <parameter key="title"    value="Invoice Creation File Import Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/accountmanage/expensemgt/jsp/EES_MNR_0143.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-09-02 end -->
+
+	<!-- HyungSeok Ham : 2009-09-16 start -->
+    <screen name="EES_MNR_0042">
+        <parameter key="title"    value="Invoice Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/accountmanage/expensemgt/jsp/EES_MNR_0042.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-09-16 end -->
+
+	<!-- HyungSeok Ham : 2009-09-21 start -->
+    <screen name="EES_MNR_0161">
+        <parameter key="title"    value="Disposal Invoice Issue &amp; Correction" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/accountmanage/incomemgt/jsp/EES_MNR_0161.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-09-21 end -->
+
+	<!-- HyungSeok Ham : 2009-09-28 start -->
+    <screen name="EES_MNR_0164">
+        <parameter key="title"    value="Disposal Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/disposalmgt/jsp/EES_MNR_0164.jsp"/>
+    </screen>
+
+    <screen name="EES_MNR_0200" template="templatePop">
+        <parameter key="title"    value="Disposal Detail Information Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/disposalmgt/jsp/EES_MNR_0200.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-09-28 end -->
+
+	<!-- HyungSeok Ham : 2009-09-30 start -->
+    <screen name="EES_MNR_0163">
+        <parameter key="title"    value="Disposal Invoice Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/disposalmgt/jsp/EES_MNR_0163.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-09-30 end -->
+
+	<!-- HyungSeok Ham : 2009-10-09 start -->
+    <screen name="EES_MNR_0222">
+        <parameter key="title"    value="FQA Result Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/fqaresultmgt/jsp/EES_MNR_0222.jsp"/>
+    </screen>
+
+    <screen name="EES_MNR_0223" template="templatePop">
+        <parameter key="title"    value="FQA Result Detail Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/fqaresultmgt/jsp/EES_MNR_0223.jsp"/>
+    </screen>
+
+    <screen name="EES_MNR_0224" template="templatePop">
+        <parameter key="title"    value="Hanger Bar Inventory History Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/hangerinventorymgt/jsp/EES_MNR_0224.jsp"/>
+    </screen>
+	<!-- HyungSeok Ham : 2009-10-09 end -->
+	<!-- ===================== HyungSeok Ham End   ===================== -->
+
+
+    <!-- ===================== chung young hun start ===================== -->
+    <screen name="EES_MNR_0212" template="templatePop">
+        <parameter key="title"    value="M &amp; R Regional Office Code Inquiry_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/planmanage/planmgt/jsp/EES_MNR_0212.jsp"/>
+    </screen>
+    <screen name="EES_MNR_0217">
+        <parameter key="title"    value="M &amp; R Colleague Tree" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/officegeneralinfomgt/jsp/EES_MNR_0217.jsp"/>
+    </screen>
+
+     <screen name="EES_MNR_0142" template="templatePop">
+        <parameter key="title"    value="Pop Up_Tariff Code Finding" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/cedexcodemgt/jsp/EES_MNR_0142.jsp"/>
+    </screen>
+    <!--  chung young hun 2009-06-16 -->
+    <screen name="EES_MNR_0189" template="templatePop">
+        <parameter key="title"    value="M &amp; R Service Provider Inquiry_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/mnrcommon/generalcodesearchmgt/jsp/EES_MNR_0189.jsp"/>
+    </screen>
+    <!--  chung young hun 2009-06-16 -->
+    <!--  chung young hun 2009-06-17 -->
+      <screen name="EES_MNR_0010">
+        <parameter key="title"       value="Repair Approval Authority" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/officegeneralinfomgt/jsp/EES_MNR_0010.jsp"/>
+    </screen>
+    <!--  chung young hun 2009-06-17 -->
+    <!--  chung young hun 2009-06-22 -->
+      <screen name="EES_MNR_0135">
+        <parameter key="title"       value="Repair Approval Authority Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/officegeneralinfomgt/jsp/EES_MNR_0135.jsp"/>
+    </screen>
+    <!--  chung young hun 2009-06-22 -->
+    <!--  kwon young bueb 2009-08-05 -->
+      <screen name="EES_MNR_0052">
+        <parameter key="title"       value="M &amp; R Simple W/O Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0052.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2009-08-05 -->
+    <!--  kwon young bueb 2009-09-07 -->
+      <screen name="EES_MNR_0054">
+        <parameter key="title"       value="M &amp; R Vessel Reefer Spare Part Purchase W/O Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0054.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2009-09-07 -->
+    <!--  kwon young bueb 2009-08-24 -->
+      <screen name="EES_MNR_0032">
+        <parameter key="title"       value="M &amp; R Repair Result creatioln by W/O" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0032.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2009-08-24 -->
+
+    <!--  kwon young bueb 2009-09-01 -->
+      <screen name="EES_MNR_0137" >
+        <parameter key="title"       value="M &amp; R Standard Reefer Spare Parts List of the vsl" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/reefersparepartmgt/jsp/EES_MNR_0137.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2009-09-01 -->
+
+    <!--  kwon young bueb 2009-09-07 -->
+      <screen name="EES_MNR_0055">
+        <parameter key="title"       value="M &amp; R Reefer Spare Part Summary List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0055.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2009-09-07 -->
+
+    <!--  kwon young bueb 2009-09-01 -->
+      <screen name="EES_MNR_0056">
+        <parameter key="title"       value="M &amp; R VSL Reefer Spare part Inventory" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/reefersparepartmgt/jsp/EES_MNR_0056.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2009-09-01 -->
+
+    <!--  kwon young bueb 2009-09-01 -->
+      <screen name="EES_MNR_0214" template="templatePop">
+        <parameter key="title"       value="M &amp; R Reefer Spare Part Inquiry_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/reefersparepartmgt/jsp/EES_MNR_0214.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2009-09-01 -->
+
+    <!--  kwon young bueb 2009-09-01 -->
+      <screen name="EES_MNR_0198"  template="templatePop">
+        <parameter key="title"       value="M &amp; R Reefer Spare Kit Type Inquiry_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/reefersparepartmgt/jsp/EES_MNR_0198.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2009-09-01 -->
+    <!--  kwon young bueb 2009-09-07 -->
+      <screen name="EES_MNR_0194"  template="templatePop">
+        <parameter key="title"       value="M &amp; R Recent Reefer Parts Supply Information_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0194.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2009-09-07 -->
+
+    <!--  kwon young bueb 2009-09-15 -->
+      <screen name="EES_MNR_0151" >
+        <parameter key="title"       value="M &amp; R Disposal Candidate Selection" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/eqflagmgt/jsp/EES_MNR_0151.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2009-09-15 -->
+    <!--  kwon young bueb 2009-09-21 -->
+      <screen name="EES_MNR_0158" template="templatePop">
+        <parameter key="title"       value="M &amp; R Disposal Candidate Inquiry_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/eqflagmgt/jsp/EES_MNR_0158.jsp"/>
+    </screen>
+    <!--  kwon young bueb 2009-09-21 -->
+    <!--  kwon young bueb 2009-09-23 -->
+      <screen name="EES_MNR_0154">
+        <parameter key="title"       value="M &amp; R Disposal Tariff by Region" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/tariffmgt/jsp/EES_MNR_0154.jsp"/>
+    </screen>
+    <!--  kwon young bueb 2009-09-23 -->
+    <!--  kwon young bueb 2009-12-30 -->
+      <screen name="EES_MNR_0232">
+        <parameter key="title"       value="M &amp; R Disposal Tariff Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/tariffmgt/jsp/EES_MNR_0232.jsp"/>
+    </screen>
+    <!--  kwon young bueb 2009-12-30 -->
+    <!--  kwon young bueb 2009-09-23 -->
+      <screen name="EES_MNR_0220"  template="templatePop">
+        <parameter key="title"       value="M &amp; R Disposal Price File Import_Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/disposalmgt/jsp/EES_MNR_0220.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2009-09-23 -->
+    <!--  kwon young bueb 2009-10-05 -->
+      <screen name="EES_MNR_0155">
+        <parameter key="title"       value="M &amp; R Disposal Buyer Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/generalmanage/partnermgt/jsp/EES_MNR_0155.jsp"/>
+    </screen>
+    <!--  kwon young bueb 2009-10-05 -->
+
+    <!--  chung young hun 2009-07-02 -->
+
+      <screen name="EES_MNR_0058">
+        <parameter key="title"       value="M &amp; R Extra Expense W/O Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0058.jsp"/>
+    </screen>
+    <!-- chung young hun 2009-07-02 -->
+
+    <!-- chung young hun 2009-07-02 -->
+    <screen name="EES_MNR_0211" template="templatePop">
+        <parameter key="title"    value="Tire Purchase W/O Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0211.jsp"/>
+    </screen>
+    <!-- chung young hun 2009-07-02-->
+
+    <!--  kwon young bueb 2009-08-18 -->
+    <screen name="EES_MNR_0219" template="templatePop">
+        <parameter key="title"    value="M &amp; R Simple WO File Import" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0219.jsp"/>
+    </screen>
+    <!--  kwon young bueb 2009-08-18 -->
+
+    <!--  kwon young bueb 2009-10-13 -->
+      <screen name="EES_MNR_0226"  template="templatePop">
+        <parameter key="title"       value="M &amp; R Simple W/O Inquiry Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0226.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2009-10-13 -->
+
+    <!--  kwon young bueb 2009-10-13 -->
+      <screen name="EES_MNR_0227" template="templatePop">
+        <parameter key="title"       value="M &amp; R Extra W/O Inquiry Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0227.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2009-10-13 -->
+
+    <!--  kwon young bueb 2009-10-13 -->
+      <screen name="EES_MNR_0228"  template="templatePop">
+        <parameter key="title"       value="M &amp; R Reefer Spare Parts W/O Inquiry Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0228.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2009-10-13 -->
+    <!--  kwon young bueb 2010-01-28 -->
+    <screen name="EES_MNR_0238">
+        <parameter key="title"    value="MNR PFMC by Work Order" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0238.jsp"/>
+    </screen>
+    <!-- kwon young bueb 2010-01-28 -->
+
+    <!-- park myoung sin : 2010-01-11 start -->
+	<screen name="EES_MNR_0234"  template="templatePop">
+        <parameter key="title"    value="Total Loss Detail Pop up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/totallossmgt/jsp/EES_MNR_0234.jsp"/>
+    </screen>
+    <!-- park myoung sin : 2010-01-11 end -->
+	<!-- ===================== chung young hun  end ===================== -->
+
+	<!-- Juhyun Lee  : 2009-06-08 start -->
+    <screen name="EES_MNR_0216">
+        <parameter key="title"    value="M &amp; Guideline &amp; Information" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/planmanage/planmgt/jsp/EES_MNR_0216.jsp"/>
+    </screen>
+	<!-- Juhyun Lee  : 2009-06-08 end -->
+	
+	<!-- Jung Ho Min : 2009-09-30 start -->
+    <screen name="EES_MNR_0166">
+        <parameter key="title"    value="Disposal Performance by Equipment" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0166.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-09-30 end -->
+
+	<!-- Jung Ho Min : 2009-10-01 start -->
+    <screen name="EES_MNR_0204">
+        <parameter key="title"    value="Tire Replacement Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0204.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-10-01 end -->
+
+	<!-- Jung Ho Min : 2009-10-01 start -->
+    <screen name="EES_MNR_0205">
+        <parameter key="title"    value="Tire Replacement History Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0205.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-10-01 end -->
+
+	<!-- Jung Ho Min : 2009-10-01 start -->
+    <screen name="EES_MNR_0202">
+        <parameter key="title"    value="Tire Purchase Report by Item" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0202.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-10-01 end -->
+	<!-- Jung Ho Min : 2009-10-05 start -->
+    <screen name="EES_MNR_0203">
+        <parameter key="title"    value="Tire Purchase Report by Supplier" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0203.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-10-05 end -->
+	<!-- Jung Ho Min : 2009-10-06 start -->
+    <screen name="EES_MNR_0105">
+        <parameter key="title"    value="Total Loss Payment to Lessor Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/totallossmgt/jsp/EES_MNR_0105.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-10-06 end -->
+
+	<!-- Jung Ho Min : 2009-10-06 start -->
+    <screen name="EES_MNR_0102">
+        <parameter key="title"    value="Total Loss Performance" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0102.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-10-06 end -->
+	
+	<!-- Jung Ho Min : 2009-10-08 start -->
+    <screen name="EES_MNR_0121">
+        <parameter key="title"    value="MNR PFMC by Estimation Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0121.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-10-08 end -->
+	<!-- Jung Ho Min : 2009-10-12 start -->
+    <screen name="EES_MNR_0118">
+        <parameter key="title"    value="MNR PFMC by Type/Size" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0118.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-10-12 end -->
+
+	<!-- Jung Ho Min : 2009-10-12 start -->
+    <screen name="EES_MNR_0120">
+        <parameter key="title"    value="MNR PFMC by VNDR/Manufacturer" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0120.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-10-12 end -->
+
+	<!-- Jung Ho Min : 2009-10-13 start -->
+    <screen name="EES_MNR_0119">
+        <parameter key="title"    value="MNR PFMC by AGMT TRIFF" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0119.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-10-13 end -->
+	<!-- Jung Ho Min : 2009-10-16 start -->
+    <screen name="EES_MNR_0229">
+        <parameter key="title"    value="MNR Estimate expense" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/accountmanage/expensemgt/jsp/EES_MNR_0229.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-10-16 end -->
+	<!-- Service Provider Portal  Embed Start -->
+	<!-- ===================== park myoung sin Start   	===================== -->
+    <!-- WanGyu Kim  : 2009-12-02 start -->
+    <screen name="EES_MNR_0097"  template="templatePop">
+        <parameter key="title"    value="Total Loss EQ Add Pop Up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/totallossmgt/jsp/EES_MNR_0097.jsp"/>
+    </screen>
+	<!-- WanGyu Kim  : 2009-12-02 end -->
+
+	<!-- ===================== QUERY-EXE PAGE   ===================== -->
+	<!-- park myoung sin : 2010-01-05 start -->
+    <screen name="EES_MNR_WORESTORE">
+        <parameter key="title"    value="EES_MNR_WORESTORE" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/mnrcommon/generalcodesearchmgt/jsp/EES_MNR_QEXE.jsp"/>
+    </screen>
+	<!-- park myoung sin : 2010-01-05 end -->
+	<!-- ===================== QUERY-EXE PAGE  ===================== -->
+
+	<!-- Jang Jun-Woo  : 2010-08-23 start -->
+    <screen name="EES_MNR_0243"  template="templatePop">
+        <parameter key="title"    value="EDI &amp; Excel Estimate Upload" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0243.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo  : 2010-08-23 end -->
+
+	<!-- Jang Jun-Woo : 2010-10-06 start -->
+    <screen name="EES_MNR_0244">
+        <parameter key="title"    value="Disposal Performance by RCC" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0244.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2010-10-06 end -->
+
+	<!-- Jang Jun-Woo : 2010-10-12 start -->
+    <screen name="EES_MNR_0245">
+        <parameter key="title"    value="Disposal Performance by Month" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0245.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2010-10-12 end -->
+
+	<!-- Jang Jun-Woo : 2010-11-02 start -->
+    <screen name="EES_MNR_0246">
+        <parameter key="title"    value="Disposal Performance by Buyer" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/reportmanage/performancereport/jsp/EES_MNR_0246.jsp"/>
+    </screen>
+	<!-- Jang Jun-Woo : 2010-10-12 end -->		
+	
+	<!-- ========================  SPP APPEND START ========================== -->	
+    <!-- YongChan Shin : 2014-09-30 start -->
+    <screen name="EES_MNR_S011">
+        <parameter key="title"    value="MNR Local Tariff Creation and Verify" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/tariffmgt/jsp/EES_MNR_S011.jsp"/>
+    </screen>
+    
+    <screen name="EES_MNR_S171" >
+        <parameter key="title"    value="MNR Tariff Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/agreementmanage/tariffmgt/jsp/EES_MNR_S171.jsp"/>
+    </screen>    
+    
+    <screen name="EES_MNR_S122">
+        <parameter key="title"    value="Damage Flagging/Unflagging" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/eqflagmgt/jsp/EES_MNR_S122.jsp"/>
+    </screen>    
+    
+    <screen name="EES_MNR_S019">
+        <parameter key="title"    value="Repair Estimate Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_S019.jsp"/>
+    </screen>    
+    
+    <screen name="EES_MNR_S027">
+        <parameter key="title"    value="Repair Cancellation and Deletion" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_S027.jsp"/>
+    </screen> 
+    
+    <screen name="EES_MNR_S032">
+        <parameter key="title"    value="W/O List &amp; Repair Completion Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_S032.jsp"/>
+    </screen>       
+    
+    <screen name="EES_MNR_S041">
+        <parameter key="title"    value="Invoice Creation &amp; Correction" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/accountmanage/expensemgt/jsp/EES_MNR_S041.jsp"/>
+    </screen>
+        
+    <screen name="EES_MNR_S042">
+        <parameter key="title"    value="Invoice Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/accountmanage/expensemgt/jsp/EES_MNR_S042.jsp"/>
+    </screen>       
+    
+    <screen name="EES_MNR_S028">
+        <parameter key="title"    value="MNR Repair Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_S028.jsp"/>
+    </screen>    
+     
+    <!-- YongChan Shin : 2014-09-30 end   -->
+    <!-- =======================  SPP APPEND END    ========================= -->
+	
+	<!-- Jun Kato : 2014-12-02 start   -->			 
+    <screen name="EES_MNR_0247">
+        <parameter key="title"    value="MNR EDI Invoice Parking Lot" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0247.jsp"/>
+    </screen>
+	<!-- Jun Kato : 2014-12-02 end   -->
+	
+	<!-- Jun Kato : 2015-02-25 start   -->			 
+    <screen name="EES_MNR_0248" template="templatePop">
+        <parameter key="title"    value="Invoice Creation and Correction (Load Excel Button)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mnr/operationmanage/repairmgt/jsp/EES_MNR_0248.jsp"/>
+    </screen>
+	<!-- Jun Kato : 2015-02-25 end   -->	
+	
+<!-- Service Provider Portal  Embed End   -->
+</screen-definitions>

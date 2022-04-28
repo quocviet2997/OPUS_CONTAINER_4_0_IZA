@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserOfcCngDBDAOUserBasicInfoRSQL">
+			<desc><![CDATA[조회]]></desc>
+			<sql><![CDATA[
+SELECT
+	usr_id,
+	usr_nm,
+	usr_locl_nm,
+	ofc_cd,
+	'' cng_ofc_cd,
+	'' rhq,
+	to_char(sysdate,'YYYY-MM-DD') cng_ofc_fm_dt
+from COM_USER                                 
+where usr_id = @[usr_id]
+and use_flg = 'Y'			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	
+	
+	<!-- Kim Seong Kwang : 2009-07-15 start -->
+    <url-mapping url="EXP_SPP_0001.do" screen="EXP_SPP_0001.screen" >
+        <web-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.EXP_SPP_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EXP_SPP_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.EXP_SPP_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.ExpSpp0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.PPSOAgentCanalTransitFeeSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Seong Kwang : 2009-07-15 end -->
+	
+	<!-- Kim Seong Kwang : 2009-07-22 start -->	
+    <url-mapping url="EXP_SPP_0002.do" screen="EXP_SPP_0002.screen" >
+        <web-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.EXP_SPP_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EXP_SPP_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.EXP_SPP_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.ExpSpp0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.PPSOAgentCanalTransitFeeSC</service-action-class>
+    </event-mapping>	
+	<!-- Kim Seong Kwang : 2009-07-22 end -->    
+	
+	<!-- Kim Seong Kwang : 2009-07-27 start -->	
+    <url-mapping url="EXP_SPP_0003.do" screen="EXP_SPP_0003.screen" >
+        <web-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.EXP_SPP_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EXP_SPP_0003GS.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+        <web-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.EXP_SPP_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.ExpSpp0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.PPSOAgentCanalTransitFeeSC</service-action-class>
+    </event-mapping>	
+	<!-- Kim Seong Kwang : 2009-07-27 end -->   
+	
+	<!-- Kim Seong Kwang : 2009-07-30 start -->
+    <url-mapping url="EXP_SPP_0004.do" screen="EXP_SPP_0004.screen" >
+        <web-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.EXP_SPP_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EXP_SPP_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.EXP_SPP_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.ExpSpp0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.PPSOAgentCanalTransitFeeSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Seong Kwang : 2009-07-30 end -->
+	
+	<!-- Kim Seong Kwang : 2009-08-12 start -->
+    <url-mapping url="EXP_SPP_0005.do" screen="EXP_SPP_0005.screen" >
+        <web-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.EXP_SPP_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EXP_SPP_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.EXP_SPP_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.agentcanaltransitfee.event.ExpSpp0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.exp.spp.ppsoagentcanaltransitfee.PPSOAgentCanalTransitFeeSC</service-action-class>
+    </event-mapping>
+	<!-- Kim Seong Kwang : 2009-08-12 end -->	
+	
+	<!-- Kim Seong Kwang : 2009-08-18 start -->
+    <url-mapping url="EXP_SPP_0302.do" screen="EXP_SPP_0302.screen" >
+        <web-action-class>com.clt.apps.opus.exp.spp.plseinvoiceinquiry.invoiceinquiry.event.EXP_SPP_0302HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EXP_SPP_0302GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.exp.spp.plseinvoiceinquiry.invoiceinquiry.event.EXP_SPP_0302HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.exp.spp.plseinvoiceinquiry.invoiceinquiry.event.ExpSpp0302Event</event-class>
+        <service-action-class>com.clt.apps.opus.exp.spp.plseinvoiceinquiry.PLSEInvoiceInquirySC</service-action-class>
+    </event-mapping>
+	<!-- Kim Seong Kwang : 2009-08-18 end -->	
+
+</mappings>

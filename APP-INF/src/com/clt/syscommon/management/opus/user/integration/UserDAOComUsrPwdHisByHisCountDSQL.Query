@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserDAOComUsrPwdHisByHisCountDSQL">
+			<desc><![CDATA[ComUsrPwdHis Delete]]></desc>
+			<sql><![CDATA[
+DELETE COM_USR_PWD_HIS
+WHERE USR_ID =   @[usr_id] 
+AND USR_PWD  IN (  SELECT USR_PWD 
+                FROM (  SELECT ROW_NUMBER() OVER(ORDER BY cre_dt DESC)  AS NUM,  USR_PWD  
+                        FROM COM_USR_PWD_HIS
+                        WHERE USR_ID =    @[usr_id]  
+                         )
+                WHERE NUM >  @[his_count] 
+ 				UNION ALL
+                SELECT USR_PWD  
+                FROM  COM_USR_PWD_HIS 
+                 WHERE USR_ID =  @[usr_id]  
+				 AND  USR_PWD = @[usr_pwd] 
+				)			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="his_count" type="12" value="" out="N"/>
+				<param name="usr_pwd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

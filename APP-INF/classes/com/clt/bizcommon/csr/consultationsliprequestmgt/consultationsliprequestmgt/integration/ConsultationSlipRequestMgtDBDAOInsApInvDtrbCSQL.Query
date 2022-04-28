@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOInsApInvDtrbCSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+INSERT
+INTO   AP_INV_DTRB
+       (
+              CSR_NO              ,
+              LINE_SEQ            ,
+              LINE_NO             ,
+              LINE_TP_LU_CD       ,
+              INV_AMT             ,
+              INV_DESC            ,
+              INV_TAX_CD          ,
+              DTRB_COA_CO_CD      ,
+              DTRB_COA_RGN_CD     ,
+              DTRB_COA_CTR_CD     ,
+              DTRB_COA_ACCT_CD    ,
+              DTRB_COA_VVD_CD     ,
+              DTRB_COA_INTER_CO_CD,
+              DTRB_COA_FTU_N1ST_CD,
+              DTRB_COA_FTU_N2ND_CD,
+              ATTR_CATE_NM        ,
+              ATTR_CTNT1          ,
+              ATTR_CTNT2          ,
+              ATTR_CTNT3          ,
+              ATTR_CTNT4          ,
+              ATTR_CTNT5          ,
+              ATTR_CTNT6          ,
+              ATTR_CTNT7          ,
+              ATTR_CTNT8          ,
+              ATTR_CTNT9          ,
+              ATTR_CTNT10         ,
+              ATTR_CTNT11         ,
+              ATTR_CTNT12         ,
+              ATTR_CTNT13         ,
+              ATTR_CTNT14         ,
+              ATTR_CTNT15         ,
+              BKG_NO              ,
+              CNTR_TPSZ_CD        ,
+              ACT_VVD_CD          ,
+              PLN_SCTR_DIV_CD     ,
+              SO_CRR_CD           ,
+              YD_CD               ,
+              FTU_USE_CTNT1       ,
+              FTU_USE_CTNT2       ,
+              FTU_USE_CTNT3       ,
+              FTU_USE_CTNT4       ,
+              FTU_USE_CTNT5       ,
+              CRE_DT              ,
+              CRE_USR_ID          ,
+              EAI_EVNT_DT         ,
+              STL_KEY_NO          ,
+              OWNR_VNDR_SEQ                     
+       )
+       VALUES
+       (
+              @[csr_no]                                                 ,
+              @[line_seq]                                               ,
+              @[line_no]                                                ,
+              @[line_tp_lu_cd]                                          ,
+              @[csr_amt]                                                ,
+              @[inv_desc]                                               ,
+              @[inv_tax_cd]                                             ,
+              @[dtrb_coa_co_cd]                                         ,
+              @[dtrb_coa_rgn_cd]                                        ,
+              @[dtrb_coa_ctr_cd]                                        ,
+              @[dtrb_coa_acct_cd]                                       ,
+              @[dtrb_coa_vvd_cd]                                        ,
+              @[dtrb_coa_inter_co_cd]                                   ,
+              @[dtrb_coa_ftu_n1st_cd]                                   ,
+              @[dtrb_coa_ftu_n2nd_cd]                                   ,
+              @[attr_cate_nm]                                           ,
+              @[attr_ctnt1]                                             ,
+              @[attr_ctnt2]                                             ,
+              @[attr_ctnt3]                                             ,
+              @[attr_ctnt4]                                             ,
+              @[attr_ctnt5]                                             ,
+              @[attr_ctnt6]                                             ,
+              @[attr_ctnt7]                                             ,
+              @[attr_ctnt8]                                             ,
+              @[attr_ctnt9]                                             ,
+              @[attr_ctnt10]                                            ,
+              @[attr_ctnt11]                                            ,
+              @[attr_ctnt12]                                            ,
+              @[attr_ctnt13]                                            ,
+              @[attr_ctnt14]                                            ,
+              @[attr_ctnt15]                                            ,
+              @[bkg_no]                                                 ,
+              @[cntr_tpsz_cd]                                           ,
+              @[act_vvd_cd]                                             ,
+              @[pln_sctr_div_cd]                                        ,
+              @[so_crr_cd]                                              ,
+              @[yd_cd]                                                  ,
+              @[ftu_use_ctnt1]                                          ,
+              @[ftu_use_ctnt2]                                          ,
+              @[ftu_use_ctnt3]                                          ,
+              @[ftu_use_ctnt4]                                          ,
+              @[ftu_use_cntr5]                                          ,
+              GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd])				,
+              @[cre_usr_id]                                             ,
+              @[eai_evnt_dt]                                            ,
+              @[stl_key_no]                                             ,
+              @[ownr_vndr_seq]
+       )			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="line_seq" type="12" value="" out="N"/>
+				<param name="line_no" type="12" value="" out="N"/>
+				<param name="line_tp_lu_cd" type="12" value="" out="N"/>
+				<param name="csr_amt" type="12" value="" out="N"/>
+				<param name="inv_desc" type="12" value="" out="N"/>
+				<param name="inv_tax_cd" type="12" value="" out="N"/>
+				<param name="dtrb_coa_co_cd" type="12" value="" out="N"/>
+				<param name="dtrb_coa_rgn_cd" type="12" value="" out="N"/>
+				<param name="dtrb_coa_ctr_cd" type="12" value="" out="N"/>
+				<param name="dtrb_coa_acct_cd" type="12" value="" out="N"/>
+				<param name="dtrb_coa_vvd_cd" type="12" value="" out="N"/>
+				<param name="dtrb_coa_inter_co_cd" type="12" value="" out="N"/>
+				<param name="dtrb_coa_ftu_n1st_cd" type="12" value="" out="N"/>
+				<param name="dtrb_coa_ftu_n2nd_cd" type="12" value="" out="N"/>
+				<param name="attr_cate_nm" type="12" value="" out="N"/>
+				<param name="attr_ctnt1" type="12" value="" out="N"/>
+				<param name="attr_ctnt2" type="12" value="" out="N"/>
+				<param name="attr_ctnt3" type="12" value="" out="N"/>
+				<param name="attr_ctnt4" type="12" value="" out="N"/>
+				<param name="attr_ctnt5" type="12" value="" out="N"/>
+				<param name="attr_ctnt6" type="12" value="" out="N"/>
+				<param name="attr_ctnt7" type="12" value="" out="N"/>
+				<param name="attr_ctnt8" type="12" value="" out="N"/>
+				<param name="attr_ctnt9" type="12" value="" out="N"/>
+				<param name="attr_ctnt10" type="12" value="" out="N"/>
+				<param name="attr_ctnt11" type="12" value="" out="N"/>
+				<param name="attr_ctnt12" type="12" value="" out="N"/>
+				<param name="attr_ctnt13" type="12" value="" out="N"/>
+				<param name="attr_ctnt14" type="12" value="" out="N"/>
+				<param name="attr_ctnt15" type="12" value="" out="N"/>
+				<param name="bkg_no" type="12" value="" out="N"/>
+				<param name="cntr_tpsz_cd" type="12" value="" out="N"/>
+				<param name="act_vvd_cd" type="12" value="" out="N"/>
+				<param name="pln_sctr_div_cd" type="12" value="" out="N"/>
+				<param name="so_crr_cd" type="12" value="" out="N"/>
+				<param name="yd_cd" type="12" value="" out="N"/>
+				<param name="ftu_use_ctnt1" type="12" value="" out="N"/>
+				<param name="ftu_use_ctnt2" type="12" value="" out="N"/>
+				<param name="ftu_use_ctnt3" type="12" value="" out="N"/>
+				<param name="ftu_use_ctnt4" type="12" value="" out="N"/>
+				<param name="ftu_use_cntr5" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="eai_evnt_dt" type="12" value="" out="N"/>
+				<param name="stl_key_no" type="12" value="" out="N"/>
+				<param name="ownr_vndr_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

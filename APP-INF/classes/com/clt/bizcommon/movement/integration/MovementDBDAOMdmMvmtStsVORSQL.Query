@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MovementDBDAOMdmMvmtStsVORSQL">
+			<desc><![CDATA[MdmMvmtStsVO]]></desc>
+			<sql><![CDATA[
+SELECT mvmt_sts_cd
+     , mvmt_sts_nm
+     , io_bnd_cd
+     ,(CASE 
+         WHEN 'Y' = delt_flg THEN 'Delete' 
+         ELSE 'Active' 
+       END) AS delt_flg
+FROM mdm_mvmt_sts
+WHERE mvmt_sts_cd LIKE @[mvmt_sts_cd]||'%'
+AND UPPER(mvmt_sts_nm) LIKE '%'||@[mvmt_sts_nm]||'%'
+#if (${mdm_yn} != '')
+	#if (${delt_flg} == 'Y') 
+		AND delt_flg = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+
+	#else
+		AND delt_flg <> 'Y'
+	#end
+
+#else	
+	AND delt_flg <> 'Y'
+#end
+ORDER BY mvmt_sts_cd			]]></sql>
+			<params>
+				<param name="mvmt_sts_cd" type="12" value="" out="N"/>
+				<param name="mvmt_sts_nm" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

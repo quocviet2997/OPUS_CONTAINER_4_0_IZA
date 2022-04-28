@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="LogicsServiceProviderDBDAOTotalCntRSQL">
+			<desc><![CDATA[LogicsServiceProviderDAORMdmVenderRSQL TOTAL CNT]]></desc>
+			<sql><![CDATA[
+SELECT count(1) CNT
+FROM (SELECT ROW_NUMBER() OVER (ORDER BY vndr_seq) no, 	        
+             LPAD(vndr_seq, 6, '0') vndr_seq,	                		
+             ofc_cd,	                					
+             VNDR_LGL_ENG_NM,  	
+             VNDR_ABBR_NM,					        	
+             LPAD(PRNT_VNDR_SEQ, 6, '0') PRNT_VNDR_SEQ,	
+             VNDR_CNT_CD, 					        		
+             VNDR_CNT_CD||LPAD(vndr_seq, 6, '0') org_vndr_seq,	
+             eng_addr	
+        FROM mdm_vendor         	        				
+		WHERE 1 = 1 
+#if (${p_country} != '')
+        AND UPPER(VNDR_CNT_CD) like '%' || UPPER(@[p_country])  || '%'
+#end
+#if (${p_ofc_cd} != '')
+        AND UPPER(ofc_cd) like '%' || UPPER(@[p_ofc_cd])  || '%'
+#end
+#if (${p_vndr_nm} != '')
+        AND UPPER(VNDR_LGL_ENG_NM) like '%' || UPPER(@[p_vndr_nm])  || '%'
+#end
+#if (${p_vndr_seq} != '')
+        AND LPAD(PRNT_VNDR_SEQ, 6, '0') = LPAD(@[p_vndr_seq], 6, '0')
+#end
+#if (${p_print_vndr_seq} != '')
+        AND LPAD(VNDR_SEQ, 6, '0') = LPAD(@[p_print_vndr_seq], 6, '0')
+#end
+        AND NVL(DELT_FLG, 'N') <> 'Y'
+#if (${p_sp_type} != '')
+        AND LGS_FLG = @[p_sp_type]
+#end
+#if (${usa_edi_cd} != '')
+        AND USA_EDI_CD = @[usa_edi_cd]
+#end
+#if (${modi_vndr_seq} != '')
+        AND MODI_VNDR_SEQ = @[modi_vndr_seq]
+#end
+
+	  ) a			]]></sql>
+			<params>
+				<param name="p_country" type="12" value="" out="N"/>
+				<param name="p_ofc_cd" type="12" value="" out="N"/>
+				<param name="p_vndr_nm" type="12" value="" out="N"/>
+				<param name="p_vndr_seq" type="12" value="" out="N"/>
+				<param name="p_print_vndr_seq" type="12" value="" out="N"/>
+				<param name="p_sp_type" type="12" value="" out="N"/>
+				<param name="usa_edi_cd" type="12" value="" out="N"/>
+				<param name="modi_vndr_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

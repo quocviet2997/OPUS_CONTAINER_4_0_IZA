@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://www.cyberlogitec.com/ServiceControllers.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.cyberlogitec.com/ServiceControllers.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:element name="ServiceControllers" type="ServiceControllersType"/>
+	<xsd:complexType name="ServiceControllersType">
+		<xsd:sequence>
+			<xsd:element name="DefaultServiceController">
+				<xsd:complexType>
+					<xsd:attribute name="jndi" use="required"/>
+					<xsd:attribute name="dest" type="xsd:string" use="optional"/>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ServiceController" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:attribute name="name" type="xsd:string" use="required"/>
+					<xsd:attribute name="jndi" type="xsd:string" use="required"/>
+					<xsd:attribute name="dest" type="xsd:string" use="optional"/>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="disperse" type="xsd:boolean" use="required"/>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>OPUS Calendar(Redesign)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link type="text/css" rel="stylesheet" href="css/theme_default.css" />
+<script type="text/javascript" src="js/common/CoCommon.js"></script>
+<script type="text/javascript" src="js/common/CoMessage.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/opus_ui.js"></script>
+<script>                     
+  var focused='from';                                
+  function whichField(obj){                          
+    focused=obj;                                   
+  }                                                  
+  function setFromTo(y,m,d){                         
+    var tmp=new Date();                            
+    var d=new Date(y,m-1,d,tmp.getHours(),tmp.getMinutes(),tmp.getSeconds());
+    if(parent.document.all.f_cmd.value == '1') {                            
+            document.all.to.value=parent.formatDate(d,'yyyy-MM-dd');
+        parent.document.all.f_cmd.value='0';                                    
+            document.all.to.focus();                   
+    }else{                          
+            document.all.from.value=parent.formatDate(d,'yyyy-MM-dd');
+        parent.document.all.f_cmd.value='1';                                   
+            document.all.from.focus();                   
+     }                                                  
+  }                                                  
+                                                     
+  function returnFromTo(){                                
+    var tmpInterval=ComGetDaysBetween(document.all.from,document.all.to);                   
+    if(!ComIsDate(document.all.from)||!ComIsDate(document.all.to)){                              
+      ComShowCodeMessage('COM12132');                            
+      return;                                                          
+    }else{                                                             
+      if(tmpInterval<0){                                               
+        ComShowMessage('End date must be greater than start date.'); 
+        return;                                                        
+      }                                                                
+    }                                                                  
+    parent.ComCalendar_tmpReturnFunctionFromTo(document.all.from.value, document.all.to.value);     
+    parent.ComCalendar_tmpEndFunction();                                  
+    parent.ComCalendar_hideCalendar(1);                                  
+  }                                                  
+  function returnNoFromTo(){                                
+    var tmpInterval=ComGetDaysBetween(document.all.from,document.all.to);                   
+    if(!ComIsDate(document.all.from)){                              
+      ComShowCodeMessage('COM12132');                            
+      return;                                                          
+    }                                                             
+    parent.ComCalendar_tmpReturnFunctionFromTo(document.all.from.value, document.all.to.value);     
+    parent.ComCalendar_tmpEndFunction();                                  
+    parent.ComCalendar_hideCalendar(1);                                 
+  }                                                  
+</script>                                            
+</head>
+<script>
+if(document.attachEvent){document.attachEvent("onkeydown", parent.document_onkeydown );}else{document.addEventListener("keydown", parent.document_onkeydown , false);}
+</script>
+<body  marginHeight=0 marginWidth=0  onkeydown='javascript:if (event.keyCode==27) {parent.ComCalendar_hideCalendar(1);}'>
+
+
+
+<!-- calendar_wrap(S) -->
+<div class="calendar_wrap">
+    <!-- calendar_year(S) -->
+    <div class="calendar_year">
+        <span>
+            2014<!-- 
+         --><span>
+                <button type="button" class="prev_year ir">Previous year</button>
+                <button type="button" class="next_year ir">Next year</button>
+            </span>
+        </span>
+        <span>
+            Apr<!-- 
+         --><span>
+                <button type="button" class="prev_year ir">Previous month</button>
+                <button type="button" class="next_year ir">Next month</button>
+            </span>
+        </span>
+    </div>
+    <!-- calendar_year(E) -->
+    
+    <!-- table(S) -->
+    <table>
+        <!-- Calendar_header(S) : (thead) -->
+        <thead>
+            <tr>
+                <th scope="col" title="Sunday">Su</th>
+                <th scope="col" title="Monday">Mo</th>
+                <th scope="col" title="Tuesday">Tu</th>
+                <th scope="col" title="Wednesday">We</th>
+                <th scope="col" title="Thursday">Th</th>
+                <th scope="col" title="Friday">Fr</th>
+                <th scope="col" title="Saturday">Sa</th>
+            </tr>
+        </thead>
+        <!-- Calendar_header(E) : (thead) -->
+        <!-- Calendar_date(S) : (tbody) -->
+        <tbody>
+            <tr>
+                <td class="non_active">30</td>
+                <td class="non_active">31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td class="today">14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td class="non_active">1</td>
+                <td class="non_active">2</td>
+                <td class="non_active">3</td>
+            </tr>
+        </tbody>
+        <!-- Calendar_date(E) : (tbody) -->
+    </table>
+    <!-- table(E) -->
+    
+    <!-- calendar_apply(S) -->
+    <div class="calendar_apply">
+        <input maxlength="8" /> <span>-</span> 
+        <input maxlength="8" class="day_to" />
+        <button type="button" class="btn_etc">Apply</button>
+    </div>
+    <!-- calendar_apply(E) -->
+    
+    <button type="button" class="calendar_close ir">Calendar close</button>
+</div>
+<!-- calendar_wrap(E) -->
+
+</body>
+</html>

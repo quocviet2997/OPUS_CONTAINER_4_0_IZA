@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="AccessHistoryDAOExcelDownloadRSQL">
+			<desc><![CDATA[access history excel download query]]></desc>
+			<sql><![CDATA[
+select substr(regexp_substr(scbp, @[regexp], 1, 1),2) as lvl1,
+       substr(regexp_substr(scbp, @[regexp], 1, 2),2) as lvl2,
+       substr(regexp_substr(scbp, @[regexp], 1, 3),2) as lvl3,
+       substr(regexp_substr(scbp, @[regexp], 1, 4),2) as lvl4,
+       substr(regexp_substr(scbp, @[regexp], 1, 5),2) as lvl5,
+       substr(regexp_substr(scbp, @[regexp], 1, 6),2) as lvl6
+, a.pgm_no
+, a.pgm_nm
+, b.cnt_total
+, b.cnt_load
+, b.cnt_cud
+, b.cnt_rrr
+, b.cnt_etc
+#if (${rhq} != '') 
+, @[rhq] rhq
+#else
+, '' rhq
+#end
+#if (${ofc_cd} != '') 
+, @[ofc_cd] ofc_cd
+#else
+, '' ofc_cd
+#end
+#if (${usr_id} != '') 
+, @[usr_id] usr_id
+#else
+, '' usr_id
+#end
+from (
+select sys_connect_by_path(B.PGM_NM, '#') scbp
+    , b.pgm_no, b.pgm_nm
+FROM  COM_MNU_CFG A, COM_PROGRAM B
+WHERE A.CHD_PGM_NO = B.PGM_NO
+#if (${pgm_no} != '') 
+#if (${pgm_no_comma} == '-1')
+and b.pgm_no like '%'||@[pgm_no]||'%'
+#else
+and b.pgm_no in ('${pgm_no}')
+#end 
+#end
+START WITH A.PRNT_PGM_NO = '000_000_M000'
+CONNECT BY PRIOR A.CHD_PGM_NO = A.PRNT_PGM_NO
+ORDER SIBLINGS BY a.DP_SEQ
+) a,
+(
+SELECT a.pgm_no
+,sum(ACSS_TTL_KNT) cnt_total
+,sum(ACSS_LOD_KNT) cnt_load
+,0 cnt_etc 
+,sum(ACSS_MODI_KNT) cnt_cud 
+,sum(ACSS_SRCH_KNT) + sum(ACSS_ETC_KNT) cnt_rrr
+from com_acss_his_smry a, mdm_organization b
+where a.ofc_cd = b.ofc_cd
+#if (${pgm_no} != '') 
+#if (${pgm_no_comma} == '-1')
+and a.pgm_no like '%'||@[pgm_no]||'%'
+#else
+and a.pgm_no in ('${pgm_no}')
+#end
+#end
+#if (${usr_id} != '') 
+and a.usr_id like '%'||@[usr_id]||'%'
+#end
+#if (${ofc_cd} != '') 
+and a.ofc_cd like @[ofc_cd]
+#end
+#if (${rhq} != '') 
+and b.AR_HD_QTR_OFC_CD = @[rhq]
+#end
+and a.acss_tms between to_timestamp(@[from_dt]||'00:00.000000', 'yyyy-mm-ddhh24mi:ss.ff') and to_timestamp(@[to_dt]||'59:59.999000', 'yyyy-mm-ddhh24mi:ss.ff')
+GROUP BY a.pgm_no
+) b
+where b.pgm_no (+) = a.pgm_no			]]></sql>
+			<params>
+				<param name="regexp" type="12" value="" out="N"/>
+				<param name="rhq" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="pgm_no" type="12" value="" out="N"/>
+				<param name="from_dt" type="12" value="" out="N"/>
+				<param name="to_dt" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<!--  SO Candidate Restore -->
+    <screen name="ESD_TRS_9999">
+		<parameter key="title" value="SO Candidate Restore" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/cydoorsomanage/singletransportationsomanage/jsp/ESD_TRS_9999.jsp" />
+	</screen>
+	
+	<!-- USA Rail Invoice Registration And Confirm -->
+	<screen name="ESD_TRS_0038_POP" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/railinvoiceaudit/jsp/ESD_TRS_0038.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0038">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/railinvoiceaudit/jsp/ESD_TRS_0038.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0038GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/railinvoiceaudit/jsp/ESD_TRS_0038GS.jsp" />
+	</screen>
+
+	<!-- USA Rail Invoice Registration And Confirm -->
+
+	<!-- USA Rail Invoice File import and File Upload popup -->
+	<screen name="ESD_TRS_0923" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/railinvoiceaudit/jsp/ESD_TRS_0923.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0923GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/railinvoiceaudit/jsp/ESD_TRS_0923GS.jsp" />
+	</screen>
+
+
+	<!-- USA Rail Invoice File import and File Upload popup -->
+
+	<!-- USA Rail Contrainer History Popup -->
+	<screen name="ESD_TRS_0924" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/railinvoiceaudit/jsp/ESD_TRS_0924.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0924GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/railinvoiceaudit/jsp/ESD_TRS_0924GS.jsp" />
+	</screen>
+
+	<!-- USA Rail Contrainer History Popup -->
+
+
+	<!-- USA Rail Invoice Re-Audit Popup -->
+	<screen name="ESD_TRS_0925" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/railinvoiceaudit/jsp/ESD_TRS_0925.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0925GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/railinvoiceaudit/jsp/ESD_TRS_0925GS.jsp" />
+	</screen>
+
+	<!-- USA Rail Invoice Re-Audit Popup -->
+
+
+	<!-- USA Rail Container Payment History Popup -->
+	<screen name="ESD_TRS_0929" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/railinvoiceaudit/jsp/ESD_TRS_0929.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0929GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/railinvoiceaudit/jsp/ESD_TRS_0929GS.jsp" />
+	</screen>
+
+	<!-- USA Rail Container Payment History Popup -->
+
+	<!-- More Candidates Popup -->
+	<screen name="ESD_TRS_0921" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderissue/jsp/ESD_TRS_0921.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0921GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderissue/jsp/ESD_TRS_0921GS.jsp" />
+	</screen>
+	
+	<!-- More Candidates Popup -->
+	<screen name="ESD_TRS_0984" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/supplementsomanage/supplementsomanage/jsp/ESD_TRS_0984.jsp" />
+	</screen>	
+	<!-- More Candidates Popup -->
+
+	<!-- Terminal invoice CSR Creation - Summary -->
+	<screen name="ESD_TRS_0031">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0031.jsp" />
+	</screen>
+
+	<!-- Terminal invoice CSR Creation - Summary GRID 1 -->
+	<screen name="ESD_TRS_0031GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0031GS.jsp" />
+	</screen>
+
+	<!-- Terminal invoice CSR Creation - Summary POPUP -->
+	<screen name="ESD_TRS_0031Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0031.jsp" />
+	</screen>
+
+	<!-- Terminal invoice CSR Creation - Detail -->
+	<screen name="ESD_TRS_0032" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0032.jsp" />
+	</screen>
+
+	<!-- Terminal invoice CSR Creation - Detail GRID 1 -->
+	<screen name="ESD_TRS_0032GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0032GS.jsp" />
+	</screen>
+
+	<!-- Terminal invoice CSR Creation - Detail GRID 1 -->
+	<screen name="ESD_TRS_0032PreView" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0032PreView.jsp" />
+	</screen>
+
+	<!-- Terminal invoice CSR Creation - Detail POPUP -->
+	<screen name="ESD_TRS_0032Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0032.jsp" />
+	</screen>
+
+	<!-- Terminal invoice CSR Creation - Preview -->
+	<screen name="ESD_TRS_0036" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0036.jsp" />
+	</screen>
+
+	<!-- Terminal invoice CSR Creation - Preview GRID 1 -->
+	<screen name="ESD_TRS_0036GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0036GS.jsp" />
+	</screen>
+
+	<!-- Terminal invoice CSR Creation - Preview POPUP -->
+	<screen name="ESD_TRS_0036Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0036.jsp" />
+	</screen>
+
+
+	<!-- Terminal invoice CSR Creation - Preview -->
+	<screen name="ESD_TRS_0034" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0034.jsp" />
+	</screen>
+
+	<!-- Terminal invoice CSR Creation - Preview GRID 1 -->
+	<screen name="ESD_TRS_0034GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0034GS.jsp" />
+	</screen>
+
+	<!-- Terminal invoice CSR Creation - Preview POPUP -->
+	<screen name="ESD_TRS_0034Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0034.jsp" />
+	</screen>
+
+
+	<!-- Terminal invoice CSR Creation - Preview -->
+	<screen name="ESD_TRS_0037" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0037.jsp" />
+	</screen>
+
+	<!-- Terminal invoice CSR Creation - Preview GRID 1 -->
+	<screen name="ESD_TRS_0037GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0037GS.jsp" />
+	</screen>
+
+	<!-- Terminal invoice CSR Creation - Preview POPUP -->
+	<screen name="ESD_TRS_0037Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0037.jsp" />
+	</screen>
+
+
+	<!-- Terminal invoice CSR Creation - Preview GRID 1 -->
+	<screen name="ESD_TRS_0034_037GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0034_037GS.jsp" />
+	</screen>
+
+
+	<screen name="ESD_TRS_0047">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0047.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0047GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0047GS.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0047PreView" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0047PreView.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0048" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0048.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0048GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0048GS.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0960" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0960.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0960GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/csrissuetranferslip/jsp/ESD_TRS_0960GS.jsp" />
+	</screen>
+	<!-- Invoice List Inquiry -->
+
+	<!-- Transfer Slip Manage -->
+	<screen name="ESD_TRS_0040">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/invoiceaudit/jsp/ESD_TRS_0040.jsp" />
+	</screen>
+	
+	<screen name="ESD_TRS_0040_POP" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/invoiceaudit/jsp/ESD_TRS_0040.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0045" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/invoiceaudit/jsp/ESD_TRS_0045.jsp" />
+	</screen>
+
+
+
+	<!-- W/O Issue List History Search Display -->
+	<screen name="ESD_TRS_0958" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/soinquiry/soinquiry/jsp/ESD_TRS_0958.jsp" />
+	</screen>
+
+	<!-- Invoice Inquiry -->
+	<screen name="ESD_TRS_0046">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/railinvoiceinquirycorrection/jsp/ESD_TRS_0046.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0046GS" template="templateIBSheet">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/railinvoiceinquirycorrection/jsp/ESD_TRS_0046GS.jsp" />
+	</screen>
+
+	<!-- USA Actual Customer Code Manage -->
+	<screen name="ESD_TRS_0082">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/usaactualcustomercodemanage/jsp/ESD_TRS_0082.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0082GS" template="templateIBSheet">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/usaactualcustomercodemanage/jsp/ESD_TRS_0082GS.jsp" />
+	</screen>
+
+
+
+	<!-- CY & Door S/O Creation -->
+	<screen name="ESD_TRS_0002">
+		<parameter key="title" value="CY and Door" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/cydoorsomanage/singletransportationsomanage/jsp/ESD_TRS_0002.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0004">
+		<parameter key="title" value="CY and Door" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/cydoorsomanage/singletransportationsomanage/jsp/ESD_TRS_0004.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0005">
+		<parameter key="title" value="CY and Door" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/cydoorsomanage/singletransportationsomanage/jsp/ESD_TRS_0005.jsp" />
+	</screen>
+
+	<!-- CY & Door S/O Creation GRID 1 -->
+	<screen name="ESD_TRS_0002GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/cydoorsomanage/singletransportationsomanage/jsp/ESD_TRS_0002GS.jsp" />
+	</screen>
+
+	<!-- CY & Door S/O Crrection -->
+	<screen name="ESD_TRS_0051">
+		<parameter key="title" value="CY and Door" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/cydoorsomanage/singletransportationsomanage/jsp/ESD_TRS_0051.jsp" />
+	</screen>
+
+	<!-- CY & Door S/O Crrection GRID 1 -->
+	<screen name="ESD_TRS_0051GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/cydoorsomanage/singletransportationsomanage/jsp/ESD_TRS_0051GS.jsp" />
+	</screen>
+
+	<!-- CY & Door S/O Creation Matchmaking Popup -->
+	<screen name="ESD_TRS_0920" template="templatePop">
+		<parameter key="title" value="Matchmaking" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/cydoorsomanage/combinedtransportationcasetwosomanage/jsp/ESD_TRS_0920.jsp" />
+	</screen>
+
+	<!-- CY & Door S/O Creation Matchmaking Popup -->
+	<screen name="ESD_TRS_0952" template="templatePop">
+		<parameter key="title" value="Matchmaking" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/cydoorsomanage/combinedtransportationcasetwosomanage/jsp/ESD_TRS_0952.jsp" />
+	</screen>
+
+
+	<!-- S/O Office Code Popup -->
+	<screen name="ESD_TRS_0964" template="templatePop">
+		<parameter key="title" value="Matchmaking" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/cydoorsomanage/combinedtransportationcasetwosomanage/jsp/ESD_TRS_0964.jsp" />
+	</screen>
+
+
+	<!-- CY & Door S/O Creation Detail Input POPUP -->
+	<screen name="ESD_TRS_0003Pop" template="templatePop">
+		<parameter key="title" value="Detail Input" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/cydoorsomanage/singletransportationsomanage/jsp/ESD_TRS_0003.jsp" />
+	</screen>
+
+	<!-- Office Transfer Popup POPUP -->
+	<screen name="ESD_TRS_0930Pop" template="templatePop">
+		<parameter key="title" value="Office Transfer" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/cydoorsomanage/singletransportationsomanage/jsp/ESD_TRS_0930.jsp" />
+	</screen>
+
+	<!-- Office Transfer Popup POPUP GRID -->
+	<screen name="ESD_TRS_0930GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/cydoorsomanage/singletransportationsomanage/jsp/ESD_TRS_0930GS.jsp" />
+	</screen>
+
+	<!-- Empty Repo & S/T On/Off Hire S/O Creation -->
+	<screen name="ESD_TRS_0012">
+		<parameter key="title" value="Empty Repo and S/T On/Off Hire" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/emptyreposomanage/singletransportationsomanage/jsp/ESD_TRS_0012.jsp" />
+	</screen>
+
+	<!-- Empty Repo & S/T On/Off Hire S/O Crrection -->
+	<screen name="ESD_TRS_0052">
+		<parameter key="title" value="Empty Repo and S/T On/Off Hire" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/emptyreposomanage/singletransportationsomanage/jsp/ESD_TRS_0052.jsp" />
+	</screen>
+
+	<!-- Empty Repo & S/T On/Off Hire S/O Creation POPUP -->
+	<screen name="ESD_TRS_0951" template="templatePop">
+		<parameter key="title" value="Container File Import" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/emptyreposomanage/singletransportationsomanage/jsp/ESD_TRS_0951.jsp" />
+	</screen>
+
+	<!-- Empty Repo & S/T On/Off Hire S/O Creation POPUP GRID 1 -->
+	<screen name="ESD_TRS_0951GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/emptyreposomanage/singletransportationsomanage/jsp/ESD_TRS_0951GS.jsp" />
+	</screen>
+
+
+	<!-- CNTR SELECT POP UP -->
+	<screen name="ESD_TRS_0908" template="templatePop">
+		<parameter key="title" value="Container Select" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/containerselectpopup/jsp/ESD_TRS_0908.jsp" />
+	</screen>
+
+	<!-- CNTR SELECT POP UP -->
+	<screen name="ESD_TRS_0968" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/common/containerselectpopup/jsp/ESD_TRS_0968.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0909" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/mtyreposelectpopup/jsp/ESD_TRS_0909.jsp" />
+	</screen>
+
+	<!-- USA Rail Billing for I/B Full Creation -->
+	<screen name="ESD_TRS_0201">
+		<parameter key="title" value="USA Rail Billing S/O" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0201.jsp" />
+	</screen>
+
+	<!-- USA Rail Billing for I/B Full CreationGRID 1 -->
+	<screen name="ESD_TRS_0201GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0201GS.jsp" />
+	</screen>
+
+	<!-- USA Rail Billing for O/B Full Creation -->
+	<screen name="ESD_TRS_0202">
+		<parameter key="title" value="USA Rail Billing S/O" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0202.jsp" />
+	</screen>
+
+	<!-- USA Rail Billing for O/B Full CreationGRID 1 -->
+	<screen name="ESD_TRS_0202GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0202GS.jsp" />
+	</screen>
+
+	<!-- USA Rail Billing for Empty Container Creation -->
+	<screen name="ESD_TRS_0203">
+		<parameter key="title" value="USA Rail Billing S/O" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0203.jsp" />
+	</screen>
+
+	<!-- USA Rail Billing for Empty Container CreationGRID 1 -->
+	<screen name="ESD_TRS_0203GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0203GS.jsp" />
+	</screen>
+
+	<!-- USA Rail Billing for Empty Container CreationGRID 2 -->
+	<screen name="ESD_TRS_02031GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_02031GS.jsp" />
+	</screen>
+
+	<!-- USA Rail Billing Correction Creation -->
+	<screen name="ESD_TRS_0204">
+		<parameter key="title" value="USA Rail Billing S/O" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0204.jsp" />
+	</screen>
+
+	<!-- USA Rail Billing Correction CreationGRID 1 -->
+	<screen name="ESD_TRS_0204GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0204GS.jsp" />
+	</screen>
+
+	<!-- IRG Adjust Pop up -->
+	<screen name="ESD_TRS_0928Pop" template="templatePop">
+		<parameter key="title" value="IRG Adjust" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0928.jsp" />
+	</screen>
+
+	<!-- IRG Adjust Pop up Creation GRID 1 -->
+	<screen name="ESD_TRS_0928GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0928GS.jsp" />
+	</screen>
+
+	<!-- IRG Adjust Pop up Creation GRID 1 -->
+	<screen name="ESD_TRS_0928GS_1" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0928GS_1.jsp" />
+	</screen>
+
+	<!-- USA Rail Billing Detail Inquiry Popup -->
+	<screen name="ESD_TRS_0955Pop" template="templatePop">
+		<parameter key="title" value="USA Rail Billing Detail Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0955.jsp" />
+	</screen>
+
+	<!-- USA Rail Billing Detail Inquiry Popup Creation GRID 1 -->
+	<screen name="ESD_TRS_0955GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0955GS.jsp" />
+	</screen>
+
+	<!-- Request Service Provider Inquiry Popup -->
+	<screen name="ESD_TRS_0956Pop" template="templatePop">
+		<parameter key="title" value="Request Service Provider Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0956.jsp" />
+	</screen>
+
+	<!-- Request Service Provider Inquiry Popup Creation GRID 1 -->
+	<screen name="ESD_TRS_0956GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0956GS.jsp" />
+	</screen>
+
+	<!-- Cancel REQ Reject Popup -->
+	<screen name="ESD_TRS_0959Pop" template="templatePop">
+		<parameter key="title" value="Rail Billing Cancel Request Reject" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0959.jsp" />
+	</screen>
+
+	<!-- Cancel REQ Reject Popup Creation GRID 1 -->
+	<screen name="ESD_TRS_0959GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0959GS.jsp" />
+	</screen>
+	
+	<!-- Reason for SoftS top Popup -->
+	<screen name="ESD_TRS_0985Pop" template="templatePop">
+		<parameter key="title" value="Reason for Soft Stop" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0985.jsp" />
+	</screen>
+
+	<!-- Reason for Soft Stop Popup Creation GRID 1 -->
+	<screen name="ESD_TRS_0985GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0985GS.jsp" />
+	</screen>
+
+	<!-- USA 404 EDI Status Inquiry -->
+	<screen name="ESD_TRS_0028">
+		<parameter key="title" value="USA 404 EDI" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/usa404edistatusinquiry/jsp/ESD_TRS_0028.jsp" />
+	</screen>
+
+	<!-- USA 404 EDI Status Inquiry GRID 1 -->
+	<screen name="ESD_TRS_0028GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/usa404edistatusinquiry/jsp/ESD_TRS_0028GS.jsp" />
+	</screen>
+
+	<!-- USA 404 EDI Status Inquiry POPUP -->
+	<screen name="ESD_TRS_0927Pop" template="templatePop">
+		<parameter key="title" value="Confirmation Message Send" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/usa404edistatusinquiry/jsp/ESD_TRS_0927.jsp" />
+	</screen>
+
+	<!-- USA 404 EDI Status Inquiry GRID 1 -->
+	<screen name="ESD_TRS_0927GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/usa404edistatusinquiry/jsp/ESD_TRS_0927GS.jsp" />
+	</screen>
+
+	<!-- Pre-Dispatch Status Inquiry -->
+	<screen name="ESD_TRS_0020">
+		<parameter key="title" value="Pre-Dispatch Status" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/predispatchstatus/jsp/ESD_TRS_0020.jsp" />
+	</screen>
+
+	<!-- Pre-Dispatch Status Inquiry GRID 1 -->
+	<screen name="ESD_TRS_0020GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/predispatchstatus/jsp/ESD_TRS_0020GS.jsp" />
+	</screen>
+
+	<!-- Pre-Dispatch Status Inquiry POPUP -->
+	<screen name="ESD_TRS_0020Pop" template="templatePop">
+		<parameter key="title" value="Pre-Dispatch Status" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/predispatchstatus/jsp/ESD_TRS_0020.jsp" />
+	</screen>
+
+	<!-- Pre-Dispatch Sent History Inquiry -->
+	<screen name="ESD_TRS_0021">
+		<parameter key="title" value="Pre-Dispatch Sent History" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/predispatchsenthistory/jsp/ESD_TRS_0021.jsp" />
+	</screen>
+
+	<!-- Pre-Dispatch Sent History Inquiry GRID 1 -->
+	<screen name="ESD_TRS_0021GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/predispatchsenthistory/jsp/ESD_TRS_0021GS.jsp" />
+	</screen>
+
+	<!-- Pre-Dispatch Sent History Inquiry POPUP -->
+	<screen name="ESD_TRS_0021Pop" template="templatePop">
+		<parameter key="title" value="Pre-Dispatch Sent History" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/predispatchsenthistory/jsp/ESD_TRS_0021.jsp" />
+	</screen>
+
+	<!-- US D/O Input (TRO/I) -->
+	<screen name="ESD_TRS_0083">
+		<parameter key="title" value="US D/O Input" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/usadeliveryordermanage/jsp/ESD_TRS_0083.jsp" />
+	</screen>
+
+	<!-- US D/O Input (TRO/I) -->
+	<screen name="ESD_TRS_0083_01GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/usadeliveryordermanage/jsp/ESD_TRS_0083_01GS.jsp" />
+	</screen>
+
+	<!-- ======================================================================== z_kim_sanggeun Part End # -->
+
+
+	<!-- ========================================================================@ Control Office Exception Case Creation Part Start -->
+
+	<!-- Control Office Exception Case Creation -->
+	<screen name="ESD_TRS_0079">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/controlofficeexceptioncasemanage/jsp/ESD_TRS_0079.jsp" />
+	</screen>
+
+	<!-- Control Office Exception Case Creation GRID 1 -->
+	<screen name="ESD_TRS_0079GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/controlofficeexceptioncasemanage/jsp/ESD_TRS_0079GS.jsp" />
+	</screen>
+
+	<!-- Control Office Exception Case Creation GRID 1 -->
+	<screen name="ESD_TRS_0079_01GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/controlofficeexceptioncasemanage/jsp/ESD_TRS_0079_01GS.jsp" />
+	</screen>
+
+	<!-- Control Office Exception Case Creation GRID 1 -->
+	<screen name="ESD_TRS_0079_02GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/controlofficeexceptioncasemanage/jsp/ESD_TRS_0079_02GS.jsp" />
+	</screen>
+
+	<!-- Control Office Exception Case Creation POPUP -->
+	<screen name="ESD_TRS_0079Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/controlofficeexceptioncasemanage/jsp/ESD_TRS_0079.jsp" />
+	</screen>
+
+	<!-- ========================================================================@ Service Order Creation - Chassis or Genset Start -->
+
+	<!-- Service Order Creation - Chassis or Genset -->
+	<screen name="ESD_TRS_0014">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/chassisgensetsomanage/chassisgensetsomanage/jsp/ESD_TRS_0014.jsp" />
+	</screen>
+
+	<!-- Service Order Creation - Chassis or Genset GRID 1 -->
+	<screen name="ESD_TRS_0014GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/chassisgensetsomanage/chassisgensetsomanage/jsp/ESD_TRS_0014GS.jsp" />
+	</screen>
+
+	<!-- Service Order Creation - Chassis or Genset POPUP -->
+	<screen name="ESD_TRS_0015" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/chassisgensetsomanage/chassisgensetsomanage/jsp/ESD_TRS_0015.jsp" />
+	</screen>
+
+
+	<!-- Service Order Creation - Chassis or Genset POPUP -->
+	<screen name="ESD_TRS_0911" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/chassisgensetsomanage/chassisgensetsomanage/jsp/ESD_TRS_0911.jsp" />
+	</screen>
+
+	<!-- Service Order Modify - Chassis or Genset -->
+	<screen name="ESD_TRS_0053">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/chassisgensetsomanage/chassisgensetsomanage/jsp/ESD_TRS_0053.jsp" />
+	</screen>
+
+	<!-- Other SO Creation -->
+	<screen name="ESD_TRS_0018">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/othersomanage/othersomanage/jsp/ESD_TRS_0018.jsp" />
+	</screen>
+
+	<!-- Other SO Creation GRID 1 -->
+	<screen name="ESD_TRS_0018GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/othersomanage/othersomanage/jsp/ESD_TRS_0018GS.jsp" />
+	</screen>
+
+	<!-- Other SO Creation GRID 1 -->
+	<screen name="ESD_TRS_0969" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/othersomanage/othersomanage/jsp/ESD_TRS_0969.jsp" />
+	</screen>
+
+	<!-- Other SO Creation POPUP -->
+	<screen name="ESD_TRS_0950" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/othersomanage/othersomanage/jsp/ESD_TRS_0950.jsp" />
+	</screen>
+
+	<!-- Other SO Creation POPUP -->
+	<screen name="ESD_TRS_0914" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/actualcustomerpopup/jsp/ESD_TRS_0914.jsp" />
+	</screen>
+
+	<!-- Other SO Correction Display -->
+	<screen name="ESD_TRS_0055">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/othersomanage/othersomanage/jsp/ESD_TRS_0055.jsp" />
+	</screen>
+
+	<!-- ======================================================================== Service Order Creation - Chassis or Genset End # -->
+
+	<!-- ========================================================================@ poong_yeon Part Start -->
+
+	<!-- Transportation Report & Code -->
+	<screen name="ESD_TRS_0072">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderccmanage/jsp/ESD_TRS_0072.jsp" />
+	</screen>
+
+	<!-- Transportation Report & Code GRID 1 -->
+	<screen name="ESD_TRS_0072GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderccmanage/jsp/ESD_TRS_0072GS.jsp" />
+	</screen>
+
+	<!-- Transportation Report & Code -->
+	<screen name="ESD_TRS_0078">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderremark/jsp/ESD_TRS_0078.jsp" />
+	</screen>
+
+	<!-- Transportation Report & Code GRID 1 -->
+	<screen name="ESD_TRS_0078GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderremark/jsp/ESD_TRS_0078GS.jsp" />
+	</screen>
+
+	<!-- ======================================================================== poong_yeon Part End # -->
+
+	<!-- ========================================================================@ InvoiceManage Part Start -->
+
+	<!-- surcharge Input/Modify/Delete Display -->
+	<screen name="ESD_TRS_0918" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/surchargeinputinquiry/jsp/ESD_TRS_0918.jsp" />
+	</screen>
+
+	<!-- surcharge Input/Modify/Delete Display GRID 1 -->
+	<screen name="ESD_TRS_0918GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/surchargeinputinquiry/jsp/ESD_TRS_0918GS.jsp" />
+	</screen>
+
+	<!-- surcharge Input/Modify/Delete Display GRID 1 -->
+	<screen name="ESD_TRS_0970" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/surchargeinputinquiry/jsp/ESD_TRS_0970.jsp" />
+	</screen>
+	<!-- ======================================================================== InvoiceManage Part End # -->
+
+	<!-- ========================================================================@ WorkOrderIssue Part Start -->
+
+	<!-- W/O Issue Display -->
+	<screen name="ESD_TRS_0023">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderissue/jsp/ESD_TRS_0023.jsp" />
+	</screen>
+
+	<!-- W/O Issue Display GRID 1 -->
+	<screen name="ESD_TRS_0023GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderissue/jsp/ESD_TRS_0023GS.jsp" />
+	</screen>
+
+	<!-- 3rd Party Billing -->
+	<screen name="ESD_TRS_0954" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderissue/jsp/ESD_TRS_0954.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0971" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderissue/jsp/ESD_TRS_0971.jsp" />
+	</screen>
+
+	<!-- Multi apply -->
+	<screen name="ESD_TRS_0961" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderissue/jsp/ESD_TRS_0961.jsp" />
+	</screen>
+
+	<!-- Change Management History -->
+	<screen name="ESD_TRS_0977" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderissue/jsp/ESD_TRS_0977.jsp" />
+	</screen>
+	<!-- ======================================================================== WorkOrderIssue Part End # -->
+
+	<!-- Change Management History -->
+	<screen name="ESD_TRS_0978" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderissue/jsp/ESD_TRS_0978.jsp" />
+	</screen>
+
+
+	<!-- ========================================================================@ WorkOrderPreview Part Start -->
+
+	<!-- W/O Issue Display -->
+	<screen name="ESD_TRS_0024" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderpreview/jsp/ESD_TRS_0024.jsp" />
+	</screen>
+
+	<!-- W/O Issue Display GRID 1 -->
+	<screen name="ESD_TRS_0024GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderpreview/jsp/ESD_TRS_0024GS.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0962" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderpreview/jsp/ESD_TRS_0962.jsp" />
+	</screen>
+	<screen name="ESD_TRS_0024_POP" template="templatePop">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderpreview/jsp/ESD_TRS_0024_POP.jsp" />
+	</screen>
+
+	<!-- ======================================================================== WorkOrderPreview Part End # -->
+
+	<!-- ========================================================================@ WorkOrderInquiry Part Start -->
+
+	<!-- W/O Issue List Display -->
+	<screen name="ESD_TRS_0025">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderinquiry/jsp/ESD_TRS_0025.jsp" />
+	</screen>
+
+	<!-- W/O Issue List Display GRID 1 -->
+	<screen name="ESD_TRS_0025GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderinquiry/jsp/ESD_TRS_0025GS.jsp" />
+	</screen>
+
+	<!-- ======================================================================== WorkOrderInquiry Part End # -->
+
+	<!-- ========================================================================@ invoiceaudit Part Start -->
+
+	<!-- Invoice Audit / Modify Confirm -->
+	<screen name="ESD_TRS_0033_POP" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/invoiceaudit/jsp/ESD_TRS_0033.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0033">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/invoiceaudit/jsp/ESD_TRS_0033.jsp" />
+	</screen>
+
+	<!-- Transportation Service Order Manage POPUP -->
+	<screen name="ESD_TRS_0922" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/invoiceaudit/jsp/ESD_TRS_0922.jsp" />
+	</screen>
+
+	<!-- Service Order Creation - Chassis or Genset POPUP -->
+	<screen name="ESD_TRS_0957" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/invoiceaudit/jsp/ESD_TRS_0957.jsp" />
+	</screen>
+
+	<!-- ======================================================================== invoiceaudit Part End # -->
+
+	<!-- ========================================================================@ poong_yeon Part Start -->
+
+	<screen name="ESD_TRS_0030">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/invoiceinquirycorrection/jsp/ESD_TRS_0030.jsp" />
+	</screen>
+
+	<!-- Report RD PRINT DISPLAY -->
+	<screen name="ESD_TRS_0208" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/invoiceinquirycorrection/jsp/ESD_TRS_0208.jsp" />
+	</screen>
+	<!-- ======================================================================== poong_yeon Part End # -->
+
+
+	<!-- ========================================================================@ Invoice - Pool Chassis Part Start -->
+	<!-- Pool Chassis reposition cost process -->
+	<screen name="ESD_TRS_0041">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/poolchassis/jsp/ESD_TRS_0041.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0041_POP" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/poolchassis/jsp/ESD_TRS_0041.jsp" />
+	</screen>
+	<!-- ======================================================================== Invoice - Pool Chassis Part End # -->
+
+	<!-- ========================================================================@ juhyun Part Start -->
+
+	<!-- USA Last City for T&E Cargo -->
+	<screen name="ESD_TRS_0076">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/usalastcitymanage/jsp/ESD_TRS_0076.jsp" />
+	</screen>
+
+	<!-- USA Last City for T&E Cargo GRID 1 -->
+	<screen name="ESD_TRS_0076GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/usalastcitymanage/jsp/ESD_TRS_0076GS.jsp" />
+	</screen>
+
+	<!-- USA Last City for T&E Cargo GRID 1 -->
+	<screen name="ESD_TRS_0076_01GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/usalastcitymanage/jsp/ESD_TRS_0076_01GS.jsp" />
+	</screen>
+
+	<!-- USA Last City for T&E Cargo POPUP -->
+	<screen name="ESD_TRS_0076Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/usalastcitymanage/jsp/ESD_TRS_0076.jsp" />
+	</screen>
+
+
+	<!-- Multiple Inquiry -->
+	<screen name="ESD_TRS_0906" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/multipleinquiry/jsp/ESD_TRS_0906.jsp" />
+	</screen>
+
+	<!-- Multiple Inquiry GRID 1 -->
+	<screen name="ESD_TRS_0906GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/multipleinquiry/jsp/ESD_TRS_0906GS.jsp" />
+	</screen>
+
+	<!-- Multiple Inquiry POPUP -->
+	<screen name="ESD_TRS_0906Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/multipleinquiry/jsp/ESD_TRS_0906.jsp" />
+	</screen>
+
+
+
+
+	<!-- PendingList -->
+	<screen name="ESD_TRS_0001">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/soinquiry/pendinglist/jsp/ESD_TRS_0001.jsp" />
+	</screen>
+
+	<!-- PendingList GRID 1 -->
+	<screen name="ESD_TRS_0001GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/soinquiry/pendinglist/jsp/ESD_TRS_0001GS.jsp" />
+	</screen>
+
+
+	<!-- PendingList GRID 1 -->
+	<screen name="ESD_TRS_0001_01GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/soinquiry/pendinglist/jsp/ESD_TRS_0001_01GS.jsp" />
+	</screen>
+
+	<!-- PendingList POPUP -->
+	<screen name="ESD_TRS_0001Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/soinquiry/pendinglist/jsp/ESD_TRS_0001.jsp" />
+	</screen>
+
+	<!-- Invoice Office Authority Management -->
+	<screen name="ESD_TRS_0976">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/invoiceofficeauthoritymanagement/jsp/ESD_TRS_0976.jsp" />
+	</screen>
+
+	<!-- Invoice Office Authority Management -->
+	<screen name="ESD_TRS_0976GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/invoiceofficeauthoritymanagement/jsp/ESD_TRS_0976.jsp" />
+	</screen>
+
+
+	<!-- Commodity Group Code Management -->
+	<screen name="ESD_TRS_0075">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/commoditygroupcodemanage/jsp/ESD_TRS_0075.jsp" />
+	</screen>
+
+	<!-- Commodity Group Code Management GRID 1 -->
+	<screen name="ESD_TRS_0075GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/commoditygroupcodemanage/jsp/ESD_TRS_0075GS.jsp" />
+	</screen>
+
+	<!-- Commodity Group Code Management GRID 2 -->
+	<screen name="ESD_TRS_0075_01GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/commoditygroupcodemanage/jsp/ESD_TRS_0075_01GS.jsp" />
+	</screen>
+
+	<!-- Commodity Group Code Management GRID 3 -->
+	<screen name="ESD_TRS_0075_02GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/commoditygroupcodemanage/jsp/ESD_TRS_0075_02GS.jsp" />
+	</screen>
+
+	<!-- Commodity Group Code Management POPUP -->
+	<screen name="ESD_TRS_0075Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/commoditygroupcodemanage/jsp/ESD_TRS_0075.jsp" />
+	</screen>
+
+
+	<!-- BKG CGO SPE Detail Popup - BB -->
+	<screen name="ESD_TRS_0937" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/breakbulkcargodetailinquiry/jsp/ESD_TRS_0937.jsp" />
+	</screen>
+	<!-- BKG CGO SPE Detail Popup - BB POPUP -->
+	<screen name="ESD_TRS_0937Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/breakbulkcargodetailinquiry/jsp/ESD_TRS_0937.jsp" />
+	</screen>
+
+
+	<!-- BKG CGO SPE Detail Popup - RF -->
+	<screen name="ESD_TRS_0935" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/refercargodetailinquiry/jsp/ESD_TRS_0935.jsp" />
+	</screen>
+
+	<!-- BKG CGO SPE Detail Popup - RF POPUP -->
+	<screen name="ESD_TRS_0935Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/refercargodetailinquiry/jsp/ESD_TRS_0935.jsp" />
+	</screen>
+
+	<!-- BKG CGO SPE Detail Popup - AK -->
+	<screen name="ESD_TRS_0936" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/awkwardcargodetailinquiry/jsp/ESD_TRS_0936.jsp" />
+	</screen>
+	<!-- BKG CGO SPE Detail Popup - AK POPUP -->
+	<screen name="ESD_TRS_0936Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/awkwardcargodetailinquiry/jsp/ESD_TRS_0936.jsp" />
+	</screen>
+
+
+	<!-- BKG CGO SPE Detail Popup - DG -->
+	<screen name="ESD_TRS_0938" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/dangercargodetailinquiry/jsp/ESD_TRS_0938.jsp" />
+	</screen>
+	<!-- BKG CGO SPE Detail Popup - DG POPUP -->
+	<screen name="ESD_TRS_0938Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/dangercargodetailinquiry/jsp/ESD_TRS_0938.jsp" />
+	</screen>
+
+
+	<!-- Service Order Creation-Supplement -->
+	<screen name="ESD_TRS_0016">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/supplementsomanage/supplementsomanage/jsp/ESD_TRS_0016.jsp" />
+	</screen>
+
+	<!-- Service Order Creation-Supplement GRID 1 -->
+	<screen name="ESD_TRS_0016GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/supplementsomanage/supplementsomanage/jsp/ESD_TRS_0016GS.jsp" />
+	</screen>
+
+	<!-- Service Order Creation-Supplement POPUP -->
+	<screen name="ESD_TRS_0016Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/supplementsomanage/supplementsomanage/jsp/ESD_TRS_0016.jsp" />
+	</screen>
+
+
+
+	<!-- Service Order Modify-Supplement -->
+	<screen name="ESD_TRS_0054">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/supplementsomanage/supplementsomanage/jsp/ESD_TRS_0054.jsp" />
+	</screen>
+
+	<!-- Service Order Modify-Supplement GRID 1 -->
+	<screen name="ESD_TRS_0054GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/supplementsomanage/supplementsomanage/jsp/ESD_TRS_0054GS.jsp" />
+	</screen>
+
+	<!-- Service Order Modify-Supplement POPUP -->
+	<screen name="ESD_TRS_0054Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/supplementsomanage/supplementsomanage/jsp/ESD_TRS_0054.jsp" />
+	</screen>
+
+	<!-- Multi-stop Location Inquiry -->
+	<screen name="ESD_TRS_0933" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/multistoplocationinquiry/jsp/ESD_TRS_0933.jsp" />
+	</screen>
+
+	<!-- Multi-stop Location Inquiry GRID 1 -->
+	<screen name="ESD_TRS_0933GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/common/multistoplocationinquiry/jsp/ESD_TRS_0933GS.jsp" />
+	</screen>
+
+	<!-- Multi-stop Location Inquiry POPUP -->
+	<screen name="ESD_TRS_0933Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/multistoplocationinquiry/jsp/ESD_TRS_0933.jsp" />
+	</screen>
+
+	<!-- SO Inquiry -->
+	<screen name="ESD_TRS_0019">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/soinquiry/soinquiry/jsp/ESD_TRS_0019.jsp" />
+	</screen>
+	<screen name="ESD_TRS_0019_POP" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/soinquiry/soinquiry/jsp/ESD_TRS_0019.jsp" />
+	</screen>
+	<!-- SO Inquiry GRID 1 -->
+	<screen name="ESD_TRS_0019GS" template="templateIBSheet">
+		<parameter key="body" value="apps/opus/esd/trs/soinquiry/soinquiry/jsp/ESD_TRS_0019GS.jsp" />
+	</screen>
+	<!-- SO Inquiry EXCEL DOWNLOAD 1 -->
+	<screen name="ESD_TRS_0205" template="templateDownloadExcel">
+		<parameter key="body" value="apps/opus/esd/trs/soinquiry/soinquiry/jsp/ESD_TRS_0205.jsp" />
+	</screen>
+	<!-- SO Inquiry POPUP -->
+	<screen name="ESD_TRS_0019Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/soinquiry/soinquiry/jsp/ESD_TRS_0019.jsp" />
+	</screen>
+
+	<!-- UsaRailYardManage -->
+	<screen name="ESD_TRS_0084" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/usarailyardmanage/jsp/ESD_TRS_0084.jsp" />
+	</screen>
+
+	<!-- UsaRailYardManage POPUP -->
+	<screen name="ESD_TRS_0084Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/usarailyardmanage/jsp/ESD_TRS_0084.jsp" />
+	</screen>
+
+	<!-- Currency Change Popup -->
+	<screen name="ESD_TRS_0910" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/invoiceaudit/jsp/ESD_TRS_0910.jsp" />
+	</screen>
+
+	<!-- Currency Change Popup POPUP -->
+	<screen name="ESD_TRS_0910Pop" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/invoicemanage/invoiceaudit/jsp/ESD_TRS_0910.jsp" />
+	</screen>
+
+	<!-- Agreement Creation -->
+	<screen name="ESD_TRS_0220" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0220.jsp" />
+	</screen>
+
+	<!-- Agreement Surcharge Creation -->
+	<screen name="ESD_TRS_0221">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0221.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0222" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0222.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0223">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0223.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0224">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0224.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0225">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0225.jsp" />
+	</screen>
+	<screen name="ESD_TRS_0225_POP" template="templatePop">
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0225.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0226" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0226.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0227" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0227.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0228">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0228.jsp" />
+	</screen>
+	<screen name="ESD_TRS_0228_POP" template="templatePop">
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0228.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0229" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0229.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0230" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0230.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0231">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0231.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0232">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0232.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0233" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0233.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0234" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0234.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0235" template="templatePop">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0235.jsp" />
+	</screen>
+
+
+	<!-- Common Surcharge Management -->
+	<screen name="ESD_TRS_0237">
+		<parameter key="title" value="Common Surcharge Management" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0237.jsp" />
+	</screen>
+	<!--  Agreement Attach File Popup  -->
+	<screen name="ESD_TRS_0238" template="templatePop">
+		<parameter key="title"	 value="Agreement Attach File" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0238.jsp" />
+	</screen>
+
+	<!-- LeeJunKun : 2012-04-25 start -->
+	<screen name="ESD_TRS_0801">
+		<parameter key="title" value="TRS AGMT EQ TP RULE Manage" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0801.jsp" />
+	</screen>
+	<!-- LeeJunKun : 2012-04-25 end -->
+	<!-- LeeJunKun : 2012-04-25 start -->
+	<screen name="ESD_TRS_0802">
+		<parameter key="title" value="TRS STCC Manage" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/usa404edistatusinquiry/jsp/ESD_TRS_0802.jsp" />
+	</screen>
+	<!-- LeeJunKun : 2012-04-25 end -->
+
+	<!-- P.K.S : 2014-11-17 start -->
+	<screen name="ESD_TRS_0029">
+		<parameter key="title" value="W/O BFI Management" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workordermanagement/jsp/ESD_TRS_0029.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0979" template="templatePop">
+		<parameter key="title" value="S/P Multi" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workordermanagement/jsp/ESD_TRS_0979.jsp" />
+	</screen>
+	<!-- P.K.S : 2014-11-17 end -->
+
+
+	<!-- Hyungwook Choi : 2015-02-24 start -->
+	<!-- Location search( Popup) -->
+	<screen name="ESD_TRS_0980" template="templatePop">
+		<parameter key="title" value="Location" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/agreementmanage/agreementmanage/jsp/ESD_TRS_0980.jsp" />
+	</screen>
+
+	<!-- Hyungwook Choi : 2015-02-24 end -->
+	<screen name="ESD_TRS_0429">
+		<parameter key="title" value="Release/Redelivery Order" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/emptyreleaseredeliveryordermgt/jsp/ESD_TRS_0429.jsp" />
+	</screen>
+	<screen name="ESD_TRS_0451" template="templatePop">
+		<parameter key="title" value="Release/Re-delivery Order" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/emptyreleaseredeliveryordermgt/jsp/ESD_TRS_0451.jsp" />
+	</screen>
+	<screen name="ESD_TRS_0451_RD" template="templateRD">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/emptyreleaseredeliveryordermgt/jsp/ESD_TRS_0451RD.jsp" />
+	</screen>
+
+	<!-- Seongwook Kim : 2015-04-13 start -->
+	<screen name="ESD_TRS_0981" template="templatePop">
+		<parameter key="title" value="ESD_TRS_0981" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/portselectpopup/jsp/ESD_TRS_0981.jsp" />
+	</screen>
+	<!-- Seongwook Kim : 2015-04-13 end -->
+
+	<screen name="ESD_TRS_0939" template="templatePop">
+		<parameter key="title" value="ESD_TRS_0939" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/stcccoderestrictionpopup/jsp/ESD_TRS_0939.jsp" />
+	</screen>
+
+
+	<!-- CHAN WOO PARK : 2015-04-28 start -->
+	<screen name="ESD_TRS_0982" template="templatePop">
+		<parameter key="title" value="ESD_TRS_0982" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/internalremarkpopup/jsp/ESD_TRS_0982.jsp" />
+	</screen>
+
+	<screen name="ESD_TRS_0982Pop" template="templatePop">
+		<parameter key="title" value="ESD_TRS_0982" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/internalremarkpopup/jsp/ESD_TRS_0982.jsp" />
+	</screen>
+	<screen name="ESD_TRS_0965" template="templatePop">
+		<parameter key="title" value="ESD_TRS_0965" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/railsomanage/railsomanage/jsp/ESD_TRS_0965.jsp" />
+	</screen>
+	<!-- CHAN WOO PARK : 2015-04-28 end -->
+
+	<screen name="ESD_TRS_0972" template="templatePop">
+		<parameter key="title" value="Vendor CM" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/vendorcm/jsp/ESD_TRS_0972.jsp" />
+	</screen>
+	<screen name="ESD_TRS_0973" template="templatePop">
+		<parameter key="title" value="JO Edi History" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/vendorcm/jsp/ESD_TRS_0973.jsp" />
+	</screen>
+
+	<!-- Surcharge for USA/CA Rail Popup -->
+	<screen name="ESD_TRS_0026" template="templatePop">
+		<parameter key="title" value="Surcharge for USA/CA Rail" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/usa404edistatusinquiry/jsp/ESD_TRS_0026.jsp" />
+	</screen>
+
+	<!-- Basic for USA/CA Rail Popup -->
+	<screen name="ESD_TRS_0027" template="templatePop">
+		<parameter key="title" value="Basic for USA/CA Rail" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/usa404edistatusinquiry/jsp/ESD_TRS_0027.jsp" />
+	</screen>
+	<screen name="ESD_TRS_0983" template="templatePop">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderissue/jsp/ESD_TRS_0983.jsp" />
+	</screen>
+	
+	<!--  Exception Ack Rail Road -->
+	<screen name="ESD_TRS_0077">
+		<parameter key="title" value="Exception Ack Rail Road" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/exceptionackrailroad/jsp/ESD_TRS_0077.jsp" />
+	</screen>
+	
+	<!-- Rail 404 EDI Configuration -->
+	<screen name="ESD_TRS_0080">
+		<parameter key="title" value="" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/rail404ediconfiguration/jsp/ESD_TRS_0080.jsp" />
+	</screen>
+	
+	<!-- TRS SCC MATCH FOR STREET TURN -->
+	<screen name="ESD_TRS_0803">
+		<parameter key="title" value="SCC Match for Street Turn" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/sccmatchforstreetturn/jsp/ESD_TRS_0803.jsp" />
+	</screen>
+	<!-- TRS SCC MATCH FOR STREET TURN -->
+	
+	<!-- Validate Hard/Soft Stop Setup -->
+	<screen name="ESD_TRS_0807">
+		<parameter key="title" value="Validate Hard/Soft Stop Setup" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/prbvalidationsetupmanage/jsp/ESD_TRS_0807.jsp" />
+	</screen>
+	<!-- Validate Hard/Soft Stop Setup -->
+	
+	<!-- Validate Maximum Weight allowed for dray to port for off dock cargo -->
+	<screen name="ESD_TRS_0804">
+		<parameter key="title" value="Validate Maximum Weight Setup" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/prbweightmanage/jsp/ESD_TRS_0804.jsp" />
+	</screen>
+	<!-- Validate Maximum Weight allowed for dray to port for off dock cargo -->
+	
+	<!-- Validate Export Rail early receiving date for Pre- Rail Billing Submission -->
+	<screen name="ESD_TRS_0805">
+		<parameter key="title" value="Validate Early Receiving Date Setup" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/prbexporterdmanage/jsp/ESD_TRS_0805.jsp" />
+	</screen>
+	<!-- Validate Export Rail early receiving date for Pre- Rail Billing Submission -->
+	
+	<!-- Validate for Auto IRG Adjust -->
+	<screen name="ESD_TRS_0806">
+		<parameter key="title" value="Validate Auto IRGAdjust Setup" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/autoirgadjustmanage/jsp/ESD_TRS_0806.jsp" />
+	</screen>
+	<!-- Validate for Auto IRG Adjust -->
+	
+	<!-- Validate Minimum Weight Setup -->
+	<screen name="ESD_TRS_0808">
+		<parameter key="title" value="Validate Minimum Weight Setup" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/prbweightmanage/jsp/ESD_TRS_0808.jsp" />
+	</screen>
+	<!-- Validate Minimum Weight Setup -->
+	
+	<!-- Pre-Railbilling Confirmmation Message Setup -->
+	<screen name="ESD_TRS_0809">
+		<parameter key="title" value="Confirmmation Message Setup" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/codemanage/confirmmsgsetupmanage/jsp/ESD_TRS_0809.jsp" />
+	</screen>
+	<!-- Pre-Railbilling Confirmmation Message Setup -->
+	
+	<screen name="ESD_TRS_TEST" >
+		<parameter key="title" value="IF TEST Management" direct="true" />
+		<parameter key="body" value="apps/opus/esd/trs/common/iftest/jsp/ESD_TRS_TEST.jsp" />
+	</screen>
+	<screen name="ESD_TRS_0986" template="templatePop">
+		<parameter key="body" value="apps/opus/esd/trs/workordermanage/workorderissue/jsp/ESD_TRS_0986.jsp" />
+	</screen>
+</screen-definitions>

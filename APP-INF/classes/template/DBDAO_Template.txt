@@ -1,0 +1,274 @@
+/*=========================================================
+*Copyright(c) ${Date} CyberLogitec
+*@FileName : ${FILE_NAME}.java
+*@FileTitle : ${FILE_TITLE}
+*Open Issues :
+*Change history :
+*@LastModifyDate : ${Date_dey}
+*@LastModifier : ${USER_NAME}
+*@LastVersion : 1.0
+* ${Date_dey} ${USER_NAME}
+* 1.0 Creation
+=========================================================*/
+package ${PACKAGE};
+
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import ${BC_P}.${BC}BCImpl;
+import com.clt.framework.component.message.ErrorHandler;
+import com.clt.framework.component.rowset.DBRowSet;
+import com.clt.framework.core.layer.integration.DAOException;
+import com.clt.framework.support.db.ISQLTemplate;
+import com.clt.framework.support.db.RowSetUtil;
+import com.clt.framework.support.db.SQLExecuter;
+import com.clt.framework.support.layer.integration.DBDAOSupport;
+#foreach( $key in $Import.keySet())
+import $Import.get($key)
+#end
+
+
+/**
+ * ALPS ${FILE_NAME} <br>
+ * - ALPS-${SC} system Business Logic을 처리하기 위한 JDBC 작업수행.<br>
+ * 
+ * @author ${EN_NAME}
+ * @see ${BC}BCImpl 참조
+ * @since J2EE 1.6
+ */
+public class ${FILE_NAME} extends DBDAOSupport {
+
+#if(${search})
+#foreach( $key in $Smethod.keySet())
+	/**
+	 * [처리대상] 정보를 [행위] 합니다.<br>
+	 * 
+	 * @param $Smethod_m.get($key) $Smethod_s.get($key)
+	 * @return List<$Smethod_m.get($key)>
+	 * @exception DAOException
+	 */
+	 @SuppressWarnings("unchecked")
+	public List<$Smethod_m.get($key)> $Smethod.get($key)($Smethod_m.get($key) $Smethod_s.get($key)) throws DAOException {
+		DBRowSet dbRowset = null;
+		List<$Smethod_m.get($key)> list = null;
+		//query parameter
+		Map<String, Object> param = new HashMap<String, Object>();
+		//velocity parameter
+		Map<String, Object> velParam = new HashMap<String, Object>();
+
+		try{
+			if($Smethod_s.get($key) != null){
+				Map<String, String> mapVO = $Smethod_s.get($key) .getColumnValues();
+			
+				param.putAll(mapVO);
+				velParam.putAll(mapVO);
+			}
+			dbRowset = new SQLExecuter("").executeQuery((ISQLTemplate)new ${FILE_NAME}$SQuery.get($key)RSQL(), param, velParam);
+			list = (List)RowSetUtil.rowSetToVOs(dbRowset, $Smethod_m.get($key) .class);
+		} catch(SQLException se) {
+			log.error(se.getMessage(),se);
+			throw new DAOException(new ErrorHandler(se).getMessage());
+		} catch(Exception ex) {
+			log.error(ex.getMessage(),ex);
+			throw new DAOException(new ErrorHandler(ex).getMessage());
+		}
+		return list;
+	}
+#end
+#end
+#if(${multi})
+#foreach( $key in $Mmethod.keySet())
+	
+	/**
+	 * [처리대상] 정보를 [행위] 합니다.<br>
+	 * 
+	 * @param $Enty_Name.get($key) $Mmethod_s.get($key)
+	 * @exception DAOException
+	 * @exception Exception
+	 */
+	public void add$Mmethod.get($key)($Enty_Name.get($key) $Mmethod_s.get($key)) throws DAOException,Exception {
+		//query parameter
+		Map<String, Object> param = new HashMap<String, Object>();
+		//velocity parameter
+		Map<String, Object> velParam = new HashMap<String, Object>();
+		try {
+			Map<String, String> mapVO = $Mmethod_s.get($key) .getColumnValues();
+			
+			param.putAll(mapVO);
+			velParam.putAll(mapVO);
+			
+			SQLExecuter sqlExe = new SQLExecuter("");
+			int result = sqlExe.executeUpdate((ISQLTemplate)new ${FILE_NAME}$Enty_Name.get($key)CSQL(), param, velParam);
+			if(result == Statement.EXECUTE_FAILED)
+					throw new DAOException("Fail to insert SQL");
+		} catch(SQLException se) {
+			log.error(se.getMessage(),se);
+			throw new DAOException(new ErrorHandler(se).getMessage());
+		} catch(Exception ex) {
+			log.error(ex.getMessage(),ex);
+			throw new DAOException(new ErrorHandler(ex).getMessage());
+		}
+	}
+	
+	/**
+	 * [처리대상] 정보를 [행위] 합니다.<br>
+	 * 
+	 * @param $Enty_Name.get($key) $Mmethod_s.get($key)
+	 * @return int
+	 * @exception DAOException
+	 * @exception Exception
+	 */
+	public int modify$Mmethod.get($key)($Enty_Name.get($key) $Mmethod_s.get($key)) throws DAOException,Exception {
+		//query parameter
+		Map<String, Object> param = new HashMap<String, Object>();
+		//velocity parameter
+		Map<String, Object> velParam = new HashMap<String, Object>();
+		
+		int result = 0;
+		try {
+			Map<String, String> mapVO = $Mmethod_s.get($key) .getColumnValues();
+			
+			param.putAll(mapVO);
+			velParam.putAll(mapVO);
+			
+			SQLExecuter sqlExe = new SQLExecuter("");
+			result = sqlExe.executeUpdate((ISQLTemplate)new ${FILE_NAME}$Enty_Name.get($key)USQL(), param, velParam);
+			if(result == Statement.EXECUTE_FAILED)
+					throw new DAOException("Fail to insert SQL");
+		} catch(SQLException se) {
+			log.error(se.getMessage(),se);
+			throw new DAOException(new ErrorHandler(se).getMessage());
+		} catch(Exception ex) {
+			log.error(ex.getMessage(),ex);
+			throw new DAOException(new ErrorHandler(ex).getMessage());
+		}
+		return result;
+	}
+	
+	/**
+	 * [처리대상] 정보를 [행위] 합니다.<br>
+	 * 
+	 * @param $Enty_Name.get($key) $Mmethod_s.get($key)
+	 * @return int
+	 * @exception DAOException
+	 * @exception Exception
+	 */
+	public int remove$Mmethod.get($key)($Enty_Name.get($key) $Mmethod_s.get($key)) throws DAOException,Exception {
+		//query parameter
+		Map<String, Object> param = new HashMap<String, Object>();
+		//velocity parameter
+		Map<String, Object> velParam = new HashMap<String, Object>();
+		
+		int result = 0;
+		try {
+			Map<String, String> mapVO = $Mmethod_s.get($key) .getColumnValues();
+			
+			param.putAll(mapVO);
+			velParam.putAll(mapVO);
+			
+			SQLExecuter sqlExe = new SQLExecuter("");
+			result = sqlExe.executeUpdate((ISQLTemplate)new ${FILE_NAME}$Enty_Name.get($key)DSQL(), param, velParam);
+			if(result == Statement.EXECUTE_FAILED)
+					throw new DAOException("Fail to insert SQL");
+		} catch(SQLException se) {
+			log.error(se.getMessage(),se);
+			throw new DAOException(new ErrorHandler(se).getMessage());
+		} catch(Exception ex) {
+			log.error(ex.getMessage(),ex);
+			throw new DAOException(new ErrorHandler(ex).getMessage());
+		}
+		return result;
+	}
+
+	/**
+	 * [처리대상] 정보를 [행위] 합니다.<br>
+	 * 
+	 * @param List<$Enty_Name.get($key)> $Mmethod_s.get($key)
+	 * @return int[]
+	 * @exception DAOException
+	 * @exception Exception
+	 */
+	public int[] add$Mmethod.get($key)S(List<$Enty_Name.get($key)> $Mmethod_s.get($key)) throws DAOException,Exception {
+		int insCnt[] = null;
+		try {
+			SQLExecuter sqlExe = new SQLExecuter("");
+			if($Mmethod_s.get($key) .size() > 0){
+				insCnt = sqlExe.executeBatch((ISQLTemplate)new ${FILE_NAME}$Enty_Name.get($key)CSQL(), $Mmethod_s.get($key),null);
+				for(int i = 0; i < insCnt.length; i++){
+					if(insCnt[i]== Statement.EXECUTE_FAILED)
+						throw new DAOException("Fail to insert No"+ i + " SQL");
+				}
+			}
+		} catch(SQLException se) {
+			log.error(se.getMessage(),se);
+			throw new DAOException(new ErrorHandler(se).getMessage());
+		} catch(Exception ex) {
+			log.error(ex.getMessage(),ex);
+			throw new DAOException(new ErrorHandler(ex).getMessage());
+		}
+		return insCnt;
+	}
+	/**
+	 * [처리대상] 정보를 [행위] 합니다.<br>
+	 * 
+	 * @param List<$Enty_Name.get($key)> $Mmethod_s.get($key)
+	 * @return int[]
+	 * @exception DAOException
+	 * @exception Exception
+	 */
+	public int[] modify$Mmethod.get($key)S(List<$Enty_Name.get($key)> $Mmethod_s.get($key)) throws DAOException,Exception {
+		int updCnt[] = null;
+		try {
+			SQLExecuter sqlExe = new SQLExecuter("");
+			if($Mmethod_s.get($key) .size() > 0){
+				updCnt = sqlExe.executeBatch((ISQLTemplate)new ${FILE_NAME}$Enty_Name.get($key)USQL(), $Mmethod_s.get($key),null);
+				for(int i = 0; i < updCnt.length; i++){
+					if(updCnt[i]== Statement.EXECUTE_FAILED)
+						throw new DAOException("Fail to insert No"+ i + " SQL");
+				}
+			}
+		} catch(SQLException se) {
+			log.error(se.getMessage(),se);
+			throw new DAOException(new ErrorHandler(se).getMessage());
+		} catch(Exception ex) {
+			log.error(ex.getMessage(),ex);
+			throw new DAOException(new ErrorHandler(ex).getMessage());
+		}
+		return updCnt;
+	}
+	
+	/**
+	 * [처리대상] 정보를 [행위] 합니다.<br>
+	 * 
+	 * @param List<$Enty_Name.get($key)> $Mmethod_s.get($key)
+	 * @return int[]
+	 * @exception DAOException
+	 * @exception Exception
+	 */
+	public int[] remove$Mmethod.get($key)S(List<$Enty_Name.get($key)> $Mmethod_s.get($key)) throws DAOException,Exception {
+		int delCnt[] = null;
+		try {
+			SQLExecuter sqlExe = new SQLExecuter("");
+			if($Mmethod_s.get($key) .size() > 0){
+				delCnt = sqlExe.executeBatch((ISQLTemplate)new ${FILE_NAME}$Enty_Name.get($key)DSQL(), $Mmethod_s.get($key),null);
+				for(int i = 0; i < delCnt.length; i++){
+					if(delCnt[i]== Statement.EXECUTE_FAILED)
+						throw new DAOException("Fail to insert No"+ i + " SQL");
+				}
+			}
+		} catch(SQLException se) {
+			log.error(se.getMessage(),se);
+			throw new DAOException(new ErrorHandler(se).getMessage());
+		} catch(Exception ex) {
+			log.error(ex.getMessage(),ex);
+			throw new DAOException(new ErrorHandler(ex).getMessage());
+		}
+		return delCnt;
+	}
+	
+#end
+#end
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOAddArMasterRevenueVvdCSQL">
+			<desc><![CDATA[AR_MST_REV_VVD table에 데이터 입력]]></desc>
+			<sql><![CDATA[
+INSERT INTO AR_MST_REV_VVD(
+VSL_CD
+, SKD_VOY_NO
+, SKD_DIR_CD
+, RLANE_DIR_CD
+, VOY_TP_CD
+, SLAN_CD
+, PORT_CHK_FLG
+, REV_PORT_CD
+, LOD_QTY
+, REV_YRMON
+, COM_VVD_FLG
+, VVD_COM_LVL
+, RLANE_CD
+, DELT_FLG
+, CRE_USR_ID
+, CRE_DT
+, UPD_USR_ID
+, UPD_DT
+)VALUES(
+@[vsl_cd]
+, @[skd_voy_no]
+, @[skd_dir_cd]
+, @[rlane_dir_cd]
+, @[voy_tp_cd]
+, @[slan_cd]
+, @[port_chk_flg]
+, @[rev_port_cd]
+, @[lod_qty]
+, @[rev_yrmon]
+, @[com_vvd_flg]
+, @[vvd_com_lvl]
+, @[rlane_cd]
+, @[delt_flg]
+, @[cre_usr_id]
+, SYSDATE
+, @[upd_usr_id]
+, SYSDATE
+)			]]></sql>
+			<params>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="skd_voy_no" type="12" value="" out="N"/>
+				<param name="skd_dir_cd" type="12" value="" out="N"/>
+				<param name="rlane_dir_cd" type="12" value="" out="N"/>
+				<param name="voy_tp_cd" type="12" value="" out="N"/>
+				<param name="slan_cd" type="12" value="" out="N"/>
+				<param name="port_chk_flg" type="12" value="" out="N"/>
+				<param name="rev_port_cd" type="12" value="" out="N"/>
+				<param name="lod_qty" type="12" value="" out="N"/>
+				<param name="rev_yrmon" type="12" value="" out="N"/>
+				<param name="com_vvd_flg" type="12" value="" out="N"/>
+				<param name="vvd_com_lvl" type="12" value="" out="N"/>
+				<param name="rlane_cd" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

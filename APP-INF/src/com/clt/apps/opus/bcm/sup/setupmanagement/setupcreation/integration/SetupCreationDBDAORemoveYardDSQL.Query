@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAORemoveYardDSQL">
+			<desc><![CDATA[2011.03.14 정윤태 EDI YARD 정보를 삭제한다]]></desc>
+			<sql><![CDATA[
+DELETE FROM BKG_EDI_YD
+ WHERE YD_CD = @[yd_cd]			]]></sql>
+			<params>
+				<param name="yd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

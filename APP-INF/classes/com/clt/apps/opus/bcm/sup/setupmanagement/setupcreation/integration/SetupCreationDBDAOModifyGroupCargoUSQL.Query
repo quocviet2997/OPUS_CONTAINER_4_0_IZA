@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOModifyGroupCargoUSQL">
+			<desc><![CDATA[2011.02.23 정윤태 EDI GROUP CARGO 정보를 변경한다]]></desc>
+			<sql><![CDATA[
+UPDATE EDI_GRP_CGO
+   SET CUST_EDI_STS_CD = @[cust_edi_sts_cd],
+       EDI_EVNT_CD = @[edi_evnt_cd],
+       EDI_SND_FLG = @[edi_snd_flg],
+       EDI_VSL_TP_CD = @[edi_vsl_tp_cd],
+       EDI_SND_ITVAL_HRMNT = @[edi_snd_itval_hrmnt],
+       EDI_CNTR_SND_TP_CD = @[edi_cntr_snd_tp_cd],
+       ORG_CONTI_DESC = @[org_conti_desc],
+       ORG_DEST_CNT_DESC = @[org_dest_cnt_desc],
+       DEST_CONTI_DESC = @[dest_conti_desc],
+       DEST_CNT_DESC = @[dest_cnt_desc],
+       EDI_CGO_RMK = @[edi_cgo_rmk],
+       EDI_AUTO_SND_FLG = @[edi_auto_snd_flg],
+       UPD_USR_ID = @[upd_usr_id],
+       UPD_DT = SYSDATE
+ WHERE EDI_GRP_CD = @[edi_grp_cd]
+   AND CO_DIV_CD = @[co_div_cd]
+   AND EDI_STND_STS_CD = @[edi_stnd_sts_cd]
+   AND EDI_STS_SEQ = @[edi_sts_seq]			]]></sql>
+			<params>
+				<param name="cust_edi_sts_cd" type="12" value="" out="N"/>
+				<param name="edi_evnt_cd" type="12" value="" out="N"/>
+				<param name="edi_snd_flg" type="12" value="" out="N"/>
+				<param name="edi_vsl_tp_cd" type="12" value="" out="N"/>
+				<param name="edi_snd_itval_hrmnt" type="12" value="" out="N"/>
+				<param name="edi_cntr_snd_tp_cd" type="12" value="" out="N"/>
+				<param name="org_conti_desc" type="12" value="" out="N"/>
+				<param name="org_dest_cnt_desc" type="12" value="" out="N"/>
+				<param name="dest_conti_desc" type="12" value="" out="N"/>
+				<param name="dest_cnt_desc" type="12" value="" out="N"/>
+				<param name="edi_cgo_rmk" type="12" value="" out="N"/>
+				<param name="edi_auto_snd_flg" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="edi_grp_cd" type="12" value="" out="N"/>
+				<param name="co_div_cd" type="12" value="" out="N"/>
+				<param name="edi_stnd_sts_cd" type="12" value="" out="N"/>
+				<param name="edi_sts_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

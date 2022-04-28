@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserOfcCngDBDAOSearchUserListRSQL">
+			<desc><![CDATA[user의 모든 목록을 가져온다]]></desc>
+			<sql><![CDATA[
+#if(${admin_page} == 'Y')
+
+SELECT
+	A.USR_ID,
+	A.USR_NM,
+	A.USR_LOCL_NM,
+	A.OFC_CD,
+	B.CNG_OFC_CD,
+	NVL(C.AR_HD_QTR_OFC_CD, B.CNG_OFC_CD) RHQ,
+	TO_CHAR(B.CNG_OFC_FM_DT,'YYYYMMDD') CNG_OFC_FM_DT,
+	TO_CHAR(DECODE(C.DELT_FLG,'Y',C.UPD_DT,B.CNG_OFC_TO_DT),'YYYYMMDD') CNG_OFC_TO_DT,
+	B.RQST_CTNT,
+	B.CRE_USR_ID,
+	TO_CHAR(A.CRE_DT,'YYYYMMDD') CRE_DT,
+	B.UPD_USR_ID,
+	TO_CHAR(B.UPD_DT,'YYYYMMDD') UPD_DT,
+	DECODE(SIGN(DECODE(C.DELT_FLG,'Y',C.UPD_DT,B.CNG_OFC_TO_DT)-SYSDATE), -1, 'Y', 'N') EXPIRE
+FROM COM_USER A, COM_USR_OFC_CNG B, MDM_ORGANIZATION C
+WHERE A.USR_ID = B.USR_ID
+AND B.CNG_OFC_CD = C.OFC_CD
+AND ('ALL' = @[usr_id] OR A.USR_ID = @[usr_id] )
+AND ('ALL' = @[usr_nm] OR UPPER(A.USR_NM) LIKE '%'||UPPER(@[usr_nm])||'%' )
+ORDER BY CNG_OFC_CD
+
+#else
+
+SELECT
+	DEFAULT_LGIN_OFC,
+	USR_ID,        
+	OFC_CD,
+	CNG_OFC_CD
+FROM
+(
+SELECT
+	DECODE(A.OFC_CD, NVL(A.LST_LGIN_OFC_CD, A.OFC_CD), 1, 0) DEFAULT_LGIN_OFC,
+	A.USR_ID USR_ID,
+	A.OFC_CD OFC_CD,
+	A.OFC_CD CNG_OFC_CD,
+	'N' EXPIRE
+FROM COM_USER A, MDM_ORGANIZATION C		  
+WHERE A.OFC_CD = C.OFC_CD
+AND A.USR_ID = @[usr_id]
+UNION 
+SELECT 
+	DECODE(A.LST_LGIN_OFC_CD, B.CNG_OFC_CD, 1, 0) DEFAULT_LGIN_OFC,
+	A.USR_ID USR_ID,
+	A.OFC_CD OFC_CD,  
+	B.CNG_OFC_CD CNG_OFC_CD,
+	DECODE(SIGN(DECODE(C.DELT_FLG,'Y',C.UPD_DT,B.CNG_OFC_TO_DT)-SYSDATE), -1, 'Y', 'N') EXPIRE
+	FROM COM_USER A, COM_USR_OFC_CNG B, MDM_ORGANIZATION C			
+	WHERE A.USR_ID = B.USR_ID						
+	AND B.CNG_OFC_CD = C.OFC_CD
+	AND A.USR_ID = @[usr_id]
+)
+WHERE EXPIRE = 'N' 
+ORDER BY CNG_OFC_CD
+
+#end			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="usr_nm" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

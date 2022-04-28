@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SupCommonDBDAOCheckContinentCodeRSQL">
+			<desc><![CDATA[2011.02.25 정윤태 MDM_CONTINENT에서 Continent Code 정보를 가져온다]]></desc>
+			<sql><![CDATA[
+SELECT LTRIM(MAX(SYS_CONNECT_BY_PATH(CONTI_CD, ',')),',') CONTI_CD
+   FROM (
+	     SELECT CONTI_CD, ROWNUM RNUM
+	       FROM MDM_CONTINENT
+          WHERE CONTI_CD IN (#foreach($conti_desc IN ${lst_conti_desc})
+								#if($lst_conti_desc.hasNext()) '$conti_desc', #else '$conti_desc' #end
+							 #end
+						    )
+		    AND DELT_FLG = 'N'
+        )
+  START WITH RNUM=1   
+CONNECT BY PRIOR RNUM = RNUM-1			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOSearchRccCodeListRSQL">
+			<desc><![CDATA[RCC Code List 를 조회한다.]]></desc>
+			<sql><![CDATA[
+SELECT  DISTINCT RCC_CD AS CD
+       ,RCC_CD AS CD_DESC
+  FROM  MDM_EQ_ORZ_CHT
+ WHERE  DELT_FLG <> 'Y'
+ORDER BY 1			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CarrierDBDAOCarrierListRSQL">
+			<desc><![CDATA[Carrier의 모든 목록을 가져온다.]]></desc>
+			<sql><![CDATA[
+SELECT crr_cd,
+	   crr_nm AS crr_full_nm,
+	   '' crr_nm,
+	   DECODE(DELT_FLG,'Y','Delete','Active') AS DELT_FLG
+FROM (
+	SELECT ROW_NUMBER() OVER (ORDER BY crr_cd ASC) no,
+		crr_cd,
+		crr_nm,
+		delt_flg
+	FROM mdm_carrier
+	WHERE 1 = 1   
+	#if (${crr_cd} != '')
+		AND crr_cd like @[crr_cd] || '%'
+	#end  
+	#if (${crr_nm} != '')      
+		AND upper(crr_nm) like '%' || upper(@[crr_nm]) || '%'
+	#end
+	#if (${mdm_yn} != '')
+		#if (${delt_flg} == 'Y') 
+		AND DELT_FLG = @[delt_flg]
+		#elseif (${delt_flg} == 'ALL') 
+		#else 
+		AND DELT_FLG <> 'Y'
+		#end
+	#else	
+		AND DELT_FLG <> 'Y'
+	#end
+
+) a	
+ORDER BY crr_cd			]]></sql>
+			<params>
+				<param name="crr_cd" type="12" value="" out="N"/>
+				<param name="crr_nm" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

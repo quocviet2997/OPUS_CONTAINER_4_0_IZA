@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MdmOrganizationDAOHeadQuarterCodeByOfcCdRSQL">
+			<desc><![CDATA[get headquarter code by office code]]></desc>
+			<sql><![CDATA[
+SELECT NVL(AR_HD_QTR_OFC_CD, OFC_CD) RHQ
+FROM MDM_ORGANIZATION
+WHERE OFC_CD = @[ofc_cd]			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

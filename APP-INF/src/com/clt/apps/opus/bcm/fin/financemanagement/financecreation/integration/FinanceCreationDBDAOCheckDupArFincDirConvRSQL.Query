@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOCheckDupArFincDirConvRSQL">
+			<desc><![CDATA[AR_FINC_DIR_CONV table에 slan_cd, sconti_cd, slan_dir_cd, rlane_dir_cd의 값으로 중복 값이 있는지 확인]]></desc>
+			<sql><![CDATA[
+SELECT
+    COUNT(*) CNT
+FROM AR_FINC_DIR_CONV
+WHERE 1 = 1
+   AND SLAN_CD = @[slan_cd]
+   AND SCONTI_CD = @[sconti_cd]
+   AND SLAN_DIR_CD = @[slan_dir_cd]
+   AND RLANE_DIR_CD = @[rlane_dir_cd]			]]></sql>
+			<params>
+				<param name="slan_cd" type="12" value="" out="N"/>
+				<param name="sconti_cd" type="12" value="" out="N"/>
+				<param name="slan_dir_cd" type="12" value="" out="N"/>
+				<param name="rlane_dir_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

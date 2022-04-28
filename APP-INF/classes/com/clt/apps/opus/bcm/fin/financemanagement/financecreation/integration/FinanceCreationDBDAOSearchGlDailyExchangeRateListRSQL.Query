@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchGlDailyExchangeRateListRSQL">
+			<desc><![CDATA[SearchGlDailyExchangeRateList]]></desc>
+			<sql><![CDATA[
+SELECT
+ACCT_XCH_RT_DT
+, ACCT_XCH_RT_LVL
+, FM_CURR_CD
+, TO_CURR_CD
+, CONV_XCH_RT
+, ACCT_RT_USR_LVL
+, DELT_FLG
+, CRE_USR_ID
+, CRE_DT
+, UPD_USR_ID
+, UPD_DT
+FROM GL_DLY_XCH_RT
+WHERE ACCT_XCH_RT_DT BETWEEN @[s_acct_xch_rt_fm_dt] AND @[s_acct_xch_rt_to_dt]
+
+#if (${s_fm_curr_cd} != '')
+AND FM_CURR_CD = @[s_fm_curr_cd]
+#end
+
+#if (${s_to_curr_cd} != '')
+AND TO_CURR_CD = @[s_to_curr_cd]
+#end			]]></sql>
+			<params>
+				<param name="s_acct_xch_rt_fm_dt" type="12" value="" out="N"/>
+				<param name="s_acct_xch_rt_to_dt" type="12" value="" out="N"/>
+				<param name="s_fm_curr_cd" type="12" value="" out="N"/>
+				<param name="s_to_curr_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

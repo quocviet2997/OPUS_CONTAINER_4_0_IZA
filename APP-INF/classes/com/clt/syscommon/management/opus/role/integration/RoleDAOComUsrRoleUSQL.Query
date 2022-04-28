@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="RoleDAOComUsrRoleUSQL">
+			<desc><![CDATA[update com_usr_role]]></desc>
+			<sql><![CDATA[
+update com_usr_role set 
+	usr_role_nm = @[usr_role_nm],
+	usr_role_desc = @[usr_role_desc],
+	prnt_usr_role_cd = @[prnt_usr_role_cd],
+	upd_usr_id = @[upd_usr_id],
+	upd_dt = sysdate
+where	usr_role_cd = @[usr_role_cd]			]]></sql>
+			<params>
+				<param name="usr_role_nm" type="12" value="" out="N"/>
+				<param name="usr_role_desc" type="12" value="" out="N"/>
+				<param name="prnt_usr_role_cd" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="usr_role_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

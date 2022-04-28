@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAORemoveApPeriodDSQL">
+			<desc><![CDATA[2011.02.18 정윤태 AP PERIOD 정보를 삭제한다]]></desc>
+			<sql><![CDATA[
+DELETE FROM AP_PERIOD
+ WHERE SYS_DIV_CD = @[sys_div_cd]
+   AND EFF_YRMON = @[eff_yrmon]
+   AND OFC_CD = @[ofc_cd]
+   AND AR_AP_DIV_CD = @[ar_ap_div_cd]			]]></sql>
+			<params>
+				<param name="sys_div_cd" type="12" value="" out="N"/>
+				<param name="eff_yrmon" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="ar_ap_div_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

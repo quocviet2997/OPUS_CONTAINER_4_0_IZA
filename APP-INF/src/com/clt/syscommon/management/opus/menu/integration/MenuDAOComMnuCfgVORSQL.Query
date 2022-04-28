@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MenuDAOComMnuCfgVORSQL">
+			<desc><![CDATA[select menu list   ]]></desc>
+			<sql><![CDATA[
+SELECT level,chd_pgm_no,pgm_nm,dp_seq,mnu_cfg_cd,prnt_pgm_no,pgm_url,
+#if (${acss_lvl} == 'N') 
+'0000000' access_lvl
+#else
+(select /*+ USE_nl(a) */ decode(sum(decode(ofc_knd_cd, '1', 1, 0)), 0, '0', '1') ||
+decode(sum(decode(ofc_knd_cd, '2', 1, 0)), 0, '0', '1') ||
+decode(sum(decode(ofc_knd_cd, '3', 1, 0)), 0, '0', '1') ||
+decode(sum(decode(ofc_knd_cd, '4', 1, 0)), 0, '0', '1') ||
+decode(sum(decode(ofc_knd_cd, '5', 1, 0)), 0, '0', '1') ||
+decode(sum(decode(ofc_knd_cd, '6', 1, 0)), 0, '0', '1') ||
+decode(sum(decode(ofc_knd_cd, '9', 1, 0)), 0, '0', '1') 
+from com_ofc_pgm_mtch a, mdm_organization b
+where a.ofc_cd = b.ofc_cd
+and a.pgm_no = x.pgm_no)  access_lvl
+#end
+FROM (SELECT a.mnu_cfg_cd,a.prnt_pgm_no,a.chd_pgm_no,a.pgm_lvl_val,a.dp_seq  
+      ,b.pgm_no,b.pgm_nm,b.pgm_url,b.pgm_lvl_div_cd                          
+      FROM com_mnu_cfg a, com_program b                                      
+      WHERE a.mnu_cfg_cd = @[mnu_cfg_cd]                                                
+      AND a.chd_pgm_no = b.pgm_no(+)                                         
+      AND b.pgm_tp_cd(+) = '00'                                              
+      AND b.use_flg(+) = 'Y') x
+WHERE mnu_cfg_cd = @[mnu_cfg_cd]                                                    
+CONNECT BY PRIOR chd_pgm_no = prnt_pgm_no                                    
+START WITH prnt_pgm_no = @[pgm_no]
+ORDER SIBLINGS BY dp_seq			]]></sql>
+			<params>
+				<param name="mnu_cfg_cd" type="12" value="" out="N"/>
+				<param name="pgm_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

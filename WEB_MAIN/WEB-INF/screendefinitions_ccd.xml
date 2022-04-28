@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0025">
+        <parameter key="title"    value="Activity" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/service/jsp/BCM_CCD_0025.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+ 
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0001">
+        <parameter key="title"    value="account" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/account/jsp/BCM_CCD_0001.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0002">
+        <parameter key="title"    value="charge" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/account/jsp/BCM_CCD_0002.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0002_POP"  template="templatePop">
+        <parameter key="title"    value="charge" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/account/jsp/BCM_CCD_0002.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0003">
+        <parameter key="title"    value="representativecharge" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/account/jsp/BCM_CCD_0003.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0004">
+        <parameter key="title"    value="crrency" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/account/jsp/BCM_CCD_0004.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0005">
+        <parameter key="title"    value="container type" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/asset/jsp/BCM_CCD_0005.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0006">
+        <parameter key="title"    value="container size" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/asset/jsp/BCM_CCD_0006.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0007">
+        <parameter key="title"    value="container type size" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/asset/jsp/BCM_CCD_0007.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0008_POP" template="templatePop">
+        <parameter key="title"    value="container vessel" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/asset/jsp/BCM_CCD_0008.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0008">
+        <parameter key="title"    value="container vessel" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/asset/jsp/BCM_CCD_0008.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0009">
+        <parameter key="title"    value="group commodity" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/commodity/jsp/BCM_CCD_0009.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0010">
+        <parameter key="title"    value="representative commodity" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/commodity/jsp/BCM_CCD_0010.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0011">
+        <parameter key="title"    value="commodity" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/commodity/jsp/BCM_CCD_0011.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0011_POP" template="templatePop">
+        <parameter key="title"    value="commodity" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/commodity/jsp/BCM_CCD_0011.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0012">
+        <parameter key="title"    value="customs package type" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/commodity/jsp/BCM_CCD_0012.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0013">
+        <parameter key="title"    value="package type" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/commodity/jsp/BCM_CCD_0013.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0014">
+        <parameter key="title"    value="contient" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/location/jsp/BCM_CCD_0014.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0015">
+        <parameter key="title"    value="sub contient" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/location/jsp/BCM_CCD_0015.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0016">
+        <parameter key="title"    value="country" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/location/jsp/BCM_CCD_0016.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0017">
+        <parameter key="title"    value="region" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/location/jsp/BCM_CCD_0017.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0018">
+        <parameter key="title"    value="state" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/location/jsp/BCM_CCD_0018.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0019">
+        <parameter key="title"    value="yard" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/location/jsp/BCM_CCD_0019.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0019_POP" template="templatePop">
+        <parameter key="title"    value="yard" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/location/jsp/BCM_CCD_0019.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0020">
+        <parameter key="title"    value="yard" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/location/jsp/BCM_CCD_0020.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0020_POP" template="templatePop">
+        <parameter key="title"    value="yard" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/location/jsp/BCM_CCD_0020.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0021">
+        <parameter key="title"    value="zone" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/location/jsp/BCM_CCD_0021.jsp"/>
+    </screen>
+	
+	<screen name="BCM_CCD_0021_POP" template="templatePop">
+        <parameter key="title"    value="zone" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/location/jsp/BCM_CCD_0021.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0022">
+        <parameter key="title"    value="equipment ORG chart" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/location/jsp/BCM_CCD_0022.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0023">
+        <parameter key="title"    value="leasing company yard" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/location/jsp/BCM_CCD_0023.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0024">
+        <parameter key="title"    value="daylight saving time" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/location/jsp/BCM_CCD_0024.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0026">
+        <parameter key="title"    value="movement status" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/service/jsp/BCM_CCD_0026.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0027">
+        <parameter key="title"    value="revenue lane" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/service/jsp/BCM_CCD_0027.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0027_POP" template="templatePop">
+        <parameter key="title"    value="revenue lane" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/service/jsp/BCM_CCD_0027.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0028">
+        <parameter key="title"    value="vessel service lane" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/service/jsp/BCM_CCD_0028.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0028_POP" template="templatePop">
+        <parameter key="title"    value="vessel service lane" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/service/jsp/BCM_CCD_0028.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0029">
+        <parameter key="title"    value="vessel service scope" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/service/jsp/BCM_CCD_0029.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0029_POP" template="templatePop">
+        <parameter key="title"    value="vessel service scope" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/service/jsp/BCM_CCD_0029.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0030">
+        <parameter key="title"    value="trade" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/service/jsp/BCM_CCD_0030.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0030_POP" template="templatePop">
+        <parameter key="title"    value="trade" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/service/jsp/BCM_CCD_0030.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0031">
+        <parameter key="title"    value="sub trade" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/service/jsp/BCM_CCD_0031.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0032">
+        <parameter key="title"    value="organization" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/organization/jsp/BCM_CCD_0032.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0033">
+        <parameter key="title"    value="sales rep." direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/salesrepresentative/jsp/BCM_CCD_0033.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0033_POP" template="templatePop">
+        <parameter key="title"    value="sales rep." direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/salesrepresentative/jsp/BCM_CCD_0033.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0034">
+        <parameter key="title"    value="carrier" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0034.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0034_POP" template="templatePop">
+        <parameter key="title"    value="carrier" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0034.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0035">
+        <parameter key="title"    value="customer" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0035.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0035_POP" template="templatePop">
+        <parameter key="title"    value="customer" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0035.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0036">
+        <parameter key="title"    value="customer address" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0036.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0037">
+        <parameter key="title"    value="customer contact point" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0037.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0038">
+        <parameter key="title"    value="Group Customer Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0038.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0038_POP" template="templatePop">
+        <parameter key="title"    value="Group Customer Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0038.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0039">
+        <parameter key="title"    value="credit customer" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0039.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+
+	<!--  : 2011-02-15 start -->
+    <screen name="BCM_CCD_0040">
+        <parameter key="title"    value="credit customer" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0040.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0040_POP" template="templatePop">
+        <parameter key="title"    value="credit customer" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0040.jsp"/>
+    </screen>
+	<!--  : 2011-02-15 end -->
+	
+	<!-- SEO MI JIN : 2011-02-19 start -->
+    <screen name="BCM_CCD_0041">
+        <parameter key="title"    value="Office Access Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/organization/jsp/BCM_CCD_0041.jsp"/>
+    </screen>
+	<!-- SEO MI JIN : 2011-02-19 end -->
+	
+	<!-- SEO MI JIN : 2011-02-19 start -->
+    <screen name="BCM_CCD_0042"   template="templatePop">
+        <parameter key="title"    value="Office Access Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/organization/jsp/BCM_CCD_0042.jsp"/>
+    </screen>
+	<!-- SEO MI JIN : 2011-02-19 end -->
+
+	<!-- Min Jung Ho: 2011-02-15 start -->
+    <screen name="BCM_CCD_1038" template="templatePop">
+        <parameter key="title"    value="Group Customer Code Duplicate Check Pop-up" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_1038.jsp"/>
+    </screen>
+	<!-- Min Jung Ho: 2011-02-15 end -->
+
+	<!-- Jong-Ho Kim : 2012-02-21 start -->
+    <screen name="BCM_CCD_1040"   template="templatePop">
+        <parameter key="title"    value="Vendor Code Duplicate Check Pop-up" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_1040.jsp"/>
+    </screen>
+	<!-- Jong-Ho Kim : 2012-02-21 end -->
+	
+	<!-- Sangbo La : 2011-02-19 start -->
+    <screen name="BCM_CCD_0043">
+        <parameter key="title"    value="Customer Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/report/jsp/BCM_CCD_0043.jsp"/>
+    </screen>
+    
+    <screen name="BCM_CCD_0044">
+        <parameter key="title"    value="Vendor Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/report/jsp/BCM_CCD_0044.jsp"/>
+    </screen>
+	<!-- Sangbo La : 2011-02-19 end -->
+	
+		<!-- SEO SEOK JIN : 2012-02-21 start -->
+    <screen name="BCM_CCD_0047">
+        <parameter key="title"    value="Zone Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/report/jsp/BCM_CCD_0047.jsp"/>
+    </screen>
+	<!-- SEO SEOK JIN : 2012-02-21 end -->
+	
+	<!-- Sung-rak Kim : 2012-04-03 start -->
+    <screen name="BCM_CCD_0048">
+        <parameter key="title"    value="Office Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/report/jsp/BCM_CCD_0048.jsp"/>
+    </screen>
+	<!-- Sung-rak Kim : 2012-04-03 end -->
+	
+	
+	<!-- KIM HYUN HWA : 2012-02-16  start -->
+    <screen name="BCM_CCD_1035" template="templatePop">
+        <parameter key="title"    value="Customer Code Duplicate Check Pop-up" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_1035.jsp"/>
+    </screen>
+	<!-- KIM HYUN HWA : 2012-02-16  end -->
+
+	<!-- KIM MIN SOO : 2012-02-22 start -->
+    <screen name="BCM_CCD_0046">
+        <parameter key="title"    value="Yard Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/report/jsp/BCM_CCD_0046.jsp"/>
+    </screen>
+	<!-- KIM MIN SOO : 2012-02-22 end -->
+
+	<!-- KIM JONG OCK : 2012-02-22 start -->
+    <screen name="BCM_CCD_0045">
+        <parameter key="title"    value="Location Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/report/jsp/BCM_CCD_0045.jsp"/>
+    </screen>
+    
+    <!-- Chae Chang Ho : 2012-04-05 start -->
+     <screen name="BCM_CCD_0051">
+        <parameter key="title"    value="Location Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/report/jsp/BCM_CCD_0051.jsp"/>
+    </screen>
+	<!-- Chae Chang Ho : 2012-04-05 end -->
+	
+	<!-- HWANG HYO KEUN : 2012-04-06 start -->
+    <screen name="BCM_CCD_2001">
+        <parameter key="title"    value="Master Data Authority Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/mstmgmt/jsp/BCM_CCD_2001.jsp"/>
+    </screen>
+	<!-- HWANG HYO KEUN : 2012-04-06 end -->
+	
+	<!-- KIM HYUN HWA : 2012-04-03 start -->
+    <screen name="BCM_CCD_0049">
+        <parameter key="title"    value="Vessel Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/report/jsp/BCM_CCD_0049.jsp"/>
+    </screen>
+	<!-- KIM HYUN HWA : 2012-04-03 end -->
+
+	<!-- KIM HYUN HWA : 2012-04-03 start -->
+    <screen name="BCM_CCD_0050">
+        <parameter key="title"    value="Charge Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/report/jsp/BCM_CCD_0050.jsp"/>
+    </screen>
+	<!-- KIM HYUN HWA : 2012-04-03 end -->	
+	
+	<!-- HWANG HYO KEUN : 2012-04-10 start -->
+    <screen name="BCM_CCD_2002">
+        <parameter key="title"    value="Master Data Authority Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/mstmgmt/jsp/BCM_CCD_2002.jsp"/>
+    </screen>
+
+	<!-- DS.HAM : 2014-12-02 start -->
+    <screen name="BCM_CCD_2003">
+        <parameter key="title"    value="MDA History Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/mstmgmt/jsp/BCM_CCD_2003.jsp"/>
+    </screen>
+
+	<!-- HWANG HYO KEUN : 2012-04-10 end -->
+    <screen name="BCM_CCD_0052">
+        <parameter key="title"    value="customer Integration" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0052.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0052_POP" template="templatePop">
+        <parameter key="title"    value="customer Integration" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0052.jsp"/>
+    </screen>
+    
+    	<!-- CHO CHANG WOO : 2017-12-18 end -->
+    <screen name="BCM_CCD_0053">
+        <parameter key="title"    value="customer Integration" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0053.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0053_POP" template="templatePop">
+        <parameter key="title"    value="customer Integration" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0053.jsp"/>
+    </screen>
+    
+        	<!-- CHO CHANG WOO : 2017-12-18 end -->
+    <screen name="BCM_CCD_0054">
+        <parameter key="title"    value="customer Integration" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0054.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0054_POP" template="templatePop">
+        <parameter key="title"    value="customer Integration" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0054.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0055">
+        <parameter key="title"    value="customer Integration" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0055.jsp"/>
+    </screen>
+      <screen name="BCM_CCD_0056" template="templatePop">
+        <parameter key="title"    value="customer Integration" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0056.jsp"/>
+    </screen>
+	<!--  : 2018-12-19 start -->
+    <screen name="BCM_CCD_0060"> 
+        <parameter key="title"    value="Credit Customer" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0060.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0061_POP" template="templatePop">
+        <parameter key="title"    value="Credit Customer Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0061.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0062_POP" template="templatePop">
+        <parameter key="title"    value="Credit Customer Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0062.jsp"/>
+    </screen>
+    <screen name="BCM_CCD_0063_POP" template="templatePop">
+        <parameter key="title"    value="Credit Customer Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/bcm/ccd/commoncode/partner/jsp/BCM_CCD_0063.jsp"/>
+    </screen>
+	<!--  : 2018-12-19 end -->
+</screen-definitions>

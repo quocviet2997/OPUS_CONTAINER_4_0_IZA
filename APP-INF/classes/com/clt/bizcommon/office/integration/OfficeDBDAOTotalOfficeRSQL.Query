@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="OfficeDBDAOTotalOfficeRSQL">
+			<desc><![CDATA[Select office count]]></desc>
+			<sql><![CDATA[
+SELECT count(*)																
+FROM MDM_ORGANIZATION
+WHERE 1=1
+#if(${ofc_pts_cd} != '')     
+	AND PRNT_OFC_CD LIKE @[ofc_pts_cd] || '%'
+#end 
+
+#if(${loc_cd} != '')     
+	AND LOC_CD LIKE @[loc_cd] || '%'
+#end 
+
+#if(${ofc_lev} != '')     
+	and ofc_knd_cd like @[ofc_lev] || '%'
+#end 
+
+#if(${ofc_cd} != '')     
+	AND OFC_CD LIKE @[ofc_cd] || '%'
+#end 
+
+#if(${ofc_nm} != '')     
+	AND upper(OFC_ENG_NM) LIKE '%' ||  upper(@[ofc_nm]) || '%'
+#end 
+
+#if (${mdm_yn} != '')
+	#if (${delt_flg} == 'Y') 
+		AND DELT_FLG = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+	#else 
+		AND DELT_FLG <> 'Y'
+	#end
+#else	
+	AND DELT_FLG <> 'Y'
+#end			]]></sql>
+			<params>
+				<param name="ofc_pts_cd" type="12" value="" out="N"/>
+				<param name="loc_cd" type="12" value="" out="N"/>
+				<param name="ofc_lev" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="ofc_nm" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

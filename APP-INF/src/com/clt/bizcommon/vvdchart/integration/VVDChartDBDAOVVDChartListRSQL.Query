@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="VVDChartDBDAOVVDChartListRSQL">
+			<desc><![CDATA[VVDChart의 모든 목록을 가져온다.]]></desc>
+			<sql><![CDATA[
+SELECT LEVEL, ID, NAME, DECODE(LEVEL, 1, '', SUBSTR(SYS_CONNECT_BY_PATH(ID, '|'), 6,3) ) TRADE,
+	DECODE(LEVEL, 1, '', 2, '', SUBSTR(SYS_CONNECT_BY_PATH(ID, '|'), 10,3) ) LANE,
+	DECODE(LEVEL, 1, '', 2, '', 3, '', SUBSTR(SYS_CONNECT_BY_PATH(ID, '|'), 14,9) ) VVD
+FROM (SELECT 'ALL' ID, '' DEPTH, 'ALL' NAME, '' PARENT_ID FROM DUAL
+		UNION	ALL
+		SELECT TRD_CD ID, 'TRADE' DEPTH, TRD_NM NAME, 'ALL' PARENT_ID FROM MDM_TRADE 
+		WHERE VSL_TP_CD='C' AND NVL(DELT_FLG, 'N') <> 'Y'
+        #if (${depth} != '1') 
+			UNION	ALL
+	        SELECT DISTINCT VSL_SLAN_CD ID, 'LANE' DEPTH, VSL_SLAN_CD NAME, REP_TRD_CD PARENT_ID FROM MDM_REV_LANE
+	        WHERE NVL(DELT_FLG, 'N') <> 'Y'
+			#if (${scnr_id} != '') 
+			AND VSL_SLAN_CD IN (SELECT DISTINCT VSL_LANE_CD FROM EQR_VSL_LODG_DCHG_PLN WHERE REPO_PLN_ID = @[scnr_id] )
+			#end
+			#if(${depth} == '3')
+				UNION	ALL
+			    SELECT DISTINCT VSL_CD||SKD_VOY_NO||SKD_DIR_CD ID, 'VVD' DEPTH, '' NAME, VSL_LANE_CD PARENT_ID
+		    	FROM EQR_VSL_LODG_DCHG_PLN
+                WHERE 1=1
+			  --  WHERE NVL(DELT_FLG, 'N') <> 'Y'
+			    #if (${scnr_id} != '') 
+			    AND REPO_PLN_ID = @[scnr_id]
+		    	#end
+			#end
+		#end
+) X
+CONNECT BY NOCYCLE PRIOR X.ID = X.PARENT_ID
+START WITH X.ID='ALL'
+ORDER SIBLINGS BY ID			]]></sql>
+			<params>
+				<param name="scnr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

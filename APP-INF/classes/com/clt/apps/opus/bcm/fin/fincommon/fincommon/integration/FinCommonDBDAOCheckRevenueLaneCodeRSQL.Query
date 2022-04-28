@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinCommonDBDAOCheckRevenueLaneCodeRSQL">
+			<desc><![CDATA[Rlane Dir Code를 MDM의 MDM_REV_LANE table에서의 존재여부를 확인]]></desc>
+			<sql><![CDATA[
+SELECT 
+RLANE_CD
+FROM MDM_REV_LANE
+WHERE ROWNUM = 1
+AND DELT_FLG = 'N'
+AND RLANE_CD = @[rlane_cd]			]]></sql>
+			<params>
+				<param name="rlane_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

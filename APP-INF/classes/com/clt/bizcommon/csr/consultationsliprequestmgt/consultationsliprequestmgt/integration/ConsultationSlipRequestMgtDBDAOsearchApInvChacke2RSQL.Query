@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOsearchApInvChacke2RSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(NVL(D.ACCT_CD,'N')) count
+	FROM   AP_PAY_INV H
+		 ,AP_PAY_INV_DTL D
+	WHERE  H.INV_NO = @[inv_no]
+	AND    H.VNDR_SEQ = @[vndr_seq]
+	AND    H.INV_RGST_NO = D.INV_RGST_NO
+	AND    ( NVL(D.ACCT_CD,'N') = 'N'
+	OR     D.ACCT_CD IS NULL )
+	AND    H.DELT_FLG <> 'Y'			]]></sql>
+			<params>
+				<param name="inv_no" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

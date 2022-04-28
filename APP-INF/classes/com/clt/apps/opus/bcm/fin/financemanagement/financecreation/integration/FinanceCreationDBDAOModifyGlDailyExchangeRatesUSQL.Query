@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOModifyGlDailyExchangeRatesUSQL">
+			<desc><![CDATA[ModifyGlDailyExchangeRates]]></desc>
+			<sql><![CDATA[
+UPDATE GL_DLY_XCH_RT
+SET
+ACCT_XCH_RT_DT = @[acct_xch_rt_dt]
+, ACCT_XCH_RT_LVL = @[acct_xch_rt_lvl]
+, FM_CURR_CD = @[fm_curr_cd]
+, TO_CURR_CD = @[to_curr_cd]
+, CONV_XCH_RT = @[conv_xch_rt]
+, ACCT_RT_USR_LVL = @[acct_rt_usr_lvl]
+, DELT_FLG = @[delt_flg]
+, UPD_USR_ID = @[upd_usr_id]
+, UPD_DT = SYSDATE
+WHERE ACCT_XCH_RT_DT = @[acct_xch_rt_dt]
+AND ACCT_XCH_RT_LVL = @[acct_xch_rt_lvl]
+AND FM_CURR_CD = @[fm_curr_cd]
+AND TO_CURR_CD = @[to_curr_cd]			]]></sql>
+			<params>
+				<param name="acct_xch_rt_dt" type="12" value="" out="N"/>
+				<param name="acct_xch_rt_lvl" type="12" value="" out="N"/>
+				<param name="fm_curr_cd" type="12" value="" out="N"/>
+				<param name="to_curr_cd" type="12" value="" out="N"/>
+				<param name="conv_xch_rt" type="12" value="" out="N"/>
+				<param name="acct_rt_usr_lvl" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

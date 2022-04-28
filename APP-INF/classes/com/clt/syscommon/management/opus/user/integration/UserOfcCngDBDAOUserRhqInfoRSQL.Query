@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserOfcCngDBDAOUserRhqInfoRSQL">
+			<desc><![CDATA[조회]]></desc>
+			<sql><![CDATA[
+SELECT
+	nvl(PRNT_OFC_CD, @[cng_ofc_cd]) rhq
+from mdm_organization
+where ofc_cd = @[cng_ofc_cd]
+and delt_flg = 'N'			]]></sql>
+			<params>
+				<param name="cng_ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

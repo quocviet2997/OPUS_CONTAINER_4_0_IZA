@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+	<!-- Han Sang Hoon : 2009-07-22 start -->
+    <url-mapping url="ESM_SPC_0100.do" screen="ESM_SPC_0100.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.basicdata.event.ESM_SPC_0100HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0100GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.basicdata.event.ESM_SPC_0100HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SPC_0100GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.basicdata.event.ESM_SPC_0100HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.dailyforecast.basicdata.event.EsmSpc0100Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.dailyforecast.DailyForecastSC</service-action-class>
+    </event-mapping>
+	<!-- Han Sang Hoon : 2009-07-22 end -->
+	
+	<!-- CHOI Yun Sung : 2009-07-29 start -->
+    <url-mapping url="ESM_SPC_0042.do" screen="ESM_SPC_0042.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0042GS.do" screen="com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0042ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0042HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SPC_0042GS2.do" screen="com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0042ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0042HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0042Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.SpaceAllocationManageSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_SPC_XLS.do" screen="ESM_SPC_XLS.screen" >
+    </url-mapping>
+	<url-mapping url="ESM_SPC_MSG.do" screen="ESM_SPC_MSG.screen" >
+    </url-mapping>    
+
+    <url-mapping url="ESM_SPC_CODGS.do" screen="ESM_SPC_CODGS.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.common.common.event.ESM_SPC_CODHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.common.common.event.EsmSpcCodEvent</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.common.CommonSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI Yun Sung : 2009-07-29 end -->
+
+	<!-- Han Sang Hoon : 2009-08-10 start -->
+    <url-mapping url="ESM_SPC_0021.do" screen="ESM_SPC_0021.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="ESM_SPC_0021GS.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0021ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0021HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SPC_0021GS2.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0021ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0021HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SPC_0021GS3.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0021ViewAdapter3" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0021Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.SpacecontrolinquirySC</service-action-class>
+    </event-mapping>
+	<!-- Han Sang Hoon : 2009-08-10 end -->
+
+	<!-- Han Sang Hoon : 2009-08-19 start -->
+    <url-mapping url="ESM_SPC_0024.do" screen="ESM_SPC_0024.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0024GS.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0024ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0024HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SPC_0024GS2.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0024ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0024HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SPC_0024GS3.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0024ViewAdapter3" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0024HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SPC_0024GS4.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0024ViewAdapter4" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0024HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SPC_0024GS5.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0024ViewAdapter5" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0024Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.SpacecontrolinquirySC</service-action-class>
+    </event-mapping>
+	<!-- Han Sang Hoon : 2009-08-19 end -->
+
+	<!-- Han Sang Hoon : 2009-08-21 start -->
+    <url-mapping url="ESM_SPC_0103.do" screen="ESM_SPC_0103.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.ESM_SPC_0103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0103GS.do" screen="com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.EsmSpc0103ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.ESM_SPC_0103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.EsmSpc0103Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.dailyforecast.DailyForecastSC</service-action-class>
+    </event-mapping>
+	<!-- Han Sang Hoon : 2009-08-21 end -->
+	
+    
+    <!-- UI POPUP 추가 -->  
+    <url-mapping url="ESM_SPC_0103_POP.do" screen="ESM_SPC_0103_POP.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.ESM_SPC_0103HTMLAction</web-action-class>
+    </url-mapping> 
+	
+	<!-- Han Sang Hoon : 2009-08-27 start -->
+    <url-mapping url="ESM_SPC_0104.do" screen="ESM_SPC_0104.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.ESM_SPC_0104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0104GS.do" screen="com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.EsmSpc0104ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.ESM_SPC_0104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.EsmSpc0104Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.dailyforecast.DailyForecastSC</service-action-class>
+    </event-mapping>
+	<!-- Han Sang Hoon : 2009-08-27 end -->
+	
+	
+	<!-- KHS : 2016-01-21 start  -->
+    <url-mapping url="ESM_SPC_0105.do" screen="ESM_SPC_0105.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.ESM_SPC_0104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.ESM_SPC_0104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.EsmSpc0104Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.dailyforecast.DailyForecastSC</service-action-class>
+    </event-mapping>
+	<!-- KHS : 2016-01-21 end -->
+	
+	
+	<!-- CHOI Yun Sung : 2009-08-27 start -->
+    <url-mapping url="ESM_SPC_0102.do" screen="ESM_SPC_0102.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.ESM_SPC_0102HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0102GS.do" screen="com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.EsmSpc0102ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.ESM_SPC_0102HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.EsmSpc0102Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.dailyforecast.DailyForecastSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI Yun Sung : 2009-08-27 end -->
+
+
+	<!-- PCH : 2011-07-17 start -->
+    <url-mapping url="ESM_SPC_9010.do" screen="ESM_SPC_9010.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.ESM_SPC_9010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_9010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.ESM_SPC_9010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.EsmSpc9010Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.dailyforecast.DailyForecastSC</service-action-class>
+    </event-mapping>
+	<!-- PCH : 2011-07-17 end -->
+	
+
+	<!-- Han Sang Hoon : 2009-09-03 start -->
+    <url-mapping url="ESM_SPC_0047.do" screen="ESM_SPC_0047.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0047HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0047GS.do" screen="com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0047ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0047HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0047Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.SpaceAllocationManageSC</service-action-class>
+    </event-mapping>
+	<!-- Han Sang Hoon : 2009-09-03 end -->
+
+	<!-- Han Sang Hoon : 2009-09-15 start -->
+    <url-mapping url="ESM_SPC_0044.do" screen="ESM_SPC_0044.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0044HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0044GS.do" screen="com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0044ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0044HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0044Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.SpaceAllocationManageSC</service-action-class>
+    </event-mapping>
+	<!-- Han Sang Hoon : 2009-09-15 end -->
+
+	<!-- Han Sang Hoon : 2009-09-22 start -->
+    <url-mapping url="ESM_SPC_0053.do" screen="ESM_SPC_0053.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0053GS.do" screen="com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0053ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0053Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.SpaceAllocationManageSC</service-action-class>
+    </event-mapping>
+	<!-- Han Sang Hoon : 2009-09-22 end -->
+   
+    <!-- UI POPUP 추가  -->  
+    <url-mapping url="ESM_SPC_0045_POP.do" screen="ESM_SPC_0045_POP.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0045HTMLAction</web-action-class>
+    </url-mapping> 
+    
+	<!-- Han Sang Hoon : 2009-09-24 start -->
+    <url-mapping url="ESM_SPC_0045.do" screen="ESM_SPC_0045.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0045GS.do" screen="com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0045ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0045Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.SpaceAllocationManageSC</service-action-class>
+    </event-mapping>
+	<!-- Han Sang Hoon : 2009-09-24 end -->
+	
+	<!-- CHOI Yun Sung : 2009-09-29 start -->
+    <url-mapping url="ESM_SPC_0071.do" screen="ESM_SPC_0071.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0071HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0071GS.do" screen="com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0071ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0071HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0071Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.SpaceAllocationManageSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI Yun Sung : 2009-09-29 end -->
+
+	<!-- Han Sang Hoon : 2009-10-06 start -->
+    <url-mapping url="ESM_SPC_0022.do" screen="ESM_SPC_0022.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0022GS.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0022ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0022Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.SpacecontrolinquirySC</service-action-class>
+    </event-mapping>
+	<!-- Han Sang Hoon : 2009-10-06 end -->
+
+	<!-- Han Sang Hoon : 2009-10-12 start -->
+    <url-mapping url="ESM_SPC_0028.do" screen="ESM_SPC_0028.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0028GS.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0028ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0028Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.SpacecontrolinquirySC</service-action-class>
+    </event-mapping>
+	<!-- Han Sang Hoon : 2009-10-12 end -->
+
+	<!-- Ju Sun Young : 2009-10-29 start -->
+    <url-mapping url="ESM_SPC_0026.do" screen="ESM_SPC_0026.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0026GS.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0026ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0026Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.SpacecontrolinquirySC</service-action-class>
+    </event-mapping>
+	<!-- Ju Sun Young : 2009-10-29 end -->
+	
+	<url-mapping url="ESM_SPC_3001.do" screen="ESM_SPC_3001.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.ESM_SPC_3001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_3001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.ESM_SPC_3001HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.EsmSpc3001Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.dailyforecast.DailyForecastSC</service-action-class>
+    </event-mapping>
+    
+    
+    <!-- CHOI.Y.S : 2010-08-23 start -->
+    <url-mapping url="ESM_SPC_0080.do" screen="ESM_SPC_0080.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0080HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="ESM_SPC_0080GS.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0080ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0080HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SPC_0080GS2.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0080ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0080HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0080Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.SpacecontrolinquirySC</service-action-class>
+    </event-mapping>
+    
+    
+    <!-- Kim Min Ah : 2010-08-23 start -->
+    <url-mapping url="ESM_SPC_0081.do" screen="ESM_SPC_0081.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0081HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0081GS.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0081ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0081HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0081Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.SpacecontrolinquirySC</service-action-class>
+    </event-mapping>
+	<!-- Kim Min Ah : 2010-08-23 end -->
+	
+	<!-- CHOI.Y.S : 2010-10-19 start -->
+    <url-mapping url="ESM_SPC_0082.do" screen="ESM_SPC_0082.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0082HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="ESM_SPC_0082GS.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0082ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0082HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_SPC_0082GS2.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0082ViewAdapter2" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0082HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0082Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.SpacecontrolinquirySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI.Y.S : 2010-10-19 end -->
+
+	<!-- Kim Jong Jun : 2010-11-22 start -->
+    <url-mapping url="ESM_SPC_0083.do" screen="ESM_SPC_0083.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0083HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0083GS.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0083ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0083HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0083Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.SpacecontrolinquirySC</service-action-class>
+    </event-mapping>
+    
+	<!-- Han Sang Hoon : 2009-10-01 start -->
+    <url-mapping url="ESM_SPC_0070.do" screen="ESM_SPC_0070.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0070HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0070GS.do" screen="com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0070ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.ESM_SPC_0070HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.spaceallocationmanage.event.EsmSpc0070Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spaceallocationmanage.SpaceAllocationManageSC</service-action-class>
+    </event-mapping>
+	<!-- Han Sang Hoon : 2009-10-01 end -->    
+	
+	<!-- Han Sang Hoon : 2009-10-13 start -->
+    <url-mapping url="ESM_SPC_0056.do" screen="ESM_SPC_0056.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0056HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0056GS.do" screen="com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0056ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.ESM_SPC_0056HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.spacecontrolinquiry.event.EsmSpc0056Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.spacecontrolinquiry.SpacecontrolinquirySC</service-action-class>
+    </event-mapping>
+	<!-- Han Sang Hoon : 2009-10-13 end -->    
+
+    <!-- Kim Tae Gyun : 2018-11-29 start -->  
+    <url-mapping url="ESM_SPC_0115.do" screen="ESM_SPC_0115.screen" >
+    	<web-action-class>com.clt.apps.opus.esm.spc.basicdatamanage.constraintmaster.event.ESM_SPC_0115HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_SPC_0115GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.basicdatamanage.constraintmaster.event.ESM_SPC_0115HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.basicdatamanage.constraintmaster.event.EsmSpc0115Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.basicdatamanage.ConstraintManageSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="ESM_SPC_0115_Q.do" screen="ESM_SPC_0115_Q.screen" >
+    	<web-action-class>com.clt.apps.opus.esm.spc.basicdatamanage.constraintmaster.event.ESM_SPC_0115HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ESM_SPC_0116.do" screen="ESM_SPC_0116.screen" >
+    </url-mapping>
+    <url-mapping url="ESM_SPC_0117.do" screen="ESM_SPC_0117.screen" >
+    	<web-action-class>com.clt.apps.opus.esm.spc.basicdatamanage.constraintmaster.event.ESM_SPC_0117HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_SPC_0117GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.esm.spc.basicdatamanage.constraintmaster.event.ESM_SPC_0117HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.basicdatamanage.constraintmaster.event.EsmSpc0117Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.basicdatamanage.ConstraintManageSC</service-action-class>
+    </event-mapping>
+    <url-mapping url="ESM_SPC_0118.do" screen="ESM_SPC_0118.screen" >
+    	<web-action-class>com.clt.apps.opus.esm.spc.basicdatamanage.constraintmaster.event.ESM_SPC_0118HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_SPC_0118GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+    	<web-action-class>com.clt.apps.opus.esm.spc.basicdatamanage.constraintmaster.event.ESM_SPC_0118HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.basicdatamanage.constraintmaster.event.EsmSpc0118Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.basicdatamanage.ConstraintManageSC</service-action-class>
+    </event-mapping>
+    <url-mapping url="ESM_SPC_0119.do" screen="ESM_SPC_0119.screen" >
+    	<web-action-class>com.clt.apps.opus.esm.spc.basicdatamanage.constraintmaster.event.ESM_SPC_0119HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ESM_SPC_0119GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+    	<web-action-class>com.clt.apps.opus.esm.spc.basicdatamanage.constraintmaster.event.ESM_SPC_0119HTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.esm.spc.basicdatamanage.constraintmaster.event.EsmSpc0119Event</event-class>
+        <service-action-class>com.clt.apps.opus.esm.spc.basicdatamanage.ConstraintManageSC</service-action-class>
+    </event-mapping>
+    <url-mapping url="ESM_SPC_0120.do" screen="ESM_SPC_0120.screen" >
+    </url-mapping>
+    <url-mapping url="ESM_SPC_0121.do" screen="ESM_SPC_0121.screen" >
+    </url-mapping>
+    <url-mapping url="ESM_SPC_0122.do" screen="ESM_SPC_0122.screen" >
+    </url-mapping>
+    <url-mapping url="ESM_SPC_0123.do" screen="ESM_SPC_0123.screen">
+    </url-mapping>
+    <url-mapping url="ESM_SPC_0123_Q.do" screen="ESM_SPC_0123.screen">
+    </url-mapping>
+    <url-mapping url="ESM_SPC_0123_POP.do" screen="ESM_SPC_0123_POP.screen">
+    </url-mapping>
+    <!-- Kim Tae Gyun : 2018-11-29 end -->  
+    <!-- Kim Tae Gyun : 2018-10-27 start -->  
+    <url-mapping url="ESM_SPC_0043_POP.do" screen="ESM_SPC_0043_POP.screen" >
+        <web-action-class>com.clt.apps.opus.esm.spc.dailyforecast.dailyforecastmanage.event.ESM_SPC_0043HTMLAction</web-action-class>
+    </url-mapping> 
+    <!-- Kim Tae Gyun : 2018-10-27 end -->  
+    
+</mappings>

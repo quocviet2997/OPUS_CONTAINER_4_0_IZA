@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOApInvDTRBLineNoRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT ATTR_CTNT1
+     , DTRB_COA_ACCT_CD
+     , DTRB_COA_VVD_CD
+     , ROWNUM LINE_NO
+FROM
+       ( SELECT DISTINCT ATTR_CTNT1
+                      , DTRB_COA_ACCT_CD
+                      , DTRB_COA_VVD_CD
+       FROM             AP_INV_DTRB
+       WHERE            CSR_NO = @[csr_no]
+       ORDER BY         ATTR_CTNT1
+                      , DTRB_COA_VVD_CD DESC
+       )			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

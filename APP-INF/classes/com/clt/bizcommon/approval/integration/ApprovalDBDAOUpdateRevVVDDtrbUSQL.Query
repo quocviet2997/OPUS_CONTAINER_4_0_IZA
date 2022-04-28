@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOUpdateRevVVDDtrbUSQL">
+			<desc><![CDATA[VVD를 갱신합니다]]></desc>
+			<sql><![CDATA[
+UPDATE AP_INV_DTRB                                                                                                                                 
+   SET DTRB_COA_VVD_CD = (                                                                                                                           
+                          DECODE(                                                                                                                     
+                                 (
+                                  SELECT SUBSTR(D.DTRB_COA_VVD_CD,1,4)||SUBSTR(@[new_gl_dt],3,4)||SUBSTR(D.DTRB_COA_VVD_CD,9,2) NEW_DTRB_COA_VVD_CD             
+                                    FROM AP_INV_HDR  A
+                                       , AP_INV_DTRB D                                                                                 
+                                   WHERE A.CSR_NO = @[csr_no]                                                                                   
+                                     AND A.CSR_NO = D.CSR_NO                                                                            
+                                     AND NVL(A.IF_FLG,'N')     <>'E'                                                                                 
+                                     AND NVL(A.RCV_ERR_FLG,'N')<>'E'                                                                                 
+                                     AND A.GL_DT IS NOT NULL                                                                                         
+                                     AND D.DTRB_COA_VVD_CD LIKE 'CNTC'||'%'                                                                          
+                                     AND SUBSTR(D.DTRB_COA_VVD_CD,5,4) <> SUBSTR(@[new_gl_dt],3,4)                                                              
+                                     AND ROWNUM = 1                                                                                                  
+                                  ), NULL, (SELECT DTRB_COA_VVD_CD FROM AP_INV_DTRB WHERE CSR_NO = @[csr_no] AND ROWNUM = 1)                                  
+                                   ,(SELECT SUBSTR(D.DTRB_COA_VVD_CD,1,4)||SUBSTR(@[new_gl_dt],3,4)||SUBSTR(D.DTRB_COA_VVD_CD,9,2) NEW_DTRB_COA_VVD_CD    
+	                                   FROM AP_INV_HDR  A
+                                          , AP_INV_DTRB D                                                                        
+	                                  WHERE  A.CSR_NO              = @[csr_no]                                                                         
+	                                    AND  A.CSR_NO              = D.CSR_NO                                                                   
+	                                    AND  NVL(A.IF_FLG,'N')     <>'E'                                                                        
+	                                    AND  NVL(A.RCV_ERR_FLG,'N')<>'E'                                                                        
+	                                    AND  A.GL_DT IS NOT NULL                                                                                
+	                                    AND  D.DTRB_COA_VVD_CD LIKE 'CNTC'||'%'                                                                 
+	                                    AND  SUBSTR(D.DTRB_COA_VVD_CD,5,4) <> SUBSTR(@[new_gl_dt],3,4)                                                     
+	                                    AND  ROWNUM = 1                                                                                         
+                                     )
+                                  )                                                                                                          
+                           )                                                                                                                           
+  WHERE CSR_NO = @[csr_no]                                                                                                                                   
+    AND DTRB_COA_VVD_CD LIKE 'CNTC'||'%'                                                                                                             
+			]]></sql>
+			<params>
+				<param name="new_gl_dt" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

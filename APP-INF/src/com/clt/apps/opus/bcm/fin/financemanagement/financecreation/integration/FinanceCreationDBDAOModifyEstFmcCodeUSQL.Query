@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOModifyEstFmcCodeUSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+UPDATE GL_FMC_ENT
+     SET ENT_NM = @[ent_nm],
+         ENT_ABBR_NM  = @[ent_abbr_nm],
+         DELT_FLG          = @[delt_flg],       
+         UPD_DT          = SYSDATE,
+         UPD_USR_ID      = @[upd_usr_id]
+   WHERE GL_MISC_N1ST_CD 	= @[gl_misc_n1st_cd]
+     AND GL_MISC_N2ND_CD 		= @[gl_misc_n2nd_cd]
+     AND GL_MISC_N3RD_CD 		= @[gl_misc_n3rd_cd]			]]></sql>
+			<params>
+				<param name="ent_nm" type="12" value="" out="N"/>
+				<param name="ent_abbr_nm" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="gl_misc_n1st_cd" type="12" value="" out="N"/>
+				<param name="gl_misc_n2nd_cd" type="12" value="" out="N"/>
+				<param name="gl_misc_n3rd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

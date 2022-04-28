@@ -1,0 +1,1064 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+	<!-- saeil kim : 2009-04-24 start -->
+    <url-mapping url="FNS_INV_0006.do" screen="FNS_INV_0006.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0006HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="FNS_INV_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FnsInv0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-04-24 end -->
+
+	<!-- saeil kim : 2009-04-24 start -->
+    <url-mapping url="INVCommon.do" screen="INVCommon.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.invcommon.invcommon.event.INVCommonHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="INVCommonGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.invcommon.invcommon.event.INVCommonHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.invcommon.invcommon.event.InvCommonEvent</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.invcommon.INVCommonSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-04-24 end -->
+
+	<!-- saeil kim : 2009-04-27 start -->
+    <url-mapping url="FNS_INV_0022.do" screen="FNS_INV_0022.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.manualarcreation.event.FNS_INV_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.manualarcreation.event.FNS_INV_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.manualarcreation.event.FnsInv0022Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.AccountReceivableInvoiceCreationSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-04-27 end -->
+
+	<!-- saeil kim : 2009-04-27 start -->
+    <url-mapping url="FNS_INV_0023.do" screen="FNS_INV_0023.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.manualarcreation.event.FNS_INV_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.manualarcreation.event.FNS_INV_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.manualarcreation.event.FnsInv0023Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.AccountReceivableInvoiceCreationSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-04-27 end -->
+
+	<!-- saeil kim : 2009-04-27 start -->
+    <url-mapping url="FNS_INV_0007.do" screen="FNS_INV_0007.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FnsInv0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-04-27 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <url-mapping url="FNS_INV_0008.do" screen="FNS_INV_0008.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FnsInv0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-05-04 end -->
+	
+	<!-- KIM OK RYE : 2014-12-12 start -->
+    <url-mapping url="FNS_INV_0081.do" screen="FNS_INV_0081.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0081HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0081GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0081HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FnsInv0081Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- KIM OK RYE : 2014-12-12 end -->
+	
+
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <url-mapping url="FNS_INV_0089.do" screen="FNS_INV_0089.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0089HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0089GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0089HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FnsInv0089Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <url-mapping url="FNS_INV_0003.do" screen="FNS_INV_0003.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.accountreceivableedisend.event.FNS_INV_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.accountreceivableedisend.event.FNS_INV_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.accountreceivableedisend.event.FnsInv0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <url-mapping url="FNS_INV_0018.do" screen="FNS_INV_0018.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FnsInv0018Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <url-mapping url="FNS_INV_0030.do" screen="FNS_INV_0030.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0030Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-05-04 end -->
+
+ 	<!-- saeil kim : 2009-05-04 start -->
+    <url-mapping url="FNS_INV_0031.do" screen="FNS_INV_0031.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0031GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0031Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	
+	<!-- saeil kim : 2009-05-04 start -->
+    <url-mapping url="FNS_INV_0033.do" screen="FNS_INV_0033.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FnsInv0033Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <url-mapping url="FNS_INV_0059.do" screen="FNS_INV_0059.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0059HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0059GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0059HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0059Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-05-04 end -->
+
+		<!-- saeil kim : 2009-05-04 start -->
+    <url-mapping url="FNS_INV_0094_01.do" screen="FNS_INV_0094_01.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0094_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0094_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0094_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FnsInv009401Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <url-mapping url="FNS_INV_0094_02.do" screen="FNS_INV_0094_02.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0094_02HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0094_02GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0094_02HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FnsInv009402Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <url-mapping url="FNS_INV_0098.do" screen="FNS_INV_0098.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0098HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0098GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0098HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FnsInv0098Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-05-04 end -->
+
+	<!-- saeil kim : 2009-05-04 start -->
+    <url-mapping url="FNS_INV_0099.do" screen="FNS_INV_0099.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0099HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0099GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0099HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0099Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-05-04 end -->
+	
+	<!-- Jung Hwi Taek : 2009-05-11 start -->
+    <url-mapping url="FNS_INV_0076.do" screen="FNS_INV_0076.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0076HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0076GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0076HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FnsInv0076Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Hwi Taek : 2009-05-11 end -->
+<!-- Han Dong Hoon : 2009-05-19 start -->
+    <url-mapping url="FNS_INV_0015.do" screen="FNS_INV_0015.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FNS_INV_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FNS_INV_0015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FnsInv0015Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Han Dong Hoon : 2009-05-19 end -->
+	
+	<!-- Jung Hwi Taek : 2009-05-15 start -->
+    <url-mapping url="FNS_INV_0071.do" screen="FNS_INV_0071.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.manualarcreation.event.FNS_INV_0071HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0071GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.manualarcreation.event.FNS_INV_0071HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.manualarcreation.event.FnsInv0071Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.AccountReceivableInvoiceCreationSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Hwi Taek : 2009-05-15 end -->
+
+	<!-- Han Dong Hoon : 2009-05-28 start -->
+    <url-mapping url="FNS_INV_0025.do" screen="FNS_INV_0025.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FnsInv0025Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Han Dong Hoon : 2009-05-28 end -->
+	
+	<!-- Jung Jin Park : 2009-05-27 start -->
+    <url-mapping url="FNS_INV_0053.do" screen="FNS_INV_0053.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0053GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0053Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jin Park : 2009-05-27 end -->
+
+	<!-- Han Dong Hoon : 2009-05-28 start -->
+    <url-mapping url="FNS_INV_0086.do" screen="FNS_INV_0086.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FNS_INV_0086HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0086GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FNS_INV_0086HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FnsInv0086Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Han Dong Hoon : 2009-05-28 end -->
+	
+
+	<!-- saeil kim : 2009-06-04 start -->
+    <url-mapping url="FNS_INV_0016.do" screen="FNS_INV_0016.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FnsInv0016Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-06-04 end -->
+
+    
+	<!-- saeil kim : 2009-06-05 start -->
+    <url-mapping url="FNS_INV_0090.do" screen="FNS_INV_0090.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FNS_INV_0090HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0090GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FNS_INV_0090HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FnsInv0090Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-06-05 end -->
+
+	<!-- saeil kim : 2009-06-05 start -->
+    <url-mapping url="FNS_INV_0091.do" screen="FNS_INV_0091.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FNS_INV_0091HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0091GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FNS_INV_0091HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FnsInv0091Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-06-05 end -->
+
+	<!-- Jung Hwi Taek : 2009-06-05 start -->
+    <url-mapping url="FNS_INV_0087.do" screen="FNS_INV_0087.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FNS_INV_0087HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0087GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FNS_INV_0087HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FnsInv0087Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Hwi Taek : 2009-06-05 end -->
+	
+	<!-- Han Dong Hoon : 2009-06-05 start -->
+    <url-mapping url="FNS_INV_0072.do" screen="FNS_INV_0072.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0072HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0072GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0072HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FnsInv0072Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Han Dong Hoon : 2009-06-05 end -->
+	
+	<!-- Jung Jin Park : 2009-06-08 start -->
+    <url-mapping url="FNS_INV_0009.do" screen="FNS_INV_0009.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0009HTMLAction</web-action-class>
+    </url-mapping>    
+    
+     <url-mapping url="FNS_INV_0009_POP.do" screen="FNS_INV_0009_POP.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jin Park : 2009-06-08 end -->
+	
+
+	<!-- Jung Hwi Taek : 2009-06-09 start -->
+    <url-mapping url="FNS_INV_0085.do" screen="FNS_INV_0085.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0085HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0085GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0085HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0085Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Hwi Taek : 2009-06-09 end -->
+
+<!-- Han Dong Hoon : 2009-06-09 start -->
+    <url-mapping url="FNS_INV_0073.do" screen="FNS_INV_0073.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0073HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0073GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0073HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FnsInv0073Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Han Dong Hoon : 2009-06-09 end -->
+
+	<!-- Jung Jin Park : 2009-06-11 start -->
+    <url-mapping url="FNS_INV_0010.do" screen="FNS_INV_0010.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jin Park : 2009-06-11 end -->
+
+	<!-- Jung Jin Park : 2009-06-16 start -->
+    <url-mapping url="FNS_INV_0011.do" screen="FNS_INV_0011.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jin Park : 2009-06-16 end -->
+	
+	<!-- Jung Hwi Taek : 2009-06-17 start -->
+    <url-mapping url="FNS_INV_0034_01.do" screen="FNS_INV_0034_01.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FNS_INV_0034_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0034_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FNS_INV_0034_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FnsInv003401Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Hwi Taek : 2009-06-17 end -->
+	
+	<!-- Han Dong Hoon : 2009-06-30 start -->
+    <url-mapping url="FNS_INV_0503.do" screen="FNS_INV_0503.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FNS_INV_0034_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0503GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FNS_INV_0034_01HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FnsInv003401Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Han Dong Hoon : 2009-06-30 end -->
+
+	<!-- Jung Hwi Taek : 2009-06-30 start -->
+    <url-mapping url="FNS_INV_0035.do" screen="FNS_INV_0035.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FNS_INV_0035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0035GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FNS_INV_0035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FnsInv0035Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Hwi Taek : 2009-06-30 end -->
+
+
+	<!-- Jung Hwi Taek : 2009-07-06 start -->
+    <url-mapping url="FNS_INV_0034_02.do" screen="FNS_INV_0034_02.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FNS_INV_0034_02HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0034_02GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FNS_INV_0034_02HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FnsInv003402Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Hwi Taek : 2009-07-06 end -->
+
+	<!-- Hyun-Jae Jeong : 2017-06-16 start -->
+    <url-mapping url="FNS_INV_0034_03.do" screen="FNS_INV_0034_03.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FNS_INV_0034_03HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0034_03GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FNS_INV_0034_03HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.invoiceissue.event.FnsInv003403Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Hyun-Jae Jeong : 2017-06-16 end -->
+	
+	<!-- saeil kim : 2009-07-07 start -->
+    <url-mapping url="FNS_INV_0100.do" screen="FNS_INV_0100.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0100HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0100GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0100HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FnsInv0100Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-07-07 end -->
+
+	<!-- saeil kim : 2009-07-07 start -->
+    <url-mapping url="FNS_INV_0101.do" screen="FNS_INV_0101.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FnsInv0101Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-07-07 end -->
+
+	<!-- Jung Jin Park : 2009-07-23 start -->
+    <url-mapping url="FNS_INV_0057.do" screen="FNS_INV_0057.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0057HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0057GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0057HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0057Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jin Park : 2009-07-23 end -->
+
+
+	<!-- Jung Hwi Taek : 2009-08-10 start -->
+    <url-mapping url="FNS_INV_0106.do" screen="FNS_INV_0106.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0106HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0106GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0106HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0106Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Hwi Taek : 2009-08-10 end -->
+	
+	<!-- saeil kim : 2009-08-10 start -->
+    <url-mapping url="FNS_INV_0017.do" screen="FNS_INV_0017.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FnsInv0017Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- saeil kim : 2009-06-04 end -->
+	
+	
+	<!-- Jung Jin Park : 2009-08-25 start -->
+    <url-mapping url="FNS_INV_0029.do" screen="FNS_INV_0029.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0029GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FnsInv0029Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jin Park : 2009-08-25 end -->
+	
+	<!-- Choi Do Soon : 2009-08-26 start -->
+    <url-mapping url="FNS_INV_0027.do" screen="FNS_INV_0027.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FnsInv0027Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Do Soon : 2009-08-26 end -->
+	
+	<!-- Jung Jin Park : 2009-08-26 start -->
+    <url-mapping url="FNS_INV_0022_01.do" screen="FNS_INV_0022_01.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.manualarcreation.event.FNS_INV_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0022_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.manualarcreation.event.FNS_INV_0022HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.manualarcreation.event.FnsInv0022Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicecreation.AccountReceivableInvoiceCreationSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jin Park : 2009-08-26 end -->
+	
+	
+	<!-- Choi Do Soon : 2009-10-07 start -->
+    <url-mapping url="FNS_INV_0028.do" screen="FNS_INV_0028.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FnsInv0028Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Do Soon : 2009-10-07 end -->
+	
+	<!-- Choi Woo-Seok : 2009-10-24 start -->
+    <url-mapping url="FNS_INV_0108.do" screen="FNS_INV_0108.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0108HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0108GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0108HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FnsInv0108Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2009-10-24 end -->
+	
+	
+	<!-- Jung Jin Park : 2009-10-27 start -->
+    <url-mapping url="FNS_INV_0109.do" screen="FNS_INV_0109.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0109HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0109GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0109HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0109Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Jin Park : 2009-10-27 end -->
+	
+	<!-- Jung Hwi Taek : 2009-06-05 start -->
+    <url-mapping url="FNS_INV_0034_02_prev.do" screen="FNS_INV_0034_02_prev.screen" >       
+    </url-mapping>
+	<!-- Jung Hwi Taek : 2009-06-05 end -->
+	
+	<!-- Choi Woo-Seok : 2010-02-19 start -->
+    <url-mapping url="FNS_INV_0110.do" screen="FNS_INV_0110.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0110HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0110GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0110HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0110Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Woo-Seok : 2010-02-19 end -->
+	
+	<!-- KIM HYUN HWA : 2010-12-13 start -->
+    <url-mapping url="FNS_INV_0115.do" screen="FNS_INV_0115.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0115HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0115GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0115HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0115Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- KIM HYUN HWA : 2010-12-13 end -->
+	
+	<!-- Choi Do Soon : 2010-12-27 start -->
+    <url-mapping url="FNS_INV_0116.do" screen="FNS_INV_0116.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0116HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0116GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0116HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0116Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Choi Do Soon : 2010-12-27 end -->
+	
+	
+	<!-- Han Dong Hoon : 2009-05-19 start -->
+    <url-mapping url="FNS_INV_0013.do" screen="FNS_INV_0013.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FNS_INV_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FNS_INV_0013HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoicecustomermgt.event.FnsInv0013Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Han Dong Hoon : 2009-05-19 end -->
+	
+	<!-- Park Sung Yong : 2014-11-11 start -->
+	<url-mapping url="FNS_INV_0050.do" screen="FNS_INV_0050.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0050GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0050Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Park Sung Yong : 2014-11-11 end -->
+    
+    <!-- Park Sung Yong : 2014-11-11 start -->
+	<url-mapping url="FNS_INV_0051.do" screen="FNS_INV_0051.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0051Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Park Sung Yong : 2014-11-11 end -->
+    
+    <!-- Park Sung Yong : 2014-11-11 start -->
+	<url-mapping url="FNS_INV_0102.do" screen="FNS_INV_0102.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0102HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0102GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0102HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FnsInv0102Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Park Sung Yong : 2014-11-11 end -->
+    
+    <!-- Park Sung Yong : 2014-11-11 start -->
+	<url-mapping url="FNS_INV_0103.do" screen="FNS_INV_0103.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0103GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0103Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Park Sung Yong : 2014-11-11 end -->
+    
+    <!-- Park Sung Yong : 2014-11-11 start -->
+	<url-mapping url="FNS_INV_0104.do" screen="FNS_INV_0104.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0104GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0104Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Park Sung Yong : 2014-11-11 end -->
+    
+    <!-- Park Sung Yong : 2014-11-11 start -->
+	<url-mapping url="FNS_INV_0118.do" screen="FNS_INV_0118.screen" >
+    </url-mapping>
+    <!-- Park Sung Yong : 2014-11-11 end -->
+    
+    <!-- Park Sung Yong : 2014-11-25 start -->
+	<url-mapping url="FNS_INV_0112.do" screen="FNS_INV_0112.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.accountreceivableedisend.event.FNS_INV_0112HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0112GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.accountreceivableedisend.event.FNS_INV_0112HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.accountreceivableedisend.event.FnsInv0112Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Park Sung Yong : 2014-11-25 end -->
+    
+    <!-- Park Sung Yong : 2014-12-18 start -->
+	<url-mapping url="FNS_INV_0901.do" screen="FNS_INV_0901.screen" >
+    </url-mapping>
+    <!-- Park Sung Yong : 2014-12-18 end -->
+    
+    <!-- IY Cho : 2014-11-20 start -->
+	<url-mapping url="FNS_INV_0105.do" screen="FNS_INV_0105.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FnsInv0105Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+    
+	<url-mapping url="FNS_INV_0107.do" screen="FNS_INV_0107.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0107HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="FNS_INV_0107GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FNS_INV_0107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.arinvoiceexratemgt.event.FnsInv0107Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+    <!-- IY Cho : 2014-11-20 end -->
+    
+    <!-- park myoung sin : 2014.12.17 start -->
+    <url-mapping url="FNS_INV_0113.do" screen="FNS_INV_0113.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.accountreceivableedisend.event.FNS_INV_0113HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0113GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.accountreceivableedisend.event.FNS_INV_0113HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.accountreceivableedisend.event.FnsInv0113Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- park myoung sin : 2014.12.17  end -->
+	
+	<!-- Park Sung Yong : 2015-08-13 start -->
+    <url-mapping url="FNS_INV_9999.do" screen="FNS_INV_9999.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_9999HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_9999GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FNS_INV_9999HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoicecorrection.event.FnsInv9999Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Park Sung Yong : 2015-08-13 end -->
+	
+	<!-- Park Sung Yong : 2015-11-25 start -->
+    <url-mapping url="FNS_INV_9001.do" screen="FNS_INV_9001.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemigration.accountreceivableinvoicemigration.event.FNS_INV_9001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_9001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemigration.accountreceivableinvoicemigration.event.FNS_INV_9001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemigration.accountreceivableinvoicemigration.event.FnsInv9001Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemigration.AccountReceivableInvoiceMigrationSC</service-action-class>
+    </event-mapping>
+	<!-- Park Sung Yong : 2015-11-25 end -->
+	
+	<!-- Hyun Hwa Kim : 2017-04-19 start -->
+    <url-mapping url="FNS_INV_0120.do" screen="FNS_INV_0120.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0120HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0120GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0120HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FnsInv0120Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+    
+    <url-mapping url="FNS_INV_0121.do" screen="FNS_INV_0121.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0121HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0121GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0121HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FnsInv0121Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Hyun Hwa Kim : 2017-04-19 end -->
+	
+	<!-- Park Kwang Hui : 2017-06-08 start -->
+	<url-mapping url="FNS_INV_0122.do" screen="FNS_INV_0122.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0122HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0122GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FNS_INV_0122HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.arinvoiceinquiry.event.FnsInv0122Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemgt.AccountReceivableInvoiceMgtSC</service-action-class>
+    </event-mapping>
+ 	<!-- Park Kwang Hui : 2017-06-08 end -->
+	
+	<!-- Jeong Wook Yoo  : 2017-11-01 start -->
+    <url-mapping url="FNS_INV_0125.do" screen="FNS_INV_0125.screen" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0125HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FNS_INV_0125GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FNS_INV_0125HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.generalarinvoicemasterdatamgt.event.FnsInv0125Event</event-class>
+        <service-action-class>com.clt.apps.opus.fns.inv.accountreceivableinvoicemasterdatamgt.AccountReceivableInvoiceMasterDataMgtSC</service-action-class>
+    </event-mapping>    
+	<!-- Jeong Wook Yoo  : 2017-11-01 end -->
+	
+</mappings>

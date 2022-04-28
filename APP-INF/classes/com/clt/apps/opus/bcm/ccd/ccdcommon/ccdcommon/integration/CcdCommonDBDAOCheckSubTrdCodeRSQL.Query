@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckSubTrdCodeRSQL">
+			<desc><![CDATA[MDM_SUB_TRD 테이블에 strdCd 에 
+해당하는 정보가 있는지 유무를 리턴한다.]]></desc>
+			<sql><![CDATA[
+SELECT SUB_TRD_CD 
+FROM MDM_SUB_TRD 
+WHERE 1=1 
+AND SUB_TRD_CD = @[sub_trd_cd]
+AND DELT_FLG ='N'			]]></sql>
+			<params>
+				<param name="sub_trd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

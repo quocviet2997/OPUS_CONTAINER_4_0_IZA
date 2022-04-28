@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOUdtApInvHdrUSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+UPDATE AP_INV_HDR
+SET    INV_DESC =
+       ( SELECT
+               (SELECT M.ACCT_ENG_NM
+               FROM    MDM_ACCOUNT M
+               WHERE   M.ACCT_CD = A.DTRB_COA_ACCT_CD
+               ) MAX_ACCT_NM
+       FROM
+               ( SELECT  SUM(INV_AMT) SUM_AMT,
+                        DTRB_COA_ACCT_CD
+               FROM     AP_INV_DTRB D
+               WHERE    D.CSR_NO = @[csr_no]
+               GROUP BY D.DTRB_COA_CO_CD      ,
+                        D.DTRB_COA_RGN_CD     ,
+                        D.DTRB_COA_CTR_CD     ,
+                        D.DTRB_COA_ACCT_CD    ,
+                        D.DTRB_COA_INTER_CO_CD,
+                        D.DTRB_COA_VVD_CD     ,
+                        D.INV_DESC            ,
+                        D.ATTR_CTNT3          ,
+                        D.ATTR_CTNT1          ,
+                        D.LINE_NO
+               ORDER BY SUM_AMT DESC
+               ) A
+       WHERE   ROWNUM = 1
+       )
+WHERE  CSR_NO = @[csr_no]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

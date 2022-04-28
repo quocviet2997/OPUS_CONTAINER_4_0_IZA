@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOModifyGlMonthlyExchangeRatesUSQL">
+			<desc><![CDATA[ModifyGlMonthlyExchangeRates]]></desc>
+			<sql><![CDATA[
+UPDATE GL_MON_XCH_RT
+SET
+ACCT_XCH_RT_YRMON = @[acct_xch_rt_yrmon]
+, ACCT_XCH_RT_LVL = @[acct_xch_rt_lvl]
+, CURR_CD = @[curr_cd]
+, USD_LOCL_XCH_RT = @[usd_locl_xch_rt]
+, LOCL_CNY_XCH_RT = @[locl_cny_xch_rt]
+, USD_CNY_XCH_RT = @[usd_cny_xch_rt]
+, DELT_FLG = @[delt_flg]
+, UPD_USR_ID = @[upd_usr_id]
+, UPD_DT = SYSDATE
+, ACCT_RT_USR_LVL = @[acct_rt_usr_lvl]
+WHERE 1 = 1
+AND ACCT_XCH_RT_YRMON = @[h_acct_xch_rt_yrmon]
+AND ACCT_XCH_RT_LVL = @[h_acct_xch_rt_lvl]
+AND CURR_CD = @[h_curr_cd]			]]></sql>
+			<params>
+				<param name="acct_xch_rt_yrmon" type="12" value="" out="N"/>
+				<param name="acct_xch_rt_lvl" type="12" value="" out="N"/>
+				<param name="curr_cd" type="12" value="" out="N"/>
+				<param name="usd_locl_xch_rt" type="12" value="" out="N"/>
+				<param name="locl_cny_xch_rt" type="12" value="" out="N"/>
+				<param name="usd_cny_xch_rt" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="acct_rt_usr_lvl" type="12" value="" out="N"/>
+				<param name="h_acct_xch_rt_yrmon" type="12" value="" out="N"/>
+				<param name="h_acct_xch_rt_lvl" type="12" value="" out="N"/>
+				<param name="h_curr_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

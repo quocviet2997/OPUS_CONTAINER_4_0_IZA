@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MenuDAOComMnuCfgVODSQL">
+			<desc><![CDATA[delete menu   ]]></desc>
+			<sql><![CDATA[
+delete from com_mnu_cfg
+ where mnu_cfg_cd = @[mnu_cfg_cd]                                                     
+ and   prnt_pgm_no = @[prnt_pgm_no]                                                    
+ and   chd_pgm_no = @[chd_pgm_no]			]]></sql>
+			<params>
+				<param name="mnu_cfg_cd" type="12" value="" out="N"/>
+				<param name="prnt_pgm_no" type="12" value="" out="N"/>
+				<param name="chd_pgm_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

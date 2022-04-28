@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CSRExternalFinderDBDAOAddApPayInvCSQL">
+			<desc><![CDATA[AP_PAY_INV 생성]]></desc>
+			<sql><![CDATA[
+INSERT INTO  AP_PAY_INV
+       (
+             INV_RGST_NO
+            ,INV_SUB_SYS_CD
+            ,INV_OFC_CD
+            ,COST_OFC_CD
+            ,VNDR_SEQ
+            ,INV_NO
+            ,INV_ISS_DT
+            ,INV_RCV_DT
+            ,INV_EFF_DT
+            ,INV_CFM_DT
+            ,VNDR_TERM_NM
+            ,GL_DT
+            ,TTL_LSS_DIV_CD
+            ,INV_CURR_CD
+            ,INV_TTL_AMT
+            ,INV_VAT_AMT
+            ,INV_NET_AMT
+            ,WHLD_TAX_AMT
+            ,EQ_TP_CD
+            ,INV_RMK
+            ,INV_STS_CD
+            ,CSR_NO
+			,AP_PAY_AMT
+			,PSO_TRNS_SLP_CTNT
+            ,ERR_CSR_NO
+            ,DELT_FLG
+            ,CRE_USR_ID
+            ,CRE_DT
+            ,UPD_USR_ID
+            ,UPD_DT
+			,PAY_DUE_DT
+            ,STE_GOVE_GDS_SVC_TAX_AMT
+            ,CENT_GOVE_GDS_SVC_TAX_AMT
+            ,INTG_GOVE_GDS_SVC_TAX_AMT
+            ,CESS_AMT
+            ,IDA_WHLD_TAX_AMT
+            ,IDA_GST_TAX_DDCT_SRC_AMT
+            ,SVC_ACCTG_CD
+            ,PPD_NO
+            ,PPD_DTRB_NO
+            ,PPD_APLY_AMT
+            ,PPD_GL_DT
+            ,AP_RVS_AMT
+       )
+       VALUES
+       (
+             @[inv_rgst_no]
+            ,@[inv_sub_sys_cd]
+            ,@[inv_ofc_cd]
+            ,@[cost_ofc_cd] 
+            ,@[vndr_seq]
+            ,@[inv_no]
+            ,TO_DATE(@[inv_iss_dt], 'YYYYMMDD')
+            ,TO_DATE(@[inv_rcv_dt], 'YYYYMMDD')
+			,TO_DATE(
+				(SELECT DECODE(A.STS ,'O'	,@[inv_iss_dt]
+                          			 ,'C'	,DECODE(B.DT, '01', NULL, B.DT)
+                          			 ,'N'	,NULL)
+	              FROM
+	                      (SELECT NVL(
+	                                  (SELECT
+	                                          CASE
+	                                                  WHEN SUM(DECODE(CLZ_STS_CD
+	                                                                ,'O',1,0)) > 0
+	                                                  THEN 'O'
+	                                                  ELSE 'C'
+	                                          END STS
+	                                  FROM    AP_PERIOD
+	                                  WHERE   SYS_DIV_CD = '15'
+	                                      AND EFF_YRMON  = SUBSTR(@[inv_iss_dt],1,6)
+	                                      AND OFC_CD    IN (@[cost_ofc_cd]
+	                                                       ,(SELECT M.AR_HD_QTR_OFC_CD
+	                                                         FROM    MDM_ORGANIZATION M
+	                                                         WHERE   M.OFC_CD = @[cost_ofc_cd]
+	                                                         ) )
+	                                      AND AR_AP_DIV_CD = 'P'
+	                                  ),'C') STS
+	                      FROM    DUAL
+	                      ) A
+	                    , (SELECT MIN(EFF_YRMON)
+	                                      ||'01' DT
+	                      FROM    AP_PERIOD
+	                      WHERE   SYS_DIV_CD   = '15'
+	                          AND EFF_YRMON   >= SUBSTR(@[inv_iss_dt],1,6)
+	                          AND AR_AP_DIV_CD = 'P'
+	                          AND OFC_CD      IN (@[cost_ofc_cd]
+	                                            ,(SELECT M.AR_HD_QTR_OFC_CD
+	                                              FROM    MDM_ORGANIZATION M
+	                                              WHERE   M.OFC_CD = @[cost_ofc_cd]
+	                                              ) )
+	                          AND CLZ_STS_CD = 'O'
+	                      ) B
+	              ) 
+    		, 'YYYYMMDD')
+			/*INV_EFF_DT 를 GL_DT로 세팅*/
+            ,NVL(GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[inv_ofc_cd]), SYSDATE)
+            ,@[vndr_term_nm]
+            ,(SELECT DECODE(A.STS	,'O'	,@[inv_iss_dt]
+                          			,'C'	,DECODE(B.DT, '01', NULL, B.DT)
+                          			,'N'	,NULL)
+              FROM
+                      (SELECT NVL(
+                                  (SELECT
+                                          CASE
+                                                  WHEN SUM(DECODE(CLZ_STS_CD
+                                                                ,'O',1,0)) > 0
+                                                  THEN 'O'
+                                                  ELSE 'C'
+                                          END STS
+                                  FROM    AP_PERIOD
+                                  WHERE   SYS_DIV_CD = '15'
+                                      AND EFF_YRMON  = SUBSTR(@[inv_iss_dt],1,6)
+                                      AND OFC_CD    IN (@[cost_ofc_cd]
+                                                       ,(SELECT M.AR_HD_QTR_OFC_CD
+                                                         FROM    MDM_ORGANIZATION M
+                                                         WHERE   M.OFC_CD = @[cost_ofc_cd]
+                                                         ) )
+                                      AND AR_AP_DIV_CD = 'P'
+                                  ),'C') STS
+                      FROM    DUAL
+                      ) A
+                    , (SELECT MIN(EFF_YRMON)
+                                      ||'01' DT
+                      FROM    AP_PERIOD
+                      WHERE   SYS_DIV_CD   = '15'
+                          AND EFF_YRMON   >= SUBSTR(@[inv_iss_dt],1,6)
+                          AND AR_AP_DIV_CD = 'P'
+                          AND OFC_CD      IN (@[cost_ofc_cd]
+                                            ,(SELECT M.AR_HD_QTR_OFC_CD
+                                              FROM    MDM_ORGANIZATION M
+                                              WHERE   M.OFC_CD = @[cost_ofc_cd]
+                                              ) )
+                          AND CLZ_STS_CD = 'O'
+                      ) B
+              )
+              /*GL_DT*/
+            ,@[ttl_lss_div_cd]
+            ,@[inv_curr_cd]
+            ,ROUND(NVL(@[inv_ttl_amt],0), NVL((SELECT MC.DP_PRCS_KNT FROM MDM_CURRENCY MC WHERE MC.CURR_CD = @[inv_curr_cd] AND ROWNUM = 1),0))
+            ,ROUND(NVL(@[inv_vat_amt],0), NVL((SELECT MC.DP_PRCS_KNT FROM MDM_CURRENCY MC WHERE MC.CURR_CD = @[inv_curr_cd] AND ROWNUM = 1),0))
+            ,ROUND(NVL(@[inv_net_amt],0), NVL((SELECT MC.DP_PRCS_KNT FROM MDM_CURRENCY MC WHERE MC.CURR_CD = @[inv_curr_cd] AND ROWNUM = 1),0))
+            ,ROUND(NVL(@[whld_tax_amt],0), NVL((SELECT MC.DP_PRCS_KNT FROM MDM_CURRENCY MC WHERE MC.CURR_CD = @[inv_curr_cd] AND ROWNUM = 1),0))
+            ,@[eq_tp_cd]
+            ,@[inv_rmk]
+            ,'C'
+              /*inv_sts_cd*/
+            ,''
+              /*csr_no*/
+            ,0
+              /*ap_pay_amt*/
+			,@[pso_trns_slp_ctnt]
+            ,''
+            ,NVL(@[delt_flg], 'N')
+            ,@[cre_usr_id]
+            ,NVL(GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[inv_ofc_cd]), SYSDATE)
+            ,@[upd_usr_id]
+            ,NVL(GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[inv_ofc_cd]), SYSDATE)
+		    ,TO_DATE(@[pay_due_dt], 'YYYYMMDD')
+            ,ROUND(NVL(@[ste_gove_gds_svc_tax_amt],0), NVL((SELECT MC.DP_PRCS_KNT FROM MDM_CURRENCY MC WHERE MC.CURR_CD = @[inv_curr_cd] AND ROWNUM = 1),0))
+            ,ROUND(NVL(@[cent_gove_gds_svc_tax_amt],0), NVL((SELECT MC.DP_PRCS_KNT FROM MDM_CURRENCY MC WHERE MC.CURR_CD = @[inv_curr_cd] AND ROWNUM = 1),0))
+            ,ROUND(NVL(@[intg_gove_gds_svc_tax_amt],0), NVL((SELECT MC.DP_PRCS_KNT FROM MDM_CURRENCY MC WHERE MC.CURR_CD = @[inv_curr_cd] AND ROWNUM = 1),0))
+            ,ROUND(NVL(@[cess_amt],0), NVL((SELECT MC.DP_PRCS_KNT FROM MDM_CURRENCY MC WHERE MC.CURR_CD = @[inv_curr_cd] AND ROWNUM = 1),0))
+            ,ROUND(NVL(@[ida_whld_tax_amt],0), NVL((SELECT MC.DP_PRCS_KNT FROM MDM_CURRENCY MC WHERE MC.CURR_CD = @[inv_curr_cd] AND ROWNUM = 1),0))
+            ,ROUND(NVL(@[ida_gst_tax_ddct_src_amt],0), NVL((SELECT MC.DP_PRCS_KNT FROM MDM_CURRENCY MC WHERE MC.CURR_CD = @[inv_curr_cd] AND ROWNUM = 1),0))
+            ,@[svc_acctg_cd]
+            ,@[ppd_no]
+            ,@[ppd_dtrb_no]
+            ,@[ppd_aply_amt]
+            ,@[ppd_gl_dt]
+            ,ROUND(NVL(@[ap_rvs_amt],0), NVL((SELECT MC.DP_PRCS_KNT FROM MDM_CURRENCY MC WHERE MC.CURR_CD = @[inv_curr_cd] AND ROWNUM = 1),0))
+       )			]]></sql>
+			<params>
+				<param name="inv_rgst_no" type="12" value="" out="N"/>
+				<param name="inv_sub_sys_cd" type="12" value="" out="N"/>
+				<param name="inv_ofc_cd" type="12" value="" out="N"/>
+				<param name="cost_ofc_cd" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+				<param name="inv_no" type="12" value="" out="N"/>
+				<param name="inv_iss_dt" type="12" value="" out="N"/>
+				<param name="inv_rcv_dt" type="12" value="" out="N"/>
+				<param name="vndr_term_nm" type="12" value="" out="N"/>
+				<param name="ttl_lss_div_cd" type="12" value="" out="N"/>
+				<param name="inv_curr_cd" type="12" value="" out="N"/>
+				<param name="inv_ttl_amt" type="12" value="" out="N"/>
+				<param name="inv_vat_amt" type="12" value="" out="N"/>
+				<param name="inv_net_amt" type="12" value="" out="N"/>
+				<param name="whld_tax_amt" type="12" value="" out="N"/>
+				<param name="eq_tp_cd" type="12" value="" out="N"/>
+				<param name="inv_rmk" type="12" value="" out="N"/>
+				<param name="pso_trns_slp_ctnt" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="pay_due_dt" type="12" value="" out="N"/>
+				<param name="ste_gove_gds_svc_tax_amt" type="12" value="" out="N"/>
+				<param name="cent_gove_gds_svc_tax_amt" type="12" value="" out="N"/>
+				<param name="intg_gove_gds_svc_tax_amt" type="12" value="" out="N"/>
+				<param name="cess_amt" type="12" value="" out="N"/>
+				<param name="ida_whld_tax_amt" type="12" value="" out="N"/>
+				<param name="ida_gst_tax_ddct_src_amt" type="12" value="" out="N"/>
+				<param name="svc_acctg_cd" type="12" value="" out="N"/>
+				<param name="ppd_no" type="12" value="" out="N"/>
+				<param name="ppd_dtrb_no" type="12" value="" out="N"/>
+				<param name="ppd_aply_amt" type="12" value="" out="N"/>
+				<param name="ppd_gl_dt" type="12" value="" out="N"/>
+				<param name="ap_rvs_amt" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

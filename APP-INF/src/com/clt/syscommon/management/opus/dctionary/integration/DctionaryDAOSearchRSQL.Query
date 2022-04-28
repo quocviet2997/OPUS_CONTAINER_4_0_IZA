@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="DctionaryDAOSearchRSQL">
+			<desc><![CDATA[약어 조회]]></desc>
+			<sql><![CDATA[
+SELECT 
+	ABBR_CD
+,	WD_NM
+,	WD_RMK
+,	CRE_USR_ID
+,	CRE_DT
+,	UPD_USR_ID
+,	UPD_DT
+FROM COM_DICTIONARY
+WHERE	ABBR_CD = @[abbr_cd]
+			]]></sql>
+			<params>
+				<param name="abbr_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

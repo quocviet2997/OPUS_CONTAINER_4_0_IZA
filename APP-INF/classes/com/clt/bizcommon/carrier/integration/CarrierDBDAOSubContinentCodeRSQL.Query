@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CarrierDBDAOSubContinentCodeRSQL">
+			<desc><![CDATA[DESC Enter..]]></desc>
+			<sql><![CDATA[
+SELECT (100000 + (ROWNUM * 10) ) AS SORTKET,
+SCONTI_CD AS CODE,
+SCONTI_NM AS NAME
+FROM MDM_SUBCONTINENT
+WHERE NVL(DELT_FLG, 'N') <> 'Y'
+#if(${conti_cd} != '')
+AND CONTI_CD = @[conti_cd]
+#end
+ORDER BY 1			]]></sql>
+			<params>
+				<param name="conti_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

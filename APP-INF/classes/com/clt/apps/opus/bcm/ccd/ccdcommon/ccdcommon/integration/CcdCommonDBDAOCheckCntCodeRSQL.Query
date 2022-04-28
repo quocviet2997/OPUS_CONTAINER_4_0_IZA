@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckCntCodeRSQL">
+			<desc><![CDATA[Country Code 유무를 확인]]></desc>
+			<sql><![CDATA[
+SELECT CNT_CD 
+FROM MDM_COUNTRY 
+WHERE 1=1 
+AND CNT_CD = @[cnt_cd]
+AND DELT_FLG ='N'			]]></sql>
+			<params>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

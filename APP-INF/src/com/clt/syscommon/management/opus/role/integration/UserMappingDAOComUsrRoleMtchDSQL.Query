@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserMappingDAOComUsrRoleMtchDSQL">
+			<desc><![CDATA[delete com_usr_role_mtch]]></desc>
+			<sql><![CDATA[
+#if(${usr_role_adm_mtch}=="Y")
+delete from com_usr_role_adm_mtch
+#else
+delete from com_usr_role_mtch
+#end
+where	usr_id = @[usr_id]
+and	usr_role_cd = @[usr_role_cd]			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="n"/>
+				<param name="usr_role_cd" type="12" value="" out="n"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

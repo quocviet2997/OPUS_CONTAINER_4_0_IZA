@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ItemControlManagementDBDAOremoveItemControlListDSQL">
+			<desc><![CDATA[removeItemControlList]]></desc>
+			<sql><![CDATA[
+DELETE FROM COM_UI_ITM_CTRL_STUP
+WHERE CO_ID = COM_CONSTANTMGR_PKG.COM_getCompanyCode_FNC()
+AND PGM_SUB_SYS_CD    = @[pgm_sub_sys_cd]
+AND PGM_NO              = @[pgm_no]
+AND PGM_ITM_ID          = @[pgm_itm_id]			]]></sql>
+			<params>
+				<param name="pgm_sub_sys_cd" type="12" value="" out="N"/>
+				<param name="pgm_no" type="12" value="" out="N"/>
+				<param name="pgm_itm_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

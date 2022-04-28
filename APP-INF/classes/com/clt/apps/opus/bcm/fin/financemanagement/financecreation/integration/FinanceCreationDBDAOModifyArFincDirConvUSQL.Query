@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOModifyArFincDirConvUSQL">
+			<desc><![CDATA[AR_FINC_DIR_CONV table에 정보 수정]]></desc>
+			<sql><![CDATA[
+UPDATE AR_FINC_DIR_CONV
+SET 
+    SLAN_CD = @[slan_cd],
+    SCONTI_CD = @[sconti_cd],
+    SLAN_DIR_CD = @[slan_dir_cd],
+    RLANE_DIR_CD = @[rlane_dir_cd],
+    DIR_CNG_CD = @[dir_cng_cd], 
+    AP_MK_FLG = @[ap_mk_flg], 
+    RLANE_CD = @[rlane_cd], 
+    DELT_FLG = @[delt_flg], 
+    UPD_USR_ID = 'System', 
+    UPD_DT = SYSDATE
+WHERE 1 = 1
+   AND SLAN_CD = @[h_slan_cd]
+   AND SCONTI_CD = @[h_sconti_cd]
+   AND SLAN_DIR_CD = @[h_slan_dir_cd]
+   AND RLANE_DIR_CD = @[h_rlane_dir_cd]			]]></sql>
+			<params>
+				<param name="slan_cd" type="12" value="" out="N"/>
+				<param name="sconti_cd" type="12" value="" out="N"/>
+				<param name="slan_dir_cd" type="12" value="" out="N"/>
+				<param name="rlane_dir_cd" type="12" value="" out="N"/>
+				<param name="dir_cng_cd" type="12" value="" out="N"/>
+				<param name="ap_mk_flg" type="12" value="" out="N"/>
+				<param name="rlane_cd" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="h_slan_cd" type="12" value="" out="N"/>
+				<param name="h_sconti_cd" type="12" value="" out="N"/>
+				<param name="h_slan_dir_cd" type="12" value="" out="N"/>
+				<param name="h_rlane_dir_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

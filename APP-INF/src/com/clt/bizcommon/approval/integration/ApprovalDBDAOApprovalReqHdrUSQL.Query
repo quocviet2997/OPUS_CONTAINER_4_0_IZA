@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalReqHdrUSQL">
+			<desc><![CDATA[COM_APRO_RQST_HDR 결제정보를 수정한다]]></desc>
+			<sql><![CDATA[
+UPDATE COM_APRO_RQST_HDR    
+  SET  RQST_USR_ID  =  @[usr_id]	   
+	 , RQST_USR_NM  =  @[usr_nm]	   
+	 , RQST_OFC_CD  =  @[ofc_cd]    
+	 , UPD_USR_ID   =  @[usr_id]
+	 , APSTS_CD      = 'P'
+     , CRNT_APRO_SEQ = 1
+     , RQST_END_DT   = null
+	 , UPD_DT       =  SYSDATE    
+ WHERE APRO_RQST_NO =  @[apro_rqst_no]			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="usr_nm" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

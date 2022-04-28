@@ -1,0 +1,1872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+	<!-- Eui-su Park : 2009-04-27 start -->
+    <url-mapping url="EES_CGM_1002.do" screen="EES_CGM_1002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1002HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CGM_1002_POP.do" screen="EES_CGM_1002_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-04-27 end -->
+
+	<!-- Chae-shung Cho : 2009-08-27 start -->
+    <url-mapping url="EES_CGM_1114.do" screen="EES_CGM_1114.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1114HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1114GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1114HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm1114Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Chae-shung Cho : 2009-08-27 end -->
+
+	<!-- KIM CHANG SIK : 2009-04-29 start -->
+    <url-mapping url="EES_CGM_1028.do" screen="EES_CGM_1028.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1028HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CGM_1028_POP.do" screen="EES_CGM_1028_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm1028Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-04-29 end -->
+
+	<!-- KIM CHANG SIK : 2009-05-12 start -->
+    <url-mapping url="CgmCodeMgt.do" screen="CgmCodeMgt.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmcodemgt.event.CGM_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CgmCodeMgtGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmcodemgt.event.CGM_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmcodemgt.event.CgmComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.CgmCommonSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-05-12 end -->
+
+	<!-- KIM CHANG SIK : 2009-05-19 start -->
+    <url-mapping url="EES_CGM_1021.do" screen="EES_CGM_1021.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_1021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_1021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm1021Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-05-19 end -->
+
+	<!-- KIM CHANG SIK : 2009-05-21 start -->
+    <url-mapping url="EES_CGM_2023.do" screen="EES_CGM_2023.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_2023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_2023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm2023Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-05-21 end -->
+
+	<!-- KIM CHANG SIK : 2009-05-22 start -->
+    <url-mapping url="EES_CGM_1117.do" screen="EES_CGM_1117.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_1117HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1117GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_1117HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm1117Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-05-22 end -->
+
+	<!-- KIM CHANG SIK : 2009-05-21 start -->
+    <url-mapping url="CgmValidation.do" screen="CgmValidation.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_VALIDATION_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CgmValidationGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_VALIDATION_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CgmValidationEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.CgmCommonSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-05-21 end -->
+
+	<!-- Eui-su Park : 2009-05-19 start -->
+    <url-mapping url="EES_CGM_1001.do" screen="EES_CGM_1001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-05-19 end -->
+
+	<!-- Eui-su Park : 2009-05-20 start -->
+    <url-mapping url="EES_CGM_2083.do" screen="EES_CGM_2083.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2083HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2083GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2083HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm2083Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-05-20 end -->
+
+	<!-- CHOI MIN HOI : 2009-05-20 start -->
+    <url-mapping url="EES_CGM_1009.do" screen="EES_CGM_1009.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1009HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1009Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-05-20 end -->
+
+	<!-- KIM CHANG SIK : 2009-05-26 start -->
+    <url-mapping url="EES_CGM_2022.do" screen="EES_CGM_2022.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_2022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_2022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm2022Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-05-22 end -->
+
+	<!-- KIM CHANG SIK : 2009-05-26 start -->
+    <url-mapping url="EES_CGM_1020.do" screen="EES_CGM_1020.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_1020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_1020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm1020Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-05-26 end -->
+
+	<!-- CHOI MIN HOI : 2009-05-26 start -->
+    <url-mapping url="EES_CGM_2011.do" screen="EES_CGM_2011.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm2011Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-05-26 end -->
+
+	<!-- Eui-su Park : 2009-05-26 start -->
+    <url-mapping url="EES_CGM_2001.do" screen="EES_CGM_2001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2001HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CGM_2001_POP.do" screen="EES_CGM_2001_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm2001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-05-26 end -->
+
+	<!-- CHOI MIN HOI : 2009-05-27 start -->
+    <url-mapping url="Check_Yard.do" screen="Check Yard.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_YARD_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="Check_YardGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_YARD_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CgmYardEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.CgmCommonSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-05-27 end -->
+
+	<!-- CHOI MIN HOI : 2009-05-29 start -->
+    <url-mapping url="EES_CGM_1010.do" screen="EES_CGM_1010.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1010Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-05-29 end -->
+
+	<!-- Eui-su Park : 2009-05-29 start -->
+    <url-mapping url="EES_CGM_1006.do" screen="EES_CGM_1006.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1006Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-05-29 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-02 start -->
+    <url-mapping url="EES_CGM_2012.do" screen="EES_CGM_2012.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm2012Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-06-02 end -->
+
+	<!-- Eui-su Park : 2009-06-02 start -->
+    <url-mapping url="EES_CGM_1007.do" screen="EES_CGM_1007.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1007Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-06-02 end -->
+
+
+	<!-- CHOI MIN HOI : 2009-06-04 start -->
+    <url-mapping url="EES_CGM_1017.do" screen="EES_CGM_1017.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1017Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-06-04 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-08 start -->
+    <url-mapping url="EES_CGM_2019.do" screen="EES_CGM_2019.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm2019Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-06-08 end -->
+
+	<!-- Eui-su Park : 2009-06-08 start -->
+    <url-mapping url="EES_CGM_1003.do" screen="EES_CGM_1003.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1003HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CGM_1003_POP.do" screen="EES_CGM_1003_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-06-08 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-09 start -->
+    <url-mapping url="EES_CGM_1019.do" screen="EES_CGM_1019.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1019Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-06-09 end -->
+
+	<!-- Eui-su Park : 2009-06-09 start -->
+    <url-mapping url="EES_CGM_2006.do" screen="EES_CGM_2006.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm2006Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-06-09 end -->
+
+	<!-- KIM CHANG SIK : 2009-06-10 start -->
+    <url-mapping url="EES_CGM_2021.do" screen="EES_CGM_2021.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_2021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_2021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm2021Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-06-10 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-10 start -->
+    <url-mapping url="EES_CGM_2020.do" screen="EES_CGM_2020.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm2020Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-06-10 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-11 start -->
+    <url-mapping url="EES_CGM_1016.do" screen="EES_CGM_1016.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1016Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-06-11 end -->
+
+	<!-- Eui-su Park : 2009-06-14 start -->
+    <url-mapping url="EES_CGM_1005.do" screen="EES_CGM_1005.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1005Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-06-14 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-15 start -->
+    <url-mapping url="EES_CGM_AGREEMENT.do" screen="CGM_AGREEMENT.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_AGREEMENT_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_AGREEMENTGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_AGREEMENT_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CgmAgreementEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.CgmCommonSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-06-15 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-16 start -->
+    <url-mapping url="EES_CGM_2018.do" screen="EES_CGM_2018.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm2018Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-06-16 end -->
+
+	<!-- KIM CHANG SIK : 2009-06-17 start -->
+    <url-mapping url="EES_CGM_1022.do" screen="EES_CGM_1022.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_1022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_1022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm1022Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-06-17 end -->
+
+	<!-- KIM CHANG SIK : 2009-06-18 start -->
+    <url-mapping url="EES_CGM_2103.do" screen="EES_CGM_2103.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_2103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2103GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_2103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm2103Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-06-17 end -->
+
+	<!-- KIM CHANG SIK : 2009-06-22 start -->
+    <url-mapping url="EES_CGM_1026.do" screen="EES_CGM_1026.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_1026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1026GS.do" screen="com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm1026ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_1026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm1026Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-06-22 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-22 start -->
+    <url-mapping url="EES_CGM_1018.do" screen="EES_CGM_1018.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1018Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-06-22 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-23 start -->
+    <url-mapping url="EES_CGM_1104.do" screen="EES_CGM_1104.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EES_CGM_1104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1104GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EES_CGM_1104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EesCgm1104Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-06-23 end -->
+
+	<!-- Eui-su Park : 2009-06-23 start -->
+    <url-mapping url="EES_CGM_2004.do" screen="EES_CGM_2004.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm2004Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-06-23 end -->
+
+	<!-- CHOI MIN HOI : 2009-06-26 start -->
+    <url-mapping url="EES_CGM_1105.do" screen="EES_CGM_1105.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EES_CGM_1105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1105_POP.do" screen="EES_CGM_1105_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EES_CGM_1105HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CGM_1105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EES_CGM_1105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EesCgm1105Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-06-26 end -->
+
+	<!-- KIM CHANG SIK : 2009-06-29 start -->
+    <url-mapping url="EES_CGM_2026.do" screen="EES_CGM_2026.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_2026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2026GS.do" screen="com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm2026ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_2026HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm2026Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-06-29 end -->
+
+	<!-- Eui-su Park : 2009-06-26 start -->
+    <url-mapping url="EES_CGM_1008.do" screen="EES_CGM_1008.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1008Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-06-26 end -->
+
+    <!-- CHOI MIN HOI : 2009-06-29 start -->
+    <url-mapping url="EES_CGM_1108.do" screen="EES_CGM_1108.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EES_CGM_1108HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1108GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EES_CGM_1108HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EesCgm1108Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-06-29 end -->
+
+	<!-- KIM CHANG SIK : 2009-06-30 start -->
+    <url-mapping url="EES_CGM_1118.do" screen="EES_CGM_1118.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_1118HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1118GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_1118HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm1118Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-06-30 end -->
+
+
+	<!-- CHOI MIN HOI : 2009-07-01 start -->
+    <url-mapping url="CGM_CHS_MASTER.do" screen="CGM_CHS_MASTER.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_CHS_MASTER_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CGM_CHS_MASTERGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_CHS_MASTER_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CgmChsMasterEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.CgmCommonSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-07-01 end -->
+
+
+	<!-- CHOI MIN HOI : 2009-07-02 start -->
+    <url-mapping url="CGM_MDM_VENDOR.do" screen="CGM_MDM_VENDOR.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_MDM_VENDOR_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CGM_MDM_VENDORGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_MDM_VENDOR_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CgmMdmVendorEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.CgmCommonSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-07-02 end -->
+
+	<!-- KIM CHANG SIK : 2009-07-03 start -->
+    <url-mapping url="EES_CGM_2028.do" screen="EES_CGM_2028.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_2028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_2028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm2028Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-07-03 end -->
+
+	<!-- KIM CHANG SIK : 2009-07-06 start -->
+    <url-mapping url="EES_CGM_2086.do" screen="EES_CGM_2086.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2086HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CGM_2086_POP.do" screen="EES_CGM_2086_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2086HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2086GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2086HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm2086Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-07-06 end -->
+
+	<!-- CHOI MIN HOI : 2009-07-07 start -->
+    <url-mapping url="EES_CGM_1015.do" screen="EES_CGM_1015.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismgsetattachdetachhistory.event.EES_CGM_1015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1015GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismgsetattachdetachhistory.event.EES_CGM_1015HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismgsetattachdetachhistory.event.EesCgm1015Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-07-07 end -->
+
+	<!-- Eui-su Park : 2009-07-08 start -->
+    <url-mapping url="EES_CGM_TPSZ.do" screen="EES_CGM_TPSZ.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.EES_CGM_TPSZHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_TPSZGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.EES_CGM_TPSZHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.EesCgmTpszEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.CgmCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-07-08 end -->
+
+	<!-- Eui-su Park : 2009-07-08 start -->
+    <url-mapping url="CGM_TPSZ.do" screen="CGM_TPSZ.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_TPSZHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CGM_TPSZGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_TPSZHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CgmTpszEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.CgmCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-07-08 end -->
+
+	<!-- CHOI MIN HOI : 2009-07-08 start -->
+    <url-mapping url="CGM_MST_CONTAINER.do" screen="CGM_MST_CONTAINER.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_MST_CONTAINERHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CGM_MST_CONTAINERGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_MST_CONTAINERHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CgmMstContainerEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.CgmCommonSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-07-08 end -->
+		<!-- CHOI MIN HOI : 2009-07-09 start -->
+    <url-mapping url="EES_CGM_1146.do" screen="EES_CGM_1146.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1146HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1146GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1146HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1146Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-07-09 end -->
+		<!-- KIM CHANG SIK : 2009-07-09 start -->
+    <url-mapping url="EES_CGM_1091.do" screen="EES_CGM_1091.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1091HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1091GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1091HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm1091Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-07-09 end -->
+
+	<!-- KIM CHANG SIK : 2009-07-13 start -->
+    <url-mapping url="EES_CGM_2084.do" screen="EES_CGM_2084.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_2084HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2084GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_2084HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm2084Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-07-13 end -->
+
+	<!-- ChaeShung Cho : 2009-07-17 start -->
+    <url-mapping url="EES_CGM_1092.do" screen="EES_CGM_1092.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1092HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1092GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1092HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm1092Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- ChaeShung Cho : 2009-07-17 end -->
+
+	<!-- KIM CHANG SIK : 2009-07-14 start -->
+    <url-mapping url="EES_CGM_1089.do" screen="EES_CGM_1089.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1089HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1089GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1089HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm1089Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-07-14 end -->
+
+
+	<!-- Eui-su Park : 2009-06-26 start -->
+    <url-mapping url="EES_CGM_2007.do" screen="EES_CGM_2007.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm2007Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Eui-su Park : 2009-06-26 end -->
+
+	<!-- KIM CHANG SIK : 2009-07-20 start -->
+    <url-mapping url="EES_CGM_1029.do" screen="EES_CGM_1029.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1029GS.do" screen="com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm1029ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm1029Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-07-20 end -->
+
+	<!-- KIM CHANG SIK : 2009-07-20 start -->
+    <url-mapping url="EES_CGM_2032.do" screen="EES_CGM_2032.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2032GS.do" screen="com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm2032ViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm2032Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-07-20 end -->
+
+	<!-- CHOI MIN HOI : 2009-07-20 start -->
+    <url-mapping url="EES_CGM_2016.do" screen="EES_CGM_2016.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismgsetattachdetachhistory.event.EES_CGM_2016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismgsetattachdetachhistory.event.EES_CGM_2016HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismgsetattachdetachhistory.event.EesCgm2016Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-07-20 end -->
+
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <url-mapping url="EES_CGM_1109.do" screen="EES_CGM_1109.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EES_CGM_1109HTMLAction</web-action-class>
+    </url-mapping>
+    
+     <url-mapping url="EES_CGM_1109_POP.do" screen="EES_CGM_1109_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EES_CGM_1109HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1109GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EES_CGM_1109HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EesCgm1109Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+
+	<!-- ChaeShung Cho : 2009-07-22 start -->
+    <url-mapping url="EES_CGM_1094.do" screen="EES_CGM_1094.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1094HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1094GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1094HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm1094Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- ChaeShung Cho : 2009-07-22 end -->
+
+	<!-- CHOI MIN HOI : 2009-07-27 start -->
+    <url-mapping url="cgmCheckLocation.do" screen="check_Location.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_CHECK_LOCATIONHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="cgm_Check_LocationGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_CHECK_LOCATIONHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CgmCheckLocationEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.CgmCommonSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-07-27 end -->
+
+	<!-- ChaeShung Cho : 2009-07-29 start -->
+    <url-mapping url="EES_CGM_1098.do" screen="EES_CGM_1098.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1098HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1098GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1098HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm1098Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- ChaeShung Cho : 2009-07-29 end -->
+
+	<!-- ChaeShung Cho : 2009-07-30 start -->
+    <url-mapping url="EES_CGM_1100.do" screen="EES_CGM_1100.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1100HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1100GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1100HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm1100Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- ChaeShung Cho : 2009-07-30 end -->
+
+	<!-- ChaeShung Cho : 2009-07-31 start -->
+    <url-mapping url="EES_CGM_1102.do" screen="EES_CGM_1102.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1102HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1102GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1102HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm1102Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- ChaeShung Cho : 2009-07-31 end -->
+
+	<!-- CHOI MIN HOI : 2009-08-04 start -->
+    <url-mapping url="EES_CGM_1141.do" screen="EES_CGM_1141.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EES_CGM_1141HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1141GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EES_CGM_1141HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EesCgm1141Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-08-04 end -->
+
+	<!-- CHOI MIN HOI : 2009-08-05 start -->
+    <url-mapping url="EES_CGM_1142.do" screen="EES_CGM_1142.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EES_CGM_1142HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1142GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EES_CGM_1142HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EesCgm1142Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-08-05 end -->
+
+	<!-- ChaeShung Cho : 2009-08-10 start -->
+    <url-mapping url="EES_CGM_1103.do" screen="EES_CGM_1103.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1103GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1103HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm1103Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- ChaeShung Cho : 2009-08-10 end -->
+
+	<!-- CHOI MIN HOI : 2009-08-11 start -->
+    <url-mapping url="CGM_CHSS_POOL.do" screen="CGM_CHSS_POOL.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_CHSS_POOLHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="CGM_CHSS_POOLGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_CHSS_POOLHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CgmChssPoolEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.CgmCommonSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-08-11 end -->
+
+	<!-- ChaeShung Cho : 2009-08-11 start -->
+    <url-mapping url="EES_CGM_1111.do" screen="EES_CGM_1111.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1111HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1111GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1111HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm1111Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- ChaeShung Cho : 2009-08-11 end -->
+
+	<!-- CHOI MIN HOI : 2009-08-12 start -->
+    <url-mapping url="EES_CGM_1143.do" screen="EES_CGM_1143.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EES_CGM_1143HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1143GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EES_CGM_1143HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EesCgm1143Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-08-12 end -->
+
+	<!-- CHOI MIN HOI : 2009-08-13 start -->
+    <url-mapping url="EES_CGM_1144.do" screen="EES_CGM_1144.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EES_CGM_1144HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1144GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EES_CGM_1144HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EesCgm1144Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-08-13 end -->
+
+	<!-- ChaeShung Cho : 2009-08-13 start -->
+    <url-mapping url="EES_CGM_1112.do" screen="EES_CGM_1112.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1112HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1112GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1112HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm1112Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- ChaeShung Cho : 2009-08-13 end -->
+
+
+	<!-- CHOI MIN HOI : 2009-08-17 start -->
+    <url-mapping url="EES_CGM_1125.do" screen="EES_CGM_1125.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1125HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1125GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1125HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm1125Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-08-17 end -->
+
+	<!-- CHOI MIN HOI : 2009-08-19 start -->
+    <url-mapping url="EES_CGM_1126.do" screen="EES_CGM_1126.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1126HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1126GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1126HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm1126Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-08-19 end -->
+
+	<!-- KIM CHANG SIK : 2009-08-21 start -->
+    <url-mapping url="EES_CGM_1030.do" screen="EES_CGM_1030.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm1030Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-08-21 end -->
+
+	<!-- KIM CHANG SIK : 2009-08-21 start -->
+    <url-mapping url="EES_CGM_2085.do" screen="EES_CGM_2085.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2085HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2085GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2085HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm2085Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-08-21 end -->
+
+	<!-- KIM CHANG SIK : 2009-08-21 start -->
+    <url-mapping url="EES_CGM_1031.do" screen="EES_CGM_1031.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1031GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm1031Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-08-21 end -->
+
+	<!-- KIM CHANG SIK : 2009-08-21 start -->
+    <url-mapping url="EES_CGM_2098.do" screen="EES_CGM_2098.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2098HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2098GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2098HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm2098Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-08-21 end -->
+
+	<!-- KIM CHANG SIK : 2009-08-21 start -->
+    <url-mapping url="EES_CGM_1034.do" screen="EES_CGM_1034.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1034GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm1034Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-08-21 end -->
+
+	<!-- KIM CHANG SIK : 2009-08-21 start -->
+    <url-mapping url="EES_CGM_1123.do" screen="EES_CGM_1123.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1123HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1123GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1123HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm1123Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-08-21 end -->
+
+	<!-- KIM CHANG SIK : 2009-08-21 start -->
+    <url-mapping url="EES_CGM_1124.do" screen="EES_CGM_1124.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1124HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1124GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1124HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm1124Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-08-21 end -->
+
+	<!-- Chae Shung Cho : 2009-08-24 start -->
+    <url-mapping url="EES_CGM_1113.do" screen="EES_CGM_1113.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1113HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1113GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1113HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm1113Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Chae Shung Cho : 2009-08-24 end -->
+
+	<!-- Chae Shung Cho : 2009-08-31 start -->
+    <url-mapping url="EES_CGM_1115.do" screen="EES_CGM_1115.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1115HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1115GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1115HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm1115Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Chae Shung Cho : 2009-08-31 end -->
+
+	<!-- CHOI MIN HOI : 2009-09-07 start -->
+    <url-mapping url="EES_CGM_CURRENCY.do" screen="EES_CGM_CURRENCY.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_CURRENCYHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_CURRENCYGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_CURRENCYHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CgmCurrencyEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.CgmCommonSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-09-07 end -->
+
+	<!-- Chae Shung Cho : 2009-09-09 start -->
+    <url-mapping url="EES_CGM_2076.do" screen="EES_CGM_2076.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_2076HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2076GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_2076HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm2076Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Chae Shung Cho : 2009-09-09 end -->
+
+	<!-- Chae Shung Cho : 2009-09-10 start -->
+    <url-mapping url="EES_CGM_2077.do" screen="EES_CGM_2077.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_2077HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2077GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_2077HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm2077Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Chae Shung Cho : 2009-09-10 end -->
+
+	<!-- Chae Shung Cho : 2009-09-11 start -->
+    <url-mapping url="EES_CGM_2078.do" screen="EES_CGM_2078.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_2078HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2078GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_2078HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm2078Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Chae Shung Cho : 2009-09-11 end -->
+
+	<!-- Chae Shung Cho : 2009-09-11 start -->
+    <url-mapping url="EES_CGM_2079.do" screen="EES_CGM_2079.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_2079HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2079GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_2079HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm2079Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Chae Shung Cho : 2009-09-11 end -->
+
+	<!-- Chae Shung Cho : 2009-09-15 start -->
+    <url-mapping url="EES_CGM_2080.do" screen="EES_CGM_2080.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_2080HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2080GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_2080HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm2080Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Chae Shung Cho : 2009-09-15 end -->
+
+    <!-- Chae Shung Cho : 2009-09-16 start -->
+    <url-mapping url="EES_CGM_1106.do" screen="EES_CGM_1106.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EES_CGM_1105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1106GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EES_CGM_1105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EesCgm1105Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+    <!-- Chae Shung Cho : 2009-09-16 end -->
+
+    <!-- Chae Shung Cho : 2009-09-17 start -->
+    <url-mapping url="EES_CGM_1004.do" screen="EES_CGM_1004.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1003Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Chae Shung Cho : 2009-09-17 end -->
+    <!-- Chae Shung Cho : 2009-09-18 start -->
+    <url-mapping url="EES_CGM_1011.do" screen="EES_CGM_1011.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1010Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Chae Shung Cho : 2009-09-18 end -->
+    <!-- Chae Shung Cho : 2009-09-18 start -->
+    <url-mapping url="EES_CGM_1013.do" screen="EES_CGM_1013.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_1010HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm1010Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Chae Shung Cho : 2009-09-18 end -->
+    <!-- Chae Shung Cho : 2009-09-18 start -->
+    <url-mapping url="EES_CGM_2202.do" screen="EES_CGM_2202.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2202GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm2012Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Chae Shung Cho : 2009-09-18 end -->
+    <!-- Chae Shung Cho : 2009-09-18 start -->
+    <url-mapping url="EES_CGM_2203.do" screen="EES_CGM_2203.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2203GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EES_CGM_2012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetonoffhire.event.EesCgm2012Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Chae Shung Cho : 2009-09-18 end -->
+    <!-- Chae Shung Cho : 2009-09-21 start -->
+    <url-mapping url="EES_CGM_1090.do" screen="EES_CGM_1090.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1089HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1090GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_1089HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm1089Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Chae Shung Cho : 2009-09-21 end -->
+    <!-- Chae Shung Cho : 2009-09-21 start -->
+    <url-mapping url="EES_CGM_2205.do" screen="EES_CGM_2205.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_2076HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2205GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EES_CGM_2076HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.chassismgsetinventory.event.EesCgm2076Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetmgt.ChassisMgsetMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Chae Shung Cho : 2009-09-21 end -->
+
+    <!-- Chae Shung Cho : 2009-09-22 start -->
+    <url-mapping url="EES_CGM_1023.do" screen="EES_CGM_1023.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_1021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_1021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm1021Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+    <!-- Chae Shung Cho : 2009-09-22 end -->
+
+    <!-- Chae Shung Cho : 2009-09-22 start -->
+    <url-mapping url="EES_CGM_2204.do" screen="EES_CGM_2204.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_2023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2204GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EES_CGM_2023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetagreement.event.EesCgm2023Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+    <!-- Chae Shung Cho : 2009-09-22 end -->
+
+    <!-- KIM CHANG SIK : 2009-09-30 start -->
+    <url-mapping url="EES_CGM_2035.do" screen="EES_CGM_2035.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2035GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm2035Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- KIM CHANG SIK : 2009-09-30 end -->
+	<!-- ChaeShung Cho : 2009-10-08 start -->
+    <url-mapping url="EES_CGM_1107.do" screen="EES_CGM_1107.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1107GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1107HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm1107Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- ChaeShung Cho : 2009-10-08 end -->
+
+	<!-- ChaeShung Cho : 2009-10-12 start -->
+    <url-mapping url="EES_CGM_2206.do" screen="EES_CGM_2206.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2206HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2206GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2206HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm2206Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- ChaeShung Cho : 2009-10-12 end -->
+
+	<!-- ChaeShung Cho : 2009-12-21 start -->
+    <url-mapping url="EES_CGM_1035.do" screen="EES_CGM_1035.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1035GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_1035HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm1035Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- ChaeShung Cho : 2009-12-21 end -->
+
+	<!-- ChaeShung Cho : 2009-12-28 start -->
+    <url-mapping url="EES_CGM_2036.do" screen="EES_CGM_2036.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EES_CGM_2036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.chassismgsetinvoice.event.EesCgm2036Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.chassismgsetagreementinvoice.ChassisMgsetAgreementInvoiceSC</service-action-class>
+    </event-mapping>
+	<!-- ChaeShung Cho : 2009-12-28 end -->
+
+	<!-- CHOI MIN HOI : 2010-01-15 start -->
+    <url-mapping url="EES_CGM_1145.do" screen="EES_CGM_1145.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EES_CGM_1145HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1145GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EES_CGM_1145HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EesCgm1145Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2010-01-15 end -->
+
+    <url-mapping url="CGM_INTGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CGM_FILEUPLOAD_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmvalidation.event.CgmFileUploadEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.CgmCommonSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2010-01-21 start -->
+    <url-mapping url="EES_CGM_1149.do" screen="EES_CGM_1149.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EES_CGM_1149HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1149GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EES_CGM_1149HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.poolchassishistory.event.EesCgm1149Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2010-01-21 end -->
+
+	<!-- Jang Jun-Woo  : 2010-08-30 start -->
+    <url-mapping url="EES_CGM_1150.do" screen="EES_CGM_1150.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EES_CGM_1150HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_CGM_1150GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EES_CGM_1150HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.chassismovementhistory.event.EesCgm1150Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo  : 2010-08-30 end -->
+
+	<!-- Lee Eun-Sup  : 2011-04-09 start -->
+    <url-mapping url="EES_CGM_3001.do" screen="EES_CGM_3001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmcodemgt.event.EES_CGM_3001HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_CGM_3001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmcodemgt.event.EES_CGM_3001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.cgmcommon.cgmcodemgt.event.EesCgm3001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.cgmcommon.CgmCommonSC</service-action-class>
+    </event-mapping>
+	<!-- Lee Eun-Sup  : 2011-04-09 end -->
+	
+	<!-- CHOI MIN HOI : 2009-06-23 start -->
+    <url-mapping url="EES_CGM_2104.do" screen="EES_CGM_2104.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EES_CGM_2104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2104GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EES_CGM_2104HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EesCgm2104Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-06-23 end -->
+	
+	<!-- CHOI MIN HOI : 2009-06-26 start -->
+    <url-mapping url="EES_CGM_2105.do" screen="EES_CGM_2105.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EES_CGM_2105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2105_POP.do" screen="EES_CGM_2105_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EES_CGM_2105HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CGM_2105GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EES_CGM_2105HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EesCgm2105Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+    
+    <!-- Chae Shung Cho : 2009-09-16 start -->
+    <url-mapping url="EES_CGM_2106.do" screen="EES_CGM_2106.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EES_CGM_2105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2106GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EES_CGM_2105HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EesCgm2105Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+    <!-- Chae Shung Cho : 2009-09-16 end -->
+    
+	<!-- CHOI MIN HOI : 2009-06-29 start -->
+    <url-mapping url="EES_CGM_2108.do" screen="EES_CGM_2108.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EES_CGM_2108HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2108GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EES_CGM_2108HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EesCgm2108Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-06-29 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <url-mapping url="EES_CGM_2109.do" screen="EES_CGM_2109.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EES_CGM_2109HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2109GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EES_CGM_2109HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EesCgm2109Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+    
+    <!-- CHOI MIN HOI : 2009-07-22 start -->
+    <url-mapping url="EES_CGM_1050.do" screen="EES_CGM_1050.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_1050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1050GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_1050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EesCgm1050Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.CGMRuLabelManagementSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <url-mapping url="EES_CGM_1051.do" screen="EES_CGM_1051.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_1051HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_CGM_1051_POP.do" screen="EES_CGM_1051_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_1051HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CGM_1051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_1051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EesCgm1051Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.CGMRuLabelManagementSC</service-action-class>
+    </event-mapping>
+    
+    <!-- CHOI MIN HOI : 2009-07-22 start -->
+    <url-mapping url="EES_CGM_1052.do" screen="EES_CGM_1052.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_1052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1052GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_1052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EesCgm1052Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.CGMRuLabelManagementSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <url-mapping url="EES_CGM_1053.do" screen="EES_CGM_1053.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_1053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1053GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_1053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EesCgm1053Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.CGMRuLabelManagementSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <url-mapping url="EES_CGM_1054.do" screen="EES_CGM_1054.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_1054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_1054GS.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_1054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EesCgm1054Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.CGMRuLabelManagementSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <url-mapping url="EES_CGM_2050.do" screen="EES_CGM_2050.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_2050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2050GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_2050HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EesCgm2050Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.CGMRuLabelManagementSC</service-action-class>
+    </event-mapping>
+	<!-- CHOI MIN HOI : 2009-07-22 end -->
+	
+	<!-- CHOI MIN HOI : 2009-07-22 start -->
+    <url-mapping url="EES_CGM_2051.do" screen="EES_CGM_2051.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_2051HTMLAction</web-action-class>
+    </url-mapping>
+
+	<url-mapping url="EES_CGM_2051_POP.do" screen="EES_CGM_2051_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_2051HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_CGM_2051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EES_CGM_2051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.rulabelmanagement.event.EesCgm2051Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.rulabelmanagement.CGMRuLabelManagementSC</service-action-class>
+    </event-mapping>
+    <!-- CHOI MIN HOI : 2009-07-22 end -->
+    <!-- CHOI MIN HOI : 2009-07-22 start -->
+    <url-mapping url="EES_CGM_2110.do" screen="EES_CGM_2110.screen" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EES_CGM_2110HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_CGM_2110GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EES_CGM_2110HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.mgsetmovementhistory.event.EesCgm2110Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.cgm.movementmnrhistory.MovementMnrHistorySC</service-action-class>
+    </event-mapping>
+</mappings>

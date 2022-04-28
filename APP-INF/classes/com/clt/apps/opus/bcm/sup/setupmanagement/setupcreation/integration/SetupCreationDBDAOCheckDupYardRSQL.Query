@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOCheckDupYardRSQL">
+			<desc><![CDATA[2011.03.14 정윤태 EDI YARD에 중복데이타가 존재하는지 체크한다]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*) CNT 
+  FROM BKG_EDI_YD
+ WHERE YD_CD = @[yd_cd]			]]></sql>
+			<params>
+				<param name="yd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

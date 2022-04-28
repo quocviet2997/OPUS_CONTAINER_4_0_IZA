@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOCheckDupArRoutRankRSQL">
+			<desc><![CDATA[중복확인]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*) CNT
+  FROM AR_ROUT_RNK
+ WHERE 1 = 1
+   AND RLANE_CD = @[rlane_cd]
+   AND ZN_IOC_CD = @[zn_ioc_cd]
+   AND DELT_FLG = 'N'			]]></sql>
+			<params>
+				<param name="rlane_cd" type="12" value="" out="N"/>
+				<param name="zn_ioc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOModifyAPInvoiceDeleteByStmSapUSQL">
+			<desc><![CDATA[modifyAPInvoiceRejectByStmSap]]></desc>
+			<sql><![CDATA[
+UPDATE AP_INV_HDR
+SET PAY_AMT = 0
+   ,PAY_DT = ''
+   ,PAY_MZD_LU_CD = '' 
+   ,EAI_EVNT_DT = SYSDATE
+WHERE CSR_NO = @[csr_no]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

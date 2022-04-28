@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOsearchApEviNoRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT LPAD(nvl(max(substr(evid_no,13,4)),0)+1, 4, '0') tax_no3 
+  FROM AP_EVID_NO 
+ WHERE substr(evid_no,1,length(@[tax_no1]||@[tax_no2])) = @[tax_no1]||@[tax_no2]			]]></sql>
+			<params>
+				<param name="tax_no1" type="12" value="" out="N"/>
+				<param name="tax_no2" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

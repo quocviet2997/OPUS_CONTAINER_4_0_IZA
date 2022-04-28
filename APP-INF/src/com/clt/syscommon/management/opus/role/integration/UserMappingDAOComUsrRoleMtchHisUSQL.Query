@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserMappingDAOComUsrRoleMtchHisUSQL">
+			<desc><![CDATA[DESC Enter..]]></desc>
+			<sql><![CDATA[
+UPDATE COM_USR_ROLE_MTCH_HIS
+   SET EXP_DT = SYSDATE,
+       UPD_DT = SYSDATE,
+       UPD_USR_ID = @[upd_usr_id]
+ WHERE USR_ID = @[usr_id]
+   AND USR_ROLE_CD = @[usr_role_cd]
+   AND EXP_DT = TO_DATE('9999-12-31', 'YYYY-MM-DD')			]]></sql>
+			<params>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="usr_role_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

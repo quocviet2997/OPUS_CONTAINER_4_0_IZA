@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+    <!-- Common START -->
+    
+    <!-- [STM_SAP_COMMON]  -->
+    <url-mapping url="SAPCommonGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_CommonHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSapCommonEvent</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>
+    
+
+    <!-- [STM_SAP_0001] Office Code Popup -->
+    <url-mapping url="STM_SAP_0001.do" screen="STM_SAP_0001.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0001HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0001HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [STM_SAP_0002] Supplier Code Popup -->
+    <url-mapping url="STM_SAP_0002.do" screen="STM_SAP_0002.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0002HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0002HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>    
+    
+    <!-- [STM_SAP_0003]  CSR No Popup -->
+    <url-mapping url="STM_SAP_0003.do" screen="STM_SAP_0003.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0003HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0003HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [STM_SAP_0004] Pay Group Popup -->
+    <url-mapping url="STM_SAP_0004.do" screen="STM_SAP_0004.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0004HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0004HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>
+    
+    <!-- [STM_SAP_0005] Source Popup -->
+    <url-mapping url="STM_SAP_0005.do" screen="STM_SAP_0005.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0005HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0005HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>
+    
+    
+    <!-- [STM_SAP_0007] Payment Method Popup -->
+    <url-mapping url="STM_SAP_0007.do" screen="STM_SAP_0007.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0007HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0007HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>
+  
+    <!-- [STM_SAP_0009] Invoice Type Popup -->
+    <url-mapping url="STM_SAP_0009.do" screen="STM_SAP_0009.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0009HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0009HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0009Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>      
+    
+    <!-- [STM_SAP_0012] 발행거래처 Popup -->
+    <url-mapping url="STM_SAP_0012.do" screen="STM_SAP_0012.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0012HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0012HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>      
+    
+    <!-- [STM_SAP_0023] Location Popup -->
+    <url-mapping url="STM_SAP_0023.do" screen="STM_SAP_0023.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0023HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0023HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0023Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>   
+    
+ 
+    <!-- [STM_SAP_0032] Supplier Bank Account Popup -->
+    <url-mapping url="STM_SAP_0032.do" screen="STM_SAP_0032.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0032HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0032HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0032Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+    
+    <!-- [STM_SAP_0033] Terms Popup -->
+    <url-mapping url="STM_SAP_0033.do" screen="STM_SAP_0033.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0033HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0033HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0033Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+    
+    <!-- [STM_SAP_0034] 신고사업장 Popup -->
+    <url-mapping url="STM_SAP_0034.do" screen="STM_SAP_0034.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0034HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0034GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0034HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0034Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+     <!-- [STM_SAP_0063] CENTER Popup -->
+    <url-mapping url="STM_SAP_0063.do" screen="STM_SAP_0063.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0063HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0063GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0063HTMLAction</web-action-class>
+    </url-mapping>
+    
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0063Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+        <!-- [STM_SAP_0064] Pay Invoice Information Popup -->
+    <url-mapping url="STM_SAP_0064.do" screen="STM_SAP_0064.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0064HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0064GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0064HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0064Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+        
+        
+    <!-- [STM_SAP_0080] Banks N Branch -->
+    <url-mapping url="STM_SAP_0080.do" screen="STM_SAP_0080.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0080HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0080GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0080HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0080Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+    <!-- [STM_SAP_0081] Banks N Branch Popup-->
+    <url-mapping url="STM_SAP_0081.do" screen="STM_SAP_0081.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0081HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0081GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0081HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0081Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>     
+    
+    
+    <!-- [STM_SAP_0090] Bank Account Creation -->
+    <url-mapping url="STM_SAP_0090.do" screen="STM_SAP_0090.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0090HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0090GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0090HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0090Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+    <!-- [STM_SAP_0100] Bank Account Inquiry -->
+    <url-mapping url="STM_SAP_0100.do" screen="STM_SAP_0100.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0100HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0100GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0100HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0100Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+    
+    <!-- [STM_SAP_0110] Bank Account Creation(Supplier Bank) -->
+    <url-mapping url="STM_SAP_0110.do" screen="STM_SAP_0110.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0110HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0110GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0110HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0110Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+    
+    <!-- [STM_SAP_0230] Bank Name Popup -->
+    <url-mapping url="STM_SAP_0230.do" screen="STM_SAP_0230.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0230HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0230GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0230HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0230Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>                         
+    
+    <!-- [STM_SAP_0211] Payment Batch Name Popup -->
+    <url-mapping url="STM_SAP_0211.do" screen="STM_SAP_0211.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0211HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0211GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0211HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0211Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>  
+    
+     <!-- [STM_SAP_0310] Create Credit Card -->
+    <url-mapping url="STM_SAP_0310.do" screen="STM_SAP_0310.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0310HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0310GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0310HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0310Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>   
+  
+    <!-- [STM_SAP_0311] Credit Card Search Popup -->
+    <url-mapping url="STM_SAP_0311.do" screen="STM_SAP_0311.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0311HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0311GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0311HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0311Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+  
+    <!-- [STM_SAP_0312] Card Brand Popup -->
+    <url-mapping url="STM_SAP_0312.do" screen="STM_SAP_0312.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0312HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0312GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0312HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0312Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+   
+    <!-- [STM_SAP_0341] Unsettled Account Popup -->
+    <url-mapping url="STM_SAP_0341.do" screen="STM_SAP_0341.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0341HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0341GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0341HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0341Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+    <!-- [STM_SAP_0360] AR Office Code Popup -->
+    <url-mapping url="STM_SAP_0360.do" screen="STM_SAP_0360.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0360HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0360GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0360HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0360Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>
+
+    <!-- [STM_SAP_0420] Company Popup -->
+    <url-mapping url="STM_SAP_0420.do" screen="STM_SAP_0420.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0420HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0420GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0420HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0420Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+        
+    <!-- [STM_SAP_0430] Region Popup -->
+    <url-mapping url="STM_SAP_0430.do" screen="STM_SAP_0430.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0430HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0430GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0430HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0430Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+    <!-- [STM_SAP_0440] CENTER Popup -->
+    <url-mapping url="STM_SAP_0440.do" screen="STM_SAP_0440.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0440HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0440GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0440HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0440Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+  
+      <!-- [STM_SAP_0450] Account Popup -->
+    <url-mapping url="STM_SAP_0450.do" screen="STM_SAP_0450.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0450HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0450GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0450HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0450Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+      
+    <!-- [STM_SAP_0460] Inter Company Popup -->
+    <url-mapping url="STM_SAP_0460.do" screen="STM_SAP_0460.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0460HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0460GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0460HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0460Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+    
+    <!-- [STM_SAP_0470] VVD Popup -->
+    <url-mapping url="STM_SAP_0470.do" screen="STM_SAP_0470.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0470HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0470GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0470HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0470Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+    
+    <!-- [STM_SAP_0500] Finance Office Code Popup -->
+    <url-mapping url="STM_SAP_0500.do" screen="STM_SAP_0500.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0500HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0500GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0500HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0500Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping> 
+    
+    <!-- [STM_SAP_0510] Internal Bank Acctount Popup -->
+    <url-mapping url="STM_SAP_0510.do" screen="STM_SAP_0510.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0510HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0510GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0510HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0510Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>     
+    
+    <!-- [STM_SAP_0350] AP Supplier -->
+    <url-mapping url="STM_SAP_0350.do" screen="STM_SAP_0350.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0350HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0350GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.STM_SAP_0350HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablecommon.accountpayablecommon.event.StmSap0350Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablecommon.AccountPayableCommonSC</service-action-class>
+    </event-mapping>  
+        
+    <!-- Common End -->
+    
+    <!-- Payment Start -->    
+  
+    <!-- [STM_SAP_0040] CSR Receipt(지불건 승인처리) -->
+    <url-mapping url="STM_SAP_0040.do" screen="STM_SAP_0040.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0040HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0040HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.StmSap0040Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.AccountPayableInvoiceSC</service-action-class>
+    </event-mapping>   
+  
+    <!-- [STM_SAP_0050] Payment Schedule Inquiry -->
+    <url-mapping url="STM_SAP_0050.do" screen="STM_SAP_0050.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0050HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0050GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0050HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.StmSap0050Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.AccountPayablePaymentSC</service-action-class>
+    </event-mapping>   
+ 
+    <!-- [STM_SAP_0060] Payments -->
+    <url-mapping url="STM_SAP_0060.do" screen="STM_SAP_0060.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0060HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0060GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0060HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.StmSap0060Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.AccountPayablePaymentSC</service-action-class>
+    </event-mapping>   
+    
+    <!-- [STM_SAP_0070] Payment Slip -->
+    <url-mapping url="STM_SAP_0070.do" screen="STM_SAP_0070.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0070HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0070GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0070HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.StmSap0070Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.AccountPayablePaymentSC</service-action-class>
+    </event-mapping>   
+    
+    <!-- [STM_SAP_0120] Bank Balance Adjustment(Creation) -->
+    <url-mapping url="STM_SAP_0120.do" screen="STM_SAP_0120.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0120HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0120GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0120HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.StmSap0120Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.AccountPayablePaymentSC</service-action-class>
+    </event-mapping>   
+    
+    
+    <!-- [STM_SAP_0130] Inquiry of Bank Balance -->
+    <url-mapping url="STM_SAP_0130.do" screen="STM_SAP_0130.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0130HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0130GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0130HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.StmSap0130Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.AccountPayablePaymentSC</service-action-class>
+    </event-mapping>  
+    
+    <!-- [STM_SAP_0140] Inquiry of Transaction -->
+    <url-mapping url="STM_SAP_0140.do" screen="STM_SAP_0140.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0140HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0140GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0140HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.StmSap0140Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.AccountPayablePaymentSC</service-action-class>
+    </event-mapping>    
+    
+    <!-- [STM_SAP_0210] Payment Batches -->
+    <url-mapping url="STM_SAP_0210.do" screen="STM_SAP_0210.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0210HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0210GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0210HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.StmSap0210Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.AccountPayablePaymentSC</service-action-class>
+    </event-mapping>   
+    
+    <!-- [STM_SAP_0220] Update Accounting Entries(Creating Accounting) -->
+    <url-mapping url="STM_SAP_0220.do" screen="STM_SAP_0220.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0220HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0220GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0220HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.StmSap0220Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.AccountPayablePaymentSC</service-action-class>
+    </event-mapping>   
+    
+    <!-- [STM_SAP_0330] Payment Detail Inquiry -->
+    <url-mapping url="STM_SAP_0330.do" screen="STM_SAP_0330.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0330HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0330GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.STM_SAP_0330HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayablepayment.accountpayablepayment.event.StmSap0330Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayablepayment.AccountPayablePaymentSC</service-action-class>
+    </event-mapping>   
+  
+    <!-- Payment End -->
+        
+    <!-- Invoice Start -->    
+    
+    <!-- [STM_SAP_0010] Invoices -->
+    <url-mapping url="STM_SAP_0010.do" screen="STM_SAP_0010.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0010HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0010HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.StmSap0010Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.AccountPayableInvoiceSC</service-action-class>
+    </event-mapping>      
+                               
+    <!-- [STM_SAP_0020] CSR Approval -->
+    <url-mapping url="STM_SAP_0020.do" screen="STM_SAP_0020.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0020HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0020HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.StmSap0020Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.AccountPayableInvoiceSC</service-action-class>
+    </event-mapping>     
+    
+    <!-- [STM_SAP_0150] AP Cost Accrual Interface -->
+    <url-mapping url="STM_SAP_0150.do" screen="STM_SAP_0150.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0150HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0150GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0150HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.StmSap0150Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.AccountPayableInvoiceSC</service-action-class>
+    </event-mapping> 
+        
+    <!-- [STM_SAP_0600] GSTR-2 Report Inquiry -->
+    <url-mapping url="STM_SAP_0600.do" screen="STM_SAP_0600.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0600HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0600GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0600HTMLAction</web-action-class>
+    </url-mapping>
+     
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.StmSap0600Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.AccountPayableInvoiceSC</service-action-class>
+    </event-mapping>
+
+    <!-- [STM_SAP_0610] ISD Invoice Creation -->
+    <url-mapping url="STM_SAP_0610.do" screen="STM_SAP_0610.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0610HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0610GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0610HTMLAction</web-action-class>
+    </url-mapping>
+     
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.StmSap0610Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.AccountPayableInvoiceSC</service-action-class>
+    </event-mapping>
+
+     <!-- [STM_SAP_0030] Invoice Slip -->
+    <url-mapping url="STM_SAP_0030.do" screen="STM_SAP_0030.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0030HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0030HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.StmSap0030Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.AccountPayableInvoiceSC</service-action-class>
+    </event-mapping>     
+    
+    <!-- [STM_SAP_0240] Prepayment Invoices -->
+    <url-mapping url="STM_SAP_0240.do" screen="STM_SAP_0240.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0240HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0240GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0240HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.StmSap0240Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.AccountPayableInvoiceSC</service-action-class>
+    </event-mapping>     
+    
+    <!-- [STM_SAP_0241] Prepayment Invoices Apply/Unapply-->
+    <url-mapping url="STM_SAP_0241.do" screen="STM_SAP_0241.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0241HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0241GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0241HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.StmSap0241Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.AccountPayableInvoiceSC</service-action-class>
+    </event-mapping>       
+    
+    <!-- [STM_SAP_0250] Interface Batch -->
+    <url-mapping url="STM_SAP_0250.do" screen="STM_SAP_0250.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0250HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0250GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0250HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.StmSap0250Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.AccountPayableInvoiceSC</service-action-class>
+    </event-mapping>      
+    
+    <!-- [STM_SAP_0340] Unsettled Report by Account -->
+    <url-mapping url="STM_SAP_0340.do" screen="STM_SAP_0340.screen" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0340HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="STM_SAP_0340GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.STM_SAP_0340HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.accountpayableinvoice.event.StmSap0340Event</event-class>
+        <service-action-class>com.clt.apps.opus.stm.sap.accountpayableinvoice.AccountPayableInvoiceSC</service-action-class>
+    </event-mapping> 
+    
+    <!-- [STM_SAP_0011] 세금계산서 Evidence Popup -->
+    <url-mapping url="STM_SAP_0011.do" screen="STM_SAP_0011.screen" >   
+    </url-mapping>  
+    
+    <!-- [STM_SAP_0018] Invoices Evidence Popup -->
+    <url-mapping url="STM_SAP_0018.do" screen="STM_SAP_0018.screen" >   
+    </url-mapping>     
+    
+    <!-- [STM_SAP_0021] Account Information Popup -->
+    <url-mapping url="STM_SAP_0021.do" screen="STM_SAP_0021.screen" >   
+    </url-mapping>     
+    
+    <!-- [STM_SAP_0024] Line Invoice DFF Popup -->
+    <url-mapping url="STM_SAP_0024.do" screen="STM_SAP_0024.screen" >   
+    </url-mapping>     
+               
+    <!-- [STM_SAP_0025] Line 접대비 DFF Popup -->
+    <url-mapping url="STM_SAP_0025.do" screen="STM_SAP_0025.screen" >   
+    </url-mapping>     
+               
+    <!-- [STM_SAP_0026] Line 자산항목 DFF Popup -->
+    <url-mapping url="STM_SAP_0026.do" screen="STM_SAP_0026.screen" >   
+    </url-mapping>     
+               
+    <!-- [STM_SAP_0027] Line Claim DFF Popup -->
+    <url-mapping url="STM_SAP_0027.do" screen="STM_SAP_0027.screen" >   
+    </url-mapping>     
+ 
+    <!-- [STM_SAP_0028] Line Prepaid Expense DFF Popup -->
+    <url-mapping url="STM_SAP_0028.do" screen="STM_SAP_0028.screen" >   
+    </url-mapping>     
+               
+    <!-- [STM_SAP_0029] Line Overseas DFF Popup -->
+    <url-mapping url="STM_SAP_0029.do" screen="STM_SAP_0029.screen" >   
+    </url-mapping>   
+    
+    <!-- [STM_SAP_0041] Owners Account DFF Popup -->
+    <url-mapping url="STM_SAP_0041.do" screen="STM_SAP_0041.screen" >   
+    </url-mapping>  
+    
+    <!-- [STM_SAP_0042] EQ Claim DFF Popup -->
+    <url-mapping url="STM_SAP_0042.do" screen="STM_SAP_0042.screen" >   
+    </url-mapping>  
+    
+    <!-- [STM_SAP_0043] Settle Team  DFF Popup -->
+    <url-mapping url="STM_SAP_0043.do" screen="STM_SAP_0043.screen" >   
+    </url-mapping>  
+    
+    <!-- Invoice End -->      
+               
+ </mappings>

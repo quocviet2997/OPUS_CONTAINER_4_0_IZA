@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+	<!-- message -->
+	<url-mapping url="Message.do" screen="Message.screen">
+		<web-action-class>com.clt.syscommon.common.messages.event.MessageHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="MessageGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.syscommon.common.messages.event.MessageHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="MessageCheck.do" screen="MessageCheck.screen">
+		<web-action-class>com.clt.syscommon.common.messages.event.MessageHTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.syscommon.common.messages.event.MessageEvent</event-class>
+		<service-action-class>com.clt.syscommon.common.messages.MessageSC</service-action-class>
+	</event-mapping>
+	<!--  Mail -->
+	<url-mapping url="Mail.do" screen="Mail.screen">
+		<web-action-class>com.clt.syscommon.common.mail.event.MailHTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.syscommon.common.mail.event.MailEvent</event-class>
+		<service-action-class>com.clt.syscommon.common.mail.MailSC</service-action-class>
+	</event-mapping>
+	<!--  Mail -->
+	<url-mapping url="MailGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.syscommon.common.mail.event.MailHTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.syscommon.common.mail.event.MailEvent</event-class>
+		<service-action-class>com.clt.syscommon.common.mail.MailSC</service-action-class>
+	</event-mapping>
+
+	<!--  FileUpload -->
+	<url-mapping url="FileUpload.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.syscommon.common.fileupload.event.FileUploadHTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.syscommon.common.fileupload.event.FileUploadEvent</event-class>
+		<service-action-class>com.clt.syscommon.common.fileupload.FileUploadSC</service-action-class>
+	</event-mapping>
+
+	<!--  FileUpload Popup -->
+	<url-mapping url="FileUploadPopup.do" screen="FileUpload.screen">
+		<web-action-class>com.clt.syscommon.common.fileupload.event.FileUploadPopupHTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.syscommon.common.fileupload.event.FileUploadPopupEvent</event-class>
+		<service-action-class>com.clt.syscommon.common.fileupload.FileUploadSC</service-action-class>
+	</event-mapping>
+
+	<!--  Mail Resend -->
+	<url-mapping url="MailResend.do" screen="MailResend.screen">
+		<web-action-class>com.clt.syscommon.common.mail.event.MailResendHTMLAction</web-action-class>
+	</url-mapping>
+	<event-mapping>
+		<event-class>com.clt.syscommon.common.mail.event.MailResendEvent</event-class>
+		<service-action-class>com.clt.syscommon.common.mail.MailSC</service-action-class>
+	</event-mapping>
+
+	<!-- Jeong-Hoon, Kim : 2009-05-26 start -->
+	<url-mapping url="Groupware_Mail_PopupGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.syscommon.common.groupwaremail.event.GROUPWARE_MAIL_POPUPHTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.syscommon.common.groupwaremail.event.GroupwareMailPopupEvent</event-class>
+		<service-action-class>com.clt.syscommon.common.groupwaremail.GroupwareMailPopupSC</service-action-class>
+	</event-mapping>
+	<!-- Jeong-Hoon, Kim : 2009-05-26 end -->
+	
+	<!-- Jeong-Hoon, Kim : 2009-08-14 start -->
+	<url-mapping url="COM_RD_COMMON_POPUP.do" screen="COM_RD_COMMON_POPUP.screen">
+		<web-action-class>com.clt.syscommon.common.reportdesigner.commonpopup.event.COM_RD_COMMON_POPUPHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="COM_RD_COMMON_POPUP_MODAL.do" screen="COM_RD_COMMON_POPUP_MODAL.screen">
+		<web-action-class>com.clt.syscommon.common.reportdesigner.commonpopup.event.COM_RD_COMMON_POPUPHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="COM_RD_COMMON_POPUPGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.syscommon.common.reportdesigner.commonpopup.event.COM_RD_COMMON_POPUPHTMLAction</web-action-class>
+	</url-mapping>
+	
+	<url-mapping url="rdReport.do" screen="commonRD.screen">
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.syscommon.common.reportdesigner.commonpopup.event.ComRdCommonPopupEvent</event-class>
+		<service-action-class>com.clt.syscommon.common.reportdesigner.ReportDesignerSC</service-action-class>
+	</event-mapping>
+	<!-- Jeong-Hoon, Kim : 2009-08-14 end -->
+
+	<!-- Jeong-Hoon, Kim : 2014-04-16 start -->
+	<url-mapping url="UpdateThemeOne.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.syscommon.common.theme.event.ThemeOneHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="UpdateThemeTwo.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+		<web-action-class>com.clt.syscommon.common.theme.event.ThemeTwoHTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.syscommon.common.theme.event.ThemeOneEvent</event-class>
+		<service-action-class>com.clt.syscommon.common.theme.ThemeOneSC</service-action-class>
+	</event-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.syscommon.common.theme.event.ThemeTwoEvent</event-class>
+		<service-action-class>com.clt.syscommon.common.theme.ThemeTwoSC</service-action-class>
+	</event-mapping>
+	
+	<url-mapping url="COM_MAIL_COMMON_POPUP_MODAL.do" screen="COM_MAIL_COMMON_POPUP_MODAL.screen">
+	</url-mapping>
+	
+	<!-- Jeong-Hoon, Kim : 2014-04-16 start -->
+	
+	<url-mapping url="COM_RD_FRAME_01.do" screen="comRDFrame01.screen">
+    </url-mapping>
+    
+    <url-mapping url="COM_RD_FRAME_02.do" screen="comRDFrame02.screen">
+    </url-mapping>
+    
+    <url-mapping url="COM_RD_FRAME_03.do" screen="comRDFrame03.screen">
+    </url-mapping>
+    
+    <url-mapping url="COM_RD_FRAME_04.do" screen="comRDFrame04.screen">
+    </url-mapping>
+    
+    <url-mapping url="COM_RD_FRAME_05.do" screen="comRDFrame05.screen">
+    </url-mapping>
+    
+    <!-- In-Sun, Jung : 2014-06-01 start -->
+    <url-mapping url="FileOpen.do" screen="com.clt.syscommon.fileopen.event.FileOpenViewAdapter" >
+        <web-action-class>com.clt.syscommon.fileopen.event.FileOpenHTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.syscommon.fileopen.event.FileOpenEvent</event-class>
+        <service-action-class>com.clt.syscommon.fileopen.FileOpenSC</service-action-class>
+    </event-mapping>  
+    
+</mappings>

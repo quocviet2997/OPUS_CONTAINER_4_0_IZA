@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CopyAuthorityDAOOfcChgCSQL">
+			<desc><![CDATA[office change information copy]]></desc>
+			<sql><![CDATA[
+#if (${opt} == 'add') 
+insert into com_usr_ofc_cng (USR_ID, CNG_OFC_CD, CNG_OFC_FM_DT, CNG_OFC_TO_DT, RQST_CTNT, CRE_USR_ID, CRE_DT, UPD_USR_ID, UPD_DT)
+select a.usr_id, a.cng_ofc_cd, b.cng_ofc_fm_dt, b.cng_ofc_to_dt, b.rqst_ctnt, 'authcopy', sysdate, 'authcopy', sysdate
+from (
+select @[to_usr_id] usr_id, cng_ofc_cd from com_usr_ofc_cng where usr_id = @[from_usr_id]
+minus
+select @[to_usr_id] usr_id, cng_ofc_cd from com_usr_ofc_cng where usr_id = @[to_usr_id]
+) a, com_usr_ofc_cng b
+where b.usr_id = @[from_usr_id] and a.cng_ofc_cd = b.cng_ofc_cd
+#else
+insert into com_usr_ofc_cng (USR_ID, CNG_OFC_CD, CNG_OFC_FM_DT, CNG_OFC_TO_DT, RQST_CTNT, CRE_USR_ID, CRE_DT, UPD_USR_ID, UPD_DT)
+select @[to_usr_id], cng_ofc_cd, cng_ofc_fm_dt, cng_ofc_to_dt, rqst_ctnt, 'authcopy', sysdate, 'authcopy', sysdate
+from com_usr_ofc_cng
+where usr_id = @[from_usr_id]
+#end			]]></sql>
+			<params>
+				<param name="to_usr_id" type="12" value="" out="N"/>
+				<param name="from_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserDAOComUserIbisIfCSQL">
+			<desc><![CDATA[DESC Enter..]]></desc>
+			<sql><![CDATA[
+INSERT INTO com_user_ibis_if (
+ USR_IBIS_IF_SEQ,                                               
+ usr_id,                   
+ usr_nm,                   
+ usr_pwd,                   
+ use_flg,                   
+ mphn_no,      
+ fax_no,             
+ usr_eml,                   
+ cnt_cd,                   
+ lang_tp_cd,                   
+ gmt_tmzn_cd,                   
+ cnt_dt_fmt_cd,                   
+ cnt_no_fmt_cd,                   
+ xtn_phn_no,   
+ jb_eng_nm,
+ psn_eng_nm,
+ grd_eng_nm, 
+ dflt_eml,          
+ cre_usr_id,                   
+ cre_dt,                   
+ upd_usr_id,                   
+ upd_dt,                   
+ usr_locl_nm,                   
+ usr_auth_tp_cd,                   
+ ofc_cd  ,
+ usr_pwd_cre_dt ,
+ usr_lgin_fald_knt,
+ if_mnpl_cd                                                           
+) VALUES (                                                           
+ COM_USER_IBIS_IF_SEQ.NEXTVAL,
+ @[usr_id],
+ @[usr_nm], @[usr_pwd], @[use_flg], @[mphn_no], @[fax_no],
+ @[usr_eml],
+ @[cnt_cd], @[lang_tp_cd], @[gmt_tmzn_cd], @[cnt_dt_fmt_cd], @[cnt_no_fmt_cd],
+ @[xtn_phn_no], @[jb_eng_nm], @[psn_eng_nm], @[grd_eng_nm],
+ @[dflt_eml],
+ @[cre_usr_id], sysdate, @[upd_usr_id], sysdate, @[usr_locl_nm], @[usr_auth_tp_cd],
+ @[ofc_cd] ,TO_DATE(@[usr_pwd_cre_dt], 'YYYYMMDDHH24MISS') , @[usr_lgin_fald_knt], @[if_mnpl_cd]                      
+)			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="usr_nm" type="12" value="" out="N"/>
+				<param name="usr_pwd" type="12" value="" out="N"/>
+				<param name="use_flg" type="12" value="" out="N"/>
+				<param name="mphn_no" type="12" value="" out="N"/>
+				<param name="fax_no" type="12" value="" out="N"/>
+				<param name="usr_eml" type="12" value="" out="N"/>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="lang_tp_cd" type="12" value="" out="N"/>
+				<param name="gmt_tmzn_cd" type="12" value="" out="N"/>
+				<param name="cnt_dt_fmt_cd" type="12" value="" out="N"/>
+				<param name="cnt_no_fmt_cd" type="12" value="" out="N"/>
+				<param name="xtn_phn_no" type="12" value="" out="N"/>
+				<param name="jb_eng_nm" type="12" value="" out="N"/>
+				<param name="psn_eng_nm" type="12" value="" out="N"/>
+				<param name="grd_eng_nm" type="12" value="" out="N"/>
+				<param name="dflt_eml" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="usr_locl_nm" type="12" value="" out="N"/>
+				<param name="usr_auth_tp_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="usr_pwd_cre_dt" type="12" value="" out="N"/>
+				<param name="usr_lgin_fald_knt" type="12" value="" out="N"/>
+				<param name="if_mnpl_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

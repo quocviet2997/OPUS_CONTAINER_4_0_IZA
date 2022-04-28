@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserDAOComUserVORSQL">
+			<desc><![CDATA[select user information   ]]></desc>
+			<sql><![CDATA[
+#if (${auth_cd} != 'R')
+SELECT                  
+   a.usr_id            , 
+   '' AS usr_pwd             , 
+   usr_nm              , 
+   usr_locl_nm         , 
+   a.ofc_cd            , 
+   nvl(lst_lgin_ofc_cd,'') cng_ofc_cd       ,
+   NVL(usr_auth_tp_cd,'R') usr_auth_tp_cd           , 
+   NVL(a.use_flg,'Y') use_flg       ,                   
+   a.mphn_no             , 
+   DECODE(B.USR_ID,NULL,'X',0,'X','O') role_assign  , 
+   DECODE(D.USR_ID,NULL,'X',0,'X','O') super_role_assign  , 
+   DECODE(c.usr_id,NULL,'X',0,'X','O') pgm_assign, 
+   xtn_phn_no          , 
+   usr_eml             , 
+   jb_eng_nm           , 
+   psn_eng_nm          , 
+   grd_eng_nm          , 
+   cnt_cd              , 
+   lang_tp_cd          , 
+   gmt_tmzn_cd         , 
+   cnt_dt_fmt_cd       , 
+   cnt_no_fmt_cd       , 
+   fax_no,
+   dflt_eml,
+   e.srep_cd,
+   a.cre_usr_id        , 
+   TO_CHAR(a.cre_dt,'YYYYMMDD') cre_dt             ,  
+   a.upd_usr_id          ,                            
+   TO_CHAR(a.upd_dt,'YYYYMMDD') upd_dt  ,     
+
+   TO_CHAR(a.usr_lck_dt,'YYYYMMDDHH24MISS') usr_lck_dt,
+   TO_CHAR(a.usr_pwd_cre_dt,'YYYYMMDDHH24MISS') usr_pwd_cre_dt,
+   a.usr_lgin_fald_knt   usr_lgin_fald_knt      
+ FROM com_user a,        
+      (SELECT DISTINCT USR_ID FROM COM_USR_ROLE_MTCH) B,
+      (SELECT DISTINCT USR_ID FROM COM_USR_PGM_MTCH) C,
+      (SELECT DISTINCT USR_ID FROM COM_USR_ROLE_ADM_MTCH) D,
+      mdm_sls_rep e,
+      mdm_organization f
+ WHERE A.USR_ID = B.USR_ID(+)
+ AND a.usr_id = c.usr_id(+)
+ AND a.usr_id = d.usr_id(+)
+ AND a.usr_id = e.empe_cd(+)
+ AND a.ofc_cd = f.ofc_cd
+ AND e.DELT_FLG(+) = 'N'
+#if(${auth_cd} == 'S' && ${RHQ} != 'SINHO')
+ AND f.ar_hd_qtr_ofc_cd = @[RHQ]
+#end
+#if(${usr_id} != '')
+ AND upper(a.usr_id) LIKE '%'||upper(@[usr_id])||'%'
+#end
+#if(${ofc_cd} != '')
+ AND f.ofc_cd = @[ofc_cd]
+#end
+#if(${use_flg} != '')
+ AND NVL(a.use_flg,'Y') = @[use_flg]
+#end
+#if(${id_div} != '')
+#if(${id_div} == 'GID')
+ AND a.cre_usr_id = 'IAM'
+#else
+ AND a.cre_usr_id <> 'IAM'
+#end 
+#end
+#if(${usr_nm} != '')
+ AND (upper(a.usr_locl_nm) LIKE '%'||upper(@[usr_nm])||'%' OR upper(a.usr_nm) LIKE '%'||upper(@[usr_nm])||'%' )
+#end
+#if (${usr_auth_tp_cd} != '')
+#if (${usr_auth_tp_cd} == 'R')
+	AND (a.usr_auth_tp_cd = @[usr_auth_tp_cd] OR a.usr_auth_tp_cd IS NULL)
+#elseif(${usr_auth_tp_cd} != '')
+	AND (a.usr_auth_tp_cd = @[usr_auth_tp_cd] )
+#end
+#end
+ AND a.use_flg <> 'X'
+ORDER BY a.usr_id
+#else
+SELECT                  
+   a.usr_id            , 
+   '' AS usr_pwd             , 
+   usr_nm              , 
+   usr_locl_nm         , 
+   a.ofc_cd            , 
+   nvl(lst_lgin_ofc_cd,'') cng_ofc_cd       ,
+   NVL(usr_auth_tp_cd,'R') usr_auth_tp_cd           , 
+   NVL(a.use_flg,'Y') use_flg       ,                   
+   a.mphn_no             , 
+   DECODE(B.USR_ID,NULL,'X',0,'X','O') role_assign  , 
+   DECODE(D.USR_ID,NULL,'X',0,'X','O') super_role_assign  , 
+   DECODE(C.usr_id,NULL,'X',0,'X','O') pgm_assign, 
+   xtn_phn_no          , 
+   usr_eml             , 
+   jb_eng_nm           , 
+   psn_eng_nm          , 
+   grd_eng_nm          , 
+   cnt_cd              , 
+   lang_tp_cd          , 
+   gmt_tmzn_cd         , 
+   cnt_dt_fmt_cd       , 
+   cnt_no_fmt_cd       , 
+   fax_no,
+   dflt_eml,
+   e.srep_cd,
+   a.cre_usr_id        , 
+   TO_CHAR(a.cre_dt,'YYYYMMDD') cre_dt             ,  
+   a.upd_usr_id          ,                            
+   TO_CHAR(a.upd_dt,'YYYYMMDD') upd_dt                
+ FROM COM_USER A,								                        
+      (SELECT DISTINCT USR_ID FROM COM_USR_ROLE_MTCH) B,
+      (SELECT DISTINCT USR_ID FROM COM_USR_PGM_MTCH) C,
+      (SELECT DISTINCT USR_ID FROM COM_USR_ROLE_ADM_MTCH) D,
+      mdm_sls_rep e
+ WHERE A.USR_ID = B.USR_ID(+)
+ AND a.usr_id = c.usr_id(+)
+ AND a.usr_id = d.usr_id(+)
+ AND a.usr_id = e.empe_cd(+)
+ AND a.usr_id = @[s_usr_id]
+ AND e.DELT_FLG(+) = 'N'
+ AND a.use_flg <> 'X'
+#end			]]></sql>
+			<params>
+				<param name="RHQ" type="12" value="" out="N"/>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="use_flg" type="12" value="" out="N"/>
+				<param name="usr_nm" type="12" value="" out="N"/>
+				<param name="usr_auth_tp_cd" type="12" value="" out="N"/>
+				<param name="s_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

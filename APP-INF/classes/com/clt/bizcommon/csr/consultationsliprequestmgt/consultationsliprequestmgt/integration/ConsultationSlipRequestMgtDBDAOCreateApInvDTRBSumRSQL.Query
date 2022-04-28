@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCreateApInvDTRBSumRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT ATTR_CTNT1 ,
+		  FTU_USE_CTNT1  ,
+		  CNTR_TPSZ_CD ,
+		  GAP
+		FROM (
+		    SELECT A.ATTR_CTNT1 ,
+		      NVL(A.FTU_USE_CTNT1 ,'XXXXXX') FTU_USE_CTNT1,
+
+		      A.CNTR_TPSZ_CD ,
+		      NVL(CSR_AMT, 0) - NVL(DTRB, 0) GAP
+		    FROM (
+		        SELECT ATTR_CTNT1 ,
+		          NVL(FTU_USE_CTNT1 , 'XXXXXX') FTU_USE_CTNT1,
+		          DTRB_COA_ACCT_CD,
+		          NVL(CNTR_TPSZ_CD, 'XX') CNTR_TPSZ_CD ,
+		          SUM(INV_AMT) DTRB
+		        FROM AP_INV_DTRB
+		        WHERE CSR_NO = @[csr_no]
+		          AND ATTR_CTNT1 = @[inv_no]
+		          AND NVL(INV_AMT, 0) <> 0 
+				  AND DTRB_COA_ACCT_CD IN (SELECT ACCT_CD FROM MDM_ACCOUNT WHERE ACCT_CD LIKE COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','OPER_EXP')||'%' AND DELT_FLG = 'N')
+		        GROUP BY ATTR_CTNT1 , NVL(FTU_USE_CTNT1 , 'XXXXXX'), DTRB_COA_ACCT_CD, NVL(CNTR_TPSZ_CD, 'XX') ) A ,
+		      (
+		        SELECT H.INV_NO ,
+				  NVL(D.LGS_COST_CD, 'XXXXXX') 	LGS_COST_CD	,
+				  D.ACCT_CD,
+		          NVL(D.CNTR_TPSZ_CD, 'XX') CNTR_TPSZ_CD,
+		          SUM(D.INV_AMT) CSR_AMT
+		        FROM AP_PAY_INV H ,
+		          AP_PAY_INV_DTL D
+		        WHERE H.INV_NO = @[inv_no]
+		          AND H.VNDR_SEQ = @[vndr_seq]
+		          AND H.INV_STS_CD = 'C'
+		          AND NVL(H.DELT_FLG, 'N') <> 'Y'
+		          AND NVL(D.INV_AMT, 0) <> 0 AND D.ACCT_CD IN (SELECT ACCT_CD FROM MDM_ACCOUNT WHERE ACCT_CD LIKE COM_CSR_GET_ACCT_HRD_CDG_FNC('CSR','OPER_EXP')||'%' AND DELT_FLG = 'N')
+		          AND H.inv_rgst_no = D.inv_rgst_no
+		        GROUP BY H.INV_NO , NVL(D.LGS_COST_CD, 'XXXXXX'), D.ACCT_CD, NVL(D.CNTR_TPSZ_CD, 'XX') ) S
+		    WHERE A.ATTR_CTNT1 = S.INV_NO
+		      AND A.FTU_USE_CTNT1 = S.LGS_COST_CD
+		      AND NVL(A.CNTR_TPSZ_CD, 'N') = NVL(S.CNTR_TPSZ_CD, 'N') )
+		WHERE NVL(GAP, 0) <> 0			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="inv_no" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

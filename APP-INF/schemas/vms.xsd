@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://irep.clt.com/vms" targetNamespace="http://irep.clt.com/vms" elementFormDefault="unqualified">
+	<xsd:complexType name="EAIHeaderType">
+		<xsd:sequence>
+			<xsd:element name="InstanceId" type="xsd:string" />
+			<xsd:element name="Parameters" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Parameter" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:simpleContent>
+									<xsd:extension base="xsd:string">
+										<xsd:anyAttribute />
+									</xsd:extension>
+								</xsd:simpleContent>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="VMS001-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="RequestMessage">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="VSL_CD" type="xsd:string" />
+										<xsd:element name="HIRE_DATE" type="xsd:string" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="ResponseMessage">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="RESULT" type="xsd:string" nillable="true" minOccurs="0" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="VMS002-0001">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="EAIHeader" type="EAIHeaderType" />
+				<xsd:element name="DataArea">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="RequestMessage" maxOccurs="1">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="VSL_CD" type="xsd:string" />
+										<xsd:element name="INV_STDD" type="xsd:string" />
+										<xsd:element name="INV_ENDDD" type="xsd:string" />
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="ResponseMessage" minOccurs="1" maxOccurs="1">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="CDAMStlCollection">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="CDAMStl" minOccurs="0" maxOccurs="unbounded">
+														<xsd:complexType>
+															<xsd:sequence>
+																<xsd:element name="LIFID" type="xsd:string" nillable="true" minOccurs="0" />
+																<xsd:element name="SEQ" type="xsd:string" nillable="true" minOccurs="0" />
+																<xsd:element name="TOTAL_COUNT" type="xsd:string" nillable="true" minOccurs="0" />
+																<xsd:element name="ROW_COUNT" type="xsd:string" nillable="true" minOccurs="0" />
+																<xsd:element name="H_INV_STDD" type="xsd:string" nillable="true" minOccurs="0" />
+																<xsd:element name="H_INV_ENDDD" type="xsd:string" nillable="true" minOccurs="0" />
+																<xsd:element name="H_ACCT_CD" type="xsd:string" nillable="true" minOccurs="0" />
+																<xsd:element name="H_ACCT_NM" type="xsd:string" nillable="true" minOccurs="0" />
+																<xsd:element name="H_CURR_CD" type="xsd:string" nillable="true" minOccurs="0" />
+																<xsd:element name="H_INVD_AMT" type="xsd:string" nillable="true" minOccurs="0" />
+																<xsd:element name="EAI_RESULT" type="xsd:string" nillable="true" minOccurs="0" />
+															</xsd:sequence>
+														</xsd:complexType>
+													</xsd:element>
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

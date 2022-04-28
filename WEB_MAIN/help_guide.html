@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Cyberlogitec : OPUS Container</title>
+
+        <script src="style/js/jquery-1.11.0.min.js"></script>
+        <script src="style/js/fakeselect.js"></script>
+        <script src="style/js/opus_ui.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style/css/theme_default.css" />
+
+        <!-- 템플릿용 CSS[임시](S) -->
+        <style type="text/css">
+            .gnb_wrap,.util_bar {display:none}
+        </style>
+        <!-- 템플릿용 CSS[임시](E) -->
+</head>
+<body>
+<!-- page_title_area(S) -->
+<div class="page_title_area clear">
+    
+    <!-- page_title(S) -->
+    <!-- 타이틀 내용 동적생성 (별도 코딩 불필요) -->
+    <h2 class="page_title"><button type="button"><span id="title"></span></button></h2>
+    <!-- page_title(E) -->
+         
+   
+    <!-- opus_design_btn(S) -->
+    <div class="opus_design_btn">
+        <!-- 버튼 name / ID정의되어 있음. 별도 지정 금지 -->
+        <button type="button" class="btn_theme_default" name="btn_retrieve" id="btn_retrieve">Search</button>
+    </div>
+    <!-- opus_design_btn(E) -->
+    
+    
+    <!-- page_location(S) -->
+    <div class="location">
+        <!-- location 내용 동적생성 (별도 코딩 불필요) -->
+        <span id="navigation"></span>
+    </div>
+    <!-- page_location(E) -->
+</div>
+<!-- page_title_area(E) -->
+
+
+
+
+<!-- opus_design_inquiry(S) -->
+<div class="opus_design_inquiry">
+    
+    <!-- 조회영역 [Table](S) (기존 As-is 구조에서 변경되는 사항 없음) -->
+    <table>
+        <tbody>
+            <tr>
+                <th>title</th>
+                <td colspan="3">
+                    <input type="radio" name="rad_dateSep" value="P" id="exID01">
+                    <label for="exID01">Planned Departure</label>
+                    <input type="radio" name="rad_dateSep" value="D" id="exID02">
+                    <label for="exID02">Door Arrival</label>
+                    <input type="radio" name="rad_dateSep" value="R" id="exID03">
+                    <label for="exID03">Rail Creation</label>
+                </td>
+            <tr>
+                <th>Date</th>
+                <td>
+                    <span class="inquiry_calendar">
+                        <input name="frm_plandate" type="text" maxlength="8" onfocus="javascript:delHypen(this);" onblur="javascript:getHypen(this); getDateBetween(this);">
+                        <span class="dash">-</span>
+                        <input name="to_plandate" type="text" maxlength="8" onfocus="javascript:delHypen(this);" onblur="javascript:getHypen(this);" onkeyup="javascript:doSearchEnter();">
+                        <a class="calendar ir">calendar</a>
+                    </span>
+                </td>
+                <th>CY/Door</th>
+                <td>
+                    <select name="cydoor_div" onchange="getCostModeCombo();"><option value="CY">CY</option><option value="DR">DOOR</option></select>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Booking No.</th>
+                <td colspan="3">
+                    <!-- input_search -->
+                    <input class="input_search" />
+                    <a href="" class="input_seach_btn"></a>
+                    <!-- //input_search -->
+                    <a href="" class="multiple_inq ir">Mutiple inquiry</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 조회영역 [Table](E) (기존 As-is 구조에서 변경되는 사항 없음) -->
+    
+</div>
+<!-- opus_design_inquiry(E) -->
+
+
+
+<!-- opus_design_data(S) -->
+<div class="opus_design_data">
+    
+</div>
+<!-- opus_design_data(E)-->
+
+
+<!-- opus_design_tab(S) -->
+<div class="opus_design_tab">
+    <!-- 탭영역[table](S) (기존 As-is 구조에서 변경되는 사항 없음) -->
+    <table>
+        
+    </table>
+    <!-- 탭영역[table](E) (기존 As-is 구조에서 변경되는 사항 없음) -->
+</div>
+<!-- opus_design_tab(E) -->
+
+
+<!-- opus_design_grid(S) -->
+<div class="opus_design_grid">
+    
+    <!-- opus_design_btn(S) -->
+    <div class="opus_design_btn">
+        <!-- 그리드 버튼 영역(데이터 그리드 상단에 위치) -->
+        <!-- 버튼 name / ID정의되어 있음. 별도 지정 금지 -->
+        <button type="button" class="btn_theme_default" name="btng_rowadd" id="btng_rowadd">Row Add</button>
+    </div>
+    <!-- opus_design_btn(E) -->
+    
+    
+    <!-- 그리드 데이터 영역 [Table](S) (기존 As-is 구조에서 변경되는 사항 없음) -->
+    <!-- 그리드 데이터 영역 [Table](E) (기존 As-is 구조에서 변경되는 사항 없음) -->
+</div>
+<!-- opus_design_grid(E) -->
+</body>
+</html>

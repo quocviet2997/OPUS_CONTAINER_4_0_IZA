@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOAddSubLinkMsgCSQL">
+			<desc><![CDATA[2011.03.07 정윤태 BKG EDI SUB LNK MSG 정보를 신규 입력한다]]></desc>
+			<sql><![CDATA[
+INSERT INTO BKG_EDI_SUB_LNK_MSG (
+     TRD_PRNR_SUB_LNK_SEQ
+    ,EDI_MSG_TP_ID
+    ,EDI_MSG_IND_CD
+    ,MSG_TP_DESC
+    ,CRE_USR_ID
+    ,CRE_DT
+    ,UPD_USR_ID
+    ,UPD_DT
+) VALUES (
+     @[trd_prnr_sub_lnk_seq]
+    ,@[edi_msg_tp_id]
+    ,@[edi_msg_ind_cd]
+    ,@[msg_tp_desc]
+    ,@[cre_usr_id]
+    ,SYSDATE
+    ,@[upd_usr_id]
+    ,SYSDATE
+)			]]></sql>
+			<params>
+				<param name="trd_prnr_sub_lnk_seq" type="12" value="" out="N"/>
+				<param name="edi_msg_tp_id" type="12" value="" out="N"/>
+				<param name="edi_msg_ind_cd" type="12" value="" out="N"/>
+				<param name="msg_tp_desc" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

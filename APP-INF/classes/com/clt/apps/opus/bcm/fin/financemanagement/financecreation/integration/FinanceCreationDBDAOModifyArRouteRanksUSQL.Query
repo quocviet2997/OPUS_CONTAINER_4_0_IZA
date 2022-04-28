@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOModifyArRouteRanksUSQL">
+			<desc><![CDATA[ModifyArRouteRanks]]></desc>
+			<sql><![CDATA[
+UPDATE AR_ROUT_RNK
+SET
+RLANE_CD = @[rlane_cd]
+, RLANE_DESC = @[rlane_desc]
+, ZN_IOC_CD = @[zn_ioc_cd]
+, IOC_DESC = @[ioc_desc]
+, SLAN_CD = @[slan_cd]
+, DELT_FLG = @[delt_flg]
+, UPD_DT = SYSDATE
+, UPD_USR_ID = @[upd_usr_id]
+WHERE RLANE_CD = @[h_rlane_cd]
+AND RNK_SEQ = @[h_rnk_seq]			]]></sql>
+			<params>
+				<param name="rlane_cd" type="12" value="" out="N"/>
+				<param name="rlane_desc" type="12" value="" out="N"/>
+				<param name="zn_ioc_cd" type="12" value="" out="N"/>
+				<param name="ioc_desc" type="12" value="" out="N"/>
+				<param name="slan_cd" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="h_rlane_cd" type="12" value="" out="N"/>
+				<param name="h_rnk_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

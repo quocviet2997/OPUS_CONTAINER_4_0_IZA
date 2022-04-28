@@ -1,0 +1,65 @@
+/*=========================================================
+*Copyright(c) ${Date} CyberLogitec
+*@FileName : ${FILE_NAME}.java
+*@FileTitle : ${FILE_TITLE}
+*Open Issues :
+*Change history :
+*@LastModifyDate : ${Date_dey}
+*@LastModifier : ${USER_NAME}
+*@LastVersion : 1.0
+* ${Date_dey} ${USER_NAME}
+* 1.0 Creation
+=========================================================*/
+package ${PACKAGE};
+
+import com.clt.framework.support.layer.event.EventSupport;
+#foreach( $key in $Enty_Name.keySet())
+import $Import.get($key)
+#end
+
+
+/**
+ * ${UI} 에 대한 PDTO(Data Transfer Object including Parameters)<br>
+ * -  ${UI}HTMLAction에서 작성<br>
+ * - ServiceCommand Layer로 전달하는 PDTO로 사용<br>
+ *
+ * @author ${EN_NAME}
+ * @see ${UI}HTMLAction 참조
+ * @since J2EE 1.6
+ */
+
+public class ${FILE_NAME} extends EventSupport {
+
+	private static final long serialVersionUID = 1L;
+	
+#foreach( $key in $Enty_Name.keySet())
+	/** Table Value Object 조회 조건 및 단건 처리  */
+	$Enty_Name.get($key) $Enty_Name_b.get($key) = null;
+	
+	/** Table Value Object Multi Data 처리 */
+	$Enty_Name.get($key)[] $Enty_Name_b.get($key)s = null;
+
+#end
+	public ${FILE_NAME}(){}
+	
+#foreach( $key in $Enty_Name.keySet())
+	public void set$Enty_Name.get($key)($Enty_Name.get($key) $Enty_Name_b.get($key)){
+		this. $Enty_Name_b.get($key) = $Enty_Name_b.get($key);
+	}
+
+	public void set$Enty_Name.get($key)S($Enty_Name.get($key)[] $Enty_Name_b.get($key)s){
+		this. $Enty_Name_b.get($key)s = $Enty_Name_b.get($key)s;
+	}
+
+#end
+#foreach( $key in $Enty_Name.keySet())
+	public $Enty_Name.get($key) get$Enty_Name.get($key)(){
+		return $Enty_Name_b.get($key);
+	}
+
+	public $Enty_Name.get($key)[] get$Enty_Name.get($key)S(){
+		return $Enty_Name_b.get($key)s;
+	}
+
+#end
+}

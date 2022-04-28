@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MailMonitoringDAOSearchRSQL">
+			<desc><![CDATA[Mail Monitoring]]></desc>
+			<sql><![CDATA[
+SELECT * FROM(
+SELECT * FROM COM_EML_SND_INFO 
+WHERE EML_DT BETWEEN TO_DATE(@[eml_dt],'YYYYMMDDHH24MISS') AND TO_DATE(@[eml_dt],'YYYYMMDDHH24MISS')+1
+#if (${eml_snd_no} != '')
+AND EML_SND_NO = @[eml_snd_no]
+#end
+#if (${eml_proc_sts_cd} != '')
+AND EML_PROC_STS_CD = @[eml_proc_sts_cd]
+#end
+#if (${sndr_eml} != '')
+AND SNDR_EML LIKE @[sndr_eml]||'%'
+#end
+#if (${eml_tit_nm} != '')
+AND UPPER(EML_TIT_NM) LIKE '%'||UPPER(@[eml_tit_nm])||'%'
+#end
+#if (${bat_flg} != '')
+AND BAT_FLG LIKE '%'||@[bat_flg]||'%'
+#end
+ORDER BY eml_dt DESC
+)
+WHERE ROWNUM < 10001			]]></sql>
+			<params>
+				<param name="eml_dt" type="12" value="" out="N"/>
+				<param name="eml_snd_no" type="12" value="" out="N"/>
+				<param name="eml_proc_sts_cd" type="12" value="" out="N"/>
+				<param name="sndr_eml" type="12" value="" out="N"/>
+				<param name="eml_tit_nm" type="12" value="" out="N"/>
+				<param name="bat_flg" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

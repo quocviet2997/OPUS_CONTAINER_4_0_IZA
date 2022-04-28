@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalCsrAmountLimitUSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+UPDATE COM_APRO_ROUT_DFLT SET
+  CSR_CURR_CD = @[csr_curr_cd]
+, CSR_AMT = @[csr_amt]
+, UPD_DT = SYSDATE
+, UPD_USR_ID = @[login_usr_id]
+WHERE APRO_ROUT_SEQ = @[apro_rout_seq]			]]></sql>
+			<params>
+				<param name="csr_curr_cd" type="12" value="" out="N"/>
+				<param name="csr_amt" type="12" value="" out="N"/>
+				<param name="login_usr_id" type="12" value="" out="N"/>
+				<param name="apro_rout_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

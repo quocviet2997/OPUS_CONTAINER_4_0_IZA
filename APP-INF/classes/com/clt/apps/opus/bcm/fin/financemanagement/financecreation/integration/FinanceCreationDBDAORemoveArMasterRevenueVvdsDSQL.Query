@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAORemoveArMasterRevenueVvdsDSQL">
+			<desc><![CDATA[AR_MST_REV_VVD table에 데이터 삭제]]></desc>
+			<sql><![CDATA[
+DELETE FROM AR_MST_REV_VVD
+WHERE VSL_CD = @[h_vsl_cd]
+  AND SKD_VOY_NO = @[h_skd_voy_no]
+  AND SKD_DIR_CD = @[h_skd_dir_cd]
+  AND RLANE_DIR_CD = @[h_rlane_dir_cd]			]]></sql>
+			<params>
+				<param name="h_vsl_cd" type="12" value="" out="N"/>
+				<param name="h_skd_voy_no" type="12" value="" out="N"/>
+				<param name="h_skd_dir_cd" type="12" value="" out="N"/>
+				<param name="h_rlane_dir_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

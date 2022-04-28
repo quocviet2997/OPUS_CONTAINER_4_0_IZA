@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="OfficeProgramDAOSearchCntComOfcPgmMtchRSQL">
+			<desc><![CDATA[select count of mdm_organization]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*) cnt 
+		FROM MDM_ORGANIZATION
+		WHERE 1=1
+		#if(${loc_cd}!='')
+		and loc_cd like '%' || @[loc_cd] || '%'
+		#end
+		
+		#if(${ofc_knd_cd}!='')
+		and ofc_knd_cd like '%' || @[ofc_knd_cd] || '%'
+		#end
+		
+		#if(${prnt_ofc_cd}!='')
+		and prnt_ofc_cd like '%' || @[prnt_ofc_cd] || '%'
+		#end
+		
+		#if(${ofc_cd}!='')
+		and ofc_cd like '%' || @[ofc_cd] || '%'
+		#end
+		
+		#if(${ofc_nm}!='')
+		and ofc_eng_nm like '%' || @[ofc_nm] || '%'
+		#end
+		 and nvl(delt_flg, 'N') <> 'Y'			]]></sql>
+			<params>
+				<param name="loc_cd" type="12" value="" out="N"/>
+				<param name="ofc_knd_cd" type="12" value="" out="N"/>
+				<param name="prnt_ofc_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="ofc_nm" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

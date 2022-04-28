@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserDBDAOInfoRSQL">
+			<desc><![CDATA[user 정보를 조회]]></desc>
+			<sql><![CDATA[
+SELECT
+	A.USR_ID
+,	A.USR_NM
+,	A.USR_EML
+,	A.FAX_NO
+,	A.USE_FLG
+,	A.USR_AUTH_TP_CD
+,	A.USR_LOCL_NM
+,	A.XTN_PHN_NO
+,	DECODE(A.CRE_USR_ID, 'IAM', 'GID', 'LID') DIV
+,	A.OFC_CD
+,	B.OFC_LOCL_NM AS OFC_KRN_NM
+,	B.AR_HD_QTR_OFC_CD RHQ
+,	D.SREP_CD
+FROM COM_USER A, MDM_ORGANIZATION B, MDM_SLS_REP D 
+WHERE	A.USR_ID = @[usr_id]
+AND A.OFC_CD = B.OFC_CD(+) 
+AND B.DELT_FLG(+) = 'N'
+AND A.USR_ID = D.EMPE_CD(+)			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

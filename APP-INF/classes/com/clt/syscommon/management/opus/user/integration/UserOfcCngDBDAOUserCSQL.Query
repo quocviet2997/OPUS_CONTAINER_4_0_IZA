@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UserOfcCngDBDAOUserCSQL">
+			<desc><![CDATA[User 추가]]></desc>
+			<sql><![CDATA[
+INSERT INTO COM_USR_OFC_CNG (
+	USR_ID
+,	CNG_OFC_CD
+,	CNG_OFC_FM_DT
+,	CNG_OFC_TO_DT
+,	RQST_CTNT
+,	CRE_USR_ID
+,	CRE_DT
+,	UPD_USR_ID
+,	UPD_DT
+) VALUES( 
+	@[usr_id]
+,	@[cng_ofc_cd]
+,	TO_DATE(@[cng_ofc_fm_dt],'YYYY-MM-DD')
+,	TO_DATE(@[cng_ofc_to_dt],'YYYY-MM-DD')
+,	@[rqst_ctnt]
+,	@[cre_usr_id]
+,	SYSDATE
+,	@[upd_usr_id]
+,	SYSDATE
+)			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="cng_ofc_cd" type="12" value="" out="N"/>
+				<param name="cng_ofc_fm_dt" type="12" value="" out="N"/>
+				<param name="cng_ofc_to_dt" type="12" value="" out="N"/>
+				<param name="rqst_ctnt" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

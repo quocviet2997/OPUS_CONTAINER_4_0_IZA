@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CustomerDBDAOSearchCustomerRSQL">
+			<desc><![CDATA[조회]]></desc>
+			<sql><![CDATA[
+#if(${credit_flg} == 'on')
+	SELECT DISTINCT CUST_CD, 
+	  CUST_NM, 
+	  OFC_CD, 
+	  DECODE(SLS_DELT_EFF_DT, NULL, 'Y', 'Y' , 'Y', 'N') USE, 
+	  BZET_ADDR, 
+	  STE_CD, 
+	  ZIP_CD, 
+	  LOC_CD, 
+	  DECODE(CNTR_CUST_TP_CD  , 'B', 'BCO', 'Non-BCO') CNTR_CUST_TP_CD  , 
+	  CUST_GRP_ID,
+	  VNDR_SEQ,
+		(CASE 
+			WHEN 'Y' = delt_flg THEN 'Delete' 
+			ELSE 'Active' 
+		END) AS delt_flg,
+	  CUST_SEQ,
+	  CUST_CNT_CD,
+	  LGCY_CD,
+	  LGCY_NM,
+	  CTRT_SRC_CD,
+	  MODI_CUST_CD2,
+      (SELECT CUST_LGL_ENG_NM FROM MDM_CUSTOMER WHERE CUST_CNT_CD = TOBE_CUST_CNT_CD AND CUST_SEQ = TOBE_CUST_SEQ) AS TOBE_CUST_NM
+	FROM ( 
+		SELECT /*+ INDEX_ASC(A XPKMDM_CUSTOMER) */ ROWNUM NO, 
+		  A.CUST_CNT_CD||lpad(A.CUST_SEQ, 6, 0) CUST_CD, 
+		  A.CUST_LGL_ENG_NM CUST_NM, 
+		  A.OFC_CD, 
+		  DECODE(A.SLS_DELT_EFF_DT, NULL, 'Y', 'N') SLS_DELT_EFF_DT, 
+		  B.BZET_ADDR, 
+		  B.STE_CD, 
+		  B.ZIP_CD, 
+		  A.LOC_CD, 
+		  A.CNTR_CUST_TP_CD  , 
+		  A.CUST_GRP_ID, 
+		  A.VNDR_SEQ ,
+		  A.DELT_FLG,
+		  A.CUST_SEQ,
+		  A.CUST_CNT_CD,
+		 (SELECT LGCY_CD 
+            FROM MDM_MAPG_RULE
+           WHERE COL_NM = 'CUST_SEQ' 
+             AND OPUS_CD = D.LGCY_CD
+             AND LGCY_CO_CD IN ('N', 'M', 'K') ) LGCY_CD,
+		  (SELECT LGCY_NM 
+            FROM MDM_MAPG_RULE
+           WHERE COL_NM = 'CUST_SEQ' 
+             AND OPUS_CD = D.LGCY_CD
+             AND LGCY_CO_CD IN ('N', 'M', 'K') ) LGCY_NM,
+		  (SELECT LGCY_CO_CD
+            FROM MDM_MAPG_RULE
+           WHERE COL_NM = 'CUST_SEQ' 
+             AND OPUS_CD = D.LGCY_CD
+             AND LGCY_CO_CD IN ('N', 'M', 'K') ) CTRT_SRC_CD,
+	  	   MODI_CUST_CD2,
+           SUBSTR(MODI_CUST_CD2,1,2)  AS TOBE_CUST_CNT_CD,
+           SUBSTR(MODI_CUST_CD2,3,6)  AS TOBE_CUST_SEQ,
+		   A.MODI_CUST_CD2 AS MODI_CUST_CD
+		FROM MDM_CUSTOMER A, 
+		  MDM_CUST_ADDR B, 
+          MDM_CR_CUST C,
+		  MDM_MAPG_RULE D
+		WHERE 1 = 1 
+		  AND A.CUST_CNT_CD = C.CUST_CNT_CD
+		  AND A.CUST_SEQ = C.CUST_SEQ
+		  AND A.CUST_CNT_CD = B.CUST_CNT_CD(+) 
+		  AND A.CUST_SEQ = B.CUST_SEQ(+)
+		  AND D.OPUS_CD(+) = A.CUST_CNT_CD||A.CUST_SEQ
+		  AND D.TBL_NM(+) = 'MDM_CUSTOMER'
+          AND D.COL_NM(+) = 'CUST_SEQ' 
+		  AND B.PRMRY_CHK_FLG(+) = 'Y' 
+          AND D.LGCY_CO_CD(+) = 'O'
+	      AND A.CUST_CNT_CD NOT IN ('TB','XX')
+    #if ( (${mdm_yn} == '' || ${mdm_yn} != 'Y') && (${nmd_cust_flg} == '' || ${nmd_cust_flg} != 'Y') ) 
+		  AND NVL(NMD_CUST_FLG, 'N') = 'N'
+    #end
+          AND C.CR_FLG = 'Y'
+	#if(${cust_cnt_cd} != '')
+          AND A.CUST_CNT_CD = @[cust_cnt_cd]
+    #end
+    #if(${cust_seq} != '')
+          AND A.CUST_SEQ = @[cust_seq]
+    #end
+
+	#if(${lgcy_cd} != '')
+	      AND (D.COL_NM, D.LGCY_CD) IN (SELECT COL_NM, OPUS_CD 
+                                        FROM MDM_MAPG_RULE
+                                       WHERE COL_NM = 'CUST_SEQ'
+                                         AND LGCY_CD LIKE @[lgcy_cd] || '%'
+                                         AND LGCY_CO_CD IN ('N', 'M', 'K') )
+          
+	#end
+
+	#if(${lgcy_nm} != '')
+			#if(${include} == 'on')
+			AND upper(D.LGCY_NM) LIKE '%' || upper(@[lgcy_nm]) || '%'
+		#else
+			AND upper(D.LGCY_NM) LIKE upper(@[lgcy_nm]) || '%'
+		#end
+	#end
+
+	#if(${cust_lgl_eng_nm} != '')
+		#if(${include} == 'on')
+			AND UPPER(REPLACE(TRIM(A.CUST_LGL_ENG_NM),' ','')) LIKE '%' || UPPER(REPLACE(TRIM(@[cust_lgl_eng_nm]),' ','')) || '%'
+		#else
+			AND UPPER(REPLACE(TRIM(A.CUST_LGL_ENG_NM),' ','')) LIKE UPPER(REPLACE(TRIM(@[cust_lgl_eng_nm]),' ','')) || '%'
+		#end
+	#end
+
+	#if(${ofc_cd} != '')
+			AND A.OFC_CD LIKE @[ofc_cd] || '%'
+	#end
+
+	#if(${loc_cd} != '')
+			AND A.LOC_CD LIKE @[loc_cd] || '%'
+	#end
+    
+    #if(${nmd_cust_flg} != '')
+			AND A.NMD_CUST_FLG = @[nmd_cust_flg]
+	#end
+
+	#if (${mdm_yn} != '')
+
+		#if (${delt_flg} == 'Y') 
+			AND A.DELT_FLG = @[delt_flg]
+		#elseif (${delt_flg} == 'ALL') 
+
+		#else 
+			AND A.DELT_FLG <> 'Y'
+		#end
+
+	#else	
+		AND A.DELT_FLG <> 'Y'
+	#end
+		   ) A 
+	WHERE 1=1
+	  #if(${ctrt_src_cd} != 'A')
+	  AND CTRT_SRC_CD = @[ctrt_src_cd]
+	  #end
+	  AND NO BETWEEN @[startpart] AND @[endpart]
+	  AND ROWNUM <= 200 
+	ORDER BY CUST_CNT_CD, CUST_SEQ
+#else
+	SELECT DISTINCT CUST_CD, 
+	  CUST_NM, 
+	  OFC_CD, 
+	  DECODE(SLS_DELT_EFF_DT, NULL, 'Y', 'Y' , 'Y', 'N') USE, 
+	  BZET_ADDR, 
+	  STE_CD, 
+	  ZIP_CD, 
+	  LOC_CD, 
+	  DECODE(CNTR_CUST_TP_CD  , 'B', 'BCO', 'N', 'Non-BCO', '') CNTR_CUST_TP_CD  , 
+	  CUST_GRP_ID,
+	  VNDR_SEQ,
+		(CASE 
+			WHEN 'Y' = delt_flg THEN 'Delete' 
+			ELSE 'Active' 
+		END) AS delt_flg,
+	  CUST_SEQ,
+	  CUST_CNT_CD,
+		  LGCY_CD,
+		  LGCY_NM,
+		  CTRT_SRC_CD,
+	  MODI_CUST_CD2,
+      (SELECT CUST_LGL_ENG_NM FROM MDM_CUSTOMER WHERE CUST_CNT_CD = TOBE_CUST_CNT_CD AND CUST_SEQ = TOBE_CUST_SEQ) AS TOBE_CUST_NM
+	FROM ( 
+		SELECT /*+ INDEX_ASC(A XPKMDM_CUSTOMER) */ ROWNUM NO, 
+		  A.CUST_CNT_CD||lpad(A.CUST_SEQ, 6, 0) CUST_CD, 
+		  A.CUST_LGL_ENG_NM CUST_NM, 
+		  A.OFC_CD, 
+		  DECODE(A.SLS_DELT_EFF_DT, NULL, 'Y', 'N') SLS_DELT_EFF_DT, 
+		  B.BZET_ADDR, 
+		  B.STE_CD, 
+		  B.ZIP_CD, 
+		  A.LOC_CD, 
+		  A.CNTR_CUST_TP_CD  , 
+		  A.CUST_GRP_ID, 
+		  A.VNDR_SEQ ,
+		  A.DELT_FLG,
+		  A.CUST_SEQ,
+		  A.CUST_CNT_CD,
+		  (SELECT LGCY_CD 
+            FROM MDM_MAPG_RULE
+           WHERE COL_NM = 'CUST_SEQ' 
+             AND OPUS_CD = C.LGCY_CD
+             AND LGCY_CO_CD IN ('N', 'M', 'K') ) LGCY_CD,
+		  (SELECT LGCY_NM 
+            FROM MDM_MAPG_RULE
+           WHERE COL_NM = 'CUST_SEQ' 
+             AND OPUS_CD = C.LGCY_CD
+             AND LGCY_CO_CD IN ('N', 'M', 'K') ) LGCY_NM,
+     	  (SELECT LGCY_CO_CD
+            FROM MDM_MAPG_RULE
+           WHERE COL_NM = 'CUST_SEQ' 
+             AND OPUS_CD = C.LGCY_CD
+             AND LGCY_CO_CD IN ('N', 'M', 'K') ) CTRT_SRC_CD,
+	  	   MODI_CUST_CD2,
+           SUBSTR(MODI_CUST_CD2,1,2)  AS TOBE_CUST_CNT_CD,
+           SUBSTR(MODI_CUST_CD2,3,6)  AS TOBE_CUST_SEQ
+		FROM MDM_CUSTOMER A, 
+		  MDM_CUST_ADDR B,
+		  MDM_MAPG_RULE C
+		WHERE 1 = 1 
+		  AND A.CUST_CNT_CD = B.CUST_CNT_CD(+) 
+		  AND A.CUST_SEQ = B.CUST_SEQ(+) 
+		  AND C.OPUS_CD(+) = A.CUST_CNT_CD||A.CUST_SEQ
+		  AND C.TBL_NM(+)= 'MDM_CUSTOMER'
+          AND C.COL_NM(+) = 'CUST_SEQ'
+		  AND B.PRMRY_CHK_FLG(+) = 'Y'
+          AND C.LGCY_CO_CD(+) = 'O'
+          AND A.CUST_CNT_CD NOT IN ('TB','XX')
+		 
+    #if ( (${mdm_yn} == '' || ${mdm_yn} != 'Y') && (${nmd_cust_flg} == '' || ${nmd_cust_flg} != 'Y') )  
+		  AND NVL(NMD_CUST_FLG, 'N') = 'N'
+    #end
+	#if(${cust_cnt_cd} != '')
+          AND A.CUST_CNT_CD = @[cust_cnt_cd]
+    #end
+    #if(${cust_seq} != '')
+          AND A.CUST_SEQ = @[cust_seq]
+    #end
+
+	#if(${lgcy_cd} != '')
+			AND (C.COL_NM, C.LGCY_CD) IN (SELECT COL_NM, OPUS_CD 
+                                        FROM MDM_MAPG_RULE
+                                       WHERE COL_NM = 'CUST_SEQ'
+                                         AND LGCY_CD LIKE @[lgcy_cd] || '%'
+                                         AND LGCY_CO_CD IN ('N', 'M', 'K') )            
+	#end
+
+	#if(${lgcy_nm} != '')
+			AND UPPER(C.LGCY_NM) LIKE '%' || UPPER(@[lgcy_nm]) || '%'
+	#end
+
+	#if(${cust_lgl_eng_nm} != '')
+		#if(${include} == 'on')			
+            AND UPPER(REPLACE(TRIM(A.CUST_LGL_ENG_NM),' ','')) LIKE '%' || UPPER(REPLACE(TRIM(@[cust_lgl_eng_nm]),' ','')) || '%'
+		#else
+			AND UPPER(REPLACE(TRIM(A.CUST_LGL_ENG_NM),' ','')) LIKE UPPER(REPLACE(TRIM(@[cust_lgl_eng_nm]),' ','')) || '%'
+		#end
+	#end
+
+	#if(${ofc_cd} != '')
+			AND A.OFC_CD LIKE @[ofc_cd] || '%'
+	#end
+
+	#if(${loc_cd} != '')
+			AND A.LOC_CD LIKE @[loc_cd] || '%'
+	#end
+    
+    #if(${nmd_cust_flg} != '')
+			AND A.NMD_CUST_FLG = @[nmd_cust_flg]
+	#end
+
+	#if (${mdm_yn} != '')
+
+		#if (${delt_flg} == 'Y') 
+			AND A.DELT_FLG = @[delt_flg]
+		#elseif (${delt_flg} == 'ALL') 
+
+		#else 
+			AND A.DELT_FLG <> 'Y'
+		#end
+
+	#else	
+		AND A.DELT_FLG <> 'Y'
+	#end
+		   ) A 
+	WHERE 1=1
+      #if(${ctrt_src_cd} != 'A')
+	  AND CTRT_SRC_CD = @[ctrt_src_cd]
+	  #end
+      AND NO BETWEEN @[startpart] AND @[endpart]
+	  AND ROWNUM <= 200 
+	ORDER BY CUST_CNT_CD, CUST_SEQ
+#end			]]></sql>
+			<params>
+				<param name="cust_cnt_cd" type="12" value="" out="N"/>
+				<param name="cust_seq" type="12" value="" out="N"/>
+				<param name="lgcy_cd" type="12" value="" out="N"/>
+				<param name="lgcy_nm" type="12" value="" out="N"/>
+				<param name="cust_lgl_eng_nm" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="loc_cd" type="12" value="" out="N"/>
+				<param name="nmd_cust_flg" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="ctrt_src_cd" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

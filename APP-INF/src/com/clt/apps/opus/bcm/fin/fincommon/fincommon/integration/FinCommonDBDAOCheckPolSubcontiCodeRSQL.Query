@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinCommonDBDAOCheckPolSubcontiCodeRSQL">
+			<desc><![CDATA[SunContinent Code를 MDM의 MDM_SUBCONTINENT table에서의 존재여부를 확인]]></desc>
+			<sql><![CDATA[
+SELECT 
+SCONTI_CD
+FROM MDM_SUBCONTINENT
+WHERE ROWNUM = 1 
+AND DELT_FLG = 'N'
+AND SCONTI_CD = @[sconti_cd]			]]></sql>
+			<params>
+				<param name="sconti_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

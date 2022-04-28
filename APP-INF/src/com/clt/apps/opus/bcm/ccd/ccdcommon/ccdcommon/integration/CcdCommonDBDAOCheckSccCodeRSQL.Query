@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckSccCodeRSQL">
+			<desc><![CDATA[EQ SCC Code 를 체크합니다.]]></desc>
+			<sql><![CDATA[
+SELECT  SCC_CD
+  FROM  MDM_EQ_ORZ_CHT
+ WHERE  1 = 1
+   AND  SCC_CD = @[scc_cd]
+   AND  DELT_FLG <> 'Y'			]]></sql>
+			<params>
+				<param name="scc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOSearchGroupCustomerListVORSQL">
+			<desc><![CDATA[2011.02.22 정윤태 EDI GROUP CUSTOMER 정보를 조회한다]]></desc>
+			<sql><![CDATA[
+SELECT  SCE.EDI_GRP_CD EDI_GRP_CD
+       ,SCE.CO_DIV_CD CO_DIV_CD
+       ,SCE.CUST_CNT_CD CUST_CNT_CD
+       --,DECODE(SCE.CUST_SEQ,0,'',LPAD(SCE.CUST_SEQ,6,'0')) CUST_SEQ
+       ,DECODE(SCE.CUST_SEQ,0,'',SCE.CUST_SEQ) CUST_SEQ
+       ,SCE.SC_NO SC_NO
+       ,SCE.SC_EFF_ST_DT SC_EFF_ST_DT
+       ,SCE.SC_EFF_END_DT SC_EFF_END_DT
+       ,SCE.IB_SVC_FLG IB_SVC_FLG
+       ,SCE.CGO_TRC_SVC_FLG CGO_TRC_SVC_FLG
+       ,SCE.BKG_CTRT_DIV_CD BKG_CTRT_DIV_CD
+       ,SCE.BKG_CUST_TP_DESC CUST_ROLE
+       ,BKG.ESVC_BL_TP_CD ESVC_BL_TP_CD
+       ,BKG.BKG_CFM_FLG BKG_CFM_FLG
+       ,BKG.BKG_CFM_AUTO_FLG BKG_CFM_AUTO_FLG
+       ,BKG.BL_DRFT_AUTO_FLG BL_DRFT_AUTO_FLG
+       ,BKG.BL_DRFT_FLG BL_DRFT_FLG
+       ,BKG.AN_FLG AN_FLG
+       ,BKG.CRE_USR_ID CRE_USR_ID
+       ,BKG.UPD_USR_ID UPD_USR_ID
+       ,BKG.VT_CUST_OFC_CD VT_CUST_OFC_CD
+  FROM EDI_GRP_CUST SCE,
+       BKG_EDI_GRP_CUST BKG
+ WHERE SCE.EDI_GRP_CD = BKG.ESVC_GRP_CD
+   AND SUBSTR(SCE.CO_DIV_CD,1,1) = BKG.CO_CD
+   AND SCE.CUST_CNT_CD = BKG.CNT_CD
+   AND SCE.CUST_SEQ = BKG.CUST_SEQ
+   AND SCE.SC_NO = BKG.SC_NO
+#if (${grp_cd} != '')
+   AND SCE.EDI_GRP_CD LIKE '%' || @[grp_cd] || '%'
+#end
+
+#if (${co_div_cd} != '')
+   AND SCE.CO_DIV_CD = @[co_div_cd]
+#end
+
+#if (${sc_no} != '')
+   AND SCE.SC_NO = @[sc_no]
+#end
+
+#if (${cgo_trc_svc_flg} != '')
+   AND SCE.CGO_TRC_SVC_FLG = @[cgo_trc_svc_flg]
+#end
+
+#if (${cust_cd} != '')
+   AND SCE.CUST_CNT_CD||SCE.CUST_SEQ = @[cust_cd]
+#end			]]></sql>
+			<params>
+				<param name="grp_cd" type="12" value="" out="N"/>
+				<param name="co_div_cd" type="12" value="" out="N"/>
+				<param name="sc_no" type="12" value="" out="N"/>
+				<param name="cgo_trc_svc_flg" type="12" value="" out="N"/>
+				<param name="cust_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

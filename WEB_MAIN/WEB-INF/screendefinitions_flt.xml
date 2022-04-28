@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+    <!-- Ki-Min Doo : 2017-01-03 start -->
+    <screen name="ESM_FLT_0001">
+        <parameter key="title"    value="Time Charter Contract Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/contractmanagement/jsp/ESM_FLT_0001.jsp"/>
+    </screen>
+    <!-- Ki-Min Doo : 2017-01-03 end -->
+    <!-- Ki-Min Doo : 2017-01-05 start -->
+    <screen name="ESM_FLT_0004" template="templatePop">
+        <parameter key="title"    value="Vessel Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/contractmanagement/jsp/ESM_FLT_0004.jsp"/>
+    </screen>
+	<!-- Ki-Min Doo : 2017-01-05 end -->
+	<!-- Ki-Min Doo : 2017-01-03 start -->
+    <screen name="ESM_FLT_0064" template="templatePop">
+        <parameter key="title"    value="Owner Change Pop" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/contractmanagement/jsp/ESM_FLT_0064.jsp"/>
+    </screen>
+	<!-- Ki-Min Doo : 2017-01-03 end -->
+	<!-- Ki-Min Doo : 2017-01-09 start -->
+    <screen name="ESM_FLT_0005">
+        <parameter key="title"    value="Owner Change" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/contractmanagement/jsp/ESM_FLT_0005.jsp"/>
+    </screen>
+    <!-- Ki-Min Doo : 2017-01-09 end -->
+    <!-- Ki-Min Doo : 2017-01-03 start -->
+    <screen name="ESM_FLT_0065" template="templatePop">
+        <parameter key="title"    value="Off-Hire Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/contractmanagement/jsp/ESM_FLT_0065.jsp"/>
+    </screen>
+	<!-- Ki-Min Doo : 2017-01-03 end -->
+	<!-- Ki-Min Doo : 2018-06-12 start -->
+    <screen name="ESM_FLT_0066" template="templatePop">
+        <parameter key="title"    value="Off-Hire Entry Excel" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/contractmanagement/jsp/ESM_FLT_0066.jsp"/>
+    </screen>
+	<!-- Ki-Min Doo : 2018-06-12 end -->
+    <!-- Ki-Min Doo : 2017-01-16 start -->
+    <screen name="ESM_FLT_0037">
+        <parameter key="title"    value="Owner Account Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/invoice/outstanding/jsp/ESM_FLT_0037.jsp"/>
+    </screen>
+	<!-- Ki-Min Doo : 2017-01-05 end -->
+	<!-- Ki-Min Doo : 2017-01-16 start -->
+	<screen name="ESM_FLT_0037_POP" template="templatePop">
+        <parameter key="title"    value="Each Container" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/invoice/outstanding/jsp/ESM_FLT_0037.jsp"/>
+    </screen>
+    <!-- Ki-Min Doo : 2017-01-05 end -->
+    <!-- Ki-Min Doo : 2017-01-05 start -->
+    <screen name="ESM_FLT_0038">
+        <parameter key="title"    value="Owner Account Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/invoice/outstanding/jsp/ESM_FLT_0038.jsp"/>
+    </screen>
+	<!-- Ki-Min Doo : 2017-01-05 end -->
+	<!-- Ki-Min Doo : 2017-01-05 start -->
+    <screen name="ESM_FLT_0055" template="templatePop">
+        <parameter key="title"    value="Vessel Code" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/common/vendorcustomerinquriy/jsp/ESM_FLT_0055.jsp"/>
+    </screen>
+	<!-- Ki-Min Doo : 2017-01-05 end -->
+	<!-- Sang-Hyun Kim : 2017.01.06 Start -->
+	<screen name="ESM_FLT_0030">
+		<parameter key="title" value="Brokerage Payable List" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/invoice/brokerageinvoice/jsp/ESM_FLT_0030.jsp" />
+    </screen>
+	<screen name="ESM_FLT_0031">
+		<parameter key="title" value="Brokerage Invoice" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/invoice/brokerageinvoice/jsp/ESM_FLT_0031.jsp" />
+    </screen>
+	<!-- Sang-Hyun Kim : 2017.01.06 End -->
+    <!-- Ki-Min Doo : 2017-06-05 start -->
+    <screen name="ESM_FLT_0039">
+        <parameter key="title"    value="Slip Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/slip/slipentry/jsp/ESM_FLT_0039.jsp"/>
+    </screen>
+	<!-- Ki-Min Doo : 2017-06-05 end -->
+	<!-- Sang-Hyun Kim : 2017.01.06 Start -->
+	<screen name="ESM_FLT_0041">
+		<parameter key="title" value="Monthly Hire Assign by VVD" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/slip/monthlyhireassignbyvvd/jsp/ESM_FLT_0041.jsp" />
+    </screen>
+	<!-- Sang-Hyun Kim : 2017.01.06 End -->
+	<!-- Jin-Yong Lee : 2017.06.12 Start -->
+	<screen name="ESM_FLT_0042">
+		<parameter key="title" value="Monthly Hire Accrual" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/slip/monthlyhireaccrual/jsp/ESM_FLT_0042.jsp" />
+    </screen>
+	<!-- Jin-Yong Lee : 2017.06.12 End -->
+	<!-- Ki-Min Doo : 2017.05.11 Start -->
+	<screen name="ESM_FLT_0040">
+		<parameter key="title" value="Slip List" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/slip/sliplist/jsp/ESM_FLT_0040.jsp" />
+    </screen>
+    <screen name="ESM_FLT_0040_POP" template="templatePop">
+        <parameter key="title"    value="Slip Liste List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/slip/sliplist/jsp/ESM_FLT_0040.jsp"/>
+    </screen>
+	<!-- Ki-Min Doo : 2017.05.11 End -->
+    <!-- Ki-Min Doo : 2017.01.20 Start -->
+	<screen name="ESM_FLT_0047">
+		<parameter key="title" value="Holiday Management" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/setup/fltsetup/jsp/ESM_FLT_0047.jsp" />
+    </screen>
+	<!-- Ki-Min Doo : 2017.01.20 End -->
+	<!-- Dea-Heum Yeon : 2017.01.11 Start -->
+	<screen name="ESM_FLT_0057" template="templatePop">
+		<parameter key="title" value="Vessel List" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/common/vesselinquiry/jsp/ESM_FLT_0057.jsp" />
+    </screen>
+	<!-- Dea-Heum Yeon : 2017.01.11 End -->
+	<!-- Dea-Heum Yeon : 2017.01.12 Start -->
+	<screen name="ESM_FLT_0060" template="templatePop">
+		<parameter key="title" value="Lane Code Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/common/laneinquiry/jsp/ESM_FLT_0060.jsp" />
+    </screen>
+	<!-- Dea-Heum Yeon : 2017.01.11 End -->
+	<!-- Dea-Heum Yeon : 2017.01.16 Start -->
+	<screen name="ESM_FLT_1051">
+		<parameter key="title" value="Vendor Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/common/vendorinquiry/jsp/ESM_FLT_1051.jsp" />
+    </screen>
+	<!-- Dea-Heum Yeon : 2017.01.16 End -->
+	<!-- Dea-Heum Yeon : 2017.01.17 Start -->
+	<screen name="ESM_FLT_0046" template="templatePop">
+		<parameter key="title" value="Account Code Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/common/accountcodeinquiry/jsp/ESM_FLT_0046.jsp" />
+    </screen>
+	<!-- Dea-Heum Yeon : 2017.01.11 End -->
+	<!-- Dea-Heum Yeon : 2017.01.18 Start -->
+	<screen name="ESM_FLT_0051">
+		<parameter key="title" value="Vendor Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/common/vendorinquiry/jsp/ESM_FLT_0051.jsp" />
+    </screen>
+	<!-- Dea-Heum Yeon : 2017.01.18 End -->
+	<!-- Dea-Heum Yeon : 2017.01.19 Start -->
+	<screen name="ESM_FLT_0059" template="templatePop">
+		<parameter key="title" value="Revenue VVD Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/common/vvdinquiry/jsp/ESM_FLT_0059.jsp" />
+    </screen>
+	<!-- Dea-Heum Yeon : 2017.01.19 End -->
+	<!-- Dea-Heum Yeon : 2017.01.23 Start -->
+	<screen name="ESM_FLT_0052">
+		<parameter key="title" value="Customer Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/common/customerinquiry/jsp/ESM_FLT_0052.jsp" />
+    </screen>
+	<!-- Dea-Heum Yeon : 2017.01.23 End -->
+	<!-- Dea-Heum Yeon : 2017.01.24 Start -->
+	<screen name="ESM_FLT_0053">
+		<parameter key="title" value="Vessel Information" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/common/vesselinformation/jsp/ESM_FLT_0053.jsp" />
+    </screen>
+	<!-- Dea-Heum Yeon : 2017.01.24 End -->
+	<!-- Woo-Sam Kim : 2017.01.11 Start -->
+	<screen name="ESM_FLT_0018">
+		<parameter key="title" value="Time Charter Invoice" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/invoice/timecharterinvoice/jsp/ESM_FLT_0018.jsp" />
+    </screen>
+    <screen name="ESM_FLT_0019" template="templatePop">
+		<parameter key="title" value="Off-Hire Offset" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/invoice/timecharterinvoice/jsp/ESM_FLT_0019.jsp" />
+    </screen>
+	<!-- Woo-Sam Kim : 2017.01.11 End -->
+	<!-- Yo-Na Ha : 2017-02-07 (S) -->
+    <screen name="ESM_FLT_0056" template="templatePop">
+        <parameter key="title"    value="Contract Vendor Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/common/contractvendorinquiry/jsp/ESM_FLT_0056.jsp"/>
+    </screen>
+	<!-- Yo-Na Ha : 2017-02-07 (E) -->
+	<!-- Eunju Son : 2017.02.06 Start -->
+	<screen name="ESM_FLT_0024" template="templatePop">
+		<parameter key="title" value="Time Charter Invoice Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/invoice/timecharterinvoice/jsp/ESM_FLT_0024.jsp" />
+    </screen>
+	<!-- Eunju Son : 2017.02.06 End -->
+	<!-- Yo-Na Ha : 2017-02-08 (S) -->
+    <screen name="ESM_FLT_0002" template="templatePop">
+        <parameter key="title"    value="FLT Amend History" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/contractmanagement/jsp/ESM_FLT_0002.jsp"/>
+    </screen>
+	<!-- Yo-Na Ha : 2017-02-08 (E) -->
+	<!-- Eunju Son : 2017.02.09 Start -->
+	<screen name="ESM_FLT_0025" template="templatePop">
+		<parameter key="title" value="Time Charter Contract Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/invoice/timecharterinvoice/jsp/ESM_FLT_0025.jsp" />
+    </screen>
+	<!-- Eunju Son : 2017.02.09 End -->
+	<!-- Eunju Son : 2017.02.10 Start -->
+	<screen name="ESM_FLT_0026" template="templatePop">
+		<parameter key="title" value="Time Charter Bank Info. Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/invoice/timecharterinvoice/jsp/ESM_FLT_0026.jsp" />
+    </screen>
+	<!-- Eunju Son : 2017.02.10 End -->
+	<!-- Eunju Son : 2017.02.13 Start -->
+	<screen name="ESM_FLT_0013" template="templatePop">
+		<parameter key="title" value="Time Charter Reserved Broker Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/invoice/timecharterinvoice/jsp/ESM_FLT_0013.jsp" />
+    </screen>
+	<!-- Eunju Son : 2017.02.13 End -->
+	<!-- Eunju Son : 2017.02.14 Start -->
+	<screen name="ESM_FLT_0027">
+		<parameter key="title" value="Invoice List Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/invoice/timecharterinvoice/jsp/ESM_FLT_0027.jsp" />
+    </screen>
+	<!-- Eunju Son : 2017.02.14 End -->
+	<!-- Eunju Son : 2017.02.14 Start -->
+	<screen name="ESM_FLT_0067">
+		<parameter key="title" value="TC Invoice List Inquiry" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/invoice/timecharterinvoice/jsp/ESM_FLT_0067.jsp" />
+    </screen>
+	<!-- Eunju Son : 2017.02.14 End -->
+	<!-- Yo-Na Ha : 2017-02-14 (S) -->
+    <screen name="ESM_FLT_0008" template="templatePop">
+        <parameter key="title"    value="DeliveryRedelivery Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/deliveryredeliverymanagement/jsp/ESM_FLT_0008.jsp"/>
+    </screen>
+    <screen name="ESM_FLT_0006">
+        <parameter key="title"    value="Contract List Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/contractmanagement/jsp/ESM_FLT_0006.jsp"/>
+    </screen>
+	<!-- Yo-Na Ha : 2017-02-14 (E) -->
+	<!-- Yo-Na Ha : 2017-02-16 (S) -->
+    <screen name="ESM_FLT_0003" template="templatePop">
+        <parameter key="title"    value="Approval Request" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/contractmanagement/jsp/ESM_FLT_0003.jsp"/>
+    </screen>
+    <!-- Yo-Na Ha : 2017-02-16 (E) -->
+	<!-- Sang-Hyun Kim : 2017.02.16 Start -->
+	<screen name="ESM_FLT_0015">
+		<parameter key="title" value="Capital Budgeting" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/contract/contractstatus/jsp/ESM_FLT_0015.jsp" />
+    </screen>
+	<!-- Sang-Hyun Kim : 2017.02.16 End -->
+	<!-- Yo-Na Ha : 2017-02-17 (S) -->
+    <screen name="ESM_FLT_0009">
+        <parameter key="title"    value="DeliveryRedelivery List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/deliveryredeliverymanagement/jsp/ESM_FLT_0009.jsp"/>
+    </screen>
+	<!-- Yo-Na Ha : 2017-02-17 (E) -->
+	<!-- Ki-Min Doo : 2018-08-22 (S) -->
+    <screen name="ESM_FLT_0068">
+        <parameter key="title"    value="Audit Trail for DEL/RDL List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/deliveryredeliverymanagement/jsp/ESM_FLT_0068.jsp"/>
+    </screen>
+	<!--  Ki-Min Doo : 2018-08-22 (E) -->
+	<!-- Eunju Son : 2017-02-23 start -->
+    <screen name="ESM_FLT_0044">
+        <parameter key="title"    value="Bank Information" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/setup/fltsetup/jsp/ESM_FLT_0044.jsp"/>
+    </screen>
+	<!-- Eunju Son : 2017-02-23 end -->
+	<!-- Eunju Son : 2017-02-17 start -->
+    <screen name="ESM_FLT_0045">
+        <parameter key="title"    value="Invoice Item and Account Matrix" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/setup/fltsetup/jsp/ESM_FLT_0045.jsp"/>
+    </screen>
+	<!-- Eunju Son : 2017-02-17 end -->
+	<!-- woo-sam Kim : 2017-02-20 start -->
+    <screen name="ESM_FLT_0021" template="templatePop">
+        <parameter key="title"    value="Invoice Item Search" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/invoice/timecharterinvoice/jsp/ESM_FLT_0021.jsp"/>
+    </screen>
+    <screen name="ESM_FLT_0022" template="templatePop">
+        <parameter key="title"    value="Item Description" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/invoice/timecharterinvoice/jsp/ESM_FLT_0022.jsp"/>
+    </screen>
+    <screen name="ESM_FLT_0020" template="templatePop">
+        <parameter key="title"    value="Outstanding Offset Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/invoice/timecharterinvoice/jsp/ESM_FLT_0020.jsp"/>
+    </screen>
+	<!-- woo-sam Kim : 2017-02-20 end -->
+	<!-- Ki-Min Doo : 2017-03-24 (S) -->
+    <screen name="ESM_FLT_0011">
+        <parameter key="title"    value="Off Hire List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/schedulemanagement/jsp/ESM_FLT_0011.jsp"/>
+    </screen>
+    <!-- Ki-Min Doo : 2017-03-24 (E) -->
+	<!-- Yo-Na Ha : 2017-02-22 (S) -->
+    <screen name="ESM_FLT_0012">
+        <parameter key="title"    value="Off Hire List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/schedulemanagement/jsp/ESM_FLT_0012.jsp"/>
+    </screen>
+    <screen name="ESM_FLT_0012_POP" template="templatePop">
+        <parameter key="title"    value="Off Hire List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/schedulemanagement/jsp/ESM_FLT_0012.jsp"/>
+    </screen>
+    <!-- Yo-Na Ha : 2017-02-22 (E) -->
+    <!-- Yo-Na Ha : 2017-03-02 (S) -->
+    <screen name="ESM_FLT_0016">
+        <parameter key="title"    value="Fleet Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/contractstatus/jsp/ESM_FLT_0016.jsp"/>
+    </screen>
+    <!-- Yo-Na Ha : 2017-03-02 (E) -->
+    <!-- Yo-Na Ha : 2017-03-07 (S) -->
+    <screen name="ESM_FLT_0035">
+        <parameter key="title"    value="Outstanding List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/invoice/outstanding/jsp/ESM_FLT_0035.jsp"/>
+    </screen>
+    <screen name="ESM_FLT_0035_POP" template="templatePop">
+        <parameter key="title"    value="Outstanding List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/invoice/outstanding/jsp/ESM_FLT_0035.jsp"/>
+    </screen>
+    <!-- Yo-Na Ha : 2017-03-07 (E) -->
+    <!-- Yo-Na Ha : 2017-03-13 (S) -->
+    <screen name="ESM_FLT_0048">
+        <parameter key="title"    value="Payment Rule Setup" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/setup/fltsetup/jsp/ESM_FLT_0048.jsp"/>
+    </screen>
+    <!-- Yo-Na Ha : 2017-03-13 (E) -->
+    <!-- Yo-Na Ha : 2017-03-14 (S) -->
+    <screen name="ESM_FLT_0033">
+        <parameter key="title"    value="Miscellaneous Invoice" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/invoice/miscellaneousinvoice/jsp/ESM_FLT_0033.jsp"/>
+    </screen>
+    <!-- Yo-Na Ha : 2017-03-14 (E) -->
+        <!-- Eunju Son : 2017-03-15 start -->
+    <screen name="ESM_FLT_0017">
+		<parameter key="title" value="Statement of Account" direct="true"/>
+		<parameter key="body" value="apps/opus/esm/flt/contract/contractstatus/jsp/ESM_FLT_0017.jsp"/>
+    </screen>
+	<!-- Eunju Son : 2017-03-15 end -->
+	<!-- Eunju Son : 2017-03-22 start -->
+    <screen name="ESM_FLT_0014">
+		<parameter key="title" value="Hire Scheduling" direct="true"/>
+		<parameter key="body" value="apps/opus/esm/flt/contract/contractstatus/jsp/ESM_FLT_0014.jsp"/>
+    </screen>
+	<!-- Eunju Son : 2017-03-22 end -->
+	<!-- Yo-Na Ha : 2017-03-23 (S) -->
+    <screen name="ESM_FLT_0023" template="templatePop">
+        <parameter key="title"    value="Miscellaneous Invoice List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/invoice/miscellaneousinvoice/jsp/ESM_FLT_0023.jsp"/>
+    </screen>
+    <!-- Yo-Na Ha : 2017-03-23 (E) -->
+	<!-- Yo-Na Ha : 2017-03-27 (S) -->
+    <screen name="ESM_FLT_0007">
+        <parameter key="title"    value="Delivery Redelivery Manager" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/deliveryredeliverymanagement/jsp/ESM_FLT_0007.jsp"/>
+    </screen>
+    <!-- Yo-Na Ha : 2017-03-27 (E) -->
+    <!-- Ki-Min Doo : 2017-11-10 (S)  -->
+    <screen name="ESM_FLT_0062">
+        <parameter key="title"    value="Brokerage Invoice" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/invoice/brokerageinvoice/jsp/ESM_FLT_0062.jsp"/>
+    </screen>
+    <!-- Ki-Min Doo : 2017-11-10 (E) -->
+    <!-- Eunju Son : 2017-03-28 Start -->
+	<screen name="ESM_FLT_0063" template="templatePop">
+		<parameter key="title" value="Payment Date Choice" direct="true" />
+		<parameter key="body" value="apps/opus/esm/flt/common/paymentdatechoice/jsp/ESM_FLT_0063.jsp" />
+    </screen>
+	<!-- Eunju Son : 2017-03-28 End -->
+	<!-- Eunju Son : 2017-04-03 Start -->
+    <screen name="ESM_FLT_0010">
+        <parameter key="title"    value="Monthly Voyage Confirm" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/contract/schedulemanagement/jsp/ESM_FLT_0010.jsp"/>
+    </screen>
+    <!-- Eunju Son : 2017-04-03 End -->
+    <!-- Yo-Na Ha : 2017-06-14 (S) -->
+    <screen name="ESM_FLT_0049" template="templatePop">
+        <parameter key="title" value="Approval Step" direct="true"/>
+        <parameter key="body"  value="apps/opus/esm/flt/setup/fltsetup/jsp/ESM_FLT_0049.jsp"/>
+    </screen>
+    <!-- Yo-Na Ha : 2017-06-14 (E) -->
+    <!-- Yo-Na Ha : 2017-06-20 (S) -->
+    <screen name="ESM_FLT_0043">
+        <parameter key="title"    value="Approval List" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/flt/slip/approvallist/jsp/ESM_FLT_0043.jsp"/>
+    </screen>
+    <!-- Yo-Na Ha : 2017-06-20 (E) -->
+	<screen name="ESM_FLT_0075">
+	      <parameter key="title"    value="Monthly Reversal Slip Interface" direct="true"/>
+	      <parameter key="body"  value="apps/opus/esm/flt/slip/monthlyhirereversal/jsp/ESM_FLT_0075.jsp"/>
+	</screen>
+	<!-- Jin-Yong Lee : 2018-12-19 (S) -->
+	<screen name="ESM_FLT_0090">
+	      <parameter key="title" value="Monthly Settlement Management" direct="true"/>
+	      <parameter key="body"  value="apps/opus/esm/flt/setup/fltsetup/jsp/ESM_FLT_0090.jsp"/>
+	</screen>
+	<!-- Jin-Yong Lee : 2018-12-19 (E) -->
+	<screen name="ESM_FLT_0100">
+	     <parameter key="title"    value="Migration Inital Data" direct="true"/>
+	     <parameter key="body"  value="apps/opus/esm/flt/ifrs/migration/jsp/ESM_FLT_0100.jsp"/>
+	</screen>
+   	<screen name="ESM_FLT_0101">
+	     <parameter key="title"    value="Capex Interest Rate Setup" direct="true"/>
+	     <parameter key="body"  value="apps/opus/esm/flt/ifrs/setup/jsp/ESM_FLT_0101.jsp"/>
+	 </screen>
+	<screen name="ESM_FLT_0102" template="templatePop">
+	      <parameter key="title"    value="CAPEX Group Setup" direct="true"/>
+	      <parameter key="body"  value="apps/opus/esm/flt/ifrs/setup/jsp/ESM_FLT_0102.jsp"/>
+	  </screen>
+	<screen name="ESM_FLT_0103" >
+	      <parameter key="title"    value="Contract IF Adhoc" direct="true"/>
+	      <parameter key="body"  value="apps/opus/esm/flt/ifrs/InterfaceAdhoc/jsp/ESM_FLT_0103.jsp"/>
+	</screen>
+	<screen name="ESM_FLT_0104" >
+	      <parameter key="title"    value="History Management" direct="true"/>
+	      <parameter key="body"  value="apps/opus/esm/flt/ifrs/history/jsp/ESM_FLT_0104.jsp"/>
+	</screen>
+	<screen name="ESM_FLT_0105" template="templatePop">
+	      <parameter key="title"    value="History Management" direct="true"/>
+	      <parameter key="body"  value="apps/opus/esm/flt/ifrs/history/jsp/ESM_FLT_0105.jsp"/>
+	</screen>
+</screen-definitions>

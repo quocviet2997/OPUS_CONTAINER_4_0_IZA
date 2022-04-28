@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOSearchDTRBTtlRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT '' LINE_SEQ,
+       '' LINE_NO,
+       '' LINE_TP_LU_CD,
+       '' CSR_AMT,
+       '' INV_DESC,
+       '' INV_TAX_CD,
+       '' DTRB_COA_CO_CD,
+       '' DTRB_COA_RGN_CD,
+       '' DTRB_COA_CTR_CD,
+       '' DTRB_COA_ACCT_CD,
+       '' DTRB_COA_VVD_CD,
+       '' DTRB_COA_INTER_CO_CD,
+       '' DTRB_COA_FTU_N1ST_CD,
+       '' DTRB_COA_FTU_N2ND_CD,
+       '' ATTR_CATE_NM,
+       '' ATTR_CTNT1,
+       '' ATTR_CTNT2,
+       '' ATTR_CTNT3,
+       '' ATTR_CTNT4,
+       '' ATTR_CTNT5,
+       '' ATTR_CTNT6,
+       '' ATTR_CTNT7,
+       '' ATTR_CTNT8,
+       '' ATTR_CTNT9,
+       '' ATTR_CTNT10,
+       '' ATTR_CTNT11,
+       '' ATTR_CTNT12,
+       '' ATTR_CTNT13,
+       '' ATTR_CTNT14,
+       '' ATTR_CTNT15,
+       '' BKG_NO,
+       '' CNTR_TPSZ_CD,
+       '' ACT_VVD_CD,
+       '' PLN_SCTR_DIV_CD,
+       '' SO_CRR_CD,
+       '' YD_CD,
+       '' FTU_USE_CTNT1,
+       '' FTU_USE_CTNT2,
+       '' FTU_USE_CTNT3,
+       '' FTU_USE_CTNT4,
+       '' FTU_USE_CNTR5,
+       '' CRE_DT,
+       '' CRE_USR_ID,
+       '' EAI_EVNT_DT
+	FROM DUAL			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

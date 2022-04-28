@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ProgramMappingDAOComProgramRSQL">
+			<desc><![CDATA[role에 할당된 프로그램들이나 전체 프로그램 리스트를 조회한다.]]></desc>
+			<sql><![CDATA[
+#if(${pgm_no_form} != '')
+		  SELECT DECODE(Y.PGM_NO,NULL,'0','1') check_val,                   
+			 		 X.pgm_no,                                                 
+			 		 X.pgm_nm                                                 
+			  FROM                                                             
+			  		(SELECT distinct A.*                                                
+			  		FROM COM_PROGRAM A,                                        
+			  			(SELECT *                                              
+			  			 FROM COM_MNU_CFG         
+						 WHERE MNU_CFG_CD='002'                             
+			  			 CONNECT BY PRIOR chd_pgm_no = prnt_pgm_no             
+			  			 START WITH PRNT_PGM_NO = @[pgm_no_form] AND MNU_CFG_CD='002' ) B -- 'ENIS-001-032'       
+			  		WHERE A.PGM_NO = B.CHD_PGM_NO  AND A.PGM_MNU_DIV_CD='02'                            
+					AND A.PGM_TP_CD = '00'
+					AND A.POPUP_FLG = 'N'
+			  		) X,                            
+			        com_pgm_role Y                                             
+			  WHERE X.PGM_NO = Y.PGM_NO(+)                                     
+			  AND Y.USR_ROLE_CD(+) = @[role_cd]
+			  ORDER BY X.PGM_NO                                                
+#else
+		SELECT DECODE(Y.PGM_NO,NULL,'0','1') check_val,                   
+			 		 X.pgm_no,                                                 
+			 		 X.pgm_nm
+			  FROM                                                             
+			  		COM_PROGRAM  X,                                            
+			        com_pgm_role Y                                             
+			  WHERE X.PGM_NO = Y.PGM_NO(+)    AND X.PGM_MNU_DIV_CD='02'                                   
+				AND X.PGM_TP_CD = '00'
+				AND X.POPUP_FLG = 'N'
+			  AND Y.USR_ROLE_CD(+) = @[role_cd]
+			  ORDER BY X.PGM_NO                                               
+#end			]]></sql>
+			<params>
+				<param name="pgm_no_form" type="12" value="" out="N"/>
+				<param name="role_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

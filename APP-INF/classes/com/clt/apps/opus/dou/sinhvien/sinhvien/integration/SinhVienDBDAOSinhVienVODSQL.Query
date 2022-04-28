@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SinhVienDBDAOSinhVienVODSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+DELETE FROM SINHVIEN
+WHERE	SV_ID = @[sv_id]
+			]]></sql>
+			<params>
+				<param name="sv_id" type="2" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

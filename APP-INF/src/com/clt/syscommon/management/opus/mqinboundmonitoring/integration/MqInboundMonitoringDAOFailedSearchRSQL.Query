@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MqInboundMonitoringDAOFailedSearchRSQL">
+			<desc><![CDATA[It gets a data if you want to get Fail Data.]]></desc>
+			<sql><![CDATA[
+SELECT * FROM COM_IB_MSG_INFO 
+WHERE MSG_TJ_DT BETWEEN TO_DATE(@[msg_tj_dt]||'000000','YYYY-MM-DDHH24MISS') AND TO_DATE(@[msg_tj_dt]||'235959','YYYY-MM-DDHH24MISS')
+#if (${msg_proc_sts_cd} != '')
+AND (MSG_PROC_STS_CD = 4 OR MSG_PROC_STS_CD = 6)
+#end
+#if (${sub_sys_cd} != '')
+AND SUB_SYS_CD = @[sub_sys_cd]
+#end
+#if (${ref_no} != '')
+AND REF_NO LIKE @[ref_no]||'%'
+#end
+#if (${edi_msg_tp_id} != '')
+AND EDI_MSG_TP_ID LIKE @[edi_msg_tp_id]||'%'
+#end
+#if (${edi_sndr_id} != '')
+AND EDI_SNDR_ID LIKE @[edi_sndr_id]||'%'
+#end
+#if (${msg_qu_nm} != '')
+AND MSG_QU_NM LIKE @[msg_qu_nm]||'%'
+#end
+AND ROWNUM < 5001
+ORDER BY msg_tj_dt DESC			]]></sql>
+			<params>
+				<param name="msg_tj_dt" type="12" value="" out="N"/>
+				<param name="sub_sys_cd" type="12" value="" out="N"/>
+				<param name="ref_no" type="12" value="" out="N"/>
+				<param name="edi_msg_tp_id" type="12" value="" out="N"/>
+				<param name="edi_sndr_id" type="12" value="" out="N"/>
+				<param name="msg_qu_nm" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

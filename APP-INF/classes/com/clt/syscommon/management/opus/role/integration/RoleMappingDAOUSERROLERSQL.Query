@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="RoleMappingDAOUSERROLERSQL">
+			<desc><![CDATA[select user role]]></desc>
+			<sql><![CDATA[
+#if(${search_flag}=='01')
+#if(${usr_role_adm_mtch}=='Y')
+select level, usr_role_cd, usr_role_nm, check_val
+from (
+	SELECT A.usr_role_cd, A.usr_role_nm, substr(a.usr_role_cd,0,3) sys,
+			DECODE(B.usr_role_cd,NULL,'0','1') check_val   
+	FROM COM_USR_ROLE a, COM_USR_ROLE_ADM_MTCH B   
+	WHERE A.USR_ROLE_CD = B.USR_ROLE_CD(+)   
+	AND B.USR_ID(+) = @[usr_id]
+) x, com_usr_pgm_mtch y
+where length(y.pgm_no) = 3
+and x.sys = y.pgm_no
+and y.usr_id = @[usr_id]
+connect by prior usr_role_cd is null
+order by usr_role_cd
+#else
+SELECT level, check_val, usr_role_cd, usr_role_nm, ADMIN_CHK
+FROM (
+	SELECT A.usr_role_cd, A.usr_role_nm,A.PRNT_USR_ROLE_CD,
+			DECODE(B.usr_role_cd,NULL,'0','1') check_val,
+#if(${login_usr_auth_tp_cd}=='S')
+			DECODE(C.usr_role_cd,NULL,'N','Y') ADMIN_CHK
+	FROM COM_USR_ROLE a, COM_USR_ROLE_MTCH B, COM_USR_ROLE_ADM_MTCH C
+	WHERE A.USR_ROLE_CD = B.USR_ROLE_CD(+)
+	AND A.USR_ROLE_CD = C.USR_ROLE_CD(+)
+	AND C.USR_ID(+) = @[login_usr_id]
+#else
+			'' ADMIN_CHK
+	FROM COM_USR_ROLE a, COM_USR_ROLE_MTCH B
+	WHERE A.USR_ROLE_CD = B.USR_ROLE_CD(+)
+	
+#end
+	AND B.USR_ID(+) = @[usr_id]
+)
+START WITH PRNT_USR_ROLE_CD IS NULL
+CONNECT BY PRIOR USR_ROLE_CD = PRNT_USR_ROLE_CD
+order by usr_role_cd
+#end
+#else
+SELECT a.usr_role_cd, a.usr_role_nm
+FROM com_usr_role a, com_usr_role_mtch b
+WHERE b.usr_id = @[usr_id]
+AND a.usr_role_cd = b.usr_role_cd
+order by a.usr_role_cd
+#end			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="login_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

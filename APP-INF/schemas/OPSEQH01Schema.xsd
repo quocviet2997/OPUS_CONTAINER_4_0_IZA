@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.clt.com/integration/clt/schemas/OPSEQH01" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://www.clt.com/integration/clt/schemas/OPSEQH01">
+<element name="domopseqh01WSRequest">
+	<complexType>
+		<sequence>
+			<element name="DataArea">
+				<complexType>
+					<sequence>
+						<element name="CtmMvmtCollection">
+							<complexType>
+								<sequence>
+									<element maxOccurs="unbounded" minOccurs="1" name="CtmMvmtRequest">
+										<complexType>
+											<sequence>
+                              					<element name="MSG_ID" type="string" maxOccurs="1" minOccurs="0"/>
+                                				<element name="MSG_TP" type="string" maxOccurs="1" minOccurs="0"/>
+                                				<element name="BKG_NO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+                                				<element name="MVMT_CD" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+                                				<element name="MVMT_TMS" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+                                				<element name="MVMT_RMK" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+                                				<element name="MVMT_LOC_CD" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+                                				<element name="CNTR_NO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+                                				<element name="PKUP_NO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+                                				<element name="WBL_NO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+                                				<element name="SNDR_ID" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+                                				<element name="CNTR_TPSZ_CD" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+											</sequence>
+										</complexType>
+									</element>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="domopseqh01WSResponse">
+	<complexType>
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="1" name="CtmMvmtResponse">
+				<complexType>
+					<sequence>
+                  		<element maxOccurs="1" minOccurs="0" name="RTN_STS" type="string"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

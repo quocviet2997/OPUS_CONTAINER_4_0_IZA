@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="LocationDBDAOSearchLocationDetailRSQL">
+			<desc><![CDATA[LocationDAOsearchLocationDetail]]></desc>
+			<sql><![CDATA[
+SELECT
+	A.LOC_CD,
+	A.LOC_NM,
+	A.RGN_CD,
+	C.SCC_CD,
+	C.LCC_CD,
+	C.ECC_CD,
+	A.SLS_OFC_CD,
+	A.STE_CD LOC_STATE,
+	A.HUB_LOC_CD,
+	A.UN_LOC_CD,
+	A.LOC_CHR_CD,
+	A.ZIP_CD,
+	A.EQ_CTRL_OFC_CD,
+	A.FINC_CTRL_OFC_CD,
+	A.CONTI_CD||' - '||B.CONTI_NM CONTI_NM,
+	DECODE(A.PORT_INLND_FLG,'Y','PORT','INLAND') PORT_INLND_FLG,
+	DECODE(A.CALL_PORT_FLG,'N','NO','YES') CALL_PORT_FLG,
+	A.REP_ZN_CD,
+	A.HUB_LOC_CD,
+	A.LOC_GRD_NO,
+	DECODE(A.CML_ZN_FLG,'N','NO','YES') CML_ZN_FLG,
+	A.LOC_AMS_PORT_CD,
+	A.GMT_HRS,
+	A.CSTMS_CD,
+	D.SCONTI_CD,
+	B.CONTI_NM COUNTRY,
+	A.LOC_LAT PORT_LAT,
+	A.LOC_LON PORT_LON
+FROM MDM_LOCATION A, MDM_CONTINENT B, MDM_EQ_ORZ_CHT C, MDM_SUBCONTINENT D
+WHERE 1 = 1
+AND A.CONTI_CD = B.CONTI_CD
+AND A.SCC_CD = C.SCC_CD(+)
+AND A.CONTI_CD = D.CONTI_CD
+AND A.SCONTI_CD = D.SCONTI_CD
+AND A.LOC_CD = @[loc_cd]			]]></sql>
+			<params>
+				<param name="loc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ExchangeRateDAOMonthlyListRSQL">
+			<desc><![CDATA[select exchange rate monthly]]></desc>
+			<sql><![CDATA[
+SELECT acct_xch_rt_yrmon,
+                 curr_cd,
+                  usd_locl_xch_rt,
+                  usd_cny_xch_rt AS locl_krw_xch_rt,
+                  locl_cny_xch_rt	AS usd_krw_xch_rt
+FROM (SELECT ROW_NUMBER() OVER (ORDER BY acct_xch_rt_yrmon ASC) no,
+					acct_xch_rt_yrmon,
+					curr_cd,
+					usd_locl_xch_rt,
+					locl_cny_xch_rt,
+					usd_cny_xch_rt
+			FROM gl_mon_xch_rt
+			WHERE nvl(delt_flg,'N') <> 'Y'
+#if (${fr_year_mon} != '' && ${to_year_mon} != '')
+     AND acct_xch_rt_yrmon between @[fr_year_mon] and @[to_year_mon]
+#end    
+#if (${curr_cd} != '')
+     AND curr_cd like '%'||@[curr_cd]||'%'
+#end
+  ) a
+WHERE no BETWEEN @[startpart] AND @[endpart]			]]></sql>
+			<params>
+				<param name="fr_year_mon" type="12" value="" out="N"/>
+				<param name="to_year_mon" type="12" value="" out="N"/>
+				<param name="curr_cd" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/ECMOPS09_InputSchema" elementFormDefault="qualified" targetNamespace="http://www.example.org/ECMOPS09_InputSchema">
+
+      <element name="web0020001ReceiveWS">
+        <complexType>
+          <sequence>
+<element name="WEB002_0001">
+        <complexType>
+          <sequence>
+            <element name="EAIHeader">
+      <complexType>
+        <sequence>
+          <element name="InstanceId" type="string"/>
+          <element minOccurs="0" name="Parameters"/>
+        </sequence>
+      </complexType>  
+                  </element>
+            <element name="DataArea">
+              <complexType>
+                <sequence>
+                  <element name="InfoCollection">
+                    <complexType>
+                      <sequence>
+                        <element maxOccurs="unbounded" name="Request">
+                          <complexType>
+                            <sequence>
+                              <element minOccurs="0" name="BL_NO" type="string"/>
+                              <element minOccurs="0" name="IF_SYS_KND_CD" type="string"/>
+                              <element minOccurs="0" name="FCTRY_NM" type="string"/>
+                              <element minOccurs="0" name="ACT_CUST_N1ST_ADDR" type="string"/>
+                              <element minOccurs="0" name="ACT_CUST_CTY_NM" type="string"/>
+                              <element minOccurs="0" name="ACT_CUST_STE_NM" type="string"/>
+                              <element minOccurs="0" name="ACT_CUST_ZIP_CD" type="string"/>
+                              <element minOccurs="0" name="CNTC_PSON_NM" type="string"/>
+                              <element minOccurs="0" name="CNTC_PSON_PHN_NO" type="string"/>
+                              <element minOccurs="0" name="CNTC_PSON_FAX_NO" type="string"/>
+                              <element minOccurs="0" name="USR_EML" type="string"/>
+                              <element minOccurs="0" name="USR_PHN_NO" type="string"/>
+                              <element minOccurs="0" name="CRE_OFC_CD" type="string"/>
+                              <element minOccurs="0" name="EQ_NO" type="string"/>
+                              <element minOccurs="0" name="DO_RMK" type="string"/>
+                              <element minOccurs="0" name="CRE_USR_ID" type="string"/>
+                              <element minOccurs="0" name="UPD_USR_ID" type="string"/>
+                              <element minOccurs="0" name="TRSP_BND_CD" type="string"/>
+                              <element minOccurs="0" name="DOR_NOD_CD" type="string"/>
+                              <element minOccurs="0" name="ACT_CUST_CNT_CD" type="string"/>
+                              <element minOccurs="0" name="ACT_CUST_SEQ" type="string"/>
+                              <element minOccurs="0" name="ACT_CUST_NM" type="string"/>
+                              <element minOccurs="0" name="DFLT_ACT_CUST_FLG" type="string"/>
+                              <element minOccurs="0" name="IF_USG_TP_CD" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                        <element name="Response">
+                          <complexType>
+                            <sequence>
+                              <element minOccurs="0" name="RESULT" nillable="true" type="string"/>
+                            </sequence>
+                          </complexType>
+                        </element>
+                      </sequence>
+                    </complexType>
+                  </element>
+                </sequence>
+              </complexType>
+            </element>
+          </sequence>
+        </complexType>
+      </element>
+          </sequence>
+        </complexType>
+      </element>   
+      <element name="web0020001ReceiveWSResponse">
+        <complexType>
+          <sequence>
+            <element name="return" type="string"/>
+          </sequence>
+        </complexType>
+      </element>      
+</schema>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckVndrCodeNameRSQL">
+			<desc><![CDATA[Vender Code, Name 을 조회합니다.]]></desc>
+			<sql><![CDATA[
+SELECT  VNDR_SEQ VNDR_CD  
+       ,VNDR_LGL_ENG_NM VNDR_CD
+  FROM  MDM_VENDOR 
+ WHERE  1=1 
+   AND  VNDR_SEQ = @[vndr_cd]
+   AND  DELT_FLG ='N'			]]></sql>
+			<params>
+				<param name="vndr_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

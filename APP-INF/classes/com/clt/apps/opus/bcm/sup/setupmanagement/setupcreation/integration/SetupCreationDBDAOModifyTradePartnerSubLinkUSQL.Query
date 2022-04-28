@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOModifyTradePartnerSubLinkUSQL">
+			<desc><![CDATA[2011.03.07 정윤태 EDI TRADE PARTNER SUB LINK 정보를 변경한다]]></desc>
+			<sql><![CDATA[
+UPDATE BKG_EDI_TRD_PRNR_SUB_LNK
+   SET PRNR_SUB_LNK_DIV_CD = @[prnr_sub_lnk_div_cd],
+       PRNR_SUB_LNK_CD = @[prnr_sub_lnk_cd],
+       SNDR_TRD_PRNR_ID = @[sndr_trd_prnr_id],
+       RCVR_TRD_PRNR_ID = @[rcvr_trd_prnr_id],
+       PRNR_PORT_CD = @[prnr_port_cd],
+       EDI_SND_FLG = @[edi_snd_flg],
+       UPD_USR_ID = @[upd_usr_id],
+       UPD_DT = SYSDATE
+ WHERE TRD_PRNR_SUB_LNK_SEQ = @[trd_prnr_sub_lnk_seq]			]]></sql>
+			<params>
+				<param name="prnr_sub_lnk_div_cd" type="12" value="" out="N"/>
+				<param name="prnr_sub_lnk_cd" type="12" value="" out="N"/>
+				<param name="sndr_trd_prnr_id" type="12" value="" out="N"/>
+				<param name="rcvr_trd_prnr_id" type="12" value="" out="N"/>
+				<param name="prnr_port_cd" type="12" value="" out="N"/>
+				<param name="edi_snd_flg" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="trd_prnr_sub_lnk_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOModifyGlEstimateRevenueVvdsUSQL">
+			<desc><![CDATA[ModifyGlEstimateRevenueVvds]]></desc>
+			<sql><![CDATA[
+UPDATE GL_ESTM_REV_VVD
+SET
+EXE_YRMON = @[exe_yrmon]
+, REV_YRMON = @[rev_yrmon]
+, VSL_CD = @[vsl_cd]
+, SKD_VOY_NO = @[skd_voy_no]
+, SKD_DIR_CD = @[skd_dir_cd]
+, REV_DIR_CD = @[rev_dir_cd]
+, ESTM_VVD_TP_CD = @[estm_vvd_tp_cd]
+, ESTM_IOC_DIV_CD = @[estm_ioc_div_cd]
+, ESTM_VVD_HDR_ID = @[estm_vvd_hdr_id]
+, ESTM_BC_DIV_CD = @[estm_bc_div_cd]
+, VST_DT = @[vst_dt]
+, VED_DT = @[ved_dt]
+, RLANE_CD = @[rlane_cd]
+, LINE_NO = @[line_no]
+, UPD_USR_ID = @[upd_usr_id]
+, UPD_DT = SYSDATE
+WHERE 
+    EXE_YRMON = @[h_exe_yrmon]
+AND REV_YRMON = @[h_rev_yrmon]
+AND VSL_CD = @[h_vsl_cd]
+AND SKD_VOY_NO = @[h_skd_voy_no]
+AND SKD_DIR_CD = @[h_skd_dir_cd]
+AND REV_DIR_CD = @[h_rev_dir_cd]
+AND ESTM_VVD_TP_CD = @[h_estm_vvd_tp_cd]
+AND ESTM_IOC_DIV_CD = @[h_estm_ioc_div_cd]			]]></sql>
+			<params>
+				<param name="exe_yrmon" type="12" value="" out="N"/>
+				<param name="rev_yrmon" type="12" value="" out="N"/>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="skd_voy_no" type="12" value="" out="N"/>
+				<param name="skd_dir_cd" type="12" value="" out="N"/>
+				<param name="rev_dir_cd" type="12" value="" out="N"/>
+				<param name="estm_vvd_tp_cd" type="12" value="" out="N"/>
+				<param name="estm_ioc_div_cd" type="12" value="" out="N"/>
+				<param name="estm_vvd_hdr_id" type="12" value="" out="N"/>
+				<param name="estm_bc_div_cd" type="12" value="" out="N"/>
+				<param name="vst_dt" type="12" value="" out="N"/>
+				<param name="ved_dt" type="12" value="" out="N"/>
+				<param name="rlane_cd" type="12" value="" out="N"/>
+				<param name="line_no" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="h_exe_yrmon" type="12" value="" out="N"/>
+				<param name="h_rev_yrmon" type="12" value="" out="N"/>
+				<param name="h_vsl_cd" type="12" value="" out="N"/>
+				<param name="h_skd_voy_no" type="12" value="" out="N"/>
+				<param name="h_skd_dir_cd" type="12" value="" out="N"/>
+				<param name="h_rev_dir_cd" type="12" value="" out="N"/>
+				<param name="h_estm_vvd_tp_cd" type="12" value="" out="N"/>
+				<param name="h_estm_ioc_div_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

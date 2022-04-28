@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOModifyAPInvoiceRejectByStmSapUSQL">
+			<desc><![CDATA[STM SAP 모듈에서 reject 시 호출]]></desc>
+			<sql><![CDATA[
+UPDATE AP_INV_HDR
+SET   RCV_ERR_FLG = @[rcv_err_flg]
+    , RCV_ERR_RSN = @[rcv_err_rsn]
+    , EAI_EVNT_DT = SYSDATE
+WHERE CSR_NO = @[csr_no]			]]></sql>
+			<params>
+				<param name="rcv_err_flg" type="12" value="" out="N"/>
+				<param name="rcv_err_rsn" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

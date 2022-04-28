@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalRouteUtilRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+	SELECT A.APRO_RQST_SEQ AS APRO_SEQ,          
+		A.APRO_USR_ID,  		   
+		A.APRO_USR_NM,  		   
+		A.APRO_OFC_CD,            
+		A.APRO_USR_JB_TIT_NM 
+	 FROM   COM_APRO_RQST_ROUT A,     
+		COM_APRO_CSR_DTL   B      
+	 WHERE  A.APRO_RQST_NO = B.APRO_RQST_NO 
+	 AND    B.CSR_NO       = @[csr_no] 
+	 AND    NVL(A.DELT_FLG,'N') = 'N'       
+	 ORDER BY A.APRO_RQST_SEQ			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

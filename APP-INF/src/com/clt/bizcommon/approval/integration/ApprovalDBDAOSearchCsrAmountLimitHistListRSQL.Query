@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOSearchCsrAmountLimitHistListRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT H.CRE_USR_ID USR_ID,
+       U.USR_NM,
+       U.OFC_CD,
+       TO_CHAR(H.CRE_DT, 'YYYY-MM-DD HH24:MI') CURR_AMT_UPD_DT,
+       H.CSR_CURR_CD CRNT_CURR_CD,
+       H.CSR_AMT CRNT_AMT ,
+       LEAD(H.CSR_CURR_CD) OVER (PARTITION BY H.SUB_SYS_CD, H.OFC_CD
+         ORDER BY H.APRO_ROUT_HIS_SEQ DESC) PRE_CURR_CD ,
+       LEAD(H.CSR_AMT) OVER (PARTITION BY H.SUB_SYS_CD, H.OFC_CD
+         ORDER BY H.APRO_ROUT_HIS_SEQ DESC) PRE_AMT
+  FROM COM_APRO_ROUT_DFLT_HIS H,
+       COM_USER U
+ WHERE 1=1
+   AND H.SUB_SYS_CD = @[sub_sys_cd]
+   AND H.OFC_CD = @[ofc_cd]
+   AND H.CRE_USR_ID = U.USR_ID(+)
+   AND NVL(U.USE_FLG(+), 'N') = 'Y'
+ ORDER BY H.APRO_ROUT_HIS_SEQ DESC			]]></sql>
+			<params>
+				<param name="sub_sys_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

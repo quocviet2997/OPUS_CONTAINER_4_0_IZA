@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<datasource-config xmlns="http://www.cyberlogitec.com/datasource-config">
+
+	<devided-datasource-use>true</devided-datasource-use>
+	<devided-datasource-definition>
+		<devided-code>DEFAULT</devided-code>
+		<devided-datasource-name>jdbc/OPUSCNTR</devided-datasource-name>
+		<devided-datasource-description>Default</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+			<devided-code>DEFAULTXA</devided-code>
+			<devided-datasource-name>jdbc/OPUSCNTR</devided-datasource-name>
+			<devided-datasource-description>Defaultxa</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+		<devided-code>SynapseDB</devided-code>
+		<devided-datasource-name>jdbc/OPUSCNTR</devided-datasource-name>
+		<devided-datasource-description>SynapseDB</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+		<devided-code>SysComDB</devided-code>
+		<devided-datasource-name>jdbc/OPUSCNTR</devided-datasource-name>
+		<devided-datasource-description>SyscomDB</devided-datasource-description>
+	</devided-datasource-definition>
+	
+	<devided-datasource-definition>
+		<devided-code>AutoSys</devided-code>
+		<devided-datasource-name>jdbc/AUTOSYS</devided-datasource-name>
+		<devided-datasource-description>DataSource info for Autosys</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+		<devided-code>ACC_OPUSCNTR</devided-code>
+		<devided-datasource-name>jdbc/NYKACC</devided-datasource-name>
+		<devided-datasource-description>ACC_OPUSCNTR</devided-datasource-description>
+	</devided-datasource-definition>
+	
+		<!-- OPUSBAT -->
+	<devided-datasource-definition>
+		<devided-code>BIS_OPUSBAT</devided-code>
+		<devided-datasource-name>jdbc/OPUSCNTR</devided-datasource-name>
+		<devided-datasource-description>BIS_OPUSBAT</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+		<devided-code>CIM_OPUSBAT</devided-code>
+		<devided-datasource-name>jdbc/OPUSCNTR</devided-datasource-name>
+		<devided-datasource-description>CIM_OPUSBAT</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+		<devided-code>COA_OPUSBAT</devided-code>
+		<devided-datasource-name>jdbc/OPUSCNTR</devided-datasource-name>
+		<devided-datasource-description>COA_OPUSBAT</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+		<devided-code>DMT_OPUSBAT</devided-code>
+		<devided-datasource-name>jdbc/OPUSCNTR</devided-datasource-name>
+
+	<devided-datasource-description>DMT_OPUSBAT</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+		<devided-code>JOO_OPUSBAT</devided-code>
+		<devided-datasource-name>jdbc/OPUSCNTR</devided-datasource-name>
+		<devided-datasource-description>JOO_OPUSBAT</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+		<devided-code>OPF_OPUSBAT</devided-code>
+		<devided-datasource-name>jdbc/OPUSCNTR</devided-datasource-name>
+		<devided-datasource-description>OPF_OPUSBAT</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+		<devided-code>SAQ_OPUSBAT</devided-code>
+		<devided-datasource-name>jdbc/HJSALPSB</devided-datasource-name>
+		<devided-datasource-description>SAQ_OPUSBAT</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+		<devided-code>TOT_OPUSBAT</devided-code>
+		<devided-datasource-name>jdbc/OPUSCNTR</devided-datasource-name>
+		<devided-datasource-description>TOT_OPUSBAT</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+		<devided-code>LEA_HJSLEA</devided-code>
+		<devided-datasource-name>jdbc/HJSLEA</devided-datasource-name>
+		<devided-datasource-description>LEA DataSource</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+		<devided-code>PSO_OPUSBAT</devided-code>
+
+	<devided-datasource-name>jdbc/OPUSCNTR</devided-datasource-name>
+		<devided-datasource-description>PSO_OPUSBAT</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+		<devided-code>PRD_OPUSBAT</devided-code>
+		<devided-datasource-name>jdbc/OPUSCNTR</devided-datasource-name>
+		<devided-datasource-description>PRD_OPUSBAT</devided-datasource-description>
+	</devided-datasource-definition>
+
+	<devided-datasource-definition>
+		<devided-code>PRS_OPUSBAT</devided-code>
+		<devided-datasource-name>jdbc/OPUSCNTR</devided-datasource-name>
+		<devided-datasource-description>PRS_OPUSBAT</devided-datasource-description>
+	</devided-datasource-definition>
+	
+</datasource-config>

@@ -1,0 +1,1313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+
+    <url-mapping url="EES_LSE_COMGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.lsecommon.lsecommon.event.EES_LSE_COMHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.lsecommon.lsecommon.event.EesLseComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.lsecommon.LseCommonSC</service-action-class>
+    </event-mapping>
+
+	<!-- Nho Jung Yong : 2009-04-27 start -->
+    <url-mapping url="EES_LSE_0048.do" screen="EES_LSE_0048.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0048GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0048HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EesLse0048Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="EES_LSE_0091.do" screen="EES_LSE_0091.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EES_LSE_0091HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0091GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EES_LSE_0091HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EesLse0091Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.ContainerLeaseAgreementRegistrationSC</service-action-class>
+    </event-mapping>
+	<!-- Nho Jung Yong : 2009-04-27 end -->
+
+	<!-- Nho Jung Yong : 2009-05-12 start -->
+    <url-mapping url="EES_LSE_0049.do" screen="EES_LSE_0049.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0049GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0049HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EesLse0049Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Nho Jung Yong : 2009-05-12 end -->
+
+	<!-- Nho Jung Yong : 2009-05-26 start -->
+    <url-mapping url="EES_LSE_0001.do" screen="EES_LSE_0001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EES_LSE_0001HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_LSE_0001_POP.do" screen="EES_LSE_0001_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EES_LSE_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EES_LSE_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EesLse0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.ContainerLeaseAgreementRegistrationSC</service-action-class>
+    </event-mapping>
+	<!-- Nho Jung Yong : 2009-05-26 end -->
+
+	<!-- Nho Jung Yong : 2009-06-02 start -->
+    <url-mapping url="EES_LSE_0096.do" screen="EES_LSE_0096.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EES_LSE_0096HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EesLse0096Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.ContainerLeaseAgreementRegistrationSC</service-action-class>
+    </event-mapping>
+	<!-- Nho Jung Yong : 2009-06-02 end -->
+
+	<!-- Nho Jung Yong : 2009-06-02 start -->
+    <url-mapping url="EES_LSE_0002.do" screen="EES_LSE_0002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EES_LSE_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EES_LSE_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>    
+        <event-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EesLse0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.ContainerLeaseAgreementRegistrationSC</service-action-class>
+    </event-mapping>
+	<!-- Nho Jung Yong : 2009-06-02 end -->
+
+	<!-- Jin Jun Sung : 2009-06-04 start -->
+    <url-mapping url="EES_LSE_0031.do" screen="EES_LSE_0031.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EES_LSE_0031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0031GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EES_LSE_0031HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EesLse0031Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-06-04 end -->
+
+	<!-- Jin Jun Sung : 2009-06-09 start -->
+    <url-mapping url="EES_LSE_0029.do" screen="EES_LSE_0029.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EES_LSE_0029HTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <url-mapping url="EES_LSE_0029GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EES_LSE_0029HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EesLse0029Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-06-09 end -->
+
+	<!-- OH BONG HYUN : 2009-05-25 start -->
+    <url-mapping url="EES_LSE_0024.do" screen="EES_LSE_0024.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0024GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0024HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EesLse0024Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- OH BONG HYUN : 2009-05-25 end -->
+
+	<!-- Jin Jun Sung : 2009-06-15 start -->
+    <url-mapping url="EES_LSE_0030.do" screen="EES_LSE_0030.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EES_LSE_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0030GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EES_LSE_0030HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EesLse0030Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-06-15 end -->
+
+	<!-- Jang Jun-Woo : 2009-06-17 start -->
+	<url-mapping url="EES_LSE_0034.do" screen="EES_LSE_0034.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0034GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0034HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EesLse0034Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Jang Jun-Woo : 2009-06-17 end -->
+
+    <!-- Jang Jun-Woo : 2009-06-22 start -->
+    <url-mapping url="EES_LSE_0037.do" screen="EES_LSE_0037.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0037GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0037HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EesLse0037Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Jang Jun-Woo : 2009-06-22 end -->
+
+    <!-- Nho Jung Yong : 2009-06-29 start -->
+    <url-mapping url="EES_LSE_0004.do" screen="EES_LSE_0004.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EES_LSE_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EES_LSE_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EesLse0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.ContainerLeaseAgreementRegistrationSC</service-action-class>
+    </event-mapping>
+    <!-- Nho Jung Yong : 2009-06-29 end -->
+
+    <!-- Jang Jun-Woo : 2009-06-24 start -->
+    <url-mapping url="EES_LSE_0033.do" screen="EES_LSE_0033.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.expenseplan.event.EES_LSE_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0033GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.expenseplan.event.EES_LSE_0033HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containercostanalysis.expenseplan.event.EesLse0033Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.ContainerCostAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-06-24 end -->
+
+	<!-- Jang Jun-Woo : 2009-06-30 start -->
+    <url-mapping url="EES_LSE_0038.do" screen="EES_LSE_0038.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.expenseplan.event.EES_LSE_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0038GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.expenseplan.event.EES_LSE_0038HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containercostanalysis.expenseplan.event.EesLse0038Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.ContainerCostAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-06-30 end -->
+
+	<!-- Jin Jun Sung : 2009-06-18 start -->
+    <url-mapping url="EES_LSE_0032.do" screen="EES_LSE_0032.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EES_LSE_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0032GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EES_LSE_0032HTMLAction</web-action-class>
+    </url-mapping>
+
+	<!-- Nho Jung Yong : 2009-07-03 start -->
+    <url-mapping url="EES_LSE_0046.do" screen="EES_LSE_0046.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0046GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0046HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EesLse0046Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Nho Jung Yong : 2009-07-03 end -->
+
+	<event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EesLse0032Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-06-18 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-03 start -->
+    <url-mapping url="EES_LSE_0005.do" screen="EES_LSE_0005.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.termchange.event.EES_LSE_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.termchange.event.EES_LSE_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.termchange.event.EesLse0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-07-03 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-07 start -->
+    <url-mapping url="EES_LSE_0006.do" screen="EES_LSE_0006.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.termchange.event.EES_LSE_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.termchange.event.EES_LSE_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.termchange.event.EesLse0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-07-07 end -->
+
+	<!-- Jin Jun Sung : 2009-06-30 start -->
+    <url-mapping url="EES_LSE_0047.do" screen="EES_LSE_0047.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EES_LSE_0047HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0047GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EES_LSE_0047HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.onhireapproval.event.EesLse0047Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-06-30 end -->
+	<!-- Jin Jun Sung : 2009-06-19 start -->
+    <url-mapping url="EES_LSE_0055.do" screen="EES_LSE_0055.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.onoffhireaudit.event.EES_LSE_0055HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0055GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.onoffhireaudit.event.EES_LSE_0055HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containercostanalysis.onoffhireaudit.event.EesLse0055Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.ContainerCostAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-06-19 end -->
+
+	<!-- Jin Jun Sung : 2009-06-22 start -->
+    <url-mapping url="EES_LSE_0056.do" screen="EES_LSE_0056.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.onoffhireaudit.event.EES_LSE_0056HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0056GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.onoffhireaudit.event.EES_LSE_0056HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containercostanalysis.onoffhireaudit.event.EesLse0056Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.ContainerCostAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-06-22 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-10 start -->
+    <url-mapping url="EES_LSE_0025.do" screen="EES_LSE_0025.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.immediateexit.event.EES_LSE_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0025GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.immediateexit.event.EES_LSE_0025HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.immediateexit.event.EesLse0025Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-07-10 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-14 start -->
+    <url-mapping url="EES_LSE_0027.do" screen="EES_LSE_0027.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.misuseapproval.event.EES_LSE_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0027GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.misuseapproval.event.EES_LSE_0027HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.misuseapproval.event.EesLse0027Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-07-14 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-16 start -->
+    <url-mapping url="EES_LSE_0028.do" screen="EES_LSE_0028.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.misuseapproval.event.EES_LSE_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0028GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.misuseapproval.event.EES_LSE_0028HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.misuseapproval.event.EesLse0028Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-07-16 end -->
+	<!-- Nho Jung Yong : 2009-07-17 start -->
+    <url-mapping url="EES_LSE_0051.do" screen="EES_LSE_0051.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0051GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0051HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EesLse0051Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Nho Jung Yong : 2009-07-17 end -->
+    <!-- Jin Jun Sung : 2009-06-22 start -->
+    <url-mapping url="EES_LSE_0036.do" screen="EES_LSE_0036.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0036GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0036HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EesLse0036Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-06-22 end -->
+
+	<!-- Jin Jun Sung : 2009-07-15 start -->
+    <url-mapping url="EES_LSE_0039.do" screen="EES_LSE_0039.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0039HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0039Pop.do" screen="EES_LSE_0039Pop.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0039HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0039GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0039HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EesLse0039Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-07-15 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-20 start -->
+    <url-mapping url="EES_LSE_0093.do" screen="EES_LSE_0093.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.misuseapproval.event.EES_LSE_0093HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0093GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.misuseapproval.event.EES_LSE_0093HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.misuseapproval.event.EesLse0093Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-07-20 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-24 start -->
+    <url-mapping url="EES_LSE_0026.do" screen="EES_LSE_0026.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.immediateexit.event.EES_LSE_0025HTMLAction</web-action-class>
+    </url-mapping>
+	<!-- Jang Jun-Woo : 2009-07-24 end -->
+
+	<!-- Nho Jung Yong : 2009-07-27 start -->
+    <url-mapping url="EES_LSE_0095.do" screen="EES_LSE_0095.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EES_LSE_0095HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0095Pop.do" screen="EES_LSE_0095Pop.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EES_LSE_0095HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0095GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EES_LSE_0095HTMLAction</web-action-class>
+    </url-mapping>
+
+	<event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.agreementregistration.event.EesLse0095Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleaseagreementregistration.ContainerLeaseAgreementRegistrationSC</service-action-class>
+    </event-mapping>
+	<!-- Nho Jung Yong : 2009-07-27 end -->
+
+	<!-- Jang Jun-Woo : 2009-07-28 start -->
+    <url-mapping url="EES_LSE_0040.do" screen="EES_LSE_0040.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0040GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0040HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EesLse0040Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-07-28 end -->
+	<!-- Jin Jun Sung : 2009-08-03 start -->
+    <url-mapping url="EES_LSE_0052.do" screen="EES_LSE_0052.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0052GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0052HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EesLse0052Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-03 end -->
+
+	<!-- Jin Jun Sung : 2009-08-03 start -->
+    <url-mapping url="EES_LSE_0053.do" screen="EES_LSE_0053.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0053GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0053HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EesLse0053Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-03 end -->
+	<!-- Jin Jun Sung : 2009-08-05 start -->
+    <url-mapping url="EES_LSE_0054.do" screen="EES_LSE_0054.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0054GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0054HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EesLse0054Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-05 end -->
+
+	<!-- Jang Jun-Woo : 2009-08-10 start -->
+    <url-mapping url="EES_LSE_0057.do" screen="EES_LSE_0057.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0057HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0057GS.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0057HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EesLse0057Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-08-10 end -->
+
+	<!-- Jin Jun Sung : 2009-08-12 start -->
+    <url-mapping url="EES_LSE_0058.do" screen="EES_LSE_0058.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0058HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0058GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0058HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EesLse0058Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-12 end -->
+
+	<!-- Jang Jun-Woo : 2009-08-13 start -->
+    <url-mapping url="EES_LSE_0094.do" screen="EES_LSE_0094.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0094HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0094GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0094HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EesLse0094Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-08-13 end -->
+	<!-- Jin Jun Sung : 2009-08-17 start -->
+    <url-mapping url="EES_LSE_0074.do" screen="EES_LSE_0074.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0074HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0074GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0074HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EesLse0074Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-17 end -->
+	<!-- Jin Jun Sung : 2009-08-24 start -->
+    <url-mapping url="EES_LSE_0080.do" screen="EES_LSE_0080.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0080HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0080GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0080HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EesLse0080Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-24 end -->
+
+	<!-- Jin Jun Sung : 2009-08-24 start -->
+    <url-mapping url="EES_LSE_0081.do" screen="EES_LSE_0081.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0081HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0081GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0081HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EesLse0081Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-24 end -->
+
+	<!-- Jin Jun Sung : 2009-08-24 start -->
+    <url-mapping url="EES_LSE_0082.do" screen="EES_LSE_0082.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0082HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0082GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0082HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EesLse0082Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-24 end -->
+
+	<!-- Jin Jun Sung : 2009-08-24 start -->
+    <url-mapping url="EES_LSE_0083.do" screen="EES_LSE_0083.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0083HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0083GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0083HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EesLse0083Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-24 end -->
+
+	<!-- Jin Jun Sung : 2009-08-24 start -->
+    <url-mapping url="EES_LSE_0084.do" screen="EES_LSE_0084.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0084HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0084GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0084HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EesLse0084Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-24 end -->
+
+	<!-- Jang Jun-Woo : 2009-08-24 start -->
+	<url-mapping url="EES_LSE_0019.do" screen="EES_LSE_0019.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0019GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0019HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EesLse0019Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-08-24 end -->
+
+	<!-- Jang Jun-Woo : 2009-09-09 start -->
+	<url-mapping url="EES_LSE_0044.do" screen="EES_LSE_0044.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0044HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0044GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0044HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EesLse0044Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-09-09 end -->
+
+	<!-- Jin Jun Sung : 2009-08-25 start -->
+    <url-mapping url="EES_LSE_0060.do" screen="EES_LSE_0060.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0060HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0060GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0060HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0060Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-25 end -->
+
+	<!-- Jin Jun Sung : 2009-08-25 start -->
+    <url-mapping url="EES_LSE_0066.do" screen="EES_LSE_0066.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0066HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_LSE_0066_POP.do" screen="EES_LSE_0066_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0066HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0066GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0066HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0066Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-25 end -->
+
+	<!-- Jin Jun Sung : 2009-08-25 start -->
+	<url-mapping url="EES_LSE_0067_POP.do" screen="EES_LSE_0067_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0067HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_LSE_0067.do" screen="EES_LSE_0067.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0067HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0067GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0067HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0067Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-25 end -->
+
+	<!-- Jin Jun Sung : 2009-08-25 start -->
+    <url-mapping url="EES_LSE_0068.do" screen="EES_LSE_0068.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0068HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_LSE_0068_POP.do" screen="EES_LSE_0068_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0068HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0068GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0068HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0068Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-25 end -->
+
+	<!-- Jin Jun Sung : 2009-08-25 start -->
+    <url-mapping url="EES_LSE_0069.do" screen="EES_LSE_0069.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0069HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_LSE_0069_POP.do" screen="EES_LSE_0069_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0069HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0069GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0069HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0069Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-25 end -->
+
+	<!-- Jin Jun Sung : 2009-08-25 start -->
+    <url-mapping url="EES_LSE_0070.do" screen="EES_LSE_0070.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0070HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_LSE_0070_POP.do" screen="EES_LSE_0070_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0070HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0070GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0070HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0070Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-08-25 end -->
+		<!-- Jin Jun Sung : 2009-09-03 start -->
+    <url-mapping url="EES_LSE_0087.do" screen="EES_LSE_0087.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0087HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0087GS.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0087HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EesLse0087Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-09-03 end -->
+
+	<!-- Jin Jun Sung : 2009-09-04 start -->
+    <url-mapping url="EES_LSE_0088.do" screen="EES_LSE_0088.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0088HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0088GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0088HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EesLse0088Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-09-04 end -->
+
+	<!-- Jin Jun Sung : 2009-09-04 start -->
+    <url-mapping url="EES_LSE_0089.do" screen="EES_LSE_0089.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0089HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0089GS.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0089HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EesLse0089Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-09-04 end -->
+
+	<!-- Jin Jun Sung : 2009-09-04 start -->
+    <url-mapping url="EES_LSE_0090.do" screen="EES_LSE_0090.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0090HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0090GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EES_LSE_0090HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leasereport.event.EesLse0090Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-09-04 end -->
+
+	<!-- Nho Jung Yong : 2009-09-10 start -->
+    <url-mapping url="EES_LSE_0007.do" screen="EES_LSE_0007.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0007HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0007Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Nho Jung Yong : 2009-09-10 end -->
+
+	<!-- Nho Jung Yong : 2009-09-10 start -->
+    <url-mapping url="EES_LSE_0008.do" screen="EES_LSE_0008.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Nho Jung Yong : 2009-09-10 end -->
+	<!-- Jin Jun Sung : 2009-09-14 start -->
+    <url-mapping url="EES_LSE_0079.do" screen="EES_LSE_0079.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0079HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0079GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0079HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EesLse0079Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-09-14 end -->
+	<!-- Jin Jun Sung : 2009-09-18 start -->
+    <url-mapping url="EES_LSE_0085.do" screen="EES_LSE_0085.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0085HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0085GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0085HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EesLse0085Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-09-18 end -->
+
+	<!-- Jang Jun-Woo : 2009-09-15 start -->
+	<url-mapping url="EES_LSE_0045.do" screen="EES_LSE_0045.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0045GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EES_LSE_0045HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.receivablerentalcost.event.EesLse0045Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-09-15 end -->
+	<!-- Jin Jun Sung : 2009-09-23 start -->
+    <url-mapping url="EES_LSE_0065.do" screen="EES_LSE_0065.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0065HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0065GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0065HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0065Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-09-23 end -->
+
+	<!-- Jin Jun Sung : 2009-09-23 start -->
+    <url-mapping url="EES_LSE_0071.do" screen="EES_LSE_0071.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0071HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_LSE_0071_POP.do" screen="EES_LSE_0071_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0071HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0071GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0071HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0071Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-09-23 end -->
+
+	<!-- Nho Jung Yong : 2009-09-23 start -->
+        <url-mapping url="EES_LSE_0098.do" screen="EES_LSE_0098.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0098HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0098GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0098HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0098Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Nho Jung Yong : 2009-09-23 end -->
+
+    <url-mapping url="LSE_INTGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.lsecommon.lsecommon.event.LSE_FILEUPLOAD_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.lsecommon.lsecommon.event.LseFileUploadEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.lsecommon.LseCommonSC</service-action-class>
+    </event-mapping>
+
+    <!-- Jang Jun-Woo : 2009-09-22 start -->
+	<url-mapping url="EES_LSE_0020.do" screen="EES_LSE_0020.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EES_LSE_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0020Pop.do" screen="EES_LSE_0020Pop.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EES_LSE_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0020GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EES_LSE_0020HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EesLse0020Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-09-22 end -->
+
+	<!-- Nho Jung Yong : 2009-09-30 start -->
+    <url-mapping url="EES_LSE_0007_01.do" screen="EES_LSE_0007_01.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0007POPHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0007_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0007POPHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_LSE_0007_01DL.do" screen="com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0007PopViewAdapterDL" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0007POPHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0007PopEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Nho Jung Yong : 2009-09-30 end -->
+
+	<!-- Jang Jun-Woo : 2009-10-05 start -->
+	<url-mapping url="EES_LSE_0021.do" screen="EES_LSE_0021.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EES_LSE_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0021GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EES_LSE_0021HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EesLse0021Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-10-05 end -->
+
+	<!-- Jin Jun Sung : 2009-10-06 start -->
+    <url-mapping url="EES_LSE_0018.do" screen="EES_LSE_0018.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.payableestimateaudit.event.EES_LSE_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0018GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.payableestimateaudit.event.EES_LSE_0018HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containercostanalysis.payableestimateaudit.event.EesLse0018Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.ContainerCostAnalysisSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-10-06 end -->
+
+	<!-- Jang Jun-Woo : 2009-10-07 start -->
+	<url-mapping url="EES_LSE_0021_01.do" screen="EES_LSE_0021_01.screen">
+		<web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EES_LSE_0021HTMLAction</web-action-class>
+	</url-mapping>
+	<!-- Jang Jun-Woo : 2009-10-07 end -->
+
+	<!-- Nho Jung Yong : 2009-10-08 start -->
+    <url-mapping url="EES_LSE_0046_01.do" screen="EES_LSE_0046_01.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0046POPHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0046_01GS.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EES_LSE_0046POPHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.leaseplan.event.EesLse0046PopEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Nho Jung Yong : 2009-10-08 end -->
+
+	<!-- Jin Jun Sung : 2009-10-08 start -->
+    <url-mapping url="EES_LSE_0012.do" screen="EES_LSE_0012.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0012HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0012Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Jin Jun Sung : 2009-10-08 end -->
+
+	<!-- Jang Jun-Woo : 2009-10-08 start -->
+	<url-mapping url="EES_LSE_0022.do" screen="EES_LSE_0022.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EES_LSE_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0022GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EES_LSE_0022HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EesLse0022Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2009-10-08 end -->
+
+    <!-- Ji-yeon Jeon : 2016-05-10 start -->
+    <url-mapping url="EES_LSE_0023.do" screen="EES_LSE_0023.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EES_LSE_0023HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_LSE_0023_POP.do" screen="EES_LSE_0023_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EES_LSE_0023HTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="EES_LSE_0023_01_POP.do" screen="EES_LSE_0023_01_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EES_LSE_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0023GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EES_LSE_0023HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EesLse0023Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+    <!-- Ji-yeon Jeon : 2016-05-10 end -->
+    
+	<!-- Nho Jung Yong : 2009-10-09 start -->
+    <url-mapping url="EES_LSE_0011.do" screen="EES_LSE_0011.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Nho Jung Yong : 2009-10-09 end -->
+
+	<!-- Jang Jun-Woo : 2009-10-16 start -->
+    <url-mapping url="EES_LSE_0097.do" screen="EES_LSE_0097.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.misuseapproval.event.EES_LSE_0093HTMLAction</web-action-class>
+    </url-mapping>
+	<!-- Jang Jun-Woo : 2009-10-16 end -->
+
+	<!-- Jang Jun-Woo : 2010-04-13 start -->
+	<url-mapping url="EES_LSE_0101.do" screen="EES_LSE_0101.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EES_LSE_0101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EES_LSE_0101HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerleasemgt.availableoffhire.event.EesLse0101Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerleasemgt.ContainerLeaseMgtSC</service-action-class>
+    </event-mapping>
+	<!-- Jang Jun-Woo : 2010-04-13 end -->
+	
+	<url-mapping url="EES_LSE_1001.do" screen="EES_LSE_1001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.lsecommon.lsecommon.event.EES_LSE_1001HTMLAction</web-action-class>
+    </url-mapping>
+     <url-mapping url="EES_LSE_1001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.lsecommon.lsecommon.event.EES_LSE_1001HTMLAction</web-action-class>
+    </url-mapping>
+     <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.lsecommon.lsecommon.event.EesLse1001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.lsecommon.LseCommonSC</service-action-class>
+    </event-mapping>
+        <!-- Un Jeong : 2013-08-01 start -->
+    <url-mapping url="EES_LSE_1002.do" screen="EES_LSE_1002.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.lsecommon.lsecommon.event.EES_LSE_COMHTMLAction</web-action-class>
+    </url-mapping>
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.mnr.lsecommon.lsecommon.event.EesLseComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.lsecommon.LseCommonSC</service-action-class>
+    </event-mapping>
+    <!-- Un Jeong : 2013-08-01 end -->
+    
+    <!-- Park Young Jin : 2016-03-06 start -->
+    <url-mapping url="EES_LSE_1003.do" screen="EES_LSE_1003.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.lsecommon.lsecommon.event.EES_LSE_COMHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <!-- Hwang-Jae AHN : 2017-10-13 start -->
+    <url-mapping url="EES_LSE_0017.do" screen="EES_LSE_0017.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0017GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0017HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0017Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang-Jae AHN : 2017-10-13 end -->
+	
+	<!-- Nho Jung Yong : 2009-09-30 start -->
+    <url-mapping url="EES_LSE_0017_01.do" screen="EES_LSE_0017_01.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0017POPHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0017_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0017POPHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0017PopEvent</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Nho Jung Yong : 2009-09-30 end -->
+	<!-- Hwang-Jae AHN : 2017-10-17 start -->
+    <url-mapping url="EES_LSE_0008_01.do" screen="EES_LSE_0008_01.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_0008_01GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EES_LSE_0008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containerrentalcost.payablerentalcost.event.EesLse0008Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containerrentalcost.ContainerRentalCostSC</service-action-class>
+    </event-mapping>
+	<!-- Hwang-Jae AHN : 2017-10-17 end -->
+	
+	<url-mapping url="EES_LSE_1004.do" screen="EES_LSE_1004.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.lsecommon.lsecommon.event.EES_LSE_1004HTMLAction</web-action-class>
+    </url-mapping>
+     <url-mapping url="EES_LSE_1004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.lsecommon.lsecommon.event.EES_LSE_1004HTMLAction</web-action-class>
+    </url-mapping>
+     <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.lsecommon.lsecommon.event.EesLse1004Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.lsecommon.LseCommonSC</service-action-class>
+    </event-mapping>	
+    
+    <url-mapping url="EES_LSE_1005.do" screen="EES_LSE_1005.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.jolpaymentschedule.event.EES_LSE_1005HTMLAction</web-action-class>
+    </url-mapping>
+     <url-mapping url="EES_LSE_1005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.jolpaymentschedule.event.EES_LSE_1005HTMLAction</web-action-class>
+    </url-mapping>
+     <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containercostanalysis.jolpaymentschedule.event.EesLse1005Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.ContainerCostAnalysisSC</service-action-class>
+    </event-mapping>
+    
+    
+    <!-- Young Jin Park : 2018-12-19 start -->
+    <url-mapping url="EES_LSE_2001.do" screen="EES_LSE_2001.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.contractinterface.event.EES_LSE_2001HTMLAction</web-action-class>
+    </url-mapping>
+     <url-mapping url="EES_LSE_2001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.contractinterface.event.EES_LSE_2001HTMLAction</web-action-class>
+    </url-mapping>
+     <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containercostanalysis.contractinterface.event.EesLse2001Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.ContainerCostAnalysisSC</service-action-class>
+    </event-mapping>
+    <!-- Young Jin Park : 2018-12-19 end -->
+    
+    <url-mapping url="EES_LSE_1006.do" screen="EES_LSE_1006.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.lsehistorymanagement.event.EES_LSE_1006HTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="EES_LSE_1006_POP.do" screen="EES_LSE_1006_POP.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.lsehistorymanagement.event.EES_LSE_1006HTMLAction</web-action-class>
+    </url-mapping>
+     <url-mapping url="EES_LSE_1006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.lsehistorymanagement.event.EES_LSE_1006HTMLAction</web-action-class>
+    </url-mapping>
+     <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containercostanalysis.lsehistorymanagement.event.EesLse1006Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.ContainerCostAnalysisSC</service-action-class>
+    </event-mapping>
+     <url-mapping url="EES_LSE_1007.do" screen="EES_LSE_1007.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.lsehistorymanagement.event.EES_LSE_1007HTMLAction</web-action-class>
+    </url-mapping>
+     <url-mapping url="EES_LSE_1007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.lsehistorymanagement.event.EES_LSE_1007HTMLAction</web-action-class>
+    </url-mapping>
+     <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containercostanalysis.lsehistorymanagement.event.EesLse1007Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.ContainerCostAnalysisSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Young Jin Park : 2019-01-10 start -->
+    <url-mapping url="EES_LSE_1008.do" screen="EES_LSE_1008.screen" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.payableestimateaudit.event.EES_LSE_1008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="EES_LSE_1008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.payableestimateaudit.event.EES_LSE_1008HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.ees.lse.containercostanalysis.payableestimateaudit.event.EesLse1008Event</event-class>
+        <service-action-class>com.clt.apps.opus.ees.lse.containercostanalysis.ContainerCostAnalysisSC</service-action-class>
+    </event-mapping>
+    <!-- Young Jin Park : 2019-01-10 start -->
+</mappings>

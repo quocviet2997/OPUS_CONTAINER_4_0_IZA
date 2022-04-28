@@ -1,0 +1,29 @@
+﻿
+Message Date: (<@v_curr_dt>)
+
+Please be advised that we have not received Appointment information for container
+<@v_eq_no> on Work Order <@v_wo_no>.
+
+Booking #: <@v_bkg_no>	B/L #:  <@v_bl_no>
+
+The Last Free Day for this container at (YARD <@v_yd_cd>/<@v_yd_nm>) is (DATE: <@v_lst_free_dt>)
+
+Please coordinate with the customer to set an appointment for delivery of this container 
+and submit the information to Hanjin Shipping.
+This data can be submitted electronically via EDI or manually 
+through the Service Provider Portal website (http://partner.hanjin.com).
+
+If you have any questions regarding this message, 
+please contact your local Hanjin Shipping traffic department. 
+
+
+**** PLEASE DO NOT REPLY TO THIS E-MAIL ****
+**** If you received this reminder by mistake, please discard it. ****
+
+
+
+
+
+
+
+

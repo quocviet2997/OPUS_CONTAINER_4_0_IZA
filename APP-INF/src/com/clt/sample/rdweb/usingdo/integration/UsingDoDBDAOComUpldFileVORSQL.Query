@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="UsingDoDBDAOComUpldFileVORSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+SELECT 
+	file_sav_id
+,	file_upld_nm
+,	file_sz_capa
+FROM com_upld_file
+where rownum < 5			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

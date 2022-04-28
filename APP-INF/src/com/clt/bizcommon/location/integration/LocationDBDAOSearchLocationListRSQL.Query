@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="LocationDBDAOSearchLocationListRSQL">
+			<desc><![CDATA[Search LocationList]]></desc>
+			<sql><![CDATA[
+SELECT
+	LOC_CD,
+	LOC_NM,
+	RGN_CD,
+	LOC_STATE,
+	HUB_LOC_CD,
+	UN_LOC_IND_CD,
+	UN_LOC_CD,
+	LOC_CHR_CD,
+	SCC_CD,
+	LCC_CD,
+	ECC_CD,
+	RCC_CD,
+	CNT_CD,
+	SLS_OFC_CD,
+	EQ_CTRL_OFC_CD,
+	(CASE 
+		WHEN 'Y' = delt_flg THEN 'Delete' 
+		ELSE 'Active' 
+	END) AS delt_flg
+FROM (
+		SELECT ROW_NUMBER() OVER (ORDER BY A.LOC_CD ASC) no,
+			A.LOC_CD,
+			A.LOC_NM,
+			A.RGN_CD,
+			A.STE_CD LOC_STATE,
+			A.HUB_LOC_CD,
+			A.UN_LOC_IND_CD,
+			A.UN_LOC_CD,
+			A.LOC_CHR_CD,
+			A.SCC_CD,
+			C.LCC_CD,
+			C.ECC_CD,
+			C.RCC_CD,
+			A.CNT_CD,
+			A.SLS_OFC_CD,
+			A.EQ_CTRL_OFC_CD,
+			A.DELT_FLG
+		FROM MDM_LOCATION A, MDM_COUNTRY B, MDM_EQ_ORZ_CHT C
+		WHERE 1 = 1 
+			AND A.CNT_CD = B.CNT_CD(+)
+		#if (${scc_flg} == 'Y') 
+			AND A.LOC_CD = C.SCC_CD
+		#else 
+			AND A.SCC_CD = C.SCC_CD(+)
+		#end
+		#if(${loc_cd} != '')
+			AND A.LOC_CD like '%' || @[loc_cd] || '%'
+		#end
+		#if(${un_loc_ind_cd} != '')
+			AND A.UN_LOC_IND_CD = @[un_loc_ind_cd]
+		#end 
+		#if(${loc_nm} != '')
+			AND upper(A.LOC_NM) like '%' || upper(@[loc_nm])  || '%'
+		#end
+		#if(${cnt_cd} != '')
+			AND A.CNT_CD like @[cnt_cd]  || '%'
+		#end
+		#if(${rcc_cd} != '')
+			AND C.RCC_CD = @[rcc_cd]
+		#end
+		#if(${lcc_cd} != '')
+			AND C.LCC_CD = @[lcc_cd]
+		#end
+		#if(${loc_state} != '')
+			AND A.STE_CD = @[loc_state]
+		#end
+		#if(${select} == 'S')
+			AND A.sls_ofc_cd like @[loc_eq_ofc]  || '%'
+		#elseif(${select} == 'F')
+			AND A.finc_ctrl_ofc_cd like @[loc_eq_ofc]  || '%'
+		#elseif(${select} == 'E')
+			AND A.eq_ctrl_ofc_cd like @[loc_eq_ofc]  || '%'
+		#end
+
+		#if (${mdm_yn} != '')
+			#if (${delt_flg} == 'Y') 
+			AND NVL(A.DELT_FLG, 'N') = @[delt_flg]
+			#elseif (${delt_flg} == 'ALL') 
+			#else 
+			AND NVL(A.DELT_FLG, 'N') <> 'Y'
+			#end
+		#else	
+			AND NVL(A.DELT_FLG, 'N') <> 'Y'
+		#end
+			AND NVL(B.DELT_FLG, 'N') <> 'Y'
+		
+		#if (${scc_flg} == 'Y') 	
+		AND NVL(C.DELT_FLG, 'N') <> 'Y' 
+		#end
+	) A	                   
+WHERE no BETWEEN @[startpart] AND @[endpart]
+ORDER BY LOC_CD			]]></sql>
+			<params>
+				<param name="loc_cd" type="12" value="" out="N"/>
+				<param name="un_loc_ind_cd" type="12" value="" out="N"/>
+				<param name="loc_nm" type="12" value="" out="N"/>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="rcc_cd" type="12" value="" out="N"/>
+				<param name="lcc_cd" type="12" value="" out="N"/>
+				<param name="loc_state" type="12" value="" out="N"/>
+				<param name="loc_eq_ofc" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="startpart" type="2" value="" out="N"/>
+				<param name="endpart" type="2" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

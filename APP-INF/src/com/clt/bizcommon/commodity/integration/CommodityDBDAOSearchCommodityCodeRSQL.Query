@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CommodityDBDAOSearchCommodityCodeRSQL">
+			<desc><![CDATA[SearchCommodityCode]]></desc>
+			<sql><![CDATA[
+SELECT  B.rep_cmdt_cd AS prf_n1st_rep_cmdt_cd
+      , B.rep_cmdt_nm AS prf_n1st_cmdt_grp_dtl
+  FROM mdm_commodity A, mdm_rep_cmdt B
+WHERE 1 = 1
+AND   A.rep_cmdt_cd = B.rep_cmdt_cd
+AND   A.REP_CMDT_CD = @[chk_cmdt_cd]			]]></sql>
+			<params>
+				<param name="chk_cmdt_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

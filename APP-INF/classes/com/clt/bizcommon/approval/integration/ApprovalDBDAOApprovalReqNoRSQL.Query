@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalReqNoRSQL">
+			<desc><![CDATA[Approval Request Number를 조회합니다]]></desc>
+			<sql><![CDATA[
+SELECT DISTINCT A.APRO_RQST_NO                                       
+  FROM COM_APRO_RQST_HDR  A
+     , COM_APRO_CSR_DTL   B
+     , COM_APRO_RQST_ROUT C	
+ WHERE A.APSTS_CD      = 'P'                                             	
+   AND A.APRO_RQST_NO  = B.APRO_RQST_NO                              	
+   AND A.APRO_RQST_NO  = C.APRO_RQST_NO                              	
+   --AND A.CRNT_APRO_SEQ = C.APRO_RQST_SEQ                    				
+   AND CSR_NO          = @[csr_no]                              						
+   AND NVL(A.DELT_FLG, 'N') <> 'Y'			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<!--
+		=====================================================================================
+		=================================== ocean  start ====================================
+		=====================================================================================
+	-->
+
+    <screen name="ESD_PRD_0001">
+        <parameter key="title"    value="Embrace PI and Be the future! " direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/prd/networknodemanage/geohierarchymanage/jsp/ESD_PRD_0001.jsp" />
+    </screen>
+
+	<screen name="ESD_PRD_0002">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networknodemanage/yardmanage/jsp/ESD_PRD_0002.jsp" />
+	</screen>
+
+	<screen name="ESD_PRD_0003">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networknodemanage/yardmanage/jsp/ESD_PRD_0003.jsp" />
+	</screen>
+
+	<screen name="ESD_PRD_0070">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networknodemanage/pickupreturncy/jsp/ESD_PRD_0070.jsp" />
+	</screen>
+
+    <screen name="ESD_PRD_0071">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networknodemanage/blockstowage/jsp/ESD_PRD_0071.jsp" />
+	</screen>
+	<screen name="ESD_PRD_0072">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networknodemanage/blockstowage/jsp/ESD_PRD_0072.jsp" />
+	</screen>
+
+	<!--  Ocean Link Manage (HO) -->
+	<screen name="ESD_PRD_0012">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/oceanlinkmanage/jsp/ESD_PRD_0012.jsp" />
+	</screen>
+
+	<!--  OceanLink Manage (RHQ) -->
+	<screen name="ESD_PRD_0013">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/oceanlinkmanage/jsp/ESD_PRD_0013.jsp" />
+	</screen>
+
+	<!--  Ocean Route Manage  -->
+	<screen name="ESD_PRD_0014">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/oceanroutemanage/jsp/ESD_PRD_0014.jsp" />
+	</screen>
+
+	<!--  Ocean Route Manage  -->
+	<screen name="ESD_PRD_0060"  template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/oceanroutemanage/jsp/ESD_PRD_0060.jsp" />
+	</screen>
+
+	<!--  Ocean Route Inquiry -->
+	<screen name="ESD_PRD_0015">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/oceanroutemanage/jsp/ESD_PRD_0015.jsp" />
+	</screen>
+
+	<!-- screen name="ESD_PRD_0022" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/constraintmanage/jsp/ESD_PRD_0022.jsp" />
+	</screen>
+	<screen name="ESD_PRD_0023" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/constraintmanage/jsp/ESD_PRD_0023.jsp" />
+	</screen>
+	-->
+
+	<!--  Route Constraint Manage -->
+	<screen name="ESD_PRD_0024">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/constraintmanage/jsp/ESD_PRD_0024.jsp" />
+	</screen>
+	<screen name="ESD_PRD_0024_POP" template="templatePop">
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/constraintmanage/jsp/ESD_PRD_0024.jsp" />
+	</screen>
+	<screen name="ESD_PRD_0025">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/constraintmanage/jsp/ESD_PRD_0025.jsp" />
+	</screen>
+	
+	<!--  Ocean Route Manage : Manual Creation  -->
+	<screen name="ESD_PRD_0035" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/oceanroutemanage/jsp/ESD_PRD_0035.jsp" />
+	</screen>
+
+	<!--  Ocean Route Manage : Manual Creation  Popup-->
+	<screen name="ESD_PRD_0040" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/oceanroutemanage/jsp/ESD_PRD_0040.jsp" />
+	</screen>
+
+	<!--  Ocean Route Manage : Auto Creation  -->
+	<screen name="ESD_PRD_0032" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/oceanroutemanage/jsp/ESD_PRD_0032.jsp" />
+	</screen>
+	
+	
+    <!-- ======================================================================== kimyoungchul 부분 끝 # -->
+    
+	<!--  Product Catalog 생성결과 조회 화면 -->
+	<screen name="ESD_PRD_0018">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/productcatalogcreate/productcatalogcreate/jsp/ESD_PRD_0018.jsp" />
+	</screen>
+	<screen name="ESD_PRD_0018_1">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/productcatalogcreate/productcatalogcreate/jsp/ESD_PRD_0018_1.jsp" />
+	</screen>
+	<screen name="ESD_PRD_0018_2">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/productcatalogcreate/productcatalogcreate/jsp/ESD_PRD_0018_2.jsp" />
+	</screen>		
+	<screen name="ESD_PRD_0018_TEST">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/productcatalogcreate/productcatalogcreate/jsp/ESD_PRD_0018_TEST.jsp" />
+	</screen>
+	<!--  Product Catalog 생성결과 조회 화면 그리드 1 -->
+	<screen name="ESD_PRD_0018_PRICING" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esd/prd/productcatalogcreate/productcatalogcreate/jsp/ESD_PRD_0018_PRICING.jsp" />
+	</screen>	
+	<screen name="ESD_PRD_0018_3">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/productcatalogcreate/productcatalogcreate/jsp/ESD_PRD_0018_3.jsp" />
+	</screen>			
+	<screen name="ESD_PRD_0020">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/productcatalogcreate/productcatalogcreate/jsp/ESD_PRD_0020.jsp" />
+	</screen>
+
+	<!--
+		=====================================================================================
+		=================================== ocean  end ======================================
+		=====================================================================================
+	-->
+
+	<!--
+		=====================================================================================
+		=================================== inland start ====================================
+		=====================================================================================
+	-->
+    <!--  Product Catalog 생성 -->
+    <screen name="ESD_PRD_0020">
+        <parameter key="title"    value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/prd/productcatalogcreate/productcatalogcreate/jsp/ESD_PRD_0020.jsp" />
+    </screen>
+ 	
+    <!--  HubLocation 정보관리 -->
+    <screen name="ESD_PRD_0004">
+        <parameter key="title"    value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/prd/networklinkmanage/hublocationmatchingmanage/jsp/ESD_PRD_0004.jsp" />
+    </screen>
+
+    <!--  HubLocation 정보관리 팝업 -->
+    <!-- TODO delete J
+    <screen name="ESD_PRD_0004Pop" template="templatePop">
+        <parameter key="title"    value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/prd/networklinkmanage/hublocationmatchingmanage/jsp/ESD_PRD_0004.jsp" />
+     </screen>
+     -->
+
+    <!--  Inland Route 정보관리화면 -->
+    
+    <screen name="ESD_PRD_0005">
+        <parameter key="title"    value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/prd/networklinkmanage/inlandroutemanage/jsp/ESD_PRD_0005.jsp" />
+    </screen>
+
+    <!--  Inland Route Empty  -->
+    <screen name="ESD_PRD_0056">
+        <parameter key="title"    value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/prd/networklinkmanage/inlandroutemanage/jsp/ESD_PRD_0056.jsp" />
+    </screen>
+
+        <!--  Inland Route 정보 조회만 가능한 화면 -->
+    <screen name="ESD_PRD_0055">
+        <parameter key="title"    value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/prd/networklinkmanage/inlandroutemanage/jsp/ESD_PRD_0055.jsp" />
+    </screen>   
+    
+    <screen name="ESD_PRD_0055_POP" template="templatePop">
+        <parameter key="title"    value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/prd/networklinkmanage/inlandroutemanage/jsp/ESD_PRD_0055.jsp" />
+    </screen>   
+    
+         <!--  Inland Route inquiry pop up  -->
+    <screen name="ESD_PRD_0059" template="templatePop">
+        <parameter key="title"    value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/prd/networklinkmanage/inlandroutemanage/jsp/ESD_PRD_0059.jsp" />
+ 	</screen>    
+    <!--  Inland Route USA FULL -->
+    
+    <screen name="ESD_PRD_0057">
+        <parameter key="title"    value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/prd/networklinkmanage/inlandroutemanage/jsp/ESD_PRD_0057.jsp" />
+    </screen>
+
+    <screen name="ESD_PRD_0057ROWSEARCH" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/prd/networklinkmanage/inlandroutemanage/jsp/ESD_PRD_0057ROW_GS.jsp" />
+    </screen>
+
+    <screen name="ESD_PRD_0057_AGMT_NO_GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/prd/networklinkmanage/inlandroutemanage/jsp/ESD_PRD_0057_AGMT_NO_GS.jsp" />
+    </screen>
+
+    <!--  Inland Route USA FULL  -->
+
+	<!--  Inland Route USA FULL POP UP Priority Change  -->
+	<screen name="ESD_PRD_0058" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/inlandroutemanage/jsp/ESD_PRD_0058.jsp" />
+	</screen>
+
+  
+    <!--  Multi Route 정보관리화면 -->
+    
+    <!-- screen name="ESD_PRD_0061">
+        <parameter key="title"    value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/prd/networklinkmanage/multiroutemanage/jsp/ESD_PRD_0061.jsp" />
+    </screen>
+    -->
+
+    <!--  Multi Route 정보관리화면 그리드 1 -->
+    
+    <!-- screen name="ESD_PRD_0061GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/prd/networklinkmanage/multiroutemanage/jsp/ESD_PRD_0061GS.jsp" />
+    </screen>
+    -->
+
+     
+    <!--  Rail Schedule 정보관리화면 팝업 -->
+    <!-- TODO delete J
+    <screen name="ESD_PRD_0017Pop" template="templatePop">
+        <parameter key="title"    value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/prd/networklinkmanage/railschedulemanage/jsp/ESD_PRD_0017.jsp" />
+     </screen>
+     -->
+
+	<!--  Inland Link 정보관리  -->
+	<screen name="ESD_PRD_0009">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/inlandlinkmanage/jsp/ESD_PRD_0009.jsp" />
+	</screen>
+
+	<!--  Inland Link 정보관리  팝업 -->
+	<!-- TODO delete J
+	<screen name="ESD_PRD_0009Pop" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/inlandlinkmanage/jsp/ESD_PRD_0009.jsp" />
+	 </screen>
+	 -->
+	 
+	<!--  Link  List 정보조회 POPUP-->
+	<screen name="ESD_PRD_0007" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/inlandlinkmanage/jsp/ESD_PRD_0007.jsp" />
+	</screen>
+
+	<!--  Link  List 정보조회 팝업 -->
+	<!-- TODO delete J
+	<screen name="ESD_PRD_0007Pop" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/inlandlinkmanage/jsp/ESD_PRD_0007.jsp" />
+	 </screen>  
+	 -->
+	    
+	<!--  Carrier별 이용터미널 정보관리 -->
+	<screen name="ESD_PRD_0011">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/oceanrouteconditionmanage/jsp/ESD_PRD_0011.jsp" />
+	</screen>
+
+	<!--  CALLING TERMINAL MATRIX EXCEPTION 2009-02-23 -->
+	<screen name="ESD_PRD_0041">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/oceanrouteconditionmanage/jsp/ESD_PRD_0041.jsp" />
+	</screen>
+
+	<!--  Carrier별 이용터미널 정보관리 팝업 -->
+	<screen name="ESD_PRD_0011Pop" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/oceanrouteconditionmanage/jsp/ESD_PRD_0011.jsp" />
+	 </screen>
+	 
+	<!--  Embargo 정보관리 -->
+	<screen name="ESD_PRD_0010">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/oceanrouteconditionmanage/jsp/ESD_PRD_0010.jsp" />
+	</screen>
+
+	<!--  Embargo 정보관리 -->
+	<!-- TODO delete J
+	<screen name="ESD_PRD_0010Pop" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/oceanrouteconditionmanage/jsp/ESD_PRD_0010.jsp" />
+	 </screen>
+	 -->	 
+
+    <!--  PrdCommon searchSubContinent -->
+    <screen name="ESD_PRD_COM_0002" template="templatePop">
+        <parameter key="title"    value="Embrace PI and Be the future! " direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/prd/common/prdcommon/jsp/ESD_PRD_COM_0002.jsp" />
+    </screen>
+
+	<!--  PrdCommon validation  -->
+	<!-- TODO delete noh
+    <screen name="PRD_VALIDATE" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/prd/common/prdcommon/jsp/PRD_VALIDATION.jsp" />
+    </screen>	 
+	-->
+    
+    <!-- ======================================================================== 정선용 부분 끝 # -->
+
+    <!-- ======================================================================== Jeongseon An ::StartLine # -->
+
+	<!--  new CCT manage 정보조회 -->
+	<screen name="ESD_PRD_0036">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/networknodemanage/cctmanage/jsp/ESD_PRD_0036.jsp" />
+	</screen>
+	<screen name="ESD_PRD_0036_POP" template="templatePop">
+		<parameter key="body"	 value="apps/opus/esd/prd/networknodemanage/cctmanage/jsp/ESD_PRD_0036.jsp" />
+	</screen>
+
+    <!-- ======================================================================== Jeongseon An ::EndLine # -->
+	<!--  S/p  -->
+	<screen name="ESD_PRD_0026" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/common/prdcommon/jsp/ESD_PRD_0026.jsp" />
+	</screen>
+	
+	<!--  test -->
+	<screen name="ESD_PRD_0TEST">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/test/jsp/ESD_PRD_0TEST.jsp" />
+	</screen>
+	<screen name="ESD_PRD_0TESTGS" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esd/prd/test/jsp/ESD_PRD_0TESTGS.jsp" />
+	</screen>
+
+	<!--
+		=====================================================================================
+		=================================== inland end ======================================
+		=====================================================================================
+	-->
+	<screen name="ESD_PRD_0080" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/productcatalogcreate/productcatalogcreate/jsp/ESD_PRD_0080.jsp" />
+	</screen>
+	<screen name="ESD_PRD_0080_POP" template="templatePop">
+		<parameter key="body"	 value="apps/opus/esd/prd/productcatalogcreate/productcatalogcreate/jsp/ESD_PRD_0080_POP.jsp" />
+	</screen>
+	<screen name="ESD_PRD_0081" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/productcatalogcreate/productcatalogcreate/jsp/ESD_PRD_0081.jsp" />
+	</screen>	
+	<screen name="ESD_PRD_0082" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/productcatalogcreate/productcatalogcreate/jsp/ESD_PRD_0082.jsp" />
+	</screen>	
+	<screen name="ESD_PRD_0083" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/productcatalogcreate/productcatalogcreate/jsp/ESD_PRD_0083.jsp" />
+	</screen>	
+	<screen name="ESD_PRD_0037">
+		<parameter key="body"	 value="apps/opus/esd/prd/networklinkmanage/vslconnbuffertime/jsp/ESD_PRD_0037.jsp" />
+	</screen>
+	<screen name="ESD_PRD_0038">
+		<parameter key="body"	 value="apps/opus/esd/prd/networknodemanage/inlandcutoff/jsp/ESD_PRD_0038.jsp" />
+	</screen>
+	<screen name="ESD_PRD_0027" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esd/prd/common/prdcommon/jsp/ESD_PRD_0027.jsp" />
+	</screen>
+	
+	<screen name="ESD_PRD_0039_POP" template="templatePop">
+		<parameter key="body"	 value="apps/opus/esd/prd/networknodemanage/cctmanage/jsp/ESD_PRD_0039.jsp" />
+	</screen>
+</screen-definitions>

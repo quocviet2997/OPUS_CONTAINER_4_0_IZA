@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="RoleDAOComUsrRolePopupRSQL">
+			<desc><![CDATA[select com_usr_role]]></desc>
+			<sql><![CDATA[
+SELECT                    
+				  		 level,
+							'' lvl,
+							usr_role_cd,
+							usr_role_nm,
+							usr_role_desc,
+							prnt_usr_role_cd,
+							cre_dt
+				  FROM (    
+				  			SELECT A.usr_role_cd    
+				  			      ,A.usr_role_nm    
+				  				  ,A.USR_ROLE_DESC    
+				  				  ,A.PRNT_USR_ROLE_CD    
+				  			      ,( SELECT DECODE(COUNT(B.USR_ROLE_CD),0,'X','O')     
+				  					 FROM COM_PGM_ROLE B     
+				  					 WHERE A.USR_ROLE_CD = B.USR_ROLE_CD    
+				  				   ) USER_ASSIGN    
+				  			      ,( SELECT DECODE(COUNT(C.USR_ROLE_CD),0,'X','O')     
+				  					 FROM COM_USR_ROLE_MTCH C     
+				  					 WHERE A.USR_ROLE_CD = C.USR_ROLE_CD    
+				  				   ) PROG_ASSIGN    
+				  				  ,TO_CHAR(A.CRE_DT,'YYYYMMDD') CRE_DT     
+				  			FROM COM_USR_ROLE a    
+				       )    
+				  START WITH PRNT_USR_ROLE_CD IS NULL    
+				  CONNECT BY PRIOR USR_ROLE_CD = PRNT_USR_ROLE_CD			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	
+	<!-- AGT Common Start-->
+	<screen name="ESM_AGT_CHKCUST">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/common/jsp/ESM_AGT_CHKCUST.jsp" />
+	</screen>
+
+	<screen name="ESM_AGT_COMBO">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/common/jsp/ESM_AGT_COMBO.jsp" />
+	</screen>
+	
+	<screen name="ESM_AGT_Calcul">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/common/jsp/ESM_AGT_Calcul.jsp" />
+	</screen>
+	
+	<!--  Container type size -->
+	<screen name="ESM_AGT_0050">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/common/jsp/ESM_AGT_0050.jsp" />
+	</screen>
+
+	<!-- AGT Common End-->
+	
+	<!-- Lee Ho Jin : 2009-08-06 start -->
+	<!--  Chn Outbound Office Info -->
+	<screen name="ESM_AGT_0022">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="title"	value="O/B Booking Office Info for China" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtmaster/agtofficeinfo/jsp/ESM_AGT_0022.jsp" />
+	</screen>
+		
+	<!--  Chn Outbound Office Info-->
+	<screen name="ESM_AGT_0023">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtmaster/agtofficeinfo/jsp/ESM_AGT_0023.jsp" />
+	</screen>
+	
+
+	<!--  Inbound China Agent Office Info for Vessel -->
+	<screen name="ESM_AGT_0024">
+        <parameter key="title"    value="Inbound China Agent Office Info for Vessel" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/agt/agtmaster/agtofficeinfo/jsp/ESM_AGT_0024.jsp"/>
+    </screen>
+	
+    <!--  Freight Forwarder VS Vendor Matching Info for Brokerage -->
+	<screen name="ESM_AGT_0025">
+		<parameter key="title"	value="Freight Forwarder VS Vendor Matching Info for Brokerage" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtmaster/agtcustomerinfo/jsp/ESM_AGT_0025.jsp" />
+	</screen>
+	
+	<!--  Brokerage Shipper  -->
+	<screen name="ESM_AGT_0026">
+		<parameter key="title"	value="Brokerage Shipper" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtmaster/agtcustomerinfo/jsp/ESM_AGT_0026.jsp" />
+	</screen>
+	
+    <!--  Other Commission Approval -->
+    <screen name="ESM_AGT_0016">
+        <parameter key="title"    value="Agent Commission Audit Management Service Command" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0016.jsp"/>
+    </screen>
+    
+    <screen name="ESM_AGT_0016FR">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0016FR.jsp" />
+	</screen>
+	<screen name="ESM_AGT_0016FR2">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0016FR2.jsp" />
+	</screen>
+	
+	<!-- Lee Ho Jin : 2009-08-06 end -->
+
+	<!-- Lee Ho Jin : 2009-08-12 start -->
+    <screen name="ESM_AGT_0036" template="templatePop">
+        <parameter key="title"    value="Agent Commission Approval No" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0036.jsp"/>
+    </screen>
+	<!-- Lee Ho Jin : 2009-08-12 end -->
+	<!-- Kyung-won Chu : 2009-08-14 start -->
+    <screen name="ESM_AGT_0038">
+        <parameter key="title"    value="Office code info" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/agt/agtmaster/agtsecurity/jsp/ESM_AGT_0038.jsp"/>
+    </screen>
+    <screen name="ESM_AGT_0038FR">
+        <parameter key="title"    value="Office code info" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/agt/agtmaster/agtsecurity/jsp/ESM_AGT_0038FR.jsp"/>
+    </screen>
+	<!-- Kyung-won Chu : 2009-08-14 end -->
+	
+	<screen name="ESM_AGT_0001">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtagreement/agtofficeagreementinfo/jsp/ESM_AGT_0001.jsp" />
+	</screen>
+	
+	<screen name="ESM_AGT_0044" template="templatePop">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtagreement/agtofficeagreementinfo/jsp/ESM_AGT_0044.jsp" />
+	</screen>
+	
+	<screen name="ESM_AGT_0003">
+		<parameter key="title"	value="Agent Agreement Rate Creation" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtagreement/agtofficeagreementinfo/jsp/ESM_AGT_0003.jsp" />
+	</screen>
+	
+	<screen name="ESM_AGT_0045">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtagreement/agtofficeagreementinfo/jsp/ESM_AGT_0045.jsp" />
+	</screen>
+	
+	<screen name="ESM_AGT_0004" template="templatePop">
+		<parameter key="title"	value="CNTR Type Size List" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtagreement/agtofficeagreementinfo/jsp/ESM_AGT_0004.jsp" />
+	</screen>
+	
+	<screen name="ESM_AGT_0005" template="templatePop">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtagreement/agtofficeagreementinfo/jsp/ESM_AGT_0005.jsp" />
+	</screen>
+	
+	<screen name="ESM_AGT_0006" template="templatePop">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtagreement/agtofficeagreementinfo/jsp/ESM_AGT_0006.jsp" />
+	</screen>
+	
+	<screen name="ESM_AGT_0007">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtagreement/agtcustomeragreementinfo/jsp/ESM_AGT_0007.jsp" />
+	</screen>
+	
+	<screen name="ESM_AGT_0008">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtagreement/agtcustomeragreementinfo/jsp/ESM_AGT_0008.jsp" />
+	</screen>
+	
+	<screen name="ESM_AGT_0008FR">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/agt/agtagreement/agtcustomeragreementinfo/jsp/ESM_AGT_0008FR.jsp" />
+	</screen>
+	
+	
+	<screen name="ESM_AGT_0035" template="templatePop">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtagreement/agtcustomeragreementinfo/jsp/ESM_AGT_0035.jsp" />
+	</screen>
+	
+	<screen name="ESM_AGT_0037" template="templatePop">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtagreement/agtofficeagreementinfo/jsp/ESM_AGT_0037.jsp" />
+	</screen>
+	
+	<!--  Agent Commission Request -->
+	<screen name="ESM_AGT_0010">
+		<parameter key="title"	value="Agent Commission Request" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0010.jsp" />
+	</screen>
+	<screen name="ESM_AGT_0010FR">
+		<parameter key="title"	value="Agent Commission Request" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0010FR.jsp" />
+	</screen>
+	
+	<!--  Agent Commission Request -->
+	<screen name="ESM_AGT_0047" template="templatePop">
+		<parameter key="title"	value="VVD Exchange Rate Inquiry" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0047.jsp" />
+	</screen>
+	<screen name="ESM_AGT_0010FR">
+		<parameter key="title"	value="VVD Exchange Rate Inquiry" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0047FR.jsp" />
+	</screen>
+	
+	<!--  Agent Commission Maintenance and Approval -->
+	<screen name="ESM_AGT_0039">
+		<parameter key="title"	value="Agent Commission Maintenance and Approval" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0039.jsp" />
+	</screen>
+	<screen name="ESM_AGT_0039FR">
+		<parameter key="title"	value="Agent Commission Maintenance and Approval" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0039FR.jsp" />
+	</screen>
+	
+	<!--  Agent Commission Detail And History for B/L -->
+	<screen name="ESM_AGT_0011" template="templatePop">
+		<parameter key="title"	value="Agent Commission Detail And History for B/L" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0011.jsp" />
+	</screen>
+	
+	<!--  Agent Commission Deduction Detail for B/L -->
+	<screen name="ESM_AGT_0012" template="templatePop">
+		<parameter key="title"	value="Agent Commission Deduction Detail for B/L" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0012.jsp" />
+	</screen>
+	
+	<!--  Agent Commission AP Interface -->
+	<screen name="ESM_AGT_0017">
+		<parameter key="title"	value="Agent Commission AP Interface" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0017.jsp" />
+	</screen>
+	<screen name="ESM_AGT_0017FR">
+		<parameter key="title"	value="Agent Commission AP Interface" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0017FR.jsp" />
+	</screen>
+	
+	<!--  Agent Commission CSR Detail -->
+	<screen name="ESM_AGT_0043" template="templatePop">
+		<parameter key="title"	value="Agent Commission CSR Detail" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0043.jsp" />
+	</screen>
+	
+	<!-- Customized Report Form -->
+	<screen name="ESM_AGT_0041" template="templatePop">
+		<parameter key="title"	value="Customized Report Form" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0041.jsp" />
+	</screen>
+	
+	<!-- Agent Commission Calculation : 2009-04-06 kevin -->
+	<screen name="ESM_AGT_0051">
+		<parameter key="title"	value="Agent Commission Calculation" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0051.jsp" />
+	</screen>
+	<screen name="ESM_AGT_0051FR">
+		<parameter key="title"	value="Agent Commission Calculation" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0051FR.jsp" />
+	</screen>
+	
+	<!--  Other Commission Request -->
+	<screen name="ESM_AGT_0042">
+		<parameter key="title"	value="Other Commission Request" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0042.jsp" />
+	</screen>
+	<screen name="ESM_AGT_0042FR">
+		<parameter key="title"	value="Other Commission Request" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0042FR.jsp" />
+	</screen>
+	<screen name="ESM_AGT_0042FR2">
+		<parameter key="title"	value="Other Commission Request" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/agt/agtaudit/agtaudit/jsp/ESM_AGT_0042FR2.jsp" />
+	</screen>
+	
+	<!--  Brokerage Commission Maintenance -->
+	<screen name="ESM_AGT_0013">
+		<parameter key="title"	value="Brokerage Commission Maintenance" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtaudit/brkgaudit/jsp/ESM_AGT_0013.jsp" />
+	</screen>
+	
+	<screen name="ESM_AGT_0014" template="templatePop">
+		<parameter key="title"	value="HANJIN PI" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtaudit/brkgaudit/jsp/ESM_AGT_0014.jsp" />
+	</screen>
+	
+	<!--  Brokerage AP Interface -->
+	<screen name="ESM_AGT_0018">
+		<parameter key="title"	value="Brokerage AP Interface" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtaudit/brkgaudit/jsp/ESM_AGT_0018.jsp" />
+	</screen>
+	
+	<!--  FAC Commission Maintenance -->
+	<screen name="ESM_AGT_0033">
+		<parameter key="title"	value="FAC Commission Maintenance" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtaudit/facaudit/jsp/ESM_AGT_0033.jsp" />
+	</screen>
+	
+	<screen name="ESM_AGT_0015" template="templatePop">
+		<parameter key="title"	value="FAC Commission Maintenance" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtaudit/facaudit/jsp/ESM_AGT_0015.jsp" />
+	</screen>
+	
+	<!--  FAC Shipper -->
+	<screen name="ESM_AGT_0030">
+		<parameter key="title"	value="FAC Shipper" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtmaster/agtcustomerinfo/jsp/ESM_AGT_0030.jsp" />
+	</screen>
+	
+	<!--  Office VS Vendor Matching Info -->
+	<screen name="ESM_AGT_0046">
+		<parameter key="title"	value="Office VS Vendor Matching Info" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtmaster/agtofficeinfo/jsp/ESM_AGT_0046.jsp" />
+	</screen>
+	<screen name="ESM_AGT_0046FR">
+		<parameter key="title"	 value="Office VS Vendor Matching Info" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtmaster/agtofficeinfo/jsp/ESM_AGT_0046FR.jsp" />
+	</screen>
+	
+	<screen name="ESM_AGT_0101" template="templatePop">
+		<parameter key="title"	value="Rep. CNTR Type List" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/agtagreement/agtofficeagreementinfo/jsp/ESM_AGT_0101.jsp" />
+	</screen>
+
+	<!--  ESM_AGT common RDReport -->
+	<screen name="ESM_AGT_RDReport" template="templatePop">
+		<parameter key="title"	value="RD Print" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/agt/common/jsp/ESM_AGT_RDReport.jsp" />
+	</screen>
+	
+</screen-definitions>

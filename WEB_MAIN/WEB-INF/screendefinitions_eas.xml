@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<!-- ========================================================================@ yuijn 부분 시작 -->
+
+	<!--  Common Office Search -->
+    <screen name="ESD_EAS_COM_0001"  template="templatePop">
+        <parameter key="title"    value="SearchOffice" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/common/commonpopup/jsp/ESD_EAS_COM_0001.jsp" />
+    </screen>
+    <screen name="ESD_EAS_COM_0001GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/common/commonpopup/jsp/ESD_EAS_COM_0001GS.jsp" />
+    </screen>    
+    
+	<!--  EAS Transport Main Search -->
+	<screen name="ESD_EAS_0001">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/terminalmanage/jsp/ESD_EAS_0001.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0001GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/terminalmanage/jsp/ESD_EAS_0001GS.jsp" />
+    </screen>  
+    
+    <!--  EAS Rehandling Exp. - COD vs. TPB Remark Detail   -->
+    <screen name="ESD_EAS_0901">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/terminalmanage/jsp/ESD_EAS_0901.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0901GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/terminalmanage/jsp/ESD_EAS_0901GS.jsp" />
+    </screen>
+    
+    <screen name="ESD_EAS_0002">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0002.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0002GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0002GS.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0903" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0903.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0903GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0903GS.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0902" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0902.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0902GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0902GS.jsp" />
+    </screen>         
+    <screen name="ESD_EAS_0003">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0003.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0003GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0003GS.jsp" />
+    </screen>        	
+    <screen name="ESD_EAS_0004">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0004.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0004GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0004GS.jsp" />
+    </screen>    
+    <screen name="ESD_EAS_0904" template="templatePop">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0904.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0904GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0904GS.jsp" />
+    </screen>        
+    <screen name="ESD_EAS_0005">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0005.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0005GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0005GS.jsp" />
+    </screen>    
+    <screen name="ESD_EAS_0006">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0006.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0006GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0006GS.jsp" />
+    </screen>      
+    <screen name="ESD_EAS_0007">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0007.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0007GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0007GS.jsp" />
+    </screen>      
+    <screen name="ESD_EAS_0008">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0008.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0008GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0008GS.jsp" />
+    </screen>      
+    <screen name="ESD_EAS_0009">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0009.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0009GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/jsp/ESD_EAS_0009GS.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0010">
+        <parameter key="title"    value="한진해운PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/ocpchgcolmanage/jsp/ESD_EAS_0010.jsp" />
+    </screen>
+    <screen name="ESD_EAS_0010GS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esd/eas/transportmanage/ocpchgcolmanage/jsp/ESD_EAS_0010GS.jsp" />
+    </screen> 
+
+                   
+    <!-- ========================================================================@ yujin 부분 끝 -->
+</screen-definitions>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="OfficeProgramDAOComOfcPgmMtchCSQL">
+			<desc><![CDATA[insert com_ofc_pgm_mtch]]></desc>
+			<sql><![CDATA[
+insert into com_ofc_pgm_mtch (
+	ofc_cd,
+	pgm_no,
+	cre_usr_id,
+	cre_dt,
+	upd_usr_id,
+	upd_dt
+) values( 
+	@[ofc_cd],
+	@[pgm_no],
+	@[cre_usr_id],
+	sysdate,
+	@[cre_usr_id],
+	sysdate
+)			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="n"/>
+				<param name="pgm_no" type="12" value="" out="n"/>
+				<param name="cre_usr_id" type="12" value="" out="n"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

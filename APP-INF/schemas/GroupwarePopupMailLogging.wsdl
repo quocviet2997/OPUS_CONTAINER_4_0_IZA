@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s0:definitions name="GroupwarePopupMailLoggingDefinitions" targetNamespace="http://www.clt.com/integration/schedule" xmlns="" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s1="http://www.clt.com/integration/schedule" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <s0:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.clt.com/integration/schedule" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s1="http://www.clt.com/integration/schedule" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="GroupwareUpdateResultLogging">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="groupwareReturnMsg" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GroupwareUpdateResultLoggingResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </s0:types>
+  <s0:message name="GroupwareUpdateResultLogging">
+    <s0:part element="s1:GroupwareUpdateResultLogging" name="parameters"/>
+  </s0:message>
+  <s0:message name="GroupwareUpdateResultLoggingResponse">
+    <s0:part element="s1:GroupwareUpdateResultLoggingResponse" name="parameters"/>
+  </s0:message>
+  <s0:portType name="GroupwarePopupMailLoggingPortType">
+    <s0:operation name="GroupwareUpdateResultLogging" parameterOrder="parameters">
+      <s0:input message="s1:GroupwareUpdateResultLogging"/>
+      <s0:output message="s1:GroupwareUpdateResultLoggingResponse"/>
+    </s0:operation>
+  </s0:portType>
+  <s0:binding name="GroupwarePopupMailLoggingSoapBinding" type="s1:GroupwarePopupMailLoggingPortType">
+    <s2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <s0:operation name="GroupwareUpdateResultLogging">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="parameters" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="parameters" use="literal"/>
+      </s0:output>
+    </s0:operation>
+  </s0:binding>
+  <s0:service name="GroupwarePopupMailLogging">
+    <s0:port binding="s1:GroupwarePopupMailLoggingSoapBinding" name="GroupwarePopupMailLoggingPort">
+      <s2:address location="http://203.246.130.159:7110/opuscntr/webservices/GroupwarePopupMailLogging"/>
+    </s0:port>
+  </s0:service>
+</s0:definitions>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinCommonDBDAOCheckServiceLaneCodeRSQL">
+			<desc><![CDATA[Slan Code를 MDM의 MDM_SVC_SCP_LANE table에서의 존재여부를 확인]]></desc>
+			<sql><![CDATA[
+SELECT
+VSL_SLAN_CD
+FROM MDM_VSL_SVC_LANE
+WHERE ROWNUM = 1
+AND DELT_FLG = 'N'
+AND VSL_SLAN_CD = @[slan_cd]			]]></sql>
+			<params>
+				<param name="slan_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

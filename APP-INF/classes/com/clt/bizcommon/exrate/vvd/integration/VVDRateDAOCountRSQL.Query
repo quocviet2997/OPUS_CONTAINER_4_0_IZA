@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="VVDRateDAOCountRSQL">
+			<desc><![CDATA[vvd rate count]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*)
+FROM inv_vvd_xch_rt
+WHERE 1=1
+#if(${vsl_cd} != '')
+AND VSL_CD = SUBSTR(@[vsl_cd],0,4)
+AND SKD_VOY_NO = SUBSTR(@[vsl_cd],5,4)
+AND SKD_DIR_CD = SUBSTR(@[vsl_cd],9,1) 
+#end
+#if(${port_cd} != '')
+AND PORT_CD = @[port_cd] 
+#end
+#if(${chg_curr_cd} != '')
+AND CHG_CURR_CD = @[chg_curr_cd]
+#end
+#if(${locl_curr_cd} != '')
+AND LOCL_CURR_CD = @[locl_curr_cd]
+#end
+#if(${svc_scp_cd} != '')
+AND SVC_SCP_CD = @[svc_scp_cd]
+#end
+#if(${io_bnd_cd} != '')
+AND IO_BND_CD = @[io_bnd_cd]
+#end			]]></sql>
+			<params>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="port_cd" type="12" value="" out="N"/>
+				<param name="chg_curr_cd" type="12" value="" out="N"/>
+				<param name="locl_curr_cd" type="12" value="" out="N"/>
+				<param name="svc_scp_cd" type="12" value="" out="N"/>
+				<param name="io_bnd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

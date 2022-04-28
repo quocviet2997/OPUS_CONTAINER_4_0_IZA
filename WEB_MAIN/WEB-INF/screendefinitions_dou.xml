@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<!-- Vi Nguyen : 2020-03-17 start -->
+    <screen name="DOU_TRN_001">
+        <parameter key="title"    value="Error Message Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/dou/doutraining/errmsgmgmt/jsp/DOU_TRN_001.jsp"/>
+    </screen>
+	<!-- Vi Nguyen : 2020-03-17 end -->
+
+	<!-- Vi Nguyen : 2020-03-18 start -->
+    <screen name="SinhVien">
+        <parameter key="title"    value="Sinh Vien" direct="true"/>
+        <parameter key="body"     value="apps/opus/dou/sinhvien/sinhvien/jsp/SINHVIEN.jsp"/>
+    </screen>
+	<!-- Vi Nguyen : 2020-03-18 end -->
+
+	<!-- Vi Nguyen : 2020-03-18 start -->
+    <screen name="MuonSach">
+        <parameter key="title"    value="Muon Sach" direct="true"/>
+        <parameter key="body"     value="apps/opus/dou/muonsach/muonsach/jsp/MUONSACH.jsp"/>
+    </screen>
+	<!-- Vi Nguyen : 2020-03-18 end -->
+	
+	<!-- Vi Nguyen : 2020-03-19 start -->
+    <screen name="KhoaHoc">
+        <parameter key="title"    value="Khoa Hoc" direct="true"/>
+        <parameter key="body"     value="apps/opus/dou/sinhvien/khoahoc/jsp/KHOAHOC.jsp"/>
+    </screen>
+    
+    <screen name="SinhVienPU" template="templatePop">
+        <parameter key="title"    value="Sinh Vien Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/dou/sinhvien/khoahoc/jsp/SINHVIEN-POPUP.jsp"/>
+    </screen>
+	<!-- Vi Nguyen : 2020-03-19 end -->
+
+</screen-definitions>

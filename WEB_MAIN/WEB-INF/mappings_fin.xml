@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+    <!-- Jung Yoon Tae : 2011-02-16 start -->
+    <url-mapping url="BCM_FIN_0001.do" screen="BCM_FIN_0001.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_FIN_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BcmFin0001Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.fin.financemanagement.FinanceManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2011-02-16 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <url-mapping url="BCM_FIN_0002.do" screen="BCM_FIN_0002.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_FIN_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BcmFin0002Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.fin.financemanagement.FinanceManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <url-mapping url="BCM_FIN_0003.do" screen="BCM_FIN_0003.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_FIN_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0003HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BcmFin0003Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.fin.financemanagement.FinanceManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <url-mapping url="BCM_FIN_0004.do" screen="BCM_FIN_0004.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_FIN_0004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_FIN_0004GS2.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BcmFin0004Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.fin.financemanagement.FinanceManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <url-mapping url="BCM_FIN_0005.do" screen="BCM_FIN_0005.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_FIN_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0005HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BcmFin0005Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.fin.financemanagement.FinanceManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-02-17 start -->
+    <url-mapping url="BCM_FIN_0006.do" screen="BCM_FIN_0006.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_FIN_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0006HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BcmFin0006Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.fin.financemanagement.FinanceManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung Yoon Tae : 2011-02-17 end -->
+	
+	<!-- Jung Yoon Tae : 2011-03-02 start -->
+    <url-mapping url="FINCommonGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter">
+        <web-action-class>com.clt.apps.opus.bcm.fin.fincommon.fincommon.event.FIN_COM_HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.fin.fincommon.fincommon.event.FinComEvent</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.fin.fincommon.FINCommonSC</service-action-class>
+    </event-mapping>
+    <!-- Jung Yoon Tae : 2011-03-02 end -->
+    
+    	<!-- YEONG-SEOK JANG : 2012-04-19 start -->
+    <url-mapping url="COM_COM_1001.do" screen="COM_COM_1001.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.COM_COM_1001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_1001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.COM_COM_1001HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.ComCom1001Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.fin.financemanagement.FinanceManagementSC</service-action-class>
+    </event-mapping>
+	<!-- YEONG-SEOK JANG : 2012-04-19 end -->
+	
+	<!-- YEONG-SEOK JANG : 2012-04-24 start -->
+    <url-mapping url="COM_COM_1002.do" screen="COM_COM_1002.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.COM_COM_1002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_1002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.COM_COM_1002HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.ComCom1002Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.fin.financemanagement.FinanceManagementSC</service-action-class>
+    </event-mapping>
+	<!-- YEONG-SEOK JANG : 2012-04-24 end -->
+	
+	<!-- EUN-SUP LEE : 2012-04-18 start -->
+    <url-mapping url="COM_COM_1004.do" screen="COM_COM_1004.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.COM_COM_1004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_COM_1004GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.COM_COM_1004HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.ComCom1004Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.fin.financemanagement.FinanceManagementSC</service-action-class>
+    </event-mapping>
+	<!-- EUN-SUP LEE : 2012-04-18 end -->
+	
+	<!-- 2014-10-27 Yoo start -->
+    <url-mapping url="BCM_FIN_0011.do" screen="BCM_FIN_0011.screen" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BCM_FIN_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BCM_FIN_0011HTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.apps.opus.bcm.fin.financemanagement.financecreation.event.BcmFin0011Event</event-class>
+        <service-action-class>com.clt.apps.opus.bcm.fin.financemanagement.FinanceManagementSC</service-action-class>
+    </event-mapping>
+	<!-- 2014-10-27 Yoo end -->
+	
+</mappings>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<screen name="ESM_SAQ_CODGS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esm/saq/common/common/jsp/ESM_SAQ_CODGS.jsp"/>
+    </screen>
+    
+    <!-- Seok Myoung Ran : 2009-07-28 start -->
+    <screen name="ESM_SAQ_XLS"	  template="templatePop">
+        <parameter key="title"    value="PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/common/common/jsp/ESM_SAQ_XLS.jsp"/>
+    </screen>
+    <screen name="ESM_SAQ_MSG"    template="templatePop">
+        <parameter key="title"    value="PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/common/common/jsp/ESM_SAQ_MSG.jsp"/>
+    </screen>    
+    <!-- Seok Myoung Ran : 2009-07-28 end -->
+
+	<!-- Seok Myoung Ran : 2009-07-27 start -->
+    <screen name="ESM_SAQ_0040">
+        <parameter key="title"    value="BasicDataManage" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/basicdatamanage/monthlytargetvvd/jsp/ESM_SAQ_0040.jsp"/>
+    </screen>
+	<!-- Seok Myoung Ran : 2009-07-27 end -->
+
+	<!-- Jong-Ho Kim : 2009-07-28 start -->
+    <screen name="ESM_SAQ_0014">
+        <parameter key="title"    value="BasicDataManage" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/basicdatamanage/targetgroup/jsp/ESM_SAQ_0014.jsp"/>
+    </screen>
+	<!-- Jong-Ho Kim : 2009-07-28 end -->
+
+	<!-- Jong-Ho Kim : 2009-07-30 start -->
+    <screen name="ESM_SAQ_0013">
+        <parameter key="title"    value="Sales Quota Scope" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/basicdatamanage/targetgroup/jsp/ESM_SAQ_0013.jsp"/>
+    </screen>
+	<!-- Jong-Ho Kim : 2009-07-30 end -->
+	
+	<!-- Kim Min Ah : 2009-08-03 start -->
+    <screen name="ESM_SAQ_0076">
+        <parameter key="title"    value="Master Version Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotaguideline/jsp/ESM_SAQ_0076.jsp"/>
+    </screen>
+	<!-- Kim Min Ah : 2009-08-03 end -->
+	
+	<!-- Lee You Jung : 2009-08-12 start -->
+    <screen name="ESM_SAQ_0023">
+        <parameter key="title"    value="Maximum L/F Input" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/modelconstraintmanage/maxloadfactor/jsp/ESM_SAQ_0023.jsp"/>
+    </screen>
+	<!-- Lee You Jung : 2009-08-12 end -->
+
+	<!-- Lee You Jung : 2009-08-12 start -->
+    <screen name="ESM_SAQ_0024">
+        <parameter key="title"    value="Maximum L/F Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/modelconstraintmanage/maxloadfactor/jsp/ESM_SAQ_0024.jsp"/>
+    </screen>
+	<!-- Lee You Jung : 2009-08-12 end -->
+
+	<!-- taeho, Kim : 2009-08-04 start -->
+    <screen name="ESM_SAQ_0154">
+        <parameter key="title"    value="Target VVD/Supply Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/basicdatamanage/monthlytargetvvd/jsp/ESM_SAQ_0154.jsp"/>
+    </screen>
+	<!-- taeho, Kim : 2009-08-04 end -->
+
+	<!-- taeho, Kim : 2009-08-11 start -->
+    <screen name="ESM_SAQ_0163">
+        <parameter key="title"    value="Customized Conditions" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/basicdatamanage/monthlycustomizedcondition/jsp/ESM_SAQ_0163.jsp"/>
+    </screen>
+	<!-- taeho, Kim : 2009-08-11 end -->
+
+	<!-- taeho, Kim : 2009-09-04 start -->
+    <screen name="ESM_SAQ_0075">
+        <parameter key="title"    value="Regional Group Vs Regional Office" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotaadjustmentrhq/jsp/ESM_SAQ_0075.jsp"/>
+    </screen>
+	<!-- taeho, Kim : 2009-09-04 end -->
+
+	<!-- Choi.M.C : 2009-08-17 start -->
+    <screen name="ESM_SAQ_0048">
+        <parameter key="title"    value="Monthly Sales Quota Adjustment Trade Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotaadjustmenttrade/jsp/ESM_SAQ_0048.jsp"/>
+    </screen>
+	<!-- Choi.M.C : 2009-08-17 end -->
+	
+	<!-- Choi.M.C : 2009-08-31 start -->
+    <screen name="ESM_SAQ_0147"	  template="templatePop">
+        <parameter key="title"    value="PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotaadjustmenttrade/jsp/ESM_SAQ_0147.jsp"/>
+    </screen>
+	<!-- Choi.M.C : 2009-08-31 end -->
+	
+	<!-- ChoiI.M.C : 2009-09-07 start -->
+    <screen name="ESM_SAQ_0085">
+        <parameter key="title"    value="Regional Group Vs. Trade Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotaadjustmenttraderhq/jsp/ESM_SAQ_0085.jsp"/>
+    </screen>
+	<!-- ChoiI.M.C : 2009-09-07 end -->
+	
+	<!-- Choi.M.C : 2009-09-07 start -->
+    <screen name="ESM_SAQ_0148"	  template="templatePop">
+        <parameter key="title"    value="PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotaadjustmenttraderhq/jsp/ESM_SAQ_0148.jsp"/>
+    </screen>
+	<!-- Choi.M.C : 2009-09-07 end -->
+
+	<!-- Choi.M.C : 2009-09-28 start -->
+    <screen name="ESM_SAQ_0149"	  template="templatePop">
+        <parameter key="title"    value="PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotaadjustmentrhq/jsp/ESM_SAQ_0149.jsp"/>
+    </screen>
+	<!-- Choi.M.C : 2009-09-28 end -->
+	
+	<!-- Choi.M.C : 2009-09-07 start -->
+    <screen name="ESM_SAQ_0161"	  template="templatePop">
+        <parameter key="title"    value="PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotaadjustmentrhq/jsp/ESM_SAQ_0161.jsp"/>
+    </screen>
+	<!-- Choi.M.C : 2009-09-07 end -->
+
+	<!-- Choi.M.C : 2009-09-25 start -->
+    <screen name="ESM_SAQ_0162"	  template="templatePop">
+        <parameter key="title"    value="PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotaadjustmentrhq/jsp/ESM_SAQ_0162.jsp"/>
+    </screen>
+	<!-- Choi.M.C : 2009-09-25 end -->
+	
+	<!-- ChoiI.M.C : 2009-09-21 start -->
+    <screen name="ESM_SAQ_0156">
+        <parameter key="title"    value="Load Target - Regional Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotaadjustmentslsrhq/jsp/ESM_SAQ_0156.jsp"/>
+    </screen>
+	<!-- ChoiI.M.C : 2009-09-21 end -->
+	
+	<!-- ChoiI.M.C : 2009-10-07 start -->
+	<screen name="ESM_SAQ_0158"	  template="templatePop">
+        <parameter key="title"    value="PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotaadjustmentslsrhq/jsp/ESM_SAQ_0158.jsp"/>
+    </screen>
+	<!-- ChoiI.M.C : 2009-10-07 end -->
+	
+	<!-- ChoiI.M.C : 2009-10-07 start -->
+	<screen name="ESM_SAQ_0112"	  template="templatePop">
+        <parameter key="title"    value="PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/common/common/jsp/ESM_SAQ_0112.jsp"/>
+    </screen>
+	<!-- ChoiI.M.C : 2009-10-07 end -->
+	
+	<!-- ChoiI.M.C : 2009-10-20 start -->
+    <screen name="ESM_SAQ_0088">
+        <parameter key="title"    value="Global Account Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotaadjustmentinquiry/monthlyquotaadjustmentinquiry/jsp/ESM_SAQ_0088.jsp"/>
+    </screen>
+	<!-- ChoiI.M.C : 2009-10-20 end -->
+	
+	<!-- ChoiI.M.C : 2009-10-20 start -->
+    <screen name="ESM_SAQ_0089">
+        <parameter key="title"    value="Global Account Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotaadjustmentinquiry/monthlyquotaadjustmentinquiry/jsp/ESM_SAQ_0089.jsp"/>
+    </screen>
+	<!-- ChoiI.M.C : 2009-10-20 end -->
+	
+	<!-- ChoiI.M.C : 2009-10-20 start -->
+    <screen name="ESM_SAQ_0164">
+        <parameter key="title"    value="Global Account Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotacfmadjustment/jsp/ESM_SAQ_0164.jsp"/>
+    </screen>
+	<!-- ChoiI.M.C : 2009-10-20 end -->
+	
+	<!-- ChoiI.M.C : 2009-10-20 start -->
+    <screen name="ESM_SAQ_0165">
+        <parameter key="title"    value="Global Account Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotacfmadjustment/jsp/ESM_SAQ_0165.jsp"/>
+    </screen>
+	<!-- ChoiI.M.C : 2009-10-20 end -->
+	
+	<!-- ChoiI.M.C : 2009-10-20 start -->
+    <screen name="ESM_SAQ_0166"	  template="templatePop">
+        <parameter key="title"    value="Global Account Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotacfmadjustment/jsp/ESM_SAQ_0166.jsp"/>
+    </screen>
+	<!-- ChoiI.M.C : 2009-10-20 end -->
+	
+	<!-- ChoiI.M.C : 2009-10-20 start -->
+    <screen name="ESM_SAQ_0167"	  template="templatePop">
+        <parameter key="title"    value="Global Account Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotacfmadjustment/jsp/ESM_SAQ_0167.jsp"/>
+    </screen>
+	<!-- ChoiI.M.C : 2009-10-20 end -->
+	
+	<screen name="ESM_SAQ_0072GS2" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esm/saq/yearlysalesquotainquiry/yearlyquotacompare/jsp/ESM_SAQ_0072GS2.jsp"/>
+    </screen>
+    
+	<screen name="ESM_SAQ_0072GS3" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/esm/saq/yearlysalesquotainquiry/yearlyquotacompare/jsp/ESM_SAQ_0072GS3.jsp"/>
+    </screen>    
+
+	<!-- Jong-Ho Kim : 2009-08-05 start -->
+    <screen name="ESM_SAQ_0170">
+        <parameter key="title"    value="Year/Month Set for Cost Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/basicdatamanage/targetgroup/jsp/ESM_SAQ_0170.jsp"/>
+    </screen>
+	<!-- Jong-Ho Kim : 2009-08-05 end -->
+
+	<!-- Jong-Ho Kim : 2009-08-07 start -->
+    <screen name="ESM_SAQ_0047">
+        <parameter key="title"    value="Model Execution" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotacreation/jsp/ESM_SAQ_0047.jsp"/>
+    </screen>
+	<!-- Jong-Ho Kim : 2009-08-07 end -->
+
+	<!-- Jong-Ho Kim : 2009-08-31 start -->
+    <screen name="ESM_SAQ_0077">
+        <parameter key="title"    value="Model Result" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotacreation/jsp/ESM_SAQ_0077.jsp"/>
+    </screen>
+	<!-- Jong-Ho Kim : 2009-08-31 end -->
+
+	<!-- Jong-Ho Kim : 2009-09-08 start -->
+    <screen name="ESM_SAQ_0139">
+        <parameter key="title"    value="Container SBU " direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotainquiry/monthlyquotainquiry/jsp/ESM_SAQ_0139.jsp"/>
+    </screen>
+	<!-- Jong-Ho Kim : 2009-09-08 end -->
+
+	<!-- Ju Sun Young : 2009-09-24 start -->
+    <screen name="ESM_SAQ_0153">
+        <parameter key="title"    value="Process Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotastatusinquiry/jsp/ESM_SAQ_0153.jsp"/>
+    </screen>
+	<!-- Ju Sun Young : 2009-09-24 end -->
+	
+	
+	<!-- Jong-Ho Kim : 2009-09-21 start -->
+    <screen name="ESM_SAQ_0126">
+        <parameter key="title"    value="Trade Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotainquiry/monthlyquotainquiry/jsp/ESM_SAQ_0126.jsp"/>
+    </screen>
+	<!-- Jong-Ho Kim : 2009-09-21 end -->
+
+	<!-- Jong-Ho Kim : 2009-09-28 start -->
+    <screen name="ESM_SAQ_0127">
+        <parameter key="title"    value="Regional Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotainquiry/monthlyquotainquiry/jsp/ESM_SAQ_0127.jsp"/>
+    </screen>
+	<!-- Jong-Ho Kim : 2009-09-28 end -->
+	
+	<!-- ByungKyu Yoo : 2009-08-06 start -->
+    <screen name="ESM_SAQ_0038">
+        <parameter key="title"    value="By Customers (Yearly) - Input" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/modelconstraintmanage/customerspaceguarantee/jsp/ESM_SAQ_0038.jsp"/>
+    </screen>
+	<!-- ByungKyu Yoo : 2009-08-06 end -->
+
+	<!-- Ju Sun Young : 2009-09-28 start -->
+    <screen name="ESM_SAQ_0052">
+        <parameter key="title"    value="Confirmation and Distribution" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotarelease/jsp/ESM_SAQ_0052.jsp"/>
+    </screen>
+	<!-- Ju Sun Young : 2009-09-28 end -->
+    
+ 	<!-- Jong-Ho Kim : 2009-10-01 start -->
+    <screen name="ESM_SAQ_0128">
+        <parameter key="title"    value="Regional Office" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotainquiry/monthlyquotainquiry/jsp/ESM_SAQ_0128.jsp"/>
+    </screen>
+	<!-- Jong-Ho Kim : 2009-10-01 end -->
+	
+	<!-- Ju Sun Young : 2009-10-19 start -->
+    <screen name="ESM_SAQ_0049">
+        <parameter key="title"    value="Trade Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotaadjustmentinquiry/monthlyquotaadjustmentinquiry/jsp/ESM_SAQ_0049.jsp"/>
+    </screen>
+	<!-- Ju Sun Young : 2009-10-19 end -->
+	
+	<!-- CHOI Yun Sung : 2009-10-21 start -->
+    <screen name="ESM_SAQ_0034">
+        <parameter key="title"    value="Bottleneck Input" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/modelconstraintmanage/bottleneck/jsp/ESM_SAQ_0034.jsp"/>
+    </screen>
+	<!-- CHOI Yun Sung : 2009-10-21 end -->
+	
+	<!-- Ju sun Young : 2009-10-26 start -->
+    <screen name="ESM_SAQ_0116" template="templatePop">
+        <parameter key="title"    value="Monthly Quota VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/common/common/jsp/ESM_SAQ_0116.jsp"/>
+    </screen>
+	<!-- Ju sun Young : 2009-10-26 end -->
+	
+	<!-- CHOI Yun Sung : 2009-11-02 start -->
+    <screen name="ESM_SAQ_0035">
+        <parameter key="title"    value="Bottleneck Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/modelconstraintmanage/bottleneck/jsp/ESM_SAQ_0035.jsp"/>
+    </screen>
+	<!-- CHOI Yun Sung : 2009-11-02 end -->
+	
+	<!-- Lee.S.Y : 2010-04-30 start -->
+    <screen name="ESM_SAQ_0176"	  template="templatePop">
+        <parameter key="title"    value="PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotaadjustmenttrade/jsp/ESM_SAQ_0176.jsp"/>    								
+    </screen>
+	<!-- Lee.S.Y  : 2010-04-30 end -->
+	
+	<!-- CHOI.Y.S : 2010-11-05 start -->
+	<screen name="ESM_SAQ_0187">
+        <parameter key="title"    value="PI" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/yearlysalesquotamanage/yearlyquotaadjustmentkamer/jsp/ESM_SAQ_0187.jsp"/>
+    </screen>
+    <!-- CHOI.Y.S : 2010-11-05 end -->
+    
+	<!-- Lee.S.J  : 2010-11-02 start -->
+    <screen name="ESM_SAQ_0188">
+        <parameter key="title"    value="Multi Trade Account Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/yearlysalesquotamanage/yearlyquotaadjustmentkamer/jsp/ESM_SAQ_0188.jsp"/>
+    </screen>
+	<!-- Lee.S.J : 2010-09-02 end -->
+	
+		<!-- Da-eun, Park : 2014-09-29 start -->
+    <screen name="ESM_SAQ_0078">
+        <parameter key="title"    value="Base Data Interface" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotacreation/jsp/ESM_SAQ_0078.jsp"/>
+    </screen>
+	<!-- Da-eun, Park : 2014-09-29 end -->	
+	
+	<!-- Da-eun, Park : 2014-09-29 start -->
+    <screen name="ESM_SAQ_0178" template="templatePop">
+        <parameter key="title"    value="COA I/F Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotacreation/jsp/ESM_SAQ_0178.jsp"/>
+    </screen>
+	<!-- Da-eun, Park : 2014-09-29 end -->
+	
+	<!-- Han-su, Kim : 2014-11-04 start -->
+    <screen name="ESM_SAQ_0179" template="templatePop">
+        <parameter key="title"    value="Office verify" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotacreation/jsp/ESM_SAQ_0179.jsp"/>
+    </screen>
+	<!-- Han-su, Kim : 2014-11-04 end -->	
+	
+	<!-- Han-su, Kim : 2014-11-04 start -->
+    <screen name="ESM_SAQ_0180" template="templatePop">
+        <parameter key="title"    value="File Import" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotacreation/jsp/ESM_SAQ_0180.jsp"/>
+    </screen>
+	<!-- Han-su, Kim : 2014-11-04 end -->	
+	
+	<!-- Han-su, Kim : 2014-11-04 start -->
+    <screen name="ESM_SAQ_0181" template="templatePop">
+        <parameter key="title"    value="Lane Adjust" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotacreation/jsp/ESM_SAQ_0181.jsp"/>
+    </screen>
+	<!-- Han-su, Kim : 2014-11-04 end -->	
+	
+	<!-- Han-su, Kim : 2014-11-04 start -->
+    <screen name="ESM_SAQ_0182">
+        <parameter key="title"    value="Guide Line Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotacreation/jsp/ESM_SAQ_0182.jsp"/>
+    </screen>
+	<!-- Han-su, Kim : 2014-11-04 end -->
+	
+	<!-- Han-su, Kim : 2014-11-04 start -->
+    <screen name="ESM_SAQ_0183" template="templatePop">
+        <parameter key="title"    value="CPB Adjust" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotacreation/jsp/ESM_SAQ_0183.jsp"/>
+    </screen>
+	<!-- Han-su, Kim : 2014-11-04 end -->
+	
+	<!-- Han-su, Kim : 2014-11-04 start -->
+    <screen name="ESM_SAQ_0184" template="templatePop">
+        <parameter key="title"    value="Office Adjust" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/saq/monthlysalesquotamanage/monthlyquotacreation/jsp/ESM_SAQ_0184.jsp"/>
+    </screen>
+	<!-- Han-su, Kim : 2014-11-04 end -->
+	
+</screen-definitions>

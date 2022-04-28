@@ -1,0 +1,55 @@
+{
+    "UICOMP_LIST_FILE"    : "파일명",
+    "UICOMP_LIST_STATUS"  : "파일상태",
+    "UICOMP_INFO_FILE"    : "전송파일",
+    "UICOMP_INFO_SIZE"    : "전송용량",
+    "UICOMP_INFO_PROGRESS": "진행",
+    "UICOMP_BTTN_ADDITEM" : "파일추가",
+    "UICOMP_BTTN_REMOVE"  : "파일삭제",
+    "UICOMP_BTTN_DOWNLOAD": "다운로드",
+    "UICOMP_BTTN_UPLOAD"  : "저장",
+    
+    "FILE_STATUSINFO_TEXTS": [
+        "대기중", 
+        "전송중", 
+        "전송중지", 
+        "전송완료", 
+        "삭제대상", 
+        "전송실패", 
+        "삭제실패"
+    ],
+    
+    "ERR_XHR_NOT_SUPPORT"    : "XMLHttpRequest객체를 지원하지 않는 브라우져입니다.",
+    
+    "ERR_OCCUR_INIT_IBUPLOAD": "IBUploader가 초기화되지 않았습니다.",
+    "ERR_ID_ADDFILE_BTN"     : "파일추가 버튼으로 지정할 요소의 ID값이 잘못되었습니다.",
+    
+    "ERR_SET_FILENAME"       : "업로드 리스트에 등록할 파일의 fileName 속성값이 없습니다.",
+    "ERR_SET_SAVEDNAME"      : "{0} 파일의 serverFileName 속성값이 없습니다.",
+    
+    "ERR_USER_EVT_FALSE"     : "함수는 호출 결과 TRUE값을 반환해야 합니다.",
+    
+    "ERR_FILE_DUP_NAME"      : "이미 추가된 파일입니다.",
+    "ERR_FILE_LIMIT_TYPE"    : "제한된 종류의 파일입니다.",
+    "ERR_FILE_LIMIT_COUNT"   : "업로드 제한개수를 초과했습니다.",
+    
+    "ERR_REMOVE_NO_TARGET"   : "삭제할 대상이 없습니다.",
+    "ERR_REMOVE_WRONG_ID"    : "삭제할 대상을 찾을 수 없습니다.",
+    
+    "ERR_NO_CHANGE_STATUS"   : "변경된 항목이 없습니다.",
+    "ERR_UPDATE_FAILED"      : "파일 전송 중 오류가 발생했습니다.",
+    
+    "ERR_PROG_NO_VALUE"      : "진행상태 정보 요청 중 오류가 발생했습니다.",
+    "ERR_PROG_NO_RESPONSE"   : "서버의 응답이 없습니다.",
+    
+    "ERR_DOWN_NO_SELECTED"   : "다운로드할 파일을 선택해주세요.",
+    "ERR_DOWN_NOT_EXIST"     : "요청한 파일이 서버에 존재하지 않습니다.",
+    "ERR_DOWN_FAILED"        : "[{0}] 파일을 서버에서 찾을 수 없어 다운로드에 실패했습니다.",
+    
+    "ERR_NO_RESULT_TYPE"     : "결과 데이터에서 'eventName'속성을 찾을 수 없습니다.",
+    "ERR_NO_DEFINED_RESULT"  : "처리할 수 없는 종류의 결과 데이터 입니다.",
+    "ERR_XML_INVALID_FORMAT" : "요청 페이지에서 생성한 XML 데이터의 형식이 잘못되었습니다.",
+    "ERR_JSON_INVALID_FORMAT": "결과 데이터에서 파일객체(JSON)의 형식이 잘못되었습니다.",
+    
+    "ERR_ADD_PARAM"          : "매개변수의 형식이 잘못되었습니다. (KeyName, Value)"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOdetailCSQL">
+			<desc><![CDATA[Approval Route Dflt를 생성한다.]]></desc>
+			<sql><![CDATA[
+INSERT INTO COM_APRO_ROUT_DFLT_DTL (
+	APRO_ROUT_SEQ
+,	APRO_SEQ
+,	DP_SEQ
+,	APRO_USR_ID
+,	APRO_USR_NM
+,	APRO_OFC_CD
+,	APRO_USR_JB_TIT_NM
+,	DELT_FLG
+,	CRE_USR_ID
+,	CRE_DT
+,	UPD_USR_ID
+,	UPD_DT
+) VALUES( 
+	@[apro_rout_seq]
+,	@[apro_seq]
+,	@[dp_seq]
+,	@[apro_usr_id]
+,	@[apro_usr_nm]
+,	(
+	 SELECT OFC_CD
+       FROM COM_USER
+      WHERE USR_ID = @[apro_usr_id]
+        AND USE_FLG = 'Y'
+	)
+,	@[apro_usr_jb_tit_nm]
+,	'N'
+,	@[usr_id]
+,	sysdate
+,	@[usr_id]
+,	sysdate
+)			]]></sql>
+			<params>
+				<param name="apro_rout_seq" type="2" value="" out="N"/>
+				<param name="apro_seq" type="2" value="" out="N"/>
+				<param name="dp_seq" type="12" value="" out="N"/>
+				<param name="apro_usr_id" type="12" value="" out="N"/>
+				<param name="apro_usr_nm" type="12" value="" out="N"/>
+				<param name="apro_usr_jb_tit_nm" type="12" value="" out="N"/>
+				<param name="usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

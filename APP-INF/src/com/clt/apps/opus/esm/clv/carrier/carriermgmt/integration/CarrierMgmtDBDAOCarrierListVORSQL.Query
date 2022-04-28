@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CarrierMgmtDBDAOCarrierListVORSQL">
+			<desc><![CDATA[   ]]></desc>
+			<sql><![CDATA[
+SELECT
+	JO_CRR_CD,
+	RLANE_CD,
+	VNDR_SEQ,
+	CUST_CNT_CD,
+	CUST_SEQ,
+	TRD_CD,
+	DELT_FLG,
+	TO_CHAR(CRE_DT, 'YYYY-MM-DD HH24:MI:SS') AS CRE_DT,
+	CRE_USR_ID,
+	TO_CHAR(UPD_DT, 'YYYY-MM-DD HH24:MI:SS') AS UPD_DT,
+	UPD_USR_ID
+FROM JOO_CARRIER
+WHERE 1=1
+#if(${jo_crr_cd} != '' && ${jo_crr_cd} != 'ALL')
+AND JO_CRR_CD IN (SELECT regexp_substr(@[jo_crr_cd],'[^,]+', 1, level)
+	FROM dual
+	CONNECT BY regexp_substr(@[jo_crr_cd], '[^,]+', 1, level) is not null)
+#end
+#if(${vndr_seq} != '')
+AND VNDR_SEQ = @[vndr_seq]
+#end
+#if(${cre_dt_fm} != '')
+AND CRE_DT >= TO_DATE(@[cre_dt_fm], 'YYYY-MM-DD')
+#end
+#if(${cre_dt_to} != '')
+AND CRE_DT <= TO_DATE(@[cre_dt_to], 'YYYY-MM-DD')
+#end			]]></sql>
+			<params>
+				<param name="jo_crr_cd" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+				<param name="cre_dt_fm" type="12" value="" out="N"/>
+				<param name="cre_dt_to" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

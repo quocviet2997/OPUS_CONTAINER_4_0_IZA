@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+	<!-- ========================================================================@ SeongWook Kim 부분 시작 -->
+
+	<!--  공통코드관리 -->
+	<screen name="codepublish">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="edm/codepublish/jsp/UI_COM_EDM_001.jsp" />
+	</screen>
+
+	<!--  공통코드관리 그리드 1 -->
+	<screen name="codepublishGS" template="templateIBSheet">
+		<parameter key="body"	 value="edm/codepublish/jsp/UI_COM_EDM_001GS.jsp" />
+	</screen>
+
+	<!--  공통코드관리 팝업 -->
+  <!-- 
+	<screen name="codepublishPop" template="templatePop">
+		<parameter key="title"	value="한진해운PI" direct="true"/>
+		<parameter key="body"	 value="edm/codepublish/jsp/UI_COM_EDM_001.jsp" />
+	 </screen> 
+   -->
+
+	<!-- ======================================================================== SeongWook Kim 부분 끝 # -->
+
+</screen-definitions>

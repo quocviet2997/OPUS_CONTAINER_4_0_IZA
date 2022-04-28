@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ScheduleLogDAOComScheduleLogRSQL">
+			<desc><![CDATA[schedule log]]></desc>
+			<sql><![CDATA[
+select
+a.run_num log_id,
+a.joid skd_id,
+b.description skd_tp_cd,
+b.job_name pgm_no,
+to_char(new_time(to_date('19700101','yyyymmdd') + (a.startime/60/60/24), 'YST', 'GMT'), 'yyyy-mm-dd hh24:mi:ss') st_tm,
+decode(a.endtime, 0, '', to_char(new_time(to_date('19700101','yyyymmdd') + (a.endtime/60/60/24), 'YST', 'GMT'), 'yyyy-mm-dd hh24:mi:ss')) end_tm,
+decode(a.endtime, 0, 'pid:'||(select pid from ujo_proc_event where run_num=a.run_num and joid = a.joid and status=1 and pid>0), 
+floor(a.runtime/3600)||':'||to_char(to_date(mod(a.runtime,3600),'sssss'),'mi:ss')) elapsed_time,
+a.status sts_cd,
+'out' out,
+'err' err,
+a.std_out_file,
+a.std_err_file,
+a.machine
+from ujo_job_runs a, ujo_job b
+where a.joid = b.joid
+#if (${machine}=='T') 
+and a.machine = 'ktx6600b'
+#else
+and a.machine in ('kox6600b','kox6600c','kox6600d','kox6600e')
+#end
+and a.status is not null
+#if (${skd_id}!='') 
+and a.joid = @[skd_id]
+#end
+#if (${jb_sts_cd}!='')
+and a.status = @[jb_sts_cd]
+#end
+#if (${pgm_no}!='')
+and b.job_name like '%'||@[pgm_no] || '%'
+#end
+#if (${skd_tp_cd}!='')
+and b.description = @[skd_tp_cd]
+#end
+#if (${to_dt}!='')
+and new_time(to_date('1970010100','yyyymmddhh24') + (a.startime/60/60/24), 'YST', 'GMT') between to_date(@[from_dt]||'00', 'yyyy-mm-ddhh24mi') and to_date(@[to_dt]||'59', 'yyyy-mm-ddhh24mi')
+#end
+order by st_tm desc			]]></sql>
+			<params>
+				<param name="skd_id" type="12" value="" out="N"/>
+				<param name="jb_sts_cd" type="12" value="" out="N"/>
+				<param name="pgm_no" type="12" value="" out="N"/>
+				<param name="skd_tp_cd" type="12" value="" out="N"/>
+				<param name="from_dt" type="12" value="" out="N"/>
+				<param name="to_dt" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

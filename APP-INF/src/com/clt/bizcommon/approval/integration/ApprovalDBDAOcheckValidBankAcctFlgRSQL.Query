@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOcheckValidBankAcctFlgRSQL">
+			<desc><![CDATA[ApprovalDBDAO checkValidBankAcctFlg mzd]]></desc>
+			<sql><![CDATA[
+SELECT 
+COM_CSR_GET_BANK_ACCT_FLG_FNC(@[csr_no]) valid_bank_acct_flg
+FROM DUAL			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

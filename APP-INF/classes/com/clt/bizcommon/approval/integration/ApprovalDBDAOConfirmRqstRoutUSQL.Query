@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOConfirmRqstRoutUSQL">
+			<desc><![CDATA[COM_APRO_RQST_ROUT 승인정보를 수정한다]]></desc>
+			<sql><![CDATA[
+UPDATE COM_APRO_RQST_ROUT A 	
+   SET APRO_DT  = GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC((SELECT RQST_OFC_CD FROM COM_APRO_RQST_HDR WHERE APRO_RQST_NO=A.APRO_RQST_NO AND ROWNUM=1))
+     , APSTS_CD = 'C'
+    , APRO_RMK = @[apro_rmk]  
+     , APRO_USR_ID = @[apro_usr_id]
+     , APRO_USR_NM = @[apro_usr_nm]		   
+ WHERE APRO_RQST_NO  = @[apro_rqst_no]
+   AND APRO_RQST_SEQ = @[apro_rqst_seq]
+   AND APRO_USR_ID = @[apro_usr_id]			]]></sql>
+			<params>
+				<param name="apro_rmk" type="12" value="" out="N"/>
+				<param name="apro_usr_id" type="12" value="" out="N"/>
+				<param name="apro_usr_nm" type="12" value="" out="N"/>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+				<param name="apro_rqst_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

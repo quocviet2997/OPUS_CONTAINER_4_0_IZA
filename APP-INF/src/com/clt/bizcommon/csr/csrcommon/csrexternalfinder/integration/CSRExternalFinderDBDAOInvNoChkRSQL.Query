@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CSRExternalFinderDBDAOInvNoChkRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(INV_NO) CNT
+  FROM AP_PAY_INV
+ WHERE INV_NO = @[inv_no]
+#if (${vndr_seq} != '') 
+   AND VNDR_SEQ = @[vndr_seq]
+#end
+   AND DELT_FLG = 'N'			]]></sql>
+			<params>
+				<param name="inv_no" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

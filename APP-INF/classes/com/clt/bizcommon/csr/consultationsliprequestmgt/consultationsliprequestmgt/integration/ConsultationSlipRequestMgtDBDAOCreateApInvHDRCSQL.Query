@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCreateApInvHDRCSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+insert into AP_INV_HDR (
+ csr_no                                            ,
+ csr_tp_cd                                         ,
+ inv_dt                                            ,
+ inv_term_dt                                       ,
+ gl_dt                                             ,
+ vndr_no                                           ,
+ csr_amt                                           ,
+ pay_amt                                           ,
+ pay_dt                                            ,
+ csr_curr_cd                                       ,
+ vndr_term_nm                                      ,
+ inv_desc                                          ,
+ attr_cate_nm                                      ,
+ attr_ctnt1                                        ,
+ attr_ctnt2                                        ,
+ attr_ctnt3                                        ,
+ attr_ctnt4                                        ,
+ attr_ctnt5                                        ,
+ attr_ctnt6                                        ,
+ attr_ctnt7                                        ,
+ attr_ctnt8                                        ,
+ attr_ctnt9                                        ,
+ attr_ctnt10                                       ,
+ attr_ctnt11                                       ,
+ attr_ctnt12                                       ,
+ attr_ctnt13                                       ,
+ attr_ctnt14                                       ,
+ attr_ctnt15                                       ,
+ glo_attr_ctnt1                                    ,
+ glo_attr_ctnt2                                    ,
+ glo_attr_ctnt3                                    ,
+ glo_attr_ctnt4                                    ,
+ glo_attr_ctnt5                                    ,
+ glo_attr_ctnt6                                    ,
+ glo_attr_ctnt7                                    ,
+ glo_attr_ctnt8                                    ,
+ glo_attr_ctnt9                                    ,
+ glo_attr_ctnt10                                   ,
+ glo_attr_ctnt11                                   ,
+ glo_attr_ctnt12                                   ,
+ glo_attr_ctnt13                                   ,
+ glo_attr_ctnt14                                   ,
+ glo_attr_ctnt15                                   ,
+ glo_attr_ctnt16                                   ,
+ glo_attr_ctnt17                                   ,
+ glo_attr_ctnt18                                   ,
+ src_ctnt                                          ,
+ pay_mzd_lu_cd                                     ,
+ pay_grp_lu_cd                                     ,
+ coa_co_cd                                         ,
+ coa_rgn_cd                                        ,
+ coa_ctr_cd                                        ,
+ coa_acct_cd                                       ,
+ coa_vvd_cd                                        ,
+ coa_inter_co_cd                                   ,
+ coa_ftu_n1st_cd                                   ,
+ coa_ftu_n2nd_cd                                   ,
+ ppd_no                                            ,
+ ppd_dtrb_no                                       ,
+ ppd_aply_amt                                      ,
+ ppd_gl_dt                                         ,
+ apro_flg                                          ,
+ tax_decl_flg                                      ,
+ err_csr_no                                        ,
+ if_flg                                            ,
+ if_dt                                             ,
+ if_err_rsn                                        ,
+ ppay_aply_flg                                     ,
+ tj_ofc_cd                                         ,
+ act_xch_rt                                        ,
+ imp_err_flg                                       ,
+ rcv_err_flg                                       ,
+ tax_curr_xch_flg                                  ,
+ usr_eml                                           ,
+ imp_err_rsn                                       ,
+ rcv_err_rsn                                       ,
+ ftu_use_ctnt1                                     ,
+ ftu_use_ctnt2                                     ,
+ ftu_use_ctnt3                                     ,
+ ftu_use_ctnt4                                     ,
+ ftu_use_ctnt5                                     ,
+ cre_dt                                            ,
+ cre_usr_id                                        ,
+ eai_evnt_dt
+  ) values (
+ @[csr_no]                                         ,
+ @[csr_tp_cd]                                      ,
+ @[inv_dt]                                         ,
+ @[payment_due_dt]        						   ,
+ (SELECT  DECODE(A.STS
+                ,'O',@[evi_inv_dt]
+                ,'C',B.DT
+                ,'N',NULL, '01', NULL,
+                 DECODE(A.STS
+                ,'O',@[evi_inv_dt]
+                ,'C',B.DT
+                ,'N',NULL)
+                )
+	  FROM   (SELECT NVL((SELECT CASE WHEN SUM(DECODE(CLZ_STS_CD,'O',1,0)) > 0 THEN 'O' ELSE 'C' END STS
+	          FROM   AP_PERIOD
+	          WHERE  SYS_DIV_CD = '15'
+	          AND    EFF_YRMON  = SUBSTR(@[evi_inv_dt],1,6)
+	          AND    OFC_CD IN ( @[ap_ofc_cd],(SELECT M.AR_HD_QTR_OFC_CD FROM MDM_ORGANIZATION M WHERE M.OFC_CD = @[ap_ofc_cd]
+																  )
+															)
+	          AND    AR_AP_DIV_CD = 'P'),'C') STS FROM DUAL) A,
+	         (SELECT MIN(EFF_YRMON)||'01' DT
+	          FROM   AP_PERIOD
+	          WHERE  SYS_DIV_CD = '15'
+	          AND    EFF_YRMON >= SUBSTR(@[evi_inv_dt],1,6)
+	          AND    AR_AP_DIV_CD = 'P'
+	          AND    OFC_CD IN (@[ap_ofc_cd], (SELECT M.AR_HD_QTR_OFC_CD FROM MDM_ORGANIZATION M WHERE M.OFC_CD = @[ap_ofc_cd]
+																)
+														  )
+	          AND    CLZ_STS_CD = 'O') B ),
+ @[vndr_seq]	                                            ,
+ @[csr_amt]                                                			,
+ @[pay_amt]                                                 ,
+ @[pay_dt]                                                 ,
+ @[csr_curr_cd]                                                 ,
+ @[vndr_term_nm],
+#if (${ttl_lss_div_cd} == 'PO' || ${ttl_lss_div_cd} == 'PL' || ${pso_trns_slp_ctnt} == 'AR')
+(
+    SELECT INV_RMK
+    FROM   AP_PAY_INV
+    WHERE  inv_rgst_no = @[inv_rgst_no]
+      AND  ROWNUM = 1
+ )
+#else 
+(
+    SELECT VNDR_LGL_ENG_NM
+    FROM   MDM_VENDOR
+    WHERE  VNDR_SEQ = @[vndr_seq]    
+ )
+#end
+, 
+ @[attr_cate_nm]                                               ,
+ @[attr_ctnt1]                                                 ,
+ @[attr_ctnt2]                                                 ,
+ @[attr_ctnt3]                                                 ,
+ @[attr_ctnt4]                                                 ,
+ @[attr_ctnt5]                                                 ,
+ @[attr_ctnt6]                                                 ,
+ @[attr_ctnt7]                                                 ,
+ @[attr_ctnt8]                                                 ,
+ @[attr_ctnt9]                                                 ,
+ @[attr_ctnt10]                                                 ,
+ @[attr_ctnt11]                                                 ,
+ @[attr_ctnt12]                                                 ,
+ @[attr_ctnt13]                                                 ,
+ @[attr_ctnt14]                                                 ,
+ @[attr_ctnt15]                                                 ,
+ @[evi_ctnt1]                                                 ,
+ @[evi_ctnt2]                                                 ,
+ @[evi_ctnt3]                                                 ,
+ @[evi_ctnt4]                                                 ,
+ @[evi_ctnt5]                                                 ,
+ @[evi_ctnt6]                                                 ,
+ @[evi_ctnt7]                                                 ,
+ @[evi_ctnt8]                                                 ,
+ @[evi_ctnt9]                                                 ,
+ @[evi_ctnt10]                                                 ,
+ @[evi_ctnt11]                                                 ,
+ @[evi_ctnt12]                                                 ,
+ @[evi_ctnt13]                                                 ,
+ @[evi_ctnt14]                                                 ,
+ @[evi_ctnt15]                                                 ,
+ @[evi_ctnt16]                                                 ,
+ @[evi_ctnt17]                                                 ,
+ @[evi_ctnt18]                                                 ,
+ @[src_ctnt]                                                 , 
+(SELECT PAY_MZD_CD
+  FROM MDM_VENDOR
+ WHERE VNDR_SEQ = @[vndr_seq]),  
+ @[pay_grp_lu_cd]                                                 , 
+ @[coa_co_cd]                                                 ,
+ (SELECT finc_rgn_cd FROM MDM_ORGANIZATION WHERE ofc_cd = @[cost_ofc_cd] AND NVL(delt_flg,'N') = 'N') ,
+ (SELECT ap_ctr_cd FROM MDM_ORGANIZATION WHERE ofc_cd = @[cost_ofc_cd] AND NVL(delt_flg,'N') = 'N')   ,
+
+#if (${pso_trns_slp_ctnt} == 'GO')
+ DECODE( (SELECT ACCT_CD
+ 			FROM AP_PAY_INV_DTL
+ 		   WHERE INV_RGST_NO = @[inv_rgst_no]
+             AND ROWNUM = 1
+	      ), (SELECT C.ATTR_CTNT1
+   				FROM COM_ACCT_HRD_CDG_DESC D, COM_ACCT_HRD_CDG_CTNT C
+  			   WHERE ROWNUM = 1
+   				 AND D.SRC_MDL_CD = C.SRC_MDL_CD
+   				 AND D.HRD_CDG_ID = C.HRD_CDG_ID
+   				 AND D.SRC_MDL_CD = 'CSR'
+   				 AND D.HRD_CDG_ID = 'AGT_ACCT_RCV')
+		   , (SELECT C.ATTR_CTNT1
+   				FROM COM_ACCT_HRD_CDG_DESC D, COM_ACCT_HRD_CDG_CTNT C
+  			   WHERE ROWNUM = 1
+    			 AND D.SRC_MDL_CD = C.SRC_MDL_CD
+   				 AND D.HRD_CDG_ID = C.HRD_CDG_ID
+   				 AND D.SRC_MDL_CD = 'CSR'
+   				 AND D.HRD_CDG_ID = 'TRD_PAY_OPER')
+		   , (SELECT C.ATTR_CTNT1
+   				FROM COM_ACCT_HRD_CDG_DESC D, COM_ACCT_HRD_CDG_CTNT C
+ 			   WHERE ROWNUM = 1
+   				 AND D.SRC_MDL_CD = C.SRC_MDL_CD
+   				 AND D.HRD_CDG_ID = C.HRD_CDG_ID
+   				 AND D.SRC_MDL_CD = 'CSR'
+   				 AND D.HRD_CDG_ID = 'TRD_PAY_GEN_OH')
+	   ),
+#else
+ DECODE(@[src_ctnt],'SO_CCC'
+		,(SELECT C.ATTR_CTNT1
+   				FROM COM_ACCT_HRD_CDG_DESC D, COM_ACCT_HRD_CDG_CTNT C
+ 			   WHERE ROWNUM = 1
+   				 AND D.SRC_MDL_CD = C.SRC_MDL_CD
+   				 AND D.HRD_CDG_ID = C.HRD_CDG_ID
+   				 AND D.SRC_MDL_CD = 'CSR'
+   				 AND D.HRD_CDG_ID = 'TRD_PAY_GEN_OH')
+		,(SELECT C.ATTR_CTNT1
+   				FROM COM_ACCT_HRD_CDG_DESC D, COM_ACCT_HRD_CDG_CTNT C
+  			   WHERE ROWNUM = 1
+    			 AND D.SRC_MDL_CD = C.SRC_MDL_CD
+   				 AND D.HRD_CDG_ID = C.HRD_CDG_ID
+   				 AND D.SRC_MDL_CD = 'CSR'
+   				 AND D.HRD_CDG_ID = 'TRD_PAY_OPER')),
+#end
+
+ @[coa_vvd_cd]                                                 ,
+ (SELECT nvl(SUBS_CO_CD,'00') FROM mdm_vendor WHERE vndr_seq = @[vndr_seq] )	                     ,
+ @[coa_ftu_n1st_cd]                     ,
+ @[coa_ftu_n2nd_cd]                     ,
+ CASE 
+ WHEN @[src_ctnt] = 'SO_PORT' THEN 
+    NVL((SELECT PPD_NO
+    FROM AP_PAY_INV
+    WHERE 1=1
+    AND INV_SUB_SYS_CD = 'PSO'
+    AND INV_RGST_NO = @[inv_rgst_no]
+    AND PPD_NO IS NOT NULL
+    AND ROWNUM = 1),@[ppd_no])
+ ELSE @[ppd_no]
+ END, 
+ CASE 
+ WHEN @[src_ctnt] = 'SO_PORT' THEN 
+    NVL((SELECT PPD_DTRB_NO
+    FROM AP_PAY_INV
+    WHERE 1=1
+    AND INV_SUB_SYS_CD = 'PSO'
+    AND INV_RGST_NO = @[inv_rgst_no]
+    AND PPD_DTRB_NO IS NOT NULL
+    AND ROWNUM = 1),@[ppd_dtrb_no])
+ ELSE @[ppd_dtrb_no]
+ END, 
+ TO_NUMBER(
+ CASE 
+ WHEN @[src_ctnt] = 'SO_PORT' THEN 
+    NVL((SELECT PPD_APLY_AMT
+    FROM AP_PAY_INV
+    WHERE 1=1
+    AND INV_SUB_SYS_CD = 'PSO'
+    AND INV_RGST_NO = @[inv_rgst_no]
+    AND PPD_APLY_AMT IS NOT NULL
+    AND ROWNUM = 1),TO_NUMBER(@[ppd_aply_amt]))
+ ELSE TO_NUMBER(@[ppd_aply_amt])
+ END), 
+ CASE 
+ WHEN @[src_ctnt] = 'SO_PORT' THEN 
+    NVL((SELECT PPD_GL_DT
+    FROM AP_PAY_INV
+    WHERE 1=1
+    AND INV_SUB_SYS_CD = 'PSO'
+    AND INV_RGST_NO = @[inv_rgst_no]
+    AND PPD_GL_DT IS NOT NULL
+    AND ROWNUM = 1),@[ppd_gl_dt])
+ ELSE @[ppd_gl_dt]
+ END, 
+ @[apro_flg]                            ,
+ @[tax_decl_flg]                        ,
+ ''                          			,
+ @[if_flg]                              ,
+ @[if_dt]                               ,
+ @[if_err_rsn]                          ,
+ @[ppay_aply_flg]                       ,
+ @[ap_ofc_cd]                           ,
+ @[act_xch_rt]                          ,
+ @[imp_err_flg]                         ,
+ @[rcv_err_flg]                         ,
+ @[tax_curr_xch_flg]                    ,
+ @[usr_eml]                             ,
+ @[imp_err_rsn]                         ,
+ @[rcv_err_rsn]                         ,
+ @[ftu_use_ctnt1]                       ,
+ @[ftu_use_ctnt2]                       ,
+ @[ftu_use_ctnt3]                       ,
+ @[ftu_use_ctnt4]                       ,
+ @[ftu_use_ctnt5]                       ,
+ GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd])              ,
+ @[cre_usr_id]		                                             ,
+ GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd])
+ )			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="csr_tp_cd" type="12" value="" out="N"/>
+				<param name="inv_dt" type="12" value="" out="N"/>
+				<param name="payment_due_dt" type="12" value="" out="N"/>
+				<param name="evi_inv_dt" type="12" value="" out="N"/>
+				<param name="ap_ofc_cd" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+				<param name="csr_amt" type="12" value="" out="N"/>
+				<param name="pay_amt" type="12" value="" out="N"/>
+				<param name="pay_dt" type="12" value="" out="N"/>
+				<param name="csr_curr_cd" type="12" value="" out="N"/>
+				<param name="vndr_term_nm" type="12" value="" out="N"/>
+				<param name="inv_rgst_no" type="12" value="" out="N"/>
+				<param name="attr_cate_nm" type="12" value="" out="N"/>
+				<param name="attr_ctnt1" type="12" value="" out="N"/>
+				<param name="attr_ctnt2" type="12" value="" out="N"/>
+				<param name="attr_ctnt3" type="12" value="" out="N"/>
+				<param name="attr_ctnt4" type="12" value="" out="N"/>
+				<param name="attr_ctnt5" type="12" value="" out="N"/>
+				<param name="attr_ctnt6" type="12" value="" out="N"/>
+				<param name="attr_ctnt7" type="12" value="" out="N"/>
+				<param name="attr_ctnt8" type="12" value="" out="N"/>
+				<param name="attr_ctnt9" type="12" value="" out="N"/>
+				<param name="attr_ctnt10" type="12" value="" out="N"/>
+				<param name="attr_ctnt11" type="12" value="" out="N"/>
+				<param name="attr_ctnt12" type="12" value="" out="N"/>
+				<param name="attr_ctnt13" type="12" value="" out="N"/>
+				<param name="attr_ctnt14" type="12" value="" out="N"/>
+				<param name="attr_ctnt15" type="12" value="" out="N"/>
+				<param name="evi_ctnt1" type="12" value="" out="N"/>
+				<param name="evi_ctnt2" type="12" value="" out="N"/>
+				<param name="evi_ctnt3" type="12" value="" out="N"/>
+				<param name="evi_ctnt4" type="12" value="" out="N"/>
+				<param name="evi_ctnt5" type="12" value="" out="N"/>
+				<param name="evi_ctnt6" type="12" value="" out="N"/>
+				<param name="evi_ctnt7" type="12" value="" out="N"/>
+				<param name="evi_ctnt8" type="12" value="" out="N"/>
+				<param name="evi_ctnt9" type="12" value="" out="N"/>
+				<param name="evi_ctnt10" type="12" value="" out="N"/>
+				<param name="evi_ctnt11" type="12" value="" out="N"/>
+				<param name="evi_ctnt12" type="12" value="" out="N"/>
+				<param name="evi_ctnt13" type="12" value="" out="N"/>
+				<param name="evi_ctnt14" type="12" value="" out="N"/>
+				<param name="evi_ctnt15" type="12" value="" out="N"/>
+				<param name="evi_ctnt16" type="12" value="" out="N"/>
+				<param name="evi_ctnt17" type="12" value="" out="N"/>
+				<param name="evi_ctnt18" type="12" value="" out="N"/>
+				<param name="src_ctnt" type="12" value="" out="N"/>
+				<param name="pay_grp_lu_cd" type="12" value="" out="N"/>
+				<param name="coa_co_cd" type="12" value="" out="N"/>
+				<param name="cost_ofc_cd" type="12" value="" out="N"/>
+				<param name="coa_vvd_cd" type="12" value="" out="N"/>
+				<param name="coa_ftu_n1st_cd" type="12" value="" out="N"/>
+				<param name="coa_ftu_n2nd_cd" type="12" value="" out="N"/>
+				<param name="ppd_no" type="12" value="" out="N"/>
+				<param name="ppd_dtrb_no" type="12" value="" out="N"/>
+				<param name="ppd_aply_amt" type="12" value="" out="N"/>
+				<param name="ppd_gl_dt" type="12" value="" out="N"/>
+				<param name="apro_flg" type="12" value="" out="N"/>
+				<param name="tax_decl_flg" type="12" value="" out="N"/>
+				<param name="if_flg" type="12" value="" out="N"/>
+				<param name="if_dt" type="12" value="" out="N"/>
+				<param name="if_err_rsn" type="12" value="" out="N"/>
+				<param name="ppay_aply_flg" type="12" value="" out="N"/>
+				<param name="act_xch_rt" type="12" value="" out="N"/>
+				<param name="imp_err_flg" type="12" value="" out="N"/>
+				<param name="rcv_err_flg" type="12" value="" out="N"/>
+				<param name="tax_curr_xch_flg" type="12" value="" out="N"/>
+				<param name="usr_eml" type="12" value="" out="N"/>
+				<param name="imp_err_rsn" type="12" value="" out="N"/>
+				<param name="rcv_err_rsn" type="12" value="" out="N"/>
+				<param name="ftu_use_ctnt1" type="12" value="" out="N"/>
+				<param name="ftu_use_ctnt2" type="12" value="" out="N"/>
+				<param name="ftu_use_ctnt3" type="12" value="" out="N"/>
+				<param name="ftu_use_ctnt4" type="12" value="" out="N"/>
+				<param name="ftu_use_ctnt5" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

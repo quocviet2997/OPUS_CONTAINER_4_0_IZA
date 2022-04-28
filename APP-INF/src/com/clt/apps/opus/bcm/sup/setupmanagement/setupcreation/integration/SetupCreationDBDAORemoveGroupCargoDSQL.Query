@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAORemoveGroupCargoDSQL">
+			<desc><![CDATA[2011.02.23 정윤태 EDI GROUP CARGO 정보를 삭제한다]]></desc>
+			<sql><![CDATA[
+DELETE FROM EDI_GRP_CGO
+ WHERE EDI_GRP_CD = @[edi_grp_cd]
+   AND CO_DIV_CD = @[co_div_cd]
+   AND EDI_STND_STS_CD = @[edi_stnd_sts_cd]
+   AND EDI_STS_SEQ = @[edi_sts_seq]			]]></sql>
+			<params>
+				<param name="edi_grp_cd" type="12" value="" out="N"/>
+				<param name="co_div_cd" type="12" value="" out="N"/>
+				<param name="edi_stnd_sts_cd" type="12" value="" out="N"/>
+				<param name="edi_sts_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

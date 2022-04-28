@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ContractNoDBDAOSearchContractNoListRSQL">
+			<desc><![CDATA[ContractNo의 모든 목록을 가져온다]]></desc>
+			<sql><![CDATA[
+WITH CTRT AS
+(
+SELECT  HD.SC_NO                ,
+        MN.AMDT_SEQ             ,
+        MC.CUST_LGL_ENG_NM      ,
+        SR.OFC_CD               ,
+        CP.CTRT_CUST_SLS_OFC_CD ,
+        TO_CHAR(DR.CTRT_EFF_DT,'yyyy-mm-dd')CTRT_EFF_DT ,
+  		TO_CHAR(DR.CTRT_EXP_DT,'yyyy-mm-dd')CTRT_EXP_DT ,
+		MC.DELT_FLG
+
+FROM    PRI_SP_HDR      HD  ,
+        PRI_SP_MN       MN  ,
+        PRI_SP_CTRT_PTY CP  ,
+        PRI_SP_DUR      DR  ,
+        MDM_CUSTOMER    MC  ,
+        MDM_SLS_REP     SR
+WHERE   MN.PROP_NO              = HD.PROP_NO
+AND     (MN.PROP_STS_CD          = 'F' OR (HD.LGCY_PRF_FLG = 'Y' AND MN.PROP_STS_CD          = 'M'))
+AND     CP.PROP_NO              = MN.PROP_NO
+AND     CP.AMDT_SEQ             = MN.AMDT_SEQ
+AND     CP.PRC_CTRT_PTY_TP_CD   = 'C'
+AND     DR.PROP_NO              = MN.PROP_NO
+AND     DR.AMDT_SEQ             = MN.AMDT_SEQ
+AND     MC.CUST_CNT_CD          = CP.CUST_CNT_CD
+AND     MC.CUST_SEQ             = CP.CUST_SEQ
+AND     SR.SREP_CD              = CP.CTRT_CUST_SREP_CD
+)
+SELECT Z.SC_NO,
+       Z.CUST_LGL_ENG_NM,
+       Z.OFC_CD,
+       Z.CTRT_CUST_SLS_OFC_CD,
+       Z.CTRT_EFF_DT,
+       Z.CTRT_EXP_DT,
+	   Z.DELT_FLG
+FROM 
+(SELECT ROW_NUMBER() OVER (ORDER BY SC_NO ASC) NO, 
+        SC_NO                , 
+        CUST_LGL_ENG_NM      ,
+        OFC_CD               ,
+        CTRT_CUST_SLS_OFC_CD ,
+        CTRT_EFF_DT          ,
+        CTRT_EXP_DT			 ,
+		(CASE 
+			WHEN 'Y' = DELT_FLG THEN 'Delete' 
+			ELSE 'Active' 
+		END) AS DELT_FLG
+FROM    CTRT    A
+WHERE   NOT EXISTS ( SELECT 'X' FROM CTRT B WHERE B.SC_NO = A.SC_NO AND B.AMDT_SEQ > A.AMDT_SEQ )  
+#if (${cont_tp} != '')
+	#if(${sc_seq_no} == 'B')
+		AND SC_NO LIKE '%' || @[cont_tp] || '%'
+	#else
+		AND SC_NO LIKE @[cont_tp] || '%'
+	#end
+#end
+#if(${custnm} != '')
+		AND upper(CUST_LGL_ENG_NM) LIKE '%' || upper(@[cust_lgl_eng_nm]) || '%'
+#end
+
+#if(${sdate} != '' && ${edate} != '')
+		AND A.CTRT_EFF_DT BETWEEN TO_DATE(@[sdate],'YYYY-MM-DD') AND TO_DATE(@[edate],'YYYY-MM-DD')
+#end
+
+#if(${ofc_cd} != '')
+		AND OFC_CD LIKE @[ofc_cd] || '%'
+#end
+
+#if(${ctrt_cust_sls_ofc_cd} != '')
+		AND CTRT_CUST_SLS_OFC_CD LIKE @[ctrt_cust_sls_ofc_cd] || '%'
+#end
+
+#if (${mdm_yn} != '')
+
+	#if (${delt_flg} == 'Y') 
+		AND DELT_FLG = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+
+	#else 
+		AND DELT_FLG <> 'Y'
+	#end
+
+#else	
+	AND DELT_FLG <> 'Y'
+#end
+
+
+) Z
+WHERE 1=1
+#if (${startpart} != '')
+AND NO BETWEEN @[startpart] AND @[endpart]
+#end
+			]]></sql>
+			<params>
+				<param name="cont_tp" type="12" value="AEF" out="N"/>
+				<param name="cust_lgl_eng_nm" type="12" value="" out="N"/>
+				<param name="sdate" type="12" value="20090701" out="N"/>
+				<param name="edate" type="12" value="20090730" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="ctrt_cust_sls_ofc_cd" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

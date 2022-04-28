@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckYardCodeRSQL">
+			<desc><![CDATA[MDM_YARD 테이블에 ydCd 에 
+해당하는 정보가 있는지 유무를 리턴한다.]]></desc>
+			<sql><![CDATA[
+SELECT YD_CD 
+FROM MDM_YARD 
+WHERE 1=1 
+AND YD_CD = @[yd_cd]
+AND DELT_FLG ='N'			]]></sql>
+			<params>
+				<param name="yd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

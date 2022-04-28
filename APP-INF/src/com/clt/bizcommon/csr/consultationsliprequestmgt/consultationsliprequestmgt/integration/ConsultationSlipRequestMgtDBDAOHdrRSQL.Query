@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOHdrRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT CSR_NO PRE_CSR_NO
+     , '' PRE_OFFICE
+     , ATTR_CTNT10 PRE_PRPD_DY
+     , (SELECT SUBSTRB(MV.VNDR_LGL_ENG_NM, 1, 37) || ' ('|| LPAD(TO_CHAR(MV.VNDR_SEQ),6, '0') || ')'
+       FROM    MDM_VENDOR MV, MDM_ORGANIZATION MO, MDM_LOCATION ML
+       WHERE   MV.VNDR_SEQ = VNDR_NO
+         AND   MV.OFC_CD = MO.OFC_CD(+)
+         AND   MO.LOC_CD = ML.LOC_CD(+)
+       ) PRE_PAY_TO
+     , CSR_TP_CD PRE_CSR_TYPE
+     , INV_DESC PRE_DESC
+     , PAY_GRP_LU_CD PRE_PAY_GROUP
+     , ATTR_CATE_NM PRE_EVI_TP
+     , SUBSTR(H.INV_TERM_DT, 1, 4) ||'/' ||SUBSTR(H.INV_TERM_DT, 5, 2) ||'/' ||SUBSTR(H.INV_TERM_DT, 7, 2)  PRE_DUE_DATE
+     , CASE
+              WHEN
+                     (
+                            CSR_AMT = 0
+                        AND ATTR_CTNT2 IS NOT NULL
+                     )
+              THEN SUBSTR(ATTR_CTNT2,1,3)
+                            ||SUBSTR(ATTR_CTNT2,8,3)
+                            ||SUBSTR(ATTR_CTNT2,4,4)
+       END AS PRE_ASA_NO
+     , SUBSTR(INV_DT,1,4)
+              ||'/'
+              ||SUBSTR(INV_DT,5,2)
+              ||'/'
+              ||SUBSTR(INV_DT,7,2) PRE_INV_DT
+     , CSR_CURR_CD PRE_CURR_CD
+     , CSR_AMT PRE_AMT 
+     , DECODE(PAY_DT
+            ,'',''
+            ,CSR_CURR_CD) PRE_PAY_CURR_CD
+     , CASE WHEN PPD_NO IS NOT NULL 
+       THEN (CSR_AMT - PPD_APLY_AMT)||''
+       ELSE DECODE(PAY_DT,'','',PAY_AMT)
+       END PRE_PAY_AMT
+     , ATTR_CTNT1 APRO_STEP
+	 , CHK_DE_ADDR1||' '||CHK_DE_CTY_NM||' '||CHK_DE_STE_CD||' '||CHK_DE_ZIP_CD||' '||CHK_DE_CNT_CD AS CHK_ADDR
+     , DECODE( VNDR_CNT_CD
+             , 'US', 'CHK ADDR : '|| NVL(CHK_DE_ADDR1, '')
+             , 'CA', 'CHK ADDR : '|| NVL(CHK_DE_ADDR1, '')
+			 , 'MX', 'CHK ADDR : '|| NVL(CHK_DE_ADDR1, '')
+             , '' ) AS CHK_ADDR1
+     , DECODE( VNDR_CNT_CD
+             , 'US', NVL(CHK_DE_ADDR2, '')
+             , 'CA', NVL(CHK_DE_ADDR2, '')
+             , 'MX', NVL(CHK_DE_ADDR2, '')
+             , '' ) AS CHK_ADDR2
+     , DECODE( VNDR_CNT_CD
+             , 'US', NVL(CHK_DE_ADDR3, '')
+			 , 'CA', NVL(CHK_DE_ADDR3, '')
+			 , 'MX', NVL(CHK_DE_ADDR3, '')
+             , '' ) AS CHK_ADDR3
+     , DECODE( VNDR_CNT_CD
+             , 'US', NVL(CHK_DE_CTY_NM, '')
+			 , 'CA', NVL(CHK_DE_CTY_NM, '')
+			 , 'MX', NVL(CHK_DE_CTY_NM, '')
+             , '' ) AS CHK_CTY_NM
+     , DECODE( VNDR_CNT_CD
+             , 'US', NVL(CHK_DE_STE_CD, '')
+			 , 'CA', NVL(CHK_DE_STE_CD, '')
+			 , 'MX', NVL(CHK_DE_STE_CD, '')
+             , '' ) AS CHK_STE_CD
+     , DECODE( VNDR_CNT_CD
+             , 'US', NVL(CHK_DE_ZIP_CD, '')
+			 , 'CA', NVL(CHK_DE_ZIP_CD, '')
+			 , 'MX', NVL(CHK_DE_ZIP_CD, '')
+             , '' ) AS CHK_ZIP_CD
+     , DECODE( VNDR_CNT_CD
+             , 'US', NVL(CHK_DE_CNT_CD, '')
+			 , 'CA', NVL(CHK_DE_CNT_CD, '')
+			 , 'MX', NVL(CHK_DE_CNT_CD, '')
+             , '' ) AS CHK_CNT_CD
+FROM   AP_INV_HDR H
+     , MDM_VENDOR V
+WHERE  H.VNDR_NO = V.VNDR_SEQ
+   AND CSR_NO    = @[csr_no]			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

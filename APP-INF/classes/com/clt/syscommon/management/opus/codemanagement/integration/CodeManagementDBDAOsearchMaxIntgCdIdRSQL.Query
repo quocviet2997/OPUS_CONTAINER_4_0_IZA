@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CodeManagementDBDAOsearchMaxIntgCdIdRSQL">
+			<desc><![CDATA[CodeManagementDBDAOsearchMaxIntgCdId]]></desc>
+			<sql><![CDATA[
+SELECT 'CD'||COM_INTG_CD_ID_SEQ.NEXTVAL MAX_INTG_CD_ID
+FROM DUAL
+			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

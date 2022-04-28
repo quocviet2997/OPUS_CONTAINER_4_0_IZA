@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="DaoNameDAOSqlNameRSQL">
+			<desc><![CDATA[adadsfa]]></desc>
+			<sql><![CDATA[
+select '' exportFileName
+,'' reportParameters
+,'' rdTmpltNm
+,'' fileType
+,'' exportFileUploadName
+from dual			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

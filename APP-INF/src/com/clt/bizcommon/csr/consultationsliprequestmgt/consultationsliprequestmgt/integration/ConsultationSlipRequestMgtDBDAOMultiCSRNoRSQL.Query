@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOMultiCSRNoRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT DECODE(@[inv_sub_sys_cd], 'AGT', '08', '05')
+       ||@[csr_tp_cd]
+       ||
+       (SELECT AP_OFC_CD
+       FROM    MDM_ORGANIZATION
+       WHERE   OFC_CD = @[ofc_cd]
+       )
+      ||
+       (SELECT TO_CHAR(GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd]),'YYMM')
+          FROM DUAL
+       )
+      ||
+       (SELECT LPAD(NVL(MAX(SUBSTR(csr_no,13,16)),0)+1,4, '0')
+   FROM ap_csr_no
+  WHERE SUBSTR(csr_no,1,LENGTH(csr_no)-4) = 
+                       DECODE(@[inv_sub_sys_cd], 'AGT', '08', '05')
+                       ||@[csr_tp_cd]
+                       ||
+       					(SELECT AP_OFC_CD
+       					   FROM    MDM_ORGANIZATION
+       					  WHERE   OFC_CD = @[ofc_cd]
+       					)
+                       ||
+               			(SELECT TO_CHAR(GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd]),'YYMM')
+              		       FROM    DUAL
+               			)
+       ) csr_no
+FROM   DUAL			]]></sql>
+			<params>
+				<param name="inv_sub_sys_cd" type="12" value="" out="N"/>
+				<param name="csr_tp_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

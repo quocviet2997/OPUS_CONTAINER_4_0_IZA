@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchGlEstimateRevenueVvdLineNoRSQL">
+			<desc><![CDATA[SearchGlEstimateRevenueVvdLineNo]]></desc>
+			<sql><![CDATA[
+SELECT
+NVL(MAX(LINE_NO), 0) + 1 LINE_NO
+FROM GL_ESTM_REV_VVD
+WHERE 
+	EXE_YRMON||REV_YRMON||VSL_CD||SKD_VOY_NO||SKD_VOY_NO||SKD_DIR_CD||REV_DIR_CD 
+	= @[exe_yrmon]||@[rev_yrmon]||@[vsl_cd]||@[skd_voy_no]||@[skd_dir_cd]||@[rev_dir_cd]			]]></sql>
+			<params>
+				<param name="exe_yrmon" type="12" value="" out="N"/>
+				<param name="rev_yrmon" type="12" value="" out="N"/>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="skd_voy_no" type="12" value="" out="N"/>
+				<param name="skd_dir_cd" type="12" value="" out="N"/>
+				<param name="rev_dir_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

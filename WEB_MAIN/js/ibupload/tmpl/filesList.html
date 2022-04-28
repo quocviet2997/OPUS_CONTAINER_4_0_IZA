@@ -1,0 +1,26 @@
+<script type='text/html' id='filesListTmpl'>
+<table class='ibup'>
+    <thead>
+        <tr>
+            <th scope='col'>&nbsp;</th>
+            <th scope='col'>{{ListHeaderTitle}}</th>
+            <th scope='col'>{{ListHeaderStatus}}</th>
+            <th scope='col'>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td colspan='4'><div id='ibup_list_wrapper'>
+            <table id='ibup_list_Table'>
+            {{#ListItemsTmpl}}
+                <tr>
+                    <td><input type='checkbox' {{.ItemChecked}}/></td>
+                    <td>{{.ItemFileName}}</td>
+                    <td>{{.ItemStatus}}</td>
+                    <td><a href='javascript:void(0);'>&#10006;</a></td>
+                </tr>
+            {{/ListItemsTmpl}}
+            </table>
+        </div></td></tr>
+    </tbody>
+</table>
+</script>

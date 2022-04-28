@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ChargeDBDAOChargeListRSQL">
+			<desc><![CDATA[Charge의 모든 목록을 가져온다.]]></desc>
+			<sql><![CDATA[
+SELECT CHG_CD
+      ,CHG_NM AS CHG_FULL_NM
+      ,''     AS CHG_NM
+      ,REP_CHG_CD
+      ,''     AS MDM_YN
+      , DECODE(DELT_FLG,'Y','Delete','Active') AS DELT_FLG
+  FROM (
+	    SELECT ROW_NUMBER() OVER (ORDER BY CHG_CD ASC) AS NO
+              ,CHG_CD
+              ,CHG_NM
+              ,REP_CHG_CD
+              ,DELT_FLG
+	      FROM MDM_CHARGE
+	     WHERE 1 = 1   
+	     #if (${chg_cd} != '')
+		   AND CHG_CD like @[chg_cd] || '%'
+	     #end    
+	     #if (${chg_nm} != '')      
+		   AND CHG_NM like '%' || @[chg_nm] || '%'
+	     #end
+	     #if (${rep_chg_cd} != '')      
+		   AND REP_CHG_CD = @[rep_chg_cd]
+	     #end
+	     #if (${mdm_yn} != '')
+		    #if (${delt_flg} == 'Y') 
+		       AND DELT_FLG = @[delt_flg]
+		    #elseif (${delt_flg} == 'ALL') 
+		    #else 
+		       AND DELT_FLG <> 'Y'
+		    #end
+	     #else	
+		   AND DELT_FLG <> 'Y'
+	     #end
+       ) 
+WHERE NO BETWEEN @[startpart] AND @[endpart]			]]></sql>
+			<params>
+				<param name="chg_cd" type="12" value="" out="N"/>
+				<param name="chg_nm" type="12" value="" out="N"/>
+				<param name="rep_chg_cd" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="startpart" type="2" value="" out="N"/>
+				<param name="endpart" type="2" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

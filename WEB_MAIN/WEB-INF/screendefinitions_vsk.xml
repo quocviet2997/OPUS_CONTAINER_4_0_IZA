@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	
+	<!-- SEO CHANG YUL : 2009-04-28 start -->
+    <screen name="VOP_VSK_0202" template="templatePop">
+        <parameter key="title"    value="LaneCodeHelp" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0202.jsp"/>
+    </screen>
+	<!-- SEO CHANG YUL : 2009-04-28 end -->
+
+	<!-- SEO CHANG YUL : 2009-04-30 start -->
+    <screen name="VOP_VSK_0241" template="templatePop">
+        <parameter key="title"    value="P/F SKD Type Help (Pop-Up) " direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/proformaschedulemgt/jsp/VOP_VSK_0241.jsp"/>
+    </screen>
+	<!-- SEO CHANG YUL : 2009-04-30 end -->
+
+	<!-- SEO CHANG YUL : 2009-05-04 start -->
+    <screen name="VOP_VSK_0018">
+        <parameter key="title"    value="VSL SKD Delete Closing" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0018.jsp"/>
+    </screen>
+	<!-- SEO CHANG YUL : 2009-05-04 end -->
+	
+	<!-- Ryu Hyuk : 2009-05-12 start -->
+	<screen name="VOP_VSK_0221">
+		<parameter key="title"    value="VOP_VSK_0221" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0221.jsp"/>
+	</screen>
+	<!-- Ryu Hyuk : 2009-05-12 end -->
+	
+	<!-- Ryu Hyuk : 2009-05-14 start -->
+	<screen name="VOP_VSK_0043" template="templatePop">
+		<parameter key="title"    value="VOP_VSK_0043" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0043.jsp"/>
+	</screen>
+	<!-- Ryu Hyuk : 2009-05-14 end -->
+	
+	<!-- Ryu Hyuk : 2009-05-18 start -->
+	<screen name="VOP_VSK_0219" template="templatePop">
+		<parameter key="title"    value="VOP_VSK_0219" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0219.jsp"/>
+	</screen>
+	<!-- Ryu Hyuk : 2009-05-18 end -->
+	
+	<!-- Ryu Hyuk : 2009-05-19 start -->
+	<screen name="VOP_VSK_0044">
+		<parameter key="title"    value="VOP_VSK_0044" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0044.jsp"/>
+	</screen>
+	<!-- Ryu Hyuk : 2009-05-19 end -->
+	
+	<!-- Ryu Hyuk : 2009-05-25 start -->
+    <screen name="VOP_VSK_0010">
+        <parameter key="title"    value="VOP_VSK-0010" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0010.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-05-25 end -->
+	
+	<!-- SEO CHANG YUL : 2009-05-22 start -->
+    <screen name="VOP_VSK_0212">
+        <parameter key="title"    value="P/F Type Selection Help " direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0212.jsp"/>
+    </screen>
+	
+    <screen name="VOP_VSK_0212_POP" template="templatePop">
+        <parameter key="title"    value="P/F Type Selection Help " direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0212.jsp"/>
+    </screen>
+	<!-- SEO CHANG YUL : 2009-05-22 end -->
+
+	<!-- Ryu Hyuk : 2009-05-27 start -->
+	<screen name="VOP_VSK_0210" template="templatePop">
+		<parameter key="title"    value="VOP_VSK_0210" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0210.jsp"/>
+	</screen>
+	<!-- Ryu Hyuk : 2009-05-27 end -->
+	
+	<!-- Ryu Hyuk : 2009-06-01 start -->
+    <screen name="VOP_VSK_0211">
+        <parameter key="title"    value="VOP_VSK-0211" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0211.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-06-01 end -->
+	
+	    <screen name="VOP_VSK_0211_POP" template="templatePop">
+        <parameter key="title"    value="VOP_VSK-0211" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0211.jsp"/>
+    </screen>
+	
+	<!-- Ryu Hyuk : 2009-06-02 start -->
+    <screen name="VOP_VSK_0205" template="templatePop">
+        <parameter key="title"    value="test2" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0205.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-06-02 end -->
+	
+	<!-- Ryu Hyuk : 2009-06-04 start -->
+    <screen name="VOP_VSK_0046">
+        <parameter key="title"    value="VOP_VSK-0046" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0046.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-06-04 end -->
+	
+	<!-- Ryu Hyuk : 2009-06-05 start -->
+    <screen name="VOP_VSK_0215" template="templatePop">
+        <parameter key="title"    value="VOP_VSK-0215" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0215.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-06-05 end -->
+	
+	<!-- Ryu Hyuk : 2009-06-08 start -->
+    <screen name="VOP_VSK_0217" template="templatePop">
+        <parameter key="title"    value="VOP_VSK-0217" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0217.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-06-08 end -->
+	
+	<!-- Ryu Hyuk : 2009-10-08 start -->
+    <screen name="VOP_VSK_0028">
+        <parameter key="title"    value="SKD vs Delay" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/actualschedulemanagement/ontimeresultanalysis/jsp/VOP_VSK_0028.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-10-08 end -->
+	
+	<!-- ===================================== Jung Jinwoo START ===================================== -->
+	
+	<!-- Jung Jinwoo : 2009-05-21 start -->
+	<screen name="VOP_VSK_0220" template="templatePop">
+		<parameter key="title"    value="VOP_VSK_0220" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/proformaschedulemgt/jsp/VOP_VSK_0220.jsp"/>
+	</screen>
+	<!-- Jung Jinwoo : 2009-05-21 end -->
+	
+	<!-- Jung Jinwoo : 2009-05-21 start -->
+	<screen name="VOP_VSK_0230" template="templatePop">
+		<parameter key="title"    value="VOP_VSK_0230" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0230.jsp"/>
+	</screen>
+	<!-- Jung Jinwoo : 2009-05-21 end -->
+	
+	<!-- Jung Jinwoo : 2009-05-21 start -->
+	<screen name="VOP_VSK_0245" template="templatePop">
+		<parameter key="title"    value="VOP_VSK_0245" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0245.jsp"/>
+	</screen>
+	<!-- Jung Jinwoo : 2009-05-21 end -->
+	
+	<!-- Jung Jinwoo : 2009-05-28 start -->
+	<screen name="VOP_VSK_0019">
+		<parameter key="title"    value="VOP_VSK_0019" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0019.jsp"/>
+	</screen>
+	<!-- Jung Jinwoo : 2009-05-28 end -->	
+	
+	<!-- Jung Jinwoo : 2009-05-28 start -->
+	<screen name="VOP_VSK_0019_POP" template="templatePop">
+		<parameter key="title"    value="VOP_VSK_0019" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0019.jsp"/>
+	</screen>
+	<!-- Jung Jinwoo : 2009-05-28 end -->
+	
+	<!-- Jung Jinwoo : 2009-06-01 start -->
+	<screen name="VOP_VSK_0014">
+		<parameter key="title"    value="VOP_VSK_0014" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0014.jsp"/>
+	</screen>
+	<!-- Jung Jinwoo : 2009-06-01 end -->
+	
+	<!-- Jung Jinwoo : 2009-06-11 start -->
+    <screen name="VOP_VSK_0015">
+        <parameter key="title"    value="VOP_VSK_0015" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0015.jsp"/>
+    </screen>
+	<!-- Jung Jinwoo : 2009-06-11 end -->
+	
+	<!-- Jung Jinwoo : 2009-06-23 start -->
+    <screen name="VOP_VSK_0020">
+        <parameter key="title"    value="VOP_VSK_0020" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0020.jsp"/>
+    </screen>
+	<!-- Jung Jinwoo : 2009-06-23 end -->
+	
+	<!-- Jung Jinwoo : 2009-06-25 start -->
+    <screen name="VOP_VSK_0021">
+        <parameter key="title"    value="VOP_VSK_0021" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0021.jsp"/>
+    </screen>
+	<!-- Jung Jinwoo : 2009-06-25 end -->
+	
+	<!-- Jung Jinwoo : 2009-06-29 start -->
+    <screen name="VOP_VSK_0065">
+        <parameter key="title"    value="VOP_VSK_0065" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0065.jsp"/>
+    </screen>
+	<!-- Jung Jinwoo : 2009-06-29 end -->
+	
+	<!-- Jung Jinwoo : 2009-07-01 start -->
+    <screen name="VOP_VSK_0247" template="templatePop">
+        <parameter key="title"    value="VOP_VSK_0247" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0247.jsp"/>
+    </screen>
+	<!-- Jung Jinwoo : 2009-07-01 end -->
+	
+	<!-- Jung Jinwoo : 2009-07-10 start -->
+    <screen name="VOP_VSK_0025">
+        <parameter key="title"    value="VOP_VSK_0025" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/actualschedulemanagement/actualschedulemgt/jsp/VOP_VSK_0025.jsp"/>
+    </screen>
+	<!-- Jung Jinwoo : 2009-07-10 end -->
+	
+	<!-- Jung Jinwoo : 2009-07-28 start -->
+    <screen name="VOP_VSK_0026">
+        <parameter key="title"    value="VOP_VSK_0026" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/actualschedulemanagement/actualschedulemgt/jsp/VOP_VSK_0026.jsp"/>
+    </screen>
+	<!-- Jung Jinwoo : 2009-07-28 end -->
+	
+	<!-- Jung Jinwoo : 2009-08-03 start -->
+    <screen name="VOP_VSK_0027">
+        <parameter key="title"    value="VOP_VSK_0027" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/actualschedulemanagement/actualschedulemgt/jsp/VOP_VSK_0027.jsp"/>
+    </screen>
+	<!-- Jung Jinwoo : 2009-08-03 end -->
+	
+	<!-- Jung Jinwoo : 2009-08-19 start -->
+    <screen name="VOP_VSK_0057">
+        <parameter key="title"    value="VOP_VSK_0057" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0057.jsp"/>
+    </screen>
+	<!-- Jung Jinwoo : 2009-08-19 end -->
+	
+	<!-- Jung Jinwoo : 2009-08-26 start -->
+    <screen name="VOP_VSK_0058">
+        <parameter key="title"    value="VOP_VSK_0058" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0058.jsp"/>
+    </screen>
+	<!-- Jung Jinwoo : 2009-08-26 end -->
+	
+	<!-- Jung Jinwoo : 2009-08-26 start -->
+    <screen name="VOP_VSK_0232" template="templatePop">
+        <parameter key="title"    value="VOP_VSK_0232" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/actualschedulemanagement/ontimeresultanalysis/jsp/VOP_VSK_0232.jsp"/>
+    </screen>
+	<!-- Jung Jinwoo : 2009-08-26 end -->
+	
+	<!-- ===================================== Jung Jinwoo END ===================================== -->
+	
+	<!-- SEO CHANG YUL : 2009-05-27 start -->
+    <screen name="VOP_VSK_0248" template="templatePop">
+        <parameter key="title"    value="P/F SKD History Inquiry (Pop-up)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/proformaschedulemgt/jsp/VOP_VSK_0248.jsp"/>
+    </screen>
+	<!-- SEO CHANG YUL : 2009-05-27 end -->
+
+	<!-- SEO CHANG YUL : 2009-06-04 start -->
+    <screen name="VOP_VSK_0033" template="templatePop">
+        <parameter key="title"    value="Port Code Creation  " direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesselschedulemasterdata/vesselschedulemasterdata/jsp/VOP_VSK_0033.jsp"/>
+    </screen>
+	<!-- SEO CHANG YUL : 2009-06-04 end -->
+	
+	<!-- Ryu Hyuk : 2009-06-10 start -->
+    <screen name="VOP_VSK_0218" template="templatePop">
+        <parameter key="title"    value="VOP_VSK-0218" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0218.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-06-10 end -->
+	
+	<!-- Ryu Hyuk : 2009-06-15 start -->
+    <screen name="VOP_VSK_0249" template="templatePop">
+        <parameter key="title"    value="VOP_VSK-0249" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0249.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-06-15 end -->
+	
+	<!-- Ryu Hyuk : 2009-06-17 start -->
+    <screen name="VOP_VSK_0250" template="templatePop">
+        <parameter key="title"    value="VOP_VSK-0250" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0250.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-06-17 end -->
+	
+	<!-- Ryu Hyuk : 2009-06-19 start -->
+    <screen name="VOP_VSK_0017">
+        <parameter key="title"    value="VOP_VSK-0017" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0017.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-06-19 end -->
+	
+	<!-- SEO CHANG YUL : 2009-06-22 start -->
+    <screen name="VOP_VSK_0003">
+        <parameter key="title"    value="P/F SKD Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/proformaschedulemgt/jsp/VOP_VSK_0003.jsp"/>
+    </screen>
+	<!-- SEO CHANG YUL : 2009-06-22 end -->
+
+	<!-- SEO CHANG YUL : 2009-07-01 start -->
+    <screen name="VOP_VSK_0053">
+        <parameter key="title"    value="P/F SKD Creation (CCA)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/proformaschedulemgt/jsp/VOP_VSK_0053.jsp"/>
+    </screen>
+	<!-- SEO CHANG YUL : 2009-07-01 end -->
+	
+	<!-- SEO CHANG YUL : 2009-07-06 start -->
+    <screen name="VOP_VSK_0004">
+        <parameter key="title"    value="P/F SKD Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/proformaschedulemgt/jsp/VOP_VSK_0004.jsp"/>
+    </screen>
+	<!-- SEO CHANG YUL : 2009-07-06 end -->
+
+	<!-- SEO CHANG YUL : 2009-07-06 start -->
+    <screen name="VOP_VSK_0201" template="templatePop">
+        <parameter key="title"    value="Simulation No. Help" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0201.jsp"/>
+    </screen>
+	<!-- SEO CHANG YUL : 2009-07-06 end -->
+	
+	<!-- Ryu Hyuk : 2009-07-01 start -->
+    <screen name="VOP_VSK_0012">
+        <parameter key="title"    value="VOP_VSK-0012" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0012.jsp"/>
+    </screen>
+
+    <screen name="VOP_VSK_0012_POP" template="templatePop">
+        <parameter key="title"    value="VOP_VSK-0012" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0012.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-07-01 end -->
+	
+	<!-- Ryu Hyuk : 2009-07-01 start -->
+    <screen name="VOP_VSK_0012_01" template="templateEmpty">
+        <parameter key="title"    value="VOP_VSK-0012_01" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0012_01.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-07-01 end -->
+	
+	<!-- Ryu Hyuk : 2009-07-08 start -->
+    <screen name="VOP_VSK_0054">
+        <parameter key="title"    value="VOP_VSK-0054" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0054.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-07-08 end -->
+	
+	<!-- Jeong Myounghun : 2009-07-13 start -->
+    <screen name="VOP_VSK_0231" template="templatePop">
+        <parameter key="title"    value="SKD for Conversion" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/actualschedulemanagement/ontimeresultanalysis/jsp/VOP_VSK_0231.jsp"/>
+    </screen>
+	<!-- Jeong Myounghun : 2009-07-13 end -->		
+	
+	<!-- Jeong Myounghun : 2009-07-15 start -->
+    <screen name="VOP_VSK_0064">
+        <parameter key="title"    value="Other(s) Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0064.jsp"/>
+    </screen>
+	<!-- Jeong Myounghun : 2009-07-15 end -->
+	
+	<!-- Ryu Hyuk : 2009-07-22 start -->
+    <screen name="VOP_VSK_0229" template="templatePop">
+        <parameter key="title"    value="VOP_VSK-0229" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0229.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-07-22 end -->	
+	
+	<!-- Jeong Myounghun : 2009-07-23 start -->
+    <screen name="VOP_VSK_0252" template="templatePop">
+        <parameter key="title"    value="Other(s) Code Help" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vskcommon/vskcodefinder/jsp/VOP_VSK_0252.jsp"/>
+    </screen>
+	<!-- Jeong Myounghun : 2009-07-23 end -->	
+	
+	<!-- Ryu Hyuk : 2009-08-07 start -->
+    <screen name="VOP_VSK_0059">
+        <parameter key="title"    value="VSL SKD Delete Closing(CCA)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0059.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-08-07 end -->
+	<!-- SEO CHANG YUL : 2009-08-05 start -->
+    <screen name="VOP_VSK_0243" template="templatePop">
+        <parameter key="title"    value="EOTP " direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/proformaschedulemgt/jsp/VOP_VSK_0243.jsp"/>
+    </screen>
+	<!-- SEO CHANG YUL : 2009-08-05 end -->
+	
+	<!-- SEO CHANG YUL : 2009-08-10 start -->
+    <screen name="VOP_VSK_0029">
+        <parameter key="title"    value="SKD Status (Delay Status)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/actualschedulemanagement/ontimeresultanalysis/jsp/VOP_VSK_0029.jsp"/>
+    </screen>
+	<!-- SEO CHANG YUL : 2009-08-10 end -->
+
+	<!-- SEO CHANG YUL : 2009-08-24 start -->
+    <screen name="VOP_VSK_0240" template="templatePop">
+        <parameter key="title"    value="Service Provider Group Registration (Pop-up)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesselschedulemasterdata/vesselschedulemasterdata/jsp/VOP_VSK_0240.jsp"/>
+    </screen>
+	<!-- SEO CHANG YUL : 2009-08-24 end -->
+	
+	<!-- Ryu Hyuk : 2009-09-03 start -->
+    <screen name="VOP_VSK_0228" template="templatePop">
+        <parameter key="title"    value="VOP_VSK-0228" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesselschedulemasterdata/vesselschedulemasterdata/jsp/VOP_VSK_0228.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-09-03 end -->
+	
+	<!-- Ryu Hyuk : 2009-09-04 start -->
+    <screen name="VOP_VSK_0032">
+        <parameter key="title"    value="VOP_VSK-0032" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/actualschedulemanagement/ontimeresultanalysis/jsp/VOP_VSK_0032.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-09-04 end -->
+	
+	<!-- Ryu Hyuk : 2009-09-09 start -->
+    <screen name="VOP_VSK_0024">
+        <parameter key="title"    value="VOP_VSK-0024" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0024.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-09-09 end -->
+	
+	<!-- Ryu Hyuk : 2009-09-09 start -->
+    <screen name="VOP_VSK_0246" template="templatePop">
+        <parameter key="title"    value="VOP_VSK-0246" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_0246.jsp"/>
+    </screen>
+	<!-- Ryu Hyuk : 2009-09-09 end -->
+
+<!-- opf-vsk Start -->
+	<!-- Kim Jong Ock : 2009-06-22 start -->
+    <screen name="VOP_VSK_0503">
+        <parameter key="title"    value="Vessel Information inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/vesselinformationmgt/jsp/VOP_VSK_0503.jsp"/>
+    </screen>
+	<!-- Kim Jong Ock : 2009-06-22 end -->	
+	
+	<!-- Kim Jong Ock : 2009-05-26 start -->
+    <screen name="VOP_VSK_0504">
+        <parameter key="title"    value="Port Information Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/portinformationmgt/jsp/VOP_VSK_0504.jsp"/>
+    </screen>
+	<!-- Kim Jong Ock : 2009-05-26 end -->
+	
+	<!-- Kim Jong Ock : 2009-05-26 start -->
+    <screen name="VOP_VSK_0506">
+        <parameter key="title"    value="Port Information Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/portinformationmgt/jsp/VOP_VSK_0506.jsp"/>
+    </screen>
+	<!-- Kim Jong Ock : 2009-05-26 end -->
+	
+	<!-- Jang Suk Hyun : 2009-06-01 start -->
+    <screen name="VOP_VSK_0507">
+        <parameter key="title"    value="Terminal Information" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/terminalinformationmgt/jsp/VOP_VSK_0507.jsp"/>
+    </screen>
+    <screen name="VOP_VSK_0703"  template="templatePop">
+        <parameter key="title"    value="Berth window input" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/terminalinformationmgt/jsp/VOP_VSK_0703.jsp"/>
+    </screen>
+	<!-- Jang Suk Hyun : 2009-06-12 start -->
+	
+	<!-- Jang Suk Hyun : 2009-06-12 start -->
+    <screen name="VOP_VSK_0509">
+        <parameter key="title"    value="Terminal Information" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/terminalinformationmgt/jsp/VOP_VSK_0509.jsp"/>
+    </screen>
+	<!-- Jang Suk Hyun : 2009-06-12 end -->
+		
+	<!-- Dohyoung Lee : 2009-08-19 start -->
+    <screen name="VOP_VSK_0509Pop" template="templatePop">
+        <parameter key="title"    value="Terminal Information" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/terminalinformationmgt/jsp/VOP_VSK_0509.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-08-19 end -->
+	
+	<!-- Jang Suk Hyun : 2009-06-16 start -->
+    <screen name="VOP_VSK_0510">
+        <parameter key="title"    value="Lane Information Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/laneinformationmgt/jsp/VOP_VSK_0510.jsp"/>
+    </screen>
+	<!-- Jang Suk Hyun : 2009-06-16 end -->
+	<!-- Jang Suk Hyun : 2009-06-16 Start -->
+    <screen name="VOP_VSK_0702" template="templatePop">
+        <parameter key="title"    value="Lane Group Setup" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/laneinformationmgt/jsp/VOP_VSK_0702.jsp"/>
+    </screen>
+	<!-- Jang Suk Hyun : 2009-06-16 End -->
+	<!-- Jang Suk Hyun : 2009-06-16 start -->
+    <screen name="VOP_VSK_0512">
+        <parameter key="title"    value="Lane Information Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/laneinformationmgt/jsp/VOP_VSK_0512.jsp"/>
+    </screen>
+	<!-- Jang Suk Hyun : 2009-06-16 end -->
+
+	<!-- Kim Jong Ock : 2009-07-06 start -->
+    <screen name="VOP_VSK_0513">
+        <parameter key="title"    value="SHA Tide Information Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/shatideinformationmgt/jsp/VOP_VSK_0513.jsp"/>
+    </screen>
+	<!-- Kim Jong Ock : 2009-07-06 end -->
+
+	<!-- Kim Jong Ock : 2009-07-06 start -->
+    <screen name="VOP_VSK_0514">
+        <parameter key="title"    value="SHA Tide Information Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/shatideinformationmgt/jsp/VOP_VSK_0514.jsp"/>
+    </screen>
+	<!-- Kim Jong Ock : 2009-07-06 end -->	
+
+	<!-- Kim Jong Ock : 2009-07-10 start -->
+    <screen name="VOP_VSK_0517">
+        <parameter key="title"    value="VOSI Update Monitoring" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/vesseloperationsupportmonitoring/jsp/VOP_VSK_0517.jsp"/>
+    </screen>
+	<!-- Kim Jong Ock : 2009-07-10 end -->	
+
+	<!-- Lee Hye Min : 2012-04-04 start -->
+    <screen name="VOP_VSK_0518">
+        <parameter key="title"    value="Draft \emp Weight" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/vesselinformationmgt/jsp/VOP_VSK_0518.jsp"/>
+    </screen>
+	<!-- Lee Hye Min : 2012-04-04 end -->	
+	<!-- Lee Hye Min : 2012-04-04 start -->
+    <screen name="VOP_VSK_0704" template="templatePop">
+        <parameter key="title"    value="Tier \emp Surcharge" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/vesseloperationsupportmgt/portinformationmgt/jsp/VOP_VSK_0704.jsp"/>
+    </screen>
+	<!-- Lee Hye Min : 2012-04-04 end -->	
+	
+	<!-- Taejin Hwang : 2013-09-24 start -->
+	<screen name="VOP_VSK_0001">
+		<parameter key="title"    value="P/F SKD Settlement" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/proformaschedulemgt/jsp/VOP_VSK_0001.jsp"/>
+	</screen>
+	<!-- Taejin Hwang : 2013-09-24 end -->
+	
+	<!-- dongsoo : 2014-09-25  start -->
+    <screen name="VOP_VSK_5001">
+        <parameter key="title"    value="Consortium Voyage Update" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleutilitymanagement/consortiumvoyagemgt/jsp/VOP_VSK_5001.jsp"/>
+    </screen>
+	<!-- dongsoo : 2014-09-25  end -->
+<!-- opf-7 vsk End -->
+
+<!-- Budget Start -->
+	
+	<!-- Taejin Hwang : 2013-09-24 start -->
+	<screen name="VOP_VSK_0101">
+		<parameter key="title"    value="Budget P/F SKD Creation" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/budget/proformaschedulemgt/jsp/VOP_VSK_0101.jsp"/>
+	</screen>
+	<!-- Taejin Hwang : 2013-09-24 end -->
+
+	<!-- Taejin Hwang : 2013-09-24 start -->
+    <screen name="VOP_VSK_0102">
+        <parameter key="title"    value="Budget P/F SKD Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/budget/proformaschedulemgt/jsp/VOP_VSK_0102.jsp"/>
+    </screen>
+	<!-- Taejin Hwang : 2013-09-24 end -->
+
+	<!-- Taejin Hwang : 2013-09-24 start -->
+    <screen name="VOP_VSK_0103">
+        <parameter key="title"    value="Budget L/R SKD Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/budget/vesselschedulemgt/jsp/VOP_VSK_0103.jsp"/>
+    </screen>
+	<!-- Taejin Hwang : 2013-09-24 end -->
+
+	<!-- Taejin Hwang : 2013-09-24 start -->
+    <screen name="VOP_VSK_0104">
+        <parameter key="title"    value="Budget L/R SKD Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/budget/vesselschedulemgt/jsp/VOP_VSK_0104.jsp"/>
+    </screen>
+	<!-- Taejin Hwang : 2013-09-24 end -->
+
+	<!-- Taejin Hwang : 2013-09-24 start -->
+    <screen name="VOP_VSK_0104_01">
+        <parameter key="title"    value="VOP_VSK-0104_01" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/budget/vesselschedulemgt/jsp/VOP_VSK_0104_01.jsp"/>
+    </screen>
+	<!-- Taejin Hwang : 2013-09-24 end -->
+
+	<!-- Taejin Hwang : 2013-09-24 start -->
+    <screen name="VOP_VSK_0105">
+        <parameter key="title"    value="Budget VSL SKD Creation by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/budget/vesselschedulemgt/jsp/VOP_VSK_0105.jsp"/>
+    </screen>
+	<!-- Taejin Hwang : 2013-09-24 end -->
+
+	<!-- Taejin Hwang : 2013-09-24 start -->
+    <screen name="VOP_VSK_0106">
+        <parameter key="title"    value="Budget VSL SKD Deletion" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/budget/vesselschedulemgt/jsp/VOP_VSK_0106.jsp"/>
+    </screen>
+	<!-- Taejin Hwang : 2013-09-24 end -->
+
+	<!-- Taejin Hwang : 2013-09-24  start -->
+    <screen name="VOP_VSK_0107">
+        <parameter key="title"    value="Budget VSL SKD Inquiry by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/budget/vesselschedulemgt/jsp/VOP_VSK_0107.jsp"/>
+    </screen>
+	<!-- Taejin Hwang : 2013-09-24  end -->
+
+	<!-- Taejin Hwang : 2013-09-25 start -->
+    <screen name="VOP_VSK_0108">
+        <parameter key="title"    value="Budget P/F SKD Type Help (Pop-Up) " direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/budget/proformaschedulemgt/jsp/VOP_VSK_0108.jsp"/>
+    </screen>
+  
+    <screen name="VOP_VSK_0108_POP" template="templatePop">
+        <parameter key="title"    value="Budget P/F SKD Type Help (Pop-Up) " direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/budget/proformaschedulemgt/jsp/VOP_VSK_0108.jsp"/>
+    </screen>
+	<!-- Taejin Hwang : 2013-09-25 end -->	
+
+	<!-- Taejin Hwang : 2013-09-25 start -->
+	<screen name="VOP_VSK_0109" template="templatePop">
+		<parameter key="title"    value="VOP_VSK_0109" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/budget/proformaschedulemgt/jsp/VOP_VSK_0109.jsp"/>
+	</screen>
+	<!-- Taejin Hwang : 2013-09-25 end -->
+
+	<!-- Taejin Hwang : 2013-09-25 start -->
+	<screen name="VOP_VSK_0110" template="templatePop">
+		<parameter key="title"    value="VOP_VSK_0110" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/budget/proformaschedulemgt/jsp/VOP_VSK_0110.jsp"/>
+	</screen>
+	<!-- Taejin Hwang : 2013-09-25 end -->
+
+	<!-- Taejin Hwang : 2013-09-25 start -->
+	<screen name="VOP_VSK_0111" template="templatePop">
+		<parameter key="title"    value="Budget P/F Type Selection Help" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/budget/proformaschedulemgt/jsp/VOP_VSK_0111.jsp"/>
+	</screen>
+	<!-- Taejin Hwang : 2013-09-25 end -->
+
+	<!--Taejin Hwang : 2013-09-25 start -->
+	<screen name="VOP_VSK_0112" template="templatePop">
+		<parameter key="title"    value="Budget VSL Voyage Check Help" direct="true"/>
+		<parameter key="body"     value="apps/opus/vop/vsk/budget/vesselschedulemgt/jsp/VOP_VSK_0112.jsp"/>
+	</screen>
+	<!-- Taejin Hwang : 2013-09-25 end -->
+	
+	<!-- Taejin Hwang : 2013-10-01 start -->
+    <screen name="VOP_VSK_0238">
+        <parameter key="title"    value="Berth Window (Pop-Up)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/proformaschedulemgt/jsp/VOP_VSK_0238.jsp"/>
+    </screen>
+	<!-- Taejin Hwang : 2013-10-01 end -->
+
+	<!-- hs Ham : 2015-11-24 start -->
+    <screen name="VOP_VSK_9016" template="templatePop">
+        <parameter key="title"    value="Vessel Rename(Pop-Up)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_9016.jsp"/>
+    </screen>
+
+    <screen name="VOP_VSK_9017" template="templatePop">
+        <parameter key="title"    value="Vessel Slide(Pop-Up)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/scheduleplanningoperation/vesselschedulemgt/jsp/VOP_VSK_9017.jsp"/>
+    </screen>    
+	<!-- hs Ham : 2015-11-24 end -->
+	
+	<!-- Eunju Son : 2017-12-14  start -->
+    <screen name="VOP_VSK_6001">
+        <parameter key="title"    value="SKD EDI Monitoring/History" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/schedulemonitoringmanagement/jsp/VOP_VSK_6001.jsp"/>
+    </screen>
+    
+    <screen name="VOP_VSK_6901" template="templatePop">
+        <parameter key="title"    value="SKD EDI Target Lane List" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/schedulemonitoringmanagement/jsp/VOP_VSK_6901.jsp"/>
+    </screen>
+    
+    <screen name="VOP_VSK_6903" template="templatePop">
+        <parameter key="title"    value="SKD EDI Flat File Viewer" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/vsk/schedulemonitoringmanagement/jsp/VOP_VSK_6903.jsp"/>
+    </screen>
+	<!-- Eunju Son : 2017-12-14  end -->
+		
+<!-- Budget End -->	
+	
+</screen-definitions>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CountryDBDAOTotalLocationRSQL">
+			<desc><![CDATA[Location 총 카운트를 조회한다]]></desc>
+			<sql><![CDATA[
+SELECT COUNT(*)
+FROM mdm_country A, mdm_subcontinent B, mdm_continent C              
+WHERE 1 = 1 
+AND A.sconti_cd = B.sconti_cd 
+AND B.conti_cd = C.conti_cd
+
+#if (${mdm_yn} != '')
+	#if (${delt_flg} == 'Y') 
+		AND nvl(A.delt_flg,'N') = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+	#else 
+		AND nvl(A.delt_flg,'N') <> 'Y'
+	#end
+#else	
+	AND nvl(A.delt_flg,'N') <> 'Y'
+#end
+
+AND nvl(B.delt_flg,'N') <> 'Y'
+AND nvl(C.delt_flg,'N') <> 'Y' 
+
+#if (${conti_cd} != '')
+AND UPPER(B.conti_cd) like UPPER(@[conti_cd]) || '%'
+#end    
+#if (${sconti_cd} != '')      
+AND UPPER(A.sconti_cd) like UPPER(@[sconti_cd]) || '%'
+#end
+#if (${cnt_cd} != '')
+AND UPPER(A.cnt_cd) like UPPER(@[cnt_cd]) || '%'
+#end       
+#if (${cnt_nm} != '')
+AND UPPER(A.cnt_nm) like '%' || UPPER(@[cnt_nm]) || '%'
+#end			]]></sql>
+			<params>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="conti_cd" type="12" value="" out="N"/>
+				<param name="sconti_cd" type="12" value="" out="N"/>
+				<param name="cnt_cd" type="12" value="" out="N"/>
+				<param name="cnt_nm" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

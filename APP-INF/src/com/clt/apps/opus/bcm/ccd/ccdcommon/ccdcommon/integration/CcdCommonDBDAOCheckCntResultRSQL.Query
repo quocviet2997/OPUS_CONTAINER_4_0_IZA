@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CcdCommonDBDAOCheckCntResultRSQL">
+			<desc><![CDATA[DESC Enter..]]></desc>
+			<sql><![CDATA[
+SELECT NVL(A.GLOB_CT,0)||'#'||
+       CASE WHEN LENGTH(B.RLOB_CT) >= 1 THEN 1
+       ELSE 0
+       END||'#'||NVL(B.CNT_CT,0)||'#'||NVL(B.INDIV_CT,0) AS GLOB_CNT_CT
+FROM (SELECT COUNT(CUST_GRP_HRCHY_CD) GLOB_CT, 'SAM' AA FROM MDM_CUSTOMER WHERE CUST_GRP_ID = @[cust_grp_id] AND CUST_GRP_HRCHY_CD = 'G') A
+    ,(SELECT (SELECT  ZZ.OFC_CD
+                      FROM MDM_ORGANIZATION ZZ, ( SELECT  OFC_CD
+                                              FROM MDM_ORGANIZATION
+                                              WHERE OFC_CD IN 
+                                                 (SELECT DISTINCT PRNT_OFC_CD
+                                                  FROM MDM_ORGANIZATION 
+                                                  WHERE LOC_CD IN (
+                                                                   SELECT LOC_CD
+                                                                   FROM MDM_LOCATION
+                                                                   WHERE CNT_CD IN (SELECT CUST_CNT_CD 
+                                                                                    FROM MDM_CUSTOMER 
+                                                                                    WHERE CUST_GRP_ID = @[cust_grp_id] 
+                                                                                    AND CUST_GRP_HRCHY_CD = 'R'
+                                                                                   )
+                                                                  )
+                                                 )
+                                               AND OFC_KND_CD IN ('2')) XX
+                      WHERE ZZ.OFC_CD IN 
+                         (SELECT DISTINCT PRNT_OFC_CD
+                          FROM MDM_ORGANIZATION 
+                          WHERE LOC_CD IN (
+                                           SELECT LOC_CD
+                                           FROM MDM_LOCATION
+                                           WHERE CNT_CD IN (SELECT CUST_CNT_CD 
+                                                            FROM MDM_CUSTOMER 
+                                                            WHERE CUST_GRP_ID = @[cust_grp_id] 
+                                                            AND CNT_CD = @[cust_cnt_cd]
+                                                           )
+                                          )
+                         )
+                       AND OFC_KND_CD IN ('2')
+                       AND ZZ.OFC_CD = XX.OFC_CD) AS RLOB_CT
+            ,SUM(DECODE(CUST_GRP_HRCHY_CD, 'C', 1, 0)) CNT_CT
+            ,SUM(DECODE(CUST_GRP_HRCHY_CD, 'I', 1, 0)) INDIV_CT
+            , 'SAM' AA
+      FROM MDM_CUSTOMER
+      WHERE CUST_GRP_ID = @[cust_grp_id] 
+        AND CUST_CNT_CD = @[cust_cnt_cd]
+ 	  GROUP BY CUST_GRP_ID
+         	,CUST_CNT_CD) B
+WHERE A.AA = B.AA(+)			]]></sql>
+			<params>
+				<param name="cust_grp_id" type="12" value="" out="N"/>
+				<param name="cust_cnt_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

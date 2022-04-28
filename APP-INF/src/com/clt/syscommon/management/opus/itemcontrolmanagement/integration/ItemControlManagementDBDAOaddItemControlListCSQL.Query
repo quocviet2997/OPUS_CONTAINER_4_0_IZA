@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ItemControlManagementDBDAOaddItemControlListCSQL">
+			<desc><![CDATA[addItemControlList]]></desc>
+			<sql><![CDATA[
+INSERT INTO COM_UI_ITM_CTRL_STUP
+    (CO_ID, PGM_SUB_SYS_CD, PGM_NO, PGM_ITM_ID, CTRL_TP_CD, ITM_DP_NM, SET_TP_CD, APLY_FLG
+         , ITM_DESC, CRE_USR_ID, CRE_DT, UPD_USR_ID, UPD_DT )
+VALUES ( COM_CONSTANTMGR_PKG.COM_getCompanyCode_FNC()
+    ,@[pgm_sub_sys_cd], @[pgm_no], @[pgm_itm_id], @[ctrl_tp_cd], @[itm_dp_nm], @[set_tp_cd], @[aply_flg]
+         , @[itm_desc], @[cre_usr_id], SYSDATE, @[upd_usr_id], SYSDATE
+    )			]]></sql>
+			<params>
+				<param name="pgm_sub_sys_cd" type="12" value="" out="N"/>
+				<param name="pgm_no" type="12" value="" out="N"/>
+				<param name="pgm_itm_id" type="12" value="" out="N"/>
+				<param name="ctrl_tp_cd" type="12" value="" out="N"/>
+				<param name="itm_dp_nm" type="12" value="" out="N"/>
+				<param name="set_tp_cd" type="12" value="" out="N"/>
+				<param name="aply_flg" type="12" value="" out="N"/>
+				<param name="itm_desc" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

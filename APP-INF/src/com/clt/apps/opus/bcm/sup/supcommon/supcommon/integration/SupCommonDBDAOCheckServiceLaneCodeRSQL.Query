@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SupCommonDBDAOCheckServiceLaneCodeRSQL">
+			<desc><![CDATA[2011.03.07 정윤태 MDM_VSL_SVC_LANE에서 Service Lane Code 정보를 가져온다]]></desc>
+			<sql><![CDATA[
+SELECT VSL_SLAN_CD 
+  FROM MDM_VSL_SVC_LANE
+ WHERE VSL_SLAN_CD = @[slan_cd]
+   AND DELT_FLG = 'N'
+   AND ROWNUM = 1			]]></sql>
+			<params>
+				<param name="slan_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

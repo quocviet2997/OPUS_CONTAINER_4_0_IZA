@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="DVODBAADAOVOMAKER2RSQL">
+			<desc><![CDATA[VO MAKER2]]></desc>
+			<sql><![CDATA[
+--SearchDTRBTtlVO
+SELECT 
+'' line_seq                       
+, '' attr_ctnt10                    
+, '' cre_dt                         
+, '' ftu_use_cntr5                  
+, '' attr_ctnt14                    
+, '' attr_ctnt9                     
+, '' attr_ctnt13                    
+, '' attr_ctnt8                     
+, '' attr_ctnt12                    
+, '' attr_ctnt11                    
+, '' attr_ctnt15                    
+, '' dtrb_coa_inter_co_cd           
+, '' attr_ctnt1                     
+, '' inv_desc                       
+, '' attr_ctnt2                     
+, '' attr_ctnt3                     
+, '' attr_ctnt4                     
+, '' attr_ctnt5                     
+, '' attr_ctnt6                     
+, '' cntr_tpsz_cd                   
+, '' attr_ctnt7                     
+, '' ftu_use_ctnt2                  
+, '' ftu_use_ctnt1                  
+, '' line_tp_lu_cd                  
+, '' attr_cate_nm                   
+, '' ftu_use_ctnt4                  
+, '' ftu_use_ctnt3                  
+, '' dtrb_coa_acct_cd               
+, '' dtrb_coa_ftu_n1st_cd           
+, '' dtrb_coa_co_cd                 
+, '' so_crr_cd                      
+, '' dtrb_coa_ctr_cd                
+, '' inv_tax_cd                     
+, '' pln_sctr_div_cd                
+, '' line_no                        
+, '' eai_evnt_dt                    
+, '' cre_usr_id                     
+, '' bkg_no                         
+, '' yd_cd                          
+, '' dtrb_coa_vvd_cd                
+, '' csr_amt                        
+, '' act_vvd_cd                     
+, '' dtrb_coa_ftu_n2nd_cd           
+, '' dtrb_coa_rgn_cd                
+, '' stl_key_no   
+, '' ownr_vndr_seq
+FROM DUAL			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

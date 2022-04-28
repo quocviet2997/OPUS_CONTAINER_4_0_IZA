@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="OfficeDBDAOSearchOfficeListRSQL">
+			<desc><![CDATA[Select office list]]></desc>
+			<sql><![CDATA[
+SELECT OFC_CD, OFC_ENG_NM  																											
+, DECODE( OFC_KND_CD              
+, 1, 'HO'             
+, 2, 'RHQ'              
+, 3, 'BB(AA)'              
+, 4, 'SUB-BB(AA)' 
+, '' ) OFC_KND_CD													
+, LOC_CD
+, OFC_ADDR
+, DECODE(DELT_FLG,'Y','Delete','Active') AS DELT_FLG
+, PRNT_OFC_CD
+FROM (																		
+SELECT ROW_NUMBER() OVER (ORDER BY OFC_CD ASC) no, OFC_CD, OFC_ENG_NM, OFC_KND_CD, LOC_CD, OFC_ADDR, DELT_FLG,PRNT_OFC_CD
+FROM MDM_ORGANIZATION
+WHERE 1=1
+
+#if(${ofc_pts_cd} != '')     
+	AND PRNT_OFC_CD LIKE @[ofc_pts_cd] || '%'
+#end 
+
+#if(${loc_cd} != '')     
+	AND LOC_CD LIKE @[loc_cd] || '%'
+#end 
+
+#if(${ofc_lev} != '')     
+	and ofc_knd_cd like @[ofc_lev] || '%'
+#end 
+
+#if(${ofc_cd} != '')     
+	AND OFC_CD LIKE @[ofc_cd] || '%'
+#end 
+
+#if(${ofc_nm} != '')     
+	AND upper(OFC_ENG_NM) LIKE '%' ||  upper(@[ofc_nm]) || '%'
+#end 
+	
+#if (${mdm_yn} != '')
+	#if (${delt_flg} == 'Y') 
+		AND DELT_FLG = @[delt_flg]
+	#elseif (${delt_flg} == 'ALL') 
+	#else 
+		AND DELT_FLG <> 'Y'
+	#end
+#else	
+	AND DELT_FLG <> 'Y'
+#end
+
+) a	             
+WHERE no BETWEEN @[startpart] AND @[endpart]
+ORDER BY OFC_CD			]]></sql>
+			<params>
+				<param name="ofc_pts_cd" type="12" value="" out="N"/>
+				<param name="loc_cd" type="12" value="" out="N"/>
+				<param name="ofc_lev" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="ofc_nm" type="12" value="" out="N"/>
+				<param name="delt_flg" type="12" value="" out="N"/>
+				<param name="startpart" type="12" value="" out="N"/>
+				<param name="endpart" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

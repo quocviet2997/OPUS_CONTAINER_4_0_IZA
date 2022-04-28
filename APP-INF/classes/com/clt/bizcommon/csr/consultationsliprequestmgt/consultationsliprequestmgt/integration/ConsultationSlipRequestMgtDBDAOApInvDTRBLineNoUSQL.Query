@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOApInvDTRBLineNoUSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+UPDATE AP_INV_DTRB
+SET    LINE_NO                   = @[line_no]
+WHERE  CSR_NO                    = @[csr_no]
+   AND NVL(ATTR_CTNT1,'N')       = @[attr_ctnt1]
+   AND NVL(DTRB_COA_ACCT_CD,'N') = @[dtrb_coa_acct_cd]
+   AND NVL(DTRB_COA_VVD_CD,'N')  = @[dtrb_coa_vvd_cd]			]]></sql>
+			<params>
+				<param name="line_no" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="attr_ctnt1" type="12" value="" out="N"/>
+				<param name="dtrb_coa_acct_cd" type="12" value="" out="N"/>
+				<param name="dtrb_coa_vvd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

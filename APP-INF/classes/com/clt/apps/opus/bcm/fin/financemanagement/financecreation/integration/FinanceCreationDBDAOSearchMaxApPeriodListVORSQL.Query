@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchMaxApPeriodListVORSQL">
+			<desc><![CDATA[AP Period 데이터가 기 존재하는 가장 늦은 월을 기준으로 다음 월 조회]]></desc>
+			<sql><![CDATA[
+SELECT TO_CHAR(ADD_MONTHS(TO_DATE(MAX(EFF_YRMON), 'YYYYMM'), 1), 'YYYY/MM') EFF_YRMON FROM AP_PERIOD			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

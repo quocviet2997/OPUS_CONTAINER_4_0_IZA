@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOApprovalCsrAmountLimitHistCSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+INSERT INTO COM_APRO_ROUT_DFLT_HIS (
+APRO_ROUT_HIS_SEQ
+, SUB_SYS_CD
+, OFC_CD
+, CSR_CURR_CD
+, CSR_AMT
+, CRE_USR_ID
+, CRE_DT
+, UPD_USR_ID
+, UPD_DT
+)
+ VALUES (
+  COM_APRO_ROUT_DFLT_HIS_SEQ.NEXTVAL
+, @[sub_sys_cd]
+, @[ofc_cd]
+, @[csr_curr_cd]
+, @[csr_amt]
+, @[login_usr_id]
+, SYSDATE
+, @[login_usr_id]
+, SYSDATE
+)			]]></sql>
+			<params>
+				<param name="sub_sys_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="csr_curr_cd" type="12" value="" out="N"/>
+				<param name="csr_amt" type="12" value="" out="N"/>
+				<param name="login_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

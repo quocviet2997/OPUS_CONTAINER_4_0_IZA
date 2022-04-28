@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOAddYardCSQL">
+			<desc><![CDATA[2011.03.14 정윤태 EDI YARD 정보를 신규 입력한다]]></desc>
+			<sql><![CDATA[
+INSERT INTO BKG_EDI_YD (
+     YD_CD
+    ,BKG_YD_TP_CD
+    ,PORT_CD
+    ,EDI_RCV_ID
+    ,SLAN_CD1
+    ,SLAN_CD2
+    ,SLAN_CD3
+    ,SLAN_CD4
+    ,SLAN_CD5
+    ,SLAN_CD6
+    ,SLAN_CD7
+    ,SLAN_CD8
+    ,SLAN_CD9
+    ,SLAN_CD10
+    ,BKG_AUTO_EDI_FLG
+    ,MTY_RLSE_EDI_FLG
+    ,EDI_SND_ID
+    ,FULL_RLSE_EDI_CD
+    ,BKG_MNL_EDI_FLG
+    ,PRE_TS_FLG
+    ,PST_TS_FLG
+    ,PST_TS_ACK_FLG
+    ,CRE_USR_ID
+    ,CRE_DT
+    ,UPD_USR_ID
+    ,UPD_DT
+) VALUES (
+     @[yd_cd]
+    ,@[bkg_yd_tp_cd]
+    ,@[port_cd]
+    ,@[edi_rcv_id]
+    ,@[slan_cd1]
+    ,@[slan_cd2]
+    ,@[slan_cd3]
+    ,@[slan_cd4]
+    ,@[slan_cd5]
+    ,@[slan_cd6]
+    ,@[slan_cd7]
+    ,@[slan_cd8]
+    ,@[slan_cd9]
+    ,@[slan_cd10]
+    ,@[bkg_auto_edi_flg]
+    ,@[mty_rlse_edi_flg]
+    ,@[edi_snd_id]
+    ,@[full_rlse_edi_cd]
+    ,@[bkg_mnl_edi_flg]
+    ,@[pre_ts_flg]
+    ,@[pst_ts_flg]
+    ,@[pst_ts_ack_flg]
+    ,@[cre_usr_id]
+    ,SYSDATE
+    ,@[upd_usr_id]
+    ,SYSDATE
+)			]]></sql>
+			<params>
+				<param name="yd_cd" type="12" value="" out="N"/>
+				<param name="bkg_yd_tp_cd" type="12" value="" out="N"/>
+				<param name="port_cd" type="12" value="" out="N"/>
+				<param name="edi_rcv_id" type="12" value="" out="N"/>
+				<param name="slan_cd1" type="12" value="" out="N"/>
+				<param name="slan_cd2" type="12" value="" out="N"/>
+				<param name="slan_cd3" type="12" value="" out="N"/>
+				<param name="slan_cd4" type="12" value="" out="N"/>
+				<param name="slan_cd5" type="12" value="" out="N"/>
+				<param name="slan_cd6" type="12" value="" out="N"/>
+				<param name="slan_cd7" type="12" value="" out="N"/>
+				<param name="slan_cd8" type="12" value="" out="N"/>
+				<param name="slan_cd9" type="12" value="" out="N"/>
+				<param name="slan_cd10" type="12" value="" out="N"/>
+				<param name="bkg_auto_edi_flg" type="12" value="" out="N"/>
+				<param name="mty_rlse_edi_flg" type="12" value="" out="N"/>
+				<param name="edi_snd_id" type="12" value="" out="N"/>
+				<param name="full_rlse_edi_cd" type="12" value="" out="N"/>
+				<param name="bkg_mnl_edi_flg" type="12" value="" out="N"/>
+				<param name="pre_ts_flg" type="12" value="" out="N"/>
+				<param name="pst_ts_flg" type="12" value="" out="N"/>
+				<param name="pst_ts_ack_flg" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

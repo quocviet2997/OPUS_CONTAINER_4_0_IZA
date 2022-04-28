@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOAddCargoStatusForUSReleaseCSQL">
+			<desc><![CDATA[Cargo Tracking Info.(Non physical event for US cargo release) 정보를 신규 입력한다]]></desc>
+			<sql><![CDATA[
+INSERT INTO SCE_EDI_MNG_AMS_STS (
+	 EDI_ORG_STS_CD
+	,EDI_PRE_SNT_STS_CD
+	,EDI_EVNT_STS_CD
+	,EDI_RMK1
+	,EDI_RMK2
+	,CRE_USR_ID
+	,CRE_DT
+	,UPD_USR_ID
+	,UPD_DT
+	,COP_IB_RAIL_CHK_CD
+) VALUES (
+     @[edi_org_sts_cd]
+    ,@[edi_pre_snt_sts_cd]
+    ,@[edi_evnt_sts_cd]
+    ,@[edi_rmk1]
+    ,@[edi_rmk2]
+    ,@[cre_usr_id]
+    ,SYSDATE
+    ,@[upd_usr_id]
+    ,SYSDATE
+    ,@[cop_ib_rail_chk_cd]
+)			]]></sql>
+			<params>
+				<param name="edi_org_sts_cd" type="12" value="" out="N"/>
+				<param name="edi_pre_snt_sts_cd" type="12" value="" out="N"/>
+				<param name="edi_evnt_sts_cd" type="12" value="" out="N"/>
+				<param name="edi_rmk1" type="12" value="" out="N"/>
+				<param name="edi_rmk2" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="cop_ib_rail_chk_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

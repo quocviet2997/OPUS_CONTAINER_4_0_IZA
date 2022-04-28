@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="OfficeProgramDAOSearchSubMenuMappedOfcCdRSQL">
+			<desc><![CDATA[select sub menu list for specific office.]]></desc>
+			<sql><![CDATA[
+#if(${pgm_no_form} != '')
+		  SELECT DECODE(Y.PGM_NO,NULL,'0','1') check_val,                   
+			 		 X.pgm_no,                                                 
+			 		 X.pgm_nm                                                 
+			  FROM                                                             
+			  		(SELECT distinct A.*                                                
+			  		 FROM COM_PROGRAM A,                                        
+			  			(SELECT *                                              
+			  			 FROM COM_MNU_CFG                                      
+	 					WHERE MNU_CFG_CD = '002'
+			  			 CONNECT BY PRIOR chd_pgm_no = prnt_pgm_no  AND MNU_CFG_CD = '002'           
+			  			 START WITH PRNT_PGM_NO = @[pgm_no_form] AND MNU_CFG_CD = '002') B
+			  		WHERE A.PGM_NO = B.CHD_PGM_NO  AND A.PGM_MNU_DIV_CD='02'                            
+			  		) X,                            
+			        com_ofc_pgm_mtch Y                                             
+			  WHERE X.PGM_NO = Y.PGM_NO(+)                                   
+			  AND Y.ofc_cd(+) = @[ofc_cd]
+			  ORDER BY X.PGM_NO                                                
+#else
+		SELECT DECODE(Y.PGM_NO,NULL,'0','1') check_val,                   
+			 		 X.pgm_no,                                                 
+			 		 X.pgm_nm
+			  FROM COM_PROGRAM  X,                                            
+			       com_ofc_pgm_mtch Y                                             
+			  WHERE X.PGM_NO = Y.PGM_NO(+)
+              AND X.PGM_MNU_DIV_CD='02'
+              AND X.PGM_TP_CD = '00'
+			  AND Y.ofc_cd(+) = @[ofc_cd]
+			  ORDER BY X.PGM_NO                                               
+#end			]]></sql>
+			<params>
+				<param name="pgm_no_form" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

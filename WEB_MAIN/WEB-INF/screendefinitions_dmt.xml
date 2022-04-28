@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<!-- SungHoon, Lee : 2009-04-27 start -->
+    <screen name="EES_DMT_1007">
+        <parameter key="title"    value="Holiday by Country Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtmasterdatamgt/holidaymgt/jsp/EES_DMT_1007.jsp"/>
+    </screen>
+	<!-- SungHoon, Lee : 2009-04-27 end -->
+
+	<!-- SungHoon, Lee : 2009-05-04 start -->
+    <screen name="EES_DMT_1008">
+        <parameter key="title"    value="Holiday by Country Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtmasterdatamgt/holidaymgt/jsp/EES_DMT_1008.jsp"/>
+    </screen>
+	<!-- SungHoon, Lee : 2009-05-04 end -->
+
+	<!-- SungHoon, Lee : 2009-05-20 start -->
+    <screen name="EES_DMT_2001"   template="templatePop">
+        <parameter key="title"    value="DEM/DET Exception - S/C Exception Terms Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/scexceptiontariffmgt/jsp/EES_DMT_2001.jsp"/>
+    </screen>
+	<!-- SungHoon, Lee : 2009-05-20 end -->
+
+	<!-- SungHoon, Lee : 2009-06-11 start -->
+    <screen name="EES_DMT_2003"	  template="templatePop">
+        <parameter key="title"    value="DEM/DET Adjustment Request - Before Booking Request" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/rfaexceptiontariffmgt/jsp/EES_DMT_2003.jsp"/>
+    </screen>
+	<!-- SungHoon, Lee : 2009-06-11 end -->
+
+	<!-- SungHoon, Lee : 2009-06-30 start -->
+    <screen name="EES_DMT_2005">
+        <parameter key="title"    value="DEM/DET Adjustment Request - Before Booking Approval" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/rfaexceptiontariffmgt/jsp/EES_DMT_2005.jsp"/>
+    </screen>
+    
+    <screen name="EES_DMT_2005P"  template="templatePop">
+        <parameter key="title"    value="DEM/DET Adjustment Request - Before Booking Approval" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/rfaexceptiontariffmgt/jsp/EES_DMT_2005.jsp"/>
+    </screen>    
+	<!-- SungHoon, Lee : 2009-06-30 end -->
+	
+	<!-- SungHoon, Lee : 2009-07-02 start -->
+    <screen name="EES_DMT_2006">
+        <parameter key="title"    value="DEM/DET Adjustment Request &amp; Approval Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/rfaexceptiontariffmgt/jsp/EES_DMT_2006.jsp"/>
+    </screen>
+	<!-- SungHoon, Lee : 2009-07-02 end -->
+		
+	<!-- SungHoon, Lee : 2009-07-03 start -->
+    <screen name="EES_DMT_2007">
+        <parameter key="title"    value="S/C - RFA Exception Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/scexceptiontariffmgt/jsp/EES_DMT_2007.jsp"/>
+    </screen>
+    
+    <screen name="EES_DMT_2007_POP"  template="templatePop">
+        <parameter key="title"    value="S/C - RFA Exception Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/scexceptiontariffmgt/jsp/EES_DMT_2007.jsp"/>
+    </screen>
+    
+	<!-- SungHoon, Lee : 2009-07-03 end -->
+			
+	<!-- SungHoon, Lee : 2009-07-21 start -->
+    <screen name="EES_DMT_2008">
+        <parameter key="title"    value="DEM/DET Adjustment Request - After Booking Request" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargeamountdiscountmgt/jsp/EES_DMT_2008.jsp"/>
+    </screen>
+	<!-- SungHoon, Lee : 2009-07-21 end -->
+				
+	<!-- SungHoon, Lee : 2009-09-21 start -->
+    <screen name="EES_DMT_2009">
+        <parameter key="title"    value="DEM/DET Adjustment Request - After Booking Approval" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargeamountdiscountmgt/jsp/EES_DMT_2009.jsp"/>
+    </screen>
+    
+    <screen name="EES_DMT_2009P"  template="templatePop">
+        <parameter key="title"    value="DEM/DET Adjustment Request - After Booking Approval" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargeamountdiscountmgt/jsp/EES_DMT_2009.jsp"/>
+    </screen>    
+	<!-- SungHoon, Lee : 2009-09-21 end -->
+					
+	<!-- Choi Sung Hwan : 2009-04-30 start -->
+    <screen name="EES_DMT_2010">
+        <parameter key="title"    value="Time Clock Stop Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/timeclockstopmgt/jsp/EES_DMT_2010.jsp"/>
+    </screen>
+	<!-- Choi Sung Hwan : 2009-04-30 end -->
+
+	<!-- Choi Sung Hwan : 2009-05-11 start -->
+    <screen name="EES_DMT_2011">
+        <parameter key="title"    value="Time Clock Stop Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/timeclockstopmgt/jsp/EES_DMT_2011.jsp"/>
+    </screen>
+	<!-- Choi Sung Hwan : 2009-05-11 end -->
+
+	<!-- SungHoon, Lee : 2009-05-07 start -->
+    <screen name="EES_DMT_2014">
+        <parameter key="title"    value="Dual Type Exception Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/dualtypeexceptionmgt/jsp/EES_DMT_2014.jsp"/>
+    </screen>
+	<!-- SungHoon, Lee : 2009-05-07 end -->
+
+	<!-- SungHoon, Lee : 2009-05-07 start -->
+    <screen name="EES_DMT_2015">
+        <parameter key="title"    value="Dual Type Exception Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/dualtypeexceptionmgt/jsp/EES_DMT_2015.jsp"/>
+    </screen>
+	<!-- SungHoon, Lee : 2009-05-07 end -->
+
+	<!-- SungHoon, Lee : 2009-09-23 start -->
+    <screen name="EES_DMT_2103"	  template="templatePop">
+        <parameter key="title"    value="S/C Exception Tariff History" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/scexceptiontariffmgt/jsp/EES_DMT_2103.jsp"/>
+    </screen>
+	<!-- SungHoon, Lee : 2009-09-23 end -->
+	
+	<!-- SungHoon, Lee : 2009-09-24 start -->
+    <screen name="EES_DMT_2105"	  template="templatePop">
+        <parameter key="title"    value="DAR History" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/rfaexceptiontariffmgt/jsp/EES_DMT_2105.jsp"/>
+    </screen>
+	<!-- SungHoon, Lee : 2009-09-24 end -->	
+	
+	<!-- Hwang Hyo Keun : 2009-05-13 start -->
+    <screen name="EES_DMT_7001">
+        <parameter key="title"    value="Tariff Type Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/dmtcalculationtypemgt/jsp/EES_DMT_7001.jsp"/>
+    </screen>
+	<!-- Hwang Hyo Keun : 2009-05-13 end -->
+
+	<!-- Hwang Hyo Keun : 2009-05-13 start -->
+    <screen name="EES_DMT_7003">
+        <parameter key="title"    value="Calculation Type Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/dmtcalculationtypemgt/jsp/EES_DMT_7003.jsp"/>
+    </screen>
+	<!-- Hwang Hyo Keun : 2009-05-13 end -->
+	
+	<!--  : 2009-05-19 start -->
+    <screen name="EES_DMT_7005">
+        <parameter key="title"    value="Tariff Type Set-up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/dmtcalculationtypemgt/jsp/EES_DMT_7005.jsp"/>
+    </screen>
+	<!--  : 2009-05-19 end -->
+
+	<!-- Choi Sung Hwan : 2009-05-12 start -->
+    <screen name="EES_DMT_7007">
+        <parameter key="title"    value="Daily Batch Job Status Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/batchhistoryreport/jsp/EES_DMT_7007.jsp"/>
+    </screen>
+	<!-- Choi Sung Hwan : 2009-05-12 end -->
+	
+	<!-- Yun Tae Seung : 2012-04-17 start -->
+    <screen name="EES_DMT_7010">
+        <parameter key="title"    value="Calculation Type Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/dmtcalculationtypemgt/jsp/EES_DMT_7010.jsp"/>
+    </screen>
+	<!-- Yun Tae Seung : 2012-04-17 end -->
+	
+	<!-- Hwang Hyo Keun : 2009-05-21 start -->
+    <screen name="EES_DMT_3001">
+        <parameter key="title"    value="Charge Calculation by Office &amp; VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3001.jsp"/>
+    </screen>
+    
+    <screen name="EES_DMT_3001P"  template="templatePop">
+        <parameter key="title"    value="Charge Calculation by Office &amp; VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3001.jsp"/>
+    </screen>
+	<!-- Hwang Hyo Keun : 2009-05-21 end -->
+
+	<!-- Kim Tae Kyun : 2009-05-21 start -->
+    <screen name="EES_DMT_1003">
+        <parameter key="title"    value="Basic Tariff Summary Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtmasterdatamgt/demdettariffmgt/jsp/EES_DMT_1003.jsp"/>
+    </screen>
+	<!-- Kim Tae Kyun : 2009-05-21 end -->
+	<!-- Kim Tae Kyun : 2009-05-21 start -->
+    <screen name="EES_DMT_1004">
+        <parameter key="title"    value="Basic Tariff Detail(s) Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtmasterdatamgt/demdettariffmgt/jsp/EES_DMT_1004.jsp"/>
+    </screen>
+	<!-- Kim Tae Kyun : 2009-05-21 end -->
+	<!--  : 2009-06-04 start -->
+    <screen name="EES_DMT_1001">
+        <parameter key="title"    value="Basic Tariff Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtmasterdatamgt/demdettariffmgt/jsp/EES_DMT_1001.jsp"/>
+    </screen>
+	<!--  : 2009-06-04 end -->
+	<!--  : 2009-06-04 start -->
+    <screen name="EES_DMT_1002"  template="templatePop">
+        <parameter key="title"    value="Basic Tariff Creation - Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtmasterdatamgt/demdettariffmgt/jsp/EES_DMT_1002.jsp"/>
+    </screen>
+	<!--  : 2009-06-04 end -->
+
+	<!-- Hwang Hyo Keun : 2009-06-13 start -->
+    <screen name="EES_DMT_3002">
+        <parameter key="title"    value="Charge Calculation by Booking" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3002.jsp"/>
+    </screen>
+    
+    <screen name="EES_DMT_3002P"  template="templatePop">
+        <parameter key="title"    value="Charge Calculation by Booking" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3002.jsp"/>
+    </screen>
+	<!-- Hwang Hyo Keun : 2009-06-13 end -->
+
+	<!-- Hwang Hyo Keun : 2009-06-25 start -->
+    <screen name="EES_DMT_3003">
+        <parameter key="title"    value="Charge Calculation by CNTR" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3003.jsp"/>
+    </screen>
+    
+    <screen name="EES_DMT_3003P"  template="templatePop">
+        <parameter key="title"    value="Charge Calculation by CNTR" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3003.jsp"/>
+    </screen>
+	<!-- Hwang Hyo Keun : 2009-06-25 end -->
+
+	<!-- Kim Tae Kyun : 2009-07-01 start -->
+    <screen name="EES_DMT_1101"  template="templatePop">
+        <parameter key="title"    value="Copy Basic Tariff" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtmasterdatamgt/demdettariffmgt/jsp/EES_DMT_1101.jsp"/>
+    </screen>
+	<!--Kim Tae Kyun : 2009-07-01 end -->
+		
+	<!-- Kim Tae Kyun : 2009-07-01 start -->
+	<!-- 
+    <screen name="EES_DMT_1101">
+        <parameter key="title"    value="Copy Basic Tariff" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtmasterdatamgt/demdettariffmgt/jsp/EES_DMT_1101.jsp"/>
+    </screen>
+     -->
+	<!--Kim Tae Kyun : 2009-07-01 end -->
+
+	<!-- Hwang HyoKeun : 2009-07-02 start -->
+    <screen name="EES_DMT_3004">
+        <parameter key="title"    value="Charge Inquiry by Office Or VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3004.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-07-02 end -->
+	
+	<!-- Hwang HyoKeun : 2009-07-07 start -->
+    <screen name="EES_DMT_3005">
+        <parameter key="title"    value="Charge Inquiry by Booking" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3005.jsp"/>
+    </screen>
+    
+    <screen name="EES_DMT_3005P"  template="templatePop">
+        <parameter key="title"    value="Charge Inquiry by Booking" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3005.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-07-07 end -->
+	
+	<!-- Choi Sung Hwan : 2009-09-25 start -->
+    <screen name="EES_DMT_3007" template="templatePop">
+        <parameter key="title"    value="Demand Note Issue Preview" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/demandnotesend/jsp/EES_DMT_3007.jsp"/>
+    </screen>
+	<!-- Choi Sung Hwan : 2009-09-25 end -->
+
+	<!-- Kim Tae Kyun : 2009-07-09 start -->
+    <screen name="EES_DMT_4014">
+        <parameter key="title"    value="SZPBB DEM Tariff Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtmasterdatamgt/demdettariffmgt/jsp/EES_DMT_4014.jsp"/>
+    </screen>
+	<!--Kim Tae Kyun : 2009-07-09 end -->
+
+	<!-- Kim Tae Kyun : 2009-07-10 start -->
+    <screen name="EES_DMT_4015">
+        <parameter key="title"    value="SZPBB DEM Tariff Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtmasterdatamgt/demdettariffmgt/jsp/EES_DMT_4015.jsp"/>
+    </screen>
+	<!--Kim Tae Kyun : 2009-07-09 end -->
+	
+	<!-- Hwang HyoKeun : 2009-07-14 start -->
+    <screen name="EES_DMT_3006">
+        <parameter key="title"    value="Charge Inquiry by CNTR" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3006.jsp"/>
+    </screen>
+    
+    <screen name="EES_DMT_3006P"  template="templatePop">
+        <parameter key="title"    value="Charge Inquiry by CNTR" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3006.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-07-14 end -->
+	
+	<!-- Hwang HyoKeun : 2009-07-14 start -->
+    <screen name="EES_DMT_3009">
+        <parameter key="title"    value="Office Transfer History" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargeofficetransfermgt/jsp/EES_DMT_3009.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-07-14 end -->
+	
+	<!-- Hwang HyoKeun : 2009-07-21 start -->
+    <screen name="EES_DMT_3101" template="templatePop">
+        <parameter key="title"    value="Office Transfer" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargeofficetransfermgt/jsp/EES_DMT_3101.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-07-21 end -->
+
+	<!-- Hwang HyoKeun : 2009-07-27 start -->
+    <screen name="EES_DMT_3105" template="templatePop">
+        <parameter key="title"    value="Office Transfer History - CNTR" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargeofficetransfermgt/jsp/EES_DMT_3105.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-07-27 end -->
+
+	<!-- Kim Tae Kyun : 2009-07-28 start -->                                                                       	
+    <screen name="EES_DMT_1005">                                                                                   
+        <parameter key="title"    value="Commodity Exception Tariff Creation" direct="true"/>                      
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtmasterdatamgt/demdettariffmgt/jsp/EES_DMT_1005.jsp"/>
+    </screen>                                                                                                      
+	<!--Kim Tae Kyun : 2009-07-28 end -->
+	
+	<!-- Hwang HyoKeun : 2009-07-29 start -->
+    <screen name="EES_DMT_3103" template="templatePop">
+        <parameter key="title"    value="Correction Save History" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3103.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-07-29 end -->
+
+	<!-- Hwang HyoKeun : 2009-08-03 start -->
+    <screen name="EES_DMT_3102" template="templatePop">
+        <parameter key="title"    value="Split Payment" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3102.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-08-03 end -->
+
+	<!-- Kim Tae Kyun : 2009-08-03 start -->                                                                       	
+    <screen name="EES_DMT_1006">                                                                                   
+        <parameter key="title"    value="Commodity Exception Tariff Inquiry" direct="true"/>                      
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtmasterdatamgt/demdettariffmgt/jsp/EES_DMT_1006.jsp"/>
+    </screen>                                                                                                      
+	<!-- Kim Tae Kyun : 2009-08-03 start -->                                                                       	
+	
+	<!-- Hwang HyoKeun : 2009-08-16 start -->
+    <screen name="EES_DMT_3104" template="templatePop">
+        <parameter key="title"    value="Exemption Reason Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3104.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-08-16 end -->
+	
+	<!-- Kim Tae Kyun : 2009-08-05 start -->
+    <screen name="EES_DMT_4001">
+        <parameter key="title"    value="Invoice Creation &amp; Issue" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4001.jsp"/>
+    </screen>
+	<!-- Kim Tae Kyun : 2009-08-05 end -->
+		
+	<!-- Kim Tae Kyun : 2009-08-25 start -->
+    <screen name="EES_DMT_4002" template="templatePop">
+        <parameter key="title"    value="Invoice Creation &amp; Issue - Booking" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4002.jsp"/>
+    </screen>
+	<!-- Kim Tae Kyun : 2009-08-25 end -->
+	
+	<!-- Kim TaeKyun : 2009-09-12 start -->
+    <screen name="EES_DMT_4003" template="templatePop">
+        <parameter key="title"    value="Invoice Issue Preview" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4003.jsp"/>
+    </screen>
+	<!-- Kim TaeKyun : 2009-09-12 end -->
+
+	<!-- Kim TaeKyun : 2009-12-30 start -->
+    <screen name="EES_DMT_4003_RD"  template="templateRD">
+        <parameter key="title"    value="Invoice Issue Preview" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4003_RD.jsp"/>
+    </screen>
+	<!-- Kim TaeKyun : 2009-12-30 end -->	
+	
+	<!-- Lee Sung Hoon : 2009-09-30 start -->
+    <screen name="EES_DMT_4004">
+        <parameter key="title"    value="Manual Invoice Creation &amp; Issue" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4004.jsp"/>
+    </screen>
+    
+    <screen name="EES_DMT_4004P"  template="templatePop">
+        <parameter key="title"    value="Manual Invoice Creation &amp; Issue" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4004.jsp"/>
+    </screen>    
+	<!-- Lee Sung Hoon : 2009-09-30 end -->
+			
+	<!-- Choi Sung Hwan : 2009-08-25 start -->
+    <screen name="EES_DMT_4005">
+        <parameter key="title"    value="3rd Party DEM/DET Collection Audit" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/usdemurrageaudit/jsp/EES_DMT_4005.jsp"/>
+    </screen>
+	<!-- Choi Sung Hwan : 2009-08-25 end -->
+
+	<!-- Kim Tae Kyun : 2009-10-08 start -->
+    <screen name="EES_DMT_4008">
+        <parameter key="title"    value="Issued Invoice Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4008.jsp"/>
+    </screen>
+	<!-- Kim Tae Kyun : 2009-10-08 end -->
+
+    <!-- Kim Jae Jin : 2009-08-25 start -->
+    <screen name="EES_DMT_2012">
+        <parameter key="title"    value="VL/VD Date Update by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/vlvddateupdatemgt/jsp/EES_DMT_2012.jsp"/>
+    </screen>
+    <!-- Kim Jae Jin : 2009-08-25 end -->
+    
+    <!-- SungHoon, Lee : 2009-08-28 start -->
+    <screen name="EES_DMT_4009">
+        <parameter key="title"    value="Outstanding Inquiry by Customer N Issue" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4009.jsp"/>
+    </screen>
+    <!-- SungHoon, Lee : 2009-08-28 end -->
+    
+    <!-- Mun Jung Cheol : 2009-09-02 start -->
+    <screen name="EES_DMT_4011" template="templatePop">
+        <parameter key="title"    value="Outstanding Inquiry by Customer N Issue - Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4011.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-09-02 end -->
+    
+    <!-- Hwang HyoKeun : 2009-09-03 start -->
+    <screen name="EES_DMT_3106" template="templatePop">
+        <parameter key="title"    value="Manual Batch by POD ETA" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3106.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-09-03 end -->
+	
+    <!-- Mun Jung Cheol : 2009-09-09 start -->
+    <screen name="EES_DMT_4012" template="templatePop">
+        <parameter key="title"    value="Outstanding Issue Preview" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4012.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-09-09 end -->
+	
+	<!-- Hwang HyoKeun : 2009-09-10 start -->
+    <screen name="EES_DMT_3107" template="templatePop">
+        <parameter key="title"    value="Calculation Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3107.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-09-10 end -->
+	
+	<!-- Choi Sung Hwan : 2009-09-07 start -->
+    <screen name="EES_DMT_5001-1">
+        <parameter key="title"    value="A/R Interface Status Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_5001.jsp"/>
+    </screen>
+	<!-- Choi Sung Hwan : 2009-09-07 end -->
+	
+	<!-- Choi Sung Hwan : 2009-10-09 start -->
+    <screen name="EES_DMT_5002">
+        <parameter key="title"    value="Invoice Interface to A/R" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_5002.jsp"/>
+    </screen>
+	<!-- Choi Sung Hwan : 2009-10-09 end -->
+	
+	<!-- Choi Sung Hwan : 2009-10-13 start -->
+    <screen name="EES_DMT_5003" template="templatePop">
+        <parameter key="title"    value="Invoice Interface to A/R - Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_5003.jsp"/>
+    </screen>
+	<!-- Choi Sung Hwan : 2009-10-13 end -->	
+	
+	<!-- Hwang HyoKeun : 2009-09-15 start -->
+    <screen name="EES_DMT_3010">
+        <parameter key="title"    value="Deleted Charge Report by Office" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/chargecalculationreport/jsp/EES_DMT_3010.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-09-15 end -->
+
+	<!-- Hwang HyoKeun : 2009-09-17 start -->
+    <screen name="EES_DMT_3011" template="templatePop">
+        <parameter key="title"    value="Deleted Charge Report by Office - Detail(s)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/chargecalculationreport/jsp/EES_DMT_3011.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-09-17 end -->
+	
+	<!-- Choi Sung Hwan : 2009-09-23 start -->
+    <screen name="EES_DMT_3013">
+        <parameter key="title"    value="Demand Note Issue" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/demandnotesend/jsp/EES_DMT_3013.jsp"/>
+    </screen>
+	<!-- Choi Sung Hwan : 2009-09-23 end -->
+	
+	<!-- Choi Sung Hwan : 2009-09-25 start -->
+    <screen name="EES_DMT_3109" template="templatePop">
+        <parameter key="title"    value="Demand Note Issue - Booking" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/demandnotesend/jsp/EES_DMT_3109.jsp"/>
+    </screen>
+	<!-- Choi Sung Hwan : 2009-09-25 end -->
+	
+	<!-- Choi Sung Hwan : 2009-12-18 start -->
+    <screen name="EES_DMT_3007_RD"  template="templateRD">
+        <parameter key="title"    value="Demand Note Issue - Booking" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/demandnotesend/jsp/EES_DMT_3007_RD.jsp"/>
+    </screen>
+	<!-- Choi Sung Hwan : 2009-12-18 end -->	
+	
+	<!-- Choi Sung Hwan : 2009-10-05 start -->
+    <screen name="EES_DMT_3108" template="templatePop">
+        <parameter key="title"    value="Demand Note Issue - Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/demandnotesend/jsp/EES_DMT_3108.jsp"/>
+    </screen>
+	<!-- Choi Sung Hwan : 2009-10-05 end -->	
+	
+    <!-- Kim Tae Kyun : 2009-10-19 start -->
+    <screen name="EES_DMT_4104" template="templatePop">
+        <parameter key="title"    value="DEM/DET Payer Info &amp; Fax/E-mail" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4104.jsp"/>
+    </screen>
+    <!-- Kim Tae Kyun : 2009-10-19 end -->	
+
+    <!-- Mun Jung Cheol : 2009-09-24 start -->
+    <screen name="EES_DMT_4105" template="templatePop">
+        <parameter key="title"    value="Remark(s) on Sheet" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4105.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-09-24 end -->	
+
+	<!-- Choi Sung Hwan : 2009-09-25 start -->
+    <screen name="EES_DMT_4013" template="templatePop">
+        <parameter key="title"    value="Invoice Creation - Group" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4013.jsp"/>
+    </screen>
+	<!-- Choi Sung Hwan : 2009-09-25 end -->
+	
+	<!-- Hwang HyoKeun : 2009-09-18 start -->
+    <screen name="EES_DMT_6001">
+        <parameter key="title"    value="Current Collection Status by Office" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/chargecollectionreport/jsp/EES_DMT_6001.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-09-18 end -->
+	
+	<!-- Hwang HyoKeun : 2009-09-22 start -->
+    <screen name="EES_DMT_6002" template="templatePop">
+        <parameter key="title"    value="Current Collection Status by Office - Detail(s)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/chargecollectionreport/jsp/EES_DMT_6002.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-09-22 end -->
+	
+	<!-- Hwang HyoKeun : 2009-09-25 start -->
+    <screen name="EES_DMT_6003">
+        <parameter key="title"    value="Monthly Invoiced &amp; Collection by Office" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/chargecollectionreport/jsp/EES_DMT_6003.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-09-25 end -->
+	
+	<!-- Hwang HyoKeun : 2009-09-29 start -->
+    <screen name="EES_DMT_6005">
+        <parameter key="title"    value="Summary Report by Customer" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/chargecalculationreport/jsp/EES_DMT_6005.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-09-29 end -->
+	
+	<!-- Hwang HyoKeun : 2009-10-01 start -->
+    <screen name="EES_DMT_6006" template="templatePop">
+        <parameter key="title"    value="Summary Report by Customer - Detail(s)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/chargecalculationreport/jsp/EES_DMT_6006.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-10-01 end -->
+
+    <!-- Mun Jung Cheol : 2009-09-28 start -->
+    <screen name="EES_DMT_4103" template="templatePop">
+        <parameter key="title"    value="Sheet Option" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4103.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-09-28 end -->
+    
+    <!-- Mun Jung Cheol : 2009-10-01 start -->
+    <screen name="EES_DMT_4101" template="templatePop">
+        <parameter key="title"    value="Sheet Setting" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4101.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-10-01 end -->
+    
+    <!-- Mun Jung Cheol : 2009-10-05 start -->
+    <screen name="EES_DMT_4006">
+        <parameter key="title"    value="Manual Invoice Report by Office" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4006.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-10-05 end -->
+    
+    <!-- Mun Jung Cheol : 2009-10-06 start -->
+    <screen name="EES_DMT_4007" template="templatePop">
+        <parameter key="title"    value="Manual Invoice Report by Office - Detail(s)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4007.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-10-06 end -->
+
+    <!-- Kim Tae Kyun : 2009-10-12 start -->
+    <screen name="EES_DMT_4106"  template="templatePop">
+        <parameter key="title"    value="Invoice Cancel Reason Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4106.jsp"/>
+    </screen>
+    <!-- Kim Tae Kyun : 2009-10-12 end -->
+    
+    <!-- Kim Tae Kyun : 2010-06-22 start -->
+    <screen name="EES_DMT_4107"   template="templatePop">
+        <parameter key="title"    value="DEM DET Fax Send" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4107.jsp"/>
+    </screen>
+    <screen name="EES_DMT_4108"   template="templatePop">
+        <parameter key="title"    value="DEM DET E-mail Send" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_4108.jsp"/>
+    </screen>
+    <!-- Kim Tae Kyun : 2010-06-22 end -->
+    
+    <!-- Mun Jung Cheol : 2009-10-12 start -->
+    <screen name="EES_DMT_5101" template="templatePop">
+        <parameter key="title"    value="Hold Reason Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_5101.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-10-12 end -->
+    
+    <!-- Mun Jung Cheol : 2009-10-13 start -->
+    <screen name="EES_DMT_7002">
+        <parameter key="title"    value="DEM/DET Office Inquiry by Yard" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/dmtcollectionofficemgt/jsp/EES_DMT_7002.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-10-13 end -->
+    
+    <!-- Hwang HyoKeun : 2009-10-13 start -->
+    <screen name="EES_DMT_4016">
+        <parameter key="title"    value="SZPBB DEM Calculation &amp; Issue" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_4016.jsp"/>
+    </screen>
+	<!-- Hwang HyoKeun : 2009-10-13 end -->   
+	
+	<!-- Choi Sung Hwan : 2009-10-14 start -->
+    <screen name="EES_DMT_7008-1">
+        <parameter key="title"    value="Approval Authority Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/rfaexceptiontariffmgt/jsp/EES_DMT_7008.jsp"/>
+    </screen>
+	<!-- Choi Sung Hwan : 2009-10-14 end -->
+
+    <!-- Mun Jung Cheol : 2009-10-15 start -->
+    <screen name="EES_DMT_7006">
+        <parameter key="title"    value="Fax/E-mail Sending History" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_7006.jsp"/>
+    </screen>
+    
+    <screen name="EES_DMT_7006_P" template="templatePop">
+        <parameter key="title"    value="Fax/E-mail Sending History" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtinvoicemgt/invoiceissuecollectionmgt/jsp/EES_DMT_7006.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-10-15 end -->
+    
+    <!-- Mun Jung Cheol : 2009-10-19 start -->
+    <screen name="EES_DMT_6009">
+        <parameter key="title"    value="Waive Report by Office" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/waivereport/jsp/EES_DMT_6009.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-10-19 end -->
+    
+    <!-- Mun Jung Cheol : 2009-10-21 start -->
+    <screen name="EES_DMT_6010" template="templatePop">
+        <parameter key="title"    value="Waive Report by Office - Detail(s)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/waivereport/jsp/EES_DMT_6010.jsp"/>
+    </screen>
+    <!-- Mun Jung Cheol : 2009-10-21 end -->
+    
+    <!-- Hwang Hyo Keun : 2010-03-11 start -->	
+    <screen name="EES_DMT_MULTI" template="templatePop">               
+        <parameter key="title"    value="EES_DMT_MULTI" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_MULTI.jsp"/>
+    </screen>
+    <!-- Hwang Hyo Keun : 2010-03-11 end -->
+    
+    <!-- Kim Bong Gyoon : 2012-04-12 start -->
+    <screen name="EES_DMT_7011">
+        <parameter key="title"    value="Combination Set-up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/dmtcalculationtypemgt/jsp/EES_DMT_7011.jsp"/>
+    </screen>
+	<!-- Kim Bong Gyoon : 2012-04-12 end -->
+	
+    <!-- Kim Bong Gyoon : 2012-04-16 start -->
+    <screen name="EES_DMT_7012">
+        <parameter key="title"    value="Skip Location Set-up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/dmtcalculationtypemgt/jsp/EES_DMT_7012.jsp"/>
+    </screen>
+	<!-- Kim Bong Gyoon : 2012-04-16 end -->
+	
+    <!-- Kim Bong Gyoon : 2012-04-18 start -->
+    <screen name="EES_DMT_7013">
+        <parameter key="title"    value="Tariff Type Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/dmtcalculationtypemgt/jsp/EES_DMT_7013.jsp"/>
+    </screen>
+	<!-- Kim Bong Gyoon : 2012-04-18 end -->
+	
+	<!-- Oh Yohan : 2012-04-15 start -->
+    <screen name="EES_DMT_7014">
+        <parameter key="title"    value="Weekend Entry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtperformanceanalysis/dmtcalculationtypemgt/jsp/EES_DMT_7014.jsp"/>
+    </screen>
+    <!-- Oh Yohan : 2012-04-15 end -->
+	
+	<!-- SB45 Ruling Exceptions : 2016-01-25 start -->
+    <screen name="EES_DMT_1009">
+        <parameter key="title"    value="SB45 Ruling Exceptions" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtmasterdatamgt/holidaymgt/jsp/EES_DMT_1009.jsp"/>
+    </screen>
+	<!-- SB45 Ruling Exceptions : 2016-01-25 end -->
+	
+	<!-- YC Kim : 2017-05-15 start -->
+    <screen name="EES_DMT_3015">
+        <parameter key="title"    value="Last Free Day Inquiry before Container Movement" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtclosing/chargecalculation/jsp/EES_DMT_3015.jsp"/>
+    </screen>
+	<!-- YC Kim : 2017-05-15 end -->
+		
+	<!-- YK Kim : 2018-04-05 start -->
+    <screen name="EES_DMT_2106"	  template="templatePop">
+        <parameter key="title"    value="DAR File Upload" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/rfaexceptiontariffmgt/jsp/EES_DMT_2106.jsp"/>
+    </screen>
+	<!-- YK Kim : 2018-04-05 end -->	
+		
+	<!-- YK Kim : 2018-04-17 start -->
+    <screen name="EES_DMT_2107"	  template="templatePop">
+        <parameter key="title"    value="SC File Upload" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/dmt/dmtexceptionmgt/scexceptiontariffmgt/jsp/EES_DMT_2107.jsp"/>
+    </screen>
+	<!-- YK Kim : 2018-04-17 end -->	
+	    
+</screen-definitions>

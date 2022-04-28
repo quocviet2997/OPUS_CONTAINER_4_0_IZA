@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+<!-- Common ====================================================================================== -->
+ 
+	<screen name="initPeriod"> 
+		<parameter key="body"	 value="apps/opus/esm/coa/initPeriod.jsp" />
+	</screen>
+	 
+	
+	<screen name="ESM_COA_3002"  template="templatePop">
+		<parameter key="body"	 value="apps/opus/esm/coa/common/jsp/ESM_COA_3002.jsp" />
+	</screen>
+
+	<screen name="ESM_COA_3001" template="templatePop">  
+		<parameter key="body"	 value="apps/opus/esm/coa/common/jsp/ESM_COA_3001.jsp" />
+		<!--apps/enis/esm/coa/weeklypfmc/weeklycm/jsp/ESM_COA_Confirm.jsp -->
+	</screen>
+
+	<screen name="ESM_COA_3003">
+		<parameter key="body"	 value="apps/opus/esm/coa/common/jsp/ESM_COA_3003.jsp" />
+	</screen>
+	
+	<screen name="ESM_COA_9000">
+		<parameter key="title"    value="BKG Cost Re-calculation" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/common/jsp/ESM_COA_9000.jsp" />
+	</screen>	
+	
+	<!-- SJH.20141121.ADD -->
+	<screen name="ESM_COA_4004">
+		<parameter key="title"    value="BKG Cost Re-calculation" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/common/jsp/ESM_COA_4004.jsp" />
+	</screen>		
+	<!-- SJH.20141121.ADD -->
+
+<!-- ============================================================================================= -->
+
+<!-- EQBalance =================================================================================== -->
+
+	<!--  UI_EQ Repo 회송기여도  Rule Set -->
+	<screen name="ESM_COA_0016">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/eqbalance/eqbalance/jsp/ESM_COA_0016.jsp" />
+	</screen>
+	
+	<!--  UI_EQ Repo 회송기여도  Rule Set 그리드 2 -->
+	<screen name="ESM_COA_0016GS2" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/eqbalance/eqbalance/jsp/ESM_COA_0016GS2.jsp" />
+	</screen>
+	<!--  UI_EQ Repo 회송기여도  Rule Set 그리드 3 -->
+	<screen name="ESM_COA_0016GS3" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/eqbalance/eqbalance/jsp/ESM_COA_0016GS3.jsp" />
+	</screen>
+	
+	<!--  Set Credit Ratio -->
+	<screen name="ESM_COA_0018" template="templatePop">
+		<parameter key="title"	value="Set Credit Ratio" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/eqbalance/eqbalance/jsp/ESM_COA_0018.jsp" />
+	</screen>
+
+	<!--  EQ Repo 회송기여도 POR ECC Set  -->
+	<screen name="ESM_COA_0136" template="templatePop">
+		<parameter key="title"	value="From RCC Set" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/eqbalance/eqbalance/jsp/ESM_COA_0136.jsp" />
+	</screen>
+	
+	<!--  EQ Repo 회송기여도 DEL ECC Set  -->
+	<screen name="ESM_COA_0161" template="templatePop">
+		<parameter key="title"	value="To RCC Set" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/eqbalance/eqbalance/jsp/ESM_COA_0161.jsp" />
+	</screen>
+	
+<!-- ============================================================================================= -->
+<!-- MultiDimension =================================================================================== -->
+
+	<!--  Inquiry by Source Data -->
+	<screen name="ESM_COA_0035">
+		<parameter key="title"    value="OPUS Container" direct="true"/>
+		<parameter key="body"     value="apps/opus/esm/coa/multidimensionrpt/salesrpt/jsp/ESM_COA_0035.jsp"/>
+	</screen>
+				 
+	<!--  PopUp : Set Customized RPT Form [060 Open][062 open] -->
+	<screen name="ESM_COA_0059" template="templatePop">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/multidimensionrpt/salesrpt/jsp/ESM_COA_0059.jsp" />
+	</screen>
+
+	<screen name="ESM_COA_0059Pop" template="templatePop">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/multidemensionrpt/salesrpt/jsp/ESM_COA_0059.jsp" />
+	 </screen>
+	 
+	<!-- Inquiry by Customized Condition -->
+	<screen name="ESM_COA_0060">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/multidimensionrpt/salesrpt/jsp/ESM_COA_0060.jsp" />
+	</screen>
+	
+	<!--  Inquiry by BKG [060 Open][079 open]-->
+	<screen name="ESM_COA_0061">
+		<parameter key="title"    value="Inquiry By BKG" direct="true"/>
+		<parameter key="body"     value="apps/opus/esm/coa/multidimensionrpt/salesrpt/jsp/ESM_COA_0061.jsp"/>
+	</screen>
+	<!-- Pop Up -->
+	<screen name="ESM_COA_0061POP" template="templatePop">
+		<parameter key="title"    value="Inquiry By BKG" direct="true"/>
+		<parameter key="body"     value="apps/opus/esm/coa/multidimensionrpt/salesrpt/jsp/ESM_COA_0061.jsp"/>
+	</screen>
+		
+	<!--  Shipper Pop-up 144 [060 Open][062 open]-->
+	<screen name="ESM_COA_0144" template="templatePop">
+		<parameter key="title"    value="Shipper Table" direct="true"/>
+		<parameter key="body"     value="apps/opus/esm/coa/multidimensionrpt/salesrpt/jsp/ESM_COA_0144.jsp"/>
+	</screen>
+
+	<!--  Office Report-vs QTA -->
+	<screen name="ESM_COA_0070">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/multidimensionrpt/salesrpt/jsp/ESM_COA_0070.jsp" />
+	</screen>			
+
+	<!--  PopUp : Report View Management [002 open] -->
+	<screen name="ESM_COA_0130" template="templatePop">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/multidimensionrpt/multidimensionrpt/jsp/ESM_COA_0130.jsp" />
+	</screen>
+
+	<!--  Lane별 Activity -->
+	<screen name="ESM_COA_0080">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/multidimensionrpt/logisticsrpt/jsp/ESM_COA_0080.jsp" />
+	</screen>
+	<!--  Lane별 Activity 그리드 1 -->
+	<screen name="ESM_COA_0080GS" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/multidimensionrpt/logisticsrpt/jsp/ESM_COA_0080GS.jsp" />
+	</screen>
+	<!--  Lane별 Activity 그리드 1 -->
+	<screen name="ESM_COA_0080GS2" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/multidimensionrpt/logisticsrpt/jsp/ESM_COA_0080GS2.jsp" />
+	</screen>
+	<!--  Lane별 Activity -->
+	<screen name="ESM_COA_0081">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/multidimensionrpt/logisticsrpt/jsp/ESM_COA_0081.jsp" />
+	</screen>
+	<!--  Lane별 Activity 그리드 1 -->
+	<screen name="ESM_COA_0081GS" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/multidimensionrpt/logisticsrpt/jsp/ESM_COA_0081GS.jsp" />
+	</screen>
+	<!--  Lane별 Activity 그리드 1 -->
+	<screen name="ESM_COA_0081GS2" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/multidimensionrpt/logisticsrpt/jsp/ESM_COA_0081GS2.jsp" />
+	</screen>
+	<!--  Lane별 Activity -->
+	<screen name="ESM_COA_0082">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/multidimensionrpt/logisticsrpt/jsp/ESM_COA_0082.jsp" />
+	</screen>
+
+	<!--  Volum별 Activity -->
+	<screen name="ESM_COA_0158">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/multidimensionrpt/logisticsrpt/jsp/ESM_COA_0158.jsp" />
+	</screen>
+	<!--  Lane별 Activity 그리드 1 -->
+	<!-- screen name="ESM_COA_0158GS" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/multidimensionrpt/logisticsrpt/jsp/ESM_COA_0158GS.jsp" />
+	</screen-->
+	
+	<!--  Inquire Weekly Sales Report By Office 3 -->
+	<screen name="ESM_COA_0072">
+		<parameter key="title"    value="OPUS Container" direct="true"/>
+		<parameter key="body"     value="apps/opus/esm/coa/multidimensionrpt/multidimensionrpt/jsp/ESM_COA_0072.jsp"/>
+	</screen>
+	<!--  그리드 1 -->
+		
+	<!--  Inquery By BKG RMK popup 조회 -->
+	<screen name="ESM_COA_0170" template="templatePop">
+		<parameter key="title" value="Inquiry by BKG Remark" direct="true"/>
+		<parameter key="body"  value="apps/opus/esm/coa/multidimensionrpt/salesrpt/jsp/ESM_COA_0170.jsp" />
+	</screen>
+
+<!-- ============================================================================================= -->
+<!-- STDUnitCost =================================================================================== -->
+
+	<!--  항목별  조건목록 등록 -->
+	<screen name="ESM_COA_0001" template="templatePop">
+		<parameter key="title"	value="Set list-boxes to set Key-business rule" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/coststructure/jsp/ESM_COA_0001.jsp" />
+	</screen>
+
+	<!--  시트 컬럼 숨기기 -->
+	<screen name="ESM_COA_0124" template="templatePop">
+		<parameter key="title"	value="Sheet's Column Hide/View" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/coststructure/jsp/ESM_COA_0124.jsp" />
+	</screen>
+
+	<!--  전사계정과목 등록 -->
+	<screen name="ESM_COA_0002">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/coststructure/jsp/ESM_COA_0002.jsp" />
+	</screen>
+
+	<!--  물류비용코드 등록 -->
+	<screen name="ESM_COA_0003">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/coststructure/jsp/ESM_COA_0003.jsp" />
+	</screen>
+
+	<!--  Node별 표준단가 조회 -->
+	<!--  Node별 표준단가 조회 -->
+	<screen name="ESM_COA_0004">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/fullcost/jsp/ESM_COA_0004.jsp" />
+	</screen>	
+	
+	<!--  Link별 표준단가 조회 -->
+	<screen name="ESM_COA_0008">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/fullcost/jsp/ESM_COA_0008.jsp" />
+	</screen>
+	
+	<!--  Link별 표준단가 조회 팝업 -->
+	<screen name="ESM_COA_0141" template="templatePop">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/fullcost/jsp/ESM_COA_0141.jsp" />
+	</screen>
+	
+	<!--  Link별 표준단가 조회 팝업 그리드 1 -->
+	<screen name="ESM_COA_0141GS" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/fullcost/jsp/ESM_COA_0141GS.jsp" />
+	</screen>
+	
+
+	<!--  ECC별 MT 표준단가&MT Turntime 생성 -->
+	<screen name="ESM_COA_0009">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/mtcost/jsp/ESM_COA_0009.jsp" />
+	</screen>
+	
+	<!--  ECC별 MT 표준단가&MT Turntime 생성 팝업 팝업 -->
+	<screen name="ESM_COA_0010" template="templatePop">
+		<parameter key="title"	value="Inquire MT CNTR MVMT History" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/mtcost/jsp/ESM_COA_0010.jsp" />
+	 </screen>
+
+	<!--  ECC별 MT 표준단가&MT Turntime 생성 팝업 그리드 1 -->
+	<screen name="ESM_COA_0010GS" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/mtcost/jsp/ESM_COA_0010GS.jsp" />
+	</screen>
+
+
+	<!--  장비비 표준단가 생성(CNTR) -->
+	<screen name="ESM_COA_0013">
+		<parameter key="title"    value="EQ Holding Cost (PA)" direct="true"/>
+		<parameter key="body"     value="apps/opus/esm/coa/stdunitcost/eqholding/jsp/ESM_COA_0013.jsp"/>
+	</screen>
+
+	<!--  Dem/Det, 3자 구상 표준단가 생성 -->
+	<screen name="ESM_COA_0015">
+		<parameter key="title"    value="DEM/DET, Vol Discount (PA/RA)" direct="true"/>
+		<parameter key="body"     value="apps/opus/esm/coa/stdunitcost/demdet3rd/jsp/ESM_COA_0015.jsp"/>
+	</screen>
+
+	<!--  Node별 표준단가 조회/수정 -->
+	<screen name="ESM_COA_0083">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/fullcost/jsp/ESM_COA_0083.jsp" />
+	</screen>
+
+	<!--  Node별 표준단가 조회/수정 그리드 1 -->
+	<screen name="ESM_COA_0083GS" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/fullcost/jsp/ESM_COA_0083GS.jsp" />
+	</screen>
+
+	<!--  Node별 표준단가 조회/수정 그리드 2 -->
+	<screen name="ESM_COA_0083GS2" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/fullcost/jsp/ESM_COA_0083GS2.jsp" />
+	</screen>
+
+	<!--  Sen Unit Cost -->
+	<screen name="ESM_COA_0077">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/sencost/jsp/ESM_COA_0077.jsp" />
+	</screen>
+
+	<!--  Sen Unit Cost 그리드 1 -->
+	<screen name="ESM_COA_0077GS" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/sencost/jsp/ESM_COA_0077GS.jsp" />
+	</screen>	
+
+	<!--  단가 조정 Customize -->
+    <screen name="ESM_COA_0137">
+        <parameter key="title"    value="Node/Link U/C Adjustment" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/stdunitcost/coststructure/jsp/ESM_COA_0137.jsp"/>
+    </screen>
+    
+	<!--  Feeder Term -->
+	<screen name="ESM_COA_0139">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/coststructure/jsp/ESM_COA_0139.jsp" />
+	</screen>	
+
+	<!--  Feeder Term -->
+	 <screen name="ESM_COA_0140" template="templatePop">
+        <parameter key="title"    value="Feeder Term Ratio" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/stdunitcost/coststructure/jsp/ESM_COA_0140.jsp"/>
+    </screen>	
+
+	<!--  MRI Inquiry start -->
+	 <screen name="ESM_COA_0152">
+        <parameter key="title"    value="OPUS Container" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/stdunitcost/mriinquiry/jsp/ESM_COA_0152.jsp"/>
+    </screen>	
+    <!--  MRI Inquiry end -->
+
+	<!--  Batch Test Page -->
+	<screen name="MnlAsgn">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/costassign/jsp/MnlAsgn.jsp" />
+	</screen>
+	
+	<!--  Agency Other Commission 단가 -->
+	<screen name="ESM_COA_0157">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/agencycommission/jsp/ESM_COA_0157.jsp" />
+	</screen>
+	
+<!-- ============================================================================================= -->
+<!-- WeeklyPFMC =================================================================================== -->
+
+	<!--  항로 생성/조회/변경 -->
+	<screen name="ESM_COA_0036">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/opmaster/jsp/ESM_COA_0036.jsp" />
+	</screen>
+
+	<!--  항로 생성/조회/변경 -->
+	<screen name="ESM_COA_0037">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/opmaster/jsp/ESM_COA_0037.jsp" />
+	</screen>
+
+
+	<!--  SUB Trade 관리 -->
+	<screen name="ESM_COA_0038" template="templatePop">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/opmaster/jsp/ESM_COA_0038.jsp" />
+	</screen>
+
+	<!--  구간별 운항일수 및 비율관리 -->
+	<screen name="ESM_COA_0039">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/networkcost/jsp/ESM_COA_0039.jsp" />
+	</screen>
+
+
+	<!--  항비관리 -->
+	<screen name="ESM_COA_0040">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/networkcost/jsp/ESM_COA_0040.jsp" />
+	</screen>
+
+
+	<!--  연료비관리 -->
+	<screen name="ESM_COA_0041">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/networkcost/jsp/ESM_COA_0041.jsp" />
+	</screen>
+
+	<!--  사선 일당 고정비 관리 -->
+	<screen name="ESM_COA_0043">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/networkcost/jsp/ESM_COA_0043.jsp" />
+	</screen>
+
+
+	<!--  주간 대상항차 생성/조회/수정 -->
+	<screen name="ESM_COA_0029">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/weeklycm/jsp/ESM_COA_0029.jsp" />
+	</screen>
+
+	<screen name="ESM_COA_0029GS" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/weeklycm/jsp/ESM_COA_0029GS.jsp" />
+	</screen>
+
+	<screen name="ESM_COA_0113" template="templatePop">
+		<parameter key="title"	value="Select Creation Type" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/weeklycm/jsp/ESM_COA_0113.jsp" />
+	</screen>
+
+	<screen name="ESM_COA_0142" template="templatePop">
+		<parameter key="title"	value="VVD Check List" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/weeklycm/jsp/ESM_COA_0142.jsp" />
+	</screen>
+
+	<!--  VVD Status -->
+	<screen name="ESM_COA_0112" template="templatePop">
+		<parameter key="title"	value="VVD Status" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/weeklycm/jsp/ESM_COA_0112.jsp" />
+	</screen>
+
+	<!--  Networkcost -->
+	<screen name="ESM_COA_0042">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/networkcost/jsp/ESM_COA_0042.jsp" />
+	</screen>
+
+	<!--  Inquire/Edit Fixed Cost By VVD -->
+  <screen name="ESM_COA_0044">
+      <parameter key="title"    value="OPUS Container" direct="true"/>
+      <parameter key="body"     value="apps/opus/esm/coa/weeklypfmc/networkcost/jsp/ESM_COA_0044.jsp"/>
+  </screen>
+
+	<!--  Allocate Slot-cost By Company VS Slot-release -->
+	<screen name="ESM_COA_0045">
+	    <parameter key="title"    value="OPUS Container" direct="true"/>
+	    <parameter key="body"     value="apps/opus/esm/coa/weeklypfmc/networkdistribution/jsp/ESM_COA_0045.jsp"/>
+	</screen>
+
+	<!--  Re-allocate Slot-cost By Lane -->
+	<screen name="ESM_COA_0047">
+	    <parameter key="title"    value="OPUS Container" direct="true"/>
+	    <parameter key="body"     value="apps/opus/esm/coa/weeklypfmc/networkdistribution/jsp/ESM_COA_0047.jsp"/>
+	</screen>
+	
+	<!-- Allocation Results -->
+	<screen name="ESM_COA_0106">
+	    <parameter key="title"    value="OPUS Container" direct="true"/>
+	    <parameter key="body"     value="apps/opus/esm/coa/weeklypfmc/networkdistribution/jsp/ESM_COA_0106.jsp"/>
+	</screen>
+	
+	<screen name="ESM_COA_0154" template="templatePop">
+	    <parameter key="title"    value="OPUS Container" direct="true"/>
+	    <parameter key="body"     value="apps/opus/esm/coa/weeklypfmc/networkdistribution/jsp/ESM_COA_0154.jsp"/>
+	</screen>
+
+
+	<!--  Create Networkcost & Slot Charter In & Out (Network Cost 생성) -->
+	<screen name="ESM_COA_0110">
+	    <parameter key="title"    value="OPUS Container" direct="true"/>
+	    <parameter key="body"     value="apps/opus/esm/coa/weeklypfmc/networkcost/jsp/ESM_COA_0110.jsp"/>
+	</screen>
+
+	<!--  Network Cost Missing Status -->
+	<screen name="ESM_COA_0114" template="templatePop">
+	    <parameter key="title"    value="OPUS Container" direct="true"/>
+	    <parameter key="body"     value="apps/opus/esm/coa/weeklypfmc/networkcost/jsp/ESM_COA_0114.jsp"/>
+	</screen>
+
+	<!--  Vessel Information -->
+	<screen name="ESM_COA_0123" template="templatePop">
+	    <parameter key="title"    value="OPUS Container" direct="true"/>
+	    <parameter key="body"     value="apps/opus/esm/coa/weeklypfmc/opmaster/jsp/ESM_COA_0123.jsp"/>
+	</screen>
+
+	<!--  036 화면에서 링크되는 팝업화면, Lane History관리 -->
+	<screen name="ESM_COA_0145" template="templatePop">
+		<parameter key="title"	 value="Lane History" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/opmaster/jsp/ESM_COA_0145.jsp" />
+	 </screen>
+	
+	<!--  037 화면에서 링크되는 팝업화면, Vessel History관리 -->
+	<screen name="ESM_COA_0146" template="templatePop">
+		<parameter key="title"	 value="Vessel History" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/opmaster/jsp/ESM_COA_0146.jsp" />
+	 </screen>	
+	
+	<!-- Kim Ki Jong : 2010-09-17 end -->
+	<screen name="ESM_COA_0048">
+        <parameter key="title"    value="Trunk IPC Internal Pricing" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/weeklypfmc/networkcost/jsp/ESM_COA_0048.jsp"/>
+    </screen>
+    <screen name="ESM_COA_0180">
+        <parameter key="title"    value="Re-Assignment by Bound(Internal Pricing)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/weeklypfmc/networkcost/jsp/ESM_COA_0180.jsp"/>
+    </screen>
+    <screen name="ESM_COA_0107">
+        <parameter key="title"    value="Allocation Result(Internal Pricing)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/weeklypfmc/networkdistribution/jsp/ESM_COA_0107.jsp"/>
+    </screen>
+ 
+	<!-- CHOI SUGMIN : 2012-02-23 start -->
+    <screen name="ESM_COA_0019">
+        <parameter key="title"    value="General Expense" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/stdunitcost/genexpense/jsp/ESM_COA_0019.jsp"/>
+    </screen>
+	<!-- CHOI SUGMIN : 2012-02-23 end -->
+	
+	<!-- Register Main Group Cost Code  -->
+	<screen name="ESM_COA_2001">
+		<parameter key="title"	value="Register Main Group Cost Code" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/coststructure/jsp/ESM_COA_2001.jsp" />
+	</screen>
+
+	<!-- Register Sub Group Cost Code -->
+	<screen name="ESM_COA_2002">
+		<parameter key="title"	value="Register Sub Group Cost Code" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/coststructure/jsp/ESM_COA_2002.jsp" />
+	</screen>
+
+	<!-- PnL Report Item Management -->
+	<screen name="ESM_COA_2003">
+		<parameter key="title"	value="P/L Report Item Management" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/multidimensionrpt/multidimensionrpt/jsp/ESM_COA_2003.jsp" />
+	</screen>
+
+	<!-- Chang Hun Kim : 2012-04-20 start -->
+    <screen name="ESM_COA_2006">
+        <parameter key="title"    value="USA Servie Mode" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/stdunitcost/coststructure/jsp/ESM_COA_2006.jsp"/>
+    </screen>
+	<!-- Chang Hun Kim : 2012-04-20 end -->
+
+	<!-- Chang Hun Kim : 2012-04-25 start -->
+    <screen name="ESM_COA_2007">
+        <parameter key="title"    value="Week Period Management" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/stdunitcost/coststructure/jsp/ESM_COA_2007.jsp"/>
+    </screen>
+	<!-- Chang Hun Kim : 2012-04-25 end -->
+	
+
+	<!-- ChanMin Park  : 2013-07-17 start -->
+    <screen name="ESM_COA_0183">
+        <parameter key="title"    value="AVG RPB" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/stdunitcost/averagerpb/jsp/ESM_COA_0183.jsp"/>
+    </screen>
+	<!-- ChanMin Park  : 2013-07-17 end -->
+	
+	<!-- ChanMin Park  : 2013-07-17 start -->
+    <screen name="ESM_COA_0184" template="templatePop">
+        <parameter key="title"    value="Creation RPB" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/stdunitcost/averagerpb/jsp/ESM_COA_0184.jsp"/>
+    </screen>
+	<!-- ChanMin Park  : 2013-07-17 end -->
+	
+	<!-- Ju Song  : 2014-09-12 start -->
+	<screen name="ESM_COA_4001">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/sltint/jsp/ESM_COA_4001.jsp" />
+	</screen>
+
+	<screen name="ESM_COA_4001GS" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/sltint/jsp/ESM_COA_4001GS.jsp" />		
+	</screen>	
+	<!-- Ju Song  : 2014-09-12 end -->
+	
+	<!-- Ju Song  : 2014-09-19 start -->
+	<screen name="ESM_COA_4003">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/mtcost/jsp/ESM_COA_4003.jsp" />
+	</screen>	
+	<!-- Ju Song  : 2014-09-19 end -->	
+	
+	<!-- Ju Song  : 2014-10-28 start -->
+    <screen name="ESM_COA_4002">
+        <parameter key="title"    value="Re-Assignment by VVD (Slot Internal Pricing)" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/weeklypfmc/networkcost/jsp/ESM_COA_4002.jsp"/>
+    </screen>	
+    <!-- Ju Song  : 2014-10-28 end -->
+    
+        <!-- Ju Song  : 2015-03-19 start -->
+	<screen name="ESM_COA_4006">
+		<parameter key="title"    value="(CMTX)Route Cost Inqiury" direct="true"/>
+		<parameter key="body"     value="apps/opus/esm/coa/multidimensionrpt/precmsimulation/jsp/ESM_COA_4006.jsp"/>
+	</screen>
+	<!-- Pop Up -->
+	<screen name="ESM_COA_4006POP" template="templatePop">
+		<parameter key="title"    value="(CMTX)Route Cost Inqiury" direct="true"/>
+		<parameter key="body"     value="apps/opus/esm/coa/multidimensionrpt/precmsimulation/jsp/ESM_COA_4006.jsp"/>
+	</screen>
+	    
+	<screen name="ESM_COA_4007"   template="templatePop">
+		<parameter key="title"    value="(CMTX)Route Cost Detail" direct="true"/>
+		<parameter key="body"     value="apps/opus/esm/coa/multidimensionrpt/precmsimulation/jsp/ESM_COA_4007.jsp" />
+	</screen>	  
+	<!-- Ju Song  : 2015-03-19 end -->
+	
+	<!-- Ju Song  : 2015-05-19 start -->
+	<screen name="ESM_COA_4009">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/opmaster/jsp/ESM_COA_4009.jsp" />
+	</screen>	
+	<!-- Ju Song  : 2015-05-19 end -->
+	
+	<!-- Ju Song  : 2015-06-19 start -->
+	<screen name="ESM_COA_4010">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/weeklypfmc/opmaster/jsp/ESM_COA_4010.jsp" />
+	</screen>	
+	<!-- Ju Song  : 2015-06-19 end -->	
+	
+		<!-- ChanMin Park  : 2015-07-20 start -->
+    <screen name="ESM_COA_4011" template="templatePop">
+        <parameter key="title"    value="Creation Average Cost" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/common/jsp/ESM_COA_4011.jsp"/>
+    </screen>
+	<!-- ChanMin Park  : 2015-07-20 end -->
+	
+	<!-- Ju Song  : 2015-09-15 start 2017.01.12 Defect-->
+	<!--
+	<screen name="ESM_COA_4012">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	value="apps/opus/esm/coa/weeklypfmc/networkcost/jsp/ESM_COA_4012.jsp" />
+	</screen>
+	-->	
+	<!-- Ju Song  : 2015-09-15 end -->		
+	
+	<!-- Ju Song  : 2015-10-26 start 2017.01.12 Defect-->
+	<!--
+    <screen name="ESM_COA_4013" template="templatePop">
+        <parameter key="title"    value="Creation Operation Days" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/common/jsp/ESM_COA_4013.jsp"/>
+    </screen>
+    -->	
+    <!-- Ju Song  : 2015-10-26 end -->
+	
+	<!-- NYK ADD  : 2017-01-11 start -->
+    <screen name="ESM_COA_4014">
+        <parameter key="title"    value="Avg Agent Commission" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/stdunitcost/avgagncommission/jsp/ESM_COA_4014.jsp"/>
+    </screen>	
+    <!-- NYK ADD  : 2017-01-11 end -->
+    
+	<!-- IZA ADD  : 2017-04-10 start -->
+    <screen name="ESM_COA_4015">
+        <parameter key="title"    value="OPUS Container" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/stdunitcost/reeferconsumption/jsp/ESM_COA_4015.jsp"/>
+    </screen>	
+    <!-- IZA ADD  : 2017-04-10 end -->
+    
+	<!-- IZA ADD  : 2017-05-12 start -->
+	<screen name="ESM_COA_4016" template="templatePop">
+		<parameter key="title"	value="OPUS Container" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/reeferconsumption/jsp/ESM_COA_4016.jsp" />
+	</screen>
+    <!-- IZA ADD  : 2017-05-12 end -->
+    
+	<!-- IZA ADD  : 2018-05-23 start -->
+    <screen name="ESM_COA_4017">
+        <parameter key="title"    value="OPUS Container" direct="true"/>
+        <parameter key="body"     value="apps/opus/esm/coa/stdunitcost/oogcharge/jsp/ESM_COA_4017.jsp"/>
+    </screen>	
+    <!-- IZA ADD  : 2018-05-23 end -->
+    	
+	<!-- IZA ADD  : 2018-08-01 start -->
+	<screen name="ESM_COA_4018" template="templatePop">
+		<parameter key="title"	value="Sheet's Column Hide/View" direct="true"/>
+		<parameter key="body"	 value="apps/opus/esm/coa/stdunitcost/oogcharge/jsp/ESM_COA_4018.jsp" />
+	</screen>
+    <!-- IZA ADD  : 2018-08-01 end -->
+</screen-definitions>

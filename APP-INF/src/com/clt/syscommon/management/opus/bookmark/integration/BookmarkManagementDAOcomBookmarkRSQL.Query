@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="BookmarkManagementDAOcomBookmarkRSQL">
+			<desc><![CDATA[select bookmark]]></desc>
+			<sql><![CDATA[
+SELECT 
+	A.DP_NM,
+	A.PGM_NO, 
+	A.DP_SEQ,
+	DECODE(INSTR(PGM_URL, @[que_mk]),0,
+	   B.PGM_URL||@[que_mk]||'pid='||A.PRNT_PGM_NO||'&MENU=Y&pgmNo='||A.PGM_NO||'&main_page=true&mainMenuLinkFlag=true&menuflag=true&parentPgmNo='||C.CHD_PGM_NO,
+	   B.PGM_URL||'&pid='||A.PRNT_PGM_NO||'&MENU=Y&pgmNo='||A.PGM_NO||'&parentPgmNo='||C.CHD_PGM_NO||'&main_page=true&mainMenuLinkFlag=true') PGM_FULL_URL
+FROM COM_BOOKMARK A, COM_PROGRAM B, (
+        SELECT DISTINCT A.PGM_NO, A.CHD_PGM_NO, B.PRNT_PGM_NO
+        FROM (
+        SELECT 
+            LEVEL LVL
+        	, A.CHD_PGM_NO
+			, A.PRNT_PGM_NO
+        	, CONNECT_BY_ISLEAF LEAF_FLG
+        	, CONNECT_BY_ROOT CHD_PGM_NO AS PGM_NO
+        FROM  COM_MNU_CFG A, COM_PROGRAM B
+        WHERE A.PRNT_PGM_NO = B.PGM_NO
+        START WITH A.CHD_PGM_NO IN (SELECT PGM_NO FROM COM_BOOKMARK WHERE USR_ID = @[usr_id]) 
+        CONNECT BY A.CHD_PGM_NO = PRIOR A.PRNT_PGM_NO
+        ) A, COM_BOOKMARK B
+        WHERE A.LEAF_FLG = 1
+        AND A.PGM_NO = B.PGM_NO
+        AND B.USR_ID = @[usr_id]
+        AND SUBSTR(A.CHD_PGM_NO,0,7) = SUBSTR(B.PRNT_PGM_NO,0,7)
+) C
+WHERE A.USR_ID = @[usr_id]
+AND A.PGM_NO = B.PGM_NO
+AND A.PGM_NO = C.PGM_NO
+AND A.PRNT_PGM_NO = C.PRNT_PGM_NO
+ORDER BY A.DP_NM			]]></sql>
+			<params>
+				<param name="que_mk" type="12" value="" out="N"/>
+				<param name="usr_id" type="12" value="NIS2010" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

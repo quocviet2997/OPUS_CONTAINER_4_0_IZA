@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAOSearchYardListVORSQL">
+			<desc><![CDATA[2011.03.14 정윤태 EDI YARD 정보를 조회한다]]></desc>
+			<sql><![CDATA[
+SELECT  YD_CD
+       ,DECODE(BKG_YD_TP_CD, 'I', NULL, BKG_YD_TP_CD) BKG_YD_TP_CD
+       ,PORT_CD
+       ,EDI_RCV_ID
+       ,SLAN_CD1
+       ,SLAN_CD2
+       ,SLAN_CD3
+       ,SLAN_CD4
+       ,SLAN_CD5
+       ,SLAN_CD6
+       ,SLAN_CD7
+       ,SLAN_CD8
+       ,SLAN_CD9
+       ,SLAN_CD10
+       ,BKG_AUTO_EDI_FLG
+       ,MTY_RLSE_EDI_FLG
+       ,EDI_SND_ID
+       ,DECODE(FULL_RLSE_EDI_CD, '0', NULL, FULL_RLSE_EDI_CD) FULL_RLSE_EDI_CD
+       ,BKG_MNL_EDI_FLG
+       ,PRE_TS_FLG
+       ,PST_TS_FLG
+       ,PST_TS_ACK_FLG
+       ,CRE_USR_ID
+       ,UPD_USR_ID
+  FROM BKG_EDI_YD
+ WHERE 1 = 1
+#if (${yd_cd} != '')
+   AND YD_CD = @[yd_cd]
+#end			]]></sql>
+			<params>
+				<param name="yd_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

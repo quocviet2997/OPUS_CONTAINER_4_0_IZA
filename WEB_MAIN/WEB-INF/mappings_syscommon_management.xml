@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://www.cyberlogitec.com/mappings">
+    <url-mapping url="ADM_SYS_0001.do" screen="ADM_SYS_0001.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.program.event.ProgramHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ADM_SYS_0001GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.program.event.ProgramHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.program.event.ProgramManagementEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.ProgramManagementSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ADM_SYS_0003.do" screen="ADM_SYS_0003.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.user.event.UserHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ADM_SYS_0003GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.user.event.UserHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_SEC_0001.do" screen="ADM_SYS_0003.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.user.event.UserHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.user.event.UserManagementEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.UserManagementSC</service-action-class>
+    </event-mapping>
+
+    <url-mapping url="ADM_SYS_0007.do" screen="ADM_SYS_0007.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.errormessage.event.ErrorMessageHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ADM_SYS_0007GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.errormessage.event.ErrorMessageHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.errormessage.event.ErrorMessageManagementEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.ErrorMessageManagementSC</service-action-class>
+    </event-mapping>
+
+	<!-- KyungBum Kim : 2009-03-04 start -->
+    <url-mapping url="ADM_SYS_0002.do" screen="ADM_SYS_0002.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.menu.event.MenuManagementHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ADM_SYS_0002GS.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.menu.event.MenuManagementHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.menu.event.MenuManagementEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.MenuManagementSC</service-action-class>
+    </event-mapping>
+	<!-- KyungBum Kim : 2009-03-04 end -->
+
+	<!-- Jeong-Hoon Kim : 2009-05-06 start -->
+    <url-mapping url="FileManagement.do" screen="FileManagement.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.file.event.UI_COM_FILEUPLOADHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="FileManagementGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.file.event.UI_COM_FILEUPLOADHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.file.event.UiComFileuploadEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.FileSC</service-action-class>
+    </event-mapping>
+	<!-- Jeong-Hoon Kim : 2009-05-06 end -->
+
+	  <!-- ========================================================================@ 시스템공통관리 부분 시작
+-->
+
+  <!--  역할 관리 -->
+  <url-mapping url="ADM_SYS_0004.do" screen="ADM_SYS_0004.screen" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_007HTMLAction</web-action-class>
+  </url-mapping>
+  
+  <url-mapping url="ADM_SYS_0004GS.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_007HTMLAction</web-action-class>
+  </url-mapping>
+
+  <event-mapping>
+    <event-class>com.clt.syscommon.management.opus.role.event.ComSys007Event</event-class>
+    <service-action-class>com.clt.syscommon.management.opus.RoleManagementSC</service-action-class>
+  </event-mapping>
+  
+  <url-mapping url="viewUpperRole.do" screen="upperRole.screen" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_014HTMLAction</web-action-class>
+  </url-mapping>
+  
+  <url-mapping url="searchUpperRole.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_014HTMLAction</web-action-class>
+  </url-mapping>
+
+  <event-mapping>
+    <event-class>com.clt.syscommon.management.opus.role.event.ComSys014Event</event-class>
+    <service-action-class>com.clt.syscommon.management.opus.RoleManagementSC</service-action-class>
+  </event-mapping>
+  
+  <!--  사용자,역할,프로그램 -->
+  <url-mapping url="ADM_SYS_0005.do" screen="ADM_SYS_0005.screen" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_006HTMLAction</web-action-class>
+  </url-mapping>
+  
+  <url-mapping url="ADM_SYS_0005GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_006HTMLAction</web-action-class>
+  </url-mapping>
+
+  <event-mapping>
+    <event-class>com.clt.syscommon.management.opus.role.event.ComSys006Event</event-class>
+    <service-action-class>com.clt.syscommon.management.opus.UserRoleProgramManagementSC</service-action-class>
+  </event-mapping>
+  
+  <!--  사용자별 역할 매핑 -->
+  <url-mapping url="roleMapping.do" screen="roleMapping.screen" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_008HTMLAction</web-action-class>
+  </url-mapping>
+
+  <url-mapping url="searchRoleMapping.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_008HTMLAction</web-action-class>
+  </url-mapping>
+  
+  <url-mapping url="roleMappingHistory.do" screen="roleMappingHistory.screen" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_008HTMLAction</web-action-class>
+  </url-mapping>
+  
+  <url-mapping url="roleMappingHistoryGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_008HTMLAction</web-action-class>
+  </url-mapping>
+  
+  <event-mapping>
+    <event-class>com.clt.syscommon.management.opus.role.event.ComSys008Event</event-class>
+    <service-action-class>com.clt.syscommon.management.opus.RoleMappingManagementSC</service-action-class>
+  </event-mapping>
+  
+  <!--  프로그램별 역할 매핑 -->
+  <url-mapping url="progRoleMapping.do" screen="progRoleMapping.screen" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_011HTMLAction</web-action-class>
+  </url-mapping>
+
+  <url-mapping url="searchProgRoleMapping.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_011HTMLAction</web-action-class>
+  </url-mapping>
+  
+  <event-mapping>
+    <event-class>com.clt.syscommon.management.opus.role.event.ComSys011Event</event-class>
+    <service-action-class>com.clt.syscommon.management.opus.RoleMappingManagementSC</service-action-class>
+  </event-mapping>
+  
+  <!--  역할별 사용자 매핑 -->
+  <url-mapping url="userMapping.do" screen="userMapping.screen" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_009HTMLAction</web-action-class>
+  </url-mapping>
+
+  <url-mapping url="searchUserMapping.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_009HTMLAction</web-action-class>
+  </url-mapping>
+
+  <event-mapping>
+    <event-class>com.clt.syscommon.management.opus.role.event.ComSys009Event</event-class>
+    <service-action-class>com.clt.syscommon.management.opus.UserMappingManagementSC</service-action-class>
+  </event-mapping>
+  
+  <!--  역할별 프로그램 매핑 -->
+  <url-mapping url="programMapping.do" screen="programMapping.screen" >
+    <web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_010HTMLAction</web-action-class>
+  </url-mapping>
+  
+	<url-mapping url="searchProgramMapping.do" useFlowHandler="true" >
+		<web-action-class>com.clt.syscommon.management.opus.role.event.COM_SYS_010HTMLAction</web-action-class>
+		<flow-handler class="com.clt.framework.support.controller.html.handlers.WorkflowFlowHandler">
+				 <handler-result result="DEFAULT" screen="com.clt.framework.core.controller.TreeViewAdapter"/>
+       <handler-result result="SUBMENU" screen="com.clt.framework.core.controller.DefaultViewAdapter"/> 
+		</flow-handler>
+	</url-mapping>
+
+
+  <event-mapping>
+    <event-class>com.clt.syscommon.management.opus.role.event.ComSys010Event</event-class>
+    <service-action-class>com.clt.syscommon.management.opus.ProgramMappingManagementSC</service-action-class>
+  </event-mapping>
+  
+
+  <!--  사용자 조직정보 조회 팝업 -->
+  <url-mapping url="viewOrg.do" screen="viewOrg.screen" >
+    <web-action-class>com.clt.syscommon.management.opus.user.event.UserHTMLAction</web-action-class>
+  </url-mapping>
+  
+  <url-mapping url="searchOrg.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+    <web-action-class>com.clt.syscommon.management.opus.user.event.UserHTMLAction</web-action-class>
+  </url-mapping>
+  
+  <!-- 스케쥴 모니터링 -->
+    <url-mapping url="ADM_BAT_0002.do" screen="ADM_BAT_0002.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.schedule.event.ScheduleLogHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ADM_BAT_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.schedule.event.ScheduleLogHTMLAction</web-action-class>
+    </url-mapping>
+  <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.schedule.event.ScheduleLogEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.ScheduleSC</service-action-class>
+    </event-mapping>
+    
+    <!-- 스케줄 화면-->
+     <url-mapping url="BatchSchedule.do" screen="BatchSchedule.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.schedule.event.ScheduleHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="BatchScheduleGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.schedule.event.ScheduleHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.schedule.event.ScheduleEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.ScheduleSC</service-action-class>
+    </event-mapping>
+
+	<!-- 스케줄 프로그램 팝업 화면-->
+    <url-mapping url="ESM_HJS_0101.do" screen="ESM_HJS_0101.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.schedule.event.ScheduleHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <url-mapping url="ESM_HJS_0101GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.schedule.event.ScheduleHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.schedule.event.ScheduleEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.ScheduleSC</service-action-class>
+    </event-mapping>
+    
+ <!--  Bookmark Management  -->
+ 	<url-mapping url="BOOKMARK.do" screen="BOOKMARK.screen" >
+		<web-action-class>com.clt.syscommon.management.opus.bookmark.event.BookmarkManagementHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="BOOKMARKGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.syscommon.management.opus.bookmark.event.BookmarkManagementHTMLAction</web-action-class>
+	</url-mapping>
+
+<!--  Bookmark Move popup in Bookmark management -->
+	<url-mapping url="MOVEBOOKMARK.do" screen="MOVEBOOKMARK.screen" >
+		<web-action-class>com.clt.syscommon.management.opus.bookmark.event.BookmarkManagementHTMLAction</web-action-class>
+	</url-mapping>
+
+<!--  Bookmark Creation popup in main page -->
+	<url-mapping url="CREATEBOOKMARK.do" screen="CREATEBOOKMARK.screen" >
+		<web-action-class>com.clt.syscommon.management.opus.bookmark.event.BookmarkManagementHTMLAction</web-action-class>
+	</url-mapping>
+
+ <!-- View & Execute Bookmark  -->
+ 	<url-mapping url="BOOKMARK1.do" screen="BOOKMARK1.screen" >
+		<web-action-class>com.clt.syscommon.management.opus.bookmark.event.BookmarkManagementHTMLAction</web-action-class>
+	</url-mapping>
+
+	<url-mapping url="BOOKMARK1GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+		<web-action-class>com.clt.syscommon.management.opus.bookmark.event.BookmarkManagementHTMLAction</web-action-class>
+	</url-mapping>
+
+
+<!--  Bookmark Creation & Deletion -->
+	<url-mapping url="CREATEREMOVEBOOKMARK.do" screen="CREATEREMOVEBOOKMARK.screen">
+		<web-action-class>com.clt.syscommon.management.opus.bookmark.event.BookmarkManagementHTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.syscommon.management.opus.bookmark.event.BookmarkManagementEvent</event-class>
+		<service-action-class>com.clt.syscommon.management.opus.BookmarkManagementSC</service-action-class>
+	</event-mapping>
+    
+    
+ 		 <!--  User별 Program 매핑 -->
+	  <url-mapping url="userProgramMapping.do" screen="userProgramMapping.screen" >
+	    <web-action-class>com.clt.syscommon.management.opus.user.event.UserHTMLAction</web-action-class>
+	  </url-mapping>
+
+		<url-mapping url="searchUserProgramMapping.do" useFlowHandler="true" >
+			<web-action-class>com.clt.syscommon.management.opus.user.event.UserHTMLAction</web-action-class>
+			<flow-handler class="com.clt.framework.support.controller.html.handlers.WorkflowFlowHandler">
+					 <handler-result result="DEFAULT" screen="com.clt.framework.core.controller.TreeViewAdapter"/>
+	       <handler-result result="SUBMENU" screen="com.clt.syscommon.management.opus.user.event.UserProgramMappingViewAdapter"/> 
+			</flow-handler>
+		</url-mapping>
+	  
+ 	  <!--  User별 Program 매핑 End -->
+ 
+	<!--  Office -->
+    <url-mapping url="ADM_SYS_0006.do" screen="ADM_SYS_0006.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.officeprogram.event.OfficeProgramHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ADM_SYS_0006GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.officeprogram.event.OfficeProgramHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.officeprogram.event.OfficeProgramEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.OfficeProgramSC</service-action-class>
+    </event-mapping>
+
+		 <url-mapping url="ADM_SYS_0006Pop.do" screen="ADM_SYS_0006Pop.screen" >
+		   <web-action-class>com.clt.syscommon.management.opus.officeprogram.event.OfficeProgramMappingHTMLAction</web-action-class>
+		 </url-mapping>
+		
+		 <url-mapping url="ADM_SYS_0006PopGS.do" useFlowHandler="true" >
+				<web-action-class>com.clt.syscommon.management.opus.officeprogram.event.OfficeProgramMappingHTMLAction</web-action-class>
+				<flow-handler class="com.clt.framework.support.controller.html.handlers.WorkflowFlowHandler">
+						 <handler-result result="DEFAULT" screen="com.clt.framework.core.controller.TreeViewAdapter"/>
+		       <handler-result result="SUBMENU" screen="com.clt.framework.core.controller.DefaultViewAdapter"/> 
+				</flow-handler>
+		 </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.officeprogram.event.OfficeProgramMappingEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.OfficeProgramSC</service-action-class>
+    </event-mapping>
+    
+    <!-- Jung In Sun : 2009-07-02 start -->
+    <url-mapping url="Office_Management.do" screen="Office_Management.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.officemanagement.event.OFFICE_MANAGEMENTHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="Office_ManagementGS.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.officemanagement.event.OFFICE_MANAGEMENTHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.officemanagement.event.OfficeManagementEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.ProgramManagementSC</service-action-class>
+    </event-mapping>
+	<!-- Jung In Sun : 2009-07-02 end -->
+  
+
+	<!-- BackEndJob -->
+    <url-mapping url="COM_BACKENDJOB.do" screen="COM_BACKENDJOB.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.console.backendjob.event.COM_BACKENDJOBHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="COM_BACKENDJOBGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.console.backendjob.event.COM_BACKENDJOBHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.console.backendjob.event.ComBackendjobEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.console.ConsoleSC</service-action-class>
+    </event-mapping>
+    
+    <!--  사용자 오피스 체인지관리 -->
+  <url-mapping url="ADM_SYS_0008.do" screen="ADM_SYS_0008.screen" >
+    <web-action-class>com.clt.syscommon.management.opus.user.event.UI_COM_SYS_015HTMLAction</web-action-class>
+  </url-mapping>
+
+  <url-mapping url="ADM_SYS_0008Pop.do" screen="ADM_SYS_0008Pop.screen" >
+    <web-action-class>com.clt.syscommon.management.opus.user.event.UI_COM_SYS_015HTMLAction</web-action-class>
+  </url-mapping>
+
+  <url-mapping url="ADM_SYS_0008GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+    <web-action-class>com.clt.syscommon.management.opus.user.event.UI_COM_SYS_015HTMLAction</web-action-class>
+  </url-mapping>
+
+  <event-mapping>
+    <event-class>com.clt.syscommon.management.opus.user.event.UiComSys015Event</event-class>
+    <service-action-class>com.clt.syscommon.management.opus.UserManagementOfcCngSC</service-action-class>
+  </event-mapping>
+  
+  <!-- 2009-09-14 Jung-in-Sun User Info -->
+	<url-mapping url="UserInfo.do" screen="UserInfo.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.user.event.UserHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.user.event.UserManagementEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.UserManagementSC</service-action-class>
+    </event-mapping>
+  <!-- 2009-09-14 Jung-in-Sun User Info -->
+  
+  <!-- 2009-12-07 Jung-in-Sun dctionary -->
+	<url-mapping url="Dctionary.do" screen="Dctionary.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.dctionary.event.DctionaryHTMLAction</web-action-class>
+    </url-mapping>
+ 
+ 	<url-mapping url="DctionaryGS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.dctionary.event.DctionaryHTMLAction</web-action-class>
+    </url-mapping>
+    
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.dctionary.event.DctionaryEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.DctionarySC</service-action-class>
+    </event-mapping>
+  <!-- 2009-12-07 Jung-in-Sun dctionary -->
+
+	<!-- kyungbum kim : 2010-02-01 start -->
+    <url-mapping url="ADM_ACS_0001.do" screen="ADM_ACS_0001.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.accesshistory.event.ACCESSHISTORYHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ADM_ACS_0001GS.do" screen="com.clt.framework.core.controller.TreeViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.accesshistory.event.ACCESSHISTORYHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.accesshistory.event.AccesshistoryEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.AccessHistorySC</service-action-class>
+    </event-mapping>
+	<!-- kyungbum kim : 2010-02-01 end -->
+
+	<!-- kyungbum kim : 2010-02-24 start -->
+    <url-mapping url="ADM_ACS_0002.do" screen="ADM_ACS_0002.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.accesshistory.event.LastLoginDateHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ADM_ACS_0002GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.accesshistory.event.LastLoginDateHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.accesshistory.event.LastLoginDateEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.AccessHistorySC</service-action-class>
+    </event-mapping>
+	<!-- kyungbum kim : 2010-02-24 end -->
+
+	<!-- kyungbum kim : 2010-04-08 start -->
+    <url-mapping url="ADM_SYS_0010.do" screen="ADM_SYS_0010.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.copyauthority.event.CopyAuthorityHTMLAction</web-action-class>
+    </url-mapping>
+    <url-mapping url="ADM_SYS_0010Pop.do" screen="ADM_SYS_0010Pop.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.copyauthority.event.CopyAuthorityHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ADM_SYS_0010GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.copyauthority.event.CopyAuthorityHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.copyauthority.event.CopyAuthorityEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.CopyAuthoritySC</service-action-class>
+    </event-mapping>
+	<!-- kyungbum kim : 2010-04-08 end -->
+
+	<!-- kyungbum kim : 2010-04-27 start -->
+    <url-mapping url="ADM_SYS_0009.do" screen="ADM_SYS_0009.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.superuser.event.SuperUserHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ADM_SYS_0009GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.superuser.event.SuperUserHTMLAction</web-action-class>
+    </url-mapping>
+
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.superuser.event.SuperUserEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.SuperUserSC</service-action-class>
+    </event-mapping>
+	<!-- kyungbum kim : 2010-04-27 end -->
+
+
+	<!-- kjy : 2013-06-28 start -->
+    <url-mapping url="ADM_SYS_0011.do" screen="ADM_SYS_0011.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.itemcontrolmanagement.event.ItemControlManagementHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ADM_SYS_0011GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.itemcontrolmanagement.event.ItemControlManagementHTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.itemcontrolmanagement.event.ItemControlManagementEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.ItemControlManagementSC</service-action-class>
+    </event-mapping>
+	<!-- kjy : 2013-06-28 end -->
+
+	<!-- jLee : 2014-10-30 start --> 
+    <url-mapping url="ADM_SYS_0012.do" screen="ADM_SYS_0012.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.codemanagement.event.CodeManagementHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ADM_SYS_0012GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.codemanagement.event.CodeManagementHTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.codemanagement.event.CodeManagementEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.CodeManagementSC</service-action-class>
+    </event-mapping>
+	<!-- jLee : 2013-10-30 end -->
+
+	<!-- SWJean : 2014-12-01 start --> 
+    <url-mapping url="ADM_SYS_0013.do" screen="ADM_SYS_0013.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.faxmanagement.event.FaxManagementHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ADM_SYS_0013GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.faxmanagement.event.FaxManagementHTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.faxmanagement.event.FaxManagementEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.FaxManagementSC</service-action-class>
+    </event-mapping>
+	<!-- SWJean : 2014-12-01  end -->
+	<!-- JeongHoon,Kim start -->
+    <url-mapping url="ADM_SYS_0014.do" screen="ADM_SYS_0014.screen" >
+        <web-action-class>com.clt.syscommon.management.opus.mqinboundmonitoring.event.MqInboundMonitoringHTMLAction</web-action-class>
+    </url-mapping>
+
+    <url-mapping url="ADM_SYS_0014GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.mqinboundmonitoring.event.MqInboundMonitoringHTMLAction</web-action-class>
+    </url-mapping>
+ 
+    <event-mapping>
+        <event-class>com.clt.syscommon.management.opus.mqinboundmonitoring.event.MqInboundMonitoringEvent</event-class>
+        <service-action-class>com.clt.syscommon.management.opus.MqInboundMonitoringSC</service-action-class>
+    </event-mapping>
+	<!-- JeongHoon,Kim  end -->
+	<!-- Jeong-Hoon, Kim : 2016-03-07 start -->
+	<url-mapping url="ADM_SYS_0015.do" screen="ADM_SYS_0015.screen">
+		<web-action-class>com.clt.syscommon.management.opus.mail.event.NoticMailHTMLAction</web-action-class>
+	</url-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.syscommon.management.opus.mail.event.NoticeMailEvent</event-class>
+		<service-action-class>com.clt.syscommon.management.opus.NoticeMailSC</service-action-class>
+	</event-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.syscommon.management.opus.mail.event.NoticeMailSendEvent</event-class>
+		<service-action-class>com.clt.syscommon.management.opus.NoticeMailSendSC</service-action-class>
+	</event-mapping>
+	<!-- Jeong-Hoon, Kim : 2016-03-07 start -->
+	<!-- Jeong-Hoon, Kim : 2016-03-16 start -->
+	<url-mapping url="ADM_SYS_0016.do" screen="ADM_SYS_0016.screen">
+		<web-action-class>com.clt.syscommon.management.opus.mailmonitoring.event.MailMonitoringHTMLAction</web-action-class>
+	</url-mapping>
+	<url-mapping url="ADM_SYS_0017.do" screen="ADM_SYS_0017.screen">
+		<web-action-class>com.clt.syscommon.management.opus.mailmonitoring.event.MailMonitoringHTMLAction</web-action-class>
+	</url-mapping>
+
+    <url-mapping url="ADM_SYS_0016GS.do" screen="com.clt.framework.core.controller.DefaultViewAdapter" >
+        <web-action-class>com.clt.syscommon.management.opus.mailmonitoring.event.MailMonitoringHTMLAction</web-action-class>
+    </url-mapping>
+ 
+
+	<event-mapping>
+		<event-class>com.clt.syscommon.management.opus.mailmonitoring.event.MailMonitoringEvent</event-class>
+		<service-action-class>com.clt.syscommon.management.opus.mailmonitoring.MailMonitoringSC</service-action-class>
+	</event-mapping>
+
+	<event-mapping>
+		<event-class>com.clt.syscommon.management.opus.mailmonitoring.event.MailMonitoringSendEvent</event-class>
+		<service-action-class>com.clt.syscommon.management.opus.mailmonitoring.MailMonitoringSendSC</service-action-class>
+	</event-mapping>
+	<!-- Jeong-Hoon, Kim : 2016-03-07 start -->
+</mappings>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOAutoRevVVDListRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT D.VSL_CD
+     , D.SKD_VOY_NO
+     , D.SKD_DIR_CD
+     , R.RLANE_DIR_CD AS REV_DIR_CD
+     , D.INV_RGST_NO
+     , D.INV_RGST_SEQ
+FROM   AP_PAY_INV H
+     , AP_PAY_INV_DTL D
+     , AR_MST_REV_VVD R
+WHERE  H.INV_SUB_SYS_CD IN ('PSO', 'MNR', 'TLL')
+   AND H.INV_RGST_NO    = D.INV_RGST_NO
+   AND D.DELT_FLG       = 'N'
+   AND H.INV_NO         = @[inv_no]
+   AND H.VNDR_SEQ       = @[vndr_seq]
+   AND D.VSL_CD         = R.VSL_CD
+   AND D.SKD_VOY_NO     = R.SKD_VOY_NO
+   AND D.SKD_DIR_CD     = R.SKD_DIR_CD
+   AND D.SLAN_CD        = R.SLAN_CD
+   AND R.DELT_FLG       = 'N'
+   AND R.RLANE_CD       = NVL(
+                              (SELECT RLANE_CD
+                              FROM    AR_FINC_DIR_CONV B
+                                    , MDM_LOCATION L
+                              WHERE   B.SLAN_CD     = D.SLAN_CD
+                                  AND L.LOC_CD      = D.PORT_CD
+                                  AND B.SCONTI_CD   = L.SCONTI_CD
+                                  AND B.SLAN_DIR_CD = D.SKD_DIR_CD
+                                  AND B.DELT_FLG    = 'N'
+                              ), R.RLANE_CD)
+   AND R.REV_YRMON = NVL(SUBSTR(H.GL_DT,1,6), ( SELECT MAX(REV_YRMON)
+       FROM    AR_MST_REV_VVD
+       WHERE   VSL_CD     = D.VSL_CD
+           AND SKD_VOY_NO = D.SKD_VOY_NO
+           AND SKD_DIR_CD = D.SKD_DIR_CD
+           AND SLAN_CD    = D.SLAN_CD
+           AND DELT_FLG   = 'N'
+           AND RLANE_CD   = NVL(
+                                (SELECT RLANE_CD
+                                FROM    AR_FINC_DIR_CONV B
+                                      , MDM_LOCATION L
+                                WHERE   B.SLAN_CD     = D.SLAN_CD
+                                    AND L.LOC_CD      = D.PORT_CD
+                                    AND B.SCONTI_CD   = L.SCONTI_CD
+                                    AND B.SLAN_DIR_CD = D.SKD_DIR_CD
+                                    AND B.DELT_FLG    = 'N'
+                                ), RLANE_CD)
+       ))
+
+UNION ALL
+
+SELECT 'CNTC' VSL_CD
+     , DECODE(NVL(
+                  ( SELECT
+                          CASE
+                                  WHEN SUM(DECODE(A.CLZ_STS_CD
+                                                ,'O',1,0)) > 0
+                                  THEN 'O'
+                                  ELSE 'C'
+                          END STS
+                  FROM    AP_PERIOD A
+                  WHERE   A.SYS_DIV_CD = '15'
+                      AND A.EFF_YRMON  = TO_CHAR(H.INV_ISS_DT,'YYYYMM')
+                      AND A.OFC_CD    IN ( H.COST_OFC_CD
+                                         , ( SELECT M.AR_HD_QTR_OFC_CD
+                                           FROM    MDM_ORGANIZATION M
+                                           WHERE   M.OFC_CD = H.COST_OFC_CD
+                                           ))
+                      AND A.AR_AP_DIV_CD = 'P'
+                  ),'C')
+            , 'O', TO_CHAR(H.INV_ISS_DT,'YYMM')
+            , 'C', ( SELECT SUBSTR(MIN(N.EFF_YRMON),3,4)
+              FROM    AP_PERIOD N
+              WHERE   N.SYS_DIV_CD = '15'
+                  AND N.EFF_YRMON >= TO_CHAR(H.INV_ISS_DT,'YYYYMM')
+                  AND N.OFC_CD    IN ( H.COST_OFC_CD
+                                     , ( SELECT M.AR_HD_QTR_OFC_CD
+                                       FROM    MDM_ORGANIZATION M
+                                       WHERE   M.OFC_CD = H.COST_OFC_CD
+                                       ))
+                  AND N.AR_AP_DIV_CD = 'P'
+                  AND N.CLZ_STS_CD   = 'O'
+              )) SKD_VOY_NO
+     , 'M' SKD_DIR_CD
+     , 'M' REV_DIR_CD
+     , D.INV_RGST_NO
+     , D.INV_RGST_SEQ
+FROM   AP_PAY_INV H
+     , AP_PAY_INV_DTL D
+WHERE  H.INV_NO          = @[inv_no]   --:inv_no
+   AND H.VNDR_SEQ        = @[vndr_seq] --:vndr_seq
+   AND H.DELT_FLG        = 'N'
+   AND H.INV_SUB_SYS_CD  NOT IN ('PSO', 'MNR', 'TLL')
+   AND H.INV_RGST_NO     = D.INV_RGST_NO
+   AND D.DELT_FLG        = 'N'
+   AND D.VSL_CD          <> 'CNTC'			]]></sql>
+			<params>
+				<param name="inv_no" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

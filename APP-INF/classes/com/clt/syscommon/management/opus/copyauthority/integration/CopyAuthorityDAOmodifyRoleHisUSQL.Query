@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="CopyAuthorityDAOmodifyRoleHisUSQL">
+			<desc><![CDATA[DESC Enter..]]></desc>
+			<sql><![CDATA[
+UPDATE COM_USR_ROLE_MTCH_HIS
+   SET EXP_DT = SYSDATE,
+       UPD_USR_ID = 'authcopy',
+       UPD_DT = SYSDATE
+ WHERE USR_ID = @[to_usr_id]
+   AND EXP_DT = TO_DATE('9999-12-31', 'YYYY-MM-DD')			]]></sql>
+			<params>
+				<param name="to_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

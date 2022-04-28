@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOCancelApprovalUSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+UPDATE COM_APRO_RQST_HDR
+		 SET APSTS_CD='D' 			
+		 WHERE APRO_RQST_NO=( 	
+		       SELECT APRO_RQST_NO FROM COM_APRO_CSR_DTL WHERE CSR_NO=@[csr_no])			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

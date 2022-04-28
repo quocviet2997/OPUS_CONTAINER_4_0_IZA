@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="BookmarkManagementDAOComBookmarkPrntPgmNoRSQL">
+			<desc><![CDATA[SELECT PRNT_PGM_NO FROM COM_MNU_CFG WHERE CHD_PGM_NO =@[pgm_no]]]></desc>
+			<sql><![CDATA[
+SELECT PRNT_PGM_NO FROM COM_MNU_CFG WHERE CHD_PGM_NO =@[pgm_no] AND ROWNUM = 1			]]></sql>
+			<params>
+				<param name="pgm_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

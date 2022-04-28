@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="FinanceCreationDBDAOSearchGlEstimateRevenueVvdListRSQL">
+			<desc><![CDATA[searchGlEstimateRevenueVvdList]]></desc>
+			<sql><![CDATA[
+SELECT  EXE_YRMON
+       ,REV_YRMON
+       ,VSL_CD
+       ,SKD_VOY_NO
+       ,SKD_DIR_CD
+       ,REV_DIR_CD
+       ,ESTM_VVD_TP_CD
+       ,ESTM_IOC_DIV_CD
+       ,EXE_YRMON H_EXE_YRMON
+       ,REV_YRMON H_REV_YRMON
+       ,VSL_CD H_VSL_CD
+       ,SKD_VOY_NO H_SKD_VOY_NO
+       ,SKD_DIR_CD H_SKD_DIR_CD
+       ,REV_DIR_CD H_REV_DIR_CD
+       ,ESTM_VVD_TP_CD H_ESTM_VVD_TP_CD
+       ,ESTM_IOC_DIV_CD H_ESTM_IOC_DIV_CD
+       ,ESTM_VVD_HDR_ID
+       ,ESTM_BC_DIV_CD
+       ,VST_DT
+       ,VED_DT
+       ,RLANE_CD
+       ,LINE_NO
+       ,CRE_USR_ID
+       ,UPD_USR_ID
+  FROM GL_ESTM_REV_VVD
+ WHERE 1 = 1
+#if (${exe_yrmon} != '')
+   AND EXE_YRMON = @[exe_yrmon]
+#end
+#if (${rev_yrmon} != '')
+   AND REV_YRMON = @[rev_yrmon]
+#end
+#if (${vsl_cd} != '')
+   AND VSL_CD = @[vsl_cd]
+#end
+#if (${vvd} != '')
+   AND VSL_CD||SKD_VOY_NO||SKD_DIR_CD||REV_DIR_CD = @[vvd]
+#end
+#if (${rev_dir_cd} != '')
+   AND REV_DIR_CD = @[rev_dir_cd]
+#end
+#if (${estm_vvd_tp_cd} != '')
+   AND ESTM_VVD_TP_CD = @[estm_vvd_tp_cd]
+#end
+#if (${estm_ioc_div_cd} != '')
+   AND ESTM_IOC_DIV_CD = @[estm_ioc_div_cd]
+#end			]]></sql>
+			<params>
+				<param name="exe_yrmon" type="12" value="" out="N"/>
+				<param name="rev_yrmon" type="12" value="" out="N"/>
+				<param name="vsl_cd" type="12" value="" out="N"/>
+				<param name="vvd" type="12" value="" out="N"/>
+				<param name="rev_dir_cd" type="12" value="" out="N"/>
+				<param name="estm_vvd_tp_cd" type="12" value="" out="N"/>
+				<param name="estm_ioc_div_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

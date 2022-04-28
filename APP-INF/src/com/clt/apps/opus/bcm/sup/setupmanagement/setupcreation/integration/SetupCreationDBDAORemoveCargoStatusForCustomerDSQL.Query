@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="SetupCreationDBDAORemoveCargoStatusForCustomerDSQL">
+			<desc><![CDATA[Cargo Tracking Info.(Non physical event for customer) 정보를 삭제한다]]></desc>
+			<sql><![CDATA[
+DELETE FROM SCE_EDI_MNG_STS
+ WHERE ORG_EDI_STS_CD = @[org_edi_sts_cd]
+   AND EDI_STS_SEQ = @[edi_sts_seq]			]]></sql>
+			<params>
+				<param name="org_edi_sts_cd" type="12" value="" out="N"/>
+				<param name="edi_sts_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

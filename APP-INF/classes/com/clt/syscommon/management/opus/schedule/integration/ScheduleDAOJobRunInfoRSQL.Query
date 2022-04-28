@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ScheduleDAOJobRunInfoRSQL">
+			<desc><![CDATA[autosys job run information query]]></desc>
+			<sql><![CDATA[
+select status, 
+to_char(new_time(to_date('19700101','yyyymmdd') + (startime/60/60/24), 'YST', 'GMT'), 'yyyy-mm-dd hh24:mi:ss') startime, 
+to_char(new_time(to_date('19700101','yyyymmdd') + (endtime/60/60/24), 'YST', 'GMT'), 'yyyy-mm-dd hh24:mi:ss') endtime
+from (select b.status, b.startime, b.endtime
+from ujo_job a, ujo_job_runs b
+where a.joid = b.joid
+and b.run_num > substr(@[id],instr(@[id],'-')+1)
+and a.job_name = @[job_name]
+and b.status is not null
+order by b.run_num)
+where rownum = 1
+union all
+select b.status,
+to_char(new_time(to_date('19700101','yyyymmdd') + (b.startime/60/60/24), 'YST', 'GMT'), 'yyyy-mm-dd hh24:mi:ss') startime, 
+to_char(new_time(to_date('19700101','yyyymmdd') + (b.endtime/60/60/24), 'YST', 'GMT'), 'yyyy-mm-dd hh24:mi:ss') endtime
+from (
+  select b.joid, b.run_num from
+  (
+      select 
+       joid, EVENT_TIME_GMT
+      from ujo_proc_event 
+      where job_name like @[job_name]
+      and event_time_gmt = substr(@[id],instr(@[id],'-')+1) 
+      and event = 108
+  ) a, ujo_proc_event b 
+  where a.joid = b.joid
+  and to_date(to_char(new_time(to_date('19700101','yyyymmdd') + (a.EVENT_TIME_GMT/60/60/24), 'YST', 'GMT'), 'yyyy-mm-dd hh24:mi:ss'), 'yyyy-mm-dd hh24:mi:ss') < b.stamp
+  and a.EVENT_TIME_GMT <> b.EVENT_TIME_GMT
+  and b.job_name like @[job_name]
+  and b.event = 108
+  order by b.run_num  
+)a, ujo_job_runs b
+where a.joid = b.joid
+and a.run_num = b.run_num			]]></sql>
+			<params>
+				<param name="id" type="12" value="" out="N"/>
+				<param name="job_name" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

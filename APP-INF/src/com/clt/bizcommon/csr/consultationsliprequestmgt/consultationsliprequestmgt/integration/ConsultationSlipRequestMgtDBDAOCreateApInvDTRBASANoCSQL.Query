@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCreateApInvDTRBASANoCSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+insert into AP_INV_DTRB (
+ csr_no                                            ,
+ line_seq                                          ,
+ line_no                                           ,
+ line_tp_lu_cd                                     ,
+ inv_amt                                           ,
+ inv_desc                                          ,
+ inv_tax_cd                                        ,
+ dtrb_coa_co_cd                                    ,
+ dtrb_coa_rgn_cd                                   ,
+ dtrb_coa_ctr_cd                                   ,
+ dtrb_coa_acct_cd                                  ,
+ dtrb_coa_vvd_cd                                   ,
+ dtrb_coa_inter_co_cd                              ,
+ dtrb_coa_ftu_n1st_cd                              ,
+ dtrb_coa_ftu_n2nd_cd                              ,
+ attr_cate_nm                                      ,
+ attr_ctnt1                                        ,
+ attr_ctnt2                                        ,
+ attr_ctnt3                                        ,
+ attr_ctnt4                                        ,
+ attr_ctnt5                                        ,
+ attr_ctnt6                                        ,
+ attr_ctnt7                                        ,
+ attr_ctnt8                                        ,
+ attr_ctnt9                                        ,
+ attr_ctnt10                                       ,
+ attr_ctnt11                                       ,
+ attr_ctnt12                                       ,
+ attr_ctnt13                                       ,
+ attr_ctnt14                                       ,
+ attr_ctnt15                                       ,
+ bkg_no                                            ,
+ cntr_tpsz_cd                                      ,
+ act_vvd_cd                                        ,
+ pln_sctr_div_cd                                   ,
+ so_crr_cd                                         ,
+ yd_cd                                             ,
+ ftu_use_ctnt1                                     ,
+ ftu_use_ctnt2                                     ,
+ ftu_use_ctnt3                                     ,
+ ftu_use_ctnt4                                     ,
+ ftu_use_ctnt5                                     ,
+ cre_dt                                            ,
+ cre_usr_id                                        ,
+ eai_evnt_dt
+  ) values (
+ @[csr_no]                                              ,
+ @[line_seq]                                            ,
+ @[line_no]                                             ,
+ DECODE(@[cre_tp_cd], 'P', 'MISCELLANEOUS', 'ITEM') ,
+ @[total_amt]                                           ,
+ (SELECT acct_eng_nm FROM mdm_account 
+  WHERE acct_cd = (SELECT C.ATTR_CTNT1
+   FROM COM_ACCT_HRD_CDG_DESC D, COM_ACCT_HRD_CDG_CTNT C
+  WHERE ROWNUM = 1
+    AND D.SRC_MDL_CD = C.SRC_MDL_CD
+    AND D.HRD_CDG_ID = C.HRD_CDG_ID
+    AND D.SRC_MDL_CD = 'CSR'
+    AND D.HRD_CDG_ID = 'LEGY_SYS_CLEARING')),
+ ''                                                 ,
+ '01'                                               ,
+ (SELECT finc_rgn_cd FROM MDM_ORGANIZATION WHERE ofc_cd = @[cost_ofc_cd] AND NVL(delt_flg,'N') = 'N'),
+ (SELECT ap_ctr_cd FROM MDM_ORGANIZATION WHERE ofc_cd = @[cost_ofc_cd] AND NVL(delt_flg,'N') = 'N'),
+ (SELECT C.ATTR_CTNT1
+   FROM COM_ACCT_HRD_CDG_DESC D, COM_ACCT_HRD_CDG_CTNT C
+  WHERE ROWNUM = 1
+    AND D.SRC_MDL_CD = C.SRC_MDL_CD
+    AND D.HRD_CDG_ID = C.HRD_CDG_ID
+    AND D.SRC_MDL_CD = 'CSR'
+    AND D.HRD_CDG_ID = 'LEGY_SYS_CLEARING'),
+ '0000000000'                                               ,
+ (SELECT NVL(subs_co_cd, '00') FROM mdm_vendor WHERE vndr_seq = @[vndr_seq]),
+ '000000'                                                  ,
+ '000000'                                                  ,
+ (SELECT C.ATTR_CTNT1
+   FROM COM_ACCT_HRD_CDG_DESC D, COM_ACCT_HRD_CDG_CTNT C
+  WHERE ROWNUM = 1
+    AND D.SRC_MDL_CD = C.SRC_MDL_CD
+    AND D.HRD_CDG_ID = C.HRD_CDG_ID
+    AND D.SRC_MDL_CD = 'CSR'
+    AND D.HRD_CDG_ID = 'LEGY_SYS_CLEARING'),
+ @[inv_no]                                                 ,
+ @[iss_dt]                                                 ,
+ NVL(NVL(@[loc_cd], (SELECT MAX(ATTR_CTNT3) FROM AP_INV_DTRB WHERE CSR_NO = @[csr_no] AND ATTR_CTNT3 IS NOT NULL)), (SELECT LOC_CD FROM MDM_ORGANIZATION WHERE OFC_CD = @[cost_ofc_cd])), 
+ ''                                                 ,
+ ''                                                 ,
+ ''                                                 ,
+ ''                                                 ,
+ ''                                                 ,
+ ''                                                 ,
+ ''                                                 ,
+ NVL((SELECT ASA_PRD_TO_DT FROM SAR_ASA_MST WHERE ASA_NO = (SELECT ATTR_CTNT2 FROM AP_INV_HDR WHERE CSR_NO = @[csr_no])), SUBSTR(REPLACE(@[iss_dt], '/', ''), 1, 8)),
+ NVL((SELECT MAX(ATTR_CTNT12) FROM AP_INV_DTRB WHERE CSR_NO = @[csr_no] AND ATTR_CTNT12 IS NOT NULL), @[cost_ofc_cd]),
+ ''                                                 ,
+ NVL((SELECT MAX(ATTR_CTNT14) FROM AP_INV_DTRB WHERE CSR_NO = @[csr_no] AND ATTR_CTNT14 IS NOT NULL), 'CNT'),
+ ''                                                 ,
+ ''                                                 ,
+ ''                                                 ,
+ ''                                                 ,
+ 'O'                                                ,
+ ''                                                 ,
+ ''                                                 ,
+ ''                                                 ,
+ ''                                                 ,
+ ''                                                 ,
+ ''                                                 ,
+ ''                                                 ,
+ GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd])       ,
+ @[cre_usr_id]                                      ,
+ GLOBALDATE_PKG.TIME_LOCAL_OFC_FNC(@[ofc_cd])
+ )			]]></sql>
+			<params>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="line_seq" type="12" value="" out="N"/>
+				<param name="line_no" type="12" value="" out="N"/>
+				<param name="cre_tp_cd" type="12" value="" out="N"/>
+				<param name="total_amt" type="12" value="" out="N"/>
+				<param name="cost_ofc_cd" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+				<param name="inv_no" type="12" value="" out="N"/>
+				<param name="iss_dt" type="12" value="" out="N"/>
+				<param name="loc_cd" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="cre_usr_id" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

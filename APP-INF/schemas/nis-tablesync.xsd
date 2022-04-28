@@ -1,0 +1,2473 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://irep.clt.com/nists"
+            targetNamespace="http://irep.clt.com/nists">
+  <xsd:complexType name="EAIHeaderType">
+    <xsd:sequence>
+      <xsd:element name="InstanceId" type="xsd:string"/>
+      <xsd:element name="Parameters" minOccurs="0">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Parameter" maxOccurs="unbounded">
+              <xsd:complexType>
+                <xsd:simpleContent>
+                  <xsd:extension base="xsd:string">
+                    <xsd:anyAttribute/>
+                  </xsd:extension>
+                </xsd:simpleContent>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="BOOKING_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="BOOKINGCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="BOOKING" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="BKG_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string"/>
+                          <xsd:element name="VSL_CD" type="xsd:string"/>
+                          <xsd:element name="SKD_VOYAGE_NO" type="xsd:string"/>
+                          <xsd:element name="SKD_DIR_CD" type="xsd:string"/>
+                          <xsd:element name="BKG_LANE" type="xsd:string"/>
+                          <xsd:element name="POR_LOC" type="xsd:string"/>
+                          <xsd:element name="POL_LOC" type="xsd:string"/>
+                          <xsd:element name="POD_LOC" type="xsd:string"/>
+                          <xsd:element name="DEL_LOC" type="xsd:string"/>
+                          <xsd:element name="PRE_RLY" type="xsd:string"/>
+                          <xsd:element name="POST_RLY" type="xsd:string"/>
+                          <xsd:element name="BKG_OFC" type="xsd:string"/>
+                          <xsd:element name="RHQ_OFC" type="xsd:string"/>
+                          <xsd:element name="RGN_OFC" type="xsd:string"/>
+                          <xsd:element name="SAL_OFC" type="xsd:string"/>
+                          <xsd:element name="SAL_OFC_IB" type="xsd:string"/>
+                          <xsd:element name="BKG_SPLIT_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_STF" type="xsd:string"/>
+                          <xsd:element name="BKG_DT" type="xsd:string"/>
+                          <xsd:element name="SREP_CD" type="xsd:string"/>
+                          <xsd:element name="BKG_STS" type="xsd:string"/>
+                          <xsd:element name="BKG_REASON_S" type="xsd:string"/>
+                          <xsd:element name="BKG_REASON_E" type="xsd:string"/>
+                          <xsd:element name="BKG_REASON_C" type="xsd:string"/>
+                          <xsd:element name="BKG_REASON_R" type="xsd:string"/>
+                          <xsd:element name="BKG_REASON_D" type="xsd:string"/>
+                          <xsd:element name="BKG_REASON_A" type="xsd:string"/>
+                          <xsd:element name="BKG_REASON_P" type="xsd:string"/>
+                          <xsd:element name="BKG_REASON_T" type="xsd:string"/>
+                          <xsd:element name="BKG_REASON_B" type="xsd:string"/>
+                          <xsd:element name="BKG_REASON_F" type="xsd:string"/>
+                          <xsd:element name="BKG_REASON_O" type="xsd:string"/>
+                          <xsd:element name="BKG_EXP_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_CGO_TP" type="xsd:string"/>
+                          <xsd:element name="BKG_ADV_SHT" type="xsd:string"/>
+                          <xsd:element name="BKG_HOT" type="xsd:string"/>
+                          <xsd:element name="BKG_NVOCC_CD" type="xsd:string"/>
+                          <xsd:element name="BKG_RCV_TERM" type="xsd:string"/>
+                          <xsd:element name="BKG_RCV_DOOR" type="xsd:string"/>
+                          <xsd:element name="BKG_DLV_TERM" type="xsd:string"/>
+                          <xsd:element name="BKG_DLV_DOOR" type="xsd:string"/>
+                          <xsd:element name="BKG_FIN_DST" type="xsd:string"/>
+                          <xsd:element name="BKG_OCP" type="xsd:string"/>
+                          <xsd:element name="CMDT_CD" type="xsd:string"/>
+                          <xsd:element name="CMDT_TLI_NO" type="xsd:string"/>
+                          <xsd:element name="CMDT_REP" type="xsd:string"/>
+                          <xsd:element name="BKG_SPE_DG" type="xsd:string"/>
+                          <xsd:element name="BKG_SPE_RF" type="xsd:string"/>
+                          <xsd:element name="BKG_SPE_AK" type="xsd:string"/>
+                          <xsd:element name="BKG_SPE_BB" type="xsd:string"/>
+                          <xsd:element name="BKG_SPE_RD" type="xsd:string"/>
+                          <xsd:element name="BKG_PKG_QTY" type="xsd:string"/>
+                          <xsd:element name="PKG_CD" type="xsd:string"/>
+                          <xsd:element name="BKG_MEA_QTY" type="xsd:string"/>
+                          <xsd:element name="BKG_MEA_TP" type="xsd:string"/>
+                          <xsd:element name="BKG_ACTWGT_QTY" type="xsd:string"/>
+                          <xsd:element name="BKG_ACTWGT_TP" type="xsd:string"/>
+                          <xsd:element name="BKG_ESTWGT_QTY" type="xsd:string"/>
+                          <xsd:element name="BKG_ESTWGT_TP" type="xsd:string"/>
+                          <xsd:element name="BKG_LC_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_EDI_NO" type="xsd:string"/>
+                          <xsd:element name="ORG_SVC" type="xsd:string"/>
+                          <xsd:element name="DST_SVC" type="xsd:string"/>
+                          <xsd:element name="BKG_SO_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_SCAC_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_RMK" type="xsd:string"/>
+                          <xsd:element name="BKG_SPE_AUTH" type="xsd:string"/>
+                          <xsd:element name="BL_NO" type="xsd:string"/>
+                          <xsd:element name="BL_NO_TP" type="xsd:string"/>
+                          <xsd:element name="BL_NO_CHK" type="xsd:string"/>
+                          <xsd:element name="BL_TP" type="xsd:string"/>
+                          <xsd:element name="BKG_CNCL_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_C_PERSON" type="xsd:string"/>
+                          <xsd:element name="BKG_C_TEL" type="xsd:string"/>
+                          <xsd:element name="BKG_C_FAX" type="xsd:string"/>
+                          <xsd:element name="BKG_C_EMAIL" type="xsd:string"/>
+                          <xsd:element name="BKG_HOT_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_ORG_ROUTE" type="xsd:string"/>
+                          <xsd:element name="BKG_DST_ROUTE" type="xsd:string"/>
+                          <xsd:element name="BKG_PSA_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_REF_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_AUS_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_QURN" type="xsd:string"/>
+                          <xsd:element name="BKG_SR_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_BOUND_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_BOND_TP" type="xsd:string"/>
+                          <xsd:element name="BKG_BOND_CD" type="xsd:string"/>
+                          <xsd:element name="BKG_WARE_CD" type="xsd:string"/>
+                          <xsd:element name="BKG_CGO_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_HANG_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_SOC_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_ESUB" type="xsd:string"/>
+                          <xsd:element name="BKG_OHAU_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_DHAU_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_PICKUP_LOC" type="xsd:string"/>
+                          <xsd:element name="BKG_PICKUP_CY" type="xsd:string"/>
+                          <xsd:element name="BKG_PICKUP_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_RETURN_LOC" type="xsd:string"/>
+                          <xsd:element name="BKG_RETURN_CY" type="xsd:string"/>
+                          <xsd:element name="BKG_CNTR_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_CNTR_STF" type="xsd:string"/>
+                          <xsd:element name="BKG_CRD_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_CBF_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_CBF_CHG" type="xsd:string"/>
+                          <xsd:element name="BKG_BDR_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_BDR_CHG" type="xsd:string"/>
+                          <xsd:element name="BKG_BDR_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_CM_FRM" type="xsd:string"/>
+                          <xsd:element name="HAN_BKG_NO" type="xsd:string"/>
+                          <xsd:element name="HAN_BKG_SPLIT" type="xsd:string"/>
+                          <xsd:element name="BKG_NO_GEN_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_CNTR_RFM" type="xsd:string"/>
+                          <xsd:element name="BKG_SENT_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_SENT_TIME" type="xsd:string"/>
+                          <xsd:element name="BKG_FWRD_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_CA_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_COM_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_COM_SPLIT_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_FIN_DIR_CD" type="xsd:string"/>
+                          <xsd:element name="BKG_CBF_AUTH_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_NO_SED" type="xsd:string"/>
+                          <xsd:element name="BKG_AGT_CD" type="xsd:string"/>
+                          <xsd:element name="BKG_EQ_OFC" type="xsd:string"/>
+                          <xsd:element name="LOC_PU_YD" type="xsd:string"/>
+                          <xsd:element name="BKG_CORR_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_CORR_STF" type="xsd:string"/>
+                          <xsd:element name="BKG_CORR_OFC" type="xsd:string"/>
+                          <xsd:element name="BKG_CORR_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_ACTWGT_PRN" type="xsd:string"/>
+                          <xsd:element name="BKG_CRE_IND" type="xsd:string"/>
+                          <xsd:element name="POO_LOC" type="xsd:string"/>
+                          <xsd:element name="PFD_LOC" type="xsd:string"/>
+                          <xsd:element name="BKG_DBL_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_AP_BRO_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_BIS_IND" type="xsd:string"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_RMK2" type="xsd:string"/>
+                          <xsd:element name="EXT_BKG_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_AUDIT_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_SPE_HD" type="xsd:string"/>
+                          <xsd:element name="BKG_CDR_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_CDR_CHG" type="xsd:string"/>
+                          <xsd:element name="BKG_CDR_DT" type="xsd:string"/>
+                          <xsd:element name="BE_VSL_CD" type="xsd:string"/>
+                          <xsd:element name="BE_SKD_VOYAGE_NO" type="xsd:string"/>
+                          <xsd:element name="BE_SKD_DIR_CD" type="xsd:string"/>
+                          <xsd:element name="BE_POL_LOC" type="xsd:string"/>
+                          <xsd:element name="BKG_MT_IND" type="xsd:string"/>
+                          <xsd:element name="BE_POD_LOC" type="xsd:string"/>
+                          <xsd:element name="BKG_POD_TMNL" type="xsd:string"/>
+                          <xsd:element name="BKG_FG_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_ORG_TRANS_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_DST_TRANS_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_RB_FLAG" type="xsd:string"/>
+                          <xsd:element name="BKG_RB_IND" type="xsd:string"/>
+                          <xsd:element name="BKG_MT_DT" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="BKG_LOADING_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_DUE_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="ORG_ZONE_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DST_ZONE_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_PRD_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_REASON_M" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_SPE_PC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_FULL_PU_LOC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_FULL_PU_CY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_CTRT_OFC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_CTRT_SREP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_IB_DEL_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_IB_RETURN_LOC_CY"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="BL_MST_BKG_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_MST_BKG_NO_SPLIT"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="BKG_BS_CD"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="BKG_FLEX_IND"
+                                       type="xsd:string" minOccurs="0"/>                        
+                          <xsd:element name="POL_ZONE_CD" type="xsd:string"/>                     
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="BKG_CNTR_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="BKG_CNTRCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="BKG_CNTR" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="CNTR_NO" type="xsd:string"/>
+                          <xsd:element name="CNTRTS_CD" type="xsd:string"/>
+                          <xsd:element name="BCNTR_SEAL_NO" type="xsd:string"/>
+                          <xsd:element name="BCNTR_CNMV_ID" type="xsd:string"/>
+                          <xsd:element name="BCNTR_CNMV_YY" type="xsd:string"/>
+                          <xsd:element name="BCNTR_CNMV_CD" type="xsd:string"/>
+                          <xsd:element name="BCNTR_PKG_QTY" type="xsd:string"/>
+                          <xsd:element name="PKG_CD" type="xsd:string"/>
+                          <xsd:element name="BCNTR_WGT_QTY" type="xsd:string"/>
+                          <xsd:element name="BCNTR_MEA_QTY" type="xsd:string"/>
+                          <xsd:element name="BCNTR_WGT_TP" type="xsd:string"/>
+                          <xsd:element name="BCNTR_MEA_TP" type="xsd:string"/>
+                          <xsd:element name="BCNTR_RCV_TERM" type="xsd:string"/>
+                          <xsd:element name="BCNTR_DLV_TERM" type="xsd:string"/>
+                          <xsd:element name="BCNTR_PARTIAL" type="xsd:string"/>
+                          <xsd:element name="BCNTR_VOL" type="xsd:string"/>
+                          <xsd:element name="BCNTR_CYCLE" type="xsd:string"/>
+                          <xsd:element name="BCNTR_EXCEPT" type="xsd:string"/>
+                          <xsd:element name="BCNTR_HANG_IND" type="xsd:string"/>
+                          <xsd:element name="BCNTR_FULL_CY" type="xsd:string"/>
+                          <xsd:element name="BCNTR_HAULAGE" type="xsd:string"/>
+                          <xsd:element name="BCNTR_OFR_LOC" type="xsd:string"/>
+                          <xsd:element name="BCNTR_OTO_LOC" type="xsd:string"/>
+                          <xsd:element name="BCNTR_DFR_LOC" type="xsd:string"/>
+                          <xsd:element name="BCNTR_DTO_LOC" type="xsd:string"/>
+                          <xsd:element name="BCNTR_SPE_DG" type="xsd:string"/>
+                          <xsd:element name="BCNTR_SPE_BB" type="xsd:string"/>
+                          <xsd:element name="BCNTR_SPE_AK" type="xsd:string"/>
+                          <xsd:element name="BCNTR_SPE_RF" type="xsd:string"/>
+                          <xsd:element name="BCNTR_SPE_RD" type="xsd:string"/>
+                          <xsd:element name="BCNTR_SOC_IND" type="xsd:string"/>
+                          <xsd:element name="BCNTR_RMK" type="xsd:string"/>
+                          <xsd:element name="BCNTR_TRO_OSEQ" type="xsd:string"/>
+                          <xsd:element name="BCNTR_TRO_ISEQ" type="xsd:string"/>
+                          <xsd:element name="BCNTR_TRO_OSUB" type="xsd:string"/>
+                          <xsd:element name="BCNTR_TRO_ISUB" type="xsd:string"/>
+                          <xsd:element name="BCNTR_FIRM" type="xsd:string"/>
+                          <xsd:element name="BCNTR_CM_FIRM" type="xsd:string"/>
+                          <xsd:element name="BCNTR_CRD_DT" type="xsd:string"/>
+                          <xsd:element name="BCNTR_CRD_YD" type="xsd:string"/>
+                          <xsd:element name="BCNTR_SB_FLG" type="xsd:string"/>
+                          <xsd:element name="BCNTR_ESUB_CD" type="xsd:string"/>
+                          <xsd:element name="BCNTR_ORG_YD" type="xsd:string"/>
+                          <xsd:element name="BCNTR_DST_YD" type="xsd:string"/>
+                          <xsd:element name="BCNTR_EDATE" type="xsd:string"/>
+                          <xsd:element name="BCNTR_FLAG" type="xsd:string"/>
+                          <xsd:element name="DO_NO" type="xsd:string"/>
+                          <xsd:element name="DO_NO_SPLIT" type="xsd:string"/>
+                          <xsd:element name="BCNTR_REMK" type="xsd:string"/>
+                          <xsd:element name="BCNTR_REMK_IND" type="xsd:string"/>
+                          <xsd:element name="BCNTR_DISP_SEQ" type="xsd:string"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"/>
+                          <xsd:element name="BCNTR_ADD_MV_IND" type="xsd:string"/>
+                          <xsd:element name="BCNTR_SO_END_IND" type="xsd:string"/>
+                          <xsd:element name="BCNTR_PO_NO" type="xsd:string"/>
+                          <xsd:element name="BCNTR_CRE_DT" type="xsd:string"/>
+                          <xsd:element name="BCNTR_OC_DT" type="xsd:string"/>
+                          <xsd:element name="BCNTR_OC_DT_TP" type="xsd:string"/>
+                          <xsd:element name="BCNTR_CTX_IND" type="xsd:string"/>
+                          <xsd:element name="MST_LCL_CD" type="xsd:string"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="BKG_CUST_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="BKG_CUSTCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="BKG_CUST" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="BCS_TP" type="xsd:string"/>
+                          <xsd:element name="CNT_CD" type="xsd:string"/>
+                          <xsd:element name="CUST_CD" type="xsd:string"/>
+                          <xsd:element name="CUST_NM" type="xsd:string"/>
+                          <xsd:element name="CUST_ADDR" type="xsd:string"/>
+                          <xsd:element name="BCS_FMC" type="xsd:string"/>
+                          <xsd:element name="BCS_TO_ORDER" type="xsd:string"/>
+                          <xsd:element name="BCS_MSCD_CPT" type="xsd:string"/>
+                          <xsd:element name="BCS_FF_PRT_IND" type="xsd:string"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"/>
+                          <xsd:element name="BCS_FAX_NO" type="xsd:string"/>
+                          <xsd:element name="EXT_BKG_IND" type="xsd:string"/>
+                          <xsd:element name="BCS_FF_REF" type="xsd:string"/>
+                          <xsd:element name="BKG_LGSI_IND" type="xsd:string"/>
+                          <xsd:element name="BCS_CITY_NM" type="xsd:string"/>
+                          <xsd:element name="BCS_CNT_CD" type="xsd:string"/>
+                          <xsd:element name="BCS_STAT_CD" type="xsd:string"/>
+                          <xsd:element name="BCS_ZIP_CD" type="xsd:string"/>
+                          <xsd:element name="BRO_PAY_ACCT_CD" type="xsd:string"/>
+                          <xsd:element name="BCS_REF_NO" type="xsd:string"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="BKG_VVD_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="BKG_VVDCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="BKG_VVD" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="BV_IND" type="xsd:string"/>
+                          <xsd:element name="BV_SEQ" type="xsd:string"/>
+                          <xsd:element name="VSL_CD" type="xsd:string"/>
+                          <xsd:element name="SKD_VOYAGE_NO" type="xsd:string"/>
+                          <xsd:element name="SKD_DIR_CD" type="xsd:string"/>
+                          <xsd:element name="BV_LANE" type="xsd:string"/>
+                          <xsd:element name="BV_LOAD" type="xsd:string"/>
+                          <xsd:element name="POL_LOC" type="xsd:string"/>
+                          <xsd:element name="POD_LOC" type="xsd:string"/>
+                          <xsd:element name="BV_VL_IND" type="xsd:string"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"/>
+                          <xsd:element name="BV_OOP_CD" type="xsd:string"/>
+                          <xsd:element name="BV_TRANS_IND" type="xsd:string"/>
+			  <xsd:element name="POD_TML_CD" type="xsd:string"/>
+			  <xsd:element name="POL_ZONE_CD" type="xsd:string"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="BKG_QTY_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="BKG_QTYCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="BKG_QTY" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="BKG_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string"/>
+                          <xsd:element name="CNTRTS_CD" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="BQTY_QTY" type="xsd:string"/>
+                          <xsd:element name="BQTY_ACT_QTY" type="xsd:string"/>
+                          <xsd:element name="BQTY_HANG_C" type="xsd:string"/>
+                          <xsd:element name="BQTY_HANG_M" type="xsd:string"/>
+                          <xsd:element name="BQTY_DG_QTY" type="xsd:string"/>
+                          <xsd:element name="BQTY_AK_QTY" type="xsd:string"/>
+                          <xsd:element name="BQTY_RF_QTY" type="xsd:string"/>
+                          <xsd:element name="BQTY_BB_QTY" type="xsd:string"/>
+                          <xsd:element name="BQTY_RD_CD" type="xsd:string"/>
+                          <xsd:element name="BQTY_RD_QTY" type="xsd:string"/>
+                          <xsd:element name="BQTY_SOC_QTY" type="xsd:string"/>
+                          <xsd:element name="BQTY_ESUB_CD" type="xsd:string"/>
+                          <xsd:element name="BQTY_ESUB_QTY" type="xsd:string"/>
+                          <xsd:element name="BQTY_ORG_QTY" type="xsd:string"/>
+                          <xsd:element name="BQTY_DST_QTY" type="xsd:string"/>
+                          <xsd:element name="BQTY_OTRO_QTY" type="xsd:string"/>
+                          <xsd:element name="BQTY_DTRO_QTY" type="xsd:string"/>
+                          <xsd:element name="BQTY_FINIF_IND" type="xsd:string"/>
+                          <xsd:element name="BQTY_QGT" type="xsd:string"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"/>
+                          <xsd:element name="BQTY_HANG_C_S" type="xsd:string"/>
+                          <xsd:element name="BQTY_HANG_C_D" type="xsd:string"/>
+                          <xsd:element name="BQTY_ESUB_TP" type="xsd:string"/>
+                          <xsd:element name="BQTY_SOC_TP" type="xsd:string"/>
+                          <xsd:element name="BQTY_FELX_IND" type="xsd:string"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="BKG_RATE_HEAD_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="BKG_RATE_HEADCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="BKG_RATE_HEAD" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="BKG_NO" type="xsd:string"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string"/>
+                          <xsd:element name="BRH_APPL_IND" type="xsd:string"/>
+                          <xsd:element name="BRH_APPL_NO" type="xsd:string"/>
+                          <xsd:element name="BRH_RATE_BASE" type="xsd:string"/>
+                          <xsd:element name="BRH_CM_RATE" type="xsd:string"/>
+                          <xsd:element name="BRH_CM_CURR" type="xsd:string"/>
+                          <xsd:element name="BRH_MT_RATE" type="xsd:string"/>
+                          <xsd:element name="BRH_MT_CURR" type="xsd:string"/>
+                          <xsd:element name="BRH_PPD_OFC" type="xsd:string"/>
+                          <xsd:element name="BRH_CCT_OFC" type="xsd:string"/>
+                          <xsd:element name="BRH_CR_DT" type="xsd:string"/>
+                          <xsd:element name="BRH_CR_USER" type="xsd:string"/>
+                          <xsd:element name="BRH_UP_DT" type="xsd:string"/>
+                          <xsd:element name="BRH_UP_USER" type="xsd:string"/>
+                          <xsd:element name="BRH_USER_ID" type="xsd:string"/>
+                          <xsd:element name="BRH_RN_IND" type="xsd:string"/>
+                          <xsd:element name="BRH_COBIZ" type="xsd:string"/>
+                          <xsd:element name="BRH_ORIG_VIA" type="xsd:string"/>
+                          <xsd:element name="BRH_DEST_VIA" type="xsd:string"/>
+                          <xsd:element name="BRH_CNFM_IND" type="xsd:string"/>
+                          <xsd:element name="BRH_CNFM_ID" type="xsd:string"/>
+                          <xsd:element name="BRH_CNFM_DT" type="xsd:string"/>
+                          <xsd:element name="BRH_SC_NO" type="xsd:string"/>
+                          <xsd:element name="BRH_RAR_AUTH" type="xsd:string"/>
+                          <xsd:element name="BRH_PPD_PAYER_CNT"
+                                       type="xsd:string"/>
+                          <xsd:element name="BRH_PPD_PAYER_CST"
+                                       type="xsd:string"/>
+                          <xsd:element name="BRH_PPD_APAYER_CNT"
+                                       type="xsd:string"/>
+                          <xsd:element name="BRH_PPD_APAYER_CST"
+                                       type="xsd:string"/>
+                          <xsd:element name="BRH_PPD_BE_OFC" type="xsd:string"/>
+                          <xsd:element name="BRH_CCT_PAYER_CNT"
+                                       type="xsd:string"/>
+                          <xsd:element name="BRH_CCT_PAYER_CST"
+                                       type="xsd:string"/>
+                          <xsd:element name="BRH_CCT_APAYER_CNT"
+                                       type="xsd:string"/>
+                          <xsd:element name="BRH_CCT_APAYER_CST"
+                                       type="xsd:string"/>
+                          <xsd:element name="BRH_CCT_BE_OFC" type="xsd:string"/>
+                          <xsd:element name="BRH_PPD_CREDIT_MK"
+                                       type="xsd:string"/>
+                          <xsd:element name="BRH_PPD_CREDIT_TERM"
+                                       type="xsd:string"/>
+                          <xsd:element name="BRH_RFA_NO" type="xsd:string"/>
+                          <xsd:element name="BRH_CGO_RCV_DT" type="xsd:string"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"/>
+                          <xsd:element name="BRH_WHF_IND" type="xsd:string"/>
+                          <xsd:element name="BRH_WHF_BIZ_REF_NO"
+                                       type="xsd:string"/>
+                          <xsd:element name="BRH_CTX_IND" type="xsd:string"/>
+                          <xsd:element name="BRH_AUTO_USE_IND" type="xsd:string"/>
+                          <xsd:element name="BRH_MAX_CR_DT" type="xsd:string"/>
+                          <xsd:element name="CTRT_CUST_CNT_CD" type="xsd:string"/>
+                          <xsd:element name="CTRT_CUST_SEQ " type="xsd:string"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="LOCATION_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="LOCATIONCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="LOCATION" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="LOC_CD" type="xsd:string"/>
+                          <xsd:element name="LOC_CT" type="xsd:string"/>
+                          <xsd:element name="SCONTI_CD" type="xsd:string"/>
+                          <xsd:element name="LOC_DESC" type="xsd:string"/>
+                          <xsd:element name="CONTI_CD" type="xsd:string"/>
+                          <xsd:element name="CNT_CD" type="xsd:string"/>
+                          <xsd:element name="RGN_CD" type="xsd:string"/>
+                          <xsd:element name="LOC_PORT_IND" type="xsd:string"/>
+                          <xsd:element name="LOC_CHAR" type="xsd:string"/>
+                          <xsd:element name="LOC_LCC" type="xsd:string"/>
+                          <xsd:element name="LOC_RCC" type="xsd:string"/>
+                          <xsd:element name="LOC_HUB_CD" type="xsd:string"/>
+                          <xsd:element name="LOC_HUB_TT" type="xsd:string"/>
+                          <xsd:element name="LOC_GRP" type="xsd:string"/>
+                          <xsd:element name="LOC_SOF" type="xsd:string"/>
+                          <xsd:element name="LOC_HWY_WT_UNIT" type="xsd:string"/>
+                          <xsd:element name="LOC_ROAD_HT_UNIT" type="xsd:string"/>
+                          <xsd:element name="LOC_CREDT" type="xsd:string"/>
+                          <xsd:element name="LOC_UPDT" type="xsd:string"/>
+                          <xsd:element name="LOC_AUTHID" type="xsd:string"/>
+                          <xsd:element name="LOC_DELIND" type="xsd:string"/>
+                          <xsd:element name="LOC_STATE" type="xsd:string"/>
+                          <xsd:element name="LOC_GRID" type="xsd:string"/>
+                          <xsd:element name="LOC_CUSTOMS" type="xsd:string"/>
+                          <xsd:element name="LOC_GMT" type="xsd:string"/>
+                          <xsd:element name="LOC_UN_IND" type="xsd:string"/>
+                          <xsd:element name="LOC_HANCOS" type="xsd:string"/>
+                          <xsd:element name="LOC_CALL_IND" type="xsd:string"/>
+                          <xsd:element name="LOC_SCC" type="xsd:string"/>
+                          <xsd:element name="LOC_AMSPORT" type="xsd:string"/>
+                          <xsd:element name="LOC_FIN_OFC" type="xsd:string"/>
+                          <xsd:element name="LOC_EQ_OFC" type="xsd:string"/>
+                          <xsd:element name="LOC_PU_YD" type="xsd:string"/>
+                          <xsd:element name="LOC_LATITUDE" type="xsd:string"/>
+                          <xsd:element name="LOC_LONGITUDE" type="xsd:string"/>
+                          <xsd:element name="LOC_JAPAN" type="xsd:string"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"/>
+                          <xsd:element name="SEN_LOC_EQ_OFC" type="xsd:string"/>
+                          <xsd:element name="LOC_RTN_CY" type="xsd:string"/>
+                          <xsd:element name="LOC_UN_CODE" type="xsd:string"/>
+                          <xsd:element name="LOC_FIN_IND" type="xsd:string"/>
+                          <xsd:element name="LOC_COMM_ZONE" type="xsd:string"/>
+                          <xsd:element name="LOC_ECC" type="xsd:string"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="RFA_CUST_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="RFA_CUSTCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="RFA_CUST" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="QTN_OFC" type="xsd:string"/>
+                          <xsd:element name="QTN_SEQ" type="xsd:string"/>
+                          <xsd:element name="CNT_CD" type="xsd:string"/>
+                          <xsd:element name="CUST_CD" type="xsd:string"/>
+                          <xsd:element name="RC_CUST_ROLE" type="xsd:string"/>
+                          <xsd:element name="RC_DSP_IND" type="xsd:string"/>
+                          <xsd:element name="RC_CUST_TP" type="xsd:string"/>
+                          <xsd:element name="LOC_CD" type="xsd:string"/>
+                          <xsd:element name="RC_UP_DT" type="xsd:string"/>
+                          <xsd:element name="RC_USR_ID" type="xsd:string"/>
+                          <xsd:element name="RC_CUST_NM" type="xsd:string"/>
+                          <xsd:element name="RC_PRNT_FLG" type="xsd:string"/>
+                          <xsd:element name="RC_CR_DT" type="xsd:string"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="RFA_GENERAL_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="RFA_GENERALCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="RFA_GENERAL" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="QTN_OFC" type="xsd:string"/>
+                          <xsd:element name="QTN_SEQ" type="xsd:string"/>
+                          <xsd:element name="RFA_OFC" type="xsd:string"/>
+                          <xsd:element name="RFA_SEQ" type="xsd:string"/>
+                          <xsd:element name="RG_RFA_STS" type="xsd:string"/>
+                          <xsd:element name="SALES_OFC" type="xsd:string"/>
+                          <xsd:element name="SREP_CD" type="xsd:string"/>
+                          <xsd:element name="AUTH_OFC" type="xsd:string"/>
+                          <xsd:element name="AUTH_STAFF" type="xsd:string"/>
+                          <xsd:element name="SC_NO" type="xsd:string"/>
+                          <xsd:element name="RG_CGO_TP" type="xsd:string"/>
+                          <xsd:element name="RG_DTL_IND" type="xsd:string"/>
+                          <xsd:element name="CMDT_CD" type="xsd:string"/>
+                          <xsd:element name="CMDT_TLI_NO" type="xsd:string"/>
+                          <xsd:element name="RG_CMDT_DESC" type="xsd:string"/>
+                          <xsd:element name="REP_CMDT_CD" type="xsd:string"/>
+                          <xsd:element name="RG_CONF_CMDT_CD" type="xsd:string"/>
+                          <xsd:element name="RG_DEAD_SLT_20" type="xsd:string"/>
+                          <xsd:element name="RG_DEAD_SLT_40" type="xsd:string"/>
+                          <xsd:element name="RG_TTL_WGT" type="xsd:string"/>
+                          <xsd:element name="RG_MEAS_UNIT" type="xsd:string"/>
+                          <xsd:element name="SVC_SCP_CD" type="xsd:string"/>
+                          <xsd:element name="RG_TTL_QTY" type="xsd:string"/>
+                          <xsd:element name="RG_PYMT_TERM" type="xsd:string"/>
+                          <xsd:element name="RG_EFF_DT" type="xsd:string"/>
+                          <xsd:element name="RG_EXP_DT" type="xsd:string"/>
+                          <xsd:element name="RG_ATH_DT" type="xsd:string"/>
+                          <xsd:element name="RG_FIL_DT" type="xsd:string"/>
+                          <xsd:element name="RG_CXL_DT" type="xsd:string"/>
+                          <xsd:element name="CXL_IND" type="xsd:string"/>
+                          <xsd:element name="RG_CR_DT" type="xsd:string"/>
+                          <xsd:element name="RG_UP_DT" type="xsd:string"/>
+                          <xsd:element name="RG_USR_ID" type="xsd:string"/>
+                          <xsd:element name="RG_RAR_AUTH_NO" type="xsd:string"/>
+                          <xsd:element name="RG_SVR_ID" type="xsd:string"/>
+                          <xsd:element name="RG_REP_IND" type="xsd:string"/>
+                          <xsd:element name="RG_TRF_ITEM_NO" type="xsd:string"/>
+                          <xsd:element name="RG_TRF_LN_ITM_NO" type="xsd:string"/>
+                          <xsd:element name="RG_SREP_NM" type="xsd:string"/>
+                          <xsd:element name="RG_NO_DUP_CHK" type="xsd:string"/>
+                          <xsd:element name="RFA_AUTH_NO" type="xsd:string"/>
+                          <xsd:element name="RG_QTN_MODE" type="xsd:string"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"/>
+                          <xsd:element name="RG_BIS_IND" type="xsd:string"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SC_GENINF_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="SC_GENINFCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="SC_GENINF" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="SC_TP" type="xsd:string"/>
+                          <xsd:element name="SC_NO" type="xsd:string"/>
+                          <xsd:element name="SC_SVC_SCP" type="xsd:string"/>
+                          <xsd:element name="SC_BND" type="xsd:string"/>
+                          <xsd:element name="SC_SEQ" type="xsd:string"/>
+                          <xsd:element name="REP_CMDT_CD3" type="xsd:string"/>
+                          <xsd:element name="SC_CNT_CD" type="xsd:string"/>
+                          <xsd:element name="SC_CUST_CD" type="xsd:string"/>
+                          <xsd:element name="SC_OFC_CD" type="xsd:string"/>
+                          <xsd:element name="SC_SREP_CD" type="xsd:string"/>
+                          <xsd:element name="SC_CUST_TP" type="xsd:string"/>
+                          <xsd:element name="SC_MQC_MIN" type="xsd:string"/>
+                          <xsd:element name="SC_MIN_TP" type="xsd:string"/>
+                          <xsd:element name="SC_MQC_MAX" type="xsd:string"/>
+                          <xsd:element name="SC_MAX_TP" type="xsd:string"/>
+                          <xsd:element name="SC_EFF_DT" type="xsd:string"/>
+                          <xsd:element name="SC_EXP_DT" type="xsd:string"/>
+                          <xsd:element name="SC_DEAD_FRT" type="xsd:string"/>
+                          <xsd:element name="SC_SVC_CMMT" type="xsd:string"/>
+                          <xsd:element name="SC_REMARK" type="xsd:string"/>
+                          <xsd:element name="SC_USRID" type="xsd:string"/>
+                          <xsd:element name="SC_CRDT" type="xsd:string"/>
+                          <xsd:element name="SC_UPDT" type="xsd:string"/>
+                          <xsd:element name="REP_CMDT_CD1" type="xsd:string"/>
+                          <xsd:element name="REP_CMDT_CD2" type="xsd:string"/>
+                          <xsd:element name="SC_NO_OLD" type="xsd:string"/>
+                          <xsd:element name="SC_COMP_IND" type="xsd:string"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="VSL_PORT_SKD_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="VSLPORTSKDCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="VSL_PORT_SKD" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="VSL_CD" type="xsd:string"/>
+                          <xsd:element name="SKD_VOYAGE_NO" type="xsd:string"/>
+                          <xsd:element name="SKD_DIR_CD" type="xsd:string"/>
+                          <xsd:element name="VPS_LOC_CD" type="xsd:string"/>
+                          <xsd:element name="VPS_CALL_IND" type="xsd:string"/>
+                          <xsd:element name="VPS_CALL_SEQ" type="xsd:string"/>
+                          <xsd:element name="VPS_ETA_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_ETB_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_ETD_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_CCT_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_BCT_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_SKD_STAT" type="xsd:string"/>
+                          <xsd:element name="VPS_CHANG_IND" type="xsd:string"/>
+                          <xsd:element name="VPS_NEXT_LOC_CD" type="xsd:string"/>
+                          <xsd:element name="VPS_NEXT_DIR_CD" type="xsd:string"/>
+                          <xsd:element name="VPS_NEXT_CALL_IND"
+                                       type="xsd:string"/>
+                          <xsd:element name="VPS_TURN_IND" type="xsd:string"/>
+                          <xsd:element name="VPS_TURN_VOYAGE" type="xsd:string"/>
+                          <xsd:element name="VPS_TURN_DIR_CD" type="xsd:string"/>
+                          <xsd:element name="VPS_TURN_CALL_IND"
+                                       type="xsd:string"/>
+                          <xsd:element name="VPS_BL_VD" type="xsd:string"/>
+                          <xsd:element name="VPS_CAR_DIR" type="xsd:string"/>
+                          <xsd:element name="VPS_CAR_VOY" type="xsd:string"/>
+                          <xsd:element name="VPS_TML_NM" type="xsd:string"/>
+                          <xsd:element name="VPS_REV_MK" type="xsd:string"/>
+                          <xsd:element name="VPS_CHG_LOC_CD" type="xsd:string"/>
+                          <xsd:element name="VPS_CHG_CALL_IND" type="xsd:string"/>
+                          <xsd:element name="VPS_UDT_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_UDT_ID" type="xsd:string"/>
+                          <xsd:element name="VPS_REMARK" type="xsd:string"/>
+                          <xsd:element name="VPS_PHAIO_RSN" type="xsd:string"/>
+                          <xsd:element name="VPS_PHAIO_RMK" type="xsd:string"/>
+                          <xsd:element name="VPS_DOCK_IN_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_DOCK_OUT_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_DOCK_NM" type="xsd:string"/>
+                          <xsd:element name="VPS_DOCK_TYPE" type="xsd:string"/>
+                          <xsd:element name="VPS_DOCK_RMK" type="xsd:string"/>
+                          <xsd:element name="VPS_NEXT_LANE_CD" type="xsd:string"/>
+                          <xsd:element name="VPS_EX_RT" type="xsd:string"/>
+                          <xsd:element name="VPS_ATA_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_ATB_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_ATD_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_LANE_CD" type="xsd:string"/>
+                          <xsd:element name="VPS_BDR_IND" type="xsd:string"/>
+                          <xsd:element name="VPS_CBF_IND" type="xsd:string"/>
+                          <xsd:element name="VPS_HANCOS_VSL" type="xsd:string"/>
+                          <xsd:element name="VPS_CGO_VO" type="xsd:string"/>
+                          <xsd:element name="VPS_PIRE" type="xsd:string"/>
+                          <xsd:element name="VPS_FIN_DIR" type="xsd:string"/>
+                          <xsd:element name="VPS_CNTR_IND" type="xsd:string"/>
+                          <xsd:element name="VPS_ACT_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_TML_VSL" type="xsd:string"/>
+                          <xsd:element name="VPS_TML_SEQ" type="xsd:string"/>
+                          <xsd:element name="VPS_APP_IND" type="xsd:string"/>
+                          <xsd:element name="VPS_USED_IND" type="xsd:string"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_IB_VOL" type="xsd:string"/>
+                          <xsd:element name="VPS_OB_VOL" type="xsd:string"/>
+                          <xsd:element name="VPS_TS_VOL" type="xsd:string"/>
+                          <xsd:element name="VPS_TMNL_VOY" type="xsd:string"/>
+                          <xsd:element name="VPS_ETL_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_TMNL_CD" type="xsd:string"/>
+                          <xsd:element name="VPS_TMNL_CFM" type="xsd:string"/>
+                          <xsd:element name="VPS_LETA_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_LETB_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_LETD_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_SHIP_CALL_NO" type="xsd:string"/>
+                          <xsd:element name="VPS_PIER" type="xsd:string"/>
+                          <xsd:element name="YD_CD" type="xsd:string"/>
+                          <xsd:element name="VSP_SHIP_CALL_ID" type="xsd:string"/>
+                          <xsd:element name="VSP_SHIP_CALL_DT" type="xsd:string"/>
+                          <xsd:element name="TMNL_VSL_CD" type="xsd:string"/>
+                          <xsd:element name="FREE_TM_DT" type="xsd:string"/>
+                          <xsd:element name="VPS_EDI_CNT" type="xsd:string"/>
+                          <xsd:element name="PF_ETA_DT" type="xsd:string"/>
+                          <xsd:element name="PF_ETB_DT" type="xsd:string"/>
+                          <xsd:element name="PF_ETD_DT" type="xsd:string"/>                          
+                          <xsd:element name="VSL_DLAY_RSN_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="VSL_DLAY_RSN_DESC" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="VPS_DLY_LOC" type="xsd:string"/> 
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="DANGER_CGO_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="DANGER_CGOCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="DANGER_CGO" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="BKG_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_UNNO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_UNNO_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_NET_WGT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_WGT_TP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_GROSS_WGT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_FLASH_PNT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_REQ_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_PKG_DESC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_MEA_QTY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_MEA_TP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_IMO_CLASS" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_HARZARD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_TANK_TP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_SPE_STW_REQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_VAPOR" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_EMG_PNT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTRTS_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_AUTH_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_RSN" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_RMK" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_PKG_QTY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="PACK_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_RFSEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_RSLT_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_AUTH_BY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_AUTH_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_LCL_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_CON_UNNO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_CGO_STUS" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_CNTR_SNO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_IMO_COMP_GP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_FLASH_T" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_PACK_GP1" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_PACK_GP2" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_PACK_GP3" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_MARI_POLL" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_PSA" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_CNTR_SNO_SUB" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_CERTI_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_INPKG_QTY1" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_INPKG_TP1" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_INPKG_QTY2" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_INPKG_TP2" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_OUTPKG_QTY1" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_OUTPKG_TP1" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_OUTPKG_QTY2" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_OUTPKG_TP2" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_SRL_DESC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_IMO_PAGE_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_EMS_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_MEAG_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_ERG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_CNEE_DTL" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_NETWGT_EXPLO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_RC_SKD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_RC_ACT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_RC_ACT_TP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_RC_TSINDEX" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_CNTRL_TMP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_EMG_TMP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_REQ_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_APPL_BY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_AK_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_BB_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_RF_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_COLOAD_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_CMPLX_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_PSA_CLASS" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_ERG_CHAR" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_MFAG_NO1" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_MFAG_NO2" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_MFAG_SUB" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_INMAX_QTY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_INMAX_TP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_IMO_LIMIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_HCDG_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DG_HCDG_DPN_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CARRIER_CD_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="CARRIER_CDCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="CARRIER_CD" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="CAR_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CAR_FULL_NM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CAR_CMP_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CAR_EDI_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CAR_COMP_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CAR_CRT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CAR_CRT_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CAR_UDT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CAR_UDT_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CAR_DEL_MK" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="BKG_MISC_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="BKGMISCCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="BKGMISC" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="BKG_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_NO_TP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_NO_CHK" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="GRAR_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="OFC_LOC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SCPP_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_TARIFF_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_GREV_20" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_GREV_40" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_NREV_20" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_NREV_40" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_COST_20" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_COST_40" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_MREV_20" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_MREV_40" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_COMP_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_COMP_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_COMP_STF" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_FRT_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_DO_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_DO_OFC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_DO_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_PPD_CREDIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_PPD_OFC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_PPD_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_CCT_CREDIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_CCT_OFC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_CCT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_RATING_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_RATING_CHG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_INV_PPD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_INV_CCT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_INV_COM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_MRN_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_MSN_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_RECV_TP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_RECV_STF" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_CGO_DEL" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_EXP_DEC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_CP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_ISU_CNT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_OFC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_ISU_BY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_STF" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_ISU_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_ORG_NM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_TP_MOVE" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_FIN_DST_NM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_PKG_WORD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_EL_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_TP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_ON_TP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_ON_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_VSC_NM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_PRE_VSL_NM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_POR_NM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_POL_NM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_POD_NM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_DEL_NM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_CSTMCTP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_CSTMC_LOC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_CSTMCWH" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_CSTMCIND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_ITNO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_IVVALU" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_RCVOFC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_RCVDATE" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_OTHTP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_OTHOFC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_OTHDATE" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_RECV_OFC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_RECV_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_RECV_CP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_IFM_FRM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_LOCAL_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_ISSUE_RMK" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_SVC_SCP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_POR_LOC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_POL_LOC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_POD_LOC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_DEL_LOC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_REDE_OFC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_REDE_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_REDE_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_THIRDPAY_PPD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_THIRDPAY_CCT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_ARRIVAL_NTFY1" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_ARRIVAL_NTFY2" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_ARRIVAL_NTFY3" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_MASTER" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_TYPE" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_CUST_TP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_FINIF_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_FMC_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_REP_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_MST_BKG_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_MST_BKG_NO_SPLIT"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="BL_SPLIT_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_ARR_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_PU_AVAIL_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_FREE_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_PU_CY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_PU_CFS" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_HANCOSIF_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_MTY_RLS_CFM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="FA_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_TO_WAIT_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_MND_CNFM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_RFA_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_BANK_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_BANK_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_PTS_CNT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_PTS_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_PO_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_POD_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_IV_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_INV_REF_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_REDE_USR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_OTH_USR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_RCV_USR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_FRT_USR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_NVOCC_FILER" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_HBL_CNT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_BLK_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_UNBLK_USER" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_UNBLK_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_UNBLK_END_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_FF_FILER" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_DEPT_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_DO_TRUCKED_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_DO_TRUCKED_NM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_PKL_CALL_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_VVD_REF_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_CFM_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_CFM_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_CFM_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BL_DO_RMK" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_ALT_CFM_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SC_ACUST_CNT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SC_ACUST_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_ALLMOTOR_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_RATE_AM_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_SPLIT_RTO" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="BKG_RATE_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="BKG_RATECollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="BKG_RATE" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="BKG_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_RATE_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CHG_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_APPL_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_APPL_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_CUST_TP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_CURR" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_RATE" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_RATED_AS" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_PER" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_PREPAID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_PAY_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_DISP_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_QTY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_CBM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_MT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_CGO_CLASS" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_IMO_CLASS" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_RCV_TERM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_DLC_TERM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_AUTO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_OFC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_CR_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_CR_USER" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_RCV_LOC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_CH_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_CH_USER" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_CH_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_EX" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_DLC_LOC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="INV_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="INV_STAT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_PAYER" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_NMC_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_PAYER_CNT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_PAYER_CST" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_APAYER_CNT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_APAYER_CST" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_BE_OFC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_ALLIN_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_MERGE_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BRATE_HDN_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CONTAINER_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="CONTAINERCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="CONTAINER" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="CNTR_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SVR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_SVR_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="GEN_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CTRT_OFC_CITY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CTRT_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNT_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="VNDR_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_ON_HR_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_ON_HR_YD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_FRDAY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMAT_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_MV_YY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_MV_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_MV_SPLIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="LAST_YD_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_LAST_STS_SEQ"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CNTR_IN_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="YD_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="LOC_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="LCC_LOC_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="RCC_LOC_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DST_YD_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="VSL_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_VOYAGE_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_DIR_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMS_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_ACT_ST" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTRTS_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNPRF_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="LSTRM_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNSSP_SPEC_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="MNFR_CNT_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="MNFR_VNDR_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_MNFR_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_TARE_WGT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_CYCLE_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_HNGR_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_DMG_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_FULL_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_RMK" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_SYS_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_USER" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_UPDT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_UPDT_USER" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_DEL_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_REFURB_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_REFURB_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_DISP_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_IM_EXIT_FLAG"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CNTR_MV_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_MVMT_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_ACEP_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_GMT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CHNG_BY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CHNG_TS" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CHNG_SVC" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CHNG_SVR" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_NEW_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_EMPTY_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_OWNER_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_USED_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTRST_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_PICKUP_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_PU_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_PU_MET" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_CUST_RMK" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_UNCLM_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_UNCLM_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_UNCLM_UP_USER"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CNTR_UNCLM_UP_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_UNCLM_RMK" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_REEF_TP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_UNCLM_FTIME" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_UNCLM_IS_FLAG"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CNTR_UNCLM_LS_FLAG"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CNTR_SML_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_SHD_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_MINHR_DAY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_UNCLM_RHQ_RMK"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CNTR_FLOOR_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_AUTH_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_RFR_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="LSTRM_CD1" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_LAST_STS_SEQ1"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CNTR_H_BAR_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_CURR_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_ACQ_AMT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_INVEST_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_ERP_IF_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_ERP_IF_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="ECC_LOC_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="ACQ_MTH" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CNTR_STS_HSTRY_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="CNTR_STS_HSTRYCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="CNTR_STS_HSTRY" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="YD_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="LOC_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="LCC_LOC_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="RCC_LOC_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CTRT_OFC_CITY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CTRT_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTRST_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="OFC_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_EVENT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_DT_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_PICKUP_CHG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CURR_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_LIFT_CHG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_FRDAY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_DI_FEE" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_DOC_CREDIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DI_CNT_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DI_VNDR_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_LST_NOTI_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_TERM_CHNG_FLAG"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="PARTN_YD_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_PARTN_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_RMK" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_DEL_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_USER" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_SYS_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_UPDT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_UPDT_USER" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_CNMS_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_FULL_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_FRDAY_EXPR_DT"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CSH_CHQ_YN" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_LSNEW_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_PAIR_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_MINHR_DAY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_AUTH_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="ECC_LOC_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CNTR_MOVE_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="CNTR_MOVECollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="CNTR_MOVE" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="CNTR_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_YY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_SPLIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTRTS_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_CYC_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMS_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_LVL" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_DT_TM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="ORG_YD_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DST_YD_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="INP_YD_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="FVSL_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="FSKD_VOYAGE_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="FSKD_DIR_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="VSL_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_VOYAGE_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_DIR_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CHSS_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_SEAL_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_CGO_TP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_DMG_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_FULL_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_OB_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_RCV_TERM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNT_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="VNDR_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_MODE_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="LOC_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_RMK" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_UNM" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_AUTO_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_BCOST_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_ACOST_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_SCOST_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_SB" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_SP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_BKG_CNT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_BKG_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_BKG_NO_SPLIT"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CNMV_UPD_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_CRT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_USID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_HNGR_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_ACT_ST" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_REFURB_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_DISP_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_IM_EXIT_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_EXCH_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_ITE_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_TT_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CTRT_OFC_CITY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CTRT_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_GMT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_EDI_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_MSG_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_MUID_AREA" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_MUID_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_MUID_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_FLATCAR_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_WAYBILL_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_PICKUP_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_DCOST_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_CYC_FLG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="TRAIN_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CSH_SEQ" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMV_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="YD_CONTAINER_SUM_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="YD_CONTAINER_SUMCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="YD_CONTAINER_SUM" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="YD_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="LSTRM_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTRTS_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNMS_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNPRF_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_FULL_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_DMG_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_HNGR_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_REFURB_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_DISP_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="DST_YD_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SVR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_COUNT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="CNTR_H_BAR_FLAG" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="VSL_SKD_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="VSL_SKDCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="VSL_SKD" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="VSL_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_VOYAGE_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_DIR_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SLN_LANE_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_SKD_STAT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_CRT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_UDT_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_UDT_PER" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_UDT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_NEXT_LOC_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_NEXT_DIR_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_NEXT_CALL_IND"
+                                       type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="SKD_CRT_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_REMARK" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_VOY_TP" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_LOAD_QTY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_REV_PORT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_REV_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_PT_CHK" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_VVD_COMN_DIV" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_VVD_COMN_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_CAR_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_SPC_QTY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_CANAL_CD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_SAIL_TOT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_SAIL_DAY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_START_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_FDR_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_SPC_NCTL" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_PLN_PORT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_PLN_MON" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_START_PORT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_OFF_BND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_AR_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_VSL_MON" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_TML_VVD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_SPC_RQTY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_SPC_WQTY" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_SPC_NCTL_RF" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_SPC_NCTL_WT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_CNTR_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_PSEUDO_VVD" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_COMP_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_CRT_PER" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_USED_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_RLS_RMK" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_IRR_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="SKD_PF_TYPE" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="LRS_STL_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="AGT_CHG_ROUT_REF_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="AGTCHGROUTREFCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="AGTCHGROUTREF" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS" type="xsd:string"/>
+                          <xsd:element name="EAI_DT" type="xsd:string"/>
+                          <xsd:element name="COMPANY" type="xsd:string"/>
+                          <xsd:element name="BKG_NO" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CHG_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="BKG_AGMT_UT_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CURR_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="SPCL_CGO_CTNT" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="ROUT_TRF_RT" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="ROUT_TRF_RTO" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="COMM_PROC_STS_RSN" type="xsd:string" minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="TRS_CHASSIS_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="TRSCHASSISCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="TRSCHASSIS" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="EAI_STS"		  type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="EAI_DT"		  type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="CHSS_NO"             type="xsd:string" minOccurs="0"/> 
+			  <xsd:element name="CTRT_OFC_CTY_CD"	  type="xsd:string" minOccurs="0"/>  
+			  <xsd:element name="CTRT_SEQ"            type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="VNDR_CNT_CD"         type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="VNDR_SEQ"            type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="MGST_NO"             type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="CHSS_TPSZ_CD"        type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="LSTM_CD"             type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="OFC_CD"              type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="ONH_DT"              type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="ONH_YD_CD"           type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="CRNT_YD_CD"          type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="LOC_CD"              type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="LCC_CD"              type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="RCC_CD"              type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="DEST_YD_CD"          type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="MVMT_STS_CD"         type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="MVMT_DT"             type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="GATE_IO_CD"          type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="ACIAC_DIV_CD"        type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="CHSS_IN_FLG"         type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="CHSS_TMN_FLG"        type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="LST_STS_YD_CD"       type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="LST_STS_SEQ"         type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="VEH_ID"              type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="CHSS_TIT_NO"         type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="TARE_WGT"            type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="MFT_DT"              type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="LSE_CHSS_NEW_USD_CD" type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="NEU_POOL_CHSS_YD_CD" type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="NEU_POOL_CRE_DT"     type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="CRE_DT"              type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="CRE_USR_ID"          type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="UPD_DT"              type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="UPD_USR_ID"          type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="CHSS_SPEC_NO"        type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="DMG_FLG"             type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="CHSS_ALS_NO"         type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="DISP_FLG"            type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="OWNR_CO_CD"          type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="USR_CO_CD"           type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="TML_USE_FLG"         type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="CHSS_STS_FLG"        type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="CHSS_ACT_DT"         type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="CHSS_TERM_FLG"       type="xsd:string" minOccurs="0"/>
+			  <xsd:element name="EAI_EVNT_DT"         type="xsd:string" minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="BKG_MISC_ORG_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="BKGMISCORGCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="BKGMISCORG" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="BKG_NO" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="BKG_NO_SPLIT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="EXT_SI_IND" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="EXT_SI_CNT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="EXT_SI_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="EXT_SI_USR_ID" type="xsd:string"
+                                       minOccurs="0"/>
+                          <xsd:element name="NIS_EVENT_DT" type="xsd:string"
+                                       minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="BAY_PLAN_LDS_SYNC">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EAIHeader" type="EAIHeaderType"/>
+        <xsd:element name="DataArea">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="BAYPLANLDSCollection">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="BAYPLANLDS" maxOccurs="unbounded">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="VSL_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="SKD_VOY_NO" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="SKD_DIR_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CLPT_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CLPT_IND_SEQ" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="LODG_DCHG_IND_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CNTR_NO" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CRNT_CELL_PSN" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="VPS_OPR_TP_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="POL_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="POD_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="COD_PORT_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CNTR_TPSZ_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="FULL_MTY_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="DE_TERM_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="SPCL_CGO_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="CRE_DT" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="LODG_VSL_CD" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="LODG_VOY_NO" type="xsd:string" minOccurs="0"/>
+                          <xsd:element name="LODG_SKD_DIR_CD" type="xsd:string" minOccurs="0"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

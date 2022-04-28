@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOSearchRHQOfficeRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT AR_HD_QTR_OFC_CD AS RHQ_OFC_CD, OFC_TP_CD
+  FROM MDM_ORGANIZATION
+ WHERE OFC_CD = @[ofc_cd]
+   AND NVL(DELT_FLG, 'N') = 'N' 			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

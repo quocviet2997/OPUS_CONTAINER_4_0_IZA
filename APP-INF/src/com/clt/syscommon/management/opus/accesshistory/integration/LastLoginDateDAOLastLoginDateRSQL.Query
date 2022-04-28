@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="LastLoginDateDAOLastLoginDateRSQL">
+			<desc><![CDATA[last login date select]]></desc>
+			<sql><![CDATA[
+select a.usr_id, a.usr_nm, a.use_flg, b.AR_HD_QTR_OFC_CD rhq, b.ofc_cd
+, to_char(max(c.acss_tms), 'yyyy-mm-dd hh24:mi:ss') acss_tms
+#if (${pgm_no} != '') 
+, c.pgm_no, d.pgm_nm
+#end
+from com_user a, mdm_organization b, com_acss_his_smry c
+#if (${pgm_no} != '') 
+, com_program d
+#end
+where a.usr_id = c.usr_id
+and c.ofc_cd = b.ofc_cd
+#if (${pgm_no} != '') 
+and c.pgm_no = d.pgm_no
+#end
+#if (${usr_id} != '') 
+and a.usr_id like '%'||@[usr_id]||'%'
+#end
+#if (${ofc_cd} != '') 
+and c.ofc_cd like '%'||@[ofc_cd]||'%'
+#end
+#if (${rhq} != '') 
+and b.AR_HD_QTR_OFC_CD = @[rhq]
+#end
+#if (${use_flg} != '') 
+and a.use_flg = @[use_flg]
+#end
+#if (${pgm_no} != '') 
+#if (${pgm_no_comma} == '-1')
+and d.pgm_no like '%'||@[pgm_no]||'%'
+#else
+and d.pgm_no in ('${pgm_no}')
+#end
+#end
+#if (${to_dt} != '') 
+and to_char(c.acss_tms, 'yyyy-mm-ddhh24mi') between @[from_dt]||'0000' and @[to_dt]||'2359'
+#end
+group by a.usr_id, a.usr_nm, a.use_flg, b.AR_HD_QTR_OFC_CD, b.ofc_cd
+#if (${pgm_no} != '') 
+, c.pgm_no, d.pgm_nm
+#end
+order by 6 desc
+#if (${pgm_no} != '') 
+, 7 asc
+#end			]]></sql>
+			<params>
+				<param name="usr_id" type="12" value="" out="N"/>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="rhq" type="12" value="" out="N"/>
+				<param name="use_flg" type="12" value="" out="N"/>
+				<param name="pgm_no" type="12" value="" out="N"/>
+				<param name="from_dt" type="12" value="" out="N"/>
+				<param name="to_dt" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

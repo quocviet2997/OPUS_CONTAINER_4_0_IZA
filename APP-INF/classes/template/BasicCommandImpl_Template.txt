@@ -1,0 +1,114 @@
+/*=========================================================
+*Copyright(c) ${Date} CyberLogitec
+*@FileName : ${FILE_NAME}.java
+*@FileTitle : ${FILE_TITLE}
+*Open Issues :
+*Change history :
+*@LastModifyDate : ${Date_dey}
+*@LastModifier : ${USER_NAME}
+*@LastVersion : 1.0
+* ${Date_dey} ${USER_NAME}
+* 1.0 Creation
+=========================================================*/
+package ${PACKAGE};
+
+import java.util.ArrayList;
+import java.util.List;
+import ${DAO_P}.${DAO}DAO;
+import com.clt.framework.component.message.ErrorHandler;
+import com.clt.framework.core.layer.event.EventException;
+import com.clt.framework.core.layer.integration.DAOException;
+import com.clt.framework.support.layer.basic.BasicCommandSupport;
+import com.clt.framework.support.view.signon.SignOnUserAccount;
+#foreach( $key in $Import.keySet())
+import $Import.get($key)
+#end
+
+/**
+ * ALPS-${SC} Business Logic Command Interface<br>
+ * - ALPS-${SC}에 대한 비지니스 로직에 대한 인터페이스<br>
+ *
+ * @author ${EN_NAME}
+ * @since J2EE 1.6
+ */
+public class ${FILE_NAME} extends BasicCommandSupport implements ${BC}BC {
+
+	// Database Access Object
+	private transient ${DAO}DAO dbDao = null;
+
+	/**
+	 * ${FILE_NAME} 객체 생성<br>
+	 * ${DAO}DAO를 생성한다.<br>
+	 */
+	public ${FILE_NAME}() {
+		dbDao = new ${DAO}DAO();
+	}
+#if(${search})
+#foreach( $key in $Smethod.keySet())
+	/**
+	 * [비즈니스대상]을 [행위] 합니다.<br>
+	 * 
+	 * @param $Smethod_m.get($key) $Smethod_s.get($key)
+	 * @return List<$Smethod_m.get($key)>
+	 * @exception EventException
+	 */
+	public List<$Smethod_m.get($key)> $Smethod.get($key)($Smethod_m.get($key) $Smethod_s.get($key)) throws EventException {
+		try {
+			return dbDao.$Smethod.get($key)($Smethod_s.get($key));
+		} catch(DAOException ex) {
+			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
+		} catch (Exception ex) {
+			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
+		}
+		
+	}
+	
+#end
+#end
+#if(${multi})
+#foreach( $key in $Mmethod.keySet())
+	/**
+	 * [비즈니스대상]을 [행위] 합니다.<br>
+	 * 
+	 * @param $Mmethod_m.get($key)[] $Mmethod_s.get($key)
+	 * @param account SignOnUserAccount
+	 * @exception EventException
+	 */
+	public void $Mmethod.get($key)($Mmethod_m.get($key)[] $Mmethod_s.get($key), SignOnUserAccount account) throws EventException{
+		try {
+			List<$Mmethod_m.get($key)> insertVoList = new ArrayList<$Mmethod_m.get($key)>();
+			List<$Mmethod_m.get($key)> updateVoList = new ArrayList<$Mmethod_m.get($key)>();
+			List<$Mmethod_m.get($key)> deleteVoList = new ArrayList<$Mmethod_m.get($key)>();
+			for ( int i=0; i<$Mmethod_s.get($key) .length; i++ ) {
+				if ( $Mmethod_s.get($key)[i].getIbflag().equals("I")){
+					$Mmethod_s.get($key)[i].setCreUsrId(account.getUsr_id());
+					insertVoList.add($Mmethod_s.get($key)[i]);
+				} else if ( $Mmethod_s.get($key)[i].getIbflag().equals("U")){
+					$Mmethod_s.get($key)[i].setUpdUsrId(account.getUsr_id());
+					updateVoList.add($Mmethod_s.get($key)[i]);
+				} else if ( $Mmethod_s.get($key)[i].getIbflag().equals("D")){
+					deleteVoList.add($Mmethod_s.get($key)[i]);
+				}
+			}
+			
+			if ( insertVoList.size() > 0 ) {
+				dbDao.add$Mmethod.get($key)S(insertVoList);
+			}
+			
+			if ( updateVoList.size() > 0 ) {
+				dbDao.modify$Mmethod.get($key)S(updateVoList);
+			}
+			
+			if ( deleteVoList.size() > 0 ) {
+				dbDao.remove$Mmethod.get($key)S(deleteVoList);
+			}
+		} catch(DAOException ex) {
+			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
+		} catch (Exception ex) {
+			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
+		}
+	}
+	
+#end
+#end
+}

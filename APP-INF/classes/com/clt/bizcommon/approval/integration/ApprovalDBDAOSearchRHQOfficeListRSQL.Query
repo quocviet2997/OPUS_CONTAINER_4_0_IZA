@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOSearchRHQOfficeListRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT DISTINCT A.AR_HD_QTR_OFC_CD AS RHQ_CD
+FROM MDM_ORGANIZATION A
+WHERE EXISTS (  SELECT 'X' 
+                FROM MDM_ORGANIZATION B 
+                WHERE B.AR_HD_QTR_OFC_CD = A.OFC_CD 
+                AND NVL(B.DELT_FLG,'N') = 'N'  )
+AND NVL(A.DELT_FLG,'N') = 'N'
+AND A.OFC_TP_CD = 'HQ'
+ORDER BY A.AR_HD_QTR_OFC_CD 			]]></sql>
+			<params>
+			</params>
+		</query>
+	</querys>
+</sqls>

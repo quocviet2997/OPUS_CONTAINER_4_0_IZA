@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOSearchCsrAmountLimitListRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+WITH OFC_INFO AS (
+    SELECT X.*
+    FROM (
+        SELECT 1 SEQ, M.AR_HD_QTR_OFC_CD, M.OFC_CD
+        FROM MDM_ORGANIZATION M
+        WHERE NVL(DELT_FLG, 'N') <> 'Y' 
+        AND OFC_TP_CD = 'HO'
+        UNION ALL
+        SELECT 2 SEQ, M.AR_HD_QTR_OFC_CD, M.OFC_CD 
+        FROM MDM_ORGANIZATION M
+        WHERE NVL(DELT_FLG, 'N') <> 'Y' 
+        AND OFC_TP_CD <> 'HO'
+    ) X
+    WHERE 1=1
+   #if(${ofc_cd} != '')
+   	AND X.OFC_CD IN (
+    #foreach($key IN ${ofc_cd_list}) 
+     #if($velocityCount < $ofc_cd_list.size()) 
+      '$key', 
+     #else 
+      '$key' 
+     #end 
+    #end 
+    )
+   #end
+)
+, SUB_SYS_INFO AS (
+    SELECT PGM_SUB_SYS_CD SUB_SYS_CD
+    FROM COM_PGM_SUB_SYS
+    WHERE PGM_APPL_CD = 'OPUS'
+#if(${sub_sys_cd}!='')
+    AND PGM_SUB_SYS_CD = @[sub_sys_cd]
+#end
+)
+, OFC_N_SUBSYS AS (
+    SELECT 
+    A.*, B.* 
+    FROM OFC_INFO A, SUB_SYS_INFO B
+    WHERE 1=1
+)
+, DFLT_APRO_STEP_INFO AS (
+    SELECT H.APRO_ROUT_SEQ, H.SUB_SYS_CD, H.OFC_CD, 
+    T.CSR_CURR_CD, T.CSR_AMT, T.APR_USR_NM_1ST, T.APR_USR_ID_1ST, T.APR_OFC_CD_1ST,
+    T.APR_USR_NM_2ND, T.APR_USR_ID_2ND, T.APR_OFC_CD_2ND FROM (
+    SELECT 
+    A.SUB_SYS_CD, A.OFC_CD, A.CSR_CURR_CD, A.CSR_AMT
+    , MAX(A.APR_USR_NM_1ST) APR_USR_NM_1ST, MAX(A.APR_USR_ID_1ST) APR_USR_ID_1ST, MAX(A.APR_OFC_CD_1ST) APR_OFC_CD_1ST
+    , MAX(A.APR_USR_NM_2ND) APR_USR_NM_2ND, MAX(A.APR_USR_ID_2ND) APR_USR_ID_2ND, MAX(A.APR_OFC_CD_2ND) APR_OFC_CD_2ND
+    FROM (
+        SELECT 
+        DENSE_RANK() OVER (PARTITION BY R.SUB_SYS_CD, R.OFC_CD, D.APRO_SEQ ORDER BY D.DP_SEQ ASC) RNK, 
+        R.SUB_SYS_CD, R.OFC_CD, R.CSR_CURR_CD, R.CSR_AMT
+        , CASE WHEN D.APRO_SEQ = 1 THEN D.APRO_USR_NM ELSE '' END APR_USR_NM_1ST
+        , CASE WHEN D.APRO_SEQ = 1 THEN D.APRO_USR_ID ELSE '' END APR_USR_ID_1ST
+        , CASE WHEN D.APRO_SEQ = 1 THEN D.APRO_OFC_CD ELSE '' END APR_OFC_CD_1ST
+        , CASE WHEN D.APRO_SEQ = 2 THEN D.APRO_USR_NM ELSE '' END APR_USR_NM_2ND
+        , CASE WHEN D.APRO_SEQ = 2 THEN D.APRO_USR_ID ELSE '' END APR_USR_ID_2ND
+        , CASE WHEN D.APRO_SEQ = 2 THEN D.APRO_OFC_CD ELSE '' END APR_OFC_CD_2ND
+        FROM COM_APRO_ROUT_DFLT_DTL D, COM_APRO_ROUT_DFLT R
+        WHERE 1=1
+        AND D.APRO_ROUT_SEQ(+) = R.APRO_ROUT_SEQ
+    ) A
+    WHERE A.RNK = 1
+    GROUP BY A.SUB_SYS_CD, A.OFC_CD, A.CSR_CURR_CD, A.CSR_AMT
+    ORDER BY A.SUB_SYS_CD, A.OFC_CD
+    ) T, COM_APRO_ROUT_DFLT H
+    WHERE H.SUB_SYS_CD = T.SUB_SYS_CD(+)
+      AND H.OFC_CD = T.OFC_CD(+)
+      AND H.DELT_FLG = 'N' 
+)
+SELECT 
+CASE 
+WHEN (SELECT M.OFC_TP_CD FROM MDM_ORGANIZATION M WHERE NVL(DELT_FLG,'N') <> 'Y' AND M.OFC_CD = @[login_ofc_cd]) IN ('HO')
+THEN 'Y'
+WHEN (SELECT M.OFC_TP_CD FROM MDM_ORGANIZATION M WHERE NVL(DELT_FLG,'N') <> 'Y' AND M.OFC_CD = @[login_ofc_cd]) IN ('HQ')
+THEN DECODE(A.AR_HD_QTR_OFC_CD,@[login_ofc_cd],'Y','N')
+ELSE DECODE(A.OFC_CD,@[login_ofc_cd],'Y','N')
+END AUTH_YN
+, A.AR_HD_QTR_OFC_CD, A.OFC_CD, A.SUB_SYS_CD
+, D.CSR_CURR_CD, D.CSR_AMT
+, D.APR_USR_NM_1ST, D.APR_OFC_CD_1ST
+, D.APR_USR_NM_2ND, D.APR_OFC_CD_2ND
+, (SELECT X.USR_ID || ', ' || X.CURR_AMT_UPD_DT HIS_RMK
+     FROM (
+           SELECT H.CRE_USR_ID USR_ID, TO_CHAR(H.CRE_DT,'YYYY-MM-DD HH24:MI') CURR_AMT_UPD_DT
+                , DENSE_RANK() OVER (PARTITION BY H.SUB_SYS_CD, H.OFC_CD ORDER BY H.APRO_ROUT_HIS_SEQ DESC) RNK
+                , H.SUB_SYS_CD
+                , H.OFC_CD
+    	     FROM COM_APRO_ROUT_DFLT_HIS H, COM_USER U
+             WHERE H.CRE_USR_ID = U.USR_ID(+)
+               AND NVL(U.USE_FLG(+),'N') = 'Y'
+          ) X
+  WHERE X.RNK = 1
+    AND X.SUB_SYS_CD = A.SUB_SYS_CD
+    AND X.OFC_CD = A.OFC_CD) HISTORY
+, D.APRO_ROUT_SEQ
+, (SELECT NVL(DP_PRCS_KNT,0) FROM MDM_CURRENCY WHERE CURR_CD=D.CSR_CURR_CD) DP_PRCS_KNT, D.APR_USR_ID_1ST, D.APR_USR_ID_2ND
+FROM OFC_N_SUBSYS A, DFLT_APRO_STEP_INFO D
+WHERE 1=1
+AND A.OFC_CD = D.OFC_CD(+)
+AND A.SUB_SYS_CD = D.SUB_SYS_CD(+)
+ORDER BY A.SEQ, A.AR_HD_QTR_OFC_CD, A.OFC_CD, A.SUB_SYS_CD			]]></sql>
+			<params>
+				<param name="sub_sys_cd" type="12" value="" out="N"/>
+				<param name="login_ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

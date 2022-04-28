@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOIfCsrListInputVORSQL">
+			<desc><![CDATA[2010.08.31 김영철 [CHM-201005571-01] [VOP-PSO] 공통 CSR내 Invoice 조건 칼럼 추가요청건(INV_NO로 조회부분 수정)]]></desc>
+			<sql><![CDATA[
+SELECT 
+X.IF_DT, X.CSR_NO, X.INV_DESC, X.CSR_CURR_CD, X.CSR_AMT, X.DUE_DT, X.IF_STATUS, X.ATTR_CTNT2, X.IF_ERR_RSN, X.CSR_CRE_DT
+, X.VNDR_NO, X.VNDR_TERM_NM, X.AFT_ACT_FLG, X.INV_ISS_DT, X.INV_RCV_DT, X.NO_OF_INV, X.RCV_ERR_FLG
+, X.APRO_RQST_NO, X.PAY_GRP_LU_CD, X.COST_OFC_CD, X.FM_EFF_DT, X.TO_EFF_DT, X.SEARCH_CSR_NO, X.DT_STATUS, X.OFC_CD, X.UPD_USR_ID, X.INV_STS_CD
+, X.INV_SUB_SYS_CD, X.IF_NO, X.RQST_USR_ID, X.RQST_USR_NM
+, NVL(MAX(FIRST_APRO_USR_ID),'') FIRST_APRO_USR_ID
+, NVL(MAX(SECOND_APRO_USR_ID),'') SECOND_APRO_USR_ID
+, NVL(MAX(FIRST_APRO_USR_NM),'') FIRST_APRO_USR_NM
+, NVL(MAX(SECOND_APRO_USR_NM),'') SECOND_APRO_USR_NM
+, DECODE(NVL(MAX(FIRST_APRO_STS), ''), 'C','Y','R','N','') FIRST_APRO_STS
+, DECODE(NVL(MAX(SECOND_APRO_STS), ''), 'C','Y','R','N','') SECOND_APRO_STS
+FROM ( 
+SELECT   B.IF_DT
+       , B.CSR_NO
+       , (SELECT VNDR_LGL_ENG_NM FROM MDM_VENDOR WHERE VNDR_SEQ = B.VNDR_NO) INV_DESC
+       , B.CSR_CURR_CD
+       , B.CSR_AMT
+       , B.DUE_DT
+       , B.IF_STATUS
+       , B.ATTR_CTNT2
+       , B.IF_ERR_RSN
+       , B.CSR_CRE_DT
+       , TO_CHAR(B.VNDR_NO, '000000') VNDR_NO
+       , B.VNDR_TERM_NM
+       , B.AFT_ACT_FLG
+       , TO_CHAR(MAX(B.INV_ISS_DT),'YYYY-MM-DD') INV_ISS_DT
+       , TO_CHAR(MAX(B.INV_RCV_DT),'YYYY-MM-DD') INV_RCV_DT
+       , COUNT(B.CSR_NO) NO_OF_INV
+       , B.IF_FLG
+       , B.RCV_ERR_FLG
+       , B.APRO_RQST_NO
+       , B.PAY_GRP_LU_CD
+       , B.COST_OFC_CD 
+       ,'' fm_eff_dt
+       ,'' to_eff_dt
+	   ,'' search_csr_no
+	   ,'' dt_status 
+	   ,'' ofc_cd
+       ,'' upd_usr_id 
+	   ,'' inv_sts_cd
+	   ,'' inv_sub_sys_cd
+	   ,'' if_no
+       , B.RQST_USR_ID
+       , B.RQST_USR_NM
+       , CASE WHEN B.APRO_RQST_SEQ = 1 AND B.APSTS_CD IS NOT NULL THEN B.APRO_USR_ID ELSE '' END FIRST_APRO_USR_ID
+       , CASE WHEN B.APRO_RQST_SEQ = 1 AND B.APSTS_CD IS NOT NULL THEN B.APRO_USR_NM ELSE '' END FIRST_APRO_USR_NM
+       , CASE WHEN B.APRO_RQST_SEQ = 1 THEN B.APSTS_CD ELSE '' END FIRST_APRO_STS
+       , CASE WHEN B.APRO_RQST_SEQ = 2 AND B.APSTS_CD IS NOT NULL THEN B.APRO_USR_ID ELSE '' END SECOND_APRO_USR_ID
+       , CASE WHEN B.APRO_RQST_SEQ = 2 AND B.APSTS_CD IS NOT NULL THEN B.APRO_USR_NM ELSE '' END SECOND_APRO_USR_NM
+       , CASE WHEN B.APRO_RQST_SEQ = 2 THEN B.APSTS_CD ELSE '' END SECOND_APRO_STS
+FROM
+         ( SELECT TO_CHAR(A.IF_DT,'YYYY-MM-DD') IF_DT
+               , A.CSR_NO
+               , H.COST_OFC_CD
+               , A.CSR_CURR_CD
+			   ,DECODE(H.INV_CURR_CD, 'KRW', ROUND(NVL(A.CSR_AMT,0),0)
+			      				  , 'JPY', ROUND(NVL(A.CSR_AMT,0),0)
+								  , ROUND(NVL(A.CSR_AMT,0),2)) CSR_AMT
+               , SUBSTR(A.INV_TERM_DT, 1, 4) ||'/' ||SUBSTR(A.INV_TERM_DT, 5, 2) ||'/' ||SUBSTR(A.INV_TERM_DT, 7, 2) DUE_DT
+               , CASE
+                         WHEN H.INV_STS_CD    = 'J' OR H.INV_STS_CD = 'G'
+                         THEN 'A/P Rejected'
+                         
+                         WHEN H.INV_STS_CD = 'E'
+                         THEN 'I/F Error'
+                         
+						 WHEN H.INV_STS_CD = 'X' AND H.CSR_NO IS NOT NULL AND A.AFT_ACT_FLG = 'N'
+						 THEN 'I/F Error Cancelled'
+
+						 WHEN H.INV_STS_CD = 'C' AND H.CSR_NO IS NOT NULL AND A.AFT_ACT_FLG = 'N' 
+                         THEN 'Approval Request Cancelled'
+                         
+                         WHEN H.INV_STS_CD = 'C' AND H.CSR_NO IS NOT NULL  AND 1 = (SELECT count(*) FROM AP_PAY_INV K WHERE K.CSR_NO  = H.CSR_NO AND K.INV_STS_CD = 'G' AND ROWNUM = 1)
+                              
+                         THEN 'A/P Rejected'
+                         
+                         
+                         WHEN H.INV_STS_CD = 'C' AND H.CSR_NO IS NOT NULL  AND 1 = (SELECT count(*) FROM AP_PAY_INV K WHERE K.CSR_NO  = H.CSR_NO AND K.INV_STS_CD = 'B' AND ROWNUM = 1)
+                              
+                         THEN 'Disapproved'
+                         
+                         WHEN H.INV_STS_CD = 'P'
+                             AND A.RCV_ERR_FLG IS NULL
+                         THEN 'I/F Success'
+                         
+                         WHEN H.INV_STS_CD    = 'R' OR H.INV_STS_CD = 'B'
+                         THEN 'Disapproved'
+                         
+                         WHEN H.INV_STS_CD = 'A'
+                             AND A.IF_FLG IS NULL
+                         THEN DECODE(A.APRO_FLG
+                                   ,'Y','Sending'
+                                   ,'Approval Requested')
+                         
+                         WHEN H.INV_STS_CD = 'D'
+                         THEN 'Paid'
+                         
+                         WHEN H.INV_STS_CD = 'X' AND H.CSR_NO IS NOT NULL AND A.AFT_ACT_FLG = 'X'
+                         THEN 'Approval Request Cancelled'
+                         ELSE H.INV_STS_CD
+                 END IF_STATUS
+               , A.ATTR_CTNT2
+               , A.IF_ERR_RSN
+               , A.VNDR_NO
+               , A.VNDR_TERM_NM
+               , A.AFT_ACT_FLG
+               , H.INV_ISS_DT
+               , C.APRO_RQST_NO
+               , H.INV_RCV_DT
+               , A.IF_FLG
+               , A.RCV_ERR_FLG
+               , H.INV_STS_CD 
+               , A.PAY_GRP_LU_CD 
+               , R.RQST_USR_ID
+               , R.RQST_USR_NM
+               , Q.APRO_USR_ID
+               , Q.APRO_USR_NM
+               , Q.APSTS_CD
+               , Q.APRO_RQST_SEQ
+               , TO_CHAR(A.CRE_DT ,'YYYY-MM-DD') CSR_CRE_DT
+         FROM    AP_PAY_INV H
+               , COM_APRO_CSR_DTL C
+               , COM_APRO_RQST_ROUT Q
+               , COM_APRO_RQST_HDR R
+               , AP_INV_HDR A
+         WHERE   1                    =1
+			 AND C.APRO_RQST_NO       = Q.APRO_RQST_NO
+#if (${dt_status} == 'IU' || ${dt_status} == 'AV') 
+             AND H.CSR_NO             = C.CSR_NO(+)
+#else
+			 AND H.CSR_NO             = C.CSR_NO
+#end
+
+#if (${dt_status} == 'IU')
+             AND C.APRO_RQST_NO       = R.APRO_RQST_NO
+#elseif (${dt_status} == 'AV')
+			 AND C.APRO_RQST_NO       = R.APRO_RQST_NO(+)
+#else
+			 AND C.APRO_RQST_NO       = R.APRO_RQST_NO
+#end
+			 AND H.CSR_NO             = A.CSR_NO
+             AND H.INV_OFC_CD         = @[ofc_cd]
+             AND NVL(H.DELT_FLG,'N') <> 'Y'
+
+#if (${src_ctnt} == 'SO_M&R') 
+			AND A.SRC_CTNT           IN ('SO_M&R', 'EQ')
+#else
+			AND A.SRC_CTNT           = @[src_ctnt]
+#end
+             
+#if (${if_no}=='CSR') 	 
+	#if (${search_csr_no}=='null' || ${search_csr_no} == '') 
+		#if (${dt_status} == 'AR') 
+ 			 AND R.RQST_ST_DT BETWEEN TO_DATE(@[fm_eff_dt],'YYYY-MM-DD') AND TO_DATE(@[to_eff_dt],'YYYY-MM-DD') + 0.99999421
+		#elseif (${dt_status} == 'AV') 
+		 	 AND (
+					( R.APSTS_CD IN ('C','R') 
+					  AND R.RQST_END_DT BETWEEN TO_DATE(@[fm_eff_dt],'YYYY-MM-DD') AND TO_DATE(@[to_eff_dt],'YYYY-MM-DD') + 0.99999421 )
+				     OR A.IF_DT BETWEEN TO_DATE(@[fm_eff_dt],'YYYY-MM-DD') AND TO_DATE(@[to_eff_dt],'YYYY-MM-DD') + 0.99999421
+				 )
+		#elseif (${dt_status} == 'IU')
+			 AND (A.IF_DT BETWEEN TO_DATE(@[fm_eff_dt],'YYYY-MM-DD') AND TO_DATE(@[to_eff_dt],'YYYY-MM-DD') + 0.99999421 )
+		#end
+	#else
+		AND A.CSR_NO LIKE '%'||@[search_csr_no]||'%'
+	#end
+#else
+	AND H.INV_NO LIKE '%'||@[search_csr_no]||'%'
+#end
+
+#if (${if_status} == 'AR')
+			AND H.INV_STS_CD = 'A' AND A.IF_FLG IS NULL AND A.APRO_FLG = 'N'
+#elseif (${if_status} == 'SD') 
+			AND A.IF_FLG IS NULL AND A.APRO_FLG = 'Y'
+#elseif (${if_status} == 'SC') 
+            AND H.INV_STS_CD = 'P' AND A.RCV_ERR_FLG IS NULL
+#elseif (${if_status} == 'IE') 
+            AND H.INV_STS_CD = 'E'
+#elseif (${if_status} == 'RJ')
+            AND H.INV_STS_CD = 'J'
+#elseif (${if_status} == 'DA')
+            AND H.INV_STS_CD = 'R'
+#elseif (${if_status} == 'SP')
+			AND H.INV_STS_CD = 'D'
+#end
+
+         ) B
+GROUP BY B.IF_DT
+       , B.CSR_NO
+       , B.CSR_CURR_CD
+       , B.CSR_AMT
+       , B.DUE_DT
+       , B.IF_STATUS
+       , B.ATTR_CTNT2
+       , B.IF_ERR_RSN
+       , B.CSR_CRE_DT
+       , B.VNDR_NO
+       , B.VNDR_TERM_NM
+       , B.AFT_ACT_FLG
+       , B.IF_FLG
+       , B.RCV_ERR_FLG
+       , B.APRO_RQST_NO
+       , B.PAY_GRP_LU_CD
+       , B.COST_OFC_CD 
+       , B.RQST_USR_ID
+       , B.RQST_USR_NM
+       , B.APRO_USR_ID
+       , B.APRO_USR_NM
+       , B.APSTS_CD
+       , B.APRO_RQST_SEQ
+) X 
+GROUP BY X.IF_DT, X.CSR_NO, X.INV_DESC, X.CSR_CURR_CD, X.CSR_AMT, X.DUE_DT, X.IF_STATUS, X.ATTR_CTNT2, X.IF_ERR_RSN, X.CSR_CRE_DT
+        , X.VNDR_NO, X.VNDR_TERM_NM, X.AFT_ACT_FLG, X.INV_ISS_DT, X.INV_RCV_DT, X.NO_OF_INV, X.RCV_ERR_FLG
+        , X.APRO_RQST_NO, X.PAY_GRP_LU_CD, X.COST_OFC_CD, X.FM_EFF_DT, X.TO_EFF_DT, X.SEARCH_CSR_NO, X.DT_STATUS, X.OFC_CD, X.UPD_USR_ID, X.INV_STS_CD
+        , X.INV_SUB_SYS_CD, X.IF_NO, X.RQST_USR_ID, X.RQST_USR_NM
+ORDER BY X.CSR_NO ASC			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+				<param name="src_ctnt" type="12" value="" out="N"/>
+				<param name="fm_eff_dt" type="12" value="" out="N"/>
+				<param name="to_eff_dt" type="12" value="" out="N"/>
+				<param name="search_csr_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

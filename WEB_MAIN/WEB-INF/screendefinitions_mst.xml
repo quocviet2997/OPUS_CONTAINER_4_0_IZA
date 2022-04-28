@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<!-- Suk Jun Kim : 2009-05-06 start -->
+    <screen name="EES_MST_0001">
+        <parameter key="title"    value="Equipment Status Code Creation, Update &amp; Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containerspecmgt/jsp/EES_MST_0001.jsp"/>
+    </screen>
+	<!-- Suk Jun Kim : 2009-05-06 end -->
+
+	<!-- Suk Jun Kim : 2009-04-30 start -->
+    <screen name="EES_MST_0005">
+        <parameter key="title"    value="ISO Code Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containerspecmgt/jsp/EES_MST_0005.jsp"/>
+    </screen>
+	<!-- Suk Jun Kim : 2009-04-30 end -->
+	
+	<!-- Suk Jun Kim : 2009-04-28 start -->
+    <screen name="EES_MST_0013">
+        <parameter key="title"    value="Equipment Organization Chart" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containerspecmgt/jsp/EES_MST_0013.jsp"/>
+    </screen>
+	<!-- Suk Jun Kim : 2009-04-28 end -->
+	
+	<!-- Lee Ho Sun : 2009-06-04 start -->
+    <screen name="EES_MST_0004">
+        <parameter key="title"    value="Lease Term Code Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containerspecmgt/jsp/EES_MST_0004.jsp"/>
+    </screen>
+	<!-- Lee Ho Sun : 2009-06-04 end -->
+	
+	<!-- Jung Ho Min : 2009-06-05 start -->
+    <screen name="EES_MST_0002">
+        <parameter key="title"    value="Container Type/Size Update/Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containerspecmgt/jsp/EES_MST_0002.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-06-05 end -->
+
+	<!-- Suk Jun Kim : 2009-05-11 start -->
+    <screen name="EES_MST_0021">
+        <parameter key="title"    value=" Container Specification Creation &amp; Update" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containerspecmgt/jsp/EES_MST_0021.jsp"/>
+    </screen>
+    
+    <screen name="EES_MST_0021_POP" template="templatePop">
+        <parameter key="title"    value=" Container Specification Creation &amp; Update" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containerspecmgt/jsp/EES_MST_0021.jsp"/>
+    </screen>
+	<!-- Suk Jun Kim : 2009-05-11 end -->
+
+	<!-- Suk Jun Kim : 2009-05-11 start -->
+    <screen name="EES_MST_0022">
+        <parameter key="title"    value="Container Specification Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containerspecmgt/jsp/EES_MST_0022.jsp"/>
+    </screen>
+    
+    <screen name="EES_MST_0022_POP" template="templatePop">
+        <parameter key="title"    value="Container Specification Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containerspecmgt/jsp/EES_MST_0022.jsp"/>
+    </screen>
+	<!-- Suk Jun Kim : 2009-05-11 end -->
+	
+	<!-- YC SHIN : 2017-11-10 start -->
+    <screen name="EES_MST_0023">
+        <parameter key="title"    value="Container Specification Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containerspecmgt/jsp/EES_MST_0023.jsp"/>
+    </screen>
+    
+    <screen name="EES_MST_0023_POP" template="templatePop">
+        <parameter key="title"    value="Container Specification Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containerspecmgt/jsp/EES_MST_0023.jsp"/>
+    </screen>
+	<!-- YC SHIN : 2017-11-10 end -->
+	
+	<!-- Lee Ho Sun : 2009-06-09 start -->
+    <screen name="EES_MST_0029">
+        <parameter key="title"    value="Container Status Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentleasehistory/leasesublease/jsp/EES_MST_0029.jsp"/>
+    </screen>
+    <screen name="EES_MST_0029_POP" template="templatePop">
+        <parameter key="title"    value="Container Status Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentleasehistory/leasesublease/jsp/EES_MST_0029.jsp"/>
+    </screen>
+	<!-- Lee Ho Sun : 2009-06-09 end -->	
+
+	<!-- Jung Ho Min : 2009-06-17 start -->
+    <screen name="EES_MST_0038" template="templatePop">
+        <parameter key="title"    value="Lot No Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containeronoffhire/jsp/EES_MST_0038.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-06-17 end -->
+	
+	<!-- Lee Ho Sun : 2009-06-11 start -->
+    <screen name="EES_MST_0035">
+        <parameter key="title"    value="Container Check Digit and Container Checking Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentleasehistory/leasesublease/jsp/EES_MST_0035.jsp"/>
+    </screen>
+	<!-- Lee Ho Sun : 2009-06-11 end -->	
+
+	<!-- Jung Ho Min : 2009-06-10 start -->
+    <screen name="EES_MST_0016">
+        <parameter key="title"    value="Own Container Creation (New Van)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containeronoffhire/jsp/EES_MST_0016.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-06-10 end -->
+	
+	<!-- Jung Ho Min : 2009-06-26 start -->
+    <screen name="EES_MST_0027">
+        <parameter key="title"    value="Container Status Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentleasehistory/leasesublease/jsp/EES_MST_0027.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-06-26 end -->
+
+	<!-- Lee Ho Sun : 2009-06-16 start -->
+    <screen name="EES_MST_0019">
+        <parameter key="title"    value="Container Master Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containeronoffhire/jsp/EES_MST_0019.jsp"/>
+    </screen>
+	<!-- Lee Ho Sun : 2009-06-16 end -->		
+		    <screen name="EES_MST_0019_POP" template="templatePop">
+        <parameter key="title"    value="Container Master Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containeronoffhire/jsp/EES_MST_0019.jsp"/>
+    </screen>
+	<!-- Lee Ho Sun : 2009-07-07 start -->
+    <screen name="EES_MST_0014">
+        <parameter key="title"    value=" Leased Container Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containeronoffhire/jsp/EES_MST_0014.jsp"/>
+    </screen>
+	<!-- Lee Ho Sun : 2009-07-07 end -->
+	
+	<!-- Lee Ho Sun : 2009-07-23 start -->
+    <screen name="EES_MST_0044">
+        <parameter key="title"    value="Container Master Update" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containeronoffhire/jsp/EES_MST_0044.jsp"/>
+    </screen>
+	<!-- Lee Ho Sun : 2009-07-23 end -->	
+
+	<!-- Jung Ho Min : 2009-07-30 start -->
+    <screen name="EES_MST_0025">
+        <parameter key="title"    value="Container Status Creation-LST and FND" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containeronoffhire/jsp/EES_MST_0025.jsp"/>
+    </screen>
+	<!-- Jung Ho Min : 2009-07-30 end -->
+	
+	<!-- Lee Ho Sun : 2009-07-23 start -->
+    <screen name="EES_MST_0024">
+        <parameter key="title"    value="Container Status Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containeronoffhire/jsp/EES_MST_0024.jsp"/>
+    </screen>
+	<!-- Lee Ho Sun : 2009-07-23 end -->	
+	
+	<!-- Lee Ho Sun : 2009-08-17 start -->
+    <screen name="EES_MST_0028">
+        <parameter key="title"    value=" Container Status Update" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containeronoffhire/jsp/EES_MST_0028.jsp"/>
+    </screen>
+	<!-- Lee Ho Sun : 2009-08-17 end -->
+	
+	<!-- Lee Ho Sun : 2009-08-17 start -->
+    <screen name="EES_MST_0046">
+        <parameter key="title"    value="Manufacture Date &amp; Manufacturer Inquiry and Update" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containeronoffhire/jsp/EES_MST_0046.jsp"/>
+    </screen>
+	<!-- Lee Ho Sun : 2009-08-17 end -->	
+	
+	<!-- NamKoong JinHo : 2010-10-18 start -->  
+	<screen name="EES_MST_0047">
+        <parameter key="title"    value="Reefer Unit Info Inquiry and Update" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containeronoffhire/jsp/EES_MST_0047.jsp"/>
+    </screen>
+	<!-- NamKoong JinHo : 2010-10-18 start -->  
+	 <screen name="EES_MST_0017">
+        <parameter key="title"    value="Own Container Interface to ERP FA" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containeronoffhire/jsp/EES_MST_0017.jsp"/>
+    </screen>
+        <!-- Park Young Jin : 2014-08-07 start -->  
+ 	<screen name="EES_MST_0050">
+        <parameter key="title"    value="RU Label Maintenance" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/ruLabelmanagement/ruLabelmanagement/jsp/EES_MST_0050.jsp"/>
+    </screen>
+    <!-- Park Young Jin : 2014-08-07 start -->  
+ 	<screen name="EES_MST_0051">
+        <parameter key="title"    value="RU Label Attatchment / Detachment" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/ruLabelmanagement/ruLabelmanagement/jsp/EES_MST_0051.jsp"/>
+    </screen>
+     <!-- Ji yeon Jeon : 2015-09-01 start --> 
+    <screen name="EES_MST_0051_POP"  template="templatePop">
+        <parameter key="title"    value="RU Label Attatchment / Detachment" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/ruLabelmanagement/ruLabelmanagement/jsp/EES_MST_0051_POP.jsp"/>
+    </screen>
+    <!-- Park Young Jin : 2014-08-07 start -->  
+ 	<screen name="EES_MST_0052"  template="templatePop">
+        <parameter key="title"    value="RU Label History" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/ruLabelmanagement/ruLabelmanagement/jsp/EES_MST_0052.jsp"/>
+    </screen>
+    <!-- Un JEONG : 2015-02-17 start -->
+ 	<screen name="EES_MST_0053"  template="templatePop">
+        <parameter key="title"    value="RU Label Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/ruLabelmanagement/ruLabelmanagement/jsp/EES_MST_0053.jsp"/>
+    </screen>
+    <screen name="EES_MST_0054"  template="templatePop">
+        <parameter key="title"    value="RU Label - Search Condition" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/ruLabelmanagement/ruLabelmanagement/jsp/EES_MST_0054.jsp"/>
+    </screen>
+    <screen name="EES_MST_0055"  template="templatePop">
+        <parameter key="title"    value="ERP FA Interface - Container List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containeronoffhire/jsp/EES_MST_0055.jsp"/>
+    </screen>
+    <!-- Un JEONG : 2015-02-17 end -->
+    <!-- Eunju Son : 2017-11-07 start -->  
+    <screen name="EES_MST_0060">
+        <parameter key="title"    value="Parent Status Interface Result" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/equipmentmanagement/containersynchronization/jsp/EES_MST_0060.jsp"/>
+    </screen>
+    <!-- Eunju Son : 2017-11-07 end -->  
+     
+    <!-- ===================== QUERY-EXE PAGE   ===================== -->
+	<!-- Un JEONG : 2015-02-10 start -->
+    <screen name="EES_MST_SECRETWEAPON">
+        <parameter key="title"    value="EES_MST_SECRETWEAPON" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/mst/mstcommon/mstcommon/jsp/EES_MST_QEXE.jsp"/>
+    </screen>
+	<!-- Un JEONG : 2015-02-10 end -->
+	<!-- ===================== QUERY-EXE PAGE  ===================== -->
+	
+</screen-definitions>

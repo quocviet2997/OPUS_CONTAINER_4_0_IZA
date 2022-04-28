@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOSrchPayGrpLuCdRSQL">
+			<desc><![CDATA[]]></desc>
+			<sql><![CDATA[
+SELECT OFC_CD    ,
+       OFC_ENG_NM OFC_KRN_NM,
+       AP_CTR_CD ,
+       DECODE(SUBSTR(AP_CTR_CD, 2, 1),
+              '2', '대내지불',
+              '1', '대외지불',
+              '') AP_CTR_CD_GBN ,
+       SUBSTR(AP_CTR_CD, 2, 1) AP_CTR_CD_IO
+FROM   MDM_ORGANIZATION
+WHERE  DELT_FLG = 'N'
+  AND OFC_CD = @[ofc_cd]
+  AND AP_CTR_CD IS NOT NULL			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

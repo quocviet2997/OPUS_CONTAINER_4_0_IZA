@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+    <!--========== < Common > ==========-->
+	<!--  Get Scenario ID  -->
+	<screen name="EES_COMMON">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/common/jsp/EES_COMMON.jsp" />
+	</screen> 
+
+	<!--  Get Scenario ID- Grid 1 : EES_COMMONGS omit. because not used. by ChungEunHo -->
+	<!-- <screen name="EES_COMMONGS" template="templateIBSheet">
+		<parameter key="body"	 value="apps/opus/ees/eqr/common/jsp/EES_COMMONGS.jsp" />
+	</screen> -->
+
+	<!--  Get Scenario ID PopUp -->
+	<screen name="EES_COMMONPop" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/common/jsp/EES_COMMON.jsp" />
+	 </screen>
+	<!-- EES_ECCCDCHECK use ViewAdapter -->
+	
+	<screen name="EES_LOCCDCHECK">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/common/jsp/EES_LOCCDCHECK_IFRAME.jsp" />
+	</screen>	
+	
+	<screen name="EES_REPO_COMMON">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/common/jsp/EES_REPO_COMMON.jsp" />
+	</screen>	 
+	
+	<!--  Country -->
+	<screen name="EES_COUNTRY">
+	  <parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/common/jsp/EES_COUNTRY.jsp" />
+	</screen>
+	
+	<!--  DUPLICATECHECKPOD use ViewAdapter --> 
+	
+	<!--  VESSEL_SKD_CHECK use ViewAdapter -->
+   
+
+	<!--  LOC YARD use ViewAdapter --> 
+	
+	<!--  LOC YARD EES_LOCYARDCOMPANY_COMMON not used --> 
+	
+	<!--  LOC YARD EES_LOCYARDCOMPANY_COMMON not used --> 		
+
+	<!--  LOC YARD INITIAL not used --> 
+
+	<!--  LOC YARD EXIST use ViewAdapter --> 
+		
+	
+	<!--  LOC YARD EXIST EES_LOCYARDEXISTCOMPANY_COMMON use ViewAdapter --> 
+		
+	<!--  LOC YARD --> 
+	<screen name="EES_LOCYARDECC_COMMON" >
+	    <parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/common/jsp/EES_LOCYARDECC_COMMON.jsp" />
+	</screen>			 
+
+	<!--  VENDOR use ViewAdapter --> 
+	
+	<!--  VENDOR BY SEQ use ViewAdapter --> 
+	
+	<!--  EES_WEEKDAILY_COMMON use ViewAdapter --> 
+	
+	<!--  VVD use ViewAdapter --> 
+
+	<!--  VVD INLAND use ViewAdapter --> 
+	
+	<!--  VVD EXIST --> 
+	<screen name="EES_VVDEXIST_IFRAME" >
+		<parameter key="body"	 value="apps/opus/ees/eqr/common/jsp/EES_VVDEXIST_IFRAME.jsp" />
+	</screen>		
+	
+	<!--  WEEK DATE PERIOD use ViewAdapter --> 
+	
+	<!--  SEARCH ETA DATE use ViewAdapter --> 
+	
+	<screen name="EES_WEEK_COMMON">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/common/jsp/EES_WEEK_COMMON.jsp" />
+	</screen>
+	<screen name="EES_CURR_WEEK">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/common/jsp/EES_CURR_WEEK.jsp" />
+	</screen>	 
+	<screen name="EES_CHECK_WEEK">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/common/jsp/EES_CHECK_WEEK.jsp" />
+	</screen>	 
+	
+	<screen name="EES_CHECK_PERIOD">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/common/jsp/EES_CHECK_PERIOD.jsp" />
+	</screen>	 	
+	
+	<screen name="EES_BAYPORT">
+		<parameter key="title"	value="Bayport Data Interface" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/common/jsp/EES_BAYPORT.jsp" />
+	</screen>
+	<!--  EES_VVD_LANE use ViewAdapter -->
+	
+	<!--  Data duplicate Modify PopUp -->
+	<screen name="EES_EQR_0105" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/common/eqradjust/jsp/EES_EQR_0105.jsp" />
+	</screen>
+
+	<!--  Data duplicate Modify PopUp -->
+	<screen name="EES_EQR_0105_IFRAME" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	value="apps/opus/ees/eqr/common/eqradjust/jsp/EES_EQR_0105_IFRAME.jsp" />
+	</screen>
+    
+    <!--========== < DefaultManage > ==========-->
+    <!-- Create-ECC Info [ EES_EQR_0115 ]-->
+    <screen name="EES_EQR_0115">
+        <parameter key="title"    value="EES_EQR_0115" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0115.jsp"/>
+    </screen>
+    <!-- Create-Link Info [ EES_EQR_0116 ]-->
+    <screen name="EES_EQR_0116">
+        <parameter key="title"  value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"    value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0116.jsp" />
+    </screen>
+    
+    <!-- Demand Forecast Parameter Management [ EES_EQR_0034 ]-->
+     <screen name="EES_EQR_0034">
+        <parameter key="title"    value="Demand Forecast Parameter Management " direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0034.jsp"/>
+    </screen>
+    
+    <!-- Turn Time [ EES_EQR_0043 ]-->
+    <screen name="EES_EQR_0043">
+        <parameter key="title"    value="Turn-Time" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0043.jsp"/>
+    </screen>
+    
+    <!-- Holiday Effect Management [ EES_EQR_0042 ]-->
+    <screen name="EES_EQR_0042">
+        <parameter key="title"  value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"    value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0042.jsp" />
+    </screen>
+    
+    <!-- Safety Stock Management [ EES_EQR_0117 ] -->
+      <screen name="EES_EQR_0117">
+        <parameter key="title"    value="ssss" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0117.jsp"/>
+    </screen>
+    
+    <!-- S/T On Hire Management [ EES_EQR_0118 ] -->
+    <screen name="EES_EQR_0118">
+        <parameter key="title"    value="EES_EQR_0118" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0118.jsp"/>
+    </screen>
+    
+    <!-- S/T Off Hire Management [ EES_EQR_0119 ] -->  
+    <screen name="EES_EQR_0119">
+        <parameter key="title"    value="S/T Off Hire" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0119.jsp"/>
+    </screen>
+
+    <!-- L/T Off Hire Management [ EES_EQR_0120 ] -->
+    <screen name="EES_EQR_0120">
+        <parameter key="title"    value="EES_EQR_0120" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0120.jsp"/>
+    </screen>    
+    
+    <!-- New Van / LT [ EES_EQR_0121 ] -->
+    <screen name="EES_EQR_0121">
+        <parameter key="title"  value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"    value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0121.jsp" />
+    </screen>
+    <!-- HJL Domestic Management [ EES_EQR_0122 ] -->
+     <screen name="EES_EQR_0122">
+        <parameter key="title"    value="HJL Domestic" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0122.jsp"/>
+    </screen>
+    
+    <!-- Sublease Out Management [ EES_EQR_0123 ] -->
+    <screen name="EES_EQR_0123">
+        <parameter key="title"    value="EES_EQR_0123" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0123.jsp"/>
+    </screen>
+        
+    <!-- Cabotage AND HJS Rule [ EES_EQR_0124 ] -->
+    <screen name="EES_EQR_0124">
+        <parameter key="title"    value="Cabotage HJS Rule" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0124.jsp"/>
+    </screen>
+    <!-- Constraint by Lane/POD [ EES_EQR_0137 ] -->
+    <screen name="EES_EQR_0137">
+        <parameter key="title"    value="Constraint by Lane/POD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0137.jsp"/>
+    </screen>
+
+    <!-- Inquiry - ECC Info [ EES_EQR_0134 ] -->
+    <screen name="EES_EQR_0134">
+        <parameter key="title"    value="EES_EQR_0134" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0134.jsp"/>
+    </screen>
+      
+    <!-- Inquiry - Link Info [ EES_EQR_0133 ] -->   
+    <screen name="EES_EQR_0133">
+        <parameter key="title"  value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"    value="apps/opus/ees/eqr/defaultmanage/scenariodefaultmanage/jsp/EES_EQR_0133.jsp" />
+    </screen>
+    
+    <!-- EQ O/B Forecast Red Light Alert [ EES_EQR_0035 ] -->    
+    <screen name="EES_EQR_0035">
+        <parameter key="title"    value="EES_EQR_0035" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/repothresholdmanage/jsp/EES_EQR_0035.jsp"/>
+    </screen>    
+    
+    <!-- EInput Data Red Light Alert [ EES_EQR_0001 ] -->    
+    <screen name="EES_EQR_0001">
+        <parameter key="title"  value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"    value="apps/opus/ees/eqr/defaultmanage/repothresholdmanage/jsp/EES_EQR_0001.jsp" />
+    </screen>
+    
+    <!-- Repo Plan Red Light Alert [ EES_EQR_0044 ] -->
+    <screen name="EES_EQR_0044">
+        <parameter key="title"    value="EES_EQR_0044" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/repothresholdmanage/jsp/EES_EQR_0044.jsp"/>
+    </screen>    
+    
+    <!-- Execution Feedback [ EES_EQR_0058 ] -->
+    <screen name="EES_EQR_0058">
+        <parameter key="title"    value="EES_EQR_0058" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/defaultmanage/repothresholdmanage/jsp/EES_EQR_0058.jsp"/>
+    </screen>
+    
+    <!--========== < Scenario > ==========-->
+    <!-- Inquire Scenario ID List [ EES_EQR_0002 ] -->
+    <screen name="EES_EQR_0002">
+        <parameter key="title"    value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/scenariomanage/jsp/EES_EQR_0002.jsp" />
+    </screen>
+    <!-- RLA List [ EES_EQR_0003 ] -->
+    <screen name="EES_EQR_0003">
+        <parameter key="title"  value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"    value="apps/opus/ees/eqr/scenariomanage/inputdatarlaexamine/jsp/EES_EQR_0003.jsp" />
+    </screen>
+    
+    <!-- O/B Forecast [ EES_EQR_0025 ] -->
+    <screen name="EES_EQR_0025">
+        <parameter key="title"    value="EES_EQR_0025" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/cntrforecastmanage/jsp/EES_EQR_0025.jsp"/>
+    </screen>
+    
+    <!-- I/B Forecast [ EES_EQR_0079 ] -->
+    <screen name="EES_EQR_0079">
+        <parameter key="title"    value="EES_EQR_0079" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/cntrforecastmanage/jsp/EES_EQR_0079.jsp"/>
+    </screen>
+    
+    <!-- ECC Info [ EES_EQR_0007 ] -->
+    <screen name="EES_EQR_0007">
+        <parameter key="title"    value="EES_EQR_0007" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/eccinfomanage/jsp/EES_EQR_0007.jsp"/>
+    </screen>    
+    
+    <!-- Link Info [ EES_EQR_0009 ] -->
+    <screen name="EES_EQR_0009">
+        <parameter key="title"    value="EES_EQR_0009" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/ecclinkinfomanage/jsp/EES_EQR_0009.jsp"/>
+    </screen>    
+    
+    <!-- Vessel SKD [ EES_EQR_0111 ] -->
+    <screen name="EES_EQR_0111">
+        <parameter key="title"    value="Embrace PI and Be the future!" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/scenariomanage/jsp/EES_EQR_0111.jsp" />
+    </screen>
+    <!-- BSA [ EES_EQR_0014 ] -->
+    <screen name="EES_EQR_0014">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/scenariomanage/vslresidualspacemanage/jsp/EES_EQR_0014.jsp" />
+	</screen>
+    <!-- Vessel R.Capa. [ EES_EQR_0060 ] -->
+    <screen name="EES_EQR_0060">
+        <parameter key="title"    value="Vessel R.Capa." direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/vslresidualspacemanage/jsp/EES_EQR_0060.jsp"/>
+    </screen>
+    
+    <!-- Safety Stock [ EES_EQR_0026 ] -->
+    <screen name="EES_EQR_0026">
+        <parameter key="title"    value="Safty Stock" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/cntrsafetystockmanage/jsp/EES_EQR_0026.jsp"/>
+    </screen>
+    
+    <!-- ST On-Hire [ EES_EQR_0017 ] -->
+    <screen name="EES_EQR_0017">
+        <parameter key="title"    value="ST On-Hire" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/leaseinfomanage/jsp/EES_EQR_0017.jsp"/>
+    </screen>
+
+    <!-- ST Off-Hire [ EES_EQR_0085 ] -->
+    <screen name="EES_EQR_0085">
+        <parameter key="title"    value="S/T off hier" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/leaseinfomanage/jsp/EES_EQR_0085.jsp"/>
+    </screen>
+    <!-- LT Off-Hire [ EES_EQR_0086 ] -->
+    <screen name="EES_EQR_0086">
+        <parameter key="title"    value="L/T off hier" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/leaseinfomanage/jsp/EES_EQR_0086.jsp"/>
+    </screen>
+    
+    <!-- New VAN/LT [ EES_EQR_0020 ] -->
+    <screen name="EES_EQR_0020">
+        <parameter key="title"    value="EES_EQR_0020" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/onhiredomesticnewvanscheduleinput/jsp/EES_EQR_0020.jsp"/>
+    </screen>
+    
+    <!-- US Domestic [ EES_EQR_0021 ] -->
+    <screen name="EES_EQR_0021">
+        <parameter key="title"    value="EES_EQR_0021" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/onhiredomesticnewvanscheduleinput/jsp/EES_EQR_0021.jsp"/>
+    </screen>
+    
+    <!-- Sublease Out [ EES_EQR_0090 ] -->
+    <screen name="EES_EQR_0090">
+        <parameter key="title"    value="EES_EQR_0090" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/onhiredomesticnewvanscheduleinput/jsp/EES_EQR_0090.jsp"/>
+    </screen>
+    <!-- Constraint 1 [ EES_EQR_0022 ] -->
+    <screen name="EES_EQR_0022">
+		<parameter key="title"	value="EES_EQR_0022" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/scenariomanage/repoconstraint/jsp/EES_EQR_0022.jsp" />
+	</screen>
+    <!-- Constraint 2 [ EES_EQR_0138 ] -->
+    <screen name="EES_EQR_0138">
+        <parameter key="title"    value="Constraint by Lane/ECC" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/repoconstraint/jsp/EES_EQR_0138.jsp"/>
+    </screen>
+    
+    <!-- Run Empty Repo Optimization [ EES_EQR_0049 ] -->
+      <screen name="EES_EQR_0049">
+        <parameter key="title"    value="run_optimizer" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/cntrrepoplanoptiexecute/jsp/EES_EQR_0049.jsp"/>
+    </screen>
+
+    <!-- Engine monitoring  [EES_EQR_0050] -->
+    <screen name="EES_EQR_0050" template="templatePop">
+        <parameter key="title"    value="engine monitor" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/cntrrepoplanoptiexecute/jsp/EES_EQR_0050.jsp"/>
+    </screen>
+    
+    
+    <!--========== < Repo Plan > ==========-->
+    <!-- Inquire Repo Plan ID List [ EES_EQR_0045 ] -->
+    <screen name="EES_EQR_0045">
+        <parameter key="title"    value="EES_EQR_0045" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoplanmanage/jsp/EES_EQR_0045.jsp"/>
+    </screen>
+    
+    <!-- Inquire Repo Plan Data [ EES_EQR_0051 ] -->
+    <screen name="EES_EQR_0051">
+        <parameter key="title"    value="Inquire Repo Plan Data" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoplanmanage/jsp/EES_EQR_0051.jsp"/>
+    </screen>
+    
+    <!-- KPI Summary Of Container Repo Plan [ EES_EQR_0071 ] -->
+    <screen name="EES_EQR_0071">
+        <parameter key="title"    value="EES_EQR_0071" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoplankpianalysis/jsp/EES_EQR_0071.jsp"/>
+    </screen>
+    
+    <!-- Forecasted M/B [ EES_EQR_0136 ] -->
+    <screen name="EES_EQR_0136">
+        <parameter key="title"    value="Forecasted M/B" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoplankpianalysis/jsp/EES_EQR_0136.jsp"/>
+    </screen>
+    
+    <!-- Forecasted Sea Inventory [ EES_EQR_0091 ] -->
+    
+    
+    
+    <!--========== < Execution Plan > ==========-->
+    <!-- Execution Plan Create/Update - T.VVD, D.VVD [ EES_EQR_0059 ] -->
+    <screen name="EES_EQR_0059">
+        <parameter key="title"    value="Execution Plan" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoexecutionplanestablish/jsp/EES_EQR_0059.jsp"/>
+    </screen>
+    
+    <screen name="EES_EQR_0059_POP" template="templatePop">
+        <parameter key="title"    value="Execution Plan" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoexecutionplanestablish/jsp/EES_EQR_0059_POP.jsp"/>
+    </screen>
+
+    
+    <!-- PopUP -->
+    <!--  Forecasted Vessel Residual Capacity Search [ EES_EQR_0113 ] -->
+	<screen name="EES_EQR_0113" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/repoplanmanage/cntrrepoexecutionplanestablish/jsp/EES_EQR_0113.jsp" />
+	</screen>
+    <!--  Inventory Container List [ EES_EQR_0094 ] -->
+	<screen name="EES_EQR_0094" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/repoplanmanage/cntrrepoexecutionplanestablish/jsp/EES_EQR_0094.jsp" />
+	</screen>
+	
+	<!--  Inventory Container List [ EES_EQR_0094 ] EES_EQR_0094 GS2 -->
+	<screen name="EES_EQR_0094GS2" template="templatePop">
+		<parameter key="body"	 value="apps/opus/ees/eqr/repoplanmanage/cntrrepoexecutionplanestablish/jsp/EES_EQR_0094GS2.jsp" />
+	</screen>
+	
+	<!-- BKG Split Create [ EES_EQR_0130 ] -->
+	<screen name="EES_EQR_0130" template="templatePop">
+        <parameter key="title"    value="BKG Split Create" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoexecutionplanestablish/jsp/EES_EQR_0130.jsp"/>
+    </screen>
+    
+    	
+	<!--  Combined [ EES_EQR_0108 ] -->
+	<screen name="EES_EQR_0108" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/repoplanmanage/cntrrepoexecutionplanestablish/jsp/EES_EQR_0108.jsp" />
+	</screen>
+	
+    <!-- EQR Organization Chart [ EES_EQR_0139 ] -->
+	<screen name="EES_EQR_0139" template="templatePop">
+        <parameter key="title"    value="EQR Organization Chart" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoexecutionplanestablish/jsp/EES_EQR_0139.jsp"/>
+    </screen>
+    <!-- Send Email or FAX.  [ EES_EQR_0131 ] -->
+    <screen name="EES_EQR_0131" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/repoplanmanage/cntrrepoexecutionplanestablish/jsp/EES_EQR_0131.jsp" />
+	</screen>
+	<!-- Search Send History email / FAX.  [ EES_EQR_0132 ] -->
+	<screen name="EES_EQR_0132" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/repoplanmanage/cntrrepoexecutionplanestablish/jsp/EES_EQR_0132.jsp" />
+	</screen>
+	<!-- Forecasted Land Inventory  [ EES_EQR_0112 ] -->
+	<screen name="EES_EQR_0112" template="templatePop">
+        <parameter key="title"    value="Forecasted Land Inventory" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoexecutionplanestablish/jsp/EES_EQR_0112.jsp"/>
+    </screen>
+    
+    <!-- EQR All-Weeks' Plan Access Grant [ EES_EQR_0143] -->
+    <screen name="EES_EQR_0143" template="templatePop">
+        <parameter key="title"    value="EQR All-Weeks' Plan Access Grant" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoexecutionplanestablish/jsp/EES_EQR_0143.jsp"/>
+    </screen>
+	
+    <!--========== < Change Plan > ==========-->
+    <!-- Change POD Simulation [ EES_EQR_0012 ] -->
+      <screen name="EES_EQR_0012">
+        <parameter key="title"    value="Change POD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/simulationmanage/codsimulate/jsp/EES_EQR_0012.jsp"/>
+    </screen>
+    
+    <!-- POL Simulation Analysis [ EES_EQR_0098] -->
+    <screen name="EES_EQR_0098">
+        <parameter key="title"    value="POL Simulation Analyes" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/simulationmanage/codsimulate/jsp/EES_EQR_0012.jsp"/>
+    </screen>
+    
+	<!-- POD Simulation Analysis [ EES_EQR_0099] -->
+    <screen name="EES_EQR_0099">
+        <parameter key="title"    value="POD Simulation Analyes" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/simulationmanage/codsimulate/jsp/EES_EQR_0012.jsp"/>
+    </screen>
+
+    <!-- Oneway Offer Simulation [ EES_EQR_0010 ] -->
+    <screen name="EES_EQR_0010">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/simulationmanage/onewaysimulate/jsp/EES_EQR_0010.jsp" />
+	</screen>
+	
+    <!-- Change Vessel Schedule Simulation [ EES_EQR_0011 ] -->    
+    <screen name="EES_EQR_0011">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/simulationmanage/vesselschedulechangesimulate/jsp/EES_EQR_0011.jsp" />
+	</screen>
+	
+	<!-- Change Vessel Schedule Simulation Analysis[ EES_EQR_0097 ] -->    
+    <screen name="EES_EQR_0097">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/simulationmanage/vesselschedulechangesimulate/jsp/EES_EQR_0011.jsp" />
+	</screen>
+	
+    <!-- Inquire/Create Sensitivity [ EES_EQR_0065 ] -->
+     <screen name="EES_EQR_0065">
+        <parameter key="title"    value="SensitivityAnalysis" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/simulationmanage/cntrrepoplansensitivityanalysis/jsp/EES_EQR_0065.jsp"/>
+    </screen>
+    
+    <!-- Analyze Cost /Capa Sensitivity [ EES_EQR_0088 ] -->
+ 	<screen name="EES_EQR_0088">
+        <parameter key="title"    value="MTY Repo Inquiry by Period" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/simulationmanage/cntrrepoplansensitivityanalysis/jsp/EES_EQR_0088.jsp"/>
+    </screen> 
+    
+    <!--========== < Analysis > ==========-->
+    <!-- Empty Repo. Result [ EES_EQR_0144 ] -->
+    <screen name="EES_EQR_0144">
+        <parameter key="title"    value="EES_EQR_0144" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrreporesult/jsp/EES_EQR_0144.jsp"/>
+    </screen>
+    
+    <!-- Forecast Perform AND Match Ratio [ EES_EQR_0037 ] -->
+    <screen name="EES_EQR_0037">
+        <parameter key="title"    value="EES_EQR_0037" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrforecastprecisionmanage/jsp/EES_EQR_0037.jsp"/>
+    </screen>
+    
+    <!-- Execution Perform AND Feedback[ EES_EQR_0063 ] -->
+    <screen name="EES_EQR_0063">
+        <parameter key="title"    value="EES_EQR_0063" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoexecutionfeedbackexamine/jsp/EES_EQR_0063.jsp"/>
+    </screen>
+    
+    <!-- Match Back Performance Inquiry [ EES_EQR_0072 ] -->
+    <screen name="EES_EQR_0072">
+        <parameter key="title"    value="Forecasted M/B" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoplankpianalysis/jsp/EES_EQR_0072.jsp"/>
+    </screen>
+    <!-- Load Factor Performance Inquiry [ EES_EQR_0074 ] -->
+      <screen name="EES_EQR_0074">
+        <parameter key="title"    value="Inventory Container List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoplankpianalysis/jsp/EES_EQR_0074.jsp"/>
+    </screen>
+    
+    <!-- ORG/DST Repo Plan AND Cost Inquiry [ EES_EQR_0070 ] -->
+       <screen name="EES_EQR_0070">
+        <parameter key="title"    value="compare" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoplancompare/jsp/EES_EQR_0070.jsp"/>
+    </screen>
+    <!-- Repo Plan Cost Estimation AND Performance Inquiry [ EES_EQR_0135 ] -->
+    <screen name="EES_EQR_0135" >
+        <parameter key="title"    value="Repo Plan Cost Estimation  Performance Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoplancompare/jsp/EES_EQR_0135.jsp"/>
+    </screen>
+    <!-- Bay Plan I/F Search [ EES_EQR_0140] -->
+    <screen name="EES_EQR_0140" template="templatePop">
+        <parameter key="title"    value="Bay PLAN" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/simulationmanage/codsimulate/jsp/EES_EQR_0140.jsp"/>
+    </screen>
+    
+    <!--========== < MTY Rail Trans. > ==========-->
+    <!-- MTY Rail Available Inquiry [ EES_EQR_0142 ] -->
+    <!-- MTY Rail Trans Result [ EES_EQR_0143 ] -->
+    
+
+    <!--========== < PopUp > ==========-->
+    <!-- Senario Remark Save PopUp [ EES_EQR_0005 ]-->
+    <screen name="EES_EQR_0005" template="templatePop">
+        <parameter key="title"    value="Scenario Remark Save" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/scenariomanage/jsp/EES_EQR_0005.jsp"/>
+    </screen>
+     <!-- Senario ID List Search PopUp [ EES_EQR_0106 ]-->
+     <screen name="EES_EQR_0106" template="templatePop">
+        <parameter key="title"    value="ScenarioPopUP" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/scenariomanage/jsp/EES_EQR_0106.jsp"/>
+    </screen>
+
+	<!-- Holiday Effect PopUp [ EES_EQR_0114 ] -->
+    <screen name="EES_EQR_0114" template="templatePop">
+        <parameter key="title"    value="Holiday Effect" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/cntrforecastmanage/jsp/EES_EQR_0114.jsp"/>
+    </screen>
+    
+    <!-- Repo Plan Remark Save PopUp [ EES_EQR_0046 ] -->
+	<screen name="EES_EQR_0046" template="templatePop">
+        <parameter key="title"    value="Repo Plan Remark Save" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoplanmanage/jsp/EES_EQR_0046.jsp"/>
+    </screen>
+    
+    <!-- Scenario Copy Monitoring PopUp [ EES_EQR_0127 ]-->
+	<screen name="EES_EQR_0127" template="templatePop">
+        <parameter key="title"    value="Repo Plan Remark Save" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/scenariomanage/cntrrepoplanoptiexecute/jsp/EES_EQR_0127.jsp"/>
+    </screen>
+            
+    <!--  CNTR Turn-Time Search / Modify PopUp -->
+	<screen name="EES_EQR_0126" template="templatePop">
+		<parameter key="title"	value="Embrace PI and Be the future!" direct="true"/>
+		<parameter key="body"	 value="apps/opus/ees/eqr/scenariomanage/cntrforecastmanage/jsp/EES_EQR_0126.jsp" />
+	</screen>
+	
+	<!-- TS Guideline Popup [ EES_EQR_0129 ]-->
+    <screen name="EES_EQR_0129" template="templatePop">
+        <parameter key="title"    value="TS Guideline Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoplanmanage/jsp/EES_EQR_0129.jsp"/>
+    </screen>
+	
+    <!-- RepoPlan List search PopUp [ EES_EQR_0107 ]-->
+    <screen name="EES_EQR_0107" template="templatePop">
+        <parameter key="title"    value="EES_EQR_0107" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrrepoplanmanage/jsp/EES_EQR_0107.jsp"/>
+    </screen>
+
+	
+	<!-- MTY Balance Report -->
+	<!-- MTY Balance Report [ EES_EQR_5001 ] -->
+	<screen name="EES_EQR_5001">
+        <parameter key="title"    value="MTY Balance Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/mtyequipmentforecast/mtyequipmentforecast/jsp/EES_EQR_5001.jsp"/>
+    </screen>
+    <screen name="EES_EQR_5002" template="templatePop"> 
+        <parameter key="title"    value="MTY Repo In/ Out Plan" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/mtyequipmentforecast/mtyequipmentforecast/jsp/EES_EQR_5002.jsp"/>
+    </screen>
+    <screen name="EES_EQR_5003" template="templatePop"> 
+        <parameter key="title"    value="+/- Others Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/mtyequipmentforecast/mtyequipmentforecast/jsp/EES_EQR_5003.jsp"/>
+    </screen>
+    <screen name="EES_EQR_5004" template="templatePop"> 
+        <parameter key="title"    value="OW/ On-hire Receiving Plan" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/mtyequipmentforecast/mtyequipmentforecast/jsp/EES_EQR_5004.jsp"/>
+    </screen>
+    <screen name="EES_EQR_5005"> 
+        <parameter key="title"    value="Forecast Accuracy Review (By Week)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/mtyequipmentforecast/mtyequipmentforecast/jsp/EES_EQR_5005.jsp"/>
+    </screen>
+    
+    <screen name="EES_EQR_5007" template="templatePop"> 
+        <parameter key="title"    value="Evaluation Rule" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/mtyequipmentforecast/mtyequipmentforecast/jsp/EES_EQR_5007.jsp"/>
+    </screen>
+        
+	<!-- MTY COD Confirmation -->
+	<!-- MTY COD Simulation [ EES_EQR_6001 ]- Prak Kwang Seok : 2009-07-31 start -->
+    <screen name="EES_EQR_6001_01" template ="templateEmpty">
+        <parameter key="title"    value="MTY COD Simulation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/eqtransportplannperform/emptycodadjustment/jsp/EES_EQR_6001_01.jsp"/>
+    </screen>
+    <screen name="EES_EQR_6001"  >
+        <parameter key="title"    value="MTY COD Simulation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/eqtransportplannperform/emptycodadjustment/jsp/EES_EQR_6001.jsp"/>
+    </screen>
+
+    <screen name="EES_EQR_6002" template="templatePop">
+        <parameter key="title"    value="Remark by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/eqtransportplannperform/emptycodadjustment/jsp/EES_EQR_6002.jsp"/>
+    </screen>
+
+    <screen name="EES_EQR_6003" template="templatePop">
+        <parameter key="title"    value="MTY Discharge Plan by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/eqtransportplannperform/emptycodadjustment/jsp/EES_EQR_6003.jsp"/>
+    </screen>
+	
+	<!-- MTY COD Confirmation [ EES_EQR_7001 ] Mun Jung Cheol : 2009-08-06 -->
+	<screen name="EES_EQR_7001">
+        <parameter key="title"    value="MTY COD Confirmation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/eqtransportplannperform/emptycodadjustment/jsp/EES_EQR_7001.jsp"/>
+    </screen>
+    
+    <screen name="EES_EQR_7002" template="templatePop">
+        <parameter key="title"    value="Revenue MTY CNTR List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/eqtransportplannperform/emptycodadjustment/jsp/EES_EQR_7002.jsp"/>
+    </screen>
+    
+    <screen name="EES_EQR_7003" template="templatePop">
+        <parameter key="title"    value="HR/ DMG MTY CNTR List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/eqtransportplannperform/emptycodadjustment/jsp/EES_EQR_7003.jsp"/>
+    </screen>
+	<!-- MTY Repo Inquiry by VVD [ EES_EQR_8001 ] Mun Jung Cheol : 2009-08-06 -->
+	<screen name="EES_EQR_8001">
+        <parameter key="title"    value="MTY Repo Inquiry by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/eqtransportplannperform/emptycodadjustment/jsp/EES_EQR_8001.jsp"/>
+    </screen>
+    
+    <screen name="EES_EQR_8002">
+        <parameter key="title"    value="MTY Repo Inquiry by Period" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/eqtransportplannperform/emptycodadjustment/jsp/EES_EQR_8002.jsp"/>
+    </screen>
+    
+    <screen name="EES_EQR_8902" template="templatePop">
+        <parameter key="title"    value="MTY Repo Inquiry by Period" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/eqtransportplannperform/emptycodadjustment/jsp/EES_EQR_8902.jsp"/>
+    </screen> 
+	<!-- MTY Repo Inquiry by Priod [ EES_EQR_9001 ] -->
+	
+	<!-- [ EES_EQR_0141 : MTY Rail Arrival Inquiry ] -->
+    <screen name="EES_EQR_0141">
+        <parameter key="title"    value="MTY Rail Arrival Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrforecastprecisionmanage/jsp/EES_EQR_0141.jsp"/>
+    </screen>
+	<!--  [ EES_EQR_0142 : MTY Rail Trans Result ] -->
+    <screen name="EES_EQR_0142">
+        <parameter key="title"    value="MTY Rail Trans Result" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/repoplanmanage/cntrforecastprecisionmanage/jsp/EES_EQR_0142.jsp"/>
+    </screen>
+    
+    <!--  [ EES_EQR_0008 : Manage EQR Week ]-->
+    <screen name="EES_EQR_0008">
+        <parameter key="title"  value="Manage EQR Week" direct="true"/>
+        <parameter key="body"    value="apps/opus/ees/eqr/common/eqrcommon/jsp/EES_EQR_0008.jsp" />
+    </screen>
+    
+    <screen name="EES_EQR_0008_POP" template="templatePop">
+        <parameter key="title"  value="Manage EQR Week" direct="true"/>
+        <parameter key="body"    value="apps/opus/ees/eqr/common/eqrcommon/jsp/EES_EQR_0008.jsp" />
+    </screen>
+    
+	<!-- ====================================================================================  -->
+	<!-- ==============================  TMO PROJECT EQR Start ==============================  -->
+	<!-- ====================================================================================  -->
+	<!-- Trade, sub Trade, Lane combo common -->
+	<screen name="EES_EQR_CODGS"  template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrcommon/jsp/EES_EQR_CODGS.jsp"/>
+    </screen>
+	<!-- MTY Container Plan Start -->
+	<!-- MTY Repo Guideline Creation [ EES_EQR_1008 ]- SHIN DONG IL : 2013-05-27-->
+	<screen name="EES_EQR_1008">
+        <parameter key="title"    value="MTY Repo Guideline Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrplanguide/cntrplanguidelinemanage/jsp/EES_EQR_1008.jsp"/>
+    </screen>
+	
+	<!-- MTY Repo Guideline Add/Amend [ EES_EQR_1009 ]- SHIN DONG IL : 2013-05-27-->
+	<screen name="EES_EQR_1009"   template="templatePop">
+        <parameter key="title"    value="MTY Repo Guideline Add/Amend" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrplanguide/cntrplanguidelinemanage/jsp/EES_EQR_1009.jsp"/>
+    </screen>
+    
+	<!-- MTY Repo Guideline Email Recipient [ EES_EQR_1030 ] -->
+	<screen name="EES_EQR_1030">
+        <parameter key="title"    value="Guideline Recipient Set-up" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrplanguide/cntrplanguidelineemail/jsp/EES_EQR_1030.jsp"/>
+    </screen>    
+    
+	<!-- Guideline Mailing [ EES_EQR_1031 ] -->
+	<screen name="EES_EQR_1031" template="templatePop">
+        <parameter key="title"    value="Guideline Mailing" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrplanguide/cntrplanguidelineemail/jsp/EES_EQR_1031.jsp"/>
+    </screen>    
+	
+	<!-- MT Repo Plan [ EES_EQR_1013 ]- SHIN DONG IL : 2013-07-01-->
+	<screen name="EES_EQR_1013">
+        <parameter key="title"    value="MT Repo Plan" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrplanguide/cntrplanmtrepoplan/jsp/EES_EQR_1013.jsp"/>
+    </screen>
+	    
+	<!-- MTY COD Confirmation -->
+	<!-- MTY COD Simulation [ EES_EQR_1021 ] -->
+    <screen name="EES_EQR_1021_01" template ="templateEmpty">
+        <parameter key="title"    value="MTY COD Simulation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrcodconfirm/emptycodadjustment/jsp/EES_EQR_1021_01.jsp"/>
+    </screen>
+    <screen name="EES_EQR_1021"  >
+        <parameter key="title"    value="MTY COD Simulation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrcodconfirm/emptycodadjustment/jsp/EES_EQR_1021.jsp"/>
+    </screen>
+
+    <screen name="EES_EQR_1054" template="templatePop">
+        <parameter key="title"    value="Remark by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrcodconfirm/emptycodadjustment/jsp/EES_EQR_1054.jsp"/>
+    </screen>
+
+    <screen name="EES_EQR_1055" template="templatePop">
+        <parameter key="title"    value="MTY Discharge Plan by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrcodconfirm/emptycodadjustment/jsp/EES_EQR_1055.jsp"/>
+    </screen>
+	
+	<!-- MTY COD Confirmation [ EES_EQR_1024 ] -->
+	<screen name="EES_EQR_1024">
+        <parameter key="title"    value="MTY COD Confirmation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrcodconfirm/emptycodadjustment/jsp/EES_EQR_1024.jsp"/>
+    </screen>
+	
+	<!-- Loading Trend By Lane [ EES_EQR_1025 ] -->
+	<screen name="EES_EQR_1025">
+        <parameter key="title"    value="Loading Trend By Lane" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntraccuracy/accuracy/jsp/EES_EQR_1025.jsp"/>
+    </screen>
+	
+	<!-- Discharging Result [ EES_EQR_1026 ] -->
+	<screen name="EES_EQR_1026">
+        <parameter key="title"    value="Discharging Result" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntraccuracy/accuracy/jsp/EES_EQR_1026.jsp"/>
+    </screen>	
+	
+	<!-- Loading Trend By Port [ EES_EQR_1066 ] -->
+	<screen name="EES_EQR_1066">
+        <parameter key="title"    value="Loading Trend By Port" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntraccuracy/accuracy/jsp/EES_EQR_1066.jsp"/>
+    </screen>	
+    
+    <screen name="EES_EQR_1056" template="templatePop">
+        <parameter key="title"    value="Revenue MTY CNTR List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrcodconfirm/emptycodadjustment/jsp/EES_EQR_1056.jsp"/>
+    </screen>
+    
+    <screen name="EES_EQR_1057" template="templatePop">
+        <parameter key="title"    value="HR/ DMG MTY CNTR List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrcodconfirm/emptycodadjustment/jsp/EES_EQR_1057.jsp"/>
+    </screen>
+	<!-- MTY Repo Inquiry by VVD [ EES_EQR_1022 ]  -->
+	<screen name="EES_EQR_1022">
+        <parameter key="title"    value="MTY Repo Inquiry by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrcodconfirm/emptycodadjustment/jsp/EES_EQR_1022.jsp"/>
+    </screen>
+
+    <screen name="EES_EQR_1023">
+        <parameter key="title"    value="MTY Repo Inquiry by Period" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrcodconfirm/emptycodadjustment/jsp/EES_EQR_1023.jsp"/>
+    </screen>
+    
+    <screen name="EES_EQR_1064">
+        <parameter key="title"    value="MTY Repo Inquiry by Period" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrcodconfirm/emptycodadjustment/jsp/EES_EQR_1064.jsp"/>
+    </screen> 
+	
+	<!-- =====================================  -->
+    <!-- ======== Moon Dong-sun (Start) ======  -->
+    <!-- =====================================  -->
+	
+	<!--========== < MTY Rail Trans. > ==========-->
+    <!-- [ EES_EQR_1058 : MTY Rail Arrival Inquiry ] -->
+    <screen name="EES_EQR_1058">
+        <parameter key="title"    value="MTY Rail Arrival Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrusarail/cntrforecastprecisionmanage/jsp/EES_EQR_1058.jsp"/>
+    </screen>
+    <!--  [ EES_EQR_1059 : MTY Rail Trans Result ] -->
+    <screen name="EES_EQR_1059">
+        <parameter key="title"    value="MTY Rail Trans Result" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrusarail/cntrforecastprecisionmanage/jsp/EES_EQR_1059.jsp"/>
+    </screen>
+    <!--  [ EES_EQR_1060 : MTY Rail Arrival Detail ] -->
+    <screen name="EES_EQR_1060">
+        <parameter key="title"    value="MTY Rail Arrival Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrusarail/cntrforecastprecisionmanage/jsp/EES_EQR_1060.jsp"/>
+    </screen>
+    
+    <!--========== < Analysis > ==========-->
+    <!-- Empty Repo. Result [ EES_EQR_1061 ] -->
+    <screen name="EES_EQR_1061">
+        <parameter key="title"    value="EES_EQR_1061" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntranalysis/cntrreporesult/jsp/EES_EQR_1061.jsp"/>
+    </screen>   
+	
+	<!-- MTY Balance Report -->
+    <!-- MTY Balance Report [ EES_EQR_1001 ] -->
+    <screen name="EES_EQR_1001">
+        <parameter key="title"    value="MTY Balance Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/mtyequipmentforecast/jsp/EES_EQR_1001.jsp"/>
+    </screen>
+    <screen name="EES_EQR_1044" template="templatePop"> 
+        <parameter key="title"    value="MTY Repo In/ Out Plan" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/mtyequipmentforecast/jsp/EES_EQR_1044.jsp"/>
+    </screen>
+    <screen name="EES_EQR_1046" template="templatePop"> 
+        <parameter key="title"    value="+/- Others Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/mtyequipmentforecast/jsp/EES_EQR_1046.jsp"/>
+    </screen>
+    <screen name="EES_EQR_1045" template="templatePop"> 
+        <parameter key="title"    value="OW/ On-hire Receiving Plan" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/mtyequipmentforecast/jsp/EES_EQR_1045.jsp"/>
+    </screen>
+    <screen name="EES_EQR_1062"> 
+        <parameter key="title"    value="Forecast Accuracy Review (By Week)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/mtyequipmentforecast/jsp/EES_EQR_1062.jsp"/>
+    </screen>
+    <screen name="EES_EQR_1047" template="templatePop"> 
+        <parameter key="title"    value="MTY Balance Repo Out" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/mtyequipmentforecast/jsp/EES_EQR_1047.jsp"/>
+    </screen>
+    <screen name="EES_EQR_1043" template="templatePop"> 
+        <parameter key="title"    value="OP/MG Log History" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/mtyequipmentforecast/jsp/EES_EQR_1043.jsp"/>
+    </screen>    
+	
+	<!-- EQC Organization Chart [ EES_EQR_1007 ] -->
+    
+    <!--  EQC Organization Chart( Popup) -->
+    <screen name="EES_EQR_1007" template="templatePop">
+        <parameter key="title"    value="EES_EQR_1007" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/eqcorgchart/jsp/EES_EQR_1007.jsp" />
+    </screen>
+
+    <!--  EQC Organization Chart( Popup) Grid 1 -->
+    <screen name="EES_EQR_1007GS" template="templateIBSheet">
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/eqcorgchart/jsp/EES_EQR_1007GS.jsp" />
+    </screen>   
+	
+	<!-- Forecast Report [ EES_EQR_1003 ] -->
+	<screen name="EES_EQR_1003">
+        <parameter key="title"    value="Forecast Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/forecastreport/jsp/EES_EQR_1003.jsp"/>
+    </screen>
+	
+	<!-- History Report [ EES_EQR_1002 ] -->
+	<screen name="EES_EQR_1002">
+        <parameter key="title"    value="History Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/forecastreport/jsp/EES_EQR_1002.jsp"/>
+    </screen>
+	
+	<!-- Discharging List (Forecast Report) [ EES_EQR_1048 ] -->
+	<screen name="EES_EQR_1048" template="templatePop"> 
+        <parameter key="title"    value="Discharging List" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/forecastreport/jsp/EES_EQR_1048.jsp"/>
+    </screen>
+	
+	<!-- Planned Repo In [ EES_EQR_1040 ] -->
+    <screen name="EES_EQR_1040" template="templatePop"> 
+        <parameter key="title"    value="Planned Repo In" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/forecastreport/jsp/EES_EQR_1040.jsp"/>
+    </screen>
+	
+	<!-- LT ST OW Plan and Approval [ EES_EQR_1041 ] -->
+    <screen name="EES_EQR_1041"> 
+        <parameter key="title"    value="LT ST OW Plan and Approval" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/onhirebalance/jsp/EES_EQR_1041.jsp"/>
+    </screen>
+
+    <screen name="EES_EQR_1041_POP" template="templatePop"> 
+        <parameter key="title"    value="LT ST OW Plan and Approval" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/onhirebalance/jsp/EES_EQR_1041.jsp"/>
+    </screen>
+	
+	<!-- On-Hire Status [ EES_EQR_1006 ] -->
+    <screen name="EES_EQR_1006"> 
+        <parameter key="title"    value="On-Hire Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/onhirebalance/jsp/EES_EQR_1006.jsp"/>
+    </screen>
+	
+	<!-- History Report - Surplus Area [ EES_EQR_1070 ] -->
+    <screen name="EES_EQR_1070"> 
+        <parameter key="title"    value="History Report - Surplus Area" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/surplusarea/jsp/EES_EQR_1070.jsp"/>
+    </screen>
+	
+	<!-- Port Inventory Balance Simulation - Inland [ EES_EQR_1073 ] -->
+	<screen name="EES_EQR_1073"> 
+        <parameter key="title"    value="Port Inventory Balance Simulation - Inland" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/surplusarea/jsp/EES_EQR_1073.jsp"/>
+    </screen>
+	
+	<!-- Port Inventory Balance Simulation - Inland(BKG) Popup [ EES_EQR_1074 ] -->
+	<screen name="EES_EQR_1074"   template="templatePop"> 
+        <parameter key="title"    value="Port Inventory Balance Simulation - Inland(BKG)" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/surplusarea/jsp/EES_EQR_1074.jsp"/>
+    </screen>
+	
+	<!-- Port Inventory Balance Simulation [ EES_EQR_1012 ] -->
+	<screen name="EES_EQR_1012"> 
+        <parameter key="title"    value="Port Inventory Balance Simulation" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrfcstsimul/surplusarea/jsp/EES_EQR_1012.jsp"/>
+    </screen>
+	
+	
+	<!-- =====================================  -->
+    <!-- ======== Moon Dong-sun (End) ========  -->
+    <!-- =====================================  -->
+
+	<!-- =====================================  -->
+	<!-- ===== Yong Chan-Shin (Start) ========  -->
+	<!-- =====================================  -->
+
+    <!-- MTY BKG Creation [ EES_EQR_1018 ] -->
+    <screen name="EES_EQR_1018">
+        <parameter key="title"    value="Execution Plan" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrmtybkgmanage/cntrmtybkgcreate/jsp/EES_EQR_1018.jsp"/>
+    </screen>
+
+    <!--  Container List [ EES_EQR_1050 ] -->
+	<screen name="EES_EQR_1050" template="templatePop">
+		<parameter key="title"	value="Container List" direct="true"/>
+		<parameter key="body"	value="apps/opus/ees/eqr/cntrmtybkgmanage/cntrmtybkgcreate/jsp/EES_EQR_1050.jsp" />
+	</screen>
+	
+    <!--  Container List [ EES_EQR_1051 ] -->
+	<screen name="EES_EQR_1051" template="templatePop">
+		<parameter key="title"	value="Container List" direct="true"/>
+		<parameter key="body"	value="apps/opus/ees/eqr/cntrmtybkgmanage/cntrmtybkgcreate/jsp/EES_EQR_1051.jsp" />
+	</screen>
+	
+	
+	<!--  VVD EXIST --> 
+	<screen name="EES_EQR_VVDEXIST_IFRAME" >
+		<parameter key="body"	 value="apps/opus/ees/eqr/cntrcommon/jsp/EES_EQR_VVDEXIST_IFRAME.jsp" />
+	</screen>			
+	    	
+	<!-- BKG Split Create [ EES_EQR_1052 ] -->
+	<screen name="EES_EQR_1052">
+        <parameter key="title"    value="EES_EQR_1052" direct="true"/>
+        <parameter key="body"     value="apps/opus/ees/eqr/cntrmtybkgmanage/cntrmtybkgcreate/jsp/EES_EQR_1052.jsp"/>
+    </screen>
+    
+    <screen name="EES_EQR_1052DL" template="templateDownloadExcel">
+		<parameter key="body"	 value="apps/opus/ees/eqr/cntrmtybkgmanage/cntrmtybkgcreate/jsp/EES_EQR_1052DL.jsp" />
+	</screen>
+    	    	
+	<!-- =====================================  -->
+	<!-- ===== Yong Chan-Shin (End) ==========  -->
+	<!-- =====================================  -->	
+    	
+	<!-- ====================================================================================  -->
+	<!-- ==============================  TMO PROJECT EQR End   ==============================  -->
+	<!-- ====================================================================================  -->	
+
+
+    
+</screen-definitions>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ApprovalDBDAOConfirmApprovalResultRemarkUSQL">
+			<desc><![CDATA[S/O에서 Data을 SAP로 I/F할 때 SAP에서는 정상적으로 생성 이후에 SAR로 ASA 정보등 처리시 발생된 예외 사항에 대한 에러 정보를 처리]]></desc>
+			<sql><![CDATA[
+UPDATE COM_APRO_RQST_ROUT A 	
+SET    APSTS_CD = ''
+     , APRO_RMK = @[apro_rmk]  
+     , APRO_DT  = NULL
+     , UPD_DT = SYSDATE
+WHERE  APRO_RQST_NO  = @[apro_rqst_no]
+AND    APRO_RQST_SEQ = @[apro_rqst_seq]			]]></sql>
+			<params>
+				<param name="apro_rmk" type="12" value="" out="N"/>
+				<param name="apro_rqst_no" type="12" value="" out="N"/>
+				<param name="apro_rqst_seq" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

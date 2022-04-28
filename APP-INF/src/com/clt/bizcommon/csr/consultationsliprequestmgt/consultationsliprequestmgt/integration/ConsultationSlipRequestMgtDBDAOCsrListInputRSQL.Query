@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCsrListInputRSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT  INV_RGST_NO
+		, INV_NO
+        , INV_NET_AMT
+        , INV_VAT_AMT
+      	, WHLD_TAX_AMT
+      	, INV_TTL_AMT
+		, ISS_DT 
+		, RCV_DT 
+		, INV_CFM_DT 
+		, INV_OFC_CD
+		, VNDR_SEQ
+		, INV_CURR_CD
+		, TTL_LSS_DIV_CD
+		, VNDR_TERM_NM
+		, COST_OFC_CD
+		, INV_STS_CD
+		, INV_RJCT_STS_CD
+		, INV_SUB_SYS_CD
+		, PSO_TRNS_SLP_CTNT
+        , PAY_DUE_DT
+        , PPAY_APLY_FLG
+        , DECODE(NVL(PPAY_APLY_FLG,'N'),'N',PPD_NO,'') PPD_NO
+  FROM
+      (
+					SELECT A.INV_RGST_NO
+					, A.INV_NO
+					     , DECODE(A.INV_CURR_CD
+					            , 'KRW', ROUND(NVL(A.INV_NET_AMT,0),0)
+					            , 'JPY', ROUND(NVL(A.INV_NET_AMT,0),0)
+					            ,ROUND(NVL(A.INV_NET_AMT,0),2)) INV_NET_AMT
+					     , DECODE(A.INV_CURR_CD
+					            , 'KRW', ROUND(NVL(A.INV_VAT_AMT,0),0)
+					            , 'JPY', ROUND(NVL(A.INV_VAT_AMT,0),0)
+					            ,ROUND(NVL(INV_VAT_AMT,0),2)) INV_VAT_AMT
+					     , DECODE(A.INV_CURR_CD
+					            , 'KRW', ROUND(NVL(A.WHLD_TAX_AMT,0),0)
+					            , 'JPY', ROUND(NVL(A.WHLD_TAX_AMT,0),0)
+					            ,ROUND(NVL(A.WHLD_TAX_AMT,0),2)) WHLD_TAX_AMT
+					     , DECODE(A.INV_CURR_CD
+					            , 'KRW', ROUND(NVL(A.INV_TTL_AMT,0),0)
+					            , 'JPY', ROUND(NVL(A.INV_TTL_AMT,0),0)
+					            ,ROUND(NVL(A.INV_TTL_AMT,0),2)) INV_TTL_AMT
+					,TO_CHAR(A.INV_ISS_DT, 'YYYY-MM-DD') ISS_DT 
+					,TO_CHAR(A.INV_RCV_DT, 'YYYY-MM-DD') RCV_DT 
+					,TO_CHAR(A.INV_CFM_DT, 'YYYY-MM-DD') INV_CFM_DT 
+					, A.INV_OFC_CD
+					, A.VNDR_SEQ
+					, A.INV_CURR_CD
+					, A.TTL_LSS_DIV_CD
+					, A.VNDR_TERM_NM
+					, '' COST_OFC_CD
+					, '' INV_STS_CD
+					, '' INV_RJCT_STS_CD
+					, '' INV_SUB_SYS_CD
+					, A.PSO_TRNS_SLP_CTNT
+                    , TO_CHAR(A.PAY_DUE_DT, 'YYYY-MM-DD') PAY_DUE_DT
+                    , NVL((SELECT DECODE(SIGN(SUM(DECODE(B.PPAY_APLY_FLG,'Y',1,0))),1,'Y','N')
+                           FROM PSO_CHARGE B 
+                           WHERE B.INV_RGST_NO = A.INV_RGST_NO),'N') PPAY_APLY_FLG
+                    , A.PPD_NO   
+					FROM  AP_PAY_INV A  
+					WHERE A.COST_OFC_CD        = @[cost_ofc_cd]
+					AND A.INV_OFC_CD           = @[inv_ofc_cd]
+					AND A.VNDR_SEQ             = @[vndr_seq]
+					AND A.INV_CURR_CD          = @[inv_curr_cd]
+					#if (${pso_trns_slp_ctnt} != '') 
+					AND PSO_TRNS_SLP_CTNT = @[pso_trns_slp_ctnt]
+					#else
+					AND PSO_TRNS_SLP_CTNT IS NULL
+					#end
+					
+					
+					#if (${inv_sub_sys_cd} != 'MNR') 
+					AND A.INV_SUB_SYS_CD 	   = @[inv_sub_sys_cd]
+					#else 
+					AND A.INV_SUB_SYS_CD 	   IN ('MNR', 'TLL')
+					#end
+					
+					AND A.INV_STS_CD           IN ('C', 'X') 
+					AND NVL(A.DELT_FLG,'N')    <> 'Y' 
+					#if (${inv_cfm_dt} != '') 
+						  AND TO_CHAR(A.INV_CFM_DT,'YYYY-MM-DD') = @[inv_cfm_dt]
+					#end
+					
+					MINUS
+					
+					SELECT A.INV_RGST_NO
+					, A.INV_NO
+					     , DECODE(A.INV_CURR_CD
+					            , 'KRW', ROUND(NVL(A.INV_NET_AMT,0),0)
+					            , 'JPY', ROUND(NVL(A.INV_NET_AMT,0),0)
+					            ,ROUND(NVL(A.INV_NET_AMT,0),2)) INV_NET_AMT
+					     , DECODE(A.INV_CURR_CD
+					            , 'KRW', ROUND(NVL(A.INV_VAT_AMT,0),0)
+					            , 'JPY', ROUND(NVL(A.INV_VAT_AMT,0),0)
+					            ,ROUND(NVL(INV_VAT_AMT,0),2)) INV_VAT_AMT
+					     , DECODE(A.INV_CURR_CD
+					            , 'KRW', ROUND(NVL(A.WHLD_TAX_AMT,0),0)
+					            , 'JPY', ROUND(NVL(A.WHLD_TAX_AMT,0),0)
+					            ,ROUND(NVL(A.WHLD_TAX_AMT,0),2)) WHLD_TAX_AMT
+					     , DECODE(A.INV_CURR_CD
+					            , 'KRW', ROUND(NVL(A.INV_TTL_AMT,0),0)
+					            , 'JPY', ROUND(NVL(A.INV_TTL_AMT,0),0)
+					            ,ROUND(NVL(A.INV_TTL_AMT,0),2)) INV_TTL_AMT
+					,TO_CHAR(A.INV_ISS_DT, 'YYYY-MM-DD') ISS_DT 
+					,TO_CHAR(A.INV_RCV_DT, 'YYYY-MM-DD') RCV_DT 
+					,TO_CHAR(A.INV_CFM_DT, 'YYYY-MM-DD') INV_CFM_DT 
+					, A.INV_OFC_CD
+					, A.VNDR_SEQ
+					, A.INV_CURR_CD
+					, A.TTL_LSS_DIV_CD
+					, A.VNDR_TERM_NM
+					, '' COST_OFC_CD
+					, '' INV_STS_CD
+					, '' INV_RJCT_STS_CD
+					, '' INV_SUB_SYS_CD
+					, A.PSO_TRNS_SLP_CTNT
+                    , TO_CHAR(A.PAY_DUE_DT, 'YYYY-MM-DD') PAY_DUE_DT
+                    , NVL((SELECT DECODE(SIGN(SUM(DECODE(B.PPAY_APLY_FLG,'Y',1,0))),1,'Y','N')
+                           FROM PSO_CHARGE B 
+                           WHERE B.INV_RGST_NO = A.INV_RGST_NO),'N') PPAY_APLY_FLG                    
+                    , A.PPD_NO   
+					FROM  AP_PAY_INV A, AP_INV_HDR B
+					WHERE A.COST_OFC_CD        = @[cost_ofc_cd]
+					AND A.INV_OFC_CD           = @[inv_ofc_cd]
+					AND A.VNDR_SEQ             = @[vndr_seq]
+                    AND A.INV_CURR_CD          = @[inv_curr_cd]
+					
+					#if (${pso_trns_slp_ctnt} != '') 
+					AND PSO_TRNS_SLP_CTNT = @[pso_trns_slp_ctnt]
+					#else
+					AND PSO_TRNS_SLP_CTNT IS NULL
+					#end
+					
+					
+					#if (${inv_sub_sys_cd} != 'MNR') 
+					AND A.INV_SUB_SYS_CD 	   = @[inv_sub_sys_cd]
+					#else 
+					AND A.INV_SUB_SYS_CD 	   IN ('MNR', 'TLL')
+					#end
+					
+					AND A.INV_STS_CD           IN ('C', 'X') 
+					AND NVL(A.DELT_FLG,'N')    <> 'Y' 
+					#if (${inv_cfm_dt} != '') 
+						  AND TO_CHAR(A.INV_CFM_DT,'YYYY-MM-DD') = @[inv_cfm_dt]
+					#end
+					  AND A.CSR_NO = B.CSR_NO
+					  AND B.IF_ERR_RSN = 'Sending...'
+			)A			]]></sql>
+			<params>
+				<param name="cost_ofc_cd" type="12" value="" out="N"/>
+				<param name="inv_ofc_cd" type="12" value="" out="N"/>
+				<param name="vndr_seq" type="12" value="" out="N"/>
+				<param name="inv_curr_cd" type="12" value="" out="N"/>
+				<param name="pso_trns_slp_ctnt" type="12" value="" out="N"/>
+				<param name="inv_sub_sys_cd" type="12" value="" out="N"/>
+				<param name="inv_cfm_dt" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

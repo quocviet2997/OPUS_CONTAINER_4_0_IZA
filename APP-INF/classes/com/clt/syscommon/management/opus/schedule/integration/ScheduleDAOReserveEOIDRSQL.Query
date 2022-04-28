@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ScheduleDAOReserveEOIDRSQL">
+			<desc><![CDATA[autosys reserve force start job event id query]]></desc>
+			<sql><![CDATA[
+select joid, event_time_gmt 
+from ujo_event 
+where job_name=@[job_name]
+and event = 108			]]></sql>
+			<params>
+				<param name="job_name" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

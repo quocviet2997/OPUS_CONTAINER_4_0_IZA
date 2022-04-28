@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOUdtInvCSRNoNullUSQL">
+			<desc><![CDATA[UdtInvCSRNoNull]]></desc>
+			<sql><![CDATA[
+UPDATE AP_PAY_INV A
+SET A.CSR_NO = null
+WHERE A.INV_RGST_NO = @[inv_rgst_no]
+AND   NVL(A.DELT_FLG, 'N') <> 'Y'			]]></sql>
+			<params>
+				<param name="inv_rgst_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

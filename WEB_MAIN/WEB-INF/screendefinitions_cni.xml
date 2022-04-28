@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+
+    <!-- Common START -->
+    <!-- [CPS_CNI_0084] Main Code-Inquiry PRINT -->
+    <screen name="CPS_CNI_0084" template="templateRD">        
+        <parameter key="body"  value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0084.jsp"/>
+    </screen>
+    
+    <screen name="CPS_CNI_9999" template="templatePop">        
+        <parameter key="body"  value="apps/opus/cps/cni/containercargoclaimreport/containercargoclaimreport/jsp/CPS_CNI_9999.jsp"/>
+    </screen>
+    
+    <!-- Common END  -->
+	
+	<!-- [CPS_CNI_0001] Client Default Setup -->
+    <screen name="CPS_CNI_0001">
+        <parameter key="title"    value="Client Default Setup" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0001.jsp"/>
+    </screen>
+	
+    <screen name="CPS_CNI_0001_POP" template="templatePop">
+        <parameter key="title"    value="Client Default Setup" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0001.jsp"/>
+    </screen>
+	
+    <!-- [CPS_CNI_0022] Prevention -->
+    <screen name="CPS_CNI_0022">
+        <parameter key="title"    value="Prevention-Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/prevention/jsp/CPS_CNI_0022.jsp"/>
+    </screen>
+
+
+    <!-- [CPS_CNI_0023] Prevention-Register -->
+    <screen name="CPS_CNI_0023">
+        <parameter key="title"    value="Prevention-Register" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/prevention/jsp/CPS_CNI_0023.jsp"/>
+    </screen>
+
+    <!-- [CPS_CNI_0023] Prevention-Register Popup -->
+    <screen name="CPS_CNI_0023_01" template="templatePop">
+        <parameter key="title"    value="Prevention-Register" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/prevention/jsp/CPS_CNI_0023.jsp"/>
+    </screen>
+	
+    <!-- [CPS_CNI_0024] Prevention-View  -->
+    <screen name="CPS_CNI_0024">
+        <parameter key="title"    value="Prevention-View" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/prevention/jsp/CPS_CNI_0024.jsp"/>
+    </screen>	
+
+    <!-- [CPS_CNI_0024] Prevention-View Popup -->
+    <screen name="CPS_CNI_0024_01" template="templatePop">
+        <parameter key="title"    value="Prevention-View" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/prevention/jsp/CPS_CNI_0024.jsp"/>
+    </screen>   
+
+	
+	<!-- [CPS_CNI_0043] Impending TB Claim -->
+    <screen name="CPS_CNI_0043" template="templatePop">
+        <parameter key="title"    value="Impending TB Claim" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0043.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0045] Invoice Creation -->
+    <screen name="CPS_CNI_0045">
+        <parameter key="title"    value="Invoice Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/claiminvoice/paymentinvoice/jsp/CPS_CNI_0045.jsp"/>
+    </screen>    
+    
+    <!-- [CPS_CNI_0048] CSR Manage -->
+    <screen name="CPS_CNI_0048">
+        <parameter key="title"    value="CSR Manage" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/claiminvoice/paymentinvoice/jsp/CPS_CNI_0048.jsp"/>
+    </screen>     
+    
+    <!-- [CPS_CNI_0011] File Upload Popup -->
+    <screen name="CPS_CNI_0011" template="templatePop">
+        <parameter key="title"    value="File Upload" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/filemgt/jsp/CPS_CNI_0011.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0016] Insurance Recovery by VVD -->
+    <screen name="CPS_CNI_0016">
+        <parameter key="title"    value="Insurance Recovery by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/insurancerecovery/jsp/CPS_CNI_0016.jsp"/>
+    </screen>    
+    
+    <!-- [CPS_CNI_0016] Insurance Recovery by VVD popup -->
+    <screen name="CPS_CNI_0016_01" template="templatePop">
+        <parameter key="title"    value="Insurance Recovery by VVD" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/insurancerecovery/jsp/CPS_CNI_0016.jsp"/>
+    </screen>        
+    
+    <!-- [CPS_CNI_0017] Insurance Recovery by Case -->
+    <screen name="CPS_CNI_0017">
+        <parameter key="title"    value="Insurance Recovery by Case" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/insurancerecovery/jsp/CPS_CNI_0017.jsp"/>
+    </screen>    
+        	
+    <!-- [CPS_CNI_0042] CCC VVD &amp;  SKD Inquiry Popup -->	
+    <screen name="CPS_CNI_0042">
+        <parameter key="title"    value="CCC VVD &amp; SKD Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0042.jsp"/>
+    </screen>
+
+	<!-- [CPS_CNI_0025] Main Code-Creation -->
+    <screen name="CPS_CNI_0025">
+        <parameter key="title"    value="Main Code Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0025.jsp"/>
+    </screen>
+    
+	<!-- [CPS_CNI_0007] Office Code Creation -->
+    <screen name="CPS_CNI_0007" template="templatePop">
+        <parameter key="title"    value="Office Code Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0007.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0002] Find -->
+    <screen name="CPS_CNI_0002">
+        <parameter key="title"    value="Find" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0002.jsp"/>
+    </screen> 
+    
+    <!-- [CPS_CNI_0012] Survey -->
+    <screen name="CPS_CNI_0012">
+        <parameter key="title"    value="Servey" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/incidentsurvey/jsp/CPS_CNI_0012.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0013] Salvage -->
+    <screen name="CPS_CNI_0013">
+        <parameter key="title"    value="Salvage" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/incidentsurvey/jsp/CPS_CNI_0013.jsp"/>
+    </screen>  
+    
+    <!-- [CPS_CNI_0030] Incident-Creation -->
+    <screen name="CPS_CNI_0030">
+        <parameter key="title"    value="Incident-Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/incidentsurvey/jsp/CPS_CNI_0030.jsp"/>
+    </screen> 
+    
+    <!-- [CPS_CNI_0031] Incident-Inquiry -->
+    <screen name="CPS_CNI_0031">
+        <parameter key="title"    value="Incident-Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/incidentsurvey/jsp/CPS_CNI_0031.jsp"/>
+    </screen>    
+    
+    <!-- [CPS_CNI_0032] Incident-Claim Inquiry -->
+    <screen name="CPS_CNI_0032">
+        <parameter key="title"    value="Incident-Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/incidentsurvey/jsp/CPS_CNI_0032.jsp"/>
+    </screen> 
+    
+    <!-- [CPS_CNI_0032] Incident-Claim Inquiry Popup-->
+    <screen name="CPS_CNI_0032_01" template="templatePop">
+        <parameter key="title"    value="Incident-Creation Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/incidentsurvey/jsp/CPS_CNI_0032.jsp"/>
+    </screen> 
+    
+    <!-- [CPS_CNI_0036] Transfer -->
+    <screen name="CPS_CNI_0036">
+        <parameter key="title"    value="Transfer" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0036.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0008] Payment -->
+    <screen name="CPS_CNI_0008" template="templatePop">
+        <parameter key="title"    value="Payment" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0008.jsp"/>
+    </screen> 
+    
+	<!-- [CPS_CNI_0009] Handling Costs -->
+    <screen name="CPS_CNI_0009">
+        <parameter key="title"    value="Handling Costs" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0009.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0009] Handling Costs Popup-->
+    <screen name="CPS_CNI_0009_01" template="templatePop">
+        <parameter key="title"    value="Handling Costs Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0009.jsp"/>
+    </screen> 
+    
+    <!-- [CPS_CNI_0020] Report-Settlement Analysis -->
+    <screen name="CPS_CNI_0020">
+        <parameter key="title"    value="Report-Settlement Analysis" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaimreport/containercargoclaimreport/jsp/CPS_CNI_0020.jsp"/>
+    </screen>    
+    
+    <!-- [CPS_CNI_0026] Main Code-Inquiry -->
+    <screen name="CPS_CNI_0026">
+        <parameter key="title"    value="Main Code-Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0026.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0041] Main Code-Inquiry Popup -->
+    <screen name="CPS_CNI_0041" template="templatePop">
+        <parameter key="title"    value="Main Code-Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0041.jsp"/>
+    </screen>    
+    
+    <!-- [CPS_CNI_0027] Main Code-View -->
+    <screen name="CPS_CNI_0027">
+        <parameter key="title"    value="Main Code-View" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0027.jsp"/>
+    </screen>    
+    
+    <!-- [CPS_CNI_0027] Main Code-View Popup-->
+    <screen name="CPS_CNI_0027_01" template="templatePop">
+        <parameter key="title"    value="Main Code-View Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0027.jsp"/>
+    </screen>        
+    
+    <!-- [CPS_CNI_0003] Claim Main -->
+    <screen name="CPS_CNI_0003" >
+        <parameter key="title"    value="Claim Main" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0003.jsp"/>
+    </screen>
+    
+    <screen name="CPS_CNI_0003_01"  template="templatePop">
+        <parameter key="title"    value="View Claim Main" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0003.jsp"/>
+    </screen>
+    
+     <!-- [CPS_CNI_0037] Claim Reopen-->
+    <screen name="CPS_CNI_0037" >
+        <parameter key="title"    value="Claim Reopen" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0037.jsp"/>
+    </screen>
+    
+     <!-- [CPS_CNI_0006] Carogo Claim Report-->
+    <screen name="CPS_CNI_0006" >
+        <parameter key="title"    value="Cargo Claim Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaimreport/containercargoclaimreport/jsp/CPS_CNI_0006.jsp"/>
+    </screen>
+    
+     <!-- [CPS_CNI_0033] View Claim Main -->
+    <screen name="CPS_CNI_0033" >
+        <parameter key="title"    value="View Claim Main" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0033.jsp"/>
+    </screen>
+    
+    <screen name="CPS_CNI_0033_01"  template="templatePop">
+        <parameter key="title"    value="View Claim Main" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0033.jsp"/>
+    </screen>
+    
+     <!-- [CPS_CNI_0040] CCC Detail -->
+    <screen name="CPS_CNI_0040" template="templatePop">
+        <parameter key="title"    value="CCC Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0040.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0004] Handler History -->
+    <screen name="CPS_CNI_0004" template="templatePop">
+        <parameter key="title"    value="Handler History" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0004.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0005] Manager History -->
+    <screen name="CPS_CNI_0005" template="templatePop">
+        <parameter key="title"    value="Manager History" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0005.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0310] DWC Handler History -->
+    <screen name="CPS_CNI_0310" template="templatePop">
+        <parameter key="title"    value="Handler History" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/drywetclaim/drywetclaim/jsp/CPS_CNI_0310.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0311] DWC Manager History -->
+    <screen name="CPS_CNI_0311" template="templatePop">
+        <parameter key="title"    value="Manager History" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/drywetclaim/drywetclaim/jsp/CPS_CNI_0311.jsp"/>
+    </screen>
+    
+     <!-- [CPS_CNI_0039] Class Code Creation -->
+    <screen name="CPS_CNI_0039">
+        <parameter key="title"    value="Class Code Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0039.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0301] DW Claim Main -->
+    <screen name="CPS_CNI_0301">
+        <parameter key="title"    value="DW Claim Main" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/drywetclaim/drywetclaim/jsp/CPS_CNI_0301.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0302] Status -->
+    <screen name="CPS_CNI_0302">
+        <parameter key="title"    value="Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/drywetclaim/drywetclaim/jsp/CPS_CNI_0302.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0303] Handling Costs -->
+    <screen name="CPS_CNI_0303">
+        <parameter key="title"    value="Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/drywetclaim/drywetclaim/jsp/CPS_CNI_0303.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0305] Detail -->
+    <screen name="CPS_CNI_0305" template="templatePop">
+        <parameter key="title"    value="Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/drywetclaim/drywetclaim/jsp/CPS_CNI_0305.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0306] Vessel Code &amp; Particular Inquiry -->
+    <screen name="CPS_CNI_0306" template="templatePop">
+        <parameter key="title"    value="Vessel Code &amp; Particular Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0306.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0307] R.O.E. (Rate of Exchange) Inquiry -->
+    <screen name="CPS_CNI_0307" template="templatePop">
+        <parameter key="title"    value="R.O.E. (Rate of Exchange) Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0307.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0308] CCC Vessel Code &amp; Name Inquiry -->
+    <screen name="CPS_CNI_0308" template="templatePop">
+        <parameter key="title"    value="CCC Vessel Code &amp; Name Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0308.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0309] Case Report -->
+    <screen name="CPS_CNI_0309">
+        <parameter key="title"    value="Case Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/drywetclaim/drywetclaim/jsp/CPS_CNI_0309.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0028] Miscellaneous Code Creation -->
+    <screen name="CPS_CNI_0028">
+        <parameter key="title"    value="Miscellaneous Code Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0028.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0029] Miscellaneous Code Inquiry -->
+    <screen name="CPS_CNI_0029" >
+        <parameter key="title"    value="Miscellaneous Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0029.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0029_01] Miscellaneous Code Inquiry Popup-->
+    <screen name="CPS_CNI_0029_01" template="templatePop">
+        <parameter key="title"    value="Miscellaneous Code Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0029.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0015] Indemnity Claim -->
+    <screen name="CPS_CNI_0015">
+        <parameter key="title"    value="Indemnity Claim" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/indemnityclaim/jsp/CPS_CNI_0015.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0035] View-Indemnity Claim -->
+    <screen name="CPS_CNI_0035">
+        <parameter key="title"    value="View-Indemnity Claim" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/indemnityclaim/jsp/CPS_CNI_0035.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0010] Contract of Carriage-Main -->
+    <screen name="CPS_CNI_0010" >
+        <parameter key="title"    value="Contract of Carriage-Main" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0010.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0034] View-Contract of Carriage-Main -->
+    <screen name="CPS_CNI_0034" >
+        <parameter key="title"    value="View-Contract of Carriage-Main" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/claimmain/jsp/CPS_CNI_0034.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0018] Status -->
+    <screen name="CPS_CNI_0018" >
+        <parameter key="title"    value="Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaimreport/containercargoclaimreport/jsp/CPS_CNI_0018.jsp"/>
+    </screen>
+    
+     <!-- [CPS_CNI_0019]  Status Inquiry by Class Popup -->
+    <screen name="CPS_CNI_0019" template="templatePop">
+        <parameter key="title"    value="Status Inquiry by Class Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaimreport/containercargoclaimreport/jsp/CPS_CNI_0019.jsp"/>
+    </screen>
+   
+    <!-- [CPS_CNI_0401] Insurance Main -->
+    <screen name="CPS_CNI_0401">
+        <parameter key="title"    value="Insurance Main" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/insurance/insurance/jsp/CPS_CNI_0401.jsp"/>
+    </screen>
+
+    <screen name="CPS_CNI_0401_01">
+        <parameter key="title"    value="Insurance Main" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/insurance/insurance/jsp/CPS_CNI_0401_01.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0402] Ins Detail -->
+    <screen name="CPS_CNI_0402" template="templatePop">
+        <parameter key="title"    value="Insurance Detail" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/insurance/insurance/jsp/CPS_CNI_0402.jsp"/>
+    </screen>
+   
+    <!-- [CPS_CNI_0403] Vessel Entry Status -->
+    <screen name="CPS_CNI_0403">
+        <parameter key="title"    value="Vessel Entry Status" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/insurance/vesselstatus/jsp/CPS_CNI_0403.jsp"/>
+    </screen>
+   
+    <!-- [CPS_CNI_0404] Vessel Entry Status View -->
+    <screen name="CPS_CNI_0404">
+        <parameter key="title"    value="Vessel Entry Status View" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/insurance/vesselstatus/jsp/CPS_CNI_0404.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0406] Ins Detail2 -->
+    <screen name="CPS_CNI_0406" template="templatePop">
+        <parameter key="title"    value="Insurance Detail2" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/insurance/insurance/jsp/CPS_CNI_0406.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0014] Settlement Claim -->
+    <screen name="CPS_CNI_0014">
+        <parameter key="title"    value="Settlement Claim" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaim/settlementclaim/jsp/CPS_CNI_0014.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0021] Occurrence Analysis -->
+    <screen name="CPS_CNI_0021" >
+        <parameter key="title"    value="Occurrence Analysis" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/containercargoclaimreport/containercargoclaimreport/jsp/CPS_CNI_0021.jsp"/>
+    </screen>
+    
+    <!-- [CPS_CNI_0312] Transfer -->
+    <screen name="CPS_CNI_0312">
+        <parameter key="title"    value="Transfer" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/drywetclaim/drywetclaim/jsp/CPS_CNI_0312.jsp"/>
+    </screen>     
+    
+        <!-- [CPS_CNI_0095] Main Code- Popup -->
+    <screen name="CPS_CNI_0095" template="templatePop">
+        <parameter key="title"    value="Main Code-Popup" direct="true"/>
+        <parameter key="body"     value="apps/opus/cps/cni/codemgt/codemgt/jsp/CPS_CNI_0095.jsp"/>
+    </screen>
+     
+</screen-definitions>

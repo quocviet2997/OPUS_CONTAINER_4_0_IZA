@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="MenuDAOComMnuCfgVOUSQL">
+			<desc><![CDATA[update menu   ]]></desc>
+			<sql><![CDATA[
+update com_mnu_cfg SET                                                   
+        pgm_lvl_val        = @[pgm_lvl_val],                                            
+        dp_seq             = @[dp_seq],                                            
+        upd_dt             = sysdate,
+		upd_usr_id		= @[upd_usr_id]
+ where mnu_cfg_cd = @[mnu_cfg_cd]                                                     
+ and   prnt_pgm_no = @[prnt_pgm_no]                                                    
+ and   chd_pgm_no = @[chd_pgm_no]			]]></sql>
+			<params>
+				<param name="pgm_lvl_val" type="12" value="" out="N"/>
+				<param name="dp_seq" type="12" value="" out="N"/>
+				<param name="upd_usr_id" type="12" value="" out="N"/>
+				<param name="mnu_cfg_cd" type="12" value="" out="N"/>
+				<param name="prnt_pgm_no" type="12" value="" out="N"/>
+				<param name="chd_pgm_no" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

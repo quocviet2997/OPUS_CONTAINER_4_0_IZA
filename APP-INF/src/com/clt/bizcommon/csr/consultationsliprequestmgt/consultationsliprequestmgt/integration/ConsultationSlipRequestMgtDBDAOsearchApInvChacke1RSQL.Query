@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOsearchApInvChacke1RSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+SELECT NVL(ap_ofc_cd,'N') ap_ofc_cd
+     , NVL(finc_rgn_cd,'N') finc_rgn_cd
+     , NVL(ap_ctr_cd,'N') ap_ctr_cd
+FROM   mdm_organization
+WHERE  ofc_cd = @[ofc_cd]
+AND NVL(DELT_FLG, 'N') = 'N'			]]></sql>
+			<params>
+				<param name="ofc_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>

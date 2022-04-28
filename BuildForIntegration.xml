@@ -1,0 +1,172 @@
+﻿<project name="BuildIntegration" default="all" basedir=".">
+
+	<!-- set global properties for this build -->
+	
+	<!-- Property for Build --> 
+	<property name="src.dir" value="APP-INF/src"/>
+	<property name="classes.dir" value="APP-INF/classes"/>
+	<property name="lib.dir" value="APP-INF/lib"/>
+	
+	<!-- Schemas Folder -->
+	<property name="schemas.dir" value="APP-INF/schemas"/>
+	
+	<!-- Property for WebServices -->
+	<property name="war_file" value="WebServices" />
+	<property name="modules.dir" value="C:/Oracle/Middleware/Oracle_Home/oracle_common/modules" />
+	<property name="webservices.dir" value="C:/Oracle/Middleware/Oracle_Home/wlserver/server/lib" />
+	<property name="weblogic.dir" value="C:/Oracle/Middleware/Oracle_Home/wlserver/server/lib" />
+	<!--property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/-->
+	
+	<!-- 	
+	************************************************
+			Classpath Declaration 
+		% pathelement element order is important. 
+	************************************************
+	-->	
+	<echo message="==== Initialization all class path ===" />
+	<echo message="::: CLASS PATH = ${classes.dir} " />
+	<echo message="::: MODULES PATH = ${modules.dir} " />
+	<echo message="::: WEBSERVICES PATH = ${webservices.dir}/webservices.jar " />
+	<echo message="::: LIB PATH = ${lib.dir} " />
+	<echo message="::: WEBLOGIC PATH = ${weblogic.dir}/weblogic.jar" />	
+	<path id='all-classpath'>
+		<pathelement path="${classes.dir}" />
+		<pathelement path="${modules.dir}" />
+		<fileset dir='${lib.dir}'>
+			<include name='**/*.jar'/>
+		</fileset>
+		<pathelement path="${weblogic.dir}/weblogic.jar" />
+	</path>
+	
+	<!-- Class Generation -->
+	<taskdef name="xmlbean" classname="org.apache.xmlbeans.impl.tool.XMLBean" classpathref="all-classpath" />
+	
+  	<!-- WebServices Generation -->
+  	<taskdef name="jwsc" classname="weblogic.wsee.tools.anttasks.JwscTask" classpathref="all-classpath" />  
+ 
+
+
+	<!-- 	
+	************************************************
+			Target List  
+	************************************************
+	-->	
+	<target name="all" depends="javac, schemas.check, schemas.jar, close">
+		<echo message="::: All Task Finished ! " />
+	</target>
+	
+	<!-- 	
+	************************************************
+			Compile !  
+	************************************************
+	-->	
+  	<target name="javac" >
+  		<echo message="::: JAVA Source Compile Start ! (${src.dir}) exclude name='**/sample/**' !" /> 
+		<javac srcdir="${src.dir}" 
+        	destdir="${classes.dir}" 
+	        classpathref="all-classpath">
+        	<exclude name="**/sample/**" />
+    	</javac>
+  		<echo message="::: JAVA Source Compile Completed !" /> 
+  		<copy todir="${classes.dir}">
+  			<fileset dir="${src.dir}">
+				<include name="**/*.xml" />
+				<include name="**/*.properties" />
+			</fileset>
+  		</copy>
+  		<echo message="::: JAVA Class files and Configuration files copy to ${classes.dir} Completed !" /> 
+  	</target>
+	
+	<!--
+	************************************************
+			XML Bean Task START !!!!
+	************************************************ 
+	-->
+	<target name="schemas.check" >
+		<echo message="::: Schemas Check start !" /> 
+	    <uptodate property="schemas.notRequired"
+	        targetfile="${lib.dir}/schemas.jar">
+	        <srcfiles dir="${schemas.dir}" includes="${schemas.dir}/*.xsd, ${schemas.dir}/*.wsdl"/>
+	    </uptodate>
+	</target>
+	<echo message="::: Schemas Check OK !" />
+	<echo message="::: Make a Schemas jar file start !" />
+	<target name="schemas.jar" 
+		    unless="schemas.notRequired">
+		<xmlbean schema="${schemas.dir}"
+			memoryInitialSize="512m"
+			memoryMaximumSize="1024m"
+			destfile="${lib.dir}/schemas2.jar"
+		    classpathref="all-classpath"
+		    debug="on"
+		/>
+	</target>
+	<echo message="::: Make a Schemas jar file Completed !" />
+    <!--XML Bean Task END !!!! -->
+
+	<!-- 
+	************************************************
+			Make Webservices Generation Task START !!!!
+	************************************************
+	-->	
+	<target name="gen" >
+		<echo message="::: Generate webservices start !" />
+	    <jwsc
+	    	srcdir="${src.dir}"
+	    	destdir="."
+	    	verbose="on" 
+	    	debug="on"
+	    	upperCasePropName="false"
+			classpathref="all-classpath"> 
+	    	<module contextPath="/opuscntr/webservices" name="${war_file}"> 
+	    		<jwsfileset srcdir="${src.dir}" >
+	    			<include name="**/servicesio/**/*.java"/>
+	    		</jwsfileset>
+	    	 </module> 
+	    </jwsc>
+		<echo message="::: Generate webservices Completed !" />
+  	</target>
+	<target name="NIS2010_gen" >
+		<echo message="::: Generate webservices start ! @${nis2010_src.dir}" />
+	    <jwsc
+	    	srcdir="${src.dir}"
+	    	destdir="."
+	    	verbose="on" 
+	    	debug="on"
+	    	upperCasePropName="false"
+			classpathref="all-classpath">
+	    	<module contextPath="/opuscntr/webservices" name="${war_file}"> 
+	    		<jwsfileset srcdir="${src.dir}" >
+	    			<include name="com/clt/apps/opus/ees/ctm/servicesio/MvmtReciveFromSppWSProxy.java"/>
+                    <include name="com/clt/apps/opus/esd/sce/servicesio/newwebgate/NewWebGateIWSProxy.java"/>
+                    <include name="com/clt/apps/opus/vop/vsk/servicesio/ActualScheduleManagementWSProxy.java"/>
+                    <include name="com/clt/apps/opus/esd/trs/servicesio/webdo/Web0020001ReceiveWSProxy.java"/>
+                    <include name="com/clt/apps/opus/esm/bkg/servicesio/BKGWeb0040001WSProxy.java"/>
+                    <include name="com/clt/apps/opus/esm/bkg/servicesio/BKGWeb0060001WSProxy.java"/>
+                    <!--include name="com/clt/apps/opus/esm/bkg/servicesio/BKGWeb0010001WSProxy.java"/-->
+                    <!--include name="com/clt/apps/opus/esm/bkg/servicesio/BKGWeb0080001WSProxy.java"/-->
+	    			<include name="com/clt/apps/opus/esd/trs/servicesio/prerailbilling/PreRailBillingIWSProxy.java"/>
+	    			<include name="com/clt/apps/opus/esd/trs/servicesio/streetturn/StreetTurnIWSProxy.java"/>
+	    			<include name="com/clt/apps/opus/tpl/dom/servicesio/DOMEqhOps01WSProxy.java"/>
+	    			<include name="com/clt/apps/opus/tpl/dom/servicesio/DOMEqhOps02WSProxy.java"/>
+	    			<include name="com/clt/apps/opus/tpl/dom/servicesio/DOMEqhOps03WSProxy.java"/>
+	    			<include name="com/clt/apps/opus/tpl/dom/servicesio/DOMEqhOps04WSProxy.java"/>
+	    			<include name="com/clt/apps/opus/tpl/dom/servicesio/DOMEqhOps05WSProxy.java"/>
+	    			<include name="com/clt/apps/opus/tpl/dom/servicesio/DOMEqhOps06WSProxy.java"/>
+	    		</jwsfileset>
+	    	</module> 
+	    </jwsc>
+		<echo message="::: Generate webservices Completed !" />
+  	</target>
+
+	<!-- 	
+	************************************************
+			Close Everything !  
+	************************************************
+	-->	
+	<target name="close">
+		<echo message="::: All building Completed ! HaPpY DaY ! GoOd LuCk " />
+	</target>
+	
+	
+</project>

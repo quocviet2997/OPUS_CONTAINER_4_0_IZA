@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen-definitions xmlns="http://www.cyberlogitec.com/screen-definitions">
+	<!-- Dohyoung Lee : 2009-05-14 start -->
+    <screen name="VOP_SCG_0001">
+        <parameter key="title"    value="UN Number (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargoinformationmgt/imdgcodemgt/jsp/VOP_SCG_0001.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-14 end -->
+
+	<!-- Dohyoung Lee : 2009-08-07 start -->
+    <screen name="VOP_SCG_0001Pop" template="templatePop">
+        <parameter key="title"    value="UN Number (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargoinformationmgt/imdgcodemgt/jsp/VOP_SCG_0001.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-08-07 end -->
+
+	<!-- Dohyoung Lee : 2009-05-27 start -->
+    <screen name="VOP_SCG_0002">
+        <parameter key="title"    value="UN Number (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargoinformationmgt/imdgcodemgt/jsp/VOP_SCG_0002.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-27 end -->
+	
+	<!-- Kim Hyun Uk : 2009-07-27 start -->
+    <screen name="VOP_SCG_0002Pop" template="templatePop">
+        <parameter key="title"    value="UN Number (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargoinformationmgt/imdgcodemgt/jsp/VOP_SCG_0002.jsp"/>
+    </screen>
+	<!-- Kim Hyun Uk : 2009-07-27 end -->
+
+	<!-- Dohyoung Lee : 2009-05-27 start -->
+    <screen name="VOP_SCG_0003">
+        <parameter key="title"    value="Segregation Table (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargoinformationmgt/imdgcodemgt/jsp/VOP_SCG_0003.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-27 end -->
+
+	<!-- Dohyoung Lee : 2009-05-28 start -->
+    <screen name="VOP_SCG_0004">
+        <parameter key="title"    value="Segregation Table (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargoinformationmgt/imdgcodemgt/jsp/VOP_SCG_0004.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-28 end -->
+
+	<!-- Dohyoung Lee : 2009-06-04 start -->
+    <screen name="VOP_SCG_0014">
+        <parameter key="title"    value="SPCL CGO APVL for Own BKG" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_0014.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-06-04 end -->
+
+	<!-- Dohyoung Lee : 2009-04-28 start -->
+    <screen name="VOP_SCG_0031">
+        <parameter key="title"    value="Load Reject Reason (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0031.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-04-28 end -->
+
+	<!-- Dohyoung Lee : 2009-05-04 start -->
+    <screen name="VOP_SCG_0032">
+        <parameter key="title"    value="SPCL CGO RSO (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0032.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-04 end -->
+
+	<!-- Dohyoung Lee : 2009-05-11 start -->
+    <screen name="VOP_SCG_0034">
+        <parameter key="title"    value="Partner's Contact Point for SPCL CGO (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0034.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-11 end -->
+
+	<!-- Dohyoung Lee : 2009-05-06 start -->
+    <screen name="VOP_SCG_0036">
+        <parameter key="title"    value="SPCL CGO Irregular Type (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0036.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-06 end -->
+
+	<!-- Dohyoung Lee : 2009-05-04 start -->
+    <screen name="VOP_SCG_0037">
+        <parameter key="title"    value="Definition of Class (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0037.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-04 end -->
+
+	<!-- Dohyoung Lee : 2009-04-29 start -->
+    <screen name="VOP_SCG_0039">
+        <parameter key="title"    value="Marine Pollutant (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0039.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-04-29 end -->
+
+	<!-- Dohyoung Lee : 2009-05-07 start -->
+    <screen name="VOP_SCG_0040">
+        <parameter key="title"    value="Packing Group (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0040.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-07 end -->
+
+	<!-- Dohyoung Lee : 2009-05-07 start -->
+    <screen name="VOP_SCG_0041">
+        <parameter key="title"    value="Special Provisions (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0041.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-07 end -->
+
+	<!-- Dohyoung Lee : 2009-05-04 start -->
+    <screen name="VOP_SCG_0043">
+        <parameter key="title"    value="Packaging Code (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0043.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-04 end -->
+
+	<!-- Dohyoung Lee : 2009-05-04 start -->
+    <screen name="VOP_SCG_0044">
+        <parameter key="title"    value="IMO Type Portable Tanks (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0044.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-04 end -->
+
+	<!-- Dohyoung Lee : 2009-05-08 start -->
+    <screen name="VOP_SCG_0045">
+        <parameter key="title"    value="DG Abbreviation (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0045.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-08 end -->
+
+	<!-- Dohyoung Lee : 2009-05-08 start -->
+    <screen name="VOP_SCG_0046">
+        <parameter key="title"    value="No. &amp; Symbols in SEG Table/Mixed STWG (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0046.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-08 end -->
+
+	<!-- Dohyoung Lee : 2009-05-08 start -->
+    <screen name="VOP_SCG_0047">
+        <parameter key="title"    value="Compatibility Groups of Class 1 (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0047.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-08 end -->
+
+	<!-- Dohyoung Lee : 2009-05-08 start -->
+    <screen name="VOP_SCG_0063">
+        <parameter key="title"    value="DG Abbreviation (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0063.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-08 end -->
+
+	<!-- Dohyoung Lee : 2009-05-08 start -->
+    <screen name="VOP_SCG_0067">
+        <parameter key="title"    value="Excepted Quantities (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0067.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-08 end -->
+	
+	<!-- HyunUk Kim : 2009-05-19 start -->
+    <screen name="VOP_SCG_0070">
+        <parameter key="title"    value="Segregation Group (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0070.jsp"/>
+    </screen>
+	<!-- HyunUk Kim : 2009-05-19 end -->
+	
+	<!-- HyunUk Kim : 2009-05-22 start -->
+    <screen name="VOP_SCG_0071">
+        <parameter key="title"    value="Segregation Group (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0071.jsp"/>
+    </screen>
+	<!-- HyunUk Kim : 2009-05-19 end -->
+
+
+	<!-- jang kang cheol : 2009-05-19 start -->
+    <screen name="VOP_SCG_0033">
+        <parameter key="title"    value="Loading Port for RSO(Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0033.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-05-19 end -->
+
+ 
+
+	<!-- jang kang cheol : 2009-05-22 start -->
+    <screen name="VOP_SCG_0051">
+        <parameter key="title"    value="Loading Port for RSO (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0051.jsp"/>
+    </screen>
+    
+	<!-- jang kang cheol : 2009-05-25 start -->
+    <screen name="VOP_SCG_0035">
+        <parameter key="title"    value="Target Lane for SPCL CGO APVL (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0035.jsp"/>
+    </screen>    
+	<!-- jang kang cheol : 2009-05-22 end -->
+	
+	<!-- HyunUk Kim : 2009-05-25 start -->
+    <screen name="VOP_SCG_0042">
+        <parameter key="title"    value="Packing Instructions/Provisions (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0042.jsp"/>
+    </screen>
+	<!-- HyunUk Kim : 2009-05-25 end -->
+	
+	<!-- HyunUk Kim : 2009-05-28 start -->
+    <screen name="VOP_SCG_0060">
+        <parameter key="title"    value="Packing Instructions/Provisions (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0060.jsp"/>
+    </screen>
+	<!-- HyunUk Kim : 2009-05-28 end -->
+	
+	<!--KIM HYUN HWA : 2013-05-09 start -->  
+	<screen name="VOP_SCG_0060Pop" template="templatePop">
+        <parameter key="title"    value="Packing Instructions/Provisions (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0060.jsp"/>
+    </screen>
+    <!--KIM HYUN HWA : 2013-05-09 end -->  
+
+	<!-- Dohyoung Lee : 2009-05-28 start -->
+    <screen name="VOP_SCG_1003_01" template="templatePop">
+        <parameter key="title"    value="Numbers &amp; symbols in segregation table between various Classes" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargoinformationmgt/imdgcodemgt/jsp/VOP_SCG_1003_01.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-28 end -->
+
+	<!-- Dohyoung Lee : 2009-05-28 start -->
+    <screen name="VOP_SCG_1003_02" template="templatePop">
+        <parameter key="title"    value="Permitted mixed stowage for goods of class 1" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargoinformationmgt/imdgcodemgt/jsp/VOP_SCG_1003_02.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-05-28 end -->
+	
+	
+	<!-- jang kang cheol : 2009-05-26 start -->
+    <screen name="VOP_SCG_0053">
+        <parameter key="title"    value="Target Lane for SPCL CGO APVL (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0053.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-05-26 end -->
+
+	<!-- jang kang cheol : 2009-05-26 start -->
+    <screen name="VOP_SCG_0005">
+        <parameter key="title"    value="DG Restriction by Port (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargorestriction/portrestriction/jsp/VOP_SCG_0005.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-05-26 end -->
+	
+	<!-- HyunUk Kim : 2009-05-29 start -->
+    <screen name="VOP_SCG_0013">
+        <parameter key="title"    value="SPCL CGO Irregular Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/vesseloperationirregularmgt/specialcargoirregularmgt/jsp/VOP_SCG_0013.jsp"/>
+    </screen>
+	<!-- HyunUk Kim : 2009-05-29 end -->
+ 
+
+	<!-- jang kang cheol : 2009-06-03 start -->
+    <screen name="VOP_SCG_1005" template="templatePop">
+        <parameter key="title"    value="SAVE DG Restriction by Port" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargorestriction/portrestriction/jsp/VOP_SCG_1005.jsp"/>
+    </screen>
+    
+    <screen name="VOP_SCG_3005" template="templatePop">
+        <parameter key="title"    value="UN No. Help" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargorestriction/portrestriction/jsp/VOP_SCG_3005.jsp"/>
+    </screen>    
+	<!-- jang kang cheol : 2009-06-03 end -->
+
+	<!-- jang kang cheol : 2009-06-08 start -->
+    <screen name="VOP_SCG_0006">
+        <parameter key="title"    value="DG Restriction by Port (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargorestriction/portrestriction/jsp/VOP_SCG_0006.jsp"/>
+    </screen>
+    <screen name="VOP_SCG_0006Pop" template="templatePop">
+        <parameter key="title"    value="DG Restriction by Port - Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargorestriction/portrestriction/jsp/VOP_SCG_0006.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-08 end -->
+	
+	<!-- HyunUk Kim : 2009-06-08 start -->
+    <screen name="VOP_SCG_2013_01" template="templatePop">
+        <parameter key="title"    value="Supporting Documents or Pictures" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/vesseloperationirregularmgt/specialcargoirregularmgt/jsp/VOP_SCG_2013_01.jsp"/>
+    </screen>
+	<!-- HyunUk Kim : 2009-06-08 end -->
+
+	<!-- jang kang cheol : 2009-06-09 start -->
+    <screen name="VOP_SCG_0009">
+        <parameter key="title"    value="VSL OPR's  Restriction on DG (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargorestriction/carrierrestriction/jsp/VOP_SCG_0009.jsp"/>
+    </screen>
+    <screen name="VOP_SCG_0011">
+        <parameter key="title"    value="VSL OPR's Restriction on DG (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargorestriction/portrestriction/jsp/VOP_SCG_0011.jsp"/>
+    </screen>    
+	<!-- jang kang cheol : 2009-06-09 end -->
+
+	<!-- jang kang cheol : 2009-06-15 start -->
+    <screen name="VOP_SCG_0010">
+        <parameter key="title"    value="VSL OPR's Restriction on DG (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargorestriction/carrierrestriction/jsp/VOP_SCG_0010.jsp"/>
+    </screen>
+    <screen name="VOP_SCG_0010Pop" template="templatePop">
+        <parameter key="title"    value="VSL OPR's Restriction on DG (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargorestriction/carrierrestriction/jsp/VOP_SCG_0010.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-15 end -->
+	
+	<!-- HyunUk Kim : 2009-06-16 start -->
+    <screen name="VOP_SCG_0012">
+        <parameter key="title"    value="SPCL CGO Irregular List" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/vesseloperationirregularmgt/specialcargoirregularmgt/jsp/VOP_SCG_0012.jsp"/>
+    </screen>
+    <screen name="VOP_SCG_0012Pop" template="templatePop">
+        <parameter key="title"    value="SPCL CGO Irregular List" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/vesseloperationirregularmgt/specialcargoirregularmgt/jsp/VOP_SCG_0012.jsp"/>
+    </screen>
+	<!-- HyunUk Kim : 2009-06-16 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <screen name="VOP_SCG_0049">
+        <parameter key="title"    value="Load Reject Reason (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0049.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <screen name="VOP_SCG_0050">
+        <parameter key="title"    value="SPCL CGO RSO (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0050.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <screen name="VOP_SCG_0052">
+        <parameter key="title"    value="Partner's Contact Point for SPCL CGO (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0052.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <screen name="VOP_SCG_0054">
+        <parameter key="title"    value="SPCL CGO Irregulars Type (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0054.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <screen name="VOP_SCG_0055">
+        <parameter key="title"    value="Definition of Class (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0055.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <screen name="VOP_SCG_0057">
+        <parameter key="title"    value="Marine Pollutant (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0057.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <screen name="VOP_SCG_0058">
+        <parameter key="title"    value="Packing Group (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0058.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <screen name="VOP_SCG_0059">
+        <parameter key="title"    value="Special Provisions (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0059.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- Dohyoung Lee : 2009-08-07 start -->
+    <screen name="VOP_SCG_0059Pop" template="templatePop">
+        <parameter key="title"    value="Special Provisions (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0059.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-08-07 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <screen name="VOP_SCG_0061">
+        <parameter key="title"    value="Packaging Code (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0061.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <screen name="VOP_SCG_0062">
+        <parameter key="title"    value="IMO Type Portable Tanks (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0062.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <screen name="VOP_SCG_0064">
+        <parameter key="title"    value="No. and Symbols in SEG Table/Mixed STWG (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0064.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <screen name="VOP_SCG_0065">
+        <parameter key="title"    value="Compatibility Groups of Class 1 (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0065.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <screen name="VOP_SCG_0066">
+        <parameter key="title"    value="Organic Peroxides and Self-Reactive Substances (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0066.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-18 end -->
+
+	<!-- jang kang cheol : 2009-06-18 start -->
+    <screen name="VOP_SCG_0068">
+        <parameter key="title"    value="Excepted Quantities (Inquiry)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0068.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-06-18 end -->
+	
+	<!-- HyunUk Kim : 2009-06-22 start -->
+    <screen name="VOP_SCG_0075" template="templatePop">
+        <parameter key="title"    value="SPCL CGO Irregular Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/vesseloperationirregularmgt/specialcargoirregularmgt/jsp/VOP_SCG_0013.jsp"/>
+    </screen>
+	<!-- HyunUk Kim : 2009-06-22 end -->
+
+	<!-- Dohyoung Lee : 2009-06-26 start -->
+    <screen name="VOP_SCG_1015" template="templatePop">
+        <parameter key="title"    value="Application Request &amp; Approval Status - DG" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_1015.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-06-26 end -->
+	
+	<!-- ds ham : 2015-01-16 start -->
+    <screen name="VOP_SCG_1019" template="templatePop">
+        <parameter key="title"    value="Application Request &amp; Approval Status - SS" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_1019.jsp"/>
+    </screen>
+	<!-- ds ham : 2015-01-16 end -->
+	
+	<!-- HyunUk Kim : 2009-06-24 start -->
+    <screen name="VOP_SCG_0022">
+        <parameter key="title"    value="SPCL CGO APVL for Partner Lines (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/partnerlinesdangerouscargoapproval/jsp/VOP_SCG_0022.jsp"/>
+    </screen>
+	<!-- HyunUk Kim : 2009-06-24 end -->
+
+	<!-- HyunUk Kim : 2009-06-26 start -->
+    <screen name="VOP_SCG_1022" template="templatePop">
+        <parameter key="title"    value="Dangerous CGO Application Details for Partner Lines" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/partnerlinesdangerouscargoapproval/jsp/VOP_SCG_1022.jsp"/>
+    </screen>
+	<!-- HyunUk Kim : 2009-06-26 end -->
+
+	<!-- HyunUk Kim : 2009-06-26 start -->
+    <screen name="VOP_SCG_0023">
+        <parameter key="title"    value="SPCL CGO Approved Details" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_0023.jsp"/>
+    </screen>
+	<!-- HyunUk Kim : 2009-06-26 end -->
+
+	<!-- Dohyoung Lee : 2009-07-01 start -->
+    <screen name="VOP_SCG_1016" template="templatePop">
+        <parameter key="title"    value="Application Request &amp; Approval Status - Awkward" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_1016.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-07-01 end -->
+
+	<!-- Dohyoung Lee : 2009-07-02 start -->
+    <screen name="VOP_SCG_1017" template="templatePop">
+        <parameter key="title"    value="Application Request &amp; Approval Status - Break Bulk" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_1017.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-07-02 end -->
+
+	<!-- Dohyoung Lee : 2009-07-02 start -->
+    <screen name="VOP_SCG_1018" template="templatePop">
+        <parameter key="title"    value="Application Request &amp; Approval Status - Reefer" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_1018.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-07-02 end -->
+
+	<!-- Dohyoung Lee : 2009-07-06 start -->
+    <screen name="VOP_SCG_0016" template="templatePop">
+        <parameter key="title"    value="Awkward CGO Application Details for Own BKG" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_0016.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-07-06 end -->
+	
+	<!-- jang kang cheol : 2009-07-08 start -->
+    <screen name="VOP_SCG_0073">
+        <parameter key="title"    value="Special Provisions for Segregation (Creation)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0073.jsp"/>        
+    </screen>
+    
+    <screen name="VOP_SCG_0074">
+        <parameter key="title"    value="Special Provisions for Segregation (Inquire)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0074.jsp"/>        
+    </screen>    
+	<!-- jang kang cheol : 2009-07-08 end -->
+	
+	<!-- Dohyoung Lee : 2009-07-13 start -->
+    <screen name="VOP_SCG_0015" template="templatePop">
+        <parameter key="title"    value="Dangerous CGO Application Details for Own BKG" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_0015.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-07-13 end -->
+
+	<!-- Dohyoung Lee : 2009-07-13 start -->
+    <screen name="VOP_SCG_0017" template="templatePop">
+        <parameter key="title"    value="Break-Bulk CGO Application Details for Own BKG" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_0017.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-07-13 end -->
+
+	<!-- Dohyoung Lee : 2009-07-13 start -->
+    <screen name="VOP_SCG_0018" template="templatePop">
+        <parameter key="title"    value="Reefer CGO Application Details for Own BKG" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_0018.jsp"/>
+    </screen>
+	<!-- Dohyoung Lee : 2009-07-13 end -->
+	
+	<!-- Kim Hyun Uk : 2009-07-17 start -->
+    <screen name="VOP_SCG_0021" template="templatePop">
+        <parameter key="title"    value="Restrictions" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_0021.jsp"/>
+    </screen>
+	<!-- Kim Hyun Uk : 2009-07-17 end -->
+	
+	<!-- Kim Hyun Uk : 2009-07-23 start -->
+    <screen name="VOP_SCG_0069" template="templatePop">
+        <parameter key="title"    value="Pre Checking Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_0069.jsp"/>
+    </screen>
+	<!-- Kim Hyun Uk : 2009-07-23 end -->
+	
+	<!-- Kim Yang Jae : 2017-08-16 start -->
+    <screen name="VOP_SCG_0069_01" template="templatePop">
+        <parameter key="title"    value="Pre Checking Report" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_0069_01.jsp"/>
+    </screen>
+	<!-- Kim Yang Jae : 2017-08-16 end -->
+
+	<!-- Kim Yang Jae : 2017-08-31 start -->
+    <screen name="VOP_SCG_0069_02" template="templatePop">
+        <parameter key="title"    value="Description of Special Provision" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_0069_02.jsp"/>
+    </screen>
+	<!-- Kim Yang Jae : 2017-08-31 end -->
+	
+	<!-- Kim Hyun Uk : 2009-07-27 start -->
+    <screen name="VOP_SCG_0072">
+        <parameter key="title"    value="Segregation Simulation in a CNTR" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargoinformationmgt/imdgcodemgt/jsp/VOP_SCG_0072.jsp"/>
+    </screen>
+	<!-- Kim Hyun Uk : 2009-07-27 end -->
+
+	<!-- jang kang cheol : 2009-07-30 start -->
+    <screen name="VOP_SCG_0076">
+        <parameter key="title"    value="DG Prohibition Summary by Port" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargorestriction/portrestriction/jsp/VOP_SCG_0076.jsp"/>
+    </screen>
+	<!-- jang kang cheol : 2009-07-30 end -->
+	
+	<!-- Kim Hyun Uk : 2009-08-19 start -->
+    <screen name="VOP_SCG_0019">
+        <parameter key="title"    value="Mail Preview" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_0019.jsp"/>
+    </screen>
+	<!-- Kim Hyun Uk : 2009-08-19 end -->
+
+	<!-- Kim Hyun Uk : 2009-09-25 start -->
+    <screen name="VOP_SCG_0077">
+        <parameter key="title"    value="Setup mail contents for SPCL CGO application" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargomasterdatamgt/specialcargomasterdatamgt/jsp/VOP_SCG_0077.jsp"/>
+    </screen>
+	<!-- Kim Hyun Uk : 2009-09-25 end -->
+    <screen name="VOP_SCG_EXCEL" template="templateRD">
+        <parameter key="title"    value="Excel Title" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/scgcommon/scgexcel/jsp/SCG_EXCEL.jsp"/>
+    </screen>
+    
+    <!-- Kim Hyun Uk : 2009-12-14 start -->
+    <screen name="VOP_SCG_0078">
+        <parameter key="title"    value="Time of SPCL CGO Request APVL" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/owndangerouscargoapproval/jsp/VOP_SCG_0078.jsp"/>
+    </screen>
+	<!-- Kim Hyun Uk : 2009-12-14 end -->
+	
+	<!-- dongsoo : 2014-10-21 SPCL CGO APVL Approval/Inquiry for Partner Lines -->
+    <screen name="VOP_SCG_5001">
+        <parameter key="title"    value="SPCL CGO APVL Approval/Inquiry for Partner Lines" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/partnerlinesdangerouscargoapproval/jsp/VOP_SCG_5001.jsp"/>
+    </screen>
+    <!-- dongsoo : 2014-10-21 SPCL CGO APVL Approval/Inquiry for Partner Lines end -->
+    
+        
+    <!-- Kim Hyung Ju : 2017-09-12 start -->
+    <screen name="VOP_SCG_0079">
+        <parameter key="title"    value="Pre-Checking Simulator" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargorestriction/precheckingsimulation/jsp/VOP_SCG_0079.jsp"/>
+    </screen>
+	<!-- Kim Hyung Ju : 2017-09-12 end -->
+    
+    <!-- dongsoo : 2014-11-17 DG EDI Transmit History start-->
+    <screen name="VOP_SCG_5011">
+        <parameter key="title"    value="DG EDI Transmit History" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/editransmithistory/jsp/VOP_SCG_5011.jsp"/>
+    </screen>
+    <!-- dongsoo : 2014-11-17 DG EDI Transmit History end -->
+    
+    <!-- dongsoo : 2014-11-18 DG EDI Booking History start-->    
+    <screen name="VOP_SCG_5911"   template="templatePop">
+        <parameter key="title"    value="DG EDI Booking History" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/editransmithistory/jsp/VOP_SCG_5911.jsp"/>
+    </screen>
+    <!-- dongsoo : 2014-11-18 DG EDI Booking History end -->
+    <!-- 2015-09-09 I/O Bount Flat File start -->
+    <screen name="VOP_SCG_5991"   template="templatePop">
+        <parameter key="title"    value="In/Out Bound Flat File" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/editransmithistory/jsp/VOP_SCG_5991.jsp"/>
+    </screen>
+    <!-- 2015-09-09 I/O Bount Flat File end -->
+    <!-- dongsoo : 2015-01-12 DG EDI Booking History start-->    
+    <screen name="VOP_SCG_5913"   template="templatePop">
+        <parameter key="title"    value="DG EDI Booking History" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/editransmithistory/jsp/VOP_SCG_5913.jsp"/>
+    </screen>
+    <!-- dongsoo : 2015-01-12 DG EDI Booking History end -->
+    
+    <!-- dongsoo : 2014-11-18 IMDG Item Booking Summary start-->    
+    <screen name="VOP_SCG_5912"   template="templatePop">
+        <parameter key="title"    value="IMDG Item Booking Summary" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/editransmithistory/jsp/VOP_SCG_5912.jsp"/>
+    </screen>
+    <!-- dongsoo : 2014-11-18 DG IMDG Item Booking Summary end -->
+    
+    <!-- Un Jeong : 2014-11-17 start -->
+    <screen name="VOP_SCG_5021">
+        <parameter key="title"    value="Port Limits Creation" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/portlimitmanagement/jsp/VOP_SCG_5021.jsp"/>
+    </screen>
+    <screen name="VOP_SCG_5022">
+	    <parameter key="title"    value="Port Limits DG Total Weight Check" direct="true"/>
+	    <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/portlimitmanagement/jsp/VOP_SCG_5022.jsp"/>
+    </screen>
+    <screen name="VOP_SCG_5921" template="templatePop">
+	    <parameter key="title"    value="Port Limits Class" direct="true"/>
+	    <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/portlimitmanagement/jsp/VOP_SCG_5921.jsp"/>
+    </screen>
+    <screen name="VOP_SCG_5922" template="templatePop">
+	    <parameter key="title"    value="Port Limits Booking" direct="true"/>
+	    <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/portlimitmanagement/jsp/VOP_SCG_5922.jsp"/>
+    </screen>
+    <screen name="VOP_SCG_5923" template="templatePop">
+	    <parameter key="title"    value="Port Limits IMDG SubsRskLblCd" direct="true"/>
+	    <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/portlimitmanagement/jsp/VOP_SCG_5923.jsp"/>
+    </screen>    
+    <!-- Un Jeong : 2014-11-17 end -->
+    <screen name="VOP_SCG_5822" template="templatePop">
+        <parameter key="title"    value="Application Request &amp; Approval Status for Partner Lines - DG" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/partnerlinesdangerouscargoapproval/jsp/VOP_SCG_5822.jsp"/>
+    </screen>
+    <!-- Son Ji Ho : 2018-04-30 start -->
+    <screen name="VOP_SCG_5823" template="templatePop">
+        <parameter key="title"    value="Partner Special Cargo Attach File" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/cargoloadingapproval/partnerlinesdangerouscargoapproval/jsp/VOP_SCG_5823.jsp"/>
+    </screen>
+	<!-- Kim Yang Jae : 2017-09-11  start -->
+    <screen name="VOP_SCG_0080">
+        <parameter key="title"    value="CFR Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargoinformationmgt/cfrmgt/jsp/VOP_SCG_0080.jsp"/>
+    </screen>
+    <screen name="VOP_SCG_0080Pop" template="templatePop">
+        <parameter key="title"    value="CFR Inquiry" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dangerouscargoinformationmgt/cfrmgt/jsp/VOP_SCG_0080.jsp"/>
+    </screen>
+	<!-- Kim Yang Jae : 2017-09-11  end -->
+	<!-- Yona Ha : 2017-09-12 start -->
+    <screen name="VOP_SCG_5031">
+        <parameter key="title"    value="Create" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dgrestrictionmanagement/dgrestrictionmanagement/jsp/VOP_SCG_5031.jsp"/>
+    </screen>
+        <screen name="VOP_SCG_5032" template="templatePop">
+        <parameter key="title"    value="DG Restriction Change History (Popup) " direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/dgrestrictionmanagement/dgrestrictionmanagement/jsp/VOP_SCG_5032.jsp"/>
+    </screen>
+	<!-- Yona Ha : 2017-09-12 end -->
+	<!-- Byungwoo : 2018-08-22 DG EDI Transmit History for MSC start-->
+    <screen name="VOP_SCG_5012">
+        <parameter key="title"    value="DG EDI Transmit History" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/editransmithistory/jsp/VOP_SCG_5012.jsp"/>
+    </screen>
+    <!-- Byungwoo : 2018-08-22 DG EDI Transmit History for MSC end -->
+    <!-- Byungwoo : 2018-09-05 DG EDI Booking History for MSC(inbound) start -->    
+    <screen name="VOP_SCG_5914"   template="templatePop">
+        <parameter key="title"    value="DG EDI Booking History(MSC)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/editransmithistory/jsp/VOP_SCG_5914.jsp"/>
+    </screen>
+    <!-- Byungwoo : 2018-09-05 DG EDI Booking History for MSC(inbound) end -->
+    <!-- Byungwoo : 2018-09-05 IFTMBC Details(inbound) start-->    
+    <screen name="VOP_SCG_5915"   template="templatePop">
+        <parameter key="title"    value="DG EDI Booking History(MSC)" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/editransmithistory/jsp/VOP_SCG_5915.jsp"/>
+    </screen>
+    <!-- Byungwoo : 2018-09-05 IFTMBC Details(inbound) end-->   
+    <!-- Byungwoo : 2018-09-06 IFTMBC Details(outbound) start -->    
+    <screen name="VOP_SCG_5916"   template="templatePop">
+        <parameter key="title"    value="IFTMBC Details" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/editransmithistory/jsp/VOP_SCG_5916.jsp"/>
+    </screen>
+    <!-- Byungwoo : 2018-09-06 IFTMBC Details(outbound) end -->
+    <!-- Byungwoo : 2018-09-11 DG EDI Booking History for MSC( outbound ) start -->    
+    <screen name="VOP_SCG_5917"   template="templatePop">
+        <parameter key="title"    value="IFTMBC Details" direct="true"/>
+        <parameter key="body"     value="apps/opus/vop/scg/specialcargoutilitymanagement/editransmithistory/jsp/VOP_SCG_5917.jsp"/>
+    </screen>
+    <!-- Byungwoo : 2018-09-11 DG EDI Booking History for MSC( outbound ) end  -->
+</screen-definitions>

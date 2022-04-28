@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+	<querys>
+		<query name="ConsultationSlipRequestMgtDBDAOCreateApInvDTRBSumUpdateDiffUSQL">
+			<desc><![CDATA[.]]></desc>
+			<sql><![CDATA[
+ UPDATE AP_INV_DTRB
+ SET    INV_AMT = DECODE(@[curr_cd],'KRW',ROUND(NVL(INV_AMT,0)+NVL(@[gap],0)),'JPY',ROUND(NVL(INV_AMT,0)+NVL(@[gap],0),0),ROUND(NVL(INV_AMT,0)+NVL(@[gap],0),2))
+ WHERE  CSR_NO = @[csr_no]
+ AND    LINE_TP_LU_CD = 'ITEM'
+ AND    ATTR_CTNT1    = @[inv_no2]
+ AND    FTU_USE_CTNT1 = @[cost_cd]
+ AND    NVL(CNTR_TPSZ_CD,'N')  = NVL(@[cntr_tpsz_cd], 'N')      --수정(20070723)
+ AND    (LINE_SEQ, LINE_NO, INV_AMT ) = ( SELECT LINE_SEQ, LINE_NO, MIN(INV_AMT)
+                                          FROM   AP_INV_DTRB
+                                          WHERE  CSR_NO = @[csr_no]
+                                          AND    LINE_TP_LU_CD = 'ITEM'
+                                          AND    ATTR_CTNT1    = @[inv_no2]
+                                          AND    FTU_USE_CTNT1 = @[cost_cd]
+                                          AND    NVL(CNTR_TPSZ_CD,'N')  = NVL(@[cntr_tpsz_cd],'N')       --수정(20070723)
+                                          AND    ROWNUM = 1
+                                          GROUP BY LINE_SEQ, LINE_NO)			]]></sql>
+			<params>
+				<param name="curr_cd" type="12" value="" out="N"/>
+				<param name="gap" type="12" value="" out="N"/>
+				<param name="csr_no" type="12" value="" out="N"/>
+				<param name="inv_no2" type="12" value="" out="N"/>
+				<param name="cost_cd" type="12" value="" out="N"/>
+				<param name="cntr_tpsz_cd" type="12" value="" out="N"/>
+			</params>
+		</query>
+	</querys>
+</sqls>
