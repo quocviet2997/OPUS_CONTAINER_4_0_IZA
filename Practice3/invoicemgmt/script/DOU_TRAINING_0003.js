@@ -245,15 +245,15 @@ function doActionIBSheet(sheetObj, formObj, sAction){
 					alert("Can't download Excel file because there are no data in it.");
 					break;
 				}
-				formObj.f_cmd.value = SEARCH01;
-				var arr3=new Array("sheet1_");
-	        	var sParam3=FormQueryString(formObj)+ "&" + ComGetPrefixParam(arr3);
-	        	
-				var xml= {URL:"DOU_TRAINING_0003GS.do"
-					,ExtendParam:sParam3
-					,FileName:"Invoice_Carrier_Summary_02.xls"};
-				console.log(xml);
-				DirectDown2Excel(xml);
+//				formObj.f_cmd.value = SEARCH01;
+//				var arr3=new Array("sheet1_");
+//	        	var sParam3=FormQueryString(formObj)+ "&" + ComGetPrefixParam(arr3);
+//	        	
+//				var xml= {URL:"DOU_TRAINING_0003GS.do"
+//					,ExtendParam:sParam3
+//					,FileName:"Invoice_Carrier_Summary_02.xls"};
+//				console.log(xml);
+//				DirectDown2Excel(xml);
 				break;
 		}
 	}

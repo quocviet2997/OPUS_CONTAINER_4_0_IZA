@@ -104,7 +104,7 @@ function processButtonClick(){
 }
 
 /**
-	 * {processButtonClick} Put sheet objects in global variable "sheetObjects".<br>
+	 * {setSheetObject} Put sheet objects in global variable "sheetObjects".<br>
 	 * @param {ibsheet} sheetObj    	IBSheet Object
 	 **/
 function setSheetObject(sheet_obj){
@@ -112,7 +112,11 @@ function setSheetObject(sheet_obj){
 	sheetObjects[sheetCnt++] = sheet_obj;
 }
 
-// Functions that define the basic properties of the sheet on the screen, for example Column information, sheet basic attributes, etc.
+/**
+ * {initSheet} Functions that define the basic properties of the sheet on the screen, for example Column information, sheet basic attributes, etc.<br>
+ * @param {ibsheet} sheetObj    	IBSheet Object
+ * @param {int}		sheetNo  	  	Number of IBSheet Object
+ **/
 function initSheet(sheetObj, sheetNo){
 	with(sheetObj){
 		// SetConfig: configure how to fetch initialized sheet, location of frozen rows or columns and other basic configurations.
@@ -253,18 +257,6 @@ function sheet1_OnAfterEdit(sheetObject, Row, Col){
 			break;
 	}
 }
-
-//function sheet1_OnClick(sheetObject, Row, Col){
-//	switch(Col){
-//		case 1:
-//			var info = {UpdateEdit:0};
-//			sheetObject.SetColProperty(3, 3, info);
-//			sheetObject.SetColProperty(Row, 4, info);
-//			sheetObject.SetColProperty(Row, 5, info);
-//		default:
-//			break;
-//	}
-//}
 
 /**
 	 * {checkMessageCodeFormat} Function that check whether message code is correct.<br>

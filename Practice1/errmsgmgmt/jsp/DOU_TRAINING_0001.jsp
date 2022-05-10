@@ -35,6 +35,7 @@
 </script>
 </head>
 
+
 <body  onLoad="setupPage();">
 <form name="form">
 <input type="hidden" name="f_cmd">
@@ -51,9 +52,9 @@
 			<span id="navigation"></span>
 		</div>
 	</div>
-	
+
 	<div class="wrap_search">
-		<div class="opus_design_inquiry">
+		<div class="opus_design_inquiry wAuto">
 			<table>
 				<colgroup>
 					<col style="width: 40px">
@@ -63,14 +64,14 @@
 				<tbody>
 					<tr>
 						<th>Message Code</th>
-						<td><input type="text" style="width:100px;" class="input" value="" name="msg_cd" id="msg_cd"><button type="button" class="input_seach_btn" name="pop_slan" id="pop_slan" ></button></td>
+						<td><input type="text" style="width:100px;" class="input" value="" name="msg_cd" id="msg_cd"></td>
 						<th>Message</th>
-						<td><input type="text" style="width:100px;" class="input" value="" name="msg" id="msg"><button type="button" class="input_seach_btn" name="pop_slan" id="pop_slan" ></button></td>
+						<td><input type="text" style="width:100px;" class="input" value="" name="msg" id="msg"></td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
-	</div>
+	</div>	
 	
 	<div class="wrap_result">
 		<div class="opus_design_grid">

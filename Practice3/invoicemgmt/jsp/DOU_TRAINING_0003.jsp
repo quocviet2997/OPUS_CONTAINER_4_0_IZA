@@ -37,8 +37,6 @@
 	String strUsr_id		= "";
 	String strUsr_nm		= "";
 	String partnerItems		= "";
-	String laneItems		= "";
-	String tradeItems		= "";
 	Logger log = Logger.getLogger("com.clt.apps.Invoice.InvoiceMgmt");
 
 	try {
@@ -49,14 +47,18 @@
 
 		event = (DouTraining0003Event)request.getAttribute("Event");
 		serverException = (Exception)request.getAttribute(CommonWebKeys.EXCEPTION_OBJECT);
-
+		GeneralEventResponse eventResponse = (GeneralEventResponse) request.getAttribute("EventResponse");
+		
 		if (serverException != null) {
 			strErrMsg = new ErrorHandler(serverException).loadPopupMessage();
 		}
+		else{
+			partnerItems = eventResponse.getETCData("partnerCb");
+		}
 
 		// 초기화면 로딩시 서버로부터 가져온 데이터 추출하는 로직추가 ..
-		GeneralEventResponse eventResponse = (GeneralEventResponse) request.getAttribute("EventResponse");
-		partnerItems = eventResponse.getETCData("partnerCb");
+		
+		
 	}catch(Exception e) {
 		out.println(e.toString());
 	}
@@ -87,6 +89,7 @@
 <input type="hidden" name="pagerows">
 <div class="page_title_area clear">
 	<h2 class="page_title"><button type="button"><span id="title"></span></button></h2>
+	
 	<div class="location">
 		<span id="navigation"></span>
 	</div>
@@ -95,10 +98,20 @@
 <div class="wrap_search">
 	<div class="opus_design_inquiry">
 		<table>
+			<colgroup>
+				<col style="width: 80px">
+				<col style="width: 400px">
+				<col style="width: 50px">
+				<col style="width: 120px">
+				<col style="width: 50px">
+				<col style="width: 120px">
+				<col style="width: 50px">
+				<col style="width: 120px">
+			</colgroup>
 			<tbody>
 				<tr>
-					<th width="80" style="text-align: center;">Year Month</th>
-					<td width="400">
+					<th style="text-align: center;">Year Month</th>
+					<td>
 						<input type="text" style="width:100px;text-align:center;" name="dt_fm" id="dt_fm" dataformat="ym" maxLength="7" minlength="6"><!--  
 						--><button type="button" class="btn_left" name="btn_Pre_Month_Fm" id="btn_Pre_Month_Fm"></button><!--  
 						--><button type="button" class="btn_right" name="btn_Next_Month_Fm" id="btn_Next_Month_Fm"></i></button> <!--
@@ -106,14 +119,13 @@
 						--><button type="button" class="btn_left" name="btn_Pre_Month_To" id="btn_Pre_Month_To"></i></button><!--  
 						--><button type="button" class="btn_right" name="btn_Next_Month_To" id="btn_Next_Month_To"></i></button>
 					</td>
-					<th width="50">Partner</th>
-					<td width="120"><script type="text/javascript">ComComboObject('partner',1,120, 1, 0, 0);</script></td>
-					<th width="50">Lane</th>
-					<td width="120"><script type="text/javascript">ComComboObject('lane',1,120, 1, 0, 0);</script></td>
-					<th width="50">Trade</th>
-					<td width="120"><script type="text/javascript">ComComboObject('trade',1,120, 1, 0, 0);</script></td>
-					<td></td>
-					<td width="450">
+					<th>Partner</th>
+					<td><script type="text/javascript">ComComboObject('partner',1,120, 1, 0, 0);</script></td>
+					<th>Lane</th>
+					<td><script type="text/javascript">ComComboObject('lane',1,120, 1, 0, 0);</script></td>
+					<th>Trade</th>
+					<td><script type="text/javascript">ComComboObject('trade',1,120, 1, 0, 0);</script></td>
+					<td>
 						<div class="opus_design_btn">
 							<button type="button" class="btn_accent" name="btn_Retrieve" id="btn_Retrieve">Retrieve</button><!-- 
 							--><button type="button" class="btn_normal" name="btn_New" id="btn_New">New</button><!-- 

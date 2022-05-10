@@ -28,40 +28,48 @@ import com.clt.apps.opus.esm.clv.carrier.carriermgmt.vo.CarrierListVO;
 public interface CarrierMgmtBC {
 
 	/**
-	 * [비즈니스대상]을 [행위] 합니다.<br>
+	 * Present a list of Carrier records.<br>
 	 * 
-	 * @param CarrierListVO	carrierListVO
-	 * @return List<CarrierListVO>
+	 * @param carrierListVO a CarrierListVO object contains information to search query.
+	 * @return a list of Carrier records.
 	 * @exception EventException
 	 */
-	public List<CarrierListVO> CarrierListVO(CarrierListVO carrierListVO) throws EventException;
+	public List<CarrierListVO> searchCarrierListVO(CarrierListVO carrierListVO) throws EventException;
 	
 
 	/**
-	 * [비즈니스대상]을 [행위] 합니다.<br>
+	 * Present a list of CarrierCode records.<br>
 	 * 
-	 * @param CarrierListVO	carrierListVO
-	 * @return List<CarrierListVO>
+	 * @param carrierListVO a CarrierListVO object contains information to search query.
+	 * @return a list of CarrierCode records.
 	 * @exception EventException
 	 */
 	public List<CarrierListVO> searchCarrierCode(CarrierListVO carrierListVO) throws EventException;
 	
-
 	/**
-	 * [비즈니스대상]을 [행위] 합니다.<br>
+	 * Present a list of RLaneCode records.<br>
 	 * 
-	 * @param CarrierListVO	carrierListVO
-	 * @return List<CarrierListVO>
+	 * @param carrierListVO a CarrierListVO object contains information to search query.
+	 * @return a list of RLaneCode records.
 	 * @exception EventException
 	 */
 	public List<CarrierListVO> searchRLaneCode(CarrierListVO carrierListVO) throws EventException;
 	
 	/**
-	 * [비즈니스대상]을 [행위] 합니다.<br>
+	 * Execute changes of carrier list from UI to server.<br>
 	 * 
-	 * @param CarrierListVO[] carrierListVO
+	 * @param carrierListVO a list of CarrierListVO objects contain information to search query.
 	 * @param account SignOnUserAccount
 	 * @exception EventException
 	 */
-	public void CarrierListVO(CarrierListVO[] carrierListVO,SignOnUserAccount account) throws EventException;
+	public void modifyCarrierListVO(CarrierListVO[] carrierListVO,SignOnUserAccount account) throws EventException;
+	
+	/**
+	 * Present a list of Carrier records.<br>
+	 * 
+	 * @param carrierListVO a CarrierListVO object contains information to search query.
+	 * @return boolean
+	 * @exception EventException
+	 */
+	public boolean checkDuplicateCarrierId(CarrierListVO carrierListVO) throws EventException;
 }

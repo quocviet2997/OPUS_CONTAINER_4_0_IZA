@@ -4,10 +4,10 @@
 *@FileTitle : 
 *Open Issues :
 *Change history :
-*@LastModifyDate : 2022.03.24
+*@LastModifyDate : 2022.05.04
 *@LastModifier : 
 *@LastVersion : 1.0
-* 2022.03.24 
+* 2022.05.04 
 * 1.0 Creation
 =========================================================*/
 package com.clt.apps.opus.esm.clv.training02.codemanagement.integration;
@@ -94,7 +94,7 @@ public class CodeManagementDBDAOSearchCodeRSQL implements ISQLTemplate{
 		query.append("AND UPPER(OWNR_SUB_SYS_CD) LIKE '%'||UPPER(@[ownr_sub_sys_cd])||'%'" ).append("\n"); 
 		query.append("#end" ).append("\n"); 
 		query.append("#if(${intg_cd_id} != '')" ).append("\n"); 
-		query.append("AND UPPER(INTG_CD_ID) LIKE '%'||UPPER(@[intg_cd_id])||'%'" ).append("\n"); 
+		query.append("AND UPPER(INTG_CD_ID) = UPPER(@[intg_cd_id])" ).append("\n"); 
 		query.append("#end" ).append("\n"); 
 
 	}

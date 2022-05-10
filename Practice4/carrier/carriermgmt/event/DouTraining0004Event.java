@@ -30,10 +30,10 @@ public class DouTraining0004Event extends EventSupport {
 
 	private static final long serialVersionUID = 1L;
 	
-	/** Table Value Object 조회 조건 및 단건 처리  */
+	/** Table Value Object search condition and single event processing */
 	CarrierListVO carrierListVO = null;
 	
-	/** Table Value Object Multi Data 처리 */
+	/** Process Table Value Object Multi Data */
 	CarrierListVO[] carrierListVOs = null;
 
 	public DouTraining0004Event(){}

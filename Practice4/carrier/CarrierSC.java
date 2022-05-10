@@ -40,8 +40,8 @@ public class CarrierSC extends ServiceCommandSupport {
 	private SignOnUserAccount account = null;
 
 	/**
-	 * Carrier system 업무 시나리오 선행작업<br>
-	 * 업무 시나리오 호출시 관련 내부객체 생성<br>
+	 * Carrier system task scenario precedent work<br>
+	 * Creating related internal objects when calling a business scenario<br>
 	 */
 	public void doStart() {
 		log.debug("CarrierSC 시작");
@@ -54,16 +54,16 @@ public class CarrierSC extends ServiceCommandSupport {
 	}
 
 	/**
-	 * Carrier system 업무 시나리오 마감작업<br>
-	 * 업무 시나리오 종료시 관련 내부객체 해제<br>
+	 * Carrier system work scenario finishing work<br>
+	 * Release related internal objects when the work scenario is finished<br>
 	 */
 	public void doEnd() {
 		log.debug("CarrierSC 종료");
 	}
 
 	/**
-	 * 각 이벤트에 해당하는 업무 시나리오 수행<br>
-	 * ALPS-Carrier system 업무에서 발생하는 모든 이벤트의 분기처리<br>
+	 * Carry out business scenarios for each event<br>
+	 * Branch processing of all events occurring in ALPS-Carrier system work<br>
 	 * 
 	 * @param e Event
 	 * @return EventResponse
@@ -80,21 +80,20 @@ public class CarrierSC extends ServiceCommandSupport {
 			}
 			else
 			if (e.getFormCommand().isCommand(FormCommand.SEARCH)) {
-				eventResponse = CarrierListVO(e);
+				eventResponse = searchCarrierListVO(e);
 			}
 			else if (e.getFormCommand().isCommand(FormCommand.MULTI)) {
-				eventResponse = CarrierListVOs(e);
+				eventResponse = modifyCarrierListVO(e);
 			}
 		}
 		return eventResponse;
 	}
 	
 	/**
-	 * DOU_TRAINING_0004 : [이벤트]<br>
-	 * [비즈니스대상]을 [행위]합니다.<br>
+	 * Generate ETCData for CarrierCode and RLaneCode.<br>
 	 * 
-	 * @param Event e
-	 * @return EventResponse
+	 * @param e DouTraining0004Event.
+	 * @return eventResponse.
 	 * @exception EventException
 	 */
 	private EventResponse initData(Event e) throws EventException {
@@ -131,21 +130,20 @@ public class CarrierSC extends ServiceCommandSupport {
 	}
 	
 	/**
-	 * DOU_TRAINING_0004 : [이벤트]<br>
-	 * [비즈니스대상]을 [행위]합니다.<br>
+	 * Generate search data for CarrierListVO.<br>
 	 * 
-	 * @param Event e
-	 * @return EventResponse
+	 * @param e DouTraining0004Event.
+	 * @return eventResponse.
 	 * @exception EventException
 	 */
-	private EventResponse CarrierListVO(Event e) throws EventException {
+	private EventResponse searchCarrierListVO(Event e) throws EventException {
 		// PDTO(Data Transfer Object including Parameters)
 		GeneralEventResponse eventResponse = new GeneralEventResponse();
 		DouTraining0004Event event = (DouTraining0004Event)e;
 		CarrierMgmtBC command = new CarrierMgmtBCImpl();
 
 		try{
-			List<CarrierListVO> list = command.CarrierListVO(event.getCarrierListVO());
+			List<CarrierListVO> list = command.searchCarrierListVO(event.getCarrierListVO());
 			eventResponse.setRsVoList(list);
 		}catch(EventException ex){
 			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
@@ -156,21 +154,20 @@ public class CarrierSC extends ServiceCommandSupport {
 	}
 	
 	/**
-	 * DOU_TRAINING_0004 : [이벤트]<br>
-	 * [비즈니스대상]을 [행위]합니다.<br>
-	 *
-	 * @param Event e
-	 * @return EventResponse
+	 * Generate save data for CarrierListVO.<br>
+	 * 
+	 * @param e DouTraining0004Event.
+	 * @return eventResponse.
 	 * @exception EventException
 	 */
-	private EventResponse CarrierListVOs(Event e) throws EventException {
+	private EventResponse modifyCarrierListVO(Event e) throws EventException {
 		// PDTO(Data Transfer Object including Parameters)
 		GeneralEventResponse eventResponse = new GeneralEventResponse();
 		DouTraining0004Event event = (DouTraining0004Event)e;
 		CarrierMgmtBC command = new CarrierMgmtBCImpl();
 		try{
 			begin();
-			command.CarrierListVO(event.getCarrierListVOS(),account);
+			command.modifyCarrierListVO(event.getCarrierListVOS(),account);
 			eventResponse.setUserMessage(new ErrorHandler("XXXXXXXXX").getUserMessage());
 			commit();
 		} catch(EventException ex) {

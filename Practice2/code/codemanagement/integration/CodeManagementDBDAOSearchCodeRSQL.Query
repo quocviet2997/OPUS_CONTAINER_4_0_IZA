@@ -24,7 +24,7 @@ WHERE 1=1
 AND UPPER(OWNR_SUB_SYS_CD) LIKE '%'||UPPER(@[ownr_sub_sys_cd])||'%'
 #end
 #if(${intg_cd_id} != '')
-AND UPPER(INTG_CD_ID) LIKE '%'||UPPER(@[intg_cd_id])||'%'
+AND UPPER(INTG_CD_ID) = UPPER(@[intg_cd_id])
 #end			]]></sql>
 			<params>
 				<param name="ownr_sub_sys_cd" type="12" value="" out="N"/>

@@ -26,6 +26,9 @@ AND JO_CRR_CD IN (SELECT regexp_substr(@[jo_crr_cd],'[^,]+', 1, level)
 #if(${vndr_seq} != '')
 AND VNDR_SEQ = @[vndr_seq]
 #end
+#if(${rlane_cd} != '')
+AND RLANE_CD = @[rlane_cd]
+#end
 #if(${cre_dt_fm} != '')
 AND CRE_DT >= TO_DATE(@[cre_dt_fm], 'YYYY-MM-DD')
 #end
@@ -35,6 +38,7 @@ AND CRE_DT <= TO_DATE(@[cre_dt_to], 'YYYY-MM-DD')
 			<params>
 				<param name="jo_crr_cd" type="12" value="" out="N"/>
 				<param name="vndr_seq" type="12" value="" out="N"/>
+				<param name="rlane_cd" type="12" value="" out="N"/>
 				<param name="cre_dt_fm" type="12" value="" out="N"/>
 				<param name="cre_dt_to" type="12" value="" out="N"/>
 			</params>

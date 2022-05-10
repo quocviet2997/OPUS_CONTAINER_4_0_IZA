@@ -79,8 +79,6 @@ public class ErrMsgMgmtBCImpl extends BasicCommandSupport implements ErrMsgMgmtB
 			// List ErrMsgVO for delete
 			List<ErrMsgVO> deleteVoList = new ArrayList<ErrMsgVO>();
 			
-			List<ErrMsgVO> searchVoList = searchErrMsg(null);
-			
 			for ( int i=0; i<errMsgVO .length; i++ ) {
 				// if Ibflag is
 					// D. Add that ErrMsgVO to deleteVoList
@@ -93,12 +91,11 @@ public class ErrMsgMgmtBCImpl extends BasicCommandSupport implements ErrMsgMgmtB
 					updateVoList.add(errMsgVO[i]);
 				}else if ( errMsgVO[i].getIbflag().equals("I")){
 					errMsgVO[i].setCreUsrId(account.getUsr_id());
-					if(!checkDuplicateMsgCode(errMsgVO[i], searchVoList)){
+					if(!checkDuplicateMsgCode(errMsgVO[i].getErrMsgCd())){
 						insertVoList.add(errMsgVO[i]);
 					}
 					else{
-						String ex = "Message code is duplicated";
-						throw new DAOException(new ErrorHandler(ex).getMessage());
+						throw new DAOException(new ErrorHandler("ERR00001").getMessage());
 					}
 				}
 			}
@@ -126,11 +123,25 @@ public class ErrMsgMgmtBCImpl extends BasicCommandSupport implements ErrMsgMgmtB
 		}
 	}
 	
-	public boolean checkDuplicateMsgCode(ErrMsgVO errMsgVO, List<ErrMsgVO> searchVoList){
-		for(int i = 0; i<searchVoList.size(); i++){
-			if(searchVoList.get(i).getErrMsgCd().equals(errMsgVO.getErrMsgCd()))
-				return true;
+	/**
+	 * [checkDuplicateMsgCode] check whether error message code is exist in table.<br>
+	 * 
+	 * @param String errMsgVO
+	 * @exception EventException
+	 */
+	public boolean checkDuplicateMsgCode(String errMsg) throws EventException{
+		try{
+			ErrMsgVO errMsgVO = new ErrMsgVO();
+			errMsgVO.setErrMsgCd(errMsg);
+			List<ErrMsgVO> listErrMsg = dbDao.searchErrMsg(errMsgVO);
+			if(listErrMsg.size() == 0)
+				return false;
+			return true;
+		} catch(DAOException ex) {
+			// throw an EventException
+			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
+		} catch (Exception ex) {
+			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
 		}
-		return false;
 	}
 }

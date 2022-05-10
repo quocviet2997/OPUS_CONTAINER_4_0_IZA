@@ -76,16 +76,16 @@ public class Training02SC extends ServiceCommandSupport {
 		// SC가 여러 이벤트를 처리하는 경우 사용해야 할 부분
 		if (e.getEventName().equalsIgnoreCase("DouTraining0002Event")) {
 			if (e.getFormCommand().isCommand(FormCommand.SEARCH01)) {
-				eventResponse = CodeMgmtVO(e);
+				eventResponse = searchCodeMgmt(e);
 			}
 			else if (e.getFormCommand().isCommand(FormCommand.SEARCH02)) {
-				eventResponse = CodeMgmtDtlVO(e);
+				eventResponse = searchCodeMgmtDtl(e);
 			}
 			else if (e.getFormCommand().isCommand(FormCommand.MULTI01)) {
-				eventResponse = CodeMgmtVOS(e);
+				eventResponse = modifyCodeMgmt(e);
 			}
 			else if (e.getFormCommand().isCommand(FormCommand.MULTI02)) {
-				eventResponse = CodeMgmtDtlVOS(e);
+				eventResponse = modifyCodeMgmtDtl(e);
 			}
 		}
 		return eventResponse;
@@ -99,14 +99,14 @@ public class Training02SC extends ServiceCommandSupport {
 	 * @return EventResponse
 	 * @exception EventException
 	 */
-	private EventResponse CodeMgmtVO(Event e) throws EventException {
+	private EventResponse searchCodeMgmt(Event e) throws EventException {
 		// PDTO(Data Transfer Object including Parameters)
 		GeneralEventResponse eventResponse = new GeneralEventResponse();
 		DouTraining0002Event event = (DouTraining0002Event)e;
 		CodeManagementBC command = new CodeManagementBCImpl();
 
 		try{
-			List<CodeMgmtVO> list = command.CodeMgmtVO(event.getCodeMgmtVO());
+			List<CodeMgmtVO> list = command.searchCodeMgmt(event.getCodeMgmtVO());
 			eventResponse.setRsVoList(list);
 		}catch(EventException ex){
 			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
@@ -124,14 +124,14 @@ public class Training02SC extends ServiceCommandSupport {
 	 * @return EventResponse
 	 * @exception EventException
 	 */
-	private EventResponse CodeMgmtDtlVO(Event e) throws EventException {
+	private EventResponse searchCodeMgmtDtl(Event e) throws EventException {
 		// PDTO(Data Transfer Object including Parameters)
 		GeneralEventResponse eventResponse = new GeneralEventResponse();
 		DouTraining0002Event event = (DouTraining0002Event)e;
 		CodeManagementBC command = new CodeManagementBCImpl();
 
 		try{
-			List<CodeMgmtDtlVO> list = command.CodeMgmtDtlVO(event.getCodeMgmtDtlVO());
+			List<CodeMgmtDtlVO> list = command.searchCodeMgmtDtl(event.getCodeMgmtDtlVO());
 			eventResponse.setRsVoList(list);
 		}catch(EventException ex){
 			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
@@ -149,14 +149,14 @@ public class Training02SC extends ServiceCommandSupport {
 	 * @return EventResponse
 	 * @exception EventException
 	 */
-	private EventResponse CodeMgmtVOS(Event e) throws EventException {
+	private EventResponse modifyCodeMgmt(Event e) throws EventException {
 		// PDTO(Data Transfer Object including Parameters)
 		GeneralEventResponse eventResponse = new GeneralEventResponse();
 		DouTraining0002Event event = (DouTraining0002Event)e;
 		CodeManagementBC command = new CodeManagementBCImpl();
 		try{
 			begin();
-			command.CodeMgmtVO(event.getCodeMgmtVOS(),account);
+			command.modifyCodeMgmt(event.getCodeMgmtVOS(),account);
 			eventResponse.setUserMessage(new ErrorHandler("XXXXXXXXX").getUserMessage());
 			commit();
 		} catch(EventException ex) {
@@ -177,14 +177,14 @@ public class Training02SC extends ServiceCommandSupport {
 	 * @return EventResponse
 	 * @exception EventException
 	 */
-	private EventResponse CodeMgmtDtlVOS(Event e) throws EventException {
+	private EventResponse modifyCodeMgmtDtl(Event e) throws EventException {
 		// PDTO(Data Transfer Object including Parameters)
 		GeneralEventResponse eventResponse = new GeneralEventResponse();
 		DouTraining0002Event event = (DouTraining0002Event)e;
 		CodeManagementBC command = new CodeManagementBCImpl();
 		try{
 			begin();
-			command.CodeMgmtDtlVO(event.getCodeMgmtDtlVOS(),account);
+			command.modifyCodeMgmtDtl(event.getCodeMgmtDtlVOS(),account);
 			eventResponse.setUserMessage(new ErrorHandler("XXXXXXXXX").getUserMessage());
 			commit();
 		} catch(EventException ex) {

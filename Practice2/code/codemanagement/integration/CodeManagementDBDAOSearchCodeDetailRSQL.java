@@ -4,10 +4,10 @@
 *@FileTitle : 
 *Open Issues :
 *Change history :
-*@LastModifyDate : 2022.04.27
+*@LastModifyDate : 2022.05.06
 *@LastModifier : 
 *@LastVersion : 1.0
-* 2022.04.27 
+* 2022.05.06 
 * 1.0 Creation
 =========================================================*/
 package com.clt.apps.opus.esm.clv.training02.codemanagement.integration;
@@ -47,6 +47,13 @@ public class CodeManagementDBDAOSearchCodeDetailRSQL implements ISQLTemplate{
 		if(arrTmp.length !=2){
 			throw new IllegalArgumentException();
 		}
+		params.put("intg_cd_val_ctnt",new String[]{arrTmp[0],arrTmp[1]});
+
+		tmp = java.sql.Types.VARCHAR + ",N";
+		arrTmp = tmp.split(",");
+		if(arrTmp.length !=2){
+			throw new IllegalArgumentException();
+		}
 		params.put("intg_cd_id",new String[]{arrTmp[0],arrTmp[1]});
 
 		query.append("/*").append("\n"); 
@@ -74,6 +81,9 @@ public class CodeManagementDBDAOSearchCodeDetailRSQL implements ISQLTemplate{
 		query.append("	INTG_CD_VAL_DP_SEQ" ).append("\n"); 
 		query.append("FROM COM_INTG_CD_DTL" ).append("\n"); 
 		query.append("WHERE INTG_CD_ID = @[intg_cd_id]" ).append("\n"); 
+		query.append("#if(${intg_cd_val_ctnt} != '')" ).append("\n"); 
+		query.append("AND UPPER(INTG_CD_VAL_CTNT) = UPPER(@[intg_cd_val_ctnt])" ).append("\n"); 
+		query.append("#end" ).append("\n"); 
 
 	}
 }

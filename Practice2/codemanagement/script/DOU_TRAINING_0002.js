@@ -31,6 +31,8 @@ var sheetObjects = new Array();
 var sheetCnt = 0;
 var saveCounter = 0;
 
+const checkSet = new Set();
+
 document.onclick = processButtonClick;
 
 //Functions that calls a common function that sets the default settings of the sheet.
@@ -42,6 +44,8 @@ function loadPage(){
 		ComEndConfigSheet(sheetObjects[i]);
 	}
 	doActionIBSheet(sheetObjects[0], document.form, IBSEARCH);
+	
+	document.getElementById('btn_Add_Dtl').disabled = true;
 }
 
 //Functions for branching to the corresponding logic when a button on the screen is pressed
@@ -55,6 +59,8 @@ function processButtonClick(){
 			case "btn_Retrieve":
 				doActionIBSheet(sheetObjects[0], formObject, IBSEARCH);
 				sheetObjects[1].RemoveAll();
+				document.getElementById('cd_id').value = '';
+				document.getElementById('btn_Add_Dtl').disabled = true;
 				break;
 			case "btn_Save":
 				doActionIBSheet(sheetObjects[1], formObject, IBSAVE);
@@ -109,7 +115,7 @@ function initSheet(sheetObj, sheetNo){
 						 {Type:"Text", Hidden:0, Width:500, Align:"Left", ColMerge:0, SaveName:"intg_cd_tp_cd", KeyField:0, UpdateEdit:1, InsertEdit:1},
 						 {Type:"Text", Hidden:0, Width:200, Align:"Left", ColMerge:0, SaveName:"mng_tbl_nm", KeyField:0, UpdateEdit:1, InsertEdit:1},
 						 {Type:"Text", Hidden:0, Width:500, Align:"Left", ColMerge:0, SaveName:"intg_cd_desc", KeyField:0, UpdateEdit:1, InsertEdit:1},
-						 {Type:"Float", Hidden:0, Width:50, Align:"Left", ColMerge:0, SaveName:"intg_cd_use_flg", KeyField:0, UpdateEdit:1, InsertEdit:1},
+						 {Type:"Combo", Hidden:0, Width:50, Align:"Left", ColMerge:0, SaveName:"intg_cd_use_flg", KeyField:0, UpdateEdit:1, InsertEdit:1, ComboCode: "Y|N", ComboText: "Y|N"},
 						 {Type:"Text", Hidden:0, Width:100, Align:"Left", ColMerge:0, SaveName:"cre_usr_id", KeyField:0, UpdateEdit:1, InsertEdit:1},
 						 {Type:"Date", Hidden:0, Width:100, Align:"Left", ColMerge:0, SaveName:"cre_dt", KeyField:0, UpdateEdit:1, InsertEdit:1},
 						 {Type:"Text", Hidden:0, Width:100, Align:"Left", ColMerge:0, SaveName:"upd_usr_id", KeyField:0, UpdateEdit:1, InsertEdit:1},
@@ -147,10 +153,12 @@ function doActionIBSheet(sheetObj, formObj, sAction){
 				if(sheetObj.id == "sheet1"){
 					formObj.f_cmd.value = SEARCH01;
 					DoSearch("DOU_TRAINING_0002GS.do", FormQueryString(formObj));
+					checkSet.clear();
 				}
 				if(sheetObj.id == "sheet2"){
 					formObj.f_cmd.value = SEARCH02;
 					DoSearch("DOU_TRAINING_0002GS.do", FormQueryString(formObj));
+					checkSet.clear();
 				}
 				break;
 			case IBSAVE:
@@ -165,7 +173,14 @@ function doActionIBSheet(sheetObj, formObj, sAction){
 				}
 				if(GetSaveString() != ''){
 					formObj.f_cmd.value = temp_cmd;
-					DoSave("DOU_TRAINING_0002GS.do", FormQueryString(formObj));
+					if(checkSet.size>0){
+						var choice = window.confirm(msgs['COD00001']);
+						if(choice)
+							DoSave("DOU_TRAINING_0002GS.do", FormQueryString(formObj));
+					}
+					else{
+						DoSave("DOU_TRAINING_0002GS.do", FormQueryString(formObj));
+					}
 					saveCounter += 1;
 				}
 				else {
@@ -189,6 +204,7 @@ function doActionIBSheet(sheetObj, formObj, sAction){
 function sheet1_OnDblClick(Row, Col, CellX, CellY, CellW, CellH){
 	document.form.cd_id.value = sheetObjects[0].GetCellValue(Col, 3);
 	doActionIBSheet(sheetObjects[1], document.form, IBSEARCH);
+	document.getElementById('btn_Add_Dtl').disabled = false;
 }
 
 function sheet1_OnBeforeSave(Code, Msg, StCode, StMsg) {
@@ -199,6 +215,7 @@ function sheet1_OnBeforeSave(Code, Msg, StCode, StMsg) {
 function sheet1_OnSaveEnd(Code, Msg, StCode, StMsg) {
 	// To show the search result on grid.
 	doActionIBSheet(sheetObjects[0], document.form, IBSEARCH);
+	doActionIBSheet(sheetObjects[1], document.form, IBSEARCH);
 	if(Msg>=0){
 		ComShowCodeMessage("SAV00001");
 	}
@@ -224,6 +241,7 @@ function sheet2_OnBeforeSave(Code, Msg, StCode, StMsg) {
 function sheet2_OnSaveEnd(Code, Msg, StCode, StMsg) {
 	// To show the search result on grid.
 	doActionIBSheet(sheetObjects[0], document.form, IBSEARCH);
+	doActionIBSheet(sheetObjects[1], document.form, IBSEARCH);
 	if(Msg>=0){
 		ComShowCodeMessage("SAV00001");
 	}
@@ -241,6 +259,39 @@ function sheet2_OnSearchEnd(Code, Msg, StCode, StMsg) {
 	ComOpenWait(false);
 }
 
+function sheet1_OnChange(sheetObject, Row, Col) {
+	switch(Col){
+		case 1:
+			// add the index of row into set if it is checked.
+			if(sheetObject.GetCellValue(Row, Col) == 1){
+				checkSet.add('sheet1_'+Row);
+			}
+			// add the index of row into set if it is unchecked.
+			else{
+				checkSet.delete('sheet1_'+Row);
+			}
+			break;
+		default:
+			break;
+	}
+}
+
+function sheet2_OnChange(sheetObject, Row, Col) {
+	switch(Col){
+		case 1:
+			// add the index of row into set if it is checked.
+			if(sheetObject.GetCellValue(Row, Col) == 1){
+				checkSet.add('sheet2_'+Row);
+			}
+			// add the index of row into set if it is unchecked.
+			else{
+				checkSet.delete('sheet2_'+Row);
+			}
+			break;
+		default:
+			break;
+	}
+}
 
 function DOU_TRAINING_0002() {
 	this.processButtonClick		= tprocessButtonClick;

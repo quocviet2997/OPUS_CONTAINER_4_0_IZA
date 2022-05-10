@@ -29,22 +29,22 @@ import com.clt.apps.opus.esm.clv.training02.codemanagement.vo.CodeMgmtDtlVO;
 public interface CodeManagementBC {
 
 	/**
-	 * [비즈니스대상]을 [행위] 합니다.<br>
+	 * search a list of CodeMgmtVO base on input conditions.<br>
 	 * 
-	 * @param CodeMgmtVO	codeMgmtVO
-	 * @return List<CodeMgmtVO>
+	 * @param codeMgmtVO a instance to save information of UI input conditions.
+	 * @return a list of CodeMgmtVO
 	 * @exception EventException
 	 */
-	public List<CodeMgmtVO> CodeMgmtVO(CodeMgmtVO codeMgmtVO) throws EventException;
+	public List<CodeMgmtVO> searchCodeMgmt(CodeMgmtVO codeMgmtVO) throws EventException;
 
 	/**
-	 * [비즈니스대상]을 [행위] 합니다.<br>
+	 * search a list of CodeMgmtDtlVO base on input conditions.
 	 * 
-	 * @param CodeMgmtVO	codeMgmtVO
-	 * @return List<CodeMgmtVO>
+	 * @param codeMgmtDtlVO a instance to save information of UI input conditions.
+	 * @return List<CodeMgmtDtlVO>
 	 * @exception EventException
 	 */
-	public List<CodeMgmtDtlVO> CodeMgmtDtlVO(CodeMgmtDtlVO codeMgmtDtlVO) throws EventException;
+	public List<CodeMgmtDtlVO> searchCodeMgmtDtl(CodeMgmtDtlVO codeMgmtDtlVO) throws EventException;
 	
 	/**
 	 * [비즈니스대상]을 [행위] 합니다.<br>
@@ -53,7 +53,7 @@ public interface CodeManagementBC {
 	 * @param account SignOnUserAccount
 	 * @exception EventException
 	 */
-	public void CodeMgmtVO(CodeMgmtVO[] codeMgmtVO,SignOnUserAccount account) throws EventException;
+	public void modifyCodeMgmt(CodeMgmtVO[] codeMgmtVO,SignOnUserAccount account) throws EventException;
 	
 	/**
 	 * [비즈니스대상]을 [행위] 합니다.<br>
@@ -62,5 +62,9 @@ public interface CodeManagementBC {
 	 * @param account SignOnUserAccount
 	 * @exception EventException
 	 */
-	public void CodeMgmtDtlVO(CodeMgmtDtlVO[] codeMgmtDtlVO,SignOnUserAccount account) throws EventException;
+	public void modifyCodeMgmtDtl(CodeMgmtDtlVO[] codeMgmtDtlVO,SignOnUserAccount account) throws EventException;
+	
+	public boolean checkDuplicateCodeId(CodeMgmtVO codeMgmtVO) throws EventException;
+	
+	public boolean checkDuplicateCodeVal(CodeMgmtDtlVO codeMgmtDtlVO) throws EventException;
 }

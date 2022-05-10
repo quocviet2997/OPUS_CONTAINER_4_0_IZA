@@ -49,7 +49,7 @@ public class CodeManagementDBDAO extends DBDAOSupport {
 	 * @exception DAOException
 	 */
 	 @SuppressWarnings("unchecked")
-	public List<CodeMgmtVO> CodeMgmtVO(CodeMgmtVO codeMgmtVO) throws DAOException {
+	public List<CodeMgmtVO> searchCodeMgmt(CodeMgmtVO codeMgmtVO) throws DAOException {
 		DBRowSet dbRowset = null;
 		List<CodeMgmtVO> list = null;
 		//query parameter
@@ -77,7 +77,7 @@ public class CodeManagementDBDAO extends DBDAOSupport {
 	}
 	
 	 @SuppressWarnings("unchecked")
-	public List<CodeMgmtDtlVO> CodeMgmtDtlVO(CodeMgmtDtlVO codeMgmtDtlVO) throws DAOException {
+	public List<CodeMgmtDtlVO> searchCodeMgmtDtl(CodeMgmtDtlVO codeMgmtDtlVO) throws DAOException {
 		DBRowSet dbRowset = null;
 		List<CodeMgmtDtlVO> list = null;
 		//query parameter

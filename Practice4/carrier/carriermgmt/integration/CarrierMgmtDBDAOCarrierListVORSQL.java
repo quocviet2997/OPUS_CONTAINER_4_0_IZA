@@ -4,10 +4,10 @@
 *@FileTitle : 
 *Open Issues :
 *Change history :
-*@LastModifyDate : 2022.04.05
+*@LastModifyDate : 2022.05.05
 *@LastModifier : 
 *@LastVersion : 1.0
-* 2022.04.05 
+* 2022.05.05 
 * 1.0 Creation
 =========================================================*/
 package com.clt.apps.opus.esm.clv.carrier.carriermgmt.integration;
@@ -68,6 +68,13 @@ public class CarrierMgmtDBDAOCarrierListVORSQL implements ISQLTemplate{
 		if(arrTmp.length !=2){
 			throw new IllegalArgumentException();
 		}
+		params.put("rlane_cd",new String[]{arrTmp[0],arrTmp[1]});
+
+		tmp = java.sql.Types.VARCHAR + ",N";
+		arrTmp = tmp.split(",");
+		if(arrTmp.length !=2){
+			throw new IllegalArgumentException();
+		}
 		params.put("cre_dt_to",new String[]{arrTmp[0],arrTmp[1]});
 
 		query.append("/*").append("\n"); 
@@ -109,6 +116,9 @@ public class CarrierMgmtDBDAOCarrierListVORSQL implements ISQLTemplate{
 		query.append("#end" ).append("\n"); 
 		query.append("#if(${vndr_seq} != '')" ).append("\n"); 
 		query.append("AND VNDR_SEQ = @[vndr_seq]" ).append("\n"); 
+		query.append("#end" ).append("\n"); 
+		query.append("#if(${rlane_cd} != '')" ).append("\n"); 
+		query.append("AND RLANE_CD = @[rlane_cd]" ).append("\n"); 
 		query.append("#end" ).append("\n"); 
 		query.append("#if(${cre_dt_fm} != '')" ).append("\n"); 
 		query.append("AND CRE_DT >= TO_DATE(@[cre_dt_fm], 'YYYY-MM-DD')" ).append("\n"); 

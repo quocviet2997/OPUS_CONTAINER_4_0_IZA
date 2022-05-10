@@ -13,6 +13,7 @@
 package com.clt.apps.opus.esm.clv.doutraining.errmsgmgmt.basic;
 
 import java.util.List;
+
 import com.clt.framework.core.layer.event.EventException;
 import com.clt.framework.support.view.signon.SignOnUserAccount;
 import com.clt.apps.opus.esm.clv.doutraining.errmsgmgmt.vo.ErrMsgVO;
@@ -28,20 +29,28 @@ import com.clt.apps.opus.esm.clv.doutraining.errmsgmgmt.vo.ErrMsgVO;
 public interface ErrMsgMgmtBC {
 
 	/**
-	 * [비즈니스대상]을 [행위] 합니다.<br>
+	 * [searchErrMsg] 	get a list of ErrMsgVO.<br>
 	 * 
-	 * @param ErrMsgVO	errMsgVO
+	 * @param ErrMsgVO 	errMsgVO
 	 * @return List<ErrMsgVO>
 	 * @exception EventException
 	 */
 	public List<ErrMsgVO> searchErrMsg(ErrMsgVO errMsgVO) throws EventException;
 	
 	/**
-	 * [비즈니스대상]을 [행위] 합니다.<br>
+	 * [modifyErrMsg] modify ErrMsgVOs to save the change in database.<br>
 	 * 
 	 * @param ErrMsgVO[] errMsgVO
 	 * @param account SignOnUserAccount
 	 * @exception EventException
 	 */
 	public void modifyErrMsg(ErrMsgVO[] errMsgVO,SignOnUserAccount account) throws EventException;
+	
+	/**
+	 * [checkDuplicateMsgCode] check whether error message code is exist in database.<br>
+	 * 
+	 * @param String errMsgVO
+	 * @exception EventException
+	 */
+	public boolean checkDuplicateMsgCode(String errMsg) throws EventException;
 }

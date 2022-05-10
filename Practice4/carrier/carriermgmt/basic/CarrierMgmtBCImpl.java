@@ -14,6 +14,7 @@ package com.clt.apps.opus.esm.clv.carrier.carriermgmt.basic;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import com.clt.apps.opus.esm.clv.carrier.carriermgmt.integration.CarrierMgmtDBDAO;
 import com.clt.framework.component.message.ErrorHandler;
 import com.clt.framework.core.layer.event.EventException;
@@ -21,6 +22,7 @@ import com.clt.framework.core.layer.integration.DAOException;
 import com.clt.framework.support.layer.basic.BasicCommandSupport;
 import com.clt.framework.support.view.signon.SignOnUserAccount;
 import com.clt.apps.opus.esm.clv.carrier.carriermgmt.vo.CarrierListVO;
+import com.clt.apps.opus.esm.clv.doutraining.errmsgmgmt.vo.ErrMsgVO;
 
 /**
  * ALPS-Carrier Business Logic Command Interface<br>
@@ -35,21 +37,17 @@ public class CarrierMgmtBCImpl extends BasicCommandSupport implements CarrierMgm
 	private transient CarrierMgmtDBDAO dbDao = null;
 
 	/**
-	 * CarrierMgmtBCImpl 객체 생성<br>
-	 * CarrierMgmtDBDAO를 생성한다.<br>
+	 * CarrierMgmtBCImpl constructor<br>
+	 * CarrierMgmtDBDAO instance constructor.<br>
 	 */
 	public CarrierMgmtBCImpl() {
 		dbDao = new CarrierMgmtDBDAO();
 	}
 	
 	/**
-	 * [비즈니스대상]을 [행위] 합니다.<br>
-	 * 
-	 * @param CarrierListVO carrierListVO
-	 * @return List<CarrierListVO>
-	 * @exception EventException
+	 * {@inheritDoc}
 	 */
-	public List<CarrierListVO> CarrierListVO(CarrierListVO carrierListVO) throws EventException {
+	public List<CarrierListVO> searchCarrierListVO(CarrierListVO carrierListVO) throws EventException {
 		try {
 			return dbDao.CarrierListVO(carrierListVO);
 		} catch(DAOException ex) {
@@ -60,11 +58,7 @@ public class CarrierMgmtBCImpl extends BasicCommandSupport implements CarrierMgm
 	}
 	
 	/**
-	 * [비즈니스대상]을 [행위] 합니다.<br>
-	 * 
-	 * @param CarrierListVO carrierListVO
-	 * @return List<CarrierListVO>
-	 * @exception EventException
+	 * {@inheritDoc}
 	 */
 	public List<CarrierListVO> searchCarrierCode(CarrierListVO carrierListVO) throws EventException {
 		try {
@@ -77,11 +71,7 @@ public class CarrierMgmtBCImpl extends BasicCommandSupport implements CarrierMgm
 	}
 
 	/**
-	 * [비즈니스대상]을 [행위] 합니다.<br>
-	 * 
-	 * @param CarrierListVO carrierListVO
-	 * @return List<CarrierListVO>
-	 * @exception EventException
+	 * {@inheritDoc}
 	 */
 	public List<CarrierListVO> searchRLaneCode(CarrierListVO carrierListVO) throws EventException {
 		try {
@@ -94,13 +84,9 @@ public class CarrierMgmtBCImpl extends BasicCommandSupport implements CarrierMgm
 	}
 	
 	/**
-	 * [비즈니스대상]을 [행위] 합니다.<br>
-	 * 
-	 * @param CarrierListVO[] carrierListVO
-	 * @param account SignOnUserAccount
-	 * @exception EventException
+	 * {@inheritDoc}
 	 */
-	public void CarrierListVO(CarrierListVO[] carrierListVO, SignOnUserAccount account) throws EventException{
+	public void modifyCarrierListVO(CarrierListVO[] carrierListVO, SignOnUserAccount account) throws EventException{
 		try {
 			List<CarrierListVO> insertVoList = new ArrayList<CarrierListVO>();
 			List<CarrierListVO> updateVoList = new ArrayList<CarrierListVO>();
@@ -108,7 +94,12 @@ public class CarrierMgmtBCImpl extends BasicCommandSupport implements CarrierMgm
 			for ( int i=0; i<carrierListVO .length; i++ ) {
 				if ( carrierListVO[i].getIbflag().equals("I")){
 					carrierListVO[i].setCreUsrId(account.getUsr_id());
-					insertVoList.add(carrierListVO[i]);
+					if(!checkDuplicateCarrierId(carrierListVO[i])){
+						insertVoList.add(carrierListVO[i]);
+					}
+					else{
+						throw new DAOException(new ErrorHandler("ERR00004").getMessage());
+					}
 				} else if ( carrierListVO[i].getIbflag().equals("U")){
 					carrierListVO[i].setUpdUsrId(account.getUsr_id());
 					updateVoList.add(carrierListVO[i]);
@@ -135,4 +126,23 @@ public class CarrierMgmtBCImpl extends BasicCommandSupport implements CarrierMgm
 		}
 	}
 	
+	/**
+	 * {@inheritDoc}
+	 */
+	public boolean checkDuplicateCarrierId(CarrierListVO carrierListVO) throws EventException{
+		try{
+			CarrierListVO carrier = new CarrierListVO();
+			carrier.setJoCrrCd(carrierListVO.getJoCrrCd());
+			carrier.setRlaneCd(carrierListVO.getRlaneCd());
+			List<CarrierListVO> listCarrier = dbDao.CarrierListVO(carrier);
+			if(listCarrier.size() == 0)
+				return false;
+			return true;
+		} catch(DAOException ex) {
+			// throw an EventException
+			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
+		} catch (Exception ex) {
+			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
+		}
+	}
 }

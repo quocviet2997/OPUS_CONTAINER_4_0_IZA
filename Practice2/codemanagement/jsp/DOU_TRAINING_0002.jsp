@@ -93,11 +93,16 @@
 <div class="wrap_search">
 	<div class="opus_design_inquiry">
 		<table>
+			<colgroup>
+				<col style="width: 80px">
+				<col style="width: 500px">
+				<col style="width: 50px">
+			</colgroup>
 			<tbody>
 				<tr>
-					<th width="80" style="text-align:center;">Subsystem</th>
-					<td width="500"><input type="text" style="width:200px;" class="input" value="" name="ownr_sub_sys_cd" id="ownr_sub_sys_cd"></td>
-					<th width="50">Cd ID</th>
+					<th style="text-align:center;">Subsystem</th>
+					<td><input type="text" style="width:200px;" class="input" value="" name="ownr_sub_sys_cd" id="ownr_sub_sys_cd"></td>
+					<th>Cd ID</th>
 					<td><input type="text" style="width:100px;" class="input" value="" name="intg_cd_id" id="intg_cd_id"></td>
 				</tr>
 			</tbody>
