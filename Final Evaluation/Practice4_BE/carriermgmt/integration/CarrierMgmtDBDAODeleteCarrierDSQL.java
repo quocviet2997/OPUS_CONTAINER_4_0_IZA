@@ -19,7 +19,7 @@ import com.clt.framework.support.db.ISQLTemplate;
 /**
  *
  * @author Viet Tran
- * @see DAO 참조
+ * @see DAO
  * @since J2EE 1.6
  */
 
@@ -71,7 +71,7 @@ public class CarrierMgmtDBDAODeleteCarrierDSQL implements ISQLTemplate{
 	}
 
 	/**
-	 * Query 생성
+	 * Query
 	 */
 	public void setQuery(){
 		query.append("DELETE FROM JOO_CARRIER " ).append("\n"); 
