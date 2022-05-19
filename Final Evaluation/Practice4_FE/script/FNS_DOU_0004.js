@@ -4,7 +4,7 @@
 *@FileTitle : Carrier List
 *Open Issues :
 *Change history :
-*@LastModifyDate : 2022.03.23
+*@LastModifyDate : 2022.05.19
 *@LastModifier : Viet Tran
 *@LastVersion : 1.0
 * 2022.03.23 
@@ -118,7 +118,7 @@ function setSheetObject(sheet_obj){
 }
 
 /**
- * Put sheet objects in global variable "sheetObjects".<br>
+ * Put ibmulticombo objects in global variable "comboObjects".<br>
  * @param combo_obj		(ibmulticombo)		IBMultiCombo Object
  */
 function setComboObject(combo_obj) {
@@ -206,6 +206,7 @@ function doActionIBSheet(sheetObj, formObj, sAction){
 	{
 		switch(sAction) {
 			case IBSEARCH:
+				// if sheetobj is hidden, it will be display
 				if(document.getElementById('DIV_'+sheetObj.id).style.display == 'none'){
 					//ComShowObject(ComGetObject('DIV_'+sheetObj.id), true);
 					document.getElementById('DIV_'+sheetObj.id).style.display = 'block';
@@ -216,12 +217,14 @@ function doActionIBSheet(sheetObj, formObj, sAction){
 				DoSearch("FNS_DOU_0004GS.do", FormQueryString(formObj));
 				break;
 			case IBNEW:
-				// clear the grid
+				// clear the grid & form input
 				ComResetAll();
 				comboObjects[0].SetItemCheck(0,1);
+				// hidden header
 				document.getElementById('DIV_'+sheetObj.id).style.display = "none";
 				break;
 			case IBSAVE:
+				// if it is delete, it will ignore rlane_cd keyfield.
 				if(GetCellValue(GetSelectRow(),"del_check") == 1){
 					SetColProperty("rlane_cd",{KeyField:0});
 					flagVendorKeyAccess = false;
@@ -232,7 +235,7 @@ function doActionIBSheet(sheetObj, formObj, sAction){
 					DoSave("FNS_DOU_0004GS.do", FormQueryString(formObj));
 				}
 				else
-//					ComShowCodeMessage("COM130503");
+					// ComShowCodeMessage("COM130503");
 					ComShowMessage("No change data found.");
 				break;
 			case IBINSERT:
@@ -347,6 +350,7 @@ function sheet1_OnSearchEnd(sheetObject, Code, Msg, StCode, StMsg) {
  * @param StMsg			(String)		HTTP response message
  */
 function sheet1_OnSaveEnd(sheetObject, Code, Msg, StCode, StMsg) {
+	// set rlane_cd keyfield = 1 when it = 0
 	if(flagVendorKeyAccess == false){
 		sheetObject.SetColProperty("rlane_cd",{KeyField:1});
 		flagVendorKeyAccess = true;
@@ -358,7 +362,7 @@ function sheet1_OnSaveEnd(sheetObject, Code, Msg, StCode, StMsg) {
 }
 
 /**
- * {sheet1_OnBeforeSearch} Event fires promptly before Ajax communication when a search method is called.<br>
+ * Event fires promptly before Ajax communication when a search method is called.<br>
  * @param sheetObject		(ibsheet)		IBSheet Object
  * @param Code			(Long)			Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)		Processing result message
@@ -370,7 +374,7 @@ function sheet1_OnBeforeSearch(sheetObject, Code, Msg, StCode, StMsg) {
 }
 
 /**
- * {sheet1_OnBeforeSave} Event fires promptly before Ajax communication when a saving method is called.<br>
+ * Event fires promptly before Ajax communication when a saving method is called.<br>
  * @param sheetObject		(ibsheet)		IBSheet Object
  * @param Code			(Long)			Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)		Processing result message
