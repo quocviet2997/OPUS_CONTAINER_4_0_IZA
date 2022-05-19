@@ -119,7 +119,7 @@ function setSheetObject(sheet_obj){
 
 /**
  * Put sheet objects in global variable "sheetObjects".<br>
- * @param combo_obj		(ibmulticombo)	IBMultiCombo Object
+ * @param combo_obj		(ibmulticombo)		IBMultiCombo Object
  */
 function setComboObject(combo_obj) {
 	switch(combo_obj.options.id){
@@ -176,7 +176,7 @@ function initSheet(sheetObj, sheetNo){
 
 /**
  * Functions that define the basic properties of the multicombo, for example combo item information, combo basic attributes, etc.<br>
- * @param comboObj		(ibmulticombo)	IBMultiCombo Object
+ * @param comboObj		(ibmulticombo)		IBMultiCombo Object
  * @param comboNo		(int)			Number of IBMultiCombo Object
  */
 function initCombo(comboObj, comboNo){
@@ -263,7 +263,7 @@ function doActionIBSheet(sheetObj, formObj, sAction){
 
 /**
  * An event occur when the check box is clicked, if multiple selection is used.<br>
- * @param comboObj		(ibmulticombo)	IBMultiCombo Object
+ * @param comboObj		(ibmulticombo)		IBMultiCombo Object
  * @param index			(long)			Index value of the clicked item
  * @param code			(string)		Code value of the clicked item
  */
@@ -292,7 +292,7 @@ function s_jo_crr_cd_OnCheckClick(comboObj, index, code) {
 
 /**
  * Handle validate of vendor.<br>
- * @param vendor		(String)     	Vendor code
+ * @param vendor		(String)     		Vendor code
  */
 function vendorCodeValidate(vendor){
 	if(vendor == "")
@@ -310,7 +310,7 @@ function vendorCodeValidate(vendor){
 
 /**
  * Handle validate of date.<br>
- * @param vendor		(String)     	Vendor code
+ * @param vendor		(String)     		Vendor code
  */
 function dateValidate(dateObj){
 	if(dateObj.value == "")
@@ -328,7 +328,7 @@ function dateValidate(dateObj){
 
 /**
  * Event fires when search is completed using a search function and other internal data processing are also completed.<br>
- * @param sheetObject	(ibsheet)		IBSheet Object
+ * @param sheetObject		(ibsheet)		IBSheet Object
  * @param Code			(Long)			Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)		Processing result message
  * @param StCode		(Integer)		HTTP response code
@@ -340,7 +340,7 @@ function sheet1_OnSearchEnd(sheetObject, Code, Msg, StCode, StMsg) {
 
 /**
  * Event fires when saving is completed using saving function and other internal processing has been also completed.<br>
- * @param sheetObject	(ibsheet)		IBSheet Object
+ * @param sheetObject		(ibsheet)		IBSheet Object
  * @param Code			(Long)			Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)		Processing result message
  * @param StCode		(Integer)		HTTP response code
@@ -359,7 +359,7 @@ function sheet1_OnSaveEnd(sheetObject, Code, Msg, StCode, StMsg) {
 
 /**
  * {sheet1_OnBeforeSearch} Event fires promptly before Ajax communication when a search method is called.<br>
- * @param sheetObject	(ibsheet)		IBSheet Object
+ * @param sheetObject		(ibsheet)		IBSheet Object
  * @param Code			(Long)			Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)		Processing result message
  * @param StCode		(Integer)		HTTP response code
@@ -371,7 +371,7 @@ function sheet1_OnBeforeSearch(sheetObject, Code, Msg, StCode, StMsg) {
 
 /**
  * {sheet1_OnBeforeSave} Event fires promptly before Ajax communication when a saving method is called.<br>
- * @param sheetObject	(ibsheet)		IBSheet Object
+ * @param sheetObject		(ibsheet)		IBSheet Object
  * @param Code			(Long)			Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)		Processing result message
  * @param StCode		(Integer)		HTTP response code
@@ -383,7 +383,7 @@ function sheet1_OnBeforeSave(sheetObject, Code, Msg, StCode, StMsg) {
 
 /**
  * Handling when sheet1 on change.<br>
- * @param sheetObject	(ibsheet)		IBSheet Object
+ * @param sheetObject		(ibsheet)		IBSheet Object
  * @param Row			(Long)			Row index of the cell
  * @param Col			(Long)			Column index of the cell
  * @param Value			(String)		Updated value; Value used for saving without formatting
@@ -393,8 +393,6 @@ function sheet1_OnBeforeSave(sheetObject, Code, Msg, StCode, StMsg) {
 function sheet1_OnChange(sheetObj, Row, Col, Value, OldValue, RaiseFlag){
 	var formObj=document.form ;
 	var colName=sheetObj.ColSaveName(Col);
-	
-	ComOpenPopup('/opuscntr/COM_ENS_091.do', 780, 550, 'setCallBack0B2', '1,0,1,1,1,1,1,1', true);
 	
 	if(Value == ""){
 		return;
@@ -474,10 +472,4 @@ function sheet1_OnChange(sheetObj, Row, Col, Value, OldValue, RaiseFlag){
 		default:
 			break;
 	}
-}
-
-
-function setCallBack0B2(aryPopupData) {
-	var form=document.form;
-	form.usr_id.value=aryPopupData[0][4];
 }
