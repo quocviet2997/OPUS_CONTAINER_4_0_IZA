@@ -91,12 +91,12 @@ public class CarrierMgmtDBDAO extends DBDAOSupport {
 	}
 	 
 	 /**
-		 * Get a list of JO_CRR_CD from JOO_CARRIER table.<br>
-		 * 
-		 * @param carrierListVO a CarrierListVO object
-		 * @return List<CarrierListVO>
-		 * @exception DAOException
-		 */
+	 * Get a list of JO_CRR_CD from JOO_CARRIER table.<br>
+	 * 
+	 * @param carrierListVO a CarrierListVO object
+	 * @return List<CarrierListVO>
+	 * @exception DAOException
+	 */
 	public List<CarrierListVO> searchCarrierCode(CarrierListVO carrierListVO) throws DAOException {
 		DBRowSet dbRowset = null;
 		List<CarrierListVO> list = null;
