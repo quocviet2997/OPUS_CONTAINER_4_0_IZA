@@ -67,7 +67,7 @@ public class CarrierMgmtDBDAOSearchTrdCdRSQL implements ISQLTemplate{
 	 * Query
 	 */
 	public void setQuery(){
-		query.append("SELECT TRD_CD" ).append("\n"); 
+		query.append("SELECT TRD_CD" ).append("\n");
 		query.append("FROM MDM_TRADE" ).append("\n"); 
 		query.append("WHERE 1 = 1" ).append("\n"); 
 		query.append("AND DELT_FLG = 'N'" ).append("\n"); 
