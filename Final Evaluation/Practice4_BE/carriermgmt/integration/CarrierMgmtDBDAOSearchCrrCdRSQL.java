@@ -19,7 +19,7 @@ import com.clt.framework.support.db.ISQLTemplate;
 /**
  *
  * @author Viet Tran
- * @see DAO 참조
+ * @see DAO
  * @since J2EE 1.6
  */
 
@@ -55,7 +55,7 @@ public class CarrierMgmtDBDAOSearchCrrCdRSQL implements ISQLTemplate{
 	}
 
 	/**
-	 * Query 생성
+	 * Query
 	 */
 	public void setQuery(){
 		query.append("SELECT CRR_CD AS JO_CRR_CD" ).append("\n"); 
