@@ -240,7 +240,7 @@ function doActionIBSheet(sheetObj, formObj, sAction){
 				break;
 			case IBINSERT:
 				// add a row behind the selected row
-				var row = DataInsert();
+				var row = DataInsert(-1);
 				SetCellValue(row, "delt_flg", "N");
 				break;
 			case IBDELETE:
