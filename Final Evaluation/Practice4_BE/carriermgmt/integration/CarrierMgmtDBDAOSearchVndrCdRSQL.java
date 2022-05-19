@@ -5,7 +5,7 @@
 *Open Issues :
 *Change history :
 *@LastModifyDate : 2022.05.17
-*@LastModifier : 
+*@LastModifier : Viet Tran
 *@LastVersion : 1.0
 * 2022.05.17 
 * 1.0 Creation
@@ -19,7 +19,7 @@ import com.clt.framework.support.db.ISQLTemplate;
 /**
  *
  * @author Viet Tran
- * @see DAO 참조
+ * @see DAO
  * @since J2EE 1.6
  */
 
@@ -64,7 +64,7 @@ public class CarrierMgmtDBDAOSearchVndrCdRSQL implements ISQLTemplate{
 	}
 
 	/**
-	 * Query 생성
+	 * Query
 	 */
 	public void setQuery(){
 		query.append("SELECT VNDR_SEQ" ).append("\n"); 
