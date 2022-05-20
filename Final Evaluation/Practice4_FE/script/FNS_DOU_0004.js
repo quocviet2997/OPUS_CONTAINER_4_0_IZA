@@ -122,7 +122,7 @@ function setSheetObject(sheet_obj){
 /**
  * Put ibmulticombo objects in global variable "comboObjects".<br>
  * 
- * @param combo_obj		(ibmulticombo)		IBMultiCombo Object
+ * @param combo_obj		(ibmulticombo)			IBMultiCombo Object
  */
 function setComboObject(combo_obj) {
 	switch(combo_obj.options.id){
@@ -155,18 +155,18 @@ function initSheet(sheetObj, sheetNo){
 				InitHeaders(headers, info);
 				
 				var cols = [{Type:"Status", 	Hidden:1, 	Width:30, 	Align:"Center", ColMerge:0, SaveName:"ibflag"},
-							{Type:"DelCheck", 	Hidden:0, 	Width:30, 	Align:"Center", ColMerge:0, SaveName:"del_check", 	KeyField:0},
-							{Type:"Popup", 		Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"jo_crr_cd", 	KeyField:1, UpdateEdit:0, InsertEdit:1, EditLen:3},
-				            {Type:"Combo", 		Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"rlane_cd", 	KeyField:1, UpdateEdit:0, InsertEdit:1, EditLen:5, 	ComboText: rLaneCombo,		ComboCode: rLaneCombo}, 
-							{Type:"Popup", 		Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"vndr_seq", 	KeyField:1, UpdateEdit:1, InsertEdit:1, EditLen:6},
-							{Type:"Popup", 		Hidden:0, 	Width:50, 	Align:"Center", ColMerge:0, SaveName:"cust_cnt_cd", KeyField:1, UpdateEdit:1, InsertEdit:1, EditLen:2},
-							{Type:"Popup", 		Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"cust_seq", 	KeyField:1, UpdateEdit:1, InsertEdit:1, EditLen:6},
-							{Type:"Popup", 		Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"trd_cd", 		KeyField:0, UpdateEdit:1, InsertEdit:1, EditLen:3},
-							{Type:"Combo", 		Hidden:0, 	Width:80, 	Align:"Center", ColMerge:0, SaveName:"delt_flg", 	KeyField:0, UpdateEdit:1, InsertEdit:1,				ComboText : "N|Y", 			ComboCode : "N|Y"},
-							{Type:"Text", 		Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"cre_dt", 		KeyField:0, UpdateEdit:0, InsertEdit:0},
-							{Type:"Text",		Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"cre_usr_id", 	KeyField:0, UpdateEdit:0, InsertEdit:0},
-							{Type:"Text",	 	Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"upd_dt", 		KeyField:0, UpdateEdit:0, InsertEdit:0},
-							{Type:"Text", 		Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"upd_usr_id", 	KeyField:0, UpdateEdit:0, InsertEdit:0}];
+					    {Type:"DelCheck", 	Hidden:0, 	Width:30, 	Align:"Center", ColMerge:0, SaveName:"del_check", 	KeyField:0},
+					    {Type:"Popup", 	Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"jo_crr_cd", 	KeyField:1, UpdateEdit:0, InsertEdit:1, EditLen:3},
+				            {Type:"Combo", 	Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"rlane_cd", 	KeyField:1, UpdateEdit:0, InsertEdit:1, EditLen:5, 	ComboText: rLaneCombo,		ComboCode: rLaneCombo}, 
+					    {Type:"Popup", 	Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"vndr_seq", 	KeyField:1, UpdateEdit:1, InsertEdit:1, EditLen:6},
+					    {Type:"Popup", 	Hidden:0, 	Width:50, 	Align:"Center", ColMerge:0, SaveName:"cust_cnt_cd", 	KeyField:1, UpdateEdit:1, InsertEdit:1, EditLen:2},
+					    {Type:"Popup", 	Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"cust_seq", 	KeyField:1, UpdateEdit:1, InsertEdit:1, EditLen:6},
+					    {Type:"Popup", 	Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"trd_cd", 		KeyField:0, UpdateEdit:1, InsertEdit:1, EditLen:3},
+					    {Type:"Combo", 	Hidden:0, 	Width:80, 	Align:"Center", ColMerge:0, SaveName:"delt_flg", 	KeyField:0, UpdateEdit:1, InsertEdit:1,			ComboText : "N|Y", 		ComboCode : "N|Y"},
+					    {Type:"Text", 	Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"cre_dt", 		KeyField:0, UpdateEdit:0, InsertEdit:0},
+					    {Type:"Text",	Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"cre_usr_id", 	KeyField:0, UpdateEdit:0, InsertEdit:0},
+					    {Type:"Text",	Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"upd_dt", 		KeyField:0, UpdateEdit:0, InsertEdit:0},
+					    {Type:"Text", 	Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"upd_usr_id", 	KeyField:0, UpdateEdit:0, InsertEdit:0}];
 				
 				InitColumns(cols);
 				SetWaitImageVisible(0);
@@ -181,7 +181,7 @@ function initSheet(sheetObj, sheetNo){
 /**
  * Functions that define the basic properties of the multicombo, for example combo item information, combo basic attributes, etc.<br>
  * 
- * @param comboObj		(ibmulticombo)		IBMultiCombo Object
+ * @param comboObj		(ibmulticombo)			IBMultiCombo Object
  * @param comboNo		(int)				Number of IBMultiCombo Object
  * @param comboList		(String)			List data items for IBMultiCombo Object
  */
@@ -200,7 +200,7 @@ function initCombo(comboObj, comboNo, comboList){
 /**
  * Functions that define data for ibmulticombo<br>
  * 
- * @param comboObj		(ibmulticombo)		IBMultiCombo Object
+ * @param comboObj		(ibmulticombo)			IBMultiCombo Object
  * @param comboNo		(int)				Number of IBMultiCombo Object
  * @param comboList		(String)			List data items for IBMultiCombo Object
  */
@@ -290,7 +290,7 @@ function doActionIBSheet(sheetObj, formObj, sAction){
 /**
  * An event occur when the check box is clicked, if multiple selection is used.<br>
  * 
- * @param comboObj		(ibmulticombo)		IBMultiCombo Object
+ * @param comboObj		(ibmulticombo)			IBMultiCombo Object
  * @param index			(long)				Index value of the clicked item
  * @param code			(string)			Code value of the clicked item
  */
@@ -321,7 +321,7 @@ function s_jo_crr_cd_OnCheckClick(comboObj, index, code) {
 /**
  * Event fires when search is completed using a search function and other internal data processing are also completed.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
+ * @param sheetObject		(ibsheet)			IBSheet Object
  * @param Code			(Long)				Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)			Processing result message
  * @param StCode		(Integer)			HTTP response code
@@ -334,7 +334,7 @@ function sheet1_OnSearchEnd(sheetObject, Code, Msg, StCode, StMsg) {
 /**
  * Event fires when saving is completed using saving function and other internal processing has been also completed.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
+ * @param sheetObject		(ibsheet)			IBSheet Object
  * @param Code			(Long)				Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)			Processing result message
  * @param StCode		(Integer)			HTTP response code
@@ -350,7 +350,7 @@ function sheet1_OnSaveEnd(sheetObject, Code, Msg, StCode, StMsg) {
 /**
  * Event fires promptly before Ajax communication when a search method is called.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
+ * @param sheetObject		(ibsheet)			IBSheet Object
  * @param Code			(Long)				Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)			Processing result message
  * @param StCode		(Integer)			HTTP response code
@@ -363,7 +363,7 @@ function sheet1_OnBeforeSearch(sheetObject, Code, Msg, StCode, StMsg) {
 /**
  * Event fires promptly before Ajax communication when a saving method is called.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
+ * @param sheetObject		(ibsheet)			IBSheet Object
  * @param Code			(Long)				Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)			Processing result message
  * @param StCode		(Integer)			HTTP response code
@@ -376,7 +376,7 @@ function sheet1_OnBeforeSave(sheetObject, Code, Msg, StCode, StMsg) {
 /**
  * Handling when sheet1 on change.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
+ * @param sheetObject		(ibsheet)			IBSheet Object
  * @param Row			(Long)				Row index of the cell
  * @param Col			(Long)				Column index of the cell
  * @param Value			(String)			Updated value; Value used for saving without formatting
@@ -424,7 +424,7 @@ function sheet1_OnChange(sheetObj, Row, Col, Value, OldValue, RaiseFlag){
 /**
  * Handling when sheet1 on popup click.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
+ * @param sheetObject		(ibsheet)			IBSheet Object
  * @param Row			(Long)				Row index of the cell
  * @param Col			(Long)				Column index of the cell
  */
@@ -460,7 +460,7 @@ function sheet1_OnPopupClick(sheetObj, Row, Col){
 /**
  * Set value to jo_crr_cd from popup.<br>
  * 
- * @param aryPopupData	(array[int][int])	list rows data checked on popup 
+ * @param aryPopupData		(array[int][int])		list rows data checked on popup 
  */
 function setCrrCd(aryPopupData) {
 	with(sheetObjects[0]){
@@ -471,7 +471,7 @@ function setCrrCd(aryPopupData) {
 /**
  * Set value to vndr_seq from popup.<br>
  * 
- * @param aryPopupData	(array[int][int])	list rows data checked on popup 
+ * @param aryPopupData		(array[int][int])		list rows data checked on popup 
  */
 function setVndrCd(aryPopupData) {
 	with(sheetObjects[0]){
@@ -482,7 +482,7 @@ function setVndrCd(aryPopupData) {
 /**
  * Set value to cust_cnt_cd and cust_seq from popup.<br>
  * 
- * @param aryPopupData	(array[][])			list rows data checked on popup 
+ * @param aryPopupData		(array[][])			list rows data checked on popup 
  */
 function setCustCd(aryPopupData) {
 	with(sheetObjects[0]){
@@ -494,7 +494,7 @@ function setCustCd(aryPopupData) {
 /**
  * Set value to trd_cd from popup.<br>
  * 
- * @param aryPopupData	(array[int][int])	list rows data checked on popup 
+ * @param aryPopupData		(array[int][int])		list rows data checked on popup 
  */
 function setTrdCd(aryPopupData) {
 	with(sheetObjects[0]){
@@ -506,7 +506,7 @@ function setTrdCd(aryPopupData) {
 /**
  * The validation of vendor when user input a text.<br>
  * 
- * @param vendor		(String)     		Vendor code
+ * @param vendor		(String)     			Vendor code
  */
 function vendorCodeValidate(vendor){
 	if(vendor == "")
@@ -525,7 +525,7 @@ function vendorCodeValidate(vendor){
 /**
  * The validation of date  when user input a text.<br>
  * 
- * @param dateObj		(Object)     		Date object
+ * @param dateObj		(Object)     			Date object
  */
 function dateValidate(dateObj){
 	if(dateObj.value == "")
