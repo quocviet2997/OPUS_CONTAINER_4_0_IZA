@@ -72,6 +72,7 @@
 <script language="javascript">
 	var carrierCombo = "ALL|<%=carrierItems%>";
 	var rLaneCombo = "|<%=rLaneItems%>";
+	
 	function setupPage(){
 		var errMessage = "<%=strErrMsg%>";
 		if (errMessage.length >= 1) {

@@ -2,7 +2,7 @@
 <sqls>
 	<querys>
 		<query name="CarrierMgmtDBDAOCarrierListVORSQL">
-			<desc><![CDATA[a   ]]></desc>
+			<desc><![CDATA[Search Carrier List   ]]></desc>
 			<sql><![CDATA[
 SELECT
 	JO_CRR_CD,

@@ -1,6 +1,6 @@
 /*=========================================================
 *Copyright(c) 2022 CyberLogitec
-*@FileName : DouTraining0004Event.java
+*@FileName : FnsDou0004Event.java
 *@FileTitle : Carrier List
 *Open Issues :
 *Change history :
@@ -37,10 +37,13 @@ public class FnsDou0004Event extends EventSupport {
 	/** Process Table Value Object Multi Data */
 	CarrierListVO[] carrierListVOs = null;
 
+	/**
+	 * Constructor of FnsDou0004Even<br>
+	 */
 	public FnsDou0004Event(){}
 	
 	/**
-	 * set a carrierListVO object to CarrierListVO field in DouTraining0004Event<br>
+	 * Set a carrierListVO object to CarrierListVO field in DouTraining0004Event<br>
 	 * 
 	 * @param carrierListVO a carrierListVO object
 	 */
@@ -49,7 +52,7 @@ public class FnsDou0004Event extends EventSupport {
 	}
 
 	/**
-	 * set a list of carrierListVO object to CarrierListVOS field in DouTraining0004Event<br>
+	 * Set a list of carrierListVO object to CarrierListVOS field in DouTraining0004Event<br>
 	 * 
 	 * @param carrierListVOs a list of carrierListVO object
 	 */
@@ -58,7 +61,7 @@ public class FnsDou0004Event extends EventSupport {
 	}
 
 	/**
-	 * get a carrierListVO object from DouTraining0004Event<br>
+	 * Get a carrierListVO object from DouTraining0004Event<br>
 	 * 
 	 * @return CarrierListVO[].
 	 */
@@ -67,7 +70,7 @@ public class FnsDou0004Event extends EventSupport {
 	}
 
 	/**
-	 * get list of carrierListVO object from DouTraining0004Event<br>
+	 * Get list of carrierListVO object from DouTraining0004Event<br>
 	 * 
 	 * @return CarrierListVO[].
 	 */

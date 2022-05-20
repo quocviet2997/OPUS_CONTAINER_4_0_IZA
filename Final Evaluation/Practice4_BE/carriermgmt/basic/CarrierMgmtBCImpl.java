@@ -4,7 +4,7 @@
 *@FileTitle : Carrier List
 *Open Issues :
 *Change history :
-*@LastModifyDate : 2022.03.23
+*@LastModifyDate : 2022.05.20
 *@LastModifier : Viet Tran
 *@LastVersion : 1.0
 * 2022.03.23 
@@ -22,6 +22,7 @@ import com.clt.framework.core.layer.integration.DAOException;
 import com.clt.framework.support.layer.basic.BasicCommandSupport;
 import com.clt.framework.support.view.signon.SignOnUserAccount;
 import com.clt.apps.opus.esm.clv.carrier.carriermgmt.vo.CarrierListVO;
+import com.clt.apps.opus.esm.clv.carrier.carriermgmt.vo.CustomerListVO;
 
 /**
  * ALPS-Carrier Business Logic Command Interface<br>
@@ -72,19 +73,6 @@ public class CarrierMgmtBCImpl extends BasicCommandSupport implements CarrierMgm
 	/**
 	 * {@inheritDoc}
 	 */
-	public List<CarrierListVO> searchCarrierCode2(CarrierListVO carrierListVO) throws EventException {
-		try {
-			return dbDao.searchCrrCode(carrierListVO);
-		} catch(DAOException ex) {
-			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
-		} catch (Exception ex) {
-			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
-		}
-	}
-	
-	/**
-	 * {@inheritDoc}
-	 */
 	public List<CarrierListVO> searchRLaneCode(CarrierListVO carrierListVO) throws EventException {
 		try {
 			return dbDao.searchRLaneCode(carrierListVO);
@@ -98,35 +86,9 @@ public class CarrierMgmtBCImpl extends BasicCommandSupport implements CarrierMgm
 	/**
 	 * {@inheritDoc}
 	 */
-	public List<CarrierListVO> searchCustCode(CarrierListVO carrierListVO) throws EventException {
+	public List<CustomerListVO> searchCustCode(CustomerListVO customerListVO) throws EventException {
 		try {
-			return dbDao.searchCustCode(carrierListVO);
-		} catch(DAOException ex) {
-			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
-		} catch (Exception ex) {
-			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
-		}
-	}
-	
-	/**
-	 * {@inheritDoc}
-	 */
-	public List<CarrierListVO> searchTrdCode(CarrierListVO carrierListVO) throws EventException {
-		try {
-			return dbDao.searchTrdCode(carrierListVO);
-		} catch(DAOException ex) {
-			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
-		} catch (Exception ex) {
-			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
-		}
-	}
-	
-	/**
-	 * {@inheritDoc}
-	 */
-	public List<CarrierListVO> searchVndrCode(CarrierListVO carrierListVO) throws EventException {
-		try {
-			return dbDao.searchVndrCode(carrierListVO);
+			return dbDao.searchCustCode(customerListVO);
 		} catch(DAOException ex) {
 			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
 		} catch (Exception ex) {
@@ -143,20 +105,22 @@ public class CarrierMgmtBCImpl extends BasicCommandSupport implements CarrierMgm
 			List<CarrierListVO> updateVoList = new ArrayList<CarrierListVO>();
 			List<CarrierListVO> deleteVoList = new ArrayList<CarrierListVO>();
 			for ( int i=0; i<carrierListVO .length; i++ ) {
-				if ( carrierListVO[i].getIbflag().equals("I")){
+				if ( carrierListVO[i].getIbflag().equals("D")){
+					deleteVoList.add(carrierListVO[i]);
+				}
+				else if ( carrierListVO[i].getIbflag().equals("U")){
+					carrierListVO[i].setUpdUsrId(account.getUsr_id());
+					updateVoList.add(carrierListVO[i]);
+				}
+				else if ( carrierListVO[i].getIbflag().equals("I")){
 					carrierListVO[i].setCreUsrId(account.getUsr_id());
-					if(!checkDuplicateCarrierId(carrierListVO[i])){
+					if(!checkDuplicateCarrier(carrierListVO[i])){
 						insertVoList.add(carrierListVO[i]);
 					}
 					else{
 						throw new DAOException(new ErrorHandler("ERR00004").getMessage());
 					}
-				} else if ( carrierListVO[i].getIbflag().equals("U")){
-					carrierListVO[i].setUpdUsrId(account.getUsr_id());
-					updateVoList.add(carrierListVO[i]);
-				} else if ( carrierListVO[i].getIbflag().equals("D")){
-					deleteVoList.add(carrierListVO[i]);
-				}
+				} 
 			}
 			
 			if ( insertVoList.size() > 0 ) {
@@ -180,12 +144,9 @@ public class CarrierMgmtBCImpl extends BasicCommandSupport implements CarrierMgm
 	/**
 	 * {@inheritDoc}
 	 */
-	public boolean checkDuplicateCarrierId(CarrierListVO carrierListVO) throws EventException{
+	public boolean checkDuplicateCarrier(CarrierListVO carrierListVO) throws EventException{
 		try{
-			String vndrSeq = carrierListVO.getVndrSeq();
-			carrierListVO.setVndrSeq(null);
 			List<CarrierListVO> listCarrier = dbDao.listCarrierListVO(carrierListVO);
-			carrierListVO.setVndrSeq(vndrSeq);
 			if(listCarrier.size() == 0)
 				return false;
 			return true;

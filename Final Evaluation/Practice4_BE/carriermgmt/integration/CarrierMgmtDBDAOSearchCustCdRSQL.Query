@@ -4,11 +4,15 @@
 		<query name="CarrierMgmtDBDAOSearchCustCdRSQL">
 			<desc><![CDATA[Search CustCd]]></desc>
 			<sql><![CDATA[
-SELECT CUST_CNT_CD, CUST_SEQ 
+SELECT CUST_CNT_CD, CUST_SEQ, CUST_LGL_ENG_NM
 FROM MDM_CUSTOMER
 WHERE 1 = 1
+#if(${cust_cnt_cd} != '')
 AND CUST_CNT_CD = @[cust_cnt_cd]
-AND CUST_SEQ = @[cust_seq]			]]></sql>
+#end
+#if(${cust_seq} != '')
+AND CUST_SEQ = @[cust_seq]
+#end			]]></sql>
 			<params>
 				<param name="cust_cnt_cd" type="12" value="" out="N"/>
 				<param name="cust_seq" type="12" value="" out="N"/>

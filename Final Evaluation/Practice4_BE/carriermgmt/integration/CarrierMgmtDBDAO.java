@@ -4,7 +4,7 @@
 *@FileTitle : Carrier List
 *Open Issues :
 *Change history :
-*@LastModifyDate : 2022.05.17
+*@LastModifyDate : 2022.05.20
 *@LastModifier : Viet Tran
 *@LastVersion : 1.0
 * 2022.03.23 
@@ -28,6 +28,7 @@ import com.clt.framework.support.db.RowSetUtil;
 import com.clt.framework.support.db.SQLExecuter;
 import com.clt.framework.support.layer.integration.DBDAOSupport;
 import com.clt.apps.opus.esm.clv.carrier.carriermgmt.vo.CarrierListVO;
+import com.clt.apps.opus.esm.clv.carrier.carriermgmt.vo.CustomerListVO;
 
 
 /**
@@ -125,40 +126,6 @@ public class CarrierMgmtDBDAO extends DBDAOSupport {
 	}
 
 	/**
-	 * Get a list of CRR_CD from MDM_CARRIER table.<br>
-	 * 
-	 * @param carrierListVO a CarrierListVO object
-	 * @return List<CarrierListVO>
-	 * @exception DAOException
-	 */
-	public List<CarrierListVO> searchCrrCode(CarrierListVO carrierListVO) throws DAOException {
-		DBRowSet dbRowset = null;
-		List<CarrierListVO> list = null;
-		//query parameter
-		Map<String, Object> param = new HashMap<String, Object>();
-		//velocity parameter
-		Map<String, Object> velParam = new HashMap<String, Object>();
-	
-		try{			
-			if(carrierListVO != null){
-				Map<String, String> mapVO = carrierListVO .getColumnValues();
-			
-				param.putAll(mapVO);
-				velParam.putAll(mapVO);
-			}
-			dbRowset = new SQLExecuter("").executeQuery((ISQLTemplate)new CarrierMgmtDBDAOSearchCrrCdRSQL(), param, velParam);
-			list = (List)RowSetUtil.rowSetToVOs(dbRowset, CarrierListVO .class);
-		} catch(SQLException se) {
-			log.error(se.getMessage(),se);
-			throw new DAOException(new ErrorHandler(se).getMessage());
-		} catch(Exception ex) {
-			log.error(ex.getMessage(),ex);
-			throw new DAOException(new ErrorHandler(ex).getMessage());
-		}
-		return list;
-	}
-
-	/**
 	 * Get a list of RLaneCode from MDM_REV_LANE table.<br>
 	 * 
 	 * @param carrierListVO a CarrierListVO object
@@ -193,29 +160,29 @@ public class CarrierMgmtDBDAO extends DBDAOSupport {
 	}
 	
 	/**
-	 * Get a list of CUST_CNT_CD, CUST_SEQ from MDM_CUSTOMER table.<br>
+	 * Get a list of CUST_CNT_CD, CUST_SEQ, CUST_LGL_ENG_NM from MDM_CUSTOMER table.<br>
 	 * 
 	 * @param carrierListVO a CarrierListVO object
 	 * @return List<CarrierListVO>
 	 * @exception DAOException
 	 */
-	public List<CarrierListVO> searchCustCode(CarrierListVO carrierListVO) throws DAOException {
+	public List<CustomerListVO> searchCustCode(CustomerListVO customerListVO) throws DAOException {
 		DBRowSet dbRowset = null;
-		List<CarrierListVO> list = null;
+		List<CustomerListVO> list = null;
 		//query parameter
 		Map<String, Object> param = new HashMap<String, Object>();
 		//velocity parameter
 		Map<String, Object> velParam = new HashMap<String, Object>();
 
 		try{
-			if(carrierListVO != null){
-				Map<String, String> mapVO = carrierListVO .getColumnValues();
+			if(customerListVO != null){
+				Map<String, String> mapVO = customerListVO .getColumnValues();
 			
 				param.putAll(mapVO);
 				velParam.putAll(mapVO);
 			}
 			dbRowset = new SQLExecuter("").executeQuery((ISQLTemplate)new CarrierMgmtDBDAOSearchCustCdRSQL(), param, velParam);
-			list = (List)RowSetUtil.rowSetToVOs(dbRowset, CarrierListVO .class);
+			list = (List)RowSetUtil.rowSetToVOs(dbRowset, CustomerListVO .class);
 		} catch(SQLException se) {
 			log.error(se.getMessage(),se);
 			throw new DAOException(new ErrorHandler(se).getMessage());
@@ -225,75 +192,6 @@ public class CarrierMgmtDBDAO extends DBDAOSupport {
 		}
 		return list;
 	}
-	
-	/**
-	 * Get a list of TRD_CD from MDM_TRADE table.<br>
-	 * 
-	 * @param carrierListVO a CarrierListVO object
-	 * @return List<CarrierListVO>
-	 * @exception DAOException
-	 */
-	public List<CarrierListVO> searchTrdCode(CarrierListVO carrierListVO) throws DAOException {
-		DBRowSet dbRowset = null;
-		List<CarrierListVO> list = null;
-		//query parameter
-		Map<String, Object> param = new HashMap<String, Object>();
-		//velocity parameter
-		Map<String, Object> velParam = new HashMap<String, Object>();
-
-		try{
-			if(carrierListVO != null){
-				Map<String, String> mapVO = carrierListVO .getColumnValues();
-			
-				param.putAll(mapVO);
-				velParam.putAll(mapVO);
-			}
-			dbRowset = new SQLExecuter("").executeQuery((ISQLTemplate)new CarrierMgmtDBDAOSearchTrdCdRSQL(), param, velParam);
-			list = (List)RowSetUtil.rowSetToVOs(dbRowset, CarrierListVO .class);
-		} catch(SQLException se) {
-			log.error(se.getMessage(),se);
-			throw new DAOException(new ErrorHandler(se).getMessage());
-		} catch(Exception ex) {
-			log.error(ex.getMessage(),ex);
-			throw new DAOException(new ErrorHandler(ex).getMessage());
-		}
-		return list;
-	}
-	
-	/**
-	 * Get a list of VNDR_SEQ from MDM_VENDOR table.<br>
-	 * 
-	 * @param carrierListVO a CarrierListVO object
-	 * @return List<CarrierListVO>
-	 * @exception DAOException
-	 */
-	public List<CarrierListVO> searchVndrCode(CarrierListVO carrierListVO) throws DAOException {
-		DBRowSet dbRowset = null;
-		List<CarrierListVO> list = null;
-		//query parameter
-		Map<String, Object> param = new HashMap<String, Object>();
-		//velocity parameter
-		Map<String, Object> velParam = new HashMap<String, Object>();
-
-		try{
-			if(carrierListVO != null){
-				Map<String, String> mapVO = carrierListVO .getColumnValues();
-			
-				param.putAll(mapVO);
-				velParam.putAll(mapVO);
-			}
-			dbRowset = new SQLExecuter("").executeQuery((ISQLTemplate)new CarrierMgmtDBDAOSearchVndrCdRSQL(), param, velParam);
-			list = (List)RowSetUtil.rowSetToVOs(dbRowset, CarrierListVO .class);
-		} catch(SQLException se) {
-			log.error(se.getMessage(),se);
-			throw new DAOException(new ErrorHandler(se).getMessage());
-		} catch(Exception ex) {
-			log.error(ex.getMessage(),ex);
-			throw new DAOException(new ErrorHandler(ex).getMessage());
-		}
-		return list;
-	}
-	
 		 
 	 /**
 	  * Insert a CarrierListVO object data out of JOO_CARRIER table.<br>

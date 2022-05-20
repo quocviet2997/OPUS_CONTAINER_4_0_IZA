@@ -4,7 +4,7 @@
 *@FileTitle : Carrier List
 *Open Issues :
 *Change history :
-*@LastModifyDate : 2022.03.23
+*@LastModifyDate : 2022.05.20
 *@LastModifier : Viet Tran
 *@LastVersion : 1.0
 * 2022.03.23 
@@ -13,9 +13,11 @@
 package com.clt.apps.opus.esm.clv.carrier.carriermgmt.basic;
 
 import java.util.List;
+
 import com.clt.framework.core.layer.event.EventException;
 import com.clt.framework.support.view.signon.SignOnUserAccount;
 import com.clt.apps.opus.esm.clv.carrier.carriermgmt.vo.CarrierListVO;
+import com.clt.apps.opus.esm.clv.carrier.carriermgmt.vo.CustomerListVO;
 
 /**
  * ALPS-Carrier Business Logic Command Interface<br>
@@ -45,16 +47,7 @@ public interface CarrierMgmtBC {
 	 * @exception EventException
 	 */
 	public List<CarrierListVO> searchCarrierCode(CarrierListVO carrierListVO) throws EventException;
-	
-	/**
-	 * Present a list of CarrierCode records in MDM_CARRIER table.<br>
-	 * 
-	 * @param carrierListVO a CarrierListVO object.
-	 * @return a list of CarrierCode records.
-	 * @exception EventException
-	 */
-	public List<CarrierListVO> searchCarrierCode2(CarrierListVO carrierListVO) throws EventException;
-	
+
 	/**
 	 * Present a list of RLaneCode records.<br>
 	 * 
@@ -67,29 +60,11 @@ public interface CarrierMgmtBC {
 	/**
 	 * Present a list of CustCode records.<br>
 	 * 
-	 * @param carrierListVO a CarrierListVO object.
+	 * @param customerListVO a CarrierListVO object.
 	 * @return a list of CustCode records.
 	 * @exception EventException
 	 */
-	public List<CarrierListVO> searchCustCode(CarrierListVO carrierListVO) throws EventException;
-	
-	/**
-	 * Present a list of TrdCode records.<br>
-	 * 
-	 * @param carrierListVO a CarrierListVO object.
-	 * @return a list of TrdCode records.
-	 * @exception EventException
-	 */
-	public List<CarrierListVO> searchTrdCode(CarrierListVO carrierListVO) throws EventException;
-	
-	/**
-	 * Present a list of VndrCode records.<br>
-	 * 
-	 * @param carrierListVO a CarrierListVO object.
-	 * @return a list of VndrCode records.
-	 * @exception EventException
-	 */
-	public List<CarrierListVO> searchVndrCode(CarrierListVO carrierListVO) throws EventException;
+	public List<CustomerListVO> searchCustCode(CustomerListVO customerListVO) throws EventException;
 	
 	/**
 	 * Execute changes of carrier list from UI to server.<br>
@@ -101,11 +76,11 @@ public interface CarrierMgmtBC {
 	public void modifyCarrierListVO(CarrierListVO[] carrierListVO,SignOnUserAccount account) throws EventException;
 	
 	/**
-	 * Present a list of Carrier records.<br>
+	 * Check whether Carrier Code and RLane Code is duplicated.<br>
 	 * 
 	 * @param carrierListVO a CarrierListVO object.
 	 * @return boolean
 	 * @exception EventException
 	 */
-	public boolean checkDuplicateCarrierId(CarrierListVO carrierListVO) throws EventException;
+	public boolean checkDuplicateCarrier(CarrierListVO carrierListVO) throws EventException;
 }

@@ -1,16 +1,16 @@
 /*=========================================================
 *Copyright(c) 2022 CyberLogitec
-*@FileName : FNS_DOU_0004HTMLAction.java
-*@FileTitle : Carrier List
+*@FileName : MRM_CUS_POPUPHTMLAction.java
+*@FileTitle : Customer List
 *Open Issues :
 *Change history :
 *@LastModifyDate : 2022.05.20
 *@LastModifier : Viet Tran
 *@LastVersion : 1.0
-* 2022.03.23 
+* 2022.05.19 
 * 1.0 Creation
 =========================================================*/
-package com.clt.apps.opus.esm.clv.carrier.carriermgmt.event;
+package com.clt.apps.opus.esm.clv.carrier.customercd.event;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -20,7 +20,8 @@ import com.clt.framework.core.layer.event.Event;
 import com.clt.framework.core.layer.event.EventResponse;
 import com.clt.framework.support.controller.HTMLActionSupport;
 import com.clt.framework.support.controller.html.FormCommand;
-import com.clt.apps.opus.esm.clv.carrier.carriermgmt.vo.CarrierListVO;
+import com.clt.apps.opus.esm.clv.carrier.carriermgmt.vo.CustomerListVO;
+import com.clt.apps.opus.esm.clv.training02.codemanagement.vo.CodeMgmtVO;
 import com.clt.apps.opus.fns.joo.training.joocarriermgmt.vo.JooCarrierVO;
 
 /**
@@ -34,13 +35,13 @@ import com.clt.apps.opus.fns.joo.training.joocarriermgmt.vo.JooCarrierVO;
  * @since J2EE 1.6
  */
 
-public class FNS_DOU_0004HTMLAction extends HTMLActionSupport {
+public class MRM_CUS_POPUPHTMLAction extends HTMLActionSupport {
 
 	private static final long serialVersionUID = 1L;
 	/**
 	 * DOU_TRAINING_0004HTMLAction constructor
 	 */
-	public FNS_DOU_0004HTMLAction() {}
+	public MRM_CUS_POPUPHTMLAction() {}
 
 	/**
 	 * Parsing the HTML DOM object's Value as a Java variable<br>
@@ -53,21 +54,12 @@ public class FNS_DOU_0004HTMLAction extends HTMLActionSupport {
 	public Event perform(HttpServletRequest request) throws HTMLActionException {
 		
     	FormCommand command = FormCommand.fromRequest(request);
-		FnsDou0004Event event = new FnsDou0004Event();
-		
-		if(command.isCommand(FormCommand.MULTI)) {
-			event.setCarrierListVOS((CarrierListVO[])getVOs(request, CarrierListVO .class,""));
-		}
-		else if(command.isCommand(FormCommand.SEARCH)) {
-			CarrierListVO carrierVO = new CarrierListVO();
-			carrierVO.setJoCrrCd(JSPUtil.getParameter(request, "s_jo_crr_cd", ""));
-			carrierVO.setVndrSeq(JSPUtil.getParameter(request, "s_vndr_seq", ""));
-			carrierVO.setCreDtFm(JSPUtil.getParameter(request, "s_cre_dt_fm", ""));
-			carrierVO.setCreDtTo(JSPUtil.getParameter(request, "s_cre_dt_to", ""));
-			event.setCarrierListVO(carrierVO);
-		}
-		else if(command.isCommand(FormCommand.COMMAND01)) {//check duplicate data
-			event.setCarrierListVO((CarrierListVO)getVO(request, CarrierListVO .class,""));
+		MrmCusPopupEvent event = new MrmCusPopupEvent();
+		if(command.isCommand(FormCommand.SEARCH)) {
+			CustomerListVO customerVO = new CustomerListVO();
+			customerVO.setCustCntCd(JSPUtil.getParameter(request, "s_cust_cnt_cd", ""));
+			customerVO.setCustSeq(JSPUtil.getParameter(request, "s_cust_seq", ""));
+			event.setCustomerListVO(customerVO);
 		}
 
 		return  event;

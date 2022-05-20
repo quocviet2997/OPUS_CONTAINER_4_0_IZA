@@ -19,7 +19,7 @@ import com.clt.framework.support.db.ISQLTemplate;
 /**
  *
  * @author Viet Tran
- * @see DAO
+ * @see CarrierMgmtDBDAO
  * @since J2EE 1.6
  */
 
@@ -34,7 +34,7 @@ public class CarrierMgmtDBDAOSearchCarrierRSQL implements ISQLTemplate{
 	
 	/**
 	  * <pre>
-	  * a   
+	  * 
 	  * </pre>
 	  */
 	public CarrierMgmtDBDAOSearchCarrierRSQL(){
@@ -85,7 +85,7 @@ public class CarrierMgmtDBDAOSearchCarrierRSQL implements ISQLTemplate{
 	}
 
 	/**
-	 * Query
+	 * Query Generation
 	 */
 	public void setQuery(){
 		query.append("SELECT" ).append("\n"); 

@@ -4,7 +4,7 @@
 *@FileTitle : Carrier List
 *Open Issues :
 *Change history :
-*@LastModifyDate : 2022.05.18
+*@LastModifyDate : 2022.05.20
 *@LastModifier : Viet Tran
 *@LastVersion : 1.0
 * 2022.03.23 
@@ -27,6 +27,8 @@ import com.clt.framework.support.controller.html.FormCommand;
 import com.clt.framework.support.layer.service.ServiceCommandSupport;
 import com.clt.framework.support.view.signon.SignOnUserAccount;
 import com.clt.apps.opus.esm.clv.carrier.carriermgmt.vo.CarrierListVO;
+import com.clt.apps.opus.esm.clv.carrier.carriermgmt.vo.CustomerListVO;
+import com.clt.apps.opus.esm.clv.carrier.customercd.event.MrmCusPopupEvent;
 
 
 /**
@@ -90,18 +92,17 @@ public class CarrierSC extends ServiceCommandSupport {
 			else if(e.getFormCommand().isCommand(FormCommand.COMMAND01)){
 				eventResponse = checkDuplicate(e);
 			}
-			else if(e.getFormCommand().isCommand(FormCommand.COMMAND02)
-				  ||e.getFormCommand().isCommand(FormCommand.COMMAND03)
-				  ||e.getFormCommand().isCommand(FormCommand.COMMAND04)
-				  ||e.getFormCommand().isCommand(FormCommand.COMMAND05)){
-				eventResponse = checkValid(e);
+		}
+		if (e.getEventName().equalsIgnoreCase("MrmCusPopupEvent")) {
+			if (e.getFormCommand().isCommand(FormCommand.SEARCH)) {
+				eventResponse = searchCustCode(e);
 			}
 		}
 		return eventResponse;
 	}
 	
 	/**
-	 * Generate ETCData for CarrierCode and RLaneCode.<br>
+	 * Generate ETCData for search_CarrierCode, RLaneCode and CarrierCode.<br>
 	 * 
 	 * @param e DouTraining0004Event.
 	 * @return eventResponse.
@@ -114,24 +115,49 @@ public class CarrierSC extends ServiceCommandSupport {
 		CarrierMgmtBC command = new CarrierMgmtBCImpl();
 
 		try{
-			List<CarrierListVO> carrierList = command.searchCarrierCode(event.getCarrierListVO());
 			List<CarrierListVO> rLaneList = command.searchRLaneCode(event.getCarrierListVO());
+			StringBuilder rLaneListString = new StringBuilder();
+			
+			for(int i = 0; i < rLaneList.size(); i++){
+				if(i == 0)
+					rLaneListString.append(rLaneList.get(i).getRlaneCd());
+				else
+					rLaneListString.append("|"+rLaneList.get(i).getRlaneCd());
+			}
+			
+			eventResponse = (GeneralEventResponse) getCarrierList(event);
+			eventResponse.setETCData("rLaneItems", rLaneListString.toString());
+		}catch(EventException ex){
+			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
+		}catch(Exception ex){
+			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
+		}	
+		return eventResponse;
+	}
+	
+	/**
+	 * Generate ETCData for CarrierCode.<br>
+	 * 
+	 * @param e DouTraining0004Event.
+	 * @return eventResponse.
+	 * @exception EventException
+	 */
+	private EventResponse getCarrierList(Event e) throws EventException {
+		// PDTO(Data Transfer Object including Parameters)
+		GeneralEventResponse eventResponse = new GeneralEventResponse();
+		FnsDou0004Event event = (FnsDou0004Event)e;
+		CarrierMgmtBC command = new CarrierMgmtBCImpl();
+
+		try{
+			List<CarrierListVO> carrierList = command.searchCarrierCode(event.getCarrierListVO());
 			StringBuilder crList = new StringBuilder();
-			StringBuilder rlList = new StringBuilder();
 			for(int i = 0; i < carrierList.size(); i++){
 				if(i == 0)
 					crList.append(carrierList.get(i).getJoCrrCd());
 				else
 					crList.append("|"+carrierList.get(i).getJoCrrCd());
 			}
-			for(int i = 0; i < rLaneList.size(); i++){
-				if(i == 0)
-					rlList.append(rLaneList.get(i).getRlaneCd());
-				else
-					rlList.append("|"+rLaneList.get(i).getRlaneCd());
-			}
 			eventResponse.setETCData("carrierItems", crList.toString());
-			eventResponse.setETCData("rLaneItems", rlList.toString());
 		}catch(EventException ex){
 			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
 		}catch(Exception ex){
@@ -155,6 +181,7 @@ public class CarrierSC extends ServiceCommandSupport {
 
 		try{
 			List<CarrierListVO> list = command.searchCarrierListVO(event.getCarrierListVO());
+			eventResponse = (GeneralEventResponse) getCarrierList(event);
 			eventResponse.setRsVoList(list);
 		}catch(EventException ex){
 			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
@@ -165,46 +192,7 @@ public class CarrierSC extends ServiceCommandSupport {
 	}
 	
 	/**
-	 * Generate search data for CarrierListVO.<br>
-	 * 
-	 * @param e DouTraining0004Event.
-	 * @return eventResponse.
-	 * @exception EventException
-	 */
-	private EventResponse checkValid(Event e) throws EventException {
-		// PDTO(Data Transfer Object including Parameters)
-		GeneralEventResponse eventResponse = new GeneralEventResponse();
-		FnsDou0004Event event = (FnsDou0004Event)e;
-		CarrierMgmtBC command = new CarrierMgmtBCImpl();
-		List<CarrierListVO> list = null;
-
-		try {
-			if (e.getFormCommand().isCommand(FormCommand.COMMAND02)) {
-				list = command.searchCarrierCode2(event.getCarrierListVO());
-			}
-			if (e.getFormCommand().isCommand(FormCommand.COMMAND03)) {
-				list = command.searchVndrCode(event.getCarrierListVO());
-			}
-			if (e.getFormCommand().isCommand(FormCommand.COMMAND04)) {
-				list = command.searchCustCode(event.getCarrierListVO());
-			}
-			if (e.getFormCommand().isCommand(FormCommand.COMMAND05)) {
-				list = command.searchTrdCode(event.getCarrierListVO());
-			}
-			if (list == null) {
-				list = new ArrayList<>();
-			}
-			eventResponse.setETCData("isExisted", list.size() > 0 ? "Y" : "N");
-		}catch(EventException ex){
-			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
-		}catch(Exception ex){
-			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
-		}	
-		return eventResponse;
-	}
-	
-	/**
-	 * Generate search data for CarrierListVO.<br>
+	 * Check duplicate for CarrierListVO.<br>
 	 * 
 	 * @param e DouTraining0004Event.
 	 * @return eventResponse.
@@ -218,6 +206,12 @@ public class CarrierSC extends ServiceCommandSupport {
 		List<CarrierListVO> list = null;
 
 		try {
+			CarrierListVO carriers = event.getCarrierListVO();
+			if("".equals(carriers.getRlaneCd()) || "".equals(carriers.getJoCrrCd())){
+				eventResponse.setETCData("isExisted", "N");
+				return eventResponse;
+			}
+				
 			list = command.searchCarrierListVO(event.getCarrierListVO());
 			if (list == null) {
 				eventResponse.setETCData("isExisted", "N");
@@ -237,7 +231,7 @@ public class CarrierSC extends ServiceCommandSupport {
 	}
 	
 	/**
-	 * Generate save data for CarrierListVO.<br>
+	 * Save changed data from Client.<br>
 	 * 
 	 * @param e DouTraining0004Event.
 	 * @return eventResponse.
@@ -259,6 +253,30 @@ public class CarrierSC extends ServiceCommandSupport {
 			rollback();
 			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
 		}
+		return eventResponse;
+	}
+	
+	/**
+	 * Generate search data for Customer Code.<br>
+	 * 
+	 * @param e MrmCusPopupEvent.
+	 * @return eventResponse.
+	 * @exception EventException
+	 */
+	private EventResponse searchCustCode(Event e) throws EventException {
+		// PDTO(Data Transfer Object including Parameters)
+		GeneralEventResponse eventResponse = new GeneralEventResponse();
+		MrmCusPopupEvent event = (MrmCusPopupEvent)e;
+		CarrierMgmtBC command = new CarrierMgmtBCImpl();
+
+		try{
+			List<CustomerListVO> list = command.searchCustCode(event.getCustomerListVO());
+			eventResponse.setRsVoList(list);
+		}catch(EventException ex){
+			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
+		}catch(Exception ex){
+			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
+		}	
 		return eventResponse;
 	}
 }

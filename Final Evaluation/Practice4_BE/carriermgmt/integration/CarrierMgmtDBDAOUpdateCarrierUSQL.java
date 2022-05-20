@@ -19,7 +19,7 @@ import com.clt.framework.support.db.ISQLTemplate;
 /**
  *
  * @author Viet Tran
- * @see DAO
+ * @see CarrierMgmtDBDAO
  * @since J2EE 1.6
  */
 
@@ -113,7 +113,7 @@ public class CarrierMgmtDBDAOUpdateCarrierUSQL implements ISQLTemplate{
 	}
 
 	/**
-	 * Query
+	 * Query Generation
 	 */
 	public void setQuery(){
 		query.append("UPDATE JOO_CARRIER SET" ).append("\n"); 

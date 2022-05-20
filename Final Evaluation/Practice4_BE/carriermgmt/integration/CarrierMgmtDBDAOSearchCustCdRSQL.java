@@ -4,10 +4,10 @@
 *@FileTitle : 
 *Open Issues :
 *Change history :
-*@LastModifyDate : 2022.05.17
+*@LastModifyDate : 2022.05.20
 *@LastModifier : Viet Tran
 *@LastVersion : 1.0
-* 2022.05.17 
+* 2022.05.20 
 * 1.0 Creation
 =========================================================*/
 package com.clt.apps.opus.esm.clv.carrier.carriermgmt.integration;
@@ -19,7 +19,7 @@ import com.clt.framework.support.db.ISQLTemplate;
 /**
  *
  * @author Viet Tran
- * @see DAO
+ * @see CarrierMgmtDBDAO
  * @since J2EE 1.6
  */
 
@@ -71,14 +71,18 @@ public class CarrierMgmtDBDAOSearchCustCdRSQL implements ISQLTemplate{
 	}
 
 	/**
-	 * Query
+	 * Query Generation
 	 */
 	public void setQuery(){
-		query.append("SELECT CUST_CNT_CD, CUST_SEQ " ).append("\n"); 
+		query.append("SELECT CUST_CNT_CD, CUST_SEQ, CUST_LGL_ENG_NM" ).append("\n"); 
 		query.append("FROM MDM_CUSTOMER" ).append("\n"); 
 		query.append("WHERE 1 = 1" ).append("\n"); 
+		query.append("#if(${cust_cnt_cd} != '')" ).append("\n"); 
 		query.append("AND CUST_CNT_CD = @[cust_cnt_cd]" ).append("\n"); 
+		query.append("#end" ).append("\n"); 
+		query.append("#if(${cust_seq} != '')" ).append("\n"); 
 		query.append("AND CUST_SEQ = @[cust_seq]" ).append("\n"); 
+		query.append("#end" ).append("\n"); 
 
 	}
 }
