@@ -405,9 +405,9 @@ function sheet1_OnChange(sheetObj, Row, Col, Value, OldValue, RaiseFlag){
 				
 				//check on Service side
 				formObj.f_cmd.value	= COMMAND01;
-				var sParam			= FormQueryString(formObj) + "&jo_crr_cd=" + sheetObj.GetCellValue(Row,"jo_crr_cd") + "&rlane_cd=" + sheetObj.GetCellValue(Row,"rlane_cd");
-				var sXml 			= sheetObj.GetSearchData("FNS_DOU_0004GS.do", sParam, {sync:1});	
-				var flag			= ComGetEtcData(sXml, "isExisted");
+				var sParam		= FormQueryString(formObj) + "&jo_crr_cd=" + sheetObj.GetCellValue(Row,"jo_crr_cd") + "&rlane_cd=" + sheetObj.GetCellValue(Row,"rlane_cd");
+				var sXml 		= sheetObj.GetSearchData("FNS_DOU_0004GS.do", sParam, {sync:1});	
+				var flag		= ComGetEtcData(sXml, "isExisted");
 				
 				if(flag == 'Y'){
 					ComShowCodeMessage("COM12115", "The Carrier and Rev.Lane");
