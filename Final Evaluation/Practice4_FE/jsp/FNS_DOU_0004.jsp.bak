@@ -24,10 +24,10 @@
 <%@ page import="org.apache.log4j.Logger" %>
 
 <%
-	FnsDou0004Event  event = null;					
-	Exception serverException   = null;			
-	String strErrMsg = "";						
-	int rowCount	 = 0;						
+	FnsDou0004Event  event = null;					//PDTO(Data Transfer Object including Parameters)
+	Exception serverException   = null;			//서버에서 발생한 에러
+	String strErrMsg = "";						//에러메세지
+	int rowCount	 = 0;						//DB ResultSet 리스트의 건수
 
 	String successFlag = "";
 	String codeList  = "";
