@@ -75,33 +75,34 @@
 <div class="layer_popup_title">
 	<div class="page_title_area clear">
 		<div class="opus_design_btn">
-		   <button type="button" class="btn_accent" name="btn_Retrieve" id="btn_Retrieve">Retrieve</button><!--
-	   --><button type="button" class="btn_normal" name="btn_Ok" id="btn_Ok">Ok</button>
+			<button type="button" class="btn_accent" name="btn_Retrieve" id="btn_Retrieve">Retrieve</button><!--
+	   		--><button type="button" class="btn_normal" name="btn_Ok" id="btn_Ok">Ok</button>
 		</div>
-	    <div class="location">
-	     	<span id="navigation"></span>
-	    </div>
+		<div class="location">
+	     		<span id="navigation"></span>
+		</div>
 	</div>
 </div>
 
 <div class="layer_popup_contents">
 	<div class="wrap_search">
 		<div class="opus_design_inquiry">
-		    <table>
-			    <colgroup>
+			<table>
+				<colgroup>
 					<col width="100">
 					<col width="150">
 					<col width="100">
 					<col width="*">
-				</colgroup>
-		        <tbody>
+
+			    	</colgroup>
+			    	<tbody>
 					<tr>
 					   	<th>Country</th><!--
 						--><td><input type="text" dataformat="enguponly" style="width:100px;" class="input" value="" name="s_cust_cnt_cd" id="s_cust_cnt_cd" maxlength="2"></td><!--
 						--><th>Sequence</th><!--
 						--><td><input type="text" dataformat="num" style="width:100px;" class="input" value="" name="s_cust_seq" id="s_cust_seq" maxlength="6"></td>
 					</tr> 
-				</tbody>
+			    	</tbody>
 			</table>
 		</div>
 	</div>
