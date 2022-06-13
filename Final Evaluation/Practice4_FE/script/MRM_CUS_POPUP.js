@@ -96,11 +96,11 @@ function initSheet(sheetObj, sheetNo){
 				InitHeaders(headers, info);
 				
 				var cols = [{Type:"Radio",     	Hidden:0, 	Width:30,   Align:"Center",	ColMerge:0,	SaveName:"radio", 		KeyField:0,	UpdateEdit:1, InsertEdit:1},
-							{Type:"CheckBox", 	Hidden:0, 	Width:50, 	Align:"Center", ColMerge:0, SaveName:"checkbox", 		KeyField:0},
-							{Type:"Text", 		Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"cust_cnt_cd", 	KeyField:1, UpdateEdit:0, InsertEdit:0, EditLen:2},
-							{Type:"Float", 		Hidden:0, 	Width:150, 	Align:"Center", ColMerge:0, SaveName:"cust_seq", 		KeyField:1, UpdateEdit:0, InsertEdit:0, EditLen:6},
-							{Type:"Text", 		Hidden:0, 	Width:300, 	Align:"Left", 	ColMerge:0, SaveName:"cust_lgl_eng_nm",	KeyField:1, UpdateEdit:0, InsertEdit:0},
-							{Type:"Status", 	Hidden:1, 	Width:30, 	Align:"Center", ColMerge:0, SaveName:"ibflag"}];
+					    {Type:"CheckBox", 	Hidden:0, 	Width:50, 	Align:"Center", ColMerge:0, SaveName:"checkbox", 		KeyField:0},
+					    {Type:"Text", 		Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"cust_cnt_cd", 	KeyField:1, UpdateEdit:0, InsertEdit:0, EditLen:2},
+					    {Type:"Float", 		Hidden:0, 	Width:150, 	Align:"Center", ColMerge:0, SaveName:"cust_seq", 		KeyField:1, UpdateEdit:0, InsertEdit:0, EditLen:6},
+					    {Type:"Text", 		Hidden:0, 	Width:300, 	Align:"Left", 	ColMerge:0, SaveName:"cust_lgl_eng_nm",	KeyField:1, UpdateEdit:0, InsertEdit:0},
+					    {Type:"Status", 	Hidden:1, 	Width:30, 	Align:"Center", ColMerge:0, SaveName:"ibflag"}];
 				InitColumns(cols);
 				SetWaitImageVisible(0);
 				SetSheetHeight(ComGetSheetHeight(sheetObj, 16));
@@ -133,7 +133,7 @@ function doActionIBSheet(sheetObj, formObj, sAction){
 /**
  * Event fires promptly before Ajax communication when a search method is called.<br>
  * 
- * @param sheetObject	(ibsheet)		IBSheet Object
+ * @param sheetObject		(ibsheet)		IBSheet Object
  * @param Code			(Long)			Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)		Processing result message
  * @param StCode		(Integer)		HTTP response code
@@ -146,7 +146,7 @@ function sheet1_OnBeforeSearch(sheetObject, Code, Msg, StCode, StMsg) {
 /**
  * Event fires when search is completed using a search function and other internal data processing are also completed.<br>
  * 
- * @param sheetObject	(ibsheet)		IBSheet Object
+ * @param sheetObject		(ibsheet)		IBSheet Object
  * @param Code			(Long)			Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)		Processing result message
  * @param StCode		(Integer)		HTTP response code
