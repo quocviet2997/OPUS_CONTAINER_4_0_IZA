@@ -1,11 +1,11 @@
 <%
 /*=========================================================
 *Copyright(c) 2022 CyberLogitec
-*@FileName : FNS_DOU_0004.jsp
+*@FileName : DOU_TRAINING_0004.jsp
 *@FileTitle : Carrier List
 *Open Issues :
 *Change history :
-*@LastModifyDate : 2022.05.23
+*@LastModifyDate : 2022.05.17
 *@LastModifier : Viet Tran
 *@LastVersion : 1.0
 * 2022.03.23 
@@ -24,10 +24,10 @@
 <%@ page import="org.apache.log4j.Logger" %>
 
 <%
-	FnsDou0004Event  event = null;					
-	Exception serverException   = null;			
-	String strErrMsg = "";						
-	int rowCount	 = 0;						
+	FnsDou0004Event  event = null;					//PDTO(Data Transfer Object including Parameters)
+	Exception serverException   = null;			//서버에서 발생한 에러
+	String strErrMsg = "";						//에러메세지
+	int rowCount	 = 0;						//DB ResultSet 리스트의 건수
 
 	String successFlag = "";
 	String codeList  = "";
@@ -62,12 +62,6 @@
 		out.println(e.toString());
 	}
 %>
-
-<style type="text/css">
-.text_center{
-	text-align:center;
-}
-</style>
 
 <script language="javascript">
 	var carrierCombo = "ALL|<%=carrierItems%>";
@@ -115,13 +109,13 @@
 					<td><script type="text/javascript">ComComboObject('s_jo_crr_cd',1,120, 1, 0, 0);</script></td>
 					<th>Vendor</th>
 					<td>
-						<input type="text" style="width:200px;" placeholder="Please type 6 number code" dataformat="num" name="s_vndr_seq" id="s_vndr_seq" maxlength="6">
+						<input type="text" dataformat="num" style="width:200px; text-align:center;" placeholder="Please type 6 number code" name="s_vndr_seq" id="s_vndr_seq" maxlength="6">
 					</td>
 					<th>Create Date</th>
 					<td>
-						<input type="text" class="text_center" style="width:100px;" placeholder="YYYY-MM-DD" name="s_cre_dt_fm" id="s_cre_dt_fm" dataformat="ymd" maxlength="10" minlength="8"><!-- 
+						<input type="text" dataformat="ymd" class="text_center" style="width:100px; text-align:center;" placeholder="YYYY-MM-DD" name="s_cre_dt_fm" id="s_cre_dt_fm" maxlength="10" minlength="8"><!-- 
 						--><button type="button" class="calendar ir" name="btn_calendar_fm" id="btn_calendar_fm" tabindex="-1"></button><!--   -->~ <!--  
-						--><input type="text" class="text_center" style="width:100px;" placeholder="YYYY-MM-DD" name="s_cre_dt_to" id="s_cre_dt_to" dataformat="ymd" maxlength="10" minlength="8"><!--  
+						--><input type="text" dataformat="ymd" class="text_center" style="width:100px; text-align:center;" placeholder="YYYY-MM-DD" name="s_cre_dt_to" id="s_cre_dt_to" maxlength="10" minlength="8"><!--  
 						--><button type="button" class="calendar ir" name="btn_calendar_to" id="btn_calendar_to" tabindex="-1"></button>
 					</td>
 				</tr>

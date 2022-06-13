@@ -4,7 +4,7 @@
 *@FileTitle : Carrier List
 *Open Issues :
 *Change history :
-*@LastModifyDate : 2022.05.23
+*@LastModifyDate : 2022.05.19
 *@LastModifier : Viet Tran
 *@LastVersion : 1.0
 * 2022.03.23 
@@ -29,6 +29,7 @@ function loadPage(){
 	
 	doActionIBSheet(sheetObjects[0], document.form, IBSEARCH);
 }
+
 
 /**
  * Function for branching to the corresponding logic when a button on the screen is pressed.<br>
@@ -88,22 +89,21 @@ function initSheet(sheetObj, sheetNo){
 			case "sheet1":
 				SetConfig( {SearchMode:2, MergeSheet:5, Page:20, DataRowMerge:0});
 				
-				var headTitle ="||Check|Contry|Sequence|Legacy Customer Name";
+				var headTitle ="|Check|Contry|Sequence|Legacy Customer Name|";
 				var headers = [{Text:headTitle, Align:"Center"}];
 				var info ={Sort:1, ColMove:1, ColResize:1, HeaderCheck:0};
 				
 				InitHeaders(headers, info);
 				
-				var cols = [{Type:"Status", 	Hidden:1, 	Width:30, 	Align:"Center", ColMerge:0, SaveName:"ibflag"},
-				            {Type:"Radio",     	Hidden:0, 	Width:30,   	Align:"Center",	ColMerge:0, SaveName:"checkbox", 	KeyField:0, UpdateEdit:1, InsertEdit:1},
-					    {Type:"CheckBox", 	Hidden:0, 	Width:50, 	Align:"Center", ColMerge:0, SaveName:"del_check", 	KeyField:0},
-					    {Type:"Text", 	Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"cust_cnt_cd", 	KeyField:1, UpdateEdit:0, InsertEdit:0, EditLen:2},
-				            {Type:"Float", 	Hidden:0, 	Width:150, 	Align:"Center", ColMerge:0, SaveName:"cust_seq", 	KeyField:1, UpdateEdit:0, InsertEdit:0, EditLen:6},
-				            {Type:"Text", 	Hidden:0, 	Width:300, 	Align:"Left", 	ColMerge:0, SaveName:"cust_lgl_eng_nm",	KeyField:1, UpdateEdit:0, InsertEdit:0}];
+				var cols = [{Type:"Radio",     	Hidden:0, 	Width:30,   Align:"Center",	ColMerge:0,	SaveName:"radio", 		KeyField:0,	UpdateEdit:1, InsertEdit:1},
+							{Type:"CheckBox", 	Hidden:0, 	Width:50, 	Align:"Center", ColMerge:0, SaveName:"checkbox", 		KeyField:0},
+							{Type:"Text", 		Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"cust_cnt_cd", 	KeyField:1, UpdateEdit:0, InsertEdit:0, EditLen:2},
+							{Type:"Float", 		Hidden:0, 	Width:150, 	Align:"Center", ColMerge:0, SaveName:"cust_seq", 		KeyField:1, UpdateEdit:0, InsertEdit:0, EditLen:6},
+							{Type:"Text", 		Hidden:0, 	Width:300, 	Align:"Left", 	ColMerge:0, SaveName:"cust_lgl_eng_nm",	KeyField:1, UpdateEdit:0, InsertEdit:0},
+							{Type:"Status", 	Hidden:1, 	Width:30, 	Align:"Center", ColMerge:0, SaveName:"ibflag"}];
 				InitColumns(cols);
 				SetWaitImageVisible(0);
 				SetSheetHeight(ComGetSheetHeight(sheetObj, 16));
-//				ComResizeSheet(sheetObj);
 				break;
 			default:
 				break;
@@ -133,7 +133,7 @@ function doActionIBSheet(sheetObj, formObj, sAction){
 /**
  * Event fires promptly before Ajax communication when a search method is called.<br>
  * 
- * @param sheetObject		(ibsheet)		IBSheet Object
+ * @param sheetObject	(ibsheet)		IBSheet Object
  * @param Code			(Long)			Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)		Processing result message
  * @param StCode		(Integer)		HTTP response code
@@ -146,7 +146,7 @@ function sheet1_OnBeforeSearch(sheetObject, Code, Msg, StCode, StMsg) {
 /**
  * Event fires when search is completed using a search function and other internal data processing are also completed.<br>
  * 
- * @param sheetObject		(ibsheet)		IBSheet Object
+ * @param sheetObject	(ibsheet)		IBSheet Object
  * @param Code			(Long)			Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)		Processing result message
  * @param StCode		(Integer)		HTTP response code

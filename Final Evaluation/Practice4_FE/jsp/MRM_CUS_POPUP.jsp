@@ -5,7 +5,7 @@
 *@FileTitle : MRM Customer
 *Open Issues :
 *Change history :
-*@LastModifyDate : 2022.05.23
+*@LastModifyDate : 2022.05.20
 *@LastModifier : Viet Tran
 *@LastVersion : 1.0
 * 2020.03.18 
@@ -24,10 +24,10 @@
 <%@ page import="org.apache.log4j.Logger" %>
 
 <%
-	MrmCusPopupEvent  event = null;					
-	Exception serverException   = null;			
-	String strErrMsg = "";						
-	int rowCount	 = 0;						
+	MrmCusPopupEvent  event = null;					//PDTO(Data Transfer Object including Parameters)
+	Exception serverException   = null;			//서버에서 발생한 에러
+	String strErrMsg = "";						//에러메세지
+	int rowCount	 = 0;						//DB ResultSet 리스트의 건수
 
 	String successFlag = "";
 	String codeList  = "";
@@ -58,7 +58,6 @@
 	}
 %>
 
-
 <script language="javascript">
 	function setupPage(){
 		var errMessage = "<%=strErrMsg%>";
@@ -69,7 +68,8 @@
 	}
 </script>
 
-<form name="form"  onkeyup="ComKeyEnter('lengthnextfocus');">
+
+<form name="form">
 <input type="hidden" name="f_cmd">
 <input type="hidden" name="pagerows">
 <div class="layer_popup_title">

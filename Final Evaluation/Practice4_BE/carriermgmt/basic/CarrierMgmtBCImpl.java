@@ -104,6 +104,8 @@ public class CarrierMgmtBCImpl extends BasicCommandSupport implements CarrierMgm
 			List<CarrierListVO> insertVoList = new ArrayList<CarrierListVO>();
 			List<CarrierListVO> updateVoList = new ArrayList<CarrierListVO>();
 			List<CarrierListVO> deleteVoList = new ArrayList<CarrierListVO>();
+			StringBuilder errCode = new StringBuilder();
+			
 			for ( int i=0; i<carrierListVO .length; i++ ) {
 				if ( carrierListVO[i].getIbflag().equals("D")){
 					deleteVoList.add(carrierListVO[i]);
@@ -117,8 +119,8 @@ public class CarrierMgmtBCImpl extends BasicCommandSupport implements CarrierMgm
 					if(!checkDuplicateCarrier(carrierListVO[i])){
 						insertVoList.add(carrierListVO[i]);
 					}
-					else{
-						throw new DAOException(new ErrorHandler("ERR00004").getMessage());
+					else{				
+						errCode.append(", (" + carrierListVO[i].getJoCrrCd() + ", "+ carrierListVO[i].getRlaneCd() +")");
 					}
 				} 
 			}
@@ -134,6 +136,11 @@ public class CarrierMgmtBCImpl extends BasicCommandSupport implements CarrierMgm
 			if ( deleteVoList.size() > 0 ) {
 				dbDao.removeCarrierListVOS(deleteVoList);
 			}
+			
+			if(errCode.length()>2){
+				throw new DAOException(new ErrorHandler("ERR00011", new String[] {errCode.toString().substring(2) ,"Carrier and the Rev.Lane" }).getMessage());
+			}
+			
 		} catch(DAOException ex) {
 			throw new EventException(new ErrorHandler(ex).getMessage(),ex);
 		} catch (Exception ex) {
@@ -146,7 +153,10 @@ public class CarrierMgmtBCImpl extends BasicCommandSupport implements CarrierMgm
 	 */
 	public boolean checkDuplicateCarrier(CarrierListVO carrierListVO) throws EventException{
 		try{
-			List<CarrierListVO> listCarrier = dbDao.listCarrierListVO(carrierListVO);
+			CarrierListVO temp = new CarrierListVO();
+			temp.setJoCrrCd(carrierListVO.getJoCrrCd());
+			temp.setRlaneCd(carrierListVO.getRlaneCd());
+			List<CarrierListVO> listCarrier = dbDao.listCarrierListVO(temp);
 			if(listCarrier.size() == 0)
 				return false;
 			return true;
