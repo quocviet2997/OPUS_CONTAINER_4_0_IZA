@@ -153,19 +153,19 @@ function initSheet(sheetObj, sheetNo){
 				
 				InitHeaders(headers, info);
 				
-				var cols = [{Type:"Status", 	Hidden:1, 	Width:30, 	Align:"Center", ColMerge:0, SaveName:"ibflag"},
-							{Type:"DelCheck", 	Hidden:0, 	Width:30, 	Align:"Center", ColMerge:0, SaveName:"del_check", 	KeyField:0},
-							{Type:"Popup", 		Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"jo_crr_cd", 	KeyField:1, UpdateEdit:0, InsertEdit:1, EditLen:3},
-							{Type:"Combo", 		Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"rlane_cd", 	KeyField:1, UpdateEdit:0, InsertEdit:1, EditLen:5, 	ComboText: rLaneCombo,		ComboCode: rLaneCombo}, 
-							{Type:"Popup", 		Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"vndr_seq", 	KeyField:1, UpdateEdit:1, InsertEdit:1, EditLen:6},
-							{Type:"Popup", 		Hidden:0, 	Width:50, 	Align:"Center", ColMerge:0, SaveName:"cust_cnt_cd", KeyField:1, UpdateEdit:1, InsertEdit:1, EditLen:2},
-							{Type:"Popup", 		Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"cust_seq", 	KeyField:1, UpdateEdit:1, InsertEdit:1, EditLen:6},
-							{Type:"Popup", 		Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"trd_cd", 		KeyField:0, UpdateEdit:1, InsertEdit:1, EditLen:3},
-							{Type:"Combo", 		Hidden:0, 	Width:80, 	Align:"Center", ColMerge:0, SaveName:"delt_flg", 	KeyField:0, UpdateEdit:1, InsertEdit:1,				ComboText : "N|Y", 			ComboCode : "N|Y"},
-							{Type:"Text", 		Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"cre_dt", 		KeyField:0, UpdateEdit:0, InsertEdit:0},
-							{Type:"Text",		Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"cre_usr_id", 	KeyField:0, UpdateEdit:0, InsertEdit:0},
-							{Type:"Text",	 	Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"upd_dt", 		KeyField:0, UpdateEdit:0, InsertEdit:0},
-							{Type:"Text", 		Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"upd_usr_id", 	KeyField:0, UpdateEdit:0, InsertEdit:0}];
+			var cols = [{Type:"Status", 	Hidden:1, 	Width:30, 	Align:"Center", ColMerge:0, SaveName:"ibflag"},
+				    {Type:"DelCheck", 	Hidden:0, 	Width:30, 	Align:"Center", ColMerge:0, SaveName:"del_check", 	KeyField:0},
+				    {Type:"Popup", 	Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"jo_crr_cd", 	KeyField:1, UpdateEdit:0, InsertEdit:1, EditLen:3},
+				    {Type:"Combo", 	Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"rlane_cd", 	KeyField:1, UpdateEdit:0, InsertEdit:1, EditLen:5, 	ComboText: rLaneCombo,		ComboCode: rLaneCombo}, 
+				    {Type:"Popup", 	Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"vndr_seq", 	KeyField:1, UpdateEdit:1, InsertEdit:1, EditLen:6},
+				    {Type:"Popup", 	Hidden:0, 	Width:50, 	Align:"Center", ColMerge:0, SaveName:"cust_cnt_cd", 	KeyField:1, UpdateEdit:1, InsertEdit:1, EditLen:2},
+				    {Type:"Popup", 	Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"cust_seq", 	KeyField:1, UpdateEdit:1, InsertEdit:1, EditLen:6},
+				    {Type:"Popup", 	Hidden:0, 	Width:100, 	Align:"Center", ColMerge:0, SaveName:"trd_cd", 		KeyField:0, UpdateEdit:1, InsertEdit:1, EditLen:3},
+				    {Type:"Combo", 	Hidden:0, 	Width:80, 	Align:"Center", ColMerge:0, SaveName:"delt_flg", 	KeyField:0, UpdateEdit:1, InsertEdit:1,			ComboText : "N|Y", 			ComboCode : "N|Y"},
+				    {Type:"Text", 	Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"cre_dt", 		KeyField:0, UpdateEdit:0, InsertEdit:0},
+				    {Type:"Text",	Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"cre_usr_id", 	KeyField:0, UpdateEdit:0, InsertEdit:0},
+				    {Type:"Text",	 Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"upd_dt", 		KeyField:0, UpdateEdit:0, InsertEdit:0},
+				    {Type:"Text", 	Hidden:0, 	Width:300, 	Align:"Center", ColMerge:0, SaveName:"upd_usr_id", 	KeyField:0, UpdateEdit:0, InsertEdit:0}];
 				
 				InitColumns(cols);
 				SetWaitImageVisible(0);
@@ -327,7 +327,7 @@ function s_jo_crr_cd_OnCheckClick(comboObj, index, code) {
 /**
  * Event fires when search is completed using a search function and other internal data processing are also completed.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
+ * @param sheetObject		(ibsheet)			IBSheet Object
  * @param Code			(Long)				Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)			Processing result message
  * @param StCode		(Integer)			HTTP response code
@@ -354,7 +354,7 @@ function sheet1_OnSearchEnd(sheetObject, Code, Msg, StCode, StMsg) {
 /**
  * Event fires when saving is completed using saving function and other internal processing has been also completed.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
+ * @param sheetObject		(ibsheet)			IBSheet Object
  * @param Code			(Long)				Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)			Processing result message
  * @param StCode		(Integer)			HTTP response code
@@ -374,7 +374,7 @@ function sheet1_OnSaveEnd(sheetObject, Code, Msg, StCode, StMsg) {
 /**
  * Event fires promptly before Ajax communication when a search method is called.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
+ * @param sheetObject		(ibsheet)			IBSheet Object
  * @param Code			(Long)				Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)			Processing result message
  * @param StCode		(Integer)			HTTP response code
@@ -387,7 +387,7 @@ function sheet1_OnBeforeSearch(sheetObject, Code, Msg, StCode, StMsg) {
 /**
  * Event fires promptly before Ajax communication when a saving method is called.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
+ * @param sheetObject		(ibsheet)			IBSheet Object
  * @param Code			(Long)				Processing result code (0 is success, others should be processed as error)
  * @param Msg			(String)			Processing result message
  * @param StCode		(Integer)			HTTP response code
@@ -400,7 +400,7 @@ function sheet1_OnBeforeSave(sheetObject, Code, Msg, StCode, StMsg) {
 /**
  * Handling when sheet1 on change.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
+ * @param sheetObject		(ibsheet)			IBSheet Object
  * @param Row			(Long)				Row index of the cell
  * @param Col			(Long)				Column index of the cell
  * @param Value			(String)			Updated value; Value used for saving without formatting
@@ -448,7 +448,7 @@ function sheet1_OnChange(sheetObj, Row, Col, Value, OldValue, RaiseFlag){
 /**
  * Handling when sheet1 on popup click.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
+ * @param sheetObject		(ibsheet)			IBSheet Object
  * @param Row			(Long)				Row index of the cell
  * @param Col			(Long)				Column index of the cell
  */
@@ -484,7 +484,7 @@ function sheet1_OnPopupClick(sheetObj, Row, Col){
 /**
  * Set value to jo_crr_cd from popup.<br>
  * 
- * @param aryPopupData	(array[][])			list cell data checked on popup: <br>
+ * @param aryPopupData		(array[][])			list cell data checked on popup: <br>
  * The first axis: the array of rows data checked on popup (base on the position on the sheet). <br>
  * The second axis: the array of sheet columns. 
  */
@@ -498,7 +498,7 @@ function setCrrCd(aryPopupData) {
 /**
  * Set value to vndr_seq from popup.<br>
  * 
- * @param aryPopupData	(array[][])			list cell data checked on popup: <br>
+ * @param aryPopupData		(array[][])			list cell data checked on popup: <br>
  * The first axis: the array of rows data checked on popup (base on the position on the sheet). <br>
  * The second axis: the array of sheet columns. 
  */
@@ -512,7 +512,7 @@ function setVndrCd(aryPopupData) {
 /**
  * Set value to cust_cnt_cd and cust_seq from popup.<br>
  * 
- * @param aryPopupData	(array[][])			list cell data checked on popup: <br>
+ * @param aryPopupData		(array[][])			list cell data checked on popup: <br>
  * The first axis: the array of rows data checked on popup (base on the position on the sheet). <br>
  * The second axis: the array of sheet columns. 
  */
@@ -527,7 +527,7 @@ function setCustCd(aryPopupData) {
 /**
  * Set value to trd_cd from popup.<br>
  * 
- * @param aryPopupData	(array[][])			list cell data checked on popup: <br>
+ * @param aryPopupData		(array[][])			list cell data checked on popup: <br>
  * The first axis: the array of rows data checked on popup (base on the position on the sheet). <br>
  * The second axis: the array of sheet columns. 
  */
@@ -578,7 +578,7 @@ function dateValidate(dateObj){
 /**
  * Highlight the invalid rows.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
+ * @param sheetObject		(ibsheet)			IBSheet Object
  * @param msg			(String)			Error Message Code
  */
 function highlightInvalidRows(sheetObject, msg){
@@ -599,8 +599,8 @@ function highlightInvalidRows(sheetObject, msg){
 /**
  * Fill changable data to sheet after retrieving.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
- * @param saveString	(String)			SaveString
+ * @param sheetObject		(ibsheet)			IBSheet Object
+ * @param saveString		(String)			SaveString
  */
 function fillSaveStringIntoSheet(sheetObject, saveString){
 	var arrSaveString = saveString.split('&');
@@ -634,7 +634,7 @@ function fillSaveStringIntoSheet(sheetObject, saveString){
 /**
  * Find the first row where have carrier code and rev.lane code like parameters.<br>
  * 
- * @param sheetObject	(ibsheet)			IBSheet Object
+ * @param sheetObject		(ibsheet)			IBSheet Object
  * @param joCrrCd		(String)			Carrier Code
  * @param rlaneCd		(String)			Rev.Lane Code
  */
