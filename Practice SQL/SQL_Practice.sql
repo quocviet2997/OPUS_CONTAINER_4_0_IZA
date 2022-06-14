@@ -1,21 +1,25 @@
--- Question 9: cho s? 8988.80 vui lòng xu?t ra ??nh d?ng $8,988.800
+----------				----------
+-- Question 9: cho so 8988.80 vui long xuat ra dinh dang $8,988.800
 SELECT  TO_CHAR( 8988.80, '$9,999.999' ) FROM DUAL;
 
--- Question 10: cho s? 8988.80, 820988.80 vui lòng xu?t ra ??nh d?ng $8,000.000, $820,000.000
+----------				----------
+-- Question 10: cho so 8988.80, 820988.80 vui long xuat ra dinh dang $8,000.000, $820,000.000
 SELECT  TO_CHAR( TRUNC(8988.80, -3), '$9,999.999' ),
         TO_CHAR( TRUNC(820988.80 , -3), '$999,999.999' )
 FROM DUAL;
 
--- Question 12: Vi?t Câu SQL xu?t ra, Ngày hi?n t?i, này hôm qua, ngày mai
+----------				----------
+-- Question 12: Viet Cau SQL xuat ra, Ngay hien tai, ngay hom qua, ngay mai
 SELECT  SYSDATE AS TODAY,
        	SYSDATE - 1 AS YESTERDAY,
         SYSDATE +1 AS TOMORROW
 FROM DUAL;
 
+----------				----------
 -- Question 13: 
--- ta có table (TB_ORD), yêu c?u vi?t câu SQL ?? generate ORD_NO có ?ô dài 10 t? v?i format sau: 
---yyyymmdd000Seq, ví d? hnay là 20191028 và ch?a có seq nào thì ORD_NO s? là 201910280001, 
---và n?u ?ã t?n t?i ORD_NO 201910280001 thì nó s? là 201910280002
+-- ta co table (TB_ORD), yeu cau viet cau SQL de generate ORD_NO co do dai 10 ky tu voi format sau: 
+-- yyyymmdd000Seq, vi du hnay la  20191028 va chua co seq nao thi ORD_NO se la 201910280001, 
+-- va neu da ton tai ORD_NO 201910280001 thi no se la 201910280002
 INSERT  INTO TB_ORD(CUST_NO, ORD_NO, PRO_CD, ORD_DTTM) 
 SELECT  :CUSTNO, :ORDNO, :PROCD, 
         DECODE(COUNT(*),  0, RPAD(TO_CHAR(SYSDATE, 'YYYYMMDD'), 12, '0') + 1, MAX(ORD_DTTM) + 1)
@@ -23,23 +27,33 @@ FROM TB_ORD
 WHERE ORD_DTTM LIKE TO_CHAR(SYSDATE, 'YYYYMMDD')||'%'
 AND ROWNUM = 1;
 
+----------				----------
 -- Question 14:
---a)Vi?t câu SQL tìm CUST_GRP_ID sao cho: CUST_GRP_HRCHY_CD có I ho?c C nh?ng không có G
-SELECT CUST_CNT_CD, CUST_SEQ, CUST_GRP_HRCHY_CD, CUST_GRP_ID
+--a)Viet cau SQL tim CUST_GRP_ID sao cho: CUST_GRP_HRCHY_CD co I hoac C nhung khong co G
+SELECT CUST_GRP_ID, CUST_GRP_HRCHY_CD
 FROM MDM_CUSTOMER
-WHERE  CUST_GRP_HRCHY_CD = (SELECT CUST_GRP_HRCHY_CD
-                            FROM MDM_CUSTOMER
-                           	WHERE CUST_GRP_HRCHY_CD != 'G' AND ROWNUM <=1);
---b)Vi?t câu SQL tìm CUST_GRP_ID sao cho: CUST_GRP_HRCHY_CD có G và có I nh?ng không có C
-SELECT CUST_CNT_CD, CUST_SEQ, CUST_GRP_HRCHY_CD, CUST_GRP_ID
-FROM MDM_CUSTOMER
-WHERE CUST_GRP_HRCHY_CD != 'C';
+WHERE CUST_GRP_ID NOT IN (SELECT CUST_GRP_ID
+                            FROM MDM_CUSTOMER B
+                            WHERE CUST_GRP_HRCHY_CD = 'G') 
+AND CUST_GRP_HRCHY_CD IN('I', 'C');
 
--- Question 15:Viets c?u SQL ?? su?t ra kêt qu? nh? sau:
--- L?y max(PROD_UNIT_AMT)
--- L?y  giá tr? min(PROD_UNIT_AMT)
--- L?y giá tr? trung bình PROD_UNIT_AMT
--- L?y tên c?a s?n ph?m có PROD_UNIT_AMT l?n nh?t
+--b)Viet cau SQL tim CUST_GRP_ID sao cho: CUST_GRP_HRCHY_CD co G va co I nhung khong co C
+SELECT DISTINCT CUST_GRP_ID
+FROM MDM_CUSTOMER A
+WHERE CUST_GRP_ID NOT IN (SELECT CUST_GRP_ID
+                            FROM MDM_CUSTOMER
+                            WHERE CUST_GRP_HRCHY_CD = 'C')
+AND EXISTS (SELECT 1
+            FROM MDM_CUSTOMER B
+            WHERE A.CUST_GRP_HRCHY_CD = 'I' AND B.CUST_GRP_HRCHY_CD = 'G' 
+            AND A.CUST_GRP_ID = B.CUST_GRP_ID);
+
+----------				----------
+-- Question 15:Viet cau SQL de xuat ra ket qua nhu sau:
+-- 1)	Lay max(PROD_UNIT_AMT)
+-- 2)	Lay  gia tri min(PROD_UNIT_AMT)
+-- 3)	Lay gia tri trung binh PROD_UNIT_AMT
+-- 4)	Lay ten cua san pham co PROD_UNIT_AMT lon nhat
 SELECT  A.*,
         B.PROD_NM AS MAX_NAME
 FROM    (SELECT MAX(PROD_UNIT_AMT) AS MAX_AMT, 
@@ -48,14 +62,16 @@ FROM    (SELECT MAX(PROD_UNIT_AMT) AS MAX_AMT,
          FROM TB_PROD) A, TB_PROD B
 WHERE B.PROD_UNIT_AMT = A.MAX_AMT AND ROWNUM <= 1;
 
+----------				----------
 -- Question 16:
---a) vi?t c?u SQL l?y ra top3 s?n ph?m ?c bán nhi?u nh?t.
+--a) viet cau SQL lay ra top3 san pham dc ban nhieu nhat.
 SELECT PRO_CD, COUNT(PRO_CD) 
 FROM TB_ORD 
 GROUP BY pro_cd 
 ORDER BY COUNT(PRO_CD) DESC
 FETCH FIRST 3 ROWS ONLY;
---b)Vi?t c?u SQL l?y ra cái ORD_DT, ORD_TM, PROD_CD g?n nh?t theo CUST_NO
+
+--b)Viet cau SQL lay ra cai ORD_DT, ORD_TM, PROD_CD gan nhat theo CUST_NO
 WITH ORD AS
 (
 SELECT
@@ -70,7 +86,8 @@ WHERE ORD_NO != 'temp'
 SELECT CUST_NO, ORD_NO, ORD_DTTM, PRO_CD
 FROM ORD
 WHERE RN = 1;
---c)vi?t c?u SQL report xem trong tháng 06, 07, 08, 09 c?u 2019 s?n ph?m có mã code là 00001bán ?c bao nhiêu cái.
+
+--c)viet cau SQL report xem trong thang 06, 07, 08, 09 cua 2019 san pham co ma code la 00001 ban dc bao nhieu cai.
 WITH    DATEORDER AS(
                 SELECT DISTINCT SUBSTR(A.ORD_DTTM, 1, 6) AS MON, B.PRO_CD
                 FROM TB_ORD A, TB_ORD B
@@ -84,7 +101,8 @@ SELECT DO.MON, DO.PRO_CD, NVL(DOO.TOTAL,0) AS TOTAL
 FROM DATEORDER DO LEFT JOIN  DATEORDERORIGIN DOO
 ON DO.MON = DOO.MON AND DO.PRO_CD = DOO.PRO_CD
 ORDER BY PRO_CD, MON;
---d)gi? s? lúc ??u s?n ph?n 00001 có 100 cái, vi?t report ?? tính s? l??ng remain theo tháng 06, 07, 08, 09
+
+--d)gia su luc dau san pham 00001 co 100 cai, viet report de tinh so luong remain theo thang 06, 07, 08, 09
 WITH    DATEORDER AS(
                 SELECT DISTINCT SUBSTR(A.ORD_DTTM, 1, 6) AS MON, B.PRO_CD
                 FROM TB_ORD A, TB_ORD B
